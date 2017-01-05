@@ -8,6 +8,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT=$DIR/..
 
 rm -rf $ROOT/src/main/proto/appscode/api
+rm -rf $ROOT/src/generated
 
 pushd $GOPATH/src/github.com/appscode/api
 # copy files

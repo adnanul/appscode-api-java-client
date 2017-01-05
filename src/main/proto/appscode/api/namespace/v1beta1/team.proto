@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package appscode.namespace.v1beta1;
+
+option go_package = "v1beta1";
+
+option java_multiple_files = true;
+option java_outer_classname = "TeamProto";
+option java_package = "com.appscode.api.namespace.v1beta1";
+
+import "google/api/annotations.proto";
+import "appscode/api/annotations.proto";
+import "appscode/api/dtypes/types.proto";
+
+// no authentication required, but rate limited apis.
+service Teams {
+  // Creates a new namespace, if name is valid and no namespace with same name exists.
+  rpc Create(CreateRequest) returns (CreateResponse) {
+    option (google.api.http) = {
+    post: "/_appscode/api/namespace/v1beta1/teams"
+      body: "*"
+    };
+    option (appscode.api.cors) = {
+      enable: true
+    };
+  }
+
+  // Gets a namespace, if exists. This can be used to check existence of a namespace.
+  rpc Get(GetRequest) returns (GetResponse) {
+    option (google.api.http) = {
+      get: "/_appscode/api/namespace/v1beta1/teams/{name}"
+    };
+    option (appscode.api.cors) = {
+      enable: true
+    };
+  }
+
+  // Check if a namespace name is available meaning name is valid and no namespace with same name exists.
+  rpc IsAvailable(IsAvailableRequest) returns (dtypes.VoidResponse) {
+    option (google.api.http) = {
+      get : "/_appscode/api/namespace/v1beta1/teams/{name}/is-available"
+    };
+    option (appscode.api.cors) = {
+      enable: true
+    };
+  }
+}
+
+message CreateRequest {
+  string name = 1;
+  string display_name = 2;
+  string email = 3;
+  string user_name = 4;
+  string password = 5;
+  repeated string invite_emails = 6;
+  string subscription_type = 7;
+  string client_ip = 8;
+}
+
+message CreateResponse {
+  dtypes.Status status = 1;
+}
+
+message GetRequest {
+  string name = 1;
+}
+
+message GetResponse {
+  dtypes.Status status = 1;
+  string phid = 2;
+}
+
+message IsAvailableRequest {
+  string name = 1;
+}
