@@ -30,7 +30,7 @@ protobuf {
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.0.1'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.0.2'
         }
     }
     generateProtoTasks {
@@ -38,20 +38,20 @@ protobuf {
             grpc {}
         }
     }
+    generatedFilesBaseDir = "$projectDir/src/generated"
 }
 
 dependencies {
     compile 'com.google.protobuf:protobuf-java:3.1.0'
-    compile 'io.grpc:grpc-netty:1.0.1'
-    compile 'io.grpc:grpc-protobuf:1.0.1'
-    compile 'io.grpc:grpc-stub:1.0.1'
+    compile 'io.grpc:grpc-netty:1.0.2'
+    compile 'io.grpc:grpc-protobuf:1.0.2'
+    compile 'io.grpc:grpc-stub:1.0.2'
     testCompile 'junit:junit:4.10'
 }
 
 idea {
     module {
-        sourceDirs += file("${protobuf.generatedFilesBaseDir}/main/java");
-        // If you have additional sourceSets and/or codegen plugins, add all of them
-        sourceDirs += file("${protobuf.generatedFilesBaseDir}/main/grpc");
+        sourceDirs += file("${projectDir}/src/generated/main/java");
+        sourceDirs += file("${projectDir}/src/generated/main/grpc");
     }
 }
