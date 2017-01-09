@@ -14,7 +14,7 @@ pushd $GOPATH/src/github.com/appscode/api
 # copy files
 mkdir -p $ROOT/src/main/proto/appscode/api
 find . -name '*.proto' | cpio -pdm $ROOT/src/main/proto/appscode/api
-cp -R ${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google $ROOT/src/main/proto
+# cp -R ${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis/google $ROOT/src/main/proto
 cp -R ${GOPATH}/src/github.com/grpc-ecosystem/grpc-gateway/third_party/appscodeapis/appscode $ROOT/src/main/proto
 
 cd $ROOT

@@ -51,6 +51,7 @@ dependencies {
     compile 'io.grpc:grpc-netty:1.0.2'
     compile 'io.grpc:grpc-protobuf:1.0.2'
     compile 'io.grpc:grpc-stub:1.0.2'
+    compile 'com.google.api.grpc:grpc-google-common-protos:0.1.5'
     testCompile 'junit:junit:4.10'
 }
 
