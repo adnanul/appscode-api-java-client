@@ -26,6 +26,18 @@ repositories {
     mavenCentral()
 }
 
+sourceSets {
+    main {
+        java {
+            srcDirs = [
+                "${projectDir}/src/main/java",
+                "${projectDir}/src/generated/main/java",
+                "${projectDir}/src/generated/main/grpc"
+            ]
+        }
+    }
+}
+
 protobuf {
     protoc {
         // The version of protoc must match protobuf-java. If you don't depend on
@@ -62,6 +74,14 @@ idea {
     }
 }
 
+// https://github.com/GPars/GPars/blob/master/build.gradle#L208
+if (JavaVersion.current().isJava8Compatible()) {
+    tasks.withType(Javadoc) {
+        // disable the crazy super-strict doclint tool in Java 8
+        //noinspection SpellCheckingInspection
+        options.addStringOption('Xdoclint:none', '-quiet')
+    }
+}
 task javadocJar(type: Jar) {
     classifier = 'javadoc'
     from javadoc
