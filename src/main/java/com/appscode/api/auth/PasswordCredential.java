@@ -7,12 +7,12 @@ import java.net.URI;
 import java.util.*;
 
 public final class PasswordCredential extends Credentials {
-  private String ns;
+  private String namespace;
   private String username;
   private String password;
 
-  public PasswordCredential(String ns, String username, String password) {
-    this.ns = ns;
+  public PasswordCredential(String namespace, String username, String password) {
+    this.namespace = namespace;
     this.username = username;
     this.password = password;
   }
@@ -25,7 +25,7 @@ public final class PasswordCredential extends Credentials {
   @Override
   public Map<String, List<String>> getRequestMetadata(URI uri) throws IOException {
     HashMap<String, List<String>> authMap = new HashMap<>();
-    String secret = String.format("%s.%s:%s", ns, username, password);
+    String secret = String.format("%s.%s:%s", namespace, username, password);
     authMap.put("authorization",
         Arrays.asList("Basic " + Base64.getEncoder().encodeToString(secret.getBytes())));
     return authMap;
