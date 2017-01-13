@@ -37,8 +37,10 @@ public class AuthApiTest {
     ClientsGrpc.ClientsBlockingStub blockingStub = ClientsGrpc.newBlockingStub(channel).
         withCallCredentials(
             MoreCallCredentials.from(new PasswordCredential("devapp", "user", "password")));
-    ListResourceRequest request = ListResourceRequest.newBuilder().setCluster("h-505")
-        .setType("pods").build();
+    ListResourceRequest request = ListResourceRequest.newBuilder()
+        .setCluster("h-505")
+        .setType("pods")
+        .build();
     ListResourceResponse response = blockingStub.list(request);
 
     assertEquals(response.getStatus().getStatus(), "OK");
@@ -51,8 +53,10 @@ public class AuthApiTest {
         withCallCredentials(
             MoreCallCredentials
                 .from(new TokenCredential("devapp", "api-token")));
-    ListResourceRequest request = ListResourceRequest.newBuilder().setCluster("h-505")
-        .setType("pods").build();
+    ListResourceRequest request = ListResourceRequest.newBuilder()
+        .setCluster("h-505")
+        .setType("pods")
+        .build();
     ListResourceResponse response = blockingStub.list(request);
 
     assertEquals(response.getStatus().getStatus(), "OK");
