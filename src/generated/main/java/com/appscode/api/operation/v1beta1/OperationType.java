@@ -33,22 +33,6 @@ public enum OperationType
    */
   CLUSTER_UPGRADE(4),
   /**
-   * <code>CI_MASTER_CREATE = 5;</code>
-   */
-  CI_MASTER_CREATE(5),
-  /**
-   * <code>CI_MASTER_DELETE = 6;</code>
-   */
-  CI_MASTER_DELETE(6),
-  /**
-   * <code>CI_AGENT_CREATE = 7;</code>
-   */
-  CI_AGENT_CREATE(7),
-  /**
-   * <code>CI_AGENT_DELETE = 8;</code>
-   */
-  CI_AGENT_DELETE(8),
-  /**
    * <code>DATA_BUCKET_DELETE = 9;</code>
    */
   DATA_BUCKET_DELETE(9),
@@ -99,22 +83,6 @@ public enum OperationType
    * <code>CLUSTER_UPGRADE = 4;</code>
    */
   public static final int CLUSTER_UPGRADE_VALUE = 4;
-  /**
-   * <code>CI_MASTER_CREATE = 5;</code>
-   */
-  public static final int CI_MASTER_CREATE_VALUE = 5;
-  /**
-   * <code>CI_MASTER_DELETE = 6;</code>
-   */
-  public static final int CI_MASTER_DELETE_VALUE = 6;
-  /**
-   * <code>CI_AGENT_CREATE = 7;</code>
-   */
-  public static final int CI_AGENT_CREATE_VALUE = 7;
-  /**
-   * <code>CI_AGENT_DELETE = 8;</code>
-   */
-  public static final int CI_AGENT_DELETE_VALUE = 8;
   /**
    * <code>DATA_BUCKET_DELETE = 9;</code>
    */
@@ -168,10 +136,6 @@ public enum OperationType
       case 2: return CLUSTER_SCALE;
       case 3: return CLUSTER_DELETE;
       case 4: return CLUSTER_UPGRADE;
-      case 5: return CI_MASTER_CREATE;
-      case 6: return CI_MASTER_DELETE;
-      case 7: return CI_AGENT_CREATE;
-      case 8: return CI_AGENT_DELETE;
       case 9: return DATA_BUCKET_DELETE;
       case 10: return BACKUP_SCHEDULE;
       case 11: return NAMESPACE_CREATE;

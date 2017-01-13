@@ -44,42 +44,6 @@ public interface OperationOrBuilder extends
   com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder getClusterUpgradeRequestOrBuilder();
 
   /**
-   * <code>optional .appscode.ci.v1beta1.MasterCreateRequest ci_master_create_request = 5;</code>
-   */
-  com.appscode.api.ci.v1beta1.MasterCreateRequest getCiMasterCreateRequest();
-  /**
-   * <code>optional .appscode.ci.v1beta1.MasterCreateRequest ci_master_create_request = 5;</code>
-   */
-  com.appscode.api.ci.v1beta1.MasterCreateRequestOrBuilder getCiMasterCreateRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.ci.v1beta1.MasterDeleteRequest ci_master_delete_request = 6;</code>
-   */
-  com.appscode.api.ci.v1beta1.MasterDeleteRequest getCiMasterDeleteRequest();
-  /**
-   * <code>optional .appscode.ci.v1beta1.MasterDeleteRequest ci_master_delete_request = 6;</code>
-   */
-  com.appscode.api.ci.v1beta1.MasterDeleteRequestOrBuilder getCiMasterDeleteRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateRequest ci_agent_create_request = 7;</code>
-   */
-  com.appscode.api.ci.v1beta1.AgentCreateRequest getCiAgentCreateRequest();
-  /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateRequest ci_agent_create_request = 7;</code>
-   */
-  com.appscode.api.ci.v1beta1.AgentCreateRequestOrBuilder getCiAgentCreateRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.ci.v1beta1.AgentDeleteRequest ci_agent_delete_request = 8;</code>
-   */
-  com.appscode.api.ci.v1beta1.AgentDeleteRequest getCiAgentDeleteRequest();
-  /**
-   * <code>optional .appscode.ci.v1beta1.AgentDeleteRequest ci_agent_delete_request = 8;</code>
-   */
-  com.appscode.api.ci.v1beta1.AgentDeleteRequestOrBuilder getCiAgentDeleteRequestOrBuilder();
-
-  /**
    * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
    */
   com.appscode.api.operation.v1beta1.DataBucketDeleteRequest getDataBucketDeleteRequest();

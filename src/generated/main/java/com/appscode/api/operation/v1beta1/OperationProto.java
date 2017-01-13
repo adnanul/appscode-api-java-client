@@ -77,86 +77,74 @@ public final class OperationProto {
       "on.proto\022\032appscode.operation.v1beta1\032\034go" +
       "ogle/api/annotations.proto\032\036appscode/api" +
       "/annotations.proto\032\037appscode/api/dtypes/" +
-      "types.proto\032#appscode/api/ci/v1beta1/age" +
-      "nt.proto\032$appscode/api/ci/v1beta1/master" +
-      ".proto\032-appscode/api/kubernetes/v1beta1/" +
-      "cluster.proto\032&appscode/api/db/v1beta1/d" +
-      "atabase.proto\032&appscode/api/db/v1beta1/s" +
-      "napshot.proto\032)appscode/api/namespace/v1",
-      "beta1/team.proto\"5\n\003Log\022\n\n\002id\030\001 \001(\t\022\021\n\tt" +
-      "imestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"\037\n\017Descr" +
-      "ibeRequest\022\014\n\004phid\030\001 \001(\t\"\235\001\n\020DescribeRes" +
-      "ponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes." +
-      "Status\0221\n\002op\030\002 \001(\0132%.appscode.operation." +
-      "v1beta1.Operation\022-\n\004logs\030\003 \003(\0132\037.appsco" +
-      "de.operation.v1beta1.Log\"2\n\022LogDescribeR" +
-      "equest\022\014\n\004phid\030\001 \001(\t\022\016\n\006log_id\030\002 \001(\t\"l\n\023" +
-      "LogDescribeResponse\022\'\n\006status\030\001 \001(\0132\027.ap" +
-      "pscode.dtypes.Status\022,\n\003log\030\002 \001(\0132\037.apps",
-      "code.operation.v1beta1.Log\"N\n\004Auth\022\021\n\tna" +
-      "mespace\030\001 \001(\t\022\020\n\010username\030\002 \001(\t\022\016\n\006secre" +
-      "t\030\003 \001(\t\022\021\n\tauth_type\030\004 \001(\t\"L\n\010Metadata\022\026" +
-      "\n\016purchase_phids\030\001 \003(\t\022\023\n\013author_phid\030\002 " +
-      "\001(\t\022\023\n\013author_name\030\003 \001(\t\"\216\013\n\tOperation\022S" +
-      "\n\026cluster_create_request\030\001 \001(\01321.appscod" +
-      "e.kubernetes.v1beta1.ClusterCreateReques" +
-      "tH\000\022Q\n\025cluster_scale_request\030\002 \001(\01320.app" +
-      "scode.kubernetes.v1beta1.ClusterScaleReq" +
-      "uestH\000\022S\n\026cluster_delete_request\030\003 \001(\01321",
-      ".appscode.kubernetes.v1beta1.ClusterDele" +
-      "teRequestH\000\022U\n\027cluster_upgrade_request\030\004" +
-      " \001(\01322.appscode.kubernetes.v1beta1.Clust" +
-      "erUpgradeRequestH\000\022L\n\030ci_master_create_r" +
-      "equest\030\005 \001(\0132(.appscode.ci.v1beta1.Maste" +
-      "rCreateRequestH\000\022L\n\030ci_master_delete_req" +
-      "uest\030\006 \001(\0132(.appscode.ci.v1beta1.MasterD" +
-      "eleteRequestH\000\022J\n\027ci_agent_create_reques" +
-      "t\030\007 \001(\0132\'.appscode.ci.v1beta1.AgentCreat" +
-      "eRequestH\000\022J\n\027ci_agent_delete_request\030\010 ",
-      "\001(\0132\'.appscode.ci.v1beta1.AgentDeleteReq" +
-      "uestH\000\022Y\n\032data_bucket_delete_request\030\t \001" +
-      "(\01323.appscode.operation.v1beta1.DataBuck" +
-      "etDeleteRequestH\000\022M\n\027backup_schedule_req" +
-      "uest\030\n \001(\0132*.appscode.db.v1beta1.BackupS" +
-      "cheduleRequestH\000\022M\n\030namespace_create_req" +
-      "uest\030\013 \001(\0132).appscode.namespace.v1beta1." +
-      "CreateRequestH\000\022]\n\034namespace_admin_task_" +
-      "request\030\014 \001(\01325.appscode.operation.v1bet" +
-      "a1.NamespaceAdminTaskRequestH\000\022K\n\026databa",
-      "se_check_request\030\023 \001(\0132).appscode.db.v1b" +
-      "eta1.DatabaseCheckRequestH\000\022K\n\026snapshot_" +
-      "check_request\030\024 \001(\0132).appscode.db.v1beta" +
-      "1.SnapshotCheckRequestH\000\022M\n\027database_del" +
-      "ete_request\030\025 \001(\0132*.appscode.db.v1beta1." +
-      "DatabaseDeleteRequestH\000\0227\n\004type\030\016 \001(\0162)." +
-      "appscode.operation.v1beta1.OperationType" +
-      "\022\014\n\004phid\030\017 \001(\t\022.\n\004auth\030\020 \001(\0132 .appscode." +
-      "operation.v1beta1.Auth\0226\n\010metadata\030\021 \001(\013" +
-      "2$.appscode.operation.v1beta1.MetadataB\t",
-      "\n\007request\"O\n\027DataBucketDeleteRequest\022\021\n\t" +
-      "data_type\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\016\n\006pr" +
-      "efix\030\003 \001(\t\".\n\031NamespaceAdminTaskRequest\022" +
-      "\021\n\tnamespace\030\001 \001(\t*\334\002\n\rOperationType\022\013\n\007" +
-      "UNKNOWN\020\000\022\022\n\016CLUSTER_CREATE\020\001\022\021\n\rCLUSTER" +
-      "_SCALE\020\002\022\022\n\016CLUSTER_DELETE\020\003\022\023\n\017CLUSTER_" +
-      "UPGRADE\020\004\022\024\n\020CI_MASTER_CREATE\020\005\022\024\n\020CI_MA" +
-      "STER_DELETE\020\006\022\023\n\017CI_AGENT_CREATE\020\007\022\023\n\017CI" +
-      "_AGENT_DELETE\020\010\022\026\n\022DATA_BUCKET_DELETE\020\t\022" +
-      "\023\n\017BACKUP_SCHEDULE\020\n\022\024\n\020NAMESPACE_CREATE",
-      "\020\013\022\030\n\024NAMESPACE_ADMIN_TASK\020\014\022\022\n\016DATABASE" +
-      "_CHECK\020\017\022\022\n\016SNAPSHOT_CHECK\020\020\022\023\n\017DATABASE" +
-      "_DELETE\020\0212\367\002\n\nOperations\022\247\001\n\010Describe\022+." +
-      "appscode.operation.v1beta1.DescribeReque" +
-      "st\032,.appscode.operation.v1beta1.Describe" +
-      "Response\"@\202\323\344\223\0024\0222/_appscode/api/operati" +
-      "on/v1beta1/operations/{phid}\202\265\030\002\010\001\022\276\001\n\013D" +
-      "escribeLog\022..appscode.operation.v1beta1." +
-      "LogDescribeRequest\032/.appscode.operation." +
-      "v1beta1.LogDescribeResponse\"N\202\323\344\223\002B\022@/_a",
-      "ppscode/api/operation/v1beta1/operations" +
-      "/{phid}/logs/{log_id}\202\265\030\002\010\001B?\n\"com.appsc" +
-      "ode.api.operation.v1beta1B\016OperationProt" +
-      "oP\001Z\007v1beta1b\006proto3"
+      "types.proto\032-appscode/api/kubernetes/v1b" +
+      "eta1/cluster.proto\032&appscode/api/db/v1be" +
+      "ta1/database.proto\032&appscode/api/db/v1be" +
+      "ta1/snapshot.proto\032)appscode/api/namespa" +
+      "ce/v1beta1/team.proto\"5\n\003Log\022\n\n\002id\030\001 \001(\t" +
+      "\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"\037\n\017",
+      "DescribeRequest\022\014\n\004phid\030\001 \001(\t\"\235\001\n\020Descri" +
+      "beResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt" +
+      "ypes.Status\0221\n\002op\030\002 \001(\0132%.appscode.opera" +
+      "tion.v1beta1.Operation\022-\n\004logs\030\003 \003(\0132\037.a" +
+      "ppscode.operation.v1beta1.Log\"2\n\022LogDesc" +
+      "ribeRequest\022\014\n\004phid\030\001 \001(\t\022\016\n\006log_id\030\002 \001(" +
+      "\t\"l\n\023LogDescribeResponse\022\'\n\006status\030\001 \001(\013" +
+      "2\027.appscode.dtypes.Status\022,\n\003log\030\002 \001(\0132\037" +
+      ".appscode.operation.v1beta1.Log\"N\n\004Auth\022" +
+      "\021\n\tnamespace\030\001 \001(\t\022\020\n\010username\030\002 \001(\t\022\016\n\006",
+      "secret\030\003 \001(\t\022\021\n\tauth_type\030\004 \001(\t\"L\n\010Metad" +
+      "ata\022\026\n\016purchase_phids\030\001 \003(\t\022\023\n\013author_ph" +
+      "id\030\002 \001(\t\022\023\n\013author_name\030\003 \001(\t\"\332\010\n\tOperat" +
+      "ion\022S\n\026cluster_create_request\030\001 \001(\01321.ap" +
+      "pscode.kubernetes.v1beta1.ClusterCreateR" +
+      "equestH\000\022Q\n\025cluster_scale_request\030\002 \001(\0132" +
+      "0.appscode.kubernetes.v1beta1.ClusterSca" +
+      "leRequestH\000\022S\n\026cluster_delete_request\030\003 " +
+      "\001(\01321.appscode.kubernetes.v1beta1.Cluste" +
+      "rDeleteRequestH\000\022U\n\027cluster_upgrade_requ",
+      "est\030\004 \001(\01322.appscode.kubernetes.v1beta1." +
+      "ClusterUpgradeRequestH\000\022Y\n\032data_bucket_d" +
+      "elete_request\030\t \001(\01323.appscode.operation" +
+      ".v1beta1.DataBucketDeleteRequestH\000\022M\n\027ba" +
+      "ckup_schedule_request\030\n \001(\0132*.appscode.d" +
+      "b.v1beta1.BackupScheduleRequestH\000\022M\n\030nam" +
+      "espace_create_request\030\013 \001(\0132).appscode.n" +
+      "amespace.v1beta1.CreateRequestH\000\022]\n\034name" +
+      "space_admin_task_request\030\014 \001(\01325.appscod" +
+      "e.operation.v1beta1.NamespaceAdminTaskRe",
+      "questH\000\022K\n\026database_check_request\030\023 \001(\0132" +
+      ").appscode.db.v1beta1.DatabaseCheckReque" +
+      "stH\000\022K\n\026snapshot_check_request\030\024 \001(\0132).a" +
+      "ppscode.db.v1beta1.SnapshotCheckRequestH" +
+      "\000\022M\n\027database_delete_request\030\025 \001(\0132*.app" +
+      "scode.db.v1beta1.DatabaseDeleteRequestH\000" +
+      "\0227\n\004type\030\016 \001(\0162).appscode.operation.v1be" +
+      "ta1.OperationType\022\014\n\004phid\030\017 \001(\t\022.\n\004auth\030" +
+      "\020 \001(\0132 .appscode.operation.v1beta1.Auth\022" +
+      "6\n\010metadata\030\021 \001(\0132$.appscode.operation.v",
+      "1beta1.MetadataB\t\n\007request\"O\n\027DataBucket" +
+      "DeleteRequest\022\021\n\tdata_type\030\001 \001(\t\022\021\n\tname" +
+      "space\030\002 \001(\t\022\016\n\006prefix\030\003 \001(\t\".\n\031Namespace" +
+      "AdminTaskRequest\022\021\n\tnamespace\030\001 \001(\t*\206\002\n\r" +
+      "OperationType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_CR" +
+      "EATE\020\001\022\021\n\rCLUSTER_SCALE\020\002\022\022\n\016CLUSTER_DEL" +
+      "ETE\020\003\022\023\n\017CLUSTER_UPGRADE\020\004\022\026\n\022DATA_BUCKE" +
+      "T_DELETE\020\t\022\023\n\017BACKUP_SCHEDULE\020\n\022\024\n\020NAMES" +
+      "PACE_CREATE\020\013\022\030\n\024NAMESPACE_ADMIN_TASK\020\014\022" +
+      "\022\n\016DATABASE_CHECK\020\017\022\022\n\016SNAPSHOT_CHECK\020\020\022",
+      "\023\n\017DATABASE_DELETE\020\0212\367\002\n\nOperations\022\247\001\n\010" +
+      "Describe\022+.appscode.operation.v1beta1.De" +
+      "scribeRequest\032,.appscode.operation.v1bet" +
+      "a1.DescribeResponse\"@\202\323\344\223\0024\0222/_appscode/" +
+      "api/operation/v1beta1/operations/{phid}\202" +
+      "\265\030\002\010\001\022\276\001\n\013DescribeLog\022..appscode.operati" +
+      "on.v1beta1.LogDescribeRequest\032/.appscode" +
+      ".operation.v1beta1.LogDescribeResponse\"N" +
+      "\202\323\344\223\002B\022@/_appscode/api/operation/v1beta1" +
+      "/operations/{phid}/logs/{log_id}\202\265\030\002\010\001B?",
+      "\n\"com.appscode.api.operation.v1beta1B\016Op" +
+      "erationProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -172,8 +160,6 @@ public final class OperationProto {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.dtypes.TypeProto.getDescriptor(),
-          com.appscode.api.ci.v1beta1.AgentProto.getDescriptor(),
-          com.appscode.api.ci.v1beta1.MasterProto.getDescriptor(),
           com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor(),
           com.appscode.api.db.v1beta1.DatabaseProto.getDescriptor(),
           com.appscode.api.db.v1beta1.SnapshotProto.getDescriptor(),
@@ -226,7 +212,7 @@ public final class OperationProto {
     internal_static_appscode_operation_v1beta1_Operation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_operation_v1beta1_Operation_descriptor,
-        new java.lang.String[] { "ClusterCreateRequest", "ClusterScaleRequest", "ClusterDeleteRequest", "ClusterUpgradeRequest", "CiMasterCreateRequest", "CiMasterDeleteRequest", "CiAgentCreateRequest", "CiAgentDeleteRequest", "DataBucketDeleteRequest", "BackupScheduleRequest", "NamespaceCreateRequest", "NamespaceAdminTaskRequest", "DatabaseCheckRequest", "SnapshotCheckRequest", "DatabaseDeleteRequest", "Type", "Phid", "Auth", "Metadata", "Request", });
+        new java.lang.String[] { "ClusterCreateRequest", "ClusterScaleRequest", "ClusterDeleteRequest", "ClusterUpgradeRequest", "DataBucketDeleteRequest", "BackupScheduleRequest", "NamespaceCreateRequest", "NamespaceAdminTaskRequest", "DatabaseCheckRequest", "SnapshotCheckRequest", "DatabaseDeleteRequest", "Type", "Phid", "Auth", "Metadata", "Request", });
     internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_fieldAccessorTable = new
@@ -248,8 +234,6 @@ public final class OperationProto {
     com.google.api.AnnotationsProto.getDescriptor();
     com.appscode.api.AnnotationsProto.getDescriptor();
     com.appscode.api.dtypes.TypeProto.getDescriptor();
-    com.appscode.api.ci.v1beta1.AgentProto.getDescriptor();
-    com.appscode.api.ci.v1beta1.MasterProto.getDescriptor();
     com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor();
     com.appscode.api.db.v1beta1.DatabaseProto.getDescriptor();
     com.appscode.api.db.v1beta1.SnapshotProto.getDescriptor();
