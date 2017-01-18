@@ -20,7 +20,6 @@ public  final class DiskCreateRequest extends
     zone_ = "";
     diskType_ = "";
     sizeGb_ = 0L;
-    vhdContainerName_ = "";
   }
 
   @java.lang.Override
@@ -75,12 +74,6 @@ public  final class DiskCreateRequest extends
           case 40: {
 
             sizeGb_ = input.readInt64();
-            break;
-          }
-          case 50: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            vhdContainerName_ = s;
             break;
           }
         }
@@ -251,40 +244,6 @@ public  final class DiskCreateRequest extends
     return sizeGb_;
   }
 
-  public static final int VHD_CONTAINER_NAME_FIELD_NUMBER = 6;
-  private volatile java.lang.Object vhdContainerName_;
-  /**
-   * <code>optional string vhd_container_name = 6;</code>
-   */
-  public java.lang.String getVhdContainerName() {
-    java.lang.Object ref = vhdContainerName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      vhdContainerName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>optional string vhd_container_name = 6;</code>
-   */
-  public com.google.protobuf.ByteString
-      getVhdContainerNameBytes() {
-    java.lang.Object ref = vhdContainerName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      vhdContainerName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -312,9 +271,6 @@ public  final class DiskCreateRequest extends
     if (sizeGb_ != 0L) {
       output.writeInt64(5, sizeGb_);
     }
-    if (!getVhdContainerNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, vhdContainerName_);
-    }
   }
 
   public int getSerializedSize() {
@@ -337,9 +293,6 @@ public  final class DiskCreateRequest extends
     if (sizeGb_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(5, sizeGb_);
-    }
-    if (!getVhdContainerNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, vhdContainerName_);
     }
     memoizedSize = size;
     return size;
@@ -367,8 +320,6 @@ public  final class DiskCreateRequest extends
         .equals(other.getDiskType());
     result = result && (getSizeGb()
         == other.getSizeGb());
-    result = result && getVhdContainerName()
-        .equals(other.getVhdContainerName());
     return result;
   }
 
@@ -390,8 +341,6 @@ public  final class DiskCreateRequest extends
     hash = (37 * hash) + SIZE_GB_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getSizeGb());
-    hash = (37 * hash) + VHD_CONTAINER_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getVhdContainerName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -520,8 +469,6 @@ public  final class DiskCreateRequest extends
 
       sizeGb_ = 0L;
 
-      vhdContainerName_ = "";
-
       return this;
     }
 
@@ -549,7 +496,6 @@ public  final class DiskCreateRequest extends
       result.zone_ = zone_;
       result.diskType_ = diskType_;
       result.sizeGb_ = sizeGb_;
-      result.vhdContainerName_ = vhdContainerName_;
       onBuilt();
       return result;
     }
@@ -609,10 +555,6 @@ public  final class DiskCreateRequest extends
       }
       if (other.getSizeGb() != 0L) {
         setSizeGb(other.getSizeGb());
-      }
-      if (!other.getVhdContainerName().isEmpty()) {
-        vhdContainerName_ = other.vhdContainerName_;
-        onChanged();
       }
       onChanged();
       return this;
@@ -938,75 +880,6 @@ public  final class DiskCreateRequest extends
     public Builder clearSizeGb() {
       
       sizeGb_ = 0L;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object vhdContainerName_ = "";
-    /**
-     * <code>optional string vhd_container_name = 6;</code>
-     */
-    public java.lang.String getVhdContainerName() {
-      java.lang.Object ref = vhdContainerName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        vhdContainerName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>optional string vhd_container_name = 6;</code>
-     */
-    public com.google.protobuf.ByteString
-        getVhdContainerNameBytes() {
-      java.lang.Object ref = vhdContainerName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        vhdContainerName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>optional string vhd_container_name = 6;</code>
-     */
-    public Builder setVhdContainerName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      vhdContainerName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string vhd_container_name = 6;</code>
-     */
-    public Builder clearVhdContainerName() {
-      
-      vhdContainerName_ = getDefaultInstance().getVhdContainerName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string vhd_container_name = 6;</code>
-     */
-    public Builder setVhdContainerNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      vhdContainerName_ = value;
       onChanged();
       return this;
     }

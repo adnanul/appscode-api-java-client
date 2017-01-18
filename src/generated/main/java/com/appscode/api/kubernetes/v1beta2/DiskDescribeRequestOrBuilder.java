@@ -36,14 +36,4 @@ public interface DiskDescribeRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getProviderBytes();
-
-  /**
-   * <code>optional string vhd_container_name = 4;</code>
-   */
-  java.lang.String getVhdContainerName();
-  /**
-   * <code>optional string vhd_container_name = 4;</code>
-   */
-  com.google.protobuf.ByteString
-      getVhdContainerNameBytes();
 }

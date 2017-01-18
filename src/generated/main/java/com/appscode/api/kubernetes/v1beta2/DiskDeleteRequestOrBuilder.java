@@ -26,14 +26,4 @@ public interface DiskDeleteRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getUidBytes();
-
-  /**
-   * <code>optional string vhd_container_name = 3;</code>
-   */
-  java.lang.String getVhdContainerName();
-  /**
-   * <code>optional string vhd_container_name = 3;</code>
-   */
-  com.google.protobuf.ByteString
-      getVhdContainerNameBytes();
 }

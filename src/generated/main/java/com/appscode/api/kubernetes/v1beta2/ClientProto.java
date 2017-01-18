@@ -1384,106 +1384,104 @@ public final class ClientProto {
       "stRequest\022\017\n\007cluster\030\001 \001(\t\"m\n\020DiskListRe" +
       "sponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes",
       ".Status\0220\n\005disks\030\002 \003(\0132!.appscode.kubern" +
-      "etes.v1beta2.Disk\"b\n\023DiskDescribeRequest" +
+      "etes.v1beta2.Disk\"F\n\023DiskDescribeRequest" +
       "\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\020\n\010provi" +
-      "der\030\003 \001(\t\022\032\n\022vhd_container_name\030\004 \001(\t\"p\n" +
-      "\024DiskDescribeResponse\022\'\n\006status\030\001 \001(\0132\027." +
-      "appscode.dtypes.Status\022/\n\004disk\030\002 \001(\0132!.a" +
-      "ppscode.kubernetes.v1beta2.Disk\"\200\001\n\021Disk" +
-      "CreateRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002" +
-      " \001(\t\022\014\n\004zone\030\003 \001(\t\022\021\n\tdisk_type\030\004 \001(\t\022\017\n" +
-      "\007size_gb\030\005 \001(\003\022\032\n\022vhd_container_name\030\006 \001",
-      "(\t\"M\n\021DiskDeleteRequest\022\017\n\007cluster\030\001 \001(\t" +
-      "\022\013\n\003uid\030\002 \001(\t\022\032\n\022vhd_container_name\030\003 \001(" +
-      "\t\"\313\002\n\004Disk\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\020\n\010" +
-      "provider\030\003 \001(\t\022\017\n\007size_gb\030\004 \001(\003\022\014\n\004type\030" +
-      "\005 \001(\t\022\014\n\004zone\030\006 \001(\t\022\016\n\006status\030\007 \001(\t\022\r\n\005u" +
-      "sers\030\010 \003(\t\022\014\n\004kind\030\t \001(\t\022\020\n\010endpoint\030\n \001" +
-      "(\t\022\014\n\004iops\030\013 \001(\003\022H\n\021persistent_volume\030\014 " +
-      "\001(\0132-.appscode.kubernetes.v1beta2.Persis" +
-      "tentVolume\022S\n\027persistent_volume_claim\030\r " +
-      "\001(\01322.appscode.kubernetes.v1beta2.Persis",
-      "tentVolumeClaim2\301\023\n\007Clients\022\266\001\n\004List\0220.a" +
-      "ppscode.kubernetes.v1beta2.ListResourceR" +
-      "equest\0321.appscode.kubernetes.v1beta2.Lis" +
-      "tResourceResponse\"I\202\323\344\223\002=\022;/_appscode/ap" +
-      "i/kubernetes/v1beta2/clusters/{cluster}/" +
-      "{type}\202\265\030\002\010\001\022\311\001\n\010Describe\0224.appscode.kub" +
-      "ernetes.v1beta2.DescribeResourceRequest\032" +
-      "5.appscode.kubernetes.v1beta2.DescribeRe" +
-      "sourceResponse\"P\202\323\344\223\002D\022B/_appscode/api/k" +
-      "ubernetes/v1beta2/clusters/{cluster}/{ty",
-      "pe}/{name}\202\265\030\002\010\001\022\251\001\n\006Create\0222.appscode.k" +
-      "ubernetes.v1beta2.CreateResourceRequest\032" +
-      "\035.appscode.dtypes.VoidResponse\"L\202\323\344\223\002@\";" +
-      "/_appscode/api/kubernetes/v1beta2/cluste" +
-      "rs/{cluster}/{type}:\001*\202\265\030\002\010\001\022\255\001\n\006Delete\022" +
-      "2.appscode.kubernetes.v1beta2.DeleteReso" +
-      "urceRequest\032\035.appscode.dtypes.VoidRespon" +
-      "se\"P\202\323\344\223\002D*B/_appscode/api/kubernetes/v1" +
-      "beta2/clusters/{cluster}/{type}/{name}\202\265" +
-      "\030\002\010\001\022\260\001\n\006Update\0222.appscode.kubernetes.v1",
-      "beta2.UpdateResourceRequest\032\035.appscode.d" +
-      "types.VoidResponse\"S\202\323\344\223\002G\032B/_appscode/a" +
-      "pi/kubernetes/v1beta2/clusters/{cluster}" +
-      "/{type}/{name}:\001*\202\265\030\002\010\001\022\230\001\n\004Copy\0220.appsc" +
-      "ode.kubernetes.v1beta2.CopyResourceReque" +
-      "st\032\035.appscode.dtypes.VoidResponse\"?\202\323\344\223\002" +
-      "3\032./_appscode/api/kubernetes/v1beta2/act" +
-      "ions/copy:\001*\202\265\030\002\010\001\022\336\001\n\rEditConfigMap\0221.a" +
-      "ppscode.kubernetes.v1beta2.ConfigMapEdit" +
-      "Request\032\035.appscode.dtypes.VoidResponse\"{",
-      "\202\323\344\223\002o\"j/_appscode/api/kubernetes/v1beta" +
-      "2/clusters/{cluster}/namespaces/{namespa" +
-      "ce}/configmaps/{name}/actions/edit:\001*\202\265\030" +
-      "\002\010\001\022\325\001\n\nEditSecret\022..appscode.kubernetes" +
-      ".v1beta2.SecretEditRequest\032\035.appscode.dt" +
-      "ypes.VoidResponse\"x\202\323\344\223\002l\"g/_appscode/ap" +
-      "i/kubernetes/v1beta2/clusters/{cluster}/" +
-      "namespaces/{namespace}/secrets/{name}/ac" +
-      "tions/edit:\001*\202\265\030\002\010\001\022\350\001\n\030RegisterPersiste" +
-      "ntVolume\022<.appscode.kubernetes.v1beta2.P",
-      "ersistentVolumeRegisterRequest\032\035.appscod" +
-      "e.dtypes.VoidResponse\"o\202\323\344\223\002c\"^/_appscod" +
-      "e/api/kubernetes/v1beta2/clusters/{clust" +
-      "er}/persistentvolumes/{name}/actions/reg" +
-      "ister:\001*\202\265\030\002\010\001\022\353\001\n\032UnregisterPersistentV" +
-      "olume\022>.appscode.kubernetes.v1beta2.Pers" +
-      "istentVolumeUnRegisterRequest\032\035.appscode" +
-      ".dtypes.VoidResponse\"n\202\323\344\223\002b*`/_appscode" +
-      "/api/kubernetes/v1beta2/clusters/{cluste" +
-      "r}/persistentvolumes/{name}/actions/unre",
-      "gister\202\265\030\002\010\001\022\367\001\n\035RegisterPersistentVolum" +
-      "eClaim\022A.appscode.kubernetes.v1beta2.Per" +
-      "sistentVolumeClaimRegisterRequest\032\035.apps" +
-      "code.dtypes.VoidResponse\"t\202\323\344\223\002h\"c/_apps" +
-      "code/api/kubernetes/v1beta2/clusters/{cl" +
-      "uster}/persistentvolumeclaims/{name}/act" +
-      "ions/register:\001*\202\265\030\002\010\001\022\372\001\n\037UnregisterPer" +
-      "sistentVolumeClaim\022C.appscode.kubernetes" +
-      ".v1beta2.PersistentVolumeClaimUnRegister" +
-      "Request\032\035.appscode.dtypes.VoidResponse\"s",
-      "\202\323\344\223\002g*e/_appscode/api/kubernetes/v1beta" +
-      "2/clusters/{cluster}/persistentvolumecla" +
-      "ims/{name}/actions/unregister\202\265\030\002\010\0012\353\004\n\005" +
-      "Disks\022\225\001\n\004List\022,.appscode.kubernetes.v1b" +
-      "eta2.DiskListRequest\032-.appscode.kubernet" +
-      "es.v1beta2.DiskListResponse\"0\202\323\344\223\002$\022\"/_a" +
-      "ppscode/api/cloud/v1beta2/disks\202\265\030\002\010\001\022\250\001" +
-      "\n\010Describe\0220.appscode.kubernetes.v1beta2" +
-      ".DiskDescribeRequest\0321.appscode.kubernet" +
-      "es.v1beta2.DiskDescribeResponse\"7\202\323\344\223\002+\022",
-      ")/_appscode/api/cloud/v1beta2/disks/{nam" +
-      "e}\202\265\030\002\010\001\022\214\001\n\006Create\022..appscode.kubernete" +
-      "s.v1beta2.DiskCreateRequest\032\035.appscode.d" +
-      "types.VoidResponse\"3\202\323\344\223\002\'\"\"/_appscode/a" +
-      "pi/cloud/v1beta2/disks:\001*\202\265\030\002\010\001\022\217\001\n\006Dele" +
-      "te\022..appscode.kubernetes.v1beta2.DiskDel" +
-      "eteRequest\032\035.appscode.dtypes.VoidRespons" +
-      "e\"6\202\323\344\223\002**(/_appscode/api/cloud/v1beta2/" +
-      "disks/{uid}\202\265\030\002\010\001B=\n#com.appscode.api.ku" +
-      "bernetes.v1beta2B\013ClientProtoP\001Z\007v1beta2",
-      "b\006proto3"
+      "der\030\003 \001(\t\"p\n\024DiskDescribeResponse\022\'\n\006sta" +
+      "tus\030\001 \001(\0132\027.appscode.dtypes.Status\022/\n\004di" +
+      "sk\030\002 \001(\0132!.appscode.kubernetes.v1beta2.D" +
+      "isk\"d\n\021DiskCreateRequest\022\017\n\007cluster\030\001 \001(" +
+      "\t\022\014\n\004name\030\002 \001(\t\022\014\n\004zone\030\003 \001(\t\022\021\n\tdisk_ty" +
+      "pe\030\004 \001(\t\022\017\n\007size_gb\030\005 \001(\003\"1\n\021DiskDeleteR" +
+      "equest\022\017\n\007cluster\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\"\313\002\n",
+      "\004Disk\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\020\n\010provi" +
+      "der\030\003 \001(\t\022\017\n\007size_gb\030\004 \001(\003\022\014\n\004type\030\005 \001(\t" +
+      "\022\014\n\004zone\030\006 \001(\t\022\016\n\006status\030\007 \001(\t\022\r\n\005users\030" +
+      "\010 \003(\t\022\014\n\004kind\030\t \001(\t\022\020\n\010endpoint\030\n \001(\t\022\014\n" +
+      "\004iops\030\013 \001(\003\022H\n\021persistent_volume\030\014 \001(\0132-" +
+      ".appscode.kubernetes.v1beta2.PersistentV" +
+      "olume\022S\n\027persistent_volume_claim\030\r \001(\01322" +
+      ".appscode.kubernetes.v1beta2.PersistentV" +
+      "olumeClaim2\301\023\n\007Clients\022\266\001\n\004List\0220.appsco" +
+      "de.kubernetes.v1beta2.ListResourceReques",
+      "t\0321.appscode.kubernetes.v1beta2.ListReso" +
+      "urceResponse\"I\202\323\344\223\002=\022;/_appscode/api/kub" +
+      "ernetes/v1beta2/clusters/{cluster}/{type" +
+      "}\202\265\030\002\010\001\022\311\001\n\010Describe\0224.appscode.kubernet" +
+      "es.v1beta2.DescribeResourceRequest\0325.app" +
+      "scode.kubernetes.v1beta2.DescribeResourc" +
+      "eResponse\"P\202\323\344\223\002D\022B/_appscode/api/kubern" +
+      "etes/v1beta2/clusters/{cluster}/{type}/{" +
+      "name}\202\265\030\002\010\001\022\251\001\n\006Create\0222.appscode.kubern" +
+      "etes.v1beta2.CreateResourceRequest\032\035.app",
+      "scode.dtypes.VoidResponse\"L\202\323\344\223\002@\";/_app" +
+      "scode/api/kubernetes/v1beta2/clusters/{c" +
+      "luster}/{type}:\001*\202\265\030\002\010\001\022\255\001\n\006Delete\0222.app" +
+      "scode.kubernetes.v1beta2.DeleteResourceR" +
+      "equest\032\035.appscode.dtypes.VoidResponse\"P\202" +
+      "\323\344\223\002D*B/_appscode/api/kubernetes/v1beta2" +
+      "/clusters/{cluster}/{type}/{name}\202\265\030\002\010\001\022" +
+      "\260\001\n\006Update\0222.appscode.kubernetes.v1beta2" +
+      ".UpdateResourceRequest\032\035.appscode.dtypes" +
+      ".VoidResponse\"S\202\323\344\223\002G\032B/_appscode/api/ku",
+      "bernetes/v1beta2/clusters/{cluster}/{typ" +
+      "e}/{name}:\001*\202\265\030\002\010\001\022\230\001\n\004Copy\0220.appscode.k" +
+      "ubernetes.v1beta2.CopyResourceRequest\032\035." +
+      "appscode.dtypes.VoidResponse\"?\202\323\344\223\0023\032./_" +
+      "appscode/api/kubernetes/v1beta2/actions/" +
+      "copy:\001*\202\265\030\002\010\001\022\336\001\n\rEditConfigMap\0221.appsco" +
+      "de.kubernetes.v1beta2.ConfigMapEditReque" +
+      "st\032\035.appscode.dtypes.VoidResponse\"{\202\323\344\223\002" +
+      "o\"j/_appscode/api/kubernetes/v1beta2/clu" +
+      "sters/{cluster}/namespaces/{namespace}/c",
+      "onfigmaps/{name}/actions/edit:\001*\202\265\030\002\010\001\022\325" +
+      "\001\n\nEditSecret\022..appscode.kubernetes.v1be" +
+      "ta2.SecretEditRequest\032\035.appscode.dtypes." +
+      "VoidResponse\"x\202\323\344\223\002l\"g/_appscode/api/kub" +
+      "ernetes/v1beta2/clusters/{cluster}/names" +
+      "paces/{namespace}/secrets/{name}/actions" +
+      "/edit:\001*\202\265\030\002\010\001\022\350\001\n\030RegisterPersistentVol" +
+      "ume\022<.appscode.kubernetes.v1beta2.Persis" +
+      "tentVolumeRegisterRequest\032\035.appscode.dty" +
+      "pes.VoidResponse\"o\202\323\344\223\002c\"^/_appscode/api",
+      "/kubernetes/v1beta2/clusters/{cluster}/p" +
+      "ersistentvolumes/{name}/actions/register" +
+      ":\001*\202\265\030\002\010\001\022\353\001\n\032UnregisterPersistentVolume" +
+      "\022>.appscode.kubernetes.v1beta2.Persisten" +
+      "tVolumeUnRegisterRequest\032\035.appscode.dtyp" +
+      "es.VoidResponse\"n\202\323\344\223\002b*`/_appscode/api/" +
+      "kubernetes/v1beta2/clusters/{cluster}/pe" +
+      "rsistentvolumes/{name}/actions/unregiste" +
+      "r\202\265\030\002\010\001\022\367\001\n\035RegisterPersistentVolumeClai" +
+      "m\022A.appscode.kubernetes.v1beta2.Persiste",
+      "ntVolumeClaimRegisterRequest\032\035.appscode." +
+      "dtypes.VoidResponse\"t\202\323\344\223\002h\"c/_appscode/" +
+      "api/kubernetes/v1beta2/clusters/{cluster" +
+      "}/persistentvolumeclaims/{name}/actions/" +
+      "register:\001*\202\265\030\002\010\001\022\372\001\n\037UnregisterPersiste" +
+      "ntVolumeClaim\022C.appscode.kubernetes.v1be" +
+      "ta2.PersistentVolumeClaimUnRegisterReque" +
+      "st\032\035.appscode.dtypes.VoidResponse\"s\202\323\344\223\002" +
+      "g*e/_appscode/api/kubernetes/v1beta2/clu" +
+      "sters/{cluster}/persistentvolumeclaims/{",
+      "name}/actions/unregister\202\265\030\002\010\0012\353\004\n\005Disks" +
+      "\022\225\001\n\004List\022,.appscode.kubernetes.v1beta2." +
+      "DiskListRequest\032-.appscode.kubernetes.v1" +
+      "beta2.DiskListResponse\"0\202\323\344\223\002$\022\"/_appsco" +
+      "de/api/cloud/v1beta2/disks\202\265\030\002\010\001\022\250\001\n\010Des" +
+      "cribe\0220.appscode.kubernetes.v1beta2.Disk" +
+      "DescribeRequest\0321.appscode.kubernetes.v1" +
+      "beta2.DiskDescribeResponse\"7\202\323\344\223\002+\022)/_ap" +
+      "pscode/api/cloud/v1beta2/disks/{name}\202\265\030" +
+      "\002\010\001\022\214\001\n\006Create\022..appscode.kubernetes.v1b",
+      "eta2.DiskCreateRequest\032\035.appscode.dtypes" +
+      ".VoidResponse\"3\202\323\344\223\002\'\"\"/_appscode/api/cl" +
+      "oud/v1beta2/disks:\001*\202\265\030\002\010\001\022\217\001\n\006Delete\022.." +
+      "appscode.kubernetes.v1beta2.DiskDeleteRe" +
+      "quest\032\035.appscode.dtypes.VoidResponse\"6\202\323" +
+      "\344\223\002**(/_appscode/api/cloud/v1beta2/disks" +
+      "/{uid}\202\265\030\002\010\001B=\n#com.appscode.api.kuberne" +
+      "tes.v1beta2B\013ClientProtoP\001Z\007v1beta2b\006pro" +
+      "to3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2435,7 +2433,7 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DiskDescribeRequest_descriptor,
-        new java.lang.String[] { "Cluster", "Name", "Provider", "VhdContainerName", });
+        new java.lang.String[] { "Cluster", "Name", "Provider", });
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeResponse_descriptor =
       getDescriptor().getMessageTypes().get(73);
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeResponse_fieldAccessorTable = new
@@ -2447,13 +2445,13 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_DiskCreateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DiskCreateRequest_descriptor,
-        new java.lang.String[] { "Cluster", "Name", "Zone", "DiskType", "SizeGb", "VhdContainerName", });
+        new java.lang.String[] { "Cluster", "Name", "Zone", "DiskType", "SizeGb", });
     internal_static_appscode_kubernetes_v1beta2_DiskDeleteRequest_descriptor =
       getDescriptor().getMessageTypes().get(75);
     internal_static_appscode_kubernetes_v1beta2_DiskDeleteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DiskDeleteRequest_descriptor,
-        new java.lang.String[] { "Cluster", "Uid", "VhdContainerName", });
+        new java.lang.String[] { "Cluster", "Uid", });
     internal_static_appscode_kubernetes_v1beta2_Disk_descriptor =
       getDescriptor().getMessageTypes().get(76);
     internal_static_appscode_kubernetes_v1beta2_Disk_fieldAccessorTable = new

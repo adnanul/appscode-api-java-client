@@ -51,14 +51,4 @@ public interface DiskCreateRequestOrBuilder extends
    * <code>optional int64 size_gb = 5;</code>
    */
   long getSizeGb();
-
-  /**
-   * <code>optional string vhd_container_name = 6;</code>
-   */
-  java.lang.String getVhdContainerName();
-  /**
-   * <code>optional string vhd_container_name = 6;</code>
-   */
-  com.google.protobuf.ByteString
-      getVhdContainerNameBytes();
 }

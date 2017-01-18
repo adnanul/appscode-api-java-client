@@ -18,7 +18,6 @@ public  final class DiskDescribeRequest extends
     cluster_ = "";
     name_ = "";
     provider_ = "";
-    vhdContainerName_ = "";
   }
 
   @java.lang.Override
@@ -62,12 +61,6 @@ public  final class DiskDescribeRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             provider_ = s;
-            break;
-          }
-          case 34: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            vhdContainerName_ = s;
             break;
           }
         }
@@ -195,40 +188,6 @@ public  final class DiskDescribeRequest extends
     }
   }
 
-  public static final int VHD_CONTAINER_NAME_FIELD_NUMBER = 4;
-  private volatile java.lang.Object vhdContainerName_;
-  /**
-   * <code>optional string vhd_container_name = 4;</code>
-   */
-  public java.lang.String getVhdContainerName() {
-    java.lang.Object ref = vhdContainerName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      vhdContainerName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>optional string vhd_container_name = 4;</code>
-   */
-  public com.google.protobuf.ByteString
-      getVhdContainerNameBytes() {
-    java.lang.Object ref = vhdContainerName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      vhdContainerName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -250,9 +209,6 @@ public  final class DiskDescribeRequest extends
     if (!getProviderBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 3, provider_);
     }
-    if (!getVhdContainerNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, vhdContainerName_);
-    }
   }
 
   public int getSerializedSize() {
@@ -268,9 +224,6 @@ public  final class DiskDescribeRequest extends
     }
     if (!getProviderBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, provider_);
-    }
-    if (!getVhdContainerNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, vhdContainerName_);
     }
     memoizedSize = size;
     return size;
@@ -294,8 +247,6 @@ public  final class DiskDescribeRequest extends
         .equals(other.getName());
     result = result && getProvider()
         .equals(other.getProvider());
-    result = result && getVhdContainerName()
-        .equals(other.getVhdContainerName());
     return result;
   }
 
@@ -312,8 +263,6 @@ public  final class DiskDescribeRequest extends
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PROVIDER_FIELD_NUMBER;
     hash = (53 * hash) + getProvider().hashCode();
-    hash = (37 * hash) + VHD_CONTAINER_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getVhdContainerName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -438,8 +387,6 @@ public  final class DiskDescribeRequest extends
 
       provider_ = "";
 
-      vhdContainerName_ = "";
-
       return this;
     }
 
@@ -465,7 +412,6 @@ public  final class DiskDescribeRequest extends
       result.cluster_ = cluster_;
       result.name_ = name_;
       result.provider_ = provider_;
-      result.vhdContainerName_ = vhdContainerName_;
       onBuilt();
       return result;
     }
@@ -517,10 +463,6 @@ public  final class DiskDescribeRequest extends
       }
       if (!other.getProvider().isEmpty()) {
         provider_ = other.provider_;
-        onChanged();
-      }
-      if (!other.getVhdContainerName().isEmpty()) {
-        vhdContainerName_ = other.vhdContainerName_;
         onChanged();
       }
       onChanged();
@@ -752,75 +694,6 @@ public  final class DiskDescribeRequest extends
   checkByteStringIsUtf8(value);
       
       provider_ = value;
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object vhdContainerName_ = "";
-    /**
-     * <code>optional string vhd_container_name = 4;</code>
-     */
-    public java.lang.String getVhdContainerName() {
-      java.lang.Object ref = vhdContainerName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        vhdContainerName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>optional string vhd_container_name = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getVhdContainerNameBytes() {
-      java.lang.Object ref = vhdContainerName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        vhdContainerName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>optional string vhd_container_name = 4;</code>
-     */
-    public Builder setVhdContainerName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      vhdContainerName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string vhd_container_name = 4;</code>
-     */
-    public Builder clearVhdContainerName() {
-      
-      vhdContainerName_ = getDefaultInstance().getVhdContainerName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string vhd_container_name = 4;</code>
-     */
-    public Builder setVhdContainerNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      vhdContainerName_ = value;
       onChanged();
       return this;
     }
