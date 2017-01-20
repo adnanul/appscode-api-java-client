@@ -11,6 +11,7 @@ import io.grpc.ManagedChannelBuilder;
 import io.grpc.auth.MoreCallCredentials;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -32,7 +33,7 @@ public class AuthApiTest {
     channel.shutdown();
   }
 
-  @Test
+  @Test @Ignore
   public void testWithPasswordCredentialAPI() {
     ClientsGrpc.ClientsBlockingStub blockingStub = ClientsGrpc.newBlockingStub(channel).
         withCallCredentials(
@@ -47,7 +48,7 @@ public class AuthApiTest {
     assertEquals(response.getStatus().getCode(), "0");
   }
 
-  @Test
+  @Test @Ignore
   public void testWithTokenCredentialAPI() {
     ClientsGrpc.ClientsBlockingStub blockingStub = ClientsGrpc.newBlockingStub(channel).
         withCallCredentials(
@@ -63,7 +64,7 @@ public class AuthApiTest {
     assertEquals(response.getStatus().getCode(), "0");
   }
 
-  @Test
+  @Test @Ignore
   public void testForUnAuthenticatedAPI() {
     HealthGrpc.HealthBlockingStub blockingStub = HealthGrpc.newBlockingStub(channel);
     VoidRequest request = VoidRequest.newBuilder().build();
