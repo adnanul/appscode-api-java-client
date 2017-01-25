@@ -8,14 +8,14 @@ public interface NetConfigOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string team_domain = 1;</code>
+   * <code>optional string team_addr = 1;</code>
    */
-  java.lang.String getTeamDomain();
+  java.lang.String getTeamAddr();
   /**
-   * <code>optional string team_domain = 1;</code>
+   * <code>optional string team_addr = 1;</code>
    */
   com.google.protobuf.ByteString
-      getTeamDomainBytes();
+      getTeamAddrBytes();
 
   /**
    * <code>optional .appscode.health.URLBase public_urls = 2;</code>

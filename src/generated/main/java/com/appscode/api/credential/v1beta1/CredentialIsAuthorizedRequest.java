@@ -16,6 +16,7 @@ public  final class CredentialIsAuthorizedRequest extends
   }
   private CredentialIsAuthorizedRequest() {
     name_ = "";
+    gceProject_ = "";
   }
 
   @java.lang.Override
@@ -47,6 +48,12 @@ public  final class CredentialIsAuthorizedRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             name_ = s;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            gceProject_ = s;
             break;
           }
         }
@@ -106,6 +113,40 @@ public  final class CredentialIsAuthorizedRequest extends
     }
   }
 
+  public static final int GCE_PROJECT_FIELD_NUMBER = 2;
+  private volatile java.lang.Object gceProject_;
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  public java.lang.String getGceProject() {
+    java.lang.Object ref = gceProject_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      gceProject_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  public com.google.protobuf.ByteString
+      getGceProjectBytes() {
+    java.lang.Object ref = gceProject_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      gceProject_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -121,6 +162,9 @@ public  final class CredentialIsAuthorizedRequest extends
     if (!getNameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
     }
+    if (!getGceProjectBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, gceProject_);
+    }
   }
 
   public int getSerializedSize() {
@@ -130,6 +174,9 @@ public  final class CredentialIsAuthorizedRequest extends
     size = 0;
     if (!getNameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+    }
+    if (!getGceProjectBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, gceProject_);
     }
     memoizedSize = size;
     return size;
@@ -149,6 +196,8 @@ public  final class CredentialIsAuthorizedRequest extends
     boolean result = true;
     result = result && getName()
         .equals(other.getName());
+    result = result && getGceProject()
+        .equals(other.getGceProject());
     return result;
   }
 
@@ -161,6 +210,8 @@ public  final class CredentialIsAuthorizedRequest extends
     hash = (19 * hash) + getDescriptorForType().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + GCE_PROJECT_FIELD_NUMBER;
+    hash = (53 * hash) + getGceProject().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -281,6 +332,8 @@ public  final class CredentialIsAuthorizedRequest extends
       super.clear();
       name_ = "";
 
+      gceProject_ = "";
+
       return this;
     }
 
@@ -304,6 +357,7 @@ public  final class CredentialIsAuthorizedRequest extends
     public com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest buildPartial() {
       com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest result = new com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest(this);
       result.name_ = name_;
+      result.gceProject_ = gceProject_;
       onBuilt();
       return result;
     }
@@ -347,6 +401,10 @@ public  final class CredentialIsAuthorizedRequest extends
       if (other == com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest.getDefaultInstance()) return this;
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
+        onChanged();
+      }
+      if (!other.getGceProject().isEmpty()) {
+        gceProject_ = other.gceProject_;
         onChanged();
       }
       onChanged();
@@ -440,6 +498,75 @@ public  final class CredentialIsAuthorizedRequest extends
   checkByteStringIsUtf8(value);
       
       name_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object gceProject_ = "";
+    /**
+     * <code>optional string gce_project = 2;</code>
+     */
+    public java.lang.String getGceProject() {
+      java.lang.Object ref = gceProject_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        gceProject_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string gce_project = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getGceProjectBytes() {
+      java.lang.Object ref = gceProject_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        gceProject_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string gce_project = 2;</code>
+     */
+    public Builder setGceProject(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      gceProject_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string gce_project = 2;</code>
+     */
+    public Builder clearGceProject() {
+      
+      gceProject_ = getDefaultInstance().getGceProject();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string gce_project = 2;</code>
+     */
+    public Builder setGceProjectBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      gceProject_ = value;
       onChanged();
       return this;
     }

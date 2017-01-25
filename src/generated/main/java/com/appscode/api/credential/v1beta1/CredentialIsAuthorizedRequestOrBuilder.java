@@ -16,4 +16,14 @@ public interface CredentialIsAuthorizedRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getNameBytes();
+
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  java.lang.String getGceProject();
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getGceProjectBytes();
 }

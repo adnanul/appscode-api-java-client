@@ -27,6 +27,7 @@ public  final class ClusterCreateRequest extends
     hostfactsVersion_ = "";
     version_ = "";
     defaultAccessLevel_ = "";
+    gceProject_ = "";
   }
 
   @java.lang.Override
@@ -152,6 +153,12 @@ public  final class ClusterCreateRequest extends
             }
             nodeGroups_.add(
                 input.readMessage(com.appscode.api.kubernetes.v1beta1.InstanceGroup.parser(), extensionRegistry));
+            break;
+          }
+          case 122: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            gceProject_ = s;
             break;
           }
         }
@@ -703,10 +710,12 @@ public  final class ClusterCreateRequest extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *    - team-admins       // to allow ns admin access
+   *    - cluster-admins    // to allow admin access
+   *    - cluster-editors   // to allow editor access
+   *    - cluster-deployers // to allow deployer access
+   *    - cluster-viewers   // to allow viewer access
+   *    - no-access         // to allow no default access
    * If not set this will set ""
    * </pre>
    *
@@ -729,10 +738,12 @@ public  final class ClusterCreateRequest extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *    - team-admins       // to allow ns admin access
+   *    - cluster-admins    // to allow admin access
+   *    - cluster-editors   // to allow editor access
+   *    - cluster-deployers // to allow deployer access
+   *    - cluster-viewers   // to allow viewer access
+   *    - no-access         // to allow no default access
    * If not set this will set ""
    * </pre>
    *
@@ -746,6 +757,40 @@ public  final class ClusterCreateRequest extends
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
       defaultAccessLevel_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int GCE_PROJECT_FIELD_NUMBER = 15;
+  private volatile java.lang.Object gceProject_;
+  /**
+   * <code>optional string gce_project = 15;</code>
+   */
+  public java.lang.String getGceProject() {
+    java.lang.Object ref = gceProject_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      gceProject_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string gce_project = 15;</code>
+   */
+  public com.google.protobuf.ByteString
+      getGceProjectBytes() {
+    java.lang.Object ref = gceProject_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      gceProject_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -812,6 +857,9 @@ public  final class ClusterCreateRequest extends
     for (int i = 0; i < nodeGroups_.size(); i++) {
       output.writeMessage(14, nodeGroups_.get(i));
     }
+    if (!getGceProjectBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 15, gceProject_);
+    }
   }
 
   public int getSerializedSize() {
@@ -877,6 +925,9 @@ public  final class ClusterCreateRequest extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(14, nodeGroups_.get(i));
     }
+    if (!getGceProjectBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, gceProject_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -921,6 +972,8 @@ public  final class ClusterCreateRequest extends
         .equals(other.getVersion());
     result = result && getDefaultAccessLevel()
         .equals(other.getDefaultAccessLevel());
+    result = result && getGceProject()
+        .equals(other.getGceProject());
     return result;
   }
 
@@ -966,6 +1019,8 @@ public  final class ClusterCreateRequest extends
     hash = (53 * hash) + getVersion().hashCode();
     hash = (37 * hash) + DEFAULT_ACCESS_LEVEL_FIELD_NUMBER;
     hash = (53 * hash) + getDefaultAccessLevel().hashCode();
+    hash = (37 * hash) + GCE_PROJECT_FIELD_NUMBER;
+    hash = (53 * hash) + getGceProject().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1141,6 +1196,8 @@ public  final class ClusterCreateRequest extends
 
       defaultAccessLevel_ = "";
 
+      gceProject_ = "";
+
       return this;
     }
 
@@ -1189,6 +1246,7 @@ public  final class ClusterCreateRequest extends
       result.hostfactsVersion_ = hostfactsVersion_;
       result.version_ = version_;
       result.defaultAccessLevel_ = defaultAccessLevel_;
+      result.gceProject_ = gceProject_;
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -1302,6 +1360,10 @@ public  final class ClusterCreateRequest extends
       }
       if (!other.getDefaultAccessLevel().isEmpty()) {
         defaultAccessLevel_ = other.defaultAccessLevel_;
+        onChanged();
+      }
+      if (!other.getGceProject().isEmpty()) {
+        gceProject_ = other.gceProject_;
         onChanged();
       }
       onChanged();
@@ -2462,10 +2524,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - v:cluster-admins    // to allow admin access
-     *    - v:cluster-deployer  // to allow deployer access
-     *    - v:cluster-viewer    // to allow viewer access
-     *    - ""                  // empty value stands for no access
+     *    - team-admins       // to allow ns admin access
+     *    - cluster-admins    // to allow admin access
+     *    - cluster-editors   // to allow editor access
+     *    - cluster-deployers // to allow deployer access
+     *    - cluster-viewers   // to allow viewer access
+     *    - no-access         // to allow no default access
      * If not set this will set ""
      * </pre>
      *
@@ -2488,10 +2552,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - v:cluster-admins    // to allow admin access
-     *    - v:cluster-deployer  // to allow deployer access
-     *    - v:cluster-viewer    // to allow viewer access
-     *    - ""                  // empty value stands for no access
+     *    - team-admins       // to allow ns admin access
+     *    - cluster-admins    // to allow admin access
+     *    - cluster-editors   // to allow editor access
+     *    - cluster-deployers // to allow deployer access
+     *    - cluster-viewers   // to allow viewer access
+     *    - no-access         // to allow no default access
      * If not set this will set ""
      * </pre>
      *
@@ -2515,10 +2581,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - v:cluster-admins    // to allow admin access
-     *    - v:cluster-deployer  // to allow deployer access
-     *    - v:cluster-viewer    // to allow viewer access
-     *    - ""                  // empty value stands for no access
+     *    - team-admins       // to allow ns admin access
+     *    - cluster-admins    // to allow admin access
+     *    - cluster-editors   // to allow editor access
+     *    - cluster-deployers // to allow deployer access
+     *    - cluster-viewers   // to allow viewer access
+     *    - no-access         // to allow no default access
      * If not set this will set ""
      * </pre>
      *
@@ -2539,10 +2607,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - v:cluster-admins    // to allow admin access
-     *    - v:cluster-deployer  // to allow deployer access
-     *    - v:cluster-viewer    // to allow viewer access
-     *    - ""                  // empty value stands for no access
+     *    - team-admins       // to allow ns admin access
+     *    - cluster-admins    // to allow admin access
+     *    - cluster-editors   // to allow editor access
+     *    - cluster-deployers // to allow deployer access
+     *    - cluster-viewers   // to allow viewer access
+     *    - no-access         // to allow no default access
      * If not set this will set ""
      * </pre>
      *
@@ -2559,10 +2629,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - v:cluster-admins    // to allow admin access
-     *    - v:cluster-deployer  // to allow deployer access
-     *    - v:cluster-viewer    // to allow viewer access
-     *    - ""                  // empty value stands for no access
+     *    - team-admins       // to allow ns admin access
+     *    - cluster-admins    // to allow admin access
+     *    - cluster-editors   // to allow editor access
+     *    - cluster-deployers // to allow deployer access
+     *    - cluster-viewers   // to allow viewer access
+     *    - no-access         // to allow no default access
      * If not set this will set ""
      * </pre>
      *
@@ -2576,6 +2648,75 @@ public  final class ClusterCreateRequest extends
   checkByteStringIsUtf8(value);
       
       defaultAccessLevel_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object gceProject_ = "";
+    /**
+     * <code>optional string gce_project = 15;</code>
+     */
+    public java.lang.String getGceProject() {
+      java.lang.Object ref = gceProject_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        gceProject_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string gce_project = 15;</code>
+     */
+    public com.google.protobuf.ByteString
+        getGceProjectBytes() {
+      java.lang.Object ref = gceProject_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        gceProject_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string gce_project = 15;</code>
+     */
+    public Builder setGceProject(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      gceProject_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string gce_project = 15;</code>
+     */
+    public Builder clearGceProject() {
+      
+      gceProject_ = getDefaultInstance().getGceProject();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string gce_project = 15;</code>
+     */
+    public Builder setGceProjectBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      gceProject_ = value;
       onChanged();
       return this;
     }

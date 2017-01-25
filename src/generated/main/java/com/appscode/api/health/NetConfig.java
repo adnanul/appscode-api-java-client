@@ -15,7 +15,7 @@ public  final class NetConfig extends
     super(builder);
   }
   private NetConfig() {
-    teamDomain_ = "";
+    teamAddr_ = "";
   }
 
   @java.lang.Override
@@ -46,7 +46,7 @@ public  final class NetConfig extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            teamDomain_ = s;
+            teamAddr_ = s;
             break;
           }
           case 18: {
@@ -150,34 +150,34 @@ public  final class NetConfig extends
             com.appscode.api.health.NetConfig.class, com.appscode.api.health.NetConfig.Builder.class);
   }
 
-  public static final int TEAM_DOMAIN_FIELD_NUMBER = 1;
-  private volatile java.lang.Object teamDomain_;
+  public static final int TEAM_ADDR_FIELD_NUMBER = 1;
+  private volatile java.lang.Object teamAddr_;
   /**
-   * <code>optional string team_domain = 1;</code>
+   * <code>optional string team_addr = 1;</code>
    */
-  public java.lang.String getTeamDomain() {
-    java.lang.Object ref = teamDomain_;
+  public java.lang.String getTeamAddr() {
+    java.lang.Object ref = teamAddr_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      teamDomain_ = s;
+      teamAddr_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string team_domain = 1;</code>
+   * <code>optional string team_addr = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getTeamDomainBytes() {
-    java.lang.Object ref = teamDomain_;
+      getTeamAddrBytes() {
+    java.lang.Object ref = teamAddr_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      teamDomain_ = b;
+      teamAddr_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -322,8 +322,8 @@ public  final class NetConfig extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getTeamDomainBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, teamDomain_);
+    if (!getTeamAddrBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, teamAddr_);
     }
     if (publicUrls_ != null) {
       output.writeMessage(2, getPublicUrls());
@@ -350,8 +350,8 @@ public  final class NetConfig extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getTeamDomainBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, teamDomain_);
+    if (!getTeamAddrBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, teamAddr_);
     }
     if (publicUrls_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -393,8 +393,8 @@ public  final class NetConfig extends
     com.appscode.api.health.NetConfig other = (com.appscode.api.health.NetConfig) obj;
 
     boolean result = true;
-    result = result && getTeamDomain()
-        .equals(other.getTeamDomain());
+    result = result && getTeamAddr()
+        .equals(other.getTeamAddr());
     result = result && (hasPublicUrls() == other.hasPublicUrls());
     if (hasPublicUrls()) {
       result = result && getPublicUrls()
@@ -435,8 +435,8 @@ public  final class NetConfig extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
-    hash = (37 * hash) + TEAM_DOMAIN_FIELD_NUMBER;
-    hash = (53 * hash) + getTeamDomain().hashCode();
+    hash = (37 * hash) + TEAM_ADDR_FIELD_NUMBER;
+    hash = (53 * hash) + getTeamAddr().hashCode();
     if (hasPublicUrls()) {
       hash = (37 * hash) + PUBLIC_URLS_FIELD_NUMBER;
       hash = (53 * hash) + getPublicUrls().hashCode();
@@ -579,7 +579,7 @@ public  final class NetConfig extends
     }
     public Builder clear() {
       super.clear();
-      teamDomain_ = "";
+      teamAddr_ = "";
 
       if (publicUrlsBuilder_ == null) {
         publicUrls_ = null;
@@ -639,7 +639,7 @@ public  final class NetConfig extends
 
     public com.appscode.api.health.NetConfig buildPartial() {
       com.appscode.api.health.NetConfig result = new com.appscode.api.health.NetConfig(this);
-      result.teamDomain_ = teamDomain_;
+      result.teamAddr_ = teamAddr_;
       if (publicUrlsBuilder_ == null) {
         result.publicUrls_ = publicUrls_;
       } else {
@@ -711,8 +711,8 @@ public  final class NetConfig extends
 
     public Builder mergeFrom(com.appscode.api.health.NetConfig other) {
       if (other == com.appscode.api.health.NetConfig.getDefaultInstance()) return this;
-      if (!other.getTeamDomain().isEmpty()) {
-        teamDomain_ = other.teamDomain_;
+      if (!other.getTeamAddr().isEmpty()) {
+        teamAddr_ = other.teamAddr_;
         onChanged();
       }
       if (other.hasPublicUrls()) {
@@ -759,71 +759,71 @@ public  final class NetConfig extends
       return this;
     }
 
-    private java.lang.Object teamDomain_ = "";
+    private java.lang.Object teamAddr_ = "";
     /**
-     * <code>optional string team_domain = 1;</code>
+     * <code>optional string team_addr = 1;</code>
      */
-    public java.lang.String getTeamDomain() {
-      java.lang.Object ref = teamDomain_;
+    public java.lang.String getTeamAddr() {
+      java.lang.Object ref = teamAddr_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        teamDomain_ = s;
+        teamAddr_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string team_domain = 1;</code>
+     * <code>optional string team_addr = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getTeamDomainBytes() {
-      java.lang.Object ref = teamDomain_;
+        getTeamAddrBytes() {
+      java.lang.Object ref = teamAddr_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        teamDomain_ = b;
+        teamAddr_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string team_domain = 1;</code>
+     * <code>optional string team_addr = 1;</code>
      */
-    public Builder setTeamDomain(
+    public Builder setTeamAddr(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      teamDomain_ = value;
+      teamAddr_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string team_domain = 1;</code>
+     * <code>optional string team_addr = 1;</code>
      */
-    public Builder clearTeamDomain() {
+    public Builder clearTeamAddr() {
       
-      teamDomain_ = getDefaultInstance().getTeamDomain();
+      teamAddr_ = getDefaultInstance().getTeamAddr();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string team_domain = 1;</code>
+     * <code>optional string team_addr = 1;</code>
      */
-    public Builder setTeamDomainBytes(
+    public Builder setTeamAddrBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      teamDomain_ = value;
+      teamAddr_ = value;
       onChanged();
       return this;
     }

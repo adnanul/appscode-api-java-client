@@ -199,10 +199,12 @@ public interface ClusterCreateRequestOrBuilder extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *    - team-admins       // to allow ns admin access
+   *    - cluster-admins    // to allow admin access
+   *    - cluster-editors   // to allow editor access
+   *    - cluster-deployers // to allow deployer access
+   *    - cluster-viewers   // to allow viewer access
+   *    - no-access         // to allow no default access
    * If not set this will set ""
    * </pre>
    *
@@ -214,10 +216,12 @@ public interface ClusterCreateRequestOrBuilder extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *    - team-admins       // to allow ns admin access
+   *    - cluster-admins    // to allow admin access
+   *    - cluster-editors   // to allow editor access
+   *    - cluster-deployers // to allow deployer access
+   *    - cluster-viewers   // to allow viewer access
+   *    - no-access         // to allow no default access
    * If not set this will set ""
    * </pre>
    *
@@ -225,4 +229,14 @@ public interface ClusterCreateRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getDefaultAccessLevelBytes();
+
+  /**
+   * <code>optional string gce_project = 15;</code>
+   */
+  java.lang.String getGceProject();
+  /**
+   * <code>optional string gce_project = 15;</code>
+   */
+  com.google.protobuf.ByteString
+      getGceProjectBytes();
 }

@@ -16,7 +16,7 @@ public  final class URLBase extends
   }
   private URLBase() {
     scheme_ = "";
-    baseDomain_ = "";
+    baseAddr_ = "";
   }
 
   @java.lang.Override
@@ -53,7 +53,7 @@ public  final class URLBase extends
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            baseDomain_ = s;
+            baseAddr_ = s;
             break;
           }
         }
@@ -113,34 +113,34 @@ public  final class URLBase extends
     }
   }
 
-  public static final int BASE_DOMAIN_FIELD_NUMBER = 2;
-  private volatile java.lang.Object baseDomain_;
+  public static final int BASE_ADDR_FIELD_NUMBER = 2;
+  private volatile java.lang.Object baseAddr_;
   /**
-   * <code>optional string base_domain = 2;</code>
+   * <code>optional string base_addr = 2;</code>
    */
-  public java.lang.String getBaseDomain() {
-    java.lang.Object ref = baseDomain_;
+  public java.lang.String getBaseAddr() {
+    java.lang.Object ref = baseAddr_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      baseDomain_ = s;
+      baseAddr_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string base_domain = 2;</code>
+   * <code>optional string base_addr = 2;</code>
    */
   public com.google.protobuf.ByteString
-      getBaseDomainBytes() {
-    java.lang.Object ref = baseDomain_;
+      getBaseAddrBytes() {
+    java.lang.Object ref = baseAddr_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      baseDomain_ = b;
+      baseAddr_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -162,8 +162,8 @@ public  final class URLBase extends
     if (!getSchemeBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, scheme_);
     }
-    if (!getBaseDomainBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, baseDomain_);
+    if (!getBaseAddrBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, baseAddr_);
     }
   }
 
@@ -175,8 +175,8 @@ public  final class URLBase extends
     if (!getSchemeBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, scheme_);
     }
-    if (!getBaseDomainBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, baseDomain_);
+    if (!getBaseAddrBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, baseAddr_);
     }
     memoizedSize = size;
     return size;
@@ -196,8 +196,8 @@ public  final class URLBase extends
     boolean result = true;
     result = result && getScheme()
         .equals(other.getScheme());
-    result = result && getBaseDomain()
-        .equals(other.getBaseDomain());
+    result = result && getBaseAddr()
+        .equals(other.getBaseAddr());
     return result;
   }
 
@@ -210,8 +210,8 @@ public  final class URLBase extends
     hash = (19 * hash) + getDescriptorForType().hashCode();
     hash = (37 * hash) + SCHEME_FIELD_NUMBER;
     hash = (53 * hash) + getScheme().hashCode();
-    hash = (37 * hash) + BASE_DOMAIN_FIELD_NUMBER;
-    hash = (53 * hash) + getBaseDomain().hashCode();
+    hash = (37 * hash) + BASE_ADDR_FIELD_NUMBER;
+    hash = (53 * hash) + getBaseAddr().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -332,7 +332,7 @@ public  final class URLBase extends
       super.clear();
       scheme_ = "";
 
-      baseDomain_ = "";
+      baseAddr_ = "";
 
       return this;
     }
@@ -357,7 +357,7 @@ public  final class URLBase extends
     public com.appscode.api.health.URLBase buildPartial() {
       com.appscode.api.health.URLBase result = new com.appscode.api.health.URLBase(this);
       result.scheme_ = scheme_;
-      result.baseDomain_ = baseDomain_;
+      result.baseAddr_ = baseAddr_;
       onBuilt();
       return result;
     }
@@ -403,8 +403,8 @@ public  final class URLBase extends
         scheme_ = other.scheme_;
         onChanged();
       }
-      if (!other.getBaseDomain().isEmpty()) {
-        baseDomain_ = other.baseDomain_;
+      if (!other.getBaseAddr().isEmpty()) {
+        baseAddr_ = other.baseAddr_;
         onChanged();
       }
       onChanged();
@@ -502,71 +502,71 @@ public  final class URLBase extends
       return this;
     }
 
-    private java.lang.Object baseDomain_ = "";
+    private java.lang.Object baseAddr_ = "";
     /**
-     * <code>optional string base_domain = 2;</code>
+     * <code>optional string base_addr = 2;</code>
      */
-    public java.lang.String getBaseDomain() {
-      java.lang.Object ref = baseDomain_;
+    public java.lang.String getBaseAddr() {
+      java.lang.Object ref = baseAddr_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        baseDomain_ = s;
+        baseAddr_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string base_domain = 2;</code>
+     * <code>optional string base_addr = 2;</code>
      */
     public com.google.protobuf.ByteString
-        getBaseDomainBytes() {
-      java.lang.Object ref = baseDomain_;
+        getBaseAddrBytes() {
+      java.lang.Object ref = baseAddr_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        baseDomain_ = b;
+        baseAddr_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string base_domain = 2;</code>
+     * <code>optional string base_addr = 2;</code>
      */
-    public Builder setBaseDomain(
+    public Builder setBaseAddr(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      baseDomain_ = value;
+      baseAddr_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string base_domain = 2;</code>
+     * <code>optional string base_addr = 2;</code>
      */
-    public Builder clearBaseDomain() {
+    public Builder clearBaseAddr() {
       
-      baseDomain_ = getDefaultInstance().getBaseDomain();
+      baseAddr_ = getDefaultInstance().getBaseAddr();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string base_domain = 2;</code>
+     * <code>optional string base_addr = 2;</code>
      */
-    public Builder setBaseDomainBytes(
+    public Builder setBaseAddrBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      baseDomain_ = value;
+      baseAddr_ = value;
       onChanged();
       return this;
     }

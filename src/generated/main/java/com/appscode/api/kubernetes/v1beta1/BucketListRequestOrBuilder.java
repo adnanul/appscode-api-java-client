@@ -24,4 +24,14 @@ public interface BucketListRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getCloudCredentialBytes();
+
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  java.lang.String getGceProject();
+  /**
+   * <code>optional string gce_project = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getGceProjectBytes();
 }

@@ -18,12 +18,12 @@ public interface URLBaseOrBuilder extends
       getSchemeBytes();
 
   /**
-   * <code>optional string base_domain = 2;</code>
+   * <code>optional string base_addr = 2;</code>
    */
-  java.lang.String getBaseDomain();
+  java.lang.String getBaseAddr();
   /**
-   * <code>optional string base_domain = 2;</code>
+   * <code>optional string base_addr = 2;</code>
    */
   com.google.protobuf.ByteString
-      getBaseDomainBytes();
+      getBaseAddrBytes();
 }
