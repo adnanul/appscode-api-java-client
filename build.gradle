@@ -114,7 +114,7 @@ uploadArchives {
 
       pom.project {
         name 'appscode-api-java-client'
-        artifactId 'java-client'
+        // artifactId 'java-client'
         packaging 'jar'
         // optionally artifactId can be defined here
         description 'Java Client library for AppsCode APIs(https://github.com/appscode/api)'
