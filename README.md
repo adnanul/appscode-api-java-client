@@ -8,11 +8,11 @@ Java Client library for AppsCode APIs
 ```xml
 <dependency>
   <groupId>com.appscode.api</groupId>
-  <artifactId>java-client</artifactId>
-  <version>0.1.0</version>
+  <artifactId>appscode-api-java-client</artifactId>
+  <version>0.3.0</version>
 </dependency>
 ```
 ### Gradle
 ```groovy
-compile 'com.appscode.api:java-client:0.1.0'
+compile 'com.appscode.api:appscode-api-java-client:0.3.0'
 ```
