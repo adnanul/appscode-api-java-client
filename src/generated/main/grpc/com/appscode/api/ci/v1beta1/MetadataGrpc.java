@@ -18,7 +18,7 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.2)",
+    value = "by gRPC proto compiler (version 1.0.1)",
     comments = "Source: appscode/api/ci/v1beta1/metadata.proto")
 public class MetadataGrpc {
 
