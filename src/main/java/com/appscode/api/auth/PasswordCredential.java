@@ -1,10 +1,13 @@
 package com.appscode.api.auth;
 
 import com.google.auth.Credentials;
-
 import java.io.IOException;
 import java.net.URI;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Base64;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public final class PasswordCredential extends Credentials {
   private String namespace;

@@ -1,5 +1,7 @@
 package com.appscode.api.auth;
 
+import static org.junit.Assert.assertEquals;
+
 import com.appscode.api.dtypes.VoidRequest;
 import com.appscode.api.health.HealthGrpc;
 import com.appscode.api.health.StatusResponse;
@@ -7,22 +9,24 @@ import com.appscode.api.kubernetes.v1beta2.ClientsGrpc;
 import com.appscode.api.kubernetes.v1beta2.ListResourceRequest;
 import com.appscode.api.kubernetes.v1beta2.ListResourceResponse;
 import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
 import io.grpc.auth.MoreCallCredentials;
+import io.grpc.internal.DnsNameResolverProvider;
+import io.grpc.netty.NettyChannelBuilder;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class AuthApiTest {
+
   private ManagedChannel channel;
   private String hostname = "localhost";
-  private int port = 9877;
+  private int port = 50077;
 
   @Before
   public void setUp() throws Exception {
-    channel = ManagedChannelBuilder.forAddress(hostname, port)
+    channel = NettyChannelBuilder.forAddress(hostname, port)
+        .nameResolverFactory(new DnsNameResolverProvider())
         .usePlaintext(true)
         .build();
   }
@@ -32,6 +36,7 @@ public class AuthApiTest {
     channel.shutdown();
   }
 
+  @Ignore
   @Test
   public void testWithPasswordCredentialAPI() {
     ClientsGrpc.ClientsBlockingStub blockingStub = ClientsGrpc.newBlockingStub(channel).
@@ -47,6 +52,7 @@ public class AuthApiTest {
     assertEquals(response.getStatus().getCode(), "0");
   }
 
+  @Ignore
   @Test
   public void testWithTokenCredentialAPI() {
     ClientsGrpc.ClientsBlockingStub blockingStub = ClientsGrpc.newBlockingStub(channel).
@@ -63,6 +69,7 @@ public class AuthApiTest {
     assertEquals(response.getStatus().getCode(), "0");
   }
 
+  @Ignore
   @Test
   public void testForUnAuthenticatedAPI() {
     HealthGrpc.HealthBlockingStub blockingStub = HealthGrpc.newBlockingStub(channel);
