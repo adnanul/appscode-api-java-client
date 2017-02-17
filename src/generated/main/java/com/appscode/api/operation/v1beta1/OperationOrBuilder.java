@@ -35,13 +35,13 @@ public interface OperationOrBuilder extends
   com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder getClusterDeleteRequestOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest getClusterUpgradeRequest();
+  com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder getClusterUpgradeRequestOrBuilder();
+  com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder();
 
   /**
    * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>

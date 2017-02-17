@@ -18,7 +18,7 @@ public  final class ClusterDeleteRequest extends
     name_ = "";
     releaseReservedIp_ = false;
     force_ = false;
-    deleteLodabalancers_ = false;
+    keepLodabalancers_ = false;
     deleteDynamicVolumes_ = false;
   }
 
@@ -65,7 +65,7 @@ public  final class ClusterDeleteRequest extends
           }
           case 32: {
 
-            deleteLodabalancers_ = input.readBool();
+            keepLodabalancers_ = input.readBool();
             break;
           }
           case 40: {
@@ -148,13 +148,13 @@ public  final class ClusterDeleteRequest extends
     return force_;
   }
 
-  public static final int DELETE_LODABALANCERS_FIELD_NUMBER = 4;
-  private boolean deleteLodabalancers_;
+  public static final int KEEP_LODABALANCERS_FIELD_NUMBER = 4;
+  private boolean keepLodabalancers_;
   /**
-   * <code>optional bool delete_lodabalancers = 4;</code>
+   * <code>optional bool keep_lodabalancers = 4;</code>
    */
-  public boolean getDeleteLodabalancers() {
-    return deleteLodabalancers_;
+  public boolean getKeepLodabalancers() {
+    return keepLodabalancers_;
   }
 
   public static final int DELETE_DYNAMIC_VOLUMES_FIELD_NUMBER = 5;
@@ -187,8 +187,8 @@ public  final class ClusterDeleteRequest extends
     if (force_ != false) {
       output.writeBool(3, force_);
     }
-    if (deleteLodabalancers_ != false) {
-      output.writeBool(4, deleteLodabalancers_);
+    if (keepLodabalancers_ != false) {
+      output.writeBool(4, keepLodabalancers_);
     }
     if (deleteDynamicVolumes_ != false) {
       output.writeBool(5, deleteDynamicVolumes_);
@@ -211,9 +211,9 @@ public  final class ClusterDeleteRequest extends
       size += com.google.protobuf.CodedOutputStream
         .computeBoolSize(3, force_);
     }
-    if (deleteLodabalancers_ != false) {
+    if (keepLodabalancers_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, deleteLodabalancers_);
+        .computeBoolSize(4, keepLodabalancers_);
     }
     if (deleteDynamicVolumes_ != false) {
       size += com.google.protobuf.CodedOutputStream
@@ -241,8 +241,8 @@ public  final class ClusterDeleteRequest extends
         == other.getReleaseReservedIp());
     result = result && (getForce()
         == other.getForce());
-    result = result && (getDeleteLodabalancers()
-        == other.getDeleteLodabalancers());
+    result = result && (getKeepLodabalancers()
+        == other.getKeepLodabalancers());
     result = result && (getDeleteDynamicVolumes()
         == other.getDeleteDynamicVolumes());
     return result;
@@ -263,9 +263,9 @@ public  final class ClusterDeleteRequest extends
     hash = (37 * hash) + FORCE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getForce());
-    hash = (37 * hash) + DELETE_LODABALANCERS_FIELD_NUMBER;
+    hash = (37 * hash) + KEEP_LODABALANCERS_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getDeleteLodabalancers());
+        getKeepLodabalancers());
     hash = (37 * hash) + DELETE_DYNAMIC_VOLUMES_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getDeleteDynamicVolumes());
@@ -393,7 +393,7 @@ public  final class ClusterDeleteRequest extends
 
       force_ = false;
 
-      deleteLodabalancers_ = false;
+      keepLodabalancers_ = false;
 
       deleteDynamicVolumes_ = false;
 
@@ -422,7 +422,7 @@ public  final class ClusterDeleteRequest extends
       result.name_ = name_;
       result.releaseReservedIp_ = releaseReservedIp_;
       result.force_ = force_;
-      result.deleteLodabalancers_ = deleteLodabalancers_;
+      result.keepLodabalancers_ = keepLodabalancers_;
       result.deleteDynamicVolumes_ = deleteDynamicVolumes_;
       onBuilt();
       return result;
@@ -475,8 +475,8 @@ public  final class ClusterDeleteRequest extends
       if (other.getForce() != false) {
         setForce(other.getForce());
       }
-      if (other.getDeleteLodabalancers() != false) {
-        setDeleteLodabalancers(other.getDeleteLodabalancers());
+      if (other.getKeepLodabalancers() != false) {
+        setKeepLodabalancers(other.getKeepLodabalancers());
       }
       if (other.getDeleteDynamicVolumes() != false) {
         setDeleteDynamicVolumes(other.getDeleteDynamicVolumes());
@@ -628,28 +628,28 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
 
-    private boolean deleteLodabalancers_ ;
+    private boolean keepLodabalancers_ ;
     /**
-     * <code>optional bool delete_lodabalancers = 4;</code>
+     * <code>optional bool keep_lodabalancers = 4;</code>
      */
-    public boolean getDeleteLodabalancers() {
-      return deleteLodabalancers_;
+    public boolean getKeepLodabalancers() {
+      return keepLodabalancers_;
     }
     /**
-     * <code>optional bool delete_lodabalancers = 4;</code>
+     * <code>optional bool keep_lodabalancers = 4;</code>
      */
-    public Builder setDeleteLodabalancers(boolean value) {
+    public Builder setKeepLodabalancers(boolean value) {
       
-      deleteLodabalancers_ = value;
+      keepLodabalancers_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional bool delete_lodabalancers = 4;</code>
+     * <code>optional bool keep_lodabalancers = 4;</code>
      */
-    public Builder clearDeleteLodabalancers() {
+    public Builder clearKeepLodabalancers() {
       
-      deleteLodabalancers_ = false;
+      keepLodabalancers_ = false;
       onChanged();
       return this;
     }

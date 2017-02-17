@@ -145,10 +145,10 @@ public final class ClusterProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_kubernetes_v1beta1_ClusterUpdateRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_kubernetes_v1beta1_ClusterUpgradeRequest_descriptor;
+    internal_static_appscode_kubernetes_v1beta1_ClusterSetVersionRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_kubernetes_v1beta1_ClusterUpgradeRequest_fieldAccessorTable;
+      internal_static_appscode_kubernetes_v1beta1_ClusterSetVersionRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -220,100 +220,102 @@ public final class ClusterProto {
       "aleRequest.NodeSetEntryB\002\030\001\022?\n\013node_grou",
       "ps\030\003 \003(\0132*.appscode.kubernetes.v1beta1.I" +
       "nstanceGroup\032.\n\014NodeSetEntry\022\013\n\003key\030\001 \001(" +
-      "\t\022\r\n\005value\030\002 \001(\003:\0028\001\"\216\001\n\024ClusterDeleteRe" +
+      "\t\022\r\n\005value\030\002 \001(\003:\0028\001\"\214\001\n\024ClusterDeleteRe" +
       "quest\022\014\n\004name\030\001 \001(\t\022\033\n\023release_reserved_" +
-      "ip\030\002 \001(\010\022\r\n\005force\030\003 \001(\010\022\034\n\024delete_lodaba" +
-      "lancers\030\004 \001(\010\022\036\n\026delete_dynamic_volumes\030" +
-      "\005 \001(\010\"Q\n\033ClusterStartupConfigRequest\022\013\n\003" +
-      "uid\030\001 \001(\t\022\014\n\004role\030\002 \001(\t\022\027\n\017context_versi" +
-      "on\030\003 \001(\003\"k\n\034ClusterStartupConfigResponse" +
-      "\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.Statu",
-      "s\022\025\n\rconfiguration\030\002 \001(\t\022\013\n\003sku\030\003 \001(\t\"?\n" +
-      "\032ClusterInstanceByIPRequest\022\014\n\004phid\030\001 \001(" +
-      "\t\022\023\n\013external_ip\030\002 \001(\t\"\202\001\n\027ClusterInstan" +
-      "ceResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt" +
-      "ypes.Status\022>\n\010instance\030\002 \001(\0132,.appscode" +
-      ".kubernetes.v1beta1.ClusterInstance\"*\n\032C" +
-      "lusterClientConfigRequest\022\014\n\004name\030\001 \001(\t\"" +
-      "\203\002\n\033ClusterClientConfigResponse\022\'\n\006statu" +
-      "s\030\001 \001(\0132\027.appscode.dtypes.Status\022\026\n\016clus" +
-      "ter_domain\030\003 \001(\t\022\017\n\007ca_cert\030\004 \001(\t\022\026\n\016api",
-      "_server_url\030\005 \001(\t\022\031\n\021cluster_user_name\030\006" +
-      " \001(\t\022\021\n\tuser_cert\030\007 \001(\t\022\020\n\010user_key\030\010 \001(" +
-      "\t\022\024\n\014context_name\030\t \001(\t\022\022\n\nuser_token\030\n " +
-      "\001(\t\022\020\n\010password\030\013 \001(\t\"@\n\035ClusterClientCo" +
-      "ntainerRequest\022\014\n\004name\030\001 \001(\t\022\021\n\tdisk_nam" +
-      "e\030\002 \001(\t\"2\n\032ClusterInstanceListRequest\022\024\n" +
-      "\014cluster_name\030\001 \001(\t\"y\n\017ClusterInstance\022\014" +
-      "\n\004phid\030\001 \001(\t\022\023\n\013external_id\030\002 \001(\t\022\014\n\004nam" +
-      "e\030\003 \001(\t\022\023\n\013external_ip\030\004 \001(\t\022\023\n\013internal" +
-      "_ip\030\005 \001(\t\022\013\n\003sku\030\006 \001(\t\"\207\001\n\033ClusterInstan",
-      "ceListResponse\022\'\n\006status\030\001 \001(\0132\027.appscod" +
-      "e.dtypes.Status\022?\n\tinstances\030\002 \003(\0132,.app" +
-      "scode.kubernetes.v1beta1.ClusterInstance" +
-      "\"\231\001\n\024ClusterUpdateRequest\022\014\n\004name\030\001 \001(\t\022" +
-      "\025\n\rdo_not_delete\030\002 \001(\010\022>\n\010settings\030\003 \001(\013" +
-      "2,.appscode.kubernetes.v1beta1.ClusterSe" +
-      "ttings\022\034\n\024default_access_level\030\004 \001(\t\"\253\001\n" +
-      "\025ClusterUpgradeRequest\022\014\n\004name\030\001 \001(\t\022\035\n\025" +
-      "kube_saltbase_version\030\002 \001(\t\022\034\n\024kube_star" +
-      "ter_version\030\003 \001(\t\022\033\n\023kube_server_version",
-      "\030\004 \001(\t\022\031\n\021hostfacts_version\030\005 \001(\t\022\017\n\007ver" +
-      "sion\030\006 \001(\t2\302\020\n\010Clusters\022\243\001\n\004List\022/.appsc" +
-      "ode.kubernetes.v1beta1.ClusterListReques" +
-      "t\0320.appscode.kubernetes.v1beta1.ClusterL" +
-      "istResponse\"8\202\323\344\223\002,\022*/_appscode/api/kube" +
-      "rnetes/v1beta1/clusters\202\265\030\002\010\001\022\265\001\n\010Descri" +
-      "be\0223.appscode.kubernetes.v1beta1.Cluster" +
-      "DescribeRequest\0324.appscode.kubernetes.v1" +
-      "beta1.ClusterDescribeResponse\">\202\323\344\223\0022\0220/" +
-      "_appscode/api/kubernetes/v1beta1/cluster",
-      "s/{uid}\202\265\030\002\010\001\022\236\001\n\006Create\0221.appscode.kube" +
-      "rnetes.v1beta1.ClusterCreateRequest\032$.ap" +
-      "pscode.dtypes.LongRunningResponse\";\202\323\344\223\002" +
-      "/\"*/_appscode/api/kubernetes/v1beta1/clu" +
-      "sters:\001*\202\265\030\002\010\001\022\236\001\n\006Update\0221.appscode.kub" +
-      "ernetes.v1beta1.ClusterUpdateRequest\032\035.a" +
-      "ppscode.dtypes.VoidResponse\"B\202\323\344\223\0026\0321/_a" +
-      "ppscode/api/kubernetes/v1beta1/clusters/" +
-      "{name}:\001*\202\265\030\002\010\001\022\261\001\n\005Scale\0220.appscode.kub" +
-      "ernetes.v1beta1.ClusterScaleRequest\032$.ap",
-      "pscode.dtypes.LongRunningResponse\"P\202\323\344\223\002" +
-      "D\032?/_appscode/api/kubernetes/v1beta1/clu" +
-      "sters/{name}/actions/scale:\001*\202\265\030\002\010\001\022\267\001\n\007" +
-      "Upgrade\0222.appscode.kubernetes.v1beta1.Cl" +
-      "usterUpgradeRequest\032$.appscode.dtypes.Lo" +
-      "ngRunningResponse\"R\202\323\344\223\002F\032A/_appscode/ap" +
-      "i/kubernetes/v1beta1/clusters/{name}/act" +
-      "ions/upgrade:\001*\202\265\030\002\010\001\022\242\001\n\006Delete\0221.appsc" +
-      "ode.kubernetes.v1beta1.ClusterDeleteRequ" +
-      "est\032$.appscode.dtypes.LongRunningRespons",
-      "e\"?\202\323\344\223\0023*1/_appscode/api/kubernetes/v1b" +
-      "eta1/clusters/{name}\202\265\030\002\010\001\022\320\001\n\014ClientCon" +
-      "fig\0227.appscode.kubernetes.v1beta1.Cluste" +
-      "rClientConfigRequest\0328.appscode.kubernet" +
-      "es.v1beta1.ClusterClientConfigResponse\"M" +
-      "\202\323\344\223\002A\022?/_appscode/api/kubernetes/v1beta" +
-      "1/clusters/{name}/client-config\202\265\030\002\010\001\022\321\001" +
-      "\n\tInstances\0227.appscode.kubernetes.v1beta" +
-      "1.ClusterInstanceListRequest\0328.appscode." +
-      "kubernetes.v1beta1.ClusterInstanceListRe",
-      "sponse\"Q\202\323\344\223\002E\022C/_appscode/api/kubernete" +
-      "s/v1beta1/clusters/{cluster_name}/instan" +
-      "ces\202\265\030\002\010\001\022\375\001\n\rStartupConfig\0228.appscode.k" +
-      "ubernetes.v1beta1.ClusterStartupConfigRe" +
-      "quest\0329.appscode.kubernetes.v1beta1.Clus" +
-      "terStartupConfigResponse\"w\202\323\344\223\002k\022i/_apps" +
-      "code/api/kubernetes/v1beta1/clusters/{ui" +
-      "d}/startup-config/{role}/context-version" +
-      "s/{context_version}\202\265\030\002\010\001\022\333\001\n\014InstanceBy" +
-      "IP\0227.appscode.kubernetes.v1beta1.Cluster",
-      "InstanceByIPRequest\0324.appscode.kubernete" +
-      "s.v1beta1.ClusterInstanceResponse\"\\\202\323\344\223\002" +
-      "P\022N/_appscode/api/kubernetes/v1beta1/clu" +
-      "sters/{phid}/instance-by-ip/{external_ip" +
-      "}\202\265\030\002\010\001B>\n#com.appscode.api.kubernetes.v" +
-      "1beta1B\014ClusterProtoP\001Z\007v1beta1b\006proto3"
+      "ip\030\002 \001(\010\022\r\n\005force\030\003 \001(\010\022\032\n\022keep_lodabala" +
+      "ncers\030\004 \001(\010\022\036\n\026delete_dynamic_volumes\030\005 " +
+      "\001(\010\"Q\n\033ClusterStartupConfigRequest\022\013\n\003ui" +
+      "d\030\001 \001(\t\022\014\n\004role\030\002 \001(\t\022\027\n\017context_version" +
+      "\030\003 \001(\003\"k\n\034ClusterStartupConfigResponse\022\'" +
+      "\n\006status\030\001 \001(\0132\027.appscode.dtypes.Status\022",
+      "\025\n\rconfiguration\030\002 \001(\t\022\013\n\003sku\030\003 \001(\t\"?\n\032C" +
+      "lusterInstanceByIPRequest\022\014\n\004phid\030\001 \001(\t\022" +
+      "\023\n\013external_ip\030\002 \001(\t\"\202\001\n\027ClusterInstance" +
+      "Response\022\'\n\006status\030\001 \001(\0132\027.appscode.dtyp" +
+      "es.Status\022>\n\010instance\030\002 \001(\0132,.appscode.k" +
+      "ubernetes.v1beta1.ClusterInstance\"*\n\032Clu" +
+      "sterClientConfigRequest\022\014\n\004name\030\001 \001(\t\"\203\002" +
+      "\n\033ClusterClientConfigResponse\022\'\n\006status\030" +
+      "\001 \001(\0132\027.appscode.dtypes.Status\022\026\n\016cluste" +
+      "r_domain\030\003 \001(\t\022\017\n\007ca_cert\030\004 \001(\t\022\026\n\016api_s",
+      "erver_url\030\005 \001(\t\022\031\n\021cluster_user_name\030\006 \001" +
+      "(\t\022\021\n\tuser_cert\030\007 \001(\t\022\020\n\010user_key\030\010 \001(\t\022" +
+      "\024\n\014context_name\030\t \001(\t\022\022\n\nuser_token\030\n \001(" +
+      "\t\022\020\n\010password\030\013 \001(\t\"@\n\035ClusterClientCont" +
+      "ainerRequest\022\014\n\004name\030\001 \001(\t\022\021\n\tdisk_name\030" +
+      "\002 \001(\t\"2\n\032ClusterInstanceListRequest\022\024\n\014c" +
+      "luster_name\030\001 \001(\t\"y\n\017ClusterInstance\022\014\n\004" +
+      "phid\030\001 \001(\t\022\023\n\013external_id\030\002 \001(\t\022\014\n\004name\030" +
+      "\003 \001(\t\022\023\n\013external_ip\030\004 \001(\t\022\023\n\013internal_i" +
+      "p\030\005 \001(\t\022\013\n\003sku\030\006 \001(\t\"\207\001\n\033ClusterInstance",
+      "ListResponse\022\'\n\006status\030\001 \001(\0132\027.appscode." +
+      "dtypes.Status\022?\n\tinstances\030\002 \003(\0132,.appsc" +
+      "ode.kubernetes.v1beta1.ClusterInstance\"\231" +
+      "\001\n\024ClusterUpdateRequest\022\014\n\004name\030\001 \001(\t\022\025\n" +
+      "\rdo_not_delete\030\002 \001(\010\022>\n\010settings\030\003 \001(\0132," +
+      ".appscode.kubernetes.v1beta1.ClusterSett" +
+      "ings\022\034\n\024default_access_level\030\004 \001(\t\"\324\001\n\030C" +
+      "lusterSetVersionRequest\022\014\n\004name\030\001 \001(\t\022\027\n" +
+      "\017apply_to_master\030\002 \001(\010\022\013\n\003sku\030\003 \001(\t\022\017\n\007v" +
+      "ersion\030\004 \001(\t\022\035\n\025kube_saltbase_version\030\005 ",
+      "\001(\t\022\034\n\024kube_starter_version\030\006 \001(\t\022\033\n\023kub" +
+      "e_server_version\030\007 \001(\t\022\031\n\021hostfacts_vers" +
+      "ion\030\010 \001(\t2\314\020\n\010Clusters\022\243\001\n\004List\022/.appsco" +
+      "de.kubernetes.v1beta1.ClusterListRequest" +
+      "\0320.appscode.kubernetes.v1beta1.ClusterLi" +
+      "stResponse\"8\202\323\344\223\002,\022*/_appscode/api/kuber" +
+      "netes/v1beta1/clusters\202\265\030\002\010\001\022\265\001\n\010Describ" +
+      "e\0223.appscode.kubernetes.v1beta1.ClusterD" +
+      "escribeRequest\0324.appscode.kubernetes.v1b" +
+      "eta1.ClusterDescribeResponse\">\202\323\344\223\0022\0220/_",
+      "appscode/api/kubernetes/v1beta1/clusters" +
+      "/{uid}\202\265\030\002\010\001\022\236\001\n\006Create\0221.appscode.kuber" +
+      "netes.v1beta1.ClusterCreateRequest\032$.app" +
+      "scode.dtypes.LongRunningResponse\";\202\323\344\223\002/" +
+      "\"*/_appscode/api/kubernetes/v1beta1/clus" +
+      "ters:\001*\202\265\030\002\010\001\022\236\001\n\006Update\0221.appscode.kube" +
+      "rnetes.v1beta1.ClusterUpdateRequest\032\035.ap" +
+      "pscode.dtypes.VoidResponse\"B\202\323\344\223\0026\0321/_ap" +
+      "pscode/api/kubernetes/v1beta1/clusters/{" +
+      "name}:\001*\202\265\030\002\010\001\022\261\001\n\005Scale\0220.appscode.kube",
+      "rnetes.v1beta1.ClusterScaleRequest\032$.app" +
+      "scode.dtypes.LongRunningResponse\"P\202\323\344\223\002D" +
+      "\032?/_appscode/api/kubernetes/v1beta1/clus" +
+      "ters/{name}/actions/scale:\001*\202\265\030\002\010\001\022\301\001\n\nS" +
+      "etVersion\0225.appscode.kubernetes.v1beta1." +
+      "ClusterSetVersionRequest\032$.appscode.dtyp" +
+      "es.LongRunningResponse\"V\202\323\344\223\002J\032E/_appsco" +
+      "de/api/kubernetes/v1beta1/clusters/{name" +
+      "}/actions/set-version:\001*\202\265\030\002\010\001\022\242\001\n\006Delet" +
+      "e\0221.appscode.kubernetes.v1beta1.ClusterD",
+      "eleteRequest\032$.appscode.dtypes.LongRunni" +
+      "ngResponse\"?\202\323\344\223\0023*1/_appscode/api/kuber" +
+      "netes/v1beta1/clusters/{name}\202\265\030\002\010\001\022\320\001\n\014" +
+      "ClientConfig\0227.appscode.kubernetes.v1bet" +
+      "a1.ClusterClientConfigRequest\0328.appscode" +
+      ".kubernetes.v1beta1.ClusterClientConfigR" +
+      "esponse\"M\202\323\344\223\002A\022?/_appscode/api/kubernet" +
+      "es/v1beta1/clusters/{name}/client-config" +
+      "\202\265\030\002\010\001\022\321\001\n\tInstances\0227.appscode.kubernet" +
+      "es.v1beta1.ClusterInstanceListRequest\0328.",
+      "appscode.kubernetes.v1beta1.ClusterInsta" +
+      "nceListResponse\"Q\202\323\344\223\002E\022C/_appscode/api/" +
+      "kubernetes/v1beta1/clusters/{cluster_nam" +
+      "e}/instances\202\265\030\002\010\001\022\375\001\n\rStartupConfig\0228.a" +
+      "ppscode.kubernetes.v1beta1.ClusterStartu" +
+      "pConfigRequest\0329.appscode.kubernetes.v1b" +
+      "eta1.ClusterStartupConfigResponse\"w\202\323\344\223\002" +
+      "k\022i/_appscode/api/kubernetes/v1beta1/clu" +
+      "sters/{uid}/startup-config/{role}/contex" +
+      "t-versions/{context_version}\202\265\030\002\010\001\022\333\001\n\014I",
+      "nstanceByIP\0227.appscode.kubernetes.v1beta" +
+      "1.ClusterInstanceByIPRequest\0324.appscode." +
+      "kubernetes.v1beta1.ClusterInstanceRespon" +
+      "se\"\\\202\323\344\223\002P\022N/_appscode/api/kubernetes/v1" +
+      "beta1/clusters/{phid}/instance-by-ip/{ex" +
+      "ternal_ip}\202\265\030\002\010\001B>\n#com.appscode.api.kub" +
+      "ernetes.v1beta1B\014ClusterProtoP\001Z\007v1beta1" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -419,7 +421,7 @@ public final class ClusterProto {
     internal_static_appscode_kubernetes_v1beta1_ClusterDeleteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_ClusterDeleteRequest_descriptor,
-        new java.lang.String[] { "Name", "ReleaseReservedIp", "Force", "DeleteLodabalancers", "DeleteDynamicVolumes", });
+        new java.lang.String[] { "Name", "ReleaseReservedIp", "Force", "KeepLodabalancers", "DeleteDynamicVolumes", });
     internal_static_appscode_kubernetes_v1beta1_ClusterStartupConfigRequest_descriptor =
       getDescriptor().getMessageTypes().get(10);
     internal_static_appscode_kubernetes_v1beta1_ClusterStartupConfigRequest_fieldAccessorTable = new
@@ -486,12 +488,12 @@ public final class ClusterProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_ClusterUpdateRequest_descriptor,
         new java.lang.String[] { "Name", "DoNotDelete", "Settings", "DefaultAccessLevel", });
-    internal_static_appscode_kubernetes_v1beta1_ClusterUpgradeRequest_descriptor =
+    internal_static_appscode_kubernetes_v1beta1_ClusterSetVersionRequest_descriptor =
       getDescriptor().getMessageTypes().get(21);
-    internal_static_appscode_kubernetes_v1beta1_ClusterUpgradeRequest_fieldAccessorTable = new
+    internal_static_appscode_kubernetes_v1beta1_ClusterSetVersionRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_kubernetes_v1beta1_ClusterUpgradeRequest_descriptor,
-        new java.lang.String[] { "Name", "KubeSaltbaseVersion", "KubeStarterVersion", "KubeServerVersion", "HostfactsVersion", "Version", });
+        internal_static_appscode_kubernetes_v1beta1_ClusterSetVersionRequest_descriptor,
+        new java.lang.String[] { "Name", "ApplyToMaster", "Sku", "Version", "KubeSaltbaseVersion", "KubeStarterVersion", "KubeServerVersion", "HostfactsVersion", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.appscode.api.AnnotationsProto.cors);

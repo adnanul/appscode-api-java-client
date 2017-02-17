@@ -28,9 +28,9 @@ public interface ClusterDeleteRequestOrBuilder extends
   boolean getForce();
 
   /**
-   * <code>optional bool delete_lodabalancers = 4;</code>
+   * <code>optional bool keep_lodabalancers = 4;</code>
    */
-  boolean getDeleteLodabalancers();
+  boolean getKeepLodabalancers();
 
   /**
    * <code>optional bool delete_dynamic_volumes = 5;</code>

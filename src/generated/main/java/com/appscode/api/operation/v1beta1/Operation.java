@@ -91,14 +91,14 @@ public  final class Operation extends
             break;
           }
           case 34: {
-            com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder subBuilder = null;
             if (requestCase_ == 4) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_).toBuilder();
             }
             request_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
               request_ = subBuilder.buildPartial();
             }
             requestCase_ = 4;
@@ -270,7 +270,7 @@ public  final class Operation extends
     CLUSTER_CREATE_REQUEST(1),
     CLUSTER_SCALE_REQUEST(2),
     CLUSTER_DELETE_REQUEST(3),
-    CLUSTER_UPGRADE_REQUEST(4),
+    CLUSTER_SET_VERSION_REQUEST(4),
     DATA_BUCKET_DELETE_REQUEST(9),
     BACKUP_SCHEDULE_REQUEST(10),
     NAMESPACE_CREATE_REQUEST(11),
@@ -296,7 +296,7 @@ public  final class Operation extends
         case 1: return CLUSTER_CREATE_REQUEST;
         case 2: return CLUSTER_SCALE_REQUEST;
         case 3: return CLUSTER_DELETE_REQUEST;
-        case 4: return CLUSTER_UPGRADE_REQUEST;
+        case 4: return CLUSTER_SET_VERSION_REQUEST;
         case 9: return DATA_BUCKET_DELETE_REQUEST;
         case 10: return BACKUP_SCHEDULE_REQUEST;
         case 11: return NAMESPACE_CREATE_REQUEST;
@@ -379,24 +379,24 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.getDefaultInstance();
   }
 
-  public static final int CLUSTER_UPGRADE_REQUEST_FIELD_NUMBER = 4;
+  public static final int CLUSTER_SET_VERSION_REQUEST_FIELD_NUMBER = 4;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest getClusterUpgradeRequest() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest() {
     if (requestCase_ == 4) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_;
+       return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
     }
-    return com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder getClusterUpgradeRequestOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder() {
     if (requestCase_ == 4) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_;
+       return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
     }
-    return com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
   }
 
   public static final int DATA_BUCKET_DELETE_REQUEST_FIELD_NUMBER = 9;
@@ -653,7 +653,7 @@ public  final class Operation extends
       output.writeMessage(3, (com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest) request_);
     }
     if (requestCase_ == 4) {
-      output.writeMessage(4, (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_);
+      output.writeMessage(4, (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
     }
     if (requestCase_ == 9) {
       output.writeMessage(9, (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_);
@@ -709,7 +709,7 @@ public  final class Operation extends
     }
     if (requestCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_);
+        .computeMessageSize(4, (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
     }
     if (requestCase_ == 9) {
       size += com.google.protobuf.CodedOutputStream
@@ -800,8 +800,8 @@ public  final class Operation extends
             .equals(other.getClusterDeleteRequest());
         break;
       case 4:
-        result = result && getClusterUpgradeRequest()
-            .equals(other.getClusterUpgradeRequest());
+        result = result && getClusterSetVersionRequest()
+            .equals(other.getClusterSetVersionRequest());
         break;
       case 9:
         result = result && getDataBucketDeleteRequest()
@@ -870,8 +870,8 @@ public  final class Operation extends
         hash = (53 * hash) + getClusterDeleteRequest().hashCode();
         break;
       case 4:
-        hash = (37 * hash) + CLUSTER_UPGRADE_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getClusterUpgradeRequest().hashCode();
+        hash = (37 * hash) + CLUSTER_SET_VERSION_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getClusterSetVersionRequest().hashCode();
         break;
       case 9:
         hash = (37 * hash) + DATA_BUCKET_DELETE_REQUEST_FIELD_NUMBER;
@@ -1088,10 +1088,10 @@ public  final class Operation extends
         }
       }
       if (requestCase_ == 4) {
-        if (clusterUpgradeRequestBuilder_ == null) {
+        if (clusterSetVersionRequestBuilder_ == null) {
           result.request_ = request_;
         } else {
-          result.request_ = clusterUpgradeRequestBuilder_.build();
+          result.request_ = clusterSetVersionRequestBuilder_.build();
         }
       }
       if (requestCase_ == 9) {
@@ -1223,8 +1223,8 @@ public  final class Operation extends
           mergeClusterDeleteRequest(other.getClusterDeleteRequest());
           break;
         }
-        case CLUSTER_UPGRADE_REQUEST: {
-          mergeClusterUpgradeRequest(other.getClusterUpgradeRequest());
+        case CLUSTER_SET_VERSION_REQUEST: {
+          mergeClusterSetVersionRequest(other.getClusterSetVersionRequest());
           break;
         }
         case DATA_BUCKET_DELETE_REQUEST: {
@@ -1691,61 +1691,61 @@ public  final class Operation extends
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder> clusterUpgradeRequestBuilder_;
+        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder> clusterSetVersionRequestBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest getClusterUpgradeRequest() {
-      if (clusterUpgradeRequestBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest() {
+      if (clusterSetVersionRequestBuilder_ == null) {
         if (requestCase_ == 4) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_;
+          return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
       } else {
         if (requestCase_ == 4) {
-          return clusterUpgradeRequestBuilder_.getMessage();
+          return clusterSetVersionRequestBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public Builder setClusterUpgradeRequest(com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest value) {
-      if (clusterUpgradeRequestBuilder_ == null) {
+    public Builder setClusterSetVersionRequest(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest value) {
+      if (clusterSetVersionRequestBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         request_ = value;
         onChanged();
       } else {
-        clusterUpgradeRequestBuilder_.setMessage(value);
+        clusterSetVersionRequestBuilder_.setMessage(value);
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public Builder setClusterUpgradeRequest(
-        com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder builderForValue) {
-      if (clusterUpgradeRequestBuilder_ == null) {
+    public Builder setClusterSetVersionRequest(
+        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder builderForValue) {
+      if (clusterSetVersionRequestBuilder_ == null) {
         request_ = builderForValue.build();
         onChanged();
       } else {
-        clusterUpgradeRequestBuilder_.setMessage(builderForValue.build());
+        clusterSetVersionRequestBuilder_.setMessage(builderForValue.build());
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public Builder mergeClusterUpgradeRequest(com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest value) {
-      if (clusterUpgradeRequestBuilder_ == null) {
+    public Builder mergeClusterSetVersionRequest(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest value) {
+      if (clusterSetVersionRequestBuilder_ == null) {
         if (requestCase_ == 4 &&
-            request_ != com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.newBuilder((com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_)
+            request_ != com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance()) {
+          request_ = com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.newBuilder((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_)
               .mergeFrom(value).buildPartial();
         } else {
           request_ = value;
@@ -1753,18 +1753,18 @@ public  final class Operation extends
         onChanged();
       } else {
         if (requestCase_ == 4) {
-          clusterUpgradeRequestBuilder_.mergeFrom(value);
+          clusterSetVersionRequestBuilder_.mergeFrom(value);
         }
-        clusterUpgradeRequestBuilder_.setMessage(value);
+        clusterSetVersionRequestBuilder_.setMessage(value);
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public Builder clearClusterUpgradeRequest() {
-      if (clusterUpgradeRequestBuilder_ == null) {
+    public Builder clearClusterSetVersionRequest() {
+      if (clusterSetVersionRequestBuilder_ == null) {
         if (requestCase_ == 4) {
           requestCase_ = 0;
           request_ = null;
@@ -1775,49 +1775,49 @@ public  final class Operation extends
           requestCase_ = 0;
           request_ = null;
         }
-        clusterUpgradeRequestBuilder_.clear();
+        clusterSetVersionRequestBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder getClusterUpgradeRequestBuilder() {
-      return getClusterUpgradeRequestFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder getClusterSetVersionRequestBuilder() {
+      return getClusterSetVersionRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder getClusterUpgradeRequestOrBuilder() {
-      if ((requestCase_ == 4) && (clusterUpgradeRequestBuilder_ != null)) {
-        return clusterUpgradeRequestBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder() {
+      if ((requestCase_ == 4) && (clusterSetVersionRequestBuilder_ != null)) {
+        return clusterSetVersionRequestBuilder_.getMessageOrBuilder();
       } else {
         if (requestCase_ == 4) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_;
+          return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterUpgradeRequest cluster_upgrade_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder> 
-        getClusterUpgradeRequestFieldBuilder() {
-      if (clusterUpgradeRequestBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder> 
+        getClusterSetVersionRequestFieldBuilder() {
+      if (clusterSetVersionRequestBuilder_ == null) {
         if (!(requestCase_ == 4)) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.getDefaultInstance();
+          request_ = com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
         }
-        clusterUpgradeRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequestOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta1.ClusterUpgradeRequest) request_,
+        clusterSetVersionRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_,
                 getParentForChildren(),
                 isClean());
         request_ = null;
       }
       requestCase_ = 4;
       onChanged();;
-      return clusterUpgradeRequestBuilder_;
+      return clusterSetVersionRequestBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<

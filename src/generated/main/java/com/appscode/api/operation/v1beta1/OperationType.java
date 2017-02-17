@@ -29,9 +29,9 @@ public enum OperationType
    */
   CLUSTER_DELETE(3),
   /**
-   * <code>CLUSTER_UPGRADE = 4;</code>
+   * <code>CLUSTER_SET_VERSION = 4;</code>
    */
-  CLUSTER_UPGRADE(4),
+  CLUSTER_SET_VERSION(4),
   /**
    * <code>DATA_BUCKET_DELETE = 9;</code>
    */
@@ -80,9 +80,9 @@ public enum OperationType
    */
   public static final int CLUSTER_DELETE_VALUE = 3;
   /**
-   * <code>CLUSTER_UPGRADE = 4;</code>
+   * <code>CLUSTER_SET_VERSION = 4;</code>
    */
-  public static final int CLUSTER_UPGRADE_VALUE = 4;
+  public static final int CLUSTER_SET_VERSION_VALUE = 4;
   /**
    * <code>DATA_BUCKET_DELETE = 9;</code>
    */
@@ -135,7 +135,7 @@ public enum OperationType
       case 1: return CLUSTER_CREATE;
       case 2: return CLUSTER_SCALE;
       case 3: return CLUSTER_DELETE;
-      case 4: return CLUSTER_UPGRADE;
+      case 4: return CLUSTER_SET_VERSION;
       case 9: return DATA_BUCKET_DELETE;
       case 10: return BACKUP_SCHEDULE;
       case 11: return NAMESPACE_CREATE;
