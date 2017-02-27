@@ -56,36 +56,61 @@ public interface ListResourceRequestOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.ListResourceRequest.AncestorOrBuilder getAncestorOrBuilder();
 
   /**
-   * <code>map&lt;string, string&gt; label_selector = 6;</code>
+   * <pre>
+   * map type is not supported by grpc-gateway as query params.
+   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
+   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
+   * map&lt;string, string&gt; label_selector = 6;
+   * </pre>
+   *
+   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+   */
+  java.util.List<com.appscode.api.dtypes.Pair> 
+      getLabelSelectorList();
+  /**
+   * <pre>
+   * map type is not supported by grpc-gateway as query params.
+   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
+   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
+   * map&lt;string, string&gt; label_selector = 6;
+   * </pre>
+   *
+   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+   */
+  com.appscode.api.dtypes.Pair getLabelSelector(int index);
+  /**
+   * <pre>
+   * map type is not supported by grpc-gateway as query params.
+   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
+   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
+   * map&lt;string, string&gt; label_selector = 6;
+   * </pre>
+   *
+   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
    */
   int getLabelSelectorCount();
   /**
-   * <code>map&lt;string, string&gt; label_selector = 6;</code>
+   * <pre>
+   * map type is not supported by grpc-gateway as query params.
+   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
+   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
+   * map&lt;string, string&gt; label_selector = 6;
+   * </pre>
+   *
+   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
    */
-  boolean containsLabelSelector(
-      java.lang.String key);
+  java.util.List<? extends com.appscode.api.dtypes.PairOrBuilder> 
+      getLabelSelectorOrBuilderList();
   /**
-   * Use {@link #getLabelSelectorMap()} instead.
+   * <pre>
+   * map type is not supported by grpc-gateway as query params.
+   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
+   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
+   * map&lt;string, string&gt; label_selector = 6;
+   * </pre>
+   *
+   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
    */
-  @java.lang.Deprecated
-  java.util.Map<java.lang.String, java.lang.String>
-  getLabelSelector();
-  /**
-   * <code>map&lt;string, string&gt; label_selector = 6;</code>
-   */
-  java.util.Map<java.lang.String, java.lang.String>
-  getLabelSelectorMap();
-  /**
-   * <code>map&lt;string, string&gt; label_selector = 6;</code>
-   */
-
-  java.lang.String getLabelSelectorOrDefault(
-      java.lang.String key,
-      java.lang.String defaultValue);
-  /**
-   * <code>map&lt;string, string&gt; label_selector = 6;</code>
-   */
-
-  java.lang.String getLabelSelectorOrThrow(
-      java.lang.String key);
+  com.appscode.api.dtypes.PairOrBuilder getLabelSelectorOrBuilder(
+      int index);
 }

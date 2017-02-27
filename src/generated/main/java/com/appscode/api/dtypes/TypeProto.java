@@ -49,6 +49,11 @@ public final class TypeProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_dtypes_Uid_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_dtypes_Pair_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_dtypes_Pair_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -70,18 +75,19 @@ public final class TypeProto {
       "ppscode.dtypes.Status\022\020\n\010job_phid\030\002 \001(\t\"",
       "\r\n\013VoidRequest\"7\n\014VoidResponse\022\'\n\006status" +
       "\030\001 \001(\0132\027.appscode.dtypes.Status\"!\n\003Uid\022\014" +
-      "\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t*\351\002\n\nStatusCod" +
-      "e\022\006\n\002OK\020\000\022\n\n\006FAILED\020\001\022\020\n\014UNAUTHORIZED\020\002\022" +
-      "\016\n\nBADREQUEST\020\003\022\025\n\021PERMISSION_DENIED\020\004\022\r" +
-      "\n\tNOT_FOUND\020\005\022\021\n\rUNIMPLEMENTED\020\006\022\014\n\010INTE" +
-      "RNAL\020\007\022\014\n\010EXTERNAL\020\010\022\020\n\014BAD_RESPONSE\020\t\022\021" +
-      "\n\rUNKNOWN_ERROR\020\n\022\026\n\022QUOTA_LIMIT_EXCEED\020" +
-      "\013\022\021\n\rINVALID_QUOTA\020\014\022#\n\037PAYMENT_INFORMAT" +
-      "ION_UNAVAILABLE\020\r\022\037\n\033INVALID_PAYMENT_INF",
-      "ORMATION\020\016\022\026\n\022TRANSACTION_FAILED\020\017\022\020\n\014AR" +
-      "E_YOU_SURE\020\020\022\020\n\014INVALID_DATA\020\021B.\n\027com.ap" +
-      "pscode.api.dtypesB\tTypeProtoP\001Z\006dtypesb\006" +
-      "proto3"
+      "\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\"\"\n\004Pair\022\013\n\003ke" +
+      "y\030\001 \001(\t\022\r\n\005value\030\002 \001(\t*\351\002\n\nStatusCode\022\006\n" +
+      "\002OK\020\000\022\n\n\006FAILED\020\001\022\020\n\014UNAUTHORIZED\020\002\022\016\n\nB" +
+      "ADREQUEST\020\003\022\025\n\021PERMISSION_DENIED\020\004\022\r\n\tNO" +
+      "T_FOUND\020\005\022\021\n\rUNIMPLEMENTED\020\006\022\014\n\010INTERNAL" +
+      "\020\007\022\014\n\010EXTERNAL\020\010\022\020\n\014BAD_RESPONSE\020\t\022\021\n\rUN" +
+      "KNOWN_ERROR\020\n\022\026\n\022QUOTA_LIMIT_EXCEED\020\013\022\021\n" +
+      "\rINVALID_QUOTA\020\014\022#\n\037PAYMENT_INFORMATION_",
+      "UNAVAILABLE\020\r\022\037\n\033INVALID_PAYMENT_INFORMA" +
+      "TION\020\016\022\026\n\022TRANSACTION_FAILED\020\017\022\020\n\014ARE_YO" +
+      "U_SURE\020\020\022\020\n\014INVALID_DATA\020\021B.\n\027com.appsco" +
+      "de.api.dtypesB\tTypeProtoP\001Z\006dtypesb\006prot" +
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -138,6 +144,12 @@ public final class TypeProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_Uid_descriptor,
         new java.lang.String[] { "Phid", "Name", });
+    internal_static_appscode_dtypes_Pair_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_appscode_dtypes_Pair_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_dtypes_Pair_descriptor,
+        new java.lang.String[] { "Key", "Value", });
     com.google.protobuf.AnyProto.getDescriptor();
   }
 
