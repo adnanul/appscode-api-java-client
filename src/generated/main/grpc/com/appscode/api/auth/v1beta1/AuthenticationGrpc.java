@@ -54,6 +54,15 @@ public class AuthenticationGrpc {
               "appscode.auth.v1beta1.Authentication", "Token"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.TokenRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.TokenResponse.getDefaultInstance()));
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
+      com.appscode.api.auth.v1beta1.CSRFTokenResponse> METHOD_CSRFTOKEN =
+      io.grpc.MethodDescriptor.create(
+          io.grpc.MethodDescriptor.MethodType.UNARY,
+          generateFullMethodName(
+              "appscode.auth.v1beta1.Authentication", "CSRFToken"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.CSRFTokenResponse.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -109,6 +118,13 @@ public class AuthenticationGrpc {
       asyncUnimplementedUnaryCall(METHOD_TOKEN, responseObserver);
     }
 
+    /**
+     */
+    public void cSRFToken(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_CSRFTOKEN, responseObserver);
+    }
+
     @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -132,6 +148,13 @@ public class AuthenticationGrpc {
                 com.appscode.api.auth.v1beta1.TokenRequest,
                 com.appscode.api.auth.v1beta1.TokenResponse>(
                   this, METHODID_TOKEN)))
+          .addMethod(
+            METHOD_CSRFTOKEN,
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.appscode.api.dtypes.VoidRequest,
+                com.appscode.api.auth.v1beta1.CSRFTokenResponse>(
+                  this, METHODID_CSRFTOKEN)))
           .build();
     }
   }
@@ -183,6 +206,14 @@ public class AuthenticationGrpc {
       asyncUnaryCall(
           getChannel().newCall(METHOD_TOKEN, getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void cSRFToken(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_CSRFTOKEN, getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -228,6 +259,13 @@ public class AuthenticationGrpc {
     public com.appscode.api.auth.v1beta1.TokenResponse token(com.appscode.api.auth.v1beta1.TokenRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_TOKEN, getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.appscode.api.auth.v1beta1.CSRFTokenResponse cSRFToken(com.appscode.api.dtypes.VoidRequest request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_CSRFTOKEN, getCallOptions(), request);
     }
   }
 
@@ -278,11 +316,20 @@ public class AuthenticationGrpc {
       return futureUnaryCall(
           getChannel().newCall(METHOD_TOKEN, getCallOptions()), request);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.auth.v1beta1.CSRFTokenResponse> cSRFToken(
+        com.appscode.api.dtypes.VoidRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_CSRFTOKEN, getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_LOGIN = 0;
   private static final int METHODID_LOGOUT = 1;
   private static final int METHODID_TOKEN = 2;
+  private static final int METHODID_CSRFTOKEN = 3;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -313,6 +360,10 @@ public class AuthenticationGrpc {
           serviceImpl.token((com.appscode.api.auth.v1beta1.TokenRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.TokenResponse>) responseObserver);
           break;
+        case METHODID_CSRFTOKEN:
+          serviceImpl.cSRFToken((com.appscode.api.dtypes.VoidRequest) request,
+              (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -333,7 +384,8 @@ public class AuthenticationGrpc {
     return new io.grpc.ServiceDescriptor(SERVICE_NAME,
         METHOD_LOGIN,
         METHOD_LOGOUT,
-        METHOD_TOKEN);
+        METHOD_TOKEN,
+        METHOD_CSRFTOKEN);
   }
 
 }

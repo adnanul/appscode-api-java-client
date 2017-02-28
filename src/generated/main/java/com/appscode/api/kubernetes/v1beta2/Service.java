@@ -150,37 +150,37 @@ public  final class Service extends
         int index);
 
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
-    int getSeletorsCount();
+    int getSelectorsCount();
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
-    boolean containsSeletors(
+    boolean containsSelectors(
         java.lang.String key);
     /**
-     * Use {@link #getSeletorsMap()} instead.
+     * Use {@link #getSelectorsMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.String, java.lang.String>
-    getSeletors();
+    getSelectors();
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
     java.util.Map<java.lang.String, java.lang.String>
-    getSeletorsMap();
+    getSelectorsMap();
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    java.lang.String getSeletorsOrDefault(
+    java.lang.String getSelectorsOrDefault(
         java.lang.String key,
         java.lang.String defaultValue);
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    java.lang.String getSeletorsOrThrow(
+    java.lang.String getSelectorsOrThrow(
         java.lang.String key);
 
     /**
@@ -283,15 +283,15 @@ public  final class Service extends
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000004) == 0x00000004)) {
-                seletors_ = com.google.protobuf.MapField.newMapField(
-                    SeletorsDefaultEntryHolder.defaultEntry);
+                selectors_ = com.google.protobuf.MapField.newMapField(
+                    SelectorsDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
-              seletors__ = input.readMessage(
-                  SeletorsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              seletors_.getMutableMap().put(
-                  seletors__.getKey(), seletors__.getValue());
+              selectors__ = input.readMessage(
+                  SelectorsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              selectors_.getMutableMap().put(
+                  selectors__.getKey(), selectors__.getValue());
               break;
             }
             case 34: {
@@ -342,7 +342,7 @@ public  final class Service extends
         int number) {
       switch (number) {
         case 3:
-          return internalGetSeletors();
+          return internalGetSelectors();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -1328,76 +1328,76 @@ public  final class Service extends
       return ports_.get(index);
     }
 
-    public static final int SELETORS_FIELD_NUMBER = 3;
-    private static final class SeletorsDefaultEntryHolder {
+    public static final int SELECTORS_FIELD_NUMBER = 3;
+    private static final class SelectorsDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.String, java.lang.String> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.String>newDefaultInstance(
-                  com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Service_Spec_SeletorsEntry_descriptor, 
+                  com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Service_Spec_SelectorsEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "");
     }
     private com.google.protobuf.MapField<
-        java.lang.String, java.lang.String> seletors_;
+        java.lang.String, java.lang.String> selectors_;
     private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-    internalGetSeletors() {
-      if (seletors_ == null) {
+    internalGetSelectors() {
+      if (selectors_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            SeletorsDefaultEntryHolder.defaultEntry);
+            SelectorsDefaultEntryHolder.defaultEntry);
       }
-      return seletors_;
+      return selectors_;
     }
 
-    public int getSeletorsCount() {
-      return internalGetSeletors().getMap().size();
+    public int getSelectorsCount() {
+      return internalGetSelectors().getMap().size();
     }
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    public boolean containsSeletors(
+    public boolean containsSelectors(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      return internalGetSeletors().getMap().containsKey(key);
+      return internalGetSelectors().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getSeletorsMap()} instead.
+     * Use {@link #getSelectorsMap()} instead.
      */
     @java.lang.Deprecated
-    public java.util.Map<java.lang.String, java.lang.String> getSeletors() {
-      return getSeletorsMap();
+    public java.util.Map<java.lang.String, java.lang.String> getSelectors() {
+      return getSelectorsMap();
     }
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    public java.util.Map<java.lang.String, java.lang.String> getSeletorsMap() {
-      return internalGetSeletors().getMap();
+    public java.util.Map<java.lang.String, java.lang.String> getSelectorsMap() {
+      return internalGetSelectors().getMap();
     }
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    public java.lang.String getSeletorsOrDefault(
+    public java.lang.String getSelectorsOrDefault(
         java.lang.String key,
         java.lang.String defaultValue) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, java.lang.String> map =
-          internalGetSeletors().getMap();
+          internalGetSelectors().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;string, string&gt; seletors = 3;</code>
+     * <code>map&lt;string, string&gt; selectors = 3;</code>
      */
 
-    public java.lang.String getSeletorsOrThrow(
+    public java.lang.String getSelectorsOrThrow(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       java.util.Map<java.lang.String, java.lang.String> map =
-          internalGetSeletors().getMap();
+          internalGetSelectors().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
@@ -1522,8 +1522,8 @@ public  final class Service extends
       com.google.protobuf.GeneratedMessageV3
         .serializeStringMapTo(
           output,
-          internalGetSeletors(),
-          SeletorsDefaultEntryHolder.defaultEntry,
+          internalGetSelectors(),
+          SelectorsDefaultEntryHolder.defaultEntry,
           3);
       if (!getClusterIPBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, clusterIP_);
@@ -1549,14 +1549,14 @@ public  final class Service extends
           .computeMessageSize(2, ports_.get(i));
       }
       for (java.util.Map.Entry<java.lang.String, java.lang.String> entry
-           : internalGetSeletors().getMap().entrySet()) {
+           : internalGetSelectors().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
-        seletors__ = SeletorsDefaultEntryHolder.defaultEntry.newBuilderForType()
+        selectors__ = SelectorsDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(3, seletors__);
+            .computeMessageSize(3, selectors__);
       }
       if (!getClusterIPBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, clusterIP_);
@@ -1592,8 +1592,8 @@ public  final class Service extends
           .equals(other.getType());
       result = result && getPortsList()
           .equals(other.getPortsList());
-      result = result && internalGetSeletors().equals(
-          other.internalGetSeletors());
+      result = result && internalGetSelectors().equals(
+          other.internalGetSelectors());
       result = result && getClusterIP()
           .equals(other.getClusterIP());
       result = result && getExternalIPsList()
@@ -1616,9 +1616,9 @@ public  final class Service extends
         hash = (37 * hash) + PORTS_FIELD_NUMBER;
         hash = (53 * hash) + getPortsList().hashCode();
       }
-      if (!internalGetSeletors().getMap().isEmpty()) {
-        hash = (37 * hash) + SELETORS_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetSeletors().hashCode();
+      if (!internalGetSelectors().getMap().isEmpty()) {
+        hash = (37 * hash) + SELECTORS_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetSelectors().hashCode();
       }
       hash = (37 * hash) + CLUSTERIP_FIELD_NUMBER;
       hash = (53 * hash) + getClusterIP().hashCode();
@@ -1727,7 +1727,7 @@ public  final class Service extends
           int number) {
         switch (number) {
           case 3:
-            return internalGetSeletors();
+            return internalGetSelectors();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1738,7 +1738,7 @@ public  final class Service extends
           int number) {
         switch (number) {
           case 3:
-            return internalGetMutableSeletors();
+            return internalGetMutableSelectors();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1777,7 +1777,7 @@ public  final class Service extends
         } else {
           portsBuilder_.clear();
         }
-        internalGetMutableSeletors().clear();
+        internalGetMutableSelectors().clear();
         clusterIP_ = "";
 
         externalIPs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -1818,8 +1818,8 @@ public  final class Service extends
         } else {
           result.ports_ = portsBuilder_.build();
         }
-        result.seletors_ = internalGetSeletors();
-        result.seletors_.makeImmutable();
+        result.selectors_ = internalGetSelectors();
+        result.selectors_.makeImmutable();
         result.clusterIP_ = clusterIP_;
         if (((bitField0_ & 0x00000010) == 0x00000010)) {
           externalIPs_ = externalIPs_.getUnmodifiableView();
@@ -1899,8 +1899,8 @@ public  final class Service extends
             }
           }
         }
-        internalGetMutableSeletors().mergeFrom(
-            other.internalGetSeletors());
+        internalGetMutableSelectors().mergeFrom(
+            other.internalGetSelectors());
         if (!other.getClusterIP().isEmpty()) {
           clusterIP_ = other.clusterIP_;
           onChanged();
@@ -2256,93 +2256,93 @@ public  final class Service extends
       }
 
       private com.google.protobuf.MapField<
-          java.lang.String, java.lang.String> seletors_;
+          java.lang.String, java.lang.String> selectors_;
       private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-      internalGetSeletors() {
-        if (seletors_ == null) {
+      internalGetSelectors() {
+        if (selectors_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              SeletorsDefaultEntryHolder.defaultEntry);
+              SelectorsDefaultEntryHolder.defaultEntry);
         }
-        return seletors_;
+        return selectors_;
       }
       private com.google.protobuf.MapField<java.lang.String, java.lang.String>
-      internalGetMutableSeletors() {
+      internalGetMutableSelectors() {
         onChanged();;
-        if (seletors_ == null) {
-          seletors_ = com.google.protobuf.MapField.newMapField(
-              SeletorsDefaultEntryHolder.defaultEntry);
+        if (selectors_ == null) {
+          selectors_ = com.google.protobuf.MapField.newMapField(
+              SelectorsDefaultEntryHolder.defaultEntry);
         }
-        if (!seletors_.isMutable()) {
-          seletors_ = seletors_.copy();
+        if (!selectors_.isMutable()) {
+          selectors_ = selectors_.copy();
         }
-        return seletors_;
+        return selectors_;
       }
 
-      public int getSeletorsCount() {
-        return internalGetSeletors().getMap().size();
+      public int getSelectorsCount() {
+        return internalGetSelectors().getMap().size();
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public boolean containsSeletors(
+      public boolean containsSelectors(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        return internalGetSeletors().getMap().containsKey(key);
+        return internalGetSelectors().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getSeletorsMap()} instead.
+       * Use {@link #getSelectorsMap()} instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.String, java.lang.String> getSeletors() {
-        return getSeletorsMap();
+      public java.util.Map<java.lang.String, java.lang.String> getSelectors() {
+        return getSelectorsMap();
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public java.util.Map<java.lang.String, java.lang.String> getSeletorsMap() {
-        return internalGetSeletors().getMap();
+      public java.util.Map<java.lang.String, java.lang.String> getSelectorsMap() {
+        return internalGetSelectors().getMap();
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public java.lang.String getSeletorsOrDefault(
+      public java.lang.String getSelectorsOrDefault(
           java.lang.String key,
           java.lang.String defaultValue) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, java.lang.String> map =
-            internalGetSeletors().getMap();
+            internalGetSelectors().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public java.lang.String getSeletorsOrThrow(
+      public java.lang.String getSelectorsOrThrow(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         java.util.Map<java.lang.String, java.lang.String> map =
-            internalGetSeletors().getMap();
+            internalGetSelectors().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearSeletors() {
-        getMutableSeletors().clear();
+      public Builder clearSelectors() {
+        getMutableSelectors().clear();
         return this;
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public Builder removeSeletors(
+      public Builder removeSelectors(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableSeletors().remove(key);
+        getMutableSelectors().remove(key);
         return this;
       }
       /**
@@ -2350,27 +2350,27 @@ public  final class Service extends
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.String, java.lang.String>
-      getMutableSeletors() {
-        return internalGetMutableSeletors().getMutableMap();
+      getMutableSelectors() {
+        return internalGetMutableSelectors().getMutableMap();
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
-      public Builder putSeletors(
+      public Builder putSelectors(
           java.lang.String key,
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableSeletors().put(key, value);
+        getMutableSelectors().put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;string, string&gt; seletors = 3;</code>
+       * <code>map&lt;string, string&gt; selectors = 3;</code>
        */
 
-      public Builder putAllSeletors(
+      public Builder putAllSelectors(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableSeletors().putAll(values);
+        getMutableSelectors().putAll(values);
         return this;
       }
 

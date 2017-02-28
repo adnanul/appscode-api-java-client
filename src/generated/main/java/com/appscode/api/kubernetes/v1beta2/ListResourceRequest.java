@@ -19,7 +19,7 @@ public  final class ListResourceRequest extends
     type_ = "";
     namespace_ = "";
     includeMetrics_ = false;
-    labelSelector_ = java.util.Collections.emptyList();
+    labelSelector_ = "";
   }
 
   @java.lang.Override
@@ -84,12 +84,9 @@ public  final class ListResourceRequest extends
             break;
           }
           case 58: {
-            if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
-              labelSelector_ = new java.util.ArrayList<com.appscode.api.dtypes.Pair>();
-              mutable_bitField0_ |= 0x00000020;
-            }
-            labelSelector_.add(
-                input.readMessage(com.appscode.api.dtypes.Pair.parser(), extensionRegistry));
+            java.lang.String s = input.readStringRequireUtf8();
+
+            labelSelector_ = s;
             break;
           }
         }
@@ -100,9 +97,6 @@ public  final class ListResourceRequest extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
-        labelSelector_ = java.util.Collections.unmodifiableList(labelSelector_);
-      }
       makeExtensionsImmutable();
     }
   }
@@ -758,7 +752,6 @@ public  final class ListResourceRequest extends
 
   }
 
-  private int bitField0_;
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
@@ -892,19 +885,29 @@ public  final class ListResourceRequest extends
   }
 
   public static final int LABEL_SELECTOR_FIELD_NUMBER = 7;
-  private java.util.List<com.appscode.api.dtypes.Pair> labelSelector_;
+  private volatile java.lang.Object labelSelector_;
   /**
    * <pre>
    * map type is not supported by grpc-gateway as query params.
    * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
    * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
    * map&lt;string, string&gt; label_selector = 6;
+   * example label_selector=environment=production,tier=frontend
    * </pre>
    *
-   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+   * <code>optional string label_selector = 7;</code>
    */
-  public java.util.List<com.appscode.api.dtypes.Pair> getLabelSelectorList() {
-    return labelSelector_;
+  public java.lang.String getLabelSelector() {
+    java.lang.Object ref = labelSelector_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      labelSelector_ = s;
+      return s;
+    }
   }
   /**
    * <pre>
@@ -912,53 +915,23 @@ public  final class ListResourceRequest extends
    * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
    * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
    * map&lt;string, string&gt; label_selector = 6;
+   * example label_selector=environment=production,tier=frontend
    * </pre>
    *
-   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+   * <code>optional string label_selector = 7;</code>
    */
-  public java.util.List<? extends com.appscode.api.dtypes.PairOrBuilder> 
-      getLabelSelectorOrBuilderList() {
-    return labelSelector_;
-  }
-  /**
-   * <pre>
-   * map type is not supported by grpc-gateway as query params.
-   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-   * map&lt;string, string&gt; label_selector = 6;
-   * </pre>
-   *
-   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-   */
-  public int getLabelSelectorCount() {
-    return labelSelector_.size();
-  }
-  /**
-   * <pre>
-   * map type is not supported by grpc-gateway as query params.
-   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-   * map&lt;string, string&gt; label_selector = 6;
-   * </pre>
-   *
-   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-   */
-  public com.appscode.api.dtypes.Pair getLabelSelector(int index) {
-    return labelSelector_.get(index);
-  }
-  /**
-   * <pre>
-   * map type is not supported by grpc-gateway as query params.
-   * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-   * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-   * map&lt;string, string&gt; label_selector = 6;
-   * </pre>
-   *
-   * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-   */
-  public com.appscode.api.dtypes.PairOrBuilder getLabelSelectorOrBuilder(
-      int index) {
-    return labelSelector_.get(index);
+  public com.google.protobuf.ByteString
+      getLabelSelectorBytes() {
+    java.lang.Object ref = labelSelector_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      labelSelector_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
   }
 
   private byte memoizedIsInitialized = -1;
@@ -988,8 +961,8 @@ public  final class ListResourceRequest extends
     if (ancestor_ != null) {
       output.writeMessage(5, getAncestor());
     }
-    for (int i = 0; i < labelSelector_.size(); i++) {
-      output.writeMessage(7, labelSelector_.get(i));
+    if (!getLabelSelectorBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, labelSelector_);
     }
   }
 
@@ -1015,9 +988,8 @@ public  final class ListResourceRequest extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(5, getAncestor());
     }
-    for (int i = 0; i < labelSelector_.size(); i++) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, labelSelector_.get(i));
+    if (!getLabelSelectorBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, labelSelector_);
     }
     memoizedSize = size;
     return size;
@@ -1048,8 +1020,8 @@ public  final class ListResourceRequest extends
       result = result && getAncestor()
           .equals(other.getAncestor());
     }
-    result = result && getLabelSelectorList()
-        .equals(other.getLabelSelectorList());
+    result = result && getLabelSelector()
+        .equals(other.getLabelSelector());
     return result;
   }
 
@@ -1073,10 +1045,8 @@ public  final class ListResourceRequest extends
       hash = (37 * hash) + ANCESTOR_FIELD_NUMBER;
       hash = (53 * hash) + getAncestor().hashCode();
     }
-    if (getLabelSelectorCount() > 0) {
-      hash = (37 * hash) + LABEL_SELECTOR_FIELD_NUMBER;
-      hash = (53 * hash) + getLabelSelectorList().hashCode();
-    }
+    hash = (37 * hash) + LABEL_SELECTOR_FIELD_NUMBER;
+    hash = (53 * hash) + getLabelSelector().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1191,7 +1161,6 @@ public  final class ListResourceRequest extends
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getLabelSelectorFieldBuilder();
       }
     }
     public Builder clear() {
@@ -1210,12 +1179,8 @@ public  final class ListResourceRequest extends
         ancestor_ = null;
         ancestorBuilder_ = null;
       }
-      if (labelSelectorBuilder_ == null) {
-        labelSelector_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
-      } else {
-        labelSelectorBuilder_.clear();
-      }
+      labelSelector_ = "";
+
       return this;
     }
 
@@ -1238,8 +1203,6 @@ public  final class ListResourceRequest extends
 
     public com.appscode.api.kubernetes.v1beta2.ListResourceRequest buildPartial() {
       com.appscode.api.kubernetes.v1beta2.ListResourceRequest result = new com.appscode.api.kubernetes.v1beta2.ListResourceRequest(this);
-      int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.cluster_ = cluster_;
       result.type_ = type_;
       result.namespace_ = namespace_;
@@ -1249,16 +1212,7 @@ public  final class ListResourceRequest extends
       } else {
         result.ancestor_ = ancestorBuilder_.build();
       }
-      if (labelSelectorBuilder_ == null) {
-        if (((bitField0_ & 0x00000020) == 0x00000020)) {
-          labelSelector_ = java.util.Collections.unmodifiableList(labelSelector_);
-          bitField0_ = (bitField0_ & ~0x00000020);
-        }
-        result.labelSelector_ = labelSelector_;
-      } else {
-        result.labelSelector_ = labelSelectorBuilder_.build();
-      }
-      result.bitField0_ = to_bitField0_;
+      result.labelSelector_ = labelSelector_;
       onBuilt();
       return result;
     }
@@ -1318,31 +1272,9 @@ public  final class ListResourceRequest extends
       if (other.hasAncestor()) {
         mergeAncestor(other.getAncestor());
       }
-      if (labelSelectorBuilder_ == null) {
-        if (!other.labelSelector_.isEmpty()) {
-          if (labelSelector_.isEmpty()) {
-            labelSelector_ = other.labelSelector_;
-            bitField0_ = (bitField0_ & ~0x00000020);
-          } else {
-            ensureLabelSelectorIsMutable();
-            labelSelector_.addAll(other.labelSelector_);
-          }
-          onChanged();
-        }
-      } else {
-        if (!other.labelSelector_.isEmpty()) {
-          if (labelSelectorBuilder_.isEmpty()) {
-            labelSelectorBuilder_.dispose();
-            labelSelectorBuilder_ = null;
-            labelSelector_ = other.labelSelector_;
-            bitField0_ = (bitField0_ & ~0x00000020);
-            labelSelectorBuilder_ = 
-              com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getLabelSelectorFieldBuilder() : null;
-          } else {
-            labelSelectorBuilder_.addAllMessages(other.labelSelector_);
-          }
-        }
+      if (!other.getLabelSelector().isEmpty()) {
+        labelSelector_ = other.labelSelector_;
+        onChanged();
       }
       onChanged();
       return this;
@@ -1369,7 +1301,6 @@ public  final class ListResourceRequest extends
       }
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object cluster_ = "";
     /**
@@ -1721,33 +1652,28 @@ public  final class ListResourceRequest extends
       return ancestorBuilder_;
     }
 
-    private java.util.List<com.appscode.api.dtypes.Pair> labelSelector_ =
-      java.util.Collections.emptyList();
-    private void ensureLabelSelectorIsMutable() {
-      if (!((bitField0_ & 0x00000020) == 0x00000020)) {
-        labelSelector_ = new java.util.ArrayList<com.appscode.api.dtypes.Pair>(labelSelector_);
-        bitField0_ |= 0x00000020;
-       }
-    }
-
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.appscode.api.dtypes.Pair, com.appscode.api.dtypes.Pair.Builder, com.appscode.api.dtypes.PairOrBuilder> labelSelectorBuilder_;
-
+    private java.lang.Object labelSelector_ = "";
     /**
      * <pre>
      * map type is not supported by grpc-gateway as query params.
      * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
      * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
      * map&lt;string, string&gt; label_selector = 6;
+     * example label_selector=environment=production,tier=frontend
      * </pre>
      *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+     * <code>optional string label_selector = 7;</code>
      */
-    public java.util.List<com.appscode.api.dtypes.Pair> getLabelSelectorList() {
-      if (labelSelectorBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(labelSelector_);
+    public java.lang.String getLabelSelector() {
+      java.lang.Object ref = labelSelector_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        labelSelector_ = s;
+        return s;
       } else {
-        return labelSelectorBuilder_.getMessageList();
+        return (java.lang.String) ref;
       }
     }
     /**
@@ -1756,15 +1682,22 @@ public  final class ListResourceRequest extends
      * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
      * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
      * map&lt;string, string&gt; label_selector = 6;
+     * example label_selector=environment=production,tier=frontend
      * </pre>
      *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+     * <code>optional string label_selector = 7;</code>
      */
-    public int getLabelSelectorCount() {
-      if (labelSelectorBuilder_ == null) {
-        return labelSelector_.size();
+    public com.google.protobuf.ByteString
+        getLabelSelectorBytes() {
+      java.lang.Object ref = labelSelector_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        labelSelector_ = b;
+        return b;
       } else {
-        return labelSelectorBuilder_.getCount();
+        return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
@@ -1773,39 +1706,19 @@ public  final class ListResourceRequest extends
      * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
      * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
      * map&lt;string, string&gt; label_selector = 6;
+     * example label_selector=environment=production,tier=frontend
      * </pre>
      *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public com.appscode.api.dtypes.Pair getLabelSelector(int index) {
-      if (labelSelectorBuilder_ == null) {
-        return labelSelector_.get(index);
-      } else {
-        return labelSelectorBuilder_.getMessage(index);
-      }
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+     * <code>optional string label_selector = 7;</code>
      */
     public Builder setLabelSelector(
-        int index, com.appscode.api.dtypes.Pair value) {
-      if (labelSelectorBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureLabelSelectorIsMutable();
-        labelSelector_.set(index, value);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.setMessage(index, value);
-      }
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      labelSelector_ = value;
+      onChanged();
       return this;
     }
     /**
@@ -1814,150 +1727,15 @@ public  final class ListResourceRequest extends
      * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
      * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
      * map&lt;string, string&gt; label_selector = 6;
+     * example label_selector=environment=production,tier=frontend
      * </pre>
      *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder setLabelSelector(
-        int index, com.appscode.api.dtypes.Pair.Builder builderForValue) {
-      if (labelSelectorBuilder_ == null) {
-        ensureLabelSelectorIsMutable();
-        labelSelector_.set(index, builderForValue.build());
-        onChanged();
-      } else {
-        labelSelectorBuilder_.setMessage(index, builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder addLabelSelector(com.appscode.api.dtypes.Pair value) {
-      if (labelSelectorBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureLabelSelectorIsMutable();
-        labelSelector_.add(value);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.addMessage(value);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder addLabelSelector(
-        int index, com.appscode.api.dtypes.Pair value) {
-      if (labelSelectorBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        ensureLabelSelectorIsMutable();
-        labelSelector_.add(index, value);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.addMessage(index, value);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder addLabelSelector(
-        com.appscode.api.dtypes.Pair.Builder builderForValue) {
-      if (labelSelectorBuilder_ == null) {
-        ensureLabelSelectorIsMutable();
-        labelSelector_.add(builderForValue.build());
-        onChanged();
-      } else {
-        labelSelectorBuilder_.addMessage(builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder addLabelSelector(
-        int index, com.appscode.api.dtypes.Pair.Builder builderForValue) {
-      if (labelSelectorBuilder_ == null) {
-        ensureLabelSelectorIsMutable();
-        labelSelector_.add(index, builderForValue.build());
-        onChanged();
-      } else {
-        labelSelectorBuilder_.addMessage(index, builderForValue.build());
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public Builder addAllLabelSelector(
-        java.lang.Iterable<? extends com.appscode.api.dtypes.Pair> values) {
-      if (labelSelectorBuilder_ == null) {
-        ensureLabelSelectorIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, labelSelector_);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.addAllMessages(values);
-      }
-      return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+     * <code>optional string label_selector = 7;</code>
      */
     public Builder clearLabelSelector() {
-      if (labelSelectorBuilder_ == null) {
-        labelSelector_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000020);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.clear();
-      }
+      
+      labelSelector_ = getDefaultInstance().getLabelSelector();
+      onChanged();
       return this;
     }
     /**
@@ -1966,125 +1744,21 @@ public  final class ListResourceRequest extends
      * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
      * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
      * map&lt;string, string&gt; label_selector = 6;
+     * example label_selector=environment=production,tier=frontend
      * </pre>
      *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
+     * <code>optional string label_selector = 7;</code>
      */
-    public Builder removeLabelSelector(int index) {
-      if (labelSelectorBuilder_ == null) {
-        ensureLabelSelectorIsMutable();
-        labelSelector_.remove(index);
-        onChanged();
-      } else {
-        labelSelectorBuilder_.remove(index);
-      }
+    public Builder setLabelSelectorBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      labelSelector_ = value;
+      onChanged();
       return this;
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public com.appscode.api.dtypes.Pair.Builder getLabelSelectorBuilder(
-        int index) {
-      return getLabelSelectorFieldBuilder().getBuilder(index);
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public com.appscode.api.dtypes.PairOrBuilder getLabelSelectorOrBuilder(
-        int index) {
-      if (labelSelectorBuilder_ == null) {
-        return labelSelector_.get(index);  } else {
-        return labelSelectorBuilder_.getMessageOrBuilder(index);
-      }
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public java.util.List<? extends com.appscode.api.dtypes.PairOrBuilder> 
-         getLabelSelectorOrBuilderList() {
-      if (labelSelectorBuilder_ != null) {
-        return labelSelectorBuilder_.getMessageOrBuilderList();
-      } else {
-        return java.util.Collections.unmodifiableList(labelSelector_);
-      }
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public com.appscode.api.dtypes.Pair.Builder addLabelSelectorBuilder() {
-      return getLabelSelectorFieldBuilder().addBuilder(
-          com.appscode.api.dtypes.Pair.getDefaultInstance());
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public com.appscode.api.dtypes.Pair.Builder addLabelSelectorBuilder(
-        int index) {
-      return getLabelSelectorFieldBuilder().addBuilder(
-          index, com.appscode.api.dtypes.Pair.getDefaultInstance());
-    }
-    /**
-     * <pre>
-     * map type is not supported by grpc-gateway as query params.
-     * https://github.com/grpc-ecosystem/grpc-gateway/blob/master/runtime/query.go#L57
-     * https://github.com/grpc-ecosystem/grpc-gateway/issues/316
-     * map&lt;string, string&gt; label_selector = 6;
-     * </pre>
-     *
-     * <code>repeated .appscode.dtypes.Pair label_selector = 7;</code>
-     */
-    public java.util.List<com.appscode.api.dtypes.Pair.Builder> 
-         getLabelSelectorBuilderList() {
-      return getLabelSelectorFieldBuilder().getBuilderList();
-    }
-    private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.appscode.api.dtypes.Pair, com.appscode.api.dtypes.Pair.Builder, com.appscode.api.dtypes.PairOrBuilder> 
-        getLabelSelectorFieldBuilder() {
-      if (labelSelectorBuilder_ == null) {
-        labelSelectorBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            com.appscode.api.dtypes.Pair, com.appscode.api.dtypes.Pair.Builder, com.appscode.api.dtypes.PairOrBuilder>(
-                labelSelector_,
-                ((bitField0_ & 0x00000020) == 0x00000020),
-                getParentForChildren(),
-                isClean());
-        labelSelector_ = null;
-      }
-      return labelSelectorBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
