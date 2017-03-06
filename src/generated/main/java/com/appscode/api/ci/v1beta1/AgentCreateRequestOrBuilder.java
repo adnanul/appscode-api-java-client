@@ -76,4 +76,14 @@ public interface AgentCreateRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getGitSshPublicKeyBytes();
+
+  /**
+   * <code>optional string jenkins_url = 9;</code>
+   */
+  java.lang.String getJenkinsUrl();
+  /**
+   * <code>optional string jenkins_url = 9;</code>
+   */
+  com.google.protobuf.ByteString
+      getJenkinsUrlBytes();
 }

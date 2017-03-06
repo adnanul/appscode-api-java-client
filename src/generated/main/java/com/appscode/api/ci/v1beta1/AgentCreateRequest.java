@@ -23,6 +23,7 @@ public  final class AgentCreateRequest extends
     sshPort_ = 0;
     jenkinsJnlpPort_ = 0;
     gitSshPublicKey_ = "";
+    jenkinsUrl_ = "";
   }
 
   @java.lang.Override
@@ -94,6 +95,12 @@ public  final class AgentCreateRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             gitSshPublicKey_ = s;
+            break;
+          }
+          case 74: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            jenkinsUrl_ = s;
             break;
           }
         }
@@ -341,6 +348,40 @@ public  final class AgentCreateRequest extends
     }
   }
 
+  public static final int JENKINS_URL_FIELD_NUMBER = 9;
+  private volatile java.lang.Object jenkinsUrl_;
+  /**
+   * <code>optional string jenkins_url = 9;</code>
+   */
+  public java.lang.String getJenkinsUrl() {
+    java.lang.Object ref = jenkinsUrl_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      jenkinsUrl_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string jenkins_url = 9;</code>
+   */
+  public com.google.protobuf.ByteString
+      getJenkinsUrlBytes() {
+    java.lang.Object ref = jenkinsUrl_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      jenkinsUrl_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -377,6 +418,9 @@ public  final class AgentCreateRequest extends
     if (!getGitSshPublicKeyBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, gitSshPublicKey_);
     }
+    if (!getJenkinsUrlBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, jenkinsUrl_);
+    }
   }
 
   public int getSerializedSize() {
@@ -410,6 +454,9 @@ public  final class AgentCreateRequest extends
     if (!getGitSshPublicKeyBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, gitSshPublicKey_);
     }
+    if (!getJenkinsUrlBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, jenkinsUrl_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -442,6 +489,8 @@ public  final class AgentCreateRequest extends
         == other.getJenkinsJnlpPort());
     result = result && getGitSshPublicKey()
         .equals(other.getGitSshPublicKey());
+    result = result && getJenkinsUrl()
+        .equals(other.getJenkinsUrl());
     return result;
   }
 
@@ -468,6 +517,8 @@ public  final class AgentCreateRequest extends
     hash = (53 * hash) + getJenkinsJnlpPort();
     hash = (37 * hash) + GIT_SSH_PUBLIC_KEY_FIELD_NUMBER;
     hash = (53 * hash) + getGitSshPublicKey().hashCode();
+    hash = (37 * hash) + JENKINS_URL_FIELD_NUMBER;
+    hash = (53 * hash) + getJenkinsUrl().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -602,6 +653,8 @@ public  final class AgentCreateRequest extends
 
       gitSshPublicKey_ = "";
 
+      jenkinsUrl_ = "";
+
       return this;
     }
 
@@ -632,6 +685,7 @@ public  final class AgentCreateRequest extends
       result.sshPort_ = sshPort_;
       result.jenkinsJnlpPort_ = jenkinsJnlpPort_;
       result.gitSshPublicKey_ = gitSshPublicKey_;
+      result.jenkinsUrl_ = jenkinsUrl_;
       onBuilt();
       return result;
     }
@@ -701,6 +755,10 @@ public  final class AgentCreateRequest extends
       }
       if (!other.getGitSshPublicKey().isEmpty()) {
         gitSshPublicKey_ = other.gitSshPublicKey_;
+        onChanged();
+      }
+      if (!other.getJenkinsUrl().isEmpty()) {
+        jenkinsUrl_ = other.jenkinsUrl_;
         onChanged();
       }
       onChanged();
@@ -1191,6 +1249,75 @@ public  final class AgentCreateRequest extends
   checkByteStringIsUtf8(value);
       
       gitSshPublicKey_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object jenkinsUrl_ = "";
+    /**
+     * <code>optional string jenkins_url = 9;</code>
+     */
+    public java.lang.String getJenkinsUrl() {
+      java.lang.Object ref = jenkinsUrl_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        jenkinsUrl_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string jenkins_url = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getJenkinsUrlBytes() {
+      java.lang.Object ref = jenkinsUrl_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        jenkinsUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string jenkins_url = 9;</code>
+     */
+    public Builder setJenkinsUrl(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      jenkinsUrl_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string jenkins_url = 9;</code>
+     */
+    public Builder clearJenkinsUrl() {
+      
+      jenkinsUrl_ = getDefaultInstance().getJenkinsUrl();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string jenkins_url = 9;</code>
+     */
+    public Builder setJenkinsUrlBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      jenkinsUrl_ = value;
       onChanged();
       return this;
     }

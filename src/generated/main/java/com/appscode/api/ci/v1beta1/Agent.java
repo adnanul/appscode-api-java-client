@@ -22,6 +22,7 @@ public  final class Agent extends
     isDeleted_ = false;
     createdAt_ = 0L;
     updatedAt_ = 0L;
+    jenkinsUrl_ = "";
   }
 
   @java.lang.Override
@@ -86,6 +87,12 @@ public  final class Agent extends
           case 56: {
 
             updatedAt_ = input.readInt64();
+            break;
+          }
+          case 66: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            jenkinsUrl_ = s;
             break;
           }
         }
@@ -274,6 +281,40 @@ public  final class Agent extends
     return updatedAt_;
   }
 
+  public static final int JENKINS_URL_FIELD_NUMBER = 8;
+  private volatile java.lang.Object jenkinsUrl_;
+  /**
+   * <code>optional string jenkins_url = 8;</code>
+   */
+  public java.lang.String getJenkinsUrl() {
+    java.lang.Object ref = jenkinsUrl_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      jenkinsUrl_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string jenkins_url = 8;</code>
+   */
+  public com.google.protobuf.ByteString
+      getJenkinsUrlBytes() {
+    java.lang.Object ref = jenkinsUrl_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      jenkinsUrl_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -307,6 +348,9 @@ public  final class Agent extends
     if (updatedAt_ != 0L) {
       output.writeInt64(7, updatedAt_);
     }
+    if (!getJenkinsUrlBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, jenkinsUrl_);
+    }
   }
 
   public int getSerializedSize() {
@@ -338,6 +382,9 @@ public  final class Agent extends
       size += com.google.protobuf.CodedOutputStream
         .computeInt64Size(7, updatedAt_);
     }
+    if (!getJenkinsUrlBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, jenkinsUrl_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -368,6 +415,8 @@ public  final class Agent extends
         == other.getCreatedAt());
     result = result && (getUpdatedAt()
         == other.getUpdatedAt());
+    result = result && getJenkinsUrl()
+        .equals(other.getJenkinsUrl());
     return result;
   }
 
@@ -395,6 +444,8 @@ public  final class Agent extends
     hash = (37 * hash) + UPDATED_AT_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
         getUpdatedAt());
+    hash = (37 * hash) + JENKINS_URL_FIELD_NUMBER;
+    hash = (53 * hash) + getJenkinsUrl().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -527,6 +578,8 @@ public  final class Agent extends
 
       updatedAt_ = 0L;
 
+      jenkinsUrl_ = "";
+
       return this;
     }
 
@@ -556,6 +609,7 @@ public  final class Agent extends
       result.isDeleted_ = isDeleted_;
       result.createdAt_ = createdAt_;
       result.updatedAt_ = updatedAt_;
+      result.jenkinsUrl_ = jenkinsUrl_;
       onBuilt();
       return result;
     }
@@ -621,6 +675,10 @@ public  final class Agent extends
       }
       if (other.getUpdatedAt() != 0L) {
         setUpdatedAt(other.getUpdatedAt());
+      }
+      if (!other.getJenkinsUrl().isEmpty()) {
+        jenkinsUrl_ = other.jenkinsUrl_;
+        onChanged();
       }
       onChanged();
       return this;
@@ -998,6 +1056,75 @@ public  final class Agent extends
     public Builder clearUpdatedAt() {
       
       updatedAt_ = 0L;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object jenkinsUrl_ = "";
+    /**
+     * <code>optional string jenkins_url = 8;</code>
+     */
+    public java.lang.String getJenkinsUrl() {
+      java.lang.Object ref = jenkinsUrl_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        jenkinsUrl_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string jenkins_url = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getJenkinsUrlBytes() {
+      java.lang.Object ref = jenkinsUrl_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        jenkinsUrl_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string jenkins_url = 8;</code>
+     */
+    public Builder setJenkinsUrl(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      jenkinsUrl_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string jenkins_url = 8;</code>
+     */
+    public Builder clearJenkinsUrl() {
+      
+      jenkinsUrl_ = getDefaultInstance().getJenkinsUrl();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string jenkins_url = 8;</code>
+     */
+    public Builder setJenkinsUrlBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      jenkinsUrl_ = value;
       onChanged();
       return this;
     }
