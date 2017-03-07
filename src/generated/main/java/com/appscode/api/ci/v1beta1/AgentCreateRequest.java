@@ -24,6 +24,7 @@ public  final class AgentCreateRequest extends
     jenkinsJnlpPort_ = 0;
     gitSshPublicKey_ = "";
     jenkinsUrl_ = "";
+    caCert_ = "";
   }
 
   @java.lang.Override
@@ -101,6 +102,12 @@ public  final class AgentCreateRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             jenkinsUrl_ = s;
+            break;
+          }
+          case 82: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            caCert_ = s;
             break;
           }
         }
@@ -382,6 +389,40 @@ public  final class AgentCreateRequest extends
     }
   }
 
+  public static final int CA_CERT_FIELD_NUMBER = 10;
+  private volatile java.lang.Object caCert_;
+  /**
+   * <code>optional string ca_cert = 10;</code>
+   */
+  public java.lang.String getCaCert() {
+    java.lang.Object ref = caCert_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      caCert_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string ca_cert = 10;</code>
+   */
+  public com.google.protobuf.ByteString
+      getCaCertBytes() {
+    java.lang.Object ref = caCert_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      caCert_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -421,6 +462,9 @@ public  final class AgentCreateRequest extends
     if (!getJenkinsUrlBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 9, jenkinsUrl_);
     }
+    if (!getCaCertBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 10, caCert_);
+    }
   }
 
   public int getSerializedSize() {
@@ -457,6 +501,9 @@ public  final class AgentCreateRequest extends
     if (!getJenkinsUrlBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, jenkinsUrl_);
     }
+    if (!getCaCertBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, caCert_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -491,6 +538,8 @@ public  final class AgentCreateRequest extends
         .equals(other.getGitSshPublicKey());
     result = result && getJenkinsUrl()
         .equals(other.getJenkinsUrl());
+    result = result && getCaCert()
+        .equals(other.getCaCert());
     return result;
   }
 
@@ -519,6 +568,8 @@ public  final class AgentCreateRequest extends
     hash = (53 * hash) + getGitSshPublicKey().hashCode();
     hash = (37 * hash) + JENKINS_URL_FIELD_NUMBER;
     hash = (53 * hash) + getJenkinsUrl().hashCode();
+    hash = (37 * hash) + CA_CERT_FIELD_NUMBER;
+    hash = (53 * hash) + getCaCert().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -655,6 +706,8 @@ public  final class AgentCreateRequest extends
 
       jenkinsUrl_ = "";
 
+      caCert_ = "";
+
       return this;
     }
 
@@ -686,6 +739,7 @@ public  final class AgentCreateRequest extends
       result.jenkinsJnlpPort_ = jenkinsJnlpPort_;
       result.gitSshPublicKey_ = gitSshPublicKey_;
       result.jenkinsUrl_ = jenkinsUrl_;
+      result.caCert_ = caCert_;
       onBuilt();
       return result;
     }
@@ -759,6 +813,10 @@ public  final class AgentCreateRequest extends
       }
       if (!other.getJenkinsUrl().isEmpty()) {
         jenkinsUrl_ = other.jenkinsUrl_;
+        onChanged();
+      }
+      if (!other.getCaCert().isEmpty()) {
+        caCert_ = other.caCert_;
         onChanged();
       }
       onChanged();
@@ -1318,6 +1376,75 @@ public  final class AgentCreateRequest extends
   checkByteStringIsUtf8(value);
       
       jenkinsUrl_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object caCert_ = "";
+    /**
+     * <code>optional string ca_cert = 10;</code>
+     */
+    public java.lang.String getCaCert() {
+      java.lang.Object ref = caCert_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        caCert_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string ca_cert = 10;</code>
+     */
+    public com.google.protobuf.ByteString
+        getCaCertBytes() {
+      java.lang.Object ref = caCert_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        caCert_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string ca_cert = 10;</code>
+     */
+    public Builder setCaCert(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      caCert_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string ca_cert = 10;</code>
+     */
+    public Builder clearCaCert() {
+      
+      caCert_ = getDefaultInstance().getCaCert();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string ca_cert = 10;</code>
+     */
+    public Builder setCaCertBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      caCert_ = value;
       onChanged();
       return this;
     }

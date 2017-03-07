@@ -61,14 +61,4 @@ public interface AgentOrBuilder extends
    * <code>optional int64 updated_at = 7;</code>
    */
   long getUpdatedAt();
-
-  /**
-   * <code>optional string jenkins_url = 8;</code>
-   */
-  java.lang.String getJenkinsUrl();
-  /**
-   * <code>optional string jenkins_url = 8;</code>
-   */
-  com.google.protobuf.ByteString
-      getJenkinsUrlBytes();
 }

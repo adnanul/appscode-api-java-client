@@ -86,4 +86,14 @@ public interface AgentCreateRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getJenkinsUrlBytes();
+
+  /**
+   * <code>optional string ca_cert = 10;</code>
+   */
+  java.lang.String getCaCert();
+  /**
+   * <code>optional string ca_cert = 10;</code>
+   */
+  com.google.protobuf.ByteString
+      getCaCertBytes();
 }

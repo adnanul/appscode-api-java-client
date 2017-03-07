@@ -38,7 +38,7 @@ public final class MetadataProto {
       "etadata\022\221\001\n\nServerInfo\022\034.appscode.dtypes" +
       ".VoidRequest\032\'.appscode.ci.v1beta1.Serve" +
       "rInfoResponse\"<\202\323\344\223\0020\022./_appscode/api/ci",
-      "/v1beta1/metadata/server_info\202\265\030\002\010\001B7\n\033c" +
+      "/v1beta1/metadata/server-info\202\265\030\002\010\001B7\n\033c" +
       "om.appscode.api.ci.v1beta1B\rMetadataProt" +
       "oP\001Z\007v1beta1b\006proto3"
     };
