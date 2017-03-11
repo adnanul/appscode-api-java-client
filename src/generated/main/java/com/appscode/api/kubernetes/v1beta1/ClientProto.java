@@ -336,75 +336,77 @@ public final class ClientProto {
       "scribeResponse.DataEntry\022-\n\003raw\030\t \001(\0132 ." +
       "appscode.kubernetes.v1beta1.Raw\032+\n\tDataE" +
       "ntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"#\n\003" +
-      "Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data\030\002 \001(\t2\316\024\n\007Cl" +
-      "ients\022\254\001\n\004Copy\0220.appscode.kubernetes.v1b" +
+      "Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data\030\002 \001(\t2\224\025\n\007Cl" +
+      "ients\022\261\001\n\004Copy\0220.appscode.kubernetes.v1b" +
       "eta1.CopyResourceRequest\0321.appscode.kube" +
-      "rnetes.v1beta1.CopyResourceResponse\"?\202\323\344" +
-      "\223\0023\032./_appscode/api/kubernetes/v1beta1/a" +
-      "ctions/copy:\001*\202\265\030\002\010\001\022\252\001\n\005Nodes\022*.appscod" +
-      "e.kubernetes.v1beta1.ClientRequest\032-.app",
-      "scode.kubernetes.v1beta1.NodeListRespons" +
-      "e\"F\202\323\344\223\002:\0228/_appscode/api/kubernetes/v1b" +
-      "eta1/client/{cluster}/nodes\202\265\030\002\010\001\022\247\001\n\004Ap" +
-      "ps\022*.appscode.kubernetes.v1beta1.ClientR" +
-      "equest\032,.appscode.kubernetes.v1beta1.App" +
-      "ListResponse\"E\202\323\344\223\0029\0227/_appscode/api/kub" +
-      "ernetes/v1beta1/client/{cluster}/apps\202\265\030" +
-      "\002\010\001\022\302\001\n\003App\022/.appscode.kubernetes.v1beta" +
-      "1.AppDescribeRequest\0320.appscode.kubernet" +
-      "es.v1beta1.AppDescribeResponse\"X\202\323\344\223\002L\022J",
-      "/_appscode/api/kubernetes/v1beta1/client" +
-      "/{cluster}/apps/{namespace}/{name}\202\265\030\002\010\001" +
-      "\022\307\001\n\007AppPods\022/.appscode.kubernetes.v1bet" +
-      "a1.AppDescribeRequest\032,.appscode.kuberne" +
-      "tes.v1beta1.PodListResponse\"]\202\323\344\223\002Q\022O/_a" +
-      "ppscode/api/kubernetes/v1beta1/client/{c" +
-      "luster}/apps/{namespace}/{name}/pods\202\265\030\002" +
-      "\010\001\022\271\001\n\nNamespaces\022*.appscode.kubernetes." +
-      "v1beta1.ClientRequest\0322.appscode.kuberne" +
-      "tes.v1beta1.NamespaceListResponse\"K\202\323\344\223\002",
-      "?\022=/_appscode/api/kubernetes/v1beta1/cli" +
-      "ent/{cluster}/namespaces\202\265\030\002\010\001\022\260\001\n\007Secre" +
-      "ts\022*.appscode.kubernetes.v1beta1.ClientR" +
-      "equest\032/.appscode.kubernetes.v1beta1.Sec" +
-      "retListResponse\"H\202\323\344\223\002<\022:/_appscode/api/" +
-      "kubernetes/v1beta1/client/{cluster}/secr" +
-      "ets\202\265\030\002\010\001\022\316\001\n\006Secret\0222.appscode.kubernet" +
-      "es.v1beta1.SecretDescribeRequest\0323.appsc" +
-      "ode.kubernetes.v1beta1.SecretDescribeRes" +
-      "ponse\"[\202\323\344\223\002O\022M/_appscode/api/kubernetes",
-      "/v1beta1/client/{cluster}/secrets/{names" +
-      "pace}/{name}\202\265\030\002\010\001\022\247\001\n\004Jobs\022*.appscode.k" +
-      "ubernetes.v1beta1.ClientRequest\032,.appsco" +
-      "de.kubernetes.v1beta1.JobListResponse\"E\202" +
-      "\323\344\223\0029\0227/_appscode/api/kubernetes/v1beta1" +
-      "/client/{cluster}/jobs\202\265\030\002\010\001\022\247\001\n\004Pods\022*." +
-      "appscode.kubernetes.v1beta1.ClientReques" +
+      "rnetes.v1beta1.CopyResourceResponse\"D\202\323\344" +
+      "\223\0028\0323/_appscode/api/kubernetes/v1beta1/a" +
+      "ctions/copy/json:\001*\202\265\030\002\010\001\022\257\001\n\005Nodes\022*.ap" +
+      "pscode.kubernetes.v1beta1.ClientRequest\032",
+      "-.appscode.kubernetes.v1beta1.NodeListRe" +
+      "sponse\"K\202\323\344\223\002?\022=/_appscode/api/kubernete" +
+      "s/v1beta1/client/{cluster}/nodes/json\202\265\030" +
+      "\002\010\001\022\254\001\n\004Apps\022*.appscode.kubernetes.v1bet" +
+      "a1.ClientRequest\032,.appscode.kubernetes.v" +
+      "1beta1.AppListResponse\"J\202\323\344\223\002>\022</_appsco" +
+      "de/api/kubernetes/v1beta1/client/{cluste" +
+      "r}/apps/json\202\265\030\002\010\001\022\307\001\n\003App\022/.appscode.ku" +
+      "bernetes.v1beta1.AppDescribeRequest\0320.ap" +
+      "pscode.kubernetes.v1beta1.AppDescribeRes",
+      "ponse\"]\202\323\344\223\002Q\022O/_appscode/api/kubernetes" +
+      "/v1beta1/client/{cluster}/apps/{namespac" +
+      "e}/{name}/json\202\265\030\002\010\001\022\314\001\n\007AppPods\022/.appsc" +
+      "ode.kubernetes.v1beta1.AppDescribeReques" +
       "t\032,.appscode.kubernetes.v1beta1.PodListR" +
-      "esponse\"E\202\323\344\223\0029\0227/_appscode/api/kubernet" +
-      "es/v1beta1/client/{cluster}/pods\202\265\030\002\010\001\022\263",
-      "\001\n\010Services\022*.appscode.kubernetes.v1beta" +
-      "1.ClientRequest\0320.appscode.kubernetes.v1" +
-      "beta1.ServiceListResponse\"I\202\323\344\223\002=\022;/_app" +
-      "scode/api/kubernetes/v1beta1/client/{clu" +
-      "ster}/services\202\265\030\002\010\001\022\312\001\n\026ReplicationCont" +
-      "rollers\022*.appscode.kubernetes.v1beta1.Cl" +
-      "ientRequest\032>.appscode.kubernetes.v1beta" +
-      "1.ReplicationControllerListResponse\"D\202\323\344" +
-      "\223\0028\0226/_appscode/api/kubernetes/v1beta1/c" +
-      "lient/{cluster}/rcs\202\265\030\002\010\001\022\271\001\n\nConfigMaps",
-      "\022*.appscode.kubernetes.v1beta1.ClientReq" +
-      "uest\0322.appscode.kubernetes.v1beta1.Confi" +
-      "gMapListResponse\"K\202\323\344\223\002?\022=/_appscode/api" +
-      "/kubernetes/v1beta1/client/{cluster}/con" +
-      "figmaps\202\265\030\002\010\001\022\332\001\n\tConfigMap\0225.appscode.k" +
-      "ubernetes.v1beta1.ConfigMapDescribeReque" +
-      "st\0326.appscode.kubernetes.v1beta1.ConfigM" +
-      "apDescribeResponse\"^\202\323\344\223\002R\022P/_appscode/a" +
-      "pi/kubernetes/v1beta1/client/{cluster}/c" +
-      "onfigmaps/{namespace}/{name}\202\265\030\002\010\001B=\n#co",
-      "m.appscode.api.kubernetes.v1beta1B\013Clien" +
-      "tProtoP\001Z\007v1beta1b\006proto3"
+      "esponse\"b\202\323\344\223\002V\022T/_appscode/api/kubernet" +
+      "es/v1beta1/client/{cluster}/apps/{namesp" +
+      "ace}/{name}/pods/json\202\265\030\002\010\001\022\276\001\n\nNamespac" +
+      "es\022*.appscode.kubernetes.v1beta1.ClientR" +
+      "equest\0322.appscode.kubernetes.v1beta1.Nam",
+      "espaceListResponse\"P\202\323\344\223\002D\022B/_appscode/a" +
+      "pi/kubernetes/v1beta1/client/{cluster}/n" +
+      "amespaces/json\202\265\030\002\010\001\022\265\001\n\007Secrets\022*.appsc" +
+      "ode.kubernetes.v1beta1.ClientRequest\032/.a" +
+      "ppscode.kubernetes.v1beta1.SecretListRes" +
+      "ponse\"M\202\323\344\223\002A\022?/_appscode/api/kubernetes" +
+      "/v1beta1/client/{cluster}/secrets/json\202\265" +
+      "\030\002\010\001\022\323\001\n\006Secret\0222.appscode.kubernetes.v1" +
+      "beta1.SecretDescribeRequest\0323.appscode.k" +
+      "ubernetes.v1beta1.SecretDescribeResponse",
+      "\"`\202\323\344\223\002T\022R/_appscode/api/kubernetes/v1be" +
+      "ta1/client/{cluster}/secrets/{namespace}" +
+      "/{name}/json\202\265\030\002\010\001\022\254\001\n\004Jobs\022*.appscode.k" +
+      "ubernetes.v1beta1.ClientRequest\032,.appsco" +
+      "de.kubernetes.v1beta1.JobListResponse\"J\202" +
+      "\323\344\223\002>\022</_appscode/api/kubernetes/v1beta1" +
+      "/client/{cluster}/jobs/json\202\265\030\002\010\001\022\254\001\n\004Po" +
+      "ds\022*.appscode.kubernetes.v1beta1.ClientR" +
+      "equest\032,.appscode.kubernetes.v1beta1.Pod" +
+      "ListResponse\"J\202\323\344\223\002>\022</_appscode/api/kub",
+      "ernetes/v1beta1/client/{cluster}/pods/js" +
+      "on\202\265\030\002\010\001\022\270\001\n\010Services\022*.appscode.kuberne" +
+      "tes.v1beta1.ClientRequest\0320.appscode.kub" +
+      "ernetes.v1beta1.ServiceListResponse\"N\202\323\344" +
+      "\223\002B\022@/_appscode/api/kubernetes/v1beta1/c" +
+      "lient/{cluster}/services/json\202\265\030\002\010\001\022\317\001\n\026" +
+      "ReplicationControllers\022*.appscode.kubern" +
+      "etes.v1beta1.ClientRequest\032>.appscode.ku" +
+      "bernetes.v1beta1.ReplicationControllerLi" +
+      "stResponse\"I\202\323\344\223\002=\022;/_appscode/api/kuber",
+      "netes/v1beta1/client/{cluster}/rcs/json\202" +
+      "\265\030\002\010\001\022\276\001\n\nConfigMaps\022*.appscode.kubernet" +
+      "es.v1beta1.ClientRequest\0322.appscode.kube" +
+      "rnetes.v1beta1.ConfigMapListResponse\"P\202\323" +
+      "\344\223\002D\022B/_appscode/api/kubernetes/v1beta1/" +
+      "client/{cluster}/configmaps/json\202\265\030\002\010\001\022\337" +
+      "\001\n\tConfigMap\0225.appscode.kubernetes.v1bet" +
+      "a1.ConfigMapDescribeRequest\0326.appscode.k" +
+      "ubernetes.v1beta1.ConfigMapDescribeRespo" +
+      "nse\"c\202\323\344\223\002W\022U/_appscode/api/kubernetes/v",
+      "1beta1/client/{cluster}/configmaps/{name" +
+      "space}/{name}/json\202\265\030\002\010\001B=\n#com.appscode" +
+      ".api.kubernetes.v1beta1B\013ClientProtoP\001Z\007" +
+      "v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

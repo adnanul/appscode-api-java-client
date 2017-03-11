@@ -37,6 +37,15 @@ public class AgentsGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.ci.v1beta1.AgentListResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.appscode.api.ci.v1beta1.AgentGetRequest,
+      com.appscode.api.ci.v1beta1.AgentGetResponse> METHOD_GET =
+      io.grpc.MethodDescriptor.create(
+          io.grpc.MethodDescriptor.MethodType.UNARY,
+          generateFullMethodName(
+              "appscode.ci.v1beta1.Agents", "Get"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.ci.v1beta1.AgentGetRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.ci.v1beta1.AgentGetResponse.getDefaultInstance()));
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.ci.v1beta1.AgentCreateRequest,
       com.appscode.api.ci.v1beta1.AgentCreateResponse> METHOD_CREATE =
       io.grpc.MethodDescriptor.create(
@@ -91,6 +100,13 @@ public class AgentsGrpc {
 
     /**
      */
+    public void get(com.appscode.api.ci.v1beta1.AgentGetRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentGetResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_GET, responseObserver);
+    }
+
+    /**
+     */
     public void create(com.appscode.api.ci.v1beta1.AgentCreateRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentCreateResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_CREATE, responseObserver);
@@ -112,6 +128,13 @@ public class AgentsGrpc {
                 com.appscode.api.dtypes.VoidRequest,
                 com.appscode.api.ci.v1beta1.AgentListResponse>(
                   this, METHODID_LIST)))
+          .addMethod(
+            METHOD_GET,
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.appscode.api.ci.v1beta1.AgentGetRequest,
+                com.appscode.api.ci.v1beta1.AgentGetResponse>(
+                  this, METHODID_GET)))
           .addMethod(
             METHOD_CREATE,
             asyncUnaryCall(
@@ -158,6 +181,14 @@ public class AgentsGrpc {
 
     /**
      */
+    public void get(com.appscode.api.ci.v1beta1.AgentGetRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentGetResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_GET, getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
     public void create(com.appscode.api.ci.v1beta1.AgentCreateRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentCreateResponse> responseObserver) {
       asyncUnaryCall(
@@ -196,6 +227,13 @@ public class AgentsGrpc {
     public com.appscode.api.ci.v1beta1.AgentListResponse list(com.appscode.api.dtypes.VoidRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_LIST, getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.appscode.api.ci.v1beta1.AgentGetResponse get(com.appscode.api.ci.v1beta1.AgentGetRequest request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_GET, getCallOptions(), request);
     }
 
     /**
@@ -241,6 +279,14 @@ public class AgentsGrpc {
 
     /**
      */
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.ci.v1beta1.AgentGetResponse> get(
+        com.appscode.api.ci.v1beta1.AgentGetRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_GET, getCallOptions()), request);
+    }
+
+    /**
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.ci.v1beta1.AgentCreateResponse> create(
         com.appscode.api.ci.v1beta1.AgentCreateRequest request) {
       return futureUnaryCall(
@@ -257,8 +303,9 @@ public class AgentsGrpc {
   }
 
   private static final int METHODID_LIST = 0;
-  private static final int METHODID_CREATE = 1;
-  private static final int METHODID_DELETE = 2;
+  private static final int METHODID_GET = 1;
+  private static final int METHODID_CREATE = 2;
+  private static final int METHODID_DELETE = 3;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -280,6 +327,10 @@ public class AgentsGrpc {
         case METHODID_LIST:
           serviceImpl.list((com.appscode.api.dtypes.VoidRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentListResponse>) responseObserver);
+          break;
+        case METHODID_GET:
+          serviceImpl.get((com.appscode.api.ci.v1beta1.AgentGetRequest) request,
+              (io.grpc.stub.StreamObserver<com.appscode.api.ci.v1beta1.AgentGetResponse>) responseObserver);
           break;
         case METHODID_CREATE:
           serviceImpl.create((com.appscode.api.ci.v1beta1.AgentCreateRequest) request,
@@ -308,6 +359,7 @@ public class AgentsGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     return new io.grpc.ServiceDescriptor(SERVICE_NAME,
         METHOD_LIST,
+        METHOD_GET,
         METHOD_CREATE,
         METHOD_DELETE);
   }

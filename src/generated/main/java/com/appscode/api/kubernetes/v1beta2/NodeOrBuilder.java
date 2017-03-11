@@ -39,17 +39,17 @@ public interface NodeOrBuilder extends
   boolean getIsMaster();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Node.Status getStatus();
+  com.appscode.api.kubernetes.v1beta2.Node.NodeStatus getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Node.StatusOrBuilder getStatusOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder getStatusOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>

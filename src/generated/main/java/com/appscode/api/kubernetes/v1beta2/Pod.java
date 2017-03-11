@@ -76,11 +76,11 @@ public  final class Pod extends
             break;
           }
           case 34: {
-            com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder subBuilder = null;
             if (status_ != null) {
               subBuilder = status_.toBuilder();
             }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Pod.Status.parser(), extensionRegistry);
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(status_);
               status_ = subBuilder.buildPartial();
@@ -124,8 +124,8 @@ public  final class Pod extends
             com.appscode.api.kubernetes.v1beta2.Pod.class, com.appscode.api.kubernetes.v1beta2.Pod.Builder.class);
   }
 
-  public interface StatusOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Pod.Status)
+  public interface PodStatusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Pod.PodStatus)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -177,24 +177,55 @@ public  final class Pod extends
      */
     com.google.protobuf.ByteString
         getPodIPBytes();
+
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> 
+        getConditionsList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index);
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    int getConditionsCount();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index);
+
+    /**
+     * <code>optional int64 start_time = 7;</code>
+     */
+    long getStartTime();
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.Pod.Status}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Pod.PodStatus}
    */
-  public  static final class Status extends
+  public  static final class PodStatus extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Pod.Status)
-      StatusOrBuilder {
-    // Use Status.newBuilder() to construct.
-    private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Pod.PodStatus)
+      PodStatusOrBuilder {
+    // Use PodStatus.newBuilder() to construct.
+    private PodStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Status() {
+    private PodStatus() {
       phase_ = "";
       message_ = "";
       reason_ = "";
       hostIP_ = "";
       podIP_ = "";
+      conditions_ = java.util.Collections.emptyList();
+      startTime_ = 0L;
     }
 
     @java.lang.Override
@@ -202,7 +233,7 @@ public  final class Pod extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private Status(
+    private PodStatus(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -252,6 +283,20 @@ public  final class Pod extends
               podIP_ = s;
               break;
             }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+                conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              conditions_.add(
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.ResourceCondition.parser(), extensionRegistry));
+              break;
+            }
+            case 56: {
+
+              startTime_ = input.readInt64();
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -260,21 +305,25 @@ public  final class Pod extends
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = java.util.Collections.unmodifiableList(conditions_);
+        }
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_Status_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_PodStatus_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_Status_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_PodStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.Pod.Status.class, com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.class, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder.class);
     }
 
+    private int bitField0_;
     public static final int PHASE_FIELD_NUMBER = 1;
     private volatile java.lang.Object phase_;
     /**
@@ -445,6 +494,50 @@ public  final class Pod extends
       }
     }
 
+    public static final int CONDITIONS_FIELD_NUMBER = 6;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_;
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public int getConditionsCount() {
+      return conditions_.size();
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+      return conditions_.get(index);
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index) {
+      return conditions_.get(index);
+    }
+
+    public static final int START_TIME_FIELD_NUMBER = 7;
+    private long startTime_;
+    /**
+     * <code>optional int64 start_time = 7;</code>
+     */
+    public long getStartTime() {
+      return startTime_;
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -472,6 +565,12 @@ public  final class Pod extends
       if (!getPodIPBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, podIP_);
       }
+      for (int i = 0; i < conditions_.size(); i++) {
+        output.writeMessage(6, conditions_.get(i));
+      }
+      if (startTime_ != 0L) {
+        output.writeInt64(7, startTime_);
+      }
     }
 
     public int getSerializedSize() {
@@ -494,6 +593,14 @@ public  final class Pod extends
       if (!getPodIPBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, podIP_);
       }
+      for (int i = 0; i < conditions_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, conditions_.get(i));
+      }
+      if (startTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(7, startTime_);
+      }
       memoizedSize = size;
       return size;
     }
@@ -504,10 +611,10 @@ public  final class Pod extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Pod.Status)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Pod.PodStatus)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.Pod.Status other = (com.appscode.api.kubernetes.v1beta2.Pod.Status) obj;
+      com.appscode.api.kubernetes.v1beta2.Pod.PodStatus other = (com.appscode.api.kubernetes.v1beta2.Pod.PodStatus) obj;
 
       boolean result = true;
       result = result && getPhase()
@@ -520,6 +627,10 @@ public  final class Pod extends
           .equals(other.getHostIP());
       result = result && getPodIP()
           .equals(other.getPodIP());
+      result = result && getConditionsList()
+          .equals(other.getConditionsList());
+      result = result && (getStartTime()
+          == other.getStartTime());
       return result;
     }
 
@@ -540,63 +651,70 @@ public  final class Pod extends
       hash = (53 * hash) + getHostIP().hashCode();
       hash = (37 * hash) + PODIP_FIELD_NUMBER;
       hash = (53 * hash) + getPodIP().hashCode();
+      if (getConditionsCount() > 0) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditionsList().hashCode();
+      }
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getStartTime());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -608,7 +726,7 @@ public  final class Pod extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Pod.Status prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -623,25 +741,25 @@ public  final class Pod extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.Pod.Status}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Pod.PodStatus}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Pod.Status)
-        com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Pod.PodStatus)
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_PodStatus_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_Status_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_PodStatus_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.Pod.Status.class, com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.class, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.Pod.Status.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -654,6 +772,7 @@ public  final class Pod extends
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getConditionsFieldBuilder();
         }
       }
       public Builder clear() {
@@ -668,33 +787,54 @@ public  final class Pod extends
 
         podIP_ = "";
 
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          conditionsBuilder_.clear();
+        }
+        startTime_ = 0L;
+
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Pod_PodStatus_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Pod.Status getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.Pod.Status.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Pod.Status build() {
-        com.appscode.api.kubernetes.v1beta2.Pod.Status result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus build() {
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Pod.Status buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.Pod.Status result = new com.appscode.api.kubernetes.v1beta2.Pod.Status(this);
+      public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus result = new com.appscode.api.kubernetes.v1beta2.Pod.PodStatus(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.phase_ = phase_;
         result.message_ = message_;
         result.reason_ = reason_;
         result.hostIP_ = hostIP_;
         result.podIP_ = podIP_;
+        if (conditionsBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
+            conditions_ = java.util.Collections.unmodifiableList(conditions_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.startTime_ = startTime_;
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -726,16 +866,16 @@ public  final class Pod extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.Pod.Status) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Pod.Status)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Pod.PodStatus) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Pod.PodStatus)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Pod.Status other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.Pod.Status.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance()) return this;
         if (!other.getPhase().isEmpty()) {
           phase_ = other.phase_;
           onChanged();
@@ -756,6 +896,35 @@ public  final class Pod extends
           podIP_ = other.podIP_;
           onChanged();
         }
+        if (conditionsBuilder_ == null) {
+          if (!other.conditions_.isEmpty()) {
+            if (conditions_.isEmpty()) {
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureConditionsIsMutable();
+              conditions_.addAll(other.conditions_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.conditions_.isEmpty()) {
+            if (conditionsBuilder_.isEmpty()) {
+              conditionsBuilder_.dispose();
+              conditionsBuilder_ = null;
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              conditionsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getConditionsFieldBuilder() : null;
+            } else {
+              conditionsBuilder_.addAllMessages(other.conditions_);
+            }
+          }
+        }
+        if (other.getStartTime() != 0L) {
+          setStartTime(other.getStartTime());
+        }
         onChanged();
         return this;
       }
@@ -768,11 +937,11 @@ public  final class Pod extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.Pod.Status parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Pod.Status) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Pod.PodStatus) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -781,6 +950,7 @@ public  final class Pod extends
         }
         return this;
       }
+      private int bitField0_;
 
       private java.lang.Object phase_ = "";
       /**
@@ -1126,6 +1296,272 @@ public  final class Pod extends
         onChanged();
         return this;
       }
+
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_ =
+        java.util.Collections.emptyList();
+      private void ensureConditionsIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>(conditions_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> conditionsBuilder_;
+
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+        if (conditionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(conditions_);
+        } else {
+          return conditionsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public int getConditionsCount() {
+        if (conditionsBuilder_ == null) {
+          return conditions_.size();
+        } else {
+          return conditionsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);
+        } else {
+          return conditionsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.set(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addAllConditions(
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.ResourceCondition> values) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, conditions_);
+          onChanged();
+        } else {
+          conditionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          conditionsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder removeConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.remove(index);
+          onChanged();
+        } else {
+          conditionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder getConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+          int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);  } else {
+          return conditionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+           getConditionsOrBuilderList() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(conditions_);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder() {
+        return getConditionsFieldBuilder().addBuilder(
+            com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().addBuilder(
+            index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder> 
+           getConditionsBuilderList() {
+        return getConditionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder>(
+                  conditions_,
+                  ((bitField0_ & 0x00000020) == 0x00000020),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
+      }
+
+      private long startTime_ ;
+      /**
+       * <code>optional int64 start_time = 7;</code>
+       */
+      public long getStartTime() {
+        return startTime_;
+      }
+      /**
+       * <code>optional int64 start_time = 7;</code>
+       */
+      public Builder setStartTime(long value) {
+        
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 start_time = 7;</code>
+       */
+      public Builder clearStartTime() {
+        
+        startTime_ = 0L;
+        onChanged();
+        return this;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -1137,39 +1573,39 @@ public  final class Pod extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Pod.Status)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Pod.PodStatus)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Pod.Status)
-    private static final com.appscode.api.kubernetes.v1beta2.Pod.Status DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Pod.PodStatus)
+    private static final com.appscode.api.kubernetes.v1beta2.Pod.PodStatus DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Pod.Status();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Pod.PodStatus();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Pod.Status getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Status>
-        PARSER = new com.google.protobuf.AbstractParser<Status>() {
-      public Status parsePartialFrom(
+    private static final com.google.protobuf.Parser<PodStatus>
+        PARSER = new com.google.protobuf.AbstractParser<PodStatus>() {
+      public PodStatus parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Status(input, extensionRegistry);
+          return new PodStatus(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Status> parser() {
+    public static com.google.protobuf.Parser<PodStatus> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Status> getParserForType() {
+    public com.google.protobuf.Parser<PodStatus> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Pod.Status getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1252,23 +1688,23 @@ public  final class Pod extends
   }
 
   public static final int STATUS_FIELD_NUMBER = 4;
-  private com.appscode.api.kubernetes.v1beta2.Pod.Status status_;
+  private com.appscode.api.kubernetes.v1beta2.Pod.PodStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.Pod.Status getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Pod.Status.getDefaultInstance() : status_;
+  public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder getStatusOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
   }
 
@@ -1985,29 +2421,29 @@ public  final class Pod extends
       return specBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.Pod.Status status_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Pod.PodStatus status_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Pod.Status, com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder, com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder> statusBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder, com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Pod.Status getStatus() {
+    public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Pod.Status.getDefaultInstance() : status_;
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Pod.Status value) {
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2021,10 +2457,10 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
         onChanged();
@@ -2035,13 +2471,13 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Pod.Status value) {
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus value) {
       if (statusBuilder_ == null) {
         if (status_ != null) {
           status_ =
-            com.appscode.api.kubernetes.v1beta2.Pod.Status.newBuilder(status_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.newBuilder(status_).mergeFrom(value).buildPartial();
         } else {
           status_ = value;
         }
@@ -2053,7 +2489,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2067,33 +2503,33 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder getStatusBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder getStatusBuilder() {
       
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder getStatusOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.Pod.Status.getDefaultInstance() : status_;
+            com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Pod.Status, com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder, com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Pod.PodStatus, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder, com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.Pod.Status, com.appscode.api.kubernetes.v1beta2.Pod.Status.Builder, com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Pod.PodStatus, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder, com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());

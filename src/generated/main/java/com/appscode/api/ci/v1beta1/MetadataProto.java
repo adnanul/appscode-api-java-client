@@ -34,13 +34,13 @@ public final class MetadataProto {
       "oto\032\037appscode/api/dtypes/types.proto\"t\n\022" +
       "ServerInfoResponse\022\'\n\006status\030\001 \001(\0132\027.app" +
       "scode.dtypes.Status\022\020\n\010provider\030\002 \001(\t\022\022\n" +
-      "\nserver_url\030\003 \001(\t\022\017\n\007ca_cert\030\004 \001(\t2\236\001\n\010M" +
-      "etadata\022\221\001\n\nServerInfo\022\034.appscode.dtypes" +
+      "\nserver_url\030\003 \001(\t\022\017\n\007ca_cert\030\004 \001(\t2\243\001\n\010M" +
+      "etadata\022\226\001\n\nServerInfo\022\034.appscode.dtypes" +
       ".VoidRequest\032\'.appscode.ci.v1beta1.Serve" +
-      "rInfoResponse\"<\202\323\344\223\0020\022./_appscode/api/ci",
-      "/v1beta1/metadata/server-info\202\265\030\002\010\001B7\n\033c" +
-      "om.appscode.api.ci.v1beta1B\rMetadataProt" +
-      "oP\001Z\007v1beta1b\006proto3"
+      "rInfoResponse\"A\202\323\344\223\0025\0223/_appscode/api/ci",
+      "/v1beta1/metadata/server-info/json\202\265\030\002\010\001" +
+      "B7\n\033com.appscode.api.ci.v1beta1B\rMetadat" +
+      "aProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

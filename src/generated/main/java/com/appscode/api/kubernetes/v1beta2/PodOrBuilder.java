@@ -44,17 +44,17 @@ public interface PodOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Pod.Status getStatus();
+  com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Pod.StatusOrBuilder getStatusOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>

@@ -41,16 +41,17 @@ public final class MailingListProto {
       "\013sender_name\030\001 \001(\t\022\024\n\014sender_email\030\002 \001(\t" +
       "\022\017\n\007subject\030\003 \001(\t\022\014\n\004body\030\004 \001(\t\022\026\n\016recei" +
       "ver_email\030\005 \001(\t\"!\n\020SubscribeRequest\022\r\n\005e" +
-      "mail\030\001 \001(\t2\264\002\n\013MailingList\022\210\001\n\tSendEmail" +
+      "mail\030\001 \001(\t2\276\002\n\013MailingList\022\215\001\n\tSendEmail" +
       "\022..appscode.mailinglist.v1beta1.SendEmai",
       "lRequest\032\035.appscode.dtypes.VoidResponse\"" +
-      ",\202\323\344\223\002 \"\033/_appscode/api/mail/v1beta1:\001*\202" +
-      "\265\030\002\010\001\022\231\001\n\tSubscribe\022..appscode.mailingli" +
-      "st.v1beta1.SubscribeRequest\032\035.appscode.d" +
-      "types.VoidResponse\"=\202\323\344\223\0021\032,/_appscode/a" +
-      "pi/mailinglist/v1beta1/subscribe:\001*\202\265\030\002\010" +
-      "\001BC\n$com.appscode.api.mailinglist.v1beta" +
-      "1B\020MailingListProtoP\001Z\007v1beta1b\006proto3"
+      "1\202\323\344\223\002%\" /_appscode/api/mail/v1beta1/jso" +
+      "n:\001*\202\265\030\002\010\001\022\236\001\n\tSubscribe\022..appscode.mail" +
+      "inglist.v1beta1.SubscribeRequest\032\035.appsc" +
+      "ode.dtypes.VoidResponse\"B\202\323\344\223\0026\0321/_appsc" +
+      "ode/api/mailinglist/v1beta1/subscribe/js" +
+      "on:\001*\202\265\030\002\010\001BC\n$com.appscode.api.mailingl" +
+      "ist.v1beta1B\020MailingListProtoP\001Z\007v1beta1" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -100,28 +100,28 @@ public final class IncidentProto {
       "\t\022\035\n\025kubernetes_alert_name\030\t \001(\t\022\032\n\022kube" +
       "rnetes_cluster\030\n \001(\t\"P\n\032IncidentEventCre" +
       "ateRequest\022\014\n\004phid\030\001 \001(\t\022\017\n\007comment\030\002 \001(" +
-      "\t\022\023\n\013acknowledge\030\003 \001(\0102\354\005\n\tIncidents\022\246\001\n" +
+      "\t\022\023\n\013acknowledge\030\003 \001(\0102\200\006\n\tIncidents\022\253\001\n" +
       "\004List\0220.appscode.kubernetes.v1beta1.Inci" +
       "dentListRequest\0321.appscode.kubernetes.v1",
-      "beta1.IncidentListResponse\"9\202\323\344\223\002-\022+/_ap" +
-      "pscode/api/kubernetes/v1beta1/incidents\202" +
-      "\265\030\002\010\001\022\271\001\n\010Describe\0224.appscode.kubernetes" +
-      ".v1beta1.IncidentDescribeRequest\0325.appsc" +
-      "ode.kubernetes.v1beta1.IncidentDescribeR" +
-      "esponse\"@\202\323\344\223\0024\0222/_appscode/api/kubernet" +
-      "es/v1beta1/incidents/{phid}\202\265\030\002\010\001\022\305\001\n\006No" +
-      "tify\0222.appscode.kubernetes.v1beta1.Incid" +
-      "entNotifyRequest\032\035.appscode.dtypes.VoidR" +
-      "esponse\"h\202\323\344\223\002\\\"W/_appscode/api/kubernet",
-      "es/v1beta1/clusters/{kubernetes_cluster}" +
-      "/actions/notify-incident:\001*\202\265\030\002\010\001\022\261\001\n\013Cr" +
-      "eateEvent\0227.appscode.kubernetes.v1beta1." +
-      "IncidentEventCreateRequest\032\035.appscode.dt" +
-      "ypes.VoidResponse\"J\202\323\344\223\002>\"9/_appscode/ap" +
-      "i/kubernetes/v1beta1/incidents/{phid}/ev" +
-      "ents:\001*\202\265\030\002\010\001B?\n#com.appscode.api.kubern" +
-      "etes.v1beta1B\rIncidentProtoP\001Z\007v1beta1b\006" +
-      "proto3"
+      "beta1.IncidentListResponse\">\202\323\344\223\0022\0220/_ap" +
+      "pscode/api/kubernetes/v1beta1/incidents/" +
+      "json\202\265\030\002\010\001\022\276\001\n\010Describe\0224.appscode.kuber" +
+      "netes.v1beta1.IncidentDescribeRequest\0325." +
+      "appscode.kubernetes.v1beta1.IncidentDesc" +
+      "ribeResponse\"E\202\323\344\223\0029\0227/_appscode/api/kub" +
+      "ernetes/v1beta1/incidents/{phid}/json\202\265\030" +
+      "\002\010\001\022\312\001\n\006Notify\0222.appscode.kubernetes.v1b" +
+      "eta1.IncidentNotifyRequest\032\035.appscode.dt" +
+      "ypes.VoidResponse\"m\202\323\344\223\002a\"\\/_appscode/ap",
+      "i/kubernetes/v1beta1/clusters/{kubernete" +
+      "s_cluster}/actions/notify-incident/json:" +
+      "\001*\202\265\030\002\010\001\022\266\001\n\013CreateEvent\0227.appscode.kube" +
+      "rnetes.v1beta1.IncidentEventCreateReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"O\202\323\344\223\002C" +
+      "\">/_appscode/api/kubernetes/v1beta1/inci" +
+      "dents/{phid}/events/json:\001*\202\265\030\002\010\001B?\n#com" +
+      ".appscode.api.kubernetes.v1beta1B\rIncide" +
+      "ntProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

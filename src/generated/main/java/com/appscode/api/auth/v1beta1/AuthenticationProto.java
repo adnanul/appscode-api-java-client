@@ -73,25 +73,26 @@ public final class AuthenticationProto {
       "\027.appscode.dtypes.Status\022\r\n\005token\030\002 \001(\t\"" +
       "1\n\rLogoutRequest\022\021\n\tnamespace\030\001 \001(\t\022\r\n\005t" +
       "oken\030\002 \001(\t\"9\n\016LogoutResponse\022\'\n\006status\030\001" +
-      " \001(\0132\027.appscode.dtypes.Status2\206\005\n\016Authen" +
-      "tication\022\253\001\n\005Login\022#.appscode.auth.v1bet" +
+      " \001(\0132\027.appscode.dtypes.Status2\232\005\n\016Authen" +
+      "tication\022\260\001\n\005Login\022#.appscode.auth.v1bet" +
       "a1.LoginRequest\032$.appscode.auth.v1beta1." +
-      "LoginResponse\"W\202\323\344\223\002K\"!/_appscode/api/au" +
-      "th/v1beta1/login:\001*Z#\"\036/_appscode/api/au",
-      "th/v0.1/login:\001*\202\265\030\002\010\001\022\260\001\n\006Logout\022$.apps" +
-      "code.auth.v1beta1.LogoutRequest\032%.appsco" +
-      "de.auth.v1beta1.LogoutResponse\"Y\202\323\344\223\002M\"\"" +
-      "/_appscode/api/auth/v1beta1/logout:\001*Z$\"" +
-      "\037/_appscode/api/auth/v0.1/logout:\001*\202\265\030\002\010" +
-      "\001\022\206\001\n\005Token\022#.appscode.auth.v1beta1.Toke" +
-      "nRequest\032$.appscode.auth.v1beta1.TokenRe" +
-      "sponse\"2\202\323\344\223\002&\"!/_appscode/api/auth/v1be" +
-      "ta1/token:\001*\202\265\030\002\010\001\022\211\001\n\tCSRFToken\022\034.appsc" +
-      "ode.dtypes.VoidRequest\032(.appscode.auth.v",
-      "1beta1.CSRFTokenResponse\"4\202\323\344\223\002(\022&/_apps" +
-      "code/api/auth/v1beta1/csrf-token\202\265\030\002\010\001B?" +
-      "\n\035com.appscode.api.auth.v1beta1B\023Authent" +
-      "icationProtoP\001Z\007v1beta1b\006proto3"
+      "LoginResponse\"\\\202\323\344\223\002P\"&/_appscode/api/au" +
+      "th/v1beta1/login/json:\001*Z#\"\036/_appscode/a",
+      "pi/auth/v0.1/login:\001*\202\265\030\002\010\001\022\265\001\n\006Logout\022$" +
+      ".appscode.auth.v1beta1.LogoutRequest\032%.a" +
+      "ppscode.auth.v1beta1.LogoutResponse\"^\202\323\344" +
+      "\223\002R\"\'/_appscode/api/auth/v1beta1/logout/" +
+      "json:\001*Z$\"\037/_appscode/api/auth/v0.1/logo" +
+      "ut:\001*\202\265\030\002\010\001\022\213\001\n\005Token\022#.appscode.auth.v1" +
+      "beta1.TokenRequest\032$.appscode.auth.v1bet" +
+      "a1.TokenResponse\"7\202\323\344\223\002+\"&/_appscode/api" +
+      "/auth/v1beta1/token/json:\001*\202\265\030\002\010\001\022\216\001\n\tCS" +
+      "RFToken\022\034.appscode.dtypes.VoidRequest\032(.",
+      "appscode.auth.v1beta1.CSRFTokenResponse\"" +
+      "9\202\323\344\223\002-\022+/_appscode/api/auth/v1beta1/csr" +
+      "f-token/json\202\265\030\002\010\001B?\n\035com.appscode.api.a" +
+      "uth.v1beta1B\023AuthenticationProtoP\001Z\007v1be" +
+      "ta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

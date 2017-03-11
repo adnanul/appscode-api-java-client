@@ -710,12 +710,12 @@ public  final class ClusterCreateRequest extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - team-admins       // to allow ns admin access
-   *    - cluster-admins    // to allow admin access
-   *    - cluster-editors   // to allow editor access
-   *    - cluster-deployers // to allow deployer access
-   *    - cluster-viewers   // to allow viewer access
-   *    - no-access         // to allow no default access
+   *   - kubernetes:team-admin
+   *   - kubernetes:cluster-admin
+   *   - kubernetes:admin
+   *   - kubernetes:editor
+   *   - kubernetes:viewer
+   *   - deny-access
    * If not set this will set ""
    * </pre>
    *
@@ -738,12 +738,12 @@ public  final class ClusterCreateRequest extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - team-admins       // to allow ns admin access
-   *    - cluster-admins    // to allow admin access
-   *    - cluster-editors   // to allow editor access
-   *    - cluster-deployers // to allow deployer access
-   *    - cluster-viewers   // to allow viewer access
-   *    - no-access         // to allow no default access
+   *   - kubernetes:team-admin
+   *   - kubernetes:cluster-admin
+   *   - kubernetes:admin
+   *   - kubernetes:editor
+   *   - kubernetes:viewer
+   *   - deny-access
    * If not set this will set ""
    * </pre>
    *
@@ -2524,12 +2524,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - team-admins       // to allow ns admin access
-     *    - cluster-admins    // to allow admin access
-     *    - cluster-editors   // to allow editor access
-     *    - cluster-deployers // to allow deployer access
-     *    - cluster-viewers   // to allow viewer access
-     *    - no-access         // to allow no default access
+     *   - kubernetes:team-admin
+     *   - kubernetes:cluster-admin
+     *   - kubernetes:admin
+     *   - kubernetes:editor
+     *   - kubernetes:viewer
+     *   - deny-access
      * If not set this will set ""
      * </pre>
      *
@@ -2552,12 +2552,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - team-admins       // to allow ns admin access
-     *    - cluster-admins    // to allow admin access
-     *    - cluster-editors   // to allow editor access
-     *    - cluster-deployers // to allow deployer access
-     *    - cluster-viewers   // to allow viewer access
-     *    - no-access         // to allow no default access
+     *   - kubernetes:team-admin
+     *   - kubernetes:cluster-admin
+     *   - kubernetes:admin
+     *   - kubernetes:editor
+     *   - kubernetes:viewer
+     *   - deny-access
      * If not set this will set ""
      * </pre>
      *
@@ -2581,12 +2581,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - team-admins       // to allow ns admin access
-     *    - cluster-admins    // to allow admin access
-     *    - cluster-editors   // to allow editor access
-     *    - cluster-deployers // to allow deployer access
-     *    - cluster-viewers   // to allow viewer access
-     *    - no-access         // to allow no default access
+     *   - kubernetes:team-admin
+     *   - kubernetes:cluster-admin
+     *   - kubernetes:admin
+     *   - kubernetes:editor
+     *   - kubernetes:viewer
+     *   - deny-access
      * If not set this will set ""
      * </pre>
      *
@@ -2607,12 +2607,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - team-admins       // to allow ns admin access
-     *    - cluster-admins    // to allow admin access
-     *    - cluster-editors   // to allow editor access
-     *    - cluster-deployers // to allow deployer access
-     *    - cluster-viewers   // to allow viewer access
-     *    - no-access         // to allow no default access
+     *   - kubernetes:team-admin
+     *   - kubernetes:cluster-admin
+     *   - kubernetes:admin
+     *   - kubernetes:editor
+     *   - kubernetes:viewer
+     *   - deny-access
      * If not set this will set ""
      * </pre>
      *
@@ -2629,12 +2629,12 @@ public  final class ClusterCreateRequest extends
      * Default access level is to allow permission to the cluster
      * when no Role matched for that specif user or group. This can
      * set as
-     *    - team-admins       // to allow ns admin access
-     *    - cluster-admins    // to allow admin access
-     *    - cluster-editors   // to allow editor access
-     *    - cluster-deployers // to allow deployer access
-     *    - cluster-viewers   // to allow viewer access
-     *    - no-access         // to allow no default access
+     *   - kubernetes:team-admin
+     *   - kubernetes:cluster-admin
+     *   - kubernetes:admin
+     *   - kubernetes:editor
+     *   - kubernetes:viewer
+     *   - deny-access
      * If not set this will set ""
      * </pre>
      *

@@ -133,19 +133,19 @@ public final class OperationProto {
       "\022DATA_BUCKET_DELETE\020\t\022\023\n\017BACKUP_SCHEDULE" +
       "\020\n\022\024\n\020NAMESPACE_CREATE\020\013\022\030\n\024NAMESPACE_AD" +
       "MIN_TASK\020\014\022\022\n\016DATABASE_CHECK\020\017\022\022\n\016SNAPSH",
-      "OT_CHECK\020\020\022\023\n\017DATABASE_DELETE\020\0212\367\002\n\nOper" +
-      "ations\022\247\001\n\010Describe\022+.appscode.operation" +
+      "OT_CHECK\020\020\022\023\n\017DATABASE_DELETE\020\0212\201\003\n\nOper" +
+      "ations\022\254\001\n\010Describe\022+.appscode.operation" +
       ".v1beta1.DescribeRequest\032,.appscode.oper" +
-      "ation.v1beta1.DescribeResponse\"@\202\323\344\223\0024\0222" +
+      "ation.v1beta1.DescribeResponse\"E\202\323\344\223\0029\0227" +
       "/_appscode/api/operation/v1beta1/operati" +
-      "ons/{phid}\202\265\030\002\010\001\022\276\001\n\013DescribeLog\022..appsc" +
-      "ode.operation.v1beta1.LogDescribeRequest" +
-      "\032/.appscode.operation.v1beta1.LogDescrib" +
-      "eResponse\"N\202\323\344\223\002B\022@/_appscode/api/operat" +
-      "ion/v1beta1/operations/{phid}/logs/{log_",
-      "id}\202\265\030\002\010\001B?\n\"com.appscode.api.operation." +
-      "v1beta1B\016OperationProtoP\001Z\007v1beta1b\006prot" +
-      "o3"
+      "ons/{phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022.." +
+      "appscode.operation.v1beta1.LogDescribeRe" +
+      "quest\032/.appscode.operation.v1beta1.LogDe" +
+      "scribeResponse\"S\202\323\344\223\002G\022E/_appscode/api/o" +
+      "peration/v1beta1/operations/{phid}/logs/",
+      "{log_id}/json\202\265\030\002\010\001B?\n\"com.appscode.api." +
+      "operation.v1beta1B\016OperationProtoP\001Z\007v1b" +
+      "eta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -8,12 +8,12 @@ public interface AgentDeleteRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string uid = 1;</code>
    */
-  java.lang.String getName();
+  java.lang.String getUid();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string uid = 1;</code>
    */
   com.google.protobuf.ByteString
-      getNameBytes();
+      getUidBytes();
 }

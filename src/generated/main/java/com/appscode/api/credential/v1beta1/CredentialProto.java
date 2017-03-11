@@ -106,35 +106,36 @@ public final class CredentialProto {
       ".Status\022;\n\ncredential\030\002 \001(\0132\'.appscode.c" +
       "redential.v1beta1.Credential\"V\n\nCredenti" +
       "al\022\014\n\004name\030\001 \001(\t\022\020\n\010provider\030\002 \001(\t\022\023\n\013in" +
-      "formation\030\003 \001(\t\022\023\n\013modified_at\030\004 \001(\0032\224\010\n" +
-      "\013Credentials\022\221\001\n\004List\022\034.appscode.dtypes.",
+      "formation\030\003 \001(\t\022\023\n\013modified_at\030\004 \001(\0032\262\010\n" +
+      "\013Credentials\022\226\001\n\004List\022\034.appscode.dtypes.",
       "VoidRequest\0323.appscode.credential.v1beta" +
-      "1.CredentialListResponse\"6\202\323\344\223\002*\022(/_apps" +
-      "code/api/cloud/v1beta1/credentials\202\265\030\002\010\001" +
-      "\022\272\001\n\010Describe\0226.appscode.credential.v1be" +
-      "ta1.CredentialDescribeRequest\0327.appscode" +
-      ".credential.v1beta1.CredentialDescribeRe" +
-      "sponse\"=\202\323\344\223\0021\022//_appscode/api/cloud/v1b" +
-      "eta1/credentials/{name}\202\265\030\002\010\001\022\230\001\n\006Create" +
+      "1.CredentialListResponse\";\202\323\344\223\002/\022-/_apps" +
+      "code/api/cloud/v1beta1/credentials/json\202" +
+      "\265\030\002\010\001\022\277\001\n\010Describe\0226.appscode.credential" +
+      ".v1beta1.CredentialDescribeRequest\0327.app" +
+      "scode.credential.v1beta1.CredentialDescr" +
+      "ibeResponse\"B\202\323\344\223\0026\0224/_appscode/api/clou" +
+      "d/v1beta1/credentials/{name}/json\202\265\030\002\010\001\022" +
+      "\235\001\n\006Create\0224.appscode.credential.v1beta1" +
+      ".CredentialCreateRequest\032\035.appscode.dtyp",
+      "es.VoidResponse\">\202\323\344\223\0022\"-/_appscode/api/" +
+      "cloud/v1beta1/credentials/json:\001*\202\265\030\002\010\001\022" +
+      "\244\001\n\006Update\0224.appscode.credential.v1beta1" +
+      ".CredentialUpdateRequest\032\035.appscode.dtyp" +
+      "es.VoidResponse\"E\202\323\344\223\0029\0324/_appscode/api/" +
+      "cloud/v1beta1/credentials/{name}/json:\001*" +
+      "\202\265\030\002\010\001\022\334\001\n\014IsAuthorized\022:.appscode.crede" +
+      "ntial.v1beta1.CredentialIsAuthorizedRequ" +
+      "est\032;.appscode.credential.v1beta1.Creden" +
+      "tialIsAuthorizedResponse\"S\202\323\344\223\002G\"B/_apps",
+      "code/api/cloud/v1beta1/credentials/{name" +
+      "}/is-authorized/json:\001*\202\265\030\002\010\001\022\241\001\n\006Delete" +
       "\0224.appscode.credential.v1beta1.Credentia" +
-      "lCreateRequest\032\035.appscode.dtypes.VoidRes",
-      "ponse\"9\202\323\344\223\002-\"(/_appscode/api/cloud/v1be" +
-      "ta1/credentials:\001*\202\265\030\002\010\001\022\237\001\n\006Update\0224.ap" +
-      "pscode.credential.v1beta1.CredentialUpda" +
-      "teRequest\032\035.appscode.dtypes.VoidResponse" +
-      "\"@\202\323\344\223\0024\032//_appscode/api/cloud/v1beta1/c" +
-      "redentials/{name}:\001*\202\265\030\002\010\001\022\327\001\n\014IsAuthori" +
-      "zed\022:.appscode.credential.v1beta1.Creden" +
-      "tialIsAuthorizedRequest\032;.appscode.crede" +
-      "ntial.v1beta1.CredentialIsAuthorizedResp" +
-      "onse\"N\202\323\344\223\002B\"=/_appscode/api/cloud/v1bet",
-      "a1/credentials/{name}/is-authorized:\001*\202\265" +
-      "\030\002\010\001\022\234\001\n\006Delete\0224.appscode.credential.v1" +
-      "beta1.CredentialDeleteRequest\032\035.appscode" +
-      ".dtypes.VoidResponse\"=\202\323\344\223\0021*//_appscode" +
-      "/api/cloud/v1beta1/credentials/{name}\202\265\030" +
-      "\002\010\001BA\n#com.appscode.api.credential.v1bet" +
-      "a1B\017CredentialProtoP\001Z\007v1beta1b\006proto3"
+      "lDeleteRequest\032\035.appscode.dtypes.VoidRes" +
+      "ponse\"B\202\323\344\223\0026*4/_appscode/api/cloud/v1be" +
+      "ta1/credentials/{name}/json\202\265\030\002\010\001BA\n#com" +
+      ".appscode.api.credential.v1beta1B\017Creden" +
+      "tialProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

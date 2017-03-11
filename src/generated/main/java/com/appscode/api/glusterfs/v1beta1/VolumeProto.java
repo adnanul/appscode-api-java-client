@@ -48,15 +48,15 @@ public final class VolumeProto {
       "onse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.S" +
       "tatus\0223\n\007volumes\030\002 \003(\0132\".appscode.gluste" +
       "rfs.v1beta1.Volume\"\026\n\006Volume\022\014\n\004path\030\001 \001",
-      "(\t2\375\001\n\007Volumes\022\361\001\n\004List\022-.appscode.glust" +
+      "(\t2\204\002\n\007Volumes\022\370\001\n\004List\022-.appscode.glust" +
       "erfs.v1beta1.VolumeListRequest\032..appscod" +
-      "e.glusterfs.v1beta1.VolumeListResponse\"\211" +
-      "\001\202\323\344\223\002}\022{/_appscode/api/kubernetes/v1bet" +
-      "a1/clusters/{kube_cluster}/namespaces/{k" +
-      "ube_namespace}/glusterfs/{glusterfs_clus" +
-      "ter}/volumes\202\265\030\002\010\001B<\n\"com.appscode.api.g" +
-      "lusterfs.v1beta1B\013VolumeProtoP\001Z\007v1beta1" +
-      "b\006proto3"
+      "e.glusterfs.v1beta1.VolumeListResponse\"\220" +
+      "\001\202\323\344\223\002\203\001\022\200\001/_appscode/api/kubernetes/v1b" +
+      "eta1/clusters/{kube_cluster}/namespaces/" +
+      "{kube_namespace}/glusterfs/{glusterfs_cl" +
+      "uster}/volumes/json\202\265\030\002\010\001B<\n\"com.appscod" +
+      "e.api.glusterfs.v1beta1B\013VolumeProtoP\001Z\007" +
+      "v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

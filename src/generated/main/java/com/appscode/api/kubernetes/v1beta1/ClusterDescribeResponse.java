@@ -69,11 +69,11 @@ public  final class ClusterDescribeResponse extends
             break;
           }
           case 26: {
-            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder subBuilder = null;
             if (spec_ != null) {
               subBuilder = spec_.toBuilder();
             }
-            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.parser(), extensionRegistry);
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(spec_);
               spec_ = subBuilder.buildPartial();
@@ -104,8 +104,8 @@ public  final class ClusterDescribeResponse extends
             com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Builder.class);
   }
 
-  public interface SpecOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec)
+  public interface ClusterSpecOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -139,17 +139,17 @@ public  final class ClusterDescribeResponse extends
     long getTotalMemory();
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec}
+   * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec}
    */
-  public  static final class Spec extends
+  public  static final class ClusterSpec extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec)
-      SpecOrBuilder {
-    // Use Spec.newBuilder() to construct.
-    private Spec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)
+      ClusterSpecOrBuilder {
+    // Use ClusterSpec.newBuilder() to construct.
+    private ClusterSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Spec() {
+    private ClusterSpec() {
       containerCount_ = 0;
       podCount_ = 0;
       serviceCount_ = 0;
@@ -163,7 +163,7 @@ public  final class ClusterDescribeResponse extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private Spec(
+    private ClusterSpec(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -226,14 +226,14 @@ public  final class ClusterDescribeResponse extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_Spec_descriptor;
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_ClusterSpec_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_Spec_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_ClusterSpec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.class, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder.class);
+              com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.class, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder.class);
     }
 
     public static final int CONTAINER_COUNT_FIELD_NUMBER = 1;
@@ -361,10 +361,10 @@ public  final class ClusterDescribeResponse extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec other = (com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec) obj;
+      com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec other = (com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec) obj;
 
       boolean result = true;
       result = result && (getContainerCount()
@@ -408,58 +408,58 @@ public  final class ClusterDescribeResponse extends
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -471,7 +471,7 @@ public  final class ClusterDescribeResponse extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -486,25 +486,25 @@ public  final class ClusterDescribeResponse extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec}
+     * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec)
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_Spec_descriptor;
+        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_ClusterSpec_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_Spec_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_ClusterSpec_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.class, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder.class);
+                com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.class, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -538,23 +538,23 @@ public  final class ClusterDescribeResponse extends
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_Spec_descriptor;
+        return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterDescribeResponse_ClusterSpec_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec build() {
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec build() {
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec buildPartial() {
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec result = new com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec(this);
+      public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec buildPartial() {
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec result = new com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec(this);
         result.containerCount_ = containerCount_;
         result.podCount_ = podCount_;
         result.serviceCount_ = serviceCount_;
@@ -592,16 +592,16 @@ public  final class ClusterDescribeResponse extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec other) {
-        if (other == com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec other) {
+        if (other == com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance()) return this;
         if (other.getContainerCount() != 0) {
           setContainerCount(other.getContainerCount());
         }
@@ -632,11 +632,11 @@ public  final class ClusterDescribeResponse extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -812,39 +812,39 @@ public  final class ClusterDescribeResponse extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec)
-    private static final com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec)
+    private static final com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec();
     }
 
-    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Spec>
-        PARSER = new com.google.protobuf.AbstractParser<Spec>() {
-      public Spec parsePartialFrom(
+    private static final com.google.protobuf.Parser<ClusterSpec>
+        PARSER = new com.google.protobuf.AbstractParser<ClusterSpec>() {
+      public ClusterSpec parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Spec(input, extensionRegistry);
+          return new ClusterSpec(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Spec> parser() {
+    public static com.google.protobuf.Parser<ClusterSpec> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Spec> getParserForType() {
+    public com.google.protobuf.Parser<ClusterSpec> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -893,23 +893,23 @@ public  final class ClusterDescribeResponse extends
   }
 
   public static final int SPEC_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec_;
+  private com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getSpec() {
-    return spec_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.getDefaultInstance() : spec_;
+  public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder getSpecOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
   }
 
@@ -1489,29 +1489,29 @@ public  final class ClusterDescribeResponse extends
       return clusterBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec_ = null;
+    private com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder> specBuilder_;
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getSpec() {
+    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getSpec() {
       if (specBuilder_ == null) {
-        return spec_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.getDefaultInstance() : spec_;
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance() : spec_;
       } else {
         return specBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
-    public Builder setSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec value) {
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec value) {
       if (specBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1525,10 +1525,10 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
     public Builder setSpec(
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder builderForValue) {
       if (specBuilder_ == null) {
         spec_ = builderForValue.build();
         onChanged();
@@ -1539,13 +1539,13 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
-    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec value) {
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec value) {
       if (specBuilder_ == null) {
         if (spec_ != null) {
           spec_ =
-            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.newBuilder(spec_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.newBuilder(spec_).mergeFrom(value).buildPartial();
         } else {
           spec_ = value;
         }
@@ -1557,7 +1557,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1571,33 +1571,33 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder getSpecBuilder() {
+    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder getSpecBuilder() {
       
       onChanged();
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder getSpecOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
         return specBuilder_.getMessageOrBuilder();
       } else {
         return spec_ == null ?
-            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.getDefaultInstance() : spec_;
+            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance() : spec_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder> 
+        com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder> 
         getSpecFieldBuilder() {
       if (specBuilder_ == null) {
         specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder>(
+            com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder>(
                 getSpec(),
                 getParentForChildren(),
                 isClean());

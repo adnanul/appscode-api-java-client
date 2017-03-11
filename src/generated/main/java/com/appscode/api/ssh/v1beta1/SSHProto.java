@@ -50,12 +50,12 @@ public final class SSHProto {
       "ser\030\005 \001(\t\022\017\n\007command\030\006 \001(\t\"g\n\006SSHKey\022\022\n\n",
       "public_key\030\001 \001(\014\022\023\n\013private_key\030\002 \001(\014\022\027\n" +
       "\017aws_fingerprint\030\003 \001(\t\022\033\n\023openssh_finger" +
-      "print\030\004 \001(\t2\177\n\003SSH\022x\n\003Get\022#.appscode.ssh" +
-      ".v1beta1.SSHGetRequest\032$.appscode.ssh.v1" +
-      "beta1.SSHGetResponse\"&\202\323\344\223\002 \022\036/_appscode" +
-      "/api/ssh/v1beta1/sshB3\n\034com.appscode.api" +
-      ".ssh.v1beta1B\010SSHProtoP\001Z\007v1beta1b\006proto" +
-      "3"
+      "print\030\004 \001(\t2\204\001\n\003SSH\022}\n\003Get\022#.appscode.ss" +
+      "h.v1beta1.SSHGetRequest\032$.appscode.ssh.v" +
+      "1beta1.SSHGetResponse\"+\202\323\344\223\002%\022#/_appscod" +
+      "e/api/ssh/v1beta1/ssh/jsonB3\n\034com.appsco" +
+      "de.api.ssh.v1beta1B\010SSHProtoP\001Z\007v1beta1b" +
+      "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -81,30 +81,31 @@ public final class ClusterProto {
       "luster\030\004 \001(\t\022\026\n\016kube_namespace\030\005 \001(\t\022\025\n\r" +
       "storage_class\030\007 \001(\t\"R\n\024ClusterDeleteRequ" +
       "est\022\024\n\014kube_cluster\030\001 \001(\t\022\026\n\016kube_namesp" +
-      "ace\030\002 \001(\t\022\014\n\004name\030\003 \001(\t2\323\006\n\010Clusters\022\272\001\n" +
+      "ace\030\002 \001(\t\022\014\n\004name\030\003 \001(\t2\347\006\n\010Clusters\022\277\001\n" +
       "\004List\022..appscode.glusterfs.v1beta1.Clust" +
       "erListRequest\032/.appscode.glusterfs.v1bet" +
-      "a1.ClusterListResponse\"Q\202\323\344\223\002E\022C/_appsco" +
+      "a1.ClusterListResponse\"V\202\323\344\223\002J\022H/_appsco" +
       "de/api/kubernetes/v1beta1/clusters/{kube" +
-      "_cluster}/glusterfs\202\265\030\002\010\001\022\351\001\n\010Describe\0222" +
-      ".appscode.glusterfs.v1beta1.ClusterDescr",
-      "ibeRequest\0323.appscode.glusterfs.v1beta1." +
-      "ClusterDescribeResponse\"t\202\323\344\223\002h\022f/_appsc" +
-      "ode/api/kubernetes/v1beta1/clusters/{kub" +
-      "e_cluster}/namespaces/{kube_namespace}/g" +
-      "lusterfs/{name}\202\265\030\002\010\001\022\313\001\n\006Create\0220.appsc" +
-      "ode.glusterfs.v1beta1.ClusterCreateReque" +
-      "st\032\035.appscode.dtypes.VoidResponse\"p\202\323\344\223\002" +
-      "d\"_/_appscode/api/kubernetes/v1beta1/clu" +
-      "sters/{kube_cluster}/namespaces/{kube_na" +
-      "mespace}/glusterfs:\001*\202\265\030\002\010\001\022\317\001\n\006Delete\0220",
-      ".appscode.glusterfs.v1beta1.ClusterDelet" +
-      "eRequest\032\035.appscode.dtypes.VoidResponse\"" +
-      "t\202\323\344\223\002h*f/_appscode/api/kubernetes/v1bet" +
-      "a1/clusters/{kube_cluster}/namespaces/{k" +
-      "ube_namespace}/glusterfs/{name}\202\265\030\002\010\001B=\n" +
-      "\"com.appscode.api.glusterfs.v1beta1B\014Clu" +
-      "sterProtoP\001Z\007v1beta1b\006proto3"
+      "_cluster}/glusterfs/json\202\265\030\002\010\001\022\356\001\n\010Descr" +
+      "ibe\0222.appscode.glusterfs.v1beta1.Cluster",
+      "DescribeRequest\0323.appscode.glusterfs.v1b" +
+      "eta1.ClusterDescribeResponse\"y\202\323\344\223\002m\022k/_" +
+      "appscode/api/kubernetes/v1beta1/clusters" +
+      "/{kube_cluster}/namespaces/{kube_namespa" +
+      "ce}/glusterfs/{name}/json\202\265\030\002\010\001\022\320\001\n\006Crea" +
+      "te\0220.appscode.glusterfs.v1beta1.ClusterC" +
+      "reateRequest\032\035.appscode.dtypes.VoidRespo" +
+      "nse\"u\202\323\344\223\002i\"d/_appscode/api/kubernetes/v" +
+      "1beta1/clusters/{kube_cluster}/namespace" +
+      "s/{kube_namespace}/glusterfs/json:\001*\202\265\030\002",
+      "\010\001\022\324\001\n\006Delete\0220.appscode.glusterfs.v1bet" +
+      "a1.ClusterDeleteRequest\032\035.appscode.dtype" +
+      "s.VoidResponse\"y\202\323\344\223\002m*k/_appscode/api/k" +
+      "ubernetes/v1beta1/clusters/{kube_cluster" +
+      "}/namespaces/{kube_namespace}/glusterfs/" +
+      "{name}/json\202\265\030\002\010\001B=\n\"com.appscode.api.gl" +
+      "usterfs.v1beta1B\014ClusterProtoP\001Z\007v1beta1" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

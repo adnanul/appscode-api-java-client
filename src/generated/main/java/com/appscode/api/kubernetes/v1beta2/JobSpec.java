@@ -17,6 +17,7 @@ public  final class JobSpec extends
   private JobSpec() {
     parallelism_ = 0;
     completions_ = 0;
+    activeDeadlineSeconds_ = 0L;
   }
 
   @java.lang.Override
@@ -65,6 +66,11 @@ public  final class JobSpec extends
               template_ = subBuilder.buildPartial();
             }
 
+            break;
+          }
+          case 32: {
+
+            activeDeadlineSeconds_ = input.readInt64();
             break;
           }
         }
@@ -129,6 +135,15 @@ public  final class JobSpec extends
     return getTemplate();
   }
 
+  public static final int ACTIVE_DEADLINE_SECONDS_FIELD_NUMBER = 4;
+  private long activeDeadlineSeconds_;
+  /**
+   * <code>optional int64 active_deadline_seconds = 4;</code>
+   */
+  public long getActiveDeadlineSeconds() {
+    return activeDeadlineSeconds_;
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -150,6 +165,9 @@ public  final class JobSpec extends
     if (template_ != null) {
       output.writeMessage(3, getTemplate());
     }
+    if (activeDeadlineSeconds_ != 0L) {
+      output.writeInt64(4, activeDeadlineSeconds_);
+    }
   }
 
   public int getSerializedSize() {
@@ -168,6 +186,10 @@ public  final class JobSpec extends
     if (template_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(3, getTemplate());
+    }
+    if (activeDeadlineSeconds_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(4, activeDeadlineSeconds_);
     }
     memoizedSize = size;
     return size;
@@ -194,6 +216,8 @@ public  final class JobSpec extends
       result = result && getTemplate()
           .equals(other.getTemplate());
     }
+    result = result && (getActiveDeadlineSeconds()
+        == other.getActiveDeadlineSeconds());
     return result;
   }
 
@@ -212,6 +236,9 @@ public  final class JobSpec extends
       hash = (37 * hash) + TEMPLATE_FIELD_NUMBER;
       hash = (53 * hash) + getTemplate().hashCode();
     }
+    hash = (37 * hash) + ACTIVE_DEADLINE_SECONDS_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getActiveDeadlineSeconds());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -340,6 +367,8 @@ public  final class JobSpec extends
         template_ = null;
         templateBuilder_ = null;
       }
+      activeDeadlineSeconds_ = 0L;
+
       return this;
     }
 
@@ -369,6 +398,7 @@ public  final class JobSpec extends
       } else {
         result.template_ = templateBuilder_.build();
       }
+      result.activeDeadlineSeconds_ = activeDeadlineSeconds_;
       onBuilt();
       return result;
     }
@@ -418,6 +448,9 @@ public  final class JobSpec extends
       }
       if (other.hasTemplate()) {
         mergeTemplate(other.getTemplate());
+      }
+      if (other.getActiveDeadlineSeconds() != 0L) {
+        setActiveDeadlineSeconds(other.getActiveDeadlineSeconds());
       }
       onChanged();
       return this;
@@ -612,6 +645,32 @@ public  final class JobSpec extends
         template_ = null;
       }
       return templateBuilder_;
+    }
+
+    private long activeDeadlineSeconds_ ;
+    /**
+     * <code>optional int64 active_deadline_seconds = 4;</code>
+     */
+    public long getActiveDeadlineSeconds() {
+      return activeDeadlineSeconds_;
+    }
+    /**
+     * <code>optional int64 active_deadline_seconds = 4;</code>
+     */
+    public Builder setActiveDeadlineSeconds(long value) {
+      
+      activeDeadlineSeconds_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional int64 active_deadline_seconds = 4;</code>
+     */
+    public Builder clearActiveDeadlineSeconds() {
+      
+      activeDeadlineSeconds_ = 0L;
+      onChanged();
+      return this;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

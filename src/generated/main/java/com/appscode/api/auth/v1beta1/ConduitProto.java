@@ -59,16 +59,16 @@ public final class ConduitProto {
       "\007 \001(\t\0227\n\013preferences\030\010 \001(\0132\".appscode.au" +
       "th.v1beta1.Preferences\"K\n\013Preferences\022\021\n" +
       "\ttime_zone\030\001 \001(\t\022\023\n\013time_format\030\002 \001(\t\022\024\n" +
-      "\014date_formate\030\003 \001(\t2\250\002\n\007Conduit\022\216\001\n\006WhoA" +
+      "\014date_formate\030\003 \001(\t2\262\002\n\007Conduit\022\223\001\n\006WhoA" +
       "mI\022\034.appscode.dtypes.VoidRequest\032,.appsc" +
-      "ode.auth.v1beta1.ConduitWhoAmIResponse\"8" +
-      "\202\323\344\223\002,\022*/_appscode/api/auth/v1beta1/cond",
-      "uit/whoami\202\265\030\002\010\001\022\213\001\n\005Users\022\034.appscode.dt" +
-      "ypes.VoidRequest\032+.appscode.auth.v1beta1" +
-      ".ConduitUsersResponse\"7\202\323\344\223\002+\022)/_appscod" +
-      "e/api/auth/v1beta1/conduit/users\202\265\030\002\010\001B8" +
-      "\n\035com.appscode.api.auth.v1beta1B\014Conduit" +
-      "ProtoP\001Z\007v1beta1b\006proto3"
+      "ode.auth.v1beta1.ConduitWhoAmIResponse\"=" +
+      "\202\323\344\223\0021\022//_appscode/api/auth/v1beta1/cond",
+      "uit/whoami/json\202\265\030\002\010\001\022\220\001\n\005Users\022\034.appsco" +
+      "de.dtypes.VoidRequest\032+.appscode.auth.v1" +
+      "beta1.ConduitUsersResponse\"<\202\323\344\223\0020\022./_ap" +
+      "pscode/api/auth/v1beta1/conduit/users/js" +
+      "on\202\265\030\002\010\001B8\n\035com.appscode.api.auth.v1beta" +
+      "1B\014ConduitProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

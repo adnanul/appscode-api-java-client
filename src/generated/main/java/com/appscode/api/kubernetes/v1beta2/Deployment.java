@@ -76,11 +76,11 @@ public  final class Deployment extends
             break;
           }
           case 34: {
-            com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder subBuilder = null;
             if (status_ != null) {
               subBuilder = status_.toBuilder();
             }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Deployment.Status.parser(), extensionRegistry);
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(status_);
               status_ = subBuilder.buildPartial();
@@ -145,6 +145,52 @@ public  final class Deployment extends
      * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder();
+
+    /**
+     * <code>optional int32 min_ready_seconds = 4;</code>
+     */
+    int getMinReadySeconds();
+
+    /**
+     * <code>optional int32 revision_history_limit = 5;</code>
+     */
+    int getRevisionHistoryLimit();
+
+    /**
+     * <code>optional bool paused = 6;</code>
+     */
+    boolean getPaused();
+
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    boolean hasRollbackTo();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder();
+
+    /**
+     * <code>optional int32 progress_deadline_seconds = 8;</code>
+     */
+    int getProgressDeadlineSeconds();
+
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    boolean hasStrategy();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder();
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec}
@@ -159,6 +205,10 @@ public  final class Deployment extends
     }
     private Spec() {
       desiredReplicas_ = 0;
+      minReadySeconds_ = 0;
+      revisionHistoryLimit_ = 0;
+      paused_ = false;
+      progressDeadlineSeconds_ = 0;
     }
 
     @java.lang.Override
@@ -217,6 +267,52 @@ public  final class Deployment extends
 
               break;
             }
+            case 32: {
+
+              minReadySeconds_ = input.readInt32();
+              break;
+            }
+            case 40: {
+
+              revisionHistoryLimit_ = input.readInt32();
+              break;
+            }
+            case 48: {
+
+              paused_ = input.readBool();
+              break;
+            }
+            case 58: {
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder subBuilder = null;
+              if (rollbackTo_ != null) {
+                subBuilder = rollbackTo_.toBuilder();
+              }
+              rollbackTo_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(rollbackTo_);
+                rollbackTo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 64: {
+
+              progressDeadlineSeconds_ = input.readInt32();
+              break;
+            }
+            case 74: {
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder subBuilder = null;
+              if (strategy_ != null) {
+                subBuilder = strategy_.toBuilder();
+              }
+              strategy_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(strategy_);
+                strategy_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -238,6 +334,1773 @@ public  final class Deployment extends
       return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.appscode.api.kubernetes.v1beta2.Deployment.Spec.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.Builder.class);
+    }
+
+    public interface DeploymentStrategyOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <code>optional string type = 1;</code>
+       */
+      java.lang.String getType();
+      /**
+       * <code>optional string type = 1;</code>
+       */
+      com.google.protobuf.ByteString
+          getTypeBytes();
+
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      boolean hasRollingUpdate();
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate();
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder();
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy}
+     */
+    public  static final class DeploymentStrategy extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)
+        DeploymentStrategyOrBuilder {
+      // Use DeploymentStrategy.newBuilder() to construct.
+      private DeploymentStrategy(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private DeploymentStrategy() {
+        type_ = "";
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+      }
+      private DeploymentStrategy(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        int mutable_bitField0_ = 0;
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!input.skipField(tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                type_ = s;
+                break;
+              }
+              case 18: {
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder subBuilder = null;
+                if (rollingUpdate_ != null) {
+                  subBuilder = rollingUpdate_.toBuilder();
+                }
+                rollingUpdate_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.parser(), extensionRegistry);
+                if (subBuilder != null) {
+                  subBuilder.mergeFrom(rollingUpdate_);
+                  rollingUpdate_ = subBuilder.buildPartial();
+                }
+
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_DeploymentStrategy_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_DeploymentStrategy_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder.class);
+      }
+
+      public static final int TYPE_FIELD_NUMBER = 1;
+      private volatile java.lang.Object type_;
+      /**
+       * <code>optional string type = 1;</code>
+       */
+      public java.lang.String getType() {
+        java.lang.Object ref = type_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          type_ = s;
+          return s;
+        }
+      }
+      /**
+       * <code>optional string type = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getTypeBytes() {
+        java.lang.Object ref = type_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          type_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int ROLLING_UPDATE_FIELD_NUMBER = 2;
+      private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rollingUpdate_;
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      public boolean hasRollingUpdate() {
+        return rollingUpdate_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate() {
+        return rollingUpdate_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance() : rollingUpdate_;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder() {
+        return getRollingUpdate();
+      }
+
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (!getTypeBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, type_);
+        }
+        if (rollingUpdate_ != null) {
+          output.writeMessage(2, getRollingUpdate());
+        }
+      }
+
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (!getTypeBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, type_);
+        }
+        if (rollingUpdate_ != null) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(2, getRollingUpdate());
+        }
+        memoizedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)) {
+          return super.equals(obj);
+        }
+        com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy other = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy) obj;
+
+        boolean result = true;
+        result = result && getType()
+            .equals(other.getType());
+        result = result && (hasRollingUpdate() == other.hasRollingUpdate());
+        if (hasRollingUpdate()) {
+          result = result && getRollingUpdate()
+              .equals(other.getRollingUpdate());
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (37 * hash) + TYPE_FIELD_NUMBER;
+        hash = (53 * hash) + getType().hashCode();
+        if (hasRollingUpdate()) {
+          hash = (37 * hash) + ROLLING_UPDATE_FIELD_NUMBER;
+          hash = (53 * hash) + getRollingUpdate().hashCode();
+        }
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_DeploymentStrategy_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_DeploymentStrategy_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder.class);
+        }
+
+        // Construct using com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        public Builder clear() {
+          super.clear();
+          type_ = "";
+
+          if (rollingUpdateBuilder_ == null) {
+            rollingUpdate_ = null;
+          } else {
+            rollingUpdate_ = null;
+            rollingUpdateBuilder_ = null;
+          }
+          return this;
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_DeploymentStrategy_descriptor;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getDefaultInstanceForType() {
+          return com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance();
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy build() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy buildPartial() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy result = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy(this);
+          result.type_ = type_;
+          if (rollingUpdateBuilder_ == null) {
+            result.rollingUpdate_ = rollingUpdate_;
+          } else {
+            result.rollingUpdate_ = rollingUpdateBuilder_.build();
+          }
+          onBuilt();
+          return result;
+        }
+
+        public Builder clone() {
+          return (Builder) super.clone();
+        }
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.setField(field, value);
+        }
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return (Builder) super.clearField(field);
+        }
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return (Builder) super.clearOneof(oneof);
+        }
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, Object value) {
+          return (Builder) super.setRepeatedField(field, index, value);
+        }
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.addRepeatedField(field, value);
+        }
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy) {
+            return mergeFrom((com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy other) {
+          if (other == com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance()) return this;
+          if (!other.getType().isEmpty()) {
+            type_ = other.type_;
+            onChanged();
+          }
+          if (other.hasRollingUpdate()) {
+            mergeRollingUpdate(other.getRollingUpdate());
+          }
+          onChanged();
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private java.lang.Object type_ = "";
+        /**
+         * <code>optional string type = 1;</code>
+         */
+        public java.lang.String getType() {
+          java.lang.Object ref = type_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            type_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string type = 1;</code>
+         */
+        public com.google.protobuf.ByteString
+            getTypeBytes() {
+          java.lang.Object ref = type_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            type_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string type = 1;</code>
+         */
+        public Builder setType(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  
+          type_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string type = 1;</code>
+         */
+        public Builder clearType() {
+          
+          type_ = getDefaultInstance().getType();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string type = 1;</code>
+         */
+        public Builder setTypeBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+          
+          type_ = value;
+          onChanged();
+          return this;
+        }
+
+        private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rollingUpdate_ = null;
+        private com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder> rollingUpdateBuilder_;
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public boolean hasRollingUpdate() {
+          return rollingUpdateBuilder_ != null || rollingUpdate_ != null;
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate() {
+          if (rollingUpdateBuilder_ == null) {
+            return rollingUpdate_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance() : rollingUpdate_;
+          } else {
+            return rollingUpdateBuilder_.getMessage();
+          }
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public Builder setRollingUpdate(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment value) {
+          if (rollingUpdateBuilder_ == null) {
+            if (value == null) {
+              throw new NullPointerException();
+            }
+            rollingUpdate_ = value;
+            onChanged();
+          } else {
+            rollingUpdateBuilder_.setMessage(value);
+          }
+
+          return this;
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public Builder setRollingUpdate(
+            com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder builderForValue) {
+          if (rollingUpdateBuilder_ == null) {
+            rollingUpdate_ = builderForValue.build();
+            onChanged();
+          } else {
+            rollingUpdateBuilder_.setMessage(builderForValue.build());
+          }
+
+          return this;
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public Builder mergeRollingUpdate(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment value) {
+          if (rollingUpdateBuilder_ == null) {
+            if (rollingUpdate_ != null) {
+              rollingUpdate_ =
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.newBuilder(rollingUpdate_).mergeFrom(value).buildPartial();
+            } else {
+              rollingUpdate_ = value;
+            }
+            onChanged();
+          } else {
+            rollingUpdateBuilder_.mergeFrom(value);
+          }
+
+          return this;
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public Builder clearRollingUpdate() {
+          if (rollingUpdateBuilder_ == null) {
+            rollingUpdate_ = null;
+            onChanged();
+          } else {
+            rollingUpdate_ = null;
+            rollingUpdateBuilder_ = null;
+          }
+
+          return this;
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder getRollingUpdateBuilder() {
+          
+          onChanged();
+          return getRollingUpdateFieldBuilder().getBuilder();
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder() {
+          if (rollingUpdateBuilder_ != null) {
+            return rollingUpdateBuilder_.getMessageOrBuilder();
+          } else {
+            return rollingUpdate_ == null ?
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance() : rollingUpdate_;
+          }
+        }
+        /**
+         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         */
+        private com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder> 
+            getRollingUpdateFieldBuilder() {
+          if (rollingUpdateBuilder_ == null) {
+            rollingUpdateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder>(
+                    getRollingUpdate(),
+                    getParentForChildren(),
+                    isClean());
+            rollingUpdate_ = null;
+          }
+          return rollingUpdateBuilder_;
+        }
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)
+      }
+
+      // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy)
+      private static final com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy();
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<DeploymentStrategy>
+          PARSER = new com.google.protobuf.AbstractParser<DeploymentStrategy>() {
+        public DeploymentStrategy parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+            return new DeploymentStrategy(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<DeploymentStrategy> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<DeploymentStrategy> getParserForType() {
+        return PARSER;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
+    }
+
+    public interface RollingUpdateDeploymentOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <code>optional string max_unavailable = 1;</code>
+       */
+      java.lang.String getMaxUnavailable();
+      /**
+       * <code>optional string max_unavailable = 1;</code>
+       */
+      com.google.protobuf.ByteString
+          getMaxUnavailableBytes();
+
+      /**
+       * <code>optional string max_surge = 2;</code>
+       */
+      java.lang.String getMaxSurge();
+      /**
+       * <code>optional string max_surge = 2;</code>
+       */
+      com.google.protobuf.ByteString
+          getMaxSurgeBytes();
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment}
+     */
+    public  static final class RollingUpdateDeployment extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)
+        RollingUpdateDeploymentOrBuilder {
+      // Use RollingUpdateDeployment.newBuilder() to construct.
+      private RollingUpdateDeployment(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private RollingUpdateDeployment() {
+        maxUnavailable_ = "";
+        maxSurge_ = "";
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+      }
+      private RollingUpdateDeployment(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        int mutable_bitField0_ = 0;
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!input.skipField(tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 10: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                maxUnavailable_ = s;
+                break;
+              }
+              case 18: {
+                java.lang.String s = input.readStringRequireUtf8();
+
+                maxSurge_ = s;
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollingUpdateDeployment_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollingUpdateDeployment_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder.class);
+      }
+
+      public static final int MAX_UNAVAILABLE_FIELD_NUMBER = 1;
+      private volatile java.lang.Object maxUnavailable_;
+      /**
+       * <code>optional string max_unavailable = 1;</code>
+       */
+      public java.lang.String getMaxUnavailable() {
+        java.lang.Object ref = maxUnavailable_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          maxUnavailable_ = s;
+          return s;
+        }
+      }
+      /**
+       * <code>optional string max_unavailable = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMaxUnavailableBytes() {
+        java.lang.Object ref = maxUnavailable_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          maxUnavailable_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      public static final int MAX_SURGE_FIELD_NUMBER = 2;
+      private volatile java.lang.Object maxSurge_;
+      /**
+       * <code>optional string max_surge = 2;</code>
+       */
+      public java.lang.String getMaxSurge() {
+        java.lang.Object ref = maxSurge_;
+        if (ref instanceof java.lang.String) {
+          return (java.lang.String) ref;
+        } else {
+          com.google.protobuf.ByteString bs = 
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          maxSurge_ = s;
+          return s;
+        }
+      }
+      /**
+       * <code>optional string max_surge = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getMaxSurgeBytes() {
+        java.lang.Object ref = maxSurge_;
+        if (ref instanceof java.lang.String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          maxSurge_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (!getMaxUnavailableBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 1, maxUnavailable_);
+        }
+        if (!getMaxSurgeBytes().isEmpty()) {
+          com.google.protobuf.GeneratedMessageV3.writeString(output, 2, maxSurge_);
+        }
+      }
+
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (!getMaxUnavailableBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, maxUnavailable_);
+        }
+        if (!getMaxSurgeBytes().isEmpty()) {
+          size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, maxSurge_);
+        }
+        memoizedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)) {
+          return super.equals(obj);
+        }
+        com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment other = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment) obj;
+
+        boolean result = true;
+        result = result && getMaxUnavailable()
+            .equals(other.getMaxUnavailable());
+        result = result && getMaxSurge()
+            .equals(other.getMaxSurge());
+        return result;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (37 * hash) + MAX_UNAVAILABLE_FIELD_NUMBER;
+        hash = (53 * hash) + getMaxUnavailable().hashCode();
+        hash = (37 * hash) + MAX_SURGE_FIELD_NUMBER;
+        hash = (53 * hash) + getMaxSurge().hashCode();
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollingUpdateDeployment_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollingUpdateDeployment_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder.class);
+        }
+
+        // Construct using com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        public Builder clear() {
+          super.clear();
+          maxUnavailable_ = "";
+
+          maxSurge_ = "";
+
+          return this;
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollingUpdateDeployment_descriptor;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getDefaultInstanceForType() {
+          return com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance();
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment build() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment buildPartial() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment result = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment(this);
+          result.maxUnavailable_ = maxUnavailable_;
+          result.maxSurge_ = maxSurge_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder clone() {
+          return (Builder) super.clone();
+        }
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.setField(field, value);
+        }
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return (Builder) super.clearField(field);
+        }
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return (Builder) super.clearOneof(oneof);
+        }
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, Object value) {
+          return (Builder) super.setRepeatedField(field, index, value);
+        }
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.addRepeatedField(field, value);
+        }
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment) {
+            return mergeFrom((com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment other) {
+          if (other == com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance()) return this;
+          if (!other.getMaxUnavailable().isEmpty()) {
+            maxUnavailable_ = other.maxUnavailable_;
+            onChanged();
+          }
+          if (!other.getMaxSurge().isEmpty()) {
+            maxSurge_ = other.maxSurge_;
+            onChanged();
+          }
+          onChanged();
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private java.lang.Object maxUnavailable_ = "";
+        /**
+         * <code>optional string max_unavailable = 1;</code>
+         */
+        public java.lang.String getMaxUnavailable() {
+          java.lang.Object ref = maxUnavailable_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            maxUnavailable_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string max_unavailable = 1;</code>
+         */
+        public com.google.protobuf.ByteString
+            getMaxUnavailableBytes() {
+          java.lang.Object ref = maxUnavailable_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            maxUnavailable_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string max_unavailable = 1;</code>
+         */
+        public Builder setMaxUnavailable(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  
+          maxUnavailable_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string max_unavailable = 1;</code>
+         */
+        public Builder clearMaxUnavailable() {
+          
+          maxUnavailable_ = getDefaultInstance().getMaxUnavailable();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string max_unavailable = 1;</code>
+         */
+        public Builder setMaxUnavailableBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+          
+          maxUnavailable_ = value;
+          onChanged();
+          return this;
+        }
+
+        private java.lang.Object maxSurge_ = "";
+        /**
+         * <code>optional string max_surge = 2;</code>
+         */
+        public java.lang.String getMaxSurge() {
+          java.lang.Object ref = maxSurge_;
+          if (!(ref instanceof java.lang.String)) {
+            com.google.protobuf.ByteString bs =
+                (com.google.protobuf.ByteString) ref;
+            java.lang.String s = bs.toStringUtf8();
+            maxSurge_ = s;
+            return s;
+          } else {
+            return (java.lang.String) ref;
+          }
+        }
+        /**
+         * <code>optional string max_surge = 2;</code>
+         */
+        public com.google.protobuf.ByteString
+            getMaxSurgeBytes() {
+          java.lang.Object ref = maxSurge_;
+          if (ref instanceof String) {
+            com.google.protobuf.ByteString b = 
+                com.google.protobuf.ByteString.copyFromUtf8(
+                    (java.lang.String) ref);
+            maxSurge_ = b;
+            return b;
+          } else {
+            return (com.google.protobuf.ByteString) ref;
+          }
+        }
+        /**
+         * <code>optional string max_surge = 2;</code>
+         */
+        public Builder setMaxSurge(
+            java.lang.String value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  
+          maxSurge_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string max_surge = 2;</code>
+         */
+        public Builder clearMaxSurge() {
+          
+          maxSurge_ = getDefaultInstance().getMaxSurge();
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional string max_surge = 2;</code>
+         */
+        public Builder setMaxSurgeBytes(
+            com.google.protobuf.ByteString value) {
+          if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+          
+          maxSurge_ = value;
+          onChanged();
+          return this;
+        }
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)
+      }
+
+      // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment)
+      private static final com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment();
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<RollingUpdateDeployment>
+          PARSER = new com.google.protobuf.AbstractParser<RollingUpdateDeployment>() {
+        public RollingUpdateDeployment parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RollingUpdateDeployment(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<RollingUpdateDeployment> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<RollingUpdateDeployment> getParserForType() {
+        return PARSER;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
+    }
+
+    public interface RollbackConfigOrBuilder extends
+        // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)
+        com.google.protobuf.MessageOrBuilder {
+
+      /**
+       * <code>optional int64 revision = 1;</code>
+       */
+      long getRevision();
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig}
+     */
+    public  static final class RollbackConfig extends
+        com.google.protobuf.GeneratedMessageV3 implements
+        // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)
+        RollbackConfigOrBuilder {
+      // Use RollbackConfig.newBuilder() to construct.
+      private RollbackConfig(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+        super(builder);
+      }
+      private RollbackConfig() {
+        revision_ = 0L;
+      }
+
+      @java.lang.Override
+      public final com.google.protobuf.UnknownFieldSet
+      getUnknownFields() {
+        return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+      }
+      private RollbackConfig(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        this();
+        int mutable_bitField0_ = 0;
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              default: {
+                if (!input.skipField(tag)) {
+                  done = true;
+                }
+                break;
+              }
+              case 8: {
+
+                revision_ = input.readInt64();
+                break;
+              }
+            }
+          }
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(this);
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(
+              e).setUnfinishedMessage(this);
+        } finally {
+          makeExtensionsImmutable();
+        }
+      }
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollbackConfig_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollbackConfig_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder.class);
+      }
+
+      public static final int REVISION_FIELD_NUMBER = 1;
+      private long revision_;
+      /**
+       * <code>optional int64 revision = 1;</code>
+       */
+      public long getRevision() {
+        return revision_;
+      }
+
+      private byte memoizedIsInitialized = -1;
+      public final boolean isInitialized() {
+        byte isInitialized = memoizedIsInitialized;
+        if (isInitialized == 1) return true;
+        if (isInitialized == 0) return false;
+
+        memoizedIsInitialized = 1;
+        return true;
+      }
+
+      public void writeTo(com.google.protobuf.CodedOutputStream output)
+                          throws java.io.IOException {
+        if (revision_ != 0L) {
+          output.writeInt64(1, revision_);
+        }
+      }
+
+      public int getSerializedSize() {
+        int size = memoizedSize;
+        if (size != -1) return size;
+
+        size = 0;
+        if (revision_ != 0L) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeInt64Size(1, revision_);
+        }
+        memoizedSize = size;
+        return size;
+      }
+
+      private static final long serialVersionUID = 0L;
+      @java.lang.Override
+      public boolean equals(final java.lang.Object obj) {
+        if (obj == this) {
+         return true;
+        }
+        if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)) {
+          return super.equals(obj);
+        }
+        com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig other = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig) obj;
+
+        boolean result = true;
+        result = result && (getRevision()
+            == other.getRevision());
+        return result;
+      }
+
+      @java.lang.Override
+      public int hashCode() {
+        if (memoizedHashCode != 0) {
+          return memoizedHashCode;
+        }
+        int hash = 41;
+        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (37 * hash) + REVISION_FIELD_NUMBER;
+        hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+            getRevision());
+        hash = (29 * hash) + unknownFields.hashCode();
+        memoizedHashCode = hash;
+        return hash;
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          com.google.protobuf.ByteString data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          com.google.protobuf.ByteString data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(byte[] data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          byte[] data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseDelimitedFrom(java.io.InputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseDelimitedFrom(
+          java.io.InputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          com.google.protobuf.CodedInputStream input)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parseFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        return com.google.protobuf.GeneratedMessageV3
+            .parseWithIOException(PARSER, input, extensionRegistry);
+      }
+
+      public Builder newBuilderForType() { return newBuilder(); }
+      public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.toBuilder();
+      }
+      public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig prototype) {
+        return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+      }
+      public Builder toBuilder() {
+        return this == DEFAULT_INSTANCE
+            ? new Builder() : new Builder().mergeFrom(this);
+      }
+
+      @java.lang.Override
+      protected Builder newBuilderForType(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        Builder builder = new Builder(parent);
+        return builder;
+      }
+      /**
+       * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig}
+       */
+      public static final class Builder extends
+          com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+          // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder {
+        public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollbackConfig_descriptor;
+        }
+
+        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollbackConfig_fieldAccessorTable
+              .ensureFieldAccessorsInitialized(
+                  com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.class, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder.class);
+        }
+
+        // Construct using com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.newBuilder()
+        private Builder() {
+          maybeForceBuilderInitialization();
+        }
+
+        private Builder(
+            com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          super(parent);
+          maybeForceBuilderInitialization();
+        }
+        private void maybeForceBuilderInitialization() {
+          if (com.google.protobuf.GeneratedMessageV3
+                  .alwaysUseFieldBuilders) {
+          }
+        }
+        public Builder clear() {
+          super.clear();
+          revision_ = 0L;
+
+          return this;
+        }
+
+        public com.google.protobuf.Descriptors.Descriptor
+            getDescriptorForType() {
+          return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Spec_RollbackConfig_descriptor;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getDefaultInstanceForType() {
+          return com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance();
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig build() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig result = buildPartial();
+          if (!result.isInitialized()) {
+            throw newUninitializedMessageException(result);
+          }
+          return result;
+        }
+
+        public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig buildPartial() {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig result = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig(this);
+          result.revision_ = revision_;
+          onBuilt();
+          return result;
+        }
+
+        public Builder clone() {
+          return (Builder) super.clone();
+        }
+        public Builder setField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.setField(field, value);
+        }
+        public Builder clearField(
+            com.google.protobuf.Descriptors.FieldDescriptor field) {
+          return (Builder) super.clearField(field);
+        }
+        public Builder clearOneof(
+            com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+          return (Builder) super.clearOneof(oneof);
+        }
+        public Builder setRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            int index, Object value) {
+          return (Builder) super.setRepeatedField(field, index, value);
+        }
+        public Builder addRepeatedField(
+            com.google.protobuf.Descriptors.FieldDescriptor field,
+            Object value) {
+          return (Builder) super.addRepeatedField(field, value);
+        }
+        public Builder mergeFrom(com.google.protobuf.Message other) {
+          if (other instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig) {
+            return mergeFrom((com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)other);
+          } else {
+            super.mergeFrom(other);
+            return this;
+          }
+        }
+
+        public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig other) {
+          if (other == com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance()) return this;
+          if (other.getRevision() != 0L) {
+            setRevision(other.getRevision());
+          }
+          onChanged();
+          return this;
+        }
+
+        public final boolean isInitialized() {
+          return true;
+        }
+
+        public Builder mergeFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws java.io.IOException {
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig parsedMessage = null;
+          try {
+            parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+          } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+            parsedMessage = (com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig) e.getUnfinishedMessage();
+            throw e.unwrapIOException();
+          } finally {
+            if (parsedMessage != null) {
+              mergeFrom(parsedMessage);
+            }
+          }
+          return this;
+        }
+
+        private long revision_ ;
+        /**
+         * <code>optional int64 revision = 1;</code>
+         */
+        public long getRevision() {
+          return revision_;
+        }
+        /**
+         * <code>optional int64 revision = 1;</code>
+         */
+        public Builder setRevision(long value) {
+          
+          revision_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>optional int64 revision = 1;</code>
+         */
+        public Builder clearRevision() {
+          
+          revision_ = 0L;
+          onChanged();
+          return this;
+        }
+        public final Builder setUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+        public final Builder mergeUnknownFields(
+            final com.google.protobuf.UnknownFieldSet unknownFields) {
+          return this;
+        }
+
+
+        // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)
+      }
+
+      // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig)
+      private static final com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig DEFAULT_INSTANCE;
+      static {
+        DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig();
+      }
+
+      public static com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+      }
+
+      private static final com.google.protobuf.Parser<RollbackConfig>
+          PARSER = new com.google.protobuf.AbstractParser<RollbackConfig>() {
+        public RollbackConfig parsePartialFrom(
+            com.google.protobuf.CodedInputStream input,
+            com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+            throws com.google.protobuf.InvalidProtocolBufferException {
+            return new RollbackConfig(input, extensionRegistry);
+        }
+      };
+
+      public static com.google.protobuf.Parser<RollbackConfig> parser() {
+        return PARSER;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Parser<RollbackConfig> getParserForType() {
+        return PARSER;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getDefaultInstanceForType() {
+        return DEFAULT_INSTANCE;
+      }
+
     }
 
     public static final int DESIRED_REPLICAS_FIELD_NUMBER = 1;
@@ -291,6 +2154,84 @@ public  final class Deployment extends
       return getPodTemplate();
     }
 
+    public static final int MIN_READY_SECONDS_FIELD_NUMBER = 4;
+    private int minReadySeconds_;
+    /**
+     * <code>optional int32 min_ready_seconds = 4;</code>
+     */
+    public int getMinReadySeconds() {
+      return minReadySeconds_;
+    }
+
+    public static final int REVISION_HISTORY_LIMIT_FIELD_NUMBER = 5;
+    private int revisionHistoryLimit_;
+    /**
+     * <code>optional int32 revision_history_limit = 5;</code>
+     */
+    public int getRevisionHistoryLimit() {
+      return revisionHistoryLimit_;
+    }
+
+    public static final int PAUSED_FIELD_NUMBER = 6;
+    private boolean paused_;
+    /**
+     * <code>optional bool paused = 6;</code>
+     */
+    public boolean getPaused() {
+      return paused_;
+    }
+
+    public static final int ROLLBACK_TO_FIELD_NUMBER = 7;
+    private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollbackTo_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    public boolean hasRollbackTo() {
+      return rollbackTo_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo() {
+      return rollbackTo_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance() : rollbackTo_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder() {
+      return getRollbackTo();
+    }
+
+    public static final int PROGRESS_DEADLINE_SECONDS_FIELD_NUMBER = 8;
+    private int progressDeadlineSeconds_;
+    /**
+     * <code>optional int32 progress_deadline_seconds = 8;</code>
+     */
+    public int getProgressDeadlineSeconds() {
+      return progressDeadlineSeconds_;
+    }
+
+    public static final int STRATEGY_FIELD_NUMBER = 9;
+    private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    public boolean hasStrategy() {
+      return strategy_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy() {
+      return strategy_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance() : strategy_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder() {
+      return getStrategy();
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -312,6 +2253,24 @@ public  final class Deployment extends
       if (podTemplate_ != null) {
         output.writeMessage(3, getPodTemplate());
       }
+      if (minReadySeconds_ != 0) {
+        output.writeInt32(4, minReadySeconds_);
+      }
+      if (revisionHistoryLimit_ != 0) {
+        output.writeInt32(5, revisionHistoryLimit_);
+      }
+      if (paused_ != false) {
+        output.writeBool(6, paused_);
+      }
+      if (rollbackTo_ != null) {
+        output.writeMessage(7, getRollbackTo());
+      }
+      if (progressDeadlineSeconds_ != 0) {
+        output.writeInt32(8, progressDeadlineSeconds_);
+      }
+      if (strategy_ != null) {
+        output.writeMessage(9, getStrategy());
+      }
     }
 
     public int getSerializedSize() {
@@ -330,6 +2289,30 @@ public  final class Deployment extends
       if (podTemplate_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getPodTemplate());
+      }
+      if (minReadySeconds_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, minReadySeconds_);
+      }
+      if (revisionHistoryLimit_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, revisionHistoryLimit_);
+      }
+      if (paused_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, paused_);
+      }
+      if (rollbackTo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, getRollbackTo());
+      }
+      if (progressDeadlineSeconds_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, progressDeadlineSeconds_);
+      }
+      if (strategy_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(9, getStrategy());
       }
       memoizedSize = size;
       return size;
@@ -359,6 +2342,24 @@ public  final class Deployment extends
         result = result && getPodTemplate()
             .equals(other.getPodTemplate());
       }
+      result = result && (getMinReadySeconds()
+          == other.getMinReadySeconds());
+      result = result && (getRevisionHistoryLimit()
+          == other.getRevisionHistoryLimit());
+      result = result && (getPaused()
+          == other.getPaused());
+      result = result && (hasRollbackTo() == other.hasRollbackTo());
+      if (hasRollbackTo()) {
+        result = result && getRollbackTo()
+            .equals(other.getRollbackTo());
+      }
+      result = result && (getProgressDeadlineSeconds()
+          == other.getProgressDeadlineSeconds());
+      result = result && (hasStrategy() == other.hasStrategy());
+      if (hasStrategy()) {
+        result = result && getStrategy()
+            .equals(other.getStrategy());
+      }
       return result;
     }
 
@@ -378,6 +2379,23 @@ public  final class Deployment extends
       if (hasPodTemplate()) {
         hash = (37 * hash) + POD_TEMPLATE_FIELD_NUMBER;
         hash = (53 * hash) + getPodTemplate().hashCode();
+      }
+      hash = (37 * hash) + MIN_READY_SECONDS_FIELD_NUMBER;
+      hash = (53 * hash) + getMinReadySeconds();
+      hash = (37 * hash) + REVISION_HISTORY_LIMIT_FIELD_NUMBER;
+      hash = (53 * hash) + getRevisionHistoryLimit();
+      hash = (37 * hash) + PAUSED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getPaused());
+      if (hasRollbackTo()) {
+        hash = (37 * hash) + ROLLBACK_TO_FIELD_NUMBER;
+        hash = (53 * hash) + getRollbackTo().hashCode();
+      }
+      hash = (37 * hash) + PROGRESS_DEADLINE_SECONDS_FIELD_NUMBER;
+      hash = (53 * hash) + getProgressDeadlineSeconds();
+      if (hasStrategy()) {
+        hash = (37 * hash) + STRATEGY_FIELD_NUMBER;
+        hash = (53 * hash) + getStrategy().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -511,6 +2529,26 @@ public  final class Deployment extends
           podTemplate_ = null;
           podTemplateBuilder_ = null;
         }
+        minReadySeconds_ = 0;
+
+        revisionHistoryLimit_ = 0;
+
+        paused_ = false;
+
+        if (rollbackToBuilder_ == null) {
+          rollbackTo_ = null;
+        } else {
+          rollbackTo_ = null;
+          rollbackToBuilder_ = null;
+        }
+        progressDeadlineSeconds_ = 0;
+
+        if (strategyBuilder_ == null) {
+          strategy_ = null;
+        } else {
+          strategy_ = null;
+          strategyBuilder_ = null;
+        }
         return this;
       }
 
@@ -543,6 +2581,20 @@ public  final class Deployment extends
           result.podTemplate_ = podTemplate_;
         } else {
           result.podTemplate_ = podTemplateBuilder_.build();
+        }
+        result.minReadySeconds_ = minReadySeconds_;
+        result.revisionHistoryLimit_ = revisionHistoryLimit_;
+        result.paused_ = paused_;
+        if (rollbackToBuilder_ == null) {
+          result.rollbackTo_ = rollbackTo_;
+        } else {
+          result.rollbackTo_ = rollbackToBuilder_.build();
+        }
+        result.progressDeadlineSeconds_ = progressDeadlineSeconds_;
+        if (strategyBuilder_ == null) {
+          result.strategy_ = strategy_;
+        } else {
+          result.strategy_ = strategyBuilder_.build();
         }
         onBuilt();
         return result;
@@ -593,6 +2645,24 @@ public  final class Deployment extends
         }
         if (other.hasPodTemplate()) {
           mergePodTemplate(other.getPodTemplate());
+        }
+        if (other.getMinReadySeconds() != 0) {
+          setMinReadySeconds(other.getMinReadySeconds());
+        }
+        if (other.getRevisionHistoryLimit() != 0) {
+          setRevisionHistoryLimit(other.getRevisionHistoryLimit());
+        }
+        if (other.getPaused() != false) {
+          setPaused(other.getPaused());
+        }
+        if (other.hasRollbackTo()) {
+          mergeRollbackTo(other.getRollbackTo());
+        }
+        if (other.getProgressDeadlineSeconds() != 0) {
+          setProgressDeadlineSeconds(other.getProgressDeadlineSeconds());
+        }
+        if (other.hasStrategy()) {
+          mergeStrategy(other.getStrategy());
         }
         onChanged();
         return this;
@@ -879,6 +2949,344 @@ public  final class Deployment extends
         }
         return podTemplateBuilder_;
       }
+
+      private int minReadySeconds_ ;
+      /**
+       * <code>optional int32 min_ready_seconds = 4;</code>
+       */
+      public int getMinReadySeconds() {
+        return minReadySeconds_;
+      }
+      /**
+       * <code>optional int32 min_ready_seconds = 4;</code>
+       */
+      public Builder setMinReadySeconds(int value) {
+        
+        minReadySeconds_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 min_ready_seconds = 4;</code>
+       */
+      public Builder clearMinReadySeconds() {
+        
+        minReadySeconds_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int revisionHistoryLimit_ ;
+      /**
+       * <code>optional int32 revision_history_limit = 5;</code>
+       */
+      public int getRevisionHistoryLimit() {
+        return revisionHistoryLimit_;
+      }
+      /**
+       * <code>optional int32 revision_history_limit = 5;</code>
+       */
+      public Builder setRevisionHistoryLimit(int value) {
+        
+        revisionHistoryLimit_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 revision_history_limit = 5;</code>
+       */
+      public Builder clearRevisionHistoryLimit() {
+        
+        revisionHistoryLimit_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean paused_ ;
+      /**
+       * <code>optional bool paused = 6;</code>
+       */
+      public boolean getPaused() {
+        return paused_;
+      }
+      /**
+       * <code>optional bool paused = 6;</code>
+       */
+      public Builder setPaused(boolean value) {
+        
+        paused_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool paused = 6;</code>
+       */
+      public Builder clearPaused() {
+        
+        paused_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollbackTo_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder> rollbackToBuilder_;
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public boolean hasRollbackTo() {
+        return rollbackToBuilder_ != null || rollbackTo_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo() {
+        if (rollbackToBuilder_ == null) {
+          return rollbackTo_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance() : rollbackTo_;
+        } else {
+          return rollbackToBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public Builder setRollbackTo(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig value) {
+        if (rollbackToBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          rollbackTo_ = value;
+          onChanged();
+        } else {
+          rollbackToBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public Builder setRollbackTo(
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder builderForValue) {
+        if (rollbackToBuilder_ == null) {
+          rollbackTo_ = builderForValue.build();
+          onChanged();
+        } else {
+          rollbackToBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public Builder mergeRollbackTo(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig value) {
+        if (rollbackToBuilder_ == null) {
+          if (rollbackTo_ != null) {
+            rollbackTo_ =
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.newBuilder(rollbackTo_).mergeFrom(value).buildPartial();
+          } else {
+            rollbackTo_ = value;
+          }
+          onChanged();
+        } else {
+          rollbackToBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public Builder clearRollbackTo() {
+        if (rollbackToBuilder_ == null) {
+          rollbackTo_ = null;
+          onChanged();
+        } else {
+          rollbackTo_ = null;
+          rollbackToBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder getRollbackToBuilder() {
+        
+        onChanged();
+        return getRollbackToFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder() {
+        if (rollbackToBuilder_ != null) {
+          return rollbackToBuilder_.getMessageOrBuilder();
+        } else {
+          return rollbackTo_ == null ?
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance() : rollbackTo_;
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder> 
+          getRollbackToFieldBuilder() {
+        if (rollbackToBuilder_ == null) {
+          rollbackToBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder>(
+                  getRollbackTo(),
+                  getParentForChildren(),
+                  isClean());
+          rollbackTo_ = null;
+        }
+        return rollbackToBuilder_;
+      }
+
+      private int progressDeadlineSeconds_ ;
+      /**
+       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       */
+      public int getProgressDeadlineSeconds() {
+        return progressDeadlineSeconds_;
+      }
+      /**
+       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       */
+      public Builder setProgressDeadlineSeconds(int value) {
+        
+        progressDeadlineSeconds_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       */
+      public Builder clearProgressDeadlineSeconds() {
+        
+        progressDeadlineSeconds_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder> strategyBuilder_;
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public boolean hasStrategy() {
+        return strategyBuilder_ != null || strategy_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy() {
+        if (strategyBuilder_ == null) {
+          return strategy_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance() : strategy_;
+        } else {
+          return strategyBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public Builder setStrategy(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy value) {
+        if (strategyBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          strategy_ = value;
+          onChanged();
+        } else {
+          strategyBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public Builder setStrategy(
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder builderForValue) {
+        if (strategyBuilder_ == null) {
+          strategy_ = builderForValue.build();
+          onChanged();
+        } else {
+          strategyBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public Builder mergeStrategy(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy value) {
+        if (strategyBuilder_ == null) {
+          if (strategy_ != null) {
+            strategy_ =
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.newBuilder(strategy_).mergeFrom(value).buildPartial();
+          } else {
+            strategy_ = value;
+          }
+          onChanged();
+        } else {
+          strategyBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public Builder clearStrategy() {
+        if (strategyBuilder_ == null) {
+          strategy_ = null;
+          onChanged();
+        } else {
+          strategy_ = null;
+          strategyBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder getStrategyBuilder() {
+        
+        onChanged();
+        return getStrategyFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder() {
+        if (strategyBuilder_ != null) {
+          return strategyBuilder_.getMessageOrBuilder();
+        } else {
+          return strategy_ == null ?
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance() : strategy_;
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder> 
+          getStrategyFieldBuilder() {
+        if (strategyBuilder_ == null) {
+          strategyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder>(
+                  getStrategy(),
+                  getParentForChildren(),
+                  isClean());
+          strategy_ = null;
+        }
+        return strategyBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -928,8 +3336,8 @@ public  final class Deployment extends
 
   }
 
-  public interface StatusOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Deployment.Status)
+  public interface DeploymentStatusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Deployment.DeploymentStatus)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -956,24 +3364,49 @@ public  final class Deployment extends
      * <code>optional int32 unavailable_replicas = 5;</code>
      */
     int getUnavailableReplicas();
+
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> 
+        getConditionsList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index);
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    int getConditionsCount();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index);
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Status}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.DeploymentStatus}
    */
-  public  static final class Status extends
+  public  static final class DeploymentStatus extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Deployment.Status)
-      StatusOrBuilder {
-    // Use Status.newBuilder() to construct.
-    private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Deployment.DeploymentStatus)
+      DeploymentStatusOrBuilder {
+    // Use DeploymentStatus.newBuilder() to construct.
+    private DeploymentStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Status() {
+    private DeploymentStatus() {
       observedGeneration_ = 0L;
       replicas_ = 0;
       updatedReplicas_ = 0;
       availableReplicas_ = 0;
       unavailableReplicas_ = 0;
+      conditions_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -981,7 +3414,7 @@ public  final class Deployment extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private Status(
+    private DeploymentStatus(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1026,6 +3459,15 @@ public  final class Deployment extends
               unavailableReplicas_ = input.readInt32();
               break;
             }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+                conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              conditions_.add(
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.ResourceCondition.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -1034,21 +3476,25 @@ public  final class Deployment extends
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = java.util.Collections.unmodifiableList(conditions_);
+        }
         makeExtensionsImmutable();
       }
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Status_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_DeploymentStatus_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Status_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_DeploymentStatus_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.Deployment.Status.class, com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.class, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder.class);
     }
 
+    private int bitField0_;
     public static final int OBSERVED_GENERATION_FIELD_NUMBER = 1;
     private long observedGeneration_;
     /**
@@ -1094,6 +3540,41 @@ public  final class Deployment extends
       return unavailableReplicas_;
     }
 
+    public static final int CONDITIONS_FIELD_NUMBER = 6;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_;
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public int getConditionsCount() {
+      return conditions_.size();
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+      return conditions_.get(index);
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index) {
+      return conditions_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1120,6 +3601,9 @@ public  final class Deployment extends
       }
       if (unavailableReplicas_ != 0) {
         output.writeInt32(5, unavailableReplicas_);
+      }
+      for (int i = 0; i < conditions_.size(); i++) {
+        output.writeMessage(6, conditions_.get(i));
       }
     }
 
@@ -1148,6 +3632,10 @@ public  final class Deployment extends
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(5, unavailableReplicas_);
       }
+      for (int i = 0; i < conditions_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, conditions_.get(i));
+      }
       memoizedSize = size;
       return size;
     }
@@ -1158,10 +3646,10 @@ public  final class Deployment extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Status)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.Deployment.Status other = (com.appscode.api.kubernetes.v1beta2.Deployment.Status) obj;
+      com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus other = (com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus) obj;
 
       boolean result = true;
       result = result && (getObservedGeneration()
@@ -1174,6 +3662,8 @@ public  final class Deployment extends
           == other.getAvailableReplicas());
       result = result && (getUnavailableReplicas()
           == other.getUnavailableReplicas());
+      result = result && getConditionsList()
+          .equals(other.getConditionsList());
       return result;
     }
 
@@ -1195,63 +3685,67 @@ public  final class Deployment extends
       hash = (53 * hash) + getAvailableReplicas();
       hash = (37 * hash) + UNAVAILABLE_REPLICAS_FIELD_NUMBER;
       hash = (53 * hash) + getUnavailableReplicas();
+      if (getConditionsCount() > 0) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditionsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1263,7 +3757,7 @@ public  final class Deployment extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Deployment.Status prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1278,25 +3772,25 @@ public  final class Deployment extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.Status}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Deployment.DeploymentStatus}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Deployment.Status)
-        com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Deployment.DeploymentStatus)
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_DeploymentStatus_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Status_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_DeploymentStatus_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.Deployment.Status.class, com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.class, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.Deployment.Status.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1309,6 +3803,7 @@ public  final class Deployment extends
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getConditionsFieldBuilder();
         }
       }
       public Builder clear() {
@@ -1323,33 +3818,51 @@ public  final class Deployment extends
 
         unavailableReplicas_ = 0;
 
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          conditionsBuilder_.clear();
+        }
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Deployment_DeploymentStatus_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Deployment.Status getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.Deployment.Status.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Deployment.Status build() {
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus build() {
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Deployment.Status buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status result = new com.appscode.api.kubernetes.v1beta2.Deployment.Status(this);
+      public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus result = new com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.observedGeneration_ = observedGeneration_;
         result.replicas_ = replicas_;
         result.updatedReplicas_ = updatedReplicas_;
         result.availableReplicas_ = availableReplicas_;
         result.unavailableReplicas_ = unavailableReplicas_;
+        if (conditionsBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
+            conditions_ = java.util.Collections.unmodifiableList(conditions_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -1381,16 +3894,16 @@ public  final class Deployment extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.Deployment.Status) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Deployment.Status)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Deployment.Status other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.Deployment.Status.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance()) return this;
         if (other.getObservedGeneration() != 0L) {
           setObservedGeneration(other.getObservedGeneration());
         }
@@ -1406,6 +3919,32 @@ public  final class Deployment extends
         if (other.getUnavailableReplicas() != 0) {
           setUnavailableReplicas(other.getUnavailableReplicas());
         }
+        if (conditionsBuilder_ == null) {
+          if (!other.conditions_.isEmpty()) {
+            if (conditions_.isEmpty()) {
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureConditionsIsMutable();
+              conditions_.addAll(other.conditions_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.conditions_.isEmpty()) {
+            if (conditionsBuilder_.isEmpty()) {
+              conditionsBuilder_.dispose();
+              conditionsBuilder_ = null;
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              conditionsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getConditionsFieldBuilder() : null;
+            } else {
+              conditionsBuilder_.addAllMessages(other.conditions_);
+            }
+          }
+        }
         onChanged();
         return this;
       }
@@ -1418,11 +3957,11 @@ public  final class Deployment extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Deployment.Status) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1431,6 +3970,7 @@ public  final class Deployment extends
         }
         return this;
       }
+      private int bitField0_;
 
       private long observedGeneration_ ;
       /**
@@ -1561,6 +4101,246 @@ public  final class Deployment extends
         onChanged();
         return this;
       }
+
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_ =
+        java.util.Collections.emptyList();
+      private void ensureConditionsIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>(conditions_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> conditionsBuilder_;
+
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+        if (conditionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(conditions_);
+        } else {
+          return conditionsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public int getConditionsCount() {
+        if (conditionsBuilder_ == null) {
+          return conditions_.size();
+        } else {
+          return conditionsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);
+        } else {
+          return conditionsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.set(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addAllConditions(
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.ResourceCondition> values) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, conditions_);
+          onChanged();
+        } else {
+          conditionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          conditionsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder removeConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.remove(index);
+          onChanged();
+        } else {
+          conditionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder getConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+          int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);  } else {
+          return conditionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+           getConditionsOrBuilderList() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(conditions_);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder() {
+        return getConditionsFieldBuilder().addBuilder(
+            com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().addBuilder(
+            index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder> 
+           getConditionsBuilderList() {
+        return getConditionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder>(
+                  conditions_,
+                  ((bitField0_ & 0x00000020) == 0x00000020),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
+      }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return this;
@@ -1572,39 +4352,39 @@ public  final class Deployment extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Deployment.Status)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Deployment.DeploymentStatus)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Deployment.Status)
-    private static final com.appscode.api.kubernetes.v1beta2.Deployment.Status DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Deployment.DeploymentStatus)
+    private static final com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Deployment.Status();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Deployment.Status getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Status>
-        PARSER = new com.google.protobuf.AbstractParser<Status>() {
-      public Status parsePartialFrom(
+    private static final com.google.protobuf.Parser<DeploymentStatus>
+        PARSER = new com.google.protobuf.AbstractParser<DeploymentStatus>() {
+      public DeploymentStatus parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Status(input, extensionRegistry);
+          return new DeploymentStatus(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Status> parser() {
+    public static com.google.protobuf.Parser<DeploymentStatus> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Status> getParserForType() {
+    public com.google.protobuf.Parser<DeploymentStatus> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Deployment.Status getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1687,23 +4467,23 @@ public  final class Deployment extends
   }
 
   public static final int STATUS_FIELD_NUMBER = 4;
-  private com.appscode.api.kubernetes.v1beta2.Deployment.Status status_;
+  private com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.Deployment.Status getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Status.getDefaultInstance() : status_;
+  public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder getStatusOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
   }
 
@@ -2369,29 +5149,29 @@ public  final class Deployment extends
       return specBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.Deployment.Status status_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus status_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status, com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder> statusBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Deployment.Status getStatus() {
+    public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Status.getDefaultInstance() : status_;
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Deployment.Status value) {
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2405,10 +5185,10 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
         onChanged();
@@ -2419,13 +5199,13 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Deployment.Status value) {
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus value) {
       if (statusBuilder_ == null) {
         if (status_ != null) {
           status_ =
-            com.appscode.api.kubernetes.v1beta2.Deployment.Status.newBuilder(status_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.newBuilder(status_).mergeFrom(value).buildPartial();
         } else {
           status_ = value;
         }
@@ -2437,7 +5217,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2451,33 +5231,33 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder getStatusBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder getStatusBuilder() {
       
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder getStatusOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.Deployment.Status.getDefaultInstance() : status_;
+            com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Deployment.Status, com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.Deployment.Status, com.appscode.api.kubernetes.v1beta2.Deployment.Status.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());

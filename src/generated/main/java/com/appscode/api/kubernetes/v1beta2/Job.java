@@ -139,6 +139,30 @@ public  final class Job extends
      * <code>optional int32 failed = 5;</code>
      */
     int getFailed();
+
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> 
+        getConditionsList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index);
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    int getConditionsCount();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.Job.Status}
@@ -157,6 +181,7 @@ public  final class Job extends
       active_ = 0;
       succeeded_ = 0;
       failed_ = 0;
+      conditions_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -209,6 +234,15 @@ public  final class Job extends
               failed_ = input.readInt32();
               break;
             }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+                conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>();
+                mutable_bitField0_ |= 0x00000020;
+              }
+              conditions_.add(
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.ResourceCondition.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -217,6 +251,9 @@ public  final class Job extends
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = java.util.Collections.unmodifiableList(conditions_);
+        }
         makeExtensionsImmutable();
       }
     }
@@ -232,6 +269,7 @@ public  final class Job extends
               com.appscode.api.kubernetes.v1beta2.Job.Status.class, com.appscode.api.kubernetes.v1beta2.Job.Status.Builder.class);
     }
 
+    private int bitField0_;
     public static final int START_TIME_FIELD_NUMBER = 1;
     private long startTime_;
     /**
@@ -277,6 +315,41 @@ public  final class Job extends
       return failed_;
     }
 
+    public static final int CONDITIONS_FIELD_NUMBER = 6;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_;
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+        getConditionsOrBuilderList() {
+      return conditions_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public int getConditionsCount() {
+      return conditions_.size();
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+      return conditions_.get(index);
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+        int index) {
+      return conditions_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -303,6 +376,9 @@ public  final class Job extends
       }
       if (failed_ != 0) {
         output.writeInt32(5, failed_);
+      }
+      for (int i = 0; i < conditions_.size(); i++) {
+        output.writeMessage(6, conditions_.get(i));
       }
     }
 
@@ -331,6 +407,10 @@ public  final class Job extends
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(5, failed_);
       }
+      for (int i = 0; i < conditions_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, conditions_.get(i));
+      }
       memoizedSize = size;
       return size;
     }
@@ -357,6 +437,8 @@ public  final class Job extends
           == other.getSucceeded());
       result = result && (getFailed()
           == other.getFailed());
+      result = result && getConditionsList()
+          .equals(other.getConditionsList());
       return result;
     }
 
@@ -379,6 +461,10 @@ public  final class Job extends
       hash = (53 * hash) + getSucceeded();
       hash = (37 * hash) + FAILED_FIELD_NUMBER;
       hash = (53 * hash) + getFailed();
+      if (getConditionsCount() > 0) {
+        hash = (37 * hash) + CONDITIONS_FIELD_NUMBER;
+        hash = (53 * hash) + getConditionsList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -493,6 +579,7 @@ public  final class Job extends
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
+          getConditionsFieldBuilder();
         }
       }
       public Builder clear() {
@@ -507,6 +594,12 @@ public  final class Job extends
 
         failed_ = 0;
 
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        } else {
+          conditionsBuilder_.clear();
+        }
         return this;
       }
 
@@ -529,11 +622,23 @@ public  final class Job extends
 
       public com.appscode.api.kubernetes.v1beta2.Job.Status buildPartial() {
         com.appscode.api.kubernetes.v1beta2.Job.Status result = new com.appscode.api.kubernetes.v1beta2.Job.Status(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
         result.startTime_ = startTime_;
         result.completionTime_ = completionTime_;
         result.active_ = active_;
         result.succeeded_ = succeeded_;
         result.failed_ = failed_;
+        if (conditionsBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020)) {
+            conditions_ = java.util.Collections.unmodifiableList(conditions_);
+            bitField0_ = (bitField0_ & ~0x00000020);
+          }
+          result.conditions_ = conditions_;
+        } else {
+          result.conditions_ = conditionsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -590,6 +695,32 @@ public  final class Job extends
         if (other.getFailed() != 0) {
           setFailed(other.getFailed());
         }
+        if (conditionsBuilder_ == null) {
+          if (!other.conditions_.isEmpty()) {
+            if (conditions_.isEmpty()) {
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+            } else {
+              ensureConditionsIsMutable();
+              conditions_.addAll(other.conditions_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.conditions_.isEmpty()) {
+            if (conditionsBuilder_.isEmpty()) {
+              conditionsBuilder_.dispose();
+              conditionsBuilder_ = null;
+              conditions_ = other.conditions_;
+              bitField0_ = (bitField0_ & ~0x00000020);
+              conditionsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getConditionsFieldBuilder() : null;
+            } else {
+              conditionsBuilder_.addAllMessages(other.conditions_);
+            }
+          }
+        }
         onChanged();
         return this;
       }
@@ -615,6 +746,7 @@ public  final class Job extends
         }
         return this;
       }
+      private int bitField0_;
 
       private long startTime_ ;
       /**
@@ -744,6 +876,246 @@ public  final class Job extends
         failed_ = 0;
         onChanged();
         return this;
+      }
+
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> conditions_ =
+        java.util.Collections.emptyList();
+      private void ensureConditionsIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          conditions_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.ResourceCondition>(conditions_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> conditionsBuilder_;
+
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition> getConditionsList() {
+        if (conditionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(conditions_);
+        } else {
+          return conditionsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public int getConditionsCount() {
+        if (conditionsBuilder_ == null) {
+          return conditions_.size();
+        } else {
+          return conditionsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition getConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);
+        } else {
+          return conditionsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.set(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder setConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition value) {
+        if (conditionsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureConditionsIsMutable();
+          conditions_.add(index, value);
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addConditions(
+          int index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder builderForValue) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          conditionsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder addAllConditions(
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.ResourceCondition> values) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, conditions_);
+          onChanged();
+        } else {
+          conditionsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder clearConditions() {
+        if (conditionsBuilder_ == null) {
+          conditions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000020);
+          onChanged();
+        } else {
+          conditionsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public Builder removeConditions(int index) {
+        if (conditionsBuilder_ == null) {
+          ensureConditionsIsMutable();
+          conditions_.remove(index);
+          onChanged();
+        } else {
+          conditionsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder getConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder getConditionsOrBuilder(
+          int index) {
+        if (conditionsBuilder_ == null) {
+          return conditions_.get(index);  } else {
+          return conditionsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+           getConditionsOrBuilderList() {
+        if (conditionsBuilder_ != null) {
+          return conditionsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(conditions_);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder() {
+        return getConditionsFieldBuilder().addBuilder(
+            com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder addConditionsBuilder(
+          int index) {
+        return getConditionsFieldBuilder().addBuilder(
+            index, com.appscode.api.kubernetes.v1beta2.ResourceCondition.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.ResourceCondition conditions = 6;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder> 
+           getConditionsBuilderList() {
+        return getConditionsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder> 
+          getConditionsFieldBuilder() {
+        if (conditionsBuilder_ == null) {
+          conditionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.ResourceCondition, com.appscode.api.kubernetes.v1beta2.ResourceCondition.Builder, com.appscode.api.kubernetes.v1beta2.ResourceConditionOrBuilder>(
+                  conditions_,
+                  ((bitField0_ & 0x00000020) == 0x00000020),
+                  getParentForChildren(),
+                  isClean());
+          conditions_ = null;
+        }
+        return conditionsBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {

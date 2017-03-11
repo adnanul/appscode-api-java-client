@@ -32,4 +32,17 @@ public interface NamespaceOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder getStatusOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  boolean hasSpec();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder();
 }

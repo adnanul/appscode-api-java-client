@@ -40,10 +40,12 @@ public interface ClusterUpdateRequestOrBuilder extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *   - kubernetes:team-admin
+   *   - kubernetes:cluster-admin
+   *   - kubernetes:admin
+   *   - kubernetes:editor
+   *   - kubernetes:viewer
+   *   - deny-access
    * </pre>
    *
    * <code>optional string default_access_level = 4;</code>
@@ -54,10 +56,12 @@ public interface ClusterUpdateRequestOrBuilder extends
    * Default access level is to allow permission to the cluster
    * when no Role matched for that specif user or group. This can
    * set as
-   *    - v:cluster-admins    // to allow admin access
-   *    - v:cluster-deployer  // to allow deployer access
-   *    - v:cluster-viewer    // to allow viewer access
-   *    - ""                  // empty value stands for no access
+   *   - kubernetes:team-admin
+   *   - kubernetes:cluster-admin
+   *   - kubernetes:admin
+   *   - kubernetes:editor
+   *   - kubernetes:viewer
+   *   - deny-access
    * </pre>
    *
    * <code>optional string default_access_level = 4;</code>

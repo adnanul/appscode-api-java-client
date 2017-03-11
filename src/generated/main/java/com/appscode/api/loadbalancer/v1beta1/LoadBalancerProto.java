@@ -153,32 +153,32 @@ public final class LoadBalancerProto {
       "BalancerRule\022\014\n\004port\030\001 \001(\t\022A\n\007backend\030\002 " +
       "\001(\01320.appscode.kubernetes.v1beta1.LoadBa" +
       "lancerBackend\022\027\n\017SSL_secret_name\030\003 \001(\t\022\027",
-      "\n\017secret_pem_name\030\004 \001(\t2\216\007\n\rLoadBalancer" +
-      "s\022\255\001\n\004List\022(.appscode.kubernetes.v1beta1" +
+      "\n\017secret_pem_name\030\004 \001(\t2\247\007\n\rLoadBalancer" +
+      "s\022\262\001\n\004List\022(.appscode.kubernetes.v1beta1" +
       ".ListRequest\032).appscode.kubernetes.v1bet" +
-      "a1.ListResponse\"P\202\323\344\223\002D\022B/_appscode/api/" +
+      "a1.ListResponse\"U\202\323\344\223\002I\022G/_appscode/api/" +
       "kubernetes/v1beta1/clusters/{cluster}/lo" +
-      "adbalancers\202\265\030\002\010\001\022\300\001\n\010Describe\022,.appscod" +
-      "e.kubernetes.v1beta1.DescribeRequest\032-.a" +
-      "ppscode.kubernetes.v1beta1.DescribeRespo" +
-      "nse\"W\202\323\344\223\002K\022I/_appscode/api/kubernetes/v" +
-      "1beta1/clusters/{cluster}/loadbalancers/",
-      "{name}\202\265\030\002\010\001\022\250\001\n\006Create\022*.appscode.kuber" +
-      "netes.v1beta1.CreateRequest\032\035.appscode.d" +
-      "types.VoidResponse\"S\202\323\344\223\002G\"B/_appscode/a" +
-      "pi/kubernetes/v1beta1/clusters/{cluster}" +
-      "/loadbalancers:\001*\202\265\030\002\010\001\022\257\001\n\006Update\022*.app" +
-      "scode.kubernetes.v1beta1.UpdateRequest\032\035" +
-      ".appscode.dtypes.VoidResponse\"Z\202\323\344\223\002N\032I/" +
-      "_appscode/api/kubernetes/v1beta1/cluster" +
-      "s/{cluster}/loadbalancers/{name}:\001*\202\265\030\002\010" +
-      "\001\022\254\001\n\006Delete\022*.appscode.kubernetes.v1bet",
-      "a1.DeleteRequest\032\035.appscode.dtypes.VoidR" +
-      "esponse\"W\202\323\344\223\002K*I/_appscode/api/kubernet" +
-      "es/v1beta1/clusters/{cluster}/loadbalanc" +
-      "ers/{name}\202\265\030\002\010\001BE\n%com.appscode.api.loa" +
-      "dbalancer.v1beta1B\021LoadBalancerProtoP\001Z\007" +
-      "v1beta1b\006proto3"
+      "adbalancers/json\202\265\030\002\010\001\022\305\001\n\010Describe\022,.ap" +
+      "pscode.kubernetes.v1beta1.DescribeReques" +
+      "t\032-.appscode.kubernetes.v1beta1.Describe" +
+      "Response\"\\\202\323\344\223\002P\022N/_appscode/api/kuberne" +
+      "tes/v1beta1/clusters/{cluster}/loadbalan",
+      "cers/{name}/json\202\265\030\002\010\001\022\255\001\n\006Create\022*.apps" +
+      "code.kubernetes.v1beta1.CreateRequest\032\035." +
+      "appscode.dtypes.VoidResponse\"X\202\323\344\223\002L\"G/_" +
+      "appscode/api/kubernetes/v1beta1/clusters" +
+      "/{cluster}/loadbalancers/json:\001*\202\265\030\002\010\001\022\264" +
+      "\001\n\006Update\022*.appscode.kubernetes.v1beta1." +
+      "UpdateRequest\032\035.appscode.dtypes.VoidResp" +
+      "onse\"_\202\323\344\223\002S\032N/_appscode/api/kubernetes/" +
+      "v1beta1/clusters/{cluster}/loadbalancers" +
+      "/{name}/json:\001*\202\265\030\002\010\001\022\261\001\n\006Delete\022*.appsc",
+      "ode.kubernetes.v1beta1.DeleteRequest\032\035.a" +
+      "ppscode.dtypes.VoidResponse\"\\\202\323\344\223\002P*N/_a" +
+      "ppscode/api/kubernetes/v1beta1/clusters/" +
+      "{cluster}/loadbalancers/{name}/json\202\265\030\002\010" +
+      "\001BE\n%com.appscode.api.loadbalancer.v1bet" +
+      "a1B\021LoadBalancerProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

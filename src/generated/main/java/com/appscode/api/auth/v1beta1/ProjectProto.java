@@ -73,17 +73,17 @@ public final class ProjectProto {
       "members\030\n \003(\0132\035.appscode.auth.v1beta1.Me" +
       "mber\022\022\n\ncreated_at\030\013 \001(\003\"N\n\006Member\022\014\n\004ph" +
       "id\030\001 \001(\t\022\021\n\tuser_name\030\002 \001(\t\022\021\n\treal_name",
-      "\030\003 \001(\t\022\020\n\010is_admin\030\004 \001(\0102\317\002\n\010Projects\022\221\001" +
+      "\030\003 \001(\t\022\020\n\010is_admin\030\004 \001(\0102\331\002\n\010Projects\022\226\001" +
       "\n\004List\022).appscode.auth.v1beta1.ProjectLi" +
       "stRequest\032*.appscode.auth.v1beta1.Projec" +
-      "tListResponse\"2\202\323\344\223\002&\022$/_appscode/api/au" +
-      "th/v1beta1/projects\202\265\030\002\010\001\022\256\001\n\007Members\022/." +
-      "appscode.auth.v1beta1.ProjectMemberListR" +
-      "equest\0320.appscode.auth.v1beta1.ProjectMe" +
-      "mberListResponse\"@\202\323\344\223\0024\0222/_appscode/api" +
-      "/auth/v1beta1/projects/{uid}/members\202\265\030\002" +
-      "\010\001B8\n\035com.appscode.api.auth.v1beta1B\014Pro",
-      "jectProtoP\001Z\007v1beta1b\006proto3"
+      "tListResponse\"7\202\323\344\223\002+\022)/_appscode/api/au" +
+      "th/v1beta1/projects/json\202\265\030\002\010\001\022\263\001\n\007Membe" +
+      "rs\022/.appscode.auth.v1beta1.ProjectMember" +
+      "ListRequest\0320.appscode.auth.v1beta1.Proj" +
+      "ectMemberListResponse\"E\202\323\344\223\0029\0227/_appscod" +
+      "e/api/auth/v1beta1/projects/{uid}/member" +
+      "s/json\202\265\030\002\010\001B8\n\035com.appscode.api.auth.v1",
+      "beta1B\014ProjectProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

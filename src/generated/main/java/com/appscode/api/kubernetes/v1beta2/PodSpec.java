@@ -208,6 +208,59 @@ public  final class PodSpec extends
      */
     com.appscode.api.kubernetes.v1beta2.PodSpec.Container.VolumeMountOrBuilder getVolumeMountsOrBuilder(
         int index);
+
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    java.util.List<java.lang.String>
+        getArgsList();
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    int getArgsCount();
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    java.lang.String getArgs(int index);
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getArgsBytes(int index);
+
+    /**
+     * <code>optional string working_dir = 6;</code>
+     */
+    java.lang.String getWorkingDir();
+    /**
+     * <code>optional string working_dir = 6;</code>
+     */
+    com.google.protobuf.ByteString
+        getWorkingDirBytes();
+
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar> 
+        getEnvList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.EnvVar getEnv(int index);
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    int getEnvCount();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder> 
+        getEnvOrBuilderList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder getEnvOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.PodSpec.Container}
@@ -225,6 +278,9 @@ public  final class PodSpec extends
       image_ = "";
       commands_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       volumeMounts_ = java.util.Collections.emptyList();
+      args_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      workingDir_ = "";
+      env_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -282,6 +338,30 @@ public  final class PodSpec extends
                   input.readMessage(com.appscode.api.kubernetes.v1beta2.PodSpec.Container.VolumeMount.parser(), extensionRegistry));
               break;
             }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+                args_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000010;
+              }
+              args_.add(s);
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              workingDir_ = s;
+              break;
+            }
+            case 58: {
+              if (!((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+                env_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.EnvVar>();
+                mutable_bitField0_ |= 0x00000040;
+              }
+              env_.add(
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.EnvVar.parser(), extensionRegistry));
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -295,6 +375,12 @@ public  final class PodSpec extends
         }
         if (((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
           volumeMounts_ = java.util.Collections.unmodifiableList(volumeMounts_);
+        }
+        if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
+          args_ = args_.getUnmodifiableView();
+        }
+        if (((mutable_bitField0_ & 0x00000040) == 0x00000040)) {
+          env_ = java.util.Collections.unmodifiableList(env_);
         }
         makeExtensionsImmutable();
       }
@@ -1148,6 +1234,104 @@ public  final class PodSpec extends
       return volumeMounts_.get(index);
     }
 
+    public static final int ARGS_FIELD_NUMBER = 5;
+    private com.google.protobuf.LazyStringList args_;
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getArgsList() {
+      return args_;
+    }
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    public int getArgsCount() {
+      return args_.size();
+    }
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    public java.lang.String getArgs(int index) {
+      return args_.get(index);
+    }
+    /**
+     * <code>repeated string args = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getArgsBytes(int index) {
+      return args_.getByteString(index);
+    }
+
+    public static final int WORKING_DIR_FIELD_NUMBER = 6;
+    private volatile java.lang.Object workingDir_;
+    /**
+     * <code>optional string working_dir = 6;</code>
+     */
+    public java.lang.String getWorkingDir() {
+      java.lang.Object ref = workingDir_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        workingDir_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string working_dir = 6;</code>
+     */
+    public com.google.protobuf.ByteString
+        getWorkingDirBytes() {
+      java.lang.Object ref = workingDir_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        workingDir_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int ENV_FIELD_NUMBER = 7;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar> env_;
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar> getEnvList() {
+      return env_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder> 
+        getEnvOrBuilderList() {
+      return env_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    public int getEnvCount() {
+      return env_.size();
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EnvVar getEnv(int index) {
+      return env_.get(index);
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder getEnvOrBuilder(
+        int index) {
+      return env_.get(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1171,6 +1355,15 @@ public  final class PodSpec extends
       }
       for (int i = 0; i < volumeMounts_.size(); i++) {
         output.writeMessage(4, volumeMounts_.get(i));
+      }
+      for (int i = 0; i < args_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, args_.getRaw(i));
+      }
+      if (!getWorkingDirBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, workingDir_);
+      }
+      for (int i = 0; i < env_.size(); i++) {
+        output.writeMessage(7, env_.get(i));
       }
     }
 
@@ -1197,6 +1390,21 @@ public  final class PodSpec extends
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, volumeMounts_.get(i));
       }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < args_.size(); i++) {
+          dataSize += computeStringSizeNoTag(args_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getArgsList().size();
+      }
+      if (!getWorkingDirBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, workingDir_);
+      }
+      for (int i = 0; i < env_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, env_.get(i));
+      }
       memoizedSize = size;
       return size;
     }
@@ -1221,6 +1429,12 @@ public  final class PodSpec extends
           .equals(other.getCommandsList());
       result = result && getVolumeMountsList()
           .equals(other.getVolumeMountsList());
+      result = result && getArgsList()
+          .equals(other.getArgsList());
+      result = result && getWorkingDir()
+          .equals(other.getWorkingDir());
+      result = result && getEnvList()
+          .equals(other.getEnvList());
       return result;
     }
 
@@ -1242,6 +1456,16 @@ public  final class PodSpec extends
       if (getVolumeMountsCount() > 0) {
         hash = (37 * hash) + VOLUME_MOUNTS_FIELD_NUMBER;
         hash = (53 * hash) + getVolumeMountsList().hashCode();
+      }
+      if (getArgsCount() > 0) {
+        hash = (37 * hash) + ARGS_FIELD_NUMBER;
+        hash = (53 * hash) + getArgsList().hashCode();
+      }
+      hash = (37 * hash) + WORKING_DIR_FIELD_NUMBER;
+      hash = (53 * hash) + getWorkingDir().hashCode();
+      if (getEnvCount() > 0) {
+        hash = (37 * hash) + ENV_FIELD_NUMBER;
+        hash = (53 * hash) + getEnvList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -1358,6 +1582,7 @@ public  final class PodSpec extends
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
           getVolumeMountsFieldBuilder();
+          getEnvFieldBuilder();
         }
       }
       public Builder clear() {
@@ -1373,6 +1598,16 @@ public  final class PodSpec extends
           bitField0_ = (bitField0_ & ~0x00000008);
         } else {
           volumeMountsBuilder_.clear();
+        }
+        args_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        workingDir_ = "";
+
+        if (envBuilder_ == null) {
+          env_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+        } else {
+          envBuilder_.clear();
         }
         return this;
       }
@@ -1413,6 +1648,21 @@ public  final class PodSpec extends
           result.volumeMounts_ = volumeMounts_;
         } else {
           result.volumeMounts_ = volumeMountsBuilder_.build();
+        }
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          args_ = args_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.args_ = args_;
+        result.workingDir_ = workingDir_;
+        if (envBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040)) {
+            env_ = java.util.Collections.unmodifiableList(env_);
+            bitField0_ = (bitField0_ & ~0x00000040);
+          }
+          result.env_ = env_;
+        } else {
+          result.env_ = envBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -1497,6 +1747,46 @@ public  final class PodSpec extends
                    getVolumeMountsFieldBuilder() : null;
             } else {
               volumeMountsBuilder_.addAllMessages(other.volumeMounts_);
+            }
+          }
+        }
+        if (!other.args_.isEmpty()) {
+          if (args_.isEmpty()) {
+            args_ = other.args_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureArgsIsMutable();
+            args_.addAll(other.args_);
+          }
+          onChanged();
+        }
+        if (!other.getWorkingDir().isEmpty()) {
+          workingDir_ = other.workingDir_;
+          onChanged();
+        }
+        if (envBuilder_ == null) {
+          if (!other.env_.isEmpty()) {
+            if (env_.isEmpty()) {
+              env_ = other.env_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+            } else {
+              ensureEnvIsMutable();
+              env_.addAll(other.env_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.env_.isEmpty()) {
+            if (envBuilder_.isEmpty()) {
+              envBuilder_.dispose();
+              envBuilder_ = null;
+              env_ = other.env_;
+              bitField0_ = (bitField0_ & ~0x00000040);
+              envBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getEnvFieldBuilder() : null;
+            } else {
+              envBuilder_.addAllMessages(other.env_);
             }
           }
         }
@@ -1997,6 +2287,409 @@ public  final class PodSpec extends
           volumeMounts_ = null;
         }
         return volumeMountsBuilder_;
+      }
+
+      private com.google.protobuf.LazyStringList args_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureArgsIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          args_ = new com.google.protobuf.LazyStringArrayList(args_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getArgsList() {
+        return args_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public int getArgsCount() {
+        return args_.size();
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public java.lang.String getArgs(int index) {
+        return args_.get(index);
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getArgsBytes(int index) {
+        return args_.getByteString(index);
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public Builder setArgs(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureArgsIsMutable();
+        args_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public Builder addArgs(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureArgsIsMutable();
+        args_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public Builder addAllArgs(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureArgsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, args_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public Builder clearArgs() {
+        args_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string args = 5;</code>
+       */
+      public Builder addArgsBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureArgsIsMutable();
+        args_.add(value);
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object workingDir_ = "";
+      /**
+       * <code>optional string working_dir = 6;</code>
+       */
+      public java.lang.String getWorkingDir() {
+        java.lang.Object ref = workingDir_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          workingDir_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string working_dir = 6;</code>
+       */
+      public com.google.protobuf.ByteString
+          getWorkingDirBytes() {
+        java.lang.Object ref = workingDir_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          workingDir_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string working_dir = 6;</code>
+       */
+      public Builder setWorkingDir(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        workingDir_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string working_dir = 6;</code>
+       */
+      public Builder clearWorkingDir() {
+        
+        workingDir_ = getDefaultInstance().getWorkingDir();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string working_dir = 6;</code>
+       */
+      public Builder setWorkingDirBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        workingDir_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar> env_ =
+        java.util.Collections.emptyList();
+      private void ensureEnvIsMutable() {
+        if (!((bitField0_ & 0x00000040) == 0x00000040)) {
+          env_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.EnvVar>(env_);
+          bitField0_ |= 0x00000040;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.EnvVar, com.appscode.api.kubernetes.v1beta2.EnvVar.Builder, com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder> envBuilder_;
+
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar> getEnvList() {
+        if (envBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(env_);
+        } else {
+          return envBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public int getEnvCount() {
+        if (envBuilder_ == null) {
+          return env_.size();
+        } else {
+          return envBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EnvVar getEnv(int index) {
+        if (envBuilder_ == null) {
+          return env_.get(index);
+        } else {
+          return envBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder setEnv(
+          int index, com.appscode.api.kubernetes.v1beta2.EnvVar value) {
+        if (envBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEnvIsMutable();
+          env_.set(index, value);
+          onChanged();
+        } else {
+          envBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder setEnv(
+          int index, com.appscode.api.kubernetes.v1beta2.EnvVar.Builder builderForValue) {
+        if (envBuilder_ == null) {
+          ensureEnvIsMutable();
+          env_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          envBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder addEnv(com.appscode.api.kubernetes.v1beta2.EnvVar value) {
+        if (envBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEnvIsMutable();
+          env_.add(value);
+          onChanged();
+        } else {
+          envBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder addEnv(
+          int index, com.appscode.api.kubernetes.v1beta2.EnvVar value) {
+        if (envBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureEnvIsMutable();
+          env_.add(index, value);
+          onChanged();
+        } else {
+          envBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder addEnv(
+          com.appscode.api.kubernetes.v1beta2.EnvVar.Builder builderForValue) {
+        if (envBuilder_ == null) {
+          ensureEnvIsMutable();
+          env_.add(builderForValue.build());
+          onChanged();
+        } else {
+          envBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder addEnv(
+          int index, com.appscode.api.kubernetes.v1beta2.EnvVar.Builder builderForValue) {
+        if (envBuilder_ == null) {
+          ensureEnvIsMutable();
+          env_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          envBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder addAllEnv(
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.EnvVar> values) {
+        if (envBuilder_ == null) {
+          ensureEnvIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, env_);
+          onChanged();
+        } else {
+          envBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder clearEnv() {
+        if (envBuilder_ == null) {
+          env_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000040);
+          onChanged();
+        } else {
+          envBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public Builder removeEnv(int index) {
+        if (envBuilder_ == null) {
+          ensureEnvIsMutable();
+          env_.remove(index);
+          onChanged();
+        } else {
+          envBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EnvVar.Builder getEnvBuilder(
+          int index) {
+        return getEnvFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder getEnvOrBuilder(
+          int index) {
+        if (envBuilder_ == null) {
+          return env_.get(index);  } else {
+          return envBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder> 
+           getEnvOrBuilderList() {
+        if (envBuilder_ != null) {
+          return envBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(env_);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EnvVar.Builder addEnvBuilder() {
+        return getEnvFieldBuilder().addBuilder(
+            com.appscode.api.kubernetes.v1beta2.EnvVar.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EnvVar.Builder addEnvBuilder(
+          int index) {
+        return getEnvFieldBuilder().addBuilder(
+            index, com.appscode.api.kubernetes.v1beta2.EnvVar.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.EnvVar env = 7;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.EnvVar.Builder> 
+           getEnvBuilderList() {
+        return getEnvFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.EnvVar, com.appscode.api.kubernetes.v1beta2.EnvVar.Builder, com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder> 
+          getEnvFieldBuilder() {
+        if (envBuilder_ == null) {
+          envBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.EnvVar, com.appscode.api.kubernetes.v1beta2.EnvVar.Builder, com.appscode.api.kubernetes.v1beta2.EnvVarOrBuilder>(
+                  env_,
+                  ((bitField0_ & 0x00000040) == 0x00000040),
+                  getParentForChildren(),
+                  isClean());
+          env_ = null;
+        }
+        return envBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {

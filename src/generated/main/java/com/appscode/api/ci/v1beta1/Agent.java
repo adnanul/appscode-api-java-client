@@ -15,6 +15,7 @@ public  final class Agent extends
     super(builder);
   }
   private Agent() {
+    phid_ = "";
     name_ = "";
     role_ = "";
     externalIp_ = "";
@@ -52,38 +53,44 @@ public  final class Agent extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            name_ = s;
+            phid_ = s;
             break;
           }
           case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            role_ = s;
+            name_ = s;
             break;
           }
           case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            externalIp_ = s;
+            role_ = s;
             break;
           }
           case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            internalIp_ = s;
+            externalIp_ = s;
             break;
           }
-          case 40: {
+          case 42: {
+            java.lang.String s = input.readStringRequireUtf8();
 
-            isDeleted_ = input.readBool();
+            internalIp_ = s;
             break;
           }
           case 48: {
 
-            createdAt_ = input.readInt64();
+            isDeleted_ = input.readBool();
             break;
           }
           case 56: {
+
+            createdAt_ = input.readInt64();
+            break;
+          }
+          case 64: {
 
             updatedAt_ = input.readInt64();
             break;
@@ -111,10 +118,44 @@ public  final class Agent extends
             com.appscode.api.ci.v1beta1.Agent.class, com.appscode.api.ci.v1beta1.Agent.Builder.class);
   }
 
-  public static final int NAME_FIELD_NUMBER = 1;
+  public static final int PHID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object phid_;
+  /**
+   * <code>optional string phid = 1;</code>
+   */
+  public java.lang.String getPhid() {
+    java.lang.Object ref = phid_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      phid_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string phid = 1;</code>
+   */
+  public com.google.protobuf.ByteString
+      getPhidBytes() {
+    java.lang.Object ref = phid_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      phid_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -129,7 +170,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -145,10 +186,10 @@ public  final class Agent extends
     }
   }
 
-  public static final int ROLE_FIELD_NUMBER = 2;
+  public static final int ROLE_FIELD_NUMBER = 3;
   private volatile java.lang.Object role_;
   /**
-   * <code>optional string role = 2;</code>
+   * <code>optional string role = 3;</code>
    */
   public java.lang.String getRole() {
     java.lang.Object ref = role_;
@@ -163,7 +204,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string role = 2;</code>
+   * <code>optional string role = 3;</code>
    */
   public com.google.protobuf.ByteString
       getRoleBytes() {
@@ -179,10 +220,10 @@ public  final class Agent extends
     }
   }
 
-  public static final int EXTERNAL_IP_FIELD_NUMBER = 3;
+  public static final int EXTERNAL_IP_FIELD_NUMBER = 4;
   private volatile java.lang.Object externalIp_;
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>optional string external_ip = 4;</code>
    */
   public java.lang.String getExternalIp() {
     java.lang.Object ref = externalIp_;
@@ -197,7 +238,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>optional string external_ip = 4;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIpBytes() {
@@ -213,10 +254,10 @@ public  final class Agent extends
     }
   }
 
-  public static final int INTERNAL_IP_FIELD_NUMBER = 4;
+  public static final int INTERNAL_IP_FIELD_NUMBER = 5;
   private volatile java.lang.Object internalIp_;
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>optional string internal_ip = 5;</code>
    */
   public java.lang.String getInternalIp() {
     java.lang.Object ref = internalIp_;
@@ -231,7 +272,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>optional string internal_ip = 5;</code>
    */
   public com.google.protobuf.ByteString
       getInternalIpBytes() {
@@ -247,28 +288,28 @@ public  final class Agent extends
     }
   }
 
-  public static final int ISDELETED_FIELD_NUMBER = 5;
+  public static final int ISDELETED_FIELD_NUMBER = 6;
   private boolean isDeleted_;
   /**
-   * <code>optional bool isDeleted = 5;</code>
+   * <code>optional bool isDeleted = 6;</code>
    */
   public boolean getIsDeleted() {
     return isDeleted_;
   }
 
-  public static final int CREATED_AT_FIELD_NUMBER = 6;
+  public static final int CREATED_AT_FIELD_NUMBER = 7;
   private long createdAt_;
   /**
-   * <code>optional int64 created_at = 6;</code>
+   * <code>optional int64 created_at = 7;</code>
    */
   public long getCreatedAt() {
     return createdAt_;
   }
 
-  public static final int UPDATED_AT_FIELD_NUMBER = 7;
+  public static final int UPDATED_AT_FIELD_NUMBER = 8;
   private long updatedAt_;
   /**
-   * <code>optional int64 updated_at = 7;</code>
+   * <code>optional int64 updated_at = 8;</code>
    */
   public long getUpdatedAt() {
     return updatedAt_;
@@ -286,26 +327,29 @@ public  final class Agent extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
+    if (!getPhidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, phid_);
+    }
     if (!getNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
     }
     if (!getRoleBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, role_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, role_);
     }
     if (!getExternalIpBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, externalIp_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, externalIp_);
     }
     if (!getInternalIpBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, internalIp_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, internalIp_);
     }
     if (isDeleted_ != false) {
-      output.writeBool(5, isDeleted_);
+      output.writeBool(6, isDeleted_);
     }
     if (createdAt_ != 0L) {
-      output.writeInt64(6, createdAt_);
+      output.writeInt64(7, createdAt_);
     }
     if (updatedAt_ != 0L) {
-      output.writeInt64(7, updatedAt_);
+      output.writeInt64(8, updatedAt_);
     }
   }
 
@@ -314,29 +358,32 @@ public  final class Agent extends
     if (size != -1) return size;
 
     size = 0;
+    if (!getPhidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, phid_);
+    }
     if (!getNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
     }
     if (!getRoleBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, role_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, role_);
     }
     if (!getExternalIpBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, externalIp_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, externalIp_);
     }
     if (!getInternalIpBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, internalIp_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, internalIp_);
     }
     if (isDeleted_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(5, isDeleted_);
+        .computeBoolSize(6, isDeleted_);
     }
     if (createdAt_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(6, createdAt_);
+        .computeInt64Size(7, createdAt_);
     }
     if (updatedAt_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(7, updatedAt_);
+        .computeInt64Size(8, updatedAt_);
     }
     memoizedSize = size;
     return size;
@@ -354,6 +401,8 @@ public  final class Agent extends
     com.appscode.api.ci.v1beta1.Agent other = (com.appscode.api.ci.v1beta1.Agent) obj;
 
     boolean result = true;
+    result = result && getPhid()
+        .equals(other.getPhid());
     result = result && getName()
         .equals(other.getName());
     result = result && getRole()
@@ -378,6 +427,8 @@ public  final class Agent extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (37 * hash) + PHID_FIELD_NUMBER;
+    hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + ROLE_FIELD_NUMBER;
@@ -513,6 +564,8 @@ public  final class Agent extends
     }
     public Builder clear() {
       super.clear();
+      phid_ = "";
+
       name_ = "";
 
       role_ = "";
@@ -549,6 +602,7 @@ public  final class Agent extends
 
     public com.appscode.api.ci.v1beta1.Agent buildPartial() {
       com.appscode.api.ci.v1beta1.Agent result = new com.appscode.api.ci.v1beta1.Agent(this);
+      result.phid_ = phid_;
       result.name_ = name_;
       result.role_ = role_;
       result.externalIp_ = externalIp_;
@@ -597,6 +651,10 @@ public  final class Agent extends
 
     public Builder mergeFrom(com.appscode.api.ci.v1beta1.Agent other) {
       if (other == com.appscode.api.ci.v1beta1.Agent.getDefaultInstance()) return this;
+      if (!other.getPhid().isEmpty()) {
+        phid_ = other.phid_;
+        onChanged();
+      }
       if (!other.getName().isEmpty()) {
         name_ = other.name_;
         onChanged();
@@ -648,9 +706,78 @@ public  final class Agent extends
       return this;
     }
 
+    private java.lang.Object phid_ = "";
+    /**
+     * <code>optional string phid = 1;</code>
+     */
+    public java.lang.String getPhid() {
+      java.lang.Object ref = phid_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        phid_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string phid = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPhidBytes() {
+      java.lang.Object ref = phid_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        phid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string phid = 1;</code>
+     */
+    public Builder setPhid(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      phid_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string phid = 1;</code>
+     */
+    public Builder clearPhid() {
+      
+      phid_ = getDefaultInstance().getPhid();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string phid = 1;</code>
+     */
+    public Builder setPhidBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      phid_ = value;
+      onChanged();
+      return this;
+    }
+
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -665,7 +792,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -681,7 +808,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -694,7 +821,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -703,7 +830,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -719,7 +846,7 @@ public  final class Agent extends
 
     private java.lang.Object role_ = "";
     /**
-     * <code>optional string role = 2;</code>
+     * <code>optional string role = 3;</code>
      */
     public java.lang.String getRole() {
       java.lang.Object ref = role_;
@@ -734,7 +861,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>optional string role = 3;</code>
      */
     public com.google.protobuf.ByteString
         getRoleBytes() {
@@ -750,7 +877,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>optional string role = 3;</code>
      */
     public Builder setRole(
         java.lang.String value) {
@@ -763,7 +890,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>optional string role = 3;</code>
      */
     public Builder clearRole() {
       
@@ -772,7 +899,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>optional string role = 3;</code>
      */
     public Builder setRoleBytes(
         com.google.protobuf.ByteString value) {
@@ -788,7 +915,7 @@ public  final class Agent extends
 
     private java.lang.Object externalIp_ = "";
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>optional string external_ip = 4;</code>
      */
     public java.lang.String getExternalIp() {
       java.lang.Object ref = externalIp_;
@@ -803,7 +930,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>optional string external_ip = 4;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIpBytes() {
@@ -819,7 +946,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>optional string external_ip = 4;</code>
      */
     public Builder setExternalIp(
         java.lang.String value) {
@@ -832,7 +959,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>optional string external_ip = 4;</code>
      */
     public Builder clearExternalIp() {
       
@@ -841,7 +968,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>optional string external_ip = 4;</code>
      */
     public Builder setExternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -857,7 +984,7 @@ public  final class Agent extends
 
     private java.lang.Object internalIp_ = "";
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>optional string internal_ip = 5;</code>
      */
     public java.lang.String getInternalIp() {
       java.lang.Object ref = internalIp_;
@@ -872,7 +999,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>optional string internal_ip = 5;</code>
      */
     public com.google.protobuf.ByteString
         getInternalIpBytes() {
@@ -888,7 +1015,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>optional string internal_ip = 5;</code>
      */
     public Builder setInternalIp(
         java.lang.String value) {
@@ -901,7 +1028,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>optional string internal_ip = 5;</code>
      */
     public Builder clearInternalIp() {
       
@@ -910,7 +1037,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>optional string internal_ip = 5;</code>
      */
     public Builder setInternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -926,13 +1053,13 @@ public  final class Agent extends
 
     private boolean isDeleted_ ;
     /**
-     * <code>optional bool isDeleted = 5;</code>
+     * <code>optional bool isDeleted = 6;</code>
      */
     public boolean getIsDeleted() {
       return isDeleted_;
     }
     /**
-     * <code>optional bool isDeleted = 5;</code>
+     * <code>optional bool isDeleted = 6;</code>
      */
     public Builder setIsDeleted(boolean value) {
       
@@ -941,7 +1068,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional bool isDeleted = 5;</code>
+     * <code>optional bool isDeleted = 6;</code>
      */
     public Builder clearIsDeleted() {
       
@@ -952,13 +1079,13 @@ public  final class Agent extends
 
     private long createdAt_ ;
     /**
-     * <code>optional int64 created_at = 6;</code>
+     * <code>optional int64 created_at = 7;</code>
      */
     public long getCreatedAt() {
       return createdAt_;
     }
     /**
-     * <code>optional int64 created_at = 6;</code>
+     * <code>optional int64 created_at = 7;</code>
      */
     public Builder setCreatedAt(long value) {
       
@@ -967,7 +1094,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional int64 created_at = 6;</code>
+     * <code>optional int64 created_at = 7;</code>
      */
     public Builder clearCreatedAt() {
       
@@ -978,13 +1105,13 @@ public  final class Agent extends
 
     private long updatedAt_ ;
     /**
-     * <code>optional int64 updated_at = 7;</code>
+     * <code>optional int64 updated_at = 8;</code>
      */
     public long getUpdatedAt() {
       return updatedAt_;
     }
     /**
-     * <code>optional int64 updated_at = 7;</code>
+     * <code>optional int64 updated_at = 8;</code>
      */
     public Builder setUpdatedAt(long value) {
       
@@ -993,7 +1120,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional int64 updated_at = 7;</code>
+     * <code>optional int64 updated_at = 8;</code>
      */
     public Builder clearUpdatedAt() {
       

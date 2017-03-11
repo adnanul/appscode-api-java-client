@@ -107,33 +107,34 @@ public final class SnapshotProto {
       "ot_phid\030\010 \001(\t\022\030\n\020auth_secret_name\030\r \001(\t\"" +
       "N\n\024SnapshotCheckRequest\022\017\n\007cluster\030\001 \001(\t" +
       "\022\014\n\004phid\030\002 \001(\t\022\027\n\017schedule_backup\030\004 \001(\0102" +
-      "\362\007\n\tSnapshots\022\271\001\n\004List\022(.appscode.db.v1b" +
+      "\213\010\n\tSnapshots\022\276\001\n\004List\022(.appscode.db.v1b" +
       "eta1.SnapshotListRequest\032).appscode.db.v" +
-      "1beta1.SnapshotListResponse\"\\\202\323\344\223\002P\022N/_a" +
+      "1beta1.SnapshotListResponse\"a\202\323\344\223\002U\022S/_a" +
       "ppscode/api/kubernetes/v1beta1/clusters/" +
-      "{cluster}/databases/{uid}/snapshots\202\265\030\002\010" +
-      "\001\022\314\001\n\010Describe\022,.appscode.db.v1beta1.Sna",
-      "pshotDescribeRequest\032-.appscode.db.v1bet" +
-      "a1.SnapshotDescribeResponse\"c\202\323\344\223\002W\022U/_a" +
-      "ppscode/api/kubernetes/v1beta1/clusters/" +
-      "{cluster}/databases/{uid}/snapshots/{phi" +
-      "d}\202\265\030\002\010\001\022\312\001\n\016BackupSchedule\022*.appscode.d" +
-      "b.v1beta1.BackupScheduleRequest\032\035.appsco" +
-      "de.dtypes.VoidResponse\"m\202\323\344\223\002a\"\\/_appsco" +
-      "de/api/kubernetes/v1beta1/clusters/{clus" +
-      "ter}/databases/{uid}/actions/schedule-ba" +
-      "ckup:\001*\202\265\030\002\010\001\022\315\001\n\020BackupUnschedule\022,.app",
-      "scode.db.v1beta1.BackupUnscheduleRequest" +
-      "\032\035.appscode.dtypes.VoidResponse\"l\202\323\344\223\002`\032" +
-      "^/_appscode/api/kubernetes/v1beta1/clust" +
-      "ers/{cluster}/databases/{uid}/actions/un" +
-      "schedule-backup\202\265\030\002\010\001\022\274\001\n\007Restore\022+.apps" +
-      "code.db.v1beta1.SnapshotRestoreRequest\032\035" +
-      ".appscode.dtypes.VoidResponse\"e\202\323\344\223\002Y\"T/" +
-      "_appscode/api/kubernetes/v1beta1/cluster" +
-      "s/{cluster}/databases/{uid}/actions/rest" +
-      "ore:\001*\202\265\030\002\010\001B7\n\033com.appscode.api.db.v1be",
-      "ta1B\rSnapshotProtoP\001Z\007v1beta1b\006proto3"
+      "{cluster}/databases/{uid}/snapshots/json" +
+      "\202\265\030\002\010\001\022\321\001\n\010Describe\022,.appscode.db.v1beta",
+      "1.SnapshotDescribeRequest\032-.appscode.db." +
+      "v1beta1.SnapshotDescribeResponse\"h\202\323\344\223\002\\" +
+      "\022Z/_appscode/api/kubernetes/v1beta1/clus" +
+      "ters/{cluster}/databases/{uid}/snapshots" +
+      "/{phid}/json\202\265\030\002\010\001\022\317\001\n\016BackupSchedule\022*." +
+      "appscode.db.v1beta1.BackupScheduleReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"r\202\323\344\223\002f" +
+      "\"a/_appscode/api/kubernetes/v1beta1/clus" +
+      "ters/{cluster}/databases/{uid}/actions/s" +
+      "chedule-backup/json:\001*\202\265\030\002\010\001\022\322\001\n\020BackupU",
+      "nschedule\022,.appscode.db.v1beta1.BackupUn" +
+      "scheduleRequest\032\035.appscode.dtypes.VoidRe" +
+      "sponse\"q\202\323\344\223\002e\032c/_appscode/api/kubernete" +
+      "s/v1beta1/clusters/{cluster}/databases/{" +
+      "uid}/actions/unschedule-backup/json\202\265\030\002\010" +
+      "\001\022\301\001\n\007Restore\022+.appscode.db.v1beta1.Snap" +
+      "shotRestoreRequest\032\035.appscode.dtypes.Voi" +
+      "dResponse\"j\202\323\344\223\002^\"Y/_appscode/api/kubern" +
+      "etes/v1beta1/clusters/{cluster}/database" +
+      "s/{uid}/actions/restore/json:\001*\202\265\030\002\010\001B7\n",
+      "\033com.appscode.api.db.v1beta1B\rSnapshotPr" +
+      "otoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

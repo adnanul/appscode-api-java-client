@@ -67,21 +67,21 @@ public final class BillingProto {
       "amespace.v1beta1.GetQuotaResponse.UsedEn" +
       "try\032/\n\rAssignedEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
       "ue\030\002 \001(\003:\0028\001\032+\n\tUsedEntry\022\013\n\003key\030\001 \001(\t\022\r" +
-      "\n\005value\030\002 \001(\003:\0028\0012\343\003\n\007Billing\022\252\001\n\017GetSub",
+      "\n\005value\030\002 \001(\003:\0028\0012\362\003\n\007Billing\022\257\001\n\017GetSub",
       "scription\022\034.appscode.dtypes.VoidRequest\032" +
       "3.appscode.namespace.v1beta1.GetSubscrip" +
-      "tionResponse\"D\202\323\344\223\0028\0226/_appscode/api/nam" +
-      "espace/v1beta1/billing/subscriptions\202\265\030\002" +
-      "\010\001\022\217\001\n\010GetQuota\022\034.appscode.dtypes.VoidRe" +
-      "quest\032,.appscode.namespace.v1beta1.GetQu" +
-      "otaResponse\"7\202\323\344\223\0021\022//_appscode/api/name" +
-      "space/v1beta1/billing/quotas\022\230\001\n\022CheckPa" +
-      "ymentMethod\022\034.appscode.dtypes.VoidReques" +
-      "t\032\035.appscode.dtypes.VoidResponse\"E\202\323\344\223\0029",
-      "\0227/_appscode/api/namespace/v1beta1/billi" +
-      "ng/paymentmethods\202\265\030\002\010\001B=\n\"com.appscode." +
-      "api.namespace.v1beta1B\014BillingProtoP\001Z\007v" +
-      "1beta1b\006proto3"
+      "tionResponse\"I\202\323\344\223\002=\022;/_appscode/api/nam" +
+      "espace/v1beta1/billing/subscriptions/jso" +
+      "n\202\265\030\002\010\001\022\224\001\n\010GetQuota\022\034.appscode.dtypes.V" +
+      "oidRequest\032,.appscode.namespace.v1beta1." +
+      "GetQuotaResponse\"<\202\323\344\223\0026\0224/_appscode/api" +
+      "/namespace/v1beta1/billing/quotas/json\022\235" +
+      "\001\n\022CheckPaymentMethod\022\034.appscode.dtypes." +
+      "VoidRequest\032\035.appscode.dtypes.VoidRespon",
+      "se\"J\202\323\344\223\002>\022</_appscode/api/namespace/v1b" +
+      "eta1/billing/paymentmethods/json\202\265\030\002\010\001B=" +
+      "\n\"com.appscode.api.namespace.v1beta1B\014Bi" +
+      "llingProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -221,6 +221,45 @@ public  final class Service extends
      */
     com.google.protobuf.ByteString
         getLoadbalancerIPBytes();
+
+    /**
+     * <code>optional string external_name = 7;</code>
+     */
+    java.lang.String getExternalName();
+    /**
+     * <code>optional string external_name = 7;</code>
+     */
+    com.google.protobuf.ByteString
+        getExternalNameBytes();
+
+    /**
+     * <code>optional string session_affinity = 8;</code>
+     */
+    java.lang.String getSessionAffinity();
+    /**
+     * <code>optional string session_affinity = 8;</code>
+     */
+    com.google.protobuf.ByteString
+        getSessionAffinityBytes();
+
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    java.util.List<java.lang.String>
+        getLoadBalancerSourceRangesList();
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    int getLoadBalancerSourceRangesCount();
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    java.lang.String getLoadBalancerSourceRanges(int index);
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    com.google.protobuf.ByteString
+        getLoadBalancerSourceRangesBytes(int index);
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.Service.Spec}
@@ -239,6 +278,9 @@ public  final class Service extends
       clusterIP_ = "";
       externalIPs_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       loadbalancerIP_ = "";
+      externalName_ = "";
+      sessionAffinity_ = "";
+      loadBalancerSourceRanges_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
     @java.lang.Override
@@ -315,6 +357,27 @@ public  final class Service extends
               loadbalancerIP_ = s;
               break;
             }
+            case 58: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              externalName_ = s;
+              break;
+            }
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              sessionAffinity_ = s;
+              break;
+            }
+            case 74: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+                loadBalancerSourceRanges_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000100;
+              }
+              loadBalancerSourceRanges_.add(s);
+              break;
+            }
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -328,6 +391,9 @@ public  final class Service extends
         }
         if (((mutable_bitField0_ & 0x00000010) == 0x00000010)) {
           externalIPs_ = externalIPs_.getUnmodifiableView();
+        }
+        if (((mutable_bitField0_ & 0x00000100) == 0x00000100)) {
+          loadBalancerSourceRanges_ = loadBalancerSourceRanges_.getUnmodifiableView();
         }
         makeExtensionsImmutable();
       }
@@ -1501,6 +1567,103 @@ public  final class Service extends
       }
     }
 
+    public static final int EXTERNAL_NAME_FIELD_NUMBER = 7;
+    private volatile java.lang.Object externalName_;
+    /**
+     * <code>optional string external_name = 7;</code>
+     */
+    public java.lang.String getExternalName() {
+      java.lang.Object ref = externalName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        externalName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string external_name = 7;</code>
+     */
+    public com.google.protobuf.ByteString
+        getExternalNameBytes() {
+      java.lang.Object ref = externalName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        externalName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SESSION_AFFINITY_FIELD_NUMBER = 8;
+    private volatile java.lang.Object sessionAffinity_;
+    /**
+     * <code>optional string session_affinity = 8;</code>
+     */
+    public java.lang.String getSessionAffinity() {
+      java.lang.Object ref = sessionAffinity_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        sessionAffinity_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string session_affinity = 8;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSessionAffinityBytes() {
+      java.lang.Object ref = sessionAffinity_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        sessionAffinity_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int LOAD_BALANCER_SOURCE_RANGES_FIELD_NUMBER = 9;
+    private com.google.protobuf.LazyStringList loadBalancerSourceRanges_;
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getLoadBalancerSourceRangesList() {
+      return loadBalancerSourceRanges_;
+    }
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    public int getLoadBalancerSourceRangesCount() {
+      return loadBalancerSourceRanges_.size();
+    }
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    public java.lang.String getLoadBalancerSourceRanges(int index) {
+      return loadBalancerSourceRanges_.get(index);
+    }
+    /**
+     * <code>repeated string load_balancer_source_ranges = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getLoadBalancerSourceRangesBytes(int index) {
+      return loadBalancerSourceRanges_.getByteString(index);
+    }
+
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
@@ -1533,6 +1696,15 @@ public  final class Service extends
       }
       if (!getLoadbalancerIPBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, loadbalancerIP_);
+      }
+      if (!getExternalNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, externalName_);
+      }
+      if (!getSessionAffinityBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, sessionAffinity_);
+      }
+      for (int i = 0; i < loadBalancerSourceRanges_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 9, loadBalancerSourceRanges_.getRaw(i));
       }
     }
 
@@ -1572,6 +1744,20 @@ public  final class Service extends
       if (!getLoadbalancerIPBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, loadbalancerIP_);
       }
+      if (!getExternalNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, externalName_);
+      }
+      if (!getSessionAffinityBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, sessionAffinity_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < loadBalancerSourceRanges_.size(); i++) {
+          dataSize += computeStringSizeNoTag(loadBalancerSourceRanges_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getLoadBalancerSourceRangesList().size();
+      }
       memoizedSize = size;
       return size;
     }
@@ -1600,6 +1786,12 @@ public  final class Service extends
           .equals(other.getExternalIPsList());
       result = result && getLoadbalancerIP()
           .equals(other.getLoadbalancerIP());
+      result = result && getExternalName()
+          .equals(other.getExternalName());
+      result = result && getSessionAffinity()
+          .equals(other.getSessionAffinity());
+      result = result && getLoadBalancerSourceRangesList()
+          .equals(other.getLoadBalancerSourceRangesList());
       return result;
     }
 
@@ -1628,6 +1820,14 @@ public  final class Service extends
       }
       hash = (37 * hash) + LOADBALANCERIP_FIELD_NUMBER;
       hash = (53 * hash) + getLoadbalancerIP().hashCode();
+      hash = (37 * hash) + EXTERNAL_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getExternalName().hashCode();
+      hash = (37 * hash) + SESSION_AFFINITY_FIELD_NUMBER;
+      hash = (53 * hash) + getSessionAffinity().hashCode();
+      if (getLoadBalancerSourceRangesCount() > 0) {
+        hash = (37 * hash) + LOAD_BALANCER_SOURCE_RANGES_FIELD_NUMBER;
+        hash = (53 * hash) + getLoadBalancerSourceRangesList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1784,6 +1984,12 @@ public  final class Service extends
         bitField0_ = (bitField0_ & ~0x00000010);
         loadbalancerIP_ = "";
 
+        externalName_ = "";
+
+        sessionAffinity_ = "";
+
+        loadBalancerSourceRanges_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000100);
         return this;
       }
 
@@ -1827,6 +2033,13 @@ public  final class Service extends
         }
         result.externalIPs_ = externalIPs_;
         result.loadbalancerIP_ = loadbalancerIP_;
+        result.externalName_ = externalName_;
+        result.sessionAffinity_ = sessionAffinity_;
+        if (((bitField0_ & 0x00000100) == 0x00000100)) {
+          loadBalancerSourceRanges_ = loadBalancerSourceRanges_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000100);
+        }
+        result.loadBalancerSourceRanges_ = loadBalancerSourceRanges_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1917,6 +2130,24 @@ public  final class Service extends
         }
         if (!other.getLoadbalancerIP().isEmpty()) {
           loadbalancerIP_ = other.loadbalancerIP_;
+          onChanged();
+        }
+        if (!other.getExternalName().isEmpty()) {
+          externalName_ = other.externalName_;
+          onChanged();
+        }
+        if (!other.getSessionAffinity().isEmpty()) {
+          sessionAffinity_ = other.sessionAffinity_;
+          onChanged();
+        }
+        if (!other.loadBalancerSourceRanges_.isEmpty()) {
+          if (loadBalancerSourceRanges_.isEmpty()) {
+            loadBalancerSourceRanges_ = other.loadBalancerSourceRanges_;
+            bitField0_ = (bitField0_ & ~0x00000100);
+          } else {
+            ensureLoadBalancerSourceRangesIsMutable();
+            loadBalancerSourceRanges_.addAll(other.loadBalancerSourceRanges_);
+          }
           onChanged();
         }
         onChanged();
@@ -2602,6 +2833,238 @@ public  final class Service extends
   checkByteStringIsUtf8(value);
         
         loadbalancerIP_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object externalName_ = "";
+      /**
+       * <code>optional string external_name = 7;</code>
+       */
+      public java.lang.String getExternalName() {
+        java.lang.Object ref = externalName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          externalName_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string external_name = 7;</code>
+       */
+      public com.google.protobuf.ByteString
+          getExternalNameBytes() {
+        java.lang.Object ref = externalName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          externalName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string external_name = 7;</code>
+       */
+      public Builder setExternalName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        externalName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string external_name = 7;</code>
+       */
+      public Builder clearExternalName() {
+        
+        externalName_ = getDefaultInstance().getExternalName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string external_name = 7;</code>
+       */
+      public Builder setExternalNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        externalName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object sessionAffinity_ = "";
+      /**
+       * <code>optional string session_affinity = 8;</code>
+       */
+      public java.lang.String getSessionAffinity() {
+        java.lang.Object ref = sessionAffinity_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          sessionAffinity_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string session_affinity = 8;</code>
+       */
+      public com.google.protobuf.ByteString
+          getSessionAffinityBytes() {
+        java.lang.Object ref = sessionAffinity_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          sessionAffinity_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string session_affinity = 8;</code>
+       */
+      public Builder setSessionAffinity(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        sessionAffinity_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string session_affinity = 8;</code>
+       */
+      public Builder clearSessionAffinity() {
+        
+        sessionAffinity_ = getDefaultInstance().getSessionAffinity();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string session_affinity = 8;</code>
+       */
+      public Builder setSessionAffinityBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        sessionAffinity_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.LazyStringList loadBalancerSourceRanges_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureLoadBalancerSourceRangesIsMutable() {
+        if (!((bitField0_ & 0x00000100) == 0x00000100)) {
+          loadBalancerSourceRanges_ = new com.google.protobuf.LazyStringArrayList(loadBalancerSourceRanges_);
+          bitField0_ |= 0x00000100;
+         }
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getLoadBalancerSourceRangesList() {
+        return loadBalancerSourceRanges_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public int getLoadBalancerSourceRangesCount() {
+        return loadBalancerSourceRanges_.size();
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public java.lang.String getLoadBalancerSourceRanges(int index) {
+        return loadBalancerSourceRanges_.get(index);
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public com.google.protobuf.ByteString
+          getLoadBalancerSourceRangesBytes(int index) {
+        return loadBalancerSourceRanges_.getByteString(index);
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public Builder setLoadBalancerSourceRanges(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureLoadBalancerSourceRangesIsMutable();
+        loadBalancerSourceRanges_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public Builder addLoadBalancerSourceRanges(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureLoadBalancerSourceRangesIsMutable();
+        loadBalancerSourceRanges_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public Builder addAllLoadBalancerSourceRanges(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureLoadBalancerSourceRangesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, loadBalancerSourceRanges_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public Builder clearLoadBalancerSourceRanges() {
+        loadBalancerSourceRanges_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000100);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string load_balancer_source_ranges = 9;</code>
+       */
+      public Builder addLoadBalancerSourceRangesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureLoadBalancerSourceRangesIsMutable();
+        loadBalancerSourceRanges_.add(value);
         onChanged();
         return this;
       }

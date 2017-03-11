@@ -29,4 +29,9 @@ public interface JobSpecOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getTemplateOrBuilder();
+
+  /**
+   * <code>optional int64 active_deadline_seconds = 4;</code>
+   */
+  long getActiveDeadlineSeconds();
 }

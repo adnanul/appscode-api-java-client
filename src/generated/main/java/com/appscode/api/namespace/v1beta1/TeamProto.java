@@ -61,21 +61,21 @@ public final class TeamProto {
       "\"\032\n\nGetRequest\022\014\n\004name\030\001 \001(\t\"D\n\013GetRespo" +
       "nse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.St" +
       "atus\022\014\n\004phid\030\002 \001(\t\"\"\n\022IsAvailableRequest" +
-      "\022\014\n\004name\030\001 \001(\t2\341\003\n\005Teams\022\230\001\n\006Create\022).ap" +
+      "\022\014\n\004name\030\001 \001(\t2\360\003\n\005Teams\022\235\001\n\006Create\022).ap" +
       "pscode.namespace.v1beta1.CreateRequest\032*" +
       ".appscode.namespace.v1beta1.CreateRespon" +
-      "se\"7\202\323\344\223\002+\"&/_appscode/api/namespace/v1b" +
-      "eta1/teams:\001*\202\265\030\002\010\001\022\223\001\n\003Get\022&.appscode.n" +
-      "amespace.v1beta1.GetRequest\032\'.appscode.n" +
-      "amespace.v1beta1.GetResponse\";\202\323\344\223\002/\022-/_",
-      "appscode/api/namespace/v1beta1/teams/{na" +
-      "me}\202\265\030\002\010\001\022\246\001\n\013IsAvailable\022..appscode.nam" +
-      "espace.v1beta1.IsAvailableRequest\032\035.apps" +
-      "code.dtypes.VoidResponse\"H\202\323\344\223\002<\022:/_apps" +
-      "code/api/namespace/v1beta1/teams/{name}/" +
-      "is-available\202\265\030\002\010\001B:\n\"com.appscode.api.n" +
-      "amespace.v1beta1B\tTeamProtoP\001Z\007v1beta1b\006" +
-      "proto3"
+      "se\"<\202\323\344\223\0020\"+/_appscode/api/namespace/v1b" +
+      "eta1/teams/json:\001*\202\265\030\002\010\001\022\230\001\n\003Get\022&.appsc" +
+      "ode.namespace.v1beta1.GetRequest\032\'.appsc" +
+      "ode.namespace.v1beta1.GetResponse\"@\202\323\344\223\002",
+      "4\0222/_appscode/api/namespace/v1beta1/team" +
+      "s/{name}/json\202\265\030\002\010\001\022\253\001\n\013IsAvailable\022..ap" +
+      "pscode.namespace.v1beta1.IsAvailableRequ" +
+      "est\032\035.appscode.dtypes.VoidResponse\"M\202\323\344\223" +
+      "\002A\022?/_appscode/api/namespace/v1beta1/tea" +
+      "ms/{name}/is-available/json\202\265\030\002\010\001B:\n\"com" +
+      ".appscode.api.namespace.v1beta1B\tTeamPro" +
+      "toP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

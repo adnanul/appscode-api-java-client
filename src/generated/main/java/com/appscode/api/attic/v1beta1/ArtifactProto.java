@@ -61,17 +61,18 @@ public final class ArtifactProto {
       "\006status\030\001 \001(\0132\027.appscode.dtypes.Status\0223" +
       "\n\tartifacts\030\002 \003(\0132 .appscode.attic.v1bet" +
       "a1.Artifact\";\n\010Artifact\022\014\n\004name\030\001 \001(\t\022\014\n" +
-      "\004type\030\002 \001(\t\022\023\n\013modified_at\030\003 \001(\0032\311\002\n\tArt" +
-      "ifacts\022\232\001\n\006Search\022-.appscode.attic.v1bet" +
+      "\004type\030\002 \001(\t\022\023\n\013modified_at\030\003 \001(\0032\323\002\n\tArt" +
+      "ifacts\022\237\001\n\006Search\022-.appscode.attic.v1bet" +
       "a1.ArtifactSearchRequest\032..appscode.atti" +
-      "c.v1beta1.ArtifactSearchResponse\"1\202\323\344\223\002%" +
-      "\022#/_appscode/api/attic/v1beta1/search\202\265\030" +
-      "\002\010\001\022\236\001\n\004List\022+.appscode.attic.v1beta1.Ar" +
-      "tifactListRequest\032,.appscode.attic.v1bet",
-      "a1.ArtifactListResponse\";\202\323\344\223\002/\022-/_appsc" +
-      "ode/api/attic/v1beta1/artifacts/{type}\202\265" +
-      "\030\002\010\001B:\n\036com.appscode.api.attic.v1beta1B\r" +
-      "ArtifactProtoP\001Z\007v1beta1b\006proto3"
+      "c.v1beta1.ArtifactSearchResponse\"6\202\323\344\223\002*" +
+      "\022(/_appscode/api/attic/v1beta1/search/js" +
+      "on\202\265\030\002\010\001\022\243\001\n\004List\022+.appscode.attic.v1bet" +
+      "a1.ArtifactListRequest\032,.appscode.attic.",
+      "v1beta1.ArtifactListResponse\"@\202\323\344\223\0024\0222/_" +
+      "appscode/api/attic/v1beta1/artifacts/{ty" +
+      "pe}/json\202\265\030\002\010\001B:\n\036com.appscode.api.attic" +
+      ".v1beta1B\rArtifactProtoP\001Z\007v1beta1b\006prot" +
+      "o3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

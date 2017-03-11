@@ -34,15 +34,15 @@ public interface ClusterDescribeResponseOrBuilder extends
   com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClusterOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.Spec getSpec();
+  com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.Spec spec = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.SpecOrBuilder getSpecOrBuilder();
+  com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder();
 }

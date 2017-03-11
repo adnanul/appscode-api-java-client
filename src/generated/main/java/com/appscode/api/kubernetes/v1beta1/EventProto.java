@@ -77,19 +77,20 @@ public final class EventProto {
       ".appscode.kubernetes.v1beta1.EventRespon" +
       "se.Handler\032e\n\007Handler\022\016\n\006action\030\001 \001(\t\022\020\n" +
       "\010receiver\030\002 \001(\t\022\014\n\004base\030\003 \001(\t\022\016\n\006suffix\030" +
-      "\004 \001(\t\022\014\n\004verb\030\005 \001(\t\022\014\n\004data\030\006 \001(\0142\236\003\n\006Ev" +
-      "ents\022\311\001\n\014Constructive\022).appscode.kuberne" +
+      "\004 \001(\t\022\014\n\004verb\030\005 \001(\t\022\014\n\004data\030\006 \001(\0142\250\003\n\006Ev" +
+      "ents\022\316\001\n\014Constructive\022).appscode.kuberne" +
       "tes.v1beta1.EventRequest\032*.appscode.kube" +
-      "rnetes.v1beta1.EventResponse\"b\202\323\344\223\002V\032Q/_" +
+      "rnetes.v1beta1.EventResponse\"g\202\323\344\223\002[\032V/_" +
       "appscode/api/kubernetes/v1beta1/clusters" +
-      "/{cluster_name}/actions/construct-event:",
-      "\001*\202\265\030\002\010\001\022\307\001\n\013Destructive\022).appscode.kube" +
-      "rnetes.v1beta1.EventRequest\032*.appscode.k" +
-      "ubernetes.v1beta1.EventResponse\"a\202\323\344\223\002U\032" +
-      "P/_appscode/api/kubernetes/v1beta1/clust" +
-      "ers/{cluster_name}/actions/destruct-even" +
-      "t:\001*\202\265\030\002\010\001B<\n#com.appscode.api.kubernete" +
-      "s.v1beta1B\nEventProtoP\001Z\007v1beta1b\006proto3"
+      "/{cluster_name}/actions/construct-event/",
+      "json:\001*\202\265\030\002\010\001\022\314\001\n\013Destructive\022).appscode" +
+      ".kubernetes.v1beta1.EventRequest\032*.appsc" +
+      "ode.kubernetes.v1beta1.EventResponse\"f\202\323" +
+      "\344\223\002Z\032U/_appscode/api/kubernetes/v1beta1/" +
+      "clusters/{cluster_name}/actions/destruct" +
+      "-event/json:\001*\202\265\030\002\010\001B<\n#com.appscode.api" +
+      ".kubernetes.v1beta1B\nEventProtoP\001Z\007v1bet" +
+      "a1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

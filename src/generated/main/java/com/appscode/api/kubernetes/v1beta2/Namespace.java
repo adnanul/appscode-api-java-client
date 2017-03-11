@@ -68,6 +68,19 @@ public  final class Namespace extends
 
             break;
           }
+          case 26: {
+            com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder subBuilder = null;
+            if (spec_ != null) {
+              subBuilder = spec_.toBuilder();
+            }
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(spec_);
+              spec_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -89,6 +102,563 @@ public  final class Namespace extends
     return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.appscode.api.kubernetes.v1beta2.Namespace.class, com.appscode.api.kubernetes.v1beta2.Namespace.Builder.class);
+  }
+
+  public interface NamespaceSpecOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Namespace.NamespaceSpec)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getFinalizersList();
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    int getFinalizersCount();
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    java.lang.String getFinalizers(int index);
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getFinalizersBytes(int index);
+  }
+  /**
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Namespace.NamespaceSpec}
+   */
+  public  static final class NamespaceSpec extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Namespace.NamespaceSpec)
+      NamespaceSpecOrBuilder {
+    // Use NamespaceSpec.newBuilder() to construct.
+    private NamespaceSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private NamespaceSpec() {
+      finalizers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private NamespaceSpec(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                finalizers_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              finalizers_.add(s);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          finalizers_ = finalizers_.getUnmodifiableView();
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_NamespaceSpec_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_NamespaceSpec_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.class, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder.class);
+    }
+
+    public static final int FINALIZERS_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList finalizers_;
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getFinalizersList() {
+      return finalizers_;
+    }
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    public int getFinalizersCount() {
+      return finalizers_.size();
+    }
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    public java.lang.String getFinalizers(int index) {
+      return finalizers_.get(index);
+    }
+    /**
+     * <code>repeated string finalizers = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFinalizersBytes(int index) {
+      return finalizers_.getByteString(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < finalizers_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, finalizers_.getRaw(i));
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < finalizers_.size(); i++) {
+          dataSize += computeStringSizeNoTag(finalizers_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getFinalizersList().size();
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec other = (com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec) obj;
+
+      boolean result = true;
+      result = result && getFinalizersList()
+          .equals(other.getFinalizersList());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      if (getFinalizersCount() > 0) {
+        hash = (37 * hash) + FINALIZERS_FIELD_NUMBER;
+        hash = (53 * hash) + getFinalizersList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Namespace.NamespaceSpec}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Namespace.NamespaceSpec)
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_NamespaceSpec_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_NamespaceSpec_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.class, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder.class);
+      }
+
+      // Construct using com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        finalizers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Namespace_NamespaceSpec_descriptor;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance();
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec build() {
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec result = new com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          finalizers_ = finalizers_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.finalizers_ = finalizers_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance()) return this;
+        if (!other.finalizers_.isEmpty()) {
+          if (finalizers_.isEmpty()) {
+            finalizers_ = other.finalizers_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFinalizersIsMutable();
+            finalizers_.addAll(other.finalizers_);
+          }
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList finalizers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureFinalizersIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          finalizers_ = new com.google.protobuf.LazyStringArrayList(finalizers_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getFinalizersList() {
+        return finalizers_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public int getFinalizersCount() {
+        return finalizers_.size();
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public java.lang.String getFinalizers(int index) {
+        return finalizers_.get(index);
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFinalizersBytes(int index) {
+        return finalizers_.getByteString(index);
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public Builder setFinalizers(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFinalizersIsMutable();
+        finalizers_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public Builder addFinalizers(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFinalizersIsMutable();
+        finalizers_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public Builder addAllFinalizers(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureFinalizersIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, finalizers_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public Builder clearFinalizers() {
+        finalizers_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string finalizers = 1;</code>
+       */
+      public Builder addFinalizersBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureFinalizersIsMutable();
+        finalizers_.add(value);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Namespace.NamespaceSpec)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Namespace.NamespaceSpec)
+    private static final com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec();
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<NamespaceSpec>
+        PARSER = new com.google.protobuf.AbstractParser<NamespaceSpec>() {
+      public NamespaceSpec parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new NamespaceSpec(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<NamespaceSpec> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<NamespaceSpec> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
   }
 
   public interface StatusOrBuilder extends
@@ -636,6 +1206,27 @@ public  final class Namespace extends
     return getStatus();
   }
 
+  public static final int SPEC_FIELD_NUMBER = 3;
+  private com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec spec_;
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  public boolean hasSpec() {
+    return spec_ != null;
+  }
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance() : spec_;
+  }
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder() {
+    return getSpec();
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -654,6 +1245,9 @@ public  final class Namespace extends
     if (status_ != null) {
       output.writeMessage(2, getStatus());
     }
+    if (spec_ != null) {
+      output.writeMessage(3, getSpec());
+    }
   }
 
   public int getSerializedSize() {
@@ -668,6 +1262,10 @@ public  final class Namespace extends
     if (status_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getStatus());
+    }
+    if (spec_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(3, getSpec());
     }
     memoizedSize = size;
     return size;
@@ -695,6 +1293,11 @@ public  final class Namespace extends
       result = result && getStatus()
           .equals(other.getStatus());
     }
+    result = result && (hasSpec() == other.hasSpec());
+    if (hasSpec()) {
+      result = result && getSpec()
+          .equals(other.getSpec());
+    }
     return result;
   }
 
@@ -712,6 +1315,10 @@ public  final class Namespace extends
     if (hasStatus()) {
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + getStatus().hashCode();
+    }
+    if (hasSpec()) {
+      hash = (37 * hash) + SPEC_FIELD_NUMBER;
+      hash = (53 * hash) + getSpec().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -843,6 +1450,12 @@ public  final class Namespace extends
         status_ = null;
         statusBuilder_ = null;
       }
+      if (specBuilder_ == null) {
+        spec_ = null;
+      } else {
+        spec_ = null;
+        specBuilder_ = null;
+      }
       return this;
     }
 
@@ -874,6 +1487,11 @@ public  final class Namespace extends
         result.status_ = status_;
       } else {
         result.status_ = statusBuilder_.build();
+      }
+      if (specBuilder_ == null) {
+        result.spec_ = spec_;
+      } else {
+        result.spec_ = specBuilder_.build();
       }
       onBuilt();
       return result;
@@ -921,6 +1539,9 @@ public  final class Namespace extends
       }
       if (other.hasStatus()) {
         mergeStatus(other.getStatus());
+      }
+      if (other.hasSpec()) {
+        mergeSpec(other.getSpec());
       }
       onChanged();
       return this;
@@ -1180,6 +1801,123 @@ public  final class Namespace extends
         status_ = null;
       }
       return statusBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec spec_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder> specBuilder_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public boolean hasSpec() {
+      return specBuilder_ != null || spec_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec() {
+      if (specBuilder_ == null) {
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance() : spec_;
+      } else {
+        return specBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec value) {
+      if (specBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        spec_ = value;
+        onChanged();
+      } else {
+        specBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public Builder setSpec(
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder builderForValue) {
+      if (specBuilder_ == null) {
+        spec_ = builderForValue.build();
+        onChanged();
+      } else {
+        specBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec value) {
+      if (specBuilder_ == null) {
+        if (spec_ != null) {
+          spec_ =
+            com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.newBuilder(spec_).mergeFrom(value).buildPartial();
+        } else {
+          spec_ = value;
+        }
+        onChanged();
+      } else {
+        specBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public Builder clearSpec() {
+      if (specBuilder_ == null) {
+        spec_ = null;
+        onChanged();
+      } else {
+        spec_ = null;
+        specBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder getSpecBuilder() {
+      
+      onChanged();
+      return getSpecFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder() {
+      if (specBuilder_ != null) {
+        return specBuilder_.getMessageOrBuilder();
+      } else {
+        return spec_ == null ?
+            com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance() : spec_;
+      }
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder> 
+        getSpecFieldBuilder() {
+      if (specBuilder_ == null) {
+        specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder>(
+                getSpec(),
+                getParentForChildren(),
+                isClean());
+        spec_ = null;
+      }
+      return specBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

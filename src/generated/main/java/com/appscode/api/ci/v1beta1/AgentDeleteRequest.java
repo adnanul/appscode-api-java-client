@@ -15,7 +15,7 @@ public  final class AgentDeleteRequest extends
     super(builder);
   }
   private AgentDeleteRequest() {
-    name_ = "";
+    uid_ = "";
   }
 
   @java.lang.Override
@@ -46,7 +46,7 @@ public  final class AgentDeleteRequest extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            name_ = s;
+            uid_ = s;
             break;
           }
         }
@@ -72,34 +72,34 @@ public  final class AgentDeleteRequest extends
             com.appscode.api.ci.v1beta1.AgentDeleteRequest.class, com.appscode.api.ci.v1beta1.AgentDeleteRequest.Builder.class);
   }
 
-  public static final int NAME_FIELD_NUMBER = 1;
-  private volatile java.lang.Object name_;
+  public static final int UID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object uid_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string uid = 1;</code>
    */
-  public java.lang.String getName() {
-    java.lang.Object ref = name_;
+  public java.lang.String getUid() {
+    java.lang.Object ref = uid_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      name_ = s;
+      uid_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>optional string uid = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getNameBytes() {
-    java.lang.Object ref = name_;
+      getUidBytes() {
+    java.lang.Object ref = uid_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      name_ = b;
+      uid_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -118,8 +118,8 @@ public  final class AgentDeleteRequest extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+    if (!getUidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, uid_);
     }
   }
 
@@ -128,8 +128,8 @@ public  final class AgentDeleteRequest extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+    if (!getUidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, uid_);
     }
     memoizedSize = size;
     return size;
@@ -147,8 +147,8 @@ public  final class AgentDeleteRequest extends
     com.appscode.api.ci.v1beta1.AgentDeleteRequest other = (com.appscode.api.ci.v1beta1.AgentDeleteRequest) obj;
 
     boolean result = true;
-    result = result && getName()
-        .equals(other.getName());
+    result = result && getUid()
+        .equals(other.getUid());
     return result;
   }
 
@@ -159,8 +159,8 @@ public  final class AgentDeleteRequest extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
-    hash = (37 * hash) + NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + UID_FIELD_NUMBER;
+    hash = (53 * hash) + getUid().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -279,7 +279,7 @@ public  final class AgentDeleteRequest extends
     }
     public Builder clear() {
       super.clear();
-      name_ = "";
+      uid_ = "";
 
       return this;
     }
@@ -303,7 +303,7 @@ public  final class AgentDeleteRequest extends
 
     public com.appscode.api.ci.v1beta1.AgentDeleteRequest buildPartial() {
       com.appscode.api.ci.v1beta1.AgentDeleteRequest result = new com.appscode.api.ci.v1beta1.AgentDeleteRequest(this);
-      result.name_ = name_;
+      result.uid_ = uid_;
       onBuilt();
       return result;
     }
@@ -345,8 +345,8 @@ public  final class AgentDeleteRequest extends
 
     public Builder mergeFrom(com.appscode.api.ci.v1beta1.AgentDeleteRequest other) {
       if (other == com.appscode.api.ci.v1beta1.AgentDeleteRequest.getDefaultInstance()) return this;
-      if (!other.getName().isEmpty()) {
-        name_ = other.name_;
+      if (!other.getUid().isEmpty()) {
+        uid_ = other.uid_;
         onChanged();
       }
       onChanged();
@@ -375,71 +375,71 @@ public  final class AgentDeleteRequest extends
       return this;
     }
 
-    private java.lang.Object name_ = "";
+    private java.lang.Object uid_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string uid = 1;</code>
      */
-    public java.lang.String getName() {
-      java.lang.Object ref = name_;
+    public java.lang.String getUid() {
+      java.lang.Object ref = uid_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        name_ = s;
+        uid_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string uid = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getNameBytes() {
-      java.lang.Object ref = name_;
+        getUidBytes() {
+      java.lang.Object ref = uid_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        name_ = b;
+        uid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string uid = 1;</code>
      */
-    public Builder setName(
+    public Builder setUid(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      name_ = value;
+      uid_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string uid = 1;</code>
      */
-    public Builder clearName() {
+    public Builder clearUid() {
       
-      name_ = getDefaultInstance().getName();
+      uid_ = getDefaultInstance().getUid();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>optional string uid = 1;</code>
      */
-    public Builder setNameBytes(
+    public Builder setUidBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      name_ = value;
+      uid_ = value;
       onChanged();
       return this;
     }

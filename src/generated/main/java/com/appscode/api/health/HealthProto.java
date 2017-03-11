@@ -62,12 +62,12 @@ public final class HealthProto {
       ".health.URLBase\022+\n\tfile_urls\030\007 \001(\0132\030.app" +
       "scode.health.URLBase\"X\n\010Metadata\022\013\n\003env\030" +
       "\001 \001(\t\022\017\n\007team_id\030\002 \001(\t\022.\n\nnet_config\030\003 \001" +
-      "(\0132\032.appscode.health.NetConfig2v\n\006Health",
-      "\022l\n\006Status\022\034.appscode.dtypes.VoidRequest" +
-      "\032\037.appscode.health.StatusResponse\"#\202\323\344\223\002" +
-      "\027\022\025/_appscode/api/health\202\265\030\002\010\001B0\n\027com.ap" +
-      "pscode.api.healthB\013HealthProtoP\001Z\006health" +
-      "b\006proto3"
+      "(\0132\032.appscode.health.NetConfig2{\n\006Health",
+      "\022q\n\006Status\022\034.appscode.dtypes.VoidRequest" +
+      "\032\037.appscode.health.StatusResponse\"(\202\323\344\223\002" +
+      "\034\022\032/_appscode/api/health/json\202\265\030\002\010\001B0\n\027c" +
+      "om.appscode.api.healthB\013HealthProtoP\001Z\006h" +
+      "ealthb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

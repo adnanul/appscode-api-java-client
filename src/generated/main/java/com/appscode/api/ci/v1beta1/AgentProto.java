@@ -20,6 +20,16 @@ public final class AgentProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_ci_v1beta1_AgentListResponse_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_ci_v1beta1_AgentGetRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_ci_v1beta1_AgentGetRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_ci_v1beta1_AgentGetResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_ci_v1beta1_AgentGetResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_ci_v1beta1_Agent_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -59,37 +69,45 @@ public final class AgentProto {
       "\032\037appscode/api/dtypes/types.proto\"h\n\021Age" +
       "ntListResponse\022\'\n\006status\030\001 \001(\0132\027.appscod" +
       "e.dtypes.Status\022*\n\006agents\030\002 \003(\0132\032.appsco" +
-      "de.ci.v1beta1.Agent\"\210\001\n\005Agent\022\014\n\004name\030\001 " +
-      "\001(\t\022\014\n\004role\030\002 \001(\t\022\023\n\013external_ip\030\003 \001(\t\022\023" +
-      "\n\013internal_ip\030\004 \001(\t\022\021\n\tisDeleted\030\005 \001(\010\022\022" +
-      "\n\ncreated_at\030\006 \001(\003\022\022\n\nupdated_at\030\007 \001(\003\"\333",
-      "\001\n\022AgentCreateRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004r" +
-      "ole\030\002 \001(\t\022\023\n\013external_ip\030\003 \001(\t\022\023\n\013intern" +
-      "al_ip\030\004 \001(\t\022\020\n\010ssh_user\030\005 \001(\t\022\020\n\010ssh_por" +
-      "t\030\006 \001(\005\022\031\n\021jenkins_jnlp_port\030\007 \001(\005\022\032\n\022gi" +
-      "t_ssh_public_key\030\010 \001(\t\022\023\n\013jenkins_url\030\t " +
-      "\001(\t\022\017\n\007ca_cert\030\n \001(\t\"\275\002\n\023AgentCreateResp" +
-      "onse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.S" +
-      "tatus\022\021\n\tnamespace\030\002 \001(\t\022!\n\031ssh_authoriz" +
-      "ed_public_key\030\003 \001(\t\022\024\n\014git_hostname\030\004 \001(" +
-      "\t\022\033\n\023git_host_public_key\030\005 \001(\t\022F\n\010git_us",
-      "er\030\006 \001(\01324.appscode.ci.v1beta1.AgentCrea" +
-      "teResponse.ConduitUser\032L\n\013ConduitUser\022\014\n" +
-      "\004phid\030\001 \001(\t\022\021\n\tuser_name\030\002 \001(\t\022\r\n\005token\030" +
-      "\003 \001(\t\022\r\n\005email\030\004 \001(\t\"\"\n\022AgentDeleteReque" +
-      "st\022\014\n\004name\030\001 \001(\t2\241\003\n\006Agents\022|\n\004List\022\034.ap" +
-      "pscode.dtypes.VoidRequest\032&.appscode.ci." +
-      "v1beta1.AgentListResponse\".\202\323\344\223\002\"\022 /_app" +
-      "scode/api/ci/v1beta1/agents\202\265\030\002\010\001\022\216\001\n\006Cr" +
-      "eate\022\'.appscode.ci.v1beta1.AgentCreateRe" +
-      "quest\032(.appscode.ci.v1beta1.AgentCreateR",
-      "esponse\"1\202\323\344\223\002%\" /_appscode/api/ci/v1bet" +
-      "a1/agents:\001*\202\265\030\002\010\001\022\207\001\n\006Delete\022\'.appscode" +
-      ".ci.v1beta1.AgentDeleteRequest\032\035.appscod" +
-      "e.dtypes.VoidResponse\"5\202\323\344\223\002)*\'/_appscod" +
-      "e/api/ci/v1beta1/agents/{name}\202\265\030\002\010\001B4\n\033" +
-      "com.appscode.api.ci.v1beta1B\nAgentProtoP" +
-      "\001Z\007v1beta1b\006proto3"
+      "de.ci.v1beta1.Agent\"\036\n\017AgentGetRequest\022\013" +
+      "\n\003uid\030\001 \001(\t\"f\n\020AgentGetResponse\022\'\n\006statu" +
+      "s\030\001 \001(\0132\027.appscode.dtypes.Status\022)\n\005agen" +
+      "t\030\002 \001(\0132\032.appscode.ci.v1beta1.Agent\"\226\001\n\005",
+      "Agent\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004rol" +
+      "e\030\003 \001(\t\022\023\n\013external_ip\030\004 \001(\t\022\023\n\013internal" +
+      "_ip\030\005 \001(\t\022\021\n\tisDeleted\030\006 \001(\010\022\022\n\ncreated_" +
+      "at\030\007 \001(\003\022\022\n\nupdated_at\030\010 \001(\003\"\333\001\n\022AgentCr" +
+      "eateRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004role\030\002 \001(\t\022" +
+      "\023\n\013external_ip\030\003 \001(\t\022\023\n\013internal_ip\030\004 \001(" +
+      "\t\022\020\n\010ssh_user\030\005 \001(\t\022\020\n\010ssh_port\030\006 \001(\005\022\031\n" +
+      "\021jenkins_jnlp_port\030\007 \001(\005\022\032\n\022git_ssh_publ" +
+      "ic_key\030\010 \001(\t\022\023\n\013jenkins_url\030\t \001(\t\022\017\n\007ca_" +
+      "cert\030\n \001(\t\"\275\002\n\023AgentCreateResponse\022\'\n\006st",
+      "atus\030\001 \001(\0132\027.appscode.dtypes.Status\022\021\n\tn" +
+      "amespace\030\002 \001(\t\022!\n\031ssh_authorized_public_" +
+      "key\030\003 \001(\t\022\024\n\014git_hostname\030\004 \001(\t\022\033\n\023git_h" +
+      "ost_public_key\030\005 \001(\t\022F\n\010git_user\030\006 \001(\01324" +
+      ".appscode.ci.v1beta1.AgentCreateResponse" +
+      ".ConduitUser\032L\n\013ConduitUser\022\014\n\004phid\030\001 \001(" +
+      "\t\022\021\n\tuser_name\030\002 \001(\t\022\r\n\005token\030\003 \001(\t\022\r\n\005e" +
+      "mail\030\004 \001(\t\"!\n\022AgentDeleteRequest\022\013\n\003uid\030" +
+      "\001 \001(\t2\300\004\n\006Agents\022\201\001\n\004List\022\034.appscode.dty" +
+      "pes.VoidRequest\032&.appscode.ci.v1beta1.Ag",
+      "entListResponse\"3\202\323\344\223\002\'\022%/_appscode/api/" +
+      "ci/v1beta1/agents/json\202\265\030\002\010\001\022\215\001\n\003Get\022$.a" +
+      "ppscode.ci.v1beta1.AgentGetRequest\032%.app" +
+      "scode.ci.v1beta1.AgentGetResponse\"9\202\323\344\223\002" +
+      "-\022+/_appscode/api/ci/v1beta1/agents/{uid" +
+      "}/json\202\265\030\002\010\001\022\223\001\n\006Create\022\'.appscode.ci.v1" +
+      "beta1.AgentCreateRequest\032(.appscode.ci.v" +
+      "1beta1.AgentCreateResponse\"6\202\323\344\223\002*\"%/_ap" +
+      "pscode/api/ci/v1beta1/agents/json:\001*\202\265\030\002" +
+      "\010\001\022\213\001\n\006Delete\022\'.appscode.ci.v1beta1.Agen",
+      "tDeleteRequest\032\035.appscode.dtypes.VoidRes" +
+      "ponse\"9\202\323\344\223\002-*+/_appscode/api/ci/v1beta1" +
+      "/agents/{uid}/json\202\265\030\002\010\001B4\n\033com.appscode" +
+      ".api.ci.v1beta1B\nAgentProtoP\001Z\007v1beta1b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -112,20 +130,32 @@ public final class AgentProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentListResponse_descriptor,
         new java.lang.String[] { "Status", "Agents", });
-    internal_static_appscode_ci_v1beta1_Agent_descriptor =
+    internal_static_appscode_ci_v1beta1_AgentGetRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_appscode_ci_v1beta1_AgentGetRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_ci_v1beta1_AgentGetRequest_descriptor,
+        new java.lang.String[] { "Uid", });
+    internal_static_appscode_ci_v1beta1_AgentGetResponse_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_appscode_ci_v1beta1_AgentGetResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_ci_v1beta1_AgentGetResponse_descriptor,
+        new java.lang.String[] { "Status", "Agent", });
+    internal_static_appscode_ci_v1beta1_Agent_descriptor =
+      getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_ci_v1beta1_Agent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_Agent_descriptor,
-        new java.lang.String[] { "Name", "Role", "ExternalIp", "InternalIp", "IsDeleted", "CreatedAt", "UpdatedAt", });
+        new java.lang.String[] { "Phid", "Name", "Role", "ExternalIp", "InternalIp", "IsDeleted", "CreatedAt", "UpdatedAt", });
     internal_static_appscode_ci_v1beta1_AgentCreateRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_ci_v1beta1_AgentCreateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentCreateRequest_descriptor,
         new java.lang.String[] { "Name", "Role", "ExternalIp", "InternalIp", "SshUser", "SshPort", "JenkinsJnlpPort", "GitSshPublicKey", "JenkinsUrl", "CaCert", });
     internal_static_appscode_ci_v1beta1_AgentCreateResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_appscode_ci_v1beta1_AgentCreateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentCreateResponse_descriptor,
@@ -137,11 +167,11 @@ public final class AgentProto {
         internal_static_appscode_ci_v1beta1_AgentCreateResponse_ConduitUser_descriptor,
         new java.lang.String[] { "Phid", "UserName", "Token", "Email", });
     internal_static_appscode_ci_v1beta1_AgentDeleteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_appscode_ci_v1beta1_AgentDeleteRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentDeleteRequest_descriptor,
-        new java.lang.String[] { "Name", });
+        new java.lang.String[] { "Uid", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.appscode.api.AnnotationsProto.cors);

@@ -86,32 +86,33 @@ public final class CertificateProto {
       "\"\'\n\030CertificateDeleteRequest\022\013\n\003uid\030\001 \001(" +
       "\t\"e\n\030CertificateDeployRequest\022\013\n\003uid\030\001 \001" +
       "(\t\022\023\n\013secret_name\030\002 \001(\t\022\024\n\014cluster_name\030" +
-      "\003 \001(\t\022\021\n\tnamespace\030\004 \001(\t2\240\007\n\014Certificate" +
-      "s\022\262\001\n\004List\0224.appscode.certificate.v1beta" +
+      "\003 \001(\t\022\021\n\tnamespace\030\004 \001(\t2\271\007\n\014Certificate" +
+      "s\022\267\001\n\004List\0224.appscode.certificate.v1beta" +
       "1.CertificateListRequest\0325.appscode.cert" +
       "ificate.v1beta1.CertificateListResponse\"" +
-      "=\202\323\344\223\0021\022//_appscode/api/certificate/v1be" +
-      "ta1/certificates\202\265\030\002\010\001\022\304\001\n\010Describe\0228.ap" +
-      "pscode.certificate.v1beta1.CertificateDe",
-      "scribeRequest\0329.appscode.certificate.v1b" +
-      "eta1.CertificateDescribeResponse\"C\202\323\344\223\0027" +
-      "\0225/_appscode/api/certificate/v1beta1/cer" +
-      "tificates/{uid}\202\265\030\002\010\001\022\263\001\n\004Load\0224.appscod" +
-      "e.certificate.v1beta1.CertificateLoadReq" +
-      "uest\032\035.appscode.dtypes.VoidResponse\"V\202\323\344" +
-      "\223\002J\032E/_appscode/api/certificate/v1beta1/" +
-      "certificates/{name}/actions/obtain:\001*\202\265\030" +
-      "\002\010\001\022\244\001\n\006Delete\0226.appscode.certificate.v1" +
-      "beta1.CertificateDeleteRequest\032\035.appscod",
-      "e.dtypes.VoidResponse\"C\202\323\344\223\0027*5/_appscod" +
-      "e/api/certificate/v1beta1/certificates/{" +
-      "uid}\202\265\030\002\010\001\022\266\001\n\006Deploy\0226.appscode.certifi" +
-      "cate.v1beta1.CertificateDeployRequest\032\035." +
-      "appscode.dtypes.VoidResponse\"U\202\323\344\223\002I\032D/_" +
-      "appscode/api/certificate/v1beta1/certifi" +
-      "cates/{uid}/actions/deploy:\001*\202\265\030\002\010\001BC\n$c" +
-      "om.appscode.api.certificate.v1beta1B\020Cer" +
-      "tificateProtoP\001Z\007v1beta1b\006proto3"
+      "B\202\323\344\223\0026\0224/_appscode/api/certificate/v1be" +
+      "ta1/certificates/json\202\265\030\002\010\001\022\311\001\n\010Describe" +
+      "\0228.appscode.certificate.v1beta1.Certific",
+      "ateDescribeRequest\0329.appscode.certificat" +
+      "e.v1beta1.CertificateDescribeResponse\"H\202" +
+      "\323\344\223\002<\022:/_appscode/api/certificate/v1beta" +
+      "1/certificates/{uid}/json\202\265\030\002\010\001\022\270\001\n\004Load" +
+      "\0224.appscode.certificate.v1beta1.Certific" +
+      "ateLoadRequest\032\035.appscode.dtypes.VoidRes" +
+      "ponse\"[\202\323\344\223\002O\032J/_appscode/api/certificat" +
+      "e/v1beta1/certificates/{name}/actions/ob" +
+      "tain/json:\001*\202\265\030\002\010\001\022\251\001\n\006Delete\0226.appscode" +
+      ".certificate.v1beta1.CertificateDeleteRe",
+      "quest\032\035.appscode.dtypes.VoidResponse\"H\202\323" +
+      "\344\223\002<*:/_appscode/api/certificate/v1beta1" +
+      "/certificates/{uid}/json\202\265\030\002\010\001\022\273\001\n\006Deplo" +
+      "y\0226.appscode.certificate.v1beta1.Certifi" +
+      "cateDeployRequest\032\035.appscode.dtypes.Void" +
+      "Response\"Z\202\323\344\223\002N\032I/_appscode/api/certifi" +
+      "cate/v1beta1/certificates/{uid}/actions/" +
+      "deploy/json:\001*\202\265\030\002\010\001BC\n$com.appscode.api" +
+      ".certificate.v1beta1B\020CertificateProtoP\001" +
+      "Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

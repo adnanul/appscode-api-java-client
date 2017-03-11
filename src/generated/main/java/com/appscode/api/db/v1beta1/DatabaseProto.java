@@ -156,40 +156,41 @@ public final class DatabaseProto {
       "\001 \001(\t\022\013\n\003uid\030\002 \001(\t\022\017\n\007destroy\030\003 \001(\010\"6\n\026D" +
       "atabaseRecoverRequest\022\017\n\007cluster\030\001 \001(\t\022\013" +
       "\n\003uid\030\002 \001(\t\"4\n\024DatabaseCheckRequest\022\017\n\007c" +
-      "luster\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t2\345\t\n\tDatabases\022" +
-      "\251\001\n\004List\022(.appscode.db.v1beta1.DatabaseL" +
+      "luster\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t2\210\n\n\tDatabases\022" +
+      "\256\001\n\004List\022(.appscode.db.v1beta1.DatabaseL" +
       "istRequest\032).appscode.db.v1beta1.Databas" +
-      "eListResponse\"L\202\323\344\223\002@\022>/_appscode/api/ku" +
+      "eListResponse\"Q\202\323\344\223\002E\022C/_appscode/api/ku" +
       "bernetes/v1beta1/clusters/{cluster}/data" +
-      "bases\202\265\030\002\010\001\022\244\001\n\006Create\022*.appscode.db.v1b" +
-      "eta1.DatabaseCreateRequest\032\035.appscode.dt",
-      "ypes.VoidResponse\"O\202\323\344\223\002C\">/_appscode/ap" +
-      "i/kubernetes/v1beta1/clusters/{cluster}/" +
-      "databases:\001*\202\265\030\002\010\001\022\266\001\n\005Scale\022).appscode." +
-      "db.v1beta1.DatabaseScaleRequest\032\035.appsco" +
-      "de.dtypes.VoidResponse\"c\202\323\344\223\002W\032R/_appsco" +
+      "bases/json\202\265\030\002\010\001\022\251\001\n\006Create\022*.appscode.d" +
+      "b.v1beta1.DatabaseCreateRequest\032\035.appsco",
+      "de.dtypes.VoidResponse\"T\202\323\344\223\002H\"C/_appsco" +
       "de/api/kubernetes/v1beta1/clusters/{clus" +
-      "ter}/databases/{uid}/actions/scale:\001*\202\265\030" +
-      "\002\010\001\022\252\001\n\006Update\022*.appscode.db.v1beta1.Dat" +
-      "abaseUpdateRequest\032\035.appscode.dtypes.Voi" +
-      "dResponse\"U\202\323\344\223\002I\032D/_appscode/api/kubern",
-      "etes/v1beta1/clusters/{cluster}/database" +
-      "s/{uid}:\001*\202\265\030\002\010\001\022\273\001\n\010Describe\022,.appscode" +
-      ".db.v1beta1.DatabaseDescribeRequest\032-.ap" +
-      "pscode.db.v1beta1.DatabaseDescribeRespon" +
-      "se\"R\202\323\344\223\002F\022D/_appscode/api/kubernetes/v1" +
-      "beta1/clusters/{cluster}/databases/{uid}" +
-      "\202\265\030\002\010\001\022\247\001\n\006Delete\022*.appscode.db.v1beta1." +
-      "DatabaseDeleteRequest\032\035.appscode.dtypes." +
-      "VoidResponse\"R\202\323\344\223\002F*D/_appscode/api/kub" +
-      "ernetes/v1beta1/clusters/{cluster}/datab",
-      "ases/{uid}\202\265\030\002\010\001\022\266\001\n\007Recover\022+.appscode." +
-      "db.v1beta1.DatabaseRecoverRequest\032\035.apps" +
-      "code.dtypes.VoidResponse\"_\202\323\344\223\002Y\032T/_apps" +
+      "ter}/databases/json:\001*\202\265\030\002\010\001\022\273\001\n\005Scale\022)" +
+      ".appscode.db.v1beta1.DatabaseScaleReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"h\202\323\344\223\002\\" +
+      "\032W/_appscode/api/kubernetes/v1beta1/clus" +
+      "ters/{cluster}/databases/{uid}/actions/s" +
+      "cale/json:\001*\202\265\030\002\010\001\022\257\001\n\006Update\022*.appscode" +
+      ".db.v1beta1.DatabaseUpdateRequest\032\035.apps" +
+      "code.dtypes.VoidResponse\"Z\202\323\344\223\002N\032I/_apps",
       "code/api/kubernetes/v1beta1/clusters/{cl" +
-      "uster}/databases/{uid}/actions/recover:\001" +
-      "*B7\n\033com.appscode.api.db.v1beta1B\rDataba" +
-      "seProtoP\001Z\007v1beta1b\006proto3"
+      "uster}/databases/{uid}/json:\001*\202\265\030\002\010\001\022\300\001\n" +
+      "\010Describe\022,.appscode.db.v1beta1.Database" +
+      "DescribeRequest\032-.appscode.db.v1beta1.Da" +
+      "tabaseDescribeResponse\"W\202\323\344\223\002K\022I/_appsco" +
+      "de/api/kubernetes/v1beta1/clusters/{clus" +
+      "ter}/databases/{uid}/json\202\265\030\002\010\001\022\254\001\n\006Dele" +
+      "te\022*.appscode.db.v1beta1.DatabaseDeleteR" +
+      "equest\032\035.appscode.dtypes.VoidResponse\"W\202" +
+      "\323\344\223\002K*I/_appscode/api/kubernetes/v1beta1",
+      "/clusters/{cluster}/databases/{uid}/json" +
+      "\202\265\030\002\010\001\022\273\001\n\007Recover\022+.appscode.db.v1beta1" +
+      ".DatabaseRecoverRequest\032\035.appscode.dtype" +
+      "s.VoidResponse\"d\202\323\344\223\002^\032Y/_appscode/api/k" +
+      "ubernetes/v1beta1/clusters/{cluster}/dat" +
+      "abases/{uid}/actions/recover/json:\001*B7\n\033" +
+      "com.appscode.api.db.v1beta1B\rDatabasePro" +
+      "toP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

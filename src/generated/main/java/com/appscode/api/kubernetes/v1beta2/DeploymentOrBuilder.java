@@ -44,15 +44,15 @@ public interface DeploymentOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.Deployment.SpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Deployment.Status getStatus();
+  com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Status status = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Deployment.StatusOrBuilder getStatusOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder getStatusOrBuilder();
 }
