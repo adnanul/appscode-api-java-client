@@ -23,6 +23,7 @@ public  final class CreateRequest extends
     inviteEmails_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     subscriptionType_ = "";
     clientIp_ = "";
+    paymentMethodNonce_ = "";
   }
 
   @java.lang.Override
@@ -101,6 +102,25 @@ public  final class CreateRequest extends
             clientIp_ = s;
             break;
           }
+          case 74: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            paymentMethodNonce_ = s;
+            break;
+          }
+          case 82: {
+            if (!((mutable_bitField0_ & 0x00000200) == 0x00000200)) {
+              options_ = com.google.protobuf.MapField.newMapField(
+                  OptionsDefaultEntryHolder.defaultEntry);
+              mutable_bitField0_ |= 0x00000200;
+            }
+            com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
+            options__ = input.readMessage(
+                OptionsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+            options_.getMutableMap().put(
+                options__.getKey(), options__.getValue());
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -120,6 +140,17 @@ public  final class CreateRequest extends
     return com.appscode.api.namespace.v1beta1.TeamProto.internal_static_appscode_namespace_v1beta1_CreateRequest_descriptor;
   }
 
+  @SuppressWarnings({"rawtypes"})
+  protected com.google.protobuf.MapField internalGetMapField(
+      int number) {
+    switch (number) {
+      case 10:
+        return internalGetOptions();
+      default:
+        throw new RuntimeException(
+            "Invalid map field number: " + number);
+    }
+  }
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
     return com.appscode.api.namespace.v1beta1.TeamProto.internal_static_appscode_namespace_v1beta1_CreateRequest_fieldAccessorTable
@@ -395,6 +426,116 @@ public  final class CreateRequest extends
     }
   }
 
+  public static final int PAYMENT_METHOD_NONCE_FIELD_NUMBER = 9;
+  private volatile java.lang.Object paymentMethodNonce_;
+  /**
+   * <code>optional string payment_method_nonce = 9;</code>
+   */
+  public java.lang.String getPaymentMethodNonce() {
+    java.lang.Object ref = paymentMethodNonce_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      paymentMethodNonce_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string payment_method_nonce = 9;</code>
+   */
+  public com.google.protobuf.ByteString
+      getPaymentMethodNonceBytes() {
+    java.lang.Object ref = paymentMethodNonce_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      paymentMethodNonce_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int OPTIONS_FIELD_NUMBER = 10;
+  private static final class OptionsDefaultEntryHolder {
+    static final com.google.protobuf.MapEntry<
+        java.lang.String, java.lang.String> defaultEntry =
+            com.google.protobuf.MapEntry
+            .<java.lang.String, java.lang.String>newDefaultInstance(
+                com.appscode.api.namespace.v1beta1.TeamProto.internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_descriptor, 
+                com.google.protobuf.WireFormat.FieldType.STRING,
+                "",
+                com.google.protobuf.WireFormat.FieldType.STRING,
+                "");
+  }
+  private com.google.protobuf.MapField<
+      java.lang.String, java.lang.String> options_;
+  private com.google.protobuf.MapField<java.lang.String, java.lang.String>
+  internalGetOptions() {
+    if (options_ == null) {
+      return com.google.protobuf.MapField.emptyMapField(
+          OptionsDefaultEntryHolder.defaultEntry);
+    }
+    return options_;
+  }
+
+  public int getOptionsCount() {
+    return internalGetOptions().getMap().size();
+  }
+  /**
+   * <code>map&lt;string, string&gt; options = 10;</code>
+   */
+
+  public boolean containsOptions(
+      java.lang.String key) {
+    if (key == null) { throw new java.lang.NullPointerException(); }
+    return internalGetOptions().getMap().containsKey(key);
+  }
+  /**
+   * Use {@link #getOptionsMap()} instead.
+   */
+  @java.lang.Deprecated
+  public java.util.Map<java.lang.String, java.lang.String> getOptions() {
+    return getOptionsMap();
+  }
+  /**
+   * <code>map&lt;string, string&gt; options = 10;</code>
+   */
+
+  public java.util.Map<java.lang.String, java.lang.String> getOptionsMap() {
+    return internalGetOptions().getMap();
+  }
+  /**
+   * <code>map&lt;string, string&gt; options = 10;</code>
+   */
+
+  public java.lang.String getOptionsOrDefault(
+      java.lang.String key,
+      java.lang.String defaultValue) {
+    if (key == null) { throw new java.lang.NullPointerException(); }
+    java.util.Map<java.lang.String, java.lang.String> map =
+        internalGetOptions().getMap();
+    return map.containsKey(key) ? map.get(key) : defaultValue;
+  }
+  /**
+   * <code>map&lt;string, string&gt; options = 10;</code>
+   */
+
+  public java.lang.String getOptionsOrThrow(
+      java.lang.String key) {
+    if (key == null) { throw new java.lang.NullPointerException(); }
+    java.util.Map<java.lang.String, java.lang.String> map =
+        internalGetOptions().getMap();
+    if (!map.containsKey(key)) {
+      throw new java.lang.IllegalArgumentException();
+    }
+    return map.get(key);
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -431,6 +572,15 @@ public  final class CreateRequest extends
     if (!getClientIpBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 8, clientIp_);
     }
+    if (!getPaymentMethodNonceBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, paymentMethodNonce_);
+    }
+    com.google.protobuf.GeneratedMessageV3
+      .serializeStringMapTo(
+        output,
+        internalGetOptions(),
+        OptionsDefaultEntryHolder.defaultEntry,
+        10);
   }
 
   public int getSerializedSize() {
@@ -467,6 +617,19 @@ public  final class CreateRequest extends
     if (!getClientIpBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, clientIp_);
     }
+    if (!getPaymentMethodNonceBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, paymentMethodNonce_);
+    }
+    for (java.util.Map.Entry<java.lang.String, java.lang.String> entry
+         : internalGetOptions().getMap().entrySet()) {
+      com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
+      options__ = OptionsDefaultEntryHolder.defaultEntry.newBuilderForType()
+          .setKey(entry.getKey())
+          .setValue(entry.getValue())
+          .build();
+      size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(10, options__);
+    }
     memoizedSize = size;
     return size;
   }
@@ -499,6 +662,10 @@ public  final class CreateRequest extends
         .equals(other.getSubscriptionType());
     result = result && getClientIp()
         .equals(other.getClientIp());
+    result = result && getPaymentMethodNonce()
+        .equals(other.getPaymentMethodNonce());
+    result = result && internalGetOptions().equals(
+        other.internalGetOptions());
     return result;
   }
 
@@ -527,6 +694,12 @@ public  final class CreateRequest extends
     hash = (53 * hash) + getSubscriptionType().hashCode();
     hash = (37 * hash) + CLIENT_IP_FIELD_NUMBER;
     hash = (53 * hash) + getClientIp().hashCode();
+    hash = (37 * hash) + PAYMENT_METHOD_NONCE_FIELD_NUMBER;
+    hash = (53 * hash) + getPaymentMethodNonce().hashCode();
+    if (!internalGetOptions().getMap().isEmpty()) {
+      hash = (37 * hash) + OPTIONS_FIELD_NUMBER;
+      hash = (53 * hash) + internalGetOptions().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -621,6 +794,28 @@ public  final class CreateRequest extends
       return com.appscode.api.namespace.v1beta1.TeamProto.internal_static_appscode_namespace_v1beta1_CreateRequest_descriptor;
     }
 
+    @SuppressWarnings({"rawtypes"})
+    protected com.google.protobuf.MapField internalGetMapField(
+        int number) {
+      switch (number) {
+        case 10:
+          return internalGetOptions();
+        default:
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
+      }
+    }
+    @SuppressWarnings({"rawtypes"})
+    protected com.google.protobuf.MapField internalGetMutableMapField(
+        int number) {
+      switch (number) {
+        case 10:
+          return internalGetMutableOptions();
+        default:
+          throw new RuntimeException(
+              "Invalid map field number: " + number);
+      }
+    }
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
       return com.appscode.api.namespace.v1beta1.TeamProto.internal_static_appscode_namespace_v1beta1_CreateRequest_fieldAccessorTable
@@ -661,6 +856,9 @@ public  final class CreateRequest extends
 
       clientIp_ = "";
 
+      paymentMethodNonce_ = "";
+
+      internalGetMutableOptions().clear();
       return this;
     }
 
@@ -697,6 +895,9 @@ public  final class CreateRequest extends
       result.inviteEmails_ = inviteEmails_;
       result.subscriptionType_ = subscriptionType_;
       result.clientIp_ = clientIp_;
+      result.paymentMethodNonce_ = paymentMethodNonce_;
+      result.options_ = internalGetOptions();
+      result.options_.makeImmutable();
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -777,6 +978,12 @@ public  final class CreateRequest extends
         clientIp_ = other.clientIp_;
         onChanged();
       }
+      if (!other.getPaymentMethodNonce().isEmpty()) {
+        paymentMethodNonce_ = other.paymentMethodNonce_;
+        onChanged();
+      }
+      internalGetMutableOptions().mergeFrom(
+          other.internalGetOptions());
       onChanged();
       return this;
     }
@@ -1378,6 +1585,194 @@ public  final class CreateRequest extends
       
       clientIp_ = value;
       onChanged();
+      return this;
+    }
+
+    private java.lang.Object paymentMethodNonce_ = "";
+    /**
+     * <code>optional string payment_method_nonce = 9;</code>
+     */
+    public java.lang.String getPaymentMethodNonce() {
+      java.lang.Object ref = paymentMethodNonce_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        paymentMethodNonce_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string payment_method_nonce = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPaymentMethodNonceBytes() {
+      java.lang.Object ref = paymentMethodNonce_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        paymentMethodNonce_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string payment_method_nonce = 9;</code>
+     */
+    public Builder setPaymentMethodNonce(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      paymentMethodNonce_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string payment_method_nonce = 9;</code>
+     */
+    public Builder clearPaymentMethodNonce() {
+      
+      paymentMethodNonce_ = getDefaultInstance().getPaymentMethodNonce();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string payment_method_nonce = 9;</code>
+     */
+    public Builder setPaymentMethodNonceBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      paymentMethodNonce_ = value;
+      onChanged();
+      return this;
+    }
+
+    private com.google.protobuf.MapField<
+        java.lang.String, java.lang.String> options_;
+    private com.google.protobuf.MapField<java.lang.String, java.lang.String>
+    internalGetOptions() {
+      if (options_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            OptionsDefaultEntryHolder.defaultEntry);
+      }
+      return options_;
+    }
+    private com.google.protobuf.MapField<java.lang.String, java.lang.String>
+    internalGetMutableOptions() {
+      onChanged();;
+      if (options_ == null) {
+        options_ = com.google.protobuf.MapField.newMapField(
+            OptionsDefaultEntryHolder.defaultEntry);
+      }
+      if (!options_.isMutable()) {
+        options_ = options_.copy();
+      }
+      return options_;
+    }
+
+    public int getOptionsCount() {
+      return internalGetOptions().getMap().size();
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public boolean containsOptions(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      return internalGetOptions().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getOptionsMap()} instead.
+     */
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, java.lang.String> getOptions() {
+      return getOptionsMap();
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public java.util.Map<java.lang.String, java.lang.String> getOptionsMap() {
+      return internalGetOptions().getMap();
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public java.lang.String getOptionsOrDefault(
+        java.lang.String key,
+        java.lang.String defaultValue) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.String> map =
+          internalGetOptions().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public java.lang.String getOptionsOrThrow(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      java.util.Map<java.lang.String, java.lang.String> map =
+          internalGetOptions().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public Builder clearOptions() {
+      getMutableOptions().clear();
+      return this;
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public Builder removeOptions(
+        java.lang.String key) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      getMutableOptions().remove(key);
+      return this;
+    }
+    /**
+     * Use alternate mutation accessors instead.
+     */
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.String, java.lang.String>
+    getMutableOptions() {
+      return internalGetMutableOptions().getMutableMap();
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+    public Builder putOptions(
+        java.lang.String key,
+        java.lang.String value) {
+      if (key == null) { throw new java.lang.NullPointerException(); }
+      if (value == null) { throw new java.lang.NullPointerException(); }
+      getMutableOptions().put(key, value);
+      return this;
+    }
+    /**
+     * <code>map&lt;string, string&gt; options = 10;</code>
+     */
+
+    public Builder putAllOptions(
+        java.util.Map<java.lang.String, java.lang.String> values) {
+      getMutableOptions().putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

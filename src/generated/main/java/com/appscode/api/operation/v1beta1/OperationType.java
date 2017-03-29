@@ -21,25 +21,13 @@ public enum OperationType
    */
   CLUSTER_CREATE(1),
   /**
-   * <code>CLUSTER_SCALE = 2;</code>
-   */
-  CLUSTER_SCALE(2),
-  /**
    * <code>CLUSTER_DELETE = 3;</code>
    */
   CLUSTER_DELETE(3),
   /**
-   * <code>CLUSTER_SET_VERSION = 4;</code>
+   * <code>CLUSTER_RECONFIGURE = 4;</code>
    */
-  CLUSTER_SET_VERSION(4),
-  /**
-   * <code>DATA_BUCKET_DELETE = 9;</code>
-   */
-  DATA_BUCKET_DELETE(9),
-  /**
-   * <code>BACKUP_SCHEDULE = 10;</code>
-   */
-  BACKUP_SCHEDULE(10),
+  CLUSTER_RECONFIGURE(4),
   /**
    * <code>NAMESPACE_CREATE = 11;</code>
    */
@@ -48,18 +36,6 @@ public enum OperationType
    * <code>NAMESPACE_ADMIN_TASK = 12;</code>
    */
   NAMESPACE_ADMIN_TASK(12),
-  /**
-   * <code>DATABASE_CHECK = 15;</code>
-   */
-  DATABASE_CHECK(15),
-  /**
-   * <code>SNAPSHOT_CHECK = 16;</code>
-   */
-  SNAPSHOT_CHECK(16),
-  /**
-   * <code>DATABASE_DELETE = 17;</code>
-   */
-  DATABASE_DELETE(17),
   UNRECOGNIZED(-1),
   ;
 
@@ -72,25 +48,13 @@ public enum OperationType
    */
   public static final int CLUSTER_CREATE_VALUE = 1;
   /**
-   * <code>CLUSTER_SCALE = 2;</code>
-   */
-  public static final int CLUSTER_SCALE_VALUE = 2;
-  /**
    * <code>CLUSTER_DELETE = 3;</code>
    */
   public static final int CLUSTER_DELETE_VALUE = 3;
   /**
-   * <code>CLUSTER_SET_VERSION = 4;</code>
+   * <code>CLUSTER_RECONFIGURE = 4;</code>
    */
-  public static final int CLUSTER_SET_VERSION_VALUE = 4;
-  /**
-   * <code>DATA_BUCKET_DELETE = 9;</code>
-   */
-  public static final int DATA_BUCKET_DELETE_VALUE = 9;
-  /**
-   * <code>BACKUP_SCHEDULE = 10;</code>
-   */
-  public static final int BACKUP_SCHEDULE_VALUE = 10;
+  public static final int CLUSTER_RECONFIGURE_VALUE = 4;
   /**
    * <code>NAMESPACE_CREATE = 11;</code>
    */
@@ -99,18 +63,6 @@ public enum OperationType
    * <code>NAMESPACE_ADMIN_TASK = 12;</code>
    */
   public static final int NAMESPACE_ADMIN_TASK_VALUE = 12;
-  /**
-   * <code>DATABASE_CHECK = 15;</code>
-   */
-  public static final int DATABASE_CHECK_VALUE = 15;
-  /**
-   * <code>SNAPSHOT_CHECK = 16;</code>
-   */
-  public static final int SNAPSHOT_CHECK_VALUE = 16;
-  /**
-   * <code>DATABASE_DELETE = 17;</code>
-   */
-  public static final int DATABASE_DELETE_VALUE = 17;
 
 
   public final int getNumber() {
@@ -133,16 +85,10 @@ public enum OperationType
     switch (value) {
       case 0: return UNKNOWN;
       case 1: return CLUSTER_CREATE;
-      case 2: return CLUSTER_SCALE;
       case 3: return CLUSTER_DELETE;
-      case 4: return CLUSTER_SET_VERSION;
-      case 9: return DATA_BUCKET_DELETE;
-      case 10: return BACKUP_SCHEDULE;
+      case 4: return CLUSTER_RECONFIGURE;
       case 11: return NAMESPACE_CREATE;
       case 12: return NAMESPACE_ADMIN_TASK;
-      case 15: return DATABASE_CHECK;
-      case 16: return SNAPSHOT_CHECK;
-      case 17: return DATABASE_DELETE;
       default: return null;
     }
   }

@@ -17,15 +17,6 @@ public interface OperationOrBuilder extends
   com.appscode.api.kubernetes.v1beta1.ClusterCreateRequestOrBuilder getClusterCreateRequestOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-   */
-  com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest getClusterScaleRequest();
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-   */
-  com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder getClusterScaleRequestOrBuilder();
-
-  /**
    * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest getClusterDeleteRequest();
@@ -35,31 +26,13 @@ public interface OperationOrBuilder extends
   com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder getClusterDeleteRequestOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest();
+  com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest getClusterReconfigureRequest();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
-  com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-   */
-  com.appscode.api.operation.v1beta1.DataBucketDeleteRequest getDataBucketDeleteRequest();
-  /**
-   * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-   */
-  com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder getDataBucketDeleteRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-   */
-  com.appscode.api.db.v1beta1.BackupScheduleRequest getBackupScheduleRequest();
-  /**
-   * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-   */
-  com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder getBackupScheduleRequestOrBuilder();
+  com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder getClusterReconfigureRequestOrBuilder();
 
   /**
    * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
@@ -78,33 +51,6 @@ public interface OperationOrBuilder extends
    * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
    */
   com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder getNamespaceAdminTaskRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-   */
-  com.appscode.api.db.v1beta1.DatabaseCheckRequest getDatabaseCheckRequest();
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-   */
-  com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder getDatabaseCheckRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-   */
-  com.appscode.api.db.v1beta1.SnapshotCheckRequest getSnapshotCheckRequest();
-  /**
-   * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-   */
-  com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder getSnapshotCheckRequestOrBuilder();
-
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-   */
-  com.appscode.api.db.v1beta1.DatabaseDeleteRequest getDatabaseDeleteRequest();
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-   */
-  com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder getDatabaseDeleteRequestOrBuilder();
 
   /**
    * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>

@@ -225,6 +225,51 @@ public interface KubeResourceOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder getCronJobOrBuilder();
 
   /**
+   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 27;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Backup getBackup();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 27;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.BackupOrBuilder getBackupOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 28;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Postgres getPostgres();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 28;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder getPostgresOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Elastic getElastic();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder getElasticOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 30;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 30;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 31;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 31;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder();
+
+  /**
    * <code>repeated .appscode.kubernetes.v1beta2.Event events = 18;</code>
    */
   java.util.List<com.appscode.api.kubernetes.v1beta2.Event> 

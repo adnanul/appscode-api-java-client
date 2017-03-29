@@ -62,20 +62,6 @@ public  final class Operation extends
             requestCase_ = 1;
             break;
           }
-          case 18: {
-            com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder subBuilder = null;
-            if (requestCase_ == 2) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 2;
-            break;
-          }
           case 26: {
             com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder subBuilder = null;
             if (requestCase_ == 3) {
@@ -91,45 +77,17 @@ public  final class Operation extends
             break;
           }
           case 34: {
-            com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder subBuilder = null;
             if (requestCase_ == 4) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_).toBuilder();
             }
             request_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_);
               request_ = subBuilder.buildPartial();
             }
             requestCase_ = 4;
-            break;
-          }
-          case 74: {
-            com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder subBuilder = null;
-            if (requestCase_ == 9) {
-              subBuilder = ((com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 9;
-            break;
-          }
-          case 82: {
-            com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder subBuilder = null;
-            if (requestCase_ == 10) {
-              subBuilder = ((com.appscode.api.db.v1beta1.BackupScheduleRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.db.v1beta1.BackupScheduleRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.db.v1beta1.BackupScheduleRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 10;
             break;
           }
           case 90: {
@@ -198,48 +156,6 @@ public  final class Operation extends
 
             break;
           }
-          case 154: {
-            com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder subBuilder = null;
-            if (requestCase_ == 19) {
-              subBuilder = ((com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.db.v1beta1.DatabaseCheckRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 19;
-            break;
-          }
-          case 162: {
-            com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder subBuilder = null;
-            if (requestCase_ == 20) {
-              subBuilder = ((com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.db.v1beta1.SnapshotCheckRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 20;
-            break;
-          }
-          case 170: {
-            com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder subBuilder = null;
-            if (requestCase_ == 21) {
-              subBuilder = ((com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.db.v1beta1.DatabaseDeleteRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 21;
-            break;
-          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -268,16 +184,10 @@ public  final class Operation extends
   public enum RequestCase
       implements com.google.protobuf.Internal.EnumLite {
     CLUSTER_CREATE_REQUEST(1),
-    CLUSTER_SCALE_REQUEST(2),
     CLUSTER_DELETE_REQUEST(3),
-    CLUSTER_SET_VERSION_REQUEST(4),
-    DATA_BUCKET_DELETE_REQUEST(9),
-    BACKUP_SCHEDULE_REQUEST(10),
+    CLUSTER_RECONFIGURE_REQUEST(4),
     NAMESPACE_CREATE_REQUEST(11),
     NAMESPACE_ADMIN_TASK_REQUEST(12),
-    DATABASE_CHECK_REQUEST(19),
-    SNAPSHOT_CHECK_REQUEST(20),
-    DATABASE_DELETE_REQUEST(21),
     REQUEST_NOT_SET(0);
     private final int value;
     private RequestCase(int value) {
@@ -294,16 +204,10 @@ public  final class Operation extends
     public static RequestCase forNumber(int value) {
       switch (value) {
         case 1: return CLUSTER_CREATE_REQUEST;
-        case 2: return CLUSTER_SCALE_REQUEST;
         case 3: return CLUSTER_DELETE_REQUEST;
-        case 4: return CLUSTER_SET_VERSION_REQUEST;
-        case 9: return DATA_BUCKET_DELETE_REQUEST;
-        case 10: return BACKUP_SCHEDULE_REQUEST;
+        case 4: return CLUSTER_RECONFIGURE_REQUEST;
         case 11: return NAMESPACE_CREATE_REQUEST;
         case 12: return NAMESPACE_ADMIN_TASK_REQUEST;
-        case 19: return DATABASE_CHECK_REQUEST;
-        case 20: return SNAPSHOT_CHECK_REQUEST;
-        case 21: return DATABASE_DELETE_REQUEST;
         case 0: return REQUEST_NOT_SET;
         default: return null;
       }
@@ -339,26 +243,6 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.getDefaultInstance();
   }
 
-  public static final int CLUSTER_SCALE_REQUEST_FIELD_NUMBER = 2;
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest getClusterScaleRequest() {
-    if (requestCase_ == 2) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_;
-    }
-    return com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder getClusterScaleRequestOrBuilder() {
-    if (requestCase_ == 2) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_;
-    }
-    return com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-  }
-
   public static final int CLUSTER_DELETE_REQUEST_FIELD_NUMBER = 3;
   /**
    * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
@@ -379,64 +263,24 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.getDefaultInstance();
   }
 
-  public static final int CLUSTER_SET_VERSION_REQUEST_FIELD_NUMBER = 4;
+  public static final int CLUSTER_RECONFIGURE_REQUEST_FIELD_NUMBER = 4;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest getClusterReconfigureRequest() {
     if (requestCase_ == 4) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
+       return (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_;
     }
-    return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
-  public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder getClusterReconfigureRequestOrBuilder() {
     if (requestCase_ == 4) {
-       return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
+       return (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_;
     }
-    return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
-  }
-
-  public static final int DATA_BUCKET_DELETE_REQUEST_FIELD_NUMBER = 9;
-  /**
-   * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-   */
-  public com.appscode.api.operation.v1beta1.DataBucketDeleteRequest getDataBucketDeleteRequest() {
-    if (requestCase_ == 9) {
-       return (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_;
-    }
-    return com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-   */
-  public com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder getDataBucketDeleteRequestOrBuilder() {
-    if (requestCase_ == 9) {
-       return (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_;
-    }
-    return com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-  }
-
-  public static final int BACKUP_SCHEDULE_REQUEST_FIELD_NUMBER = 10;
-  /**
-   * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-   */
-  public com.appscode.api.db.v1beta1.BackupScheduleRequest getBackupScheduleRequest() {
-    if (requestCase_ == 10) {
-       return (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-   */
-  public com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder getBackupScheduleRequestOrBuilder() {
-    if (requestCase_ == 10) {
-       return (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
   }
 
   public static final int NAMESPACE_CREATE_REQUEST_FIELD_NUMBER = 11;
@@ -477,66 +321,6 @@ public  final class Operation extends
        return (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_;
     }
     return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-  }
-
-  public static final int DATABASE_CHECK_REQUEST_FIELD_NUMBER = 19;
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-   */
-  public com.appscode.api.db.v1beta1.DatabaseCheckRequest getDatabaseCheckRequest() {
-    if (requestCase_ == 19) {
-       return (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-   */
-  public com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder getDatabaseCheckRequestOrBuilder() {
-    if (requestCase_ == 19) {
-       return (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-  }
-
-  public static final int SNAPSHOT_CHECK_REQUEST_FIELD_NUMBER = 20;
-  /**
-   * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-   */
-  public com.appscode.api.db.v1beta1.SnapshotCheckRequest getSnapshotCheckRequest() {
-    if (requestCase_ == 20) {
-       return (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-   */
-  public com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder getSnapshotCheckRequestOrBuilder() {
-    if (requestCase_ == 20) {
-       return (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-  }
-
-  public static final int DATABASE_DELETE_REQUEST_FIELD_NUMBER = 21;
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-   */
-  public com.appscode.api.db.v1beta1.DatabaseDeleteRequest getDatabaseDeleteRequest() {
-    if (requestCase_ == 21) {
-       return (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-   */
-  public com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder getDatabaseDeleteRequestOrBuilder() {
-    if (requestCase_ == 21) {
-       return (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_;
-    }
-    return com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
   }
 
   public static final int TYPE_FIELD_NUMBER = 14;
@@ -646,20 +430,11 @@ public  final class Operation extends
     if (requestCase_ == 1) {
       output.writeMessage(1, (com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest) request_);
     }
-    if (requestCase_ == 2) {
-      output.writeMessage(2, (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_);
-    }
     if (requestCase_ == 3) {
       output.writeMessage(3, (com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest) request_);
     }
     if (requestCase_ == 4) {
-      output.writeMessage(4, (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
-    }
-    if (requestCase_ == 9) {
-      output.writeMessage(9, (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_);
-    }
-    if (requestCase_ == 10) {
-      output.writeMessage(10, (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_);
+      output.writeMessage(4, (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_);
     }
     if (requestCase_ == 11) {
       output.writeMessage(11, (com.appscode.api.namespace.v1beta1.CreateRequest) request_);
@@ -679,15 +454,6 @@ public  final class Operation extends
     if (metadata_ != null) {
       output.writeMessage(17, getMetadata());
     }
-    if (requestCase_ == 19) {
-      output.writeMessage(19, (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_);
-    }
-    if (requestCase_ == 20) {
-      output.writeMessage(20, (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_);
-    }
-    if (requestCase_ == 21) {
-      output.writeMessage(21, (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_);
-    }
   }
 
   public int getSerializedSize() {
@@ -699,25 +465,13 @@ public  final class Operation extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, (com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest) request_);
     }
-    if (requestCase_ == 2) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_);
-    }
     if (requestCase_ == 3) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(3, (com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest) request_);
     }
     if (requestCase_ == 4) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(4, (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_);
-    }
-    if (requestCase_ == 9) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(9, (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_);
-    }
-    if (requestCase_ == 10) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(10, (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_);
+        .computeMessageSize(4, (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_);
     }
     if (requestCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
@@ -741,18 +495,6 @@ public  final class Operation extends
     if (metadata_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(17, getMetadata());
-    }
-    if (requestCase_ == 19) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(19, (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_);
-    }
-    if (requestCase_ == 20) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(20, (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_);
-    }
-    if (requestCase_ == 21) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(21, (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_);
     }
     memoizedSize = size;
     return size;
@@ -791,25 +533,13 @@ public  final class Operation extends
         result = result && getClusterCreateRequest()
             .equals(other.getClusterCreateRequest());
         break;
-      case 2:
-        result = result && getClusterScaleRequest()
-            .equals(other.getClusterScaleRequest());
-        break;
       case 3:
         result = result && getClusterDeleteRequest()
             .equals(other.getClusterDeleteRequest());
         break;
       case 4:
-        result = result && getClusterSetVersionRequest()
-            .equals(other.getClusterSetVersionRequest());
-        break;
-      case 9:
-        result = result && getDataBucketDeleteRequest()
-            .equals(other.getDataBucketDeleteRequest());
-        break;
-      case 10:
-        result = result && getBackupScheduleRequest()
-            .equals(other.getBackupScheduleRequest());
+        result = result && getClusterReconfigureRequest()
+            .equals(other.getClusterReconfigureRequest());
         break;
       case 11:
         result = result && getNamespaceCreateRequest()
@@ -818,18 +548,6 @@ public  final class Operation extends
       case 12:
         result = result && getNamespaceAdminTaskRequest()
             .equals(other.getNamespaceAdminTaskRequest());
-        break;
-      case 19:
-        result = result && getDatabaseCheckRequest()
-            .equals(other.getDatabaseCheckRequest());
-        break;
-      case 20:
-        result = result && getSnapshotCheckRequest()
-            .equals(other.getSnapshotCheckRequest());
-        break;
-      case 21:
-        result = result && getDatabaseDeleteRequest()
-            .equals(other.getDatabaseDeleteRequest());
         break;
       case 0:
       default:
@@ -861,25 +579,13 @@ public  final class Operation extends
         hash = (37 * hash) + CLUSTER_CREATE_REQUEST_FIELD_NUMBER;
         hash = (53 * hash) + getClusterCreateRequest().hashCode();
         break;
-      case 2:
-        hash = (37 * hash) + CLUSTER_SCALE_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getClusterScaleRequest().hashCode();
-        break;
       case 3:
         hash = (37 * hash) + CLUSTER_DELETE_REQUEST_FIELD_NUMBER;
         hash = (53 * hash) + getClusterDeleteRequest().hashCode();
         break;
       case 4:
-        hash = (37 * hash) + CLUSTER_SET_VERSION_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getClusterSetVersionRequest().hashCode();
-        break;
-      case 9:
-        hash = (37 * hash) + DATA_BUCKET_DELETE_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getDataBucketDeleteRequest().hashCode();
-        break;
-      case 10:
-        hash = (37 * hash) + BACKUP_SCHEDULE_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getBackupScheduleRequest().hashCode();
+        hash = (37 * hash) + CLUSTER_RECONFIGURE_REQUEST_FIELD_NUMBER;
+        hash = (53 * hash) + getClusterReconfigureRequest().hashCode();
         break;
       case 11:
         hash = (37 * hash) + NAMESPACE_CREATE_REQUEST_FIELD_NUMBER;
@@ -888,18 +594,6 @@ public  final class Operation extends
       case 12:
         hash = (37 * hash) + NAMESPACE_ADMIN_TASK_REQUEST_FIELD_NUMBER;
         hash = (53 * hash) + getNamespaceAdminTaskRequest().hashCode();
-        break;
-      case 19:
-        hash = (37 * hash) + DATABASE_CHECK_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getDatabaseCheckRequest().hashCode();
-        break;
-      case 20:
-        hash = (37 * hash) + SNAPSHOT_CHECK_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getSnapshotCheckRequest().hashCode();
-        break;
-      case 21:
-        hash = (37 * hash) + DATABASE_DELETE_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getDatabaseDeleteRequest().hashCode();
         break;
       case 0:
       default:
@@ -1073,13 +767,6 @@ public  final class Operation extends
           result.request_ = clusterCreateRequestBuilder_.build();
         }
       }
-      if (requestCase_ == 2) {
-        if (clusterScaleRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = clusterScaleRequestBuilder_.build();
-        }
-      }
       if (requestCase_ == 3) {
         if (clusterDeleteRequestBuilder_ == null) {
           result.request_ = request_;
@@ -1088,24 +775,10 @@ public  final class Operation extends
         }
       }
       if (requestCase_ == 4) {
-        if (clusterSetVersionRequestBuilder_ == null) {
+        if (clusterReconfigureRequestBuilder_ == null) {
           result.request_ = request_;
         } else {
-          result.request_ = clusterSetVersionRequestBuilder_.build();
-        }
-      }
-      if (requestCase_ == 9) {
-        if (dataBucketDeleteRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = dataBucketDeleteRequestBuilder_.build();
-        }
-      }
-      if (requestCase_ == 10) {
-        if (backupScheduleRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = backupScheduleRequestBuilder_.build();
+          result.request_ = clusterReconfigureRequestBuilder_.build();
         }
       }
       if (requestCase_ == 11) {
@@ -1120,27 +793,6 @@ public  final class Operation extends
           result.request_ = request_;
         } else {
           result.request_ = namespaceAdminTaskRequestBuilder_.build();
-        }
-      }
-      if (requestCase_ == 19) {
-        if (databaseCheckRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = databaseCheckRequestBuilder_.build();
-        }
-      }
-      if (requestCase_ == 20) {
-        if (snapshotCheckRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = snapshotCheckRequestBuilder_.build();
-        }
-      }
-      if (requestCase_ == 21) {
-        if (databaseDeleteRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = databaseDeleteRequestBuilder_.build();
         }
       }
       result.type_ = type_;
@@ -1215,24 +867,12 @@ public  final class Operation extends
           mergeClusterCreateRequest(other.getClusterCreateRequest());
           break;
         }
-        case CLUSTER_SCALE_REQUEST: {
-          mergeClusterScaleRequest(other.getClusterScaleRequest());
-          break;
-        }
         case CLUSTER_DELETE_REQUEST: {
           mergeClusterDeleteRequest(other.getClusterDeleteRequest());
           break;
         }
-        case CLUSTER_SET_VERSION_REQUEST: {
-          mergeClusterSetVersionRequest(other.getClusterSetVersionRequest());
-          break;
-        }
-        case DATA_BUCKET_DELETE_REQUEST: {
-          mergeDataBucketDeleteRequest(other.getDataBucketDeleteRequest());
-          break;
-        }
-        case BACKUP_SCHEDULE_REQUEST: {
-          mergeBackupScheduleRequest(other.getBackupScheduleRequest());
+        case CLUSTER_RECONFIGURE_REQUEST: {
+          mergeClusterReconfigureRequest(other.getClusterReconfigureRequest());
           break;
         }
         case NAMESPACE_CREATE_REQUEST: {
@@ -1241,18 +881,6 @@ public  final class Operation extends
         }
         case NAMESPACE_ADMIN_TASK_REQUEST: {
           mergeNamespaceAdminTaskRequest(other.getNamespaceAdminTaskRequest());
-          break;
-        }
-        case DATABASE_CHECK_REQUEST: {
-          mergeDatabaseCheckRequest(other.getDatabaseCheckRequest());
-          break;
-        }
-        case SNAPSHOT_CHECK_REQUEST: {
-          mergeSnapshotCheckRequest(other.getSnapshotCheckRequest());
-          break;
-        }
-        case DATABASE_DELETE_REQUEST: {
-          mergeDatabaseDeleteRequest(other.getDatabaseDeleteRequest());
           break;
         }
         case REQUEST_NOT_SET: {
@@ -1431,136 +1059,6 @@ public  final class Operation extends
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder> clusterScaleRequestBuilder_;
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest getClusterScaleRequest() {
-      if (clusterScaleRequestBuilder_ == null) {
-        if (requestCase_ == 2) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_;
-        }
-        return com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 2) {
-          return clusterScaleRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public Builder setClusterScaleRequest(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest value) {
-      if (clusterScaleRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        clusterScaleRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 2;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public Builder setClusterScaleRequest(
-        com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder builderForValue) {
-      if (clusterScaleRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        clusterScaleRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 2;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public Builder mergeClusterScaleRequest(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest value) {
-      if (clusterScaleRequestBuilder_ == null) {
-        if (requestCase_ == 2 &&
-            request_ != com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.newBuilder((com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 2) {
-          clusterScaleRequestBuilder_.mergeFrom(value);
-        }
-        clusterScaleRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 2;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public Builder clearClusterScaleRequest() {
-      if (clusterScaleRequestBuilder_ == null) {
-        if (requestCase_ == 2) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 2) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        clusterScaleRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder getClusterScaleRequestBuilder() {
-      return getClusterScaleRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder getClusterScaleRequestOrBuilder() {
-      if ((requestCase_ == 2) && (clusterScaleRequestBuilder_ != null)) {
-        return clusterScaleRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 2) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_;
-        }
-        return com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterScaleRequest cluster_scale_request = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder> 
-        getClusterScaleRequestFieldBuilder() {
-      if (clusterScaleRequestBuilder_ == null) {
-        if (!(requestCase_ == 2)) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance();
-        }
-        clusterScaleRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterScaleRequestOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 2;
-      onChanged();;
-      return clusterScaleRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder> clusterDeleteRequestBuilder_;
     /**
      * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
@@ -1691,61 +1189,61 @@ public  final class Operation extends
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder> clusterSetVersionRequestBuilder_;
+        com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder> clusterReconfigureRequestBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest getClusterSetVersionRequest() {
-      if (clusterSetVersionRequestBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest getClusterReconfigureRequest() {
+      if (clusterReconfigureRequestBuilder_ == null) {
         if (requestCase_ == 4) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
+          return (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_;
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
       } else {
         if (requestCase_ == 4) {
-          return clusterSetVersionRequestBuilder_.getMessage();
+          return clusterReconfigureRequestBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public Builder setClusterSetVersionRequest(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest value) {
-      if (clusterSetVersionRequestBuilder_ == null) {
+    public Builder setClusterReconfigureRequest(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest value) {
+      if (clusterReconfigureRequestBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         request_ = value;
         onChanged();
       } else {
-        clusterSetVersionRequestBuilder_.setMessage(value);
+        clusterReconfigureRequestBuilder_.setMessage(value);
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public Builder setClusterSetVersionRequest(
-        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder builderForValue) {
-      if (clusterSetVersionRequestBuilder_ == null) {
+    public Builder setClusterReconfigureRequest(
+        com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder builderForValue) {
+      if (clusterReconfigureRequestBuilder_ == null) {
         request_ = builderForValue.build();
         onChanged();
       } else {
-        clusterSetVersionRequestBuilder_.setMessage(builderForValue.build());
+        clusterReconfigureRequestBuilder_.setMessage(builderForValue.build());
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public Builder mergeClusterSetVersionRequest(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest value) {
-      if (clusterSetVersionRequestBuilder_ == null) {
+    public Builder mergeClusterReconfigureRequest(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest value) {
+      if (clusterReconfigureRequestBuilder_ == null) {
         if (requestCase_ == 4 &&
-            request_ != com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.newBuilder((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_)
+            request_ != com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance()) {
+          request_ = com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.newBuilder((com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_)
               .mergeFrom(value).buildPartial();
         } else {
           request_ = value;
@@ -1753,18 +1251,18 @@ public  final class Operation extends
         onChanged();
       } else {
         if (requestCase_ == 4) {
-          clusterSetVersionRequestBuilder_.mergeFrom(value);
+          clusterReconfigureRequestBuilder_.mergeFrom(value);
         }
-        clusterSetVersionRequestBuilder_.setMessage(value);
+        clusterReconfigureRequestBuilder_.setMessage(value);
       }
       requestCase_ = 4;
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public Builder clearClusterSetVersionRequest() {
-      if (clusterSetVersionRequestBuilder_ == null) {
+    public Builder clearClusterReconfigureRequest() {
+      if (clusterReconfigureRequestBuilder_ == null) {
         if (requestCase_ == 4) {
           requestCase_ = 0;
           request_ = null;
@@ -1775,309 +1273,49 @@ public  final class Operation extends
           requestCase_ = 0;
           request_ = null;
         }
-        clusterSetVersionRequestBuilder_.clear();
+        clusterReconfigureRequestBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder getClusterSetVersionRequestBuilder() {
-      return getClusterSetVersionRequestFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder getClusterReconfigureRequestBuilder() {
+      return getClusterReconfigureRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder getClusterSetVersionRequestOrBuilder() {
-      if ((requestCase_ == 4) && (clusterSetVersionRequestBuilder_ != null)) {
-        return clusterSetVersionRequestBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder getClusterReconfigureRequestOrBuilder() {
+      if ((requestCase_ == 4) && (clusterReconfigureRequestBuilder_ != null)) {
+        return clusterReconfigureRequestBuilder_.getMessageOrBuilder();
       } else {
         if (requestCase_ == 4) {
-          return (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_;
+          return (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_;
         }
-        return com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSetVersionRequest cluster_set_version_request = 4;</code>
+     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder> 
-        getClusterSetVersionRequestFieldBuilder() {
-      if (clusterSetVersionRequestBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder> 
+        getClusterReconfigureRequestFieldBuilder() {
+      if (clusterReconfigureRequestBuilder_ == null) {
         if (!(requestCase_ == 4)) {
-          request_ = com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance();
+          request_ = com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
         }
-        clusterSetVersionRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequestOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request_,
+        clusterReconfigureRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request_,
                 getParentForChildren(),
                 isClean());
         request_ = null;
       }
       requestCase_ = 4;
       onChanged();;
-      return clusterSetVersionRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.operation.v1beta1.DataBucketDeleteRequest, com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder, com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder> dataBucketDeleteRequestBuilder_;
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public com.appscode.api.operation.v1beta1.DataBucketDeleteRequest getDataBucketDeleteRequest() {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 9) {
-          return (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_;
-        }
-        return com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 9) {
-          return dataBucketDeleteRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public Builder setDataBucketDeleteRequest(com.appscode.api.operation.v1beta1.DataBucketDeleteRequest value) {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        dataBucketDeleteRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 9;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public Builder setDataBucketDeleteRequest(
-        com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder builderForValue) {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        dataBucketDeleteRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 9;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public Builder mergeDataBucketDeleteRequest(com.appscode.api.operation.v1beta1.DataBucketDeleteRequest value) {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 9 &&
-            request_ != com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.newBuilder((com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 9) {
-          dataBucketDeleteRequestBuilder_.mergeFrom(value);
-        }
-        dataBucketDeleteRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 9;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public Builder clearDataBucketDeleteRequest() {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 9) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 9) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        dataBucketDeleteRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder getDataBucketDeleteRequestBuilder() {
-      return getDataBucketDeleteRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    public com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder getDataBucketDeleteRequestOrBuilder() {
-      if ((requestCase_ == 9) && (dataBucketDeleteRequestBuilder_ != null)) {
-        return dataBucketDeleteRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 9) {
-          return (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_;
-        }
-        return com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.DataBucketDeleteRequest data_bucket_delete_request = 9;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.operation.v1beta1.DataBucketDeleteRequest, com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder, com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder> 
-        getDataBucketDeleteRequestFieldBuilder() {
-      if (dataBucketDeleteRequestBuilder_ == null) {
-        if (!(requestCase_ == 9)) {
-          request_ = com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.getDefaultInstance();
-        }
-        dataBucketDeleteRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.operation.v1beta1.DataBucketDeleteRequest, com.appscode.api.operation.v1beta1.DataBucketDeleteRequest.Builder, com.appscode.api.operation.v1beta1.DataBucketDeleteRequestOrBuilder>(
-                (com.appscode.api.operation.v1beta1.DataBucketDeleteRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 9;
-      onChanged();;
-      return dataBucketDeleteRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.BackupScheduleRequest, com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder, com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder> backupScheduleRequestBuilder_;
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public com.appscode.api.db.v1beta1.BackupScheduleRequest getBackupScheduleRequest() {
-      if (backupScheduleRequestBuilder_ == null) {
-        if (requestCase_ == 10) {
-          return (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 10) {
-          return backupScheduleRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public Builder setBackupScheduleRequest(com.appscode.api.db.v1beta1.BackupScheduleRequest value) {
-      if (backupScheduleRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        backupScheduleRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 10;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public Builder setBackupScheduleRequest(
-        com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder builderForValue) {
-      if (backupScheduleRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        backupScheduleRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 10;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public Builder mergeBackupScheduleRequest(com.appscode.api.db.v1beta1.BackupScheduleRequest value) {
-      if (backupScheduleRequestBuilder_ == null) {
-        if (requestCase_ == 10 &&
-            request_ != com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.db.v1beta1.BackupScheduleRequest.newBuilder((com.appscode.api.db.v1beta1.BackupScheduleRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 10) {
-          backupScheduleRequestBuilder_.mergeFrom(value);
-        }
-        backupScheduleRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 10;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public Builder clearBackupScheduleRequest() {
-      if (backupScheduleRequestBuilder_ == null) {
-        if (requestCase_ == 10) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 10) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        backupScheduleRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder getBackupScheduleRequestBuilder() {
-      return getBackupScheduleRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    public com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder getBackupScheduleRequestOrBuilder() {
-      if ((requestCase_ == 10) && (backupScheduleRequestBuilder_ != null)) {
-        return backupScheduleRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 10) {
-          return (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.BackupScheduleRequest backup_schedule_request = 10;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.BackupScheduleRequest, com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder, com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder> 
-        getBackupScheduleRequestFieldBuilder() {
-      if (backupScheduleRequestBuilder_ == null) {
-        if (!(requestCase_ == 10)) {
-          request_ = com.appscode.api.db.v1beta1.BackupScheduleRequest.getDefaultInstance();
-        }
-        backupScheduleRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.db.v1beta1.BackupScheduleRequest, com.appscode.api.db.v1beta1.BackupScheduleRequest.Builder, com.appscode.api.db.v1beta1.BackupScheduleRequestOrBuilder>(
-                (com.appscode.api.db.v1beta1.BackupScheduleRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 10;
-      onChanged();;
-      return backupScheduleRequestBuilder_;
+      return clusterReconfigureRequestBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
@@ -2338,396 +1576,6 @@ public  final class Operation extends
       requestCase_ = 12;
       onChanged();;
       return namespaceAdminTaskRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.DatabaseCheckRequest, com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder, com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder> databaseCheckRequestBuilder_;
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseCheckRequest getDatabaseCheckRequest() {
-      if (databaseCheckRequestBuilder_ == null) {
-        if (requestCase_ == 19) {
-          return (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 19) {
-          return databaseCheckRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public Builder setDatabaseCheckRequest(com.appscode.api.db.v1beta1.DatabaseCheckRequest value) {
-      if (databaseCheckRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        databaseCheckRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 19;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public Builder setDatabaseCheckRequest(
-        com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder builderForValue) {
-      if (databaseCheckRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        databaseCheckRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 19;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public Builder mergeDatabaseCheckRequest(com.appscode.api.db.v1beta1.DatabaseCheckRequest value) {
-      if (databaseCheckRequestBuilder_ == null) {
-        if (requestCase_ == 19 &&
-            request_ != com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.db.v1beta1.DatabaseCheckRequest.newBuilder((com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 19) {
-          databaseCheckRequestBuilder_.mergeFrom(value);
-        }
-        databaseCheckRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 19;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public Builder clearDatabaseCheckRequest() {
-      if (databaseCheckRequestBuilder_ == null) {
-        if (requestCase_ == 19) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 19) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        databaseCheckRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder getDatabaseCheckRequestBuilder() {
-      return getDatabaseCheckRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder getDatabaseCheckRequestOrBuilder() {
-      if ((requestCase_ == 19) && (databaseCheckRequestBuilder_ != null)) {
-        return databaseCheckRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 19) {
-          return (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseCheckRequest database_check_request = 19;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.DatabaseCheckRequest, com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder, com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder> 
-        getDatabaseCheckRequestFieldBuilder() {
-      if (databaseCheckRequestBuilder_ == null) {
-        if (!(requestCase_ == 19)) {
-          request_ = com.appscode.api.db.v1beta1.DatabaseCheckRequest.getDefaultInstance();
-        }
-        databaseCheckRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.db.v1beta1.DatabaseCheckRequest, com.appscode.api.db.v1beta1.DatabaseCheckRequest.Builder, com.appscode.api.db.v1beta1.DatabaseCheckRequestOrBuilder>(
-                (com.appscode.api.db.v1beta1.DatabaseCheckRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 19;
-      onChanged();;
-      return databaseCheckRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.SnapshotCheckRequest, com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder, com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder> snapshotCheckRequestBuilder_;
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public com.appscode.api.db.v1beta1.SnapshotCheckRequest getSnapshotCheckRequest() {
-      if (snapshotCheckRequestBuilder_ == null) {
-        if (requestCase_ == 20) {
-          return (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 20) {
-          return snapshotCheckRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public Builder setSnapshotCheckRequest(com.appscode.api.db.v1beta1.SnapshotCheckRequest value) {
-      if (snapshotCheckRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        snapshotCheckRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 20;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public Builder setSnapshotCheckRequest(
-        com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder builderForValue) {
-      if (snapshotCheckRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        snapshotCheckRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 20;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public Builder mergeSnapshotCheckRequest(com.appscode.api.db.v1beta1.SnapshotCheckRequest value) {
-      if (snapshotCheckRequestBuilder_ == null) {
-        if (requestCase_ == 20 &&
-            request_ != com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.db.v1beta1.SnapshotCheckRequest.newBuilder((com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 20) {
-          snapshotCheckRequestBuilder_.mergeFrom(value);
-        }
-        snapshotCheckRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 20;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public Builder clearSnapshotCheckRequest() {
-      if (snapshotCheckRequestBuilder_ == null) {
-        if (requestCase_ == 20) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 20) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        snapshotCheckRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder getSnapshotCheckRequestBuilder() {
-      return getSnapshotCheckRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    public com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder getSnapshotCheckRequestOrBuilder() {
-      if ((requestCase_ == 20) && (snapshotCheckRequestBuilder_ != null)) {
-        return snapshotCheckRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 20) {
-          return (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.SnapshotCheckRequest snapshot_check_request = 20;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.SnapshotCheckRequest, com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder, com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder> 
-        getSnapshotCheckRequestFieldBuilder() {
-      if (snapshotCheckRequestBuilder_ == null) {
-        if (!(requestCase_ == 20)) {
-          request_ = com.appscode.api.db.v1beta1.SnapshotCheckRequest.getDefaultInstance();
-        }
-        snapshotCheckRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.db.v1beta1.SnapshotCheckRequest, com.appscode.api.db.v1beta1.SnapshotCheckRequest.Builder, com.appscode.api.db.v1beta1.SnapshotCheckRequestOrBuilder>(
-                (com.appscode.api.db.v1beta1.SnapshotCheckRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 20;
-      onChanged();;
-      return snapshotCheckRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.DatabaseDeleteRequest, com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder, com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder> databaseDeleteRequestBuilder_;
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseDeleteRequest getDatabaseDeleteRequest() {
-      if (databaseDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 21) {
-          return (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 21) {
-          return databaseDeleteRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public Builder setDatabaseDeleteRequest(com.appscode.api.db.v1beta1.DatabaseDeleteRequest value) {
-      if (databaseDeleteRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        databaseDeleteRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 21;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public Builder setDatabaseDeleteRequest(
-        com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder builderForValue) {
-      if (databaseDeleteRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        databaseDeleteRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 21;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public Builder mergeDatabaseDeleteRequest(com.appscode.api.db.v1beta1.DatabaseDeleteRequest value) {
-      if (databaseDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 21 &&
-            request_ != com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.db.v1beta1.DatabaseDeleteRequest.newBuilder((com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 21) {
-          databaseDeleteRequestBuilder_.mergeFrom(value);
-        }
-        databaseDeleteRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 21;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public Builder clearDatabaseDeleteRequest() {
-      if (databaseDeleteRequestBuilder_ == null) {
-        if (requestCase_ == 21) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 21) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        databaseDeleteRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder getDatabaseDeleteRequestBuilder() {
-      return getDatabaseDeleteRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    public com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder getDatabaseDeleteRequestOrBuilder() {
-      if ((requestCase_ == 21) && (databaseDeleteRequestBuilder_ != null)) {
-        return databaseDeleteRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 21) {
-          return (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_;
-        }
-        return com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.db.v1beta1.DatabaseDeleteRequest database_delete_request = 21;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.db.v1beta1.DatabaseDeleteRequest, com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder, com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder> 
-        getDatabaseDeleteRequestFieldBuilder() {
-      if (databaseDeleteRequestBuilder_ == null) {
-        if (!(requestCase_ == 21)) {
-          request_ = com.appscode.api.db.v1beta1.DatabaseDeleteRequest.getDefaultInstance();
-        }
-        databaseDeleteRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.db.v1beta1.DatabaseDeleteRequest, com.appscode.api.db.v1beta1.DatabaseDeleteRequest.Builder, com.appscode.api.db.v1beta1.DatabaseDeleteRequestOrBuilder>(
-                (com.appscode.api.db.v1beta1.DatabaseDeleteRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 21;
-      onChanged();;
-      return databaseDeleteRequestBuilder_;
     }
 
     private int type_ = 0;

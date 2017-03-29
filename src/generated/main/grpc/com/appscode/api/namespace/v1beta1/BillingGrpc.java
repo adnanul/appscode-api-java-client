@@ -37,6 +37,15 @@ public class BillingGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.GetSubscriptionResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.appscode.api.namespace.v1beta1.SubscribeRequest,
+      com.appscode.api.dtypes.VoidResponse> METHOD_SUBSCRIBE =
+      io.grpc.MethodDescriptor.create(
+          io.grpc.MethodDescriptor.MethodType.UNARY,
+          generateFullMethodName(
+              "appscode.namespace.v1beta1.Billing", "Subscribe"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.SubscribeRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidResponse.getDefaultInstance()));
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
       com.appscode.api.namespace.v1beta1.GetQuotaResponse> METHOD_GET_QUOTA =
       io.grpc.MethodDescriptor.create(
@@ -45,6 +54,15 @@ public class BillingGrpc {
               "appscode.namespace.v1beta1.Billing", "GetQuota"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.GetQuotaResponse.getDefaultInstance()));
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
+      com.appscode.api.namespace.v1beta1.CreateClientTokenResponse> METHOD_CREATE_CLIENT_TOKEN =
+      io.grpc.MethodDescriptor.create(
+          io.grpc.MethodDescriptor.MethodType.UNARY,
+          generateFullMethodName(
+              "appscode.namespace.v1beta1.Billing", "CreateClientToken"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.CreateClientTokenResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
       com.appscode.api.dtypes.VoidResponse> METHOD_CHECK_PAYMENT_METHOD =
@@ -94,9 +112,23 @@ public class BillingGrpc {
 
     /**
      */
+    public void subscribe(com.appscode.api.namespace.v1beta1.SubscribeRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_SUBSCRIBE, responseObserver);
+    }
+
+    /**
+     */
     public void getQuota(com.appscode.api.dtypes.VoidRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.GetQuotaResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_GET_QUOTA, responseObserver);
+    }
+
+    /**
+     */
+    public void createClientToken(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateClientTokenResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(METHOD_CREATE_CLIENT_TOKEN, responseObserver);
     }
 
     /**
@@ -116,12 +148,26 @@ public class BillingGrpc {
                 com.appscode.api.namespace.v1beta1.GetSubscriptionResponse>(
                   this, METHODID_GET_SUBSCRIPTION)))
           .addMethod(
+            METHOD_SUBSCRIBE,
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.appscode.api.namespace.v1beta1.SubscribeRequest,
+                com.appscode.api.dtypes.VoidResponse>(
+                  this, METHODID_SUBSCRIBE)))
+          .addMethod(
             METHOD_GET_QUOTA,
             asyncUnaryCall(
               new MethodHandlers<
                 com.appscode.api.dtypes.VoidRequest,
                 com.appscode.api.namespace.v1beta1.GetQuotaResponse>(
                   this, METHODID_GET_QUOTA)))
+          .addMethod(
+            METHOD_CREATE_CLIENT_TOKEN,
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.appscode.api.dtypes.VoidRequest,
+                com.appscode.api.namespace.v1beta1.CreateClientTokenResponse>(
+                  this, METHODID_CREATE_CLIENT_TOKEN)))
           .addMethod(
             METHOD_CHECK_PAYMENT_METHOD,
             asyncUnaryCall(
@@ -164,10 +210,26 @@ public class BillingGrpc {
 
     /**
      */
+    public void subscribe(com.appscode.api.namespace.v1beta1.SubscribeRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_SUBSCRIBE, getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
     public void getQuota(com.appscode.api.dtypes.VoidRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.GetQuotaResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_GET_QUOTA, getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void createClientToken(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateClientTokenResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(METHOD_CREATE_CLIENT_TOKEN, getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -209,9 +271,23 @@ public class BillingGrpc {
 
     /**
      */
+    public com.appscode.api.dtypes.VoidResponse subscribe(com.appscode.api.namespace.v1beta1.SubscribeRequest request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_SUBSCRIBE, getCallOptions(), request);
+    }
+
+    /**
+     */
     public com.appscode.api.namespace.v1beta1.GetQuotaResponse getQuota(com.appscode.api.dtypes.VoidRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_GET_QUOTA, getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.appscode.api.namespace.v1beta1.CreateClientTokenResponse createClientToken(com.appscode.api.dtypes.VoidRequest request) {
+      return blockingUnaryCall(
+          getChannel(), METHOD_CREATE_CLIENT_TOKEN, getCallOptions(), request);
     }
 
     /**
@@ -253,10 +329,26 @@ public class BillingGrpc {
 
     /**
      */
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.VoidResponse> subscribe(
+        com.appscode.api.namespace.v1beta1.SubscribeRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_SUBSCRIBE, getCallOptions()), request);
+    }
+
+    /**
+     */
     public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.namespace.v1beta1.GetQuotaResponse> getQuota(
         com.appscode.api.dtypes.VoidRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_GET_QUOTA, getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.namespace.v1beta1.CreateClientTokenResponse> createClientToken(
+        com.appscode.api.dtypes.VoidRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(METHOD_CREATE_CLIENT_TOKEN, getCallOptions()), request);
     }
 
     /**
@@ -269,8 +361,10 @@ public class BillingGrpc {
   }
 
   private static final int METHODID_GET_SUBSCRIPTION = 0;
-  private static final int METHODID_GET_QUOTA = 1;
-  private static final int METHODID_CHECK_PAYMENT_METHOD = 2;
+  private static final int METHODID_SUBSCRIBE = 1;
+  private static final int METHODID_GET_QUOTA = 2;
+  private static final int METHODID_CREATE_CLIENT_TOKEN = 3;
+  private static final int METHODID_CHECK_PAYMENT_METHOD = 4;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -293,9 +387,17 @@ public class BillingGrpc {
           serviceImpl.getSubscription((com.appscode.api.dtypes.VoidRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.GetSubscriptionResponse>) responseObserver);
           break;
+        case METHODID_SUBSCRIBE:
+          serviceImpl.subscribe((com.appscode.api.namespace.v1beta1.SubscribeRequest) request,
+              (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse>) responseObserver);
+          break;
         case METHODID_GET_QUOTA:
           serviceImpl.getQuota((com.appscode.api.dtypes.VoidRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.GetQuotaResponse>) responseObserver);
+          break;
+        case METHODID_CREATE_CLIENT_TOKEN:
+          serviceImpl.createClientToken((com.appscode.api.dtypes.VoidRequest) request,
+              (io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateClientTokenResponse>) responseObserver);
           break;
         case METHODID_CHECK_PAYMENT_METHOD:
           serviceImpl.checkPaymentMethod((com.appscode.api.dtypes.VoidRequest) request,
@@ -320,7 +422,9 @@ public class BillingGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     return new io.grpc.ServiceDescriptor(SERVICE_NAME,
         METHOD_GET_SUBSCRIPTION,
+        METHOD_SUBSCRIBE,
         METHOD_GET_QUOTA,
+        METHOD_CREATE_CLIENT_TOKEN,
         METHOD_CHECK_PAYMENT_METHOD);
   }
 

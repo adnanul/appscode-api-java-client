@@ -224,5 +224,50 @@ public interface KubeResourceListOrBuilder extends
    */
   com.appscode.api.kubernetes.v1beta2.KubeResourceList.CronJobsOrBuilder getCronJobsOrBuilder();
 
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Backups backups = 25;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.Backups getBackups();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Backups backups = 25;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.BackupsOrBuilder getBackupsOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Postgreses postgreses = 26;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.Postgreses getPostgreses();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Postgreses postgreses = 26;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.PostgresesOrBuilder getPostgresesOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Elastics elastics = 27;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.Elastics getElastics();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.Elastics elastics = 27;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.ElasticsOrBuilder getElasticsOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 28;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDeletedDatabases();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 28;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder getDeletedDatabasesOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDatabaseSnapshots();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder getDatabaseSnapshotsOrBuilder();
+
   public com.appscode.api.kubernetes.v1beta2.KubeResourceList.ResourceCase getResourceCase();
 }

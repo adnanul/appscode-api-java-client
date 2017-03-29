@@ -31,17 +31,17 @@ public interface JobOrBuilder extends
       getAppBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  boolean hasSpace();
+  boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.JobSpec getSpace();
+  com.appscode.api.kubernetes.v1beta2.JobSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpaceOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpecOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>

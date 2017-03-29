@@ -64,22 +64,13 @@ public class ClustersGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterUpdateRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest,
-      com.appscode.api.dtypes.LongRunningResponse> METHOD_SCALE =
+  public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest,
+      com.appscode.api.dtypes.LongRunningResponse> METHOD_RECONFIGURE =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
-              "appscode.kubernetes.v1beta1.Clusters", "Scale"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.LongRunningResponse.getDefaultInstance()));
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest,
-      com.appscode.api.dtypes.LongRunningResponse> METHOD_SET_VERSION =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "appscode.kubernetes.v1beta1.Clusters", "SetVersion"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest.getDefaultInstance()),
+              "appscode.kubernetes.v1beta1.Clusters", "Reconfigure"),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.LongRunningResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest,
@@ -184,16 +175,9 @@ public class ClustersGrpc {
 
     /**
      */
-    public void scale(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest request,
+    public void reconfigure(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(METHOD_SCALE, responseObserver);
-    }
-
-    /**
-     */
-    public void setVersion(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(METHOD_SET_VERSION, responseObserver);
+      asyncUnimplementedUnaryCall(METHOD_RECONFIGURE, responseObserver);
     }
 
     /**
@@ -262,19 +246,12 @@ public class ClustersGrpc {
                 com.appscode.api.dtypes.VoidResponse>(
                   this, METHODID_UPDATE)))
           .addMethod(
-            METHOD_SCALE,
+            METHOD_RECONFIGURE,
             asyncUnaryCall(
               new MethodHandlers<
-                com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest,
+                com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest,
                 com.appscode.api.dtypes.LongRunningResponse>(
-                  this, METHODID_SCALE)))
-          .addMethod(
-            METHOD_SET_VERSION,
-            asyncUnaryCall(
-              new MethodHandlers<
-                com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest,
-                com.appscode.api.dtypes.LongRunningResponse>(
-                  this, METHODID_SET_VERSION)))
+                  this, METHODID_RECONFIGURE)))
           .addMethod(
             METHOD_DELETE,
             asyncUnaryCall(
@@ -366,18 +343,10 @@ public class ClustersGrpc {
 
     /**
      */
-    public void scale(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest request,
+    public void reconfigure(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse> responseObserver) {
       asyncUnaryCall(
-          getChannel().newCall(METHOD_SCALE, getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
-    public void setVersion(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse> responseObserver) {
-      asyncUnaryCall(
-          getChannel().newCall(METHOD_SET_VERSION, getCallOptions()), request, responseObserver);
+          getChannel().newCall(METHOD_RECONFIGURE, getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -469,16 +438,9 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.appscode.api.dtypes.LongRunningResponse scale(com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest request) {
+    public com.appscode.api.dtypes.LongRunningResponse reconfigure(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest request) {
       return blockingUnaryCall(
-          getChannel(), METHOD_SCALE, getCallOptions(), request);
-    }
-
-    /**
-     */
-    public com.appscode.api.dtypes.LongRunningResponse setVersion(com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest request) {
-      return blockingUnaryCall(
-          getChannel(), METHOD_SET_VERSION, getCallOptions(), request);
+          getChannel(), METHOD_RECONFIGURE, getCallOptions(), request);
     }
 
     /**
@@ -569,18 +531,10 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.LongRunningResponse> scale(
-        com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.LongRunningResponse> reconfigure(
+        com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest request) {
       return futureUnaryCall(
-          getChannel().newCall(METHOD_SCALE, getCallOptions()), request);
-    }
-
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.LongRunningResponse> setVersion(
-        com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest request) {
-      return futureUnaryCall(
-          getChannel().newCall(METHOD_SET_VERSION, getCallOptions()), request);
+          getChannel().newCall(METHOD_RECONFIGURE, getCallOptions()), request);
     }
 
     /**
@@ -628,13 +582,12 @@ public class ClustersGrpc {
   private static final int METHODID_DESCRIBE = 1;
   private static final int METHODID_CREATE = 2;
   private static final int METHODID_UPDATE = 3;
-  private static final int METHODID_SCALE = 4;
-  private static final int METHODID_SET_VERSION = 5;
-  private static final int METHODID_DELETE = 6;
-  private static final int METHODID_CLIENT_CONFIG = 7;
-  private static final int METHODID_INSTANCES = 8;
-  private static final int METHODID_STARTUP_CONFIG = 9;
-  private static final int METHODID_INSTANCE_BY_IP = 10;
+  private static final int METHODID_RECONFIGURE = 4;
+  private static final int METHODID_DELETE = 5;
+  private static final int METHODID_CLIENT_CONFIG = 6;
+  private static final int METHODID_INSTANCES = 7;
+  private static final int METHODID_STARTUP_CONFIG = 8;
+  private static final int METHODID_INSTANCE_BY_IP = 9;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -669,12 +622,8 @@ public class ClustersGrpc {
           serviceImpl.update((com.appscode.api.kubernetes.v1beta1.ClusterUpdateRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse>) responseObserver);
           break;
-        case METHODID_SCALE:
-          serviceImpl.scale((com.appscode.api.kubernetes.v1beta1.ClusterScaleRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse>) responseObserver);
-          break;
-        case METHODID_SET_VERSION:
-          serviceImpl.setVersion((com.appscode.api.kubernetes.v1beta1.ClusterSetVersionRequest) request,
+        case METHODID_RECONFIGURE:
+          serviceImpl.reconfigure((com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.LongRunningResponse>) responseObserver);
           break;
         case METHODID_DELETE:
@@ -719,8 +668,7 @@ public class ClustersGrpc {
         METHOD_DESCRIBE,
         METHOD_CREATE,
         METHOD_UPDATE,
-        METHOD_SCALE,
-        METHOD_SET_VERSION,
+        METHOD_RECONFIGURE,
         METHOD_DELETE,
         METHOD_CLIENT_CONFIG,
         METHOD_INSTANCES,

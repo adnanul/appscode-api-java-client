@@ -21,17 +21,17 @@ public interface CronJobOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  boolean hasSpace();
+  boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpace();
+  com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpaceOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpecOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>

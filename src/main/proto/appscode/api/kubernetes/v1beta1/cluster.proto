@@ -51,19 +51,9 @@ service Clusters {
     };
   }
 
-  rpc Scale(ClusterScaleRequest) returns (dtypes.LongRunningResponse) {
+  rpc Reconfigure(ClusterReconfigureRequest) returns (dtypes.LongRunningResponse) {
     option (google.api.http) = {
-      put: "/_appscode/api/kubernetes/v1beta1/clusters/{name}/actions/scale/json"
-      body: "*"
-    };
-    option (appscode.api.cors) = {
-      enable: true
-    };
-  }
-
-  rpc SetVersion(ClusterSetVersionRequest) returns (dtypes.LongRunningResponse) {
-    option (google.api.http) = {
-       put: "/_appscode/api/kubernetes/v1beta1/clusters/{name}/actions/set-version/json"
+       put: "/_appscode/api/kubernetes/v1beta1/clusters/{name}/actions/reconfigure/json"
        body: "*"
     };
     option (appscode.api.cors) = {
@@ -144,8 +134,8 @@ message Cluster {
   string status = 10;
   string status_cause = 11;
   string gce_project = 12;
-  string kube_server_version = 13;
-  string kube_saltbase_version = 14;
+  string kubelet_version = 13;
+  string saltbase_version = 14;
   string kube_starter_version = 15;
 
   int32 node_count = 16;
@@ -207,9 +197,9 @@ message ClusterCreateRequest {
   map<string, string> cloud_credential_data = 5;
   map<string, int64> node_set = 6 [deprecated = true];
   repeated InstanceGroup node_groups = 14;
-  string kube_saltbase_version = 7;
+  string saltbase_version = 7;
   string kube_starter_version = 8;
-  string kube_server_version = 9;
+  string kubelet_version = 9;
   bool do_not_delete = 10;
   string hostfacts_version = 11;
   string version = 12;
@@ -225,13 +215,6 @@ message ClusterCreateRequest {
   // If not set this will set ""
   string default_access_level = 13;
   string gce_project = 15;
-}
-
-message ClusterScaleRequest {
-  string name = 1;
-  // New node configuration for the cluster
-  map<string, int64> node_set = 2 [deprecated = true];
-  repeated InstanceGroup node_groups = 3;
 }
 
 message ClusterDeleteRequest {
@@ -320,13 +303,14 @@ message ClusterUpdateRequest {
   string default_access_level = 4;
 }
 
-message ClusterSetVersionRequest {
+message ClusterReconfigureRequest {
   string name = 1;
   bool apply_to_master = 2;
   string sku = 3;
-  string version = 4;
-  string kube_saltbase_version = 5;
-  string kube_starter_version = 6;
-  string kube_server_version = 7;
-  string hostfacts_version = 8;
+  int64 count = 4;
+  string version = 5;
+  string saltbase_version = 6;
+  string kube_starter_version = 7;
+  string kubelet_version = 8;
+  string hostfacts_version = 9;
 }

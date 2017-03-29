@@ -57,13 +57,13 @@ public  final class CronJob extends
           }
           case 18: {
             com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder subBuilder = null;
-            if (space_ != null) {
-              subBuilder = space_.toBuilder();
+            if (spec_ != null) {
+              subBuilder = spec_.toBuilder();
             }
-            space_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.CronJob.Spec.parser(), extensionRegistry);
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.CronJob.Spec.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(space_);
-              space_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(spec_);
+              spec_ = subBuilder.buildPartial();
             }
 
             break;
@@ -1889,25 +1889,25 @@ public  final class CronJob extends
     return getMeta();
   }
 
-  public static final int SPACE_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.CronJob.Spec space_;
+  public static final int SPEC_FIELD_NUMBER = 2;
+  private com.appscode.api.kubernetes.v1beta2.CronJob.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  public boolean hasSpace() {
-    return space_ != null;
+  public boolean hasSpec() {
+    return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpace() {
-    return space_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : space_;
+  public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpaceOrBuilder() {
-    return getSpace();
+  public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpecOrBuilder() {
+    return getSpec();
   }
 
   public static final int STATUS_FIELD_NUMBER = 3;
@@ -1946,8 +1946,8 @@ public  final class CronJob extends
     if (meta_ != null) {
       output.writeMessage(1, getMeta());
     }
-    if (space_ != null) {
-      output.writeMessage(2, getSpace());
+    if (spec_ != null) {
+      output.writeMessage(2, getSpec());
     }
     if (status_ != null) {
       output.writeMessage(3, getStatus());
@@ -1963,9 +1963,9 @@ public  final class CronJob extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getMeta());
     }
-    if (space_ != null) {
+    if (spec_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getSpace());
+        .computeMessageSize(2, getSpec());
     }
     if (status_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -1992,10 +1992,10 @@ public  final class CronJob extends
       result = result && getMeta()
           .equals(other.getMeta());
     }
-    result = result && (hasSpace() == other.hasSpace());
-    if (hasSpace()) {
-      result = result && getSpace()
-          .equals(other.getSpace());
+    result = result && (hasSpec() == other.hasSpec());
+    if (hasSpec()) {
+      result = result && getSpec()
+          .equals(other.getSpec());
     }
     result = result && (hasStatus() == other.hasStatus());
     if (hasStatus()) {
@@ -2016,9 +2016,9 @@ public  final class CronJob extends
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
     }
-    if (hasSpace()) {
-      hash = (37 * hash) + SPACE_FIELD_NUMBER;
-      hash = (53 * hash) + getSpace().hashCode();
+    if (hasSpec()) {
+      hash = (37 * hash) + SPEC_FIELD_NUMBER;
+      hash = (53 * hash) + getSpec().hashCode();
     }
     if (hasStatus()) {
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
@@ -2148,11 +2148,11 @@ public  final class CronJob extends
         meta_ = null;
         metaBuilder_ = null;
       }
-      if (spaceBuilder_ == null) {
-        space_ = null;
+      if (specBuilder_ == null) {
+        spec_ = null;
       } else {
-        space_ = null;
-        spaceBuilder_ = null;
+        spec_ = null;
+        specBuilder_ = null;
       }
       if (statusBuilder_ == null) {
         status_ = null;
@@ -2187,10 +2187,10 @@ public  final class CronJob extends
       } else {
         result.meta_ = metaBuilder_.build();
       }
-      if (spaceBuilder_ == null) {
-        result.space_ = space_;
+      if (specBuilder_ == null) {
+        result.spec_ = spec_;
       } else {
-        result.space_ = spaceBuilder_.build();
+        result.spec_ = specBuilder_.build();
       }
       if (statusBuilder_ == null) {
         result.status_ = status_;
@@ -2241,8 +2241,8 @@ public  final class CronJob extends
       if (other.hasMeta()) {
         mergeMeta(other.getMeta());
       }
-      if (other.hasSpace()) {
-        mergeSpace(other.getSpace());
+      if (other.hasSpec()) {
+        mergeSpec(other.getSpec());
       }
       if (other.hasStatus()) {
         mergeStatus(other.getStatus());
@@ -2390,121 +2390,121 @@ public  final class CronJob extends
       return metaBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.CronJob.Spec space_ = null;
+    private com.appscode.api.kubernetes.v1beta2.CronJob.Spec spec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder> spaceBuilder_;
+        com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public boolean hasSpace() {
-      return spaceBuilder_ != null || space_ != null;
+    public boolean hasSpec() {
+      return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpace() {
-      if (spaceBuilder_ == null) {
-        return space_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : space_;
+    public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpec() {
+      if (specBuilder_ == null) {
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : spec_;
       } else {
-        return spaceBuilder_.getMessage();
+        return specBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public Builder setSpace(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
-      if (spaceBuilder_ == null) {
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
+      if (specBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        space_ = value;
+        spec_ = value;
         onChanged();
       } else {
-        spaceBuilder_.setMessage(value);
+        specBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public Builder setSpace(
+    public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder builderForValue) {
-      if (spaceBuilder_ == null) {
-        space_ = builderForValue.build();
+      if (specBuilder_ == null) {
+        spec_ = builderForValue.build();
         onChanged();
       } else {
-        spaceBuilder_.setMessage(builderForValue.build());
+        specBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public Builder mergeSpace(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
-      if (spaceBuilder_ == null) {
-        if (space_ != null) {
-          space_ =
-            com.appscode.api.kubernetes.v1beta2.CronJob.Spec.newBuilder(space_).mergeFrom(value).buildPartial();
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
+      if (specBuilder_ == null) {
+        if (spec_ != null) {
+          spec_ =
+            com.appscode.api.kubernetes.v1beta2.CronJob.Spec.newBuilder(spec_).mergeFrom(value).buildPartial();
         } else {
-          space_ = value;
+          spec_ = value;
         }
         onChanged();
       } else {
-        spaceBuilder_.mergeFrom(value);
+        specBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public Builder clearSpace() {
-      if (spaceBuilder_ == null) {
-        space_ = null;
+    public Builder clearSpec() {
+      if (specBuilder_ == null) {
+        spec_ = null;
         onChanged();
       } else {
-        space_ = null;
-        spaceBuilder_ = null;
+        spec_ = null;
+        specBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder getSpaceBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder getSpecBuilder() {
       
       onChanged();
-      return getSpaceFieldBuilder().getBuilder();
+      return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpaceOrBuilder() {
-      if (spaceBuilder_ != null) {
-        return spaceBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpecOrBuilder() {
+      if (specBuilder_ != null) {
+        return specBuilder_.getMessageOrBuilder();
       } else {
-        return space_ == null ?
-            com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : space_;
+        return spec_ == null ?
+            com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : spec_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec space = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder> 
-        getSpaceFieldBuilder() {
-      if (spaceBuilder_ == null) {
-        spaceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getSpecFieldBuilder() {
+      if (specBuilder_ == null) {
+        specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder>(
-                getSpace(),
+                getSpec(),
                 getParentForChildren(),
                 isClean());
-        space_ = null;
+        spec_ = null;
       }
-      return spaceBuilder_;
+      return specBuilder_;
     }
 
     private com.appscode.api.kubernetes.v1beta2.CronJob.Status status_ = null;

@@ -25,6 +25,11 @@ public final class BillingProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_namespace_v1beta1_GetSubscriptionResponse_Product_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_namespace_v1beta1_SubscribeRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_namespace_v1beta1_SubscribeRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_namespace_v1beta1_GetQuotaResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -39,6 +44,11 @@ public final class BillingProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_namespace_v1beta1_GetQuotaResponse_UsedEntry_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_namespace_v1beta1_CreateClientTokenResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_namespace_v1beta1_CreateClientTokenResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -59,29 +69,42 @@ public final class BillingProto {
       "auto_extend\030\003 \001(\010\022\r\n\005quota\030\004 \001(\t\022\022\n\ndate" +
       "_start\030\005 \001(\003\022\020\n\010date_end\030\006 \001(\003\032Q\n\007Produc",
       "t\022\013\n\003sku\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\024\n\014display_" +
-      "name\030\003 \001(\t\022\025\n\rpricing_model\030\004 \001(\t\"\255\002\n\020Ge" +
-      "tQuotaResponse\022\'\n\006status\030\001 \001(\0132\027.appscod" +
-      "e.dtypes.Status\022L\n\010assigned\030\002 \003(\0132:.apps" +
-      "code.namespace.v1beta1.GetQuotaResponse." +
-      "AssignedEntry\022D\n\004used\030\003 \003(\01326.appscode.n" +
-      "amespace.v1beta1.GetQuotaResponse.UsedEn" +
-      "try\032/\n\rAssignedEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
-      "ue\030\002 \001(\003:\0028\001\032+\n\tUsedEntry\022\013\n\003key\030\001 \001(\t\022\r" +
-      "\n\005value\030\002 \001(\003:\0028\0012\362\003\n\007Billing\022\257\001\n\017GetSub",
-      "scription\022\034.appscode.dtypes.VoidRequest\032" +
-      "3.appscode.namespace.v1beta1.GetSubscrip" +
-      "tionResponse\"I\202\323\344\223\002=\022;/_appscode/api/nam" +
-      "espace/v1beta1/billing/subscriptions/jso" +
-      "n\202\265\030\002\010\001\022\224\001\n\010GetQuota\022\034.appscode.dtypes.V" +
-      "oidRequest\032,.appscode.namespace.v1beta1." +
-      "GetQuotaResponse\"<\202\323\344\223\0026\0224/_appscode/api" +
-      "/namespace/v1beta1/billing/quotas/json\022\235" +
-      "\001\n\022CheckPaymentMethod\022\034.appscode.dtypes." +
-      "VoidRequest\032\035.appscode.dtypes.VoidRespon",
-      "se\"J\202\323\344\223\002>\022</_appscode/api/namespace/v1b" +
-      "eta1/billing/paymentmethods/json\202\265\030\002\010\001B=" +
-      "\n\"com.appscode.api.namespace.v1beta1B\014Bi" +
-      "llingProtoP\001Z\007v1beta1b\006proto3"
+      "name\030\003 \001(\t\022\025\n\rpricing_model\030\004 \001(\t\"O\n\020Sub" +
+      "scribeRequest\022\022\n\nproduct_id\030\001 \001(\t\022\023\n\013aut" +
+      "o_extend\030\002 \001(\010\022\022\n\nstart_time\030\003 \001(\003\"\255\002\n\020G" +
+      "etQuotaResponse\022\'\n\006status\030\001 \001(\0132\027.appsco" +
+      "de.dtypes.Status\022L\n\010assigned\030\002 \003(\0132:.app" +
+      "scode.namespace.v1beta1.GetQuotaResponse" +
+      ".AssignedEntry\022D\n\004used\030\003 \003(\01326.appscode." +
+      "namespace.v1beta1.GetQuotaResponse.UsedE" +
+      "ntry\032/\n\rAssignedEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005va",
+      "lue\030\002 \001(\003:\0028\001\032+\n\tUsedEntry\022\013\n\003key\030\001 \001(\t\022" +
+      "\r\n\005value\030\002 \001(\003:\0028\001\"S\n\031CreateClientTokenR" +
+      "esponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtype" +
+      "s.Status\022\r\n\005token\030\002 \001(\t2\312\006\n\007Billing\022\257\001\n\017" +
+      "GetSubscription\022\034.appscode.dtypes.VoidRe" +
+      "quest\0323.appscode.namespace.v1beta1.GetSu" +
+      "bscriptionResponse\"I\202\323\344\223\002=\022;/_appscode/a" +
+      "pi/namespace/v1beta1/billing/subscriptio" +
+      "ns/json\202\265\030\002\010\001\022\240\001\n\tSubscribe\022,.appscode.n" +
+      "amespace.v1beta1.SubscribeRequest\032\035.apps",
+      "code.dtypes.VoidResponse\"F\202\323\344\223\002@\";/_apps" +
+      "code/api/namespace/v1beta1/billing/subsc" +
+      "riptions/json:\001*\022\224\001\n\010GetQuota\022\034.appscode" +
+      ".dtypes.VoidRequest\032,.appscode.namespace" +
+      ".v1beta1.GetQuotaResponse\"<\202\323\344\223\0026\0224/_app" +
+      "scode/api/namespace/v1beta1/billing/quot" +
+      "as/json\022\262\001\n\021CreateClientToken\022\034.appscode" +
+      ".dtypes.VoidRequest\0325.appscode.namespace" +
+      ".v1beta1.CreateClientTokenResponse\"H\202\323\344\223" +
+      "\002<\022:/_appscode/api/namespace/v1beta1/bil",
+      "ling/client-token/json\202\265\030\002\010\001\022\235\001\n\022CheckPa" +
+      "ymentMethod\022\034.appscode.dtypes.VoidReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"J\202\323\344\223\002>" +
+      "\022</_appscode/api/namespace/v1beta1/billi" +
+      "ng/paymentmethods/json\202\265\030\002\010\001B=\n\"com.apps" +
+      "code.api.namespace.v1beta1B\014BillingProto" +
+      "P\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -110,8 +133,14 @@ public final class BillingProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_GetSubscriptionResponse_Product_descriptor,
         new java.lang.String[] { "Sku", "Type", "DisplayName", "PricingModel", });
-    internal_static_appscode_namespace_v1beta1_GetQuotaResponse_descriptor =
+    internal_static_appscode_namespace_v1beta1_SubscribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
+    internal_static_appscode_namespace_v1beta1_SubscribeRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_namespace_v1beta1_SubscribeRequest_descriptor,
+        new java.lang.String[] { "ProductId", "AutoExtend", "StartTime", });
+    internal_static_appscode_namespace_v1beta1_GetQuotaResponse_descriptor =
+      getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_namespace_v1beta1_GetQuotaResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_GetQuotaResponse_descriptor,
@@ -128,6 +157,12 @@ public final class BillingProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_GetQuotaResponse_UsedEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
+    internal_static_appscode_namespace_v1beta1_CreateClientTokenResponse_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_appscode_namespace_v1beta1_CreateClientTokenResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_namespace_v1beta1_CreateClientTokenResponse_descriptor,
+        new java.lang.String[] { "Status", "Token", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.appscode.api.AnnotationsProto.cors);

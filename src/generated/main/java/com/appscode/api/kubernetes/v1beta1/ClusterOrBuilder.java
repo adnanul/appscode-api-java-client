@@ -142,24 +142,24 @@ public interface ClusterOrBuilder extends
       getGceProjectBytes();
 
   /**
-   * <code>optional string kube_server_version = 13;</code>
+   * <code>optional string kubelet_version = 13;</code>
    */
-  java.lang.String getKubeServerVersion();
+  java.lang.String getKubeletVersion();
   /**
-   * <code>optional string kube_server_version = 13;</code>
+   * <code>optional string kubelet_version = 13;</code>
    */
   com.google.protobuf.ByteString
-      getKubeServerVersionBytes();
+      getKubeletVersionBytes();
 
   /**
-   * <code>optional string kube_saltbase_version = 14;</code>
+   * <code>optional string saltbase_version = 14;</code>
    */
-  java.lang.String getKubeSaltbaseVersion();
+  java.lang.String getSaltbaseVersion();
   /**
-   * <code>optional string kube_saltbase_version = 14;</code>
+   * <code>optional string saltbase_version = 14;</code>
    */
   com.google.protobuf.ByteString
-      getKubeSaltbaseVersionBytes();
+      getSaltbaseVersionBytes();
 
   /**
    * <code>optional string kube_starter_version = 15;</code>

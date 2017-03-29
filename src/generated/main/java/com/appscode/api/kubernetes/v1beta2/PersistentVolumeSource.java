@@ -255,6 +255,97 @@ public  final class PersistentVolumeSource extends
 
             break;
           }
+          case 138: {
+            com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder subBuilder = null;
+            if (emptyDir_ != null) {
+              subBuilder = emptyDir_.toBuilder();
+            }
+            emptyDir_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(emptyDir_);
+              emptyDir_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 146: {
+            com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder subBuilder = null;
+            if (gitRepo_ != null) {
+              subBuilder = gitRepo_.toBuilder();
+            }
+            gitRepo_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(gitRepo_);
+              gitRepo_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 154: {
+            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder subBuilder = null;
+            if (secret_ != null) {
+              subBuilder = secret_.toBuilder();
+            }
+            secret_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(secret_);
+              secret_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 162: {
+            com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder subBuilder = null;
+            if (persistentVolumeClaim_ != null) {
+              subBuilder = persistentVolumeClaim_.toBuilder();
+            }
+            persistentVolumeClaim_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(persistentVolumeClaim_);
+              persistentVolumeClaim_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 170: {
+            com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder subBuilder = null;
+            if (downwardAPI_ != null) {
+              subBuilder = downwardAPI_.toBuilder();
+            }
+            downwardAPI_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(downwardAPI_);
+              downwardAPI_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 178: {
+            com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder subBuilder = null;
+            if (configMap_ != null) {
+              subBuilder = configMap_.toBuilder();
+            }
+            configMap_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(configMap_);
+              configMap_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
+          case 186: {
+            com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder subBuilder = null;
+            if (photonPersistentDisk_ != null) {
+              subBuilder = photonPersistentDisk_.toBuilder();
+            }
+            photonPersistentDisk_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(photonPersistentDisk_);
+              photonPersistentDisk_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -854,6 +945,267 @@ public  final class PersistentVolumeSource extends
     return getAzureDisk();
   }
 
+  public static final int EMPTYDIR_FIELD_NUMBER = 17;
+  private com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir_;
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  public boolean hasEmptyDir() {
+    return emptyDir_ != null;
+  }
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir() {
+    return emptyDir_ == null ? com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.getDefaultInstance() : emptyDir_;
+  }
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder() {
+    return getEmptyDir();
+  }
+
+  public static final int GITREPO_FIELD_NUMBER = 18;
+  private com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource gitRepo_;
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  public boolean hasGitRepo() {
+    return gitRepo_ != null;
+  }
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo() {
+    return gitRepo_ == null ? com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.getDefaultInstance() : gitRepo_;
+  }
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder() {
+    return getGitRepo();
+  }
+
+  public static final int SECRET_FIELD_NUMBER = 19;
+  private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource secret_;
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  public boolean hasSecret() {
+    return secret_ != null;
+  }
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret() {
+    return secret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : secret_;
+  }
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder() {
+    return getSecret();
+  }
+
+  public static final int PERSISTENTVOLUMECLAIM_FIELD_NUMBER = 20;
+  private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim_;
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  public boolean hasPersistentVolumeClaim() {
+    return persistentVolumeClaim_ != null;
+  }
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim() {
+    return persistentVolumeClaim_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.getDefaultInstance() : persistentVolumeClaim_;
+  }
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder() {
+    return getPersistentVolumeClaim();
+  }
+
+  public static final int DOWNWARDAPI_FIELD_NUMBER = 21;
+  private com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI_;
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  public boolean hasDownwardAPI() {
+    return downwardAPI_ != null;
+  }
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI() {
+    return downwardAPI_ == null ? com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.getDefaultInstance() : downwardAPI_;
+  }
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder() {
+    return getDownwardAPI();
+  }
+
+  public static final int CONFIGMAP_FIELD_NUMBER = 22;
+  private com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource configMap_;
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  public boolean hasConfigMap() {
+    return configMap_ != null;
+  }
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap() {
+    return configMap_ == null ? com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.getDefaultInstance() : configMap_;
+  }
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder() {
+    return getConfigMap();
+  }
+
+  public static final int PHOTONPERSISTENTDISK_FIELD_NUMBER = 23;
+  private com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk_;
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  public boolean hasPhotonPersistentDisk() {
+    return photonPersistentDisk_ != null;
+  }
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk() {
+    return photonPersistentDisk_ == null ? com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.getDefaultInstance() : photonPersistentDisk_;
+  }
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder() {
+    return getPhotonPersistentDisk();
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -913,6 +1265,27 @@ public  final class PersistentVolumeSource extends
     }
     if (azureDisk_ != null) {
       output.writeMessage(16, getAzureDisk());
+    }
+    if (emptyDir_ != null) {
+      output.writeMessage(17, getEmptyDir());
+    }
+    if (gitRepo_ != null) {
+      output.writeMessage(18, getGitRepo());
+    }
+    if (secret_ != null) {
+      output.writeMessage(19, getSecret());
+    }
+    if (persistentVolumeClaim_ != null) {
+      output.writeMessage(20, getPersistentVolumeClaim());
+    }
+    if (downwardAPI_ != null) {
+      output.writeMessage(21, getDownwardAPI());
+    }
+    if (configMap_ != null) {
+      output.writeMessage(22, getConfigMap());
+    }
+    if (photonPersistentDisk_ != null) {
+      output.writeMessage(23, getPhotonPersistentDisk());
     }
   }
 
@@ -984,6 +1357,34 @@ public  final class PersistentVolumeSource extends
     if (azureDisk_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(16, getAzureDisk());
+    }
+    if (emptyDir_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(17, getEmptyDir());
+    }
+    if (gitRepo_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(18, getGitRepo());
+    }
+    if (secret_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(19, getSecret());
+    }
+    if (persistentVolumeClaim_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(20, getPersistentVolumeClaim());
+    }
+    if (downwardAPI_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(21, getDownwardAPI());
+    }
+    if (configMap_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(22, getConfigMap());
+    }
+    if (photonPersistentDisk_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(23, getPhotonPersistentDisk());
     }
     memoizedSize = size;
     return size;
@@ -1081,6 +1482,41 @@ public  final class PersistentVolumeSource extends
       result = result && getAzureDisk()
           .equals(other.getAzureDisk());
     }
+    result = result && (hasEmptyDir() == other.hasEmptyDir());
+    if (hasEmptyDir()) {
+      result = result && getEmptyDir()
+          .equals(other.getEmptyDir());
+    }
+    result = result && (hasGitRepo() == other.hasGitRepo());
+    if (hasGitRepo()) {
+      result = result && getGitRepo()
+          .equals(other.getGitRepo());
+    }
+    result = result && (hasSecret() == other.hasSecret());
+    if (hasSecret()) {
+      result = result && getSecret()
+          .equals(other.getSecret());
+    }
+    result = result && (hasPersistentVolumeClaim() == other.hasPersistentVolumeClaim());
+    if (hasPersistentVolumeClaim()) {
+      result = result && getPersistentVolumeClaim()
+          .equals(other.getPersistentVolumeClaim());
+    }
+    result = result && (hasDownwardAPI() == other.hasDownwardAPI());
+    if (hasDownwardAPI()) {
+      result = result && getDownwardAPI()
+          .equals(other.getDownwardAPI());
+    }
+    result = result && (hasConfigMap() == other.hasConfigMap());
+    if (hasConfigMap()) {
+      result = result && getConfigMap()
+          .equals(other.getConfigMap());
+    }
+    result = result && (hasPhotonPersistentDisk() == other.hasPhotonPersistentDisk());
+    if (hasPhotonPersistentDisk()) {
+      result = result && getPhotonPersistentDisk()
+          .equals(other.getPhotonPersistentDisk());
+    }
     return result;
   }
 
@@ -1154,6 +1590,34 @@ public  final class PersistentVolumeSource extends
     if (hasAzureDisk()) {
       hash = (37 * hash) + AZUREDISK_FIELD_NUMBER;
       hash = (53 * hash) + getAzureDisk().hashCode();
+    }
+    if (hasEmptyDir()) {
+      hash = (37 * hash) + EMPTYDIR_FIELD_NUMBER;
+      hash = (53 * hash) + getEmptyDir().hashCode();
+    }
+    if (hasGitRepo()) {
+      hash = (37 * hash) + GITREPO_FIELD_NUMBER;
+      hash = (53 * hash) + getGitRepo().hashCode();
+    }
+    if (hasSecret()) {
+      hash = (37 * hash) + SECRET_FIELD_NUMBER;
+      hash = (53 * hash) + getSecret().hashCode();
+    }
+    if (hasPersistentVolumeClaim()) {
+      hash = (37 * hash) + PERSISTENTVOLUMECLAIM_FIELD_NUMBER;
+      hash = (53 * hash) + getPersistentVolumeClaim().hashCode();
+    }
+    if (hasDownwardAPI()) {
+      hash = (37 * hash) + DOWNWARDAPI_FIELD_NUMBER;
+      hash = (53 * hash) + getDownwardAPI().hashCode();
+    }
+    if (hasConfigMap()) {
+      hash = (37 * hash) + CONFIGMAP_FIELD_NUMBER;
+      hash = (53 * hash) + getConfigMap().hashCode();
+    }
+    if (hasPhotonPersistentDisk()) {
+      hash = (37 * hash) + PHOTONPERSISTENTDISK_FIELD_NUMBER;
+      hash = (53 * hash) + getPhotonPersistentDisk().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -1374,6 +1838,48 @@ public  final class PersistentVolumeSource extends
         azureDisk_ = null;
         azureDiskBuilder_ = null;
       }
+      if (emptyDirBuilder_ == null) {
+        emptyDir_ = null;
+      } else {
+        emptyDir_ = null;
+        emptyDirBuilder_ = null;
+      }
+      if (gitRepoBuilder_ == null) {
+        gitRepo_ = null;
+      } else {
+        gitRepo_ = null;
+        gitRepoBuilder_ = null;
+      }
+      if (secretBuilder_ == null) {
+        secret_ = null;
+      } else {
+        secret_ = null;
+        secretBuilder_ = null;
+      }
+      if (persistentVolumeClaimBuilder_ == null) {
+        persistentVolumeClaim_ = null;
+      } else {
+        persistentVolumeClaim_ = null;
+        persistentVolumeClaimBuilder_ = null;
+      }
+      if (downwardAPIBuilder_ == null) {
+        downwardAPI_ = null;
+      } else {
+        downwardAPI_ = null;
+        downwardAPIBuilder_ = null;
+      }
+      if (configMapBuilder_ == null) {
+        configMap_ = null;
+      } else {
+        configMap_ = null;
+        configMapBuilder_ = null;
+      }
+      if (photonPersistentDiskBuilder_ == null) {
+        photonPersistentDisk_ = null;
+      } else {
+        photonPersistentDisk_ = null;
+        photonPersistentDiskBuilder_ = null;
+      }
       return this;
     }
 
@@ -1476,6 +1982,41 @@ public  final class PersistentVolumeSource extends
       } else {
         result.azureDisk_ = azureDiskBuilder_.build();
       }
+      if (emptyDirBuilder_ == null) {
+        result.emptyDir_ = emptyDir_;
+      } else {
+        result.emptyDir_ = emptyDirBuilder_.build();
+      }
+      if (gitRepoBuilder_ == null) {
+        result.gitRepo_ = gitRepo_;
+      } else {
+        result.gitRepo_ = gitRepoBuilder_.build();
+      }
+      if (secretBuilder_ == null) {
+        result.secret_ = secret_;
+      } else {
+        result.secret_ = secretBuilder_.build();
+      }
+      if (persistentVolumeClaimBuilder_ == null) {
+        result.persistentVolumeClaim_ = persistentVolumeClaim_;
+      } else {
+        result.persistentVolumeClaim_ = persistentVolumeClaimBuilder_.build();
+      }
+      if (downwardAPIBuilder_ == null) {
+        result.downwardAPI_ = downwardAPI_;
+      } else {
+        result.downwardAPI_ = downwardAPIBuilder_.build();
+      }
+      if (configMapBuilder_ == null) {
+        result.configMap_ = configMap_;
+      } else {
+        result.configMap_ = configMapBuilder_.build();
+      }
+      if (photonPersistentDiskBuilder_ == null) {
+        result.photonPersistentDisk_ = photonPersistentDisk_;
+      } else {
+        result.photonPersistentDisk_ = photonPersistentDiskBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -1564,6 +2105,27 @@ public  final class PersistentVolumeSource extends
       }
       if (other.hasAzureDisk()) {
         mergeAzureDisk(other.getAzureDisk());
+      }
+      if (other.hasEmptyDir()) {
+        mergeEmptyDir(other.getEmptyDir());
+      }
+      if (other.hasGitRepo()) {
+        mergeGitRepo(other.getGitRepo());
+      }
+      if (other.hasSecret()) {
+        mergeSecret(other.getSecret());
+      }
+      if (other.hasPersistentVolumeClaim()) {
+        mergePersistentVolumeClaim(other.getPersistentVolumeClaim());
+      }
+      if (other.hasDownwardAPI()) {
+        mergeDownwardAPI(other.getDownwardAPI());
+      }
+      if (other.hasConfigMap()) {
+        mergeConfigMap(other.getConfigMap());
+      }
+      if (other.hasPhotonPersistentDisk()) {
+        mergePhotonPersistentDisk(other.getPhotonPersistentDisk());
       }
       onChanged();
       return this;
@@ -4181,6 +4743,1167 @@ public  final class PersistentVolumeSource extends
         azureDisk_ = null;
       }
       return azureDiskBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder> emptyDirBuilder_;
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public boolean hasEmptyDir() {
+      return emptyDirBuilder_ != null || emptyDir_ != null;
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir() {
+      if (emptyDirBuilder_ == null) {
+        return emptyDir_ == null ? com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.getDefaultInstance() : emptyDir_;
+      } else {
+        return emptyDirBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public Builder setEmptyDir(com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource value) {
+      if (emptyDirBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        emptyDir_ = value;
+        onChanged();
+      } else {
+        emptyDirBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public Builder setEmptyDir(
+        com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder builderForValue) {
+      if (emptyDirBuilder_ == null) {
+        emptyDir_ = builderForValue.build();
+        onChanged();
+      } else {
+        emptyDirBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public Builder mergeEmptyDir(com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource value) {
+      if (emptyDirBuilder_ == null) {
+        if (emptyDir_ != null) {
+          emptyDir_ =
+            com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.newBuilder(emptyDir_).mergeFrom(value).buildPartial();
+        } else {
+          emptyDir_ = value;
+        }
+        onChanged();
+      } else {
+        emptyDirBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public Builder clearEmptyDir() {
+      if (emptyDirBuilder_ == null) {
+        emptyDir_ = null;
+        onChanged();
+      } else {
+        emptyDir_ = null;
+        emptyDirBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder getEmptyDirBuilder() {
+      
+      onChanged();
+      return getEmptyDirFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder() {
+      if (emptyDirBuilder_ != null) {
+        return emptyDirBuilder_.getMessageOrBuilder();
+      } else {
+        return emptyDir_ == null ?
+            com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.getDefaultInstance() : emptyDir_;
+      }
+    }
+    /**
+     * <pre>
+     * EmptyDir represents a temporary directory that shares a pod's lifetime.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder> 
+        getEmptyDirFieldBuilder() {
+      if (emptyDirBuilder_ == null) {
+        emptyDirBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder>(
+                getEmptyDir(),
+                getParentForChildren(),
+                isClean());
+        emptyDir_ = null;
+      }
+      return emptyDirBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource gitRepo_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder> gitRepoBuilder_;
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public boolean hasGitRepo() {
+      return gitRepoBuilder_ != null || gitRepo_ != null;
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo() {
+      if (gitRepoBuilder_ == null) {
+        return gitRepo_ == null ? com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.getDefaultInstance() : gitRepo_;
+      } else {
+        return gitRepoBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public Builder setGitRepo(com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource value) {
+      if (gitRepoBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        gitRepo_ = value;
+        onChanged();
+      } else {
+        gitRepoBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public Builder setGitRepo(
+        com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder builderForValue) {
+      if (gitRepoBuilder_ == null) {
+        gitRepo_ = builderForValue.build();
+        onChanged();
+      } else {
+        gitRepoBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public Builder mergeGitRepo(com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource value) {
+      if (gitRepoBuilder_ == null) {
+        if (gitRepo_ != null) {
+          gitRepo_ =
+            com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.newBuilder(gitRepo_).mergeFrom(value).buildPartial();
+        } else {
+          gitRepo_ = value;
+        }
+        onChanged();
+      } else {
+        gitRepoBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public Builder clearGitRepo() {
+      if (gitRepoBuilder_ == null) {
+        gitRepo_ = null;
+        onChanged();
+      } else {
+        gitRepo_ = null;
+        gitRepoBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder getGitRepoBuilder() {
+      
+      onChanged();
+      return getGitRepoFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder() {
+      if (gitRepoBuilder_ != null) {
+        return gitRepoBuilder_.getMessageOrBuilder();
+      } else {
+        return gitRepo_ == null ?
+            com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.getDefaultInstance() : gitRepo_;
+      }
+    }
+    /**
+     * <pre>
+     * GitRepo represents a git repository at a particular revision.
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder> 
+        getGitRepoFieldBuilder() {
+      if (gitRepoBuilder_ == null) {
+        gitRepoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder>(
+                getGitRepo(),
+                getParentForChildren(),
+                isClean());
+        gitRepo_ = null;
+      }
+      return gitRepoBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource secret_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> secretBuilder_;
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public boolean hasSecret() {
+      return secretBuilder_ != null || secret_ != null;
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret() {
+      if (secretBuilder_ == null) {
+        return secret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : secret_;
+      } else {
+        return secretBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public Builder setSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
+      if (secretBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        secret_ = value;
+        onChanged();
+      } else {
+        secretBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public Builder setSecret(
+        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
+      if (secretBuilder_ == null) {
+        secret_ = builderForValue.build();
+        onChanged();
+      } else {
+        secretBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public Builder mergeSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
+      if (secretBuilder_ == null) {
+        if (secret_ != null) {
+          secret_ =
+            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.newBuilder(secret_).mergeFrom(value).buildPartial();
+        } else {
+          secret_ = value;
+        }
+        onChanged();
+      } else {
+        secretBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public Builder clearSecret() {
+      if (secretBuilder_ == null) {
+        secret_ = null;
+        onChanged();
+      } else {
+        secret_ = null;
+        secretBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getSecretBuilder() {
+      
+      onChanged();
+      return getSecretFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder() {
+      if (secretBuilder_ != null) {
+        return secretBuilder_.getMessageOrBuilder();
+      } else {
+        return secret_ == null ?
+            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : secret_;
+      }
+    }
+    /**
+     * <pre>
+     * Secret represents a secret that should populate this volume.
+     * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
+        getSecretFieldBuilder() {
+      if (secretBuilder_ == null) {
+        secretBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder>(
+                getSecret(),
+                getParentForChildren(),
+                isClean());
+        secret_ = null;
+      }
+      return secretBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder> persistentVolumeClaimBuilder_;
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public boolean hasPersistentVolumeClaim() {
+      return persistentVolumeClaimBuilder_ != null || persistentVolumeClaim_ != null;
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim() {
+      if (persistentVolumeClaimBuilder_ == null) {
+        return persistentVolumeClaim_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.getDefaultInstance() : persistentVolumeClaim_;
+      } else {
+        return persistentVolumeClaimBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public Builder setPersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource value) {
+      if (persistentVolumeClaimBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        persistentVolumeClaim_ = value;
+        onChanged();
+      } else {
+        persistentVolumeClaimBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public Builder setPersistentVolumeClaim(
+        com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder builderForValue) {
+      if (persistentVolumeClaimBuilder_ == null) {
+        persistentVolumeClaim_ = builderForValue.build();
+        onChanged();
+      } else {
+        persistentVolumeClaimBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public Builder mergePersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource value) {
+      if (persistentVolumeClaimBuilder_ == null) {
+        if (persistentVolumeClaim_ != null) {
+          persistentVolumeClaim_ =
+            com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.newBuilder(persistentVolumeClaim_).mergeFrom(value).buildPartial();
+        } else {
+          persistentVolumeClaim_ = value;
+        }
+        onChanged();
+      } else {
+        persistentVolumeClaimBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public Builder clearPersistentVolumeClaim() {
+      if (persistentVolumeClaimBuilder_ == null) {
+        persistentVolumeClaim_ = null;
+        onChanged();
+      } else {
+        persistentVolumeClaim_ = null;
+        persistentVolumeClaimBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder getPersistentVolumeClaimBuilder() {
+      
+      onChanged();
+      return getPersistentVolumeClaimFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder() {
+      if (persistentVolumeClaimBuilder_ != null) {
+        return persistentVolumeClaimBuilder_.getMessageOrBuilder();
+      } else {
+        return persistentVolumeClaim_ == null ?
+            com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.getDefaultInstance() : persistentVolumeClaim_;
+      }
+    }
+    /**
+     * <pre>
+     * PersistentVolumeClaimVolumeSource represents a reference to a
+     * PersistentVolumeClaim in the same namespace.
+     * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder> 
+        getPersistentVolumeClaimFieldBuilder() {
+      if (persistentVolumeClaimBuilder_ == null) {
+        persistentVolumeClaimBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder>(
+                getPersistentVolumeClaim(),
+                getParentForChildren(),
+                isClean());
+        persistentVolumeClaim_ = null;
+      }
+      return persistentVolumeClaimBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder> downwardAPIBuilder_;
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public boolean hasDownwardAPI() {
+      return downwardAPIBuilder_ != null || downwardAPI_ != null;
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI() {
+      if (downwardAPIBuilder_ == null) {
+        return downwardAPI_ == null ? com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.getDefaultInstance() : downwardAPI_;
+      } else {
+        return downwardAPIBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public Builder setDownwardAPI(com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource value) {
+      if (downwardAPIBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        downwardAPI_ = value;
+        onChanged();
+      } else {
+        downwardAPIBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public Builder setDownwardAPI(
+        com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder builderForValue) {
+      if (downwardAPIBuilder_ == null) {
+        downwardAPI_ = builderForValue.build();
+        onChanged();
+      } else {
+        downwardAPIBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public Builder mergeDownwardAPI(com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource value) {
+      if (downwardAPIBuilder_ == null) {
+        if (downwardAPI_ != null) {
+          downwardAPI_ =
+            com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.newBuilder(downwardAPI_).mergeFrom(value).buildPartial();
+        } else {
+          downwardAPI_ = value;
+        }
+        onChanged();
+      } else {
+        downwardAPIBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public Builder clearDownwardAPI() {
+      if (downwardAPIBuilder_ == null) {
+        downwardAPI_ = null;
+        onChanged();
+      } else {
+        downwardAPI_ = null;
+        downwardAPIBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder getDownwardAPIBuilder() {
+      
+      onChanged();
+      return getDownwardAPIFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder() {
+      if (downwardAPIBuilder_ != null) {
+        return downwardAPIBuilder_.getMessageOrBuilder();
+      } else {
+        return downwardAPI_ == null ?
+            com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.getDefaultInstance() : downwardAPI_;
+      }
+    }
+    /**
+     * <pre>
+     * DownwardAPI represents downward API about the pod that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder> 
+        getDownwardAPIFieldBuilder() {
+      if (downwardAPIBuilder_ == null) {
+        downwardAPIBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder>(
+                getDownwardAPI(),
+                getParentForChildren(),
+                isClean());
+        downwardAPI_ = null;
+      }
+      return downwardAPIBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource configMap_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder> configMapBuilder_;
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public boolean hasConfigMap() {
+      return configMapBuilder_ != null || configMap_ != null;
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap() {
+      if (configMapBuilder_ == null) {
+        return configMap_ == null ? com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.getDefaultInstance() : configMap_;
+      } else {
+        return configMapBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public Builder setConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource value) {
+      if (configMapBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        configMap_ = value;
+        onChanged();
+      } else {
+        configMapBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public Builder setConfigMap(
+        com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder builderForValue) {
+      if (configMapBuilder_ == null) {
+        configMap_ = builderForValue.build();
+        onChanged();
+      } else {
+        configMapBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public Builder mergeConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource value) {
+      if (configMapBuilder_ == null) {
+        if (configMap_ != null) {
+          configMap_ =
+            com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.newBuilder(configMap_).mergeFrom(value).buildPartial();
+        } else {
+          configMap_ = value;
+        }
+        onChanged();
+      } else {
+        configMapBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public Builder clearConfigMap() {
+      if (configMapBuilder_ == null) {
+        configMap_ = null;
+        onChanged();
+      } else {
+        configMap_ = null;
+        configMapBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder getConfigMapBuilder() {
+      
+      onChanged();
+      return getConfigMapFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder() {
+      if (configMapBuilder_ != null) {
+        return configMapBuilder_.getMessageOrBuilder();
+      } else {
+        return configMap_ == null ?
+            com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.getDefaultInstance() : configMap_;
+      }
+    }
+    /**
+     * <pre>
+     * ConfigMap represents a configMap that should populate this volume
+     * +optional
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder> 
+        getConfigMapFieldBuilder() {
+      if (configMapBuilder_ == null) {
+        configMapBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder>(
+                getConfigMap(),
+                getParentForChildren(),
+                isClean());
+        configMap_ = null;
+      }
+      return configMapBuilder_;
+    }
+
+    private com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder> photonPersistentDiskBuilder_;
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public boolean hasPhotonPersistentDisk() {
+      return photonPersistentDiskBuilder_ != null || photonPersistentDisk_ != null;
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk() {
+      if (photonPersistentDiskBuilder_ == null) {
+        return photonPersistentDisk_ == null ? com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.getDefaultInstance() : photonPersistentDisk_;
+      } else {
+        return photonPersistentDiskBuilder_.getMessage();
+      }
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public Builder setPhotonPersistentDisk(com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource value) {
+      if (photonPersistentDiskBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        photonPersistentDisk_ = value;
+        onChanged();
+      } else {
+        photonPersistentDiskBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public Builder setPhotonPersistentDisk(
+        com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder builderForValue) {
+      if (photonPersistentDiskBuilder_ == null) {
+        photonPersistentDisk_ = builderForValue.build();
+        onChanged();
+      } else {
+        photonPersistentDiskBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public Builder mergePhotonPersistentDisk(com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource value) {
+      if (photonPersistentDiskBuilder_ == null) {
+        if (photonPersistentDisk_ != null) {
+          photonPersistentDisk_ =
+            com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.newBuilder(photonPersistentDisk_).mergeFrom(value).buildPartial();
+        } else {
+          photonPersistentDisk_ = value;
+        }
+        onChanged();
+      } else {
+        photonPersistentDiskBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public Builder clearPhotonPersistentDisk() {
+      if (photonPersistentDiskBuilder_ == null) {
+        photonPersistentDisk_ = null;
+        onChanged();
+      } else {
+        photonPersistentDisk_ = null;
+        photonPersistentDiskBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder getPhotonPersistentDiskBuilder() {
+      
+      onChanged();
+      return getPhotonPersistentDiskFieldBuilder().getBuilder();
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder() {
+      if (photonPersistentDiskBuilder_ != null) {
+        return photonPersistentDiskBuilder_.getMessageOrBuilder();
+      } else {
+        return photonPersistentDisk_ == null ?
+            com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.getDefaultInstance() : photonPersistentDisk_;
+      }
+    }
+    /**
+     * <pre>
+     * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+     * </pre>
+     *
+     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder> 
+        getPhotonPersistentDiskFieldBuilder() {
+      if (photonPersistentDiskBuilder_ == null) {
+        photonPersistentDiskBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder>(
+                getPhotonPersistentDisk(),
+                getParentForChildren(),
+                isClean());
+        photonPersistentDisk_ = null;
+      }
+      return photonPersistentDiskBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

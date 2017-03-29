@@ -55,11 +55,6 @@ public final class OperationProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_operation_v1beta1_Operation_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_operation_v1beta1_NamespaceAdminTaskRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -78,13 +73,11 @@ public final class OperationProto {
       "ogle/api/annotations.proto\032\036appscode/api" +
       "/annotations.proto\032\037appscode/api/dtypes/" +
       "types.proto\032-appscode/api/kubernetes/v1b" +
-      "eta1/cluster.proto\032&appscode/api/db/v1be" +
-      "ta1/database.proto\032&appscode/api/db/v1be" +
-      "ta1/snapshot.proto\032)appscode/api/namespa" +
+      "eta1/cluster.proto\032)appscode/api/namespa" +
       "ce/v1beta1/team.proto\"5\n\003Log\022\n\n\002id\030\001 \001(\t" +
-      "\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"\037\n\017",
+      "\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"\037\n\017" +
       "DescribeRequest\022\014\n\004phid\030\001 \001(\t\"\235\001\n\020Descri" +
-      "beResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt" +
+      "beResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt",
       "ypes.Status\0221\n\002op\030\002 \001(\0132%.appscode.opera" +
       "tion.v1beta1.Operation\022-\n\004logs\030\003 \003(\0132\037.a" +
       "ppscode.operation.v1beta1.Log\"2\n\022LogDesc" +
@@ -92,60 +85,43 @@ public final class OperationProto {
       "\t\"l\n\023LogDescribeResponse\022\'\n\006status\030\001 \001(\013" +
       "2\027.appscode.dtypes.Status\022,\n\003log\030\002 \001(\0132\037" +
       ".appscode.operation.v1beta1.Log\"N\n\004Auth\022" +
-      "\021\n\tnamespace\030\001 \001(\t\022\020\n\010username\030\002 \001(\t\022\016\n\006",
+      "\021\n\tnamespace\030\001 \001(\t\022\020\n\010username\030\002 \001(\t\022\016\n\006" +
       "secret\030\003 \001(\t\022\021\n\tauth_type\030\004 \001(\t\"L\n\010Metad" +
-      "ata\022\026\n\016purchase_phids\030\001 \003(\t\022\023\n\013author_ph" +
-      "id\030\002 \001(\t\022\023\n\013author_name\030\003 \001(\t\"\341\010\n\tOperat" +
+      "ata\022\026\n\016purchase_phids\030\001 \003(\t\022\023\n\013author_ph",
+      "id\030\002 \001(\t\022\023\n\013author_name\030\003 \001(\t\"\374\004\n\tOperat" +
       "ion\022S\n\026cluster_create_request\030\001 \001(\01321.ap" +
       "pscode.kubernetes.v1beta1.ClusterCreateR" +
-      "equestH\000\022Q\n\025cluster_scale_request\030\002 \001(\0132" +
-      "0.appscode.kubernetes.v1beta1.ClusterSca" +
-      "leRequestH\000\022S\n\026cluster_delete_request\030\003 " +
-      "\001(\01321.appscode.kubernetes.v1beta1.Cluste" +
-      "rDeleteRequestH\000\022\\\n\033cluster_set_version_",
-      "request\030\004 \001(\01325.appscode.kubernetes.v1be" +
-      "ta1.ClusterSetVersionRequestH\000\022Y\n\032data_b" +
-      "ucket_delete_request\030\t \001(\01323.appscode.op" +
-      "eration.v1beta1.DataBucketDeleteRequestH" +
-      "\000\022M\n\027backup_schedule_request\030\n \001(\0132*.app" +
-      "scode.db.v1beta1.BackupScheduleRequestH\000" +
-      "\022M\n\030namespace_create_request\030\013 \001(\0132).app" +
-      "scode.namespace.v1beta1.CreateRequestH\000\022" +
-      "]\n\034namespace_admin_task_request\030\014 \001(\01325." +
-      "appscode.operation.v1beta1.NamespaceAdmi",
-      "nTaskRequestH\000\022K\n\026database_check_request" +
-      "\030\023 \001(\0132).appscode.db.v1beta1.DatabaseChe" +
-      "ckRequestH\000\022K\n\026snapshot_check_request\030\024 " +
-      "\001(\0132).appscode.db.v1beta1.SnapshotCheckR" +
-      "equestH\000\022M\n\027database_delete_request\030\025 \001(" +
-      "\0132*.appscode.db.v1beta1.DatabaseDeleteRe" +
-      "questH\000\0227\n\004type\030\016 \001(\0162).appscode.operati" +
-      "on.v1beta1.OperationType\022\014\n\004phid\030\017 \001(\t\022." +
-      "\n\004auth\030\020 \001(\0132 .appscode.operation.v1beta" +
-      "1.Auth\0226\n\010metadata\030\021 \001(\0132$.appscode.oper",
-      "ation.v1beta1.MetadataB\t\n\007request\"O\n\027Dat" +
-      "aBucketDeleteRequest\022\021\n\tdata_type\030\001 \001(\t\022" +
-      "\021\n\tnamespace\030\002 \001(\t\022\016\n\006prefix\030\003 \001(\t\".\n\031Na" +
-      "mespaceAdminTaskRequest\022\021\n\tnamespace\030\001 \001" +
-      "(\t*\212\002\n\rOperationType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLU" +
-      "STER_CREATE\020\001\022\021\n\rCLUSTER_SCALE\020\002\022\022\n\016CLUS" +
-      "TER_DELETE\020\003\022\027\n\023CLUSTER_SET_VERSION\020\004\022\026\n" +
-      "\022DATA_BUCKET_DELETE\020\t\022\023\n\017BACKUP_SCHEDULE" +
-      "\020\n\022\024\n\020NAMESPACE_CREATE\020\013\022\030\n\024NAMESPACE_AD" +
-      "MIN_TASK\020\014\022\022\n\016DATABASE_CHECK\020\017\022\022\n\016SNAPSH",
-      "OT_CHECK\020\020\022\023\n\017DATABASE_DELETE\020\0212\201\003\n\nOper" +
-      "ations\022\254\001\n\010Describe\022+.appscode.operation" +
-      ".v1beta1.DescribeRequest\032,.appscode.oper" +
-      "ation.v1beta1.DescribeResponse\"E\202\323\344\223\0029\0227" +
-      "/_appscode/api/operation/v1beta1/operati" +
-      "ons/{phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022.." +
-      "appscode.operation.v1beta1.LogDescribeRe" +
-      "quest\032/.appscode.operation.v1beta1.LogDe" +
-      "scribeResponse\"S\202\323\344\223\002G\022E/_appscode/api/o" +
-      "peration/v1beta1/operations/{phid}/logs/",
-      "{log_id}/json\202\265\030\002\010\001B?\n\"com.appscode.api." +
-      "operation.v1beta1B\016OperationProtoP\001Z\007v1b" +
-      "eta1b\006proto3"
+      "equestH\000\022S\n\026cluster_delete_request\030\003 \001(\013" +
+      "21.appscode.kubernetes.v1beta1.ClusterDe" +
+      "leteRequestH\000\022]\n\033cluster_reconfigure_req" +
+      "uest\030\004 \001(\01326.appscode.kubernetes.v1beta1" +
+      ".ClusterReconfigureRequestH\000\022M\n\030namespac" +
+      "e_create_request\030\013 \001(\0132).appscode.namesp" +
+      "ace.v1beta1.CreateRequestH\000\022]\n\034namespace",
+      "_admin_task_request\030\014 \001(\01325.appscode.ope" +
+      "ration.v1beta1.NamespaceAdminTaskRequest" +
+      "H\000\0227\n\004type\030\016 \001(\0162).appscode.operation.v1" +
+      "beta1.OperationType\022\014\n\004phid\030\017 \001(\t\022.\n\004aut" +
+      "h\030\020 \001(\0132 .appscode.operation.v1beta1.Aut" +
+      "h\0226\n\010metadata\030\021 \001(\0132$.appscode.operation" +
+      ".v1beta1.MetadataB\t\n\007request\".\n\031Namespac" +
+      "eAdminTaskRequest\022\021\n\tnamespace\030\001 \001(\t*\215\001\n" +
+      "\rOperationType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_C" +
+      "REATE\020\001\022\022\n\016CLUSTER_DELETE\020\003\022\027\n\023CLUSTER_R",
+      "ECONFIGURE\020\004\022\024\n\020NAMESPACE_CREATE\020\013\022\030\n\024NA" +
+      "MESPACE_ADMIN_TASK\020\0142\201\003\n\nOperations\022\254\001\n\010" +
+      "Describe\022+.appscode.operation.v1beta1.De" +
+      "scribeRequest\032,.appscode.operation.v1bet" +
+      "a1.DescribeResponse\"E\202\323\344\223\0029\0227/_appscode/" +
+      "api/operation/v1beta1/operations/{phid}/" +
+      "json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022..appscode.op" +
+      "eration.v1beta1.LogDescribeRequest\032/.app" +
+      "scode.operation.v1beta1.LogDescribeRespo" +
+      "nse\"S\202\323\344\223\002G\022E/_appscode/api/operation/v1",
+      "beta1/operations/{phid}/logs/{log_id}/js" +
+      "on\202\265\030\002\010\001B?\n\"com.appscode.api.operation.v" +
+      "1beta1B\016OperationProtoP\001Z\007v1beta1b\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -162,8 +138,6 @@ public final class OperationProto {
           com.appscode.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.dtypes.TypeProto.getDescriptor(),
           com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor(),
-          com.appscode.api.db.v1beta1.DatabaseProto.getDescriptor(),
-          com.appscode.api.db.v1beta1.SnapshotProto.getDescriptor(),
           com.appscode.api.namespace.v1beta1.TeamProto.getDescriptor(),
         }, assigner);
     internal_static_appscode_operation_v1beta1_Log_descriptor =
@@ -213,15 +187,9 @@ public final class OperationProto {
     internal_static_appscode_operation_v1beta1_Operation_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_operation_v1beta1_Operation_descriptor,
-        new java.lang.String[] { "ClusterCreateRequest", "ClusterScaleRequest", "ClusterDeleteRequest", "ClusterSetVersionRequest", "DataBucketDeleteRequest", "BackupScheduleRequest", "NamespaceCreateRequest", "NamespaceAdminTaskRequest", "DatabaseCheckRequest", "SnapshotCheckRequest", "DatabaseDeleteRequest", "Type", "Phid", "Auth", "Metadata", "Request", });
-    internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_descriptor =
-      getDescriptor().getMessageTypes().get(8);
-    internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_operation_v1beta1_DataBucketDeleteRequest_descriptor,
-        new java.lang.String[] { "DataType", "Namespace", "Prefix", });
+        new java.lang.String[] { "ClusterCreateRequest", "ClusterDeleteRequest", "ClusterReconfigureRequest", "NamespaceCreateRequest", "NamespaceAdminTaskRequest", "Type", "Phid", "Auth", "Metadata", "Request", });
     internal_static_appscode_operation_v1beta1_NamespaceAdminTaskRequest_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_appscode_operation_v1beta1_NamespaceAdminTaskRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_operation_v1beta1_NamespaceAdminTaskRequest_descriptor,
@@ -236,8 +204,6 @@ public final class OperationProto {
     com.appscode.api.AnnotationsProto.getDescriptor();
     com.appscode.api.dtypes.TypeProto.getDescriptor();
     com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor();
-    com.appscode.api.db.v1beta1.DatabaseProto.getDescriptor();
-    com.appscode.api.db.v1beta1.SnapshotProto.getDescriptor();
     com.appscode.api.namespace.v1beta1.TeamProto.getDescriptor();
   }
 

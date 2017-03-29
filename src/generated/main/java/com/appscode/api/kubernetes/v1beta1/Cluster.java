@@ -26,8 +26,8 @@ public  final class Cluster extends
     status_ = "";
     statusCause_ = "";
     gceProject_ = "";
-    kubeServerVersion_ = "";
-    kubeSaltbaseVersion_ = "";
+    kubeletVersion_ = "";
+    saltbaseVersion_ = "";
     kubeStarterVersion_ = "";
     nodeCount_ = 0;
     apiServerUrl_ = "";
@@ -147,13 +147,13 @@ public  final class Cluster extends
           case 106: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            kubeServerVersion_ = s;
+            kubeletVersion_ = s;
             break;
           }
           case 114: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            kubeSaltbaseVersion_ = s;
+            saltbaseVersion_ = s;
             break;
           }
           case 122: {
@@ -675,68 +675,68 @@ public  final class Cluster extends
     }
   }
 
-  public static final int KUBE_SERVER_VERSION_FIELD_NUMBER = 13;
-  private volatile java.lang.Object kubeServerVersion_;
+  public static final int KUBELET_VERSION_FIELD_NUMBER = 13;
+  private volatile java.lang.Object kubeletVersion_;
   /**
-   * <code>optional string kube_server_version = 13;</code>
+   * <code>optional string kubelet_version = 13;</code>
    */
-  public java.lang.String getKubeServerVersion() {
-    java.lang.Object ref = kubeServerVersion_;
+  public java.lang.String getKubeletVersion() {
+    java.lang.Object ref = kubeletVersion_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      kubeServerVersion_ = s;
+      kubeletVersion_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string kube_server_version = 13;</code>
+   * <code>optional string kubelet_version = 13;</code>
    */
   public com.google.protobuf.ByteString
-      getKubeServerVersionBytes() {
-    java.lang.Object ref = kubeServerVersion_;
+      getKubeletVersionBytes() {
+    java.lang.Object ref = kubeletVersion_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      kubeServerVersion_ = b;
+      kubeletVersion_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int KUBE_SALTBASE_VERSION_FIELD_NUMBER = 14;
-  private volatile java.lang.Object kubeSaltbaseVersion_;
+  public static final int SALTBASE_VERSION_FIELD_NUMBER = 14;
+  private volatile java.lang.Object saltbaseVersion_;
   /**
-   * <code>optional string kube_saltbase_version = 14;</code>
+   * <code>optional string saltbase_version = 14;</code>
    */
-  public java.lang.String getKubeSaltbaseVersion() {
-    java.lang.Object ref = kubeSaltbaseVersion_;
+  public java.lang.String getSaltbaseVersion() {
+    java.lang.Object ref = saltbaseVersion_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      kubeSaltbaseVersion_ = s;
+      saltbaseVersion_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string kube_saltbase_version = 14;</code>
+   * <code>optional string saltbase_version = 14;</code>
    */
   public com.google.protobuf.ByteString
-      getKubeSaltbaseVersionBytes() {
-    java.lang.Object ref = kubeSaltbaseVersion_;
+      getSaltbaseVersionBytes() {
+    java.lang.Object ref = saltbaseVersion_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      kubeSaltbaseVersion_ = b;
+      saltbaseVersion_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -1198,11 +1198,11 @@ public  final class Cluster extends
     if (!getGceProjectBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 12, gceProject_);
     }
-    if (!getKubeServerVersionBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, kubeServerVersion_);
+    if (!getKubeletVersionBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 13, kubeletVersion_);
     }
-    if (!getKubeSaltbaseVersionBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 14, kubeSaltbaseVersion_);
+    if (!getSaltbaseVersionBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 14, saltbaseVersion_);
     }
     if (!getKubeStarterVersionBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 15, kubeStarterVersion_);
@@ -1295,11 +1295,11 @@ public  final class Cluster extends
     if (!getGceProjectBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, gceProject_);
     }
-    if (!getKubeServerVersionBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, kubeServerVersion_);
+    if (!getKubeletVersionBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, kubeletVersion_);
     }
-    if (!getKubeSaltbaseVersionBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, kubeSaltbaseVersion_);
+    if (!getSaltbaseVersionBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, saltbaseVersion_);
     }
     if (!getKubeStarterVersionBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, kubeStarterVersion_);
@@ -1382,10 +1382,10 @@ public  final class Cluster extends
         .equals(other.getStatusCause());
     result = result && getGceProject()
         .equals(other.getGceProject());
-    result = result && getKubeServerVersion()
-        .equals(other.getKubeServerVersion());
-    result = result && getKubeSaltbaseVersion()
-        .equals(other.getKubeSaltbaseVersion());
+    result = result && getKubeletVersion()
+        .equals(other.getKubeletVersion());
+    result = result && getSaltbaseVersion()
+        .equals(other.getSaltbaseVersion());
     result = result && getKubeStarterVersion()
         .equals(other.getKubeStarterVersion());
     result = result && (getNodeCount()
@@ -1453,10 +1453,10 @@ public  final class Cluster extends
     hash = (53 * hash) + getStatusCause().hashCode();
     hash = (37 * hash) + GCE_PROJECT_FIELD_NUMBER;
     hash = (53 * hash) + getGceProject().hashCode();
-    hash = (37 * hash) + KUBE_SERVER_VERSION_FIELD_NUMBER;
-    hash = (53 * hash) + getKubeServerVersion().hashCode();
-    hash = (37 * hash) + KUBE_SALTBASE_VERSION_FIELD_NUMBER;
-    hash = (53 * hash) + getKubeSaltbaseVersion().hashCode();
+    hash = (37 * hash) + KUBELET_VERSION_FIELD_NUMBER;
+    hash = (53 * hash) + getKubeletVersion().hashCode();
+    hash = (37 * hash) + SALTBASE_VERSION_FIELD_NUMBER;
+    hash = (53 * hash) + getSaltbaseVersion().hashCode();
     hash = (37 * hash) + KUBE_STARTER_VERSION_FIELD_NUMBER;
     hash = (53 * hash) + getKubeStarterVersion().hashCode();
     hash = (37 * hash) + NODE_COUNT_FIELD_NUMBER;
@@ -1648,9 +1648,9 @@ public  final class Cluster extends
 
       gceProject_ = "";
 
-      kubeServerVersion_ = "";
+      kubeletVersion_ = "";
 
-      kubeSaltbaseVersion_ = "";
+      saltbaseVersion_ = "";
 
       kubeStarterVersion_ = "";
 
@@ -1719,8 +1719,8 @@ public  final class Cluster extends
       result.status_ = status_;
       result.statusCause_ = statusCause_;
       result.gceProject_ = gceProject_;
-      result.kubeServerVersion_ = kubeServerVersion_;
-      result.kubeSaltbaseVersion_ = kubeSaltbaseVersion_;
+      result.kubeletVersion_ = kubeletVersion_;
+      result.saltbaseVersion_ = saltbaseVersion_;
       result.kubeStarterVersion_ = kubeStarterVersion_;
       result.nodeCount_ = nodeCount_;
       result.apiServerUrl_ = apiServerUrl_;
@@ -1824,12 +1824,12 @@ public  final class Cluster extends
         gceProject_ = other.gceProject_;
         onChanged();
       }
-      if (!other.getKubeServerVersion().isEmpty()) {
-        kubeServerVersion_ = other.kubeServerVersion_;
+      if (!other.getKubeletVersion().isEmpty()) {
+        kubeletVersion_ = other.kubeletVersion_;
         onChanged();
       }
-      if (!other.getKubeSaltbaseVersion().isEmpty()) {
-        kubeSaltbaseVersion_ = other.kubeSaltbaseVersion_;
+      if (!other.getSaltbaseVersion().isEmpty()) {
+        saltbaseVersion_ = other.saltbaseVersion_;
         onChanged();
       }
       if (!other.getKubeStarterVersion().isEmpty()) {
@@ -2701,140 +2701,140 @@ public  final class Cluster extends
       return this;
     }
 
-    private java.lang.Object kubeServerVersion_ = "";
+    private java.lang.Object kubeletVersion_ = "";
     /**
-     * <code>optional string kube_server_version = 13;</code>
+     * <code>optional string kubelet_version = 13;</code>
      */
-    public java.lang.String getKubeServerVersion() {
-      java.lang.Object ref = kubeServerVersion_;
+    public java.lang.String getKubeletVersion() {
+      java.lang.Object ref = kubeletVersion_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        kubeServerVersion_ = s;
+        kubeletVersion_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string kube_server_version = 13;</code>
+     * <code>optional string kubelet_version = 13;</code>
      */
     public com.google.protobuf.ByteString
-        getKubeServerVersionBytes() {
-      java.lang.Object ref = kubeServerVersion_;
+        getKubeletVersionBytes() {
+      java.lang.Object ref = kubeletVersion_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        kubeServerVersion_ = b;
+        kubeletVersion_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string kube_server_version = 13;</code>
+     * <code>optional string kubelet_version = 13;</code>
      */
-    public Builder setKubeServerVersion(
+    public Builder setKubeletVersion(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      kubeServerVersion_ = value;
+      kubeletVersion_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string kube_server_version = 13;</code>
+     * <code>optional string kubelet_version = 13;</code>
      */
-    public Builder clearKubeServerVersion() {
+    public Builder clearKubeletVersion() {
       
-      kubeServerVersion_ = getDefaultInstance().getKubeServerVersion();
+      kubeletVersion_ = getDefaultInstance().getKubeletVersion();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string kube_server_version = 13;</code>
+     * <code>optional string kubelet_version = 13;</code>
      */
-    public Builder setKubeServerVersionBytes(
+    public Builder setKubeletVersionBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      kubeServerVersion_ = value;
+      kubeletVersion_ = value;
       onChanged();
       return this;
     }
 
-    private java.lang.Object kubeSaltbaseVersion_ = "";
+    private java.lang.Object saltbaseVersion_ = "";
     /**
-     * <code>optional string kube_saltbase_version = 14;</code>
+     * <code>optional string saltbase_version = 14;</code>
      */
-    public java.lang.String getKubeSaltbaseVersion() {
-      java.lang.Object ref = kubeSaltbaseVersion_;
+    public java.lang.String getSaltbaseVersion() {
+      java.lang.Object ref = saltbaseVersion_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        kubeSaltbaseVersion_ = s;
+        saltbaseVersion_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string kube_saltbase_version = 14;</code>
+     * <code>optional string saltbase_version = 14;</code>
      */
     public com.google.protobuf.ByteString
-        getKubeSaltbaseVersionBytes() {
-      java.lang.Object ref = kubeSaltbaseVersion_;
+        getSaltbaseVersionBytes() {
+      java.lang.Object ref = saltbaseVersion_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        kubeSaltbaseVersion_ = b;
+        saltbaseVersion_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string kube_saltbase_version = 14;</code>
+     * <code>optional string saltbase_version = 14;</code>
      */
-    public Builder setKubeSaltbaseVersion(
+    public Builder setSaltbaseVersion(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      kubeSaltbaseVersion_ = value;
+      saltbaseVersion_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string kube_saltbase_version = 14;</code>
+     * <code>optional string saltbase_version = 14;</code>
      */
-    public Builder clearKubeSaltbaseVersion() {
+    public Builder clearSaltbaseVersion() {
       
-      kubeSaltbaseVersion_ = getDefaultInstance().getKubeSaltbaseVersion();
+      saltbaseVersion_ = getDefaultInstance().getSaltbaseVersion();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string kube_saltbase_version = 14;</code>
+     * <code>optional string saltbase_version = 14;</code>
      */
-    public Builder setKubeSaltbaseVersionBytes(
+    public Builder setSaltbaseVersionBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      kubeSaltbaseVersion_ = value;
+      saltbaseVersion_ = value;
       onChanged();
       return this;
     }

@@ -454,4 +454,209 @@ public interface PersistentVolumeSourceOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 16;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSourceOrBuilder getAzureDiskOrBuilder();
+
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  boolean hasEmptyDir();
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir();
+  /**
+   * <pre>
+   * EmptyDir represents a temporary directory that shares a pod's lifetime.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 17;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder();
+
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  boolean hasGitRepo();
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo();
+  /**
+   * <pre>
+   * GitRepo represents a git repository at a particular revision.
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 18;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder();
+
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  boolean hasSecret();
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret();
+  /**
+   * <pre>
+   * Secret represents a secret that should populate this volume.
+   * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 19;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder();
+
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  boolean hasPersistentVolumeClaim();
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim();
+  /**
+   * <pre>
+   * PersistentVolumeClaimVolumeSource represents a reference to a
+   * PersistentVolumeClaim in the same namespace.
+   * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 20;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder();
+
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  boolean hasDownwardAPI();
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI();
+  /**
+   * <pre>
+   * DownwardAPI represents downward API about the pod that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 21;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder();
+
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  boolean hasConfigMap();
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap();
+  /**
+   * <pre>
+   * ConfigMap represents a configMap that should populate this volume
+   * +optional
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 22;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder();
+
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  boolean hasPhotonPersistentDisk();
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk();
+  /**
+   * <pre>
+   * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
+   * </pre>
+   *
+   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder();
 }

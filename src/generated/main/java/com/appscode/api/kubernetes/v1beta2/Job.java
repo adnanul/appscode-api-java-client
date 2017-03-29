@@ -64,13 +64,13 @@ public  final class Job extends
           }
           case 26: {
             com.appscode.api.kubernetes.v1beta2.JobSpec.Builder subBuilder = null;
-            if (space_ != null) {
-              subBuilder = space_.toBuilder();
+            if (spec_ != null) {
+              subBuilder = spec_.toBuilder();
             }
-            space_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.JobSpec.parser(), extensionRegistry);
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.JobSpec.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(space_);
-              space_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(spec_);
+              spec_ = subBuilder.buildPartial();
             }
 
             break;
@@ -1221,25 +1221,25 @@ public  final class Job extends
     }
   }
 
-  public static final int SPACE_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta2.JobSpec space_;
+  public static final int SPEC_FIELD_NUMBER = 3;
+  private com.appscode.api.kubernetes.v1beta2.JobSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  public boolean hasSpace() {
-    return space_ != null;
+  public boolean hasSpec() {
+    return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.JobSpec getSpace() {
-    return space_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : space_;
+  public com.appscode.api.kubernetes.v1beta2.JobSpec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpaceOrBuilder() {
-    return getSpace();
+  public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpecOrBuilder() {
+    return getSpec();
   }
 
   public static final int STATUS_FIELD_NUMBER = 4;
@@ -1281,8 +1281,8 @@ public  final class Job extends
     if (!getAppBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, app_);
     }
-    if (space_ != null) {
-      output.writeMessage(3, getSpace());
+    if (spec_ != null) {
+      output.writeMessage(3, getSpec());
     }
     if (status_ != null) {
       output.writeMessage(4, getStatus());
@@ -1301,9 +1301,9 @@ public  final class Job extends
     if (!getAppBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, app_);
     }
-    if (space_ != null) {
+    if (spec_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getSpace());
+        .computeMessageSize(3, getSpec());
     }
     if (status_ != null) {
       size += com.google.protobuf.CodedOutputStream
@@ -1332,10 +1332,10 @@ public  final class Job extends
     }
     result = result && getApp()
         .equals(other.getApp());
-    result = result && (hasSpace() == other.hasSpace());
-    if (hasSpace()) {
-      result = result && getSpace()
-          .equals(other.getSpace());
+    result = result && (hasSpec() == other.hasSpec());
+    if (hasSpec()) {
+      result = result && getSpec()
+          .equals(other.getSpec());
     }
     result = result && (hasStatus() == other.hasStatus());
     if (hasStatus()) {
@@ -1358,9 +1358,9 @@ public  final class Job extends
     }
     hash = (37 * hash) + APP_FIELD_NUMBER;
     hash = (53 * hash) + getApp().hashCode();
-    if (hasSpace()) {
-      hash = (37 * hash) + SPACE_FIELD_NUMBER;
-      hash = (53 * hash) + getSpace().hashCode();
+    if (hasSpec()) {
+      hash = (37 * hash) + SPEC_FIELD_NUMBER;
+      hash = (53 * hash) + getSpec().hashCode();
     }
     if (hasStatus()) {
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
@@ -1492,11 +1492,11 @@ public  final class Job extends
       }
       app_ = "";
 
-      if (spaceBuilder_ == null) {
-        space_ = null;
+      if (specBuilder_ == null) {
+        spec_ = null;
       } else {
-        space_ = null;
-        spaceBuilder_ = null;
+        spec_ = null;
+        specBuilder_ = null;
       }
       if (statusBuilder_ == null) {
         status_ = null;
@@ -1532,10 +1532,10 @@ public  final class Job extends
         result.meta_ = metaBuilder_.build();
       }
       result.app_ = app_;
-      if (spaceBuilder_ == null) {
-        result.space_ = space_;
+      if (specBuilder_ == null) {
+        result.spec_ = spec_;
       } else {
-        result.space_ = spaceBuilder_.build();
+        result.spec_ = specBuilder_.build();
       }
       if (statusBuilder_ == null) {
         result.status_ = status_;
@@ -1590,8 +1590,8 @@ public  final class Job extends
         app_ = other.app_;
         onChanged();
       }
-      if (other.hasSpace()) {
-        mergeSpace(other.getSpace());
+      if (other.hasSpec()) {
+        mergeSpec(other.getSpec());
       }
       if (other.hasStatus()) {
         mergeStatus(other.getStatus());
@@ -1808,121 +1808,121 @@ public  final class Job extends
       return this;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.JobSpec space_ = null;
+    private com.appscode.api.kubernetes.v1beta2.JobSpec spec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> spaceBuilder_;
+        com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public boolean hasSpace() {
-      return spaceBuilder_ != null || space_ != null;
+    public boolean hasSpec() {
+      return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.JobSpec getSpace() {
-      if (spaceBuilder_ == null) {
-        return space_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : space_;
+    public com.appscode.api.kubernetes.v1beta2.JobSpec getSpec() {
+      if (specBuilder_ == null) {
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : spec_;
       } else {
-        return spaceBuilder_.getMessage();
+        return specBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public Builder setSpace(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
-      if (spaceBuilder_ == null) {
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
+      if (specBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        space_ = value;
+        spec_ = value;
         onChanged();
       } else {
-        spaceBuilder_.setMessage(value);
+        specBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public Builder setSpace(
+    public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.JobSpec.Builder builderForValue) {
-      if (spaceBuilder_ == null) {
-        space_ = builderForValue.build();
+      if (specBuilder_ == null) {
+        spec_ = builderForValue.build();
         onChanged();
       } else {
-        spaceBuilder_.setMessage(builderForValue.build());
+        specBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public Builder mergeSpace(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
-      if (spaceBuilder_ == null) {
-        if (space_ != null) {
-          space_ =
-            com.appscode.api.kubernetes.v1beta2.JobSpec.newBuilder(space_).mergeFrom(value).buildPartial();
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
+      if (specBuilder_ == null) {
+        if (spec_ != null) {
+          spec_ =
+            com.appscode.api.kubernetes.v1beta2.JobSpec.newBuilder(spec_).mergeFrom(value).buildPartial();
         } else {
-          space_ = value;
+          spec_ = value;
         }
         onChanged();
       } else {
-        spaceBuilder_.mergeFrom(value);
+        specBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public Builder clearSpace() {
-      if (spaceBuilder_ == null) {
-        space_ = null;
+    public Builder clearSpec() {
+      if (specBuilder_ == null) {
+        spec_ = null;
         onChanged();
       } else {
-        space_ = null;
-        spaceBuilder_ = null;
+        spec_ = null;
+        specBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.JobSpec.Builder getSpaceBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.JobSpec.Builder getSpecBuilder() {
       
       onChanged();
-      return getSpaceFieldBuilder().getBuilder();
+      return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpaceOrBuilder() {
-      if (spaceBuilder_ != null) {
-        return spaceBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpecOrBuilder() {
+      if (specBuilder_ != null) {
+        return specBuilder_.getMessageOrBuilder();
       } else {
-        return space_ == null ?
-            com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : space_;
+        return spec_ == null ?
+            com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : spec_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec space = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> 
-        getSpaceFieldBuilder() {
-      if (spaceBuilder_ == null) {
-        spaceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getSpecFieldBuilder() {
+      if (specBuilder_ == null) {
+        specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder>(
-                getSpace(),
+                getSpec(),
                 getParentForChildren(),
                 isClean());
-        space_ = null;
+        spec_ = null;
       }
-      return spaceBuilder_;
+      return specBuilder_;
     }
 
     private com.appscode.api.kubernetes.v1beta2.Job.Status status_ = null;

@@ -21,17 +21,17 @@ public interface PersistentVolumeClaimOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimSpec getSpec();
+  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimSpecOrBuilder getSpecOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder getSpecOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim.PersistentVolumeClaimStatus status = 3;</code>
