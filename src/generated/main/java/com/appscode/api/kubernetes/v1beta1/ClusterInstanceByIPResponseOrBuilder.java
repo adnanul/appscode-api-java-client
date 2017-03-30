@@ -3,8 +3,8 @@
 
 package com.appscode.api.kubernetes.v1beta1;
 
-public interface ClusterInstanceResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta1.ClusterInstanceResponse)
+public interface ClusterInstanceByIPResponseOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**

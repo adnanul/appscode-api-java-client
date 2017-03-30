@@ -4,17 +4,17 @@
 package com.appscode.api.kubernetes.v1beta1;
 
 /**
- * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterInstanceResponse}
+ * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse}
  */
-public  final class ClusterInstanceResponse extends
+public  final class ClusterInstanceByIPResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta1.ClusterInstanceResponse)
-    ClusterInstanceResponseOrBuilder {
-  // Use ClusterInstanceResponse.newBuilder() to construct.
-  private ClusterInstanceResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse)
+    ClusterInstanceByIPResponseOrBuilder {
+  // Use ClusterInstanceByIPResponse.newBuilder() to construct.
+  private ClusterInstanceByIPResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private ClusterInstanceResponse() {
+  private ClusterInstanceByIPResponse() {
   }
 
   @java.lang.Override
@@ -22,7 +22,7 @@ public  final class ClusterInstanceResponse extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private ClusterInstanceResponse(
+  private ClusterInstanceByIPResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -81,14 +81,14 @@ public  final class ClusterInstanceResponse extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceResponse_descriptor;
+    return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceByIPResponse_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceResponse_fieldAccessorTable
+    return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceByIPResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.Builder.class);
+            com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.Builder.class);
   }
 
   public static final int STATUS_FIELD_NUMBER = 1;
@@ -176,10 +176,10 @@ public  final class ClusterInstanceResponse extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse)) {
+    if (!(obj instanceof com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse)) {
       return super.equals(obj);
     }
-    com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse) obj;
+    com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse) obj;
 
     boolean result = true;
     result = result && (hasStatus() == other.hasStatus());
@@ -215,58 +215,58 @@ public  final class ClusterInstanceResponse extends
     return hash;
   }
 
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(byte[] data)
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseDelimitedFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseDelimitedFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parseFrom(
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -278,7 +278,7 @@ public  final class ClusterInstanceResponse extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse prototype) {
+  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -293,25 +293,25 @@ public  final class ClusterInstanceResponse extends
     return builder;
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterInstanceResponse}
+   * Protobuf type {@code appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta1.ClusterInstanceResponse)
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponseOrBuilder {
+      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse)
+      com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceResponse_descriptor;
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceByIPResponse_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceResponse_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceByIPResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.Builder.class);
+              com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.Builder.class);
     }
 
-    // Construct using com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.newBuilder()
+    // Construct using com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -345,23 +345,23 @@ public  final class ClusterInstanceResponse extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceResponse_descriptor;
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.internal_static_appscode_kubernetes_v1beta1_ClusterInstanceByIPResponse_descriptor;
     }
 
-    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse getDefaultInstanceForType() {
-      return com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.getDefaultInstance();
+    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse getDefaultInstanceForType() {
+      return com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.getDefaultInstance();
     }
 
-    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse build() {
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse result = buildPartial();
+    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse build() {
+      com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse buildPartial() {
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse(this);
+    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse buildPartial() {
+      com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse(this);
       if (statusBuilder_ == null) {
         result.status_ = status_;
       } else {
@@ -403,16 +403,16 @@ public  final class ClusterInstanceResponse extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse) {
-        return mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse)other);
+      if (other instanceof com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse) {
+        return mergeFrom((com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse other) {
-      if (other == com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse other) {
+      if (other == com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.getDefaultInstance()) return this;
       if (other.hasStatus()) {
         mergeStatus(other.getStatus());
       }
@@ -431,11 +431,11 @@ public  final class ClusterInstanceResponse extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse parsedMessage = null;
+      com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse) e.getUnfinishedMessage();
+        parsedMessage = (com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -689,39 +689,39 @@ public  final class ClusterInstanceResponse extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta1.ClusterInstanceResponse)
+    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta1.ClusterInstanceResponse)
-  private static final com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta1.ClusterInstanceByIPResponse)
+  private static final com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse();
+    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse();
   }
 
-  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse getDefaultInstance() {
+  public static com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<ClusterInstanceResponse>
-      PARSER = new com.google.protobuf.AbstractParser<ClusterInstanceResponse>() {
-    public ClusterInstanceResponse parsePartialFrom(
+  private static final com.google.protobuf.Parser<ClusterInstanceByIPResponse>
+      PARSER = new com.google.protobuf.AbstractParser<ClusterInstanceByIPResponse>() {
+    public ClusterInstanceByIPResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ClusterInstanceResponse(input, extensionRegistry);
+        return new ClusterInstanceByIPResponse(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<ClusterInstanceResponse> parser() {
+  public static com.google.protobuf.Parser<ClusterInstanceByIPResponse> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<ClusterInstanceResponse> getParserForType() {
+  public com.google.protobuf.Parser<ClusterInstanceByIPResponse> getParserForType() {
     return PARSER;
   }
 
-  public com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse getDefaultInstanceForType() {
+  public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

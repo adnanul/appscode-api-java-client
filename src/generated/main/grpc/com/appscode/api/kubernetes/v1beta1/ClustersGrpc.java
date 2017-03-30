@@ -91,15 +91,6 @@ public class ClustersGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterClientConfigRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest,
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse> METHOD_INSTANCES =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "appscode.kubernetes.v1beta1.Clusters", "Instances"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse.getDefaultInstance()));
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest,
       com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse> METHOD_STARTUP_CONFIG =
       io.grpc.MethodDescriptor.create(
@@ -110,13 +101,13 @@ public class ClustersGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest,
-      com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse> METHOD_INSTANCE_BY_IP =
+      com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse> METHOD_INSTANCE_BY_IP =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "appscode.kubernetes.v1beta1.Clusters", "InstanceByIP"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.getDefaultInstance()));
 
   /**
    * Creates a new async stub that supports all call types for the service
@@ -196,13 +187,6 @@ public class ClustersGrpc {
 
     /**
      */
-    public void instances(com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(METHOD_INSTANCES, responseObserver);
-    }
-
-    /**
-     */
     public void startupConfig(com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_STARTUP_CONFIG, responseObserver);
@@ -211,7 +195,7 @@ public class ClustersGrpc {
     /**
      */
     public void instanceByIP(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_INSTANCE_BY_IP, responseObserver);
     }
 
@@ -267,13 +251,6 @@ public class ClustersGrpc {
                 com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse>(
                   this, METHODID_CLIENT_CONFIG)))
           .addMethod(
-            METHOD_INSTANCES,
-            asyncUnaryCall(
-              new MethodHandlers<
-                com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest,
-                com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse>(
-                  this, METHODID_INSTANCES)))
-          .addMethod(
             METHOD_STARTUP_CONFIG,
             asyncUnaryCall(
               new MethodHandlers<
@@ -285,7 +262,7 @@ public class ClustersGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest,
-                com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse>(
+                com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse>(
                   this, METHODID_INSTANCE_BY_IP)))
           .build();
     }
@@ -367,14 +344,6 @@ public class ClustersGrpc {
 
     /**
      */
-    public void instances(com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse> responseObserver) {
-      asyncUnaryCall(
-          getChannel().newCall(METHOD_INSTANCES, getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
     public void startupConfig(com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse> responseObserver) {
       asyncUnaryCall(
@@ -384,7 +353,7 @@ public class ClustersGrpc {
     /**
      */
     public void instanceByIP(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_INSTANCE_BY_IP, getCallOptions()), request, responseObserver);
     }
@@ -459,13 +428,6 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse instances(com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest request) {
-      return blockingUnaryCall(
-          getChannel(), METHOD_INSTANCES, getCallOptions(), request);
-    }
-
-    /**
-     */
     public com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse startupConfig(com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_STARTUP_CONFIG, getCallOptions(), request);
@@ -473,7 +435,7 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse instanceByIP(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest request) {
+    public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse instanceByIP(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_INSTANCE_BY_IP, getCallOptions(), request);
     }
@@ -555,14 +517,6 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse> instances(
-        com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest request) {
-      return futureUnaryCall(
-          getChannel().newCall(METHOD_INSTANCES, getCallOptions()), request);
-    }
-
-    /**
-     */
     public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse> startupConfig(
         com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest request) {
       return futureUnaryCall(
@@ -571,7 +525,7 @@ public class ClustersGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse> instanceByIP(
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse> instanceByIP(
         com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_INSTANCE_BY_IP, getCallOptions()), request);
@@ -585,9 +539,8 @@ public class ClustersGrpc {
   private static final int METHODID_RECONFIGURE = 4;
   private static final int METHODID_DELETE = 5;
   private static final int METHODID_CLIENT_CONFIG = 6;
-  private static final int METHODID_INSTANCES = 7;
-  private static final int METHODID_STARTUP_CONFIG = 8;
-  private static final int METHODID_INSTANCE_BY_IP = 9;
+  private static final int METHODID_STARTUP_CONFIG = 7;
+  private static final int METHODID_INSTANCE_BY_IP = 8;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -634,17 +587,13 @@ public class ClustersGrpc {
           serviceImpl.clientConfig((com.appscode.api.kubernetes.v1beta1.ClusterClientConfigRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse>) responseObserver);
           break;
-        case METHODID_INSTANCES:
-          serviceImpl.instances((com.appscode.api.kubernetes.v1beta1.ClusterInstanceListRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceListResponse>) responseObserver);
-          break;
         case METHODID_STARTUP_CONFIG:
           serviceImpl.startupConfig((com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse>) responseObserver);
           break;
         case METHODID_INSTANCE_BY_IP:
           serviceImpl.instanceByIP((com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -671,7 +620,6 @@ public class ClustersGrpc {
         METHOD_RECONFIGURE,
         METHOD_DELETE,
         METHOD_CLIENT_CONFIG,
-        METHOD_INSTANCES,
         METHOD_STARTUP_CONFIG,
         METHOD_INSTANCE_BY_IP);
   }
