@@ -16,4 +16,9 @@ public interface DescribeRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getPhidBytes();
+
+  /**
+   * <code>optional int64 timestamp = 2;</code>
+   */
+  long getTimestamp();
 }

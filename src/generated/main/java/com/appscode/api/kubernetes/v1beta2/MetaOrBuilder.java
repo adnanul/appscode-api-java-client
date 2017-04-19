@@ -124,4 +124,14 @@ public interface MetaOrBuilder extends
 
   java.lang.String getAnnotationsOrThrow(
       java.lang.String key);
+
+  /**
+   * <code>optional string uid = 9;</code>
+   */
+  java.lang.String getUid();
+  /**
+   * <code>optional string uid = 9;</code>
+   */
+  com.google.protobuf.ByteString
+      getUidBytes();
 }

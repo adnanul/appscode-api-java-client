@@ -69,11 +69,11 @@ public  final class Postgres extends
             break;
           }
           case 26: {
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder subBuilder = null;
             if (status_ != null) {
               subBuilder = status_.toBuilder();
             }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.DatabaseStatus.parser(), extensionRegistry);
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Postgres.Status.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(status_);
               status_ = subBuilder.buildPartial();
@@ -194,17 +194,17 @@ public  final class Postgres extends
         java.lang.String key);
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    boolean hasInitialScript();
+    boolean hasInit();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getInitialScript();
+    com.appscode.api.kubernetes.v1beta2.InitSpec getInit();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder getInitialScriptOrBuilder();
+    com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder();
 
     /**
      * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
@@ -324,14 +324,14 @@ public  final class Postgres extends
               break;
             }
             case 58: {
-              com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder subBuilder = null;
-              if (initialScript_ != null) {
-                subBuilder = initialScript_.toBuilder();
+              com.appscode.api.kubernetes.v1beta2.InitSpec.Builder subBuilder = null;
+              if (init_ != null) {
+                subBuilder = init_.toBuilder();
               }
-              initialScript_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.parser(), extensionRegistry);
+              init_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.InitSpec.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(initialScript_);
-                initialScript_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(init_);
+                init_ = subBuilder.buildPartial();
               }
 
               break;
@@ -584,25 +584,25 @@ public  final class Postgres extends
       return map.get(key);
     }
 
-    public static final int INITIAL_SCRIPT_FIELD_NUMBER = 7;
-    private com.appscode.api.kubernetes.v1beta2.InitialScriptSpec initialScript_;
+    public static final int INIT_FIELD_NUMBER = 7;
+    private com.appscode.api.kubernetes.v1beta2.InitSpec init_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    public boolean hasInitialScript() {
-      return initialScript_ != null;
+    public boolean hasInit() {
+      return init_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getInitialScript() {
-      return initialScript_ == null ? com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.getDefaultInstance() : initialScript_;
+    public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
+      return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder getInitialScriptOrBuilder() {
-      return getInitialScript();
+    public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
+      return getInit();
     }
 
     public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 8;
@@ -668,8 +668,8 @@ public  final class Postgres extends
           internalGetNodeSelector(),
           NodeSelectorDefaultEntryHolder.defaultEntry,
           6);
-      if (initialScript_ != null) {
-        output.writeMessage(7, getInitialScript());
+      if (init_ != null) {
+        output.writeMessage(7, getInit());
       }
       if (backupSchedule_ != null) {
         output.writeMessage(8, getBackupSchedule());
@@ -712,9 +712,9 @@ public  final class Postgres extends
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(6, nodeSelector__);
       }
-      if (initialScript_ != null) {
+      if (init_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getInitialScript());
+          .computeMessageSize(7, getInit());
       }
       if (backupSchedule_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -758,10 +758,10 @@ public  final class Postgres extends
       }
       result = result && internalGetNodeSelector().equals(
           other.internalGetNodeSelector());
-      result = result && (hasInitialScript() == other.hasInitialScript());
-      if (hasInitialScript()) {
-        result = result && getInitialScript()
-            .equals(other.getInitialScript());
+      result = result && (hasInit() == other.hasInit());
+      if (hasInit()) {
+        result = result && getInit()
+            .equals(other.getInit());
       }
       result = result && (hasBackupSchedule() == other.hasBackupSchedule());
       if (hasBackupSchedule()) {
@@ -798,9 +798,9 @@ public  final class Postgres extends
         hash = (37 * hash) + NODE_SELECTOR_FIELD_NUMBER;
         hash = (53 * hash) + internalGetNodeSelector().hashCode();
       }
-      if (hasInitialScript()) {
-        hash = (37 * hash) + INITIAL_SCRIPT_FIELD_NUMBER;
-        hash = (53 * hash) + getInitialScript().hashCode();
+      if (hasInit()) {
+        hash = (37 * hash) + INIT_FIELD_NUMBER;
+        hash = (53 * hash) + getInit().hashCode();
       }
       if (hasBackupSchedule()) {
         hash = (37 * hash) + BACKUP_SCHEDULE_FIELD_NUMBER;
@@ -968,11 +968,11 @@ public  final class Postgres extends
           databaseSecretBuilder_ = null;
         }
         internalGetMutableNodeSelector().clear();
-        if (initialScriptBuilder_ == null) {
-          initialScript_ = null;
+        if (initBuilder_ == null) {
+          init_ = null;
         } else {
-          initialScript_ = null;
-          initialScriptBuilder_ = null;
+          init_ = null;
+          initBuilder_ = null;
         }
         if (backupScheduleBuilder_ == null) {
           backupSchedule_ = null;
@@ -1021,10 +1021,10 @@ public  final class Postgres extends
         }
         result.nodeSelector_ = internalGetNodeSelector();
         result.nodeSelector_.makeImmutable();
-        if (initialScriptBuilder_ == null) {
-          result.initialScript_ = initialScript_;
+        if (initBuilder_ == null) {
+          result.init_ = init_;
         } else {
-          result.initialScript_ = initialScriptBuilder_.build();
+          result.init_ = initBuilder_.build();
         }
         if (backupScheduleBuilder_ == null) {
           result.backupSchedule_ = backupSchedule_;
@@ -1093,8 +1093,8 @@ public  final class Postgres extends
         }
         internalGetMutableNodeSelector().mergeFrom(
             other.internalGetNodeSelector());
-        if (other.hasInitialScript()) {
-          mergeInitialScript(other.getInitialScript());
+        if (other.hasInit()) {
+          mergeInit(other.getInit());
         }
         if (other.hasBackupSchedule()) {
           mergeBackupSchedule(other.getBackupSchedule());
@@ -1646,121 +1646,121 @@ public  final class Postgres extends
         return this;
       }
 
-      private com.appscode.api.kubernetes.v1beta2.InitialScriptSpec initialScript_ = null;
+      private com.appscode.api.kubernetes.v1beta2.InitSpec init_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.InitialScriptSpec, com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder> initialScriptBuilder_;
+          com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> initBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public boolean hasInitialScript() {
-        return initialScriptBuilder_ != null || initialScript_ != null;
+      public boolean hasInit() {
+        return initBuilder_ != null || init_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getInitialScript() {
-        if (initialScriptBuilder_ == null) {
-          return initialScript_ == null ? com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.getDefaultInstance() : initialScript_;
+      public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
+        if (initBuilder_ == null) {
+          return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
         } else {
-          return initialScriptBuilder_.getMessage();
+          return initBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public Builder setInitialScript(com.appscode.api.kubernetes.v1beta2.InitialScriptSpec value) {
-        if (initialScriptBuilder_ == null) {
+      public Builder setInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
+        if (initBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          initialScript_ = value;
+          init_ = value;
           onChanged();
         } else {
-          initialScriptBuilder_.setMessage(value);
+          initBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public Builder setInitialScript(
-          com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder builderForValue) {
-        if (initialScriptBuilder_ == null) {
-          initialScript_ = builderForValue.build();
+      public Builder setInit(
+          com.appscode.api.kubernetes.v1beta2.InitSpec.Builder builderForValue) {
+        if (initBuilder_ == null) {
+          init_ = builderForValue.build();
           onChanged();
         } else {
-          initialScriptBuilder_.setMessage(builderForValue.build());
+          initBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public Builder mergeInitialScript(com.appscode.api.kubernetes.v1beta2.InitialScriptSpec value) {
-        if (initialScriptBuilder_ == null) {
-          if (initialScript_ != null) {
-            initialScript_ =
-              com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.newBuilder(initialScript_).mergeFrom(value).buildPartial();
+      public Builder mergeInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
+        if (initBuilder_ == null) {
+          if (init_ != null) {
+            init_ =
+              com.appscode.api.kubernetes.v1beta2.InitSpec.newBuilder(init_).mergeFrom(value).buildPartial();
           } else {
-            initialScript_ = value;
+            init_ = value;
           }
           onChanged();
         } else {
-          initialScriptBuilder_.mergeFrom(value);
+          initBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public Builder clearInitialScript() {
-        if (initialScriptBuilder_ == null) {
-          initialScript_ = null;
+      public Builder clearInit() {
+        if (initBuilder_ == null) {
+          init_ = null;
           onChanged();
         } else {
-          initialScript_ = null;
-          initialScriptBuilder_ = null;
+          init_ = null;
+          initBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder getInitialScriptBuilder() {
+      public com.appscode.api.kubernetes.v1beta2.InitSpec.Builder getInitBuilder() {
         
         onChanged();
-        return getInitialScriptFieldBuilder().getBuilder();
+        return getInitFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder getInitialScriptOrBuilder() {
-        if (initialScriptBuilder_ != null) {
-          return initialScriptBuilder_.getMessageOrBuilder();
+      public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
+        if (initBuilder_ != null) {
+          return initBuilder_.getMessageOrBuilder();
         } else {
-          return initialScript_ == null ?
-              com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.getDefaultInstance() : initialScript_;
+          return init_ == null ?
+              com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.InitialScriptSpec initial_script = 7;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.InitialScriptSpec, com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder> 
-          getInitialScriptFieldBuilder() {
-        if (initialScriptBuilder_ == null) {
-          initialScriptBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.appscode.api.kubernetes.v1beta2.InitialScriptSpec, com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder>(
-                  getInitialScript(),
+          com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> 
+          getInitFieldBuilder() {
+        if (initBuilder_ == null) {
+          initBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder>(
+                  getInit(),
                   getParentForChildren(),
                   isClean());
-          initialScript_ = null;
+          init_ = null;
         }
-        return initialScriptBuilder_;
+        return initBuilder_;
       }
 
       private com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec backupSchedule_ = null;
@@ -1954,6 +1954,710 @@ public  final class Postgres extends
 
   }
 
+  public interface StatusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Postgres.Status)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int64 created = 1;</code>
+     */
+    long getCreated();
+
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    java.lang.String getDatabaseStatus();
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDatabaseStatusBytes();
+
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    java.lang.String getReason();
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getReasonBytes();
+  }
+  /**
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Postgres.Status}
+   */
+  public  static final class Status extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Postgres.Status)
+      StatusOrBuilder {
+    // Use Status.newBuilder() to construct.
+    private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Status() {
+      created_ = 0L;
+      databaseStatus_ = "";
+      reason_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private Status(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              created_ = input.readInt64();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              databaseStatus_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reason_ = s;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Postgres_Status_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Postgres_Status_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.kubernetes.v1beta2.Postgres.Status.class, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder.class);
+    }
+
+    public static final int CREATED_FIELD_NUMBER = 1;
+    private long created_;
+    /**
+     * <code>optional int64 created = 1;</code>
+     */
+    public long getCreated() {
+      return created_;
+    }
+
+    public static final int DATABASE_STATUS_FIELD_NUMBER = 2;
+    private volatile java.lang.Object databaseStatus_;
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    public java.lang.String getDatabaseStatus() {
+      java.lang.Object ref = databaseStatus_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        databaseStatus_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDatabaseStatusBytes() {
+      java.lang.Object ref = databaseStatus_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        databaseStatus_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int REASON_FIELD_NUMBER = 3;
+    private volatile java.lang.Object reason_;
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    public java.lang.String getReason() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reason_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getReasonBytes() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        reason_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (created_ != 0L) {
+        output.writeInt64(1, created_);
+      }
+      if (!getDatabaseStatusBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, databaseStatus_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, reason_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (created_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, created_);
+      }
+      if (!getDatabaseStatusBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, databaseStatus_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, reason_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Postgres.Status)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.kubernetes.v1beta2.Postgres.Status other = (com.appscode.api.kubernetes.v1beta2.Postgres.Status) obj;
+
+      boolean result = true;
+      result = result && (getCreated()
+          == other.getCreated());
+      result = result && getDatabaseStatus()
+          .equals(other.getDatabaseStatus());
+      result = result && getReason()
+          .equals(other.getReason());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + CREATED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getCreated());
+      hash = (37 * hash) + DATABASE_STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getDatabaseStatus().hashCode();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Postgres.Status prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Postgres.Status}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Postgres.Status)
+        com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Postgres_Status_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Postgres_Status_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Postgres.Status.class, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder.class);
+      }
+
+      // Construct using com.appscode.api.kubernetes.v1beta2.Postgres.Status.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        created_ = 0L;
+
+        databaseStatus_ = "";
+
+        reason_ = "";
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Postgres_Status_descriptor;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Postgres.Status getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance();
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Postgres.Status build() {
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Postgres.Status buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status result = new com.appscode.api.kubernetes.v1beta2.Postgres.Status(this);
+        result.created_ = created_;
+        result.databaseStatus_ = databaseStatus_;
+        result.reason_ = reason_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Postgres.Status) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Postgres.Status)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Postgres.Status other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance()) return this;
+        if (other.getCreated() != 0L) {
+          setCreated(other.getCreated());
+        }
+        if (!other.getDatabaseStatus().isEmpty()) {
+          databaseStatus_ = other.databaseStatus_;
+          onChanged();
+        }
+        if (!other.getReason().isEmpty()) {
+          reason_ = other.reason_;
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Postgres.Status) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long created_ ;
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public long getCreated() {
+        return created_;
+      }
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public Builder setCreated(long value) {
+        
+        created_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public Builder clearCreated() {
+        
+        created_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object databaseStatus_ = "";
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public java.lang.String getDatabaseStatus() {
+        java.lang.Object ref = databaseStatus_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          databaseStatus_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDatabaseStatusBytes() {
+        java.lang.Object ref = databaseStatus_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          databaseStatus_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder setDatabaseStatus(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        databaseStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder clearDatabaseStatus() {
+        
+        databaseStatus_ = getDefaultInstance().getDatabaseStatus();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder setDatabaseStatusBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        databaseStatus_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object reason_ = "";
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public java.lang.String getReason() {
+        java.lang.Object ref = reason_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          reason_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getReasonBytes() {
+        java.lang.Object ref = reason_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          reason_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder setReason(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder clearReason() {
+        
+        reason_ = getDefaultInstance().getReason();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder setReasonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Postgres.Status)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Postgres.Status)
+    private static final com.appscode.api.kubernetes.v1beta2.Postgres.Status DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Postgres.Status();
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Postgres.Status getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Status>
+        PARSER = new com.google.protobuf.AbstractParser<Status>() {
+      public Status parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Status(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Status> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Status> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.kubernetes.v1beta2.Postgres.Status getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
@@ -1997,23 +2701,23 @@ public  final class Postgres extends
   }
 
   public static final int STATUS_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta2.DatabaseStatus status_;
+  private com.appscode.api.kubernetes.v1beta2.Postgres.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseStatus getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+  public com.appscode.api.kubernetes.v1beta2.Postgres.Status getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder getStatusOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
   }
 
@@ -2593,29 +3297,29 @@ public  final class Postgres extends
       return specBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.DatabaseStatus status_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Postgres.Status status_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder> statusBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder, com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatus getStatus() {
+    public com.appscode.api.kubernetes.v1beta2.Postgres.Status getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.DatabaseStatus value) {
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Postgres.Status value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2629,10 +3333,10 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
         onChanged();
@@ -2643,13 +3347,13 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.DatabaseStatus value) {
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Postgres.Status value) {
       if (statusBuilder_ == null) {
         if (status_ != null) {
           status_ =
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.newBuilder(status_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Postgres.Status.newBuilder(status_).mergeFrom(value).buildPartial();
         } else {
           status_ = value;
         }
@@ -2661,7 +3365,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2675,33 +3379,33 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder getStatusBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder getStatusBuilder() {
       
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder getStatusOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+            com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Postgres.Status, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder, com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Postgres.Status, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder, com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());

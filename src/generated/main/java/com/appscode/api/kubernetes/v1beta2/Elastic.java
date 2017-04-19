@@ -69,11 +69,11 @@ public  final class Elastic extends
             break;
           }
           case 26: {
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder subBuilder = null;
             if (status_ != null) {
               subBuilder = status_.toBuilder();
             }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.DatabaseStatus.parser(), extensionRegistry);
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Elastic.Status.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(status_);
               status_ = subBuilder.buildPartial();
@@ -181,20 +181,33 @@ public  final class Elastic extends
         java.lang.String key);
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    boolean hasInit();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.InitSpec getInit();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder();
+
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     boolean hasBackupSchedule();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder();
 
     /**
-     * <code>optional bool do_not_delete = 7;</code>
+     * <code>optional bool do_not_delete = 8;</code>
      */
     boolean getDoNotDelete();
   }
@@ -285,6 +298,19 @@ public  final class Elastic extends
               break;
             }
             case 50: {
+              com.appscode.api.kubernetes.v1beta2.InitSpec.Builder subBuilder = null;
+              if (init_ != null) {
+                subBuilder = init_.toBuilder();
+              }
+              init_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.InitSpec.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(init_);
+                init_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 58: {
               com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder subBuilder = null;
               if (backupSchedule_ != null) {
                 subBuilder = backupSchedule_.toBuilder();
@@ -297,7 +323,7 @@ public  final class Elastic extends
 
               break;
             }
-            case 56: {
+            case 64: {
 
               doNotDelete_ = input.readBool();
               break;
@@ -511,31 +537,52 @@ public  final class Elastic extends
       return map.get(key);
     }
 
-    public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 6;
+    public static final int INIT_FIELD_NUMBER = 6;
+    private com.appscode.api.kubernetes.v1beta2.InitSpec init_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    public boolean hasInit() {
+      return init_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
+      return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
+      return getInit();
+    }
+
+    public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 7;
     private com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec backupSchedule_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public boolean hasBackupSchedule() {
       return backupSchedule_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
       return backupSchedule_ == null ? com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.getDefaultInstance() : backupSchedule_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
       return getBackupSchedule();
     }
 
-    public static final int DO_NOT_DELETE_FIELD_NUMBER = 7;
+    public static final int DO_NOT_DELETE_FIELD_NUMBER = 8;
     private boolean doNotDelete_;
     /**
-     * <code>optional bool do_not_delete = 7;</code>
+     * <code>optional bool do_not_delete = 8;</code>
      */
     public boolean getDoNotDelete() {
       return doNotDelete_;
@@ -571,11 +618,14 @@ public  final class Elastic extends
           internalGetNodeSelector(),
           NodeSelectorDefaultEntryHolder.defaultEntry,
           5);
+      if (init_ != null) {
+        output.writeMessage(6, getInit());
+      }
       if (backupSchedule_ != null) {
-        output.writeMessage(6, getBackupSchedule());
+        output.writeMessage(7, getBackupSchedule());
       }
       if (doNotDelete_ != false) {
-        output.writeBool(7, doNotDelete_);
+        output.writeBool(8, doNotDelete_);
       }
     }
 
@@ -608,13 +658,17 @@ public  final class Elastic extends
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(5, nodeSelector__);
       }
+      if (init_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, getInit());
+      }
       if (backupSchedule_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, getBackupSchedule());
+          .computeMessageSize(7, getBackupSchedule());
       }
       if (doNotDelete_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(7, doNotDelete_);
+          .computeBoolSize(8, doNotDelete_);
       }
       memoizedSize = size;
       return size;
@@ -645,6 +699,11 @@ public  final class Elastic extends
           .equals(other.getServiceAccountName());
       result = result && internalGetNodeSelector().equals(
           other.internalGetNodeSelector());
+      result = result && (hasInit() == other.hasInit());
+      if (hasInit()) {
+        result = result && getInit()
+            .equals(other.getInit());
+      }
       result = result && (hasBackupSchedule() == other.hasBackupSchedule());
       if (hasBackupSchedule()) {
         result = result && getBackupSchedule()
@@ -675,6 +734,10 @@ public  final class Elastic extends
       if (!internalGetNodeSelector().getMap().isEmpty()) {
         hash = (37 * hash) + NODE_SELECTOR_FIELD_NUMBER;
         hash = (53 * hash) + internalGetNodeSelector().hashCode();
+      }
+      if (hasInit()) {
+        hash = (37 * hash) + INIT_FIELD_NUMBER;
+        hash = (53 * hash) + getInit().hashCode();
       }
       if (hasBackupSchedule()) {
         hash = (37 * hash) + BACKUP_SCHEDULE_FIELD_NUMBER;
@@ -836,6 +899,12 @@ public  final class Elastic extends
         serviceAccountName_ = "";
 
         internalGetMutableNodeSelector().clear();
+        if (initBuilder_ == null) {
+          init_ = null;
+        } else {
+          init_ = null;
+          initBuilder_ = null;
+        }
         if (backupScheduleBuilder_ == null) {
           backupSchedule_ = null;
         } else {
@@ -878,6 +947,11 @@ public  final class Elastic extends
         result.serviceAccountName_ = serviceAccountName_;
         result.nodeSelector_ = internalGetNodeSelector();
         result.nodeSelector_.makeImmutable();
+        if (initBuilder_ == null) {
+          result.init_ = init_;
+        } else {
+          result.init_ = initBuilder_.build();
+        }
         if (backupScheduleBuilder_ == null) {
           result.backupSchedule_ = backupSchedule_;
         } else {
@@ -942,6 +1016,9 @@ public  final class Elastic extends
         }
         internalGetMutableNodeSelector().mergeFrom(
             other.internalGetNodeSelector());
+        if (other.hasInit()) {
+          mergeInit(other.getInit());
+        }
         if (other.hasBackupSchedule()) {
           mergeBackupSchedule(other.getBackupSchedule());
         }
@@ -1375,17 +1452,134 @@ public  final class Elastic extends
         return this;
       }
 
+      private com.appscode.api.kubernetes.v1beta2.InitSpec init_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> initBuilder_;
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public boolean hasInit() {
+        return initBuilder_ != null || init_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
+        if (initBuilder_ == null) {
+          return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
+        } else {
+          return initBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public Builder setInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
+        if (initBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          init_ = value;
+          onChanged();
+        } else {
+          initBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public Builder setInit(
+          com.appscode.api.kubernetes.v1beta2.InitSpec.Builder builderForValue) {
+        if (initBuilder_ == null) {
+          init_ = builderForValue.build();
+          onChanged();
+        } else {
+          initBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public Builder mergeInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
+        if (initBuilder_ == null) {
+          if (init_ != null) {
+            init_ =
+              com.appscode.api.kubernetes.v1beta2.InitSpec.newBuilder(init_).mergeFrom(value).buildPartial();
+          } else {
+            init_ = value;
+          }
+          onChanged();
+        } else {
+          initBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public Builder clearInit() {
+        if (initBuilder_ == null) {
+          init_ = null;
+          onChanged();
+        } else {
+          init_ = null;
+          initBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.InitSpec.Builder getInitBuilder() {
+        
+        onChanged();
+        return getInitFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
+        if (initBuilder_ != null) {
+          return initBuilder_.getMessageOrBuilder();
+        } else {
+          return init_ == null ?
+              com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> 
+          getInitFieldBuilder() {
+        if (initBuilder_ == null) {
+          initBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder>(
+                  getInit(),
+                  getParentForChildren(),
+                  isClean());
+          init_ = null;
+        }
+        return initBuilder_;
+      }
+
       private com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec backupSchedule_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> backupScheduleBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public boolean hasBackupSchedule() {
         return backupScheduleBuilder_ != null || backupSchedule_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
         if (backupScheduleBuilder_ == null) {
@@ -1395,7 +1589,7 @@ public  final class Elastic extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public Builder setBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
         if (backupScheduleBuilder_ == null) {
@@ -1411,7 +1605,7 @@ public  final class Elastic extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public Builder setBackupSchedule(
           com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder builderForValue) {
@@ -1425,7 +1619,7 @@ public  final class Elastic extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public Builder mergeBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
         if (backupScheduleBuilder_ == null) {
@@ -1443,7 +1637,7 @@ public  final class Elastic extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public Builder clearBackupSchedule() {
         if (backupScheduleBuilder_ == null) {
@@ -1457,7 +1651,7 @@ public  final class Elastic extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder getBackupScheduleBuilder() {
         
@@ -1465,7 +1659,7 @@ public  final class Elastic extends
         return getBackupScheduleFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
         if (backupScheduleBuilder_ != null) {
@@ -1476,7 +1670,7 @@ public  final class Elastic extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> 
@@ -1494,13 +1688,13 @@ public  final class Elastic extends
 
       private boolean doNotDelete_ ;
       /**
-       * <code>optional bool do_not_delete = 7;</code>
+       * <code>optional bool do_not_delete = 8;</code>
        */
       public boolean getDoNotDelete() {
         return doNotDelete_;
       }
       /**
-       * <code>optional bool do_not_delete = 7;</code>
+       * <code>optional bool do_not_delete = 8;</code>
        */
       public Builder setDoNotDelete(boolean value) {
         
@@ -1509,7 +1703,7 @@ public  final class Elastic extends
         return this;
       }
       /**
-       * <code>optional bool do_not_delete = 7;</code>
+       * <code>optional bool do_not_delete = 8;</code>
        */
       public Builder clearDoNotDelete() {
         
@@ -1566,6 +1760,710 @@ public  final class Elastic extends
 
   }
 
+  public interface StatusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Elastic.Status)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int64 created = 1;</code>
+     */
+    long getCreated();
+
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    java.lang.String getDatabaseStatus();
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getDatabaseStatusBytes();
+
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    java.lang.String getReason();
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getReasonBytes();
+  }
+  /**
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic.Status}
+   */
+  public  static final class Status extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Elastic.Status)
+      StatusOrBuilder {
+    // Use Status.newBuilder() to construct.
+    private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Status() {
+      created_ = 0L;
+      databaseStatus_ = "";
+      reason_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private Status(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              created_ = input.readInt64();
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              databaseStatus_ = s;
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reason_ = s;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.kubernetes.v1beta2.Elastic.Status.class, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder.class);
+    }
+
+    public static final int CREATED_FIELD_NUMBER = 1;
+    private long created_;
+    /**
+     * <code>optional int64 created = 1;</code>
+     */
+    public long getCreated() {
+      return created_;
+    }
+
+    public static final int DATABASE_STATUS_FIELD_NUMBER = 2;
+    private volatile java.lang.Object databaseStatus_;
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    public java.lang.String getDatabaseStatus() {
+      java.lang.Object ref = databaseStatus_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        databaseStatus_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string database_status = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDatabaseStatusBytes() {
+      java.lang.Object ref = databaseStatus_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        databaseStatus_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int REASON_FIELD_NUMBER = 3;
+    private volatile java.lang.Object reason_;
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    public java.lang.String getReason() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reason_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string reason = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getReasonBytes() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        reason_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (created_ != 0L) {
+        output.writeInt64(1, created_);
+      }
+      if (!getDatabaseStatusBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, databaseStatus_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, reason_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (created_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, created_);
+      }
+      if (!getDatabaseStatusBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, databaseStatus_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, reason_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Elastic.Status)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.kubernetes.v1beta2.Elastic.Status other = (com.appscode.api.kubernetes.v1beta2.Elastic.Status) obj;
+
+      boolean result = true;
+      result = result && (getCreated()
+          == other.getCreated());
+      result = result && getDatabaseStatus()
+          .equals(other.getDatabaseStatus());
+      result = result && getReason()
+          .equals(other.getReason());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + CREATED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getCreated());
+      hash = (37 * hash) + DATABASE_STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getDatabaseStatus().hashCode();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Elastic.Status prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic.Status}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Elastic.Status)
+        com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Elastic.Status.class, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder.class);
+      }
+
+      // Construct using com.appscode.api.kubernetes.v1beta2.Elastic.Status.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        created_ = 0L;
+
+        databaseStatus_ = "";
+
+        reason_ = "";
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance();
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Elastic.Status build() {
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Elastic.Status buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status result = new com.appscode.api.kubernetes.v1beta2.Elastic.Status(this);
+        result.created_ = created_;
+        result.databaseStatus_ = databaseStatus_;
+        result.reason_ = reason_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Elastic.Status) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Elastic.Status)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Elastic.Status other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance()) return this;
+        if (other.getCreated() != 0L) {
+          setCreated(other.getCreated());
+        }
+        if (!other.getDatabaseStatus().isEmpty()) {
+          databaseStatus_ = other.databaseStatus_;
+          onChanged();
+        }
+        if (!other.getReason().isEmpty()) {
+          reason_ = other.reason_;
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Elastic.Status) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long created_ ;
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public long getCreated() {
+        return created_;
+      }
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public Builder setCreated(long value) {
+        
+        created_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 created = 1;</code>
+       */
+      public Builder clearCreated() {
+        
+        created_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object databaseStatus_ = "";
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public java.lang.String getDatabaseStatus() {
+        java.lang.Object ref = databaseStatus_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          databaseStatus_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getDatabaseStatusBytes() {
+        java.lang.Object ref = databaseStatus_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          databaseStatus_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder setDatabaseStatus(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        databaseStatus_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder clearDatabaseStatus() {
+        
+        databaseStatus_ = getDefaultInstance().getDatabaseStatus();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string database_status = 2;</code>
+       */
+      public Builder setDatabaseStatusBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        databaseStatus_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object reason_ = "";
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public java.lang.String getReason() {
+        java.lang.Object ref = reason_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          reason_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getReasonBytes() {
+        java.lang.Object ref = reason_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          reason_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder setReason(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder clearReason() {
+        
+        reason_ = getDefaultInstance().getReason();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 3;</code>
+       */
+      public Builder setReasonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Elastic.Status)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Elastic.Status)
+    private static final com.appscode.api.kubernetes.v1beta2.Elastic.Status DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Elastic.Status();
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Status>
+        PARSER = new com.google.protobuf.AbstractParser<Status>() {
+      public Status parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Status(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Status> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Status> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
@@ -1609,23 +2507,23 @@ public  final class Elastic extends
   }
 
   public static final int STATUS_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta2.DatabaseStatus status_;
+  private com.appscode.api.kubernetes.v1beta2.Elastic.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseStatus getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+  public com.appscode.api.kubernetes.v1beta2.Elastic.Status getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder getStatusOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
   }
 
@@ -2205,29 +3103,29 @@ public  final class Elastic extends
       return specBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.DatabaseStatus status_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Elastic.Status status_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder> statusBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatus getStatus() {
+    public com.appscode.api.kubernetes.v1beta2.Elastic.Status getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.DatabaseStatus value) {
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Elastic.Status value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2241,10 +3139,10 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
     public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
         onChanged();
@@ -2255,13 +3153,13 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.DatabaseStatus value) {
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Elastic.Status value) {
       if (statusBuilder_ == null) {
         if (status_ != null) {
           status_ =
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.newBuilder(status_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Elastic.Status.newBuilder(status_).mergeFrom(value).buildPartial();
         } else {
           status_ = value;
         }
@@ -2273,7 +3171,7 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2287,33 +3185,33 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder getStatusBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder getStatusBuilder() {
       
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder getStatusOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus.getDefaultInstance() : status_;
+            com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DatabaseStatus, com.appscode.api.kubernetes.v1beta2.DatabaseStatus.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());

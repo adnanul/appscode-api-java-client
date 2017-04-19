@@ -32,10 +32,6 @@ public enum OperationType
    * <code>NAMESPACE_CREATE = 11;</code>
    */
   NAMESPACE_CREATE(11),
-  /**
-   * <code>NAMESPACE_ADMIN_TASK = 12;</code>
-   */
-  NAMESPACE_ADMIN_TASK(12),
   UNRECOGNIZED(-1),
   ;
 
@@ -59,10 +55,6 @@ public enum OperationType
    * <code>NAMESPACE_CREATE = 11;</code>
    */
   public static final int NAMESPACE_CREATE_VALUE = 11;
-  /**
-   * <code>NAMESPACE_ADMIN_TASK = 12;</code>
-   */
-  public static final int NAMESPACE_ADMIN_TASK_VALUE = 12;
 
 
   public final int getNumber() {
@@ -88,7 +80,6 @@ public enum OperationType
       case 3: return CLUSTER_DELETE;
       case 4: return CLUSTER_RECONFIGURE;
       case 11: return NAMESPACE_CREATE;
-      case 12: return NAMESPACE_ADMIN_TASK;
       default: return null;
     }
   }

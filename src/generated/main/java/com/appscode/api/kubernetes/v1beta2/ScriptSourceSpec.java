@@ -4,17 +4,17 @@
 package com.appscode.api.kubernetes.v1beta2;
 
 /**
- * Protobuf type {@code appscode.kubernetes.v1beta2.InitialScriptSpec}
+ * Protobuf type {@code appscode.kubernetes.v1beta2.ScriptSourceSpec}
  */
-public  final class InitialScriptSpec extends
+public  final class ScriptSourceSpec extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.InitialScriptSpec)
-    InitialScriptSpecOrBuilder {
-  // Use InitialScriptSpec.newBuilder() to construct.
-  private InitialScriptSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.ScriptSourceSpec)
+    ScriptSourceSpecOrBuilder {
+  // Use ScriptSourceSpec.newBuilder() to construct.
+  private ScriptSourceSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private InitialScriptSpec() {
+  private ScriptSourceSpec() {
     scriptPath_ = "";
   }
 
@@ -23,7 +23,7 @@ public  final class InitialScriptSpec extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private InitialScriptSpec(
+  private ScriptSourceSpec(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -75,14 +75,14 @@ public  final class InitialScriptSpec extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_InitialScriptSpec_descriptor;
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_ScriptSourceSpec_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_InitialScriptSpec_fieldAccessorTable
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_ScriptSourceSpec_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.class, com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder.class);
+            com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.class, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder.class);
   }
 
   public static final int SCRIPT_PATH_FIELD_NUMBER = 1;
@@ -182,10 +182,10 @@ public  final class InitialScriptSpec extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.InitialScriptSpec)) {
+    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec)) {
       return super.equals(obj);
     }
-    com.appscode.api.kubernetes.v1beta2.InitialScriptSpec other = (com.appscode.api.kubernetes.v1beta2.InitialScriptSpec) obj;
+    com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec other = (com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec) obj;
 
     boolean result = true;
     result = result && getScriptPath()
@@ -216,58 +216,58 @@ public  final class InitialScriptSpec extends
     return hash;
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(byte[] data)
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseDelimitedFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseDelimitedFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -279,7 +279,7 @@ public  final class InitialScriptSpec extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.InitialScriptSpec prototype) {
+  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -294,25 +294,25 @@ public  final class InitialScriptSpec extends
     return builder;
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.InitialScriptSpec}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.ScriptSourceSpec}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.InitialScriptSpec)
-      com.appscode.api.kubernetes.v1beta2.InitialScriptSpecOrBuilder {
+      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.ScriptSourceSpec)
+      com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_InitialScriptSpec_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_ScriptSourceSpec_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_InitialScriptSpec_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_ScriptSourceSpec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.class, com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.class, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder.class);
     }
 
-    // Construct using com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.newBuilder()
+    // Construct using com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -342,23 +342,23 @@ public  final class InitialScriptSpec extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_InitialScriptSpec_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_ScriptSourceSpec_descriptor;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getDefaultInstanceForType() {
-      return com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.getDefaultInstance();
+    public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getDefaultInstanceForType() {
+      return com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.getDefaultInstance();
     }
 
-    public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec build() {
-      com.appscode.api.kubernetes.v1beta2.InitialScriptSpec result = buildPartial();
+    public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec build() {
+      com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec buildPartial() {
-      com.appscode.api.kubernetes.v1beta2.InitialScriptSpec result = new com.appscode.api.kubernetes.v1beta2.InitialScriptSpec(this);
+    public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec buildPartial() {
+      com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec result = new com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec(this);
       result.scriptPath_ = scriptPath_;
       if (volumeSourceBuilder_ == null) {
         result.volumeSource_ = volumeSource_;
@@ -396,16 +396,16 @@ public  final class InitialScriptSpec extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.appscode.api.kubernetes.v1beta2.InitialScriptSpec) {
-        return mergeFrom((com.appscode.api.kubernetes.v1beta2.InitialScriptSpec)other);
+      if (other instanceof com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec) {
+        return mergeFrom((com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.InitialScriptSpec other) {
-      if (other == com.appscode.api.kubernetes.v1beta2.InitialScriptSpec.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec other) {
+      if (other == com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.getDefaultInstance()) return this;
       if (!other.getScriptPath().isEmpty()) {
         scriptPath_ = other.scriptPath_;
         onChanged();
@@ -425,11 +425,11 @@ public  final class InitialScriptSpec extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.appscode.api.kubernetes.v1beta2.InitialScriptSpec parsedMessage = null;
+      com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.appscode.api.kubernetes.v1beta2.InitialScriptSpec) e.getUnfinishedMessage();
+        parsedMessage = (com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -635,39 +635,39 @@ public  final class InitialScriptSpec extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.InitialScriptSpec)
+    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.ScriptSourceSpec)
   }
 
-  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.InitialScriptSpec)
-  private static final com.appscode.api.kubernetes.v1beta2.InitialScriptSpec DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.ScriptSourceSpec)
+  private static final com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.InitialScriptSpec();
+    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec();
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getDefaultInstance() {
+  public static com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<InitialScriptSpec>
-      PARSER = new com.google.protobuf.AbstractParser<InitialScriptSpec>() {
-    public InitialScriptSpec parsePartialFrom(
+  private static final com.google.protobuf.Parser<ScriptSourceSpec>
+      PARSER = new com.google.protobuf.AbstractParser<ScriptSourceSpec>() {
+    public ScriptSourceSpec parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new InitialScriptSpec(input, extensionRegistry);
+        return new ScriptSourceSpec(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<InitialScriptSpec> parser() {
+  public static com.google.protobuf.Parser<ScriptSourceSpec> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<InitialScriptSpec> getParserForType() {
+  public com.google.protobuf.Parser<ScriptSourceSpec> getParserForType() {
     return PARSER;
   }
 
-  public com.appscode.api.kubernetes.v1beta2.InitialScriptSpec getDefaultInstanceForType() {
+  public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

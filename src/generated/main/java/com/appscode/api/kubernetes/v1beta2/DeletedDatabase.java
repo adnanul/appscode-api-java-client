@@ -109,30 +109,20 @@ public  final class DeletedDatabase extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string database_name = 1;</code>
-     */
-    java.lang.String getDatabaseName();
-    /**
-     * <code>optional string database_name = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getDatabaseNameBytes();
-
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     boolean hasAuthSecret();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder();
 
     /**
-     * <code>optional bool destroy = 3;</code>
+     * <code>optional bool destroy = 2;</code>
      */
     boolean getDestroy();
   }
@@ -148,7 +138,6 @@ public  final class DeletedDatabase extends
       super(builder);
     }
     private Spec() {
-      databaseName_ = "";
       destroy_ = false;
     }
 
@@ -178,12 +167,6 @@ public  final class DeletedDatabase extends
               break;
             }
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              databaseName_ = s;
-              break;
-            }
-            case 18: {
               com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder subBuilder = null;
               if (authSecret_ != null) {
                 subBuilder = authSecret_.toBuilder();
@@ -196,7 +179,7 @@ public  final class DeletedDatabase extends
 
               break;
             }
-            case 24: {
+            case 16: {
 
               destroy_ = input.readBool();
               break;
@@ -224,65 +207,31 @@ public  final class DeletedDatabase extends
               com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder.class);
     }
 
-    public static final int DATABASE_NAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object databaseName_;
-    /**
-     * <code>optional string database_name = 1;</code>
-     */
-    public java.lang.String getDatabaseName() {
-      java.lang.Object ref = databaseName_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        databaseName_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>optional string database_name = 1;</code>
-     */
-    public com.google.protobuf.ByteString
-        getDatabaseNameBytes() {
-      java.lang.Object ref = databaseName_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        databaseName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int AUTH_SECRET_FIELD_NUMBER = 2;
+    public static final int AUTH_SECRET_FIELD_NUMBER = 1;
     private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource authSecret_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     public boolean hasAuthSecret() {
       return authSecret_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret() {
       return authSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : authSecret_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder() {
       return getAuthSecret();
     }
 
-    public static final int DESTROY_FIELD_NUMBER = 3;
+    public static final int DESTROY_FIELD_NUMBER = 2;
     private boolean destroy_;
     /**
-     * <code>optional bool destroy = 3;</code>
+     * <code>optional bool destroy = 2;</code>
      */
     public boolean getDestroy() {
       return destroy_;
@@ -300,14 +249,11 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getDatabaseNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, databaseName_);
-      }
       if (authSecret_ != null) {
-        output.writeMessage(2, getAuthSecret());
+        output.writeMessage(1, getAuthSecret());
       }
       if (destroy_ != false) {
-        output.writeBool(3, destroy_);
+        output.writeBool(2, destroy_);
       }
     }
 
@@ -316,16 +262,13 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (!getDatabaseNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, databaseName_);
-      }
       if (authSecret_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getAuthSecret());
+          .computeMessageSize(1, getAuthSecret());
       }
       if (destroy_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, destroy_);
+          .computeBoolSize(2, destroy_);
       }
       memoizedSize = size;
       return size;
@@ -343,8 +286,6 @@ public  final class DeletedDatabase extends
       com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec) obj;
 
       boolean result = true;
-      result = result && getDatabaseName()
-          .equals(other.getDatabaseName());
       result = result && (hasAuthSecret() == other.hasAuthSecret());
       if (hasAuthSecret()) {
         result = result && getAuthSecret()
@@ -362,8 +303,6 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
-      hash = (37 * hash) + DATABASE_NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getDatabaseName().hashCode();
       if (hasAuthSecret()) {
         hash = (37 * hash) + AUTH_SECRET_FIELD_NUMBER;
         hash = (53 * hash) + getAuthSecret().hashCode();
@@ -489,8 +428,6 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        databaseName_ = "";
-
         if (authSecretBuilder_ == null) {
           authSecret_ = null;
         } else {
@@ -521,7 +458,6 @@ public  final class DeletedDatabase extends
 
       public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec buildPartial() {
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec(this);
-        result.databaseName_ = databaseName_;
         if (authSecretBuilder_ == null) {
           result.authSecret_ = authSecret_;
         } else {
@@ -569,10 +505,6 @@ public  final class DeletedDatabase extends
 
       public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other) {
         if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance()) return this;
-        if (!other.getDatabaseName().isEmpty()) {
-          databaseName_ = other.databaseName_;
-          onChanged();
-        }
         if (other.hasAuthSecret()) {
           mergeAuthSecret(other.getAuthSecret());
         }
@@ -605,86 +537,17 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private java.lang.Object databaseName_ = "";
-      /**
-       * <code>optional string database_name = 1;</code>
-       */
-      public java.lang.String getDatabaseName() {
-        java.lang.Object ref = databaseName_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          databaseName_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string database_name = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getDatabaseNameBytes() {
-        java.lang.Object ref = databaseName_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          databaseName_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string database_name = 1;</code>
-       */
-      public Builder setDatabaseName(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        databaseName_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string database_name = 1;</code>
-       */
-      public Builder clearDatabaseName() {
-        
-        databaseName_ = getDefaultInstance().getDatabaseName();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string database_name = 1;</code>
-       */
-      public Builder setDatabaseNameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        databaseName_ = value;
-        onChanged();
-        return this;
-      }
-
       private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource authSecret_ = null;
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> authSecretBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public boolean hasAuthSecret() {
         return authSecretBuilder_ != null || authSecret_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret() {
         if (authSecretBuilder_ == null) {
@@ -694,7 +557,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public Builder setAuthSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
         if (authSecretBuilder_ == null) {
@@ -710,7 +573,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public Builder setAuthSecret(
           com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
@@ -724,7 +587,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public Builder mergeAuthSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
         if (authSecretBuilder_ == null) {
@@ -742,7 +605,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public Builder clearAuthSecret() {
         if (authSecretBuilder_ == null) {
@@ -756,7 +619,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getAuthSecretBuilder() {
         
@@ -764,7 +627,7 @@ public  final class DeletedDatabase extends
         return getAuthSecretFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder() {
         if (authSecretBuilder_ != null) {
@@ -775,7 +638,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
@@ -793,13 +656,13 @@ public  final class DeletedDatabase extends
 
       private boolean destroy_ ;
       /**
-       * <code>optional bool destroy = 3;</code>
+       * <code>optional bool destroy = 2;</code>
        */
       public boolean getDestroy() {
         return destroy_;
       }
       /**
-       * <code>optional bool destroy = 3;</code>
+       * <code>optional bool destroy = 2;</code>
        */
       public Builder setDestroy(boolean value) {
         
@@ -808,7 +671,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional bool destroy = 3;</code>
+       * <code>optional bool destroy = 2;</code>
        */
       public Builder clearDestroy() {
         
@@ -870,24 +733,39 @@ public  final class DeletedDatabase extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string message = 1;</code>
-     */
-    java.lang.String getMessage();
-    /**
-     * <code>optional string message = 1;</code>
-     */
-    com.google.protobuf.ByteString
-        getMessageBytes();
-
-    /**
-     * <code>optional int64 created = 2;</code>
+     * <code>optional int64 created = 1;</code>
      */
     long getCreated();
 
     /**
-     * <code>optional int64 success = 3;</code>
+     * <code>optional int64 deleted = 2;</code>
      */
-    long getSuccess();
+    long getDeleted();
+
+    /**
+     * <code>optional int64 destroyed = 3;</code>
+     */
+    long getDestroyed();
+
+    /**
+     * <code>optional string phase = 4;</code>
+     */
+    java.lang.String getPhase();
+    /**
+     * <code>optional string phase = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getPhaseBytes();
+
+    /**
+     * <code>optional string reason = 5;</code>
+     */
+    java.lang.String getReason();
+    /**
+     * <code>optional string reason = 5;</code>
+     */
+    com.google.protobuf.ByteString
+        getReasonBytes();
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Status}
@@ -901,9 +779,11 @@ public  final class DeletedDatabase extends
       super(builder);
     }
     private Status() {
-      message_ = "";
       created_ = 0L;
-      success_ = 0L;
+      deleted_ = 0L;
+      destroyed_ = 0L;
+      phase_ = "";
+      reason_ = "";
     }
 
     @java.lang.Override
@@ -931,20 +811,31 @@ public  final class DeletedDatabase extends
               }
               break;
             }
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              message_ = s;
-              break;
-            }
-            case 16: {
+            case 8: {
 
               created_ = input.readInt64();
               break;
             }
+            case 16: {
+
+              deleted_ = input.readInt64();
+              break;
+            }
             case 24: {
 
-              success_ = input.readInt64();
+              destroyed_ = input.readInt64();
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              phase_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reason_ = s;
               break;
             }
           }
@@ -970,56 +861,99 @@ public  final class DeletedDatabase extends
               com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder.class);
     }
 
-    public static final int MESSAGE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object message_;
+    public static final int CREATED_FIELD_NUMBER = 1;
+    private long created_;
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional int64 created = 1;</code>
      */
-    public java.lang.String getMessage() {
-      java.lang.Object ref = message_;
+    public long getCreated() {
+      return created_;
+    }
+
+    public static final int DELETED_FIELD_NUMBER = 2;
+    private long deleted_;
+    /**
+     * <code>optional int64 deleted = 2;</code>
+     */
+    public long getDeleted() {
+      return deleted_;
+    }
+
+    public static final int DESTROYED_FIELD_NUMBER = 3;
+    private long destroyed_;
+    /**
+     * <code>optional int64 destroyed = 3;</code>
+     */
+    public long getDestroyed() {
+      return destroyed_;
+    }
+
+    public static final int PHASE_FIELD_NUMBER = 4;
+    private volatile java.lang.Object phase_;
+    /**
+     * <code>optional string phase = 4;</code>
+     */
+    public java.lang.String getPhase() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        message_ = s;
+        phase_ = s;
         return s;
       }
     }
     /**
-     * <code>optional string message = 1;</code>
+     * <code>optional string phase = 4;</code>
      */
     public com.google.protobuf.ByteString
-        getMessageBytes() {
-      java.lang.Object ref = message_;
+        getPhaseBytes() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        message_ = b;
+        phase_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int CREATED_FIELD_NUMBER = 2;
-    private long created_;
+    public static final int REASON_FIELD_NUMBER = 5;
+    private volatile java.lang.Object reason_;
     /**
-     * <code>optional int64 created = 2;</code>
+     * <code>optional string reason = 5;</code>
      */
-    public long getCreated() {
-      return created_;
+    public java.lang.String getReason() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reason_ = s;
+        return s;
+      }
     }
-
-    public static final int SUCCESS_FIELD_NUMBER = 3;
-    private long success_;
     /**
-     * <code>optional int64 success = 3;</code>
+     * <code>optional string reason = 5;</code>
      */
-    public long getSuccess() {
-      return success_;
+    public com.google.protobuf.ByteString
+        getReasonBytes() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        reason_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -1034,14 +968,20 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getMessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, message_);
-      }
       if (created_ != 0L) {
-        output.writeInt64(2, created_);
+        output.writeInt64(1, created_);
       }
-      if (success_ != 0L) {
-        output.writeInt64(3, success_);
+      if (deleted_ != 0L) {
+        output.writeInt64(2, deleted_);
+      }
+      if (destroyed_ != 0L) {
+        output.writeInt64(3, destroyed_);
+      }
+      if (!getPhaseBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, phase_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reason_);
       }
     }
 
@@ -1050,16 +990,23 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (!getMessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, message_);
-      }
       if (created_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(2, created_);
+          .computeInt64Size(1, created_);
       }
-      if (success_ != 0L) {
+      if (deleted_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, success_);
+          .computeInt64Size(2, deleted_);
+      }
+      if (destroyed_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, destroyed_);
+      }
+      if (!getPhaseBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, phase_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reason_);
       }
       memoizedSize = size;
       return size;
@@ -1077,12 +1024,16 @@ public  final class DeletedDatabase extends
       com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status) obj;
 
       boolean result = true;
-      result = result && getMessage()
-          .equals(other.getMessage());
       result = result && (getCreated()
           == other.getCreated());
-      result = result && (getSuccess()
-          == other.getSuccess());
+      result = result && (getDeleted()
+          == other.getDeleted());
+      result = result && (getDestroyed()
+          == other.getDestroyed());
+      result = result && getPhase()
+          .equals(other.getPhase());
+      result = result && getReason()
+          .equals(other.getReason());
       return result;
     }
 
@@ -1093,14 +1044,19 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
-      hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getMessage().hashCode();
       hash = (37 * hash) + CREATED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCreated());
-      hash = (37 * hash) + SUCCESS_FIELD_NUMBER;
+      hash = (37 * hash) + DELETED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getSuccess());
+          getDeleted());
+      hash = (37 * hash) + DESTROYED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getDestroyed());
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhase().hashCode();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1219,11 +1175,15 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        message_ = "";
-
         created_ = 0L;
 
-        success_ = 0L;
+        deleted_ = 0L;
+
+        destroyed_ = 0L;
+
+        phase_ = "";
+
+        reason_ = "";
 
         return this;
       }
@@ -1247,9 +1207,11 @@ public  final class DeletedDatabase extends
 
       public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status buildPartial() {
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status(this);
-        result.message_ = message_;
         result.created_ = created_;
-        result.success_ = success_;
+        result.deleted_ = deleted_;
+        result.destroyed_ = destroyed_;
+        result.phase_ = phase_;
+        result.reason_ = reason_;
         onBuilt();
         return result;
       }
@@ -1291,15 +1253,22 @@ public  final class DeletedDatabase extends
 
       public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other) {
         if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance()) return this;
-        if (!other.getMessage().isEmpty()) {
-          message_ = other.message_;
-          onChanged();
-        }
         if (other.getCreated() != 0L) {
           setCreated(other.getCreated());
         }
-        if (other.getSuccess() != 0L) {
-          setSuccess(other.getSuccess());
+        if (other.getDeleted() != 0L) {
+          setDeleted(other.getDeleted());
+        }
+        if (other.getDestroyed() != 0L) {
+          setDestroyed(other.getDestroyed());
+        }
+        if (!other.getPhase().isEmpty()) {
+          phase_ = other.phase_;
+          onChanged();
+        }
+        if (!other.getReason().isEmpty()) {
+          reason_ = other.reason_;
+          onChanged();
         }
         onChanged();
         return this;
@@ -1327,84 +1296,15 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private java.lang.Object message_ = "";
-      /**
-       * <code>optional string message = 1;</code>
-       */
-      public java.lang.String getMessage() {
-        java.lang.Object ref = message_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          message_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>optional string message = 1;</code>
-       */
-      public com.google.protobuf.ByteString
-          getMessageBytes() {
-        java.lang.Object ref = message_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          message_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>optional string message = 1;</code>
-       */
-      public Builder setMessage(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        message_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string message = 1;</code>
-       */
-      public Builder clearMessage() {
-        
-        message_ = getDefaultInstance().getMessage();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string message = 1;</code>
-       */
-      public Builder setMessageBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        message_ = value;
-        onChanged();
-        return this;
-      }
-
       private long created_ ;
       /**
-       * <code>optional int64 created = 2;</code>
+       * <code>optional int64 created = 1;</code>
        */
       public long getCreated() {
         return created_;
       }
       /**
-       * <code>optional int64 created = 2;</code>
+       * <code>optional int64 created = 1;</code>
        */
       public Builder setCreated(long value) {
         
@@ -1413,7 +1313,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>optional int64 created = 2;</code>
+       * <code>optional int64 created = 1;</code>
        */
       public Builder clearCreated() {
         
@@ -1422,28 +1322,192 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private long success_ ;
+      private long deleted_ ;
       /**
-       * <code>optional int64 success = 3;</code>
+       * <code>optional int64 deleted = 2;</code>
        */
-      public long getSuccess() {
-        return success_;
+      public long getDeleted() {
+        return deleted_;
       }
       /**
-       * <code>optional int64 success = 3;</code>
+       * <code>optional int64 deleted = 2;</code>
        */
-      public Builder setSuccess(long value) {
+      public Builder setDeleted(long value) {
         
-        success_ = value;
+        deleted_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 success = 3;</code>
+       * <code>optional int64 deleted = 2;</code>
        */
-      public Builder clearSuccess() {
+      public Builder clearDeleted() {
         
-        success_ = 0L;
+        deleted_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long destroyed_ ;
+      /**
+       * <code>optional int64 destroyed = 3;</code>
+       */
+      public long getDestroyed() {
+        return destroyed_;
+      }
+      /**
+       * <code>optional int64 destroyed = 3;</code>
+       */
+      public Builder setDestroyed(long value) {
+        
+        destroyed_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 destroyed = 3;</code>
+       */
+      public Builder clearDestroyed() {
+        
+        destroyed_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object phase_ = "";
+      /**
+       * <code>optional string phase = 4;</code>
+       */
+      public java.lang.String getPhase() {
+        java.lang.Object ref = phase_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          phase_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string phase = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPhaseBytes() {
+        java.lang.Object ref = phase_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          phase_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string phase = 4;</code>
+       */
+      public Builder setPhase(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        phase_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phase = 4;</code>
+       */
+      public Builder clearPhase() {
+        
+        phase_ = getDefaultInstance().getPhase();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phase = 4;</code>
+       */
+      public Builder setPhaseBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        phase_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object reason_ = "";
+      /**
+       * <code>optional string reason = 5;</code>
+       */
+      public java.lang.String getReason() {
+        java.lang.Object ref = reason_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          reason_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 5;</code>
+       */
+      public com.google.protobuf.ByteString
+          getReasonBytes() {
+        java.lang.Object ref = reason_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          reason_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 5;</code>
+       */
+      public Builder setReason(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 5;</code>
+       */
+      public Builder clearReason() {
+        
+        reason_ = getDefaultInstance().getReason();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 5;</code>
+       */
+      public Builder setReasonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        reason_ = value;
         onChanged();
         return this;
       }

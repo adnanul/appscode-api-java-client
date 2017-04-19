@@ -16,4 +16,14 @@ public interface ListRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getClusterBytes();
+
+  /**
+   * <code>optional string namespace = 2;</code>
+   */
+  java.lang.String getNamespace();
+  /**
+   * <code>optional string namespace = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getNamespaceBytes();
 }

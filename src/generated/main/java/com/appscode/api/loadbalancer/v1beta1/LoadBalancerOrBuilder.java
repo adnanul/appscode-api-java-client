@@ -129,14 +129,4 @@ public interface LoadBalancerOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional string json = 8;</code>
-   */
-  java.lang.String getJson();
-  /**
-   * <code>optional string json = 8;</code>
-   */
-  com.google.protobuf.ByteString
-      getJsonBytes();
 }

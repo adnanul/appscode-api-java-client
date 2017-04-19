@@ -21,6 +21,7 @@ public  final class Meta extends
     resourceVersion_ = "";
     createdAt_ = 0L;
     generation_ = 0L;
+    uid_ = "";
   }
 
   @java.lang.Override
@@ -106,6 +107,12 @@ public  final class Meta extends
                 AnnotationsDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
             annotations_.getMutableMap().put(
                 annotations__.getKey(), annotations__.getValue());
+            break;
+          }
+          case 74: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            uid_ = s;
             break;
           }
         }
@@ -451,6 +458,40 @@ public  final class Meta extends
     return map.get(key);
   }
 
+  public static final int UID_FIELD_NUMBER = 9;
+  private volatile java.lang.Object uid_;
+  /**
+   * <code>optional string uid = 9;</code>
+   */
+  public java.lang.String getUid() {
+    java.lang.Object ref = uid_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      uid_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string uid = 9;</code>
+   */
+  public com.google.protobuf.ByteString
+      getUidBytes() {
+    java.lang.Object ref = uid_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      uid_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -493,6 +534,9 @@ public  final class Meta extends
         internalGetAnnotations(),
         AnnotationsDefaultEntryHolder.defaultEntry,
         8);
+    if (!getUidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, uid_);
+    }
   }
 
   public int getSerializedSize() {
@@ -540,6 +584,9 @@ public  final class Meta extends
       size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, annotations__);
     }
+    if (!getUidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, uid_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -572,6 +619,8 @@ public  final class Meta extends
         other.internalGetLabels());
     result = result && internalGetAnnotations().equals(
         other.internalGetAnnotations());
+    result = result && getUid()
+        .equals(other.getUid());
     return result;
   }
 
@@ -604,6 +653,8 @@ public  final class Meta extends
       hash = (37 * hash) + ANNOTATIONS_FIELD_NUMBER;
       hash = (53 * hash) + internalGetAnnotations().hashCode();
     }
+    hash = (37 * hash) + UID_FIELD_NUMBER;
+    hash = (53 * hash) + getUid().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -762,6 +813,8 @@ public  final class Meta extends
 
       internalGetMutableLabels().clear();
       internalGetMutableAnnotations().clear();
+      uid_ = "";
+
       return this;
     }
 
@@ -796,6 +849,7 @@ public  final class Meta extends
       result.labels_.makeImmutable();
       result.annotations_ = internalGetAnnotations();
       result.annotations_.makeImmutable();
+      result.uid_ = uid_;
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -864,6 +918,10 @@ public  final class Meta extends
           other.internalGetLabels());
       internalGetMutableAnnotations().mergeFrom(
           other.internalGetAnnotations());
+      if (!other.getUid().isEmpty()) {
+        uid_ = other.uid_;
+        onChanged();
+      }
       onChanged();
       return this;
     }
@@ -1454,6 +1512,75 @@ public  final class Meta extends
     public Builder putAllAnnotations(
         java.util.Map<java.lang.String, java.lang.String> values) {
       getMutableAnnotations().putAll(values);
+      return this;
+    }
+
+    private java.lang.Object uid_ = "";
+    /**
+     * <code>optional string uid = 9;</code>
+     */
+    public java.lang.String getUid() {
+      java.lang.Object ref = uid_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        uid_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string uid = 9;</code>
+     */
+    public com.google.protobuf.ByteString
+        getUidBytes() {
+      java.lang.Object ref = uid_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        uid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string uid = 9;</code>
+     */
+    public Builder setUid(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      uid_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string uid = 9;</code>
+     */
+    public Builder clearUid() {
+      
+      uid_ = getDefaultInstance().getUid();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string uid = 9;</code>
+     */
+    public Builder setUidBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      uid_ = value;
+      onChanged();
       return this;
     }
     public final Builder setUnknownFields(

@@ -104,20 +104,6 @@ public  final class Operation extends
             requestCase_ = 11;
             break;
           }
-          case 98: {
-            com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder subBuilder = null;
-            if (requestCase_ == 12) {
-              subBuilder = ((com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_).toBuilder();
-            }
-            request_ =
-                input.readMessage(com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_);
-              request_ = subBuilder.buildPartial();
-            }
-            requestCase_ = 12;
-            break;
-          }
           case 112: {
             int rawValue = input.readEnum();
 
@@ -187,7 +173,6 @@ public  final class Operation extends
     CLUSTER_DELETE_REQUEST(3),
     CLUSTER_RECONFIGURE_REQUEST(4),
     NAMESPACE_CREATE_REQUEST(11),
-    NAMESPACE_ADMIN_TASK_REQUEST(12),
     REQUEST_NOT_SET(0);
     private final int value;
     private RequestCase(int value) {
@@ -207,7 +192,6 @@ public  final class Operation extends
         case 3: return CLUSTER_DELETE_REQUEST;
         case 4: return CLUSTER_RECONFIGURE_REQUEST;
         case 11: return NAMESPACE_CREATE_REQUEST;
-        case 12: return NAMESPACE_ADMIN_TASK_REQUEST;
         case 0: return REQUEST_NOT_SET;
         default: return null;
       }
@@ -301,26 +285,6 @@ public  final class Operation extends
        return (com.appscode.api.namespace.v1beta1.CreateRequest) request_;
     }
     return com.appscode.api.namespace.v1beta1.CreateRequest.getDefaultInstance();
-  }
-
-  public static final int NAMESPACE_ADMIN_TASK_REQUEST_FIELD_NUMBER = 12;
-  /**
-   * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-   */
-  public com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest getNamespaceAdminTaskRequest() {
-    if (requestCase_ == 12) {
-       return (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_;
-    }
-    return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-  }
-  /**
-   * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-   */
-  public com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder getNamespaceAdminTaskRequestOrBuilder() {
-    if (requestCase_ == 12) {
-       return (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_;
-    }
-    return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
   }
 
   public static final int TYPE_FIELD_NUMBER = 14;
@@ -439,9 +403,6 @@ public  final class Operation extends
     if (requestCase_ == 11) {
       output.writeMessage(11, (com.appscode.api.namespace.v1beta1.CreateRequest) request_);
     }
-    if (requestCase_ == 12) {
-      output.writeMessage(12, (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_);
-    }
     if (type_ != com.appscode.api.operation.v1beta1.OperationType.UNKNOWN.getNumber()) {
       output.writeEnum(14, type_);
     }
@@ -476,10 +437,6 @@ public  final class Operation extends
     if (requestCase_ == 11) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(11, (com.appscode.api.namespace.v1beta1.CreateRequest) request_);
-    }
-    if (requestCase_ == 12) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_);
     }
     if (type_ != com.appscode.api.operation.v1beta1.OperationType.UNKNOWN.getNumber()) {
       size += com.google.protobuf.CodedOutputStream
@@ -545,10 +502,6 @@ public  final class Operation extends
         result = result && getNamespaceCreateRequest()
             .equals(other.getNamespaceCreateRequest());
         break;
-      case 12:
-        result = result && getNamespaceAdminTaskRequest()
-            .equals(other.getNamespaceAdminTaskRequest());
-        break;
       case 0:
       default:
     }
@@ -590,10 +543,6 @@ public  final class Operation extends
       case 11:
         hash = (37 * hash) + NAMESPACE_CREATE_REQUEST_FIELD_NUMBER;
         hash = (53 * hash) + getNamespaceCreateRequest().hashCode();
-        break;
-      case 12:
-        hash = (37 * hash) + NAMESPACE_ADMIN_TASK_REQUEST_FIELD_NUMBER;
-        hash = (53 * hash) + getNamespaceAdminTaskRequest().hashCode();
         break;
       case 0:
       default:
@@ -788,13 +737,6 @@ public  final class Operation extends
           result.request_ = namespaceCreateRequestBuilder_.build();
         }
       }
-      if (requestCase_ == 12) {
-        if (namespaceAdminTaskRequestBuilder_ == null) {
-          result.request_ = request_;
-        } else {
-          result.request_ = namespaceAdminTaskRequestBuilder_.build();
-        }
-      }
       result.type_ = type_;
       result.phid_ = phid_;
       if (authBuilder_ == null) {
@@ -877,10 +819,6 @@ public  final class Operation extends
         }
         case NAMESPACE_CREATE_REQUEST: {
           mergeNamespaceCreateRequest(other.getNamespaceCreateRequest());
-          break;
-        }
-        case NAMESPACE_ADMIN_TASK_REQUEST: {
-          mergeNamespaceAdminTaskRequest(other.getNamespaceAdminTaskRequest());
           break;
         }
         case REQUEST_NOT_SET: {
@@ -1446,136 +1384,6 @@ public  final class Operation extends
       requestCase_ = 11;
       onChanged();;
       return namespaceCreateRequestBuilder_;
-    }
-
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder> namespaceAdminTaskRequestBuilder_;
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest getNamespaceAdminTaskRequest() {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        if (requestCase_ == 12) {
-          return (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_;
-        }
-        return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-      } else {
-        if (requestCase_ == 12) {
-          return namespaceAdminTaskRequestBuilder_.getMessage();
-        }
-        return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public Builder setNamespaceAdminTaskRequest(com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest value) {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        request_ = value;
-        onChanged();
-      } else {
-        namespaceAdminTaskRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 12;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public Builder setNamespaceAdminTaskRequest(
-        com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder builderForValue) {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        request_ = builderForValue.build();
-        onChanged();
-      } else {
-        namespaceAdminTaskRequestBuilder_.setMessage(builderForValue.build());
-      }
-      requestCase_ = 12;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public Builder mergeNamespaceAdminTaskRequest(com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest value) {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        if (requestCase_ == 12 &&
-            request_ != com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance()) {
-          request_ = com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.newBuilder((com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_)
-              .mergeFrom(value).buildPartial();
-        } else {
-          request_ = value;
-        }
-        onChanged();
-      } else {
-        if (requestCase_ == 12) {
-          namespaceAdminTaskRequestBuilder_.mergeFrom(value);
-        }
-        namespaceAdminTaskRequestBuilder_.setMessage(value);
-      }
-      requestCase_ = 12;
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public Builder clearNamespaceAdminTaskRequest() {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        if (requestCase_ == 12) {
-          requestCase_ = 0;
-          request_ = null;
-          onChanged();
-        }
-      } else {
-        if (requestCase_ == 12) {
-          requestCase_ = 0;
-          request_ = null;
-        }
-        namespaceAdminTaskRequestBuilder_.clear();
-      }
-      return this;
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder getNamespaceAdminTaskRequestBuilder() {
-      return getNamespaceAdminTaskRequestFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    public com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder getNamespaceAdminTaskRequestOrBuilder() {
-      if ((requestCase_ == 12) && (namespaceAdminTaskRequestBuilder_ != null)) {
-        return namespaceAdminTaskRequestBuilder_.getMessageOrBuilder();
-      } else {
-        if (requestCase_ == 12) {
-          return (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_;
-        }
-        return com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-      }
-    }
-    /**
-     * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder> 
-        getNamespaceAdminTaskRequestFieldBuilder() {
-      if (namespaceAdminTaskRequestBuilder_ == null) {
-        if (!(requestCase_ == 12)) {
-          request_ = com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.getDefaultInstance();
-        }
-        namespaceAdminTaskRequestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest.Builder, com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder>(
-                (com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest) request_,
-                getParentForChildren(),
-                isClean());
-        request_ = null;
-      }
-      requestCase_ = 12;
-      onChanged();;
-      return namespaceAdminTaskRequestBuilder_;
     }
 
     private int type_ = 0;

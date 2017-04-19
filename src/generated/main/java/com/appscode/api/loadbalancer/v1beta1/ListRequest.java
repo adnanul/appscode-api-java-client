@@ -16,6 +16,7 @@ public  final class ListRequest extends
   }
   private ListRequest() {
     cluster_ = "";
+    namespace_ = "";
   }
 
   @java.lang.Override
@@ -47,6 +48,12 @@ public  final class ListRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             cluster_ = s;
+            break;
+          }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            namespace_ = s;
             break;
           }
         }
@@ -106,6 +113,40 @@ public  final class ListRequest extends
     }
   }
 
+  public static final int NAMESPACE_FIELD_NUMBER = 2;
+  private volatile java.lang.Object namespace_;
+  /**
+   * <code>optional string namespace = 2;</code>
+   */
+  public java.lang.String getNamespace() {
+    java.lang.Object ref = namespace_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      namespace_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string namespace = 2;</code>
+   */
+  public com.google.protobuf.ByteString
+      getNamespaceBytes() {
+    java.lang.Object ref = namespace_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      namespace_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -121,6 +162,9 @@ public  final class ListRequest extends
     if (!getClusterBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, cluster_);
     }
+    if (!getNamespaceBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, namespace_);
+    }
   }
 
   public int getSerializedSize() {
@@ -130,6 +174,9 @@ public  final class ListRequest extends
     size = 0;
     if (!getClusterBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, cluster_);
+    }
+    if (!getNamespaceBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, namespace_);
     }
     memoizedSize = size;
     return size;
@@ -149,6 +196,8 @@ public  final class ListRequest extends
     boolean result = true;
     result = result && getCluster()
         .equals(other.getCluster());
+    result = result && getNamespace()
+        .equals(other.getNamespace());
     return result;
   }
 
@@ -161,6 +210,8 @@ public  final class ListRequest extends
     hash = (19 * hash) + getDescriptorForType().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
+    hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
+    hash = (53 * hash) + getNamespace().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -281,6 +332,8 @@ public  final class ListRequest extends
       super.clear();
       cluster_ = "";
 
+      namespace_ = "";
+
       return this;
     }
 
@@ -304,6 +357,7 @@ public  final class ListRequest extends
     public com.appscode.api.loadbalancer.v1beta1.ListRequest buildPartial() {
       com.appscode.api.loadbalancer.v1beta1.ListRequest result = new com.appscode.api.loadbalancer.v1beta1.ListRequest(this);
       result.cluster_ = cluster_;
+      result.namespace_ = namespace_;
       onBuilt();
       return result;
     }
@@ -347,6 +401,10 @@ public  final class ListRequest extends
       if (other == com.appscode.api.loadbalancer.v1beta1.ListRequest.getDefaultInstance()) return this;
       if (!other.getCluster().isEmpty()) {
         cluster_ = other.cluster_;
+        onChanged();
+      }
+      if (!other.getNamespace().isEmpty()) {
+        namespace_ = other.namespace_;
         onChanged();
       }
       onChanged();
@@ -440,6 +498,75 @@ public  final class ListRequest extends
   checkByteStringIsUtf8(value);
       
       cluster_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object namespace_ = "";
+    /**
+     * <code>optional string namespace = 2;</code>
+     */
+    public java.lang.String getNamespace() {
+      java.lang.Object ref = namespace_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        namespace_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string namespace = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNamespaceBytes() {
+      java.lang.Object ref = namespace_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        namespace_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string namespace = 2;</code>
+     */
+    public Builder setNamespace(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      namespace_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string namespace = 2;</code>
+     */
+    public Builder clearNamespace() {
+      
+      namespace_ = getDefaultInstance().getNamespace();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string namespace = 2;</code>
+     */
+    public Builder setNamespaceBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      namespace_ = value;
       onChanged();
       return this;
     }

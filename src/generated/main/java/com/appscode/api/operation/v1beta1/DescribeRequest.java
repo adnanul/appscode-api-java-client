@@ -16,6 +16,7 @@ public  final class DescribeRequest extends
   }
   private DescribeRequest() {
     phid_ = "";
+    timestamp_ = 0L;
   }
 
   @java.lang.Override
@@ -47,6 +48,11 @@ public  final class DescribeRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             phid_ = s;
+            break;
+          }
+          case 16: {
+
+            timestamp_ = input.readInt64();
             break;
           }
         }
@@ -106,6 +112,15 @@ public  final class DescribeRequest extends
     }
   }
 
+  public static final int TIMESTAMP_FIELD_NUMBER = 2;
+  private long timestamp_;
+  /**
+   * <code>optional int64 timestamp = 2;</code>
+   */
+  public long getTimestamp() {
+    return timestamp_;
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -121,6 +136,9 @@ public  final class DescribeRequest extends
     if (!getPhidBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, phid_);
     }
+    if (timestamp_ != 0L) {
+      output.writeInt64(2, timestamp_);
+    }
   }
 
   public int getSerializedSize() {
@@ -130,6 +148,10 @@ public  final class DescribeRequest extends
     size = 0;
     if (!getPhidBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, phid_);
+    }
+    if (timestamp_ != 0L) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt64Size(2, timestamp_);
     }
     memoizedSize = size;
     return size;
@@ -149,6 +171,8 @@ public  final class DescribeRequest extends
     boolean result = true;
     result = result && getPhid()
         .equals(other.getPhid());
+    result = result && (getTimestamp()
+        == other.getTimestamp());
     return result;
   }
 
@@ -161,6 +185,9 @@ public  final class DescribeRequest extends
     hash = (19 * hash) + getDescriptorForType().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
+    hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+        getTimestamp());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -281,6 +308,8 @@ public  final class DescribeRequest extends
       super.clear();
       phid_ = "";
 
+      timestamp_ = 0L;
+
       return this;
     }
 
@@ -304,6 +333,7 @@ public  final class DescribeRequest extends
     public com.appscode.api.operation.v1beta1.DescribeRequest buildPartial() {
       com.appscode.api.operation.v1beta1.DescribeRequest result = new com.appscode.api.operation.v1beta1.DescribeRequest(this);
       result.phid_ = phid_;
+      result.timestamp_ = timestamp_;
       onBuilt();
       return result;
     }
@@ -348,6 +378,9 @@ public  final class DescribeRequest extends
       if (!other.getPhid().isEmpty()) {
         phid_ = other.phid_;
         onChanged();
+      }
+      if (other.getTimestamp() != 0L) {
+        setTimestamp(other.getTimestamp());
       }
       onChanged();
       return this;
@@ -440,6 +473,32 @@ public  final class DescribeRequest extends
   checkByteStringIsUtf8(value);
       
       phid_ = value;
+      onChanged();
+      return this;
+    }
+
+    private long timestamp_ ;
+    /**
+     * <code>optional int64 timestamp = 2;</code>
+     */
+    public long getTimestamp() {
+      return timestamp_;
+    }
+    /**
+     * <code>optional int64 timestamp = 2;</code>
+     */
+    public Builder setTimestamp(long value) {
+      
+      timestamp_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional int64 timestamp = 2;</code>
+     */
+    public Builder clearTimestamp() {
+      
+      timestamp_ = 0L;
       onChanged();
       return this;
     }

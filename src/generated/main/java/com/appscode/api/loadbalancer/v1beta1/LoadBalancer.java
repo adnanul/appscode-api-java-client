@@ -19,7 +19,6 @@ public  final class LoadBalancer extends
     name_ = "";
     namespace_ = "";
     creationTimestamp_ = 0L;
-    json_ = "";
   }
 
   @java.lang.Override
@@ -107,12 +106,6 @@ public  final class LoadBalancer extends
               status_ = subBuilder.buildPartial();
             }
 
-            break;
-          }
-          case 66: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            json_ = s;
             break;
           }
         }
@@ -407,40 +400,6 @@ public  final class LoadBalancer extends
     return getStatus();
   }
 
-  public static final int JSON_FIELD_NUMBER = 8;
-  private volatile java.lang.Object json_;
-  /**
-   * <code>optional string json = 8;</code>
-   */
-  public java.lang.String getJson() {
-    java.lang.Object ref = json_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      json_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>optional string json = 8;</code>
-   */
-  public com.google.protobuf.ByteString
-      getJsonBytes() {
-    java.lang.Object ref = json_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      json_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -476,9 +435,6 @@ public  final class LoadBalancer extends
     }
     if (status_ != null) {
       output.writeMessage(7, getStatus());
-    }
-    if (!getJsonBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, json_);
     }
   }
 
@@ -518,9 +474,6 @@ public  final class LoadBalancer extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(7, getStatus());
     }
-    if (!getJsonBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, json_);
-    }
     memoizedSize = size;
     return size;
   }
@@ -557,8 +510,6 @@ public  final class LoadBalancer extends
       result = result && getStatus()
           .equals(other.getStatus());
     }
-    result = result && getJson()
-        .equals(other.getJson());
     return result;
   }
 
@@ -590,8 +541,6 @@ public  final class LoadBalancer extends
       hash = (37 * hash) + STATUS_FIELD_NUMBER;
       hash = (53 * hash) + getStatus().hashCode();
     }
-    hash = (37 * hash) + JSON_FIELD_NUMBER;
-    hash = (53 * hash) + getJson().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -753,8 +702,6 @@ public  final class LoadBalancer extends
         status_ = null;
         statusBuilder_ = null;
       }
-      json_ = "";
-
       return this;
     }
 
@@ -795,7 +742,6 @@ public  final class LoadBalancer extends
       } else {
         result.status_ = statusBuilder_.build();
       }
-      result.json_ = json_;
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -860,10 +806,6 @@ public  final class LoadBalancer extends
       }
       if (other.hasStatus()) {
         mergeStatus(other.getStatus());
-      }
-      if (!other.getJson().isEmpty()) {
-        json_ = other.json_;
-        onChanged();
       }
       onChanged();
       return this;
@@ -1546,75 +1488,6 @@ public  final class LoadBalancer extends
         status_ = null;
       }
       return statusBuilder_;
-    }
-
-    private java.lang.Object json_ = "";
-    /**
-     * <code>optional string json = 8;</code>
-     */
-    public java.lang.String getJson() {
-      java.lang.Object ref = json_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        json_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>optional string json = 8;</code>
-     */
-    public com.google.protobuf.ByteString
-        getJsonBytes() {
-      java.lang.Object ref = json_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        json_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>optional string json = 8;</code>
-     */
-    public Builder setJson(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      json_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string json = 8;</code>
-     */
-    public Builder clearJson() {
-      
-      json_ = getDefaultInstance().getJson();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string json = 8;</code>
-     */
-    public Builder setJsonBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      json_ = value;
-      onChanged();
-      return this;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

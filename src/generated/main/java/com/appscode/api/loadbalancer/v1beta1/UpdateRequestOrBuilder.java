@@ -39,4 +39,17 @@ public interface UpdateRequestOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   */
+  boolean hasRaw();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   */
+  com.appscode.api.loadbalancer.v1beta1.Raw getRaw();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   */
+  com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder();
 }

@@ -34,15 +34,15 @@ public interface PostgresOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.Postgres.SpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DatabaseStatus getStatus();
+  com.appscode.api.kubernetes.v1beta2.Postgres.Status getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseStatus status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DatabaseStatusOrBuilder getStatusOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder getStatusOrBuilder();
 }

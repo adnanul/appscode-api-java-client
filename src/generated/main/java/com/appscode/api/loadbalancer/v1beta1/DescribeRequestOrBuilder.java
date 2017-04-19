@@ -46,4 +46,14 @@ public interface DescribeRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getClusterBytes();
+
+  /**
+   * <code>optional string raw = 5;</code>
+   */
+  java.lang.String getRaw();
+  /**
+   * <code>optional string raw = 5;</code>
+   */
+  com.google.protobuf.ByteString
+      getRawBytes();
 }

@@ -44,15 +44,6 @@ public interface OperationOrBuilder extends
   com.appscode.api.namespace.v1beta1.CreateRequestOrBuilder getNamespaceCreateRequestOrBuilder();
 
   /**
-   * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-   */
-  com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequest getNamespaceAdminTaskRequest();
-  /**
-   * <code>optional .appscode.operation.v1beta1.NamespaceAdminTaskRequest namespace_admin_task_request = 12;</code>
-   */
-  com.appscode.api.operation.v1beta1.NamespaceAdminTaskRequestOrBuilder getNamespaceAdminTaskRequestOrBuilder();
-
-  /**
    * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
    */
   int getTypeValue();

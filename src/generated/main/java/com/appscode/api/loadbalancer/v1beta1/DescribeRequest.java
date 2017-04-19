@@ -19,6 +19,7 @@ public  final class DescribeRequest extends
     name_ = "";
     namespace_ = "";
     cluster_ = "";
+    raw_ = "";
   }
 
   @java.lang.Override
@@ -68,6 +69,12 @@ public  final class DescribeRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             cluster_ = s;
+            break;
+          }
+          case 42: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            raw_ = s;
             break;
           }
         }
@@ -229,6 +236,40 @@ public  final class DescribeRequest extends
     }
   }
 
+  public static final int RAW_FIELD_NUMBER = 5;
+  private volatile java.lang.Object raw_;
+  /**
+   * <code>optional string raw = 5;</code>
+   */
+  public java.lang.String getRaw() {
+    java.lang.Object ref = raw_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      raw_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string raw = 5;</code>
+   */
+  public com.google.protobuf.ByteString
+      getRawBytes() {
+    java.lang.Object ref = raw_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      raw_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -253,6 +294,9 @@ public  final class DescribeRequest extends
     if (!getClusterBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 4, cluster_);
     }
+    if (!getRawBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, raw_);
+    }
   }
 
   public int getSerializedSize() {
@@ -271,6 +315,9 @@ public  final class DescribeRequest extends
     }
     if (!getClusterBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, cluster_);
+    }
+    if (!getRawBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, raw_);
     }
     memoizedSize = size;
     return size;
@@ -296,6 +343,8 @@ public  final class DescribeRequest extends
         .equals(other.getNamespace());
     result = result && getCluster()
         .equals(other.getCluster());
+    result = result && getRaw()
+        .equals(other.getRaw());
     return result;
   }
 
@@ -314,6 +363,8 @@ public  final class DescribeRequest extends
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
+    hash = (37 * hash) + RAW_FIELD_NUMBER;
+    hash = (53 * hash) + getRaw().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -440,6 +491,8 @@ public  final class DescribeRequest extends
 
       cluster_ = "";
 
+      raw_ = "";
+
       return this;
     }
 
@@ -466,6 +519,7 @@ public  final class DescribeRequest extends
       result.name_ = name_;
       result.namespace_ = namespace_;
       result.cluster_ = cluster_;
+      result.raw_ = raw_;
       onBuilt();
       return result;
     }
@@ -521,6 +575,10 @@ public  final class DescribeRequest extends
       }
       if (!other.getCluster().isEmpty()) {
         cluster_ = other.cluster_;
+        onChanged();
+      }
+      if (!other.getRaw().isEmpty()) {
+        raw_ = other.raw_;
         onChanged();
       }
       onChanged();
@@ -821,6 +879,75 @@ public  final class DescribeRequest extends
   checkByteStringIsUtf8(value);
       
       cluster_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object raw_ = "";
+    /**
+     * <code>optional string raw = 5;</code>
+     */
+    public java.lang.String getRaw() {
+      java.lang.Object ref = raw_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        raw_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string raw = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getRawBytes() {
+      java.lang.Object ref = raw_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        raw_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string raw = 5;</code>
+     */
+    public Builder setRaw(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      raw_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string raw = 5;</code>
+     */
+    public Builder clearRaw() {
+      
+      raw_ = getDefaultInstance().getRaw();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string raw = 5;</code>
+     */
+    public Builder setRawBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      raw_ = value;
       onChanged();
       return this;
     }

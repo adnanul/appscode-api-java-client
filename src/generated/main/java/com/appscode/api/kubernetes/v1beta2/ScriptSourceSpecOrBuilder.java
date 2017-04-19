@@ -3,8 +3,8 @@
 
 package com.appscode.api.kubernetes.v1beta2;
 
-public interface InitialScriptSpecOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.InitialScriptSpec)
+public interface ScriptSourceSpecOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.ScriptSourceSpec)
     com.google.protobuf.MessageOrBuilder {
 
   /**

@@ -445,6 +445,7 @@ message Meta {
   int64 generation = 6;
   map<string, string> labels = 7;
   map<string, string> annotations = 8;
+  string uid = 9;
 }
 
 message KubeObject {
@@ -1030,7 +1031,7 @@ message CronJob {
 message Postgres {
   Meta meta = 1;
   Spec spec = 2;
-  DatabaseStatus status = 3;
+  Status status = 3;
 
   message Spec {
     string version = 1;
@@ -1039,16 +1040,22 @@ message Postgres {
     string service_account_name = 4;
     SecretVolumeSource database_secret = 5;
     map<string, string> node_selector = 6;
-    InitialScriptSpec initial_script = 7;
+    InitSpec init = 7;
     BackupScheduleSpec backup_schedule = 8;
     bool do_not_delete = 9;
+  }
+
+  message Status {
+    int64 created = 1;
+    string database_status = 2;
+    string reason  = 3;
   }
 }
 
 message Elastic {
   Meta meta = 1;
   Spec spec = 2;
-  DatabaseStatus status = 3;
+  Status status = 3;
 
   message Spec {
     string version = 1;
@@ -1056,8 +1063,15 @@ message Elastic {
     StorageSpec storage = 3;
     string service_account_name = 4;
     map<string, string> node_selector = 5;
-    BackupScheduleSpec backup_schedule = 6;
-    bool do_not_delete = 7;
+    InitSpec init = 6;
+    BackupScheduleSpec backup_schedule = 7;
+    bool do_not_delete = 8;
+  }
+
+  message Status {
+    int64 created = 1;
+    string database_status = 2;
+    string reason  = 3;
   }
 }
 
@@ -1067,15 +1081,16 @@ message DeletedDatabase {
   Status status = 3;
 
   message Spec {
-    string database_name = 1;
-    SecretVolumeSource auth_secret = 2;
-    bool destroy = 3;
+    SecretVolumeSource auth_secret = 1;
+    bool destroy = 2;
   }
 
   message Status {
-    string message = 1;
-    int64 created = 2;
-    int64 success = 3;
+    int64 created = 1;
+    int64 deleted = 2;
+    int64 destroyed = 3;
+    string phase = 4;
+    string reason = 5;
   }
 }
 
@@ -1097,19 +1112,24 @@ message DatabaseSnapshot {
   }
 }
 
-message DatabaseStatus {
-  int32 replicas = 1;
-  int32 available_replicas = 2;
-}
-
 message StorageSpec {
   string class = 1;
   PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;
 }
 
-message InitialScriptSpec {
+message InitSpec {
+  ScriptSourceSpec script_source = 1;
+  SnapshotSourceSpec snapshot_source = 2;
+}
+
+message ScriptSourceSpec {
   string script_path = 1;
   PersistentVolumeSource volume_source = 2;
+}
+
+message SnapshotSourceSpec {
+	string namespace = 1;
+	string name = 2;
 }
 
 message BackupScheduleSpec {

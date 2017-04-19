@@ -32,4 +32,17 @@ public interface DescribeResponseOrBuilder extends
    * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder();
+
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  boolean hasRaw();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  com.appscode.api.loadbalancer.v1beta1.Raw getRaw();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder();
 }

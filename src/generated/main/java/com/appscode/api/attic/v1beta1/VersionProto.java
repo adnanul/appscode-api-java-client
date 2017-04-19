@@ -95,19 +95,19 @@ public final class VersionProto {
       "\"/\n\007PhpSpec\022\024\n\014download_url\030\001 \001(\t\022\016\n\006sha" +
       "sum\030\002 \001(\t\"k\n\007NpmSpec\022\023\n\013description\030\001 \001(" +
       "\t\022\023\n\013artifact_id\030\002 \001(\t\022\016\n\006shasum\030\003 \001(\t\022\020" +
-      "\n\010keywords\030\004 \003(\t\022\024\n\014artifact_url\030\005 \001(\t2\203" +
-      "\003\n\010Versions\022\261\001\n\004List\022*.appscode.attic.v1" +
+      "\n\010keywords\030\004 \003(\t\022\024\n\014artifact_url\030\005 \001(\t2\365" +
+      "\002\n\010Versions\022\252\001\n\004List\022*.appscode.attic.v1" +
       "beta1.VersionListRequest\032+.appscode.atti",
-      "c.v1beta1.VersionListResponse\"P\202\323\344\223\002D\022B/" +
+      "c.v1beta1.VersionListResponse\"I\202\323\344\223\002=\022;/" +
       "_appscode/api/attic/v1beta1/artifacts/{t" +
-      "ype}/{name}/versions/json\202\265\030\002\010\001\022\302\001\n\010Desc" +
-      "ribe\022..appscode.attic.v1beta1.VersionDes" +
-      "cribeRequest\032/.appscode.attic.v1beta1.Ve" +
-      "rsionDescribeResponse\"U\202\323\344\223\002I\022G/_appscod" +
-      "e/api/attic/v1beta1/artifacts/{type}/{na" +
-      "me}/versions/{id}/json\202\265\030\002\010\001B9\n\036com.apps" +
-      "code.api.attic.v1beta1B\014VersionProtoP\001Z\007" +
-      "v1beta1b\006proto3"
+      "ype}/versions/json\202\265\030\002\010\001\022\273\001\n\010Describe\022.." +
+      "appscode.attic.v1beta1.VersionDescribeRe" +
+      "quest\032/.appscode.attic.v1beta1.VersionDe" +
+      "scribeResponse\"N\202\323\344\223\002B\022@/_appscode/api/a" +
+      "ttic/v1beta1/artifacts/{type}/versions/{" +
+      "id}/json\202\265\030\002\010\001B9\n\036com.appscode.api.attic" +
+      ".v1beta1B\014VersionProtoP\001Z\007v1beta1b\006proto" +
+      "3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {

@@ -68,6 +68,19 @@ public  final class DescribeResponse extends
 
             break;
           }
+          case 26: {
+            com.appscode.api.loadbalancer.v1beta1.Raw.Builder subBuilder = null;
+            if (raw_ != null) {
+              subBuilder = raw_.toBuilder();
+            }
+            raw_ = input.readMessage(com.appscode.api.loadbalancer.v1beta1.Raw.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(raw_);
+              raw_ = subBuilder.buildPartial();
+            }
+
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -133,6 +146,27 @@ public  final class DescribeResponse extends
     return getLoadBalancer();
   }
 
+  public static final int RAW_FIELD_NUMBER = 3;
+  private com.appscode.api.loadbalancer.v1beta1.Raw raw_;
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  public boolean hasRaw() {
+    return raw_ != null;
+  }
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
+    return raw_ == null ? com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
+  }
+  /**
+   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   */
+  public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
+    return getRaw();
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -151,6 +185,9 @@ public  final class DescribeResponse extends
     if (loadBalancer_ != null) {
       output.writeMessage(2, getLoadBalancer());
     }
+    if (raw_ != null) {
+      output.writeMessage(3, getRaw());
+    }
   }
 
   public int getSerializedSize() {
@@ -165,6 +202,10 @@ public  final class DescribeResponse extends
     if (loadBalancer_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getLoadBalancer());
+    }
+    if (raw_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(3, getRaw());
     }
     memoizedSize = size;
     return size;
@@ -192,6 +233,11 @@ public  final class DescribeResponse extends
       result = result && getLoadBalancer()
           .equals(other.getLoadBalancer());
     }
+    result = result && (hasRaw() == other.hasRaw());
+    if (hasRaw()) {
+      result = result && getRaw()
+          .equals(other.getRaw());
+    }
     return result;
   }
 
@@ -209,6 +255,10 @@ public  final class DescribeResponse extends
     if (hasLoadBalancer()) {
       hash = (37 * hash) + LOAD_BALANCER_FIELD_NUMBER;
       hash = (53 * hash) + getLoadBalancer().hashCode();
+    }
+    if (hasRaw()) {
+      hash = (37 * hash) + RAW_FIELD_NUMBER;
+      hash = (53 * hash) + getRaw().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -340,6 +390,12 @@ public  final class DescribeResponse extends
         loadBalancer_ = null;
         loadBalancerBuilder_ = null;
       }
+      if (rawBuilder_ == null) {
+        raw_ = null;
+      } else {
+        raw_ = null;
+        rawBuilder_ = null;
+      }
       return this;
     }
 
@@ -371,6 +427,11 @@ public  final class DescribeResponse extends
         result.loadBalancer_ = loadBalancer_;
       } else {
         result.loadBalancer_ = loadBalancerBuilder_.build();
+      }
+      if (rawBuilder_ == null) {
+        result.raw_ = raw_;
+      } else {
+        result.raw_ = rawBuilder_.build();
       }
       onBuilt();
       return result;
@@ -418,6 +479,9 @@ public  final class DescribeResponse extends
       }
       if (other.hasLoadBalancer()) {
         mergeLoadBalancer(other.getLoadBalancer());
+      }
+      if (other.hasRaw()) {
+        mergeRaw(other.getRaw());
       }
       onChanged();
       return this;
@@ -677,6 +741,123 @@ public  final class DescribeResponse extends
         loadBalancer_ = null;
       }
       return loadBalancerBuilder_;
+    }
+
+    private com.appscode.api.loadbalancer.v1beta1.Raw raw_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> rawBuilder_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public boolean hasRaw() {
+      return rawBuilder_ != null || raw_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
+      if (rawBuilder_ == null) {
+        return raw_ == null ? com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
+      } else {
+        return rawBuilder_.getMessage();
+      }
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public Builder setRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
+      if (rawBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        raw_ = value;
+        onChanged();
+      } else {
+        rawBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public Builder setRaw(
+        com.appscode.api.loadbalancer.v1beta1.Raw.Builder builderForValue) {
+      if (rawBuilder_ == null) {
+        raw_ = builderForValue.build();
+        onChanged();
+      } else {
+        rawBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public Builder mergeRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
+      if (rawBuilder_ == null) {
+        if (raw_ != null) {
+          raw_ =
+            com.appscode.api.loadbalancer.v1beta1.Raw.newBuilder(raw_).mergeFrom(value).buildPartial();
+        } else {
+          raw_ = value;
+        }
+        onChanged();
+      } else {
+        rawBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public Builder clearRaw() {
+      if (rawBuilder_ == null) {
+        raw_ = null;
+        onChanged();
+      } else {
+        raw_ = null;
+        rawBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public com.appscode.api.loadbalancer.v1beta1.Raw.Builder getRawBuilder() {
+      
+      onChanged();
+      return getRawFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
+      if (rawBuilder_ != null) {
+        return rawBuilder_.getMessageOrBuilder();
+      } else {
+        return raw_ == null ?
+            com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
+      }
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> 
+        getRawFieldBuilder() {
+      if (rawBuilder_ == null) {
+        rawBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder>(
+                getRaw(),
+                getParentForChildren(),
+                isClean());
+        raw_ = null;
+      }
+      return rawBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
