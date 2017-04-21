@@ -733,19 +733,19 @@ public  final class DeletedDatabase extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 created = 1;</code>
+     * <code>optional int64 creation_time = 1;</code>
      */
-    long getCreated();
+    long getCreationTime();
 
     /**
-     * <code>optional int64 deleted = 2;</code>
+     * <code>optional int64 deletion_time = 2;</code>
      */
-    long getDeleted();
+    long getDeletionTime();
 
     /**
-     * <code>optional int64 destroyed = 3;</code>
+     * <code>optional int64 destroy_time = 3;</code>
      */
-    long getDestroyed();
+    long getDestroyTime();
 
     /**
      * <code>optional string phase = 4;</code>
@@ -779,9 +779,9 @@ public  final class DeletedDatabase extends
       super(builder);
     }
     private Status() {
-      created_ = 0L;
-      deleted_ = 0L;
-      destroyed_ = 0L;
+      creationTime_ = 0L;
+      deletionTime_ = 0L;
+      destroyTime_ = 0L;
       phase_ = "";
       reason_ = "";
     }
@@ -813,17 +813,17 @@ public  final class DeletedDatabase extends
             }
             case 8: {
 
-              created_ = input.readInt64();
+              creationTime_ = input.readInt64();
               break;
             }
             case 16: {
 
-              deleted_ = input.readInt64();
+              deletionTime_ = input.readInt64();
               break;
             }
             case 24: {
 
-              destroyed_ = input.readInt64();
+              destroyTime_ = input.readInt64();
               break;
             }
             case 34: {
@@ -861,31 +861,31 @@ public  final class DeletedDatabase extends
               com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder.class);
     }
 
-    public static final int CREATED_FIELD_NUMBER = 1;
-    private long created_;
+    public static final int CREATION_TIME_FIELD_NUMBER = 1;
+    private long creationTime_;
     /**
-     * <code>optional int64 created = 1;</code>
+     * <code>optional int64 creation_time = 1;</code>
      */
-    public long getCreated() {
-      return created_;
+    public long getCreationTime() {
+      return creationTime_;
     }
 
-    public static final int DELETED_FIELD_NUMBER = 2;
-    private long deleted_;
+    public static final int DELETION_TIME_FIELD_NUMBER = 2;
+    private long deletionTime_;
     /**
-     * <code>optional int64 deleted = 2;</code>
+     * <code>optional int64 deletion_time = 2;</code>
      */
-    public long getDeleted() {
-      return deleted_;
+    public long getDeletionTime() {
+      return deletionTime_;
     }
 
-    public static final int DESTROYED_FIELD_NUMBER = 3;
-    private long destroyed_;
+    public static final int DESTROY_TIME_FIELD_NUMBER = 3;
+    private long destroyTime_;
     /**
-     * <code>optional int64 destroyed = 3;</code>
+     * <code>optional int64 destroy_time = 3;</code>
      */
-    public long getDestroyed() {
-      return destroyed_;
+    public long getDestroyTime() {
+      return destroyTime_;
     }
 
     public static final int PHASE_FIELD_NUMBER = 4;
@@ -968,14 +968,14 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (created_ != 0L) {
-        output.writeInt64(1, created_);
+      if (creationTime_ != 0L) {
+        output.writeInt64(1, creationTime_);
       }
-      if (deleted_ != 0L) {
-        output.writeInt64(2, deleted_);
+      if (deletionTime_ != 0L) {
+        output.writeInt64(2, deletionTime_);
       }
-      if (destroyed_ != 0L) {
-        output.writeInt64(3, destroyed_);
+      if (destroyTime_ != 0L) {
+        output.writeInt64(3, destroyTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, phase_);
@@ -990,17 +990,17 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (created_ != 0L) {
+      if (creationTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, created_);
+          .computeInt64Size(1, creationTime_);
       }
-      if (deleted_ != 0L) {
+      if (deletionTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(2, deleted_);
+          .computeInt64Size(2, deletionTime_);
       }
-      if (destroyed_ != 0L) {
+      if (destroyTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, destroyed_);
+          .computeInt64Size(3, destroyTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, phase_);
@@ -1024,12 +1024,12 @@ public  final class DeletedDatabase extends
       com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status) obj;
 
       boolean result = true;
-      result = result && (getCreated()
-          == other.getCreated());
-      result = result && (getDeleted()
-          == other.getDeleted());
-      result = result && (getDestroyed()
-          == other.getDestroyed());
+      result = result && (getCreationTime()
+          == other.getCreationTime());
+      result = result && (getDeletionTime()
+          == other.getDeletionTime());
+      result = result && (getDestroyTime()
+          == other.getDestroyTime());
       result = result && getPhase()
           .equals(other.getPhase());
       result = result && getReason()
@@ -1044,15 +1044,15 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
-      hash = (37 * hash) + CREATED_FIELD_NUMBER;
+      hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreated());
-      hash = (37 * hash) + DELETED_FIELD_NUMBER;
+          getCreationTime());
+      hash = (37 * hash) + DELETION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDeleted());
-      hash = (37 * hash) + DESTROYED_FIELD_NUMBER;
+          getDeletionTime());
+      hash = (37 * hash) + DESTROY_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDestroyed());
+          getDestroyTime());
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
@@ -1175,11 +1175,11 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        created_ = 0L;
+        creationTime_ = 0L;
 
-        deleted_ = 0L;
+        deletionTime_ = 0L;
 
-        destroyed_ = 0L;
+        destroyTime_ = 0L;
 
         phase_ = "";
 
@@ -1207,9 +1207,9 @@ public  final class DeletedDatabase extends
 
       public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status buildPartial() {
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status(this);
-        result.created_ = created_;
-        result.deleted_ = deleted_;
-        result.destroyed_ = destroyed_;
+        result.creationTime_ = creationTime_;
+        result.deletionTime_ = deletionTime_;
+        result.destroyTime_ = destroyTime_;
         result.phase_ = phase_;
         result.reason_ = reason_;
         onBuilt();
@@ -1253,14 +1253,14 @@ public  final class DeletedDatabase extends
 
       public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other) {
         if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance()) return this;
-        if (other.getCreated() != 0L) {
-          setCreated(other.getCreated());
+        if (other.getCreationTime() != 0L) {
+          setCreationTime(other.getCreationTime());
         }
-        if (other.getDeleted() != 0L) {
-          setDeleted(other.getDeleted());
+        if (other.getDeletionTime() != 0L) {
+          setDeletionTime(other.getDeletionTime());
         }
-        if (other.getDestroyed() != 0L) {
-          setDestroyed(other.getDestroyed());
+        if (other.getDestroyTime() != 0L) {
+          setDestroyTime(other.getDestroyTime());
         }
         if (!other.getPhase().isEmpty()) {
           phase_ = other.phase_;
@@ -1296,80 +1296,80 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private long created_ ;
+      private long creationTime_ ;
       /**
-       * <code>optional int64 created = 1;</code>
+       * <code>optional int64 creation_time = 1;</code>
        */
-      public long getCreated() {
-        return created_;
+      public long getCreationTime() {
+        return creationTime_;
       }
       /**
-       * <code>optional int64 created = 1;</code>
+       * <code>optional int64 creation_time = 1;</code>
        */
-      public Builder setCreated(long value) {
+      public Builder setCreationTime(long value) {
         
-        created_ = value;
+        creationTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 created = 1;</code>
+       * <code>optional int64 creation_time = 1;</code>
        */
-      public Builder clearCreated() {
+      public Builder clearCreationTime() {
         
-        created_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long deleted_ ;
-      /**
-       * <code>optional int64 deleted = 2;</code>
-       */
-      public long getDeleted() {
-        return deleted_;
-      }
-      /**
-       * <code>optional int64 deleted = 2;</code>
-       */
-      public Builder setDeleted(long value) {
-        
-        deleted_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional int64 deleted = 2;</code>
-       */
-      public Builder clearDeleted() {
-        
-        deleted_ = 0L;
+        creationTime_ = 0L;
         onChanged();
         return this;
       }
 
-      private long destroyed_ ;
+      private long deletionTime_ ;
       /**
-       * <code>optional int64 destroyed = 3;</code>
+       * <code>optional int64 deletion_time = 2;</code>
        */
-      public long getDestroyed() {
-        return destroyed_;
+      public long getDeletionTime() {
+        return deletionTime_;
       }
       /**
-       * <code>optional int64 destroyed = 3;</code>
+       * <code>optional int64 deletion_time = 2;</code>
        */
-      public Builder setDestroyed(long value) {
+      public Builder setDeletionTime(long value) {
         
-        destroyed_ = value;
+        deletionTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 destroyed = 3;</code>
+       * <code>optional int64 deletion_time = 2;</code>
        */
-      public Builder clearDestroyed() {
+      public Builder clearDeletionTime() {
         
-        destroyed_ = 0L;
+        deletionTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long destroyTime_ ;
+      /**
+       * <code>optional int64 destroy_time = 3;</code>
+       */
+      public long getDestroyTime() {
+        return destroyTime_;
+      }
+      /**
+       * <code>optional int64 destroy_time = 3;</code>
+       */
+      public Builder setDestroyTime(long value) {
+        
+        destroyTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 destroy_time = 3;</code>
+       */
+      public Builder clearDestroyTime() {
+        
+        destroyTime_ = 0L;
         onChanged();
         return this;
       }

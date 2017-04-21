@@ -18,15 +18,15 @@ public interface ScriptSourceSpecOrBuilder extends
       getScriptPathBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   boolean hasVolumeSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource getVolumeSource();
+  com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder getVolumeSourceOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder();
 }

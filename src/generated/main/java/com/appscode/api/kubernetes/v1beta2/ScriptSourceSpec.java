@@ -50,11 +50,11 @@ public  final class ScriptSourceSpec extends
             break;
           }
           case 18: {
-            com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder subBuilder = null;
             if (volumeSource_ != null) {
               subBuilder = volumeSource_.toBuilder();
             }
-            volumeSource_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.parser(), extensionRegistry);
+            volumeSource_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.VolumeSource.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(volumeSource_);
               volumeSource_ = subBuilder.buildPartial();
@@ -120,23 +120,23 @@ public  final class ScriptSourceSpec extends
   }
 
   public static final int VOLUME_SOURCE_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource volumeSource_;
+  private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   public boolean hasVolumeSource() {
     return volumeSource_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource getVolumeSource() {
-    return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.getDefaultInstance() : volumeSource_;
+  public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
+    return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder getVolumeSourceOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
     return getVolumeSource();
   }
 
@@ -508,29 +508,29 @@ public  final class ScriptSourceSpec extends
       return this;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource volumeSource_ = null;
+    private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder> volumeSourceBuilder_;
+        com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> volumeSourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public boolean hasVolumeSource() {
       return volumeSourceBuilder_ != null || volumeSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource getVolumeSource() {
+    public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
       if (volumeSourceBuilder_ == null) {
-        return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.getDefaultInstance() : volumeSource_;
+        return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
       } else {
         return volumeSourceBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
-    public Builder setVolumeSource(com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource value) {
+    public Builder setVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
       if (volumeSourceBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -544,10 +544,10 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder setVolumeSource(
-        com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
       if (volumeSourceBuilder_ == null) {
         volumeSource_ = builderForValue.build();
         onChanged();
@@ -558,13 +558,13 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
-    public Builder mergeVolumeSource(com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource value) {
+    public Builder mergeVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
       if (volumeSourceBuilder_ == null) {
         if (volumeSource_ != null) {
           volumeSource_ =
-            com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.newBuilder(volumeSource_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.VolumeSource.newBuilder(volumeSource_).mergeFrom(value).buildPartial();
         } else {
           volumeSource_ = value;
         }
@@ -576,7 +576,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder clearVolumeSource() {
       if (volumeSourceBuilder_ == null) {
@@ -590,33 +590,33 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder getVolumeSourceBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getVolumeSourceBuilder() {
       
       onChanged();
       return getVolumeSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder getVolumeSourceOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
       if (volumeSourceBuilder_ != null) {
         return volumeSourceBuilder_.getMessageOrBuilder();
       } else {
         return volumeSource_ == null ?
-            com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.getDefaultInstance() : volumeSource_;
+            com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeSource volume_source = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 
         getVolumeSourceFieldBuilder() {
       if (volumeSourceBuilder_ == null) {
         volumeSourceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeSourceOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder>(
                 getVolumeSource(),
                 getParentForChildren(),
                 isClean());

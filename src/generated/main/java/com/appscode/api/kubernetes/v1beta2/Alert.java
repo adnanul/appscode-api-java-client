@@ -15,7 +15,6 @@ public  final class Alert extends
     super(builder);
   }
   private Alert() {
-    status_ = "";
   }
 
   @java.lang.Override
@@ -70,9 +69,16 @@ public  final class Alert extends
             break;
           }
           case 26: {
-            java.lang.String s = input.readStringRequireUtf8();
+            com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder subBuilder = null;
+            if (status_ != null) {
+              subBuilder = status_.toBuilder();
+            }
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(status_);
+              status_ = subBuilder.buildPartial();
+            }
 
-            status_ = s;
             break;
           }
         }
@@ -2740,6 +2746,774 @@ public  final class Alert extends
 
   }
 
+  public interface AlertStatusOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Alert.AlertStatus)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int64 creation_time = 1;</code>
+     */
+    long getCreationTime();
+
+    /**
+     * <code>optional int64 update_time = 2;</code>
+     */
+    long getUpdateTime();
+
+    /**
+     * <code>optional string phase = 3;</code>
+     */
+    java.lang.String getPhase();
+    /**
+     * <code>optional string phase = 3;</code>
+     */
+    com.google.protobuf.ByteString
+        getPhaseBytes();
+
+    /**
+     * <code>optional string reason = 4;</code>
+     */
+    java.lang.String getReason();
+    /**
+     * <code>optional string reason = 4;</code>
+     */
+    com.google.protobuf.ByteString
+        getReasonBytes();
+  }
+  /**
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Alert.AlertStatus}
+   */
+  public  static final class AlertStatus extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Alert.AlertStatus)
+      AlertStatusOrBuilder {
+    // Use AlertStatus.newBuilder() to construct.
+    private AlertStatus(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private AlertStatus() {
+      creationTime_ = 0L;
+      updateTime_ = 0L;
+      phase_ = "";
+      reason_ = "";
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private AlertStatus(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+
+              creationTime_ = input.readInt64();
+              break;
+            }
+            case 16: {
+
+              updateTime_ = input.readInt64();
+              break;
+            }
+            case 26: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              phase_ = s;
+              break;
+            }
+            case 34: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              reason_ = s;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Alert_AlertStatus_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Alert_AlertStatus_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.class, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder.class);
+    }
+
+    public static final int CREATION_TIME_FIELD_NUMBER = 1;
+    private long creationTime_;
+    /**
+     * <code>optional int64 creation_time = 1;</code>
+     */
+    public long getCreationTime() {
+      return creationTime_;
+    }
+
+    public static final int UPDATE_TIME_FIELD_NUMBER = 2;
+    private long updateTime_;
+    /**
+     * <code>optional int64 update_time = 2;</code>
+     */
+    public long getUpdateTime() {
+      return updateTime_;
+    }
+
+    public static final int PHASE_FIELD_NUMBER = 3;
+    private volatile java.lang.Object phase_;
+    /**
+     * <code>optional string phase = 3;</code>
+     */
+    public java.lang.String getPhase() {
+      java.lang.Object ref = phase_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        phase_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string phase = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getPhaseBytes() {
+      java.lang.Object ref = phase_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        phase_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int REASON_FIELD_NUMBER = 4;
+    private volatile java.lang.Object reason_;
+    /**
+     * <code>optional string reason = 4;</code>
+     */
+    public java.lang.String getReason() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        reason_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>optional string reason = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getReasonBytes() {
+      java.lang.Object ref = reason_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        reason_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (creationTime_ != 0L) {
+        output.writeInt64(1, creationTime_);
+      }
+      if (updateTime_ != 0L) {
+        output.writeInt64(2, updateTime_);
+      }
+      if (!getPhaseBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phase_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, reason_);
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (creationTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(1, creationTime_);
+      }
+      if (updateTime_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, updateTime_);
+      }
+      if (!getPhaseBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phase_);
+      }
+      if (!getReasonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, reason_);
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus other = (com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus) obj;
+
+      boolean result = true;
+      result = result && (getCreationTime()
+          == other.getCreationTime());
+      result = result && (getUpdateTime()
+          == other.getUpdateTime());
+      result = result && getPhase()
+          .equals(other.getPhase());
+      result = result && getReason()
+          .equals(other.getReason());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getCreationTime());
+      hash = (37 * hash) + UPDATE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getUpdateTime());
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhase().hashCode();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + getReason().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Alert.AlertStatus}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Alert.AlertStatus)
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Alert_AlertStatus_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Alert_AlertStatus_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.class, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder.class);
+      }
+
+      // Construct using com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        creationTime_ = 0L;
+
+        updateTime_ = 0L;
+
+        phase_ = "";
+
+        reason_ = "";
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Alert_AlertStatus_descriptor;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance();
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus build() {
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus result = new com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus(this);
+        result.creationTime_ = creationTime_;
+        result.updateTime_ = updateTime_;
+        result.phase_ = phase_;
+        result.reason_ = reason_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance()) return this;
+        if (other.getCreationTime() != 0L) {
+          setCreationTime(other.getCreationTime());
+        }
+        if (other.getUpdateTime() != 0L) {
+          setUpdateTime(other.getUpdateTime());
+        }
+        if (!other.getPhase().isEmpty()) {
+          phase_ = other.phase_;
+          onChanged();
+        }
+        if (!other.getReason().isEmpty()) {
+          reason_ = other.reason_;
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private long creationTime_ ;
+      /**
+       * <code>optional int64 creation_time = 1;</code>
+       */
+      public long getCreationTime() {
+        return creationTime_;
+      }
+      /**
+       * <code>optional int64 creation_time = 1;</code>
+       */
+      public Builder setCreationTime(long value) {
+        
+        creationTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 creation_time = 1;</code>
+       */
+      public Builder clearCreationTime() {
+        
+        creationTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long updateTime_ ;
+      /**
+       * <code>optional int64 update_time = 2;</code>
+       */
+      public long getUpdateTime() {
+        return updateTime_;
+      }
+      /**
+       * <code>optional int64 update_time = 2;</code>
+       */
+      public Builder setUpdateTime(long value) {
+        
+        updateTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int64 update_time = 2;</code>
+       */
+      public Builder clearUpdateTime() {
+        
+        updateTime_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object phase_ = "";
+      /**
+       * <code>optional string phase = 3;</code>
+       */
+      public java.lang.String getPhase() {
+        java.lang.Object ref = phase_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          phase_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string phase = 3;</code>
+       */
+      public com.google.protobuf.ByteString
+          getPhaseBytes() {
+        java.lang.Object ref = phase_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          phase_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string phase = 3;</code>
+       */
+      public Builder setPhase(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        phase_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phase = 3;</code>
+       */
+      public Builder clearPhase() {
+        
+        phase_ = getDefaultInstance().getPhase();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string phase = 3;</code>
+       */
+      public Builder setPhaseBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        phase_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object reason_ = "";
+      /**
+       * <code>optional string reason = 4;</code>
+       */
+      public java.lang.String getReason() {
+        java.lang.Object ref = reason_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          reason_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 4;</code>
+       */
+      public com.google.protobuf.ByteString
+          getReasonBytes() {
+        java.lang.Object ref = reason_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          reason_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string reason = 4;</code>
+       */
+      public Builder setReason(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 4;</code>
+       */
+      public Builder clearReason() {
+        
+        reason_ = getDefaultInstance().getReason();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string reason = 4;</code>
+       */
+      public Builder setReasonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        reason_ = value;
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Alert.AlertStatus)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Alert.AlertStatus)
+    private static final com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus();
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<AlertStatus>
+        PARSER = new com.google.protobuf.AbstractParser<AlertStatus>() {
+      public AlertStatus parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new AlertStatus(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<AlertStatus> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<AlertStatus> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
@@ -2783,37 +3557,24 @@ public  final class Alert extends
   }
 
   public static final int STATUS_FIELD_NUMBER = 3;
-  private volatile java.lang.Object status_;
+  private com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus status_;
   /**
-   * <code>optional string status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
-  public java.lang.String getStatus() {
-    java.lang.Object ref = status_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      status_ = s;
-      return s;
-    }
+  public boolean hasStatus() {
+    return status_ != null;
   }
   /**
-   * <code>optional string status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
-  public com.google.protobuf.ByteString
-      getStatusBytes() {
-    java.lang.Object ref = status_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      status_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance() : status_;
+  }
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder getStatusOrBuilder() {
+    return getStatus();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -2834,8 +3595,8 @@ public  final class Alert extends
     if (spec_ != null) {
       output.writeMessage(2, getSpec());
     }
-    if (!getStatusBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, status_);
+    if (status_ != null) {
+      output.writeMessage(3, getStatus());
     }
   }
 
@@ -2852,8 +3613,9 @@ public  final class Alert extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getSpec());
     }
-    if (!getStatusBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, status_);
+    if (status_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(3, getStatus());
     }
     memoizedSize = size;
     return size;
@@ -2881,8 +3643,11 @@ public  final class Alert extends
       result = result && getSpec()
           .equals(other.getSpec());
     }
-    result = result && getStatus()
-        .equals(other.getStatus());
+    result = result && (hasStatus() == other.hasStatus());
+    if (hasStatus()) {
+      result = result && getStatus()
+          .equals(other.getStatus());
+    }
     return result;
   }
 
@@ -2901,8 +3666,10 @@ public  final class Alert extends
       hash = (37 * hash) + SPEC_FIELD_NUMBER;
       hash = (53 * hash) + getSpec().hashCode();
     }
-    hash = (37 * hash) + STATUS_FIELD_NUMBER;
-    hash = (53 * hash) + getStatus().hashCode();
+    if (hasStatus()) {
+      hash = (37 * hash) + STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + getStatus().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -3033,8 +3800,12 @@ public  final class Alert extends
         spec_ = null;
         specBuilder_ = null;
       }
-      status_ = "";
-
+      if (statusBuilder_ == null) {
+        status_ = null;
+      } else {
+        status_ = null;
+        statusBuilder_ = null;
+      }
       return this;
     }
 
@@ -3067,7 +3838,11 @@ public  final class Alert extends
       } else {
         result.spec_ = specBuilder_.build();
       }
-      result.status_ = status_;
+      if (statusBuilder_ == null) {
+        result.status_ = status_;
+      } else {
+        result.status_ = statusBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -3115,9 +3890,8 @@ public  final class Alert extends
       if (other.hasSpec()) {
         mergeSpec(other.getSpec());
       }
-      if (!other.getStatus().isEmpty()) {
-        status_ = other.status_;
-        onChanged();
+      if (other.hasStatus()) {
+        mergeStatus(other.getStatus());
       }
       onChanged();
       return this;
@@ -3379,73 +4153,121 @@ public  final class Alert extends
       return specBuilder_;
     }
 
-    private java.lang.Object status_ = "";
+    private com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus status_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
-    public java.lang.String getStatus() {
-      java.lang.Object ref = status_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        status_ = s;
-        return s;
+    public boolean hasStatus() {
+      return statusBuilder_ != null || status_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getStatus() {
+      if (statusBuilder_ == null) {
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance() : status_;
       } else {
-        return (java.lang.String) ref;
+        return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getStatusBytes() {
-      java.lang.Object ref = status_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        status_ = b;
-        return b;
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus value) {
+      if (statusBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        status_ = value;
+        onChanged();
       } else {
-        return (com.google.protobuf.ByteString) ref;
+        statusBuilder_.setMessage(value);
       }
+
+      return this;
     }
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder setStatus(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      status_ = value;
-      onChanged();
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder builderForValue) {
+      if (statusBuilder_ == null) {
+        status_ = builderForValue.build();
+        onChanged();
+      } else {
+        statusBuilder_.setMessage(builderForValue.build());
+      }
+
       return this;
     }
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     */
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus value) {
+      if (statusBuilder_ == null) {
+        if (status_ != null) {
+          status_ =
+            com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.newBuilder(status_).mergeFrom(value).buildPartial();
+        } else {
+          status_ = value;
+        }
+        onChanged();
+      } else {
+        statusBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder clearStatus() {
-      
-      status_ = getDefaultInstance().getStatus();
-      onChanged();
+      if (statusBuilder_ == null) {
+        status_ = null;
+        onChanged();
+      } else {
+        status_ = null;
+        statusBuilder_ = null;
+      }
+
       return this;
     }
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
-    public Builder setStatusBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
+    public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder getStatusBuilder() {
       
-      status_ = value;
       onChanged();
-      return this;
+      return getStatusFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder getStatusOrBuilder() {
+      if (statusBuilder_ != null) {
+        return statusBuilder_.getMessageOrBuilder();
+      } else {
+        return status_ == null ?
+            com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance() : status_;
+      }
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder> 
+        getStatusFieldBuilder() {
+      if (statusBuilder_ == null) {
+        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder>(
+                getStatus(),
+                getParentForChildren(),
+                isClean());
+        status_ = null;
+      }
+      return statusBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

@@ -48,9 +48,9 @@ public interface MetaOrBuilder extends
       getResourceVersionBytes();
 
   /**
-   * <code>optional int64 created_at = 5;</code>
+   * <code>optional int64 creation_timestamp = 5;</code>
    */
-  long getCreatedAt();
+  long getCreationTimestamp();
 
   /**
    * <code>optional int64 generation = 6;</code>

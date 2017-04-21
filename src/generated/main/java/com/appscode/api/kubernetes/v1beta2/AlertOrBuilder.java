@@ -34,12 +34,15 @@ public interface AlertOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.Alert.AlertSpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional string status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
-  java.lang.String getStatus();
+  boolean hasStatus();
   /**
-   * <code>optional string status = 3;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
-  com.google.protobuf.ByteString
-      getStatusBytes();
+  com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getStatus();
+  /**
+   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder getStatusOrBuilder();
 }

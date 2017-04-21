@@ -2755,14 +2755,17 @@ public  final class PodSpec extends
         getNameBytes();
 
     /**
-     * <code>optional string host_path = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
-    java.lang.String getHostPath();
+    boolean hasVolumeSource();
     /**
-     * <code>optional string host_path = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
-    com.google.protobuf.ByteString
-        getHostPathBytes();
+    com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder();
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.PodSpec.Volume}
@@ -2777,7 +2780,6 @@ public  final class PodSpec extends
     }
     private Volume() {
       name_ = "";
-      hostPath_ = "";
     }
 
     @java.lang.Override
@@ -2812,9 +2814,16 @@ public  final class PodSpec extends
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder subBuilder = null;
+              if (volumeSource_ != null) {
+                subBuilder = volumeSource_.toBuilder();
+              }
+              volumeSource_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.VolumeSource.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(volumeSource_);
+                volumeSource_ = subBuilder.buildPartial();
+              }
 
-              hostPath_ = s;
               break;
             }
           }
@@ -2874,38 +2883,25 @@ public  final class PodSpec extends
       }
     }
 
-    public static final int HOST_PATH_FIELD_NUMBER = 2;
-    private volatile java.lang.Object hostPath_;
+    public static final int VOLUMESOURCE_FIELD_NUMBER = 2;
+    private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_;
     /**
-     * <code>optional string host_path = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
-    public java.lang.String getHostPath() {
-      java.lang.Object ref = hostPath_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        hostPath_ = s;
-        return s;
-      }
+    public boolean hasVolumeSource() {
+      return volumeSource_ != null;
     }
     /**
-     * <code>optional string host_path = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getHostPathBytes() {
-      java.lang.Object ref = hostPath_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        hostPath_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
+      return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
+      return getVolumeSource();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -2923,8 +2919,8 @@ public  final class PodSpec extends
       if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
       }
-      if (!getHostPathBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, hostPath_);
+      if (volumeSource_ != null) {
+        output.writeMessage(2, getVolumeSource());
       }
     }
 
@@ -2936,8 +2932,9 @@ public  final class PodSpec extends
       if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
       }
-      if (!getHostPathBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, hostPath_);
+      if (volumeSource_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getVolumeSource());
       }
       memoizedSize = size;
       return size;
@@ -2957,8 +2954,11 @@ public  final class PodSpec extends
       boolean result = true;
       result = result && getName()
           .equals(other.getName());
-      result = result && getHostPath()
-          .equals(other.getHostPath());
+      result = result && (hasVolumeSource() == other.hasVolumeSource());
+      if (hasVolumeSource()) {
+        result = result && getVolumeSource()
+            .equals(other.getVolumeSource());
+      }
       return result;
     }
 
@@ -2971,8 +2971,10 @@ public  final class PodSpec extends
       hash = (19 * hash) + getDescriptorForType().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
-      hash = (37 * hash) + HOST_PATH_FIELD_NUMBER;
-      hash = (53 * hash) + getHostPath().hashCode();
+      if (hasVolumeSource()) {
+        hash = (37 * hash) + VOLUMESOURCE_FIELD_NUMBER;
+        hash = (53 * hash) + getVolumeSource().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3093,8 +3095,12 @@ public  final class PodSpec extends
         super.clear();
         name_ = "";
 
-        hostPath_ = "";
-
+        if (volumeSourceBuilder_ == null) {
+          volumeSource_ = null;
+        } else {
+          volumeSource_ = null;
+          volumeSourceBuilder_ = null;
+        }
         return this;
       }
 
@@ -3118,7 +3124,11 @@ public  final class PodSpec extends
       public com.appscode.api.kubernetes.v1beta2.PodSpec.Volume buildPartial() {
         com.appscode.api.kubernetes.v1beta2.PodSpec.Volume result = new com.appscode.api.kubernetes.v1beta2.PodSpec.Volume(this);
         result.name_ = name_;
-        result.hostPath_ = hostPath_;
+        if (volumeSourceBuilder_ == null) {
+          result.volumeSource_ = volumeSource_;
+        } else {
+          result.volumeSource_ = volumeSourceBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -3164,9 +3174,8 @@ public  final class PodSpec extends
           name_ = other.name_;
           onChanged();
         }
-        if (!other.getHostPath().isEmpty()) {
-          hostPath_ = other.hostPath_;
-          onChanged();
+        if (other.hasVolumeSource()) {
+          mergeVolumeSource(other.getVolumeSource());
         }
         onChanged();
         return this;
@@ -3263,73 +3272,121 @@ public  final class PodSpec extends
         return this;
       }
 
-      private java.lang.Object hostPath_ = "";
+      private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> volumeSourceBuilder_;
       /**
-       * <code>optional string host_path = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
-      public java.lang.String getHostPath() {
-        java.lang.Object ref = hostPath_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          hostPath_ = s;
-          return s;
+      public boolean hasVolumeSource() {
+        return volumeSourceBuilder_ != null || volumeSource_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
+        if (volumeSourceBuilder_ == null) {
+          return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
         } else {
-          return (java.lang.String) ref;
+          return volumeSourceBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional string host_path = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
-      public com.google.protobuf.ByteString
-          getHostPathBytes() {
-        java.lang.Object ref = hostPath_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          hostPath_ = b;
-          return b;
+      public Builder setVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
+        if (volumeSourceBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          volumeSource_ = value;
+          onChanged();
         } else {
-          return (com.google.protobuf.ByteString) ref;
+          volumeSourceBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public Builder setVolumeSource(
+          com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
+        if (volumeSourceBuilder_ == null) {
+          volumeSource_ = builderForValue.build();
+          onChanged();
+        } else {
+          volumeSourceBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public Builder mergeVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
+        if (volumeSourceBuilder_ == null) {
+          if (volumeSource_ != null) {
+            volumeSource_ =
+              com.appscode.api.kubernetes.v1beta2.VolumeSource.newBuilder(volumeSource_).mergeFrom(value).buildPartial();
+          } else {
+            volumeSource_ = value;
+          }
+          onChanged();
+        } else {
+          volumeSourceBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public Builder clearVolumeSource() {
+        if (volumeSourceBuilder_ == null) {
+          volumeSource_ = null;
+          onChanged();
+        } else {
+          volumeSource_ = null;
+          volumeSourceBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getVolumeSourceBuilder() {
+        
+        onChanged();
+        return getVolumeSourceFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
+        if (volumeSourceBuilder_ != null) {
+          return volumeSourceBuilder_.getMessageOrBuilder();
+        } else {
+          return volumeSource_ == null ?
+              com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
         }
       }
       /**
-       * <code>optional string host_path = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
-      public Builder setHostPath(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        hostPath_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string host_path = 2;</code>
-       */
-      public Builder clearHostPath() {
-        
-        hostPath_ = getDefaultInstance().getHostPath();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string host_path = 2;</code>
-       */
-      public Builder setHostPathBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        hostPath_ = value;
-        onChanged();
-        return this;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 
+          getVolumeSourceFieldBuilder() {
+        if (volumeSourceBuilder_ == null) {
+          volumeSourceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder>(
+                  getVolumeSource(),
+                  getParentForChildren(),
+                  isClean());
+          volumeSource_ = null;
+        }
+        return volumeSourceBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
