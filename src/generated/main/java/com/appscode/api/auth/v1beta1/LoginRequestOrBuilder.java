@@ -28,17 +28,27 @@ public interface LoginRequestOrBuilder extends
       getUsernameBytes();
 
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>optional string password = 3;</code>
    */
-  java.lang.String getSecret();
+  java.lang.String getPassword();
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>optional string password = 3;</code>
    */
   com.google.protobuf.ByteString
-      getSecretBytes();
+      getPasswordBytes();
 
   /**
-   * <code>optional bool issue_token = 4;</code>
+   * <code>optional string token = 4;</code>
+   */
+  java.lang.String getToken();
+  /**
+   * <code>optional string token = 4;</code>
+   */
+  com.google.protobuf.ByteString
+      getTokenBytes();
+
+  /**
+   * <code>optional bool issue_token = 5;</code>
    */
   boolean getIssueToken();
 }

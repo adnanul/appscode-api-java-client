@@ -15,21 +15,6 @@ public final class AuthenticationProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_auth_v1beta1_CSRFTokenResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_auth_v1beta1_TokenRequest_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_auth_v1beta1_TokenRequest_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_auth_v1beta1_TokenResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_auth_v1beta1_TokenResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_auth_v1beta1_LoginRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -49,6 +34,11 @@ public final class AuthenticationProto {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_auth_v1beta1_LogoutResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_auth_v1beta1_CSRFTokenResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -62,37 +52,29 @@ public final class AuthenticationProto {
       "on.proto\022\025appscode.auth.v1beta1\032\034google/" +
       "api/annotations.proto\032\036appscode/api/anno" +
       "tations.proto\032\037appscode/api/dtypes/types" +
-      ".proto\"P\n\021CSRFTokenResponse\022\'\n\006status\030\001 " +
-      "\001(\0132\027.appscode.dtypes.Status\022\022\n\ncsrf_tok" +
-      "en\030\002 \001(\t\"0\n\014TokenRequest\022\021\n\tnamespace\030\001 " +
-      "\001(\t\022\r\n\005token\030\002 \001(\t\"8\n\rTokenResponse\022\'\n\006s" +
-      "tatus\030\001 \001(\0132\027.appscode.dtypes.Status\"X\n\014" +
-      "LoginRequest\022\021\n\tnamespace\030\001 \001(\t\022\020\n\010usern",
-      "ame\030\002 \001(\t\022\016\n\006secret\030\003 \001(\t\022\023\n\013issue_token" +
-      "\030\004 \001(\010\"G\n\rLoginResponse\022\'\n\006status\030\001 \001(\0132" +
-      "\027.appscode.dtypes.Status\022\r\n\005token\030\002 \001(\t\"" +
-      "1\n\rLogoutRequest\022\021\n\tnamespace\030\001 \001(\t\022\r\n\005t" +
-      "oken\030\002 \001(\t\"9\n\016LogoutResponse\022\'\n\006status\030\001" +
-      " \001(\0132\027.appscode.dtypes.Status2\232\005\n\016Authen" +
-      "tication\022\260\001\n\005Login\022#.appscode.auth.v1bet" +
-      "a1.LoginRequest\032$.appscode.auth.v1beta1." +
-      "LoginResponse\"\\\202\323\344\223\002P\"&/_appscode/api/au" +
-      "th/v1beta1/login/json:\001*Z#\"\036/_appscode/a",
-      "pi/auth/v0.1/login:\001*\202\265\030\002\010\001\022\265\001\n\006Logout\022$" +
-      ".appscode.auth.v1beta1.LogoutRequest\032%.a" +
-      "ppscode.auth.v1beta1.LogoutResponse\"^\202\323\344" +
-      "\223\002R\"\'/_appscode/api/auth/v1beta1/logout/" +
-      "json:\001*Z$\"\037/_appscode/api/auth/v0.1/logo" +
-      "ut:\001*\202\265\030\002\010\001\022\213\001\n\005Token\022#.appscode.auth.v1" +
-      "beta1.TokenRequest\032$.appscode.auth.v1bet" +
-      "a1.TokenResponse\"7\202\323\344\223\002+\"&/_appscode/api" +
-      "/auth/v1beta1/token/json:\001*\202\265\030\002\010\001\022\216\001\n\tCS" +
-      "RFToken\022\034.appscode.dtypes.VoidRequest\032(.",
-      "appscode.auth.v1beta1.CSRFTokenResponse\"" +
-      "9\202\323\344\223\002-\022+/_appscode/api/auth/v1beta1/csr" +
-      "f-token/json\202\265\030\002\010\001B?\n\035com.appscode.api.a" +
-      "uth.v1beta1B\023AuthenticationProtoP\001Z\007v1be" +
-      "ta1b\006proto3"
+      ".proto\"i\n\014LoginRequest\022\021\n\tnamespace\030\001 \001(" +
+      "\t\022\020\n\010username\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\r\n" +
+      "\005token\030\004 \001(\t\022\023\n\013issue_token\030\005 \001(\010\"G\n\rLog" +
+      "inResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt" +
+      "ypes.Status\022\r\n\005token\030\002 \001(\t\"1\n\rLogoutRequ" +
+      "est\022\021\n\tnamespace\030\001 \001(\t\022\r\n\005token\030\002 \001(\t\"9\n",
+      "\016LogoutResponse\022\'\n\006status\030\001 \001(\0132\027.appsco" +
+      "de.dtypes.Status\"P\n\021CSRFTokenResponse\022\'\n" +
+      "\006status\030\001 \001(\0132\027.appscode.dtypes.Status\022\022" +
+      "\n\ncsrf_token\030\002 \001(\t2\301\003\n\016Authentication\022\213\001" +
+      "\n\005Login\022#.appscode.auth.v1beta1.LoginReq" +
+      "uest\032$.appscode.auth.v1beta1.LoginRespon" +
+      "se\"7\202\323\344\223\002+\"&/_appscode/api/auth/v1beta1/" +
+      "login/json:\001*\202\265\030\002\010\001\022\217\001\n\006Logout\022$.appscod" +
+      "e.auth.v1beta1.LogoutRequest\032%.appscode." +
+      "auth.v1beta1.LogoutResponse\"8\202\323\344\223\002,\"\'/_a",
+      "ppscode/api/auth/v1beta1/logout/json:\001*\202" +
+      "\265\030\002\010\001\022\216\001\n\tCSRFToken\022\034.appscode.dtypes.Vo" +
+      "idRequest\032(.appscode.auth.v1beta1.CSRFTo" +
+      "kenResponse\"9\202\323\344\223\002-\022+/_appscode/api/auth" +
+      "/v1beta1/csrf-token/json\202\265\030\002\010\001B?\n\035com.ap" +
+      "pscode.api.auth.v1beta1B\023AuthenticationP" +
+      "rotoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -109,48 +91,36 @@ public final class AuthenticationProto {
           com.appscode.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.dtypes.TypeProto.getDescriptor(),
         }, assigner);
-    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor,
-        new java.lang.String[] { "Status", "CsrfToken", });
-    internal_static_appscode_auth_v1beta1_TokenRequest_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_appscode_auth_v1beta1_TokenRequest_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_auth_v1beta1_TokenRequest_descriptor,
-        new java.lang.String[] { "Namespace", "Token", });
-    internal_static_appscode_auth_v1beta1_TokenResponse_descriptor =
-      getDescriptor().getMessageTypes().get(2);
-    internal_static_appscode_auth_v1beta1_TokenResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_auth_v1beta1_TokenResponse_descriptor,
-        new java.lang.String[] { "Status", });
     internal_static_appscode_auth_v1beta1_LoginRequest_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_appscode_auth_v1beta1_LoginRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_LoginRequest_descriptor,
-        new java.lang.String[] { "Namespace", "Username", "Secret", "IssueToken", });
+        new java.lang.String[] { "Namespace", "Username", "Password", "Token", "IssueToken", });
     internal_static_appscode_auth_v1beta1_LoginResponse_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_auth_v1beta1_LoginResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_LoginResponse_descriptor,
         new java.lang.String[] { "Status", "Token", });
     internal_static_appscode_auth_v1beta1_LogoutRequest_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_auth_v1beta1_LogoutRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_LogoutRequest_descriptor,
         new java.lang.String[] { "Namespace", "Token", });
     internal_static_appscode_auth_v1beta1_LogoutResponse_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_auth_v1beta1_LogoutResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_LogoutResponse_descriptor,
         new java.lang.String[] { "Status", });
+    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_appscode_auth_v1beta1_CSRFTokenResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor,
+        new java.lang.String[] { "Status", "CsrfToken", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.appscode.api.AnnotationsProto.cors);

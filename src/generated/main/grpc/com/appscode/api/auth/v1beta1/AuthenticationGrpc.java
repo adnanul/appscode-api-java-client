@@ -46,15 +46,6 @@ public class AuthenticationGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LogoutRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LogoutResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.appscode.api.auth.v1beta1.TokenRequest,
-      com.appscode.api.auth.v1beta1.TokenResponse> METHOD_TOKEN =
-      io.grpc.MethodDescriptor.create(
-          io.grpc.MethodDescriptor.MethodType.UNARY,
-          generateFullMethodName(
-              "appscode.auth.v1beta1.Authentication", "Token"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.TokenRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.TokenResponse.getDefaultInstance()));
-  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
       com.appscode.api.auth.v1beta1.CSRFTokenResponse> METHOD_CSRFTOKEN =
       io.grpc.MethodDescriptor.create(
@@ -109,16 +100,6 @@ public class AuthenticationGrpc {
     }
 
     /**
-     * <pre>
-     * appctl used this to validates the user token with phabricator.
-     * </pre>
-     */
-    public void token(com.appscode.api.auth.v1beta1.TokenRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.TokenResponse> responseObserver) {
-      asyncUnimplementedUnaryCall(METHOD_TOKEN, responseObserver);
-    }
-
-    /**
      */
     public void cSRFToken(com.appscode.api.dtypes.VoidRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse> responseObserver) {
@@ -141,13 +122,6 @@ public class AuthenticationGrpc {
                 com.appscode.api.auth.v1beta1.LogoutRequest,
                 com.appscode.api.auth.v1beta1.LogoutResponse>(
                   this, METHODID_LOGOUT)))
-          .addMethod(
-            METHOD_TOKEN,
-            asyncUnaryCall(
-              new MethodHandlers<
-                com.appscode.api.auth.v1beta1.TokenRequest,
-                com.appscode.api.auth.v1beta1.TokenResponse>(
-                  this, METHODID_TOKEN)))
           .addMethod(
             METHOD_CSRFTOKEN,
             asyncUnaryCall(
@@ -197,17 +171,6 @@ public class AuthenticationGrpc {
     }
 
     /**
-     * <pre>
-     * appctl used this to validates the user token with phabricator.
-     * </pre>
-     */
-    public void token(com.appscode.api.auth.v1beta1.TokenRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.TokenResponse> responseObserver) {
-      asyncUnaryCall(
-          getChannel().newCall(METHOD_TOKEN, getCallOptions()), request, responseObserver);
-    }
-
-    /**
      */
     public void cSRFToken(com.appscode.api.dtypes.VoidRequest request,
         io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse> responseObserver) {
@@ -249,16 +212,6 @@ public class AuthenticationGrpc {
     public com.appscode.api.auth.v1beta1.LogoutResponse logout(com.appscode.api.auth.v1beta1.LogoutRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_LOGOUT, getCallOptions(), request);
-    }
-
-    /**
-     * <pre>
-     * appctl used this to validates the user token with phabricator.
-     * </pre>
-     */
-    public com.appscode.api.auth.v1beta1.TokenResponse token(com.appscode.api.auth.v1beta1.TokenRequest request) {
-      return blockingUnaryCall(
-          getChannel(), METHOD_TOKEN, getCallOptions(), request);
     }
 
     /**
@@ -307,17 +260,6 @@ public class AuthenticationGrpc {
     }
 
     /**
-     * <pre>
-     * appctl used this to validates the user token with phabricator.
-     * </pre>
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.auth.v1beta1.TokenResponse> token(
-        com.appscode.api.auth.v1beta1.TokenRequest request) {
-      return futureUnaryCall(
-          getChannel().newCall(METHOD_TOKEN, getCallOptions()), request);
-    }
-
-    /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.auth.v1beta1.CSRFTokenResponse> cSRFToken(
         com.appscode.api.dtypes.VoidRequest request) {
@@ -328,8 +270,7 @@ public class AuthenticationGrpc {
 
   private static final int METHODID_LOGIN = 0;
   private static final int METHODID_LOGOUT = 1;
-  private static final int METHODID_TOKEN = 2;
-  private static final int METHODID_CSRFTOKEN = 3;
+  private static final int METHODID_CSRFTOKEN = 2;
 
   private static class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -356,10 +297,6 @@ public class AuthenticationGrpc {
           serviceImpl.logout((com.appscode.api.auth.v1beta1.LogoutRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.LogoutResponse>) responseObserver);
           break;
-        case METHODID_TOKEN:
-          serviceImpl.token((com.appscode.api.auth.v1beta1.TokenRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.TokenResponse>) responseObserver);
-          break;
         case METHODID_CSRFTOKEN:
           serviceImpl.cSRFToken((com.appscode.api.dtypes.VoidRequest) request,
               (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.CSRFTokenResponse>) responseObserver);
@@ -384,7 +321,6 @@ public class AuthenticationGrpc {
     return new io.grpc.ServiceDescriptor(SERVICE_NAME,
         METHOD_LOGIN,
         METHOD_LOGOUT,
-        METHOD_TOKEN,
         METHOD_CSRFTOKEN);
   }
 

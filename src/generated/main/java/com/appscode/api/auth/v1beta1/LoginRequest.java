@@ -17,7 +17,8 @@ public  final class LoginRequest extends
   private LoginRequest() {
     namespace_ = "";
     username_ = "";
-    secret_ = "";
+    password_ = "";
+    token_ = "";
     issueToken_ = false;
   }
 
@@ -61,10 +62,16 @@ public  final class LoginRequest extends
           case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            secret_ = s;
+            password_ = s;
             break;
           }
-          case 32: {
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            token_ = s;
+            break;
+          }
+          case 40: {
 
             issueToken_ = input.readBool();
             break;
@@ -160,44 +167,78 @@ public  final class LoginRequest extends
     }
   }
 
-  public static final int SECRET_FIELD_NUMBER = 3;
-  private volatile java.lang.Object secret_;
+  public static final int PASSWORD_FIELD_NUMBER = 3;
+  private volatile java.lang.Object password_;
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>optional string password = 3;</code>
    */
-  public java.lang.String getSecret() {
-    java.lang.Object ref = secret_;
+  public java.lang.String getPassword() {
+    java.lang.Object ref = password_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      secret_ = s;
+      password_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>optional string password = 3;</code>
    */
   public com.google.protobuf.ByteString
-      getSecretBytes() {
-    java.lang.Object ref = secret_;
+      getPasswordBytes() {
+    java.lang.Object ref = password_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      secret_ = b;
+      password_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int ISSUE_TOKEN_FIELD_NUMBER = 4;
+  public static final int TOKEN_FIELD_NUMBER = 4;
+  private volatile java.lang.Object token_;
+  /**
+   * <code>optional string token = 4;</code>
+   */
+  public java.lang.String getToken() {
+    java.lang.Object ref = token_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      token_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>optional string token = 4;</code>
+   */
+  public com.google.protobuf.ByteString
+      getTokenBytes() {
+    java.lang.Object ref = token_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      token_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int ISSUE_TOKEN_FIELD_NUMBER = 5;
   private boolean issueToken_;
   /**
-   * <code>optional bool issue_token = 4;</code>
+   * <code>optional bool issue_token = 5;</code>
    */
   public boolean getIssueToken() {
     return issueToken_;
@@ -221,11 +262,14 @@ public  final class LoginRequest extends
     if (!getUsernameBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, username_);
     }
-    if (!getSecretBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, secret_);
+    if (!getPasswordBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, password_);
+    }
+    if (!getTokenBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, token_);
     }
     if (issueToken_ != false) {
-      output.writeBool(4, issueToken_);
+      output.writeBool(5, issueToken_);
     }
   }
 
@@ -240,12 +284,15 @@ public  final class LoginRequest extends
     if (!getUsernameBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, username_);
     }
-    if (!getSecretBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, secret_);
+    if (!getPasswordBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, password_);
+    }
+    if (!getTokenBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, token_);
     }
     if (issueToken_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(4, issueToken_);
+        .computeBoolSize(5, issueToken_);
     }
     memoizedSize = size;
     return size;
@@ -267,8 +314,10 @@ public  final class LoginRequest extends
         .equals(other.getNamespace());
     result = result && getUsername()
         .equals(other.getUsername());
-    result = result && getSecret()
-        .equals(other.getSecret());
+    result = result && getPassword()
+        .equals(other.getPassword());
+    result = result && getToken()
+        .equals(other.getToken());
     result = result && (getIssueToken()
         == other.getIssueToken());
     return result;
@@ -285,8 +334,10 @@ public  final class LoginRequest extends
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + USERNAME_FIELD_NUMBER;
     hash = (53 * hash) + getUsername().hashCode();
-    hash = (37 * hash) + SECRET_FIELD_NUMBER;
-    hash = (53 * hash) + getSecret().hashCode();
+    hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
+    hash = (53 * hash) + getPassword().hashCode();
+    hash = (37 * hash) + TOKEN_FIELD_NUMBER;
+    hash = (53 * hash) + getToken().hashCode();
     hash = (37 * hash) + ISSUE_TOKEN_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getIssueToken());
@@ -412,7 +463,9 @@ public  final class LoginRequest extends
 
       username_ = "";
 
-      secret_ = "";
+      password_ = "";
+
+      token_ = "";
 
       issueToken_ = false;
 
@@ -440,7 +493,8 @@ public  final class LoginRequest extends
       com.appscode.api.auth.v1beta1.LoginRequest result = new com.appscode.api.auth.v1beta1.LoginRequest(this);
       result.namespace_ = namespace_;
       result.username_ = username_;
-      result.secret_ = secret_;
+      result.password_ = password_;
+      result.token_ = token_;
       result.issueToken_ = issueToken_;
       onBuilt();
       return result;
@@ -491,8 +545,12 @@ public  final class LoginRequest extends
         username_ = other.username_;
         onChanged();
       }
-      if (!other.getSecret().isEmpty()) {
-        secret_ = other.secret_;
+      if (!other.getPassword().isEmpty()) {
+        password_ = other.password_;
+        onChanged();
+      }
+      if (!other.getToken().isEmpty()) {
+        token_ = other.token_;
         onChanged();
       }
       if (other.getIssueToken() != false) {
@@ -662,84 +720,153 @@ public  final class LoginRequest extends
       return this;
     }
 
-    private java.lang.Object secret_ = "";
+    private java.lang.Object password_ = "";
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>optional string password = 3;</code>
      */
-    public java.lang.String getSecret() {
-      java.lang.Object ref = secret_;
+    public java.lang.String getPassword() {
+      java.lang.Object ref = password_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        secret_ = s;
+        password_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>optional string password = 3;</code>
      */
     public com.google.protobuf.ByteString
-        getSecretBytes() {
-      java.lang.Object ref = secret_;
+        getPasswordBytes() {
+      java.lang.Object ref = password_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        secret_ = b;
+        password_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>optional string password = 3;</code>
      */
-    public Builder setSecret(
+    public Builder setPassword(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      secret_ = value;
+      password_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>optional string password = 3;</code>
      */
-    public Builder clearSecret() {
+    public Builder clearPassword() {
       
-      secret_ = getDefaultInstance().getSecret();
+      password_ = getDefaultInstance().getPassword();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>optional string password = 3;</code>
      */
-    public Builder setSecretBytes(
+    public Builder setPasswordBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      secret_ = value;
+      password_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object token_ = "";
+    /**
+     * <code>optional string token = 4;</code>
+     */
+    public java.lang.String getToken() {
+      java.lang.Object ref = token_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        token_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>optional string token = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getTokenBytes() {
+      java.lang.Object ref = token_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        token_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>optional string token = 4;</code>
+     */
+    public Builder setToken(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      token_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string token = 4;</code>
+     */
+    public Builder clearToken() {
+      
+      token_ = getDefaultInstance().getToken();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>optional string token = 4;</code>
+     */
+    public Builder setTokenBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      token_ = value;
       onChanged();
       return this;
     }
 
     private boolean issueToken_ ;
     /**
-     * <code>optional bool issue_token = 4;</code>
+     * <code>optional bool issue_token = 5;</code>
      */
     public boolean getIssueToken() {
       return issueToken_;
     }
     /**
-     * <code>optional bool issue_token = 4;</code>
+     * <code>optional bool issue_token = 5;</code>
      */
     public Builder setIssueToken(boolean value) {
       
@@ -748,7 +875,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional bool issue_token = 4;</code>
+     * <code>optional bool issue_token = 5;</code>
      */
     public Builder clearIssueToken() {
       
