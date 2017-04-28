@@ -21,17 +21,17 @@ public interface PostgresOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Postgres.Spec getSpec();
+  com.appscode.api.kubernetes.v1beta2.PostgresSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Postgres.SpecOrBuilder getSpecOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getSpecOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>

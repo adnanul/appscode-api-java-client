@@ -4,17 +4,17 @@
 package com.appscode.api.kubernetes.v1beta2;
 
 /**
- * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic}
+ * Protobuf type {@code appscode.kubernetes.v1beta2.Origin}
  */
-public  final class Elastic extends
+public  final class Origin extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Elastic)
-    ElasticOrBuilder {
-  // Use Elastic.newBuilder() to construct.
-  private Elastic(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Origin)
+    OriginOrBuilder {
+  // Use Origin.newBuilder() to construct.
+  private Origin(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private Elastic() {
+  private Origin() {
   }
 
   @java.lang.Override
@@ -22,7 +22,7 @@ public  final class Elastic extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private Elastic(
+  private Origin(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -56,27 +56,14 @@ public  final class Elastic extends
             break;
           }
           case 18: {
-            com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder subBuilder = null;
             if (spec_ != null) {
               subBuilder = spec_.toBuilder();
             }
-            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.ElasticSpec.parser(), extensionRegistry);
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Origin.Spec.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(spec_);
               spec_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 26: {
-            com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Elastic.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
             }
 
             break;
@@ -94,60 +81,58 @@ public  final class Elastic extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_descriptor;
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_fieldAccessorTable
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.appscode.api.kubernetes.v1beta2.Elastic.class, com.appscode.api.kubernetes.v1beta2.Elastic.Builder.class);
+            com.appscode.api.kubernetes.v1beta2.Origin.class, com.appscode.api.kubernetes.v1beta2.Origin.Builder.class);
   }
 
-  public interface StatusOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Elastic.Status)
+  public interface SpecOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Origin.Spec)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
-    long getCreationTime();
+    boolean hasElastic();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder();
 
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    java.lang.String getDatabaseStatus();
+    boolean hasPostgres();
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    com.google.protobuf.ByteString
-        getDatabaseStatusBytes();
-
+    com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres();
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    java.lang.String getReason();
-    /**
-     * <code>optional string reason = 3;</code>
-     */
-    com.google.protobuf.ByteString
-        getReasonBytes();
+    com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder();
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic.Status}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Origin.Spec}
    */
-  public  static final class Status extends
+  public  static final class Spec extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Elastic.Status)
-      StatusOrBuilder {
-    // Use Status.newBuilder() to construct.
-    private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Origin.Spec)
+      SpecOrBuilder {
+    // Use Spec.newBuilder() to construct.
+    private Spec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Status() {
-      creationTime_ = 0L;
-      databaseStatus_ = "";
-      reason_ = "";
+    private Spec() {
     }
 
     @java.lang.Override
@@ -155,7 +140,7 @@ public  final class Elastic extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private Status(
+    private Spec(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -175,21 +160,30 @@ public  final class Elastic extends
               }
               break;
             }
-            case 8: {
+            case 10: {
+              com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder subBuilder = null;
+              if (elastic_ != null) {
+                subBuilder = elastic_.toBuilder();
+              }
+              elastic_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.ElasticSpec.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(elastic_);
+                elastic_ = subBuilder.buildPartial();
+              }
 
-              creationTime_ = input.readInt64();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder subBuilder = null;
+              if (postgres_ != null) {
+                subBuilder = postgres_.toBuilder();
+              }
+              postgres_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.PostgresSpec.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(postgres_);
+                postgres_ = subBuilder.buildPartial();
+              }
 
-              databaseStatus_ = s;
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              reason_ = s;
               break;
             }
           }
@@ -205,91 +199,56 @@ public  final class Elastic extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_Spec_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_Spec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.Elastic.Status.class, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Origin.Spec.class, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder.class);
     }
 
-    public static final int CREATION_TIME_FIELD_NUMBER = 1;
-    private long creationTime_;
+    public static final int ELASTIC_FIELD_NUMBER = 1;
+    private com.appscode.api.kubernetes.v1beta2.ElasticSpec elastic_;
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
-    public long getCreationTime() {
-      return creationTime_;
+    public boolean hasElastic() {
+      return elastic_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic() {
+      return elastic_ == null ? com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : elastic_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder() {
+      return getElastic();
     }
 
-    public static final int DATABASE_STATUS_FIELD_NUMBER = 2;
-    private volatile java.lang.Object databaseStatus_;
+    public static final int POSTGRES_FIELD_NUMBER = 2;
+    private com.appscode.api.kubernetes.v1beta2.PostgresSpec postgres_;
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    public java.lang.String getDatabaseStatus() {
-      java.lang.Object ref = databaseStatus_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        databaseStatus_ = s;
-        return s;
-      }
+    public boolean hasPostgres() {
+      return postgres_ != null;
     }
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getDatabaseStatusBytes() {
-      java.lang.Object ref = databaseStatus_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        databaseStatus_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int REASON_FIELD_NUMBER = 3;
-    private volatile java.lang.Object reason_;
-    /**
-     * <code>optional string reason = 3;</code>
-     */
-    public java.lang.String getReason() {
-      java.lang.Object ref = reason_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        reason_ = s;
-        return s;
-      }
+    public com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres() {
+      return postgres_ == null ? com.appscode.api.kubernetes.v1beta2.PostgresSpec.getDefaultInstance() : postgres_;
     }
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getReasonBytes() {
-      java.lang.Object ref = reason_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        reason_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder() {
+      return getPostgres();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -304,14 +263,11 @@ public  final class Elastic extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (creationTime_ != 0L) {
-        output.writeInt64(1, creationTime_);
+      if (elastic_ != null) {
+        output.writeMessage(1, getElastic());
       }
-      if (!getDatabaseStatusBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, databaseStatus_);
-      }
-      if (!getReasonBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, reason_);
+      if (postgres_ != null) {
+        output.writeMessage(2, getPostgres());
       }
     }
 
@@ -320,15 +276,13 @@ public  final class Elastic extends
       if (size != -1) return size;
 
       size = 0;
-      if (creationTime_ != 0L) {
+      if (elastic_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, creationTime_);
+          .computeMessageSize(1, getElastic());
       }
-      if (!getDatabaseStatusBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, databaseStatus_);
-      }
-      if (!getReasonBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, reason_);
+      if (postgres_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getPostgres());
       }
       memoizedSize = size;
       return size;
@@ -340,18 +294,22 @@ public  final class Elastic extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Elastic.Status)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Origin.Spec)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.Elastic.Status other = (com.appscode.api.kubernetes.v1beta2.Elastic.Status) obj;
+      com.appscode.api.kubernetes.v1beta2.Origin.Spec other = (com.appscode.api.kubernetes.v1beta2.Origin.Spec) obj;
 
       boolean result = true;
-      result = result && (getCreationTime()
-          == other.getCreationTime());
-      result = result && getDatabaseStatus()
-          .equals(other.getDatabaseStatus());
-      result = result && getReason()
-          .equals(other.getReason());
+      result = result && (hasElastic() == other.hasElastic());
+      if (hasElastic()) {
+        result = result && getElastic()
+            .equals(other.getElastic());
+      }
+      result = result && (hasPostgres() == other.hasPostgres());
+      if (hasPostgres()) {
+        result = result && getPostgres()
+            .equals(other.getPostgres());
+      }
       return result;
     }
 
@@ -362,70 +320,71 @@ public  final class Elastic extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
-      hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreationTime());
-      hash = (37 * hash) + DATABASE_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getDatabaseStatus().hashCode();
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + getReason().hashCode();
+      if (hasElastic()) {
+        hash = (37 * hash) + ELASTIC_FIELD_NUMBER;
+        hash = (53 * hash) + getElastic().hashCode();
+      }
+      if (hasPostgres()) {
+        hash = (37 * hash) + POSTGRES_FIELD_NUMBER;
+        hash = (53 * hash) + getPostgres().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -437,7 +396,7 @@ public  final class Elastic extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Elastic.Status prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Origin.Spec prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -452,25 +411,25 @@ public  final class Elastic extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic.Status}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Origin.Spec}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Elastic.Status)
-        com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Origin.Spec)
+        com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_Spec_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_Spec_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.Elastic.Status.class, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.Origin.Spec.class, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.Elastic.Status.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.Origin.Spec.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -487,37 +446,50 @@ public  final class Elastic extends
       }
       public Builder clear() {
         super.clear();
-        creationTime_ = 0L;
-
-        databaseStatus_ = "";
-
-        reason_ = "";
-
+        if (elasticBuilder_ == null) {
+          elastic_ = null;
+        } else {
+          elastic_ = null;
+          elasticBuilder_ = null;
+        }
+        if (postgresBuilder_ == null) {
+          postgres_ = null;
+        } else {
+          postgres_ = null;
+          postgresBuilder_ = null;
+        }
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_Spec_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.Origin.Spec getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Elastic.Status build() {
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.Origin.Spec build() {
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.Elastic.Status buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status result = new com.appscode.api.kubernetes.v1beta2.Elastic.Status(this);
-        result.creationTime_ = creationTime_;
-        result.databaseStatus_ = databaseStatus_;
-        result.reason_ = reason_;
+      public com.appscode.api.kubernetes.v1beta2.Origin.Spec buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec result = new com.appscode.api.kubernetes.v1beta2.Origin.Spec(this);
+        if (elasticBuilder_ == null) {
+          result.elastic_ = elastic_;
+        } else {
+          result.elastic_ = elasticBuilder_.build();
+        }
+        if (postgresBuilder_ == null) {
+          result.postgres_ = postgres_;
+        } else {
+          result.postgres_ = postgresBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -549,26 +521,21 @@ public  final class Elastic extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.Elastic.Status) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Elastic.Status)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Origin.Spec) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Origin.Spec)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Elastic.Status other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance()) return this;
-        if (other.getCreationTime() != 0L) {
-          setCreationTime(other.getCreationTime());
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Origin.Spec other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance()) return this;
+        if (other.hasElastic()) {
+          mergeElastic(other.getElastic());
         }
-        if (!other.getDatabaseStatus().isEmpty()) {
-          databaseStatus_ = other.databaseStatus_;
-          onChanged();
-        }
-        if (!other.getReason().isEmpty()) {
-          reason_ = other.reason_;
-          onChanged();
+        if (other.hasPostgres()) {
+          mergePostgres(other.getPostgres());
         }
         onChanged();
         return this;
@@ -582,11 +549,11 @@ public  final class Elastic extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Elastic.Status) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Origin.Spec) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -596,168 +563,238 @@ public  final class Elastic extends
         return this;
       }
 
-      private long creationTime_ ;
+      private com.appscode.api.kubernetes.v1beta2.ElasticSpec elastic_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> elasticBuilder_;
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
-      public long getCreationTime() {
-        return creationTime_;
+      public boolean hasElastic() {
+        return elasticBuilder_ != null || elastic_ != null;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
-      public Builder setCreationTime(long value) {
-        
-        creationTime_ = value;
-        onChanged();
+      public com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic() {
+        if (elasticBuilder_ == null) {
+          return elastic_ == null ? com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : elastic_;
+        } else {
+          return elasticBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      public Builder setElastic(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
+        if (elasticBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          elastic_ = value;
+          onChanged();
+        } else {
+          elasticBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
-      public Builder clearCreationTime() {
-        
-        creationTime_ = 0L;
-        onChanged();
+      public Builder setElastic(
+          com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder builderForValue) {
+        if (elasticBuilder_ == null) {
+          elastic_ = builderForValue.build();
+          onChanged();
+        } else {
+          elasticBuilder_.setMessage(builderForValue.build());
+        }
+
         return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      public Builder mergeElastic(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
+        if (elasticBuilder_ == null) {
+          if (elastic_ != null) {
+            elastic_ =
+              com.appscode.api.kubernetes.v1beta2.ElasticSpec.newBuilder(elastic_).mergeFrom(value).buildPartial();
+          } else {
+            elastic_ = value;
+          }
+          onChanged();
+        } else {
+          elasticBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      public Builder clearElastic() {
+        if (elasticBuilder_ == null) {
+          elastic_ = null;
+          onChanged();
+        } else {
+          elastic_ = null;
+          elasticBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder getElasticBuilder() {
+        
+        onChanged();
+        return getElasticFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder() {
+        if (elasticBuilder_ != null) {
+          return elasticBuilder_.getMessageOrBuilder();
+        } else {
+          return elastic_ == null ?
+              com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : elastic_;
+        }
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> 
+          getElasticFieldBuilder() {
+        if (elasticBuilder_ == null) {
+          elasticBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder>(
+                  getElastic(),
+                  getParentForChildren(),
+                  isClean());
+          elastic_ = null;
+        }
+        return elasticBuilder_;
       }
 
-      private java.lang.Object databaseStatus_ = "";
+      private com.appscode.api.kubernetes.v1beta2.PostgresSpec postgres_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> postgresBuilder_;
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
-      public java.lang.String getDatabaseStatus() {
-        java.lang.Object ref = databaseStatus_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          databaseStatus_ = s;
-          return s;
+      public boolean hasPostgres() {
+        return postgresBuilder_ != null || postgres_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres() {
+        if (postgresBuilder_ == null) {
+          return postgres_ == null ? com.appscode.api.kubernetes.v1beta2.PostgresSpec.getDefaultInstance() : postgres_;
         } else {
-          return (java.lang.String) ref;
+          return postgresBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
-      public com.google.protobuf.ByteString
-          getDatabaseStatusBytes() {
-        java.lang.Object ref = databaseStatus_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          databaseStatus_ = b;
-          return b;
+      public Builder setPostgres(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
+        if (postgresBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          postgres_ = value;
+          onChanged();
         } else {
-          return (com.google.protobuf.ByteString) ref;
+          postgresBuilder_.setMessage(value);
         }
-      }
-      /**
-       * <code>optional string database_status = 2;</code>
-       */
-      public Builder setDatabaseStatus(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        databaseStatus_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string database_status = 2;</code>
-       */
-      public Builder clearDatabaseStatus() {
-        
-        databaseStatus_ = getDefaultInstance().getDatabaseStatus();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string database_status = 2;</code>
-       */
-      public Builder setDatabaseStatusBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        databaseStatus_ = value;
-        onChanged();
-        return this;
-      }
 
-      private java.lang.Object reason_ = "";
+        return this;
+      }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
-      public java.lang.String getReason() {
-        java.lang.Object ref = reason_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          reason_ = s;
-          return s;
+      public Builder setPostgres(
+          com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder builderForValue) {
+        if (postgresBuilder_ == null) {
+          postgres_ = builderForValue.build();
+          onChanged();
         } else {
-          return (java.lang.String) ref;
+          postgresBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       */
+      public Builder mergePostgres(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
+        if (postgresBuilder_ == null) {
+          if (postgres_ != null) {
+            postgres_ =
+              com.appscode.api.kubernetes.v1beta2.PostgresSpec.newBuilder(postgres_).mergeFrom(value).buildPartial();
+          } else {
+            postgres_ = value;
+          }
+          onChanged();
+        } else {
+          postgresBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       */
+      public Builder clearPostgres() {
+        if (postgresBuilder_ == null) {
+          postgres_ = null;
+          onChanged();
+        } else {
+          postgres_ = null;
+          postgresBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder getPostgresBuilder() {
+        
+        onChanged();
+        return getPostgresFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder() {
+        if (postgresBuilder_ != null) {
+          return postgresBuilder_.getMessageOrBuilder();
+        } else {
+          return postgres_ == null ?
+              com.appscode.api.kubernetes.v1beta2.PostgresSpec.getDefaultInstance() : postgres_;
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
-      public com.google.protobuf.ByteString
-          getReasonBytes() {
-        java.lang.Object ref = reason_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          reason_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> 
+          getPostgresFieldBuilder() {
+        if (postgresBuilder_ == null) {
+          postgresBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder>(
+                  getPostgres(),
+                  getParentForChildren(),
+                  isClean());
+          postgres_ = null;
         }
-      }
-      /**
-       * <code>optional string reason = 3;</code>
-       */
-      public Builder setReason(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reason = 3;</code>
-       */
-      public Builder clearReason() {
-        
-        reason_ = getDefaultInstance().getReason();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional string reason = 3;</code>
-       */
-      public Builder setReasonBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        reason_ = value;
-        onChanged();
-        return this;
+        return postgresBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -770,39 +807,39 @@ public  final class Elastic extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Elastic.Status)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Origin.Spec)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Elastic.Status)
-    private static final com.appscode.api.kubernetes.v1beta2.Elastic.Status DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Origin.Spec)
+    private static final com.appscode.api.kubernetes.v1beta2.Origin.Spec DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Elastic.Status();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Origin.Spec();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.Origin.Spec getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Status>
-        PARSER = new com.google.protobuf.AbstractParser<Status>() {
-      public Status parsePartialFrom(
+    private static final com.google.protobuf.Parser<Spec>
+        PARSER = new com.google.protobuf.AbstractParser<Spec>() {
+      public Spec parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new Status(input, extensionRegistry);
+          return new Spec(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Status> parser() {
+    public static com.google.protobuf.Parser<Spec> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Status> getParserForType() {
+    public com.google.protobuf.Parser<Spec> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Elastic.Status getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.Origin.Spec getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -830,45 +867,24 @@ public  final class Elastic extends
   }
 
   public static final int SPEC_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.ElasticSpec spec_;
+  private com.appscode.api.kubernetes.v1beta2.Origin.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.ElasticSpec getSpec() {
-    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : spec_;
+  public com.appscode.api.kubernetes.v1beta2.Origin.Spec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getSpecOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
-  }
-
-  public static final int STATUS_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta2.Elastic.Status status_;
-  /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta2.Elastic.Status getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -889,9 +905,6 @@ public  final class Elastic extends
     if (spec_ != null) {
       output.writeMessage(2, getSpec());
     }
-    if (status_ != null) {
-      output.writeMessage(3, getStatus());
-    }
   }
 
   public int getSerializedSize() {
@@ -907,10 +920,6 @@ public  final class Elastic extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getSpec());
     }
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getStatus());
-    }
     memoizedSize = size;
     return size;
   }
@@ -921,10 +930,10 @@ public  final class Elastic extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Elastic)) {
+    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Origin)) {
       return super.equals(obj);
     }
-    com.appscode.api.kubernetes.v1beta2.Elastic other = (com.appscode.api.kubernetes.v1beta2.Elastic) obj;
+    com.appscode.api.kubernetes.v1beta2.Origin other = (com.appscode.api.kubernetes.v1beta2.Origin) obj;
 
     boolean result = true;
     result = result && (hasMeta() == other.hasMeta());
@@ -936,11 +945,6 @@ public  final class Elastic extends
     if (hasSpec()) {
       result = result && getSpec()
           .equals(other.getSpec());
-    }
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
     }
     return result;
   }
@@ -960,67 +964,63 @@ public  final class Elastic extends
       hash = (37 * hash) + SPEC_FIELD_NUMBER;
       hash = (53 * hash) + getSpec().hashCode();
     }
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(byte[] data)
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseDelimitedFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseDelimitedFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.Elastic parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Origin parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1032,7 +1032,7 @@ public  final class Elastic extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Elastic prototype) {
+  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Origin prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -1047,25 +1047,25 @@ public  final class Elastic extends
     return builder;
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.Elastic}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Origin}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Elastic)
-      com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder {
+      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Origin)
+      com.appscode.api.kubernetes.v1beta2.OriginOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.Elastic.class, com.appscode.api.kubernetes.v1beta2.Elastic.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Origin.class, com.appscode.api.kubernetes.v1beta2.Origin.Builder.class);
     }
 
-    // Construct using com.appscode.api.kubernetes.v1beta2.Elastic.newBuilder()
+    // Construct using com.appscode.api.kubernetes.v1beta2.Origin.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -1094,34 +1094,28 @@ public  final class Elastic extends
         spec_ = null;
         specBuilder_ = null;
       }
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       return this;
     }
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Elastic_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Origin_descriptor;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Elastic getDefaultInstanceForType() {
-      return com.appscode.api.kubernetes.v1beta2.Elastic.getDefaultInstance();
+    public com.appscode.api.kubernetes.v1beta2.Origin getDefaultInstanceForType() {
+      return com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance();
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Elastic build() {
-      com.appscode.api.kubernetes.v1beta2.Elastic result = buildPartial();
+    public com.appscode.api.kubernetes.v1beta2.Origin build() {
+      com.appscode.api.kubernetes.v1beta2.Origin result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.Elastic buildPartial() {
-      com.appscode.api.kubernetes.v1beta2.Elastic result = new com.appscode.api.kubernetes.v1beta2.Elastic(this);
+    public com.appscode.api.kubernetes.v1beta2.Origin buildPartial() {
+      com.appscode.api.kubernetes.v1beta2.Origin result = new com.appscode.api.kubernetes.v1beta2.Origin(this);
       if (metaBuilder_ == null) {
         result.meta_ = meta_;
       } else {
@@ -1131,11 +1125,6 @@ public  final class Elastic extends
         result.spec_ = spec_;
       } else {
         result.spec_ = specBuilder_.build();
-      }
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
       }
       onBuilt();
       return result;
@@ -1168,24 +1157,21 @@ public  final class Elastic extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.appscode.api.kubernetes.v1beta2.Elastic) {
-        return mergeFrom((com.appscode.api.kubernetes.v1beta2.Elastic)other);
+      if (other instanceof com.appscode.api.kubernetes.v1beta2.Origin) {
+        return mergeFrom((com.appscode.api.kubernetes.v1beta2.Origin)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Elastic other) {
-      if (other == com.appscode.api.kubernetes.v1beta2.Elastic.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Origin other) {
+      if (other == com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance()) return this;
       if (other.hasMeta()) {
         mergeMeta(other.getMeta());
       }
       if (other.hasSpec()) {
         mergeSpec(other.getSpec());
-      }
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
       }
       onChanged();
       return this;
@@ -1199,11 +1185,11 @@ public  final class Elastic extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.appscode.api.kubernetes.v1beta2.Elastic parsedMessage = null;
+      com.appscode.api.kubernetes.v1beta2.Origin parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.appscode.api.kubernetes.v1beta2.Elastic) e.getUnfinishedMessage();
+        parsedMessage = (com.appscode.api.kubernetes.v1beta2.Origin) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -1330,29 +1316,29 @@ public  final class Elastic extends
       return metaBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.ElasticSpec spec_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Origin.Spec spec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> specBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.ElasticSpec getSpec() {
+    public com.appscode.api.kubernetes.v1beta2.Origin.Spec getSpec() {
       if (specBuilder_ == null) {
-        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : spec_;
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance() : spec_;
       } else {
         return specBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
-    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Origin.Spec value) {
       if (specBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1366,10 +1352,10 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder setSpec(
-        com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder builderForValue) {
       if (specBuilder_ == null) {
         spec_ = builderForValue.build();
         onChanged();
@@ -1380,13 +1366,13 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
-    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Origin.Spec value) {
       if (specBuilder_ == null) {
         if (spec_ != null) {
           spec_ =
-            com.appscode.api.kubernetes.v1beta2.ElasticSpec.newBuilder(spec_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Origin.Spec.newBuilder(spec_).mergeFrom(value).buildPartial();
         } else {
           spec_ = value;
         }
@@ -1398,7 +1384,7 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1412,156 +1398,39 @@ public  final class Elastic extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder getSpecBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder getSpecBuilder() {
       
       onChanged();
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getSpecOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
         return specBuilder_.getMessageOrBuilder();
       } else {
         return spec_ == null ?
-            com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : spec_;
+            com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance() : spec_;
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Origin.Spec, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder> 
         getSpecFieldBuilder() {
       if (specBuilder_ == null) {
         specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Origin.Spec, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder>(
                 getSpec(),
                 getParentForChildren(),
                 isClean());
         spec_ = null;
       }
       return specBuilder_;
-    }
-
-    private com.appscode.api.kubernetes.v1beta2.Elastic.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.Elastic.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Elastic.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Elastic.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.kubernetes.v1beta2.Elastic.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.Elastic.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.Elastic.Status, com.appscode.api.kubernetes.v1beta2.Elastic.Status.Builder, com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1574,39 +1443,39 @@ public  final class Elastic extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Elastic)
+    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Origin)
   }
 
-  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Elastic)
-  private static final com.appscode.api.kubernetes.v1beta2.Elastic DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Origin)
+  private static final com.appscode.api.kubernetes.v1beta2.Origin DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Elastic();
+    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Origin();
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.Elastic getDefaultInstance() {
+  public static com.appscode.api.kubernetes.v1beta2.Origin getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<Elastic>
-      PARSER = new com.google.protobuf.AbstractParser<Elastic>() {
-    public Elastic parsePartialFrom(
+  private static final com.google.protobuf.Parser<Origin>
+      PARSER = new com.google.protobuf.AbstractParser<Origin>() {
+    public Origin parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Elastic(input, extensionRegistry);
+        return new Origin(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<Elastic> parser() {
+  public static com.google.protobuf.Parser<Origin> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<Elastic> getParserForType() {
+  public com.google.protobuf.Parser<Origin> getParserForType() {
     return PARSER;
   }
 
-  public com.appscode.api.kubernetes.v1beta2.Elastic getDefaultInstanceForType() {
+  public com.appscode.api.kubernetes.v1beta2.Origin getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

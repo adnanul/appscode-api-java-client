@@ -21,17 +21,17 @@ public interface ElasticOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Elastic.Spec getSpec();
+  com.appscode.api.kubernetes.v1beta2.ElasticSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Spec spec = 2;</code>
+   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.Elastic.SpecOrBuilder getSpecOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getSpecOrBuilder();
 
   /**
    * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>

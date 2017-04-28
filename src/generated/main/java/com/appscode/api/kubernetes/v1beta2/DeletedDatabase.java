@@ -109,22 +109,27 @@ public  final class DeletedDatabase extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+     * <code>optional bool wipe_out = 1;</code>
      */
-    boolean hasAuthSecret();
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
-     */
-    com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret();
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
-     */
-    com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder();
+    boolean getWipeOut();
 
     /**
-     * <code>optional bool destroy = 2;</code>
+     * <code>optional bool recover = 2;</code>
      */
-    boolean getDestroy();
+    boolean getRecover();
+
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    boolean hasOrigin();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Origin getOrigin();
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder();
   }
   /**
    * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Spec}
@@ -138,7 +143,8 @@ public  final class DeletedDatabase extends
       super(builder);
     }
     private Spec() {
-      destroy_ = false;
+      wipeOut_ = false;
+      recover_ = false;
     }
 
     @java.lang.Override
@@ -166,22 +172,27 @@ public  final class DeletedDatabase extends
               }
               break;
             }
-            case 10: {
-              com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder subBuilder = null;
-              if (authSecret_ != null) {
-                subBuilder = authSecret_.toBuilder();
-              }
-              authSecret_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(authSecret_);
-                authSecret_ = subBuilder.buildPartial();
-              }
+            case 8: {
 
+              wipeOut_ = input.readBool();
               break;
             }
             case 16: {
 
-              destroy_ = input.readBool();
+              recover_ = input.readBool();
+              break;
+            }
+            case 26: {
+              com.appscode.api.kubernetes.v1beta2.Origin.Builder subBuilder = null;
+              if (origin_ != null) {
+                subBuilder = origin_.toBuilder();
+              }
+              origin_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Origin.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(origin_);
+                origin_ = subBuilder.buildPartial();
+              }
+
               break;
             }
           }
@@ -207,34 +218,43 @@ public  final class DeletedDatabase extends
               com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder.class);
     }
 
-    public static final int AUTH_SECRET_FIELD_NUMBER = 1;
-    private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource authSecret_;
+    public static final int WIPE_OUT_FIELD_NUMBER = 1;
+    private boolean wipeOut_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+     * <code>optional bool wipe_out = 1;</code>
      */
-    public boolean hasAuthSecret() {
-      return authSecret_ != null;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret() {
-      return authSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : authSecret_;
-    }
-    /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder() {
-      return getAuthSecret();
+    public boolean getWipeOut() {
+      return wipeOut_;
     }
 
-    public static final int DESTROY_FIELD_NUMBER = 2;
-    private boolean destroy_;
+    public static final int RECOVER_FIELD_NUMBER = 2;
+    private boolean recover_;
     /**
-     * <code>optional bool destroy = 2;</code>
+     * <code>optional bool recover = 2;</code>
      */
-    public boolean getDestroy() {
-      return destroy_;
+    public boolean getRecover() {
+      return recover_;
+    }
+
+    public static final int ORIGIN_FIELD_NUMBER = 3;
+    private com.appscode.api.kubernetes.v1beta2.Origin origin_;
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    public boolean hasOrigin() {
+      return origin_ != null;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Origin getOrigin() {
+      return origin_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
+    }
+    /**
+     * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder() {
+      return getOrigin();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -249,11 +269,14 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (authSecret_ != null) {
-        output.writeMessage(1, getAuthSecret());
+      if (wipeOut_ != false) {
+        output.writeBool(1, wipeOut_);
       }
-      if (destroy_ != false) {
-        output.writeBool(2, destroy_);
+      if (recover_ != false) {
+        output.writeBool(2, recover_);
+      }
+      if (origin_ != null) {
+        output.writeMessage(3, getOrigin());
       }
     }
 
@@ -262,13 +285,17 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (authSecret_ != null) {
+      if (wipeOut_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getAuthSecret());
+          .computeBoolSize(1, wipeOut_);
       }
-      if (destroy_ != false) {
+      if (recover_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, destroy_);
+          .computeBoolSize(2, recover_);
+      }
+      if (origin_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getOrigin());
       }
       memoizedSize = size;
       return size;
@@ -286,13 +313,15 @@ public  final class DeletedDatabase extends
       com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec) obj;
 
       boolean result = true;
-      result = result && (hasAuthSecret() == other.hasAuthSecret());
-      if (hasAuthSecret()) {
-        result = result && getAuthSecret()
-            .equals(other.getAuthSecret());
+      result = result && (getWipeOut()
+          == other.getWipeOut());
+      result = result && (getRecover()
+          == other.getRecover());
+      result = result && (hasOrigin() == other.hasOrigin());
+      if (hasOrigin()) {
+        result = result && getOrigin()
+            .equals(other.getOrigin());
       }
-      result = result && (getDestroy()
-          == other.getDestroy());
       return result;
     }
 
@@ -303,13 +332,16 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
-      if (hasAuthSecret()) {
-        hash = (37 * hash) + AUTH_SECRET_FIELD_NUMBER;
-        hash = (53 * hash) + getAuthSecret().hashCode();
-      }
-      hash = (37 * hash) + DESTROY_FIELD_NUMBER;
+      hash = (37 * hash) + WIPE_OUT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getDestroy());
+          getWipeOut());
+      hash = (37 * hash) + RECOVER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getRecover());
+      if (hasOrigin()) {
+        hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
+        hash = (53 * hash) + getOrigin().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -428,14 +460,16 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        if (authSecretBuilder_ == null) {
-          authSecret_ = null;
-        } else {
-          authSecret_ = null;
-          authSecretBuilder_ = null;
-        }
-        destroy_ = false;
+        wipeOut_ = false;
 
+        recover_ = false;
+
+        if (originBuilder_ == null) {
+          origin_ = null;
+        } else {
+          origin_ = null;
+          originBuilder_ = null;
+        }
         return this;
       }
 
@@ -458,12 +492,13 @@ public  final class DeletedDatabase extends
 
       public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec buildPartial() {
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec(this);
-        if (authSecretBuilder_ == null) {
-          result.authSecret_ = authSecret_;
+        result.wipeOut_ = wipeOut_;
+        result.recover_ = recover_;
+        if (originBuilder_ == null) {
+          result.origin_ = origin_;
         } else {
-          result.authSecret_ = authSecretBuilder_.build();
+          result.origin_ = originBuilder_.build();
         }
-        result.destroy_ = destroy_;
         onBuilt();
         return result;
       }
@@ -505,11 +540,14 @@ public  final class DeletedDatabase extends
 
       public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other) {
         if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance()) return this;
-        if (other.hasAuthSecret()) {
-          mergeAuthSecret(other.getAuthSecret());
+        if (other.getWipeOut() != false) {
+          setWipeOut(other.getWipeOut());
         }
-        if (other.getDestroy() != false) {
-          setDestroy(other.getDestroy());
+        if (other.getRecover() != false) {
+          setRecover(other.getRecover());
+        }
+        if (other.hasOrigin()) {
+          mergeOrigin(other.getOrigin());
         }
         onChanged();
         return this;
@@ -537,147 +575,173 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource authSecret_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> authSecretBuilder_;
+      private boolean wipeOut_ ;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional bool wipe_out = 1;</code>
        */
-      public boolean hasAuthSecret() {
-        return authSecretBuilder_ != null || authSecret_ != null;
+      public boolean getWipeOut() {
+        return wipeOut_;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional bool wipe_out = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getAuthSecret() {
-        if (authSecretBuilder_ == null) {
-          return authSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : authSecret_;
+      public Builder setWipeOut(boolean value) {
+        
+        wipeOut_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool wipe_out = 1;</code>
+       */
+      public Builder clearWipeOut() {
+        
+        wipeOut_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean recover_ ;
+      /**
+       * <code>optional bool recover = 2;</code>
+       */
+      public boolean getRecover() {
+        return recover_;
+      }
+      /**
+       * <code>optional bool recover = 2;</code>
+       */
+      public Builder setRecover(boolean value) {
+        
+        recover_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional bool recover = 2;</code>
+       */
+      public Builder clearRecover() {
+        
+        recover_ = false;
+        onChanged();
+        return this;
+      }
+
+      private com.appscode.api.kubernetes.v1beta2.Origin origin_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder> originBuilder_;
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       */
+      public boolean hasOrigin() {
+        return originBuilder_ != null || origin_ != null;
+      }
+      /**
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Origin getOrigin() {
+        if (originBuilder_ == null) {
+          return origin_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
         } else {
-          return authSecretBuilder_.getMessage();
+          return originBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public Builder setAuthSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
-        if (authSecretBuilder_ == null) {
+      public Builder setOrigin(com.appscode.api.kubernetes.v1beta2.Origin value) {
+        if (originBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          authSecret_ = value;
+          origin_ = value;
           onChanged();
         } else {
-          authSecretBuilder_.setMessage(value);
+          originBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public Builder setAuthSecret(
-          com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
-        if (authSecretBuilder_ == null) {
-          authSecret_ = builderForValue.build();
+      public Builder setOrigin(
+          com.appscode.api.kubernetes.v1beta2.Origin.Builder builderForValue) {
+        if (originBuilder_ == null) {
+          origin_ = builderForValue.build();
           onChanged();
         } else {
-          authSecretBuilder_.setMessage(builderForValue.build());
+          originBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public Builder mergeAuthSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
-        if (authSecretBuilder_ == null) {
-          if (authSecret_ != null) {
-            authSecret_ =
-              com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.newBuilder(authSecret_).mergeFrom(value).buildPartial();
+      public Builder mergeOrigin(com.appscode.api.kubernetes.v1beta2.Origin value) {
+        if (originBuilder_ == null) {
+          if (origin_ != null) {
+            origin_ =
+              com.appscode.api.kubernetes.v1beta2.Origin.newBuilder(origin_).mergeFrom(value).buildPartial();
           } else {
-            authSecret_ = value;
+            origin_ = value;
           }
           onChanged();
         } else {
-          authSecretBuilder_.mergeFrom(value);
+          originBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public Builder clearAuthSecret() {
-        if (authSecretBuilder_ == null) {
-          authSecret_ = null;
+      public Builder clearOrigin() {
+        if (originBuilder_ == null) {
+          origin_ = null;
           onChanged();
         } else {
-          authSecret_ = null;
-          authSecretBuilder_ = null;
+          origin_ = null;
+          originBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getAuthSecretBuilder() {
+      public com.appscode.api.kubernetes.v1beta2.Origin.Builder getOriginBuilder() {
         
         onChanged();
-        return getAuthSecretFieldBuilder().getBuilder();
+        return getOriginFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getAuthSecretOrBuilder() {
-        if (authSecretBuilder_ != null) {
-          return authSecretBuilder_.getMessageOrBuilder();
+      public com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder() {
+        if (originBuilder_ != null) {
+          return originBuilder_.getMessageOrBuilder();
         } else {
-          return authSecret_ == null ?
-              com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : authSecret_;
+          return origin_ == null ?
+              com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource auth_secret = 1;</code>
+       * <code>optional .appscode.kubernetes.v1beta2.Origin origin = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
-          getAuthSecretFieldBuilder() {
-        if (authSecretBuilder_ == null) {
-          authSecretBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder>(
-                  getAuthSecret(),
+          com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder> 
+          getOriginFieldBuilder() {
+        if (originBuilder_ == null) {
+          originBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder>(
+                  getOrigin(),
                   getParentForChildren(),
                   isClean());
-          authSecret_ = null;
+          origin_ = null;
         }
-        return authSecretBuilder_;
-      }
-
-      private boolean destroy_ ;
-      /**
-       * <code>optional bool destroy = 2;</code>
-       */
-      public boolean getDestroy() {
-        return destroy_;
-      }
-      /**
-       * <code>optional bool destroy = 2;</code>
-       */
-      public Builder setDestroy(boolean value) {
-        
-        destroy_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>optional bool destroy = 2;</code>
-       */
-      public Builder clearDestroy() {
-        
-        destroy_ = false;
-        onChanged();
-        return this;
+        return originBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -743,9 +807,9 @@ public  final class DeletedDatabase extends
     long getDeletionTime();
 
     /**
-     * <code>optional int64 destroy_time = 3;</code>
+     * <code>optional int64 wipe_out_time = 3;</code>
      */
-    long getDestroyTime();
+    long getWipeOutTime();
 
     /**
      * <code>optional string phase = 4;</code>
@@ -781,7 +845,7 @@ public  final class DeletedDatabase extends
     private Status() {
       creationTime_ = 0L;
       deletionTime_ = 0L;
-      destroyTime_ = 0L;
+      wipeOutTime_ = 0L;
       phase_ = "";
       reason_ = "";
     }
@@ -823,7 +887,7 @@ public  final class DeletedDatabase extends
             }
             case 24: {
 
-              destroyTime_ = input.readInt64();
+              wipeOutTime_ = input.readInt64();
               break;
             }
             case 34: {
@@ -879,13 +943,13 @@ public  final class DeletedDatabase extends
       return deletionTime_;
     }
 
-    public static final int DESTROY_TIME_FIELD_NUMBER = 3;
-    private long destroyTime_;
+    public static final int WIPE_OUT_TIME_FIELD_NUMBER = 3;
+    private long wipeOutTime_;
     /**
-     * <code>optional int64 destroy_time = 3;</code>
+     * <code>optional int64 wipe_out_time = 3;</code>
      */
-    public long getDestroyTime() {
-      return destroyTime_;
+    public long getWipeOutTime() {
+      return wipeOutTime_;
     }
 
     public static final int PHASE_FIELD_NUMBER = 4;
@@ -974,8 +1038,8 @@ public  final class DeletedDatabase extends
       if (deletionTime_ != 0L) {
         output.writeInt64(2, deletionTime_);
       }
-      if (destroyTime_ != 0L) {
-        output.writeInt64(3, destroyTime_);
+      if (wipeOutTime_ != 0L) {
+        output.writeInt64(3, wipeOutTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, phase_);
@@ -998,9 +1062,9 @@ public  final class DeletedDatabase extends
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(2, deletionTime_);
       }
-      if (destroyTime_ != 0L) {
+      if (wipeOutTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, destroyTime_);
+          .computeInt64Size(3, wipeOutTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, phase_);
@@ -1028,8 +1092,8 @@ public  final class DeletedDatabase extends
           == other.getCreationTime());
       result = result && (getDeletionTime()
           == other.getDeletionTime());
-      result = result && (getDestroyTime()
-          == other.getDestroyTime());
+      result = result && (getWipeOutTime()
+          == other.getWipeOutTime());
       result = result && getPhase()
           .equals(other.getPhase());
       result = result && getReason()
@@ -1050,9 +1114,9 @@ public  final class DeletedDatabase extends
       hash = (37 * hash) + DELETION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getDeletionTime());
-      hash = (37 * hash) + DESTROY_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + WIPE_OUT_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDestroyTime());
+          getWipeOutTime());
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
@@ -1179,7 +1243,7 @@ public  final class DeletedDatabase extends
 
         deletionTime_ = 0L;
 
-        destroyTime_ = 0L;
+        wipeOutTime_ = 0L;
 
         phase_ = "";
 
@@ -1209,7 +1273,7 @@ public  final class DeletedDatabase extends
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status(this);
         result.creationTime_ = creationTime_;
         result.deletionTime_ = deletionTime_;
-        result.destroyTime_ = destroyTime_;
+        result.wipeOutTime_ = wipeOutTime_;
         result.phase_ = phase_;
         result.reason_ = reason_;
         onBuilt();
@@ -1259,8 +1323,8 @@ public  final class DeletedDatabase extends
         if (other.getDeletionTime() != 0L) {
           setDeletionTime(other.getDeletionTime());
         }
-        if (other.getDestroyTime() != 0L) {
-          setDestroyTime(other.getDestroyTime());
+        if (other.getWipeOutTime() != 0L) {
+          setWipeOutTime(other.getWipeOutTime());
         }
         if (!other.getPhase().isEmpty()) {
           phase_ = other.phase_;
@@ -1348,28 +1412,28 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private long destroyTime_ ;
+      private long wipeOutTime_ ;
       /**
-       * <code>optional int64 destroy_time = 3;</code>
+       * <code>optional int64 wipe_out_time = 3;</code>
        */
-      public long getDestroyTime() {
-        return destroyTime_;
+      public long getWipeOutTime() {
+        return wipeOutTime_;
       }
       /**
-       * <code>optional int64 destroy_time = 3;</code>
+       * <code>optional int64 wipe_out_time = 3;</code>
        */
-      public Builder setDestroyTime(long value) {
+      public Builder setWipeOutTime(long value) {
         
-        destroyTime_ = value;
+        wipeOutTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional int64 destroy_time = 3;</code>
+       * <code>optional int64 wipe_out_time = 3;</code>
        */
-      public Builder clearDestroyTime() {
+      public Builder clearWipeOutTime() {
         
-        destroyTime_ = 0L;
+        wipeOutTime_ = 0L;
         onChanged();
         return this;
       }
