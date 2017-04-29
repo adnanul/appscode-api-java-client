@@ -7,10 +7,32 @@ import java.util.Objects;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public final  class Network {
 
+  @JsonProperty("cluster_urls")
+  private URLBase clusterUrls;
+
+  @JsonProperty("public_urls")
+  private URLBase publicUrls;
+
   @JsonProperty("team_urls")
   private URLBase teamUrls;
 
   public Network() {
+  }
+
+  public URLBase getClusterUrls() {
+    return clusterUrls;
+  }
+
+  public void setClusterUrls(URLBase clusterUrls) {
+    this.clusterUrls = clusterUrls;
+  }
+
+  public URLBase getPublicUrls() {
+    return publicUrls;
+  }
+
+  public void setPublicUrls(URLBase publicUrls) {
+    this.publicUrls = publicUrls;
   }
 
   public Network(URLBase teamUrls) {
@@ -34,7 +56,9 @@ public final  class Network {
       return false;
     }
     Network network = (Network) o;
-    return Objects.equals(teamUrls, network.teamUrls);
+    return Objects.equals(clusterUrls, network.clusterUrls) &&
+        Objects.equals(publicUrls, network.publicUrls) &&
+        Objects.equals(teamUrls, network.teamUrls);
   }
 
   @Override
@@ -45,7 +69,9 @@ public final  class Network {
   @Override
   public String toString() {
     return "Network{" +
-        "teamUrls=" + teamUrls +
+        "clusterUrls=" + clusterUrls +
+        ", publicUrls=" + publicUrls +
+        ", teamUrls=" + teamUrls +
         '}';
   }
 }
