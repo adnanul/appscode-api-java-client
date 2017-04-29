@@ -37,14 +37,14 @@ public class AuthenticationGrpc {
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LoginRequest.getDefaultInstance()),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LoginResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static final io.grpc.MethodDescriptor<com.appscode.api.auth.v1beta1.LogoutRequest,
-      com.appscode.api.auth.v1beta1.LogoutResponse> METHOD_LOGOUT =
+  public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
+      com.appscode.api.dtypes.VoidResponse> METHOD_LOGOUT =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "appscode.auth.v1beta1.Authentication", "Logout"),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LogoutRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.auth.v1beta1.LogoutResponse.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidRequest.getDefaultInstance()),
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.dtypes.VoidRequest,
       com.appscode.api.auth.v1beta1.CSRFTokenResponse> METHOD_CSRFTOKEN =
@@ -94,8 +94,8 @@ public class AuthenticationGrpc {
 
     /**
      */
-    public void logout(com.appscode.api.auth.v1beta1.LogoutRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.LogoutResponse> responseObserver) {
+    public void logout(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_LOGOUT, responseObserver);
     }
 
@@ -119,8 +119,8 @@ public class AuthenticationGrpc {
             METHOD_LOGOUT,
             asyncUnaryCall(
               new MethodHandlers<
-                com.appscode.api.auth.v1beta1.LogoutRequest,
-                com.appscode.api.auth.v1beta1.LogoutResponse>(
+                com.appscode.api.dtypes.VoidRequest,
+                com.appscode.api.dtypes.VoidResponse>(
                   this, METHODID_LOGOUT)))
           .addMethod(
             METHOD_CSRFTOKEN,
@@ -164,8 +164,8 @@ public class AuthenticationGrpc {
 
     /**
      */
-    public void logout(com.appscode.api.auth.v1beta1.LogoutRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.LogoutResponse> responseObserver) {
+    public void logout(com.appscode.api.dtypes.VoidRequest request,
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_LOGOUT, getCallOptions()), request, responseObserver);
     }
@@ -209,7 +209,7 @@ public class AuthenticationGrpc {
 
     /**
      */
-    public com.appscode.api.auth.v1beta1.LogoutResponse logout(com.appscode.api.auth.v1beta1.LogoutRequest request) {
+    public com.appscode.api.dtypes.VoidResponse logout(com.appscode.api.dtypes.VoidRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_LOGOUT, getCallOptions(), request);
     }
@@ -253,8 +253,8 @@ public class AuthenticationGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.auth.v1beta1.LogoutResponse> logout(
-        com.appscode.api.auth.v1beta1.LogoutRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.VoidResponse> logout(
+        com.appscode.api.dtypes.VoidRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_LOGOUT, getCallOptions()), request);
     }
@@ -294,8 +294,8 @@ public class AuthenticationGrpc {
               (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.LoginResponse>) responseObserver);
           break;
         case METHODID_LOGOUT:
-          serviceImpl.logout((com.appscode.api.auth.v1beta1.LogoutRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.auth.v1beta1.LogoutResponse>) responseObserver);
+          serviceImpl.logout((com.appscode.api.dtypes.VoidRequest) request,
+              (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse>) responseObserver);
           break;
         case METHODID_CSRFTOKEN:
           serviceImpl.cSRFToken((com.appscode.api.dtypes.VoidRequest) request,
