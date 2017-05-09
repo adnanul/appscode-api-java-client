@@ -816,14 +816,14 @@ public  final class DatabaseSnapshot extends
     long getCompletionTime();
 
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional string phase = 3;</code>
      */
-    java.lang.String getStatus();
+    java.lang.String getPhase();
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional string phase = 3;</code>
      */
     com.google.protobuf.ByteString
-        getStatusBytes();
+        getPhaseBytes();
 
     /**
      * <code>optional string reason = 4;</code>
@@ -849,7 +849,7 @@ public  final class DatabaseSnapshot extends
     private Status() {
       startTime_ = 0L;
       completionTime_ = 0L;
-      status_ = "";
+      phase_ = "";
       reason_ = "";
     }
 
@@ -891,7 +891,7 @@ public  final class DatabaseSnapshot extends
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              status_ = s;
+              phase_ = s;
               break;
             }
             case 34: {
@@ -941,34 +941,34 @@ public  final class DatabaseSnapshot extends
       return completionTime_;
     }
 
-    public static final int STATUS_FIELD_NUMBER = 3;
-    private volatile java.lang.Object status_;
+    public static final int PHASE_FIELD_NUMBER = 3;
+    private volatile java.lang.Object phase_;
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional string phase = 3;</code>
      */
-    public java.lang.String getStatus() {
-      java.lang.Object ref = status_;
+    public java.lang.String getPhase() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        status_ = s;
+        phase_ = s;
         return s;
       }
     }
     /**
-     * <code>optional string status = 3;</code>
+     * <code>optional string phase = 3;</code>
      */
     public com.google.protobuf.ByteString
-        getStatusBytes() {
-      java.lang.Object ref = status_;
+        getPhaseBytes() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        status_ = b;
+        phase_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -1027,8 +1027,8 @@ public  final class DatabaseSnapshot extends
       if (completionTime_ != 0L) {
         output.writeInt64(2, completionTime_);
       }
-      if (!getStatusBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, status_);
+      if (!getPhaseBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, reason_);
@@ -1048,8 +1048,8 @@ public  final class DatabaseSnapshot extends
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(2, completionTime_);
       }
-      if (!getStatusBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, status_);
+      if (!getPhaseBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, reason_);
@@ -1074,8 +1074,8 @@ public  final class DatabaseSnapshot extends
           == other.getStartTime());
       result = result && (getCompletionTime()
           == other.getCompletionTime());
-      result = result && getStatus()
-          .equals(other.getStatus());
+      result = result && getPhase()
+          .equals(other.getPhase());
       result = result && getReason()
           .equals(other.getReason());
       return result;
@@ -1094,8 +1094,8 @@ public  final class DatabaseSnapshot extends
       hash = (37 * hash) + COMPLETION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCompletionTime());
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + getReason().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1220,7 +1220,7 @@ public  final class DatabaseSnapshot extends
 
         completionTime_ = 0L;
 
-        status_ = "";
+        phase_ = "";
 
         reason_ = "";
 
@@ -1248,7 +1248,7 @@ public  final class DatabaseSnapshot extends
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status result = new com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status(this);
         result.startTime_ = startTime_;
         result.completionTime_ = completionTime_;
-        result.status_ = status_;
+        result.phase_ = phase_;
         result.reason_ = reason_;
         onBuilt();
         return result;
@@ -1297,8 +1297,8 @@ public  final class DatabaseSnapshot extends
         if (other.getCompletionTime() != 0L) {
           setCompletionTime(other.getCompletionTime());
         }
-        if (!other.getStatus().isEmpty()) {
-          status_ = other.status_;
+        if (!other.getPhase().isEmpty()) {
+          phase_ = other.phase_;
           onChanged();
         }
         if (!other.getReason().isEmpty()) {
@@ -1383,71 +1383,71 @@ public  final class DatabaseSnapshot extends
         return this;
       }
 
-      private java.lang.Object status_ = "";
+      private java.lang.Object phase_ = "";
       /**
-       * <code>optional string status = 3;</code>
+       * <code>optional string phase = 3;</code>
        */
-      public java.lang.String getStatus() {
-        java.lang.Object ref = status_;
+      public java.lang.String getPhase() {
+        java.lang.Object ref = phase_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          status_ = s;
+          phase_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>optional string status = 3;</code>
+       * <code>optional string phase = 3;</code>
        */
       public com.google.protobuf.ByteString
-          getStatusBytes() {
-        java.lang.Object ref = status_;
+          getPhaseBytes() {
+        java.lang.Object ref = phase_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          status_ = b;
+          phase_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>optional string status = 3;</code>
+       * <code>optional string phase = 3;</code>
        */
-      public Builder setStatus(
+      public Builder setPhase(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        status_ = value;
+        phase_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional string status = 3;</code>
+       * <code>optional string phase = 3;</code>
        */
-      public Builder clearStatus() {
+      public Builder clearPhase() {
         
-        status_ = getDefaultInstance().getStatus();
+        phase_ = getDefaultInstance().getPhase();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string status = 3;</code>
+       * <code>optional string phase = 3;</code>
        */
-      public Builder setStatusBytes(
+      public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        status_ = value;
+        phase_ = value;
         onChanged();
         return this;
       }

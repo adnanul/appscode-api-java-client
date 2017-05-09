@@ -114,14 +114,14 @@ public  final class Postgres extends
     long getCreationTime();
 
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional string phase = 2;</code>
      */
-    java.lang.String getDatabaseStatus();
+    java.lang.String getPhase();
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional string phase = 2;</code>
      */
     com.google.protobuf.ByteString
-        getDatabaseStatusBytes();
+        getPhaseBytes();
 
     /**
      * <code>optional string reason = 3;</code>
@@ -146,7 +146,7 @@ public  final class Postgres extends
     }
     private Status() {
       creationTime_ = 0L;
-      databaseStatus_ = "";
+      phase_ = "";
       reason_ = "";
     }
 
@@ -183,7 +183,7 @@ public  final class Postgres extends
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              databaseStatus_ = s;
+              phase_ = s;
               break;
             }
             case 26: {
@@ -224,34 +224,34 @@ public  final class Postgres extends
       return creationTime_;
     }
 
-    public static final int DATABASE_STATUS_FIELD_NUMBER = 2;
-    private volatile java.lang.Object databaseStatus_;
+    public static final int PHASE_FIELD_NUMBER = 2;
+    private volatile java.lang.Object phase_;
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional string phase = 2;</code>
      */
-    public java.lang.String getDatabaseStatus() {
-      java.lang.Object ref = databaseStatus_;
+    public java.lang.String getPhase() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        databaseStatus_ = s;
+        phase_ = s;
         return s;
       }
     }
     /**
-     * <code>optional string database_status = 2;</code>
+     * <code>optional string phase = 2;</code>
      */
     public com.google.protobuf.ByteString
-        getDatabaseStatusBytes() {
-      java.lang.Object ref = databaseStatus_;
+        getPhaseBytes() {
+      java.lang.Object ref = phase_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        databaseStatus_ = b;
+        phase_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -307,8 +307,8 @@ public  final class Postgres extends
       if (creationTime_ != 0L) {
         output.writeInt64(1, creationTime_);
       }
-      if (!getDatabaseStatusBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, databaseStatus_);
+      if (!getPhaseBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, reason_);
@@ -324,8 +324,8 @@ public  final class Postgres extends
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(1, creationTime_);
       }
-      if (!getDatabaseStatusBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, databaseStatus_);
+      if (!getPhaseBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, reason_);
@@ -348,8 +348,8 @@ public  final class Postgres extends
       boolean result = true;
       result = result && (getCreationTime()
           == other.getCreationTime());
-      result = result && getDatabaseStatus()
-          .equals(other.getDatabaseStatus());
+      result = result && getPhase()
+          .equals(other.getPhase());
       result = result && getReason()
           .equals(other.getReason());
       return result;
@@ -365,8 +365,8 @@ public  final class Postgres extends
       hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCreationTime());
-      hash = (37 * hash) + DATABASE_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getDatabaseStatus().hashCode();
+      hash = (37 * hash) + PHASE_FIELD_NUMBER;
+      hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
       hash = (53 * hash) + getReason().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -489,7 +489,7 @@ public  final class Postgres extends
         super.clear();
         creationTime_ = 0L;
 
-        databaseStatus_ = "";
+        phase_ = "";
 
         reason_ = "";
 
@@ -516,7 +516,7 @@ public  final class Postgres extends
       public com.appscode.api.kubernetes.v1beta2.Postgres.Status buildPartial() {
         com.appscode.api.kubernetes.v1beta2.Postgres.Status result = new com.appscode.api.kubernetes.v1beta2.Postgres.Status(this);
         result.creationTime_ = creationTime_;
-        result.databaseStatus_ = databaseStatus_;
+        result.phase_ = phase_;
         result.reason_ = reason_;
         onBuilt();
         return result;
@@ -562,8 +562,8 @@ public  final class Postgres extends
         if (other.getCreationTime() != 0L) {
           setCreationTime(other.getCreationTime());
         }
-        if (!other.getDatabaseStatus().isEmpty()) {
-          databaseStatus_ = other.databaseStatus_;
+        if (!other.getPhase().isEmpty()) {
+          phase_ = other.phase_;
           onChanged();
         }
         if (!other.getReason().isEmpty()) {
@@ -622,71 +622,71 @@ public  final class Postgres extends
         return this;
       }
 
-      private java.lang.Object databaseStatus_ = "";
+      private java.lang.Object phase_ = "";
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional string phase = 2;</code>
        */
-      public java.lang.String getDatabaseStatus() {
-        java.lang.Object ref = databaseStatus_;
+      public java.lang.String getPhase() {
+        java.lang.Object ref = phase_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          databaseStatus_ = s;
+          phase_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional string phase = 2;</code>
        */
       public com.google.protobuf.ByteString
-          getDatabaseStatusBytes() {
-        java.lang.Object ref = databaseStatus_;
+          getPhaseBytes() {
+        java.lang.Object ref = phase_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          databaseStatus_ = b;
+          phase_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional string phase = 2;</code>
        */
-      public Builder setDatabaseStatus(
+      public Builder setPhase(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        databaseStatus_ = value;
+        phase_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional string phase = 2;</code>
        */
-      public Builder clearDatabaseStatus() {
+      public Builder clearPhase() {
         
-        databaseStatus_ = getDefaultInstance().getDatabaseStatus();
+        phase_ = getDefaultInstance().getPhase();
         onChanged();
         return this;
       }
       /**
-       * <code>optional string database_status = 2;</code>
+       * <code>optional string phase = 2;</code>
        */
-      public Builder setDatabaseStatusBytes(
+      public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        databaseStatus_ = value;
+        phase_ = value;
         onChanged();
         return this;
       }
