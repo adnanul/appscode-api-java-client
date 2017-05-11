@@ -9,10 +9,10 @@ Java Client library for AppsCode APIs
 <dependency>
   <groupId>com.appscode.api</groupId>
   <artifactId>appscode-api-java-client</artifactId>
-  <version>0.10.0</version>
+  <version>0.11.0</version>
 </dependency>
 ```
 ### Gradle
 ```groovy
-compile 'com.appscode.api:appscode-api-java-client:0.10.0'
+compile 'com.appscode.api:appscode-api-java-client:0.11.0'
 ```
