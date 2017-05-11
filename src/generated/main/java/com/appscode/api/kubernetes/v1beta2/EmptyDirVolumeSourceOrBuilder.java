@@ -15,7 +15,7 @@ public interface EmptyDirVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
    * </pre>
    *
-   * <code>optional string medium = 1;</code>
+   * <code>string medium = 1;</code>
    */
   java.lang.String getMedium();
   /**
@@ -26,7 +26,7 @@ public interface EmptyDirVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
    * </pre>
    *
-   * <code>optional string medium = 1;</code>
+   * <code>string medium = 1;</code>
    */
   com.google.protobuf.ByteString
       getMediumBytes();

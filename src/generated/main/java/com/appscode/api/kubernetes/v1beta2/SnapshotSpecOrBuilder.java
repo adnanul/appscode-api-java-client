@@ -8,37 +8,37 @@ public interface SnapshotSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   boolean hasStorageSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getStorageSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getStorageSecretOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   boolean hasDatabaseSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder();
 
   /**
-   * <code>optional string bucket_name = 3;</code>
+   * <code>string bucket_name = 3;</code>
    */
   java.lang.String getBucketName();
   /**
-   * <code>optional string bucket_name = 3;</code>
+   * <code>string bucket_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getBucketNameBytes();

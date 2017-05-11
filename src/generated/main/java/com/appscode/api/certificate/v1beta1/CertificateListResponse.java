@@ -44,22 +44,9 @@ public  final class CertificateListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               certificates_ = new java.util.ArrayList<com.appscode.api.certificate.v1beta1.Certificate>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             certificates_.add(
                 input.readMessage(com.appscode.api.certificate.v1beta1.Certificate.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class CertificateListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         certificates_ = java.util.Collections.unmodifiableList(certificates_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class CertificateListResponse extends
             com.appscode.api.certificate.v1beta1.CertificateListResponse.class, com.appscode.api.certificate.v1beta1.CertificateListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CERTIFICATES_FIELD_NUMBER = 2;
+  public static final int CERTIFICATES_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.certificate.v1beta1.Certificate> certificates_;
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   public java.util.List<com.appscode.api.certificate.v1beta1.Certificate> getCertificatesList() {
     return certificates_;
   }
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.certificate.v1beta1.CertificateOrBuilder> 
       getCertificatesOrBuilderList() {
     return certificates_;
   }
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   public int getCertificatesCount() {
     return certificates_.size();
   }
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   public com.appscode.api.certificate.v1beta1.Certificate getCertificates(int index) {
     return certificates_.get(index);
   }
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   public com.appscode.api.certificate.v1beta1.CertificateOrBuilder getCertificatesOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class CertificateListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < certificates_.size(); i++) {
-      output.writeMessage(2, certificates_.get(i));
+      output.writeMessage(1, certificates_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class CertificateListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < certificates_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, certificates_.get(i));
+        .computeMessageSize(1, certificates_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class CertificateListResponse extends
     com.appscode.api.certificate.v1beta1.CertificateListResponse other = (com.appscode.api.certificate.v1beta1.CertificateListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getCertificatesList()
         .equals(other.getCertificatesList());
     return result;
@@ -213,11 +166,7 @@ public  final class CertificateListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getCertificatesCount() > 0) {
       hash = (37 * hash) + CERTIFICATES_FIELD_NUMBER;
       hash = (53 * hash) + getCertificatesList().hashCode();
@@ -341,15 +290,9 @@ public  final class CertificateListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (certificatesBuilder_ == null) {
         certificates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         certificatesBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class CertificateListResponse extends
     public com.appscode.api.certificate.v1beta1.CertificateListResponse buildPartial() {
       com.appscode.api.certificate.v1beta1.CertificateListResponse result = new com.appscode.api.certificate.v1beta1.CertificateListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (certificatesBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           certificates_ = java.util.Collections.unmodifiableList(certificates_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.certificates_ = certificates_;
       } else {
         result.certificates_ = certificatesBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class CertificateListResponse extends
 
     public Builder mergeFrom(com.appscode.api.certificate.v1beta1.CertificateListResponse other) {
       if (other == com.appscode.api.certificate.v1beta1.CertificateListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (certificatesBuilder_ == null) {
         if (!other.certificates_.isEmpty()) {
           if (certificates_.isEmpty()) {
             certificates_ = other.certificates_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureCertificatesIsMutable();
             certificates_.addAll(other.certificates_);
@@ -453,7 +386,7 @@ public  final class CertificateListResponse extends
             certificatesBuilder_.dispose();
             certificatesBuilder_ = null;
             certificates_ = other.certificates_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             certificatesBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getCertificatesFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class CertificateListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.certificate.v1beta1.Certificate> certificates_ =
       java.util.Collections.emptyList();
     private void ensureCertificatesIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         certificates_ = new java.util.ArrayList<com.appscode.api.certificate.v1beta1.Certificate>(certificates_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class CertificateListResponse extends
         com.appscode.api.certificate.v1beta1.Certificate, com.appscode.api.certificate.v1beta1.Certificate.Builder, com.appscode.api.certificate.v1beta1.CertificateOrBuilder> certificatesBuilder_;
 
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public java.util.List<com.appscode.api.certificate.v1beta1.Certificate> getCertificatesList() {
       if (certificatesBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class CertificateListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public int getCertificatesCount() {
       if (certificatesBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class CertificateListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public com.appscode.api.certificate.v1beta1.Certificate getCertificates(int index) {
       if (certificatesBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class CertificateListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder setCertificates(
         int index, com.appscode.api.certificate.v1beta1.Certificate value) {
@@ -666,7 +482,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder setCertificates(
         int index, com.appscode.api.certificate.v1beta1.Certificate.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder addCertificates(com.appscode.api.certificate.v1beta1.Certificate value) {
       if (certificatesBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder addCertificates(
         int index, com.appscode.api.certificate.v1beta1.Certificate value) {
@@ -713,7 +529,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder addCertificates(
         com.appscode.api.certificate.v1beta1.Certificate.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder addCertificates(
         int index, com.appscode.api.certificate.v1beta1.Certificate.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder addAllCertificates(
         java.lang.Iterable<? extends com.appscode.api.certificate.v1beta1.Certificate> values) {
@@ -756,12 +572,12 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder clearCertificates() {
       if (certificatesBuilder_ == null) {
         certificates_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         certificatesBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public Builder removeCertificates(int index) {
       if (certificatesBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class CertificateListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public com.appscode.api.certificate.v1beta1.Certificate.Builder getCertificatesBuilder(
         int index) {
       return getCertificatesFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public com.appscode.api.certificate.v1beta1.CertificateOrBuilder getCertificatesOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class CertificateListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.certificate.v1beta1.CertificateOrBuilder> 
          getCertificatesOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class CertificateListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public com.appscode.api.certificate.v1beta1.Certificate.Builder addCertificatesBuilder() {
       return getCertificatesFieldBuilder().addBuilder(
           com.appscode.api.certificate.v1beta1.Certificate.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public com.appscode.api.certificate.v1beta1.Certificate.Builder addCertificatesBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class CertificateListResponse extends
           index, com.appscode.api.certificate.v1beta1.Certificate.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+     * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
      */
     public java.util.List<com.appscode.api.certificate.v1beta1.Certificate.Builder> 
          getCertificatesBuilderList() {
@@ -838,7 +654,7 @@ public  final class CertificateListResponse extends
         certificatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.certificate.v1beta1.Certificate, com.appscode.api.certificate.v1beta1.Certificate.Builder, com.appscode.api.certificate.v1beta1.CertificateOrBuilder>(
                 certificates_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         certificates_ = null;

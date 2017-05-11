@@ -8,47 +8,47 @@ public interface DiskCreateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   java.lang.String getCluster();
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   com.google.protobuf.ByteString
       getClusterBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   java.lang.String getZone();
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   com.google.protobuf.ByteString
       getZoneBytes();
 
   /**
-   * <code>optional string disk_type = 4;</code>
+   * <code>string disk_type = 4;</code>
    */
   java.lang.String getDiskType();
   /**
-   * <code>optional string disk_type = 4;</code>
+   * <code>string disk_type = 4;</code>
    */
   com.google.protobuf.ByteString
       getDiskTypeBytes();
 
   /**
-   * <code>optional int64 size_gb = 5;</code>
+   * <code>int64 size_gb = 5;</code>
    */
   long getSizeGb();
 }

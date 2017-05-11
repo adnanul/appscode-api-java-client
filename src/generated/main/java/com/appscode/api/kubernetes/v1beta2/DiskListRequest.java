@@ -75,7 +75,7 @@ public  final class DiskListRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -90,7 +90,7 @@ public  final class DiskListRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -158,7 +158,7 @@ public  final class DiskListRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -377,7 +377,7 @@ public  final class DiskListRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -392,7 +392,7 @@ public  final class DiskListRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -408,7 +408,7 @@ public  final class DiskListRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -421,7 +421,7 @@ public  final class DiskListRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -430,7 +430,7 @@ public  final class DiskListRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {

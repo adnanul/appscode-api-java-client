@@ -98,7 +98,7 @@ public  final class GlusterfsVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string endpoints = 1;</code>
+   * <code>string endpoints = 1;</code>
    */
   public java.lang.String getEndpoints() {
     java.lang.Object ref = endpoints_;
@@ -118,7 +118,7 @@ public  final class GlusterfsVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string endpoints = 1;</code>
+   * <code>string endpoints = 1;</code>
    */
   public com.google.protobuf.ByteString
       getEndpointsBytes() {
@@ -142,7 +142,7 @@ public  final class GlusterfsVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   public java.lang.String getPath() {
     java.lang.Object ref = path_;
@@ -162,7 +162,7 @@ public  final class GlusterfsVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   public com.google.protobuf.ByteString
       getPathBytes() {
@@ -187,7 +187,7 @@ public  final class GlusterfsVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -262,7 +262,7 @@ public  final class GlusterfsVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ENDPOINTS_FIELD_NUMBER;
     hash = (53 * hash) + getEndpoints().hashCode();
     hash = (37 * hash) + PATH_FIELD_NUMBER;
@@ -509,7 +509,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string endpoints = 1;</code>
+     * <code>string endpoints = 1;</code>
      */
     public java.lang.String getEndpoints() {
       java.lang.Object ref = endpoints_;
@@ -529,7 +529,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string endpoints = 1;</code>
+     * <code>string endpoints = 1;</code>
      */
     public com.google.protobuf.ByteString
         getEndpointsBytes() {
@@ -550,7 +550,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string endpoints = 1;</code>
+     * <code>string endpoints = 1;</code>
      */
     public Builder setEndpoints(
         java.lang.String value) {
@@ -568,7 +568,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string endpoints = 1;</code>
+     * <code>string endpoints = 1;</code>
      */
     public Builder clearEndpoints() {
       
@@ -582,7 +582,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string endpoints = 1;</code>
+     * <code>string endpoints = 1;</code>
      */
     public Builder setEndpointsBytes(
         com.google.protobuf.ByteString value) {
@@ -603,7 +603,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -623,7 +623,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -644,7 +644,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder setPath(
         java.lang.String value) {
@@ -662,7 +662,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder clearPath() {
       
@@ -676,7 +676,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder setPathBytes(
         com.google.protobuf.ByteString value) {
@@ -698,7 +698,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -710,7 +710,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -725,7 +725,7 @@ public  final class GlusterfsVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder clearReadOnly() {
       

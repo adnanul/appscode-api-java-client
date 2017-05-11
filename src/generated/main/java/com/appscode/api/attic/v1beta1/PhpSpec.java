@@ -82,7 +82,7 @@ public  final class PhpSpec extends
   public static final int DOWNLOAD_URL_FIELD_NUMBER = 1;
   private volatile java.lang.Object downloadUrl_;
   /**
-   * <code>optional string download_url = 1;</code>
+   * <code>string download_url = 1;</code>
    */
   public java.lang.String getDownloadUrl() {
     java.lang.Object ref = downloadUrl_;
@@ -97,7 +97,7 @@ public  final class PhpSpec extends
     }
   }
   /**
-   * <code>optional string download_url = 1;</code>
+   * <code>string download_url = 1;</code>
    */
   public com.google.protobuf.ByteString
       getDownloadUrlBytes() {
@@ -116,7 +116,7 @@ public  final class PhpSpec extends
   public static final int SHASUM_FIELD_NUMBER = 2;
   private volatile java.lang.Object shasum_;
   /**
-   * <code>optional string shasum = 2;</code>
+   * <code>string shasum = 2;</code>
    */
   public java.lang.String getShasum() {
     java.lang.Object ref = shasum_;
@@ -131,7 +131,7 @@ public  final class PhpSpec extends
     }
   }
   /**
-   * <code>optional string shasum = 2;</code>
+   * <code>string shasum = 2;</code>
    */
   public com.google.protobuf.ByteString
       getShasumBytes() {
@@ -207,7 +207,7 @@ public  final class PhpSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + DOWNLOAD_URL_FIELD_NUMBER;
     hash = (53 * hash) + getDownloadUrl().hashCode();
     hash = (37 * hash) + SHASUM_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class PhpSpec extends
 
     private java.lang.Object downloadUrl_ = "";
     /**
-     * <code>optional string download_url = 1;</code>
+     * <code>string download_url = 1;</code>
      */
     public java.lang.String getDownloadUrl() {
       java.lang.Object ref = downloadUrl_;
@@ -450,7 +450,7 @@ public  final class PhpSpec extends
       }
     }
     /**
-     * <code>optional string download_url = 1;</code>
+     * <code>string download_url = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDownloadUrlBytes() {
@@ -466,7 +466,7 @@ public  final class PhpSpec extends
       }
     }
     /**
-     * <code>optional string download_url = 1;</code>
+     * <code>string download_url = 1;</code>
      */
     public Builder setDownloadUrl(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class PhpSpec extends
       return this;
     }
     /**
-     * <code>optional string download_url = 1;</code>
+     * <code>string download_url = 1;</code>
      */
     public Builder clearDownloadUrl() {
       
@@ -488,7 +488,7 @@ public  final class PhpSpec extends
       return this;
     }
     /**
-     * <code>optional string download_url = 1;</code>
+     * <code>string download_url = 1;</code>
      */
     public Builder setDownloadUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class PhpSpec extends
 
     private java.lang.Object shasum_ = "";
     /**
-     * <code>optional string shasum = 2;</code>
+     * <code>string shasum = 2;</code>
      */
     public java.lang.String getShasum() {
       java.lang.Object ref = shasum_;
@@ -519,7 +519,7 @@ public  final class PhpSpec extends
       }
     }
     /**
-     * <code>optional string shasum = 2;</code>
+     * <code>string shasum = 2;</code>
      */
     public com.google.protobuf.ByteString
         getShasumBytes() {
@@ -535,7 +535,7 @@ public  final class PhpSpec extends
       }
     }
     /**
-     * <code>optional string shasum = 2;</code>
+     * <code>string shasum = 2;</code>
      */
     public Builder setShasum(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class PhpSpec extends
       return this;
     }
     /**
-     * <code>optional string shasum = 2;</code>
+     * <code>string shasum = 2;</code>
      */
     public Builder clearShasum() {
       
@@ -557,7 +557,7 @@ public  final class PhpSpec extends
       return this;
     }
     /**
-     * <code>optional string shasum = 2;</code>
+     * <code>string shasum = 2;</code>
      */
     public Builder setShasumBytes(
         com.google.protobuf.ByteString value) {

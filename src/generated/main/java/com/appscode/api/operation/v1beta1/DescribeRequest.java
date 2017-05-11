@@ -81,7 +81,7 @@ public  final class DescribeRequest extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -96,7 +96,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -115,7 +115,7 @@ public  final class DescribeRequest extends
   public static final int TIMESTAMP_FIELD_NUMBER = 2;
   private long timestamp_;
   /**
-   * <code>optional int64 timestamp = 2;</code>
+   * <code>int64 timestamp = 2;</code>
    */
   public long getTimestamp() {
     return timestamp_;
@@ -182,7 +182,7 @@ public  final class DescribeRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
@@ -410,7 +410,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -425,7 +425,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -441,7 +441,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -454,7 +454,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -463,7 +463,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -479,13 +479,13 @@ public  final class DescribeRequest extends
 
     private long timestamp_ ;
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public long getTimestamp() {
       return timestamp_;
     }
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public Builder setTimestamp(long value) {
       
@@ -494,7 +494,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public Builder clearTimestamp() {
       

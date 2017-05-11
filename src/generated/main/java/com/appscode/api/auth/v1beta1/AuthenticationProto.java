@@ -44,24 +44,22 @@ public final class AuthenticationProto {
       "tations.proto\032\037appscode/api/dtypes/types" +
       ".proto\"i\n\014LoginRequest\022\021\n\tnamespace\030\001 \001(" +
       "\t\022\020\n\010username\030\002 \001(\t\022\020\n\010password\030\003 \001(\t\022\r\n" +
-      "\005token\030\004 \001(\t\022\023\n\013issue_token\030\005 \001(\010\"G\n\rLog" +
-      "inResponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dt" +
-      "ypes.Status\022\r\n\005token\030\002 \001(\t\"P\n\021CSRFTokenR" +
-      "esponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtype",
-      "s.Status\022\022\n\ncsrf_token\030\002 \001(\t2\260\003\n\016Authent" +
-      "ication\022\213\001\n\005Login\022#.appscode.auth.v1beta" +
-      "1.LoginRequest\032$.appscode.auth.v1beta1.L" +
-      "oginResponse\"7\202\323\344\223\002+\"&/_appscode/api/aut" +
-      "h/v1beta1/login/json:\001*\202\265\030\002\010\001\022\177\n\006Logout\022" +
-      "\034.appscode.dtypes.VoidRequest\032\035.appscode" +
-      ".dtypes.VoidResponse\"8\202\323\344\223\002,\"\'/_appscode" +
-      "/api/auth/v1beta1/logout/json:\001*\202\265\030\002\010\001\022\216" +
-      "\001\n\tCSRFToken\022\034.appscode.dtypes.VoidReque" +
-      "st\032(.appscode.auth.v1beta1.CSRFTokenResp",
-      "onse\"9\202\323\344\223\002-\022+/_appscode/api/auth/v1beta" +
-      "1/csrf-token/json\202\265\030\002\010\001B?\n\035com.appscode." +
-      "api.auth.v1beta1B\023AuthenticationProtoP\001Z" +
-      "\007v1beta1b\006proto3"
+      "\005token\030\004 \001(\t\022\023\n\013issue_token\030\005 \001(\010\"\036\n\rLog" +
+      "inResponse\022\r\n\005token\030\001 \001(\t\"\'\n\021CSRFTokenRe" +
+      "sponse\022\022\n\ncsrf_token\030\001 \001(\t2\260\003\n\016Authentic" +
+      "ation\022\213\001\n\005Login\022#.appscode.auth.v1beta1.",
+      "LoginRequest\032$.appscode.auth.v1beta1.Log" +
+      "inResponse\"7\202\323\344\223\002+\"&/_appscode/api/auth/" +
+      "v1beta1/login/json:\001*\202\265\030\002\010\001\022\177\n\006Logout\022\034." +
+      "appscode.dtypes.VoidRequest\032\035.appscode.d" +
+      "types.VoidResponse\"8\202\323\344\223\002,\"\'/_appscode/a" +
+      "pi/auth/v1beta1/logout/json:\001*\202\265\030\002\010\001\022\216\001\n" +
+      "\tCSRFToken\022\034.appscode.dtypes.VoidRequest" +
+      "\032(.appscode.auth.v1beta1.CSRFTokenRespon" +
+      "se\"9\202\323\344\223\002-\022+/_appscode/api/auth/v1beta1/" +
+      "csrf-token/json\202\265\030\002\010\001B?\n\035com.appscode.ap",
+      "i.auth.v1beta1B\023AuthenticationProtoP\001Z\007v" +
+      "1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -89,13 +87,13 @@ public final class AuthenticationProto {
     internal_static_appscode_auth_v1beta1_LoginResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_LoginResponse_descriptor,
-        new java.lang.String[] { "Status", "Token", });
+        new java.lang.String[] { "Token", });
     internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_auth_v1beta1_CSRFTokenResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_CSRFTokenResponse_descriptor,
-        new java.lang.String[] { "Status", "CsrfToken", });
+        new java.lang.String[] { "CsrfToken", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.appscode.api.AnnotationsProto.cors);

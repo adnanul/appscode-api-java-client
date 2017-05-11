@@ -155,7 +155,7 @@ public  final class Meta extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -170,7 +170,7 @@ public  final class Meta extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -189,7 +189,7 @@ public  final class Meta extends
   public static final int NAMESPACE_FIELD_NUMBER = 2;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -204,7 +204,7 @@ public  final class Meta extends
     }
   }
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -223,7 +223,7 @@ public  final class Meta extends
   public static final int SELF_LINKS_FIELD_NUMBER = 3;
   private volatile java.lang.Object selfLinks_;
   /**
-   * <code>optional string self_links = 3;</code>
+   * <code>string self_links = 3;</code>
    */
   public java.lang.String getSelfLinks() {
     java.lang.Object ref = selfLinks_;
@@ -238,7 +238,7 @@ public  final class Meta extends
     }
   }
   /**
-   * <code>optional string self_links = 3;</code>
+   * <code>string self_links = 3;</code>
    */
   public com.google.protobuf.ByteString
       getSelfLinksBytes() {
@@ -257,7 +257,7 @@ public  final class Meta extends
   public static final int RESOURCE_VERSION_FIELD_NUMBER = 4;
   private volatile java.lang.Object resourceVersion_;
   /**
-   * <code>optional string resource_version = 4;</code>
+   * <code>string resource_version = 4;</code>
    */
   public java.lang.String getResourceVersion() {
     java.lang.Object ref = resourceVersion_;
@@ -272,7 +272,7 @@ public  final class Meta extends
     }
   }
   /**
-   * <code>optional string resource_version = 4;</code>
+   * <code>string resource_version = 4;</code>
    */
   public com.google.protobuf.ByteString
       getResourceVersionBytes() {
@@ -291,7 +291,7 @@ public  final class Meta extends
   public static final int CREATION_TIMESTAMP_FIELD_NUMBER = 5;
   private long creationTimestamp_;
   /**
-   * <code>optional int64 creation_timestamp = 5;</code>
+   * <code>int64 creation_timestamp = 5;</code>
    */
   public long getCreationTimestamp() {
     return creationTimestamp_;
@@ -300,7 +300,7 @@ public  final class Meta extends
   public static final int GENERATION_FIELD_NUMBER = 6;
   private long generation_;
   /**
-   * <code>optional int64 generation = 6;</code>
+   * <code>int64 generation = 6;</code>
    */
   public long getGeneration() {
     return generation_;
@@ -461,7 +461,7 @@ public  final class Meta extends
   public static final int UID_FIELD_NUMBER = 9;
   private volatile java.lang.Object uid_;
   /**
-   * <code>optional string uid = 9;</code>
+   * <code>string uid = 9;</code>
    */
   public java.lang.String getUid() {
     java.lang.Object ref = uid_;
@@ -476,7 +476,7 @@ public  final class Meta extends
     }
   }
   /**
-   * <code>optional string uid = 9;</code>
+   * <code>string uid = 9;</code>
    */
   public com.google.protobuf.ByteString
       getUidBytes() {
@@ -630,7 +630,7 @@ public  final class Meta extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
@@ -951,7 +951,7 @@ public  final class Meta extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -966,7 +966,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -982,7 +982,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -995,7 +995,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -1004,7 +1004,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1020,7 +1020,7 @@ public  final class Meta extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -1035,7 +1035,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -1051,7 +1051,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -1064,7 +1064,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder clearNamespace() {
       
@@ -1073,7 +1073,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -1089,7 +1089,7 @@ public  final class Meta extends
 
     private java.lang.Object selfLinks_ = "";
     /**
-     * <code>optional string self_links = 3;</code>
+     * <code>string self_links = 3;</code>
      */
     public java.lang.String getSelfLinks() {
       java.lang.Object ref = selfLinks_;
@@ -1104,7 +1104,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string self_links = 3;</code>
+     * <code>string self_links = 3;</code>
      */
     public com.google.protobuf.ByteString
         getSelfLinksBytes() {
@@ -1120,7 +1120,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string self_links = 3;</code>
+     * <code>string self_links = 3;</code>
      */
     public Builder setSelfLinks(
         java.lang.String value) {
@@ -1133,7 +1133,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string self_links = 3;</code>
+     * <code>string self_links = 3;</code>
      */
     public Builder clearSelfLinks() {
       
@@ -1142,7 +1142,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string self_links = 3;</code>
+     * <code>string self_links = 3;</code>
      */
     public Builder setSelfLinksBytes(
         com.google.protobuf.ByteString value) {
@@ -1158,7 +1158,7 @@ public  final class Meta extends
 
     private java.lang.Object resourceVersion_ = "";
     /**
-     * <code>optional string resource_version = 4;</code>
+     * <code>string resource_version = 4;</code>
      */
     public java.lang.String getResourceVersion() {
       java.lang.Object ref = resourceVersion_;
@@ -1173,7 +1173,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string resource_version = 4;</code>
+     * <code>string resource_version = 4;</code>
      */
     public com.google.protobuf.ByteString
         getResourceVersionBytes() {
@@ -1189,7 +1189,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string resource_version = 4;</code>
+     * <code>string resource_version = 4;</code>
      */
     public Builder setResourceVersion(
         java.lang.String value) {
@@ -1202,7 +1202,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string resource_version = 4;</code>
+     * <code>string resource_version = 4;</code>
      */
     public Builder clearResourceVersion() {
       
@@ -1211,7 +1211,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string resource_version = 4;</code>
+     * <code>string resource_version = 4;</code>
      */
     public Builder setResourceVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1227,13 +1227,13 @@ public  final class Meta extends
 
     private long creationTimestamp_ ;
     /**
-     * <code>optional int64 creation_timestamp = 5;</code>
+     * <code>int64 creation_timestamp = 5;</code>
      */
     public long getCreationTimestamp() {
       return creationTimestamp_;
     }
     /**
-     * <code>optional int64 creation_timestamp = 5;</code>
+     * <code>int64 creation_timestamp = 5;</code>
      */
     public Builder setCreationTimestamp(long value) {
       
@@ -1242,7 +1242,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional int64 creation_timestamp = 5;</code>
+     * <code>int64 creation_timestamp = 5;</code>
      */
     public Builder clearCreationTimestamp() {
       
@@ -1253,13 +1253,13 @@ public  final class Meta extends
 
     private long generation_ ;
     /**
-     * <code>optional int64 generation = 6;</code>
+     * <code>int64 generation = 6;</code>
      */
     public long getGeneration() {
       return generation_;
     }
     /**
-     * <code>optional int64 generation = 6;</code>
+     * <code>int64 generation = 6;</code>
      */
     public Builder setGeneration(long value) {
       
@@ -1268,7 +1268,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional int64 generation = 6;</code>
+     * <code>int64 generation = 6;</code>
      */
     public Builder clearGeneration() {
       
@@ -1354,7 +1354,8 @@ public  final class Meta extends
     }
 
     public Builder clearLabels() {
-      getMutableLabels().clear();
+      internalGetMutableLabels().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1364,7 +1365,8 @@ public  final class Meta extends
     public Builder removeLabels(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableLabels().remove(key);
+      internalGetMutableLabels().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1383,7 +1385,8 @@ public  final class Meta extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableLabels().put(key, value);
+      internalGetMutableLabels().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1392,7 +1395,8 @@ public  final class Meta extends
 
     public Builder putAllLabels(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableLabels().putAll(values);
+      internalGetMutableLabels().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -1473,7 +1477,8 @@ public  final class Meta extends
     }
 
     public Builder clearAnnotations() {
-      getMutableAnnotations().clear();
+      internalGetMutableAnnotations().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1483,7 +1488,8 @@ public  final class Meta extends
     public Builder removeAnnotations(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableAnnotations().remove(key);
+      internalGetMutableAnnotations().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1502,7 +1508,8 @@ public  final class Meta extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableAnnotations().put(key, value);
+      internalGetMutableAnnotations().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1511,13 +1518,14 @@ public  final class Meta extends
 
     public Builder putAllAnnotations(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableAnnotations().putAll(values);
+      internalGetMutableAnnotations().getMutableMap()
+          .putAll(values);
       return this;
     }
 
     private java.lang.Object uid_ = "";
     /**
-     * <code>optional string uid = 9;</code>
+     * <code>string uid = 9;</code>
      */
     public java.lang.String getUid() {
       java.lang.Object ref = uid_;
@@ -1532,7 +1540,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string uid = 9;</code>
+     * <code>string uid = 9;</code>
      */
     public com.google.protobuf.ByteString
         getUidBytes() {
@@ -1548,7 +1556,7 @@ public  final class Meta extends
       }
     }
     /**
-     * <code>optional string uid = 9;</code>
+     * <code>string uid = 9;</code>
      */
     public Builder setUid(
         java.lang.String value) {
@@ -1561,7 +1569,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string uid = 9;</code>
+     * <code>string uid = 9;</code>
      */
     public Builder clearUid() {
       
@@ -1570,7 +1578,7 @@ public  final class Meta extends
       return this;
     }
     /**
-     * <code>optional string uid = 9;</code>
+     * <code>string uid = 9;</code>
      */
     public Builder setUidBytes(
         com.google.protobuf.ByteString value) {

@@ -197,49 +197,49 @@ public  final class Incident extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     java.lang.String getType();
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
 
     /**
-     * <code>optional string state = 2;</code>
+     * <code>string state = 2;</code>
      */
     java.lang.String getState();
     /**
-     * <code>optional string state = 2;</code>
+     * <code>string state = 2;</code>
      */
     com.google.protobuf.ByteString
         getStateBytes();
 
     /**
-     * <code>optional int64 reported_at = 3;</code>
+     * <code>int64 reported_at = 3;</code>
      */
     long getReportedAt();
 
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     boolean hasUser();
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     com.appscode.api.dtypes.Uid getUser();
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder();
 
     /**
-     * <code>optional string comment = 5;</code>
+     * <code>string comment = 5;</code>
      */
     java.lang.String getComment();
     /**
-     * <code>optional string comment = 5;</code>
+     * <code>string comment = 5;</code>
      */
     com.google.protobuf.ByteString
         getCommentBytes();
@@ -349,7 +349,7 @@ public  final class Incident extends
     public static final int TYPE_FIELD_NUMBER = 1;
     private volatile java.lang.Object type_;
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -364,7 +364,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -383,7 +383,7 @@ public  final class Incident extends
     public static final int STATE_FIELD_NUMBER = 2;
     private volatile java.lang.Object state_;
     /**
-     * <code>optional string state = 2;</code>
+     * <code>string state = 2;</code>
      */
     public java.lang.String getState() {
       java.lang.Object ref = state_;
@@ -398,7 +398,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string state = 2;</code>
+     * <code>string state = 2;</code>
      */
     public com.google.protobuf.ByteString
         getStateBytes() {
@@ -417,7 +417,7 @@ public  final class Incident extends
     public static final int REPORTED_AT_FIELD_NUMBER = 3;
     private long reportedAt_;
     /**
-     * <code>optional int64 reported_at = 3;</code>
+     * <code>int64 reported_at = 3;</code>
      */
     public long getReportedAt() {
       return reportedAt_;
@@ -426,19 +426,19 @@ public  final class Incident extends
     public static final int USER_FIELD_NUMBER = 4;
     private com.appscode.api.dtypes.Uid user_;
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     public boolean hasUser() {
       return user_ != null;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     public com.appscode.api.dtypes.Uid getUser() {
       return user_ == null ? com.appscode.api.dtypes.Uid.getDefaultInstance() : user_;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 4;</code>
+     * <code>.appscode.dtypes.Uid user = 4;</code>
      */
     public com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder() {
       return getUser();
@@ -447,7 +447,7 @@ public  final class Incident extends
     public static final int COMMENT_FIELD_NUMBER = 5;
     private volatile java.lang.Object comment_;
     /**
-     * <code>optional string comment = 5;</code>
+     * <code>string comment = 5;</code>
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -462,7 +462,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string comment = 5;</code>
+     * <code>string comment = 5;</code>
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -567,7 +567,7 @@ public  final class Incident extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType().hashCode();
       hash = (37 * hash) + STATE_FIELD_NUMBER;
@@ -831,7 +831,7 @@ public  final class Incident extends
 
       private java.lang.Object type_ = "";
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public java.lang.String getType() {
         java.lang.Object ref = type_;
@@ -846,7 +846,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
@@ -862,7 +862,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder setType(
           java.lang.String value) {
@@ -875,7 +875,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder clearType() {
         
@@ -884,7 +884,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder setTypeBytes(
           com.google.protobuf.ByteString value) {
@@ -900,7 +900,7 @@ public  final class Incident extends
 
       private java.lang.Object state_ = "";
       /**
-       * <code>optional string state = 2;</code>
+       * <code>string state = 2;</code>
        */
       public java.lang.String getState() {
         java.lang.Object ref = state_;
@@ -915,7 +915,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string state = 2;</code>
+       * <code>string state = 2;</code>
        */
       public com.google.protobuf.ByteString
           getStateBytes() {
@@ -931,7 +931,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string state = 2;</code>
+       * <code>string state = 2;</code>
        */
       public Builder setState(
           java.lang.String value) {
@@ -944,7 +944,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string state = 2;</code>
+       * <code>string state = 2;</code>
        */
       public Builder clearState() {
         
@@ -953,7 +953,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string state = 2;</code>
+       * <code>string state = 2;</code>
        */
       public Builder setStateBytes(
           com.google.protobuf.ByteString value) {
@@ -969,13 +969,13 @@ public  final class Incident extends
 
       private long reportedAt_ ;
       /**
-       * <code>optional int64 reported_at = 3;</code>
+       * <code>int64 reported_at = 3;</code>
        */
       public long getReportedAt() {
         return reportedAt_;
       }
       /**
-       * <code>optional int64 reported_at = 3;</code>
+       * <code>int64 reported_at = 3;</code>
        */
       public Builder setReportedAt(long value) {
         
@@ -984,7 +984,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional int64 reported_at = 3;</code>
+       * <code>int64 reported_at = 3;</code>
        */
       public Builder clearReportedAt() {
         
@@ -997,13 +997,13 @@ public  final class Incident extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> userBuilder_;
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public boolean hasUser() {
         return userBuilder_ != null || user_ != null;
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public com.appscode.api.dtypes.Uid getUser() {
         if (userBuilder_ == null) {
@@ -1013,7 +1013,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public Builder setUser(com.appscode.api.dtypes.Uid value) {
         if (userBuilder_ == null) {
@@ -1029,7 +1029,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public Builder setUser(
           com.appscode.api.dtypes.Uid.Builder builderForValue) {
@@ -1043,7 +1043,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public Builder mergeUser(com.appscode.api.dtypes.Uid value) {
         if (userBuilder_ == null) {
@@ -1061,7 +1061,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public Builder clearUser() {
         if (userBuilder_ == null) {
@@ -1075,7 +1075,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public com.appscode.api.dtypes.Uid.Builder getUserBuilder() {
         
@@ -1083,7 +1083,7 @@ public  final class Incident extends
         return getUserFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       public com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder() {
         if (userBuilder_ != null) {
@@ -1094,7 +1094,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional .appscode.dtypes.Uid user = 4;</code>
+       * <code>.appscode.dtypes.Uid user = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> 
@@ -1112,7 +1112,7 @@ public  final class Incident extends
 
       private java.lang.Object comment_ = "";
       /**
-       * <code>optional string comment = 5;</code>
+       * <code>string comment = 5;</code>
        */
       public java.lang.String getComment() {
         java.lang.Object ref = comment_;
@@ -1127,7 +1127,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string comment = 5;</code>
+       * <code>string comment = 5;</code>
        */
       public com.google.protobuf.ByteString
           getCommentBytes() {
@@ -1143,7 +1143,7 @@ public  final class Incident extends
         }
       }
       /**
-       * <code>optional string comment = 5;</code>
+       * <code>string comment = 5;</code>
        */
       public Builder setComment(
           java.lang.String value) {
@@ -1156,7 +1156,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string comment = 5;</code>
+       * <code>string comment = 5;</code>
        */
       public Builder clearComment() {
         
@@ -1165,7 +1165,7 @@ public  final class Incident extends
         return this;
       }
       /**
-       * <code>optional string comment = 5;</code>
+       * <code>string comment = 5;</code>
        */
       public Builder setCommentBytes(
           com.google.protobuf.ByteString value) {
@@ -1231,7 +1231,7 @@ public  final class Incident extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -1246,7 +1246,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -1265,19 +1265,19 @@ public  final class Incident extends
   public static final int KUBERNETES_CLUSTER_FIELD_NUMBER = 2;
   private com.appscode.api.dtypes.Uid kubernetesCluster_;
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   public boolean hasKubernetesCluster() {
     return kubernetesCluster_ != null;
   }
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   public com.appscode.api.dtypes.Uid getKubernetesCluster() {
     return kubernetesCluster_ == null ? com.appscode.api.dtypes.Uid.getDefaultInstance() : kubernetesCluster_;
   }
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   public com.appscode.api.dtypes.UidOrBuilder getKubernetesClusterOrBuilder() {
     return getKubernetesCluster();
@@ -1286,7 +1286,7 @@ public  final class Incident extends
   public static final int KUBERNETES_NAMESPACE_FIELD_NUMBER = 3;
   private volatile java.lang.Object kubernetesNamespace_;
   /**
-   * <code>optional string kubernetes_namespace = 3;</code>
+   * <code>string kubernetes_namespace = 3;</code>
    */
   public java.lang.String getKubernetesNamespace() {
     java.lang.Object ref = kubernetesNamespace_;
@@ -1301,7 +1301,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string kubernetes_namespace = 3;</code>
+   * <code>string kubernetes_namespace = 3;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesNamespaceBytes() {
@@ -1320,7 +1320,7 @@ public  final class Incident extends
   public static final int KUBERNETES_OBJECT_TYPE_FIELD_NUMBER = 4;
   private volatile java.lang.Object kubernetesObjectType_;
   /**
-   * <code>optional string kubernetes_object_type = 4;</code>
+   * <code>string kubernetes_object_type = 4;</code>
    */
   public java.lang.String getKubernetesObjectType() {
     java.lang.Object ref = kubernetesObjectType_;
@@ -1335,7 +1335,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string kubernetes_object_type = 4;</code>
+   * <code>string kubernetes_object_type = 4;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesObjectTypeBytes() {
@@ -1354,7 +1354,7 @@ public  final class Incident extends
   public static final int KUBERNETES_OBJECT_NAME_FIELD_NUMBER = 5;
   private volatile java.lang.Object kubernetesObjectName_;
   /**
-   * <code>optional string kubernetes_object_name = 5;</code>
+   * <code>string kubernetes_object_name = 5;</code>
    */
   public java.lang.String getKubernetesObjectName() {
     java.lang.Object ref = kubernetesObjectName_;
@@ -1369,7 +1369,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string kubernetes_object_name = 5;</code>
+   * <code>string kubernetes_object_name = 5;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesObjectNameBytes() {
@@ -1388,7 +1388,7 @@ public  final class Incident extends
   public static final int KUBERNETES_ALERT_NAME_FIELD_NUMBER = 6;
   private volatile java.lang.Object kubernetesAlertName_;
   /**
-   * <code>optional string kubernetes_alert_name = 6;</code>
+   * <code>string kubernetes_alert_name = 6;</code>
    */
   public java.lang.String getKubernetesAlertName() {
     java.lang.Object ref = kubernetesAlertName_;
@@ -1403,7 +1403,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string kubernetes_alert_name = 6;</code>
+   * <code>string kubernetes_alert_name = 6;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesAlertNameBytes() {
@@ -1422,7 +1422,7 @@ public  final class Incident extends
   public static final int ICINGA_HOST_FIELD_NUMBER = 7;
   private volatile java.lang.Object icingaHost_;
   /**
-   * <code>optional string icinga_host = 7;</code>
+   * <code>string icinga_host = 7;</code>
    */
   public java.lang.String getIcingaHost() {
     java.lang.Object ref = icingaHost_;
@@ -1437,7 +1437,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string icinga_host = 7;</code>
+   * <code>string icinga_host = 7;</code>
    */
   public com.google.protobuf.ByteString
       getIcingaHostBytes() {
@@ -1456,7 +1456,7 @@ public  final class Incident extends
   public static final int ICINGA_SERVICE_FIELD_NUMBER = 8;
   private volatile java.lang.Object icingaService_;
   /**
-   * <code>optional string icinga_service = 8;</code>
+   * <code>string icinga_service = 8;</code>
    */
   public java.lang.String getIcingaService() {
     java.lang.Object ref = icingaService_;
@@ -1471,7 +1471,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string icinga_service = 8;</code>
+   * <code>string icinga_service = 8;</code>
    */
   public com.google.protobuf.ByteString
       getIcingaServiceBytes() {
@@ -1490,7 +1490,7 @@ public  final class Incident extends
   public static final int TYPE_FIELD_NUMBER = 9;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 9;</code>
+   * <code>string type = 9;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -1505,7 +1505,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string type = 9;</code>
+   * <code>string type = 9;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -1524,7 +1524,7 @@ public  final class Incident extends
   public static final int STATE_FIELD_NUMBER = 10;
   private volatile java.lang.Object state_;
   /**
-   * <code>optional string state = 10;</code>
+   * <code>string state = 10;</code>
    */
   public java.lang.String getState() {
     java.lang.Object ref = state_;
@@ -1539,7 +1539,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string state = 10;</code>
+   * <code>string state = 10;</code>
    */
   public com.google.protobuf.ByteString
       getStateBytes() {
@@ -1558,19 +1558,19 @@ public  final class Incident extends
   public static final int USER_FIELD_NUMBER = 11;
   private com.appscode.api.dtypes.Uid user_;
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   public boolean hasUser() {
     return user_ != null;
   }
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   public com.appscode.api.dtypes.Uid getUser() {
     return user_ == null ? com.appscode.api.dtypes.Uid.getDefaultInstance() : user_;
   }
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   public com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder() {
     return getUser();
@@ -1583,7 +1583,7 @@ public  final class Incident extends
    * Timestamp of first reported event
    * </pre>
    *
-   * <code>optional int64 reported_at = 12;</code>
+   * <code>int64 reported_at = 12;</code>
    */
   public long getReportedAt() {
     return reportedAt_;
@@ -1596,7 +1596,7 @@ public  final class Incident extends
    * Timestamp of first acknowledgement
    * </pre>
    *
-   * <code>optional int64 acknowledged_at = 13;</code>
+   * <code>int64 acknowledged_at = 13;</code>
    */
   public long getAcknowledgedAt() {
     return acknowledgedAt_;
@@ -1605,7 +1605,7 @@ public  final class Incident extends
   public static final int RECOVERED_AT_FIELD_NUMBER = 14;
   private long recoveredAt_;
   /**
-   * <code>optional int64 recovered_at = 14;</code>
+   * <code>int64 recovered_at = 14;</code>
    */
   public long getRecoveredAt() {
     return recoveredAt_;
@@ -1614,7 +1614,7 @@ public  final class Incident extends
   public static final int ICINGAWEB_URL_FIELD_NUMBER = 15;
   private volatile java.lang.Object icingawebUrl_;
   /**
-   * <code>optional string icingaweb_url = 15;</code>
+   * <code>string icingaweb_url = 15;</code>
    */
   public java.lang.String getIcingawebUrl() {
     java.lang.Object ref = icingawebUrl_;
@@ -1629,7 +1629,7 @@ public  final class Incident extends
     }
   }
   /**
-   * <code>optional string icingaweb_url = 15;</code>
+   * <code>string icingaweb_url = 15;</code>
    */
   public com.google.protobuf.ByteString
       getIcingawebUrlBytes() {
@@ -1864,7 +1864,7 @@ public  final class Incident extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     if (hasKubernetesCluster()) {
@@ -2277,7 +2277,7 @@ public  final class Incident extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -2292,7 +2292,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -2308,7 +2308,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -2321,7 +2321,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -2330,7 +2330,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -2348,13 +2348,13 @@ public  final class Incident extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> kubernetesClusterBuilder_;
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public boolean hasKubernetesCluster() {
       return kubernetesClusterBuilder_ != null || kubernetesCluster_ != null;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public com.appscode.api.dtypes.Uid getKubernetesCluster() {
       if (kubernetesClusterBuilder_ == null) {
@@ -2364,7 +2364,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public Builder setKubernetesCluster(com.appscode.api.dtypes.Uid value) {
       if (kubernetesClusterBuilder_ == null) {
@@ -2380,7 +2380,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public Builder setKubernetesCluster(
         com.appscode.api.dtypes.Uid.Builder builderForValue) {
@@ -2394,7 +2394,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public Builder mergeKubernetesCluster(com.appscode.api.dtypes.Uid value) {
       if (kubernetesClusterBuilder_ == null) {
@@ -2412,7 +2412,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public Builder clearKubernetesCluster() {
       if (kubernetesClusterBuilder_ == null) {
@@ -2426,7 +2426,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public com.appscode.api.dtypes.Uid.Builder getKubernetesClusterBuilder() {
       
@@ -2434,7 +2434,7 @@ public  final class Incident extends
       return getKubernetesClusterFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     public com.appscode.api.dtypes.UidOrBuilder getKubernetesClusterOrBuilder() {
       if (kubernetesClusterBuilder_ != null) {
@@ -2445,7 +2445,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+     * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> 
@@ -2463,7 +2463,7 @@ public  final class Incident extends
 
     private java.lang.Object kubernetesNamespace_ = "";
     /**
-     * <code>optional string kubernetes_namespace = 3;</code>
+     * <code>string kubernetes_namespace = 3;</code>
      */
     public java.lang.String getKubernetesNamespace() {
       java.lang.Object ref = kubernetesNamespace_;
@@ -2478,7 +2478,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_namespace = 3;</code>
+     * <code>string kubernetes_namespace = 3;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesNamespaceBytes() {
@@ -2494,7 +2494,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_namespace = 3;</code>
+     * <code>string kubernetes_namespace = 3;</code>
      */
     public Builder setKubernetesNamespace(
         java.lang.String value) {
@@ -2507,7 +2507,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_namespace = 3;</code>
+     * <code>string kubernetes_namespace = 3;</code>
      */
     public Builder clearKubernetesNamespace() {
       
@@ -2516,7 +2516,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_namespace = 3;</code>
+     * <code>string kubernetes_namespace = 3;</code>
      */
     public Builder setKubernetesNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -2532,7 +2532,7 @@ public  final class Incident extends
 
     private java.lang.Object kubernetesObjectType_ = "";
     /**
-     * <code>optional string kubernetes_object_type = 4;</code>
+     * <code>string kubernetes_object_type = 4;</code>
      */
     public java.lang.String getKubernetesObjectType() {
       java.lang.Object ref = kubernetesObjectType_;
@@ -2547,7 +2547,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_object_type = 4;</code>
+     * <code>string kubernetes_object_type = 4;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesObjectTypeBytes() {
@@ -2563,7 +2563,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_object_type = 4;</code>
+     * <code>string kubernetes_object_type = 4;</code>
      */
     public Builder setKubernetesObjectType(
         java.lang.String value) {
@@ -2576,7 +2576,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_object_type = 4;</code>
+     * <code>string kubernetes_object_type = 4;</code>
      */
     public Builder clearKubernetesObjectType() {
       
@@ -2585,7 +2585,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_object_type = 4;</code>
+     * <code>string kubernetes_object_type = 4;</code>
      */
     public Builder setKubernetesObjectTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -2601,7 +2601,7 @@ public  final class Incident extends
 
     private java.lang.Object kubernetesObjectName_ = "";
     /**
-     * <code>optional string kubernetes_object_name = 5;</code>
+     * <code>string kubernetes_object_name = 5;</code>
      */
     public java.lang.String getKubernetesObjectName() {
       java.lang.Object ref = kubernetesObjectName_;
@@ -2616,7 +2616,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_object_name = 5;</code>
+     * <code>string kubernetes_object_name = 5;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesObjectNameBytes() {
@@ -2632,7 +2632,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_object_name = 5;</code>
+     * <code>string kubernetes_object_name = 5;</code>
      */
     public Builder setKubernetesObjectName(
         java.lang.String value) {
@@ -2645,7 +2645,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_object_name = 5;</code>
+     * <code>string kubernetes_object_name = 5;</code>
      */
     public Builder clearKubernetesObjectName() {
       
@@ -2654,7 +2654,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_object_name = 5;</code>
+     * <code>string kubernetes_object_name = 5;</code>
      */
     public Builder setKubernetesObjectNameBytes(
         com.google.protobuf.ByteString value) {
@@ -2670,7 +2670,7 @@ public  final class Incident extends
 
     private java.lang.Object kubernetesAlertName_ = "";
     /**
-     * <code>optional string kubernetes_alert_name = 6;</code>
+     * <code>string kubernetes_alert_name = 6;</code>
      */
     public java.lang.String getKubernetesAlertName() {
       java.lang.Object ref = kubernetesAlertName_;
@@ -2685,7 +2685,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_alert_name = 6;</code>
+     * <code>string kubernetes_alert_name = 6;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesAlertNameBytes() {
@@ -2701,7 +2701,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string kubernetes_alert_name = 6;</code>
+     * <code>string kubernetes_alert_name = 6;</code>
      */
     public Builder setKubernetesAlertName(
         java.lang.String value) {
@@ -2714,7 +2714,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_alert_name = 6;</code>
+     * <code>string kubernetes_alert_name = 6;</code>
      */
     public Builder clearKubernetesAlertName() {
       
@@ -2723,7 +2723,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_alert_name = 6;</code>
+     * <code>string kubernetes_alert_name = 6;</code>
      */
     public Builder setKubernetesAlertNameBytes(
         com.google.protobuf.ByteString value) {
@@ -2739,7 +2739,7 @@ public  final class Incident extends
 
     private java.lang.Object icingaHost_ = "";
     /**
-     * <code>optional string icinga_host = 7;</code>
+     * <code>string icinga_host = 7;</code>
      */
     public java.lang.String getIcingaHost() {
       java.lang.Object ref = icingaHost_;
@@ -2754,7 +2754,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icinga_host = 7;</code>
+     * <code>string icinga_host = 7;</code>
      */
     public com.google.protobuf.ByteString
         getIcingaHostBytes() {
@@ -2770,7 +2770,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icinga_host = 7;</code>
+     * <code>string icinga_host = 7;</code>
      */
     public Builder setIcingaHost(
         java.lang.String value) {
@@ -2783,7 +2783,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icinga_host = 7;</code>
+     * <code>string icinga_host = 7;</code>
      */
     public Builder clearIcingaHost() {
       
@@ -2792,7 +2792,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icinga_host = 7;</code>
+     * <code>string icinga_host = 7;</code>
      */
     public Builder setIcingaHostBytes(
         com.google.protobuf.ByteString value) {
@@ -2808,7 +2808,7 @@ public  final class Incident extends
 
     private java.lang.Object icingaService_ = "";
     /**
-     * <code>optional string icinga_service = 8;</code>
+     * <code>string icinga_service = 8;</code>
      */
     public java.lang.String getIcingaService() {
       java.lang.Object ref = icingaService_;
@@ -2823,7 +2823,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icinga_service = 8;</code>
+     * <code>string icinga_service = 8;</code>
      */
     public com.google.protobuf.ByteString
         getIcingaServiceBytes() {
@@ -2839,7 +2839,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icinga_service = 8;</code>
+     * <code>string icinga_service = 8;</code>
      */
     public Builder setIcingaService(
         java.lang.String value) {
@@ -2852,7 +2852,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icinga_service = 8;</code>
+     * <code>string icinga_service = 8;</code>
      */
     public Builder clearIcingaService() {
       
@@ -2861,7 +2861,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icinga_service = 8;</code>
+     * <code>string icinga_service = 8;</code>
      */
     public Builder setIcingaServiceBytes(
         com.google.protobuf.ByteString value) {
@@ -2877,7 +2877,7 @@ public  final class Incident extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 9;</code>
+     * <code>string type = 9;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -2892,7 +2892,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string type = 9;</code>
+     * <code>string type = 9;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -2908,7 +2908,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string type = 9;</code>
+     * <code>string type = 9;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -2921,7 +2921,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string type = 9;</code>
+     * <code>string type = 9;</code>
      */
     public Builder clearType() {
       
@@ -2930,7 +2930,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string type = 9;</code>
+     * <code>string type = 9;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -2946,7 +2946,7 @@ public  final class Incident extends
 
     private java.lang.Object state_ = "";
     /**
-     * <code>optional string state = 10;</code>
+     * <code>string state = 10;</code>
      */
     public java.lang.String getState() {
       java.lang.Object ref = state_;
@@ -2961,7 +2961,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string state = 10;</code>
+     * <code>string state = 10;</code>
      */
     public com.google.protobuf.ByteString
         getStateBytes() {
@@ -2977,7 +2977,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string state = 10;</code>
+     * <code>string state = 10;</code>
      */
     public Builder setState(
         java.lang.String value) {
@@ -2990,7 +2990,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string state = 10;</code>
+     * <code>string state = 10;</code>
      */
     public Builder clearState() {
       
@@ -2999,7 +2999,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string state = 10;</code>
+     * <code>string state = 10;</code>
      */
     public Builder setStateBytes(
         com.google.protobuf.ByteString value) {
@@ -3017,13 +3017,13 @@ public  final class Incident extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> userBuilder_;
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public boolean hasUser() {
       return userBuilder_ != null || user_ != null;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public com.appscode.api.dtypes.Uid getUser() {
       if (userBuilder_ == null) {
@@ -3033,7 +3033,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public Builder setUser(com.appscode.api.dtypes.Uid value) {
       if (userBuilder_ == null) {
@@ -3049,7 +3049,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public Builder setUser(
         com.appscode.api.dtypes.Uid.Builder builderForValue) {
@@ -3063,7 +3063,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public Builder mergeUser(com.appscode.api.dtypes.Uid value) {
       if (userBuilder_ == null) {
@@ -3081,7 +3081,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public Builder clearUser() {
       if (userBuilder_ == null) {
@@ -3095,7 +3095,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public com.appscode.api.dtypes.Uid.Builder getUserBuilder() {
       
@@ -3103,7 +3103,7 @@ public  final class Incident extends
       return getUserFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     public com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder() {
       if (userBuilder_ != null) {
@@ -3114,7 +3114,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional .appscode.dtypes.Uid user = 11;</code>
+     * <code>.appscode.dtypes.Uid user = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.dtypes.Uid, com.appscode.api.dtypes.Uid.Builder, com.appscode.api.dtypes.UidOrBuilder> 
@@ -3136,7 +3136,7 @@ public  final class Incident extends
      * Timestamp of first reported event
      * </pre>
      *
-     * <code>optional int64 reported_at = 12;</code>
+     * <code>int64 reported_at = 12;</code>
      */
     public long getReportedAt() {
       return reportedAt_;
@@ -3146,7 +3146,7 @@ public  final class Incident extends
      * Timestamp of first reported event
      * </pre>
      *
-     * <code>optional int64 reported_at = 12;</code>
+     * <code>int64 reported_at = 12;</code>
      */
     public Builder setReportedAt(long value) {
       
@@ -3159,7 +3159,7 @@ public  final class Incident extends
      * Timestamp of first reported event
      * </pre>
      *
-     * <code>optional int64 reported_at = 12;</code>
+     * <code>int64 reported_at = 12;</code>
      */
     public Builder clearReportedAt() {
       
@@ -3174,7 +3174,7 @@ public  final class Incident extends
      * Timestamp of first acknowledgement
      * </pre>
      *
-     * <code>optional int64 acknowledged_at = 13;</code>
+     * <code>int64 acknowledged_at = 13;</code>
      */
     public long getAcknowledgedAt() {
       return acknowledgedAt_;
@@ -3184,7 +3184,7 @@ public  final class Incident extends
      * Timestamp of first acknowledgement
      * </pre>
      *
-     * <code>optional int64 acknowledged_at = 13;</code>
+     * <code>int64 acknowledged_at = 13;</code>
      */
     public Builder setAcknowledgedAt(long value) {
       
@@ -3197,7 +3197,7 @@ public  final class Incident extends
      * Timestamp of first acknowledgement
      * </pre>
      *
-     * <code>optional int64 acknowledged_at = 13;</code>
+     * <code>int64 acknowledged_at = 13;</code>
      */
     public Builder clearAcknowledgedAt() {
       
@@ -3208,13 +3208,13 @@ public  final class Incident extends
 
     private long recoveredAt_ ;
     /**
-     * <code>optional int64 recovered_at = 14;</code>
+     * <code>int64 recovered_at = 14;</code>
      */
     public long getRecoveredAt() {
       return recoveredAt_;
     }
     /**
-     * <code>optional int64 recovered_at = 14;</code>
+     * <code>int64 recovered_at = 14;</code>
      */
     public Builder setRecoveredAt(long value) {
       
@@ -3223,7 +3223,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional int64 recovered_at = 14;</code>
+     * <code>int64 recovered_at = 14;</code>
      */
     public Builder clearRecoveredAt() {
       
@@ -3234,7 +3234,7 @@ public  final class Incident extends
 
     private java.lang.Object icingawebUrl_ = "";
     /**
-     * <code>optional string icingaweb_url = 15;</code>
+     * <code>string icingaweb_url = 15;</code>
      */
     public java.lang.String getIcingawebUrl() {
       java.lang.Object ref = icingawebUrl_;
@@ -3249,7 +3249,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icingaweb_url = 15;</code>
+     * <code>string icingaweb_url = 15;</code>
      */
     public com.google.protobuf.ByteString
         getIcingawebUrlBytes() {
@@ -3265,7 +3265,7 @@ public  final class Incident extends
       }
     }
     /**
-     * <code>optional string icingaweb_url = 15;</code>
+     * <code>string icingaweb_url = 15;</code>
      */
     public Builder setIcingawebUrl(
         java.lang.String value) {
@@ -3278,7 +3278,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icingaweb_url = 15;</code>
+     * <code>string icingaweb_url = 15;</code>
      */
     public Builder clearIcingawebUrl() {
       
@@ -3287,7 +3287,7 @@ public  final class Incident extends
       return this;
     }
     /**
-     * <code>optional string icingaweb_url = 15;</code>
+     * <code>string icingaweb_url = 15;</code>
      */
     public Builder setIcingawebUrlBytes(
         com.google.protobuf.ByteString value) {

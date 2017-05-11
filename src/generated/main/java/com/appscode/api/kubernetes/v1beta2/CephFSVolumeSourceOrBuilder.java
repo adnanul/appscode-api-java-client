@@ -51,7 +51,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   java.lang.String getPath();
   /**
@@ -59,7 +59,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
@@ -70,7 +70,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string user = 3;</code>
+   * <code>string user = 3;</code>
    */
   java.lang.String getUser();
   /**
@@ -79,7 +79,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string user = 3;</code>
+   * <code>string user = 3;</code>
    */
   com.google.protobuf.ByteString
       getUserBytes();
@@ -90,7 +90,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string secretFile = 4;</code>
+   * <code>string secretFile = 4;</code>
    */
   java.lang.String getSecretFile();
   /**
@@ -99,7 +99,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string secretFile = 4;</code>
+   * <code>string secretFile = 4;</code>
    */
   com.google.protobuf.ByteString
       getSecretFileBytes();
@@ -110,7 +110,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
    */
   boolean hasSecretRef();
   /**
@@ -119,7 +119,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReference getSecretRef();
   /**
@@ -128,7 +128,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getSecretRefOrBuilder();
 
@@ -139,7 +139,7 @@ public interface CephFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/cephfs/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional bool readOnly = 6;</code>
+   * <code>bool readOnly = 6;</code>
    */
   boolean getReadOnly();
 }

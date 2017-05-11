@@ -8,24 +8,11 @@ public interface CSRFTokenResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional string csrf_token = 2;</code>
+   * <code>string csrf_token = 1;</code>
    */
   java.lang.String getCsrfToken();
   /**
-   * <code>optional string csrf_token = 2;</code>
+   * <code>string csrf_token = 1;</code>
    */
   com.google.protobuf.ByteString
       getCsrfTokenBytes();

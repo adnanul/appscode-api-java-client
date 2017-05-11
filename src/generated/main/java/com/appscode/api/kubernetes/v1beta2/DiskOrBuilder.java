@@ -8,66 +8,66 @@ public interface DiskOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string id = 2;</code>
+   * <code>string id = 2;</code>
    */
   java.lang.String getId();
   /**
-   * <code>optional string id = 2;</code>
+   * <code>string id = 2;</code>
    */
   com.google.protobuf.ByteString
       getIdBytes();
 
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   java.lang.String getProvider();
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   com.google.protobuf.ByteString
       getProviderBytes();
 
   /**
-   * <code>optional int64 size_gb = 4;</code>
+   * <code>int64 size_gb = 4;</code>
    */
   long getSizeGb();
 
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   java.lang.String getZone();
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   com.google.protobuf.ByteString
       getZoneBytes();
 
   /**
-   * <code>optional string status = 7;</code>
+   * <code>string status = 7;</code>
    */
   java.lang.String getStatus();
   /**
-   * <code>optional string status = 7;</code>
+   * <code>string status = 7;</code>
    */
   com.google.protobuf.ByteString
       getStatusBytes();
@@ -92,53 +92,53 @@ public interface DiskOrBuilder extends
       getUsersBytes(int index);
 
   /**
-   * <code>optional string kind = 9;</code>
+   * <code>string kind = 9;</code>
    */
   java.lang.String getKind();
   /**
-   * <code>optional string kind = 9;</code>
+   * <code>string kind = 9;</code>
    */
   com.google.protobuf.ByteString
       getKindBytes();
 
   /**
-   * <code>optional string endpoint = 10;</code>
+   * <code>string endpoint = 10;</code>
    */
   java.lang.String getEndpoint();
   /**
-   * <code>optional string endpoint = 10;</code>
+   * <code>string endpoint = 10;</code>
    */
   com.google.protobuf.ByteString
       getEndpointBytes();
 
   /**
-   * <code>optional int64 iops = 11;</code>
+   * <code>int64 iops = 11;</code>
    */
   long getIops();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   boolean hasPersistentVolume();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   boolean hasPersistentVolumeClaim();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder();
 }

@@ -27,11 +27,11 @@ public interface DockerSpecOrBuilder extends
       getTarSumsBytes(int index);
 
   /**
-   * <code>optional string manifest_url = 2;</code>
+   * <code>string manifest_url = 2;</code>
    */
   java.lang.String getManifestUrl();
   /**
-   * <code>optional string manifest_url = 2;</code>
+   * <code>string manifest_url = 2;</code>
    */
   com.google.protobuf.ByteString
       getManifestUrlBytes();

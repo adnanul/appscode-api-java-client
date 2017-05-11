@@ -8,51 +8,51 @@ public interface ResourceConditionOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional string status = 2;</code>
+   * <code>string status = 2;</code>
    */
   java.lang.String getStatus();
   /**
-   * <code>optional string status = 2;</code>
+   * <code>string status = 2;</code>
    */
   com.google.protobuf.ByteString
       getStatusBytes();
 
   /**
-   * <code>optional int64 last_heartbeat_time = 3;</code>
+   * <code>int64 last_heartbeat_time = 3;</code>
    */
   long getLastHeartbeatTime();
 
   /**
-   * <code>optional int64 last_transition_time = 4;</code>
+   * <code>int64 last_transition_time = 4;</code>
    */
   long getLastTransitionTime();
 
   /**
-   * <code>optional string reason = 5;</code>
+   * <code>string reason = 5;</code>
    */
   java.lang.String getReason();
   /**
-   * <code>optional string reason = 5;</code>
+   * <code>string reason = 5;</code>
    */
   com.google.protobuf.ByteString
       getReasonBytes();
 
   /**
-   * <code>optional string message = 6;</code>
+   * <code>string message = 6;</code>
    */
   java.lang.String getMessage();
   /**
-   * <code>optional string message = 6;</code>
+   * <code>string message = 6;</code>
    */
   com.google.protobuf.ByteString
       getMessageBytes();

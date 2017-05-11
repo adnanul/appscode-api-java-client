@@ -8,72 +8,72 @@ public interface EventOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional string reason = 2;</code>
+   * <code>string reason = 2;</code>
    */
   java.lang.String getReason();
   /**
-   * <code>optional string reason = 2;</code>
+   * <code>string reason = 2;</code>
    */
   com.google.protobuf.ByteString
       getReasonBytes();
 
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   java.lang.String getMessage();
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   com.google.protobuf.ByteString
       getMessageBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   boolean hasSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EventSource getSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EventSourceOrBuilder getSourceOrBuilder();
 
   /**
-   * <code>optional int64 first_timestamp = 5;</code>
+   * <code>int64 first_timestamp = 5;</code>
    */
   long getFirstTimestamp();
 
   /**
-   * <code>optional int64 last_timestamp = 6;</code>
+   * <code>int64 last_timestamp = 6;</code>
    */
   long getLastTimestamp();
 
   /**
-   * <code>optional int32 count = 7;</code>
+   * <code>int32 count = 7;</code>
    */
   int getCount();
 
   /**
-   * <code>optional string type = 8;</code>
+   * <code>string type = 8;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 8;</code>
+   * <code>string type = 8;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();

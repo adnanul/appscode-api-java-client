@@ -93,7 +93,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
    * </pre>
    *
-   * <code>optional string claimName = 1;</code>
+   * <code>string claimName = 1;</code>
    */
   public java.lang.String getClaimName() {
     java.lang.Object ref = claimName_;
@@ -113,7 +113,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
    * </pre>
    *
-   * <code>optional string claimName = 1;</code>
+   * <code>string claimName = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClaimNameBytes() {
@@ -138,7 +138,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional bool readOnly = 2;</code>
+   * <code>bool readOnly = 2;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -205,7 +205,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLAIMNAME_FIELD_NUMBER;
     hash = (53 * hash) + getClaimName().hashCode();
     hash = (37 * hash) + READONLY_FIELD_NUMBER;
@@ -445,7 +445,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
      * </pre>
      *
-     * <code>optional string claimName = 1;</code>
+     * <code>string claimName = 1;</code>
      */
     public java.lang.String getClaimName() {
       java.lang.Object ref = claimName_;
@@ -465,7 +465,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
      * </pre>
      *
-     * <code>optional string claimName = 1;</code>
+     * <code>string claimName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClaimNameBytes() {
@@ -486,7 +486,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
      * </pre>
      *
-     * <code>optional string claimName = 1;</code>
+     * <code>string claimName = 1;</code>
      */
     public Builder setClaimName(
         java.lang.String value) {
@@ -504,7 +504,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
      * </pre>
      *
-     * <code>optional string claimName = 1;</code>
+     * <code>string claimName = 1;</code>
      */
     public Builder clearClaimName() {
       
@@ -518,7 +518,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
      * </pre>
      *
-     * <code>optional string claimName = 1;</code>
+     * <code>string claimName = 1;</code>
      */
     public Builder setClaimNameBytes(
         com.google.protobuf.ByteString value) {
@@ -540,7 +540,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool readOnly = 2;</code>
+     * <code>bool readOnly = 2;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -552,7 +552,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool readOnly = 2;</code>
+     * <code>bool readOnly = 2;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -567,7 +567,7 @@ public  final class PersistentVolumeClaimVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool readOnly = 2;</code>
+     * <code>bool readOnly = 2;</code>
      */
     public Builder clearReadOnly() {
       

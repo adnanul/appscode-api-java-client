@@ -44,22 +44,9 @@ public  final class AgentListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               agents_ = new java.util.ArrayList<com.appscode.api.ci.v1beta1.Agent>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             agents_.add(
                 input.readMessage(com.appscode.api.ci.v1beta1.Agent.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class AgentListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         agents_ = java.util.Collections.unmodifiableList(agents_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class AgentListResponse extends
             com.appscode.api.ci.v1beta1.AgentListResponse.class, com.appscode.api.ci.v1beta1.AgentListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int AGENTS_FIELD_NUMBER = 2;
+  public static final int AGENTS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.ci.v1beta1.Agent> agents_;
   /**
-   * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+   * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
    */
   public java.util.List<com.appscode.api.ci.v1beta1.Agent> getAgentsList() {
     return agents_;
   }
   /**
-   * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+   * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.ci.v1beta1.AgentOrBuilder> 
       getAgentsOrBuilderList() {
     return agents_;
   }
   /**
-   * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+   * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
    */
   public int getAgentsCount() {
     return agents_.size();
   }
   /**
-   * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+   * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
    */
   public com.appscode.api.ci.v1beta1.Agent getAgents(int index) {
     return agents_.get(index);
   }
   /**
-   * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+   * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
    */
   public com.appscode.api.ci.v1beta1.AgentOrBuilder getAgentsOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class AgentListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < agents_.size(); i++) {
-      output.writeMessage(2, agents_.get(i));
+      output.writeMessage(1, agents_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class AgentListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < agents_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, agents_.get(i));
+        .computeMessageSize(1, agents_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class AgentListResponse extends
     com.appscode.api.ci.v1beta1.AgentListResponse other = (com.appscode.api.ci.v1beta1.AgentListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getAgentsList()
         .equals(other.getAgentsList());
     return result;
@@ -213,11 +166,7 @@ public  final class AgentListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getAgentsCount() > 0) {
       hash = (37 * hash) + AGENTS_FIELD_NUMBER;
       hash = (53 * hash) + getAgentsList().hashCode();
@@ -341,15 +290,9 @@ public  final class AgentListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (agentsBuilder_ == null) {
         agents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         agentsBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class AgentListResponse extends
     public com.appscode.api.ci.v1beta1.AgentListResponse buildPartial() {
       com.appscode.api.ci.v1beta1.AgentListResponse result = new com.appscode.api.ci.v1beta1.AgentListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (agentsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           agents_ = java.util.Collections.unmodifiableList(agents_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.agents_ = agents_;
       } else {
         result.agents_ = agentsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class AgentListResponse extends
 
     public Builder mergeFrom(com.appscode.api.ci.v1beta1.AgentListResponse other) {
       if (other == com.appscode.api.ci.v1beta1.AgentListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (agentsBuilder_ == null) {
         if (!other.agents_.isEmpty()) {
           if (agents_.isEmpty()) {
             agents_ = other.agents_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureAgentsIsMutable();
             agents_.addAll(other.agents_);
@@ -453,7 +386,7 @@ public  final class AgentListResponse extends
             agentsBuilder_.dispose();
             agentsBuilder_ = null;
             agents_ = other.agents_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             agentsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getAgentsFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class AgentListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.ci.v1beta1.Agent> agents_ =
       java.util.Collections.emptyList();
     private void ensureAgentsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         agents_ = new java.util.ArrayList<com.appscode.api.ci.v1beta1.Agent>(agents_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class AgentListResponse extends
         com.appscode.api.ci.v1beta1.Agent, com.appscode.api.ci.v1beta1.Agent.Builder, com.appscode.api.ci.v1beta1.AgentOrBuilder> agentsBuilder_;
 
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public java.util.List<com.appscode.api.ci.v1beta1.Agent> getAgentsList() {
       if (agentsBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class AgentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public int getAgentsCount() {
       if (agentsBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class AgentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public com.appscode.api.ci.v1beta1.Agent getAgents(int index) {
       if (agentsBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class AgentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder setAgents(
         int index, com.appscode.api.ci.v1beta1.Agent value) {
@@ -666,7 +482,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder setAgents(
         int index, com.appscode.api.ci.v1beta1.Agent.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder addAgents(com.appscode.api.ci.v1beta1.Agent value) {
       if (agentsBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder addAgents(
         int index, com.appscode.api.ci.v1beta1.Agent value) {
@@ -713,7 +529,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder addAgents(
         com.appscode.api.ci.v1beta1.Agent.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder addAgents(
         int index, com.appscode.api.ci.v1beta1.Agent.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder addAllAgents(
         java.lang.Iterable<? extends com.appscode.api.ci.v1beta1.Agent> values) {
@@ -756,12 +572,12 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder clearAgents() {
       if (agentsBuilder_ == null) {
         agents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         agentsBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public Builder removeAgents(int index) {
       if (agentsBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class AgentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public com.appscode.api.ci.v1beta1.Agent.Builder getAgentsBuilder(
         int index) {
       return getAgentsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public com.appscode.api.ci.v1beta1.AgentOrBuilder getAgentsOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class AgentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.ci.v1beta1.AgentOrBuilder> 
          getAgentsOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class AgentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public com.appscode.api.ci.v1beta1.Agent.Builder addAgentsBuilder() {
       return getAgentsFieldBuilder().addBuilder(
           com.appscode.api.ci.v1beta1.Agent.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public com.appscode.api.ci.v1beta1.Agent.Builder addAgentsBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class AgentListResponse extends
           index, com.appscode.api.ci.v1beta1.Agent.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.ci.v1beta1.Agent agents = 2;</code>
+     * <code>repeated .appscode.ci.v1beta1.Agent agents = 1;</code>
      */
     public java.util.List<com.appscode.api.ci.v1beta1.Agent.Builder> 
          getAgentsBuilderList() {
@@ -838,7 +654,7 @@ public  final class AgentListResponse extends
         agentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.ci.v1beta1.Agent, com.appscode.api.ci.v1beta1.Agent.Builder, com.appscode.api.ci.v1beta1.AgentOrBuilder>(
                 agents_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         agents_ = null;

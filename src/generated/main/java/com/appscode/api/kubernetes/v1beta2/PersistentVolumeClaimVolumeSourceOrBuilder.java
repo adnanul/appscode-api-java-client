@@ -13,7 +13,7 @@ public interface PersistentVolumeClaimVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
    * </pre>
    *
-   * <code>optional string claimName = 1;</code>
+   * <code>string claimName = 1;</code>
    */
   java.lang.String getClaimName();
   /**
@@ -22,7 +22,7 @@ public interface PersistentVolumeClaimVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/persistent-volumes#persistentvolumeclaims
    * </pre>
    *
-   * <code>optional string claimName = 1;</code>
+   * <code>string claimName = 1;</code>
    */
   com.google.protobuf.ByteString
       getClaimNameBytes();
@@ -34,7 +34,7 @@ public interface PersistentVolumeClaimVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional bool readOnly = 2;</code>
+   * <code>bool readOnly = 2;</code>
    */
   boolean getReadOnly();
 }

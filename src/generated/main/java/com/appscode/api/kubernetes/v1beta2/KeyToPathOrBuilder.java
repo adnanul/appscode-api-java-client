@@ -12,7 +12,7 @@ public interface KeyToPathOrBuilder extends
    * The key to project.
    * </pre>
    *
-   * <code>optional string key = 1;</code>
+   * <code>string key = 1;</code>
    */
   java.lang.String getKey();
   /**
@@ -20,7 +20,7 @@ public interface KeyToPathOrBuilder extends
    * The key to project.
    * </pre>
    *
-   * <code>optional string key = 1;</code>
+   * <code>string key = 1;</code>
    */
   com.google.protobuf.ByteString
       getKeyBytes();
@@ -33,7 +33,7 @@ public interface KeyToPathOrBuilder extends
    * May not start with the string '..'.
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   java.lang.String getPath();
   /**
@@ -44,7 +44,7 @@ public interface KeyToPathOrBuilder extends
    * May not start with the string '..'.
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
@@ -58,7 +58,7 @@ public interface KeyToPathOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 mode = 3;</code>
+   * <code>int32 mode = 3;</code>
    */
   int getMode();
 }

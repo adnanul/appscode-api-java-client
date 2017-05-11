@@ -8,38 +8,25 @@ public interface ArtifactSearchResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   java.util.List<com.appscode.api.attic.v1beta1.Artifact> 
       getArtifactsList();
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   com.appscode.api.attic.v1beta1.Artifact getArtifacts(int index);
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   int getArtifactsCount();
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactOrBuilder> 
       getArtifactsOrBuilderList();
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   com.appscode.api.attic.v1beta1.ArtifactOrBuilder getArtifactsOrBuilder(
       int index);

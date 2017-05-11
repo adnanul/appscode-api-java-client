@@ -91,7 +91,7 @@ public  final class ObjectFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string api_version = 1;</code>
+   * <code>string api_version = 1;</code>
    */
   public java.lang.String getApiVersion() {
     java.lang.Object ref = apiVersion_;
@@ -111,7 +111,7 @@ public  final class ObjectFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string api_version = 1;</code>
+   * <code>string api_version = 1;</code>
    */
   public com.google.protobuf.ByteString
       getApiVersionBytes() {
@@ -134,7 +134,7 @@ public  final class ObjectFieldSelector extends
    * Path of the field to select in the specified API version.
    * </pre>
    *
-   * <code>optional string field_path = 2;</code>
+   * <code>string field_path = 2;</code>
    */
   public java.lang.String getFieldPath() {
     java.lang.Object ref = fieldPath_;
@@ -153,7 +153,7 @@ public  final class ObjectFieldSelector extends
    * Path of the field to select in the specified API version.
    * </pre>
    *
-   * <code>optional string field_path = 2;</code>
+   * <code>string field_path = 2;</code>
    */
   public com.google.protobuf.ByteString
       getFieldPathBytes() {
@@ -229,7 +229,7 @@ public  final class ObjectFieldSelector extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + API_VERSION_FIELD_NUMBER;
     hash = (53 * hash) + getApiVersion().hashCode();
     hash = (37 * hash) + FIELD_PATH_FIELD_NUMBER;
@@ -466,7 +466,7 @@ public  final class ObjectFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string api_version = 1;</code>
+     * <code>string api_version = 1;</code>
      */
     public java.lang.String getApiVersion() {
       java.lang.Object ref = apiVersion_;
@@ -486,7 +486,7 @@ public  final class ObjectFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string api_version = 1;</code>
+     * <code>string api_version = 1;</code>
      */
     public com.google.protobuf.ByteString
         getApiVersionBytes() {
@@ -507,7 +507,7 @@ public  final class ObjectFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string api_version = 1;</code>
+     * <code>string api_version = 1;</code>
      */
     public Builder setApiVersion(
         java.lang.String value) {
@@ -525,7 +525,7 @@ public  final class ObjectFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string api_version = 1;</code>
+     * <code>string api_version = 1;</code>
      */
     public Builder clearApiVersion() {
       
@@ -539,7 +539,7 @@ public  final class ObjectFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string api_version = 1;</code>
+     * <code>string api_version = 1;</code>
      */
     public Builder setApiVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -559,7 +559,7 @@ public  final class ObjectFieldSelector extends
      * Path of the field to select in the specified API version.
      * </pre>
      *
-     * <code>optional string field_path = 2;</code>
+     * <code>string field_path = 2;</code>
      */
     public java.lang.String getFieldPath() {
       java.lang.Object ref = fieldPath_;
@@ -578,7 +578,7 @@ public  final class ObjectFieldSelector extends
      * Path of the field to select in the specified API version.
      * </pre>
      *
-     * <code>optional string field_path = 2;</code>
+     * <code>string field_path = 2;</code>
      */
     public com.google.protobuf.ByteString
         getFieldPathBytes() {
@@ -598,7 +598,7 @@ public  final class ObjectFieldSelector extends
      * Path of the field to select in the specified API version.
      * </pre>
      *
-     * <code>optional string field_path = 2;</code>
+     * <code>string field_path = 2;</code>
      */
     public Builder setFieldPath(
         java.lang.String value) {
@@ -615,7 +615,7 @@ public  final class ObjectFieldSelector extends
      * Path of the field to select in the specified API version.
      * </pre>
      *
-     * <code>optional string field_path = 2;</code>
+     * <code>string field_path = 2;</code>
      */
     public Builder clearFieldPath() {
       
@@ -628,7 +628,7 @@ public  final class ObjectFieldSelector extends
      * Path of the field to select in the specified API version.
      * </pre>
      *
-     * <code>optional string field_path = 2;</code>
+     * <code>string field_path = 2;</code>
      */
     public Builder setFieldPathBytes(
         com.google.protobuf.ByteString value) {

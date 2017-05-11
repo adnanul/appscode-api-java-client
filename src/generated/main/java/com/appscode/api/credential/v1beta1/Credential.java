@@ -95,7 +95,7 @@ public  final class Credential extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -110,7 +110,7 @@ public  final class Credential extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -129,7 +129,7 @@ public  final class Credential extends
   public static final int PROVIDER_FIELD_NUMBER = 2;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -144,7 +144,7 @@ public  final class Credential extends
     }
   }
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -163,7 +163,7 @@ public  final class Credential extends
   public static final int INFORMATION_FIELD_NUMBER = 3;
   private volatile java.lang.Object information_;
   /**
-   * <code>optional string information = 3;</code>
+   * <code>string information = 3;</code>
    */
   public java.lang.String getInformation() {
     java.lang.Object ref = information_;
@@ -178,7 +178,7 @@ public  final class Credential extends
     }
   }
   /**
-   * <code>optional string information = 3;</code>
+   * <code>string information = 3;</code>
    */
   public com.google.protobuf.ByteString
       getInformationBytes() {
@@ -197,7 +197,7 @@ public  final class Credential extends
   public static final int MODIFIED_AT_FIELD_NUMBER = 4;
   private long modifiedAt_;
   /**
-   * <code>optional int64 modified_at = 4;</code>
+   * <code>int64 modified_at = 4;</code>
    */
   public long getModifiedAt() {
     return modifiedAt_;
@@ -280,7 +280,7 @@ public  final class Credential extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PROVIDER_FIELD_NUMBER;
@@ -526,7 +526,7 @@ public  final class Credential extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -541,7 +541,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -557,7 +557,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -570,7 +570,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -579,7 +579,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -595,7 +595,7 @@ public  final class Credential extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -610,7 +610,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -626,7 +626,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -639,7 +639,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder clearProvider() {
       
@@ -648,7 +648,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {
@@ -664,7 +664,7 @@ public  final class Credential extends
 
     private java.lang.Object information_ = "";
     /**
-     * <code>optional string information = 3;</code>
+     * <code>string information = 3;</code>
      */
     public java.lang.String getInformation() {
       java.lang.Object ref = information_;
@@ -679,7 +679,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string information = 3;</code>
+     * <code>string information = 3;</code>
      */
     public com.google.protobuf.ByteString
         getInformationBytes() {
@@ -695,7 +695,7 @@ public  final class Credential extends
       }
     }
     /**
-     * <code>optional string information = 3;</code>
+     * <code>string information = 3;</code>
      */
     public Builder setInformation(
         java.lang.String value) {
@@ -708,7 +708,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string information = 3;</code>
+     * <code>string information = 3;</code>
      */
     public Builder clearInformation() {
       
@@ -717,7 +717,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional string information = 3;</code>
+     * <code>string information = 3;</code>
      */
     public Builder setInformationBytes(
         com.google.protobuf.ByteString value) {
@@ -733,13 +733,13 @@ public  final class Credential extends
 
     private long modifiedAt_ ;
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public long getModifiedAt() {
       return modifiedAt_;
     }
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public Builder setModifiedAt(long value) {
       
@@ -748,7 +748,7 @@ public  final class Credential extends
       return this;
     }
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public Builder clearModifiedAt() {
       

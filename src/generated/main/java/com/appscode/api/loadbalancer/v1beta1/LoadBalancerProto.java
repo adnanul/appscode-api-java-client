@@ -113,82 +113,80 @@ public final class LoadBalancerProto {
       "1\032\034google/api/annotations.proto\032\036appscod" +
       "e/api/annotations.proto\032\037appscode/api/dt" +
       "ypes/types.proto\"1\n\013ListRequest\022\017\n\007clust" +
-      "er\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\"z\n\014ListRespo" +
-      "nse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.St" +
-      "atus\022A\n\016load_balancers\030\002 \003(\0132).appscode." +
-      "kubernetes.v1beta1.LoadBalancer\"^\n\017Descr" +
-      "ibeRequest\022\014\n\004kind\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021",
-      "\n\tnamespace\030\003 \001(\t\022\017\n\007cluster\030\004 \001(\t\022\013\n\003ra" +
-      "w\030\005 \001(\t\"\254\001\n\020DescribeResponse\022\'\n\006status\030\001" +
-      " \001(\0132\027.appscode.dtypes.Status\022@\n\rload_ba" +
-      "lancer\030\002 \001(\0132).appscode.kubernetes.v1bet" +
-      "a1.LoadBalancer\022-\n\003raw\030\003 \001(\0132 .appscode." +
-      "kubernetes.v1beta1.Raw\"\262\001\n\rCreateRequest" +
-      "\022\014\n\004name\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\017\n\007clu" +
-      "ster\030\003 \001(\t\022@\n\rload_balancer\030\004 \001(\0132).apps" +
+      "er\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\"Q\n\014ListRespo" +
+      "nse\022A\n\016load_balancers\030\001 \003(\0132).appscode.k" +
+      "ubernetes.v1beta1.LoadBalancer\"^\n\017Descri" +
+      "beRequest\022\014\n\004kind\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021\n" +
+      "\tnamespace\030\003 \001(\t\022\017\n\007cluster\030\004 \001(\t\022\013\n\003raw",
+      "\030\005 \001(\t\"\203\001\n\020DescribeResponse\022@\n\rload_bala" +
+      "ncer\030\001 \001(\0132).appscode.kubernetes.v1beta1" +
+      ".LoadBalancer\022-\n\003raw\030\002 \001(\0132 .appscode.ku" +
+      "bernetes.v1beta1.Raw\"\262\001\n\rCreateRequest\022\014" +
+      "\n\004name\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\017\n\007clust" +
+      "er\030\003 \001(\t\022@\n\rload_balancer\030\004 \001(\0132).appsco" +
+      "de.kubernetes.v1beta1.LoadBalancer\022-\n\003ra" +
+      "w\030\005 \001(\0132 .appscode.kubernetes.v1beta1.Ra" +
+      "w\"\237\001\n\rUpdateRequest\022\014\n\004name\030\001 \001(\t\022\017\n\007clu" +
+      "ster\030\002 \001(\t\022@\n\rload_balancer\030\003 \001(\0132).apps",
       "code.kubernetes.v1beta1.LoadBalancer\022-\n\003" +
-      "raw\030\005 \001(\0132 .appscode.kubernetes.v1beta1.",
-      "Raw\"\237\001\n\rUpdateRequest\022\014\n\004name\030\001 \001(\t\022\017\n\007c" +
-      "luster\030\002 \001(\t\022@\n\rload_balancer\030\003 \001(\0132).ap" +
-      "pscode.kubernetes.v1beta1.LoadBalancer\022-" +
-      "\n\003raw\030\005 \001(\0132 .appscode.kubernetes.v1beta" +
-      "1.Raw\"O\n\rDeleteRequest\022\014\n\004kind\030\001 \001(\t\022\014\n\004" +
-      "name\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\017\n\007cluster" +
-      "\030\004 \001(\t\"#\n\003Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data\030\002 " +
-      "\001(\t\"\270\002\n\014LoadBalancer\022\014\n\004kind\030\001 \001(\t\022\014\n\004na" +
-      "me\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\032\n\022creation_" +
-      "timestamp\030\004 \001(\003\022G\n\007options\030\005 \003(\01326.appsc",
-      "ode.kubernetes.v1beta1.LoadBalancer.Opti" +
-      "onsEntry\022/\n\004spec\030\006 \001(\0132!.appscode.kubern" +
-      "etes.v1beta1.Spec\0223\n\006status\030\007 \001(\0132#.apps" +
-      "code.kubernetes.v1beta1.Status\032.\n\014Option" +
-      "sEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\210" +
-      "\001\n\004Spec\022B\n\007backend\030\001 \001(\01321.appscode.kube" +
-      "rnetes.v1beta1.HTTPLoadBalancerRule\022<\n\005r" +
-      "ules\030\002 \003(\0132-.appscode.kubernetes.v1beta1" +
-      ".LoadBalancerRule\"I\n\006Status\022?\n\006status\030\001 " +
-      "\003(\0132/.appscode.kubernetes.v1beta1.LoadBa",
-      "lancerStatus\".\n\022LoadBalancerStatus\022\n\n\002IP" +
-      "\030\001 \001(\t\022\014\n\004host\030\002 \001(\t\"A\n\023LoadBalancerBack" +
-      "end\022\024\n\014service_name\030\001 \001(\t\022\024\n\014service_por" +
-      "t\030\002 \001(\t\"\271\001\n\020LoadBalancerRule\022\014\n\004host\030\001 \001" +
-      "(\t\022\027\n\017SSL_secret_name\030\005 \001(\t\022?\n\004http\030\002 \003(" +
-      "\01321.appscode.kubernetes.v1beta1.HTTPLoad" +
-      "BalancerRule\022=\n\003tcp\030\003 \003(\01320.appscode.kub" +
-      "ernetes.v1beta1.TCPLoadBalancerRule\"\224\001\n\024" +
-      "HTTPLoadBalancerRule\022\014\n\004path\030\001 \001(\t\022A\n\007ba" +
-      "ckend\030\002 \001(\01320.appscode.kubernetes.v1beta",
-      "1.LoadBalancerBackend\022\024\n\014header_rules\030\003 " +
-      "\003(\t\022\025\n\rrewrite_rules\030\004 \003(\t\"\230\001\n\023TCPLoadBa" +
-      "lancerRule\022\014\n\004port\030\001 \001(\t\022A\n\007backend\030\002 \001(" +
-      "\01320.appscode.kubernetes.v1beta1.LoadBala" +
-      "ncerBackend\022\027\n\017SSL_secret_name\030\003 \001(\t\022\027\n\017" +
-      "secret_pem_name\030\004 \001(\t2\247\007\n\rLoadBalancers\022" +
-      "\262\001\n\004List\022(.appscode.kubernetes.v1beta1.L" +
-      "istRequest\032).appscode.kubernetes.v1beta1" +
-      ".ListResponse\"U\202\323\344\223\002I\022G/_appscode/api/ku" +
-      "bernetes/v1beta1/clusters/{cluster}/load",
-      "balancers/json\202\265\030\002\010\001\022\305\001\n\010Describe\022,.apps" +
-      "code.kubernetes.v1beta1.DescribeRequest\032" +
-      "-.appscode.kubernetes.v1beta1.DescribeRe" +
-      "sponse\"\\\202\323\344\223\002P\022N/_appscode/api/kubernete" +
-      "s/v1beta1/clusters/{cluster}/loadbalance" +
-      "rs/{name}/json\202\265\030\002\010\001\022\255\001\n\006Create\022*.appsco" +
-      "de.kubernetes.v1beta1.CreateRequest\032\035.ap" +
-      "pscode.dtypes.VoidResponse\"X\202\323\344\223\002L\"G/_ap" +
-      "pscode/api/kubernetes/v1beta1/clusters/{" +
-      "cluster}/loadbalancers/json:\001*\202\265\030\002\010\001\022\264\001\n",
-      "\006Update\022*.appscode.kubernetes.v1beta1.Up" +
-      "dateRequest\032\035.appscode.dtypes.VoidRespon" +
-      "se\"_\202\323\344\223\002S\032N/_appscode/api/kubernetes/v1" +
-      "beta1/clusters/{cluster}/loadbalancers/{" +
-      "name}/json:\001*\202\265\030\002\010\001\022\261\001\n\006Delete\022*.appscod" +
-      "e.kubernetes.v1beta1.DeleteRequest\032\035.app" +
-      "scode.dtypes.VoidResponse\"\\\202\323\344\223\002P*N/_app" +
-      "scode/api/kubernetes/v1beta1/clusters/{c" +
-      "luster}/loadbalancers/{name}/json\202\265\030\002\010\001B" +
-      "E\n%com.appscode.api.loadbalancer.v1beta1",
-      "B\021LoadBalancerProtoP\001Z\007v1beta1b\006proto3"
+      "raw\030\005 \001(\0132 .appscode.kubernetes.v1beta1." +
+      "Raw\"O\n\rDeleteRequest\022\014\n\004kind\030\001 \001(\t\022\014\n\004na" +
+      "me\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\017\n\007cluster\030\004" +
+      " \001(\t\"#\n\003Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data\030\002 \001(" +
+      "\t\"\270\002\n\014LoadBalancer\022\014\n\004kind\030\001 \001(\t\022\014\n\004name" +
+      "\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\032\n\022creation_ti" +
+      "mestamp\030\004 \001(\003\022G\n\007options\030\005 \003(\01326.appscod" +
+      "e.kubernetes.v1beta1.LoadBalancer.Option" +
+      "sEntry\022/\n\004spec\030\006 \001(\0132!.appscode.kubernet",
+      "es.v1beta1.Spec\0223\n\006status\030\007 \001(\0132#.appsco" +
+      "de.kubernetes.v1beta1.Status\032.\n\014OptionsE" +
+      "ntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\210\001\n" +
+      "\004Spec\022B\n\007backend\030\001 \001(\01321.appscode.kubern" +
+      "etes.v1beta1.HTTPLoadBalancerRule\022<\n\005rul" +
+      "es\030\002 \003(\0132-.appscode.kubernetes.v1beta1.L" +
+      "oadBalancerRule\"I\n\006Status\022?\n\006status\030\001 \003(" +
+      "\0132/.appscode.kubernetes.v1beta1.LoadBala" +
+      "ncerStatus\".\n\022LoadBalancerStatus\022\n\n\002IP\030\001" +
+      " \001(\t\022\014\n\004host\030\002 \001(\t\"A\n\023LoadBalancerBacken",
+      "d\022\024\n\014service_name\030\001 \001(\t\022\024\n\014service_port\030" +
+      "\002 \001(\t\"\271\001\n\020LoadBalancerRule\022\014\n\004host\030\001 \001(\t" +
+      "\022\027\n\017SSL_secret_name\030\005 \001(\t\022?\n\004http\030\002 \003(\0132" +
+      "1.appscode.kubernetes.v1beta1.HTTPLoadBa" +
+      "lancerRule\022=\n\003tcp\030\003 \003(\01320.appscode.kuber" +
+      "netes.v1beta1.TCPLoadBalancerRule\"\224\001\n\024HT" +
+      "TPLoadBalancerRule\022\014\n\004path\030\001 \001(\t\022A\n\007back" +
+      "end\030\002 \001(\01320.appscode.kubernetes.v1beta1." +
+      "LoadBalancerBackend\022\024\n\014header_rules\030\003 \003(" +
+      "\t\022\025\n\rrewrite_rules\030\004 \003(\t\"\230\001\n\023TCPLoadBala",
+      "ncerRule\022\014\n\004port\030\001 \001(\t\022A\n\007backend\030\002 \001(\0132" +
+      "0.appscode.kubernetes.v1beta1.LoadBalanc" +
+      "erBackend\022\027\n\017SSL_secret_name\030\003 \001(\t\022\027\n\017se" +
+      "cret_pem_name\030\004 \001(\t2\247\007\n\rLoadBalancers\022\262\001" +
+      "\n\004List\022(.appscode.kubernetes.v1beta1.Lis" +
+      "tRequest\032).appscode.kubernetes.v1beta1.L" +
+      "istResponse\"U\202\323\344\223\002I\022G/_appscode/api/kube" +
+      "rnetes/v1beta1/clusters/{cluster}/loadba" +
+      "lancers/json\202\265\030\002\010\001\022\305\001\n\010Describe\022,.appsco" +
+      "de.kubernetes.v1beta1.DescribeRequest\032-.",
+      "appscode.kubernetes.v1beta1.DescribeResp" +
+      "onse\"\\\202\323\344\223\002P\022N/_appscode/api/kubernetes/" +
+      "v1beta1/clusters/{cluster}/loadbalancers" +
+      "/{name}/json\202\265\030\002\010\001\022\255\001\n\006Create\022*.appscode" +
+      ".kubernetes.v1beta1.CreateRequest\032\035.apps" +
+      "code.dtypes.VoidResponse\"X\202\323\344\223\002L\"G/_apps" +
+      "code/api/kubernetes/v1beta1/clusters/{cl" +
+      "uster}/loadbalancers/json:\001*\202\265\030\002\010\001\022\264\001\n\006U" +
+      "pdate\022*.appscode.kubernetes.v1beta1.Upda" +
+      "teRequest\032\035.appscode.dtypes.VoidResponse",
+      "\"_\202\323\344\223\002S\032N/_appscode/api/kubernetes/v1be" +
+      "ta1/clusters/{cluster}/loadbalancers/{na" +
+      "me}/json:\001*\202\265\030\002\010\001\022\261\001\n\006Delete\022*.appscode." +
+      "kubernetes.v1beta1.DeleteRequest\032\035.appsc" +
+      "ode.dtypes.VoidResponse\"\\\202\323\344\223\002P*N/_appsc" +
+      "ode/api/kubernetes/v1beta1/clusters/{clu" +
+      "ster}/loadbalancers/{name}/json\202\265\030\002\010\001BE\n" +
+      "%com.appscode.api.loadbalancer.v1beta1B\021" +
+      "LoadBalancerProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -216,7 +214,7 @@ public final class LoadBalancerProto {
     internal_static_appscode_kubernetes_v1beta1_ListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_ListResponse_descriptor,
-        new java.lang.String[] { "Status", "LoadBalancers", });
+        new java.lang.String[] { "LoadBalancers", });
     internal_static_appscode_kubernetes_v1beta1_DescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_kubernetes_v1beta1_DescribeRequest_fieldAccessorTable = new
@@ -228,7 +226,7 @@ public final class LoadBalancerProto {
     internal_static_appscode_kubernetes_v1beta1_DescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_DescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "LoadBalancer", "Raw", });
+        new java.lang.String[] { "LoadBalancer", "Raw", });
     internal_static_appscode_kubernetes_v1beta1_CreateRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_kubernetes_v1beta1_CreateRequest_fieldAccessorTable = new

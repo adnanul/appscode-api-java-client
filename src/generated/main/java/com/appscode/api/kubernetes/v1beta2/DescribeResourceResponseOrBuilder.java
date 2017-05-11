@@ -8,28 +8,15 @@ public interface DescribeResourceResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResource resource = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResource resource = 1;</code>
    */
   boolean hasResource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResource resource = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResource resource = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KubeResource getResource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResource resource = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResource resource = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KubeResourceOrBuilder getResourceOrBuilder();
 }

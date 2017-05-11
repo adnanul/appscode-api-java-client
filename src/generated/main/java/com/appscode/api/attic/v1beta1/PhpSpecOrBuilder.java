@@ -8,21 +8,21 @@ public interface PhpSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string download_url = 1;</code>
+   * <code>string download_url = 1;</code>
    */
   java.lang.String getDownloadUrl();
   /**
-   * <code>optional string download_url = 1;</code>
+   * <code>string download_url = 1;</code>
    */
   com.google.protobuf.ByteString
       getDownloadUrlBytes();
 
   /**
-   * <code>optional string shasum = 2;</code>
+   * <code>string shasum = 2;</code>
    */
   java.lang.String getShasum();
   /**
-   * <code>optional string shasum = 2;</code>
+   * <code>string shasum = 2;</code>
    */
   com.google.protobuf.ByteString
       getShasumBytes();

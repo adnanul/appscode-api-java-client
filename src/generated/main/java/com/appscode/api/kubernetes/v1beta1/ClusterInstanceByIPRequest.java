@@ -82,7 +82,7 @@ public  final class ClusterInstanceByIPRequest extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -97,7 +97,7 @@ public  final class ClusterInstanceByIPRequest extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -116,7 +116,7 @@ public  final class ClusterInstanceByIPRequest extends
   public static final int EXTERNAL_IP_FIELD_NUMBER = 2;
   private volatile java.lang.Object externalIp_;
   /**
-   * <code>optional string external_ip = 2;</code>
+   * <code>string external_ip = 2;</code>
    */
   public java.lang.String getExternalIp() {
     java.lang.Object ref = externalIp_;
@@ -131,7 +131,7 @@ public  final class ClusterInstanceByIPRequest extends
     }
   }
   /**
-   * <code>optional string external_ip = 2;</code>
+   * <code>string external_ip = 2;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIpBytes() {
@@ -207,7 +207,7 @@ public  final class ClusterInstanceByIPRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + EXTERNAL_IP_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class ClusterInstanceByIPRequest extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -450,7 +450,7 @@ public  final class ClusterInstanceByIPRequest extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -466,7 +466,7 @@ public  final class ClusterInstanceByIPRequest extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class ClusterInstanceByIPRequest extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -488,7 +488,7 @@ public  final class ClusterInstanceByIPRequest extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class ClusterInstanceByIPRequest extends
 
     private java.lang.Object externalIp_ = "";
     /**
-     * <code>optional string external_ip = 2;</code>
+     * <code>string external_ip = 2;</code>
      */
     public java.lang.String getExternalIp() {
       java.lang.Object ref = externalIp_;
@@ -519,7 +519,7 @@ public  final class ClusterInstanceByIPRequest extends
       }
     }
     /**
-     * <code>optional string external_ip = 2;</code>
+     * <code>string external_ip = 2;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIpBytes() {
@@ -535,7 +535,7 @@ public  final class ClusterInstanceByIPRequest extends
       }
     }
     /**
-     * <code>optional string external_ip = 2;</code>
+     * <code>string external_ip = 2;</code>
      */
     public Builder setExternalIp(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class ClusterInstanceByIPRequest extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 2;</code>
+     * <code>string external_ip = 2;</code>
      */
     public Builder clearExternalIp() {
       
@@ -557,7 +557,7 @@ public  final class ClusterInstanceByIPRequest extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 2;</code>
+     * <code>string external_ip = 2;</code>
      */
     public Builder setExternalIpBytes(
         com.google.protobuf.ByteString value) {

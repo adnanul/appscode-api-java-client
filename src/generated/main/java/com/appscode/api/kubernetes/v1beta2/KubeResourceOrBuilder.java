@@ -8,25 +8,25 @@ public interface KubeResourceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   boolean hasRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Raw getRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RawOrBuilder getRawOrBuilder();
 
@@ -55,245 +55,245 @@ public interface KubeResourceOrBuilder extends
       int index);
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMap getConfigMap();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMapOrBuilder getConfigMapOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DaemonSet getDaemonSet();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DaemonSetOrBuilder getDaemonSetOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Deployment getDeployment();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DeploymentOrBuilder getDeploymentOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Job getJob();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.JobOrBuilder getJobOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace getNamespace();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.NamespaceOrBuilder getNamespaceOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Node getNode();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
    */
   com.appscode.api.kubernetes.v1beta2.NodeOrBuilder getNodeOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StatefulSet getStatefulSet();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StatefulSetOrBuilder getStatefulSetOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Pod getPod();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodOrBuilder getPodOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ReplicaSet getReplicaSet();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ReplicaSetOrBuilder getReplicaSetOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Service getService();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ServiceOrBuilder getServiceOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Secret getSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretOrBuilder getSecretOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ReplicationController getReplicationController();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ReplicationControllerOrBuilder getReplicationControllerOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageClass getStorageClass();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageClassOrBuilder getStorageClassOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Alert getAlert();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AlertOrBuilder getAlertOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Role getRole();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RoleOrBuilder getRoleOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ClusterRole getClusterRole();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ClusterRoleOrBuilder getClusterRoleOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RoleBinding getRoleBinding();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RoleBindingOrBuilder getRoleBindingOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding getClusterRoleBinding();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ClusterRoleBindingOrBuilder getClusterRoleBindingOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Certificate getCertificate();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CertificateOrBuilder getCertificateOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CronJob getCronJob();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder getCronJobOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Backup getBackup();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
    */
   com.appscode.api.kubernetes.v1beta2.BackupOrBuilder getBackupOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Postgres getPostgres();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder getPostgresOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Elastic getElastic();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder getElasticOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder();
 

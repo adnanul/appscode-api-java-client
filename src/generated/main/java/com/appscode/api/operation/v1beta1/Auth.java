@@ -96,7 +96,7 @@ public  final class Auth extends
   public static final int NAMESPACE_FIELD_NUMBER = 1;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -111,7 +111,7 @@ public  final class Auth extends
     }
   }
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -130,7 +130,7 @@ public  final class Auth extends
   public static final int USERNAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object username_;
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   public java.lang.String getUsername() {
     java.lang.Object ref = username_;
@@ -145,7 +145,7 @@ public  final class Auth extends
     }
   }
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   public com.google.protobuf.ByteString
       getUsernameBytes() {
@@ -164,7 +164,7 @@ public  final class Auth extends
   public static final int SECRET_FIELD_NUMBER = 3;
   private volatile java.lang.Object secret_;
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>string secret = 3;</code>
    */
   public java.lang.String getSecret() {
     java.lang.Object ref = secret_;
@@ -179,7 +179,7 @@ public  final class Auth extends
     }
   }
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>string secret = 3;</code>
    */
   public com.google.protobuf.ByteString
       getSecretBytes() {
@@ -198,7 +198,7 @@ public  final class Auth extends
   public static final int AUTH_TYPE_FIELD_NUMBER = 4;
   private volatile java.lang.Object authType_;
   /**
-   * <code>optional string auth_type = 4;</code>
+   * <code>string auth_type = 4;</code>
    */
   public java.lang.String getAuthType() {
     java.lang.Object ref = authType_;
@@ -213,7 +213,7 @@ public  final class Auth extends
     }
   }
   /**
-   * <code>optional string auth_type = 4;</code>
+   * <code>string auth_type = 4;</code>
    */
   public com.google.protobuf.ByteString
       getAuthTypeBytes() {
@@ -305,7 +305,7 @@ public  final class Auth extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + USERNAME_FIELD_NUMBER;
@@ -551,7 +551,7 @@ public  final class Auth extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -566,7 +566,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -582,7 +582,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -595,7 +595,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder clearNamespace() {
       
@@ -604,7 +604,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -620,7 +620,7 @@ public  final class Auth extends
 
     private java.lang.Object username_ = "";
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public java.lang.String getUsername() {
       java.lang.Object ref = username_;
@@ -635,7 +635,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
@@ -651,7 +651,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder setUsername(
         java.lang.String value) {
@@ -664,7 +664,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder clearUsername() {
       
@@ -673,7 +673,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder setUsernameBytes(
         com.google.protobuf.ByteString value) {
@@ -689,7 +689,7 @@ public  final class Auth extends
 
     private java.lang.Object secret_ = "";
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>string secret = 3;</code>
      */
     public java.lang.String getSecret() {
       java.lang.Object ref = secret_;
@@ -704,7 +704,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>string secret = 3;</code>
      */
     public com.google.protobuf.ByteString
         getSecretBytes() {
@@ -720,7 +720,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>string secret = 3;</code>
      */
     public Builder setSecret(
         java.lang.String value) {
@@ -733,7 +733,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>string secret = 3;</code>
      */
     public Builder clearSecret() {
       
@@ -742,7 +742,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string secret = 3;</code>
+     * <code>string secret = 3;</code>
      */
     public Builder setSecretBytes(
         com.google.protobuf.ByteString value) {
@@ -758,7 +758,7 @@ public  final class Auth extends
 
     private java.lang.Object authType_ = "";
     /**
-     * <code>optional string auth_type = 4;</code>
+     * <code>string auth_type = 4;</code>
      */
     public java.lang.String getAuthType() {
       java.lang.Object ref = authType_;
@@ -773,7 +773,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string auth_type = 4;</code>
+     * <code>string auth_type = 4;</code>
      */
     public com.google.protobuf.ByteString
         getAuthTypeBytes() {
@@ -789,7 +789,7 @@ public  final class Auth extends
       }
     }
     /**
-     * <code>optional string auth_type = 4;</code>
+     * <code>string auth_type = 4;</code>
      */
     public Builder setAuthType(
         java.lang.String value) {
@@ -802,7 +802,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string auth_type = 4;</code>
+     * <code>string auth_type = 4;</code>
      */
     public Builder clearAuthType() {
       
@@ -811,7 +811,7 @@ public  final class Auth extends
       return this;
     }
     /**
-     * <code>optional string auth_type = 4;</code>
+     * <code>string auth_type = 4;</code>
      */
     public Builder setAuthTypeBytes(
         com.google.protobuf.ByteString value) {

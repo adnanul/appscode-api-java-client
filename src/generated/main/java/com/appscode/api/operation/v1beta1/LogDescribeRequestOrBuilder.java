@@ -8,21 +8,21 @@ public interface LogDescribeRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string log_id = 2;</code>
+   * <code>string log_id = 2;</code>
    */
   java.lang.String getLogId();
   /**
-   * <code>optional string log_id = 2;</code>
+   * <code>string log_id = 2;</code>
    */
   com.google.protobuf.ByteString
       getLogIdBytes();

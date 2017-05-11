@@ -141,7 +141,7 @@ public  final class IncidentNotifyRequest extends
   public static final int ALERT_PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object alertPhid_;
   /**
-   * <code>optional string alert_phid = 1 [deprecated = true];</code>
+   * <code>string alert_phid = 1 [deprecated = true];</code>
    */
   @java.lang.Deprecated public java.lang.String getAlertPhid() {
     java.lang.Object ref = alertPhid_;
@@ -156,7 +156,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string alert_phid = 1 [deprecated = true];</code>
+   * <code>string alert_phid = 1 [deprecated = true];</code>
    */
   @java.lang.Deprecated public com.google.protobuf.ByteString
       getAlertPhidBytes() {
@@ -175,7 +175,7 @@ public  final class IncidentNotifyRequest extends
   public static final int HOST_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object hostName_;
   /**
-   * <code>optional string host_name = 2;</code>
+   * <code>string host_name = 2;</code>
    */
   public java.lang.String getHostName() {
     java.lang.Object ref = hostName_;
@@ -190,7 +190,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string host_name = 2;</code>
+   * <code>string host_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getHostNameBytes() {
@@ -209,7 +209,7 @@ public  final class IncidentNotifyRequest extends
   public static final int TYPE_FIELD_NUMBER = 3;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -224,7 +224,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -243,7 +243,7 @@ public  final class IncidentNotifyRequest extends
   public static final int STATE_FIELD_NUMBER = 4;
   private volatile java.lang.Object state_;
   /**
-   * <code>optional string state = 4;</code>
+   * <code>string state = 4;</code>
    */
   public java.lang.String getState() {
     java.lang.Object ref = state_;
@@ -258,7 +258,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string state = 4;</code>
+   * <code>string state = 4;</code>
    */
   public com.google.protobuf.ByteString
       getStateBytes() {
@@ -277,7 +277,7 @@ public  final class IncidentNotifyRequest extends
   public static final int OUTPUT_FIELD_NUMBER = 5;
   private volatile java.lang.Object output_;
   /**
-   * <code>optional string output = 5;</code>
+   * <code>string output = 5;</code>
    */
   public java.lang.String getOutput() {
     java.lang.Object ref = output_;
@@ -292,7 +292,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string output = 5;</code>
+   * <code>string output = 5;</code>
    */
   public com.google.protobuf.ByteString
       getOutputBytes() {
@@ -316,7 +316,7 @@ public  final class IncidentNotifyRequest extends
    * indicates detection time from icinga.
    * </pre>
    *
-   * <code>optional int64 time = 6;</code>
+   * <code>int64 time = 6;</code>
    */
   public long getTime() {
     return time_;
@@ -325,7 +325,7 @@ public  final class IncidentNotifyRequest extends
   public static final int AUTHOR_FIELD_NUMBER = 7;
   private volatile java.lang.Object author_;
   /**
-   * <code>optional string author = 7;</code>
+   * <code>string author = 7;</code>
    */
   public java.lang.String getAuthor() {
     java.lang.Object ref = author_;
@@ -340,7 +340,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string author = 7;</code>
+   * <code>string author = 7;</code>
    */
   public com.google.protobuf.ByteString
       getAuthorBytes() {
@@ -359,7 +359,7 @@ public  final class IncidentNotifyRequest extends
   public static final int COMMENT_FIELD_NUMBER = 8;
   private volatile java.lang.Object comment_;
   /**
-   * <code>optional string comment = 8;</code>
+   * <code>string comment = 8;</code>
    */
   public java.lang.String getComment() {
     java.lang.Object ref = comment_;
@@ -374,7 +374,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string comment = 8;</code>
+   * <code>string comment = 8;</code>
    */
   public com.google.protobuf.ByteString
       getCommentBytes() {
@@ -393,7 +393,7 @@ public  final class IncidentNotifyRequest extends
   public static final int KUBERNETES_ALERT_NAME_FIELD_NUMBER = 9;
   private volatile java.lang.Object kubernetesAlertName_;
   /**
-   * <code>optional string kubernetes_alert_name = 9;</code>
+   * <code>string kubernetes_alert_name = 9;</code>
    */
   public java.lang.String getKubernetesAlertName() {
     java.lang.Object ref = kubernetesAlertName_;
@@ -408,7 +408,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string kubernetes_alert_name = 9;</code>
+   * <code>string kubernetes_alert_name = 9;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesAlertNameBytes() {
@@ -427,7 +427,7 @@ public  final class IncidentNotifyRequest extends
   public static final int KUBERNETES_CLUSTER_FIELD_NUMBER = 10;
   private volatile java.lang.Object kubernetesCluster_;
   /**
-   * <code>optional string kubernetes_cluster = 10;</code>
+   * <code>string kubernetes_cluster = 10;</code>
    */
   public java.lang.String getKubernetesCluster() {
     java.lang.Object ref = kubernetesCluster_;
@@ -442,7 +442,7 @@ public  final class IncidentNotifyRequest extends
     }
   }
   /**
-   * <code>optional string kubernetes_cluster = 10;</code>
+   * <code>string kubernetes_cluster = 10;</code>
    */
   public com.google.protobuf.ByteString
       getKubernetesClusterBytes() {
@@ -583,7 +583,7 @@ public  final class IncidentNotifyRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ALERT_PHID_FIELD_NUMBER;
     hash = (53 * hash) + getAlertPhid().hashCode();
     hash = (37 * hash) + HOST_NAME_FIELD_NUMBER;
@@ -887,7 +887,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object alertPhid_ = "";
     /**
-     * <code>optional string alert_phid = 1 [deprecated = true];</code>
+     * <code>string alert_phid = 1 [deprecated = true];</code>
      */
     @java.lang.Deprecated public java.lang.String getAlertPhid() {
       java.lang.Object ref = alertPhid_;
@@ -902,7 +902,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string alert_phid = 1 [deprecated = true];</code>
+     * <code>string alert_phid = 1 [deprecated = true];</code>
      */
     @java.lang.Deprecated public com.google.protobuf.ByteString
         getAlertPhidBytes() {
@@ -918,7 +918,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string alert_phid = 1 [deprecated = true];</code>
+     * <code>string alert_phid = 1 [deprecated = true];</code>
      */
     @java.lang.Deprecated public Builder setAlertPhid(
         java.lang.String value) {
@@ -931,7 +931,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string alert_phid = 1 [deprecated = true];</code>
+     * <code>string alert_phid = 1 [deprecated = true];</code>
      */
     @java.lang.Deprecated public Builder clearAlertPhid() {
       
@@ -940,7 +940,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string alert_phid = 1 [deprecated = true];</code>
+     * <code>string alert_phid = 1 [deprecated = true];</code>
      */
     @java.lang.Deprecated public Builder setAlertPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -956,7 +956,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object hostName_ = "";
     /**
-     * <code>optional string host_name = 2;</code>
+     * <code>string host_name = 2;</code>
      */
     public java.lang.String getHostName() {
       java.lang.Object ref = hostName_;
@@ -971,7 +971,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string host_name = 2;</code>
+     * <code>string host_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getHostNameBytes() {
@@ -987,7 +987,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string host_name = 2;</code>
+     * <code>string host_name = 2;</code>
      */
     public Builder setHostName(
         java.lang.String value) {
@@ -1000,7 +1000,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string host_name = 2;</code>
+     * <code>string host_name = 2;</code>
      */
     public Builder clearHostName() {
       
@@ -1009,7 +1009,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string host_name = 2;</code>
+     * <code>string host_name = 2;</code>
      */
     public Builder setHostNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1025,7 +1025,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1040,7 +1040,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1056,7 +1056,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -1069,7 +1069,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder clearType() {
       
@@ -1078,7 +1078,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1094,7 +1094,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object state_ = "";
     /**
-     * <code>optional string state = 4;</code>
+     * <code>string state = 4;</code>
      */
     public java.lang.String getState() {
       java.lang.Object ref = state_;
@@ -1109,7 +1109,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string state = 4;</code>
+     * <code>string state = 4;</code>
      */
     public com.google.protobuf.ByteString
         getStateBytes() {
@@ -1125,7 +1125,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string state = 4;</code>
+     * <code>string state = 4;</code>
      */
     public Builder setState(
         java.lang.String value) {
@@ -1138,7 +1138,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string state = 4;</code>
+     * <code>string state = 4;</code>
      */
     public Builder clearState() {
       
@@ -1147,7 +1147,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string state = 4;</code>
+     * <code>string state = 4;</code>
      */
     public Builder setStateBytes(
         com.google.protobuf.ByteString value) {
@@ -1163,7 +1163,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object output_ = "";
     /**
-     * <code>optional string output = 5;</code>
+     * <code>string output = 5;</code>
      */
     public java.lang.String getOutput() {
       java.lang.Object ref = output_;
@@ -1178,7 +1178,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string output = 5;</code>
+     * <code>string output = 5;</code>
      */
     public com.google.protobuf.ByteString
         getOutputBytes() {
@@ -1194,7 +1194,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string output = 5;</code>
+     * <code>string output = 5;</code>
      */
     public Builder setOutput(
         java.lang.String value) {
@@ -1207,7 +1207,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string output = 5;</code>
+     * <code>string output = 5;</code>
      */
     public Builder clearOutput() {
       
@@ -1216,7 +1216,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string output = 5;</code>
+     * <code>string output = 5;</code>
      */
     public Builder setOutputBytes(
         com.google.protobuf.ByteString value) {
@@ -1237,7 +1237,7 @@ public  final class IncidentNotifyRequest extends
      * indicates detection time from icinga.
      * </pre>
      *
-     * <code>optional int64 time = 6;</code>
+     * <code>int64 time = 6;</code>
      */
     public long getTime() {
       return time_;
@@ -1248,7 +1248,7 @@ public  final class IncidentNotifyRequest extends
      * indicates detection time from icinga.
      * </pre>
      *
-     * <code>optional int64 time = 6;</code>
+     * <code>int64 time = 6;</code>
      */
     public Builder setTime(long value) {
       
@@ -1262,7 +1262,7 @@ public  final class IncidentNotifyRequest extends
      * indicates detection time from icinga.
      * </pre>
      *
-     * <code>optional int64 time = 6;</code>
+     * <code>int64 time = 6;</code>
      */
     public Builder clearTime() {
       
@@ -1273,7 +1273,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object author_ = "";
     /**
-     * <code>optional string author = 7;</code>
+     * <code>string author = 7;</code>
      */
     public java.lang.String getAuthor() {
       java.lang.Object ref = author_;
@@ -1288,7 +1288,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string author = 7;</code>
+     * <code>string author = 7;</code>
      */
     public com.google.protobuf.ByteString
         getAuthorBytes() {
@@ -1304,7 +1304,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string author = 7;</code>
+     * <code>string author = 7;</code>
      */
     public Builder setAuthor(
         java.lang.String value) {
@@ -1317,7 +1317,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string author = 7;</code>
+     * <code>string author = 7;</code>
      */
     public Builder clearAuthor() {
       
@@ -1326,7 +1326,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string author = 7;</code>
+     * <code>string author = 7;</code>
      */
     public Builder setAuthorBytes(
         com.google.protobuf.ByteString value) {
@@ -1342,7 +1342,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object comment_ = "";
     /**
-     * <code>optional string comment = 8;</code>
+     * <code>string comment = 8;</code>
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -1357,7 +1357,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string comment = 8;</code>
+     * <code>string comment = 8;</code>
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -1373,7 +1373,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string comment = 8;</code>
+     * <code>string comment = 8;</code>
      */
     public Builder setComment(
         java.lang.String value) {
@@ -1386,7 +1386,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string comment = 8;</code>
+     * <code>string comment = 8;</code>
      */
     public Builder clearComment() {
       
@@ -1395,7 +1395,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string comment = 8;</code>
+     * <code>string comment = 8;</code>
      */
     public Builder setCommentBytes(
         com.google.protobuf.ByteString value) {
@@ -1411,7 +1411,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object kubernetesAlertName_ = "";
     /**
-     * <code>optional string kubernetes_alert_name = 9;</code>
+     * <code>string kubernetes_alert_name = 9;</code>
      */
     public java.lang.String getKubernetesAlertName() {
       java.lang.Object ref = kubernetesAlertName_;
@@ -1426,7 +1426,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string kubernetes_alert_name = 9;</code>
+     * <code>string kubernetes_alert_name = 9;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesAlertNameBytes() {
@@ -1442,7 +1442,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string kubernetes_alert_name = 9;</code>
+     * <code>string kubernetes_alert_name = 9;</code>
      */
     public Builder setKubernetesAlertName(
         java.lang.String value) {
@@ -1455,7 +1455,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_alert_name = 9;</code>
+     * <code>string kubernetes_alert_name = 9;</code>
      */
     public Builder clearKubernetesAlertName() {
       
@@ -1464,7 +1464,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_alert_name = 9;</code>
+     * <code>string kubernetes_alert_name = 9;</code>
      */
     public Builder setKubernetesAlertNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1480,7 +1480,7 @@ public  final class IncidentNotifyRequest extends
 
     private java.lang.Object kubernetesCluster_ = "";
     /**
-     * <code>optional string kubernetes_cluster = 10;</code>
+     * <code>string kubernetes_cluster = 10;</code>
      */
     public java.lang.String getKubernetesCluster() {
       java.lang.Object ref = kubernetesCluster_;
@@ -1495,7 +1495,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string kubernetes_cluster = 10;</code>
+     * <code>string kubernetes_cluster = 10;</code>
      */
     public com.google.protobuf.ByteString
         getKubernetesClusterBytes() {
@@ -1511,7 +1511,7 @@ public  final class IncidentNotifyRequest extends
       }
     }
     /**
-     * <code>optional string kubernetes_cluster = 10;</code>
+     * <code>string kubernetes_cluster = 10;</code>
      */
     public Builder setKubernetesCluster(
         java.lang.String value) {
@@ -1524,7 +1524,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_cluster = 10;</code>
+     * <code>string kubernetes_cluster = 10;</code>
      */
     public Builder clearKubernetesCluster() {
       
@@ -1533,7 +1533,7 @@ public  final class IncidentNotifyRequest extends
       return this;
     }
     /**
-     * <code>optional string kubernetes_cluster = 10;</code>
+     * <code>string kubernetes_cluster = 10;</code>
      */
     public Builder setKubernetesClusterBytes(
         com.google.protobuf.ByteString value) {

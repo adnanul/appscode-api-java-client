@@ -8,38 +8,25 @@ public interface DiskListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   java.util.List<com.appscode.api.kubernetes.v1beta2.Disk> 
       getDisksList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Disk getDisks(int index);
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   int getDisksCount();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DiskOrBuilder> 
       getDisksOrBuilderList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DiskOrBuilder getDisksOrBuilder(
       int index);

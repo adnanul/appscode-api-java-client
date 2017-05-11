@@ -149,7 +149,7 @@ public  final class Project extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -164,7 +164,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -183,7 +183,7 @@ public  final class Project extends
   public static final int PHID_FIELD_NUMBER = 2;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 2;</code>
+   * <code>string phid = 2;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -198,7 +198,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string phid = 2;</code>
+   * <code>string phid = 2;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -217,7 +217,7 @@ public  final class Project extends
   public static final int TYPE_FIELD_NUMBER = 3;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -232,7 +232,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -251,7 +251,7 @@ public  final class Project extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private volatile java.lang.Object status_;
   /**
-   * <code>optional string status = 4;</code>
+   * <code>string status = 4;</code>
    */
   public java.lang.String getStatus() {
     java.lang.Object ref = status_;
@@ -266,7 +266,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string status = 4;</code>
+   * <code>string status = 4;</code>
    */
   public com.google.protobuf.ByteString
       getStatusBytes() {
@@ -285,7 +285,7 @@ public  final class Project extends
   public static final int VIEW_POLICY_FIELD_NUMBER = 5;
   private volatile java.lang.Object viewPolicy_;
   /**
-   * <code>optional string view_policy = 5;</code>
+   * <code>string view_policy = 5;</code>
    */
   public java.lang.String getViewPolicy() {
     java.lang.Object ref = viewPolicy_;
@@ -300,7 +300,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string view_policy = 5;</code>
+   * <code>string view_policy = 5;</code>
    */
   public com.google.protobuf.ByteString
       getViewPolicyBytes() {
@@ -319,7 +319,7 @@ public  final class Project extends
   public static final int EDIT_POLICY_FIELD_NUMBER = 6;
   private volatile java.lang.Object editPolicy_;
   /**
-   * <code>optional string edit_policy = 6;</code>
+   * <code>string edit_policy = 6;</code>
    */
   public java.lang.String getEditPolicy() {
     java.lang.Object ref = editPolicy_;
@@ -334,7 +334,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string edit_policy = 6;</code>
+   * <code>string edit_policy = 6;</code>
    */
   public com.google.protobuf.ByteString
       getEditPolicyBytes() {
@@ -353,7 +353,7 @@ public  final class Project extends
   public static final int JOIN_POLICY_FIELD_NUMBER = 7;
   private volatile java.lang.Object joinPolicy_;
   /**
-   * <code>optional string join_policy = 7;</code>
+   * <code>string join_policy = 7;</code>
    */
   public java.lang.String getJoinPolicy() {
     java.lang.Object ref = joinPolicy_;
@@ -368,7 +368,7 @@ public  final class Project extends
     }
   }
   /**
-   * <code>optional string join_policy = 7;</code>
+   * <code>string join_policy = 7;</code>
    */
   public com.google.protobuf.ByteString
       getJoinPolicyBytes() {
@@ -387,7 +387,7 @@ public  final class Project extends
   public static final int MEMBERSHIP_LOCKED_FIELD_NUMBER = 8;
   private boolean membershipLocked_;
   /**
-   * <code>optional bool membership_locked = 8;</code>
+   * <code>bool membership_locked = 8;</code>
    */
   public boolean getMembershipLocked() {
     return membershipLocked_;
@@ -396,7 +396,7 @@ public  final class Project extends
   public static final int HAS_SUBPROJECTS_FIELD_NUMBER = 9;
   private boolean hasSubprojects_;
   /**
-   * <code>optional bool has_subprojects = 9;</code>
+   * <code>bool has_subprojects = 9;</code>
    */
   public boolean getHasSubprojects() {
     return hasSubprojects_;
@@ -440,7 +440,7 @@ public  final class Project extends
   public static final int CREATED_AT_FIELD_NUMBER = 11;
   private long createdAt_;
   /**
-   * <code>optional int64 created_at = 11;</code>
+   * <code>int64 created_at = 11;</code>
    */
   public long getCreatedAt() {
     return createdAt_;
@@ -582,7 +582,7 @@ public  final class Project extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
@@ -932,7 +932,7 @@ public  final class Project extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -947,7 +947,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -963,7 +963,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -976,7 +976,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -985,7 +985,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1001,7 +1001,7 @@ public  final class Project extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 2;</code>
+     * <code>string phid = 2;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -1016,7 +1016,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string phid = 2;</code>
+     * <code>string phid = 2;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -1032,7 +1032,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string phid = 2;</code>
+     * <code>string phid = 2;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -1045,7 +1045,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string phid = 2;</code>
+     * <code>string phid = 2;</code>
      */
     public Builder clearPhid() {
       
@@ -1054,7 +1054,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string phid = 2;</code>
+     * <code>string phid = 2;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -1070,7 +1070,7 @@ public  final class Project extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1085,7 +1085,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1101,7 +1101,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -1114,7 +1114,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder clearType() {
       
@@ -1123,7 +1123,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string type = 3;</code>
+     * <code>string type = 3;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1139,7 +1139,7 @@ public  final class Project extends
 
     private java.lang.Object status_ = "";
     /**
-     * <code>optional string status = 4;</code>
+     * <code>string status = 4;</code>
      */
     public java.lang.String getStatus() {
       java.lang.Object ref = status_;
@@ -1154,7 +1154,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string status = 4;</code>
+     * <code>string status = 4;</code>
      */
     public com.google.protobuf.ByteString
         getStatusBytes() {
@@ -1170,7 +1170,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string status = 4;</code>
+     * <code>string status = 4;</code>
      */
     public Builder setStatus(
         java.lang.String value) {
@@ -1183,7 +1183,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string status = 4;</code>
+     * <code>string status = 4;</code>
      */
     public Builder clearStatus() {
       
@@ -1192,7 +1192,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string status = 4;</code>
+     * <code>string status = 4;</code>
      */
     public Builder setStatusBytes(
         com.google.protobuf.ByteString value) {
@@ -1208,7 +1208,7 @@ public  final class Project extends
 
     private java.lang.Object viewPolicy_ = "";
     /**
-     * <code>optional string view_policy = 5;</code>
+     * <code>string view_policy = 5;</code>
      */
     public java.lang.String getViewPolicy() {
       java.lang.Object ref = viewPolicy_;
@@ -1223,7 +1223,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string view_policy = 5;</code>
+     * <code>string view_policy = 5;</code>
      */
     public com.google.protobuf.ByteString
         getViewPolicyBytes() {
@@ -1239,7 +1239,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string view_policy = 5;</code>
+     * <code>string view_policy = 5;</code>
      */
     public Builder setViewPolicy(
         java.lang.String value) {
@@ -1252,7 +1252,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string view_policy = 5;</code>
+     * <code>string view_policy = 5;</code>
      */
     public Builder clearViewPolicy() {
       
@@ -1261,7 +1261,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string view_policy = 5;</code>
+     * <code>string view_policy = 5;</code>
      */
     public Builder setViewPolicyBytes(
         com.google.protobuf.ByteString value) {
@@ -1277,7 +1277,7 @@ public  final class Project extends
 
     private java.lang.Object editPolicy_ = "";
     /**
-     * <code>optional string edit_policy = 6;</code>
+     * <code>string edit_policy = 6;</code>
      */
     public java.lang.String getEditPolicy() {
       java.lang.Object ref = editPolicy_;
@@ -1292,7 +1292,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string edit_policy = 6;</code>
+     * <code>string edit_policy = 6;</code>
      */
     public com.google.protobuf.ByteString
         getEditPolicyBytes() {
@@ -1308,7 +1308,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string edit_policy = 6;</code>
+     * <code>string edit_policy = 6;</code>
      */
     public Builder setEditPolicy(
         java.lang.String value) {
@@ -1321,7 +1321,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string edit_policy = 6;</code>
+     * <code>string edit_policy = 6;</code>
      */
     public Builder clearEditPolicy() {
       
@@ -1330,7 +1330,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string edit_policy = 6;</code>
+     * <code>string edit_policy = 6;</code>
      */
     public Builder setEditPolicyBytes(
         com.google.protobuf.ByteString value) {
@@ -1346,7 +1346,7 @@ public  final class Project extends
 
     private java.lang.Object joinPolicy_ = "";
     /**
-     * <code>optional string join_policy = 7;</code>
+     * <code>string join_policy = 7;</code>
      */
     public java.lang.String getJoinPolicy() {
       java.lang.Object ref = joinPolicy_;
@@ -1361,7 +1361,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string join_policy = 7;</code>
+     * <code>string join_policy = 7;</code>
      */
     public com.google.protobuf.ByteString
         getJoinPolicyBytes() {
@@ -1377,7 +1377,7 @@ public  final class Project extends
       }
     }
     /**
-     * <code>optional string join_policy = 7;</code>
+     * <code>string join_policy = 7;</code>
      */
     public Builder setJoinPolicy(
         java.lang.String value) {
@@ -1390,7 +1390,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string join_policy = 7;</code>
+     * <code>string join_policy = 7;</code>
      */
     public Builder clearJoinPolicy() {
       
@@ -1399,7 +1399,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional string join_policy = 7;</code>
+     * <code>string join_policy = 7;</code>
      */
     public Builder setJoinPolicyBytes(
         com.google.protobuf.ByteString value) {
@@ -1415,13 +1415,13 @@ public  final class Project extends
 
     private boolean membershipLocked_ ;
     /**
-     * <code>optional bool membership_locked = 8;</code>
+     * <code>bool membership_locked = 8;</code>
      */
     public boolean getMembershipLocked() {
       return membershipLocked_;
     }
     /**
-     * <code>optional bool membership_locked = 8;</code>
+     * <code>bool membership_locked = 8;</code>
      */
     public Builder setMembershipLocked(boolean value) {
       
@@ -1430,7 +1430,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional bool membership_locked = 8;</code>
+     * <code>bool membership_locked = 8;</code>
      */
     public Builder clearMembershipLocked() {
       
@@ -1441,13 +1441,13 @@ public  final class Project extends
 
     private boolean hasSubprojects_ ;
     /**
-     * <code>optional bool has_subprojects = 9;</code>
+     * <code>bool has_subprojects = 9;</code>
      */
     public boolean getHasSubprojects() {
       return hasSubprojects_;
     }
     /**
-     * <code>optional bool has_subprojects = 9;</code>
+     * <code>bool has_subprojects = 9;</code>
      */
     public Builder setHasSubprojects(boolean value) {
       
@@ -1456,7 +1456,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional bool has_subprojects = 9;</code>
+     * <code>bool has_subprojects = 9;</code>
      */
     public Builder clearHasSubprojects() {
       
@@ -1707,13 +1707,13 @@ public  final class Project extends
 
     private long createdAt_ ;
     /**
-     * <code>optional int64 created_at = 11;</code>
+     * <code>int64 created_at = 11;</code>
      */
     public long getCreatedAt() {
       return createdAt_;
     }
     /**
-     * <code>optional int64 created_at = 11;</code>
+     * <code>int64 created_at = 11;</code>
      */
     public Builder setCreatedAt(long value) {
       
@@ -1722,7 +1722,7 @@ public  final class Project extends
       return this;
     }
     /**
-     * <code>optional int64 created_at = 11;</code>
+     * <code>int64 created_at = 11;</code>
      */
     public Builder clearCreatedAt() {
       

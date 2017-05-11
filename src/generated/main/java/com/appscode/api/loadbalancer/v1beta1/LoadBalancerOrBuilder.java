@@ -22,7 +22,7 @@ public interface LoadBalancerOrBuilder extends
    * kubectl or direct API calls directly to kubernetes.
    * </pre>
    *
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   java.lang.String getKind();
   /**
@@ -40,33 +40,33 @@ public interface LoadBalancerOrBuilder extends
    * kubectl or direct API calls directly to kubernetes.
    * </pre>
    *
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   com.google.protobuf.ByteString
       getKindBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional int64 creation_timestamp = 4;</code>
+   * <code>int64 creation_timestamp = 4;</code>
    */
   long getCreationTimestamp();
 
@@ -105,28 +105,28 @@ public interface LoadBalancerOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.Spec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.SpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.Status getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder getStatusOrBuilder();
 }

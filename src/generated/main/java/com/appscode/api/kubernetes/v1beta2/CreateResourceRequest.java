@@ -102,7 +102,7 @@ public  final class CreateResourceRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -117,7 +117,7 @@ public  final class CreateResourceRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -136,7 +136,7 @@ public  final class CreateResourceRequest extends
   public static final int TYPE_FIELD_NUMBER = 2;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -151,7 +151,7 @@ public  final class CreateResourceRequest extends
     }
   }
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -170,7 +170,7 @@ public  final class CreateResourceRequest extends
   public static final int NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 4;</code>
+   * <code>string name = 4;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -185,7 +185,7 @@ public  final class CreateResourceRequest extends
     }
   }
   /**
-   * <code>optional string name = 4;</code>
+   * <code>string name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -204,19 +204,19 @@ public  final class CreateResourceRequest extends
   public static final int RAW_FIELD_NUMBER = 5;
   private com.appscode.api.kubernetes.v1beta2.Raw raw_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
    */
   public boolean hasRaw() {
     return raw_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Raw getRaw() {
     return raw_ == null ? com.appscode.api.kubernetes.v1beta2.Raw.getDefaultInstance() : raw_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RawOrBuilder getRawOrBuilder() {
     return getRaw();
@@ -302,7 +302,7 @@ public  final class CreateResourceRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
@@ -557,7 +557,7 @@ public  final class CreateResourceRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -572,7 +572,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -588,7 +588,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -601,7 +601,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -610,7 +610,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -626,7 +626,7 @@ public  final class CreateResourceRequest extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -641,7 +641,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -657,7 +657,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -670,7 +670,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder clearType() {
       
@@ -679,7 +679,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -695,7 +695,7 @@ public  final class CreateResourceRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 4;</code>
+     * <code>string name = 4;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -710,7 +710,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string name = 4;</code>
+     * <code>string name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -726,7 +726,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional string name = 4;</code>
+     * <code>string name = 4;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -739,7 +739,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 4;</code>
+     * <code>string name = 4;</code>
      */
     public Builder clearName() {
       
@@ -748,7 +748,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 4;</code>
+     * <code>string name = 4;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -766,13 +766,13 @@ public  final class CreateResourceRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Raw, com.appscode.api.kubernetes.v1beta2.Raw.Builder, com.appscode.api.kubernetes.v1beta2.RawOrBuilder> rawBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public boolean hasRaw() {
       return rawBuilder_ != null || raw_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Raw getRaw() {
       if (rawBuilder_ == null) {
@@ -782,7 +782,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public Builder setRaw(com.appscode.api.kubernetes.v1beta2.Raw value) {
       if (rawBuilder_ == null) {
@@ -798,7 +798,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public Builder setRaw(
         com.appscode.api.kubernetes.v1beta2.Raw.Builder builderForValue) {
@@ -812,7 +812,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public Builder mergeRaw(com.appscode.api.kubernetes.v1beta2.Raw value) {
       if (rawBuilder_ == null) {
@@ -830,7 +830,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public Builder clearRaw() {
       if (rawBuilder_ == null) {
@@ -844,7 +844,7 @@ public  final class CreateResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Raw.Builder getRawBuilder() {
       
@@ -852,7 +852,7 @@ public  final class CreateResourceRequest extends
       return getRawFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RawOrBuilder getRawOrBuilder() {
       if (rawBuilder_ != null) {
@@ -863,7 +863,7 @@ public  final class CreateResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Raw, com.appscode.api.kubernetes.v1beta2.Raw.Builder, com.appscode.api.kubernetes.v1beta2.RawOrBuilder> 

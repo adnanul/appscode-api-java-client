@@ -8,38 +8,25 @@ public interface ClusterListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster> 
       getClustersList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.Cluster getClusters(int index);
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   int getClustersCount();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   java.util.List<? extends com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> 
       getClustersOrBuilderList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClustersOrBuilder(
       int index);

@@ -88,7 +88,7 @@ public  final class ProjectListRequest extends
   public static final int WITH_MEMBER_FIELD_NUMBER = 1;
   private boolean withMember_;
   /**
-   * <code>optional bool with_member = 1;</code>
+   * <code>bool with_member = 1;</code>
    */
   public boolean getWithMember() {
     return withMember_;
@@ -189,7 +189,7 @@ public  final class ProjectListRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + WITH_MEMBER_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getWithMember());
@@ -433,13 +433,13 @@ public  final class ProjectListRequest extends
 
     private boolean withMember_ ;
     /**
-     * <code>optional bool with_member = 1;</code>
+     * <code>bool with_member = 1;</code>
      */
     public boolean getWithMember() {
       return withMember_;
     }
     /**
-     * <code>optional bool with_member = 1;</code>
+     * <code>bool with_member = 1;</code>
      */
     public Builder setWithMember(boolean value) {
       
@@ -448,7 +448,7 @@ public  final class ProjectListRequest extends
       return this;
     }
     /**
-     * <code>optional bool with_member = 1;</code>
+     * <code>bool with_member = 1;</code>
      */
     public Builder clearWithMember() {
       

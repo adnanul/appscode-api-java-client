@@ -8,21 +8,21 @@ public interface EventSourceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string componenet = 1;</code>
+   * <code>string componenet = 1;</code>
    */
   java.lang.String getComponenet();
   /**
-   * <code>optional string componenet = 1;</code>
+   * <code>string componenet = 1;</code>
    */
   com.google.protobuf.ByteString
       getComponenetBytes();
 
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   java.lang.String getHost();
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   com.google.protobuf.ByteString
       getHostBytes();

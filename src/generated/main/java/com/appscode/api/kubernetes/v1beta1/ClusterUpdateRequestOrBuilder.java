@@ -8,30 +8,30 @@ public interface ClusterUpdateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional bool do_not_delete = 2;</code>
+   * <code>bool do_not_delete = 2;</code>
    */
   boolean getDoNotDelete();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   boolean hasSettings();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder();
 
@@ -48,7 +48,7 @@ public interface ClusterUpdateRequestOrBuilder extends
    *   - deny-access
    * </pre>
    *
-   * <code>optional string default_access_level = 4;</code>
+   * <code>string default_access_level = 4;</code>
    */
   java.lang.String getDefaultAccessLevel();
   /**
@@ -64,7 +64,7 @@ public interface ClusterUpdateRequestOrBuilder extends
    *   - deny-access
    * </pre>
    *
-   * <code>optional string default_access_level = 4;</code>
+   * <code>string default_access_level = 4;</code>
    */
   com.google.protobuf.ByteString
       getDefaultAccessLevelBytes();

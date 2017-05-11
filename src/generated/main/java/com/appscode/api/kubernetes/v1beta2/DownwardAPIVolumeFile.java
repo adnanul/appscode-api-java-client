@@ -115,7 +115,7 @@ public  final class DownwardAPIVolumeFile extends
    * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   public java.lang.String getPath() {
     java.lang.Object ref = path_;
@@ -134,7 +134,7 @@ public  final class DownwardAPIVolumeFile extends
    * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPathBytes() {
@@ -158,7 +158,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   public boolean hasFieldRef() {
     return fieldRef_ != null;
@@ -169,7 +169,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef() {
     return fieldRef_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.getDefaultInstance() : fieldRef_;
@@ -180,7 +180,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder() {
     return getFieldRef();
@@ -195,7 +195,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   public boolean hasResourceFieldRef() {
     return resourceFieldRef_ != null;
@@ -207,7 +207,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef() {
     return resourceFieldRef_ == null ? com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.getDefaultInstance() : resourceFieldRef_;
@@ -219,7 +219,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder() {
     return getResourceFieldRef();
@@ -236,7 +236,7 @@ public  final class DownwardAPIVolumeFile extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 mode = 4;</code>
+   * <code>int32 mode = 4;</code>
    */
   public int getMode() {
     return mode_;
@@ -327,7 +327,7 @@ public  final class DownwardAPIVolumeFile extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PATH_FIELD_NUMBER;
     hash = (53 * hash) + getPath().hashCode();
     if (hasFieldRef()) {
@@ -598,7 +598,7 @@ public  final class DownwardAPIVolumeFile extends
      * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -617,7 +617,7 @@ public  final class DownwardAPIVolumeFile extends
      * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -637,7 +637,7 @@ public  final class DownwardAPIVolumeFile extends
      * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder setPath(
         java.lang.String value) {
@@ -654,7 +654,7 @@ public  final class DownwardAPIVolumeFile extends
      * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder clearPath() {
       
@@ -667,7 +667,7 @@ public  final class DownwardAPIVolumeFile extends
      * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder setPathBytes(
         com.google.protobuf.ByteString value) {
@@ -690,7 +690,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public boolean hasFieldRef() {
       return fieldRefBuilder_ != null || fieldRef_ != null;
@@ -701,7 +701,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef() {
       if (fieldRefBuilder_ == null) {
@@ -716,7 +716,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public Builder setFieldRef(com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector value) {
       if (fieldRefBuilder_ == null) {
@@ -737,7 +737,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public Builder setFieldRef(
         com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder builderForValue) {
@@ -756,7 +756,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public Builder mergeFieldRef(com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector value) {
       if (fieldRefBuilder_ == null) {
@@ -779,7 +779,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public Builder clearFieldRef() {
       if (fieldRefBuilder_ == null) {
@@ -798,7 +798,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder getFieldRefBuilder() {
       
@@ -811,7 +811,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder() {
       if (fieldRefBuilder_ != null) {
@@ -827,7 +827,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector, com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder, com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder> 
@@ -853,7 +853,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public boolean hasResourceFieldRef() {
       return resourceFieldRefBuilder_ != null || resourceFieldRef_ != null;
@@ -865,7 +865,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef() {
       if (resourceFieldRefBuilder_ == null) {
@@ -881,7 +881,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public Builder setResourceFieldRef(com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector value) {
       if (resourceFieldRefBuilder_ == null) {
@@ -903,7 +903,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public Builder setResourceFieldRef(
         com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder builderForValue) {
@@ -923,7 +923,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public Builder mergeResourceFieldRef(com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector value) {
       if (resourceFieldRefBuilder_ == null) {
@@ -947,7 +947,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public Builder clearResourceFieldRef() {
       if (resourceFieldRefBuilder_ == null) {
@@ -967,7 +967,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder getResourceFieldRefBuilder() {
       
@@ -981,7 +981,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder() {
       if (resourceFieldRefBuilder_ != null) {
@@ -998,7 +998,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector, com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder, com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder> 
@@ -1024,7 +1024,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 mode = 4;</code>
+     * <code>int32 mode = 4;</code>
      */
     public int getMode() {
       return mode_;
@@ -1038,7 +1038,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 mode = 4;</code>
+     * <code>int32 mode = 4;</code>
      */
     public Builder setMode(int value) {
       
@@ -1055,7 +1055,7 @@ public  final class DownwardAPIVolumeFile extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 mode = 4;</code>
+     * <code>int32 mode = 4;</code>
      */
     public Builder clearMode() {
       

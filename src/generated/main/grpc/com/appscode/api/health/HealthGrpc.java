@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/health/health.proto")
-public class HealthGrpc {
+public final class HealthGrpc {
 
   private HealthGrpc() {}
 
@@ -71,7 +71,7 @@ public class HealthGrpc {
       asyncUnimplementedUnaryCall(METHOD_STATUS, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_STATUS,
@@ -166,7 +166,7 @@ public class HealthGrpc {
 
   private static final int METHODID_STATUS = 0;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -174,7 +174,7 @@ public class HealthGrpc {
     private final HealthImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(HealthImplBase serviceImpl, int methodId) {
+    MethodHandlers(HealthImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -203,9 +203,28 @@ public class HealthGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_STATUS);
+  private static final class HealthDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.health.HealthProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (HealthGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new HealthDescriptorSupplier())
+              .addMethod(METHOD_STATUS)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

@@ -129,7 +129,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -144,7 +144,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -163,7 +163,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int APPLY_TO_MASTER_FIELD_NUMBER = 2;
   private boolean applyToMaster_;
   /**
-   * <code>optional bool apply_to_master = 2;</code>
+   * <code>bool apply_to_master = 2;</code>
    */
   public boolean getApplyToMaster() {
     return applyToMaster_;
@@ -172,7 +172,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int SKU_FIELD_NUMBER = 3;
   private volatile java.lang.Object sku_;
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 3;</code>
    */
   public java.lang.String getSku() {
     java.lang.Object ref = sku_;
@@ -187,7 +187,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 3;</code>
    */
   public com.google.protobuf.ByteString
       getSkuBytes() {
@@ -206,7 +206,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int COUNT_FIELD_NUMBER = 4;
   private long count_;
   /**
-   * <code>optional int64 count = 4;</code>
+   * <code>int64 count = 4;</code>
    */
   public long getCount() {
     return count_;
@@ -215,7 +215,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int VERSION_FIELD_NUMBER = 5;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 5;</code>
+   * <code>string version = 5;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -230,7 +230,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string version = 5;</code>
+   * <code>string version = 5;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -249,7 +249,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int SALTBASE_VERSION_FIELD_NUMBER = 6;
   private volatile java.lang.Object saltbaseVersion_;
   /**
-   * <code>optional string saltbase_version = 6;</code>
+   * <code>string saltbase_version = 6;</code>
    */
   public java.lang.String getSaltbaseVersion() {
     java.lang.Object ref = saltbaseVersion_;
@@ -264,7 +264,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string saltbase_version = 6;</code>
+   * <code>string saltbase_version = 6;</code>
    */
   public com.google.protobuf.ByteString
       getSaltbaseVersionBytes() {
@@ -283,7 +283,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int KUBE_STARTER_VERSION_FIELD_NUMBER = 7;
   private volatile java.lang.Object kubeStarterVersion_;
   /**
-   * <code>optional string kube_starter_version = 7;</code>
+   * <code>string kube_starter_version = 7;</code>
    */
   public java.lang.String getKubeStarterVersion() {
     java.lang.Object ref = kubeStarterVersion_;
@@ -298,7 +298,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string kube_starter_version = 7;</code>
+   * <code>string kube_starter_version = 7;</code>
    */
   public com.google.protobuf.ByteString
       getKubeStarterVersionBytes() {
@@ -317,7 +317,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int KUBELET_VERSION_FIELD_NUMBER = 8;
   private volatile java.lang.Object kubeletVersion_;
   /**
-   * <code>optional string kubelet_version = 8;</code>
+   * <code>string kubelet_version = 8;</code>
    */
   public java.lang.String getKubeletVersion() {
     java.lang.Object ref = kubeletVersion_;
@@ -332,7 +332,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string kubelet_version = 8;</code>
+   * <code>string kubelet_version = 8;</code>
    */
   public com.google.protobuf.ByteString
       getKubeletVersionBytes() {
@@ -351,7 +351,7 @@ public  final class ClusterReconfigureRequest extends
   public static final int HOSTFACTS_VERSION_FIELD_NUMBER = 9;
   private volatile java.lang.Object hostfactsVersion_;
   /**
-   * <code>optional string hostfacts_version = 9;</code>
+   * <code>string hostfacts_version = 9;</code>
    */
   public java.lang.String getHostfactsVersion() {
     java.lang.Object ref = hostfactsVersion_;
@@ -366,7 +366,7 @@ public  final class ClusterReconfigureRequest extends
     }
   }
   /**
-   * <code>optional string hostfacts_version = 9;</code>
+   * <code>string hostfacts_version = 9;</code>
    */
   public com.google.protobuf.ByteString
       getHostfactsVersionBytes() {
@@ -500,7 +500,7 @@ public  final class ClusterReconfigureRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + APPLY_TO_MASTER_FIELD_NUMBER;
@@ -791,7 +791,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -806,7 +806,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -822,7 +822,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -835,7 +835,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -844,7 +844,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -860,13 +860,13 @@ public  final class ClusterReconfigureRequest extends
 
     private boolean applyToMaster_ ;
     /**
-     * <code>optional bool apply_to_master = 2;</code>
+     * <code>bool apply_to_master = 2;</code>
      */
     public boolean getApplyToMaster() {
       return applyToMaster_;
     }
     /**
-     * <code>optional bool apply_to_master = 2;</code>
+     * <code>bool apply_to_master = 2;</code>
      */
     public Builder setApplyToMaster(boolean value) {
       
@@ -875,7 +875,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional bool apply_to_master = 2;</code>
+     * <code>bool apply_to_master = 2;</code>
      */
     public Builder clearApplyToMaster() {
       
@@ -886,7 +886,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object sku_ = "";
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 3;</code>
      */
     public java.lang.String getSku() {
       java.lang.Object ref = sku_;
@@ -901,7 +901,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 3;</code>
      */
     public com.google.protobuf.ByteString
         getSkuBytes() {
@@ -917,7 +917,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 3;</code>
      */
     public Builder setSku(
         java.lang.String value) {
@@ -930,7 +930,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 3;</code>
      */
     public Builder clearSku() {
       
@@ -939,7 +939,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 3;</code>
      */
     public Builder setSkuBytes(
         com.google.protobuf.ByteString value) {
@@ -955,13 +955,13 @@ public  final class ClusterReconfigureRequest extends
 
     private long count_ ;
     /**
-     * <code>optional int64 count = 4;</code>
+     * <code>int64 count = 4;</code>
      */
     public long getCount() {
       return count_;
     }
     /**
-     * <code>optional int64 count = 4;</code>
+     * <code>int64 count = 4;</code>
      */
     public Builder setCount(long value) {
       
@@ -970,7 +970,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional int64 count = 4;</code>
+     * <code>int64 count = 4;</code>
      */
     public Builder clearCount() {
       
@@ -981,7 +981,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 5;</code>
+     * <code>string version = 5;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -996,7 +996,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string version = 5;</code>
+     * <code>string version = 5;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -1012,7 +1012,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string version = 5;</code>
+     * <code>string version = 5;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -1025,7 +1025,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string version = 5;</code>
+     * <code>string version = 5;</code>
      */
     public Builder clearVersion() {
       
@@ -1034,7 +1034,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string version = 5;</code>
+     * <code>string version = 5;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1050,7 +1050,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object saltbaseVersion_ = "";
     /**
-     * <code>optional string saltbase_version = 6;</code>
+     * <code>string saltbase_version = 6;</code>
      */
     public java.lang.String getSaltbaseVersion() {
       java.lang.Object ref = saltbaseVersion_;
@@ -1065,7 +1065,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 6;</code>
+     * <code>string saltbase_version = 6;</code>
      */
     public com.google.protobuf.ByteString
         getSaltbaseVersionBytes() {
@@ -1081,7 +1081,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 6;</code>
+     * <code>string saltbase_version = 6;</code>
      */
     public Builder setSaltbaseVersion(
         java.lang.String value) {
@@ -1094,7 +1094,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 6;</code>
+     * <code>string saltbase_version = 6;</code>
      */
     public Builder clearSaltbaseVersion() {
       
@@ -1103,7 +1103,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 6;</code>
+     * <code>string saltbase_version = 6;</code>
      */
     public Builder setSaltbaseVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1119,7 +1119,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object kubeStarterVersion_ = "";
     /**
-     * <code>optional string kube_starter_version = 7;</code>
+     * <code>string kube_starter_version = 7;</code>
      */
     public java.lang.String getKubeStarterVersion() {
       java.lang.Object ref = kubeStarterVersion_;
@@ -1134,7 +1134,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 7;</code>
+     * <code>string kube_starter_version = 7;</code>
      */
     public com.google.protobuf.ByteString
         getKubeStarterVersionBytes() {
@@ -1150,7 +1150,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 7;</code>
+     * <code>string kube_starter_version = 7;</code>
      */
     public Builder setKubeStarterVersion(
         java.lang.String value) {
@@ -1163,7 +1163,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 7;</code>
+     * <code>string kube_starter_version = 7;</code>
      */
     public Builder clearKubeStarterVersion() {
       
@@ -1172,7 +1172,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 7;</code>
+     * <code>string kube_starter_version = 7;</code>
      */
     public Builder setKubeStarterVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1188,7 +1188,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object kubeletVersion_ = "";
     /**
-     * <code>optional string kubelet_version = 8;</code>
+     * <code>string kubelet_version = 8;</code>
      */
     public java.lang.String getKubeletVersion() {
       java.lang.Object ref = kubeletVersion_;
@@ -1203,7 +1203,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 8;</code>
+     * <code>string kubelet_version = 8;</code>
      */
     public com.google.protobuf.ByteString
         getKubeletVersionBytes() {
@@ -1219,7 +1219,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 8;</code>
+     * <code>string kubelet_version = 8;</code>
      */
     public Builder setKubeletVersion(
         java.lang.String value) {
@@ -1232,7 +1232,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 8;</code>
+     * <code>string kubelet_version = 8;</code>
      */
     public Builder clearKubeletVersion() {
       
@@ -1241,7 +1241,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 8;</code>
+     * <code>string kubelet_version = 8;</code>
      */
     public Builder setKubeletVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1257,7 +1257,7 @@ public  final class ClusterReconfigureRequest extends
 
     private java.lang.Object hostfactsVersion_ = "";
     /**
-     * <code>optional string hostfacts_version = 9;</code>
+     * <code>string hostfacts_version = 9;</code>
      */
     public java.lang.String getHostfactsVersion() {
       java.lang.Object ref = hostfactsVersion_;
@@ -1272,7 +1272,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string hostfacts_version = 9;</code>
+     * <code>string hostfacts_version = 9;</code>
      */
     public com.google.protobuf.ByteString
         getHostfactsVersionBytes() {
@@ -1288,7 +1288,7 @@ public  final class ClusterReconfigureRequest extends
       }
     }
     /**
-     * <code>optional string hostfacts_version = 9;</code>
+     * <code>string hostfacts_version = 9;</code>
      */
     public Builder setHostfactsVersion(
         java.lang.String value) {
@@ -1301,7 +1301,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string hostfacts_version = 9;</code>
+     * <code>string hostfacts_version = 9;</code>
      */
     public Builder clearHostfactsVersion() {
       
@@ -1310,7 +1310,7 @@ public  final class ClusterReconfigureRequest extends
       return this;
     }
     /**
-     * <code>optional string hostfacts_version = 9;</code>
+     * <code>string hostfacts_version = 9;</code>
      */
     public Builder setHostfactsVersionBytes(
         com.google.protobuf.ByteString value) {

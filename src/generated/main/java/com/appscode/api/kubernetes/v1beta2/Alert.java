@@ -109,24 +109,24 @@ public  final class Alert extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     boolean hasIcingaParam();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam getIcingaParam();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParamOrBuilder getIcingaParamOrBuilder();
 
     /**
-     * <code>optional string check_command = 2;</code>
+     * <code>string check_command = 2;</code>
      */
     java.lang.String getCheckCommand();
     /**
-     * <code>optional string check_command = 2;</code>
+     * <code>string check_command = 2;</code>
      */
     com.google.protobuf.ByteString
         getCheckCommandBytes();
@@ -313,12 +313,12 @@ public  final class Alert extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional int64 check_interval_sec = 1;</code>
+       * <code>int64 check_interval_sec = 1;</code>
        */
       long getCheckIntervalSec();
 
       /**
-       * <code>optional int64 alert_interval_sec = 2;</code>
+       * <code>int64 alert_interval_sec = 2;</code>
        */
       long getAlertIntervalSec();
     }
@@ -399,7 +399,7 @@ public  final class Alert extends
       public static final int CHECK_INTERVAL_SEC_FIELD_NUMBER = 1;
       private long checkIntervalSec_;
       /**
-       * <code>optional int64 check_interval_sec = 1;</code>
+       * <code>int64 check_interval_sec = 1;</code>
        */
       public long getCheckIntervalSec() {
         return checkIntervalSec_;
@@ -408,7 +408,7 @@ public  final class Alert extends
       public static final int ALERT_INTERVAL_SEC_FIELD_NUMBER = 2;
       private long alertIntervalSec_;
       /**
-       * <code>optional int64 alert_interval_sec = 2;</code>
+       * <code>int64 alert_interval_sec = 2;</code>
        */
       public long getAlertIntervalSec() {
         return alertIntervalSec_;
@@ -476,7 +476,7 @@ public  final class Alert extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + CHECK_INTERVAL_SEC_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getCheckIntervalSec());
@@ -704,13 +704,13 @@ public  final class Alert extends
 
         private long checkIntervalSec_ ;
         /**
-         * <code>optional int64 check_interval_sec = 1;</code>
+         * <code>int64 check_interval_sec = 1;</code>
          */
         public long getCheckIntervalSec() {
           return checkIntervalSec_;
         }
         /**
-         * <code>optional int64 check_interval_sec = 1;</code>
+         * <code>int64 check_interval_sec = 1;</code>
          */
         public Builder setCheckIntervalSec(long value) {
           
@@ -719,7 +719,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional int64 check_interval_sec = 1;</code>
+         * <code>int64 check_interval_sec = 1;</code>
          */
         public Builder clearCheckIntervalSec() {
           
@@ -730,13 +730,13 @@ public  final class Alert extends
 
         private long alertIntervalSec_ ;
         /**
-         * <code>optional int64 alert_interval_sec = 2;</code>
+         * <code>int64 alert_interval_sec = 2;</code>
          */
         public long getAlertIntervalSec() {
           return alertIntervalSec_;
         }
         /**
-         * <code>optional int64 alert_interval_sec = 2;</code>
+         * <code>int64 alert_interval_sec = 2;</code>
          */
         public Builder setAlertIntervalSec(long value) {
           
@@ -745,7 +745,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional int64 alert_interval_sec = 2;</code>
+         * <code>int64 alert_interval_sec = 2;</code>
          */
         public Builder clearAlertIntervalSec() {
           
@@ -807,31 +807,31 @@ public  final class Alert extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string state = 1;</code>
+       * <code>string state = 1;</code>
        */
       java.lang.String getState();
       /**
-       * <code>optional string state = 1;</code>
+       * <code>string state = 1;</code>
        */
       com.google.protobuf.ByteString
           getStateBytes();
 
       /**
-       * <code>optional string user_uid = 2;</code>
+       * <code>string user_uid = 2;</code>
        */
       java.lang.String getUserUid();
       /**
-       * <code>optional string user_uid = 2;</code>
+       * <code>string user_uid = 2;</code>
        */
       com.google.protobuf.ByteString
           getUserUidBytes();
 
       /**
-       * <code>optional string method = 3;</code>
+       * <code>string method = 3;</code>
        */
       java.lang.String getMethod();
       /**
-       * <code>optional string method = 3;</code>
+       * <code>string method = 3;</code>
        */
       com.google.protobuf.ByteString
           getMethodBytes();
@@ -922,7 +922,7 @@ public  final class Alert extends
       public static final int STATE_FIELD_NUMBER = 1;
       private volatile java.lang.Object state_;
       /**
-       * <code>optional string state = 1;</code>
+       * <code>string state = 1;</code>
        */
       public java.lang.String getState() {
         java.lang.Object ref = state_;
@@ -937,7 +937,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string state = 1;</code>
+       * <code>string state = 1;</code>
        */
       public com.google.protobuf.ByteString
           getStateBytes() {
@@ -956,7 +956,7 @@ public  final class Alert extends
       public static final int USER_UID_FIELD_NUMBER = 2;
       private volatile java.lang.Object userUid_;
       /**
-       * <code>optional string user_uid = 2;</code>
+       * <code>string user_uid = 2;</code>
        */
       public java.lang.String getUserUid() {
         java.lang.Object ref = userUid_;
@@ -971,7 +971,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string user_uid = 2;</code>
+       * <code>string user_uid = 2;</code>
        */
       public com.google.protobuf.ByteString
           getUserUidBytes() {
@@ -990,7 +990,7 @@ public  final class Alert extends
       public static final int METHOD_FIELD_NUMBER = 3;
       private volatile java.lang.Object method_;
       /**
-       * <code>optional string method = 3;</code>
+       * <code>string method = 3;</code>
        */
       public java.lang.String getMethod() {
         java.lang.Object ref = method_;
@@ -1005,7 +1005,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string method = 3;</code>
+       * <code>string method = 3;</code>
        */
       public com.google.protobuf.ByteString
           getMethodBytes() {
@@ -1089,7 +1089,7 @@ public  final class Alert extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + STATE_FIELD_NUMBER;
         hash = (53 * hash) + getState().hashCode();
         hash = (37 * hash) + USER_UID_FIELD_NUMBER;
@@ -1326,7 +1326,7 @@ public  final class Alert extends
 
         private java.lang.Object state_ = "";
         /**
-         * <code>optional string state = 1;</code>
+         * <code>string state = 1;</code>
          */
         public java.lang.String getState() {
           java.lang.Object ref = state_;
@@ -1341,7 +1341,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string state = 1;</code>
+         * <code>string state = 1;</code>
          */
         public com.google.protobuf.ByteString
             getStateBytes() {
@@ -1357,7 +1357,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string state = 1;</code>
+         * <code>string state = 1;</code>
          */
         public Builder setState(
             java.lang.String value) {
@@ -1370,7 +1370,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string state = 1;</code>
+         * <code>string state = 1;</code>
          */
         public Builder clearState() {
           
@@ -1379,7 +1379,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string state = 1;</code>
+         * <code>string state = 1;</code>
          */
         public Builder setStateBytes(
             com.google.protobuf.ByteString value) {
@@ -1395,7 +1395,7 @@ public  final class Alert extends
 
         private java.lang.Object userUid_ = "";
         /**
-         * <code>optional string user_uid = 2;</code>
+         * <code>string user_uid = 2;</code>
          */
         public java.lang.String getUserUid() {
           java.lang.Object ref = userUid_;
@@ -1410,7 +1410,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string user_uid = 2;</code>
+         * <code>string user_uid = 2;</code>
          */
         public com.google.protobuf.ByteString
             getUserUidBytes() {
@@ -1426,7 +1426,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string user_uid = 2;</code>
+         * <code>string user_uid = 2;</code>
          */
         public Builder setUserUid(
             java.lang.String value) {
@@ -1439,7 +1439,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string user_uid = 2;</code>
+         * <code>string user_uid = 2;</code>
          */
         public Builder clearUserUid() {
           
@@ -1448,7 +1448,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string user_uid = 2;</code>
+         * <code>string user_uid = 2;</code>
          */
         public Builder setUserUidBytes(
             com.google.protobuf.ByteString value) {
@@ -1464,7 +1464,7 @@ public  final class Alert extends
 
         private java.lang.Object method_ = "";
         /**
-         * <code>optional string method = 3;</code>
+         * <code>string method = 3;</code>
          */
         public java.lang.String getMethod() {
           java.lang.Object ref = method_;
@@ -1479,7 +1479,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string method = 3;</code>
+         * <code>string method = 3;</code>
          */
         public com.google.protobuf.ByteString
             getMethodBytes() {
@@ -1495,7 +1495,7 @@ public  final class Alert extends
           }
         }
         /**
-         * <code>optional string method = 3;</code>
+         * <code>string method = 3;</code>
          */
         public Builder setMethod(
             java.lang.String value) {
@@ -1508,7 +1508,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string method = 3;</code>
+         * <code>string method = 3;</code>
          */
         public Builder clearMethod() {
           
@@ -1517,7 +1517,7 @@ public  final class Alert extends
           return this;
         }
         /**
-         * <code>optional string method = 3;</code>
+         * <code>string method = 3;</code>
          */
         public Builder setMethodBytes(
             com.google.protobuf.ByteString value) {
@@ -1583,19 +1583,19 @@ public  final class Alert extends
     public static final int ICINGA_PARAM_FIELD_NUMBER = 1;
     private com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icingaParam_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     public boolean hasIcingaParam() {
       return icingaParam_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam getIcingaParam() {
       return icingaParam_ == null ? com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam.getDefaultInstance() : icingaParam_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParamOrBuilder getIcingaParamOrBuilder() {
       return getIcingaParam();
@@ -1604,7 +1604,7 @@ public  final class Alert extends
     public static final int CHECK_COMMAND_FIELD_NUMBER = 2;
     private volatile java.lang.Object checkCommand_;
     /**
-     * <code>optional string check_command = 2;</code>
+     * <code>string check_command = 2;</code>
      */
     public java.lang.String getCheckCommand() {
       java.lang.Object ref = checkCommand_;
@@ -1619,7 +1619,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional string check_command = 2;</code>
+     * <code>string check_command = 2;</code>
      */
     public com.google.protobuf.ByteString
         getCheckCommandBytes() {
@@ -1837,7 +1837,7 @@ public  final class Alert extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasIcingaParam()) {
         hash = (37 * hash) + ICINGA_PARAM_FIELD_NUMBER;
         hash = (53 * hash) + getIcingaParam().hashCode();
@@ -2157,13 +2157,13 @@ public  final class Alert extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParamOrBuilder> icingaParamBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public boolean hasIcingaParam() {
         return icingaParamBuilder_ != null || icingaParam_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam getIcingaParam() {
         if (icingaParamBuilder_ == null) {
@@ -2173,7 +2173,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public Builder setIcingaParam(com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam value) {
         if (icingaParamBuilder_ == null) {
@@ -2189,7 +2189,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public Builder setIcingaParam(
           com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam.Builder builderForValue) {
@@ -2203,7 +2203,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public Builder mergeIcingaParam(com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam value) {
         if (icingaParamBuilder_ == null) {
@@ -2221,7 +2221,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public Builder clearIcingaParam() {
         if (icingaParamBuilder_ == null) {
@@ -2235,7 +2235,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam.Builder getIcingaParamBuilder() {
         
@@ -2243,7 +2243,7 @@ public  final class Alert extends
         return getIcingaParamFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParamOrBuilder getIcingaParamOrBuilder() {
         if (icingaParamBuilder_ != null) {
@@ -2254,7 +2254,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam icinga_param = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParam.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.IcingaParamOrBuilder> 
@@ -2272,7 +2272,7 @@ public  final class Alert extends
 
       private java.lang.Object checkCommand_ = "";
       /**
-       * <code>optional string check_command = 2;</code>
+       * <code>string check_command = 2;</code>
        */
       public java.lang.String getCheckCommand() {
         java.lang.Object ref = checkCommand_;
@@ -2287,7 +2287,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string check_command = 2;</code>
+       * <code>string check_command = 2;</code>
        */
       public com.google.protobuf.ByteString
           getCheckCommandBytes() {
@@ -2303,7 +2303,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string check_command = 2;</code>
+       * <code>string check_command = 2;</code>
        */
       public Builder setCheckCommand(
           java.lang.String value) {
@@ -2316,7 +2316,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string check_command = 2;</code>
+       * <code>string check_command = 2;</code>
        */
       public Builder clearCheckCommand() {
         
@@ -2325,7 +2325,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string check_command = 2;</code>
+       * <code>string check_command = 2;</code>
        */
       public Builder setCheckCommandBytes(
           com.google.protobuf.ByteString value) {
@@ -2656,7 +2656,8 @@ public  final class Alert extends
       }
 
       public Builder clearVars() {
-        getMutableVars().clear();
+        internalGetMutableVars().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -2666,7 +2667,8 @@ public  final class Alert extends
       public Builder removeVars(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableVars().remove(key);
+        internalGetMutableVars().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -2685,7 +2687,8 @@ public  final class Alert extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableVars().put(key, value);
+        internalGetMutableVars().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -2694,7 +2697,8 @@ public  final class Alert extends
 
       public Builder putAllVars(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableVars().putAll(values);
+        internalGetMutableVars().getMutableMap()
+            .putAll(values);
         return this;
       }
       public final Builder setUnknownFields(
@@ -2751,31 +2755,31 @@ public  final class Alert extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>int64 creation_time = 1;</code>
      */
     long getCreationTime();
 
     /**
-     * <code>optional int64 update_time = 2;</code>
+     * <code>int64 update_time = 2;</code>
      */
     long getUpdateTime();
 
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
@@ -2871,7 +2875,7 @@ public  final class Alert extends
     public static final int CREATION_TIME_FIELD_NUMBER = 1;
     private long creationTime_;
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>int64 creation_time = 1;</code>
      */
     public long getCreationTime() {
       return creationTime_;
@@ -2880,7 +2884,7 @@ public  final class Alert extends
     public static final int UPDATE_TIME_FIELD_NUMBER = 2;
     private long updateTime_;
     /**
-     * <code>optional int64 update_time = 2;</code>
+     * <code>int64 update_time = 2;</code>
      */
     public long getUpdateTime() {
       return updateTime_;
@@ -2889,7 +2893,7 @@ public  final class Alert extends
     public static final int PHASE_FIELD_NUMBER = 3;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -2904,7 +2908,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -2923,7 +2927,7 @@ public  final class Alert extends
     public static final int REASON_FIELD_NUMBER = 4;
     private volatile java.lang.Object reason_;
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -2938,7 +2942,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -3032,7 +3036,7 @@ public  final class Alert extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCreationTime());
@@ -3278,13 +3282,13 @@ public  final class Alert extends
 
       private long creationTime_ ;
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public long getCreationTime() {
         return creationTime_;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public Builder setCreationTime(long value) {
         
@@ -3293,7 +3297,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public Builder clearCreationTime() {
         
@@ -3304,13 +3308,13 @@ public  final class Alert extends
 
       private long updateTime_ ;
       /**
-       * <code>optional int64 update_time = 2;</code>
+       * <code>int64 update_time = 2;</code>
        */
       public long getUpdateTime() {
         return updateTime_;
       }
       /**
-       * <code>optional int64 update_time = 2;</code>
+       * <code>int64 update_time = 2;</code>
        */
       public Builder setUpdateTime(long value) {
         
@@ -3319,7 +3323,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional int64 update_time = 2;</code>
+       * <code>int64 update_time = 2;</code>
        */
       public Builder clearUpdateTime() {
         
@@ -3330,7 +3334,7 @@ public  final class Alert extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -3345,7 +3349,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -3361,7 +3365,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -3374,7 +3378,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder clearPhase() {
         
@@ -3383,7 +3387,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -3399,7 +3403,7 @@ public  final class Alert extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -3414,7 +3418,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -3430,7 +3434,7 @@ public  final class Alert extends
         }
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -3443,7 +3447,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder clearReason() {
         
@@ -3452,7 +3456,7 @@ public  final class Alert extends
         return this;
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -3517,19 +3521,19 @@ public  final class Alert extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -3538,19 +3542,19 @@ public  final class Alert extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -3559,19 +3563,19 @@ public  final class Alert extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -3657,7 +3661,7 @@ public  final class Alert extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -3923,13 +3927,13 @@ public  final class Alert extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -3939,7 +3943,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -3955,7 +3959,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -3969,7 +3973,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -3987,7 +3991,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -4001,7 +4005,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -4009,7 +4013,7 @@ public  final class Alert extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -4020,7 +4024,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -4040,13 +4044,13 @@ public  final class Alert extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec getSpec() {
       if (specBuilder_ == null) {
@@ -4056,7 +4060,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec value) {
       if (specBuilder_ == null) {
@@ -4072,7 +4076,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.Builder builderForValue) {
@@ -4086,7 +4090,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec value) {
       if (specBuilder_ == null) {
@@ -4104,7 +4108,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -4118,7 +4122,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.Builder getSpecBuilder() {
       
@@ -4126,7 +4130,7 @@ public  final class Alert extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -4137,7 +4141,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertSpec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpec.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertSpecOrBuilder> 
@@ -4157,13 +4161,13 @@ public  final class Alert extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus getStatus() {
       if (statusBuilder_ == null) {
@@ -4173,7 +4177,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus value) {
       if (statusBuilder_ == null) {
@@ -4189,7 +4193,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder builderForValue) {
@@ -4203,7 +4207,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus value) {
       if (statusBuilder_ == null) {
@@ -4221,7 +4225,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -4235,7 +4239,7 @@ public  final class Alert extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder getStatusBuilder() {
       
@@ -4243,7 +4247,7 @@ public  final class Alert extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -4254,7 +4258,7 @@ public  final class Alert extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert.AlertStatus status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatus.Builder, com.appscode.api.kubernetes.v1beta2.Alert.AlertStatusOrBuilder> 

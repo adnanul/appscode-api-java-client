@@ -8,82 +8,82 @@ public interface ProjectOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string phid = 2;</code>
+   * <code>string phid = 2;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 2;</code>
+   * <code>string phid = 2;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional string status = 4;</code>
+   * <code>string status = 4;</code>
    */
   java.lang.String getStatus();
   /**
-   * <code>optional string status = 4;</code>
+   * <code>string status = 4;</code>
    */
   com.google.protobuf.ByteString
       getStatusBytes();
 
   /**
-   * <code>optional string view_policy = 5;</code>
+   * <code>string view_policy = 5;</code>
    */
   java.lang.String getViewPolicy();
   /**
-   * <code>optional string view_policy = 5;</code>
+   * <code>string view_policy = 5;</code>
    */
   com.google.protobuf.ByteString
       getViewPolicyBytes();
 
   /**
-   * <code>optional string edit_policy = 6;</code>
+   * <code>string edit_policy = 6;</code>
    */
   java.lang.String getEditPolicy();
   /**
-   * <code>optional string edit_policy = 6;</code>
+   * <code>string edit_policy = 6;</code>
    */
   com.google.protobuf.ByteString
       getEditPolicyBytes();
 
   /**
-   * <code>optional string join_policy = 7;</code>
+   * <code>string join_policy = 7;</code>
    */
   java.lang.String getJoinPolicy();
   /**
-   * <code>optional string join_policy = 7;</code>
+   * <code>string join_policy = 7;</code>
    */
   com.google.protobuf.ByteString
       getJoinPolicyBytes();
 
   /**
-   * <code>optional bool membership_locked = 8;</code>
+   * <code>bool membership_locked = 8;</code>
    */
   boolean getMembershipLocked();
 
   /**
-   * <code>optional bool has_subprojects = 9;</code>
+   * <code>bool has_subprojects = 9;</code>
    */
   boolean getHasSubprojects();
 
@@ -112,7 +112,7 @@ public interface ProjectOrBuilder extends
       int index);
 
   /**
-   * <code>optional int64 created_at = 11;</code>
+   * <code>int64 created_at = 11;</code>
    */
   long getCreatedAt();
 }

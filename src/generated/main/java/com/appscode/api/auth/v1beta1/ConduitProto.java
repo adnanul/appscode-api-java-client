@@ -47,28 +47,26 @@ public final class ConduitProto {
       "o\022\025appscode.auth.v1beta1\032\034google/api/ann" +
       "otations.proto\032\036appscode/api/annotations" +
       ".proto\032\037appscode/api/dtypes/types.proto\"" +
-      "r\n\025ConduitWhoAmIResponse\022\'\n\006status\030\001 \001(\013" +
-      "2\027.appscode.dtypes.Status\0220\n\004user\030\002 \001(\0132" +
-      "\".appscode.auth.v1beta1.ConduitUser\"r\n\024C" +
-      "onduitUsersResponse\022\'\n\006status\030\001 \001(\0132\027.ap" +
-      "pscode.dtypes.Status\0221\n\005users\030\002 \003(\0132\".ap" +
-      "pscode.auth.v1beta1.ConduitUser\"\274\001\n\013Cond",
-      "uitUser\022\014\n\004phid\030\001 \001(\t\022\021\n\tuser_name\030\002 \001(\t" +
-      "\022\021\n\treal_name\030\003 \001(\t\022\r\n\005image\030\004 \001(\t\022\013\n\003ur" +
-      "i\030\005 \001(\t\022\r\n\005roles\030\006 \003(\t\022\025\n\rprimary_email\030" +
-      "\007 \001(\t\0227\n\013preferences\030\010 \001(\0132\".appscode.au" +
-      "th.v1beta1.Preferences\"K\n\013Preferences\022\021\n" +
-      "\ttime_zone\030\001 \001(\t\022\023\n\013time_format\030\002 \001(\t\022\024\n" +
-      "\014date_formate\030\003 \001(\t2\262\002\n\007Conduit\022\223\001\n\006WhoA" +
-      "mI\022\034.appscode.dtypes.VoidRequest\032,.appsc" +
-      "ode.auth.v1beta1.ConduitWhoAmIResponse\"=" +
-      "\202\323\344\223\0021\022//_appscode/api/auth/v1beta1/cond",
-      "uit/whoami/json\202\265\030\002\010\001\022\220\001\n\005Users\022\034.appsco" +
-      "de.dtypes.VoidRequest\032+.appscode.auth.v1" +
-      "beta1.ConduitUsersResponse\"<\202\323\344\223\0020\022./_ap" +
-      "pscode/api/auth/v1beta1/conduit/users/js" +
-      "on\202\265\030\002\010\001B8\n\035com.appscode.api.auth.v1beta" +
-      "1B\014ConduitProtoP\001Z\007v1beta1b\006proto3"
+      "I\n\025ConduitWhoAmIResponse\0220\n\004user\030\001 \001(\0132\"" +
+      ".appscode.auth.v1beta1.ConduitUser\"I\n\024Co" +
+      "nduitUsersResponse\0221\n\005users\030\001 \003(\0132\".apps" +
+      "code.auth.v1beta1.ConduitUser\"\274\001\n\013Condui" +
+      "tUser\022\014\n\004phid\030\001 \001(\t\022\021\n\tuser_name\030\002 \001(\t\022\021" +
+      "\n\treal_name\030\003 \001(\t\022\r\n\005image\030\004 \001(\t\022\013\n\003uri\030",
+      "\005 \001(\t\022\r\n\005roles\030\006 \003(\t\022\025\n\rprimary_email\030\007 " +
+      "\001(\t\0227\n\013preferences\030\010 \001(\0132\".appscode.auth" +
+      ".v1beta1.Preferences\"K\n\013Preferences\022\021\n\tt" +
+      "ime_zone\030\001 \001(\t\022\023\n\013time_format\030\002 \001(\t\022\024\n\014d" +
+      "ate_formate\030\003 \001(\t2\262\002\n\007Conduit\022\223\001\n\006WhoAmI" +
+      "\022\034.appscode.dtypes.VoidRequest\032,.appscod" +
+      "e.auth.v1beta1.ConduitWhoAmIResponse\"=\202\323" +
+      "\344\223\0021\022//_appscode/api/auth/v1beta1/condui" +
+      "t/whoami/json\202\265\030\002\010\001\022\220\001\n\005Users\022\034.appscode" +
+      ".dtypes.VoidRequest\032+.appscode.auth.v1be",
+      "ta1.ConduitUsersResponse\"<\202\323\344\223\0020\022./_apps" +
+      "code/api/auth/v1beta1/conduit/users/json" +
+      "\202\265\030\002\010\001B8\n\035com.appscode.api.auth.v1beta1B" +
+      "\014ConduitProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -90,13 +88,13 @@ public final class ConduitProto {
     internal_static_appscode_auth_v1beta1_ConduitWhoAmIResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_ConduitWhoAmIResponse_descriptor,
-        new java.lang.String[] { "Status", "User", });
+        new java.lang.String[] { "User", });
     internal_static_appscode_auth_v1beta1_ConduitUsersResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_auth_v1beta1_ConduitUsersResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_auth_v1beta1_ConduitUsersResponse_descriptor,
-        new java.lang.String[] { "Status", "Users", });
+        new java.lang.String[] { "Users", });
     internal_static_appscode_auth_v1beta1_ConduitUser_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_auth_v1beta1_ConduitUser_fieldAccessorTable = new

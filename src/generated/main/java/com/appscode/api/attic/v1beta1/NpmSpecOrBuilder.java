@@ -8,31 +8,31 @@ public interface NpmSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string description = 1;</code>
+   * <code>string description = 1;</code>
    */
   java.lang.String getDescription();
   /**
-   * <code>optional string description = 1;</code>
+   * <code>string description = 1;</code>
    */
   com.google.protobuf.ByteString
       getDescriptionBytes();
 
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   java.lang.String getArtifactId();
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   com.google.protobuf.ByteString
       getArtifactIdBytes();
 
   /**
-   * <code>optional string shasum = 3;</code>
+   * <code>string shasum = 3;</code>
    */
   java.lang.String getShasum();
   /**
-   * <code>optional string shasum = 3;</code>
+   * <code>string shasum = 3;</code>
    */
   com.google.protobuf.ByteString
       getShasumBytes();
@@ -57,11 +57,11 @@ public interface NpmSpecOrBuilder extends
       getKeywordsBytes(int index);
 
   /**
-   * <code>optional string artifact_url = 5;</code>
+   * <code>string artifact_url = 5;</code>
    */
   java.lang.String getArtifactUrl();
   /**
-   * <code>optional string artifact_url = 5;</code>
+   * <code>string artifact_url = 5;</code>
    */
   com.google.protobuf.ByteString
       getArtifactUrlBytes();

@@ -20,7 +20,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   boolean hasHostPath();
   /**
@@ -36,7 +36,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource getHostPath();
   /**
@@ -52,7 +52,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.HostPathVolumeSourceOrBuilder getHostPathOrBuilder();
 
@@ -63,7 +63,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   boolean hasEmptyDir();
   /**
@@ -73,7 +73,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir();
   /**
@@ -83,7 +83,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder();
 
@@ -95,7 +95,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   boolean hasGcePersistentDisk();
   /**
@@ -106,7 +106,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource getGcePersistentDisk();
   /**
@@ -117,7 +117,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSourceOrBuilder getGcePersistentDiskOrBuilder();
 
@@ -129,7 +129,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   boolean hasAwsElasticBlockStore();
   /**
@@ -140,7 +140,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource getAwsElasticBlockStore();
   /**
@@ -151,7 +151,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSourceOrBuilder getAwsElasticBlockStoreOrBuilder();
 
@@ -161,7 +161,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   boolean hasGitRepo();
   /**
@@ -170,7 +170,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo();
   /**
@@ -179,7 +179,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder();
 
@@ -190,7 +190,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   boolean hasSecret();
   /**
@@ -200,7 +200,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret();
   /**
@@ -210,7 +210,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder();
 
@@ -221,7 +221,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   boolean hasNfs();
   /**
@@ -231,7 +231,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.NFSVolumeSource getNfs();
   /**
@@ -241,7 +241,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.NFSVolumeSourceOrBuilder getNfsOrBuilder();
 
@@ -253,7 +253,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   boolean hasIscsi();
   /**
@@ -264,7 +264,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource getIscsi();
   /**
@@ -275,7 +275,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSourceOrBuilder getIscsiOrBuilder();
 
@@ -286,7 +286,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   boolean hasGlusterfs();
   /**
@@ -296,7 +296,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource getGlusterfs();
   /**
@@ -306,7 +306,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSourceOrBuilder getGlusterfsOrBuilder();
 
@@ -318,7 +318,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   boolean hasPersistentVolumeClaim();
   /**
@@ -329,7 +329,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim();
   /**
@@ -340,7 +340,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder();
 
@@ -351,7 +351,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   boolean hasRbd();
   /**
@@ -361,7 +361,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RBDVolumeSource getRbd();
   /**
@@ -371,7 +371,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.RBDVolumeSourceOrBuilder getRbdOrBuilder();
 
@@ -383,7 +383,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   boolean hasFlexVolume();
   /**
@@ -394,7 +394,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FlexVolumeSource getFlexVolume();
   /**
@@ -405,7 +405,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FlexVolumeSourceOrBuilder getFlexVolumeOrBuilder();
 
@@ -416,7 +416,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   boolean hasCinder();
   /**
@@ -426,7 +426,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CinderVolumeSource getCinder();
   /**
@@ -436,7 +436,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CinderVolumeSourceOrBuilder getCinderOrBuilder();
 
@@ -446,7 +446,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   boolean hasCephfs();
   /**
@@ -455,7 +455,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource getCephfs();
   /**
@@ -464,7 +464,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   com.appscode.api.kubernetes.v1beta2.CephFSVolumeSourceOrBuilder getCephfsOrBuilder();
 
@@ -474,7 +474,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   boolean hasFlocker();
   /**
@@ -483,7 +483,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource getFlocker();
   /**
@@ -492,7 +492,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FlockerVolumeSourceOrBuilder getFlockerOrBuilder();
 
@@ -502,7 +502,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   boolean hasDownwardAPI();
   /**
@@ -511,7 +511,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI();
   /**
@@ -520,7 +520,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder();
 
@@ -530,7 +530,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   boolean hasFc();
   /**
@@ -539,7 +539,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FCVolumeSource getFc();
   /**
@@ -548,7 +548,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   com.appscode.api.kubernetes.v1beta2.FCVolumeSourceOrBuilder getFcOrBuilder();
 
@@ -558,7 +558,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   boolean hasAzureFile();
   /**
@@ -567,7 +567,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource getAzureFile();
   /**
@@ -576,7 +576,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSourceOrBuilder getAzureFileOrBuilder();
 
@@ -586,7 +586,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   boolean hasConfigMap();
   /**
@@ -595,7 +595,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap();
   /**
@@ -604,7 +604,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder();
 
@@ -614,7 +614,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   boolean hasVsphereVolume();
   /**
@@ -623,7 +623,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource getVsphereVolume();
   /**
@@ -632,7 +632,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSourceOrBuilder getVsphereVolumeOrBuilder();
 
@@ -642,7 +642,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   boolean hasQuobyte();
   /**
@@ -651,7 +651,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource getQuobyte();
   /**
@@ -660,7 +660,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSourceOrBuilder getQuobyteOrBuilder();
 
@@ -670,7 +670,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   boolean hasAzureDisk();
   /**
@@ -679,7 +679,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource getAzureDisk();
   /**
@@ -688,7 +688,7 @@ public interface VolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSourceOrBuilder getAzureDiskOrBuilder();
 
@@ -697,7 +697,7 @@ public interface VolumeSourceOrBuilder extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   boolean hasPhotonPersistentDisk();
   /**
@@ -705,7 +705,7 @@ public interface VolumeSourceOrBuilder extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk();
   /**
@@ -713,7 +713,7 @@ public interface VolumeSourceOrBuilder extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder();
 }

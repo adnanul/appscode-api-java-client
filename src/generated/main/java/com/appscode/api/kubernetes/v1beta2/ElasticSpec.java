@@ -158,7 +158,7 @@ public  final class ElasticSpec extends
   public static final int VERSION_FIELD_NUMBER = 1;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 1;</code>
+   * <code>string version = 1;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -173,7 +173,7 @@ public  final class ElasticSpec extends
     }
   }
   /**
-   * <code>optional string version = 1;</code>
+   * <code>string version = 1;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -192,7 +192,7 @@ public  final class ElasticSpec extends
   public static final int REPLICAS_FIELD_NUMBER = 2;
   private int replicas_;
   /**
-   * <code>optional int32 replicas = 2;</code>
+   * <code>int32 replicas = 2;</code>
    */
   public int getReplicas() {
     return replicas_;
@@ -201,19 +201,19 @@ public  final class ElasticSpec extends
   public static final int STORAGE_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.StorageSpec storage_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   public boolean hasStorage() {
     return storage_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage() {
     return storage_ == null ? com.appscode.api.kubernetes.v1beta2.StorageSpec.getDefaultInstance() : storage_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder() {
     return getStorage();
@@ -222,7 +222,7 @@ public  final class ElasticSpec extends
   public static final int SERVICE_ACCOUNT_NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object serviceAccountName_;
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   public java.lang.String getServiceAccountName() {
     java.lang.Object ref = serviceAccountName_;
@@ -237,7 +237,7 @@ public  final class ElasticSpec extends
     }
   }
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getServiceAccountNameBytes() {
@@ -332,19 +332,19 @@ public  final class ElasticSpec extends
   public static final int INIT_FIELD_NUMBER = 6;
   private com.appscode.api.kubernetes.v1beta2.InitSpec init_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
    */
   public boolean hasInit() {
     return init_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
     return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
     return getInit();
@@ -353,19 +353,19 @@ public  final class ElasticSpec extends
   public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 7;
   private com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec backupSchedule_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
    */
   public boolean hasBackupSchedule() {
     return backupSchedule_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
     return backupSchedule_ == null ? com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.getDefaultInstance() : backupSchedule_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
     return getBackupSchedule();
@@ -374,7 +374,7 @@ public  final class ElasticSpec extends
   public static final int DO_NOT_DELETE_FIELD_NUMBER = 8;
   private boolean doNotDelete_;
   /**
-   * <code>optional bool do_not_delete = 8;</code>
+   * <code>bool do_not_delete = 8;</code>
    */
   public boolean getDoNotDelete() {
     return doNotDelete_;
@@ -512,7 +512,7 @@ public  final class ElasticSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + VERSION_FIELD_NUMBER;
     hash = (53 * hash) + getVersion().hashCode();
     hash = (37 * hash) + REPLICAS_FIELD_NUMBER;
@@ -846,7 +846,7 @@ public  final class ElasticSpec extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 1;</code>
+     * <code>string version = 1;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -861,7 +861,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional string version = 1;</code>
+     * <code>string version = 1;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -877,7 +877,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional string version = 1;</code>
+     * <code>string version = 1;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -890,7 +890,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional string version = 1;</code>
+     * <code>string version = 1;</code>
      */
     public Builder clearVersion() {
       
@@ -899,7 +899,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional string version = 1;</code>
+     * <code>string version = 1;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -915,13 +915,13 @@ public  final class ElasticSpec extends
 
     private int replicas_ ;
     /**
-     * <code>optional int32 replicas = 2;</code>
+     * <code>int32 replicas = 2;</code>
      */
     public int getReplicas() {
       return replicas_;
     }
     /**
-     * <code>optional int32 replicas = 2;</code>
+     * <code>int32 replicas = 2;</code>
      */
     public Builder setReplicas(int value) {
       
@@ -930,7 +930,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional int32 replicas = 2;</code>
+     * <code>int32 replicas = 2;</code>
      */
     public Builder clearReplicas() {
       
@@ -943,13 +943,13 @@ public  final class ElasticSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageSpec, com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder> storageBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public boolean hasStorage() {
       return storageBuilder_ != null || storage_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage() {
       if (storageBuilder_ == null) {
@@ -959,7 +959,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public Builder setStorage(com.appscode.api.kubernetes.v1beta2.StorageSpec value) {
       if (storageBuilder_ == null) {
@@ -975,7 +975,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public Builder setStorage(
         com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder builderForValue) {
@@ -989,7 +989,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public Builder mergeStorage(com.appscode.api.kubernetes.v1beta2.StorageSpec value) {
       if (storageBuilder_ == null) {
@@ -1007,7 +1007,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public Builder clearStorage() {
       if (storageBuilder_ == null) {
@@ -1021,7 +1021,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder getStorageBuilder() {
       
@@ -1029,7 +1029,7 @@ public  final class ElasticSpec extends
       return getStorageFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder() {
       if (storageBuilder_ != null) {
@@ -1040,7 +1040,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageSpec, com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder> 
@@ -1058,7 +1058,7 @@ public  final class ElasticSpec extends
 
     private java.lang.Object serviceAccountName_ = "";
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public java.lang.String getServiceAccountName() {
       java.lang.Object ref = serviceAccountName_;
@@ -1073,7 +1073,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getServiceAccountNameBytes() {
@@ -1089,7 +1089,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder setServiceAccountName(
         java.lang.String value) {
@@ -1102,7 +1102,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder clearServiceAccountName() {
       
@@ -1111,7 +1111,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder setServiceAccountNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1202,7 +1202,8 @@ public  final class ElasticSpec extends
     }
 
     public Builder clearNodeSelector() {
-      getMutableNodeSelector().clear();
+      internalGetMutableNodeSelector().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1212,7 +1213,8 @@ public  final class ElasticSpec extends
     public Builder removeNodeSelector(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableNodeSelector().remove(key);
+      internalGetMutableNodeSelector().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1231,7 +1233,8 @@ public  final class ElasticSpec extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableNodeSelector().put(key, value);
+      internalGetMutableNodeSelector().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1240,7 +1243,8 @@ public  final class ElasticSpec extends
 
     public Builder putAllNodeSelector(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableNodeSelector().putAll(values);
+      internalGetMutableNodeSelector().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -1248,13 +1252,13 @@ public  final class ElasticSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> initBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public boolean hasInit() {
       return initBuilder_ != null || init_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
       if (initBuilder_ == null) {
@@ -1264,7 +1268,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public Builder setInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
       if (initBuilder_ == null) {
@@ -1280,7 +1284,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public Builder setInit(
         com.appscode.api.kubernetes.v1beta2.InitSpec.Builder builderForValue) {
@@ -1294,7 +1298,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public Builder mergeInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
       if (initBuilder_ == null) {
@@ -1312,7 +1316,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public Builder clearInit() {
       if (initBuilder_ == null) {
@@ -1326,7 +1330,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpec.Builder getInitBuilder() {
       
@@ -1334,7 +1338,7 @@ public  final class ElasticSpec extends
       return getInitFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
       if (initBuilder_ != null) {
@@ -1345,7 +1349,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> 
@@ -1365,13 +1369,13 @@ public  final class ElasticSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> backupScheduleBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public boolean hasBackupSchedule() {
       return backupScheduleBuilder_ != null || backupSchedule_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
       if (backupScheduleBuilder_ == null) {
@@ -1381,7 +1385,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public Builder setBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
       if (backupScheduleBuilder_ == null) {
@@ -1397,7 +1401,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public Builder setBackupSchedule(
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder builderForValue) {
@@ -1411,7 +1415,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public Builder mergeBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
       if (backupScheduleBuilder_ == null) {
@@ -1429,7 +1433,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public Builder clearBackupSchedule() {
       if (backupScheduleBuilder_ == null) {
@@ -1443,7 +1447,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder getBackupScheduleBuilder() {
       
@@ -1451,7 +1455,7 @@ public  final class ElasticSpec extends
       return getBackupScheduleFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
       if (backupScheduleBuilder_ != null) {
@@ -1462,7 +1466,7 @@ public  final class ElasticSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> 
@@ -1480,13 +1484,13 @@ public  final class ElasticSpec extends
 
     private boolean doNotDelete_ ;
     /**
-     * <code>optional bool do_not_delete = 8;</code>
+     * <code>bool do_not_delete = 8;</code>
      */
     public boolean getDoNotDelete() {
       return doNotDelete_;
     }
     /**
-     * <code>optional bool do_not_delete = 8;</code>
+     * <code>bool do_not_delete = 8;</code>
      */
     public Builder setDoNotDelete(boolean value) {
       
@@ -1495,7 +1499,7 @@ public  final class ElasticSpec extends
       return this;
     }
     /**
-     * <code>optional bool do_not_delete = 8;</code>
+     * <code>bool do_not_delete = 8;</code>
      */
     public Builder clearDoNotDelete() {
       

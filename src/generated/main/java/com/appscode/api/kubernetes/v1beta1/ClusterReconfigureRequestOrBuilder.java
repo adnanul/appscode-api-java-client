@@ -8,81 +8,81 @@ public interface ClusterReconfigureRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional bool apply_to_master = 2;</code>
+   * <code>bool apply_to_master = 2;</code>
    */
   boolean getApplyToMaster();
 
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 3;</code>
    */
   java.lang.String getSku();
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 3;</code>
    */
   com.google.protobuf.ByteString
       getSkuBytes();
 
   /**
-   * <code>optional int64 count = 4;</code>
+   * <code>int64 count = 4;</code>
    */
   long getCount();
 
   /**
-   * <code>optional string version = 5;</code>
+   * <code>string version = 5;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 5;</code>
+   * <code>string version = 5;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
 
   /**
-   * <code>optional string saltbase_version = 6;</code>
+   * <code>string saltbase_version = 6;</code>
    */
   java.lang.String getSaltbaseVersion();
   /**
-   * <code>optional string saltbase_version = 6;</code>
+   * <code>string saltbase_version = 6;</code>
    */
   com.google.protobuf.ByteString
       getSaltbaseVersionBytes();
 
   /**
-   * <code>optional string kube_starter_version = 7;</code>
+   * <code>string kube_starter_version = 7;</code>
    */
   java.lang.String getKubeStarterVersion();
   /**
-   * <code>optional string kube_starter_version = 7;</code>
+   * <code>string kube_starter_version = 7;</code>
    */
   com.google.protobuf.ByteString
       getKubeStarterVersionBytes();
 
   /**
-   * <code>optional string kubelet_version = 8;</code>
+   * <code>string kubelet_version = 8;</code>
    */
   java.lang.String getKubeletVersion();
   /**
-   * <code>optional string kubelet_version = 8;</code>
+   * <code>string kubelet_version = 8;</code>
    */
   com.google.protobuf.ByteString
       getKubeletVersionBytes();
 
   /**
-   * <code>optional string hostfacts_version = 9;</code>
+   * <code>string hostfacts_version = 9;</code>
    */
   java.lang.String getHostfactsVersion();
   /**
-   * <code>optional string hostfacts_version = 9;</code>
+   * <code>string hostfacts_version = 9;</code>
    */
   com.google.protobuf.ByteString
       getHostfactsVersionBytes();

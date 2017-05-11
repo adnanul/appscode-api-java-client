@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/kubernetes/v1beta1/cluster.proto")
-public class ClustersGrpc {
+public final class ClustersGrpc {
 
   private ClustersGrpc() {}
 
@@ -199,7 +199,7 @@ public class ClustersGrpc {
       asyncUnimplementedUnaryCall(METHOD_INSTANCE_BY_IP, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_LIST,
@@ -542,7 +542,7 @@ public class ClustersGrpc {
   private static final int METHODID_STARTUP_CONFIG = 7;
   private static final int METHODID_INSTANCE_BY_IP = 8;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -550,7 +550,7 @@ public class ClustersGrpc {
     private final ClustersImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(ClustersImplBase serviceImpl, int methodId) {
+    MethodHandlers(ClustersImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -611,17 +611,36 @@ public class ClustersGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_LIST,
-        METHOD_DESCRIBE,
-        METHOD_CREATE,
-        METHOD_UPDATE,
-        METHOD_RECONFIGURE,
-        METHOD_DELETE,
-        METHOD_CLIENT_CONFIG,
-        METHOD_STARTUP_CONFIG,
-        METHOD_INSTANCE_BY_IP);
+  private static final class ClustersDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (ClustersGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new ClustersDescriptorSupplier())
+              .addMethod(METHOD_LIST)
+              .addMethod(METHOD_DESCRIBE)
+              .addMethod(METHOD_CREATE)
+              .addMethod(METHOD_UPDATE)
+              .addMethod(METHOD_RECONFIGURE)
+              .addMethod(METHOD_DELETE)
+              .addMethod(METHOD_CLIENT_CONFIG)
+              .addMethod(METHOD_STARTUP_CONFIG)
+              .addMethod(METHOD_INSTANCE_BY_IP)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

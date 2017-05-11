@@ -66,48 +66,45 @@ public final class AgentProto {
       "\n#appscode/api/ci/v1beta1/agent.proto\022\023a" +
       "ppscode.ci.v1beta1\032\034google/api/annotatio" +
       "ns.proto\032\036appscode/api/annotations.proto" +
-      "\032\037appscode/api/dtypes/types.proto\"h\n\021Age" +
-      "ntListResponse\022\'\n\006status\030\001 \001(\0132\027.appscod" +
-      "e.dtypes.Status\022*\n\006agents\030\002 \003(\0132\032.appsco" +
-      "de.ci.v1beta1.Agent\"\036\n\017AgentGetRequest\022\013" +
-      "\n\003uid\030\001 \001(\t\"f\n\020AgentGetResponse\022\'\n\006statu" +
-      "s\030\001 \001(\0132\027.appscode.dtypes.Status\022)\n\005agen" +
-      "t\030\002 \001(\0132\032.appscode.ci.v1beta1.Agent\"\226\001\n\005",
-      "Agent\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004rol" +
-      "e\030\003 \001(\t\022\023\n\013external_ip\030\004 \001(\t\022\023\n\013internal" +
-      "_ip\030\005 \001(\t\022\021\n\tisDeleted\030\006 \001(\010\022\022\n\ncreated_" +
-      "at\030\007 \001(\003\022\022\n\nupdated_at\030\010 \001(\003\"\333\001\n\022AgentCr" +
-      "eateRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004role\030\002 \001(\t\022" +
-      "\023\n\013external_ip\030\003 \001(\t\022\023\n\013internal_ip\030\004 \001(" +
-      "\t\022\020\n\010ssh_user\030\005 \001(\t\022\020\n\010ssh_port\030\006 \001(\005\022\031\n" +
-      "\021jenkins_jnlp_port\030\007 \001(\005\022\032\n\022git_ssh_publ" +
-      "ic_key\030\010 \001(\t\022\023\n\013jenkins_url\030\t \001(\t\022\017\n\007ca_" +
-      "cert\030\n \001(\t\"\275\002\n\023AgentCreateResponse\022\'\n\006st",
-      "atus\030\001 \001(\0132\027.appscode.dtypes.Status\022\021\n\tn" +
-      "amespace\030\002 \001(\t\022!\n\031ssh_authorized_public_" +
-      "key\030\003 \001(\t\022\024\n\014git_hostname\030\004 \001(\t\022\033\n\023git_h" +
-      "ost_public_key\030\005 \001(\t\022F\n\010git_user\030\006 \001(\01324" +
-      ".appscode.ci.v1beta1.AgentCreateResponse" +
-      ".ConduitUser\032L\n\013ConduitUser\022\014\n\004phid\030\001 \001(" +
-      "\t\022\021\n\tuser_name\030\002 \001(\t\022\r\n\005token\030\003 \001(\t\022\r\n\005e" +
-      "mail\030\004 \001(\t\"!\n\022AgentDeleteRequest\022\013\n\003uid\030" +
-      "\001 \001(\t2\300\004\n\006Agents\022\201\001\n\004List\022\034.appscode.dty" +
-      "pes.VoidRequest\032&.appscode.ci.v1beta1.Ag",
-      "entListResponse\"3\202\323\344\223\002\'\022%/_appscode/api/" +
-      "ci/v1beta1/agents/json\202\265\030\002\010\001\022\215\001\n\003Get\022$.a" +
-      "ppscode.ci.v1beta1.AgentGetRequest\032%.app" +
-      "scode.ci.v1beta1.AgentGetResponse\"9\202\323\344\223\002" +
-      "-\022+/_appscode/api/ci/v1beta1/agents/{uid" +
-      "}/json\202\265\030\002\010\001\022\223\001\n\006Create\022\'.appscode.ci.v1" +
-      "beta1.AgentCreateRequest\032(.appscode.ci.v" +
-      "1beta1.AgentCreateResponse\"6\202\323\344\223\002*\"%/_ap" +
-      "pscode/api/ci/v1beta1/agents/json:\001*\202\265\030\002" +
-      "\010\001\022\213\001\n\006Delete\022\'.appscode.ci.v1beta1.Agen",
-      "tDeleteRequest\032\035.appscode.dtypes.VoidRes" +
-      "ponse\"9\202\323\344\223\002-*+/_appscode/api/ci/v1beta1" +
-      "/agents/{uid}/json\202\265\030\002\010\001B4\n\033com.appscode" +
-      ".api.ci.v1beta1B\nAgentProtoP\001Z\007v1beta1b\006" +
-      "proto3"
+      "\032\037appscode/api/dtypes/types.proto\"?\n\021Age" +
+      "ntListResponse\022*\n\006agents\030\001 \003(\0132\032.appscod" +
+      "e.ci.v1beta1.Agent\"\036\n\017AgentGetRequest\022\013\n" +
+      "\003uid\030\001 \001(\t\"=\n\020AgentGetResponse\022)\n\005agent\030" +
+      "\001 \001(\0132\032.appscode.ci.v1beta1.Agent\"\226\001\n\005Ag" +
+      "ent\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004role\030" +
+      "\003 \001(\t\022\023\n\013external_ip\030\004 \001(\t\022\023\n\013internal_i",
+      "p\030\005 \001(\t\022\021\n\tisDeleted\030\006 \001(\010\022\022\n\ncreated_at" +
+      "\030\007 \001(\003\022\022\n\nupdated_at\030\010 \001(\003\"\333\001\n\022AgentCrea" +
+      "teRequest\022\014\n\004name\030\001 \001(\t\022\014\n\004role\030\002 \001(\t\022\023\n" +
+      "\013external_ip\030\003 \001(\t\022\023\n\013internal_ip\030\004 \001(\t\022" +
+      "\020\n\010ssh_user\030\005 \001(\t\022\020\n\010ssh_port\030\006 \001(\005\022\031\n\021j" +
+      "enkins_jnlp_port\030\007 \001(\005\022\032\n\022git_ssh_public" +
+      "_key\030\010 \001(\t\022\023\n\013jenkins_url\030\t \001(\t\022\017\n\007ca_ce" +
+      "rt\030\n \001(\t\"\224\002\n\023AgentCreateResponse\022\021\n\tname" +
+      "space\030\001 \001(\t\022!\n\031ssh_authorized_public_key" +
+      "\030\002 \001(\t\022\024\n\014git_hostname\030\003 \001(\t\022\033\n\023git_host",
+      "_public_key\030\004 \001(\t\022F\n\010git_user\030\005 \001(\01324.ap" +
+      "pscode.ci.v1beta1.AgentCreateResponse.Co" +
+      "nduitUser\032L\n\013ConduitUser\022\014\n\004phid\030\001 \001(\t\022\021" +
+      "\n\tuser_name\030\002 \001(\t\022\r\n\005token\030\003 \001(\t\022\r\n\005emai" +
+      "l\030\004 \001(\t\"!\n\022AgentDeleteRequest\022\013\n\003uid\030\001 \001" +
+      "(\t2\300\004\n\006Agents\022\201\001\n\004List\022\034.appscode.dtypes" +
+      ".VoidRequest\032&.appscode.ci.v1beta1.Agent" +
+      "ListResponse\"3\202\323\344\223\002\'\022%/_appscode/api/ci/" +
+      "v1beta1/agents/json\202\265\030\002\010\001\022\215\001\n\003Get\022$.apps" +
+      "code.ci.v1beta1.AgentGetRequest\032%.appsco",
+      "de.ci.v1beta1.AgentGetResponse\"9\202\323\344\223\002-\022+" +
+      "/_appscode/api/ci/v1beta1/agents/{uid}/j" +
+      "son\202\265\030\002\010\001\022\223\001\n\006Create\022\'.appscode.ci.v1bet" +
+      "a1.AgentCreateRequest\032(.appscode.ci.v1be" +
+      "ta1.AgentCreateResponse\"6\202\323\344\223\002*\"%/_appsc" +
+      "ode/api/ci/v1beta1/agents/json:\001*\202\265\030\002\010\001\022" +
+      "\213\001\n\006Delete\022\'.appscode.ci.v1beta1.AgentDe" +
+      "leteRequest\032\035.appscode.dtypes.VoidRespon" +
+      "se\"9\202\323\344\223\002-*+/_appscode/api/ci/v1beta1/ag" +
+      "ents/{uid}/json\202\265\030\002\010\001B4\n\033com.appscode.ap",
+      "i.ci.v1beta1B\nAgentProtoP\001Z\007v1beta1b\006pro" +
+      "to3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -129,7 +126,7 @@ public final class AgentProto {
     internal_static_appscode_ci_v1beta1_AgentListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentListResponse_descriptor,
-        new java.lang.String[] { "Status", "Agents", });
+        new java.lang.String[] { "Agents", });
     internal_static_appscode_ci_v1beta1_AgentGetRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_ci_v1beta1_AgentGetRequest_fieldAccessorTable = new
@@ -141,7 +138,7 @@ public final class AgentProto {
     internal_static_appscode_ci_v1beta1_AgentGetResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentGetResponse_descriptor,
-        new java.lang.String[] { "Status", "Agent", });
+        new java.lang.String[] { "Agent", });
     internal_static_appscode_ci_v1beta1_Agent_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_ci_v1beta1_Agent_fieldAccessorTable = new
@@ -159,7 +156,7 @@ public final class AgentProto {
     internal_static_appscode_ci_v1beta1_AgentCreateResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ci_v1beta1_AgentCreateResponse_descriptor,
-        new java.lang.String[] { "Status", "Namespace", "SshAuthorizedPublicKey", "GitHostname", "GitHostPublicKey", "GitUser", });
+        new java.lang.String[] { "Namespace", "SshAuthorizedPublicKey", "GitHostname", "GitHostPublicKey", "GitUser", });
     internal_static_appscode_ci_v1beta1_AgentCreateResponse_ConduitUser_descriptor =
       internal_static_appscode_ci_v1beta1_AgentCreateResponse_descriptor.getNestedTypes().get(0);
     internal_static_appscode_ci_v1beta1_AgentCreateResponse_ConduitUser_fieldAccessorTable = new

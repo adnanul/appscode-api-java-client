@@ -108,7 +108,7 @@ public  final class UpdateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -123,7 +123,7 @@ public  final class UpdateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -142,7 +142,7 @@ public  final class UpdateRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 2;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 2;</code>
+   * <code>string cluster = 2;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -157,7 +157,7 @@ public  final class UpdateRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 2;</code>
+   * <code>string cluster = 2;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -176,19 +176,19 @@ public  final class UpdateRequest extends
   public static final int LOAD_BALANCER_FIELD_NUMBER = 3;
   private com.appscode.api.loadbalancer.v1beta1.LoadBalancer loadBalancer_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   public boolean hasLoadBalancer() {
     return loadBalancer_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
     return loadBalancer_ == null ? com.appscode.api.loadbalancer.v1beta1.LoadBalancer.getDefaultInstance() : loadBalancer_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
     return getLoadBalancer();
@@ -197,19 +197,19 @@ public  final class UpdateRequest extends
   public static final int RAW_FIELD_NUMBER = 5;
   private com.appscode.api.loadbalancer.v1beta1.Raw raw_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public boolean hasRaw() {
     return raw_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
     return raw_ == null ? com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
     return getRaw();
@@ -299,7 +299,7 @@ public  final class UpdateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
@@ -563,7 +563,7 @@ public  final class UpdateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -578,7 +578,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -594,7 +594,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -607,7 +607,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -616,7 +616,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -632,7 +632,7 @@ public  final class UpdateRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 2;</code>
+     * <code>string cluster = 2;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -647,7 +647,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 2;</code>
+     * <code>string cluster = 2;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -663,7 +663,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 2;</code>
+     * <code>string cluster = 2;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -676,7 +676,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 2;</code>
+     * <code>string cluster = 2;</code>
      */
     public Builder clearCluster() {
       
@@ -685,7 +685,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 2;</code>
+     * <code>string cluster = 2;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -703,13 +703,13 @@ public  final class UpdateRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> loadBalancerBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public boolean hasLoadBalancer() {
       return loadBalancerBuilder_ != null || loadBalancer_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -719,7 +719,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public Builder setLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -735,7 +735,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public Builder setLoadBalancer(
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder builderForValue) {
@@ -749,7 +749,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public Builder mergeLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -767,7 +767,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public Builder clearLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -781,7 +781,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder getLoadBalancerBuilder() {
       
@@ -789,7 +789,7 @@ public  final class UpdateRequest extends
       return getLoadBalancerFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
       if (loadBalancerBuilder_ != null) {
@@ -800,7 +800,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> 
@@ -820,13 +820,13 @@ public  final class UpdateRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> rawBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public boolean hasRaw() {
       return rawBuilder_ != null || raw_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
       if (rawBuilder_ == null) {
@@ -836,7 +836,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder setRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -852,7 +852,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder setRaw(
         com.appscode.api.loadbalancer.v1beta1.Raw.Builder builderForValue) {
@@ -866,7 +866,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder mergeRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -884,7 +884,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder clearRaw() {
       if (rawBuilder_ == null) {
@@ -898,7 +898,7 @@ public  final class UpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw.Builder getRawBuilder() {
       
@@ -906,7 +906,7 @@ public  final class UpdateRequest extends
       return getRawFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
       if (rawBuilder_ != null) {
@@ -917,7 +917,7 @@ public  final class UpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> 

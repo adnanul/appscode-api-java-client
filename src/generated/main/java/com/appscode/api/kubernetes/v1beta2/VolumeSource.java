@@ -384,7 +384,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   public boolean hasHostPath() {
     return hostPath_ != null;
@@ -402,7 +402,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource getHostPath() {
     return hostPath_ == null ? com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource.getDefaultInstance() : hostPath_;
@@ -420,7 +420,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.HostPathVolumeSourceOrBuilder getHostPathOrBuilder() {
     return getHostPath();
@@ -435,7 +435,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   public boolean hasEmptyDir() {
     return emptyDir_ != null;
@@ -447,7 +447,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir() {
     return emptyDir_ == null ? com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.getDefaultInstance() : emptyDir_;
@@ -459,7 +459,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder() {
     return getEmptyDir();
@@ -475,7 +475,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   public boolean hasGcePersistentDisk() {
     return gcePersistentDisk_ != null;
@@ -488,7 +488,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource getGcePersistentDisk() {
     return gcePersistentDisk_ == null ? com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource.getDefaultInstance() : gcePersistentDisk_;
@@ -501,7 +501,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSourceOrBuilder getGcePersistentDiskOrBuilder() {
     return getGcePersistentDisk();
@@ -517,7 +517,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   public boolean hasAwsElasticBlockStore() {
     return awsElasticBlockStore_ != null;
@@ -530,7 +530,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource getAwsElasticBlockStore() {
     return awsElasticBlockStore_ == null ? com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource.getDefaultInstance() : awsElasticBlockStore_;
@@ -543,7 +543,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSourceOrBuilder getAwsElasticBlockStoreOrBuilder() {
     return getAwsElasticBlockStore();
@@ -557,7 +557,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   public boolean hasGitRepo() {
     return gitRepo_ != null;
@@ -568,7 +568,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo() {
     return gitRepo_ == null ? com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.getDefaultInstance() : gitRepo_;
@@ -579,7 +579,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder() {
     return getGitRepo();
@@ -594,7 +594,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   public boolean hasSecret() {
     return secret_ != null;
@@ -606,7 +606,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret() {
     return secret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : secret_;
@@ -618,7 +618,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder() {
     return getSecret();
@@ -633,7 +633,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   public boolean hasNfs() {
     return nfs_ != null;
@@ -645,7 +645,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.NFSVolumeSource getNfs() {
     return nfs_ == null ? com.appscode.api.kubernetes.v1beta2.NFSVolumeSource.getDefaultInstance() : nfs_;
@@ -657,7 +657,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.NFSVolumeSourceOrBuilder getNfsOrBuilder() {
     return getNfs();
@@ -673,7 +673,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   public boolean hasIscsi() {
     return iscsi_ != null;
@@ -686,7 +686,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource getIscsi() {
     return iscsi_ == null ? com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource.getDefaultInstance() : iscsi_;
@@ -699,7 +699,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSourceOrBuilder getIscsiOrBuilder() {
     return getIscsi();
@@ -714,7 +714,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   public boolean hasGlusterfs() {
     return glusterfs_ != null;
@@ -726,7 +726,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource getGlusterfs() {
     return glusterfs_ == null ? com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource.getDefaultInstance() : glusterfs_;
@@ -738,7 +738,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSourceOrBuilder getGlusterfsOrBuilder() {
     return getGlusterfs();
@@ -754,7 +754,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   public boolean hasPersistentVolumeClaim() {
     return persistentVolumeClaim_ != null;
@@ -767,7 +767,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim() {
     return persistentVolumeClaim_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.getDefaultInstance() : persistentVolumeClaim_;
@@ -780,7 +780,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder() {
     return getPersistentVolumeClaim();
@@ -795,7 +795,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   public boolean hasRbd() {
     return rbd_ != null;
@@ -807,7 +807,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RBDVolumeSource getRbd() {
     return rbd_ == null ? com.appscode.api.kubernetes.v1beta2.RBDVolumeSource.getDefaultInstance() : rbd_;
@@ -819,7 +819,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RBDVolumeSourceOrBuilder getRbdOrBuilder() {
     return getRbd();
@@ -835,7 +835,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   public boolean hasFlexVolume() {
     return flexVolume_ != null;
@@ -848,7 +848,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FlexVolumeSource getFlexVolume() {
     return flexVolume_ == null ? com.appscode.api.kubernetes.v1beta2.FlexVolumeSource.getDefaultInstance() : flexVolume_;
@@ -861,7 +861,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FlexVolumeSourceOrBuilder getFlexVolumeOrBuilder() {
     return getFlexVolume();
@@ -876,7 +876,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   public boolean hasCinder() {
     return cinder_ != null;
@@ -888,7 +888,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CinderVolumeSource getCinder() {
     return cinder_ == null ? com.appscode.api.kubernetes.v1beta2.CinderVolumeSource.getDefaultInstance() : cinder_;
@@ -900,7 +900,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CinderVolumeSourceOrBuilder getCinderOrBuilder() {
     return getCinder();
@@ -914,7 +914,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   public boolean hasCephfs() {
     return cephfs_ != null;
@@ -925,7 +925,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource getCephfs() {
     return cephfs_ == null ? com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource.getDefaultInstance() : cephfs_;
@@ -936,7 +936,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CephFSVolumeSourceOrBuilder getCephfsOrBuilder() {
     return getCephfs();
@@ -950,7 +950,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   public boolean hasFlocker() {
     return flocker_ != null;
@@ -961,7 +961,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource getFlocker() {
     return flocker_ == null ? com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource.getDefaultInstance() : flocker_;
@@ -972,7 +972,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FlockerVolumeSourceOrBuilder getFlockerOrBuilder() {
     return getFlocker();
@@ -986,7 +986,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   public boolean hasDownwardAPI() {
     return downwardAPI_ != null;
@@ -997,7 +997,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI() {
     return downwardAPI_ == null ? com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.getDefaultInstance() : downwardAPI_;
@@ -1008,7 +1008,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder() {
     return getDownwardAPI();
@@ -1022,7 +1022,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   public boolean hasFc() {
     return fc_ != null;
@@ -1033,7 +1033,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FCVolumeSource getFc() {
     return fc_ == null ? com.appscode.api.kubernetes.v1beta2.FCVolumeSource.getDefaultInstance() : fc_;
@@ -1044,7 +1044,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.FCVolumeSourceOrBuilder getFcOrBuilder() {
     return getFc();
@@ -1058,7 +1058,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   public boolean hasAzureFile() {
     return azureFile_ != null;
@@ -1069,7 +1069,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource getAzureFile() {
     return azureFile_ == null ? com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource.getDefaultInstance() : azureFile_;
@@ -1080,7 +1080,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSourceOrBuilder getAzureFileOrBuilder() {
     return getAzureFile();
@@ -1094,7 +1094,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   public boolean hasConfigMap() {
     return configMap_ != null;
@@ -1105,7 +1105,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap() {
     return configMap_ == null ? com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.getDefaultInstance() : configMap_;
@@ -1116,7 +1116,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder() {
     return getConfigMap();
@@ -1130,7 +1130,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   public boolean hasVsphereVolume() {
     return vsphereVolume_ != null;
@@ -1141,7 +1141,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource getVsphereVolume() {
     return vsphereVolume_ == null ? com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource.getDefaultInstance() : vsphereVolume_;
@@ -1152,7 +1152,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSourceOrBuilder getVsphereVolumeOrBuilder() {
     return getVsphereVolume();
@@ -1166,7 +1166,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   public boolean hasQuobyte() {
     return quobyte_ != null;
@@ -1177,7 +1177,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource getQuobyte() {
     return quobyte_ == null ? com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource.getDefaultInstance() : quobyte_;
@@ -1188,7 +1188,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSourceOrBuilder getQuobyteOrBuilder() {
     return getQuobyte();
@@ -1202,7 +1202,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   public boolean hasAzureDisk() {
     return azureDisk_ != null;
@@ -1213,7 +1213,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource getAzureDisk() {
     return azureDisk_ == null ? com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource.getDefaultInstance() : azureDisk_;
@@ -1224,7 +1224,7 @@ public  final class VolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSourceOrBuilder getAzureDiskOrBuilder() {
     return getAzureDisk();
@@ -1237,7 +1237,7 @@ public  final class VolumeSource extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   public boolean hasPhotonPersistentDisk() {
     return photonPersistentDisk_ != null;
@@ -1247,7 +1247,7 @@ public  final class VolumeSource extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk() {
     return photonPersistentDisk_ == null ? com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.getDefaultInstance() : photonPersistentDisk_;
@@ -1257,7 +1257,7 @@ public  final class VolumeSource extends
    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder() {
     return getPhotonPersistentDisk();
@@ -1583,7 +1583,7 @@ public  final class VolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasHostPath()) {
       hash = (37 * hash) + HOSTPATH_FIELD_NUMBER;
       hash = (53 * hash) + getHostPath().hashCode();
@@ -2226,7 +2226,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public boolean hasHostPath() {
       return hostPathBuilder_ != null || hostPath_ != null;
@@ -2244,7 +2244,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource getHostPath() {
       if (hostPathBuilder_ == null) {
@@ -2266,7 +2266,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public Builder setHostPath(com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource value) {
       if (hostPathBuilder_ == null) {
@@ -2294,7 +2294,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public Builder setHostPath(
         com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource.Builder builderForValue) {
@@ -2320,7 +2320,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public Builder mergeHostPath(com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource value) {
       if (hostPathBuilder_ == null) {
@@ -2350,7 +2350,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public Builder clearHostPath() {
       if (hostPathBuilder_ == null) {
@@ -2376,7 +2376,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource.Builder getHostPathBuilder() {
       
@@ -2396,7 +2396,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.HostPathVolumeSourceOrBuilder getHostPathOrBuilder() {
       if (hostPathBuilder_ != null) {
@@ -2419,7 +2419,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.HostPathVolumeSource hostPath = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource, com.appscode.api.kubernetes.v1beta2.HostPathVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.HostPathVolumeSourceOrBuilder> 
@@ -2445,7 +2445,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public boolean hasEmptyDir() {
       return emptyDirBuilder_ != null || emptyDir_ != null;
@@ -2457,7 +2457,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource getEmptyDir() {
       if (emptyDirBuilder_ == null) {
@@ -2473,7 +2473,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public Builder setEmptyDir(com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource value) {
       if (emptyDirBuilder_ == null) {
@@ -2495,7 +2495,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public Builder setEmptyDir(
         com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder builderForValue) {
@@ -2515,7 +2515,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public Builder mergeEmptyDir(com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource value) {
       if (emptyDirBuilder_ == null) {
@@ -2539,7 +2539,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public Builder clearEmptyDir() {
       if (emptyDirBuilder_ == null) {
@@ -2559,7 +2559,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder getEmptyDirBuilder() {
       
@@ -2573,7 +2573,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder getEmptyDirOrBuilder() {
       if (emptyDirBuilder_ != null) {
@@ -2590,7 +2590,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.EmptyDirVolumeSource emptyDir = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.EmptyDirVolumeSourceOrBuilder> 
@@ -2617,7 +2617,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public boolean hasGcePersistentDisk() {
       return gcePersistentDiskBuilder_ != null || gcePersistentDisk_ != null;
@@ -2630,7 +2630,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource getGcePersistentDisk() {
       if (gcePersistentDiskBuilder_ == null) {
@@ -2647,7 +2647,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public Builder setGcePersistentDisk(com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource value) {
       if (gcePersistentDiskBuilder_ == null) {
@@ -2670,7 +2670,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public Builder setGcePersistentDisk(
         com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource.Builder builderForValue) {
@@ -2691,7 +2691,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public Builder mergeGcePersistentDisk(com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource value) {
       if (gcePersistentDiskBuilder_ == null) {
@@ -2716,7 +2716,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public Builder clearGcePersistentDisk() {
       if (gcePersistentDiskBuilder_ == null) {
@@ -2737,7 +2737,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource.Builder getGcePersistentDiskBuilder() {
       
@@ -2752,7 +2752,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSourceOrBuilder getGcePersistentDiskOrBuilder() {
       if (gcePersistentDiskBuilder_ != null) {
@@ -2770,7 +2770,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.GCEPersistentDiskVolumeSource gcePersistentDisk = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GCEPersistentDiskVolumeSourceOrBuilder> 
@@ -2797,7 +2797,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public boolean hasAwsElasticBlockStore() {
       return awsElasticBlockStoreBuilder_ != null || awsElasticBlockStore_ != null;
@@ -2810,7 +2810,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource getAwsElasticBlockStore() {
       if (awsElasticBlockStoreBuilder_ == null) {
@@ -2827,7 +2827,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public Builder setAwsElasticBlockStore(com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource value) {
       if (awsElasticBlockStoreBuilder_ == null) {
@@ -2850,7 +2850,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public Builder setAwsElasticBlockStore(
         com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource.Builder builderForValue) {
@@ -2871,7 +2871,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public Builder mergeAwsElasticBlockStore(com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource value) {
       if (awsElasticBlockStoreBuilder_ == null) {
@@ -2896,7 +2896,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public Builder clearAwsElasticBlockStore() {
       if (awsElasticBlockStoreBuilder_ == null) {
@@ -2917,7 +2917,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource.Builder getAwsElasticBlockStoreBuilder() {
       
@@ -2932,7 +2932,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSourceOrBuilder getAwsElasticBlockStoreOrBuilder() {
       if (awsElasticBlockStoreBuilder_ != null) {
@@ -2950,7 +2950,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource awsElasticBlockStore = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource, com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.AWSElasticBlockStoreVolumeSourceOrBuilder> 
@@ -2975,7 +2975,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public boolean hasGitRepo() {
       return gitRepoBuilder_ != null || gitRepo_ != null;
@@ -2986,7 +2986,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource getGitRepo() {
       if (gitRepoBuilder_ == null) {
@@ -3001,7 +3001,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public Builder setGitRepo(com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource value) {
       if (gitRepoBuilder_ == null) {
@@ -3022,7 +3022,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public Builder setGitRepo(
         com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder builderForValue) {
@@ -3041,7 +3041,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public Builder mergeGitRepo(com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource value) {
       if (gitRepoBuilder_ == null) {
@@ -3064,7 +3064,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public Builder clearGitRepo() {
       if (gitRepoBuilder_ == null) {
@@ -3083,7 +3083,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder getGitRepoBuilder() {
       
@@ -3096,7 +3096,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder getGitRepoOrBuilder() {
       if (gitRepoBuilder_ != null) {
@@ -3112,7 +3112,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.GitRepoVolumeSource gitRepo = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GitRepoVolumeSourceOrBuilder> 
@@ -3138,7 +3138,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public boolean hasSecret() {
       return secretBuilder_ != null || secret_ != null;
@@ -3150,7 +3150,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getSecret() {
       if (secretBuilder_ == null) {
@@ -3166,7 +3166,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public Builder setSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (secretBuilder_ == null) {
@@ -3188,7 +3188,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public Builder setSecret(
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
@@ -3208,7 +3208,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public Builder mergeSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (secretBuilder_ == null) {
@@ -3232,7 +3232,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public Builder clearSecret() {
       if (secretBuilder_ == null) {
@@ -3252,7 +3252,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getSecretBuilder() {
       
@@ -3266,7 +3266,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getSecretOrBuilder() {
       if (secretBuilder_ != null) {
@@ -3283,7 +3283,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource secret = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
@@ -3309,7 +3309,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public boolean hasNfs() {
       return nfsBuilder_ != null || nfs_ != null;
@@ -3321,7 +3321,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.NFSVolumeSource getNfs() {
       if (nfsBuilder_ == null) {
@@ -3337,7 +3337,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public Builder setNfs(com.appscode.api.kubernetes.v1beta2.NFSVolumeSource value) {
       if (nfsBuilder_ == null) {
@@ -3359,7 +3359,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public Builder setNfs(
         com.appscode.api.kubernetes.v1beta2.NFSVolumeSource.Builder builderForValue) {
@@ -3379,7 +3379,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public Builder mergeNfs(com.appscode.api.kubernetes.v1beta2.NFSVolumeSource value) {
       if (nfsBuilder_ == null) {
@@ -3403,7 +3403,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public Builder clearNfs() {
       if (nfsBuilder_ == null) {
@@ -3423,7 +3423,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.NFSVolumeSource.Builder getNfsBuilder() {
       
@@ -3437,7 +3437,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.NFSVolumeSourceOrBuilder getNfsOrBuilder() {
       if (nfsBuilder_ != null) {
@@ -3454,7 +3454,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.NFSVolumeSource nfs = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.NFSVolumeSource, com.appscode.api.kubernetes.v1beta2.NFSVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.NFSVolumeSourceOrBuilder> 
@@ -3481,7 +3481,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public boolean hasIscsi() {
       return iscsiBuilder_ != null || iscsi_ != null;
@@ -3494,7 +3494,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource getIscsi() {
       if (iscsiBuilder_ == null) {
@@ -3511,7 +3511,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public Builder setIscsi(com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource value) {
       if (iscsiBuilder_ == null) {
@@ -3534,7 +3534,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public Builder setIscsi(
         com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource.Builder builderForValue) {
@@ -3555,7 +3555,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public Builder mergeIscsi(com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource value) {
       if (iscsiBuilder_ == null) {
@@ -3580,7 +3580,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public Builder clearIscsi() {
       if (iscsiBuilder_ == null) {
@@ -3601,7 +3601,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource.Builder getIscsiBuilder() {
       
@@ -3616,7 +3616,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSourceOrBuilder getIscsiOrBuilder() {
       if (iscsiBuilder_ != null) {
@@ -3634,7 +3634,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.ISCSIVolumeSource iscsi = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource, com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.ISCSIVolumeSourceOrBuilder> 
@@ -3660,7 +3660,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public boolean hasGlusterfs() {
       return glusterfsBuilder_ != null || glusterfs_ != null;
@@ -3672,7 +3672,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource getGlusterfs() {
       if (glusterfsBuilder_ == null) {
@@ -3688,7 +3688,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public Builder setGlusterfs(com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource value) {
       if (glusterfsBuilder_ == null) {
@@ -3710,7 +3710,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public Builder setGlusterfs(
         com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource.Builder builderForValue) {
@@ -3730,7 +3730,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public Builder mergeGlusterfs(com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource value) {
       if (glusterfsBuilder_ == null) {
@@ -3754,7 +3754,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public Builder clearGlusterfs() {
       if (glusterfsBuilder_ == null) {
@@ -3774,7 +3774,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource.Builder getGlusterfsBuilder() {
       
@@ -3788,7 +3788,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSourceOrBuilder getGlusterfsOrBuilder() {
       if (glusterfsBuilder_ != null) {
@@ -3805,7 +3805,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.GlusterfsVolumeSource glusterfs = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource, com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.GlusterfsVolumeSourceOrBuilder> 
@@ -3832,7 +3832,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public boolean hasPersistentVolumeClaim() {
       return persistentVolumeClaimBuilder_ != null || persistentVolumeClaim_ != null;
@@ -3845,7 +3845,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource getPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -3862,7 +3862,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public Builder setPersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -3885,7 +3885,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public Builder setPersistentVolumeClaim(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder builderForValue) {
@@ -3906,7 +3906,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public Builder mergePersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -3931,7 +3931,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public Builder clearPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -3952,7 +3952,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder getPersistentVolumeClaimBuilder() {
       
@@ -3967,7 +3967,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder getPersistentVolumeClaimOrBuilder() {
       if (persistentVolumeClaimBuilder_ != null) {
@@ -3985,7 +3985,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource persistentVolumeClaim = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimVolumeSourceOrBuilder> 
@@ -4011,7 +4011,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public boolean hasRbd() {
       return rbdBuilder_ != null || rbd_ != null;
@@ -4023,7 +4023,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RBDVolumeSource getRbd() {
       if (rbdBuilder_ == null) {
@@ -4039,7 +4039,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public Builder setRbd(com.appscode.api.kubernetes.v1beta2.RBDVolumeSource value) {
       if (rbdBuilder_ == null) {
@@ -4061,7 +4061,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public Builder setRbd(
         com.appscode.api.kubernetes.v1beta2.RBDVolumeSource.Builder builderForValue) {
@@ -4081,7 +4081,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public Builder mergeRbd(com.appscode.api.kubernetes.v1beta2.RBDVolumeSource value) {
       if (rbdBuilder_ == null) {
@@ -4105,7 +4105,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public Builder clearRbd() {
       if (rbdBuilder_ == null) {
@@ -4125,7 +4125,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RBDVolumeSource.Builder getRbdBuilder() {
       
@@ -4139,7 +4139,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RBDVolumeSourceOrBuilder getRbdOrBuilder() {
       if (rbdBuilder_ != null) {
@@ -4156,7 +4156,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.RBDVolumeSource rbd = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.RBDVolumeSource, com.appscode.api.kubernetes.v1beta2.RBDVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.RBDVolumeSourceOrBuilder> 
@@ -4183,7 +4183,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public boolean hasFlexVolume() {
       return flexVolumeBuilder_ != null || flexVolume_ != null;
@@ -4196,7 +4196,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlexVolumeSource getFlexVolume() {
       if (flexVolumeBuilder_ == null) {
@@ -4213,7 +4213,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public Builder setFlexVolume(com.appscode.api.kubernetes.v1beta2.FlexVolumeSource value) {
       if (flexVolumeBuilder_ == null) {
@@ -4236,7 +4236,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public Builder setFlexVolume(
         com.appscode.api.kubernetes.v1beta2.FlexVolumeSource.Builder builderForValue) {
@@ -4257,7 +4257,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public Builder mergeFlexVolume(com.appscode.api.kubernetes.v1beta2.FlexVolumeSource value) {
       if (flexVolumeBuilder_ == null) {
@@ -4282,7 +4282,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public Builder clearFlexVolume() {
       if (flexVolumeBuilder_ == null) {
@@ -4303,7 +4303,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlexVolumeSource.Builder getFlexVolumeBuilder() {
       
@@ -4318,7 +4318,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlexVolumeSourceOrBuilder getFlexVolumeOrBuilder() {
       if (flexVolumeBuilder_ != null) {
@@ -4336,7 +4336,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlexVolumeSource flexVolume = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.FlexVolumeSource, com.appscode.api.kubernetes.v1beta2.FlexVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.FlexVolumeSourceOrBuilder> 
@@ -4362,7 +4362,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public boolean hasCinder() {
       return cinderBuilder_ != null || cinder_ != null;
@@ -4374,7 +4374,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CinderVolumeSource getCinder() {
       if (cinderBuilder_ == null) {
@@ -4390,7 +4390,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public Builder setCinder(com.appscode.api.kubernetes.v1beta2.CinderVolumeSource value) {
       if (cinderBuilder_ == null) {
@@ -4412,7 +4412,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public Builder setCinder(
         com.appscode.api.kubernetes.v1beta2.CinderVolumeSource.Builder builderForValue) {
@@ -4432,7 +4432,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public Builder mergeCinder(com.appscode.api.kubernetes.v1beta2.CinderVolumeSource value) {
       if (cinderBuilder_ == null) {
@@ -4456,7 +4456,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public Builder clearCinder() {
       if (cinderBuilder_ == null) {
@@ -4476,7 +4476,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CinderVolumeSource.Builder getCinderBuilder() {
       
@@ -4490,7 +4490,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CinderVolumeSourceOrBuilder getCinderOrBuilder() {
       if (cinderBuilder_ != null) {
@@ -4507,7 +4507,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.CinderVolumeSource cinder = 13;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CinderVolumeSource, com.appscode.api.kubernetes.v1beta2.CinderVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.CinderVolumeSourceOrBuilder> 
@@ -4532,7 +4532,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public boolean hasCephfs() {
       return cephfsBuilder_ != null || cephfs_ != null;
@@ -4543,7 +4543,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource getCephfs() {
       if (cephfsBuilder_ == null) {
@@ -4558,7 +4558,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public Builder setCephfs(com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource value) {
       if (cephfsBuilder_ == null) {
@@ -4579,7 +4579,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public Builder setCephfs(
         com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource.Builder builderForValue) {
@@ -4598,7 +4598,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public Builder mergeCephfs(com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource value) {
       if (cephfsBuilder_ == null) {
@@ -4621,7 +4621,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public Builder clearCephfs() {
       if (cephfsBuilder_ == null) {
@@ -4640,7 +4640,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource.Builder getCephfsBuilder() {
       
@@ -4653,7 +4653,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CephFSVolumeSourceOrBuilder getCephfsOrBuilder() {
       if (cephfsBuilder_ != null) {
@@ -4669,7 +4669,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.CephFSVolumeSource cephfs = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource, com.appscode.api.kubernetes.v1beta2.CephFSVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.CephFSVolumeSourceOrBuilder> 
@@ -4694,7 +4694,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public boolean hasFlocker() {
       return flockerBuilder_ != null || flocker_ != null;
@@ -4705,7 +4705,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource getFlocker() {
       if (flockerBuilder_ == null) {
@@ -4720,7 +4720,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public Builder setFlocker(com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource value) {
       if (flockerBuilder_ == null) {
@@ -4741,7 +4741,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public Builder setFlocker(
         com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource.Builder builderForValue) {
@@ -4760,7 +4760,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public Builder mergeFlocker(com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource value) {
       if (flockerBuilder_ == null) {
@@ -4783,7 +4783,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public Builder clearFlocker() {
       if (flockerBuilder_ == null) {
@@ -4802,7 +4802,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource.Builder getFlockerBuilder() {
       
@@ -4815,7 +4815,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FlockerVolumeSourceOrBuilder getFlockerOrBuilder() {
       if (flockerBuilder_ != null) {
@@ -4831,7 +4831,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.FlockerVolumeSource flocker = 15;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource, com.appscode.api.kubernetes.v1beta2.FlockerVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.FlockerVolumeSourceOrBuilder> 
@@ -4856,7 +4856,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public boolean hasDownwardAPI() {
       return downwardAPIBuilder_ != null || downwardAPI_ != null;
@@ -4867,7 +4867,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource getDownwardAPI() {
       if (downwardAPIBuilder_ == null) {
@@ -4882,7 +4882,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public Builder setDownwardAPI(com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource value) {
       if (downwardAPIBuilder_ == null) {
@@ -4903,7 +4903,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public Builder setDownwardAPI(
         com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder builderForValue) {
@@ -4922,7 +4922,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public Builder mergeDownwardAPI(com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource value) {
       if (downwardAPIBuilder_ == null) {
@@ -4945,7 +4945,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public Builder clearDownwardAPI() {
       if (downwardAPIBuilder_ == null) {
@@ -4964,7 +4964,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder getDownwardAPIBuilder() {
       
@@ -4977,7 +4977,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder getDownwardAPIOrBuilder() {
       if (downwardAPIBuilder_ != null) {
@@ -4993,7 +4993,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.DownwardAPIVolumeSource downwardAPI = 16;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.DownwardAPIVolumeSourceOrBuilder> 
@@ -5018,7 +5018,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public boolean hasFc() {
       return fcBuilder_ != null || fc_ != null;
@@ -5029,7 +5029,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FCVolumeSource getFc() {
       if (fcBuilder_ == null) {
@@ -5044,7 +5044,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public Builder setFc(com.appscode.api.kubernetes.v1beta2.FCVolumeSource value) {
       if (fcBuilder_ == null) {
@@ -5065,7 +5065,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public Builder setFc(
         com.appscode.api.kubernetes.v1beta2.FCVolumeSource.Builder builderForValue) {
@@ -5084,7 +5084,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public Builder mergeFc(com.appscode.api.kubernetes.v1beta2.FCVolumeSource value) {
       if (fcBuilder_ == null) {
@@ -5107,7 +5107,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public Builder clearFc() {
       if (fcBuilder_ == null) {
@@ -5126,7 +5126,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FCVolumeSource.Builder getFcBuilder() {
       
@@ -5139,7 +5139,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.FCVolumeSourceOrBuilder getFcOrBuilder() {
       if (fcBuilder_ != null) {
@@ -5155,7 +5155,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.FCVolumeSource fc = 17;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.FCVolumeSource, com.appscode.api.kubernetes.v1beta2.FCVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.FCVolumeSourceOrBuilder> 
@@ -5180,7 +5180,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public boolean hasAzureFile() {
       return azureFileBuilder_ != null || azureFile_ != null;
@@ -5191,7 +5191,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource getAzureFile() {
       if (azureFileBuilder_ == null) {
@@ -5206,7 +5206,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public Builder setAzureFile(com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource value) {
       if (azureFileBuilder_ == null) {
@@ -5227,7 +5227,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public Builder setAzureFile(
         com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource.Builder builderForValue) {
@@ -5246,7 +5246,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public Builder mergeAzureFile(com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource value) {
       if (azureFileBuilder_ == null) {
@@ -5269,7 +5269,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public Builder clearAzureFile() {
       if (azureFileBuilder_ == null) {
@@ -5288,7 +5288,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource.Builder getAzureFileBuilder() {
       
@@ -5301,7 +5301,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSourceOrBuilder getAzureFileOrBuilder() {
       if (azureFileBuilder_ != null) {
@@ -5317,7 +5317,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureFileVolumeSource azureFile = 18;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource, com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.AzureFileVolumeSourceOrBuilder> 
@@ -5342,7 +5342,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public boolean hasConfigMap() {
       return configMapBuilder_ != null || configMap_ != null;
@@ -5353,7 +5353,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource getConfigMap() {
       if (configMapBuilder_ == null) {
@@ -5368,7 +5368,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public Builder setConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource value) {
       if (configMapBuilder_ == null) {
@@ -5389,7 +5389,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public Builder setConfigMap(
         com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder builderForValue) {
@@ -5408,7 +5408,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public Builder mergeConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource value) {
       if (configMapBuilder_ == null) {
@@ -5431,7 +5431,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public Builder clearConfigMap() {
       if (configMapBuilder_ == null) {
@@ -5450,7 +5450,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder getConfigMapBuilder() {
       
@@ -5463,7 +5463,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder getConfigMapOrBuilder() {
       if (configMapBuilder_ != null) {
@@ -5479,7 +5479,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapVolumeSource configMap = 19;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapVolumeSourceOrBuilder> 
@@ -5504,7 +5504,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public boolean hasVsphereVolume() {
       return vsphereVolumeBuilder_ != null || vsphereVolume_ != null;
@@ -5515,7 +5515,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource getVsphereVolume() {
       if (vsphereVolumeBuilder_ == null) {
@@ -5530,7 +5530,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public Builder setVsphereVolume(com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource value) {
       if (vsphereVolumeBuilder_ == null) {
@@ -5551,7 +5551,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public Builder setVsphereVolume(
         com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource.Builder builderForValue) {
@@ -5570,7 +5570,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public Builder mergeVsphereVolume(com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource value) {
       if (vsphereVolumeBuilder_ == null) {
@@ -5593,7 +5593,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public Builder clearVsphereVolume() {
       if (vsphereVolumeBuilder_ == null) {
@@ -5612,7 +5612,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource.Builder getVsphereVolumeBuilder() {
       
@@ -5625,7 +5625,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSourceOrBuilder getVsphereVolumeOrBuilder() {
       if (vsphereVolumeBuilder_ != null) {
@@ -5641,7 +5641,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource vsphereVolume = 20;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VsphereVirtualDiskVolumeSourceOrBuilder> 
@@ -5666,7 +5666,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public boolean hasQuobyte() {
       return quobyteBuilder_ != null || quobyte_ != null;
@@ -5677,7 +5677,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource getQuobyte() {
       if (quobyteBuilder_ == null) {
@@ -5692,7 +5692,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public Builder setQuobyte(com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource value) {
       if (quobyteBuilder_ == null) {
@@ -5713,7 +5713,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public Builder setQuobyte(
         com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource.Builder builderForValue) {
@@ -5732,7 +5732,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public Builder mergeQuobyte(com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource value) {
       if (quobyteBuilder_ == null) {
@@ -5755,7 +5755,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public Builder clearQuobyte() {
       if (quobyteBuilder_ == null) {
@@ -5774,7 +5774,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource.Builder getQuobyteBuilder() {
       
@@ -5787,7 +5787,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSourceOrBuilder getQuobyteOrBuilder() {
       if (quobyteBuilder_ != null) {
@@ -5803,7 +5803,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.QuobyteVolumeSource quobyte = 21;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource, com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.QuobyteVolumeSourceOrBuilder> 
@@ -5828,7 +5828,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public boolean hasAzureDisk() {
       return azureDiskBuilder_ != null || azureDisk_ != null;
@@ -5839,7 +5839,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource getAzureDisk() {
       if (azureDiskBuilder_ == null) {
@@ -5854,7 +5854,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public Builder setAzureDisk(com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource value) {
       if (azureDiskBuilder_ == null) {
@@ -5875,7 +5875,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public Builder setAzureDisk(
         com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource.Builder builderForValue) {
@@ -5894,7 +5894,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public Builder mergeAzureDisk(com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource value) {
       if (azureDiskBuilder_ == null) {
@@ -5917,7 +5917,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public Builder clearAzureDisk() {
       if (azureDiskBuilder_ == null) {
@@ -5936,7 +5936,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource.Builder getAzureDiskBuilder() {
       
@@ -5949,7 +5949,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSourceOrBuilder getAzureDiskOrBuilder() {
       if (azureDiskBuilder_ != null) {
@@ -5965,7 +5965,7 @@ public  final class VolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.AzureDiskVolumeSource azureDisk = 22;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.AzureDiskVolumeSourceOrBuilder> 
@@ -5989,7 +5989,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public boolean hasPhotonPersistentDisk() {
       return photonPersistentDiskBuilder_ != null || photonPersistentDisk_ != null;
@@ -5999,7 +5999,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource getPhotonPersistentDisk() {
       if (photonPersistentDiskBuilder_ == null) {
@@ -6013,7 +6013,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public Builder setPhotonPersistentDisk(com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource value) {
       if (photonPersistentDiskBuilder_ == null) {
@@ -6033,7 +6033,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public Builder setPhotonPersistentDisk(
         com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder builderForValue) {
@@ -6051,7 +6051,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public Builder mergePhotonPersistentDisk(com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource value) {
       if (photonPersistentDiskBuilder_ == null) {
@@ -6073,7 +6073,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public Builder clearPhotonPersistentDisk() {
       if (photonPersistentDiskBuilder_ == null) {
@@ -6091,7 +6091,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder getPhotonPersistentDiskBuilder() {
       
@@ -6103,7 +6103,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder getPhotonPersistentDiskOrBuilder() {
       if (photonPersistentDiskBuilder_ != null) {
@@ -6118,7 +6118,7 @@ public  final class VolumeSource extends
      * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource photonPersistentDisk = 23;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.PhotonPersistentDiskVolumeSourceOrBuilder> 

@@ -109,25 +109,25 @@ public  final class DatabaseSnapshot extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string database_name = 1;</code>
+     * <code>string database_name = 1;</code>
      */
     java.lang.String getDatabaseName();
     /**
-     * <code>optional string database_name = 1;</code>
+     * <code>string database_name = 1;</code>
      */
     com.google.protobuf.ByteString
         getDatabaseNameBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     boolean hasSnapshotSpec();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder();
   }
@@ -216,7 +216,7 @@ public  final class DatabaseSnapshot extends
     public static final int DATABASE_NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object databaseName_;
     /**
-     * <code>optional string database_name = 1;</code>
+     * <code>string database_name = 1;</code>
      */
     public java.lang.String getDatabaseName() {
       java.lang.Object ref = databaseName_;
@@ -231,7 +231,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional string database_name = 1;</code>
+     * <code>string database_name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDatabaseNameBytes() {
@@ -250,19 +250,19 @@ public  final class DatabaseSnapshot extends
     public static final int SNAPSHOT_SPEC_FIELD_NUMBER = 2;
     private com.appscode.api.kubernetes.v1beta2.SnapshotSpec snapshotSpec_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public boolean hasSnapshotSpec() {
       return snapshotSpec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
       return snapshotSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance() : snapshotSpec_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
       return getSnapshotSpec();
@@ -332,7 +332,7 @@ public  final class DatabaseSnapshot extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DATABASE_NAME_FIELD_NUMBER;
       hash = (53 * hash) + getDatabaseName().hashCode();
       if (hasSnapshotSpec()) {
@@ -569,7 +569,7 @@ public  final class DatabaseSnapshot extends
 
       private java.lang.Object databaseName_ = "";
       /**
-       * <code>optional string database_name = 1;</code>
+       * <code>string database_name = 1;</code>
        */
       public java.lang.String getDatabaseName() {
         java.lang.Object ref = databaseName_;
@@ -584,7 +584,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string database_name = 1;</code>
+       * <code>string database_name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getDatabaseNameBytes() {
@@ -600,7 +600,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string database_name = 1;</code>
+       * <code>string database_name = 1;</code>
        */
       public Builder setDatabaseName(
           java.lang.String value) {
@@ -613,7 +613,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string database_name = 1;</code>
+       * <code>string database_name = 1;</code>
        */
       public Builder clearDatabaseName() {
         
@@ -622,7 +622,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string database_name = 1;</code>
+       * <code>string database_name = 1;</code>
        */
       public Builder setDatabaseNameBytes(
           com.google.protobuf.ByteString value) {
@@ -640,13 +640,13 @@ public  final class DatabaseSnapshot extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> snapshotSpecBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public boolean hasSnapshotSpec() {
         return snapshotSpecBuilder_ != null || snapshotSpec_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
         if (snapshotSpecBuilder_ == null) {
@@ -656,7 +656,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public Builder setSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
         if (snapshotSpecBuilder_ == null) {
@@ -672,7 +672,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public Builder setSnapshotSpec(
           com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder builderForValue) {
@@ -686,7 +686,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public Builder mergeSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
         if (snapshotSpecBuilder_ == null) {
@@ -704,7 +704,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public Builder clearSnapshotSpec() {
         if (snapshotSpecBuilder_ == null) {
@@ -718,7 +718,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder getSnapshotSpecBuilder() {
         
@@ -726,7 +726,7 @@ public  final class DatabaseSnapshot extends
         return getSnapshotSpecFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
         if (snapshotSpecBuilder_ != null) {
@@ -737,7 +737,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> 
@@ -806,31 +806,31 @@ public  final class DatabaseSnapshot extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 start_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
     long getStartTime();
 
     /**
-     * <code>optional int64 completion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
     long getCompletionTime();
 
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
@@ -926,7 +926,7 @@ public  final class DatabaseSnapshot extends
     public static final int START_TIME_FIELD_NUMBER = 1;
     private long startTime_;
     /**
-     * <code>optional int64 start_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
     public long getStartTime() {
       return startTime_;
@@ -935,7 +935,7 @@ public  final class DatabaseSnapshot extends
     public static final int COMPLETION_TIME_FIELD_NUMBER = 2;
     private long completionTime_;
     /**
-     * <code>optional int64 completion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
     public long getCompletionTime() {
       return completionTime_;
@@ -944,7 +944,7 @@ public  final class DatabaseSnapshot extends
     public static final int PHASE_FIELD_NUMBER = 3;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -959,7 +959,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional string phase = 3;</code>
+     * <code>string phase = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -978,7 +978,7 @@ public  final class DatabaseSnapshot extends
     public static final int REASON_FIELD_NUMBER = 4;
     private volatile java.lang.Object reason_;
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -993,7 +993,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional string reason = 4;</code>
+     * <code>string reason = 4;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -1087,7 +1087,7 @@ public  final class DatabaseSnapshot extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getStartTime());
@@ -1333,13 +1333,13 @@ public  final class DatabaseSnapshot extends
 
       private long startTime_ ;
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public long getStartTime() {
         return startTime_;
       }
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public Builder setStartTime(long value) {
         
@@ -1348,7 +1348,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public Builder clearStartTime() {
         
@@ -1359,13 +1359,13 @@ public  final class DatabaseSnapshot extends
 
       private long completionTime_ ;
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public long getCompletionTime() {
         return completionTime_;
       }
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public Builder setCompletionTime(long value) {
         
@@ -1374,7 +1374,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public Builder clearCompletionTime() {
         
@@ -1385,7 +1385,7 @@ public  final class DatabaseSnapshot extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -1400,7 +1400,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -1416,7 +1416,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -1429,7 +1429,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder clearPhase() {
         
@@ -1438,7 +1438,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string phase = 3;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -1454,7 +1454,7 @@ public  final class DatabaseSnapshot extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -1469,7 +1469,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -1485,7 +1485,7 @@ public  final class DatabaseSnapshot extends
         }
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -1498,7 +1498,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder clearReason() {
         
@@ -1507,7 +1507,7 @@ public  final class DatabaseSnapshot extends
         return this;
       }
       /**
-       * <code>optional string reason = 4;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -1572,19 +1572,19 @@ public  final class DatabaseSnapshot extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1593,19 +1593,19 @@ public  final class DatabaseSnapshot extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1614,19 +1614,19 @@ public  final class DatabaseSnapshot extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -1712,7 +1712,7 @@ public  final class DatabaseSnapshot extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1978,13 +1978,13 @@ public  final class DatabaseSnapshot extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -1994,7 +1994,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2010,7 +2010,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -2024,7 +2024,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2042,7 +2042,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -2056,7 +2056,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -2064,7 +2064,7 @@ public  final class DatabaseSnapshot extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -2075,7 +2075,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -2095,13 +2095,13 @@ public  final class DatabaseSnapshot extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -2111,7 +2111,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec value) {
       if (specBuilder_ == null) {
@@ -2127,7 +2127,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec.Builder builderForValue) {
@@ -2141,7 +2141,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec value) {
       if (specBuilder_ == null) {
@@ -2159,7 +2159,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2173,7 +2173,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec.Builder getSpecBuilder() {
       
@@ -2181,7 +2181,7 @@ public  final class DatabaseSnapshot extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -2192,7 +2192,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Spec.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.SpecOrBuilder> 
@@ -2212,13 +2212,13 @@ public  final class DatabaseSnapshot extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -2228,7 +2228,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status value) {
       if (statusBuilder_ == null) {
@@ -2244,7 +2244,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status.Builder builderForValue) {
@@ -2258,7 +2258,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status value) {
       if (statusBuilder_ == null) {
@@ -2276,7 +2276,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2290,7 +2290,7 @@ public  final class DatabaseSnapshot extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status.Builder getStatusBuilder() {
       
@@ -2298,7 +2298,7 @@ public  final class DatabaseSnapshot extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -2309,7 +2309,7 @@ public  final class DatabaseSnapshot extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Status.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.StatusOrBuilder> 

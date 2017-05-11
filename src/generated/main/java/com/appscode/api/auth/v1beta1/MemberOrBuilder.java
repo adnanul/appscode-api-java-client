@@ -8,37 +8,37 @@ public interface MemberOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   java.lang.String getUserName();
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   com.google.protobuf.ByteString
       getUserNameBytes();
 
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   java.lang.String getRealName();
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getRealNameBytes();
 
   /**
-   * <code>optional bool is_admin = 4;</code>
+   * <code>bool is_admin = 4;</code>
    */
   boolean getIsAdmin();
 }

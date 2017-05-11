@@ -25,11 +25,6 @@ public final class TeamProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_namespace_v1beta1_CreateResponse_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_namespace_v1beta1_CreateResponse_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_namespace_v1beta1_GetRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -65,26 +60,23 @@ public final class TeamProto {
       "nonce\030\t \001(\t\022G\n\007options\030\n \003(\01326.appscode.",
       "namespace.v1beta1.CreateRequest.OptionsE" +
       "ntry\032.\n\014OptionsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
-      "ue\030\002 \001(\t:\0028\001\"9\n\016CreateResponse\022\'\n\006status" +
-      "\030\001 \001(\0132\027.appscode.dtypes.Status\"\032\n\nGetRe" +
-      "quest\022\014\n\004name\030\001 \001(\t\"D\n\013GetResponse\022\'\n\006st" +
-      "atus\030\001 \001(\0132\027.appscode.dtypes.Status\022\014\n\004p" +
-      "hid\030\002 \001(\t\"\"\n\022IsAvailableRequest\022\014\n\004name\030" +
-      "\001 \001(\t2\360\003\n\005Teams\022\235\001\n\006Create\022).appscode.na" +
-      "mespace.v1beta1.CreateRequest\032*.appscode" +
-      ".namespace.v1beta1.CreateResponse\"<\202\323\344\223\002",
-      "0\"+/_appscode/api/namespace/v1beta1/team" +
-      "s/json:\001*\202\265\030\002\010\001\022\230\001\n\003Get\022&.appscode.names" +
-      "pace.v1beta1.GetRequest\032\'.appscode.names" +
-      "pace.v1beta1.GetResponse\"@\202\323\344\223\0024\0222/_apps" +
-      "code/api/namespace/v1beta1/teams/{name}/" +
-      "json\202\265\030\002\010\001\022\253\001\n\013IsAvailable\022..appscode.na" +
-      "mespace.v1beta1.IsAvailableRequest\032\035.app" +
-      "scode.dtypes.VoidResponse\"M\202\323\344\223\002A\022?/_app" +
-      "scode/api/namespace/v1beta1/teams/{name}" +
-      "/is-available/json\202\265\030\002\010\001B:\n\"com.appscode",
-      ".api.namespace.v1beta1B\tTeamProtoP\001Z\007v1b" +
-      "eta1b\006proto3"
+      "ue\030\002 \001(\t:\0028\001\"\032\n\nGetRequest\022\014\n\004name\030\001 \001(\t" +
+      "\"\033\n\013GetResponse\022\014\n\004phid\030\001 \001(\t\"\"\n\022IsAvail" +
+      "ableRequest\022\014\n\004name\030\001 \001(\t2\343\003\n\005Teams\022\220\001\n\006" +
+      "Create\022).appscode.namespace.v1beta1.Crea" +
+      "teRequest\032\035.appscode.dtypes.VoidResponse" +
+      "\"<\202\323\344\223\0020\"+/_appscode/api/namespace/v1bet" +
+      "a1/teams/json:\001*\202\265\030\002\010\001\022\230\001\n\003Get\022&.appscod" +
+      "e.namespace.v1beta1.GetRequest\032\'.appscod",
+      "e.namespace.v1beta1.GetResponse\"@\202\323\344\223\0024\022" +
+      "2/_appscode/api/namespace/v1beta1/teams/" +
+      "{name}/json\202\265\030\002\010\001\022\253\001\n\013IsAvailable\022..apps" +
+      "code.namespace.v1beta1.IsAvailableReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"M\202\323\344\223\002A" +
+      "\022?/_appscode/api/namespace/v1beta1/teams" +
+      "/{name}/is-available/json\202\265\030\002\010\001B:\n\"com.a" +
+      "ppscode.api.namespace.v1beta1B\tTeamProto" +
+      "P\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -113,26 +105,20 @@ public final class TeamProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
-    internal_static_appscode_namespace_v1beta1_CreateResponse_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_appscode_namespace_v1beta1_CreateResponse_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_namespace_v1beta1_CreateResponse_descriptor,
-        new java.lang.String[] { "Status", });
     internal_static_appscode_namespace_v1beta1_GetRequest_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_namespace_v1beta1_GetRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_GetRequest_descriptor,
         new java.lang.String[] { "Name", });
     internal_static_appscode_namespace_v1beta1_GetResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_namespace_v1beta1_GetResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_GetResponse_descriptor,
-        new java.lang.String[] { "Status", "Phid", });
+        new java.lang.String[] { "Phid", });
     internal_static_appscode_namespace_v1beta1_IsAvailableRequest_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_namespace_v1beta1_IsAvailableRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_IsAvailableRequest_descriptor,

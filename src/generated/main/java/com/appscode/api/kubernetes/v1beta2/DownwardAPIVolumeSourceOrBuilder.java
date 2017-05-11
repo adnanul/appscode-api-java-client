@@ -66,7 +66,7 @@ public interface DownwardAPIVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 defaultMode = 2;</code>
+   * <code>int32 defaultMode = 2;</code>
    */
   int getDefaultMode();
 }

@@ -43,27 +43,14 @@ public  final class ProjectMemberListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.auth.v1beta1.Project.Builder subBuilder = null;
-            if (projet_ != null) {
-              subBuilder = projet_.toBuilder();
+            if (project_ != null) {
+              subBuilder = project_.toBuilder();
             }
-            projet_ = input.readMessage(com.appscode.api.auth.v1beta1.Project.parser(), extensionRegistry);
+            project_ = input.readMessage(com.appscode.api.auth.v1beta1.Project.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(projet_);
-              projet_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(project_);
+              project_ = subBuilder.buildPartial();
             }
 
             break;
@@ -91,46 +78,25 @@ public  final class ProjectMemberListResponse extends
             com.appscode.api.auth.v1beta1.ProjectMemberListResponse.class, com.appscode.api.auth.v1beta1.ProjectMemberListResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
+  public static final int PROJECT_FIELD_NUMBER = 1;
+  private com.appscode.api.auth.v1beta1.Project project_;
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  public boolean hasStatus() {
-    return status_ != null;
+  public boolean hasProject() {
+    return project_ != null;
   }
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
+  public com.appscode.api.auth.v1beta1.Project getProject() {
+    return project_ == null ? com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : project_;
   }
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int PROJET_FIELD_NUMBER = 2;
-  private com.appscode.api.auth.v1beta1.Project projet_;
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  public boolean hasProjet() {
-    return projet_ != null;
-  }
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  public com.appscode.api.auth.v1beta1.Project getProjet() {
-    return projet_ == null ? com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : projet_;
-  }
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetOrBuilder() {
-    return getProjet();
+  public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectOrBuilder() {
+    return getProject();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -145,11 +111,8 @@ public  final class ProjectMemberListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
-    if (projet_ != null) {
-      output.writeMessage(2, getProjet());
+    if (project_ != null) {
+      output.writeMessage(1, getProject());
     }
   }
 
@@ -158,13 +121,9 @@ public  final class ProjectMemberListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
+    if (project_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
-    if (projet_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getProjet());
+        .computeMessageSize(1, getProject());
     }
     memoizedSize = size;
     return size;
@@ -182,15 +141,10 @@ public  final class ProjectMemberListResponse extends
     com.appscode.api.auth.v1beta1.ProjectMemberListResponse other = (com.appscode.api.auth.v1beta1.ProjectMemberListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
-    result = result && (hasProjet() == other.hasProjet());
-    if (hasProjet()) {
-      result = result && getProjet()
-          .equals(other.getProjet());
+    result = result && (hasProject() == other.hasProject());
+    if (hasProject()) {
+      result = result && getProject()
+          .equals(other.getProject());
     }
     return result;
   }
@@ -201,14 +155,10 @@ public  final class ProjectMemberListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
-    if (hasProjet()) {
-      hash = (37 * hash) + PROJET_FIELD_NUMBER;
-      hash = (53 * hash) + getProjet().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (hasProject()) {
+      hash = (37 * hash) + PROJECT_FIELD_NUMBER;
+      hash = (53 * hash) + getProject().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -328,17 +278,11 @@ public  final class ProjectMemberListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
+      if (projectBuilder_ == null) {
+        project_ = null;
       } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-      if (projetBuilder_ == null) {
-        projet_ = null;
-      } else {
-        projet_ = null;
-        projetBuilder_ = null;
+        project_ = null;
+        projectBuilder_ = null;
       }
       return this;
     }
@@ -362,15 +306,10 @@ public  final class ProjectMemberListResponse extends
 
     public com.appscode.api.auth.v1beta1.ProjectMemberListResponse buildPartial() {
       com.appscode.api.auth.v1beta1.ProjectMemberListResponse result = new com.appscode.api.auth.v1beta1.ProjectMemberListResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
+      if (projectBuilder_ == null) {
+        result.project_ = project_;
       } else {
-        result.status_ = statusBuilder_.build();
-      }
-      if (projetBuilder_ == null) {
-        result.projet_ = projet_;
-      } else {
-        result.projet_ = projetBuilder_.build();
+        result.project_ = projectBuilder_.build();
       }
       onBuilt();
       return result;
@@ -413,11 +352,8 @@ public  final class ProjectMemberListResponse extends
 
     public Builder mergeFrom(com.appscode.api.auth.v1beta1.ProjectMemberListResponse other) {
       if (other == com.appscode.api.auth.v1beta1.ProjectMemberListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
-      if (other.hasProjet()) {
-        mergeProjet(other.getProjet());
+      if (other.hasProject()) {
+        mergeProject(other.getProject());
       }
       onChanged();
       return this;
@@ -445,238 +381,121 @@ public  final class ProjectMemberListResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
+    private com.appscode.api.auth.v1beta1.Project project_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
+        com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> projectBuilder_;
     /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
+    public boolean hasProject() {
+      return projectBuilder_ != null || project_ != null;
     }
     /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
+    public com.appscode.api.auth.v1beta1.Project getProject() {
+      if (projectBuilder_ == null) {
+        return project_ == null ? com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : project_;
       } else {
-        return statusBuilder_.getMessage();
+        return projectBuilder_.getMessage();
       }
     }
     /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
+    public Builder setProject(com.appscode.api.auth.v1beta1.Project value) {
+      if (projectBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        status_ = value;
+        project_ = value;
         onChanged();
       } else {
-        statusBuilder_.setMessage(value);
+        projectBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
-    private com.appscode.api.auth.v1beta1.Project projet_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> projetBuilder_;
-    /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-     */
-    public boolean hasProjet() {
-      return projetBuilder_ != null || projet_ != null;
-    }
-    /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-     */
-    public com.appscode.api.auth.v1beta1.Project getProjet() {
-      if (projetBuilder_ == null) {
-        return projet_ == null ? com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : projet_;
-      } else {
-        return projetBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-     */
-    public Builder setProjet(com.appscode.api.auth.v1beta1.Project value) {
-      if (projetBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        projet_ = value;
-        onChanged();
-      } else {
-        projetBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-     */
-    public Builder setProjet(
+    public Builder setProject(
         com.appscode.api.auth.v1beta1.Project.Builder builderForValue) {
-      if (projetBuilder_ == null) {
-        projet_ = builderForValue.build();
+      if (projectBuilder_ == null) {
+        project_ = builderForValue.build();
         onChanged();
       } else {
-        projetBuilder_.setMessage(builderForValue.build());
+        projectBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public Builder mergeProjet(com.appscode.api.auth.v1beta1.Project value) {
-      if (projetBuilder_ == null) {
-        if (projet_ != null) {
-          projet_ =
-            com.appscode.api.auth.v1beta1.Project.newBuilder(projet_).mergeFrom(value).buildPartial();
+    public Builder mergeProject(com.appscode.api.auth.v1beta1.Project value) {
+      if (projectBuilder_ == null) {
+        if (project_ != null) {
+          project_ =
+            com.appscode.api.auth.v1beta1.Project.newBuilder(project_).mergeFrom(value).buildPartial();
         } else {
-          projet_ = value;
+          project_ = value;
         }
         onChanged();
       } else {
-        projetBuilder_.mergeFrom(value);
+        projectBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public Builder clearProjet() {
-      if (projetBuilder_ == null) {
-        projet_ = null;
+    public Builder clearProject() {
+      if (projectBuilder_ == null) {
+        project_ = null;
         onChanged();
       } else {
-        projet_ = null;
-        projetBuilder_ = null;
+        project_ = null;
+        projectBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.Project.Builder getProjetBuilder() {
+    public com.appscode.api.auth.v1beta1.Project.Builder getProjectBuilder() {
       
       onChanged();
-      return getProjetFieldBuilder().getBuilder();
+      return getProjectFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetOrBuilder() {
-      if (projetBuilder_ != null) {
-        return projetBuilder_.getMessageOrBuilder();
+    public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectOrBuilder() {
+      if (projectBuilder_ != null) {
+        return projectBuilder_.getMessageOrBuilder();
       } else {
-        return projet_ == null ?
-            com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : projet_;
+        return project_ == null ?
+            com.appscode.api.auth.v1beta1.Project.getDefaultInstance() : project_;
       }
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
+     * <code>.appscode.auth.v1beta1.Project project = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> 
-        getProjetFieldBuilder() {
-      if (projetBuilder_ == null) {
-        projetBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        getProjectFieldBuilder() {
+      if (projectBuilder_ == null) {
+        projectBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder>(
-                getProjet(),
+                getProject(),
                 getParentForChildren(),
                 isClean());
-        projet_ = null;
+        project_ = null;
       }
-      return projetBuilder_;
+      return projectBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

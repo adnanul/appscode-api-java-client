@@ -21,9 +21,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
  * </pre>
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/namespace/v1beta1/team.proto")
-public class TeamsGrpc {
+public final class TeamsGrpc {
 
   private TeamsGrpc() {}
 
@@ -32,13 +32,13 @@ public class TeamsGrpc {
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.namespace.v1beta1.CreateRequest,
-      com.appscode.api.namespace.v1beta1.CreateResponse> METHOD_CREATE =
+      com.appscode.api.dtypes.VoidResponse> METHOD_CREATE =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "appscode.namespace.v1beta1.Teams", "Create"),
           io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.CreateRequest.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.namespace.v1beta1.CreateResponse.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(com.appscode.api.dtypes.VoidResponse.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<com.appscode.api.namespace.v1beta1.GetRequest,
       com.appscode.api.namespace.v1beta1.GetResponse> METHOD_GET =
@@ -94,7 +94,7 @@ public class TeamsGrpc {
      * </pre>
      */
     public void create(com.appscode.api.namespace.v1beta1.CreateRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_CREATE, responseObserver);
     }
 
@@ -118,14 +118,14 @@ public class TeamsGrpc {
       asyncUnimplementedUnaryCall(METHOD_IS_AVAILABLE, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_CREATE,
             asyncUnaryCall(
               new MethodHandlers<
                 com.appscode.api.namespace.v1beta1.CreateRequest,
-                com.appscode.api.namespace.v1beta1.CreateResponse>(
+                com.appscode.api.dtypes.VoidResponse>(
                   this, METHODID_CREATE)))
           .addMethod(
             METHOD_GET,
@@ -172,7 +172,7 @@ public class TeamsGrpc {
      * </pre>
      */
     public void create(com.appscode.api.namespace.v1beta1.CreateRequest request,
-        io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_CREATE, getCallOptions()), request, responseObserver);
     }
@@ -226,7 +226,7 @@ public class TeamsGrpc {
      * Creates a new namespace, if name is valid and no namespace with same name exists.
      * </pre>
      */
-    public com.appscode.api.namespace.v1beta1.CreateResponse create(com.appscode.api.namespace.v1beta1.CreateRequest request) {
+    public com.appscode.api.dtypes.VoidResponse create(com.appscode.api.namespace.v1beta1.CreateRequest request) {
       return blockingUnaryCall(
           getChannel(), METHOD_CREATE, getCallOptions(), request);
     }
@@ -278,7 +278,7 @@ public class TeamsGrpc {
      * Creates a new namespace, if name is valid and no namespace with same name exists.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.namespace.v1beta1.CreateResponse> create(
+    public com.google.common.util.concurrent.ListenableFuture<com.appscode.api.dtypes.VoidResponse> create(
         com.appscode.api.namespace.v1beta1.CreateRequest request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_CREATE, getCallOptions()), request);
@@ -311,7 +311,7 @@ public class TeamsGrpc {
   private static final int METHODID_GET = 1;
   private static final int METHODID_IS_AVAILABLE = 2;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -319,7 +319,7 @@ public class TeamsGrpc {
     private final TeamsImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(TeamsImplBase serviceImpl, int methodId) {
+    MethodHandlers(TeamsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -330,7 +330,7 @@ public class TeamsGrpc {
       switch (methodId) {
         case METHODID_CREATE:
           serviceImpl.create((com.appscode.api.namespace.v1beta1.CreateRequest) request,
-              (io.grpc.stub.StreamObserver<com.appscode.api.namespace.v1beta1.CreateResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.appscode.api.dtypes.VoidResponse>) responseObserver);
           break;
         case METHODID_GET:
           serviceImpl.get((com.appscode.api.namespace.v1beta1.GetRequest) request,
@@ -356,11 +356,30 @@ public class TeamsGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_CREATE,
-        METHOD_GET,
-        METHOD_IS_AVAILABLE);
+  private static final class TeamsDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.namespace.v1beta1.TeamProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (TeamsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new TeamsDescriptorSupplier())
+              .addMethod(METHOD_CREATE)
+              .addMethod(METHOD_GET)
+              .addMethod(METHOD_IS_AVAILABLE)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

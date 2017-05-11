@@ -44,22 +44,9 @@ public  final class IncidentListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               incidents_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta1.Incident>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             incidents_.add(
                 input.readMessage(com.appscode.api.kubernetes.v1beta1.Incident.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class IncidentListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         incidents_ = java.util.Collections.unmodifiableList(incidents_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class IncidentListResponse extends
             com.appscode.api.kubernetes.v1beta1.IncidentListResponse.class, com.appscode.api.kubernetes.v1beta1.IncidentListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int INCIDENTS_FIELD_NUMBER = 2;
+  public static final int INCIDENTS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.kubernetes.v1beta1.Incident> incidents_;
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   public java.util.List<com.appscode.api.kubernetes.v1beta1.Incident> getIncidentsList() {
     return incidents_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder> 
       getIncidentsOrBuilderList() {
     return incidents_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   public int getIncidentsCount() {
     return incidents_.size();
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.Incident getIncidents(int index) {
     return incidents_.get(index);
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder getIncidentsOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class IncidentListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < incidents_.size(); i++) {
-      output.writeMessage(2, incidents_.get(i));
+      output.writeMessage(1, incidents_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class IncidentListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < incidents_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, incidents_.get(i));
+        .computeMessageSize(1, incidents_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class IncidentListResponse extends
     com.appscode.api.kubernetes.v1beta1.IncidentListResponse other = (com.appscode.api.kubernetes.v1beta1.IncidentListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getIncidentsList()
         .equals(other.getIncidentsList());
     return result;
@@ -213,11 +166,7 @@ public  final class IncidentListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getIncidentsCount() > 0) {
       hash = (37 * hash) + INCIDENTS_FIELD_NUMBER;
       hash = (53 * hash) + getIncidentsList().hashCode();
@@ -341,15 +290,9 @@ public  final class IncidentListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (incidentsBuilder_ == null) {
         incidents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         incidentsBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class IncidentListResponse extends
     public com.appscode.api.kubernetes.v1beta1.IncidentListResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.IncidentListResponse result = new com.appscode.api.kubernetes.v1beta1.IncidentListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (incidentsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           incidents_ = java.util.Collections.unmodifiableList(incidents_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.incidents_ = incidents_;
       } else {
         result.incidents_ = incidentsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class IncidentListResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.IncidentListResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.IncidentListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (incidentsBuilder_ == null) {
         if (!other.incidents_.isEmpty()) {
           if (incidents_.isEmpty()) {
             incidents_ = other.incidents_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureIncidentsIsMutable();
             incidents_.addAll(other.incidents_);
@@ -453,7 +386,7 @@ public  final class IncidentListResponse extends
             incidentsBuilder_.dispose();
             incidentsBuilder_ = null;
             incidents_ = other.incidents_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             incidentsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getIncidentsFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class IncidentListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.kubernetes.v1beta1.Incident> incidents_ =
       java.util.Collections.emptyList();
     private void ensureIncidentsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         incidents_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta1.Incident>(incidents_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class IncidentListResponse extends
         com.appscode.api.kubernetes.v1beta1.Incident, com.appscode.api.kubernetes.v1beta1.Incident.Builder, com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder> incidentsBuilder_;
 
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta1.Incident> getIncidentsList() {
       if (incidentsBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class IncidentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public int getIncidentsCount() {
       if (incidentsBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class IncidentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Incident getIncidents(int index) {
       if (incidentsBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class IncidentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder setIncidents(
         int index, com.appscode.api.kubernetes.v1beta1.Incident value) {
@@ -666,7 +482,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder setIncidents(
         int index, com.appscode.api.kubernetes.v1beta1.Incident.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder addIncidents(com.appscode.api.kubernetes.v1beta1.Incident value) {
       if (incidentsBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder addIncidents(
         int index, com.appscode.api.kubernetes.v1beta1.Incident value) {
@@ -713,7 +529,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder addIncidents(
         com.appscode.api.kubernetes.v1beta1.Incident.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder addIncidents(
         int index, com.appscode.api.kubernetes.v1beta1.Incident.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder addAllIncidents(
         java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta1.Incident> values) {
@@ -756,12 +572,12 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder clearIncidents() {
       if (incidentsBuilder_ == null) {
         incidents_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         incidentsBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public Builder removeIncidents(int index) {
       if (incidentsBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class IncidentListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Incident.Builder getIncidentsBuilder(
         int index) {
       return getIncidentsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder getIncidentsOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class IncidentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder> 
          getIncidentsOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class IncidentListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Incident.Builder addIncidentsBuilder() {
       return getIncidentsFieldBuilder().addBuilder(
           com.appscode.api.kubernetes.v1beta1.Incident.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Incident.Builder addIncidentsBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class IncidentListResponse extends
           index, com.appscode.api.kubernetes.v1beta1.Incident.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta1.Incident.Builder> 
          getIncidentsBuilderList() {
@@ -838,7 +654,7 @@ public  final class IncidentListResponse extends
         incidentsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta1.Incident, com.appscode.api.kubernetes.v1beta1.Incident.Builder, com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder>(
                 incidents_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         incidents_ = null;

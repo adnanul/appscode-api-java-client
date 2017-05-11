@@ -106,19 +106,19 @@ public  final class ConfigMap extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -274,7 +274,7 @@ public  final class ConfigMap extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -539,13 +539,13 @@ public  final class ConfigMap extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -555,7 +555,7 @@ public  final class ConfigMap extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -571,7 +571,7 @@ public  final class ConfigMap extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -585,7 +585,7 @@ public  final class ConfigMap extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -603,7 +603,7 @@ public  final class ConfigMap extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -617,7 +617,7 @@ public  final class ConfigMap extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -625,7 +625,7 @@ public  final class ConfigMap extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -636,7 +636,7 @@ public  final class ConfigMap extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -729,7 +729,8 @@ public  final class ConfigMap extends
     }
 
     public Builder clearData() {
-      getMutableData().clear();
+      internalGetMutableData().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -739,7 +740,8 @@ public  final class ConfigMap extends
     public Builder removeData(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableData().remove(key);
+      internalGetMutableData().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -758,7 +760,8 @@ public  final class ConfigMap extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableData().put(key, value);
+      internalGetMutableData().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -767,7 +770,8 @@ public  final class ConfigMap extends
 
     public Builder putAllData(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableData().putAll(values);
+      internalGetMutableData().getMutableMap()
+          .putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

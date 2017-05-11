@@ -8,28 +8,15 @@ public interface CredentialDescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.credential.v1beta1.Credential credential = 2;</code>
+   * <code>.appscode.credential.v1beta1.Credential credential = 1;</code>
    */
   boolean hasCredential();
   /**
-   * <code>optional .appscode.credential.v1beta1.Credential credential = 2;</code>
+   * <code>.appscode.credential.v1beta1.Credential credential = 1;</code>
    */
   com.appscode.api.credential.v1beta1.Credential getCredential();
   /**
-   * <code>optional .appscode.credential.v1beta1.Credential credential = 2;</code>
+   * <code>.appscode.credential.v1beta1.Credential credential = 1;</code>
    */
   com.appscode.api.credential.v1beta1.CredentialOrBuilder getCredentialOrBuilder();
 }

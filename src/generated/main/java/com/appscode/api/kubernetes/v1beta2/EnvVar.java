@@ -99,7 +99,7 @@ public  final class EnvVar extends
    * Name of the environment variable. Must be a C_IDENTIFIER.
    * </pre>
    *
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -118,7 +118,7 @@ public  final class EnvVar extends
    * Name of the environment variable. Must be a C_IDENTIFIER.
    * </pre>
    *
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -149,7 +149,7 @@ public  final class EnvVar extends
    * +optional
    * </pre>
    *
-   * <code>optional string value = 2;</code>
+   * <code>string value = 2;</code>
    */
   public java.lang.String getValue() {
     java.lang.Object ref = value_;
@@ -176,7 +176,7 @@ public  final class EnvVar extends
    * +optional
    * </pre>
    *
-   * <code>optional string value = 2;</code>
+   * <code>string value = 2;</code>
    */
   public com.google.protobuf.ByteString
       getValueBytes() {
@@ -200,7 +200,7 @@ public  final class EnvVar extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   public boolean hasValueFrom() {
     return valueFrom_ != null;
@@ -211,7 +211,7 @@ public  final class EnvVar extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EnvVarSource getValueFrom() {
     return valueFrom_ == null ? com.appscode.api.kubernetes.v1beta2.EnvVarSource.getDefaultInstance() : valueFrom_;
@@ -222,7 +222,7 @@ public  final class EnvVar extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EnvVarSourceOrBuilder getValueFromOrBuilder() {
     return getValueFrom();
@@ -300,7 +300,7 @@ public  final class EnvVar extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + VALUE_FIELD_NUMBER;
@@ -550,7 +550,7 @@ public  final class EnvVar extends
      * Name of the environment variable. Must be a C_IDENTIFIER.
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -569,7 +569,7 @@ public  final class EnvVar extends
      * Name of the environment variable. Must be a C_IDENTIFIER.
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -589,7 +589,7 @@ public  final class EnvVar extends
      * Name of the environment variable. Must be a C_IDENTIFIER.
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -606,7 +606,7 @@ public  final class EnvVar extends
      * Name of the environment variable. Must be a C_IDENTIFIER.
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -619,7 +619,7 @@ public  final class EnvVar extends
      * Name of the environment variable. Must be a C_IDENTIFIER.
      * </pre>
      *
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -647,7 +647,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional string value = 2;</code>
+     * <code>string value = 2;</code>
      */
     public java.lang.String getValue() {
       java.lang.Object ref = value_;
@@ -674,7 +674,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional string value = 2;</code>
+     * <code>string value = 2;</code>
      */
     public com.google.protobuf.ByteString
         getValueBytes() {
@@ -702,7 +702,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional string value = 2;</code>
+     * <code>string value = 2;</code>
      */
     public Builder setValue(
         java.lang.String value) {
@@ -727,7 +727,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional string value = 2;</code>
+     * <code>string value = 2;</code>
      */
     public Builder clearValue() {
       
@@ -748,7 +748,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional string value = 2;</code>
+     * <code>string value = 2;</code>
      */
     public Builder setValueBytes(
         com.google.protobuf.ByteString value) {
@@ -771,7 +771,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public boolean hasValueFrom() {
       return valueFromBuilder_ != null || valueFrom_ != null;
@@ -782,7 +782,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EnvVarSource getValueFrom() {
       if (valueFromBuilder_ == null) {
@@ -797,7 +797,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public Builder setValueFrom(com.appscode.api.kubernetes.v1beta2.EnvVarSource value) {
       if (valueFromBuilder_ == null) {
@@ -818,7 +818,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public Builder setValueFrom(
         com.appscode.api.kubernetes.v1beta2.EnvVarSource.Builder builderForValue) {
@@ -837,7 +837,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public Builder mergeValueFrom(com.appscode.api.kubernetes.v1beta2.EnvVarSource value) {
       if (valueFromBuilder_ == null) {
@@ -860,7 +860,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public Builder clearValueFrom() {
       if (valueFromBuilder_ == null) {
@@ -879,7 +879,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EnvVarSource.Builder getValueFromBuilder() {
       
@@ -892,7 +892,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EnvVarSourceOrBuilder getValueFromOrBuilder() {
       if (valueFromBuilder_ != null) {
@@ -908,7 +908,7 @@ public  final class EnvVar extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.EnvVarSource, com.appscode.api.kubernetes.v1beta2.EnvVarSource.Builder, com.appscode.api.kubernetes.v1beta2.EnvVarSourceOrBuilder> 

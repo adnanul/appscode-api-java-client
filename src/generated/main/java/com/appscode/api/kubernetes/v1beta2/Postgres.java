@@ -109,26 +109,26 @@ public  final class Postgres extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>int64 creation_time = 1;</code>
      */
     long getCreationTime();
 
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
@@ -218,7 +218,7 @@ public  final class Postgres extends
     public static final int CREATION_TIME_FIELD_NUMBER = 1;
     private long creationTime_;
     /**
-     * <code>optional int64 creation_time = 1;</code>
+     * <code>int64 creation_time = 1;</code>
      */
     public long getCreationTime() {
       return creationTime_;
@@ -227,7 +227,7 @@ public  final class Postgres extends
     public static final int PHASE_FIELD_NUMBER = 2;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -242,7 +242,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -261,7 +261,7 @@ public  final class Postgres extends
     public static final int REASON_FIELD_NUMBER = 3;
     private volatile java.lang.Object reason_;
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -276,7 +276,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -361,7 +361,7 @@ public  final class Postgres extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCreationTime());
@@ -598,13 +598,13 @@ public  final class Postgres extends
 
       private long creationTime_ ;
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public long getCreationTime() {
         return creationTime_;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public Builder setCreationTime(long value) {
         
@@ -613,7 +613,7 @@ public  final class Postgres extends
         return this;
       }
       /**
-       * <code>optional int64 creation_time = 1;</code>
+       * <code>int64 creation_time = 1;</code>
        */
       public Builder clearCreationTime() {
         
@@ -624,7 +624,7 @@ public  final class Postgres extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -639,7 +639,7 @@ public  final class Postgres extends
         }
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -655,7 +655,7 @@ public  final class Postgres extends
         }
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -668,7 +668,7 @@ public  final class Postgres extends
         return this;
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder clearPhase() {
         
@@ -677,7 +677,7 @@ public  final class Postgres extends
         return this;
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -693,7 +693,7 @@ public  final class Postgres extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -708,7 +708,7 @@ public  final class Postgres extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -724,7 +724,7 @@ public  final class Postgres extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -737,7 +737,7 @@ public  final class Postgres extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder clearReason() {
         
@@ -746,7 +746,7 @@ public  final class Postgres extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -811,19 +811,19 @@ public  final class Postgres extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -832,19 +832,19 @@ public  final class Postgres extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.PostgresSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PostgresSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.PostgresSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -853,19 +853,19 @@ public  final class Postgres extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Postgres.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Postgres.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Postgres.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -951,7 +951,7 @@ public  final class Postgres extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1217,13 +1217,13 @@ public  final class Postgres extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -1233,7 +1233,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1249,7 +1249,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -1263,7 +1263,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1281,7 +1281,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -1295,7 +1295,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -1303,7 +1303,7 @@ public  final class Postgres extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -1314,7 +1314,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -1334,13 +1334,13 @@ public  final class Postgres extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresSpec getSpec() {
       if (specBuilder_ == null) {
@@ -1350,7 +1350,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
       if (specBuilder_ == null) {
@@ -1366,7 +1366,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder builderForValue) {
@@ -1380,7 +1380,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
       if (specBuilder_ == null) {
@@ -1398,7 +1398,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1412,7 +1412,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder getSpecBuilder() {
       
@@ -1420,7 +1420,7 @@ public  final class Postgres extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1431,7 +1431,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> 
@@ -1451,13 +1451,13 @@ public  final class Postgres extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Postgres.Status, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder, com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Postgres.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -1467,7 +1467,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Postgres.Status value) {
       if (statusBuilder_ == null) {
@@ -1483,7 +1483,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder builderForValue) {
@@ -1497,7 +1497,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Postgres.Status value) {
       if (statusBuilder_ == null) {
@@ -1515,7 +1515,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -1529,7 +1529,7 @@ public  final class Postgres extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder getStatusBuilder() {
       
@@ -1537,7 +1537,7 @@ public  final class Postgres extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -1548,7 +1548,7 @@ public  final class Postgres extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Postgres.Status, com.appscode.api.kubernetes.v1beta2.Postgres.Status.Builder, com.appscode.api.kubernetes.v1beta2.Postgres.StatusOrBuilder> 

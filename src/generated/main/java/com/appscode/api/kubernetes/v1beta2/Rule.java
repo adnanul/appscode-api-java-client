@@ -384,7 +384,7 @@ public  final class Rule extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getVerbsCount() > 0) {
       hash = (37 * hash) + VERBS_FIELD_NUMBER;
       hash = (53 * hash) + getVerbsList().hashCode();

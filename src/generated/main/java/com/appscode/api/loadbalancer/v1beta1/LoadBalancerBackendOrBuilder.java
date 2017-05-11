@@ -8,21 +8,21 @@ public interface LoadBalancerBackendOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string service_name = 1;</code>
+   * <code>string service_name = 1;</code>
    */
   java.lang.String getServiceName();
   /**
-   * <code>optional string service_name = 1;</code>
+   * <code>string service_name = 1;</code>
    */
   com.google.protobuf.ByteString
       getServiceNameBytes();
 
   /**
-   * <code>optional string service_port = 2;</code>
+   * <code>string service_port = 2;</code>
    */
   java.lang.String getServicePort();
   /**
-   * <code>optional string service_port = 2;</code>
+   * <code>string service_port = 2;</code>
    */
   com.google.protobuf.ByteString
       getServicePortBytes();

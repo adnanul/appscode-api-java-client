@@ -116,11 +116,11 @@ public  final class Service extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     java.lang.String getType();
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     com.google.protobuf.ByteString
         getTypeBytes();
@@ -184,11 +184,11 @@ public  final class Service extends
         java.lang.String key);
 
     /**
-     * <code>optional string clusterIP = 4;</code>
+     * <code>string clusterIP = 4;</code>
      */
     java.lang.String getClusterIP();
     /**
-     * <code>optional string clusterIP = 4;</code>
+     * <code>string clusterIP = 4;</code>
      */
     com.google.protobuf.ByteString
         getClusterIPBytes();
@@ -213,31 +213,31 @@ public  final class Service extends
         getExternalIPsBytes(int index);
 
     /**
-     * <code>optional string loadbalancerIP = 6;</code>
+     * <code>string loadbalancerIP = 6;</code>
      */
     java.lang.String getLoadbalancerIP();
     /**
-     * <code>optional string loadbalancerIP = 6;</code>
+     * <code>string loadbalancerIP = 6;</code>
      */
     com.google.protobuf.ByteString
         getLoadbalancerIPBytes();
 
     /**
-     * <code>optional string external_name = 7;</code>
+     * <code>string external_name = 7;</code>
      */
     java.lang.String getExternalName();
     /**
-     * <code>optional string external_name = 7;</code>
+     * <code>string external_name = 7;</code>
      */
     com.google.protobuf.ByteString
         getExternalNameBytes();
 
     /**
-     * <code>optional string session_affinity = 8;</code>
+     * <code>string session_affinity = 8;</code>
      */
     java.lang.String getSessionAffinity();
     /**
-     * <code>optional string session_affinity = 8;</code>
+     * <code>string session_affinity = 8;</code>
      */
     com.google.protobuf.ByteString
         getSessionAffinityBytes();
@@ -426,42 +426,42 @@ public  final class Service extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       java.lang.String getName();
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
       /**
-       * <code>optional string protocol = 2;</code>
+       * <code>string protocol = 2;</code>
        */
       java.lang.String getProtocol();
       /**
-       * <code>optional string protocol = 2;</code>
+       * <code>string protocol = 2;</code>
        */
       com.google.protobuf.ByteString
           getProtocolBytes();
 
       /**
-       * <code>optional int32 port = 3;</code>
+       * <code>int32 port = 3;</code>
        */
       int getPort();
 
       /**
-       * <code>optional string target_port = 4;</code>
+       * <code>string target_port = 4;</code>
        */
       java.lang.String getTargetPort();
       /**
-       * <code>optional string target_port = 4;</code>
+       * <code>string target_port = 4;</code>
        */
       com.google.protobuf.ByteString
           getTargetPortBytes();
 
       /**
-       * <code>optional int32 node_port = 5;</code>
+       * <code>int32 node_port = 5;</code>
        */
       int getNodePort();
     }
@@ -563,7 +563,7 @@ public  final class Service extends
       public static final int NAME_FIELD_NUMBER = 1;
       private volatile java.lang.Object name_;
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -578,7 +578,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -597,7 +597,7 @@ public  final class Service extends
       public static final int PROTOCOL_FIELD_NUMBER = 2;
       private volatile java.lang.Object protocol_;
       /**
-       * <code>optional string protocol = 2;</code>
+       * <code>string protocol = 2;</code>
        */
       public java.lang.String getProtocol() {
         java.lang.Object ref = protocol_;
@@ -612,7 +612,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string protocol = 2;</code>
+       * <code>string protocol = 2;</code>
        */
       public com.google.protobuf.ByteString
           getProtocolBytes() {
@@ -631,7 +631,7 @@ public  final class Service extends
       public static final int PORT_FIELD_NUMBER = 3;
       private int port_;
       /**
-       * <code>optional int32 port = 3;</code>
+       * <code>int32 port = 3;</code>
        */
       public int getPort() {
         return port_;
@@ -640,7 +640,7 @@ public  final class Service extends
       public static final int TARGET_PORT_FIELD_NUMBER = 4;
       private volatile java.lang.Object targetPort_;
       /**
-       * <code>optional string target_port = 4;</code>
+       * <code>string target_port = 4;</code>
        */
       public java.lang.String getTargetPort() {
         java.lang.Object ref = targetPort_;
@@ -655,7 +655,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string target_port = 4;</code>
+       * <code>string target_port = 4;</code>
        */
       public com.google.protobuf.ByteString
           getTargetPortBytes() {
@@ -674,7 +674,7 @@ public  final class Service extends
       public static final int NODE_PORT_FIELD_NUMBER = 5;
       private int nodePort_;
       /**
-       * <code>optional int32 node_port = 5;</code>
+       * <code>int32 node_port = 5;</code>
        */
       public int getNodePort() {
         return nodePort_;
@@ -766,7 +766,7 @@ public  final class Service extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + NAME_FIELD_NUMBER;
         hash = (53 * hash) + getName().hashCode();
         hash = (37 * hash) + PROTOCOL_FIELD_NUMBER;
@@ -1019,7 +1019,7 @@ public  final class Service extends
 
         private java.lang.Object name_ = "";
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
@@ -1034,7 +1034,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -1050,7 +1050,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setName(
             java.lang.String value) {
@@ -1063,7 +1063,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder clearName() {
           
@@ -1072,7 +1072,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -1088,7 +1088,7 @@ public  final class Service extends
 
         private java.lang.Object protocol_ = "";
         /**
-         * <code>optional string protocol = 2;</code>
+         * <code>string protocol = 2;</code>
          */
         public java.lang.String getProtocol() {
           java.lang.Object ref = protocol_;
@@ -1103,7 +1103,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string protocol = 2;</code>
+         * <code>string protocol = 2;</code>
          */
         public com.google.protobuf.ByteString
             getProtocolBytes() {
@@ -1119,7 +1119,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string protocol = 2;</code>
+         * <code>string protocol = 2;</code>
          */
         public Builder setProtocol(
             java.lang.String value) {
@@ -1132,7 +1132,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string protocol = 2;</code>
+         * <code>string protocol = 2;</code>
          */
         public Builder clearProtocol() {
           
@@ -1141,7 +1141,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string protocol = 2;</code>
+         * <code>string protocol = 2;</code>
          */
         public Builder setProtocolBytes(
             com.google.protobuf.ByteString value) {
@@ -1157,13 +1157,13 @@ public  final class Service extends
 
         private int port_ ;
         /**
-         * <code>optional int32 port = 3;</code>
+         * <code>int32 port = 3;</code>
          */
         public int getPort() {
           return port_;
         }
         /**
-         * <code>optional int32 port = 3;</code>
+         * <code>int32 port = 3;</code>
          */
         public Builder setPort(int value) {
           
@@ -1172,7 +1172,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional int32 port = 3;</code>
+         * <code>int32 port = 3;</code>
          */
         public Builder clearPort() {
           
@@ -1183,7 +1183,7 @@ public  final class Service extends
 
         private java.lang.Object targetPort_ = "";
         /**
-         * <code>optional string target_port = 4;</code>
+         * <code>string target_port = 4;</code>
          */
         public java.lang.String getTargetPort() {
           java.lang.Object ref = targetPort_;
@@ -1198,7 +1198,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string target_port = 4;</code>
+         * <code>string target_port = 4;</code>
          */
         public com.google.protobuf.ByteString
             getTargetPortBytes() {
@@ -1214,7 +1214,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string target_port = 4;</code>
+         * <code>string target_port = 4;</code>
          */
         public Builder setTargetPort(
             java.lang.String value) {
@@ -1227,7 +1227,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string target_port = 4;</code>
+         * <code>string target_port = 4;</code>
          */
         public Builder clearTargetPort() {
           
@@ -1236,7 +1236,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string target_port = 4;</code>
+         * <code>string target_port = 4;</code>
          */
         public Builder setTargetPortBytes(
             com.google.protobuf.ByteString value) {
@@ -1252,13 +1252,13 @@ public  final class Service extends
 
         private int nodePort_ ;
         /**
-         * <code>optional int32 node_port = 5;</code>
+         * <code>int32 node_port = 5;</code>
          */
         public int getNodePort() {
           return nodePort_;
         }
         /**
-         * <code>optional int32 node_port = 5;</code>
+         * <code>int32 node_port = 5;</code>
          */
         public Builder setNodePort(int value) {
           
@@ -1267,7 +1267,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional int32 node_port = 5;</code>
+         * <code>int32 node_port = 5;</code>
          */
         public Builder clearNodePort() {
           
@@ -1328,7 +1328,7 @@ public  final class Service extends
     public static final int TYPE_FIELD_NUMBER = 1;
     private volatile java.lang.Object type_;
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1343,7 +1343,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1473,7 +1473,7 @@ public  final class Service extends
     public static final int CLUSTERIP_FIELD_NUMBER = 4;
     private volatile java.lang.Object clusterIP_;
     /**
-     * <code>optional string clusterIP = 4;</code>
+     * <code>string clusterIP = 4;</code>
      */
     public java.lang.String getClusterIP() {
       java.lang.Object ref = clusterIP_;
@@ -1488,7 +1488,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string clusterIP = 4;</code>
+     * <code>string clusterIP = 4;</code>
      */
     public com.google.protobuf.ByteString
         getClusterIPBytes() {
@@ -1536,7 +1536,7 @@ public  final class Service extends
     public static final int LOADBALANCERIP_FIELD_NUMBER = 6;
     private volatile java.lang.Object loadbalancerIP_;
     /**
-     * <code>optional string loadbalancerIP = 6;</code>
+     * <code>string loadbalancerIP = 6;</code>
      */
     public java.lang.String getLoadbalancerIP() {
       java.lang.Object ref = loadbalancerIP_;
@@ -1551,7 +1551,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string loadbalancerIP = 6;</code>
+     * <code>string loadbalancerIP = 6;</code>
      */
     public com.google.protobuf.ByteString
         getLoadbalancerIPBytes() {
@@ -1570,7 +1570,7 @@ public  final class Service extends
     public static final int EXTERNAL_NAME_FIELD_NUMBER = 7;
     private volatile java.lang.Object externalName_;
     /**
-     * <code>optional string external_name = 7;</code>
+     * <code>string external_name = 7;</code>
      */
     public java.lang.String getExternalName() {
       java.lang.Object ref = externalName_;
@@ -1585,7 +1585,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string external_name = 7;</code>
+     * <code>string external_name = 7;</code>
      */
     public com.google.protobuf.ByteString
         getExternalNameBytes() {
@@ -1604,7 +1604,7 @@ public  final class Service extends
     public static final int SESSION_AFFINITY_FIELD_NUMBER = 8;
     private volatile java.lang.Object sessionAffinity_;
     /**
-     * <code>optional string session_affinity = 8;</code>
+     * <code>string session_affinity = 8;</code>
      */
     public java.lang.String getSessionAffinity() {
       java.lang.Object ref = sessionAffinity_;
@@ -1619,7 +1619,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string session_affinity = 8;</code>
+     * <code>string session_affinity = 8;</code>
      */
     public com.google.protobuf.ByteString
         getSessionAffinityBytes() {
@@ -1801,7 +1801,7 @@ public  final class Service extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
       hash = (53 * hash) + getType().hashCode();
       if (getPortsCount() > 0) {
@@ -2179,7 +2179,7 @@ public  final class Service extends
 
       private java.lang.Object type_ = "";
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public java.lang.String getType() {
         java.lang.Object ref = type_;
@@ -2194,7 +2194,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
@@ -2210,7 +2210,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder setType(
           java.lang.String value) {
@@ -2223,7 +2223,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder clearType() {
         
@@ -2232,7 +2232,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public Builder setTypeBytes(
           com.google.protobuf.ByteString value) {
@@ -2563,7 +2563,8 @@ public  final class Service extends
       }
 
       public Builder clearSelectors() {
-        getMutableSelectors().clear();
+        internalGetMutableSelectors().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -2573,7 +2574,8 @@ public  final class Service extends
       public Builder removeSelectors(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableSelectors().remove(key);
+        internalGetMutableSelectors().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -2592,7 +2594,8 @@ public  final class Service extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableSelectors().put(key, value);
+        internalGetMutableSelectors().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -2601,13 +2604,14 @@ public  final class Service extends
 
       public Builder putAllSelectors(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableSelectors().putAll(values);
+        internalGetMutableSelectors().getMutableMap()
+            .putAll(values);
         return this;
       }
 
       private java.lang.Object clusterIP_ = "";
       /**
-       * <code>optional string clusterIP = 4;</code>
+       * <code>string clusterIP = 4;</code>
        */
       public java.lang.String getClusterIP() {
         java.lang.Object ref = clusterIP_;
@@ -2622,7 +2626,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string clusterIP = 4;</code>
+       * <code>string clusterIP = 4;</code>
        */
       public com.google.protobuf.ByteString
           getClusterIPBytes() {
@@ -2638,7 +2642,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string clusterIP = 4;</code>
+       * <code>string clusterIP = 4;</code>
        */
       public Builder setClusterIP(
           java.lang.String value) {
@@ -2651,7 +2655,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string clusterIP = 4;</code>
+       * <code>string clusterIP = 4;</code>
        */
       public Builder clearClusterIP() {
         
@@ -2660,7 +2664,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string clusterIP = 4;</code>
+       * <code>string clusterIP = 4;</code>
        */
       public Builder setClusterIPBytes(
           com.google.protobuf.ByteString value) {
@@ -2770,7 +2774,7 @@ public  final class Service extends
 
       private java.lang.Object loadbalancerIP_ = "";
       /**
-       * <code>optional string loadbalancerIP = 6;</code>
+       * <code>string loadbalancerIP = 6;</code>
        */
       public java.lang.String getLoadbalancerIP() {
         java.lang.Object ref = loadbalancerIP_;
@@ -2785,7 +2789,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string loadbalancerIP = 6;</code>
+       * <code>string loadbalancerIP = 6;</code>
        */
       public com.google.protobuf.ByteString
           getLoadbalancerIPBytes() {
@@ -2801,7 +2805,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string loadbalancerIP = 6;</code>
+       * <code>string loadbalancerIP = 6;</code>
        */
       public Builder setLoadbalancerIP(
           java.lang.String value) {
@@ -2814,7 +2818,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string loadbalancerIP = 6;</code>
+       * <code>string loadbalancerIP = 6;</code>
        */
       public Builder clearLoadbalancerIP() {
         
@@ -2823,7 +2827,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string loadbalancerIP = 6;</code>
+       * <code>string loadbalancerIP = 6;</code>
        */
       public Builder setLoadbalancerIPBytes(
           com.google.protobuf.ByteString value) {
@@ -2839,7 +2843,7 @@ public  final class Service extends
 
       private java.lang.Object externalName_ = "";
       /**
-       * <code>optional string external_name = 7;</code>
+       * <code>string external_name = 7;</code>
        */
       public java.lang.String getExternalName() {
         java.lang.Object ref = externalName_;
@@ -2854,7 +2858,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string external_name = 7;</code>
+       * <code>string external_name = 7;</code>
        */
       public com.google.protobuf.ByteString
           getExternalNameBytes() {
@@ -2870,7 +2874,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string external_name = 7;</code>
+       * <code>string external_name = 7;</code>
        */
       public Builder setExternalName(
           java.lang.String value) {
@@ -2883,7 +2887,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string external_name = 7;</code>
+       * <code>string external_name = 7;</code>
        */
       public Builder clearExternalName() {
         
@@ -2892,7 +2896,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string external_name = 7;</code>
+       * <code>string external_name = 7;</code>
        */
       public Builder setExternalNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2908,7 +2912,7 @@ public  final class Service extends
 
       private java.lang.Object sessionAffinity_ = "";
       /**
-       * <code>optional string session_affinity = 8;</code>
+       * <code>string session_affinity = 8;</code>
        */
       public java.lang.String getSessionAffinity() {
         java.lang.Object ref = sessionAffinity_;
@@ -2923,7 +2927,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string session_affinity = 8;</code>
+       * <code>string session_affinity = 8;</code>
        */
       public com.google.protobuf.ByteString
           getSessionAffinityBytes() {
@@ -2939,7 +2943,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string session_affinity = 8;</code>
+       * <code>string session_affinity = 8;</code>
        */
       public Builder setSessionAffinity(
           java.lang.String value) {
@@ -2952,7 +2956,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string session_affinity = 8;</code>
+       * <code>string session_affinity = 8;</code>
        */
       public Builder clearSessionAffinity() {
         
@@ -2961,7 +2965,7 @@ public  final class Service extends
         return this;
       }
       /**
-       * <code>optional string session_affinity = 8;</code>
+       * <code>string session_affinity = 8;</code>
        */
       public Builder setSessionAffinityBytes(
           com.google.protobuf.ByteString value) {
@@ -3225,21 +3229,21 @@ public  final class Service extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string host_name = 1;</code>
+       * <code>string host_name = 1;</code>
        */
       java.lang.String getHostName();
       /**
-       * <code>optional string host_name = 1;</code>
+       * <code>string host_name = 1;</code>
        */
       com.google.protobuf.ByteString
           getHostNameBytes();
 
       /**
-       * <code>optional string IP = 2;</code>
+       * <code>string IP = 2;</code>
        */
       java.lang.String getIP();
       /**
-       * <code>optional string IP = 2;</code>
+       * <code>string IP = 2;</code>
        */
       com.google.protobuf.ByteString
           getIPBytes();
@@ -3323,7 +3327,7 @@ public  final class Service extends
       public static final int HOST_NAME_FIELD_NUMBER = 1;
       private volatile java.lang.Object hostName_;
       /**
-       * <code>optional string host_name = 1;</code>
+       * <code>string host_name = 1;</code>
        */
       public java.lang.String getHostName() {
         java.lang.Object ref = hostName_;
@@ -3338,7 +3342,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string host_name = 1;</code>
+       * <code>string host_name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getHostNameBytes() {
@@ -3357,7 +3361,7 @@ public  final class Service extends
       public static final int IP_FIELD_NUMBER = 2;
       private volatile java.lang.Object iP_;
       /**
-       * <code>optional string IP = 2;</code>
+       * <code>string IP = 2;</code>
        */
       public java.lang.String getIP() {
         java.lang.Object ref = iP_;
@@ -3372,7 +3376,7 @@ public  final class Service extends
         }
       }
       /**
-       * <code>optional string IP = 2;</code>
+       * <code>string IP = 2;</code>
        */
       public com.google.protobuf.ByteString
           getIPBytes() {
@@ -3448,7 +3452,7 @@ public  final class Service extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + HOST_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getHostName().hashCode();
         hash = (37 * hash) + IP_FIELD_NUMBER;
@@ -3676,7 +3680,7 @@ public  final class Service extends
 
         private java.lang.Object hostName_ = "";
         /**
-         * <code>optional string host_name = 1;</code>
+         * <code>string host_name = 1;</code>
          */
         public java.lang.String getHostName() {
           java.lang.Object ref = hostName_;
@@ -3691,7 +3695,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string host_name = 1;</code>
+         * <code>string host_name = 1;</code>
          */
         public com.google.protobuf.ByteString
             getHostNameBytes() {
@@ -3707,7 +3711,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string host_name = 1;</code>
+         * <code>string host_name = 1;</code>
          */
         public Builder setHostName(
             java.lang.String value) {
@@ -3720,7 +3724,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string host_name = 1;</code>
+         * <code>string host_name = 1;</code>
          */
         public Builder clearHostName() {
           
@@ -3729,7 +3733,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string host_name = 1;</code>
+         * <code>string host_name = 1;</code>
          */
         public Builder setHostNameBytes(
             com.google.protobuf.ByteString value) {
@@ -3745,7 +3749,7 @@ public  final class Service extends
 
         private java.lang.Object iP_ = "";
         /**
-         * <code>optional string IP = 2;</code>
+         * <code>string IP = 2;</code>
          */
         public java.lang.String getIP() {
           java.lang.Object ref = iP_;
@@ -3760,7 +3764,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string IP = 2;</code>
+         * <code>string IP = 2;</code>
          */
         public com.google.protobuf.ByteString
             getIPBytes() {
@@ -3776,7 +3780,7 @@ public  final class Service extends
           }
         }
         /**
-         * <code>optional string IP = 2;</code>
+         * <code>string IP = 2;</code>
          */
         public Builder setIP(
             java.lang.String value) {
@@ -3789,7 +3793,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string IP = 2;</code>
+         * <code>string IP = 2;</code>
          */
         public Builder clearIP() {
           
@@ -3798,7 +3802,7 @@ public  final class Service extends
           return this;
         }
         /**
-         * <code>optional string IP = 2;</code>
+         * <code>string IP = 2;</code>
          */
         public Builder setIPBytes(
             com.google.protobuf.ByteString value) {
@@ -3948,7 +3952,7 @@ public  final class Service extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getLoadbalancerIngressesCount() > 0) {
         hash = (37 * hash) + LOADBALANCER_INGRESSES_FIELD_NUMBER;
         hash = (53 * hash) + getLoadbalancerIngressesList().hashCode();
@@ -4495,19 +4499,19 @@ public  final class Service extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -4516,7 +4520,7 @@ public  final class Service extends
   public static final int APP_FIELD_NUMBER = 2;
   private volatile java.lang.Object app_;
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public java.lang.String getApp() {
     java.lang.Object ref = app_;
@@ -4531,7 +4535,7 @@ public  final class Service extends
     }
   }
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAppBytes() {
@@ -4550,19 +4554,19 @@ public  final class Service extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Service.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Service.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Service.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Service.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -4571,19 +4575,19 @@ public  final class Service extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.Service.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Service.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Service.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Service.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -4677,7 +4681,7 @@ public  final class Service extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -4952,13 +4956,13 @@ public  final class Service extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -4968,7 +4972,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -4984,7 +4988,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -4998,7 +5002,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -5016,7 +5020,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -5030,7 +5034,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -5038,7 +5042,7 @@ public  final class Service extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -5049,7 +5053,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -5067,7 +5071,7 @@ public  final class Service extends
 
     private java.lang.Object app_ = "";
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public java.lang.String getApp() {
       java.lang.Object ref = app_;
@@ -5082,7 +5086,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAppBytes() {
@@ -5098,7 +5102,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setApp(
         java.lang.String value) {
@@ -5111,7 +5115,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder clearApp() {
       
@@ -5120,7 +5124,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setAppBytes(
         com.google.protobuf.ByteString value) {
@@ -5138,13 +5142,13 @@ public  final class Service extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service.Spec, com.appscode.api.kubernetes.v1beta2.Service.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Service.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -5154,7 +5158,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Service.Spec value) {
       if (specBuilder_ == null) {
@@ -5170,7 +5174,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Service.Spec.Builder builderForValue) {
@@ -5184,7 +5188,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Service.Spec value) {
       if (specBuilder_ == null) {
@@ -5202,7 +5206,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -5216,7 +5220,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.Spec.Builder getSpecBuilder() {
       
@@ -5224,7 +5228,7 @@ public  final class Service extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -5235,7 +5239,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Spec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service.Spec, com.appscode.api.kubernetes.v1beta2.Service.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Service.SpecOrBuilder> 
@@ -5255,13 +5259,13 @@ public  final class Service extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service.Status, com.appscode.api.kubernetes.v1beta2.Service.Status.Builder, com.appscode.api.kubernetes.v1beta2.Service.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -5271,7 +5275,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Service.Status value) {
       if (statusBuilder_ == null) {
@@ -5287,7 +5291,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Service.Status.Builder builderForValue) {
@@ -5301,7 +5305,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Service.Status value) {
       if (statusBuilder_ == null) {
@@ -5319,7 +5323,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -5333,7 +5337,7 @@ public  final class Service extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.Status.Builder getStatusBuilder() {
       
@@ -5341,7 +5345,7 @@ public  final class Service extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -5352,7 +5356,7 @@ public  final class Service extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service.Status status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service.Status, com.appscode.api.kubernetes.v1beta2.Service.Status.Builder, com.appscode.api.kubernetes.v1beta2.Service.StatusOrBuilder> 

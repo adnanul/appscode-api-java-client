@@ -12,7 +12,7 @@ public interface VsphereVirtualDiskVolumeSourceOrBuilder extends
    * Path that identifies vSphere volume vmdk
    * </pre>
    *
-   * <code>optional string volumePath = 1;</code>
+   * <code>string volumePath = 1;</code>
    */
   java.lang.String getVolumePath();
   /**
@@ -20,7 +20,7 @@ public interface VsphereVirtualDiskVolumeSourceOrBuilder extends
    * Path that identifies vSphere volume vmdk
    * </pre>
    *
-   * <code>optional string volumePath = 1;</code>
+   * <code>string volumePath = 1;</code>
    */
   com.google.protobuf.ByteString
       getVolumePathBytes();
@@ -32,7 +32,7 @@ public interface VsphereVirtualDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   java.lang.String getFsType();
   /**
@@ -42,7 +42,7 @@ public interface VsphereVirtualDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();

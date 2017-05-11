@@ -13,7 +13,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   java.lang.String getVolumeID();
   /**
@@ -22,7 +22,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   com.google.protobuf.ByteString
       getVolumeIDBytes();
@@ -36,7 +36,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   java.lang.String getFsType();
   /**
@@ -48,7 +48,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -61,7 +61,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
    * </pre>
    *
-   * <code>optional int32 partition = 3;</code>
+   * <code>int32 partition = 3;</code>
    */
   int getPartition();
 
@@ -72,7 +72,7 @@ public interface AWSElasticBlockStoreVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   boolean getReadOnly();
 }

@@ -162,7 +162,7 @@ public  final class DownwardAPIVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 defaultMode = 2;</code>
+   * <code>int32 defaultMode = 2;</code>
    */
   public int getDefaultMode() {
     return defaultMode_;
@@ -230,7 +230,7 @@ public  final class DownwardAPIVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getItemsCount() > 0) {
       hash = (37 * hash) + ITEMS_FIELD_NUMBER;
       hash = (53 * hash) + getItemsList().hashCode();
@@ -842,7 +842,7 @@ public  final class DownwardAPIVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 2;</code>
+     * <code>int32 defaultMode = 2;</code>
      */
     public int getDefaultMode() {
       return defaultMode_;
@@ -857,7 +857,7 @@ public  final class DownwardAPIVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 2;</code>
+     * <code>int32 defaultMode = 2;</code>
      */
     public Builder setDefaultMode(int value) {
       
@@ -875,7 +875,7 @@ public  final class DownwardAPIVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 2;</code>
+     * <code>int32 defaultMode = 2;</code>
      */
     public Builder clearDefaultMode() {
       

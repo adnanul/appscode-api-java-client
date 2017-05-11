@@ -288,7 +288,7 @@ public  final class Namespace extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getFinalizersCount() > 0) {
         hash = (37 * hash) + FINALIZERS_FIELD_NUMBER;
         hash = (53 * hash) + getFinalizersList().hashCode();
@@ -666,11 +666,11 @@ public  final class Namespace extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
@@ -747,7 +747,7 @@ public  final class Namespace extends
     public static final int PHASE_FIELD_NUMBER = 1;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -762,7 +762,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -830,7 +830,7 @@ public  final class Namespace extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1049,7 +1049,7 @@ public  final class Namespace extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -1064,7 +1064,7 @@ public  final class Namespace extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -1080,7 +1080,7 @@ public  final class Namespace extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -1093,7 +1093,7 @@ public  final class Namespace extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder clearPhase() {
         
@@ -1102,7 +1102,7 @@ public  final class Namespace extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -1167,19 +1167,19 @@ public  final class Namespace extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1188,19 +1188,19 @@ public  final class Namespace extends
   public static final int STATUS_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Namespace.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Namespace.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Namespace.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -1209,19 +1209,19 @@ public  final class Namespace extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1307,7 +1307,7 @@ public  final class Namespace extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1573,13 +1573,13 @@ public  final class Namespace extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -1589,7 +1589,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1605,7 +1605,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -1619,7 +1619,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1637,7 +1637,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -1651,7 +1651,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -1659,7 +1659,7 @@ public  final class Namespace extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -1670,7 +1670,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -1690,13 +1690,13 @@ public  final class Namespace extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace.Status, com.appscode.api.kubernetes.v1beta2.Namespace.Status.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -1706,7 +1706,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Namespace.Status value) {
       if (statusBuilder_ == null) {
@@ -1722,7 +1722,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Namespace.Status.Builder builderForValue) {
@@ -1736,7 +1736,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Namespace.Status value) {
       if (statusBuilder_ == null) {
@@ -1754,7 +1754,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -1768,7 +1768,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.Status.Builder getStatusBuilder() {
       
@@ -1776,7 +1776,7 @@ public  final class Namespace extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -1787,7 +1787,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace.Status, com.appscode.api.kubernetes.v1beta2.Namespace.Status.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder> 
@@ -1807,13 +1807,13 @@ public  final class Namespace extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec() {
       if (specBuilder_ == null) {
@@ -1823,7 +1823,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec value) {
       if (specBuilder_ == null) {
@@ -1839,7 +1839,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder builderForValue) {
@@ -1853,7 +1853,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec value) {
       if (specBuilder_ == null) {
@@ -1871,7 +1871,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1885,7 +1885,7 @@ public  final class Namespace extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder getSpecBuilder() {
       
@@ -1893,7 +1893,7 @@ public  final class Namespace extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1904,7 +1904,7 @@ public  final class Namespace extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec.Builder, com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder> 

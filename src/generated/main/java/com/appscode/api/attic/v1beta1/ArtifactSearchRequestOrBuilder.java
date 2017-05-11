@@ -8,21 +8,21 @@ public interface ArtifactSearchRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string query = 1;</code>
+   * <code>string query = 1;</code>
    */
   java.lang.String getQuery();
   /**
-   * <code>optional string query = 1;</code>
+   * <code>string query = 1;</code>
    */
   com.google.protobuf.ByteString
       getQueryBytes();
 
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();

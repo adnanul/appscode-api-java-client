@@ -44,22 +44,9 @@ public  final class ArtifactListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               artifacts_ = new java.util.ArrayList<com.appscode.api.attic.v1beta1.Artifact>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             artifacts_.add(
                 input.readMessage(com.appscode.api.attic.v1beta1.Artifact.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class ArtifactListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         artifacts_ = java.util.Collections.unmodifiableList(artifacts_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class ArtifactListResponse extends
             com.appscode.api.attic.v1beta1.ArtifactListResponse.class, com.appscode.api.attic.v1beta1.ArtifactListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int ARTIFACTS_FIELD_NUMBER = 2;
+  public static final int ARTIFACTS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.attic.v1beta1.Artifact> artifacts_;
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   public java.util.List<com.appscode.api.attic.v1beta1.Artifact> getArtifactsList() {
     return artifacts_;
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactOrBuilder> 
       getArtifactsOrBuilderList() {
     return artifacts_;
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   public int getArtifactsCount() {
     return artifacts_.size();
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   public com.appscode.api.attic.v1beta1.Artifact getArtifacts(int index) {
     return artifacts_.get(index);
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
    */
   public com.appscode.api.attic.v1beta1.ArtifactOrBuilder getArtifactsOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class ArtifactListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < artifacts_.size(); i++) {
-      output.writeMessage(2, artifacts_.get(i));
+      output.writeMessage(1, artifacts_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class ArtifactListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < artifacts_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, artifacts_.get(i));
+        .computeMessageSize(1, artifacts_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class ArtifactListResponse extends
     com.appscode.api.attic.v1beta1.ArtifactListResponse other = (com.appscode.api.attic.v1beta1.ArtifactListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getArtifactsList()
         .equals(other.getArtifactsList());
     return result;
@@ -213,11 +166,7 @@ public  final class ArtifactListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getArtifactsCount() > 0) {
       hash = (37 * hash) + ARTIFACTS_FIELD_NUMBER;
       hash = (53 * hash) + getArtifactsList().hashCode();
@@ -341,15 +290,9 @@ public  final class ArtifactListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (artifactsBuilder_ == null) {
         artifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         artifactsBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class ArtifactListResponse extends
     public com.appscode.api.attic.v1beta1.ArtifactListResponse buildPartial() {
       com.appscode.api.attic.v1beta1.ArtifactListResponse result = new com.appscode.api.attic.v1beta1.ArtifactListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (artifactsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           artifacts_ = java.util.Collections.unmodifiableList(artifacts_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.artifacts_ = artifacts_;
       } else {
         result.artifacts_ = artifactsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class ArtifactListResponse extends
 
     public Builder mergeFrom(com.appscode.api.attic.v1beta1.ArtifactListResponse other) {
       if (other == com.appscode.api.attic.v1beta1.ArtifactListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (artifactsBuilder_ == null) {
         if (!other.artifacts_.isEmpty()) {
           if (artifacts_.isEmpty()) {
             artifacts_ = other.artifacts_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureArtifactsIsMutable();
             artifacts_.addAll(other.artifacts_);
@@ -453,7 +386,7 @@ public  final class ArtifactListResponse extends
             artifactsBuilder_.dispose();
             artifactsBuilder_ = null;
             artifacts_ = other.artifacts_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             artifactsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getArtifactsFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class ArtifactListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.attic.v1beta1.Artifact> artifacts_ =
       java.util.Collections.emptyList();
     private void ensureArtifactsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         artifacts_ = new java.util.ArrayList<com.appscode.api.attic.v1beta1.Artifact>(artifacts_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class ArtifactListResponse extends
         com.appscode.api.attic.v1beta1.Artifact, com.appscode.api.attic.v1beta1.Artifact.Builder, com.appscode.api.attic.v1beta1.ArtifactOrBuilder> artifactsBuilder_;
 
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public java.util.List<com.appscode.api.attic.v1beta1.Artifact> getArtifactsList() {
       if (artifactsBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class ArtifactListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public int getArtifactsCount() {
       if (artifactsBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class ArtifactListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.Artifact getArtifacts(int index) {
       if (artifactsBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class ArtifactListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder setArtifacts(
         int index, com.appscode.api.attic.v1beta1.Artifact value) {
@@ -666,7 +482,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder setArtifacts(
         int index, com.appscode.api.attic.v1beta1.Artifact.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder addArtifacts(com.appscode.api.attic.v1beta1.Artifact value) {
       if (artifactsBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder addArtifacts(
         int index, com.appscode.api.attic.v1beta1.Artifact value) {
@@ -713,7 +529,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder addArtifacts(
         com.appscode.api.attic.v1beta1.Artifact.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder addArtifacts(
         int index, com.appscode.api.attic.v1beta1.Artifact.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder addAllArtifacts(
         java.lang.Iterable<? extends com.appscode.api.attic.v1beta1.Artifact> values) {
@@ -756,12 +572,12 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder clearArtifacts() {
       if (artifactsBuilder_ == null) {
         artifacts_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         artifactsBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public Builder removeArtifacts(int index) {
       if (artifactsBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class ArtifactListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.Artifact.Builder getArtifactsBuilder(
         int index) {
       return getArtifactsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactOrBuilder getArtifactsOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class ArtifactListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactOrBuilder> 
          getArtifactsOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class ArtifactListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.Artifact.Builder addArtifactsBuilder() {
       return getArtifactsFieldBuilder().addBuilder(
           com.appscode.api.attic.v1beta1.Artifact.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.Artifact.Builder addArtifactsBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class ArtifactListResponse extends
           index, com.appscode.api.attic.v1beta1.Artifact.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.Artifact artifacts = 1;</code>
      */
     public java.util.List<com.appscode.api.attic.v1beta1.Artifact.Builder> 
          getArtifactsBuilderList() {
@@ -838,7 +654,7 @@ public  final class ArtifactListResponse extends
         artifactsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.attic.v1beta1.Artifact, com.appscode.api.attic.v1beta1.Artifact.Builder, com.appscode.api.attic.v1beta1.ArtifactOrBuilder>(
                 artifacts_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         artifacts_ = null;

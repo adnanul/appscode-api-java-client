@@ -135,7 +135,7 @@ public  final class FlexVolumeSource extends
    * Driver is the name of the driver to use for this volume.
    * </pre>
    *
-   * <code>optional string driver = 1;</code>
+   * <code>string driver = 1;</code>
    */
   public java.lang.String getDriver() {
     java.lang.Object ref = driver_;
@@ -154,7 +154,7 @@ public  final class FlexVolumeSource extends
    * Driver is the name of the driver to use for this volume.
    * </pre>
    *
-   * <code>optional string driver = 1;</code>
+   * <code>string driver = 1;</code>
    */
   public com.google.protobuf.ByteString
       getDriverBytes() {
@@ -179,7 +179,7 @@ public  final class FlexVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -200,7 +200,7 @@ public  final class FlexVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -227,7 +227,7 @@ public  final class FlexVolumeSource extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   public boolean hasSecretRef() {
     return secretRef_ != null;
@@ -241,7 +241,7 @@ public  final class FlexVolumeSource extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectReference getSecretRef() {
     return secretRef_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectReference.getDefaultInstance() : secretRef_;
@@ -255,7 +255,7 @@ public  final class FlexVolumeSource extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getSecretRefOrBuilder() {
     return getSecretRef();
@@ -269,7 +269,7 @@ public  final class FlexVolumeSource extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -466,7 +466,7 @@ public  final class FlexVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + DRIVER_FIELD_NUMBER;
     hash = (53 * hash) + getDriver().hashCode();
     hash = (37 * hash) + FSTYPE_FIELD_NUMBER;
@@ -765,7 +765,7 @@ public  final class FlexVolumeSource extends
      * Driver is the name of the driver to use for this volume.
      * </pre>
      *
-     * <code>optional string driver = 1;</code>
+     * <code>string driver = 1;</code>
      */
     public java.lang.String getDriver() {
       java.lang.Object ref = driver_;
@@ -784,7 +784,7 @@ public  final class FlexVolumeSource extends
      * Driver is the name of the driver to use for this volume.
      * </pre>
      *
-     * <code>optional string driver = 1;</code>
+     * <code>string driver = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDriverBytes() {
@@ -804,7 +804,7 @@ public  final class FlexVolumeSource extends
      * Driver is the name of the driver to use for this volume.
      * </pre>
      *
-     * <code>optional string driver = 1;</code>
+     * <code>string driver = 1;</code>
      */
     public Builder setDriver(
         java.lang.String value) {
@@ -821,7 +821,7 @@ public  final class FlexVolumeSource extends
      * Driver is the name of the driver to use for this volume.
      * </pre>
      *
-     * <code>optional string driver = 1;</code>
+     * <code>string driver = 1;</code>
      */
     public Builder clearDriver() {
       
@@ -834,7 +834,7 @@ public  final class FlexVolumeSource extends
      * Driver is the name of the driver to use for this volume.
      * </pre>
      *
-     * <code>optional string driver = 1;</code>
+     * <code>string driver = 1;</code>
      */
     public Builder setDriverBytes(
         com.google.protobuf.ByteString value) {
@@ -856,7 +856,7 @@ public  final class FlexVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -877,7 +877,7 @@ public  final class FlexVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -899,7 +899,7 @@ public  final class FlexVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -918,7 +918,7 @@ public  final class FlexVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder clearFsType() {
       
@@ -933,7 +933,7 @@ public  final class FlexVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -959,7 +959,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public boolean hasSecretRef() {
       return secretRefBuilder_ != null || secretRef_ != null;
@@ -973,7 +973,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference getSecretRef() {
       if (secretRefBuilder_ == null) {
@@ -991,7 +991,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public Builder setSecretRef(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
       if (secretRefBuilder_ == null) {
@@ -1015,7 +1015,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public Builder setSecretRef(
         com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder builderForValue) {
@@ -1037,7 +1037,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public Builder mergeSecretRef(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
       if (secretRefBuilder_ == null) {
@@ -1063,7 +1063,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public Builder clearSecretRef() {
       if (secretRefBuilder_ == null) {
@@ -1085,7 +1085,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder getSecretRefBuilder() {
       
@@ -1101,7 +1101,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getSecretRefOrBuilder() {
       if (secretRefBuilder_ != null) {
@@ -1120,7 +1120,7 @@ public  final class FlexVolumeSource extends
      * scripts.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> 
@@ -1143,7 +1143,7 @@ public  final class FlexVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -1154,7 +1154,7 @@ public  final class FlexVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -1168,7 +1168,7 @@ public  final class FlexVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder clearReadOnly() {
       
@@ -1270,7 +1270,8 @@ public  final class FlexVolumeSource extends
     }
 
     public Builder clearOptions() {
-      getMutableOptions().clear();
+      internalGetMutableOptions().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1284,7 +1285,8 @@ public  final class FlexVolumeSource extends
     public Builder removeOptions(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().remove(key);
+      internalGetMutableOptions().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1307,7 +1309,8 @@ public  final class FlexVolumeSource extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().put(key, value);
+      internalGetMutableOptions().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1320,7 +1323,8 @@ public  final class FlexVolumeSource extends
 
     public Builder putAllOptions(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableOptions().putAll(values);
+      internalGetMutableOptions().getMutableMap()
+          .putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

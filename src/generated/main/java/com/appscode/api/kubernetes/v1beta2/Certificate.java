@@ -166,7 +166,7 @@ public  final class Certificate extends
      * "vultr":
      * </pre>
      *
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     java.lang.String getProvider();
     /**
@@ -188,31 +188,31 @@ public  final class Certificate extends
      * "vultr":
      * </pre>
      *
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     com.google.protobuf.ByteString
         getProviderBytes();
 
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     java.lang.String getEmail();
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     com.google.protobuf.ByteString
         getEmailBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     boolean hasHTTPProviderIngressReference();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ObjectReference getHTTPProviderIngressReference();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getHTTPProviderIngressReferenceOrBuilder();
 
@@ -277,7 +277,7 @@ public  final class Certificate extends
      * VULTR_API_KEY: The API key to use
      * </pre>
      *
-     * <code>optional string provider_credential_secret_name = 5;</code>
+     * <code>string provider_credential_secret_name = 5;</code>
      */
     java.lang.String getProviderCredentialSecretName();
     /**
@@ -341,17 +341,17 @@ public  final class Certificate extends
      * VULTR_API_KEY: The API key to use
      * </pre>
      *
-     * <code>optional string provider_credential_secret_name = 5;</code>
+     * <code>string provider_credential_secret_name = 5;</code>
      */
     com.google.protobuf.ByteString
         getProviderCredentialSecretNameBytes();
 
     /**
-     * <code>optional string ACME_user_secret_name = 6;</code>
+     * <code>string ACME_user_secret_name = 6;</code>
      */
     java.lang.String getACMEUserSecretName();
     /**
-     * <code>optional string ACME_user_secret_name = 6;</code>
+     * <code>string ACME_user_secret_name = 6;</code>
      */
     com.google.protobuf.ByteString
         getACMEUserSecretNameBytes();
@@ -362,7 +362,7 @@ public  final class Certificate extends
      * uses let's encrypt servers.
      * </pre>
      *
-     * <code>optional string ACME_serverURL = 7;</code>
+     * <code>string ACME_serverURL = 7;</code>
      */
     java.lang.String getACMEServerURL();
     /**
@@ -371,7 +371,7 @@ public  final class Certificate extends
      * uses let's encrypt servers.
      * </pre>
      *
-     * <code>optional string ACME_serverURL = 7;</code>
+     * <code>string ACME_serverURL = 7;</code>
      */
     com.google.protobuf.ByteString
         getACMEServerURLBytes();
@@ -570,7 +570,7 @@ public  final class Certificate extends
      * "vultr":
      * </pre>
      *
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -603,7 +603,7 @@ public  final class Certificate extends
      * "vultr":
      * </pre>
      *
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -622,7 +622,7 @@ public  final class Certificate extends
     public static final int EMAIL_FIELD_NUMBER = 3;
     private volatile java.lang.Object email_;
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public java.lang.String getEmail() {
       java.lang.Object ref = email_;
@@ -637,7 +637,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
@@ -656,19 +656,19 @@ public  final class Certificate extends
     public static final int HTTP_PROVIDER_INGRESS_REFERENCE_FIELD_NUMBER = 4;
     private com.appscode.api.kubernetes.v1beta2.ObjectReference hTTPProviderIngressReference_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     public boolean hasHTTPProviderIngressReference() {
       return hTTPProviderIngressReference_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference getHTTPProviderIngressReference() {
       return hTTPProviderIngressReference_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectReference.getDefaultInstance() : hTTPProviderIngressReference_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getHTTPProviderIngressReferenceOrBuilder() {
       return getHTTPProviderIngressReference();
@@ -737,7 +737,7 @@ public  final class Certificate extends
      * VULTR_API_KEY: The API key to use
      * </pre>
      *
-     * <code>optional string provider_credential_secret_name = 5;</code>
+     * <code>string provider_credential_secret_name = 5;</code>
      */
     public java.lang.String getProviderCredentialSecretName() {
       java.lang.Object ref = providerCredentialSecretName_;
@@ -812,7 +812,7 @@ public  final class Certificate extends
      * VULTR_API_KEY: The API key to use
      * </pre>
      *
-     * <code>optional string provider_credential_secret_name = 5;</code>
+     * <code>string provider_credential_secret_name = 5;</code>
      */
     public com.google.protobuf.ByteString
         getProviderCredentialSecretNameBytes() {
@@ -831,7 +831,7 @@ public  final class Certificate extends
     public static final int ACME_USER_SECRET_NAME_FIELD_NUMBER = 6;
     private volatile java.lang.Object aCMEUserSecretName_;
     /**
-     * <code>optional string ACME_user_secret_name = 6;</code>
+     * <code>string ACME_user_secret_name = 6;</code>
      */
     public java.lang.String getACMEUserSecretName() {
       java.lang.Object ref = aCMEUserSecretName_;
@@ -846,7 +846,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string ACME_user_secret_name = 6;</code>
+     * <code>string ACME_user_secret_name = 6;</code>
      */
     public com.google.protobuf.ByteString
         getACMEUserSecretNameBytes() {
@@ -870,7 +870,7 @@ public  final class Certificate extends
      * uses let's encrypt servers.
      * </pre>
      *
-     * <code>optional string ACME_serverURL = 7;</code>
+     * <code>string ACME_serverURL = 7;</code>
      */
     public java.lang.String getACMEServerURL() {
       java.lang.Object ref = aCMEServerURL_;
@@ -890,7 +890,7 @@ public  final class Certificate extends
      * uses let's encrypt servers.
      * </pre>
      *
-     * <code>optional string ACME_serverURL = 7;</code>
+     * <code>string ACME_serverURL = 7;</code>
      */
     public com.google.protobuf.ByteString
         getACMEServerURLBytes() {
@@ -1015,7 +1015,7 @@ public  final class Certificate extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getDomainsCount() > 0) {
         hash = (37 * hash) + DOMAINS_FIELD_NUMBER;
         hash = (53 * hash) + getDomainsList().hashCode();
@@ -1470,7 +1470,7 @@ public  final class Certificate extends
        * "vultr":
        * </pre>
        *
-       * <code>optional string provider = 2;</code>
+       * <code>string provider = 2;</code>
        */
       public java.lang.String getProvider() {
         java.lang.Object ref = provider_;
@@ -1503,7 +1503,7 @@ public  final class Certificate extends
        * "vultr":
        * </pre>
        *
-       * <code>optional string provider = 2;</code>
+       * <code>string provider = 2;</code>
        */
       public com.google.protobuf.ByteString
           getProviderBytes() {
@@ -1537,7 +1537,7 @@ public  final class Certificate extends
        * "vultr":
        * </pre>
        *
-       * <code>optional string provider = 2;</code>
+       * <code>string provider = 2;</code>
        */
       public Builder setProvider(
           java.lang.String value) {
@@ -1568,7 +1568,7 @@ public  final class Certificate extends
        * "vultr":
        * </pre>
        *
-       * <code>optional string provider = 2;</code>
+       * <code>string provider = 2;</code>
        */
       public Builder clearProvider() {
         
@@ -1595,7 +1595,7 @@ public  final class Certificate extends
        * "vultr":
        * </pre>
        *
-       * <code>optional string provider = 2;</code>
+       * <code>string provider = 2;</code>
        */
       public Builder setProviderBytes(
           com.google.protobuf.ByteString value) {
@@ -1611,7 +1611,7 @@ public  final class Certificate extends
 
       private java.lang.Object email_ = "";
       /**
-       * <code>optional string email = 3;</code>
+       * <code>string email = 3;</code>
        */
       public java.lang.String getEmail() {
         java.lang.Object ref = email_;
@@ -1626,7 +1626,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string email = 3;</code>
+       * <code>string email = 3;</code>
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
@@ -1642,7 +1642,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string email = 3;</code>
+       * <code>string email = 3;</code>
        */
       public Builder setEmail(
           java.lang.String value) {
@@ -1655,7 +1655,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string email = 3;</code>
+       * <code>string email = 3;</code>
        */
       public Builder clearEmail() {
         
@@ -1664,7 +1664,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string email = 3;</code>
+       * <code>string email = 3;</code>
        */
       public Builder setEmailBytes(
           com.google.protobuf.ByteString value) {
@@ -1682,13 +1682,13 @@ public  final class Certificate extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> hTTPProviderIngressReferenceBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public boolean hasHTTPProviderIngressReference() {
         return hTTPProviderIngressReferenceBuilder_ != null || hTTPProviderIngressReference_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReference getHTTPProviderIngressReference() {
         if (hTTPProviderIngressReferenceBuilder_ == null) {
@@ -1698,7 +1698,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public Builder setHTTPProviderIngressReference(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
         if (hTTPProviderIngressReferenceBuilder_ == null) {
@@ -1714,7 +1714,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public Builder setHTTPProviderIngressReference(
           com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder builderForValue) {
@@ -1728,7 +1728,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public Builder mergeHTTPProviderIngressReference(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
         if (hTTPProviderIngressReferenceBuilder_ == null) {
@@ -1746,7 +1746,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public Builder clearHTTPProviderIngressReference() {
         if (hTTPProviderIngressReferenceBuilder_ == null) {
@@ -1760,7 +1760,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder getHTTPProviderIngressReferenceBuilder() {
         
@@ -1768,7 +1768,7 @@ public  final class Certificate extends
         return getHTTPProviderIngressReferenceFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getHTTPProviderIngressReferenceOrBuilder() {
         if (hTTPProviderIngressReferenceBuilder_ != null) {
@@ -1779,7 +1779,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference HTTP_provider_ingress_reference = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> 
@@ -1857,7 +1857,7 @@ public  final class Certificate extends
        * VULTR_API_KEY: The API key to use
        * </pre>
        *
-       * <code>optional string provider_credential_secret_name = 5;</code>
+       * <code>string provider_credential_secret_name = 5;</code>
        */
       public java.lang.String getProviderCredentialSecretName() {
         java.lang.Object ref = providerCredentialSecretName_;
@@ -1932,7 +1932,7 @@ public  final class Certificate extends
        * VULTR_API_KEY: The API key to use
        * </pre>
        *
-       * <code>optional string provider_credential_secret_name = 5;</code>
+       * <code>string provider_credential_secret_name = 5;</code>
        */
       public com.google.protobuf.ByteString
           getProviderCredentialSecretNameBytes() {
@@ -2008,7 +2008,7 @@ public  final class Certificate extends
        * VULTR_API_KEY: The API key to use
        * </pre>
        *
-       * <code>optional string provider_credential_secret_name = 5;</code>
+       * <code>string provider_credential_secret_name = 5;</code>
        */
       public Builder setProviderCredentialSecretName(
           java.lang.String value) {
@@ -2081,7 +2081,7 @@ public  final class Certificate extends
        * VULTR_API_KEY: The API key to use
        * </pre>
        *
-       * <code>optional string provider_credential_secret_name = 5;</code>
+       * <code>string provider_credential_secret_name = 5;</code>
        */
       public Builder clearProviderCredentialSecretName() {
         
@@ -2150,7 +2150,7 @@ public  final class Certificate extends
        * VULTR_API_KEY: The API key to use
        * </pre>
        *
-       * <code>optional string provider_credential_secret_name = 5;</code>
+       * <code>string provider_credential_secret_name = 5;</code>
        */
       public Builder setProviderCredentialSecretNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2166,7 +2166,7 @@ public  final class Certificate extends
 
       private java.lang.Object aCMEUserSecretName_ = "";
       /**
-       * <code>optional string ACME_user_secret_name = 6;</code>
+       * <code>string ACME_user_secret_name = 6;</code>
        */
       public java.lang.String getACMEUserSecretName() {
         java.lang.Object ref = aCMEUserSecretName_;
@@ -2181,7 +2181,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string ACME_user_secret_name = 6;</code>
+       * <code>string ACME_user_secret_name = 6;</code>
        */
       public com.google.protobuf.ByteString
           getACMEUserSecretNameBytes() {
@@ -2197,7 +2197,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string ACME_user_secret_name = 6;</code>
+       * <code>string ACME_user_secret_name = 6;</code>
        */
       public Builder setACMEUserSecretName(
           java.lang.String value) {
@@ -2210,7 +2210,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string ACME_user_secret_name = 6;</code>
+       * <code>string ACME_user_secret_name = 6;</code>
        */
       public Builder clearACMEUserSecretName() {
         
@@ -2219,7 +2219,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string ACME_user_secret_name = 6;</code>
+       * <code>string ACME_user_secret_name = 6;</code>
        */
       public Builder setACMEUserSecretNameBytes(
           com.google.protobuf.ByteString value) {
@@ -2240,7 +2240,7 @@ public  final class Certificate extends
        * uses let's encrypt servers.
        * </pre>
        *
-       * <code>optional string ACME_serverURL = 7;</code>
+       * <code>string ACME_serverURL = 7;</code>
        */
       public java.lang.String getACMEServerURL() {
         java.lang.Object ref = aCMEServerURL_;
@@ -2260,7 +2260,7 @@ public  final class Certificate extends
        * uses let's encrypt servers.
        * </pre>
        *
-       * <code>optional string ACME_serverURL = 7;</code>
+       * <code>string ACME_serverURL = 7;</code>
        */
       public com.google.protobuf.ByteString
           getACMEServerURLBytes() {
@@ -2281,7 +2281,7 @@ public  final class Certificate extends
        * uses let's encrypt servers.
        * </pre>
        *
-       * <code>optional string ACME_serverURL = 7;</code>
+       * <code>string ACME_serverURL = 7;</code>
        */
       public Builder setACMEServerURL(
           java.lang.String value) {
@@ -2299,7 +2299,7 @@ public  final class Certificate extends
        * uses let's encrypt servers.
        * </pre>
        *
-       * <code>optional string ACME_serverURL = 7;</code>
+       * <code>string ACME_serverURL = 7;</code>
        */
       public Builder clearACMEServerURL() {
         
@@ -2313,7 +2313,7 @@ public  final class Certificate extends
        * uses let's encrypt servers.
        * </pre>
        *
-       * <code>optional string ACME_serverURL = 7;</code>
+       * <code>string ACME_serverURL = 7;</code>
        */
       public Builder setACMEServerURLBytes(
           com.google.protobuf.ByteString value) {
@@ -2380,45 +2380,45 @@ public  final class Certificate extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional bool certificate_obtained = 1;</code>
+     * <code>bool certificate_obtained = 1;</code>
      */
     boolean getCertificateObtained();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
 
     /**
-     * <code>optional int64 creation_time = 3;</code>
+     * <code>int64 creation_time = 3;</code>
      */
     long getCreationTime();
 
     /**
-     * <code>optional string ACME_user_secret_name = 4;</code>
+     * <code>string ACME_user_secret_name = 4;</code>
      */
     java.lang.String getACMEUserSecretName();
     /**
-     * <code>optional string ACME_user_secret_name = 4;</code>
+     * <code>string ACME_user_secret_name = 4;</code>
      */
     com.google.protobuf.ByteString
         getACMEUserSecretNameBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     boolean hasDetails();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails getDetails();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetailsOrBuilder getDetailsOrBuilder();
   }
@@ -2528,41 +2528,41 @@ public  final class Certificate extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string domain = 1;</code>
+       * <code>string domain = 1;</code>
        */
       java.lang.String getDomain();
       /**
-       * <code>optional string domain = 1;</code>
+       * <code>string domain = 1;</code>
        */
       com.google.protobuf.ByteString
           getDomainBytes();
 
       /**
-       * <code>optional string certURL = 2;</code>
+       * <code>string certURL = 2;</code>
        */
       java.lang.String getCertURL();
       /**
-       * <code>optional string certURL = 2;</code>
+       * <code>string certURL = 2;</code>
        */
       com.google.protobuf.ByteString
           getCertURLBytes();
 
       /**
-       * <code>optional string cert_stableURL = 3;</code>
+       * <code>string cert_stableURL = 3;</code>
        */
       java.lang.String getCertStableURL();
       /**
-       * <code>optional string cert_stableURL = 3;</code>
+       * <code>string cert_stableURL = 3;</code>
        */
       com.google.protobuf.ByteString
           getCertStableURLBytes();
 
       /**
-       * <code>optional string account_ref = 4;</code>
+       * <code>string account_ref = 4;</code>
        */
       java.lang.String getAccountRef();
       /**
-       * <code>optional string account_ref = 4;</code>
+       * <code>string account_ref = 4;</code>
        */
       com.google.protobuf.ByteString
           getAccountRefBytes();
@@ -2660,7 +2660,7 @@ public  final class Certificate extends
       public static final int DOMAIN_FIELD_NUMBER = 1;
       private volatile java.lang.Object domain_;
       /**
-       * <code>optional string domain = 1;</code>
+       * <code>string domain = 1;</code>
        */
       public java.lang.String getDomain() {
         java.lang.Object ref = domain_;
@@ -2675,7 +2675,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string domain = 1;</code>
+       * <code>string domain = 1;</code>
        */
       public com.google.protobuf.ByteString
           getDomainBytes() {
@@ -2694,7 +2694,7 @@ public  final class Certificate extends
       public static final int CERTURL_FIELD_NUMBER = 2;
       private volatile java.lang.Object certURL_;
       /**
-       * <code>optional string certURL = 2;</code>
+       * <code>string certURL = 2;</code>
        */
       public java.lang.String getCertURL() {
         java.lang.Object ref = certURL_;
@@ -2709,7 +2709,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string certURL = 2;</code>
+       * <code>string certURL = 2;</code>
        */
       public com.google.protobuf.ByteString
           getCertURLBytes() {
@@ -2728,7 +2728,7 @@ public  final class Certificate extends
       public static final int CERT_STABLEURL_FIELD_NUMBER = 3;
       private volatile java.lang.Object certStableURL_;
       /**
-       * <code>optional string cert_stableURL = 3;</code>
+       * <code>string cert_stableURL = 3;</code>
        */
       public java.lang.String getCertStableURL() {
         java.lang.Object ref = certStableURL_;
@@ -2743,7 +2743,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string cert_stableURL = 3;</code>
+       * <code>string cert_stableURL = 3;</code>
        */
       public com.google.protobuf.ByteString
           getCertStableURLBytes() {
@@ -2762,7 +2762,7 @@ public  final class Certificate extends
       public static final int ACCOUNT_REF_FIELD_NUMBER = 4;
       private volatile java.lang.Object accountRef_;
       /**
-       * <code>optional string account_ref = 4;</code>
+       * <code>string account_ref = 4;</code>
        */
       public java.lang.String getAccountRef() {
         java.lang.Object ref = accountRef_;
@@ -2777,7 +2777,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string account_ref = 4;</code>
+       * <code>string account_ref = 4;</code>
        */
       public com.google.protobuf.ByteString
           getAccountRefBytes() {
@@ -2869,7 +2869,7 @@ public  final class Certificate extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + DOMAIN_FIELD_NUMBER;
         hash = (53 * hash) + getDomain().hashCode();
         hash = (37 * hash) + CERTURL_FIELD_NUMBER;
@@ -3115,7 +3115,7 @@ public  final class Certificate extends
 
         private java.lang.Object domain_ = "";
         /**
-         * <code>optional string domain = 1;</code>
+         * <code>string domain = 1;</code>
          */
         public java.lang.String getDomain() {
           java.lang.Object ref = domain_;
@@ -3130,7 +3130,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string domain = 1;</code>
+         * <code>string domain = 1;</code>
          */
         public com.google.protobuf.ByteString
             getDomainBytes() {
@@ -3146,7 +3146,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string domain = 1;</code>
+         * <code>string domain = 1;</code>
          */
         public Builder setDomain(
             java.lang.String value) {
@@ -3159,7 +3159,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string domain = 1;</code>
+         * <code>string domain = 1;</code>
          */
         public Builder clearDomain() {
           
@@ -3168,7 +3168,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string domain = 1;</code>
+         * <code>string domain = 1;</code>
          */
         public Builder setDomainBytes(
             com.google.protobuf.ByteString value) {
@@ -3184,7 +3184,7 @@ public  final class Certificate extends
 
         private java.lang.Object certURL_ = "";
         /**
-         * <code>optional string certURL = 2;</code>
+         * <code>string certURL = 2;</code>
          */
         public java.lang.String getCertURL() {
           java.lang.Object ref = certURL_;
@@ -3199,7 +3199,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string certURL = 2;</code>
+         * <code>string certURL = 2;</code>
          */
         public com.google.protobuf.ByteString
             getCertURLBytes() {
@@ -3215,7 +3215,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string certURL = 2;</code>
+         * <code>string certURL = 2;</code>
          */
         public Builder setCertURL(
             java.lang.String value) {
@@ -3228,7 +3228,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string certURL = 2;</code>
+         * <code>string certURL = 2;</code>
          */
         public Builder clearCertURL() {
           
@@ -3237,7 +3237,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string certURL = 2;</code>
+         * <code>string certURL = 2;</code>
          */
         public Builder setCertURLBytes(
             com.google.protobuf.ByteString value) {
@@ -3253,7 +3253,7 @@ public  final class Certificate extends
 
         private java.lang.Object certStableURL_ = "";
         /**
-         * <code>optional string cert_stableURL = 3;</code>
+         * <code>string cert_stableURL = 3;</code>
          */
         public java.lang.String getCertStableURL() {
           java.lang.Object ref = certStableURL_;
@@ -3268,7 +3268,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string cert_stableURL = 3;</code>
+         * <code>string cert_stableURL = 3;</code>
          */
         public com.google.protobuf.ByteString
             getCertStableURLBytes() {
@@ -3284,7 +3284,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string cert_stableURL = 3;</code>
+         * <code>string cert_stableURL = 3;</code>
          */
         public Builder setCertStableURL(
             java.lang.String value) {
@@ -3297,7 +3297,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string cert_stableURL = 3;</code>
+         * <code>string cert_stableURL = 3;</code>
          */
         public Builder clearCertStableURL() {
           
@@ -3306,7 +3306,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string cert_stableURL = 3;</code>
+         * <code>string cert_stableURL = 3;</code>
          */
         public Builder setCertStableURLBytes(
             com.google.protobuf.ByteString value) {
@@ -3322,7 +3322,7 @@ public  final class Certificate extends
 
         private java.lang.Object accountRef_ = "";
         /**
-         * <code>optional string account_ref = 4;</code>
+         * <code>string account_ref = 4;</code>
          */
         public java.lang.String getAccountRef() {
           java.lang.Object ref = accountRef_;
@@ -3337,7 +3337,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string account_ref = 4;</code>
+         * <code>string account_ref = 4;</code>
          */
         public com.google.protobuf.ByteString
             getAccountRefBytes() {
@@ -3353,7 +3353,7 @@ public  final class Certificate extends
           }
         }
         /**
-         * <code>optional string account_ref = 4;</code>
+         * <code>string account_ref = 4;</code>
          */
         public Builder setAccountRef(
             java.lang.String value) {
@@ -3366,7 +3366,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string account_ref = 4;</code>
+         * <code>string account_ref = 4;</code>
          */
         public Builder clearAccountRef() {
           
@@ -3375,7 +3375,7 @@ public  final class Certificate extends
           return this;
         }
         /**
-         * <code>optional string account_ref = 4;</code>
+         * <code>string account_ref = 4;</code>
          */
         public Builder setAccountRefBytes(
             com.google.protobuf.ByteString value) {
@@ -3440,7 +3440,7 @@ public  final class Certificate extends
     public static final int CERTIFICATE_OBTAINED_FIELD_NUMBER = 1;
     private boolean certificateObtained_;
     /**
-     * <code>optional bool certificate_obtained = 1;</code>
+     * <code>bool certificate_obtained = 1;</code>
      */
     public boolean getCertificateObtained() {
       return certificateObtained_;
@@ -3449,7 +3449,7 @@ public  final class Certificate extends
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -3464,7 +3464,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -3483,7 +3483,7 @@ public  final class Certificate extends
     public static final int CREATION_TIME_FIELD_NUMBER = 3;
     private long creationTime_;
     /**
-     * <code>optional int64 creation_time = 3;</code>
+     * <code>int64 creation_time = 3;</code>
      */
     public long getCreationTime() {
       return creationTime_;
@@ -3492,7 +3492,7 @@ public  final class Certificate extends
     public static final int ACME_USER_SECRET_NAME_FIELD_NUMBER = 4;
     private volatile java.lang.Object aCMEUserSecretName_;
     /**
-     * <code>optional string ACME_user_secret_name = 4;</code>
+     * <code>string ACME_user_secret_name = 4;</code>
      */
     public java.lang.String getACMEUserSecretName() {
       java.lang.Object ref = aCMEUserSecretName_;
@@ -3507,7 +3507,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string ACME_user_secret_name = 4;</code>
+     * <code>string ACME_user_secret_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getACMEUserSecretNameBytes() {
@@ -3526,19 +3526,19 @@ public  final class Certificate extends
     public static final int DETAILS_FIELD_NUMBER = 5;
     private com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     public boolean hasDetails() {
       return details_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails getDetails() {
       return details_ == null ? com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails.getDefaultInstance() : details_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetailsOrBuilder getDetailsOrBuilder() {
       return getDetails();
@@ -3634,7 +3634,7 @@ public  final class Certificate extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CERTIFICATE_OBTAINED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getCertificateObtained());
@@ -3898,13 +3898,13 @@ public  final class Certificate extends
 
       private boolean certificateObtained_ ;
       /**
-       * <code>optional bool certificate_obtained = 1;</code>
+       * <code>bool certificate_obtained = 1;</code>
        */
       public boolean getCertificateObtained() {
         return certificateObtained_;
       }
       /**
-       * <code>optional bool certificate_obtained = 1;</code>
+       * <code>bool certificate_obtained = 1;</code>
        */
       public Builder setCertificateObtained(boolean value) {
         
@@ -3913,7 +3913,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional bool certificate_obtained = 1;</code>
+       * <code>bool certificate_obtained = 1;</code>
        */
       public Builder clearCertificateObtained() {
         
@@ -3924,7 +3924,7 @@ public  final class Certificate extends
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -3939,7 +3939,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -3955,7 +3955,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -3968,7 +3968,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -3977,7 +3977,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -3993,13 +3993,13 @@ public  final class Certificate extends
 
       private long creationTime_ ;
       /**
-       * <code>optional int64 creation_time = 3;</code>
+       * <code>int64 creation_time = 3;</code>
        */
       public long getCreationTime() {
         return creationTime_;
       }
       /**
-       * <code>optional int64 creation_time = 3;</code>
+       * <code>int64 creation_time = 3;</code>
        */
       public Builder setCreationTime(long value) {
         
@@ -4008,7 +4008,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional int64 creation_time = 3;</code>
+       * <code>int64 creation_time = 3;</code>
        */
       public Builder clearCreationTime() {
         
@@ -4019,7 +4019,7 @@ public  final class Certificate extends
 
       private java.lang.Object aCMEUserSecretName_ = "";
       /**
-       * <code>optional string ACME_user_secret_name = 4;</code>
+       * <code>string ACME_user_secret_name = 4;</code>
        */
       public java.lang.String getACMEUserSecretName() {
         java.lang.Object ref = aCMEUserSecretName_;
@@ -4034,7 +4034,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string ACME_user_secret_name = 4;</code>
+       * <code>string ACME_user_secret_name = 4;</code>
        */
       public com.google.protobuf.ByteString
           getACMEUserSecretNameBytes() {
@@ -4050,7 +4050,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional string ACME_user_secret_name = 4;</code>
+       * <code>string ACME_user_secret_name = 4;</code>
        */
       public Builder setACMEUserSecretName(
           java.lang.String value) {
@@ -4063,7 +4063,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string ACME_user_secret_name = 4;</code>
+       * <code>string ACME_user_secret_name = 4;</code>
        */
       public Builder clearACMEUserSecretName() {
         
@@ -4072,7 +4072,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional string ACME_user_secret_name = 4;</code>
+       * <code>string ACME_user_secret_name = 4;</code>
        */
       public Builder setACMEUserSecretNameBytes(
           com.google.protobuf.ByteString value) {
@@ -4090,13 +4090,13 @@ public  final class Certificate extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails, com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetailsOrBuilder> detailsBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public boolean hasDetails() {
         return detailsBuilder_ != null || details_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails getDetails() {
         if (detailsBuilder_ == null) {
@@ -4106,7 +4106,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public Builder setDetails(com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails value) {
         if (detailsBuilder_ == null) {
@@ -4122,7 +4122,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public Builder setDetails(
           com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails.Builder builderForValue) {
@@ -4136,7 +4136,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public Builder mergeDetails(com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails value) {
         if (detailsBuilder_ == null) {
@@ -4154,7 +4154,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public Builder clearDetails() {
         if (detailsBuilder_ == null) {
@@ -4168,7 +4168,7 @@ public  final class Certificate extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails.Builder getDetailsBuilder() {
         
@@ -4176,7 +4176,7 @@ public  final class Certificate extends
         return getDetailsFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetailsOrBuilder getDetailsOrBuilder() {
         if (detailsBuilder_ != null) {
@@ -4187,7 +4187,7 @@ public  final class Certificate extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails details = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails, com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetails.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.Status.ACMECertificateDetailsOrBuilder> 
@@ -4254,19 +4254,19 @@ public  final class Certificate extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -4275,19 +4275,19 @@ public  final class Certificate extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Certificate.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Certificate.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Certificate.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Certificate.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -4296,19 +4296,19 @@ public  final class Certificate extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Certificate.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Certificate.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Certificate.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Certificate.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -4394,7 +4394,7 @@ public  final class Certificate extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -4660,13 +4660,13 @@ public  final class Certificate extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -4676,7 +4676,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -4692,7 +4692,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -4706,7 +4706,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -4724,7 +4724,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -4738,7 +4738,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -4746,7 +4746,7 @@ public  final class Certificate extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -4757,7 +4757,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -4777,13 +4777,13 @@ public  final class Certificate extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate.Spec, com.appscode.api.kubernetes.v1beta2.Certificate.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -4793,7 +4793,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Certificate.Spec value) {
       if (specBuilder_ == null) {
@@ -4809,7 +4809,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Certificate.Spec.Builder builderForValue) {
@@ -4823,7 +4823,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Certificate.Spec value) {
       if (specBuilder_ == null) {
@@ -4841,7 +4841,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -4855,7 +4855,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Spec.Builder getSpecBuilder() {
       
@@ -4863,7 +4863,7 @@ public  final class Certificate extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -4874,7 +4874,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate.Spec, com.appscode.api.kubernetes.v1beta2.Certificate.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.SpecOrBuilder> 
@@ -4894,13 +4894,13 @@ public  final class Certificate extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate.Status, com.appscode.api.kubernetes.v1beta2.Certificate.Status.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -4910,7 +4910,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Certificate.Status value) {
       if (statusBuilder_ == null) {
@@ -4926,7 +4926,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Certificate.Status.Builder builderForValue) {
@@ -4940,7 +4940,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Certificate.Status value) {
       if (statusBuilder_ == null) {
@@ -4958,7 +4958,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -4972,7 +4972,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Status.Builder getStatusBuilder() {
       
@@ -4980,7 +4980,7 @@ public  final class Certificate extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -4991,7 +4991,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate.Status, com.appscode.api.kubernetes.v1beta2.Certificate.Status.Builder, com.appscode.api.kubernetes.v1beta2.Certificate.StatusOrBuilder> 

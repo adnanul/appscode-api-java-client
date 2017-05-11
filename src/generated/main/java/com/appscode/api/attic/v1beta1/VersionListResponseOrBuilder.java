@@ -8,38 +8,25 @@ public interface VersionListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion> 
       getVersionsList();
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   com.appscode.api.attic.v1beta1.ArtifactVersion getVersions(int index);
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   int getVersionsCount();
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder> 
       getVersionsOrBuilderList();
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder getVersionsOrBuilder(
       int index);

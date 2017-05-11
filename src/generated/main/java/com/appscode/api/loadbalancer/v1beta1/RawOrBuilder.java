@@ -8,21 +8,21 @@ public interface RawOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string format = 1;</code>
+   * <code>string format = 1;</code>
    */
   java.lang.String getFormat();
   /**
-   * <code>optional string format = 1;</code>
+   * <code>string format = 1;</code>
    */
   com.google.protobuf.ByteString
       getFormatBytes();
 
   /**
-   * <code>optional string data = 2;</code>
+   * <code>string data = 2;</code>
    */
   java.lang.String getData();
   /**
-   * <code>optional string data = 2;</code>
+   * <code>string data = 2;</code>
    */
   com.google.protobuf.ByteString
       getDataBytes();

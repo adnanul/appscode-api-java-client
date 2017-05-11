@@ -47,7 +47,7 @@ public interface FCVolumeSourceOrBuilder extends
    * Required: FC target lun number
    * </pre>
    *
-   * <code>optional int32 lun = 2;</code>
+   * <code>int32 lun = 2;</code>
    */
   int getLun();
 
@@ -59,7 +59,7 @@ public interface FCVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   java.lang.String getFsType();
   /**
@@ -70,7 +70,7 @@ public interface FCVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -81,7 +81,7 @@ public interface FCVolumeSourceOrBuilder extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   boolean getReadOnly();
 }

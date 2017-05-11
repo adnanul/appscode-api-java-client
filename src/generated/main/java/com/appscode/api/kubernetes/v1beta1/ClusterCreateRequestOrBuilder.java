@@ -8,41 +8,41 @@ public interface ClusterCreateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   java.lang.String getProvider();
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   com.google.protobuf.ByteString
       getProviderBytes();
 
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   java.lang.String getZone();
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   com.google.protobuf.ByteString
       getZoneBytes();
 
   /**
-   * <code>optional string cloud_credential = 4;</code>
+   * <code>string cloud_credential = 4;</code>
    */
   java.lang.String getCloudCredential();
   /**
-   * <code>optional string cloud_credential = 4;</code>
+   * <code>string cloud_credential = 4;</code>
    */
   com.google.protobuf.ByteString
       getCloudCredentialBytes();
@@ -140,56 +140,56 @@ public interface ClusterCreateRequestOrBuilder extends
       int index);
 
   /**
-   * <code>optional string saltbase_version = 7;</code>
+   * <code>string saltbase_version = 7;</code>
    */
   java.lang.String getSaltbaseVersion();
   /**
-   * <code>optional string saltbase_version = 7;</code>
+   * <code>string saltbase_version = 7;</code>
    */
   com.google.protobuf.ByteString
       getSaltbaseVersionBytes();
 
   /**
-   * <code>optional string kube_starter_version = 8;</code>
+   * <code>string kube_starter_version = 8;</code>
    */
   java.lang.String getKubeStarterVersion();
   /**
-   * <code>optional string kube_starter_version = 8;</code>
+   * <code>string kube_starter_version = 8;</code>
    */
   com.google.protobuf.ByteString
       getKubeStarterVersionBytes();
 
   /**
-   * <code>optional string kubelet_version = 9;</code>
+   * <code>string kubelet_version = 9;</code>
    */
   java.lang.String getKubeletVersion();
   /**
-   * <code>optional string kubelet_version = 9;</code>
+   * <code>string kubelet_version = 9;</code>
    */
   com.google.protobuf.ByteString
       getKubeletVersionBytes();
 
   /**
-   * <code>optional bool do_not_delete = 10;</code>
+   * <code>bool do_not_delete = 10;</code>
    */
   boolean getDoNotDelete();
 
   /**
-   * <code>optional string hostfacts_version = 11;</code>
+   * <code>string hostfacts_version = 11;</code>
    */
   java.lang.String getHostfactsVersion();
   /**
-   * <code>optional string hostfacts_version = 11;</code>
+   * <code>string hostfacts_version = 11;</code>
    */
   com.google.protobuf.ByteString
       getHostfactsVersionBytes();
 
   /**
-   * <code>optional string version = 12;</code>
+   * <code>string version = 12;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 12;</code>
+   * <code>string version = 12;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
@@ -208,7 +208,7 @@ public interface ClusterCreateRequestOrBuilder extends
    * If not set this will set ""
    * </pre>
    *
-   * <code>optional string default_access_level = 13;</code>
+   * <code>string default_access_level = 13;</code>
    */
   java.lang.String getDefaultAccessLevel();
   /**
@@ -225,17 +225,17 @@ public interface ClusterCreateRequestOrBuilder extends
    * If not set this will set ""
    * </pre>
    *
-   * <code>optional string default_access_level = 13;</code>
+   * <code>string default_access_level = 13;</code>
    */
   com.google.protobuf.ByteString
       getDefaultAccessLevelBytes();
 
   /**
-   * <code>optional string gce_project = 15;</code>
+   * <code>string gce_project = 15;</code>
    */
   java.lang.String getGceProject();
   /**
-   * <code>optional string gce_project = 15;</code>
+   * <code>string gce_project = 15;</code>
    */
   com.google.protobuf.ByteString
       getGceProjectBytes();

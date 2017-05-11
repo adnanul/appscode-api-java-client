@@ -8,15 +8,15 @@ public interface SecretOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
@@ -55,11 +55,11 @@ public interface SecretOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();

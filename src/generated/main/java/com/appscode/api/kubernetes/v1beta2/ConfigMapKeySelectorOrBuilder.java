@@ -12,7 +12,7 @@ public interface ConfigMapKeySelectorOrBuilder extends
    * The ConfigMap to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   boolean hasLocalObjectReference();
   /**
@@ -20,7 +20,7 @@ public interface ConfigMapKeySelectorOrBuilder extends
    * The ConfigMap to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReference getLocalObjectReference();
   /**
@@ -28,7 +28,7 @@ public interface ConfigMapKeySelectorOrBuilder extends
    * The ConfigMap to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder();
 
@@ -37,7 +37,7 @@ public interface ConfigMapKeySelectorOrBuilder extends
    * The key to select.
    * </pre>
    *
-   * <code>optional string key = 2;</code>
+   * <code>string key = 2;</code>
    */
   java.lang.String getKey();
   /**
@@ -45,7 +45,7 @@ public interface ConfigMapKeySelectorOrBuilder extends
    * The key to select.
    * </pre>
    *
-   * <code>optional string key = 2;</code>
+   * <code>string key = 2;</code>
    */
   com.google.protobuf.ByteString
       getKeyBytes();

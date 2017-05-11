@@ -14,7 +14,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   boolean hasFieldRef();
   /**
@@ -24,7 +24,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef();
   /**
@@ -34,7 +34,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder();
 
@@ -45,7 +45,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   boolean hasResourceFieldRef();
   /**
@@ -55,7 +55,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef();
   /**
@@ -65,7 +65,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder();
 
@@ -75,7 +75,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   boolean hasConfigMapKeyRef();
   /**
@@ -84,7 +84,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector getConfigMapKeyRef();
   /**
@@ -93,7 +93,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelectorOrBuilder getConfigMapKeyRefOrBuilder();
 
@@ -103,7 +103,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   boolean hasSecretKeyRef();
   /**
@@ -112,7 +112,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretKeySelector getSecretKeyRef();
   /**
@@ -121,7 +121,7 @@ public interface EnvVarSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretKeySelectorOrBuilder getSecretKeyRefOrBuilder();
 }

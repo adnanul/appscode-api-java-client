@@ -43,19 +43,6 @@ public  final class DescribeResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder subBuilder = null;
             if (loadBalancer_ != null) {
               subBuilder = loadBalancer_.toBuilder();
@@ -68,7 +55,7 @@ public  final class DescribeResponse extends
 
             break;
           }
-          case 26: {
+          case 18: {
             com.appscode.api.loadbalancer.v1beta1.Raw.Builder subBuilder = null;
             if (raw_ != null) {
               subBuilder = raw_.toBuilder();
@@ -104,64 +91,43 @@ public  final class DescribeResponse extends
             com.appscode.api.loadbalancer.v1beta1.DescribeResponse.class, com.appscode.api.loadbalancer.v1beta1.DescribeResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int LOAD_BALANCER_FIELD_NUMBER = 2;
+  public static final int LOAD_BALANCER_FIELD_NUMBER = 1;
   private com.appscode.api.loadbalancer.v1beta1.LoadBalancer loadBalancer_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   public boolean hasLoadBalancer() {
     return loadBalancer_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
     return loadBalancer_ == null ? com.appscode.api.loadbalancer.v1beta1.LoadBalancer.getDefaultInstance() : loadBalancer_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
     return getLoadBalancer();
   }
 
-  public static final int RAW_FIELD_NUMBER = 3;
+  public static final int RAW_FIELD_NUMBER = 2;
   private com.appscode.api.loadbalancer.v1beta1.Raw raw_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   public boolean hasRaw() {
     return raw_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
     return raw_ == null ? com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
     return getRaw();
@@ -179,14 +145,11 @@ public  final class DescribeResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (loadBalancer_ != null) {
-      output.writeMessage(2, getLoadBalancer());
+      output.writeMessage(1, getLoadBalancer());
     }
     if (raw_ != null) {
-      output.writeMessage(3, getRaw());
+      output.writeMessage(2, getRaw());
     }
   }
 
@@ -195,17 +158,13 @@ public  final class DescribeResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (loadBalancer_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getLoadBalancer());
+        .computeMessageSize(1, getLoadBalancer());
     }
     if (raw_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getRaw());
+        .computeMessageSize(2, getRaw());
     }
     memoizedSize = size;
     return size;
@@ -223,11 +182,6 @@ public  final class DescribeResponse extends
     com.appscode.api.loadbalancer.v1beta1.DescribeResponse other = (com.appscode.api.loadbalancer.v1beta1.DescribeResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasLoadBalancer() == other.hasLoadBalancer());
     if (hasLoadBalancer()) {
       result = result && getLoadBalancer()
@@ -247,11 +201,7 @@ public  final class DescribeResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasLoadBalancer()) {
       hash = (37 * hash) + LOAD_BALANCER_FIELD_NUMBER;
       hash = (53 * hash) + getLoadBalancer().hashCode();
@@ -378,12 +328,6 @@ public  final class DescribeResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (loadBalancerBuilder_ == null) {
         loadBalancer_ = null;
       } else {
@@ -418,11 +362,6 @@ public  final class DescribeResponse extends
 
     public com.appscode.api.loadbalancer.v1beta1.DescribeResponse buildPartial() {
       com.appscode.api.loadbalancer.v1beta1.DescribeResponse result = new com.appscode.api.loadbalancer.v1beta1.DescribeResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (loadBalancerBuilder_ == null) {
         result.loadBalancer_ = loadBalancer_;
       } else {
@@ -474,9 +413,6 @@ public  final class DescribeResponse extends
 
     public Builder mergeFrom(com.appscode.api.loadbalancer.v1beta1.DescribeResponse other) {
       if (other == com.appscode.api.loadbalancer.v1beta1.DescribeResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasLoadBalancer()) {
         mergeLoadBalancer(other.getLoadBalancer());
       }
@@ -509,134 +445,17 @@ public  final class DescribeResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.loadbalancer.v1beta1.LoadBalancer loadBalancer_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> loadBalancerBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public boolean hasLoadBalancer() {
       return loadBalancerBuilder_ != null || loadBalancer_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -646,7 +465,7 @@ public  final class DescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public Builder setLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -662,7 +481,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public Builder setLoadBalancer(
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder builderForValue) {
@@ -676,7 +495,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public Builder mergeLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -694,7 +513,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public Builder clearLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -708,7 +527,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder getLoadBalancerBuilder() {
       
@@ -716,7 +535,7 @@ public  final class DescribeResponse extends
       return getLoadBalancerFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
       if (loadBalancerBuilder_ != null) {
@@ -727,7 +546,7 @@ public  final class DescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> 
@@ -747,13 +566,13 @@ public  final class DescribeResponse extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> rawBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public boolean hasRaw() {
       return rawBuilder_ != null || raw_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
       if (rawBuilder_ == null) {
@@ -763,7 +582,7 @@ public  final class DescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public Builder setRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -779,7 +598,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public Builder setRaw(
         com.appscode.api.loadbalancer.v1beta1.Raw.Builder builderForValue) {
@@ -793,7 +612,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public Builder mergeRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -811,7 +630,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public Builder clearRaw() {
       if (rawBuilder_ == null) {
@@ -825,7 +644,7 @@ public  final class DescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw.Builder getRawBuilder() {
       
@@ -833,7 +652,7 @@ public  final class DescribeResponse extends
       return getRawFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
       if (rawBuilder_ != null) {
@@ -844,7 +663,7 @@ public  final class DescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> 

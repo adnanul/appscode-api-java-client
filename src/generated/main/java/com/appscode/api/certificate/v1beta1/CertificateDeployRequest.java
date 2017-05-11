@@ -96,7 +96,7 @@ public  final class CertificateDeployRequest extends
   public static final int UID_FIELD_NUMBER = 1;
   private volatile java.lang.Object uid_;
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   public java.lang.String getUid() {
     java.lang.Object ref = uid_;
@@ -111,7 +111,7 @@ public  final class CertificateDeployRequest extends
     }
   }
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getUidBytes() {
@@ -130,7 +130,7 @@ public  final class CertificateDeployRequest extends
   public static final int SECRET_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object secretName_;
   /**
-   * <code>optional string secret_name = 2;</code>
+   * <code>string secret_name = 2;</code>
    */
   public java.lang.String getSecretName() {
     java.lang.Object ref = secretName_;
@@ -145,7 +145,7 @@ public  final class CertificateDeployRequest extends
     }
   }
   /**
-   * <code>optional string secret_name = 2;</code>
+   * <code>string secret_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getSecretNameBytes() {
@@ -164,7 +164,7 @@ public  final class CertificateDeployRequest extends
   public static final int CLUSTER_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object clusterName_;
   /**
-   * <code>optional string cluster_name = 3;</code>
+   * <code>string cluster_name = 3;</code>
    */
   public java.lang.String getClusterName() {
     java.lang.Object ref = clusterName_;
@@ -179,7 +179,7 @@ public  final class CertificateDeployRequest extends
     }
   }
   /**
-   * <code>optional string cluster_name = 3;</code>
+   * <code>string cluster_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getClusterNameBytes() {
@@ -198,7 +198,7 @@ public  final class CertificateDeployRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 4;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -213,7 +213,7 @@ public  final class CertificateDeployRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -305,7 +305,7 @@ public  final class CertificateDeployRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + UID_FIELD_NUMBER;
     hash = (53 * hash) + getUid().hashCode();
     hash = (37 * hash) + SECRET_NAME_FIELD_NUMBER;
@@ -551,7 +551,7 @@ public  final class CertificateDeployRequest extends
 
     private java.lang.Object uid_ = "";
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public java.lang.String getUid() {
       java.lang.Object ref = uid_;
@@ -566,7 +566,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getUidBytes() {
@@ -582,7 +582,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder setUid(
         java.lang.String value) {
@@ -595,7 +595,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder clearUid() {
       
@@ -604,7 +604,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder setUidBytes(
         com.google.protobuf.ByteString value) {
@@ -620,7 +620,7 @@ public  final class CertificateDeployRequest extends
 
     private java.lang.Object secretName_ = "";
     /**
-     * <code>optional string secret_name = 2;</code>
+     * <code>string secret_name = 2;</code>
      */
     public java.lang.String getSecretName() {
       java.lang.Object ref = secretName_;
@@ -635,7 +635,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string secret_name = 2;</code>
+     * <code>string secret_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSecretNameBytes() {
@@ -651,7 +651,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string secret_name = 2;</code>
+     * <code>string secret_name = 2;</code>
      */
     public Builder setSecretName(
         java.lang.String value) {
@@ -664,7 +664,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string secret_name = 2;</code>
+     * <code>string secret_name = 2;</code>
      */
     public Builder clearSecretName() {
       
@@ -673,7 +673,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string secret_name = 2;</code>
+     * <code>string secret_name = 2;</code>
      */
     public Builder setSecretNameBytes(
         com.google.protobuf.ByteString value) {
@@ -689,7 +689,7 @@ public  final class CertificateDeployRequest extends
 
     private java.lang.Object clusterName_ = "";
     /**
-     * <code>optional string cluster_name = 3;</code>
+     * <code>string cluster_name = 3;</code>
      */
     public java.lang.String getClusterName() {
       java.lang.Object ref = clusterName_;
@@ -704,7 +704,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string cluster_name = 3;</code>
+     * <code>string cluster_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getClusterNameBytes() {
@@ -720,7 +720,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string cluster_name = 3;</code>
+     * <code>string cluster_name = 3;</code>
      */
     public Builder setClusterName(
         java.lang.String value) {
@@ -733,7 +733,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster_name = 3;</code>
+     * <code>string cluster_name = 3;</code>
      */
     public Builder clearClusterName() {
       
@@ -742,7 +742,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster_name = 3;</code>
+     * <code>string cluster_name = 3;</code>
      */
     public Builder setClusterNameBytes(
         com.google.protobuf.ByteString value) {
@@ -758,7 +758,7 @@ public  final class CertificateDeployRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -773,7 +773,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -789,7 +789,7 @@ public  final class CertificateDeployRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -802,7 +802,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder clearNamespace() {
       
@@ -811,7 +811,7 @@ public  final class CertificateDeployRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {

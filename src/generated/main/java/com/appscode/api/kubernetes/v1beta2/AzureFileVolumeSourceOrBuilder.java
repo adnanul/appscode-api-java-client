@@ -12,7 +12,7 @@ public interface AzureFileVolumeSourceOrBuilder extends
    * the name of secret that contains Azure Storage Account Name and Key
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   java.lang.String getSecretName();
   /**
@@ -20,7 +20,7 @@ public interface AzureFileVolumeSourceOrBuilder extends
    * the name of secret that contains Azure Storage Account Name and Key
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   com.google.protobuf.ByteString
       getSecretNameBytes();
@@ -30,7 +30,7 @@ public interface AzureFileVolumeSourceOrBuilder extends
    * Share Name
    * </pre>
    *
-   * <code>optional string shareName = 2;</code>
+   * <code>string shareName = 2;</code>
    */
   java.lang.String getShareName();
   /**
@@ -38,7 +38,7 @@ public interface AzureFileVolumeSourceOrBuilder extends
    * Share Name
    * </pre>
    *
-   * <code>optional string shareName = 2;</code>
+   * <code>string shareName = 2;</code>
    */
   com.google.protobuf.ByteString
       getShareNameBytes();
@@ -49,7 +49,7 @@ public interface AzureFileVolumeSourceOrBuilder extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   boolean getReadOnly();
 }

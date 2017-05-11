@@ -8,28 +8,28 @@ public interface InitSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   boolean hasScriptSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getScriptSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder getScriptSourceOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   boolean hasSnapshotSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec getSnapshotSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpecOrBuilder getSnapshotSourceOrBuilder();
 }

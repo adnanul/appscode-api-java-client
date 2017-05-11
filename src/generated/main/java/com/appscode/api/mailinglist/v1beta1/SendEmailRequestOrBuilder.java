@@ -8,51 +8,51 @@ public interface SendEmailRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string sender_name = 1;</code>
+   * <code>string sender_name = 1;</code>
    */
   java.lang.String getSenderName();
   /**
-   * <code>optional string sender_name = 1;</code>
+   * <code>string sender_name = 1;</code>
    */
   com.google.protobuf.ByteString
       getSenderNameBytes();
 
   /**
-   * <code>optional string sender_email = 2;</code>
+   * <code>string sender_email = 2;</code>
    */
   java.lang.String getSenderEmail();
   /**
-   * <code>optional string sender_email = 2;</code>
+   * <code>string sender_email = 2;</code>
    */
   com.google.protobuf.ByteString
       getSenderEmailBytes();
 
   /**
-   * <code>optional string subject = 3;</code>
+   * <code>string subject = 3;</code>
    */
   java.lang.String getSubject();
   /**
-   * <code>optional string subject = 3;</code>
+   * <code>string subject = 3;</code>
    */
   com.google.protobuf.ByteString
       getSubjectBytes();
 
   /**
-   * <code>optional string body = 4;</code>
+   * <code>string body = 4;</code>
    */
   java.lang.String getBody();
   /**
-   * <code>optional string body = 4;</code>
+   * <code>string body = 4;</code>
    */
   com.google.protobuf.ByteString
       getBodyBytes();
 
   /**
-   * <code>optional string receiver_email = 5;</code>
+   * <code>string receiver_email = 5;</code>
    */
   java.lang.String getReceiverEmail();
   /**
-   * <code>optional string receiver_email = 5;</code>
+   * <code>string receiver_email = 5;</code>
    */
   com.google.protobuf.ByteString
       getReceiverEmailBytes();

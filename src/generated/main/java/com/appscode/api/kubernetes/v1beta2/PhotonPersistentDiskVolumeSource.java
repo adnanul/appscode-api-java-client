@@ -90,7 +90,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
    * ID that identifies Photon Controller persistent disk
    * </pre>
    *
-   * <code>optional string pdID = 1;</code>
+   * <code>string pdID = 1;</code>
    */
   public java.lang.String getPdID() {
     java.lang.Object ref = pdID_;
@@ -109,7 +109,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
    * ID that identifies Photon Controller persistent disk
    * </pre>
    *
-   * <code>optional string pdID = 1;</code>
+   * <code>string pdID = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPdIDBytes() {
@@ -134,7 +134,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -155,7 +155,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -231,7 +231,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PDID_FIELD_NUMBER;
     hash = (53 * hash) + getPdID().hashCode();
     hash = (37 * hash) + FSTYPE_FIELD_NUMBER;
@@ -467,7 +467,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * ID that identifies Photon Controller persistent disk
      * </pre>
      *
-     * <code>optional string pdID = 1;</code>
+     * <code>string pdID = 1;</code>
      */
     public java.lang.String getPdID() {
       java.lang.Object ref = pdID_;
@@ -486,7 +486,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * ID that identifies Photon Controller persistent disk
      * </pre>
      *
-     * <code>optional string pdID = 1;</code>
+     * <code>string pdID = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPdIDBytes() {
@@ -506,7 +506,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * ID that identifies Photon Controller persistent disk
      * </pre>
      *
-     * <code>optional string pdID = 1;</code>
+     * <code>string pdID = 1;</code>
      */
     public Builder setPdID(
         java.lang.String value) {
@@ -523,7 +523,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * ID that identifies Photon Controller persistent disk
      * </pre>
      *
-     * <code>optional string pdID = 1;</code>
+     * <code>string pdID = 1;</code>
      */
     public Builder clearPdID() {
       
@@ -536,7 +536,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * ID that identifies Photon Controller persistent disk
      * </pre>
      *
-     * <code>optional string pdID = 1;</code>
+     * <code>string pdID = 1;</code>
      */
     public Builder setPdIDBytes(
         com.google.protobuf.ByteString value) {
@@ -558,7 +558,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -579,7 +579,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -601,7 +601,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -620,7 +620,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder clearFsType() {
       
@@ -635,7 +635,7 @@ public  final class PhotonPersistentDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {

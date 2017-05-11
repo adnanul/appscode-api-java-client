@@ -96,7 +96,7 @@ public  final class Subject extends
   public static final int KIND_FIELD_NUMBER = 1;
   private volatile java.lang.Object kind_;
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public java.lang.String getKind() {
     java.lang.Object ref = kind_;
@@ -111,7 +111,7 @@ public  final class Subject extends
     }
   }
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public com.google.protobuf.ByteString
       getKindBytes() {
@@ -130,7 +130,7 @@ public  final class Subject extends
   public static final int API_VERSION_FIELD_NUMBER = 2;
   private volatile java.lang.Object apiVersion_;
   /**
-   * <code>optional string api_version = 2;</code>
+   * <code>string api_version = 2;</code>
    */
   public java.lang.String getApiVersion() {
     java.lang.Object ref = apiVersion_;
@@ -145,7 +145,7 @@ public  final class Subject extends
     }
   }
   /**
-   * <code>optional string api_version = 2;</code>
+   * <code>string api_version = 2;</code>
    */
   public com.google.protobuf.ByteString
       getApiVersionBytes() {
@@ -164,7 +164,7 @@ public  final class Subject extends
   public static final int NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -179,7 +179,7 @@ public  final class Subject extends
     }
   }
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -198,7 +198,7 @@ public  final class Subject extends
   public static final int NAMESPACE_FIELD_NUMBER = 4;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -213,7 +213,7 @@ public  final class Subject extends
     }
   }
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -305,7 +305,7 @@ public  final class Subject extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + KIND_FIELD_NUMBER;
     hash = (53 * hash) + getKind().hashCode();
     hash = (37 * hash) + API_VERSION_FIELD_NUMBER;
@@ -551,7 +551,7 @@ public  final class Subject extends
 
     private java.lang.Object kind_ = "";
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public java.lang.String getKind() {
       java.lang.Object ref = kind_;
@@ -566,7 +566,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
@@ -582,7 +582,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKind(
         java.lang.String value) {
@@ -595,7 +595,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder clearKind() {
       
@@ -604,7 +604,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKindBytes(
         com.google.protobuf.ByteString value) {
@@ -620,7 +620,7 @@ public  final class Subject extends
 
     private java.lang.Object apiVersion_ = "";
     /**
-     * <code>optional string api_version = 2;</code>
+     * <code>string api_version = 2;</code>
      */
     public java.lang.String getApiVersion() {
       java.lang.Object ref = apiVersion_;
@@ -635,7 +635,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string api_version = 2;</code>
+     * <code>string api_version = 2;</code>
      */
     public com.google.protobuf.ByteString
         getApiVersionBytes() {
@@ -651,7 +651,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string api_version = 2;</code>
+     * <code>string api_version = 2;</code>
      */
     public Builder setApiVersion(
         java.lang.String value) {
@@ -664,7 +664,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string api_version = 2;</code>
+     * <code>string api_version = 2;</code>
      */
     public Builder clearApiVersion() {
       
@@ -673,7 +673,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string api_version = 2;</code>
+     * <code>string api_version = 2;</code>
      */
     public Builder setApiVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -689,7 +689,7 @@ public  final class Subject extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -704,7 +704,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -720,7 +720,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -733,7 +733,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder clearName() {
       
@@ -742,7 +742,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -758,7 +758,7 @@ public  final class Subject extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -773,7 +773,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -789,7 +789,7 @@ public  final class Subject extends
       }
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -802,7 +802,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder clearNamespace() {
       
@@ -811,7 +811,7 @@ public  final class Subject extends
       return this;
     }
     /**
-     * <code>optional string namespace = 4;</code>
+     * <code>string namespace = 4;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {

@@ -87,7 +87,7 @@ public  final class ClusterSettings extends
   public static final int LOG_INDEX_PREFIX_FIELD_NUMBER = 1;
   private volatile java.lang.Object logIndexPrefix_;
   /**
-   * <code>optional string log_index_prefix = 1;</code>
+   * <code>string log_index_prefix = 1;</code>
    */
   public java.lang.String getLogIndexPrefix() {
     java.lang.Object ref = logIndexPrefix_;
@@ -102,7 +102,7 @@ public  final class ClusterSettings extends
     }
   }
   /**
-   * <code>optional string log_index_prefix = 1;</code>
+   * <code>string log_index_prefix = 1;</code>
    */
   public com.google.protobuf.ByteString
       getLogIndexPrefixBytes() {
@@ -125,7 +125,7 @@ public  final class ClusterSettings extends
    * Number of secs logs will be stored in ElasticSearch
    * </pre>
    *
-   * <code>optional int64 log_storage_lifetime = 2;</code>
+   * <code>int64 log_storage_lifetime = 2;</code>
    */
   public long getLogStorageLifetime() {
     return logStorageLifetime_;
@@ -138,7 +138,7 @@ public  final class ClusterSettings extends
    * Number of secs logs will be stored in InfluxDB
    * </pre>
    *
-   * <code>optional int64 monitoring_storage_lifetime = 3;</code>
+   * <code>int64 monitoring_storage_lifetime = 3;</code>
    */
   public long getMonitoringStorageLifetime() {
     return monitoringStorageLifetime_;
@@ -214,7 +214,7 @@ public  final class ClusterSettings extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + LOG_INDEX_PREFIX_FIELD_NUMBER;
     hash = (53 * hash) + getLogIndexPrefix().hashCode();
     hash = (37 * hash) + LOG_STORAGE_LIFETIME_FIELD_NUMBER;
@@ -451,7 +451,7 @@ public  final class ClusterSettings extends
 
     private java.lang.Object logIndexPrefix_ = "";
     /**
-     * <code>optional string log_index_prefix = 1;</code>
+     * <code>string log_index_prefix = 1;</code>
      */
     public java.lang.String getLogIndexPrefix() {
       java.lang.Object ref = logIndexPrefix_;
@@ -466,7 +466,7 @@ public  final class ClusterSettings extends
       }
     }
     /**
-     * <code>optional string log_index_prefix = 1;</code>
+     * <code>string log_index_prefix = 1;</code>
      */
     public com.google.protobuf.ByteString
         getLogIndexPrefixBytes() {
@@ -482,7 +482,7 @@ public  final class ClusterSettings extends
       }
     }
     /**
-     * <code>optional string log_index_prefix = 1;</code>
+     * <code>string log_index_prefix = 1;</code>
      */
     public Builder setLogIndexPrefix(
         java.lang.String value) {
@@ -495,7 +495,7 @@ public  final class ClusterSettings extends
       return this;
     }
     /**
-     * <code>optional string log_index_prefix = 1;</code>
+     * <code>string log_index_prefix = 1;</code>
      */
     public Builder clearLogIndexPrefix() {
       
@@ -504,7 +504,7 @@ public  final class ClusterSettings extends
       return this;
     }
     /**
-     * <code>optional string log_index_prefix = 1;</code>
+     * <code>string log_index_prefix = 1;</code>
      */
     public Builder setLogIndexPrefixBytes(
         com.google.protobuf.ByteString value) {
@@ -524,7 +524,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in ElasticSearch
      * </pre>
      *
-     * <code>optional int64 log_storage_lifetime = 2;</code>
+     * <code>int64 log_storage_lifetime = 2;</code>
      */
     public long getLogStorageLifetime() {
       return logStorageLifetime_;
@@ -534,7 +534,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in ElasticSearch
      * </pre>
      *
-     * <code>optional int64 log_storage_lifetime = 2;</code>
+     * <code>int64 log_storage_lifetime = 2;</code>
      */
     public Builder setLogStorageLifetime(long value) {
       
@@ -547,7 +547,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in ElasticSearch
      * </pre>
      *
-     * <code>optional int64 log_storage_lifetime = 2;</code>
+     * <code>int64 log_storage_lifetime = 2;</code>
      */
     public Builder clearLogStorageLifetime() {
       
@@ -562,7 +562,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in InfluxDB
      * </pre>
      *
-     * <code>optional int64 monitoring_storage_lifetime = 3;</code>
+     * <code>int64 monitoring_storage_lifetime = 3;</code>
      */
     public long getMonitoringStorageLifetime() {
       return monitoringStorageLifetime_;
@@ -572,7 +572,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in InfluxDB
      * </pre>
      *
-     * <code>optional int64 monitoring_storage_lifetime = 3;</code>
+     * <code>int64 monitoring_storage_lifetime = 3;</code>
      */
     public Builder setMonitoringStorageLifetime(long value) {
       
@@ -585,7 +585,7 @@ public  final class ClusterSettings extends
      * Number of secs logs will be stored in InfluxDB
      * </pre>
      *
-     * <code>optional int64 monitoring_storage_lifetime = 3;</code>
+     * <code>int64 monitoring_storage_lifetime = 3;</code>
      */
     public Builder clearMonitoringStorageLifetime() {
       

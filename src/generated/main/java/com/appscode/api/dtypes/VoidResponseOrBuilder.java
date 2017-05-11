@@ -6,17 +6,4 @@ package com.appscode.api.dtypes;
 public interface VoidResponseOrBuilder extends
     // @@protoc_insertion_point(interface_extends:appscode.dtypes.VoidResponse)
     com.google.protobuf.MessageOrBuilder {
-
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
 }

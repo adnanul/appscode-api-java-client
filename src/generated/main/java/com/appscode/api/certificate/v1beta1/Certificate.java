@@ -149,7 +149,7 @@ public  final class Certificate extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -164,7 +164,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -183,7 +183,7 @@ public  final class Certificate extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -198,7 +198,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -217,7 +217,7 @@ public  final class Certificate extends
   public static final int COMMON_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object commonName_;
   /**
-   * <code>optional string common_name = 3;</code>
+   * <code>string common_name = 3;</code>
    */
   public java.lang.String getCommonName() {
     java.lang.Object ref = commonName_;
@@ -232,7 +232,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string common_name = 3;</code>
+   * <code>string common_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getCommonNameBytes() {
@@ -251,7 +251,7 @@ public  final class Certificate extends
   public static final int ISSUED_BY_FIELD_NUMBER = 4;
   private volatile java.lang.Object issuedBy_;
   /**
-   * <code>optional string issued_by = 4;</code>
+   * <code>string issued_by = 4;</code>
    */
   public java.lang.String getIssuedBy() {
     java.lang.Object ref = issuedBy_;
@@ -266,7 +266,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string issued_by = 4;</code>
+   * <code>string issued_by = 4;</code>
    */
   public com.google.protobuf.ByteString
       getIssuedByBytes() {
@@ -285,7 +285,7 @@ public  final class Certificate extends
   public static final int VALID_FROM_FIELD_NUMBER = 5;
   private long validFrom_;
   /**
-   * <code>optional int64 valid_from = 5;</code>
+   * <code>int64 valid_from = 5;</code>
    */
   public long getValidFrom() {
     return validFrom_;
@@ -294,7 +294,7 @@ public  final class Certificate extends
   public static final int EXPIRE_DATE_FIELD_NUMBER = 6;
   private long expireDate_;
   /**
-   * <code>optional int64 expire_date = 6;</code>
+   * <code>int64 expire_date = 6;</code>
    */
   public long getExpireDate() {
     return expireDate_;
@@ -356,7 +356,7 @@ public  final class Certificate extends
   public static final int CERT_FIELD_NUMBER = 8;
   private volatile java.lang.Object cert_;
   /**
-   * <code>optional string cert = 8;</code>
+   * <code>string cert = 8;</code>
    */
   public java.lang.String getCert() {
     java.lang.Object ref = cert_;
@@ -371,7 +371,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string cert = 8;</code>
+   * <code>string cert = 8;</code>
    */
   public com.google.protobuf.ByteString
       getCertBytes() {
@@ -390,7 +390,7 @@ public  final class Certificate extends
   public static final int KEY_FIELD_NUMBER = 9;
   private volatile java.lang.Object key_;
   /**
-   * <code>optional string key = 9;</code>
+   * <code>string key = 9;</code>
    */
   public java.lang.String getKey() {
     java.lang.Object ref = key_;
@@ -405,7 +405,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string key = 9;</code>
+   * <code>string key = 9;</code>
    */
   public com.google.protobuf.ByteString
       getKeyBytes() {
@@ -424,7 +424,7 @@ public  final class Certificate extends
   public static final int VERSION_FIELD_NUMBER = 10;
   private int version_;
   /**
-   * <code>optional int32 version = 10;</code>
+   * <code>int32 version = 10;</code>
    */
   public int getVersion() {
     return version_;
@@ -433,7 +433,7 @@ public  final class Certificate extends
   public static final int SERIAL_NUMBER_FIELD_NUMBER = 11;
   private volatile java.lang.Object serialNumber_;
   /**
-   * <code>optional string serial_number = 11;</code>
+   * <code>string serial_number = 11;</code>
    */
   public java.lang.String getSerialNumber() {
     java.lang.Object ref = serialNumber_;
@@ -448,7 +448,7 @@ public  final class Certificate extends
     }
   }
   /**
-   * <code>optional string serial_number = 11;</code>
+   * <code>string serial_number = 11;</code>
    */
   public com.google.protobuf.ByteString
       getSerialNumberBytes() {
@@ -604,7 +604,7 @@ public  final class Certificate extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -928,7 +928,7 @@ public  final class Certificate extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -943,7 +943,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -959,7 +959,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -972,7 +972,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -981,7 +981,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -997,7 +997,7 @@ public  final class Certificate extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1012,7 +1012,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1028,7 +1028,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1041,7 +1041,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -1050,7 +1050,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1066,7 +1066,7 @@ public  final class Certificate extends
 
     private java.lang.Object commonName_ = "";
     /**
-     * <code>optional string common_name = 3;</code>
+     * <code>string common_name = 3;</code>
      */
     public java.lang.String getCommonName() {
       java.lang.Object ref = commonName_;
@@ -1081,7 +1081,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string common_name = 3;</code>
+     * <code>string common_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getCommonNameBytes() {
@@ -1097,7 +1097,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string common_name = 3;</code>
+     * <code>string common_name = 3;</code>
      */
     public Builder setCommonName(
         java.lang.String value) {
@@ -1110,7 +1110,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string common_name = 3;</code>
+     * <code>string common_name = 3;</code>
      */
     public Builder clearCommonName() {
       
@@ -1119,7 +1119,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string common_name = 3;</code>
+     * <code>string common_name = 3;</code>
      */
     public Builder setCommonNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1135,7 +1135,7 @@ public  final class Certificate extends
 
     private java.lang.Object issuedBy_ = "";
     /**
-     * <code>optional string issued_by = 4;</code>
+     * <code>string issued_by = 4;</code>
      */
     public java.lang.String getIssuedBy() {
       java.lang.Object ref = issuedBy_;
@@ -1150,7 +1150,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string issued_by = 4;</code>
+     * <code>string issued_by = 4;</code>
      */
     public com.google.protobuf.ByteString
         getIssuedByBytes() {
@@ -1166,7 +1166,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string issued_by = 4;</code>
+     * <code>string issued_by = 4;</code>
      */
     public Builder setIssuedBy(
         java.lang.String value) {
@@ -1179,7 +1179,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string issued_by = 4;</code>
+     * <code>string issued_by = 4;</code>
      */
     public Builder clearIssuedBy() {
       
@@ -1188,7 +1188,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string issued_by = 4;</code>
+     * <code>string issued_by = 4;</code>
      */
     public Builder setIssuedByBytes(
         com.google.protobuf.ByteString value) {
@@ -1204,13 +1204,13 @@ public  final class Certificate extends
 
     private long validFrom_ ;
     /**
-     * <code>optional int64 valid_from = 5;</code>
+     * <code>int64 valid_from = 5;</code>
      */
     public long getValidFrom() {
       return validFrom_;
     }
     /**
-     * <code>optional int64 valid_from = 5;</code>
+     * <code>int64 valid_from = 5;</code>
      */
     public Builder setValidFrom(long value) {
       
@@ -1219,7 +1219,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional int64 valid_from = 5;</code>
+     * <code>int64 valid_from = 5;</code>
      */
     public Builder clearValidFrom() {
       
@@ -1230,13 +1230,13 @@ public  final class Certificate extends
 
     private long expireDate_ ;
     /**
-     * <code>optional int64 expire_date = 6;</code>
+     * <code>int64 expire_date = 6;</code>
      */
     public long getExpireDate() {
       return expireDate_;
     }
     /**
-     * <code>optional int64 expire_date = 6;</code>
+     * <code>int64 expire_date = 6;</code>
      */
     public Builder setExpireDate(long value) {
       
@@ -1245,7 +1245,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional int64 expire_date = 6;</code>
+     * <code>int64 expire_date = 6;</code>
      */
     public Builder clearExpireDate() {
       
@@ -1404,7 +1404,7 @@ public  final class Certificate extends
 
     private java.lang.Object cert_ = "";
     /**
-     * <code>optional string cert = 8;</code>
+     * <code>string cert = 8;</code>
      */
     public java.lang.String getCert() {
       java.lang.Object ref = cert_;
@@ -1419,7 +1419,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string cert = 8;</code>
+     * <code>string cert = 8;</code>
      */
     public com.google.protobuf.ByteString
         getCertBytes() {
@@ -1435,7 +1435,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string cert = 8;</code>
+     * <code>string cert = 8;</code>
      */
     public Builder setCert(
         java.lang.String value) {
@@ -1448,7 +1448,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string cert = 8;</code>
+     * <code>string cert = 8;</code>
      */
     public Builder clearCert() {
       
@@ -1457,7 +1457,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string cert = 8;</code>
+     * <code>string cert = 8;</code>
      */
     public Builder setCertBytes(
         com.google.protobuf.ByteString value) {
@@ -1473,7 +1473,7 @@ public  final class Certificate extends
 
     private java.lang.Object key_ = "";
     /**
-     * <code>optional string key = 9;</code>
+     * <code>string key = 9;</code>
      */
     public java.lang.String getKey() {
       java.lang.Object ref = key_;
@@ -1488,7 +1488,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string key = 9;</code>
+     * <code>string key = 9;</code>
      */
     public com.google.protobuf.ByteString
         getKeyBytes() {
@@ -1504,7 +1504,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string key = 9;</code>
+     * <code>string key = 9;</code>
      */
     public Builder setKey(
         java.lang.String value) {
@@ -1517,7 +1517,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string key = 9;</code>
+     * <code>string key = 9;</code>
      */
     public Builder clearKey() {
       
@@ -1526,7 +1526,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string key = 9;</code>
+     * <code>string key = 9;</code>
      */
     public Builder setKeyBytes(
         com.google.protobuf.ByteString value) {
@@ -1542,13 +1542,13 @@ public  final class Certificate extends
 
     private int version_ ;
     /**
-     * <code>optional int32 version = 10;</code>
+     * <code>int32 version = 10;</code>
      */
     public int getVersion() {
       return version_;
     }
     /**
-     * <code>optional int32 version = 10;</code>
+     * <code>int32 version = 10;</code>
      */
     public Builder setVersion(int value) {
       
@@ -1557,7 +1557,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional int32 version = 10;</code>
+     * <code>int32 version = 10;</code>
      */
     public Builder clearVersion() {
       
@@ -1568,7 +1568,7 @@ public  final class Certificate extends
 
     private java.lang.Object serialNumber_ = "";
     /**
-     * <code>optional string serial_number = 11;</code>
+     * <code>string serial_number = 11;</code>
      */
     public java.lang.String getSerialNumber() {
       java.lang.Object ref = serialNumber_;
@@ -1583,7 +1583,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string serial_number = 11;</code>
+     * <code>string serial_number = 11;</code>
      */
     public com.google.protobuf.ByteString
         getSerialNumberBytes() {
@@ -1599,7 +1599,7 @@ public  final class Certificate extends
       }
     }
     /**
-     * <code>optional string serial_number = 11;</code>
+     * <code>string serial_number = 11;</code>
      */
     public Builder setSerialNumber(
         java.lang.String value) {
@@ -1612,7 +1612,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string serial_number = 11;</code>
+     * <code>string serial_number = 11;</code>
      */
     public Builder clearSerialNumber() {
       
@@ -1621,7 +1621,7 @@ public  final class Certificate extends
       return this;
     }
     /**
-     * <code>optional string serial_number = 11;</code>
+     * <code>string serial_number = 11;</code>
      */
     public Builder setSerialNumberBytes(
         com.google.protobuf.ByteString value) {

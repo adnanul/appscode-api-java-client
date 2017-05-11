@@ -96,7 +96,7 @@ public  final class IncidentEventCreateRequest extends
    * Incident PHID
    * </pre>
    *
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -115,7 +115,7 @@ public  final class IncidentEventCreateRequest extends
    * Incident PHID
    * </pre>
    *
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -134,7 +134,7 @@ public  final class IncidentEventCreateRequest extends
   public static final int COMMENT_FIELD_NUMBER = 2;
   private volatile java.lang.Object comment_;
   /**
-   * <code>optional string comment = 2;</code>
+   * <code>string comment = 2;</code>
    */
   public java.lang.String getComment() {
     java.lang.Object ref = comment_;
@@ -149,7 +149,7 @@ public  final class IncidentEventCreateRequest extends
     }
   }
   /**
-   * <code>optional string comment = 2;</code>
+   * <code>string comment = 2;</code>
    */
   public com.google.protobuf.ByteString
       getCommentBytes() {
@@ -168,7 +168,7 @@ public  final class IncidentEventCreateRequest extends
   public static final int ACKNOWLEDGE_FIELD_NUMBER = 3;
   private boolean acknowledge_;
   /**
-   * <code>optional bool acknowledge = 3;</code>
+   * <code>bool acknowledge = 3;</code>
    */
   public boolean getAcknowledge() {
     return acknowledge_;
@@ -243,7 +243,7 @@ public  final class IncidentEventCreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + COMMENT_FIELD_NUMBER;
@@ -488,7 +488,7 @@ public  final class IncidentEventCreateRequest extends
      * Incident PHID
      * </pre>
      *
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -507,7 +507,7 @@ public  final class IncidentEventCreateRequest extends
      * Incident PHID
      * </pre>
      *
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -527,7 +527,7 @@ public  final class IncidentEventCreateRequest extends
      * Incident PHID
      * </pre>
      *
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -544,7 +544,7 @@ public  final class IncidentEventCreateRequest extends
      * Incident PHID
      * </pre>
      *
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -557,7 +557,7 @@ public  final class IncidentEventCreateRequest extends
      * Incident PHID
      * </pre>
      *
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -573,7 +573,7 @@ public  final class IncidentEventCreateRequest extends
 
     private java.lang.Object comment_ = "";
     /**
-     * <code>optional string comment = 2;</code>
+     * <code>string comment = 2;</code>
      */
     public java.lang.String getComment() {
       java.lang.Object ref = comment_;
@@ -588,7 +588,7 @@ public  final class IncidentEventCreateRequest extends
       }
     }
     /**
-     * <code>optional string comment = 2;</code>
+     * <code>string comment = 2;</code>
      */
     public com.google.protobuf.ByteString
         getCommentBytes() {
@@ -604,7 +604,7 @@ public  final class IncidentEventCreateRequest extends
       }
     }
     /**
-     * <code>optional string comment = 2;</code>
+     * <code>string comment = 2;</code>
      */
     public Builder setComment(
         java.lang.String value) {
@@ -617,7 +617,7 @@ public  final class IncidentEventCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string comment = 2;</code>
+     * <code>string comment = 2;</code>
      */
     public Builder clearComment() {
       
@@ -626,7 +626,7 @@ public  final class IncidentEventCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string comment = 2;</code>
+     * <code>string comment = 2;</code>
      */
     public Builder setCommentBytes(
         com.google.protobuf.ByteString value) {
@@ -642,13 +642,13 @@ public  final class IncidentEventCreateRequest extends
 
     private boolean acknowledge_ ;
     /**
-     * <code>optional bool acknowledge = 3;</code>
+     * <code>bool acknowledge = 3;</code>
      */
     public boolean getAcknowledge() {
       return acknowledge_;
     }
     /**
-     * <code>optional bool acknowledge = 3;</code>
+     * <code>bool acknowledge = 3;</code>
      */
     public Builder setAcknowledge(boolean value) {
       
@@ -657,7 +657,7 @@ public  final class IncidentEventCreateRequest extends
       return this;
     }
     /**
-     * <code>optional bool acknowledge = 3;</code>
+     * <code>bool acknowledge = 3;</code>
      */
     public Builder clearAcknowledge() {
       

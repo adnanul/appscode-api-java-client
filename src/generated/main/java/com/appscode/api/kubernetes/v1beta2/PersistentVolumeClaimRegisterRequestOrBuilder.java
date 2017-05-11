@@ -8,36 +8,36 @@ public interface PersistentVolumeClaimRegisterRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   java.lang.String getCluster();
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   com.google.protobuf.ByteString
       getClusterBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional int64 size_gb = 3;</code>
+   * <code>int64 size_gb = 3;</code>
    */
   long getSizeGb();
 
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();

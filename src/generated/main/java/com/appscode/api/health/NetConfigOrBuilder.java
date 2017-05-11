@@ -8,90 +8,90 @@ public interface NetConfigOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string team_addr = 1;</code>
+   * <code>string team_addr = 1;</code>
    */
   java.lang.String getTeamAddr();
   /**
-   * <code>optional string team_addr = 1;</code>
+   * <code>string team_addr = 1;</code>
    */
   com.google.protobuf.ByteString
       getTeamAddrBytes();
 
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   boolean hasPublicUrls();
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   com.appscode.api.health.URLBase getPublicUrls();
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getPublicUrlsOrBuilder();
 
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   boolean hasTeamUrls();
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   com.appscode.api.health.URLBase getTeamUrls();
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getTeamUrlsOrBuilder();
 
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   boolean hasClusterUrls();
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   com.appscode.api.health.URLBase getClusterUrls();
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getClusterUrlsOrBuilder();
 
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   boolean hasInClusterUrls();
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   com.appscode.api.health.URLBase getInClusterUrls();
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getInClusterUrlsOrBuilder();
 
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   boolean hasURLShortenerUrls();
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   com.appscode.api.health.URLBase getURLShortenerUrls();
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getURLShortenerUrlsOrBuilder();
 
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   boolean hasFileUrls();
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   com.appscode.api.health.URLBase getFileUrls();
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   com.appscode.api.health.URLBaseOrBuilder getFileUrlsOrBuilder();
 }

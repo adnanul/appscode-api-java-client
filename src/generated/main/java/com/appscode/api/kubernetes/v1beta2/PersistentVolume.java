@@ -162,38 +162,38 @@ public  final class PersistentVolume extends
         getAccessModesBytes(int index);
 
     /**
-     * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+     * <code>string persistent_volume_reclaim_policy = 3;</code>
      */
     java.lang.String getPersistentVolumeReclaimPolicy();
     /**
-     * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+     * <code>string persistent_volume_reclaim_policy = 3;</code>
      */
     com.google.protobuf.ByteString
         getPersistentVolumeReclaimPolicyBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     boolean hasClaimRef();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ObjectReference getClaimRef();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getClaimRefOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     boolean hasPersistentVolumeSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.VolumeSource getPersistentVolumeSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getPersistentVolumeSourceOrBuilder();
   }
@@ -438,7 +438,7 @@ public  final class PersistentVolume extends
     public static final int PERSISTENT_VOLUME_RECLAIM_POLICY_FIELD_NUMBER = 3;
     private volatile java.lang.Object persistentVolumeReclaimPolicy_;
     /**
-     * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+     * <code>string persistent_volume_reclaim_policy = 3;</code>
      */
     public java.lang.String getPersistentVolumeReclaimPolicy() {
       java.lang.Object ref = persistentVolumeReclaimPolicy_;
@@ -453,7 +453,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+     * <code>string persistent_volume_reclaim_policy = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPersistentVolumeReclaimPolicyBytes() {
@@ -472,19 +472,19 @@ public  final class PersistentVolume extends
     public static final int CLAIM_REF_FIELD_NUMBER = 4;
     private com.appscode.api.kubernetes.v1beta2.ObjectReference claimRef_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     public boolean hasClaimRef() {
       return claimRef_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference getClaimRef() {
       return claimRef_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectReference.getDefaultInstance() : claimRef_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getClaimRefOrBuilder() {
       return getClaimRef();
@@ -493,19 +493,19 @@ public  final class PersistentVolume extends
     public static final int PERSISTENT_VOLUME_SOURCE_FIELD_NUMBER = 5;
     private com.appscode.api.kubernetes.v1beta2.VolumeSource persistentVolumeSource_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     public boolean hasPersistentVolumeSource() {
       return persistentVolumeSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSource getPersistentVolumeSource() {
       return persistentVolumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : persistentVolumeSource_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getPersistentVolumeSourceOrBuilder() {
       return getPersistentVolumeSource();
@@ -618,7 +618,7 @@ public  final class PersistentVolume extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (!internalGetCapacity().getMap().isEmpty()) {
         hash = (37 * hash) + CAPACITY_FIELD_NUMBER;
         hash = (53 * hash) + internalGetCapacity().hashCode();
@@ -1004,7 +1004,8 @@ public  final class PersistentVolume extends
       }
 
       public Builder clearCapacity() {
-        getMutableCapacity().clear();
+        internalGetMutableCapacity().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -1014,7 +1015,8 @@ public  final class PersistentVolume extends
       public Builder removeCapacity(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableCapacity().remove(key);
+        internalGetMutableCapacity().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -1033,7 +1035,8 @@ public  final class PersistentVolume extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableCapacity().put(key, value);
+        internalGetMutableCapacity().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -1042,7 +1045,8 @@ public  final class PersistentVolume extends
 
       public Builder putAllCapacity(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableCapacity().putAll(values);
+        internalGetMutableCapacity().getMutableMap()
+            .putAll(values);
         return this;
       }
 
@@ -1142,7 +1146,7 @@ public  final class PersistentVolume extends
 
       private java.lang.Object persistentVolumeReclaimPolicy_ = "";
       /**
-       * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+       * <code>string persistent_volume_reclaim_policy = 3;</code>
        */
       public java.lang.String getPersistentVolumeReclaimPolicy() {
         java.lang.Object ref = persistentVolumeReclaimPolicy_;
@@ -1157,7 +1161,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+       * <code>string persistent_volume_reclaim_policy = 3;</code>
        */
       public com.google.protobuf.ByteString
           getPersistentVolumeReclaimPolicyBytes() {
@@ -1173,7 +1177,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+       * <code>string persistent_volume_reclaim_policy = 3;</code>
        */
       public Builder setPersistentVolumeReclaimPolicy(
           java.lang.String value) {
@@ -1186,7 +1190,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+       * <code>string persistent_volume_reclaim_policy = 3;</code>
        */
       public Builder clearPersistentVolumeReclaimPolicy() {
         
@@ -1195,7 +1199,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string persistent_volume_reclaim_policy = 3;</code>
+       * <code>string persistent_volume_reclaim_policy = 3;</code>
        */
       public Builder setPersistentVolumeReclaimPolicyBytes(
           com.google.protobuf.ByteString value) {
@@ -1213,13 +1217,13 @@ public  final class PersistentVolume extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> claimRefBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public boolean hasClaimRef() {
         return claimRefBuilder_ != null || claimRef_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReference getClaimRef() {
         if (claimRefBuilder_ == null) {
@@ -1229,7 +1233,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public Builder setClaimRef(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
         if (claimRefBuilder_ == null) {
@@ -1245,7 +1249,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public Builder setClaimRef(
           com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder builderForValue) {
@@ -1259,7 +1263,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public Builder mergeClaimRef(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
         if (claimRefBuilder_ == null) {
@@ -1277,7 +1281,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public Builder clearClaimRef() {
         if (claimRefBuilder_ == null) {
@@ -1291,7 +1295,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder getClaimRefBuilder() {
         
@@ -1299,7 +1303,7 @@ public  final class PersistentVolume extends
         return getClaimRefFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getClaimRefOrBuilder() {
         if (claimRefBuilder_ != null) {
@@ -1310,7 +1314,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.ObjectReference claim_ref = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> 
@@ -1330,13 +1334,13 @@ public  final class PersistentVolume extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> persistentVolumeSourceBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public boolean hasPersistentVolumeSource() {
         return persistentVolumeSourceBuilder_ != null || persistentVolumeSource_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSource getPersistentVolumeSource() {
         if (persistentVolumeSourceBuilder_ == null) {
@@ -1346,7 +1350,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public Builder setPersistentVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
         if (persistentVolumeSourceBuilder_ == null) {
@@ -1362,7 +1366,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public Builder setPersistentVolumeSource(
           com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
@@ -1376,7 +1380,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public Builder mergePersistentVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
         if (persistentVolumeSourceBuilder_ == null) {
@@ -1394,7 +1398,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public Builder clearPersistentVolumeSource() {
         if (persistentVolumeSourceBuilder_ == null) {
@@ -1408,7 +1412,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getPersistentVolumeSourceBuilder() {
         
@@ -1416,7 +1420,7 @@ public  final class PersistentVolume extends
         return getPersistentVolumeSourceFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getPersistentVolumeSourceOrBuilder() {
         if (persistentVolumeSourceBuilder_ != null) {
@@ -1427,7 +1431,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource persistent_volume_source = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 
@@ -1496,31 +1500,31 @@ public  final class PersistentVolume extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
 
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
@@ -1611,7 +1615,7 @@ public  final class PersistentVolume extends
     public static final int PHASE_FIELD_NUMBER = 1;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -1626,7 +1630,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -1645,7 +1649,7 @@ public  final class PersistentVolume extends
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -1660,7 +1664,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -1679,7 +1683,7 @@ public  final class PersistentVolume extends
     public static final int REASON_FIELD_NUMBER = 3;
     private volatile java.lang.Object reason_;
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -1694,7 +1698,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -1778,7 +1782,7 @@ public  final class PersistentVolume extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -2015,7 +2019,7 @@ public  final class PersistentVolume extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -2030,7 +2034,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -2046,7 +2050,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -2059,7 +2063,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder clearPhase() {
         
@@ -2068,7 +2072,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -2084,7 +2088,7 @@ public  final class PersistentVolume extends
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -2099,7 +2103,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -2115,7 +2119,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -2128,7 +2132,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -2137,7 +2141,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -2153,7 +2157,7 @@ public  final class PersistentVolume extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -2168,7 +2172,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -2184,7 +2188,7 @@ public  final class PersistentVolume extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -2197,7 +2201,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder clearReason() {
         
@@ -2206,7 +2210,7 @@ public  final class PersistentVolume extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -2271,19 +2275,19 @@ public  final class PersistentVolume extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -2292,19 +2296,19 @@ public  final class PersistentVolume extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -2313,19 +2317,19 @@ public  final class PersistentVolume extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -2411,7 +2415,7 @@ public  final class PersistentVolume extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -2677,13 +2681,13 @@ public  final class PersistentVolume extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -2693,7 +2697,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2709,7 +2713,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -2723,7 +2727,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2741,7 +2745,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -2755,7 +2759,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -2763,7 +2767,7 @@ public  final class PersistentVolume extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -2774,7 +2778,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -2794,13 +2798,13 @@ public  final class PersistentVolume extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec getSpec() {
       if (specBuilder_ == null) {
@@ -2810,7 +2814,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec value) {
       if (specBuilder_ == null) {
@@ -2826,7 +2830,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec.Builder builderForValue) {
@@ -2840,7 +2844,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec value) {
       if (specBuilder_ == null) {
@@ -2858,7 +2862,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2872,7 +2876,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec.Builder getSpecBuilder() {
       
@@ -2880,7 +2884,7 @@ public  final class PersistentVolume extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -2891,7 +2895,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpec.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeSpecOrBuilder> 
@@ -2911,13 +2915,13 @@ public  final class PersistentVolume extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus getStatus() {
       if (statusBuilder_ == null) {
@@ -2927,7 +2931,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus value) {
       if (statusBuilder_ == null) {
@@ -2943,7 +2947,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus.Builder builderForValue) {
@@ -2957,7 +2961,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus value) {
       if (statusBuilder_ == null) {
@@ -2975,7 +2979,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2989,7 +2993,7 @@ public  final class PersistentVolume extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus.Builder getStatusBuilder() {
       
@@ -2997,7 +3001,7 @@ public  final class PersistentVolume extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -3008,7 +3012,7 @@ public  final class PersistentVolume extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatus.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolume.PersistentVolumeStatusOrBuilder> 

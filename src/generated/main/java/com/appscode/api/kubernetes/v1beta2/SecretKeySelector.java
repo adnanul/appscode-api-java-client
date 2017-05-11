@@ -96,7 +96,7 @@ public  final class SecretKeySelector extends
    * The name of the secret in the pod's namespace to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   public boolean hasLocalObjectReference() {
     return localObjectReference_ != null;
@@ -106,7 +106,7 @@ public  final class SecretKeySelector extends
    * The name of the secret in the pod's namespace to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectReference getLocalObjectReference() {
     return localObjectReference_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectReference.getDefaultInstance() : localObjectReference_;
@@ -116,7 +116,7 @@ public  final class SecretKeySelector extends
    * The name of the secret in the pod's namespace to select from.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder() {
     return getLocalObjectReference();
@@ -129,7 +129,7 @@ public  final class SecretKeySelector extends
    * The key of the secret to select from.  Must be a valid secret key.
    * </pre>
    *
-   * <code>optional string key = 2;</code>
+   * <code>string key = 2;</code>
    */
   public java.lang.String getKey() {
     java.lang.Object ref = key_;
@@ -148,7 +148,7 @@ public  final class SecretKeySelector extends
    * The key of the secret to select from.  Must be a valid secret key.
    * </pre>
    *
-   * <code>optional string key = 2;</code>
+   * <code>string key = 2;</code>
    */
   public com.google.protobuf.ByteString
       getKeyBytes() {
@@ -228,7 +228,7 @@ public  final class SecretKeySelector extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasLocalObjectReference()) {
       hash = (37 * hash) + LOCAL_OBJECT_REFERENCE_FIELD_NUMBER;
       hash = (53 * hash) + getLocalObjectReference().hashCode();
@@ -475,7 +475,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public boolean hasLocalObjectReference() {
       return localObjectReferenceBuilder_ != null || localObjectReference_ != null;
@@ -485,7 +485,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference getLocalObjectReference() {
       if (localObjectReferenceBuilder_ == null) {
@@ -499,7 +499,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public Builder setLocalObjectReference(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
       if (localObjectReferenceBuilder_ == null) {
@@ -519,7 +519,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public Builder setLocalObjectReference(
         com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder builderForValue) {
@@ -537,7 +537,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public Builder mergeLocalObjectReference(com.appscode.api.kubernetes.v1beta2.ObjectReference value) {
       if (localObjectReferenceBuilder_ == null) {
@@ -559,7 +559,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public Builder clearLocalObjectReference() {
       if (localObjectReferenceBuilder_ == null) {
@@ -577,7 +577,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder getLocalObjectReferenceBuilder() {
       
@@ -589,7 +589,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder() {
       if (localObjectReferenceBuilder_ != null) {
@@ -604,7 +604,7 @@ public  final class SecretKeySelector extends
      * The name of the secret in the pod's namespace to select from.
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectReference local_object_reference = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ObjectReference, com.appscode.api.kubernetes.v1beta2.ObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder> 
@@ -626,7 +626,7 @@ public  final class SecretKeySelector extends
      * The key of the secret to select from.  Must be a valid secret key.
      * </pre>
      *
-     * <code>optional string key = 2;</code>
+     * <code>string key = 2;</code>
      */
     public java.lang.String getKey() {
       java.lang.Object ref = key_;
@@ -645,7 +645,7 @@ public  final class SecretKeySelector extends
      * The key of the secret to select from.  Must be a valid secret key.
      * </pre>
      *
-     * <code>optional string key = 2;</code>
+     * <code>string key = 2;</code>
      */
     public com.google.protobuf.ByteString
         getKeyBytes() {
@@ -665,7 +665,7 @@ public  final class SecretKeySelector extends
      * The key of the secret to select from.  Must be a valid secret key.
      * </pre>
      *
-     * <code>optional string key = 2;</code>
+     * <code>string key = 2;</code>
      */
     public Builder setKey(
         java.lang.String value) {
@@ -682,7 +682,7 @@ public  final class SecretKeySelector extends
      * The key of the secret to select from.  Must be a valid secret key.
      * </pre>
      *
-     * <code>optional string key = 2;</code>
+     * <code>string key = 2;</code>
      */
     public Builder clearKey() {
       
@@ -695,7 +695,7 @@ public  final class SecretKeySelector extends
      * The key of the secret to select from.  Must be a valid secret key.
      * </pre>
      *
-     * <code>optional string key = 2;</code>
+     * <code>string key = 2;</code>
      */
     public Builder setKeyBytes(
         com.google.protobuf.ByteString value) {

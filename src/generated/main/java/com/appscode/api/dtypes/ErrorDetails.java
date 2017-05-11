@@ -87,7 +87,7 @@ public  final class ErrorDetails extends
   public static final int REQUESTED_RESOURCE_FIELD_NUMBER = 1;
   private volatile java.lang.Object requestedResource_;
   /**
-   * <code>optional string requested_resource = 1;</code>
+   * <code>string requested_resource = 1;</code>
    */
   public java.lang.String getRequestedResource() {
     java.lang.Object ref = requestedResource_;
@@ -102,7 +102,7 @@ public  final class ErrorDetails extends
     }
   }
   /**
-   * <code>optional string requested_resource = 1;</code>
+   * <code>string requested_resource = 1;</code>
    */
   public com.google.protobuf.ByteString
       getRequestedResourceBytes() {
@@ -121,7 +121,7 @@ public  final class ErrorDetails extends
   public static final int STACKTRACE_FIELD_NUMBER = 2;
   private volatile java.lang.Object stacktrace_;
   /**
-   * <code>optional string stacktrace = 2;</code>
+   * <code>string stacktrace = 2;</code>
    */
   public java.lang.String getStacktrace() {
     java.lang.Object ref = stacktrace_;
@@ -136,7 +136,7 @@ public  final class ErrorDetails extends
     }
   }
   /**
-   * <code>optional string stacktrace = 2;</code>
+   * <code>string stacktrace = 2;</code>
    */
   public com.google.protobuf.ByteString
       getStacktraceBytes() {
@@ -212,7 +212,7 @@ public  final class ErrorDetails extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + REQUESTED_RESOURCE_FIELD_NUMBER;
     hash = (53 * hash) + getRequestedResource().hashCode();
     hash = (37 * hash) + STACKTRACE_FIELD_NUMBER;
@@ -445,7 +445,7 @@ public  final class ErrorDetails extends
 
     private java.lang.Object requestedResource_ = "";
     /**
-     * <code>optional string requested_resource = 1;</code>
+     * <code>string requested_resource = 1;</code>
      */
     public java.lang.String getRequestedResource() {
       java.lang.Object ref = requestedResource_;
@@ -460,7 +460,7 @@ public  final class ErrorDetails extends
       }
     }
     /**
-     * <code>optional string requested_resource = 1;</code>
+     * <code>string requested_resource = 1;</code>
      */
     public com.google.protobuf.ByteString
         getRequestedResourceBytes() {
@@ -476,7 +476,7 @@ public  final class ErrorDetails extends
       }
     }
     /**
-     * <code>optional string requested_resource = 1;</code>
+     * <code>string requested_resource = 1;</code>
      */
     public Builder setRequestedResource(
         java.lang.String value) {
@@ -489,7 +489,7 @@ public  final class ErrorDetails extends
       return this;
     }
     /**
-     * <code>optional string requested_resource = 1;</code>
+     * <code>string requested_resource = 1;</code>
      */
     public Builder clearRequestedResource() {
       
@@ -498,7 +498,7 @@ public  final class ErrorDetails extends
       return this;
     }
     /**
-     * <code>optional string requested_resource = 1;</code>
+     * <code>string requested_resource = 1;</code>
      */
     public Builder setRequestedResourceBytes(
         com.google.protobuf.ByteString value) {
@@ -514,7 +514,7 @@ public  final class ErrorDetails extends
 
     private java.lang.Object stacktrace_ = "";
     /**
-     * <code>optional string stacktrace = 2;</code>
+     * <code>string stacktrace = 2;</code>
      */
     public java.lang.String getStacktrace() {
       java.lang.Object ref = stacktrace_;
@@ -529,7 +529,7 @@ public  final class ErrorDetails extends
       }
     }
     /**
-     * <code>optional string stacktrace = 2;</code>
+     * <code>string stacktrace = 2;</code>
      */
     public com.google.protobuf.ByteString
         getStacktraceBytes() {
@@ -545,7 +545,7 @@ public  final class ErrorDetails extends
       }
     }
     /**
-     * <code>optional string stacktrace = 2;</code>
+     * <code>string stacktrace = 2;</code>
      */
     public Builder setStacktrace(
         java.lang.String value) {
@@ -558,7 +558,7 @@ public  final class ErrorDetails extends
       return this;
     }
     /**
-     * <code>optional string stacktrace = 2;</code>
+     * <code>string stacktrace = 2;</code>
      */
     public Builder clearStacktrace() {
       
@@ -567,7 +567,7 @@ public  final class ErrorDetails extends
       return this;
     }
     /**
-     * <code>optional string stacktrace = 2;</code>
+     * <code>string stacktrace = 2;</code>
      */
     public Builder setStacktraceBytes(
         com.google.protobuf.ByteString value) {

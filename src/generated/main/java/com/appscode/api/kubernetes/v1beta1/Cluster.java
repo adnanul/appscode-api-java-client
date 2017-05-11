@@ -278,7 +278,7 @@ public  final class Cluster extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -293,7 +293,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -312,7 +312,7 @@ public  final class Cluster extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -327,7 +327,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -346,7 +346,7 @@ public  final class Cluster extends
   public static final int PROVIDER_FIELD_NUMBER = 3;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -361,7 +361,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -380,7 +380,7 @@ public  final class Cluster extends
   public static final int OS_FIELD_NUMBER = 4;
   private volatile java.lang.Object os_;
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   public java.lang.String getOs() {
     java.lang.Object ref = os_;
@@ -395,7 +395,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   public com.google.protobuf.ByteString
       getOsBytes() {
@@ -414,7 +414,7 @@ public  final class Cluster extends
   public static final int REGION_FIELD_NUMBER = 5;
   private volatile java.lang.Object region_;
   /**
-   * <code>optional string region = 5;</code>
+   * <code>string region = 5;</code>
    */
   public java.lang.String getRegion() {
     java.lang.Object ref = region_;
@@ -429,7 +429,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string region = 5;</code>
+   * <code>string region = 5;</code>
    */
   public com.google.protobuf.ByteString
       getRegionBytes() {
@@ -448,7 +448,7 @@ public  final class Cluster extends
   public static final int ZONE_FIELD_NUMBER = 6;
   private volatile java.lang.Object zone_;
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   public java.lang.String getZone() {
     java.lang.Object ref = zone_;
@@ -463,7 +463,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   public com.google.protobuf.ByteString
       getZoneBytes() {
@@ -482,7 +482,7 @@ public  final class Cluster extends
   public static final int CREATED_AT_FIELD_NUMBER = 7;
   private long createdAt_;
   /**
-   * <code>optional int64 created_at = 7;</code>
+   * <code>int64 created_at = 7;</code>
    */
   public long getCreatedAt() {
     return createdAt_;
@@ -567,7 +567,7 @@ public  final class Cluster extends
   public static final int DO_NOT_DELETE_FIELD_NUMBER = 9;
   private boolean doNotDelete_;
   /**
-   * <code>optional bool do_not_delete = 9;</code>
+   * <code>bool do_not_delete = 9;</code>
    */
   public boolean getDoNotDelete() {
     return doNotDelete_;
@@ -576,7 +576,7 @@ public  final class Cluster extends
   public static final int STATUS_FIELD_NUMBER = 10;
   private volatile java.lang.Object status_;
   /**
-   * <code>optional string status = 10;</code>
+   * <code>string status = 10;</code>
    */
   public java.lang.String getStatus() {
     java.lang.Object ref = status_;
@@ -591,7 +591,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string status = 10;</code>
+   * <code>string status = 10;</code>
    */
   public com.google.protobuf.ByteString
       getStatusBytes() {
@@ -610,7 +610,7 @@ public  final class Cluster extends
   public static final int STATUS_CAUSE_FIELD_NUMBER = 11;
   private volatile java.lang.Object statusCause_;
   /**
-   * <code>optional string status_cause = 11;</code>
+   * <code>string status_cause = 11;</code>
    */
   public java.lang.String getStatusCause() {
     java.lang.Object ref = statusCause_;
@@ -625,7 +625,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string status_cause = 11;</code>
+   * <code>string status_cause = 11;</code>
    */
   public com.google.protobuf.ByteString
       getStatusCauseBytes() {
@@ -644,7 +644,7 @@ public  final class Cluster extends
   public static final int GCE_PROJECT_FIELD_NUMBER = 12;
   private volatile java.lang.Object gceProject_;
   /**
-   * <code>optional string gce_project = 12;</code>
+   * <code>string gce_project = 12;</code>
    */
   public java.lang.String getGceProject() {
     java.lang.Object ref = gceProject_;
@@ -659,7 +659,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string gce_project = 12;</code>
+   * <code>string gce_project = 12;</code>
    */
   public com.google.protobuf.ByteString
       getGceProjectBytes() {
@@ -678,7 +678,7 @@ public  final class Cluster extends
   public static final int KUBELET_VERSION_FIELD_NUMBER = 13;
   private volatile java.lang.Object kubeletVersion_;
   /**
-   * <code>optional string kubelet_version = 13;</code>
+   * <code>string kubelet_version = 13;</code>
    */
   public java.lang.String getKubeletVersion() {
     java.lang.Object ref = kubeletVersion_;
@@ -693,7 +693,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string kubelet_version = 13;</code>
+   * <code>string kubelet_version = 13;</code>
    */
   public com.google.protobuf.ByteString
       getKubeletVersionBytes() {
@@ -712,7 +712,7 @@ public  final class Cluster extends
   public static final int SALTBASE_VERSION_FIELD_NUMBER = 14;
   private volatile java.lang.Object saltbaseVersion_;
   /**
-   * <code>optional string saltbase_version = 14;</code>
+   * <code>string saltbase_version = 14;</code>
    */
   public java.lang.String getSaltbaseVersion() {
     java.lang.Object ref = saltbaseVersion_;
@@ -727,7 +727,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string saltbase_version = 14;</code>
+   * <code>string saltbase_version = 14;</code>
    */
   public com.google.protobuf.ByteString
       getSaltbaseVersionBytes() {
@@ -746,7 +746,7 @@ public  final class Cluster extends
   public static final int KUBE_STARTER_VERSION_FIELD_NUMBER = 15;
   private volatile java.lang.Object kubeStarterVersion_;
   /**
-   * <code>optional string kube_starter_version = 15;</code>
+   * <code>string kube_starter_version = 15;</code>
    */
   public java.lang.String getKubeStarterVersion() {
     java.lang.Object ref = kubeStarterVersion_;
@@ -761,7 +761,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string kube_starter_version = 15;</code>
+   * <code>string kube_starter_version = 15;</code>
    */
   public com.google.protobuf.ByteString
       getKubeStarterVersionBytes() {
@@ -780,7 +780,7 @@ public  final class Cluster extends
   public static final int NODE_COUNT_FIELD_NUMBER = 16;
   private int nodeCount_;
   /**
-   * <code>optional int32 node_count = 16;</code>
+   * <code>int32 node_count = 16;</code>
    */
   public int getNodeCount() {
     return nodeCount_;
@@ -789,7 +789,7 @@ public  final class Cluster extends
   public static final int API_SERVER_URL_FIELD_NUMBER = 17;
   private volatile java.lang.Object apiServerUrl_;
   /**
-   * <code>optional string api_server_url = 17;</code>
+   * <code>string api_server_url = 17;</code>
    */
   public java.lang.String getApiServerUrl() {
     java.lang.Object ref = apiServerUrl_;
@@ -804,7 +804,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string api_server_url = 17;</code>
+   * <code>string api_server_url = 17;</code>
    */
   public com.google.protobuf.ByteString
       getApiServerUrlBytes() {
@@ -823,7 +823,7 @@ public  final class Cluster extends
   public static final int KUBE_USER_FIELD_NUMBER = 18;
   private volatile java.lang.Object kubeUser_;
   /**
-   * <code>optional string kube_user = 18;</code>
+   * <code>string kube_user = 18;</code>
    */
   public java.lang.String getKubeUser() {
     java.lang.Object ref = kubeUser_;
@@ -838,7 +838,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string kube_user = 18;</code>
+   * <code>string kube_user = 18;</code>
    */
   public com.google.protobuf.ByteString
       getKubeUserBytes() {
@@ -857,7 +857,7 @@ public  final class Cluster extends
   public static final int KUBE_PASSWORD_FIELD_NUMBER = 19;
   private volatile java.lang.Object kubePassword_;
   /**
-   * <code>optional string kube_password = 19;</code>
+   * <code>string kube_password = 19;</code>
    */
   public java.lang.String getKubePassword() {
     java.lang.Object ref = kubePassword_;
@@ -872,7 +872,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string kube_password = 19;</code>
+   * <code>string kube_password = 19;</code>
    */
   public com.google.protobuf.ByteString
       getKubePasswordBytes() {
@@ -891,7 +891,7 @@ public  final class Cluster extends
   public static final int CA_CERT_FIELD_NUMBER = 20;
   private volatile java.lang.Object caCert_;
   /**
-   * <code>optional string ca_cert = 20;</code>
+   * <code>string ca_cert = 20;</code>
    */
   public java.lang.String getCaCert() {
     java.lang.Object ref = caCert_;
@@ -906,7 +906,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string ca_cert = 20;</code>
+   * <code>string ca_cert = 20;</code>
    */
   public com.google.protobuf.ByteString
       getCaCertBytes() {
@@ -925,7 +925,7 @@ public  final class Cluster extends
   public static final int KUBE_BEARER_TOKEN_FIELD_NUMBER = 21;
   private volatile java.lang.Object kubeBearerToken_;
   /**
-   * <code>optional string kube_bearer_token = 21;</code>
+   * <code>string kube_bearer_token = 21;</code>
    */
   public java.lang.String getKubeBearerToken() {
     java.lang.Object ref = kubeBearerToken_;
@@ -940,7 +940,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string kube_bearer_token = 21;</code>
+   * <code>string kube_bearer_token = 21;</code>
    */
   public com.google.protobuf.ByteString
       getKubeBearerTokenBytes() {
@@ -959,19 +959,19 @@ public  final class Cluster extends
   public static final int SETTINGS_FIELD_NUMBER = 22;
   private com.appscode.api.kubernetes.v1beta1.ClusterSettings settings_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   public boolean hasSettings() {
     return settings_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings() {
     return settings_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterSettings.getDefaultInstance() : settings_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder() {
     return getSettings();
@@ -980,7 +980,7 @@ public  final class Cluster extends
   public static final int INSTANCE_ROOT_PASSWORD_FIELD_NUMBER = 23;
   private volatile java.lang.Object instanceRootPassword_;
   /**
-   * <code>optional string instance_root_password = 23;</code>
+   * <code>string instance_root_password = 23;</code>
    */
   public java.lang.String getInstanceRootPassword() {
     java.lang.Object ref = instanceRootPassword_;
@@ -995,7 +995,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string instance_root_password = 23;</code>
+   * <code>string instance_root_password = 23;</code>
    */
   public com.google.protobuf.ByteString
       getInstanceRootPasswordBytes() {
@@ -1014,7 +1014,7 @@ public  final class Cluster extends
   public static final int VERSION_FIELD_NUMBER = 24;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 24;</code>
+   * <code>string version = 24;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -1029,7 +1029,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string version = 24;</code>
+   * <code>string version = 24;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -1048,7 +1048,7 @@ public  final class Cluster extends
   public static final int SKU_FIELD_NUMBER = 25;
   private volatile java.lang.Object sku_;
   /**
-   * <code>optional string sku = 25;</code>
+   * <code>string sku = 25;</code>
    */
   public java.lang.String getSku() {
     java.lang.Object ref = sku_;
@@ -1063,7 +1063,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string sku = 25;</code>
+   * <code>string sku = 25;</code>
    */
   public com.google.protobuf.ByteString
       getSkuBytes() {
@@ -1082,7 +1082,7 @@ public  final class Cluster extends
   public static final int CREATED_BY_FIELD_NUMBER = 26;
   private volatile java.lang.Object createdBy_;
   /**
-   * <code>optional string created_by = 26;</code>
+   * <code>string created_by = 26;</code>
    */
   public java.lang.String getCreatedBy() {
     java.lang.Object ref = createdBy_;
@@ -1097,7 +1097,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string created_by = 26;</code>
+   * <code>string created_by = 26;</code>
    */
   public com.google.protobuf.ByteString
       getCreatedByBytes() {
@@ -1116,7 +1116,7 @@ public  final class Cluster extends
   public static final int DEFAULT_ACCESS_LEVEL_FIELD_NUMBER = 27;
   private volatile java.lang.Object defaultAccessLevel_;
   /**
-   * <code>optional string default_access_level = 27;</code>
+   * <code>string default_access_level = 27;</code>
    */
   public java.lang.String getDefaultAccessLevel() {
     java.lang.Object ref = defaultAccessLevel_;
@@ -1131,7 +1131,7 @@ public  final class Cluster extends
     }
   }
   /**
-   * <code>optional string default_access_level = 27;</code>
+   * <code>string default_access_level = 27;</code>
    */
   public com.google.protobuf.ByteString
       getDefaultAccessLevelBytes() {
@@ -1424,7 +1424,7 @@ public  final class Cluster extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -1911,7 +1911,7 @@ public  final class Cluster extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -1926,7 +1926,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -1942,7 +1942,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -1955,7 +1955,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -1964,7 +1964,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -1980,7 +1980,7 @@ public  final class Cluster extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1995,7 +1995,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -2011,7 +2011,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -2024,7 +2024,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -2033,7 +2033,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -2049,7 +2049,7 @@ public  final class Cluster extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -2064,7 +2064,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -2080,7 +2080,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -2093,7 +2093,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder clearProvider() {
       
@@ -2102,7 +2102,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {
@@ -2118,7 +2118,7 @@ public  final class Cluster extends
 
     private java.lang.Object os_ = "";
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public java.lang.String getOs() {
       java.lang.Object ref = os_;
@@ -2133,7 +2133,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public com.google.protobuf.ByteString
         getOsBytes() {
@@ -2149,7 +2149,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder setOs(
         java.lang.String value) {
@@ -2162,7 +2162,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder clearOs() {
       
@@ -2171,7 +2171,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder setOsBytes(
         com.google.protobuf.ByteString value) {
@@ -2187,7 +2187,7 @@ public  final class Cluster extends
 
     private java.lang.Object region_ = "";
     /**
-     * <code>optional string region = 5;</code>
+     * <code>string region = 5;</code>
      */
     public java.lang.String getRegion() {
       java.lang.Object ref = region_;
@@ -2202,7 +2202,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string region = 5;</code>
+     * <code>string region = 5;</code>
      */
     public com.google.protobuf.ByteString
         getRegionBytes() {
@@ -2218,7 +2218,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string region = 5;</code>
+     * <code>string region = 5;</code>
      */
     public Builder setRegion(
         java.lang.String value) {
@@ -2231,7 +2231,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string region = 5;</code>
+     * <code>string region = 5;</code>
      */
     public Builder clearRegion() {
       
@@ -2240,7 +2240,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string region = 5;</code>
+     * <code>string region = 5;</code>
      */
     public Builder setRegionBytes(
         com.google.protobuf.ByteString value) {
@@ -2256,7 +2256,7 @@ public  final class Cluster extends
 
     private java.lang.Object zone_ = "";
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public java.lang.String getZone() {
       java.lang.Object ref = zone_;
@@ -2271,7 +2271,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public com.google.protobuf.ByteString
         getZoneBytes() {
@@ -2287,7 +2287,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder setZone(
         java.lang.String value) {
@@ -2300,7 +2300,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder clearZone() {
       
@@ -2309,7 +2309,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder setZoneBytes(
         com.google.protobuf.ByteString value) {
@@ -2325,13 +2325,13 @@ public  final class Cluster extends
 
     private long createdAt_ ;
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public long getCreatedAt() {
       return createdAt_;
     }
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public Builder setCreatedAt(long value) {
       
@@ -2340,7 +2340,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public Builder clearCreatedAt() {
       
@@ -2426,7 +2426,8 @@ public  final class Cluster extends
     }
 
     public Builder clearLinks() {
-      getMutableLinks().clear();
+      internalGetMutableLinks().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -2436,7 +2437,8 @@ public  final class Cluster extends
     public Builder removeLinks(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableLinks().remove(key);
+      internalGetMutableLinks().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -2455,7 +2457,8 @@ public  final class Cluster extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableLinks().put(key, value);
+      internalGetMutableLinks().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -2464,19 +2467,20 @@ public  final class Cluster extends
 
     public Builder putAllLinks(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableLinks().putAll(values);
+      internalGetMutableLinks().getMutableMap()
+          .putAll(values);
       return this;
     }
 
     private boolean doNotDelete_ ;
     /**
-     * <code>optional bool do_not_delete = 9;</code>
+     * <code>bool do_not_delete = 9;</code>
      */
     public boolean getDoNotDelete() {
       return doNotDelete_;
     }
     /**
-     * <code>optional bool do_not_delete = 9;</code>
+     * <code>bool do_not_delete = 9;</code>
      */
     public Builder setDoNotDelete(boolean value) {
       
@@ -2485,7 +2489,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional bool do_not_delete = 9;</code>
+     * <code>bool do_not_delete = 9;</code>
      */
     public Builder clearDoNotDelete() {
       
@@ -2496,7 +2500,7 @@ public  final class Cluster extends
 
     private java.lang.Object status_ = "";
     /**
-     * <code>optional string status = 10;</code>
+     * <code>string status = 10;</code>
      */
     public java.lang.String getStatus() {
       java.lang.Object ref = status_;
@@ -2511,7 +2515,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string status = 10;</code>
+     * <code>string status = 10;</code>
      */
     public com.google.protobuf.ByteString
         getStatusBytes() {
@@ -2527,7 +2531,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string status = 10;</code>
+     * <code>string status = 10;</code>
      */
     public Builder setStatus(
         java.lang.String value) {
@@ -2540,7 +2544,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string status = 10;</code>
+     * <code>string status = 10;</code>
      */
     public Builder clearStatus() {
       
@@ -2549,7 +2553,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string status = 10;</code>
+     * <code>string status = 10;</code>
      */
     public Builder setStatusBytes(
         com.google.protobuf.ByteString value) {
@@ -2565,7 +2569,7 @@ public  final class Cluster extends
 
     private java.lang.Object statusCause_ = "";
     /**
-     * <code>optional string status_cause = 11;</code>
+     * <code>string status_cause = 11;</code>
      */
     public java.lang.String getStatusCause() {
       java.lang.Object ref = statusCause_;
@@ -2580,7 +2584,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string status_cause = 11;</code>
+     * <code>string status_cause = 11;</code>
      */
     public com.google.protobuf.ByteString
         getStatusCauseBytes() {
@@ -2596,7 +2600,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string status_cause = 11;</code>
+     * <code>string status_cause = 11;</code>
      */
     public Builder setStatusCause(
         java.lang.String value) {
@@ -2609,7 +2613,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string status_cause = 11;</code>
+     * <code>string status_cause = 11;</code>
      */
     public Builder clearStatusCause() {
       
@@ -2618,7 +2622,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string status_cause = 11;</code>
+     * <code>string status_cause = 11;</code>
      */
     public Builder setStatusCauseBytes(
         com.google.protobuf.ByteString value) {
@@ -2634,7 +2638,7 @@ public  final class Cluster extends
 
     private java.lang.Object gceProject_ = "";
     /**
-     * <code>optional string gce_project = 12;</code>
+     * <code>string gce_project = 12;</code>
      */
     public java.lang.String getGceProject() {
       java.lang.Object ref = gceProject_;
@@ -2649,7 +2653,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string gce_project = 12;</code>
+     * <code>string gce_project = 12;</code>
      */
     public com.google.protobuf.ByteString
         getGceProjectBytes() {
@@ -2665,7 +2669,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string gce_project = 12;</code>
+     * <code>string gce_project = 12;</code>
      */
     public Builder setGceProject(
         java.lang.String value) {
@@ -2678,7 +2682,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 12;</code>
+     * <code>string gce_project = 12;</code>
      */
     public Builder clearGceProject() {
       
@@ -2687,7 +2691,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 12;</code>
+     * <code>string gce_project = 12;</code>
      */
     public Builder setGceProjectBytes(
         com.google.protobuf.ByteString value) {
@@ -2703,7 +2707,7 @@ public  final class Cluster extends
 
     private java.lang.Object kubeletVersion_ = "";
     /**
-     * <code>optional string kubelet_version = 13;</code>
+     * <code>string kubelet_version = 13;</code>
      */
     public java.lang.String getKubeletVersion() {
       java.lang.Object ref = kubeletVersion_;
@@ -2718,7 +2722,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 13;</code>
+     * <code>string kubelet_version = 13;</code>
      */
     public com.google.protobuf.ByteString
         getKubeletVersionBytes() {
@@ -2734,7 +2738,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 13;</code>
+     * <code>string kubelet_version = 13;</code>
      */
     public Builder setKubeletVersion(
         java.lang.String value) {
@@ -2747,7 +2751,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 13;</code>
+     * <code>string kubelet_version = 13;</code>
      */
     public Builder clearKubeletVersion() {
       
@@ -2756,7 +2760,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 13;</code>
+     * <code>string kubelet_version = 13;</code>
      */
     public Builder setKubeletVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2772,7 +2776,7 @@ public  final class Cluster extends
 
     private java.lang.Object saltbaseVersion_ = "";
     /**
-     * <code>optional string saltbase_version = 14;</code>
+     * <code>string saltbase_version = 14;</code>
      */
     public java.lang.String getSaltbaseVersion() {
       java.lang.Object ref = saltbaseVersion_;
@@ -2787,7 +2791,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 14;</code>
+     * <code>string saltbase_version = 14;</code>
      */
     public com.google.protobuf.ByteString
         getSaltbaseVersionBytes() {
@@ -2803,7 +2807,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 14;</code>
+     * <code>string saltbase_version = 14;</code>
      */
     public Builder setSaltbaseVersion(
         java.lang.String value) {
@@ -2816,7 +2820,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 14;</code>
+     * <code>string saltbase_version = 14;</code>
      */
     public Builder clearSaltbaseVersion() {
       
@@ -2825,7 +2829,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 14;</code>
+     * <code>string saltbase_version = 14;</code>
      */
     public Builder setSaltbaseVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2841,7 +2845,7 @@ public  final class Cluster extends
 
     private java.lang.Object kubeStarterVersion_ = "";
     /**
-     * <code>optional string kube_starter_version = 15;</code>
+     * <code>string kube_starter_version = 15;</code>
      */
     public java.lang.String getKubeStarterVersion() {
       java.lang.Object ref = kubeStarterVersion_;
@@ -2856,7 +2860,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 15;</code>
+     * <code>string kube_starter_version = 15;</code>
      */
     public com.google.protobuf.ByteString
         getKubeStarterVersionBytes() {
@@ -2872,7 +2876,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 15;</code>
+     * <code>string kube_starter_version = 15;</code>
      */
     public Builder setKubeStarterVersion(
         java.lang.String value) {
@@ -2885,7 +2889,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 15;</code>
+     * <code>string kube_starter_version = 15;</code>
      */
     public Builder clearKubeStarterVersion() {
       
@@ -2894,7 +2898,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 15;</code>
+     * <code>string kube_starter_version = 15;</code>
      */
     public Builder setKubeStarterVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2910,13 +2914,13 @@ public  final class Cluster extends
 
     private int nodeCount_ ;
     /**
-     * <code>optional int32 node_count = 16;</code>
+     * <code>int32 node_count = 16;</code>
      */
     public int getNodeCount() {
       return nodeCount_;
     }
     /**
-     * <code>optional int32 node_count = 16;</code>
+     * <code>int32 node_count = 16;</code>
      */
     public Builder setNodeCount(int value) {
       
@@ -2925,7 +2929,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional int32 node_count = 16;</code>
+     * <code>int32 node_count = 16;</code>
      */
     public Builder clearNodeCount() {
       
@@ -2936,7 +2940,7 @@ public  final class Cluster extends
 
     private java.lang.Object apiServerUrl_ = "";
     /**
-     * <code>optional string api_server_url = 17;</code>
+     * <code>string api_server_url = 17;</code>
      */
     public java.lang.String getApiServerUrl() {
       java.lang.Object ref = apiServerUrl_;
@@ -2951,7 +2955,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string api_server_url = 17;</code>
+     * <code>string api_server_url = 17;</code>
      */
     public com.google.protobuf.ByteString
         getApiServerUrlBytes() {
@@ -2967,7 +2971,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string api_server_url = 17;</code>
+     * <code>string api_server_url = 17;</code>
      */
     public Builder setApiServerUrl(
         java.lang.String value) {
@@ -2980,7 +2984,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string api_server_url = 17;</code>
+     * <code>string api_server_url = 17;</code>
      */
     public Builder clearApiServerUrl() {
       
@@ -2989,7 +2993,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string api_server_url = 17;</code>
+     * <code>string api_server_url = 17;</code>
      */
     public Builder setApiServerUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -3005,7 +3009,7 @@ public  final class Cluster extends
 
     private java.lang.Object kubeUser_ = "";
     /**
-     * <code>optional string kube_user = 18;</code>
+     * <code>string kube_user = 18;</code>
      */
     public java.lang.String getKubeUser() {
       java.lang.Object ref = kubeUser_;
@@ -3020,7 +3024,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_user = 18;</code>
+     * <code>string kube_user = 18;</code>
      */
     public com.google.protobuf.ByteString
         getKubeUserBytes() {
@@ -3036,7 +3040,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_user = 18;</code>
+     * <code>string kube_user = 18;</code>
      */
     public Builder setKubeUser(
         java.lang.String value) {
@@ -3049,7 +3053,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_user = 18;</code>
+     * <code>string kube_user = 18;</code>
      */
     public Builder clearKubeUser() {
       
@@ -3058,7 +3062,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_user = 18;</code>
+     * <code>string kube_user = 18;</code>
      */
     public Builder setKubeUserBytes(
         com.google.protobuf.ByteString value) {
@@ -3074,7 +3078,7 @@ public  final class Cluster extends
 
     private java.lang.Object kubePassword_ = "";
     /**
-     * <code>optional string kube_password = 19;</code>
+     * <code>string kube_password = 19;</code>
      */
     public java.lang.String getKubePassword() {
       java.lang.Object ref = kubePassword_;
@@ -3089,7 +3093,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_password = 19;</code>
+     * <code>string kube_password = 19;</code>
      */
     public com.google.protobuf.ByteString
         getKubePasswordBytes() {
@@ -3105,7 +3109,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_password = 19;</code>
+     * <code>string kube_password = 19;</code>
      */
     public Builder setKubePassword(
         java.lang.String value) {
@@ -3118,7 +3122,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_password = 19;</code>
+     * <code>string kube_password = 19;</code>
      */
     public Builder clearKubePassword() {
       
@@ -3127,7 +3131,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_password = 19;</code>
+     * <code>string kube_password = 19;</code>
      */
     public Builder setKubePasswordBytes(
         com.google.protobuf.ByteString value) {
@@ -3143,7 +3147,7 @@ public  final class Cluster extends
 
     private java.lang.Object caCert_ = "";
     /**
-     * <code>optional string ca_cert = 20;</code>
+     * <code>string ca_cert = 20;</code>
      */
     public java.lang.String getCaCert() {
       java.lang.Object ref = caCert_;
@@ -3158,7 +3162,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string ca_cert = 20;</code>
+     * <code>string ca_cert = 20;</code>
      */
     public com.google.protobuf.ByteString
         getCaCertBytes() {
@@ -3174,7 +3178,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string ca_cert = 20;</code>
+     * <code>string ca_cert = 20;</code>
      */
     public Builder setCaCert(
         java.lang.String value) {
@@ -3187,7 +3191,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 20;</code>
+     * <code>string ca_cert = 20;</code>
      */
     public Builder clearCaCert() {
       
@@ -3196,7 +3200,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 20;</code>
+     * <code>string ca_cert = 20;</code>
      */
     public Builder setCaCertBytes(
         com.google.protobuf.ByteString value) {
@@ -3212,7 +3216,7 @@ public  final class Cluster extends
 
     private java.lang.Object kubeBearerToken_ = "";
     /**
-     * <code>optional string kube_bearer_token = 21;</code>
+     * <code>string kube_bearer_token = 21;</code>
      */
     public java.lang.String getKubeBearerToken() {
       java.lang.Object ref = kubeBearerToken_;
@@ -3227,7 +3231,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_bearer_token = 21;</code>
+     * <code>string kube_bearer_token = 21;</code>
      */
     public com.google.protobuf.ByteString
         getKubeBearerTokenBytes() {
@@ -3243,7 +3247,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string kube_bearer_token = 21;</code>
+     * <code>string kube_bearer_token = 21;</code>
      */
     public Builder setKubeBearerToken(
         java.lang.String value) {
@@ -3256,7 +3260,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_bearer_token = 21;</code>
+     * <code>string kube_bearer_token = 21;</code>
      */
     public Builder clearKubeBearerToken() {
       
@@ -3265,7 +3269,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string kube_bearer_token = 21;</code>
+     * <code>string kube_bearer_token = 21;</code>
      */
     public Builder setKubeBearerTokenBytes(
         com.google.protobuf.ByteString value) {
@@ -3283,13 +3287,13 @@ public  final class Cluster extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterSettings, com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder> settingsBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public boolean hasSettings() {
       return settingsBuilder_ != null || settings_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings() {
       if (settingsBuilder_ == null) {
@@ -3299,7 +3303,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public Builder setSettings(com.appscode.api.kubernetes.v1beta1.ClusterSettings value) {
       if (settingsBuilder_ == null) {
@@ -3315,7 +3319,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public Builder setSettings(
         com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder builderForValue) {
@@ -3329,7 +3333,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public Builder mergeSettings(com.appscode.api.kubernetes.v1beta1.ClusterSettings value) {
       if (settingsBuilder_ == null) {
@@ -3347,7 +3351,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public Builder clearSettings() {
       if (settingsBuilder_ == null) {
@@ -3361,7 +3365,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder getSettingsBuilder() {
       
@@ -3369,7 +3373,7 @@ public  final class Cluster extends
       return getSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder() {
       if (settingsBuilder_ != null) {
@@ -3380,7 +3384,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterSettings, com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder> 
@@ -3398,7 +3402,7 @@ public  final class Cluster extends
 
     private java.lang.Object instanceRootPassword_ = "";
     /**
-     * <code>optional string instance_root_password = 23;</code>
+     * <code>string instance_root_password = 23;</code>
      */
     public java.lang.String getInstanceRootPassword() {
       java.lang.Object ref = instanceRootPassword_;
@@ -3413,7 +3417,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string instance_root_password = 23;</code>
+     * <code>string instance_root_password = 23;</code>
      */
     public com.google.protobuf.ByteString
         getInstanceRootPasswordBytes() {
@@ -3429,7 +3433,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string instance_root_password = 23;</code>
+     * <code>string instance_root_password = 23;</code>
      */
     public Builder setInstanceRootPassword(
         java.lang.String value) {
@@ -3442,7 +3446,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string instance_root_password = 23;</code>
+     * <code>string instance_root_password = 23;</code>
      */
     public Builder clearInstanceRootPassword() {
       
@@ -3451,7 +3455,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string instance_root_password = 23;</code>
+     * <code>string instance_root_password = 23;</code>
      */
     public Builder setInstanceRootPasswordBytes(
         com.google.protobuf.ByteString value) {
@@ -3467,7 +3471,7 @@ public  final class Cluster extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 24;</code>
+     * <code>string version = 24;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -3482,7 +3486,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string version = 24;</code>
+     * <code>string version = 24;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -3498,7 +3502,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string version = 24;</code>
+     * <code>string version = 24;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -3511,7 +3515,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string version = 24;</code>
+     * <code>string version = 24;</code>
      */
     public Builder clearVersion() {
       
@@ -3520,7 +3524,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string version = 24;</code>
+     * <code>string version = 24;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -3536,7 +3540,7 @@ public  final class Cluster extends
 
     private java.lang.Object sku_ = "";
     /**
-     * <code>optional string sku = 25;</code>
+     * <code>string sku = 25;</code>
      */
     public java.lang.String getSku() {
       java.lang.Object ref = sku_;
@@ -3551,7 +3555,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string sku = 25;</code>
+     * <code>string sku = 25;</code>
      */
     public com.google.protobuf.ByteString
         getSkuBytes() {
@@ -3567,7 +3571,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string sku = 25;</code>
+     * <code>string sku = 25;</code>
      */
     public Builder setSku(
         java.lang.String value) {
@@ -3580,7 +3584,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string sku = 25;</code>
+     * <code>string sku = 25;</code>
      */
     public Builder clearSku() {
       
@@ -3589,7 +3593,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string sku = 25;</code>
+     * <code>string sku = 25;</code>
      */
     public Builder setSkuBytes(
         com.google.protobuf.ByteString value) {
@@ -3605,7 +3609,7 @@ public  final class Cluster extends
 
     private java.lang.Object createdBy_ = "";
     /**
-     * <code>optional string created_by = 26;</code>
+     * <code>string created_by = 26;</code>
      */
     public java.lang.String getCreatedBy() {
       java.lang.Object ref = createdBy_;
@@ -3620,7 +3624,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string created_by = 26;</code>
+     * <code>string created_by = 26;</code>
      */
     public com.google.protobuf.ByteString
         getCreatedByBytes() {
@@ -3636,7 +3640,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string created_by = 26;</code>
+     * <code>string created_by = 26;</code>
      */
     public Builder setCreatedBy(
         java.lang.String value) {
@@ -3649,7 +3653,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string created_by = 26;</code>
+     * <code>string created_by = 26;</code>
      */
     public Builder clearCreatedBy() {
       
@@ -3658,7 +3662,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string created_by = 26;</code>
+     * <code>string created_by = 26;</code>
      */
     public Builder setCreatedByBytes(
         com.google.protobuf.ByteString value) {
@@ -3674,7 +3678,7 @@ public  final class Cluster extends
 
     private java.lang.Object defaultAccessLevel_ = "";
     /**
-     * <code>optional string default_access_level = 27;</code>
+     * <code>string default_access_level = 27;</code>
      */
     public java.lang.String getDefaultAccessLevel() {
       java.lang.Object ref = defaultAccessLevel_;
@@ -3689,7 +3693,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string default_access_level = 27;</code>
+     * <code>string default_access_level = 27;</code>
      */
     public com.google.protobuf.ByteString
         getDefaultAccessLevelBytes() {
@@ -3705,7 +3709,7 @@ public  final class Cluster extends
       }
     }
     /**
-     * <code>optional string default_access_level = 27;</code>
+     * <code>string default_access_level = 27;</code>
      */
     public Builder setDefaultAccessLevel(
         java.lang.String value) {
@@ -3718,7 +3722,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string default_access_level = 27;</code>
+     * <code>string default_access_level = 27;</code>
      */
     public Builder clearDefaultAccessLevel() {
       
@@ -3727,7 +3731,7 @@ public  final class Cluster extends
       return this;
     }
     /**
-     * <code>optional string default_access_level = 27;</code>
+     * <code>string default_access_level = 27;</code>
      */
     public Builder setDefaultAccessLevelBytes(
         com.google.protobuf.ByteString value) {

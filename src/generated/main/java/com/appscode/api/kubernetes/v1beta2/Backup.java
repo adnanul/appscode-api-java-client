@@ -109,11 +109,11 @@ public  final class Backup extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     java.lang.String getSchedule();
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     com.google.protobuf.ByteString
         getScheduleBytes();
@@ -138,41 +138,41 @@ public  final class Backup extends
         getTagsBytes(int index);
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     boolean hasSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource getSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSourceOrBuilder getSourceOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     boolean hasDestination();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination getDestination();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestinationOrBuilder getDestinationOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     boolean hasRetentionPolicy();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy getRetentionPolicy();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicyOrBuilder getRetentionPolicyOrBuilder();
   }
@@ -302,21 +302,21 @@ public  final class Backup extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string volume_name = 1;</code>
+       * <code>string volume_name = 1;</code>
        */
       java.lang.String getVolumeName();
       /**
-       * <code>optional string volume_name = 1;</code>
+       * <code>string volume_name = 1;</code>
        */
       com.google.protobuf.ByteString
           getVolumeNameBytes();
 
       /**
-       * <code>optional string path = 2;</code>
+       * <code>string path = 2;</code>
        */
       java.lang.String getPath();
       /**
-       * <code>optional string path = 2;</code>
+       * <code>string path = 2;</code>
        */
       com.google.protobuf.ByteString
           getPathBytes();
@@ -400,7 +400,7 @@ public  final class Backup extends
       public static final int VOLUME_NAME_FIELD_NUMBER = 1;
       private volatile java.lang.Object volumeName_;
       /**
-       * <code>optional string volume_name = 1;</code>
+       * <code>string volume_name = 1;</code>
        */
       public java.lang.String getVolumeName() {
         java.lang.Object ref = volumeName_;
@@ -415,7 +415,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string volume_name = 1;</code>
+       * <code>string volume_name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getVolumeNameBytes() {
@@ -434,7 +434,7 @@ public  final class Backup extends
       public static final int PATH_FIELD_NUMBER = 2;
       private volatile java.lang.Object path_;
       /**
-       * <code>optional string path = 2;</code>
+       * <code>string path = 2;</code>
        */
       public java.lang.String getPath() {
         java.lang.Object ref = path_;
@@ -449,7 +449,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string path = 2;</code>
+       * <code>string path = 2;</code>
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
@@ -525,7 +525,7 @@ public  final class Backup extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + VOLUME_NAME_FIELD_NUMBER;
         hash = (53 * hash) + getVolumeName().hashCode();
         hash = (37 * hash) + PATH_FIELD_NUMBER;
@@ -753,7 +753,7 @@ public  final class Backup extends
 
         private java.lang.Object volumeName_ = "";
         /**
-         * <code>optional string volume_name = 1;</code>
+         * <code>string volume_name = 1;</code>
          */
         public java.lang.String getVolumeName() {
           java.lang.Object ref = volumeName_;
@@ -768,7 +768,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string volume_name = 1;</code>
+         * <code>string volume_name = 1;</code>
          */
         public com.google.protobuf.ByteString
             getVolumeNameBytes() {
@@ -784,7 +784,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string volume_name = 1;</code>
+         * <code>string volume_name = 1;</code>
          */
         public Builder setVolumeName(
             java.lang.String value) {
@@ -797,7 +797,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string volume_name = 1;</code>
+         * <code>string volume_name = 1;</code>
          */
         public Builder clearVolumeName() {
           
@@ -806,7 +806,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string volume_name = 1;</code>
+         * <code>string volume_name = 1;</code>
          */
         public Builder setVolumeNameBytes(
             com.google.protobuf.ByteString value) {
@@ -822,7 +822,7 @@ public  final class Backup extends
 
         private java.lang.Object path_ = "";
         /**
-         * <code>optional string path = 2;</code>
+         * <code>string path = 2;</code>
          */
         public java.lang.String getPath() {
           java.lang.Object ref = path_;
@@ -837,7 +837,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string path = 2;</code>
+         * <code>string path = 2;</code>
          */
         public com.google.protobuf.ByteString
             getPathBytes() {
@@ -853,7 +853,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string path = 2;</code>
+         * <code>string path = 2;</code>
          */
         public Builder setPath(
             java.lang.String value) {
@@ -866,7 +866,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string path = 2;</code>
+         * <code>string path = 2;</code>
          */
         public Builder clearPath() {
           
@@ -875,7 +875,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string path = 2;</code>
+         * <code>string path = 2;</code>
          */
         public Builder setPathBytes(
             com.google.protobuf.ByteString value) {
@@ -942,35 +942,35 @@ public  final class Backup extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       java.lang.String getPath();
       /**
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       com.google.protobuf.ByteString
           getPathBytes();
 
       /**
-       * <code>optional string repository_secret_name = 2;</code>
+       * <code>string repository_secret_name = 2;</code>
        */
       java.lang.String getRepositorySecretName();
       /**
-       * <code>optional string repository_secret_name = 2;</code>
+       * <code>string repository_secret_name = 2;</code>
        */
       com.google.protobuf.ByteString
           getRepositorySecretNameBytes();
 
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       boolean hasVolume();
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       com.appscode.api.kubernetes.v1beta2.VolumeSource getVolume();
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeOrBuilder();
     }
@@ -1066,7 +1066,7 @@ public  final class Backup extends
       public static final int PATH_FIELD_NUMBER = 1;
       private volatile java.lang.Object path_;
       /**
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public java.lang.String getPath() {
         java.lang.Object ref = path_;
@@ -1081,7 +1081,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string path = 1;</code>
+       * <code>string path = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
@@ -1100,7 +1100,7 @@ public  final class Backup extends
       public static final int REPOSITORY_SECRET_NAME_FIELD_NUMBER = 2;
       private volatile java.lang.Object repositorySecretName_;
       /**
-       * <code>optional string repository_secret_name = 2;</code>
+       * <code>string repository_secret_name = 2;</code>
        */
       public java.lang.String getRepositorySecretName() {
         java.lang.Object ref = repositorySecretName_;
@@ -1115,7 +1115,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string repository_secret_name = 2;</code>
+       * <code>string repository_secret_name = 2;</code>
        */
       public com.google.protobuf.ByteString
           getRepositorySecretNameBytes() {
@@ -1134,19 +1134,19 @@ public  final class Backup extends
       public static final int VOLUME_FIELD_NUMBER = 3;
       private com.appscode.api.kubernetes.v1beta2.VolumeSource volume_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       public boolean hasVolume() {
         return volume_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolume() {
         return volume_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volume_;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeOrBuilder() {
         return getVolume();
@@ -1224,7 +1224,7 @@ public  final class Backup extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + PATH_FIELD_NUMBER;
         hash = (53 * hash) + getPath().hashCode();
         hash = (37 * hash) + REPOSITORY_SECRET_NAME_FIELD_NUMBER;
@@ -1470,7 +1470,7 @@ public  final class Backup extends
 
         private java.lang.Object path_ = "";
         /**
-         * <code>optional string path = 1;</code>
+         * <code>string path = 1;</code>
          */
         public java.lang.String getPath() {
           java.lang.Object ref = path_;
@@ -1485,7 +1485,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string path = 1;</code>
+         * <code>string path = 1;</code>
          */
         public com.google.protobuf.ByteString
             getPathBytes() {
@@ -1501,7 +1501,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string path = 1;</code>
+         * <code>string path = 1;</code>
          */
         public Builder setPath(
             java.lang.String value) {
@@ -1514,7 +1514,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string path = 1;</code>
+         * <code>string path = 1;</code>
          */
         public Builder clearPath() {
           
@@ -1523,7 +1523,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string path = 1;</code>
+         * <code>string path = 1;</code>
          */
         public Builder setPathBytes(
             com.google.protobuf.ByteString value) {
@@ -1539,7 +1539,7 @@ public  final class Backup extends
 
         private java.lang.Object repositorySecretName_ = "";
         /**
-         * <code>optional string repository_secret_name = 2;</code>
+         * <code>string repository_secret_name = 2;</code>
          */
         public java.lang.String getRepositorySecretName() {
           java.lang.Object ref = repositorySecretName_;
@@ -1554,7 +1554,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string repository_secret_name = 2;</code>
+         * <code>string repository_secret_name = 2;</code>
          */
         public com.google.protobuf.ByteString
             getRepositorySecretNameBytes() {
@@ -1570,7 +1570,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string repository_secret_name = 2;</code>
+         * <code>string repository_secret_name = 2;</code>
          */
         public Builder setRepositorySecretName(
             java.lang.String value) {
@@ -1583,7 +1583,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string repository_secret_name = 2;</code>
+         * <code>string repository_secret_name = 2;</code>
          */
         public Builder clearRepositorySecretName() {
           
@@ -1592,7 +1592,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string repository_secret_name = 2;</code>
+         * <code>string repository_secret_name = 2;</code>
          */
         public Builder setRepositorySecretNameBytes(
             com.google.protobuf.ByteString value) {
@@ -1610,13 +1610,13 @@ public  final class Backup extends
         private com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> volumeBuilder_;
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public boolean hasVolume() {
           return volumeBuilder_ != null || volume_ != null;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolume() {
           if (volumeBuilder_ == null) {
@@ -1626,7 +1626,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public Builder setVolume(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
           if (volumeBuilder_ == null) {
@@ -1642,7 +1642,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public Builder setVolume(
             com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
@@ -1656,7 +1656,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public Builder mergeVolume(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
           if (volumeBuilder_ == null) {
@@ -1674,7 +1674,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public Builder clearVolume() {
           if (volumeBuilder_ == null) {
@@ -1688,7 +1688,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getVolumeBuilder() {
           
@@ -1696,7 +1696,7 @@ public  final class Backup extends
           return getVolumeFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeOrBuilder() {
           if (volumeBuilder_ != null) {
@@ -1707,7 +1707,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
+         * <code>.appscode.kubernetes.v1beta2.VolumeSource volume = 3;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 
@@ -1776,32 +1776,32 @@ public  final class Backup extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional int32 keep_last_snapshots = 1;</code>
+       * <code>int32 keep_last_snapshots = 1;</code>
        */
       int getKeepLastSnapshots();
 
       /**
-       * <code>optional int32 keep_hourly_snapshots = 2;</code>
+       * <code>int32 keep_hourly_snapshots = 2;</code>
        */
       int getKeepHourlySnapshots();
 
       /**
-       * <code>optional int32 keep_daily_snapshots = 3;</code>
+       * <code>int32 keep_daily_snapshots = 3;</code>
        */
       int getKeepDailySnapshots();
 
       /**
-       * <code>optional int32 keep_weekly_snapshots = 4;</code>
+       * <code>int32 keep_weekly_snapshots = 4;</code>
        */
       int getKeepWeeklySnapshots();
 
       /**
-       * <code>optional int32 keep_monthly_snapshots = 5;</code>
+       * <code>int32 keep_monthly_snapshots = 5;</code>
        */
       int getKeepMonthlySnapshots();
 
       /**
-       * <code>optional int32 keep_yearly_snapshots = 6;</code>
+       * <code>int32 keep_yearly_snapshots = 6;</code>
        */
       int getKeepYearlySnapshots();
 
@@ -1825,11 +1825,11 @@ public  final class Backup extends
           getKeepTagsBytes(int index);
 
       /**
-       * <code>optional string retain_host_name = 8;</code>
+       * <code>string retain_host_name = 8;</code>
        */
       java.lang.String getRetainHostName();
       /**
-       * <code>optional string retain_host_name = 8;</code>
+       * <code>string retain_host_name = 8;</code>
        */
       com.google.protobuf.ByteString
           getRetainHostNameBytes();
@@ -1988,7 +1988,7 @@ public  final class Backup extends
       public static final int KEEP_LAST_SNAPSHOTS_FIELD_NUMBER = 1;
       private int keepLastSnapshots_;
       /**
-       * <code>optional int32 keep_last_snapshots = 1;</code>
+       * <code>int32 keep_last_snapshots = 1;</code>
        */
       public int getKeepLastSnapshots() {
         return keepLastSnapshots_;
@@ -1997,7 +1997,7 @@ public  final class Backup extends
       public static final int KEEP_HOURLY_SNAPSHOTS_FIELD_NUMBER = 2;
       private int keepHourlySnapshots_;
       /**
-       * <code>optional int32 keep_hourly_snapshots = 2;</code>
+       * <code>int32 keep_hourly_snapshots = 2;</code>
        */
       public int getKeepHourlySnapshots() {
         return keepHourlySnapshots_;
@@ -2006,7 +2006,7 @@ public  final class Backup extends
       public static final int KEEP_DAILY_SNAPSHOTS_FIELD_NUMBER = 3;
       private int keepDailySnapshots_;
       /**
-       * <code>optional int32 keep_daily_snapshots = 3;</code>
+       * <code>int32 keep_daily_snapshots = 3;</code>
        */
       public int getKeepDailySnapshots() {
         return keepDailySnapshots_;
@@ -2015,7 +2015,7 @@ public  final class Backup extends
       public static final int KEEP_WEEKLY_SNAPSHOTS_FIELD_NUMBER = 4;
       private int keepWeeklySnapshots_;
       /**
-       * <code>optional int32 keep_weekly_snapshots = 4;</code>
+       * <code>int32 keep_weekly_snapshots = 4;</code>
        */
       public int getKeepWeeklySnapshots() {
         return keepWeeklySnapshots_;
@@ -2024,7 +2024,7 @@ public  final class Backup extends
       public static final int KEEP_MONTHLY_SNAPSHOTS_FIELD_NUMBER = 5;
       private int keepMonthlySnapshots_;
       /**
-       * <code>optional int32 keep_monthly_snapshots = 5;</code>
+       * <code>int32 keep_monthly_snapshots = 5;</code>
        */
       public int getKeepMonthlySnapshots() {
         return keepMonthlySnapshots_;
@@ -2033,7 +2033,7 @@ public  final class Backup extends
       public static final int KEEP_YEARLY_SNAPSHOTS_FIELD_NUMBER = 6;
       private int keepYearlySnapshots_;
       /**
-       * <code>optional int32 keep_yearly_snapshots = 6;</code>
+       * <code>int32 keep_yearly_snapshots = 6;</code>
        */
       public int getKeepYearlySnapshots() {
         return keepYearlySnapshots_;
@@ -2071,7 +2071,7 @@ public  final class Backup extends
       public static final int RETAIN_HOST_NAME_FIELD_NUMBER = 8;
       private volatile java.lang.Object retainHostName_;
       /**
-       * <code>optional string retain_host_name = 8;</code>
+       * <code>string retain_host_name = 8;</code>
        */
       public java.lang.String getRetainHostName() {
         java.lang.Object ref = retainHostName_;
@@ -2086,7 +2086,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string retain_host_name = 8;</code>
+       * <code>string retain_host_name = 8;</code>
        */
       public com.google.protobuf.ByteString
           getRetainHostNameBytes() {
@@ -2263,7 +2263,7 @@ public  final class Backup extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + KEEP_LAST_SNAPSHOTS_FIELD_NUMBER;
         hash = (53 * hash) + getKeepLastSnapshots();
         hash = (37 * hash) + KEEP_HOURLY_SNAPSHOTS_FIELD_NUMBER;
@@ -2576,13 +2576,13 @@ public  final class Backup extends
 
         private int keepLastSnapshots_ ;
         /**
-         * <code>optional int32 keep_last_snapshots = 1;</code>
+         * <code>int32 keep_last_snapshots = 1;</code>
          */
         public int getKeepLastSnapshots() {
           return keepLastSnapshots_;
         }
         /**
-         * <code>optional int32 keep_last_snapshots = 1;</code>
+         * <code>int32 keep_last_snapshots = 1;</code>
          */
         public Builder setKeepLastSnapshots(int value) {
           
@@ -2591,7 +2591,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_last_snapshots = 1;</code>
+         * <code>int32 keep_last_snapshots = 1;</code>
          */
         public Builder clearKeepLastSnapshots() {
           
@@ -2602,13 +2602,13 @@ public  final class Backup extends
 
         private int keepHourlySnapshots_ ;
         /**
-         * <code>optional int32 keep_hourly_snapshots = 2;</code>
+         * <code>int32 keep_hourly_snapshots = 2;</code>
          */
         public int getKeepHourlySnapshots() {
           return keepHourlySnapshots_;
         }
         /**
-         * <code>optional int32 keep_hourly_snapshots = 2;</code>
+         * <code>int32 keep_hourly_snapshots = 2;</code>
          */
         public Builder setKeepHourlySnapshots(int value) {
           
@@ -2617,7 +2617,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_hourly_snapshots = 2;</code>
+         * <code>int32 keep_hourly_snapshots = 2;</code>
          */
         public Builder clearKeepHourlySnapshots() {
           
@@ -2628,13 +2628,13 @@ public  final class Backup extends
 
         private int keepDailySnapshots_ ;
         /**
-         * <code>optional int32 keep_daily_snapshots = 3;</code>
+         * <code>int32 keep_daily_snapshots = 3;</code>
          */
         public int getKeepDailySnapshots() {
           return keepDailySnapshots_;
         }
         /**
-         * <code>optional int32 keep_daily_snapshots = 3;</code>
+         * <code>int32 keep_daily_snapshots = 3;</code>
          */
         public Builder setKeepDailySnapshots(int value) {
           
@@ -2643,7 +2643,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_daily_snapshots = 3;</code>
+         * <code>int32 keep_daily_snapshots = 3;</code>
          */
         public Builder clearKeepDailySnapshots() {
           
@@ -2654,13 +2654,13 @@ public  final class Backup extends
 
         private int keepWeeklySnapshots_ ;
         /**
-         * <code>optional int32 keep_weekly_snapshots = 4;</code>
+         * <code>int32 keep_weekly_snapshots = 4;</code>
          */
         public int getKeepWeeklySnapshots() {
           return keepWeeklySnapshots_;
         }
         /**
-         * <code>optional int32 keep_weekly_snapshots = 4;</code>
+         * <code>int32 keep_weekly_snapshots = 4;</code>
          */
         public Builder setKeepWeeklySnapshots(int value) {
           
@@ -2669,7 +2669,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_weekly_snapshots = 4;</code>
+         * <code>int32 keep_weekly_snapshots = 4;</code>
          */
         public Builder clearKeepWeeklySnapshots() {
           
@@ -2680,13 +2680,13 @@ public  final class Backup extends
 
         private int keepMonthlySnapshots_ ;
         /**
-         * <code>optional int32 keep_monthly_snapshots = 5;</code>
+         * <code>int32 keep_monthly_snapshots = 5;</code>
          */
         public int getKeepMonthlySnapshots() {
           return keepMonthlySnapshots_;
         }
         /**
-         * <code>optional int32 keep_monthly_snapshots = 5;</code>
+         * <code>int32 keep_monthly_snapshots = 5;</code>
          */
         public Builder setKeepMonthlySnapshots(int value) {
           
@@ -2695,7 +2695,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_monthly_snapshots = 5;</code>
+         * <code>int32 keep_monthly_snapshots = 5;</code>
          */
         public Builder clearKeepMonthlySnapshots() {
           
@@ -2706,13 +2706,13 @@ public  final class Backup extends
 
         private int keepYearlySnapshots_ ;
         /**
-         * <code>optional int32 keep_yearly_snapshots = 6;</code>
+         * <code>int32 keep_yearly_snapshots = 6;</code>
          */
         public int getKeepYearlySnapshots() {
           return keepYearlySnapshots_;
         }
         /**
-         * <code>optional int32 keep_yearly_snapshots = 6;</code>
+         * <code>int32 keep_yearly_snapshots = 6;</code>
          */
         public Builder setKeepYearlySnapshots(int value) {
           
@@ -2721,7 +2721,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional int32 keep_yearly_snapshots = 6;</code>
+         * <code>int32 keep_yearly_snapshots = 6;</code>
          */
         public Builder clearKeepYearlySnapshots() {
           
@@ -2826,7 +2826,7 @@ public  final class Backup extends
 
         private java.lang.Object retainHostName_ = "";
         /**
-         * <code>optional string retain_host_name = 8;</code>
+         * <code>string retain_host_name = 8;</code>
          */
         public java.lang.String getRetainHostName() {
           java.lang.Object ref = retainHostName_;
@@ -2841,7 +2841,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string retain_host_name = 8;</code>
+         * <code>string retain_host_name = 8;</code>
          */
         public com.google.protobuf.ByteString
             getRetainHostNameBytes() {
@@ -2857,7 +2857,7 @@ public  final class Backup extends
           }
         }
         /**
-         * <code>optional string retain_host_name = 8;</code>
+         * <code>string retain_host_name = 8;</code>
          */
         public Builder setRetainHostName(
             java.lang.String value) {
@@ -2870,7 +2870,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string retain_host_name = 8;</code>
+         * <code>string retain_host_name = 8;</code>
          */
         public Builder clearRetainHostName() {
           
@@ -2879,7 +2879,7 @@ public  final class Backup extends
           return this;
         }
         /**
-         * <code>optional string retain_host_name = 8;</code>
+         * <code>string retain_host_name = 8;</code>
          */
         public Builder setRetainHostNameBytes(
             com.google.protobuf.ByteString value) {
@@ -3039,7 +3039,7 @@ public  final class Backup extends
     public static final int SCHEDULE_FIELD_NUMBER = 1;
     private volatile java.lang.Object schedule_;
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     public java.lang.String getSchedule() {
       java.lang.Object ref = schedule_;
@@ -3054,7 +3054,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     public com.google.protobuf.ByteString
         getScheduleBytes() {
@@ -3102,19 +3102,19 @@ public  final class Backup extends
     public static final int SOURCE_FIELD_NUMBER = 3;
     private com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource source_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     public boolean hasSource() {
       return source_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource getSource() {
       return source_ == null ? com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource.getDefaultInstance() : source_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSourceOrBuilder getSourceOrBuilder() {
       return getSource();
@@ -3123,19 +3123,19 @@ public  final class Backup extends
     public static final int DESTINATION_FIELD_NUMBER = 4;
     private com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination destination_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     public boolean hasDestination() {
       return destination_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination getDestination() {
       return destination_ == null ? com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination.getDefaultInstance() : destination_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestinationOrBuilder getDestinationOrBuilder() {
       return getDestination();
@@ -3144,19 +3144,19 @@ public  final class Backup extends
     public static final int RETENTION_POLICY_FIELD_NUMBER = 5;
     private com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retentionPolicy_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     public boolean hasRetentionPolicy() {
       return retentionPolicy_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy getRetentionPolicy() {
       return retentionPolicy_ == null ? com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy.getDefaultInstance() : retentionPolicy_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicyOrBuilder getRetentionPolicyOrBuilder() {
       return getRetentionPolicy();
@@ -3263,7 +3263,7 @@ public  final class Backup extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCHEDULE_FIELD_NUMBER;
       hash = (53 * hash) + getSchedule().hashCode();
       if (getTagsCount() > 0) {
@@ -3561,7 +3561,7 @@ public  final class Backup extends
 
       private java.lang.Object schedule_ = "";
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public java.lang.String getSchedule() {
         java.lang.Object ref = schedule_;
@@ -3576,7 +3576,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public com.google.protobuf.ByteString
           getScheduleBytes() {
@@ -3592,7 +3592,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder setSchedule(
           java.lang.String value) {
@@ -3605,7 +3605,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder clearSchedule() {
         
@@ -3614,7 +3614,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder setScheduleBytes(
           com.google.protobuf.ByteString value) {
@@ -3726,13 +3726,13 @@ public  final class Backup extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSourceOrBuilder> sourceBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public boolean hasSource() {
         return sourceBuilder_ != null || source_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource getSource() {
         if (sourceBuilder_ == null) {
@@ -3742,7 +3742,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public Builder setSource(com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource value) {
         if (sourceBuilder_ == null) {
@@ -3758,7 +3758,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public Builder setSource(
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource.Builder builderForValue) {
@@ -3772,7 +3772,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public Builder mergeSource(com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource value) {
         if (sourceBuilder_ == null) {
@@ -3790,7 +3790,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public Builder clearSource() {
         if (sourceBuilder_ == null) {
@@ -3804,7 +3804,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource.Builder getSourceBuilder() {
         
@@ -3812,7 +3812,7 @@ public  final class Backup extends
         return getSourceFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSourceOrBuilder getSourceOrBuilder() {
         if (sourceBuilder_ != null) {
@@ -3823,7 +3823,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupSource source = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSource.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupSourceOrBuilder> 
@@ -3843,13 +3843,13 @@ public  final class Backup extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestinationOrBuilder> destinationBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public boolean hasDestination() {
         return destinationBuilder_ != null || destination_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination getDestination() {
         if (destinationBuilder_ == null) {
@@ -3859,7 +3859,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public Builder setDestination(com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination value) {
         if (destinationBuilder_ == null) {
@@ -3875,7 +3875,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public Builder setDestination(
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination.Builder builderForValue) {
@@ -3889,7 +3889,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public Builder mergeDestination(com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination value) {
         if (destinationBuilder_ == null) {
@@ -3907,7 +3907,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public Builder clearDestination() {
         if (destinationBuilder_ == null) {
@@ -3921,7 +3921,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination.Builder getDestinationBuilder() {
         
@@ -3929,7 +3929,7 @@ public  final class Backup extends
         return getDestinationFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestinationOrBuilder getDestinationOrBuilder() {
         if (destinationBuilder_ != null) {
@@ -3940,7 +3940,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.BackupDestination destination = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestination.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.BackupDestinationOrBuilder> 
@@ -3960,13 +3960,13 @@ public  final class Backup extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy, com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicyOrBuilder> retentionPolicyBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public boolean hasRetentionPolicy() {
         return retentionPolicyBuilder_ != null || retentionPolicy_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy getRetentionPolicy() {
         if (retentionPolicyBuilder_ == null) {
@@ -3976,7 +3976,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public Builder setRetentionPolicy(com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy value) {
         if (retentionPolicyBuilder_ == null) {
@@ -3992,7 +3992,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public Builder setRetentionPolicy(
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy.Builder builderForValue) {
@@ -4006,7 +4006,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public Builder mergeRetentionPolicy(com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy value) {
         if (retentionPolicyBuilder_ == null) {
@@ -4024,7 +4024,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public Builder clearRetentionPolicy() {
         if (retentionPolicyBuilder_ == null) {
@@ -4038,7 +4038,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy.Builder getRetentionPolicyBuilder() {
         
@@ -4046,7 +4046,7 @@ public  final class Backup extends
         return getRetentionPolicyFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicyOrBuilder getRetentionPolicyOrBuilder() {
         if (retentionPolicyBuilder_ != null) {
@@ -4057,7 +4057,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.Backup.Spec.RetentionPolicy retention_policy = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy, com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicy.Builder, com.appscode.api.kubernetes.v1beta2.Backup.Spec.RetentionPolicyOrBuilder> 
@@ -4126,32 +4126,32 @@ public  final class Backup extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 first_backup_time = 1;</code>
+     * <code>int64 first_backup_time = 1;</code>
      */
     long getFirstBackupTime();
 
     /**
-     * <code>optional int64 last_backup_time = 2;</code>
+     * <code>int64 last_backup_time = 2;</code>
      */
     long getLastBackupTime();
 
     /**
-     * <code>optional int64 last_successful_backup_time = 3;</code>
+     * <code>int64 last_successful_backup_time = 3;</code>
      */
     long getLastSuccessfulBackupTime();
 
     /**
-     * <code>optional string last_backup_duration = 4;</code>
+     * <code>string last_backup_duration = 4;</code>
      */
     java.lang.String getLastBackupDuration();
     /**
-     * <code>optional string last_backup_duration = 4;</code>
+     * <code>string last_backup_duration = 4;</code>
      */
     com.google.protobuf.ByteString
         getLastBackupDurationBytes();
 
     /**
-     * <code>optional int64 backup_count = 5;</code>
+     * <code>int64 backup_count = 5;</code>
      */
     long getBackupCount();
   }
@@ -4251,7 +4251,7 @@ public  final class Backup extends
     public static final int FIRST_BACKUP_TIME_FIELD_NUMBER = 1;
     private long firstBackupTime_;
     /**
-     * <code>optional int64 first_backup_time = 1;</code>
+     * <code>int64 first_backup_time = 1;</code>
      */
     public long getFirstBackupTime() {
       return firstBackupTime_;
@@ -4260,7 +4260,7 @@ public  final class Backup extends
     public static final int LAST_BACKUP_TIME_FIELD_NUMBER = 2;
     private long lastBackupTime_;
     /**
-     * <code>optional int64 last_backup_time = 2;</code>
+     * <code>int64 last_backup_time = 2;</code>
      */
     public long getLastBackupTime() {
       return lastBackupTime_;
@@ -4269,7 +4269,7 @@ public  final class Backup extends
     public static final int LAST_SUCCESSFUL_BACKUP_TIME_FIELD_NUMBER = 3;
     private long lastSuccessfulBackupTime_;
     /**
-     * <code>optional int64 last_successful_backup_time = 3;</code>
+     * <code>int64 last_successful_backup_time = 3;</code>
      */
     public long getLastSuccessfulBackupTime() {
       return lastSuccessfulBackupTime_;
@@ -4278,7 +4278,7 @@ public  final class Backup extends
     public static final int LAST_BACKUP_DURATION_FIELD_NUMBER = 4;
     private volatile java.lang.Object lastBackupDuration_;
     /**
-     * <code>optional string last_backup_duration = 4;</code>
+     * <code>string last_backup_duration = 4;</code>
      */
     public java.lang.String getLastBackupDuration() {
       java.lang.Object ref = lastBackupDuration_;
@@ -4293,7 +4293,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional string last_backup_duration = 4;</code>
+     * <code>string last_backup_duration = 4;</code>
      */
     public com.google.protobuf.ByteString
         getLastBackupDurationBytes() {
@@ -4312,7 +4312,7 @@ public  final class Backup extends
     public static final int BACKUP_COUNT_FIELD_NUMBER = 5;
     private long backupCount_;
     /**
-     * <code>optional int64 backup_count = 5;</code>
+     * <code>int64 backup_count = 5;</code>
      */
     public long getBackupCount() {
       return backupCount_;
@@ -4406,7 +4406,7 @@ public  final class Backup extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + FIRST_BACKUP_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getFirstBackupTime());
@@ -4661,13 +4661,13 @@ public  final class Backup extends
 
       private long firstBackupTime_ ;
       /**
-       * <code>optional int64 first_backup_time = 1;</code>
+       * <code>int64 first_backup_time = 1;</code>
        */
       public long getFirstBackupTime() {
         return firstBackupTime_;
       }
       /**
-       * <code>optional int64 first_backup_time = 1;</code>
+       * <code>int64 first_backup_time = 1;</code>
        */
       public Builder setFirstBackupTime(long value) {
         
@@ -4676,7 +4676,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional int64 first_backup_time = 1;</code>
+       * <code>int64 first_backup_time = 1;</code>
        */
       public Builder clearFirstBackupTime() {
         
@@ -4687,13 +4687,13 @@ public  final class Backup extends
 
       private long lastBackupTime_ ;
       /**
-       * <code>optional int64 last_backup_time = 2;</code>
+       * <code>int64 last_backup_time = 2;</code>
        */
       public long getLastBackupTime() {
         return lastBackupTime_;
       }
       /**
-       * <code>optional int64 last_backup_time = 2;</code>
+       * <code>int64 last_backup_time = 2;</code>
        */
       public Builder setLastBackupTime(long value) {
         
@@ -4702,7 +4702,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional int64 last_backup_time = 2;</code>
+       * <code>int64 last_backup_time = 2;</code>
        */
       public Builder clearLastBackupTime() {
         
@@ -4713,13 +4713,13 @@ public  final class Backup extends
 
       private long lastSuccessfulBackupTime_ ;
       /**
-       * <code>optional int64 last_successful_backup_time = 3;</code>
+       * <code>int64 last_successful_backup_time = 3;</code>
        */
       public long getLastSuccessfulBackupTime() {
         return lastSuccessfulBackupTime_;
       }
       /**
-       * <code>optional int64 last_successful_backup_time = 3;</code>
+       * <code>int64 last_successful_backup_time = 3;</code>
        */
       public Builder setLastSuccessfulBackupTime(long value) {
         
@@ -4728,7 +4728,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional int64 last_successful_backup_time = 3;</code>
+       * <code>int64 last_successful_backup_time = 3;</code>
        */
       public Builder clearLastSuccessfulBackupTime() {
         
@@ -4739,7 +4739,7 @@ public  final class Backup extends
 
       private java.lang.Object lastBackupDuration_ = "";
       /**
-       * <code>optional string last_backup_duration = 4;</code>
+       * <code>string last_backup_duration = 4;</code>
        */
       public java.lang.String getLastBackupDuration() {
         java.lang.Object ref = lastBackupDuration_;
@@ -4754,7 +4754,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string last_backup_duration = 4;</code>
+       * <code>string last_backup_duration = 4;</code>
        */
       public com.google.protobuf.ByteString
           getLastBackupDurationBytes() {
@@ -4770,7 +4770,7 @@ public  final class Backup extends
         }
       }
       /**
-       * <code>optional string last_backup_duration = 4;</code>
+       * <code>string last_backup_duration = 4;</code>
        */
       public Builder setLastBackupDuration(
           java.lang.String value) {
@@ -4783,7 +4783,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional string last_backup_duration = 4;</code>
+       * <code>string last_backup_duration = 4;</code>
        */
       public Builder clearLastBackupDuration() {
         
@@ -4792,7 +4792,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional string last_backup_duration = 4;</code>
+       * <code>string last_backup_duration = 4;</code>
        */
       public Builder setLastBackupDurationBytes(
           com.google.protobuf.ByteString value) {
@@ -4808,13 +4808,13 @@ public  final class Backup extends
 
       private long backupCount_ ;
       /**
-       * <code>optional int64 backup_count = 5;</code>
+       * <code>int64 backup_count = 5;</code>
        */
       public long getBackupCount() {
         return backupCount_;
       }
       /**
-       * <code>optional int64 backup_count = 5;</code>
+       * <code>int64 backup_count = 5;</code>
        */
       public Builder setBackupCount(long value) {
         
@@ -4823,7 +4823,7 @@ public  final class Backup extends
         return this;
       }
       /**
-       * <code>optional int64 backup_count = 5;</code>
+       * <code>int64 backup_count = 5;</code>
        */
       public Builder clearBackupCount() {
         
@@ -4883,19 +4883,19 @@ public  final class Backup extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -4904,19 +4904,19 @@ public  final class Backup extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Backup.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Backup.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Backup.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Backup.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -4925,19 +4925,19 @@ public  final class Backup extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Backup.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Backup.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Backup.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Backup.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -5023,7 +5023,7 @@ public  final class Backup extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -5289,13 +5289,13 @@ public  final class Backup extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -5305,7 +5305,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -5321,7 +5321,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -5335,7 +5335,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -5353,7 +5353,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -5367,7 +5367,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -5375,7 +5375,7 @@ public  final class Backup extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -5386,7 +5386,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -5406,13 +5406,13 @@ public  final class Backup extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup.Spec, com.appscode.api.kubernetes.v1beta2.Backup.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Backup.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -5422,7 +5422,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Backup.Spec value) {
       if (specBuilder_ == null) {
@@ -5438,7 +5438,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Backup.Spec.Builder builderForValue) {
@@ -5452,7 +5452,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Backup.Spec value) {
       if (specBuilder_ == null) {
@@ -5470,7 +5470,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -5484,7 +5484,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Spec.Builder getSpecBuilder() {
       
@@ -5492,7 +5492,7 @@ public  final class Backup extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -5503,7 +5503,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup.Spec, com.appscode.api.kubernetes.v1beta2.Backup.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Backup.SpecOrBuilder> 
@@ -5523,13 +5523,13 @@ public  final class Backup extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup.Status, com.appscode.api.kubernetes.v1beta2.Backup.Status.Builder, com.appscode.api.kubernetes.v1beta2.Backup.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -5539,7 +5539,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Backup.Status value) {
       if (statusBuilder_ == null) {
@@ -5555,7 +5555,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Backup.Status.Builder builderForValue) {
@@ -5569,7 +5569,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Backup.Status value) {
       if (statusBuilder_ == null) {
@@ -5587,7 +5587,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -5601,7 +5601,7 @@ public  final class Backup extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Status.Builder getStatusBuilder() {
       
@@ -5609,7 +5609,7 @@ public  final class Backup extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -5620,7 +5620,7 @@ public  final class Backup extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup.Status, com.appscode.api.kubernetes.v1beta2.Backup.Status.Builder, com.appscode.api.kubernetes.v1beta2.Backup.StatusOrBuilder> 

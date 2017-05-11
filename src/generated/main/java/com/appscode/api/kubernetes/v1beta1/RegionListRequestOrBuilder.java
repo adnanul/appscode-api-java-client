@@ -12,7 +12,7 @@ public interface RegionListRequestOrBuilder extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   java.lang.String getCloudCredential();
   /**
@@ -20,7 +20,7 @@ public interface RegionListRequestOrBuilder extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   com.google.protobuf.ByteString
       getCloudCredentialBytes();

@@ -47,43 +47,30 @@ public  final class AgentCreateResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             namespace_ = s;
             break;
           }
-          case 26: {
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             sshAuthorizedPublicKey_ = s;
             break;
           }
-          case 34: {
+          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
             gitHostname_ = s;
             break;
           }
-          case 42: {
+          case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
             gitHostPublicKey_ = s;
             break;
           }
-          case 50: {
+          case 42: {
             com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.Builder subBuilder = null;
             if (gitUser_ != null) {
               subBuilder = gitUser_.toBuilder();
@@ -124,41 +111,41 @@ public  final class AgentCreateResponse extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     java.lang.String getPhid();
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     com.google.protobuf.ByteString
         getPhidBytes();
 
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     java.lang.String getUserName();
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     com.google.protobuf.ByteString
         getUserNameBytes();
 
     /**
-     * <code>optional string token = 3;</code>
+     * <code>string token = 3;</code>
      */
     java.lang.String getToken();
     /**
-     * <code>optional string token = 3;</code>
+     * <code>string token = 3;</code>
      */
     com.google.protobuf.ByteString
         getTokenBytes();
 
     /**
-     * <code>optional string email = 4;</code>
+     * <code>string email = 4;</code>
      */
     java.lang.String getEmail();
     /**
-     * <code>optional string email = 4;</code>
+     * <code>string email = 4;</code>
      */
     com.google.protobuf.ByteString
         getEmailBytes();
@@ -256,7 +243,7 @@ public  final class AgentCreateResponse extends
     public static final int PHID_FIELD_NUMBER = 1;
     private volatile java.lang.Object phid_;
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -271,7 +258,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -290,7 +277,7 @@ public  final class AgentCreateResponse extends
     public static final int USER_NAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object userName_;
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public java.lang.String getUserName() {
       java.lang.Object ref = userName_;
@@ -305,7 +292,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUserNameBytes() {
@@ -324,7 +311,7 @@ public  final class AgentCreateResponse extends
     public static final int TOKEN_FIELD_NUMBER = 3;
     private volatile java.lang.Object token_;
     /**
-     * <code>optional string token = 3;</code>
+     * <code>string token = 3;</code>
      */
     public java.lang.String getToken() {
       java.lang.Object ref = token_;
@@ -339,7 +326,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string token = 3;</code>
+     * <code>string token = 3;</code>
      */
     public com.google.protobuf.ByteString
         getTokenBytes() {
@@ -358,7 +345,7 @@ public  final class AgentCreateResponse extends
     public static final int EMAIL_FIELD_NUMBER = 4;
     private volatile java.lang.Object email_;
     /**
-     * <code>optional string email = 4;</code>
+     * <code>string email = 4;</code>
      */
     public java.lang.String getEmail() {
       java.lang.Object ref = email_;
@@ -373,7 +360,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string email = 4;</code>
+     * <code>string email = 4;</code>
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
@@ -465,7 +452,7 @@ public  final class AgentCreateResponse extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PHID_FIELD_NUMBER;
       hash = (53 * hash) + getPhid().hashCode();
       hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
@@ -711,7 +698,7 @@ public  final class AgentCreateResponse extends
 
       private java.lang.Object phid_ = "";
       /**
-       * <code>optional string phid = 1;</code>
+       * <code>string phid = 1;</code>
        */
       public java.lang.String getPhid() {
         java.lang.Object ref = phid_;
@@ -726,7 +713,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string phid = 1;</code>
+       * <code>string phid = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPhidBytes() {
@@ -742,7 +729,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string phid = 1;</code>
+       * <code>string phid = 1;</code>
        */
       public Builder setPhid(
           java.lang.String value) {
@@ -755,7 +742,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string phid = 1;</code>
+       * <code>string phid = 1;</code>
        */
       public Builder clearPhid() {
         
@@ -764,7 +751,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string phid = 1;</code>
+       * <code>string phid = 1;</code>
        */
       public Builder setPhidBytes(
           com.google.protobuf.ByteString value) {
@@ -780,7 +767,7 @@ public  final class AgentCreateResponse extends
 
       private java.lang.Object userName_ = "";
       /**
-       * <code>optional string user_name = 2;</code>
+       * <code>string user_name = 2;</code>
        */
       public java.lang.String getUserName() {
         java.lang.Object ref = userName_;
@@ -795,7 +782,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string user_name = 2;</code>
+       * <code>string user_name = 2;</code>
        */
       public com.google.protobuf.ByteString
           getUserNameBytes() {
@@ -811,7 +798,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string user_name = 2;</code>
+       * <code>string user_name = 2;</code>
        */
       public Builder setUserName(
           java.lang.String value) {
@@ -824,7 +811,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string user_name = 2;</code>
+       * <code>string user_name = 2;</code>
        */
       public Builder clearUserName() {
         
@@ -833,7 +820,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string user_name = 2;</code>
+       * <code>string user_name = 2;</code>
        */
       public Builder setUserNameBytes(
           com.google.protobuf.ByteString value) {
@@ -849,7 +836,7 @@ public  final class AgentCreateResponse extends
 
       private java.lang.Object token_ = "";
       /**
-       * <code>optional string token = 3;</code>
+       * <code>string token = 3;</code>
        */
       public java.lang.String getToken() {
         java.lang.Object ref = token_;
@@ -864,7 +851,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string token = 3;</code>
+       * <code>string token = 3;</code>
        */
       public com.google.protobuf.ByteString
           getTokenBytes() {
@@ -880,7 +867,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string token = 3;</code>
+       * <code>string token = 3;</code>
        */
       public Builder setToken(
           java.lang.String value) {
@@ -893,7 +880,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string token = 3;</code>
+       * <code>string token = 3;</code>
        */
       public Builder clearToken() {
         
@@ -902,7 +889,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string token = 3;</code>
+       * <code>string token = 3;</code>
        */
       public Builder setTokenBytes(
           com.google.protobuf.ByteString value) {
@@ -918,7 +905,7 @@ public  final class AgentCreateResponse extends
 
       private java.lang.Object email_ = "";
       /**
-       * <code>optional string email = 4;</code>
+       * <code>string email = 4;</code>
        */
       public java.lang.String getEmail() {
         java.lang.Object ref = email_;
@@ -933,7 +920,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string email = 4;</code>
+       * <code>string email = 4;</code>
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
@@ -949,7 +936,7 @@ public  final class AgentCreateResponse extends
         }
       }
       /**
-       * <code>optional string email = 4;</code>
+       * <code>string email = 4;</code>
        */
       public Builder setEmail(
           java.lang.String value) {
@@ -962,7 +949,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string email = 4;</code>
+       * <code>string email = 4;</code>
        */
       public Builder clearEmail() {
         
@@ -971,7 +958,7 @@ public  final class AgentCreateResponse extends
         return this;
       }
       /**
-       * <code>optional string email = 4;</code>
+       * <code>string email = 4;</code>
        */
       public Builder setEmailBytes(
           com.google.protobuf.ByteString value) {
@@ -1033,31 +1020,10 @@ public  final class AgentCreateResponse extends
 
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int NAMESPACE_FIELD_NUMBER = 2;
+  public static final int NAMESPACE_FIELD_NUMBER = 1;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 1;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -1072,7 +1038,7 @@ public  final class AgentCreateResponse extends
     }
   }
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -1088,14 +1054,14 @@ public  final class AgentCreateResponse extends
     }
   }
 
-  public static final int SSH_AUTHORIZED_PUBLIC_KEY_FIELD_NUMBER = 3;
+  public static final int SSH_AUTHORIZED_PUBLIC_KEY_FIELD_NUMBER = 2;
   private volatile java.lang.Object sshAuthorizedPublicKey_;
   /**
    * <pre>
    * authorized to ssh
    * </pre>
    *
-   * <code>optional string ssh_authorized_public_key = 3;</code>
+   * <code>string ssh_authorized_public_key = 2;</code>
    */
   public java.lang.String getSshAuthorizedPublicKey() {
     java.lang.Object ref = sshAuthorizedPublicKey_;
@@ -1114,7 +1080,7 @@ public  final class AgentCreateResponse extends
    * authorized to ssh
    * </pre>
    *
-   * <code>optional string ssh_authorized_public_key = 3;</code>
+   * <code>string ssh_authorized_public_key = 2;</code>
    */
   public com.google.protobuf.ByteString
       getSshAuthorizedPublicKeyBytes() {
@@ -1130,10 +1096,10 @@ public  final class AgentCreateResponse extends
     }
   }
 
-  public static final int GIT_HOSTNAME_FIELD_NUMBER = 4;
+  public static final int GIT_HOSTNAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object gitHostname_;
   /**
-   * <code>optional string git_hostname = 4;</code>
+   * <code>string git_hostname = 3;</code>
    */
   public java.lang.String getGitHostname() {
     java.lang.Object ref = gitHostname_;
@@ -1148,7 +1114,7 @@ public  final class AgentCreateResponse extends
     }
   }
   /**
-   * <code>optional string git_hostname = 4;</code>
+   * <code>string git_hostname = 3;</code>
    */
   public com.google.protobuf.ByteString
       getGitHostnameBytes() {
@@ -1164,14 +1130,14 @@ public  final class AgentCreateResponse extends
     }
   }
 
-  public static final int GIT_HOST_PUBLIC_KEY_FIELD_NUMBER = 5;
+  public static final int GIT_HOST_PUBLIC_KEY_FIELD_NUMBER = 4;
   private volatile java.lang.Object gitHostPublicKey_;
   /**
    * <pre>
    * known_host
    * </pre>
    *
-   * <code>optional string git_host_public_key = 5;</code>
+   * <code>string git_host_public_key = 4;</code>
    */
   public java.lang.String getGitHostPublicKey() {
     java.lang.Object ref = gitHostPublicKey_;
@@ -1190,7 +1156,7 @@ public  final class AgentCreateResponse extends
    * known_host
    * </pre>
    *
-   * <code>optional string git_host_public_key = 5;</code>
+   * <code>string git_host_public_key = 4;</code>
    */
   public com.google.protobuf.ByteString
       getGitHostPublicKeyBytes() {
@@ -1206,22 +1172,22 @@ public  final class AgentCreateResponse extends
     }
   }
 
-  public static final int GIT_USER_FIELD_NUMBER = 6;
+  public static final int GIT_USER_FIELD_NUMBER = 5;
   private com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser gitUser_;
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   public boolean hasGitUser() {
     return gitUser_ != null;
   }
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   public com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser getGitUser() {
     return gitUser_ == null ? com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.getDefaultInstance() : gitUser_;
   }
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   public com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUserOrBuilder getGitUserOrBuilder() {
     return getGitUser();
@@ -1239,23 +1205,20 @@ public  final class AgentCreateResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (!getNamespaceBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, namespace_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, namespace_);
     }
     if (!getSshAuthorizedPublicKeyBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, sshAuthorizedPublicKey_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, sshAuthorizedPublicKey_);
     }
     if (!getGitHostnameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, gitHostname_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, gitHostname_);
     }
     if (!getGitHostPublicKeyBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, gitHostPublicKey_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, gitHostPublicKey_);
     }
     if (gitUser_ != null) {
-      output.writeMessage(6, getGitUser());
+      output.writeMessage(5, getGitUser());
     }
   }
 
@@ -1264,25 +1227,21 @@ public  final class AgentCreateResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (!getNamespaceBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, namespace_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, namespace_);
     }
     if (!getSshAuthorizedPublicKeyBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, sshAuthorizedPublicKey_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, sshAuthorizedPublicKey_);
     }
     if (!getGitHostnameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, gitHostname_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, gitHostname_);
     }
     if (!getGitHostPublicKeyBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, gitHostPublicKey_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, gitHostPublicKey_);
     }
     if (gitUser_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(6, getGitUser());
+        .computeMessageSize(5, getGitUser());
     }
     memoizedSize = size;
     return size;
@@ -1300,11 +1259,6 @@ public  final class AgentCreateResponse extends
     com.appscode.api.ci.v1beta1.AgentCreateResponse other = (com.appscode.api.ci.v1beta1.AgentCreateResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getNamespace()
         .equals(other.getNamespace());
     result = result && getSshAuthorizedPublicKey()
@@ -1327,11 +1281,7 @@ public  final class AgentCreateResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + SSH_AUTHORIZED_PUBLIC_KEY_FIELD_NUMBER;
@@ -1462,12 +1412,6 @@ public  final class AgentCreateResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       namespace_ = "";
 
       sshAuthorizedPublicKey_ = "";
@@ -1504,11 +1448,6 @@ public  final class AgentCreateResponse extends
 
     public com.appscode.api.ci.v1beta1.AgentCreateResponse buildPartial() {
       com.appscode.api.ci.v1beta1.AgentCreateResponse result = new com.appscode.api.ci.v1beta1.AgentCreateResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       result.namespace_ = namespace_;
       result.sshAuthorizedPublicKey_ = sshAuthorizedPublicKey_;
       result.gitHostname_ = gitHostname_;
@@ -1559,9 +1498,6 @@ public  final class AgentCreateResponse extends
 
     public Builder mergeFrom(com.appscode.api.ci.v1beta1.AgentCreateResponse other) {
       if (other == com.appscode.api.ci.v1beta1.AgentCreateResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (!other.getNamespace().isEmpty()) {
         namespace_ = other.namespace_;
         onChanged();
@@ -1607,126 +1543,9 @@ public  final class AgentCreateResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 1;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -1741,7 +1560,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -1757,7 +1576,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -1770,7 +1589,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder clearNamespace() {
       
@@ -1779,7 +1598,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -1799,7 +1618,7 @@ public  final class AgentCreateResponse extends
      * authorized to ssh
      * </pre>
      *
-     * <code>optional string ssh_authorized_public_key = 3;</code>
+     * <code>string ssh_authorized_public_key = 2;</code>
      */
     public java.lang.String getSshAuthorizedPublicKey() {
       java.lang.Object ref = sshAuthorizedPublicKey_;
@@ -1818,7 +1637,7 @@ public  final class AgentCreateResponse extends
      * authorized to ssh
      * </pre>
      *
-     * <code>optional string ssh_authorized_public_key = 3;</code>
+     * <code>string ssh_authorized_public_key = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSshAuthorizedPublicKeyBytes() {
@@ -1838,7 +1657,7 @@ public  final class AgentCreateResponse extends
      * authorized to ssh
      * </pre>
      *
-     * <code>optional string ssh_authorized_public_key = 3;</code>
+     * <code>string ssh_authorized_public_key = 2;</code>
      */
     public Builder setSshAuthorizedPublicKey(
         java.lang.String value) {
@@ -1855,7 +1674,7 @@ public  final class AgentCreateResponse extends
      * authorized to ssh
      * </pre>
      *
-     * <code>optional string ssh_authorized_public_key = 3;</code>
+     * <code>string ssh_authorized_public_key = 2;</code>
      */
     public Builder clearSshAuthorizedPublicKey() {
       
@@ -1868,7 +1687,7 @@ public  final class AgentCreateResponse extends
      * authorized to ssh
      * </pre>
      *
-     * <code>optional string ssh_authorized_public_key = 3;</code>
+     * <code>string ssh_authorized_public_key = 2;</code>
      */
     public Builder setSshAuthorizedPublicKeyBytes(
         com.google.protobuf.ByteString value) {
@@ -1884,7 +1703,7 @@ public  final class AgentCreateResponse extends
 
     private java.lang.Object gitHostname_ = "";
     /**
-     * <code>optional string git_hostname = 4;</code>
+     * <code>string git_hostname = 3;</code>
      */
     public java.lang.String getGitHostname() {
       java.lang.Object ref = gitHostname_;
@@ -1899,7 +1718,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string git_hostname = 4;</code>
+     * <code>string git_hostname = 3;</code>
      */
     public com.google.protobuf.ByteString
         getGitHostnameBytes() {
@@ -1915,7 +1734,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional string git_hostname = 4;</code>
+     * <code>string git_hostname = 3;</code>
      */
     public Builder setGitHostname(
         java.lang.String value) {
@@ -1928,7 +1747,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional string git_hostname = 4;</code>
+     * <code>string git_hostname = 3;</code>
      */
     public Builder clearGitHostname() {
       
@@ -1937,7 +1756,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional string git_hostname = 4;</code>
+     * <code>string git_hostname = 3;</code>
      */
     public Builder setGitHostnameBytes(
         com.google.protobuf.ByteString value) {
@@ -1957,7 +1776,7 @@ public  final class AgentCreateResponse extends
      * known_host
      * </pre>
      *
-     * <code>optional string git_host_public_key = 5;</code>
+     * <code>string git_host_public_key = 4;</code>
      */
     public java.lang.String getGitHostPublicKey() {
       java.lang.Object ref = gitHostPublicKey_;
@@ -1976,7 +1795,7 @@ public  final class AgentCreateResponse extends
      * known_host
      * </pre>
      *
-     * <code>optional string git_host_public_key = 5;</code>
+     * <code>string git_host_public_key = 4;</code>
      */
     public com.google.protobuf.ByteString
         getGitHostPublicKeyBytes() {
@@ -1996,7 +1815,7 @@ public  final class AgentCreateResponse extends
      * known_host
      * </pre>
      *
-     * <code>optional string git_host_public_key = 5;</code>
+     * <code>string git_host_public_key = 4;</code>
      */
     public Builder setGitHostPublicKey(
         java.lang.String value) {
@@ -2013,7 +1832,7 @@ public  final class AgentCreateResponse extends
      * known_host
      * </pre>
      *
-     * <code>optional string git_host_public_key = 5;</code>
+     * <code>string git_host_public_key = 4;</code>
      */
     public Builder clearGitHostPublicKey() {
       
@@ -2026,7 +1845,7 @@ public  final class AgentCreateResponse extends
      * known_host
      * </pre>
      *
-     * <code>optional string git_host_public_key = 5;</code>
+     * <code>string git_host_public_key = 4;</code>
      */
     public Builder setGitHostPublicKeyBytes(
         com.google.protobuf.ByteString value) {
@@ -2044,13 +1863,13 @@ public  final class AgentCreateResponse extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser, com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.Builder, com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUserOrBuilder> gitUserBuilder_;
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public boolean hasGitUser() {
       return gitUserBuilder_ != null || gitUser_ != null;
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser getGitUser() {
       if (gitUserBuilder_ == null) {
@@ -2060,7 +1879,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public Builder setGitUser(com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser value) {
       if (gitUserBuilder_ == null) {
@@ -2076,7 +1895,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public Builder setGitUser(
         com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.Builder builderForValue) {
@@ -2090,7 +1909,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public Builder mergeGitUser(com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser value) {
       if (gitUserBuilder_ == null) {
@@ -2108,7 +1927,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public Builder clearGitUser() {
       if (gitUserBuilder_ == null) {
@@ -2122,7 +1941,7 @@ public  final class AgentCreateResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.Builder getGitUserBuilder() {
       
@@ -2130,7 +1949,7 @@ public  final class AgentCreateResponse extends
       return getGitUserFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     public com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUserOrBuilder getGitUserOrBuilder() {
       if (gitUserBuilder_ != null) {
@@ -2141,7 +1960,7 @@ public  final class AgentCreateResponse extends
       }
     }
     /**
-     * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+     * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser, com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser.Builder, com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUserOrBuilder> 

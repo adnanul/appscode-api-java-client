@@ -110,7 +110,7 @@ public  final class AzureDiskVolumeSource extends
    * The Name of the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskName = 1;</code>
+   * <code>string diskName = 1;</code>
    */
   public java.lang.String getDiskName() {
     java.lang.Object ref = diskName_;
@@ -129,7 +129,7 @@ public  final class AzureDiskVolumeSource extends
    * The Name of the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskName = 1;</code>
+   * <code>string diskName = 1;</code>
    */
   public com.google.protobuf.ByteString
       getDiskNameBytes() {
@@ -152,7 +152,7 @@ public  final class AzureDiskVolumeSource extends
    * The URI the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskURI = 2;</code>
+   * <code>string diskURI = 2;</code>
    */
   public java.lang.String getDiskURI() {
     java.lang.Object ref = diskURI_;
@@ -171,7 +171,7 @@ public  final class AzureDiskVolumeSource extends
    * The URI the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskURI = 2;</code>
+   * <code>string diskURI = 2;</code>
    */
   public com.google.protobuf.ByteString
       getDiskURIBytes() {
@@ -194,7 +194,7 @@ public  final class AzureDiskVolumeSource extends
    * Host Caching mode: None, Read Only, Read Write.
    * </pre>
    *
-   * <code>optional string cachingMode = 3;</code>
+   * <code>string cachingMode = 3;</code>
    */
   public java.lang.String getCachingMode() {
     java.lang.Object ref = cachingMode_;
@@ -213,7 +213,7 @@ public  final class AzureDiskVolumeSource extends
    * Host Caching mode: None, Read Only, Read Write.
    * </pre>
    *
-   * <code>optional string cachingMode = 3;</code>
+   * <code>string cachingMode = 3;</code>
    */
   public com.google.protobuf.ByteString
       getCachingModeBytes() {
@@ -238,7 +238,7 @@ public  final class AzureDiskVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 4;</code>
+   * <code>string fsType = 4;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -259,7 +259,7 @@ public  final class AzureDiskVolumeSource extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 4;</code>
+   * <code>string fsType = 4;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -283,7 +283,7 @@ public  final class AzureDiskVolumeSource extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 5;</code>
+   * <code>bool readOnly = 5;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -374,7 +374,7 @@ public  final class AzureDiskVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + DISKNAME_FIELD_NUMBER;
     hash = (53 * hash) + getDiskName().hashCode();
     hash = (37 * hash) + DISKURI_FIELD_NUMBER;
@@ -637,7 +637,7 @@ public  final class AzureDiskVolumeSource extends
      * The Name of the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskName = 1;</code>
+     * <code>string diskName = 1;</code>
      */
     public java.lang.String getDiskName() {
       java.lang.Object ref = diskName_;
@@ -656,7 +656,7 @@ public  final class AzureDiskVolumeSource extends
      * The Name of the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskName = 1;</code>
+     * <code>string diskName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDiskNameBytes() {
@@ -676,7 +676,7 @@ public  final class AzureDiskVolumeSource extends
      * The Name of the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskName = 1;</code>
+     * <code>string diskName = 1;</code>
      */
     public Builder setDiskName(
         java.lang.String value) {
@@ -693,7 +693,7 @@ public  final class AzureDiskVolumeSource extends
      * The Name of the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskName = 1;</code>
+     * <code>string diskName = 1;</code>
      */
     public Builder clearDiskName() {
       
@@ -706,7 +706,7 @@ public  final class AzureDiskVolumeSource extends
      * The Name of the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskName = 1;</code>
+     * <code>string diskName = 1;</code>
      */
     public Builder setDiskNameBytes(
         com.google.protobuf.ByteString value) {
@@ -726,7 +726,7 @@ public  final class AzureDiskVolumeSource extends
      * The URI the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskURI = 2;</code>
+     * <code>string diskURI = 2;</code>
      */
     public java.lang.String getDiskURI() {
       java.lang.Object ref = diskURI_;
@@ -745,7 +745,7 @@ public  final class AzureDiskVolumeSource extends
      * The URI the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskURI = 2;</code>
+     * <code>string diskURI = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDiskURIBytes() {
@@ -765,7 +765,7 @@ public  final class AzureDiskVolumeSource extends
      * The URI the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskURI = 2;</code>
+     * <code>string diskURI = 2;</code>
      */
     public Builder setDiskURI(
         java.lang.String value) {
@@ -782,7 +782,7 @@ public  final class AzureDiskVolumeSource extends
      * The URI the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskURI = 2;</code>
+     * <code>string diskURI = 2;</code>
      */
     public Builder clearDiskURI() {
       
@@ -795,7 +795,7 @@ public  final class AzureDiskVolumeSource extends
      * The URI the data disk in the blob storage
      * </pre>
      *
-     * <code>optional string diskURI = 2;</code>
+     * <code>string diskURI = 2;</code>
      */
     public Builder setDiskURIBytes(
         com.google.protobuf.ByteString value) {
@@ -815,7 +815,7 @@ public  final class AzureDiskVolumeSource extends
      * Host Caching mode: None, Read Only, Read Write.
      * </pre>
      *
-     * <code>optional string cachingMode = 3;</code>
+     * <code>string cachingMode = 3;</code>
      */
     public java.lang.String getCachingMode() {
       java.lang.Object ref = cachingMode_;
@@ -834,7 +834,7 @@ public  final class AzureDiskVolumeSource extends
      * Host Caching mode: None, Read Only, Read Write.
      * </pre>
      *
-     * <code>optional string cachingMode = 3;</code>
+     * <code>string cachingMode = 3;</code>
      */
     public com.google.protobuf.ByteString
         getCachingModeBytes() {
@@ -854,7 +854,7 @@ public  final class AzureDiskVolumeSource extends
      * Host Caching mode: None, Read Only, Read Write.
      * </pre>
      *
-     * <code>optional string cachingMode = 3;</code>
+     * <code>string cachingMode = 3;</code>
      */
     public Builder setCachingMode(
         java.lang.String value) {
@@ -871,7 +871,7 @@ public  final class AzureDiskVolumeSource extends
      * Host Caching mode: None, Read Only, Read Write.
      * </pre>
      *
-     * <code>optional string cachingMode = 3;</code>
+     * <code>string cachingMode = 3;</code>
      */
     public Builder clearCachingMode() {
       
@@ -884,7 +884,7 @@ public  final class AzureDiskVolumeSource extends
      * Host Caching mode: None, Read Only, Read Write.
      * </pre>
      *
-     * <code>optional string cachingMode = 3;</code>
+     * <code>string cachingMode = 3;</code>
      */
     public Builder setCachingModeBytes(
         com.google.protobuf.ByteString value) {
@@ -906,7 +906,7 @@ public  final class AzureDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 4;</code>
+     * <code>string fsType = 4;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -927,7 +927,7 @@ public  final class AzureDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 4;</code>
+     * <code>string fsType = 4;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -949,7 +949,7 @@ public  final class AzureDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 4;</code>
+     * <code>string fsType = 4;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -968,7 +968,7 @@ public  final class AzureDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 4;</code>
+     * <code>string fsType = 4;</code>
      */
     public Builder clearFsType() {
       
@@ -983,7 +983,7 @@ public  final class AzureDiskVolumeSource extends
      * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
      * </pre>
      *
-     * <code>optional string fsType = 4;</code>
+     * <code>string fsType = 4;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1004,7 +1004,7 @@ public  final class AzureDiskVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 5;</code>
+     * <code>bool readOnly = 5;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -1015,7 +1015,7 @@ public  final class AzureDiskVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 5;</code>
+     * <code>bool readOnly = 5;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -1029,7 +1029,7 @@ public  final class AzureDiskVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 5;</code>
+     * <code>bool readOnly = 5;</code>
      */
     public Builder clearReadOnly() {
       

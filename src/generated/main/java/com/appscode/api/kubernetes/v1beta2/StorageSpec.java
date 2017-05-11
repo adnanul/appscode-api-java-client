@@ -88,7 +88,7 @@ public  final class StorageSpec extends
   public static final int CLASS_FIELD_NUMBER = 1;
   private volatile java.lang.Object class__;
   /**
-   * <code>optional string class = 1;</code>
+   * <code>string class = 1;</code>
    */
   public java.lang.String getClass_() {
     java.lang.Object ref = class__;
@@ -103,7 +103,7 @@ public  final class StorageSpec extends
     }
   }
   /**
-   * <code>optional string class = 1;</code>
+   * <code>string class = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClass_Bytes() {
@@ -122,19 +122,19 @@ public  final class StorageSpec extends
   public static final int PERSISTENT_VOLUME_CLAIM_SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec persistentVolumeClaimSpec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   public boolean hasPersistentVolumeClaimSpec() {
     return persistentVolumeClaimSpec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec getPersistentVolumeClaimSpec() {
     return persistentVolumeClaimSpec_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.getDefaultInstance() : persistentVolumeClaimSpec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder getPersistentVolumeClaimSpecOrBuilder() {
     return getPersistentVolumeClaimSpec();
@@ -204,7 +204,7 @@ public  final class StorageSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLASS_FIELD_NUMBER;
     hash = (53 * hash) + getClass_().hashCode();
     if (hasPersistentVolumeClaimSpec()) {
@@ -441,7 +441,7 @@ public  final class StorageSpec extends
 
     private java.lang.Object class__ = "";
     /**
-     * <code>optional string class = 1;</code>
+     * <code>string class = 1;</code>
      */
     public java.lang.String getClass_() {
       java.lang.Object ref = class__;
@@ -456,7 +456,7 @@ public  final class StorageSpec extends
       }
     }
     /**
-     * <code>optional string class = 1;</code>
+     * <code>string class = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClass_Bytes() {
@@ -472,7 +472,7 @@ public  final class StorageSpec extends
       }
     }
     /**
-     * <code>optional string class = 1;</code>
+     * <code>string class = 1;</code>
      */
     public Builder setClass_(
         java.lang.String value) {
@@ -485,7 +485,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional string class = 1;</code>
+     * <code>string class = 1;</code>
      */
     public Builder clearClass_() {
       
@@ -494,7 +494,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional string class = 1;</code>
+     * <code>string class = 1;</code>
      */
     public Builder setClass_Bytes(
         com.google.protobuf.ByteString value) {
@@ -512,13 +512,13 @@ public  final class StorageSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder> persistentVolumeClaimSpecBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public boolean hasPersistentVolumeClaimSpec() {
       return persistentVolumeClaimSpecBuilder_ != null || persistentVolumeClaimSpec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec getPersistentVolumeClaimSpec() {
       if (persistentVolumeClaimSpecBuilder_ == null) {
@@ -528,7 +528,7 @@ public  final class StorageSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public Builder setPersistentVolumeClaimSpec(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec value) {
       if (persistentVolumeClaimSpecBuilder_ == null) {
@@ -544,7 +544,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public Builder setPersistentVolumeClaimSpec(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.Builder builderForValue) {
@@ -558,7 +558,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public Builder mergePersistentVolumeClaimSpec(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec value) {
       if (persistentVolumeClaimSpecBuilder_ == null) {
@@ -576,7 +576,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public Builder clearPersistentVolumeClaimSpec() {
       if (persistentVolumeClaimSpecBuilder_ == null) {
@@ -590,7 +590,7 @@ public  final class StorageSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.Builder getPersistentVolumeClaimSpecBuilder() {
       
@@ -598,7 +598,7 @@ public  final class StorageSpec extends
       return getPersistentVolumeClaimSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder getPersistentVolumeClaimSpecOrBuilder() {
       if (persistentVolumeClaimSpecBuilder_ != null) {
@@ -609,7 +609,7 @@ public  final class StorageSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder> 

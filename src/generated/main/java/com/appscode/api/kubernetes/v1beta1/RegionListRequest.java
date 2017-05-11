@@ -79,7 +79,7 @@ public  final class RegionListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public java.lang.String getCloudCredential() {
     java.lang.Object ref = cloudCredential_;
@@ -98,7 +98,7 @@ public  final class RegionListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCloudCredentialBytes() {
@@ -166,7 +166,7 @@ public  final class RegionListRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLOUD_CREDENTIAL_FIELD_NUMBER;
     hash = (53 * hash) + getCloudCredential().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -389,7 +389,7 @@ public  final class RegionListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public java.lang.String getCloudCredential() {
       java.lang.Object ref = cloudCredential_;
@@ -408,7 +408,7 @@ public  final class RegionListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCloudCredentialBytes() {
@@ -428,7 +428,7 @@ public  final class RegionListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredential(
         java.lang.String value) {
@@ -445,7 +445,7 @@ public  final class RegionListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder clearCloudCredential() {
       
@@ -458,7 +458,7 @@ public  final class RegionListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredentialBytes(
         com.google.protobuf.ByteString value) {

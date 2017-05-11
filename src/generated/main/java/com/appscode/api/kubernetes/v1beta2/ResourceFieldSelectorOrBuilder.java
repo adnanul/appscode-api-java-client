@@ -13,7 +13,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string container_name = 1;</code>
+   * <code>string container_name = 1;</code>
    */
   java.lang.String getContainerName();
   /**
@@ -22,7 +22,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string container_name = 1;</code>
+   * <code>string container_name = 1;</code>
    */
   com.google.protobuf.ByteString
       getContainerNameBytes();
@@ -32,7 +32,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * Required: resource to select
    * </pre>
    *
-   * <code>optional string resource = 2;</code>
+   * <code>string resource = 2;</code>
    */
   java.lang.String getResource();
   /**
@@ -40,7 +40,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * Required: resource to select
    * </pre>
    *
-   * <code>optional string resource = 2;</code>
+   * <code>string resource = 2;</code>
    */
   com.google.protobuf.ByteString
       getResourceBytes();
@@ -51,7 +51,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string divisor = 3;</code>
+   * <code>string divisor = 3;</code>
    */
   java.lang.String getDivisor();
   /**
@@ -60,7 +60,7 @@ public interface ResourceFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string divisor = 3;</code>
+   * <code>string divisor = 3;</code>
    */
   com.google.protobuf.ByteString
       getDivisorBytes();

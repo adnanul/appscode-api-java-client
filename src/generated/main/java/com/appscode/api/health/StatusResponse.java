@@ -43,19 +43,6 @@ public  final class StatusResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.version.Version.Builder subBuilder = null;
             if (version_ != null) {
               subBuilder = version_.toBuilder();
@@ -68,7 +55,7 @@ public  final class StatusResponse extends
 
             break;
           }
-          case 26: {
+          case 18: {
             com.appscode.api.health.Metadata.Builder subBuilder = null;
             if (metadata_ != null) {
               subBuilder = metadata_.toBuilder();
@@ -104,64 +91,43 @@ public  final class StatusResponse extends
             com.appscode.api.health.StatusResponse.class, com.appscode.api.health.StatusResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int VERSION_FIELD_NUMBER = 2;
+  public static final int VERSION_FIELD_NUMBER = 1;
   private com.appscode.api.version.Version version_;
   /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   public boolean hasVersion() {
     return version_ != null;
   }
   /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   public com.appscode.api.version.Version getVersion() {
     return version_ == null ? com.appscode.api.version.Version.getDefaultInstance() : version_;
   }
   /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   public com.appscode.api.version.VersionOrBuilder getVersionOrBuilder() {
     return getVersion();
   }
 
-  public static final int METADATA_FIELD_NUMBER = 3;
+  public static final int METADATA_FIELD_NUMBER = 2;
   private com.appscode.api.health.Metadata metadata_;
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   public boolean hasMetadata() {
     return metadata_ != null;
   }
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   public com.appscode.api.health.Metadata getMetadata() {
     return metadata_ == null ? com.appscode.api.health.Metadata.getDefaultInstance() : metadata_;
   }
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   public com.appscode.api.health.MetadataOrBuilder getMetadataOrBuilder() {
     return getMetadata();
@@ -179,14 +145,11 @@ public  final class StatusResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (version_ != null) {
-      output.writeMessage(2, getVersion());
+      output.writeMessage(1, getVersion());
     }
     if (metadata_ != null) {
-      output.writeMessage(3, getMetadata());
+      output.writeMessage(2, getMetadata());
     }
   }
 
@@ -195,17 +158,13 @@ public  final class StatusResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (version_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getVersion());
+        .computeMessageSize(1, getVersion());
     }
     if (metadata_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getMetadata());
+        .computeMessageSize(2, getMetadata());
     }
     memoizedSize = size;
     return size;
@@ -223,11 +182,6 @@ public  final class StatusResponse extends
     com.appscode.api.health.StatusResponse other = (com.appscode.api.health.StatusResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasVersion() == other.hasVersion());
     if (hasVersion()) {
       result = result && getVersion()
@@ -247,11 +201,7 @@ public  final class StatusResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasVersion()) {
       hash = (37 * hash) + VERSION_FIELD_NUMBER;
       hash = (53 * hash) + getVersion().hashCode();
@@ -378,12 +328,6 @@ public  final class StatusResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (versionBuilder_ == null) {
         version_ = null;
       } else {
@@ -418,11 +362,6 @@ public  final class StatusResponse extends
 
     public com.appscode.api.health.StatusResponse buildPartial() {
       com.appscode.api.health.StatusResponse result = new com.appscode.api.health.StatusResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (versionBuilder_ == null) {
         result.version_ = version_;
       } else {
@@ -474,9 +413,6 @@ public  final class StatusResponse extends
 
     public Builder mergeFrom(com.appscode.api.health.StatusResponse other) {
       if (other == com.appscode.api.health.StatusResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasVersion()) {
         mergeVersion(other.getVersion());
       }
@@ -509,134 +445,17 @@ public  final class StatusResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.version.Version version_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.version.Version, com.appscode.api.version.Version.Builder, com.appscode.api.version.VersionOrBuilder> versionBuilder_;
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public boolean hasVersion() {
       return versionBuilder_ != null || version_ != null;
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public com.appscode.api.version.Version getVersion() {
       if (versionBuilder_ == null) {
@@ -646,7 +465,7 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public Builder setVersion(com.appscode.api.version.Version value) {
       if (versionBuilder_ == null) {
@@ -662,7 +481,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public Builder setVersion(
         com.appscode.api.version.Version.Builder builderForValue) {
@@ -676,7 +495,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public Builder mergeVersion(com.appscode.api.version.Version value) {
       if (versionBuilder_ == null) {
@@ -694,7 +513,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public Builder clearVersion() {
       if (versionBuilder_ == null) {
@@ -708,7 +527,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public com.appscode.api.version.Version.Builder getVersionBuilder() {
       
@@ -716,7 +535,7 @@ public  final class StatusResponse extends
       return getVersionFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     public com.appscode.api.version.VersionOrBuilder getVersionOrBuilder() {
       if (versionBuilder_ != null) {
@@ -727,7 +546,7 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .appscode.version.Version version = 2;</code>
+     * <code>.appscode.version.Version version = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.version.Version, com.appscode.api.version.Version.Builder, com.appscode.api.version.VersionOrBuilder> 
@@ -747,13 +566,13 @@ public  final class StatusResponse extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.Metadata, com.appscode.api.health.Metadata.Builder, com.appscode.api.health.MetadataOrBuilder> metadataBuilder_;
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public boolean hasMetadata() {
       return metadataBuilder_ != null || metadata_ != null;
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public com.appscode.api.health.Metadata getMetadata() {
       if (metadataBuilder_ == null) {
@@ -763,7 +582,7 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public Builder setMetadata(com.appscode.api.health.Metadata value) {
       if (metadataBuilder_ == null) {
@@ -779,7 +598,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public Builder setMetadata(
         com.appscode.api.health.Metadata.Builder builderForValue) {
@@ -793,7 +612,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public Builder mergeMetadata(com.appscode.api.health.Metadata value) {
       if (metadataBuilder_ == null) {
@@ -811,7 +630,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public Builder clearMetadata() {
       if (metadataBuilder_ == null) {
@@ -825,7 +644,7 @@ public  final class StatusResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public com.appscode.api.health.Metadata.Builder getMetadataBuilder() {
       
@@ -833,7 +652,7 @@ public  final class StatusResponse extends
       return getMetadataFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     public com.appscode.api.health.MetadataOrBuilder getMetadataOrBuilder() {
       if (metadataBuilder_ != null) {
@@ -844,7 +663,7 @@ public  final class StatusResponse extends
       }
     }
     /**
-     * <code>optional .appscode.health.Metadata metadata = 3;</code>
+     * <code>.appscode.health.Metadata metadata = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.Metadata, com.appscode.api.health.Metadata.Builder, com.appscode.api.health.MetadataOrBuilder> 

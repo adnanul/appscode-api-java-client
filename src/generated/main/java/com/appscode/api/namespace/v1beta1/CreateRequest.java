@@ -162,7 +162,7 @@ public  final class CreateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -177,7 +177,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -196,7 +196,7 @@ public  final class CreateRequest extends
   public static final int DISPLAY_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object displayName_;
   /**
-   * <code>optional string display_name = 2;</code>
+   * <code>string display_name = 2;</code>
    */
   public java.lang.String getDisplayName() {
     java.lang.Object ref = displayName_;
@@ -211,7 +211,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string display_name = 2;</code>
+   * <code>string display_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getDisplayNameBytes() {
@@ -230,7 +230,7 @@ public  final class CreateRequest extends
   public static final int EMAIL_FIELD_NUMBER = 3;
   private volatile java.lang.Object email_;
   /**
-   * <code>optional string email = 3;</code>
+   * <code>string email = 3;</code>
    */
   public java.lang.String getEmail() {
     java.lang.Object ref = email_;
@@ -245,7 +245,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string email = 3;</code>
+   * <code>string email = 3;</code>
    */
   public com.google.protobuf.ByteString
       getEmailBytes() {
@@ -264,7 +264,7 @@ public  final class CreateRequest extends
   public static final int USER_NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object userName_;
   /**
-   * <code>optional string user_name = 4;</code>
+   * <code>string user_name = 4;</code>
    */
   public java.lang.String getUserName() {
     java.lang.Object ref = userName_;
@@ -279,7 +279,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string user_name = 4;</code>
+   * <code>string user_name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getUserNameBytes() {
@@ -298,7 +298,7 @@ public  final class CreateRequest extends
   public static final int PASSWORD_FIELD_NUMBER = 5;
   private volatile java.lang.Object password_;
   /**
-   * <code>optional string password = 5;</code>
+   * <code>string password = 5;</code>
    */
   public java.lang.String getPassword() {
     java.lang.Object ref = password_;
@@ -313,7 +313,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string password = 5;</code>
+   * <code>string password = 5;</code>
    */
   public com.google.protobuf.ByteString
       getPasswordBytes() {
@@ -361,7 +361,7 @@ public  final class CreateRequest extends
   public static final int SUBSCRIPTION_TYPE_FIELD_NUMBER = 7;
   private volatile java.lang.Object subscriptionType_;
   /**
-   * <code>optional string subscription_type = 7;</code>
+   * <code>string subscription_type = 7;</code>
    */
   public java.lang.String getSubscriptionType() {
     java.lang.Object ref = subscriptionType_;
@@ -376,7 +376,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string subscription_type = 7;</code>
+   * <code>string subscription_type = 7;</code>
    */
   public com.google.protobuf.ByteString
       getSubscriptionTypeBytes() {
@@ -395,7 +395,7 @@ public  final class CreateRequest extends
   public static final int CLIENT_IP_FIELD_NUMBER = 8;
   private volatile java.lang.Object clientIp_;
   /**
-   * <code>optional string client_ip = 8;</code>
+   * <code>string client_ip = 8;</code>
    */
   public java.lang.String getClientIp() {
     java.lang.Object ref = clientIp_;
@@ -410,7 +410,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string client_ip = 8;</code>
+   * <code>string client_ip = 8;</code>
    */
   public com.google.protobuf.ByteString
       getClientIpBytes() {
@@ -429,7 +429,7 @@ public  final class CreateRequest extends
   public static final int PAYMENT_METHOD_NONCE_FIELD_NUMBER = 9;
   private volatile java.lang.Object paymentMethodNonce_;
   /**
-   * <code>optional string payment_method_nonce = 9;</code>
+   * <code>string payment_method_nonce = 9;</code>
    */
   public java.lang.String getPaymentMethodNonce() {
     java.lang.Object ref = paymentMethodNonce_;
@@ -444,7 +444,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string payment_method_nonce = 9;</code>
+   * <code>string payment_method_nonce = 9;</code>
    */
   public com.google.protobuf.ByteString
       getPaymentMethodNonceBytes() {
@@ -675,7 +675,7 @@ public  final class CreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + DISPLAY_NAME_FIELD_NUMBER;
@@ -1013,7 +1013,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1028,7 +1028,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1044,7 +1044,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1057,7 +1057,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -1066,7 +1066,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1082,7 +1082,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object displayName_ = "";
     /**
-     * <code>optional string display_name = 2;</code>
+     * <code>string display_name = 2;</code>
      */
     public java.lang.String getDisplayName() {
       java.lang.Object ref = displayName_;
@@ -1097,7 +1097,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string display_name = 2;</code>
+     * <code>string display_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDisplayNameBytes() {
@@ -1113,7 +1113,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string display_name = 2;</code>
+     * <code>string display_name = 2;</code>
      */
     public Builder setDisplayName(
         java.lang.String value) {
@@ -1126,7 +1126,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string display_name = 2;</code>
+     * <code>string display_name = 2;</code>
      */
     public Builder clearDisplayName() {
       
@@ -1135,7 +1135,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string display_name = 2;</code>
+     * <code>string display_name = 2;</code>
      */
     public Builder setDisplayNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1151,7 +1151,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object email_ = "";
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public java.lang.String getEmail() {
       java.lang.Object ref = email_;
@@ -1166,7 +1166,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
@@ -1182,7 +1182,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public Builder setEmail(
         java.lang.String value) {
@@ -1195,7 +1195,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public Builder clearEmail() {
       
@@ -1204,7 +1204,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string email = 3;</code>
+     * <code>string email = 3;</code>
      */
     public Builder setEmailBytes(
         com.google.protobuf.ByteString value) {
@@ -1220,7 +1220,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object userName_ = "";
     /**
-     * <code>optional string user_name = 4;</code>
+     * <code>string user_name = 4;</code>
      */
     public java.lang.String getUserName() {
       java.lang.Object ref = userName_;
@@ -1235,7 +1235,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string user_name = 4;</code>
+     * <code>string user_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getUserNameBytes() {
@@ -1251,7 +1251,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string user_name = 4;</code>
+     * <code>string user_name = 4;</code>
      */
     public Builder setUserName(
         java.lang.String value) {
@@ -1264,7 +1264,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string user_name = 4;</code>
+     * <code>string user_name = 4;</code>
      */
     public Builder clearUserName() {
       
@@ -1273,7 +1273,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string user_name = 4;</code>
+     * <code>string user_name = 4;</code>
      */
     public Builder setUserNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1289,7 +1289,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object password_ = "";
     /**
-     * <code>optional string password = 5;</code>
+     * <code>string password = 5;</code>
      */
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
@@ -1304,7 +1304,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string password = 5;</code>
+     * <code>string password = 5;</code>
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
@@ -1320,7 +1320,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string password = 5;</code>
+     * <code>string password = 5;</code>
      */
     public Builder setPassword(
         java.lang.String value) {
@@ -1333,7 +1333,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string password = 5;</code>
+     * <code>string password = 5;</code>
      */
     public Builder clearPassword() {
       
@@ -1342,7 +1342,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string password = 5;</code>
+     * <code>string password = 5;</code>
      */
     public Builder setPasswordBytes(
         com.google.protobuf.ByteString value) {
@@ -1452,7 +1452,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object subscriptionType_ = "";
     /**
-     * <code>optional string subscription_type = 7;</code>
+     * <code>string subscription_type = 7;</code>
      */
     public java.lang.String getSubscriptionType() {
       java.lang.Object ref = subscriptionType_;
@@ -1467,7 +1467,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string subscription_type = 7;</code>
+     * <code>string subscription_type = 7;</code>
      */
     public com.google.protobuf.ByteString
         getSubscriptionTypeBytes() {
@@ -1483,7 +1483,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string subscription_type = 7;</code>
+     * <code>string subscription_type = 7;</code>
      */
     public Builder setSubscriptionType(
         java.lang.String value) {
@@ -1496,7 +1496,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string subscription_type = 7;</code>
+     * <code>string subscription_type = 7;</code>
      */
     public Builder clearSubscriptionType() {
       
@@ -1505,7 +1505,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string subscription_type = 7;</code>
+     * <code>string subscription_type = 7;</code>
      */
     public Builder setSubscriptionTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1521,7 +1521,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object clientIp_ = "";
     /**
-     * <code>optional string client_ip = 8;</code>
+     * <code>string client_ip = 8;</code>
      */
     public java.lang.String getClientIp() {
       java.lang.Object ref = clientIp_;
@@ -1536,7 +1536,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string client_ip = 8;</code>
+     * <code>string client_ip = 8;</code>
      */
     public com.google.protobuf.ByteString
         getClientIpBytes() {
@@ -1552,7 +1552,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string client_ip = 8;</code>
+     * <code>string client_ip = 8;</code>
      */
     public Builder setClientIp(
         java.lang.String value) {
@@ -1565,7 +1565,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string client_ip = 8;</code>
+     * <code>string client_ip = 8;</code>
      */
     public Builder clearClientIp() {
       
@@ -1574,7 +1574,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string client_ip = 8;</code>
+     * <code>string client_ip = 8;</code>
      */
     public Builder setClientIpBytes(
         com.google.protobuf.ByteString value) {
@@ -1590,7 +1590,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object paymentMethodNonce_ = "";
     /**
-     * <code>optional string payment_method_nonce = 9;</code>
+     * <code>string payment_method_nonce = 9;</code>
      */
     public java.lang.String getPaymentMethodNonce() {
       java.lang.Object ref = paymentMethodNonce_;
@@ -1605,7 +1605,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string payment_method_nonce = 9;</code>
+     * <code>string payment_method_nonce = 9;</code>
      */
     public com.google.protobuf.ByteString
         getPaymentMethodNonceBytes() {
@@ -1621,7 +1621,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string payment_method_nonce = 9;</code>
+     * <code>string payment_method_nonce = 9;</code>
      */
     public Builder setPaymentMethodNonce(
         java.lang.String value) {
@@ -1634,7 +1634,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string payment_method_nonce = 9;</code>
+     * <code>string payment_method_nonce = 9;</code>
      */
     public Builder clearPaymentMethodNonce() {
       
@@ -1643,7 +1643,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string payment_method_nonce = 9;</code>
+     * <code>string payment_method_nonce = 9;</code>
      */
     public Builder setPaymentMethodNonceBytes(
         com.google.protobuf.ByteString value) {
@@ -1734,7 +1734,8 @@ public  final class CreateRequest extends
     }
 
     public Builder clearOptions() {
-      getMutableOptions().clear();
+      internalGetMutableOptions().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1744,7 +1745,8 @@ public  final class CreateRequest extends
     public Builder removeOptions(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().remove(key);
+      internalGetMutableOptions().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1763,7 +1765,8 @@ public  final class CreateRequest extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().put(key, value);
+      internalGetMutableOptions().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1772,7 +1775,8 @@ public  final class CreateRequest extends
 
     public Builder putAllOptions(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableOptions().putAll(values);
+      internalGetMutableOptions().getMutableMap()
+          .putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

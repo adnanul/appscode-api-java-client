@@ -8,53 +8,53 @@ public interface PostgresSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string version = 1;</code>
+   * <code>string version = 1;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 1;</code>
+   * <code>string version = 1;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
 
   /**
-   * <code>optional int32 replicas = 2;</code>
+   * <code>int32 replicas = 2;</code>
    */
   int getReplicas();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   boolean hasStorage();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder();
 
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   java.lang.String getServiceAccountName();
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   com.google.protobuf.ByteString
       getServiceAccountNameBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
    */
   boolean hasDatabaseSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder();
 
@@ -93,33 +93,33 @@ public interface PostgresSpecOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
    */
   boolean hasInit();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.InitSpec getInit();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
    */
   boolean hasBackupSchedule();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
    */
   com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder();
 
   /**
-   * <code>optional bool do_not_delete = 9;</code>
+   * <code>bool do_not_delete = 9;</code>
    */
   boolean getDoNotDelete();
 }

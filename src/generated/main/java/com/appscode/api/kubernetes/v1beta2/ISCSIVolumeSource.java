@@ -119,7 +119,7 @@ public  final class ISCSIVolumeSource extends
    * is other than default (typically TCP ports 860 and 3260).
    * </pre>
    *
-   * <code>optional string targetPortal = 1;</code>
+   * <code>string targetPortal = 1;</code>
    */
   public java.lang.String getTargetPortal() {
     java.lang.Object ref = targetPortal_;
@@ -139,7 +139,7 @@ public  final class ISCSIVolumeSource extends
    * is other than default (typically TCP ports 860 and 3260).
    * </pre>
    *
-   * <code>optional string targetPortal = 1;</code>
+   * <code>string targetPortal = 1;</code>
    */
   public com.google.protobuf.ByteString
       getTargetPortalBytes() {
@@ -162,7 +162,7 @@ public  final class ISCSIVolumeSource extends
    * Target iSCSI Qualified Name.
    * </pre>
    *
-   * <code>optional string iqn = 2;</code>
+   * <code>string iqn = 2;</code>
    */
   public java.lang.String getIqn() {
     java.lang.Object ref = iqn_;
@@ -181,7 +181,7 @@ public  final class ISCSIVolumeSource extends
    * Target iSCSI Qualified Name.
    * </pre>
    *
-   * <code>optional string iqn = 2;</code>
+   * <code>string iqn = 2;</code>
    */
   public com.google.protobuf.ByteString
       getIqnBytes() {
@@ -204,7 +204,7 @@ public  final class ISCSIVolumeSource extends
    * iSCSI target lun number.
    * </pre>
    *
-   * <code>optional int32 lun = 3;</code>
+   * <code>int32 lun = 3;</code>
    */
   public int getLun() {
     return lun_;
@@ -217,7 +217,7 @@ public  final class ISCSIVolumeSource extends
    * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
    * </pre>
    *
-   * <code>optional string iscsiInterface = 4;</code>
+   * <code>string iscsiInterface = 4;</code>
    */
   public java.lang.String getIscsiInterface() {
     java.lang.Object ref = iscsiInterface_;
@@ -236,7 +236,7 @@ public  final class ISCSIVolumeSource extends
    * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
    * </pre>
    *
-   * <code>optional string iscsiInterface = 4;</code>
+   * <code>string iscsiInterface = 4;</code>
    */
   public com.google.protobuf.ByteString
       getIscsiInterfaceBytes() {
@@ -263,7 +263,7 @@ public  final class ISCSIVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 5;</code>
+   * <code>string fsType = 5;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -286,7 +286,7 @@ public  final class ISCSIVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 5;</code>
+   * <code>string fsType = 5;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -310,7 +310,7 @@ public  final class ISCSIVolumeSource extends
    * Defaults to false.
    * </pre>
    *
-   * <code>optional bool readOnly = 6;</code>
+   * <code>bool readOnly = 6;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -410,7 +410,7 @@ public  final class ISCSIVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TARGETPORTAL_FIELD_NUMBER;
     hash = (53 * hash) + getTargetPortal().hashCode();
     hash = (37 * hash) + IQN_FIELD_NUMBER;
@@ -684,7 +684,7 @@ public  final class ISCSIVolumeSource extends
      * is other than default (typically TCP ports 860 and 3260).
      * </pre>
      *
-     * <code>optional string targetPortal = 1;</code>
+     * <code>string targetPortal = 1;</code>
      */
     public java.lang.String getTargetPortal() {
       java.lang.Object ref = targetPortal_;
@@ -704,7 +704,7 @@ public  final class ISCSIVolumeSource extends
      * is other than default (typically TCP ports 860 and 3260).
      * </pre>
      *
-     * <code>optional string targetPortal = 1;</code>
+     * <code>string targetPortal = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTargetPortalBytes() {
@@ -725,7 +725,7 @@ public  final class ISCSIVolumeSource extends
      * is other than default (typically TCP ports 860 and 3260).
      * </pre>
      *
-     * <code>optional string targetPortal = 1;</code>
+     * <code>string targetPortal = 1;</code>
      */
     public Builder setTargetPortal(
         java.lang.String value) {
@@ -743,7 +743,7 @@ public  final class ISCSIVolumeSource extends
      * is other than default (typically TCP ports 860 and 3260).
      * </pre>
      *
-     * <code>optional string targetPortal = 1;</code>
+     * <code>string targetPortal = 1;</code>
      */
     public Builder clearTargetPortal() {
       
@@ -757,7 +757,7 @@ public  final class ISCSIVolumeSource extends
      * is other than default (typically TCP ports 860 and 3260).
      * </pre>
      *
-     * <code>optional string targetPortal = 1;</code>
+     * <code>string targetPortal = 1;</code>
      */
     public Builder setTargetPortalBytes(
         com.google.protobuf.ByteString value) {
@@ -777,7 +777,7 @@ public  final class ISCSIVolumeSource extends
      * Target iSCSI Qualified Name.
      * </pre>
      *
-     * <code>optional string iqn = 2;</code>
+     * <code>string iqn = 2;</code>
      */
     public java.lang.String getIqn() {
       java.lang.Object ref = iqn_;
@@ -796,7 +796,7 @@ public  final class ISCSIVolumeSource extends
      * Target iSCSI Qualified Name.
      * </pre>
      *
-     * <code>optional string iqn = 2;</code>
+     * <code>string iqn = 2;</code>
      */
     public com.google.protobuf.ByteString
         getIqnBytes() {
@@ -816,7 +816,7 @@ public  final class ISCSIVolumeSource extends
      * Target iSCSI Qualified Name.
      * </pre>
      *
-     * <code>optional string iqn = 2;</code>
+     * <code>string iqn = 2;</code>
      */
     public Builder setIqn(
         java.lang.String value) {
@@ -833,7 +833,7 @@ public  final class ISCSIVolumeSource extends
      * Target iSCSI Qualified Name.
      * </pre>
      *
-     * <code>optional string iqn = 2;</code>
+     * <code>string iqn = 2;</code>
      */
     public Builder clearIqn() {
       
@@ -846,7 +846,7 @@ public  final class ISCSIVolumeSource extends
      * Target iSCSI Qualified Name.
      * </pre>
      *
-     * <code>optional string iqn = 2;</code>
+     * <code>string iqn = 2;</code>
      */
     public Builder setIqnBytes(
         com.google.protobuf.ByteString value) {
@@ -866,7 +866,7 @@ public  final class ISCSIVolumeSource extends
      * iSCSI target lun number.
      * </pre>
      *
-     * <code>optional int32 lun = 3;</code>
+     * <code>int32 lun = 3;</code>
      */
     public int getLun() {
       return lun_;
@@ -876,7 +876,7 @@ public  final class ISCSIVolumeSource extends
      * iSCSI target lun number.
      * </pre>
      *
-     * <code>optional int32 lun = 3;</code>
+     * <code>int32 lun = 3;</code>
      */
     public Builder setLun(int value) {
       
@@ -889,7 +889,7 @@ public  final class ISCSIVolumeSource extends
      * iSCSI target lun number.
      * </pre>
      *
-     * <code>optional int32 lun = 3;</code>
+     * <code>int32 lun = 3;</code>
      */
     public Builder clearLun() {
       
@@ -904,7 +904,7 @@ public  final class ISCSIVolumeSource extends
      * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
      * </pre>
      *
-     * <code>optional string iscsiInterface = 4;</code>
+     * <code>string iscsiInterface = 4;</code>
      */
     public java.lang.String getIscsiInterface() {
       java.lang.Object ref = iscsiInterface_;
@@ -923,7 +923,7 @@ public  final class ISCSIVolumeSource extends
      * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
      * </pre>
      *
-     * <code>optional string iscsiInterface = 4;</code>
+     * <code>string iscsiInterface = 4;</code>
      */
     public com.google.protobuf.ByteString
         getIscsiInterfaceBytes() {
@@ -943,7 +943,7 @@ public  final class ISCSIVolumeSource extends
      * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
      * </pre>
      *
-     * <code>optional string iscsiInterface = 4;</code>
+     * <code>string iscsiInterface = 4;</code>
      */
     public Builder setIscsiInterface(
         java.lang.String value) {
@@ -960,7 +960,7 @@ public  final class ISCSIVolumeSource extends
      * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
      * </pre>
      *
-     * <code>optional string iscsiInterface = 4;</code>
+     * <code>string iscsiInterface = 4;</code>
      */
     public Builder clearIscsiInterface() {
       
@@ -973,7 +973,7 @@ public  final class ISCSIVolumeSource extends
      * Optional: Defaults to 'default' (tcp). iSCSI interface name that uses an iSCSI transport.
      * </pre>
      *
-     * <code>optional string iscsiInterface = 4;</code>
+     * <code>string iscsiInterface = 4;</code>
      */
     public Builder setIscsiInterfaceBytes(
         com.google.protobuf.ByteString value) {
@@ -997,7 +997,7 @@ public  final class ISCSIVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 5;</code>
+     * <code>string fsType = 5;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -1020,7 +1020,7 @@ public  final class ISCSIVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 5;</code>
+     * <code>string fsType = 5;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -1044,7 +1044,7 @@ public  final class ISCSIVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 5;</code>
+     * <code>string fsType = 5;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -1065,7 +1065,7 @@ public  final class ISCSIVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 5;</code>
+     * <code>string fsType = 5;</code>
      */
     public Builder clearFsType() {
       
@@ -1082,7 +1082,7 @@ public  final class ISCSIVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 5;</code>
+     * <code>string fsType = 5;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1103,7 +1103,7 @@ public  final class ISCSIVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 6;</code>
+     * <code>bool readOnly = 6;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -1114,7 +1114,7 @@ public  final class ISCSIVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 6;</code>
+     * <code>bool readOnly = 6;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -1128,7 +1128,7 @@ public  final class ISCSIVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 6;</code>
+     * <code>bool readOnly = 6;</code>
      */
     public Builder clearReadOnly() {
       

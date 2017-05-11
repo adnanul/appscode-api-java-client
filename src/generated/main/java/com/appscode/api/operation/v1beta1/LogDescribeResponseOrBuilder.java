@@ -8,28 +8,15 @@ public interface LogDescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.operation.v1beta1.Log log = 2;</code>
+   * <code>.appscode.operation.v1beta1.Log log = 1;</code>
    */
   boolean hasLog();
   /**
-   * <code>optional .appscode.operation.v1beta1.Log log = 2;</code>
+   * <code>.appscode.operation.v1beta1.Log log = 1;</code>
    */
   com.appscode.api.operation.v1beta1.Log getLog();
   /**
-   * <code>optional .appscode.operation.v1beta1.Log log = 2;</code>
+   * <code>.appscode.operation.v1beta1.Log log = 1;</code>
    */
   com.appscode.api.operation.v1beta1.LogOrBuilder getLogOrBuilder();
 }

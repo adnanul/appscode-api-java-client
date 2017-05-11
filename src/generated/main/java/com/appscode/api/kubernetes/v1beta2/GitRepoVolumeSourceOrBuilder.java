@@ -12,7 +12,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * Repository URL
    * </pre>
    *
-   * <code>optional string repository = 1;</code>
+   * <code>string repository = 1;</code>
    */
   java.lang.String getRepository();
   /**
@@ -20,7 +20,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * Repository URL
    * </pre>
    *
-   * <code>optional string repository = 1;</code>
+   * <code>string repository = 1;</code>
    */
   com.google.protobuf.ByteString
       getRepositoryBytes();
@@ -30,7 +30,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * Commit hash for the specified revision.
    * </pre>
    *
-   * <code>optional string revision = 2;</code>
+   * <code>string revision = 2;</code>
    */
   java.lang.String getRevision();
   /**
@@ -38,7 +38,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * Commit hash for the specified revision.
    * </pre>
    *
-   * <code>optional string revision = 2;</code>
+   * <code>string revision = 2;</code>
    */
   com.google.protobuf.ByteString
       getRevisionBytes();
@@ -51,7 +51,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * the subdirectory with the given name.
    * </pre>
    *
-   * <code>optional string directory = 3;</code>
+   * <code>string directory = 3;</code>
    */
   java.lang.String getDirectory();
   /**
@@ -62,7 +62,7 @@ public interface GitRepoVolumeSourceOrBuilder extends
    * the subdirectory with the given name.
    * </pre>
    *
-   * <code>optional string directory = 3;</code>
+   * <code>string directory = 3;</code>
    */
   com.google.protobuf.ByteString
       getDirectoryBytes();

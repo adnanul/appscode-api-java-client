@@ -89,7 +89,7 @@ public  final class CertificateLoadRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -104,7 +104,7 @@ public  final class CertificateLoadRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -123,7 +123,7 @@ public  final class CertificateLoadRequest extends
   public static final int CERT_DATA_FIELD_NUMBER = 2;
   private volatile java.lang.Object certData_;
   /**
-   * <code>optional string cert_data = 2;</code>
+   * <code>string cert_data = 2;</code>
    */
   public java.lang.String getCertData() {
     java.lang.Object ref = certData_;
@@ -138,7 +138,7 @@ public  final class CertificateLoadRequest extends
     }
   }
   /**
-   * <code>optional string cert_data = 2;</code>
+   * <code>string cert_data = 2;</code>
    */
   public com.google.protobuf.ByteString
       getCertDataBytes() {
@@ -157,7 +157,7 @@ public  final class CertificateLoadRequest extends
   public static final int KEY_DATA_FIELD_NUMBER = 3;
   private volatile java.lang.Object keyData_;
   /**
-   * <code>optional string key_data = 3;</code>
+   * <code>string key_data = 3;</code>
    */
   public java.lang.String getKeyData() {
     java.lang.Object ref = keyData_;
@@ -172,7 +172,7 @@ public  final class CertificateLoadRequest extends
     }
   }
   /**
-   * <code>optional string key_data = 3;</code>
+   * <code>string key_data = 3;</code>
    */
   public com.google.protobuf.ByteString
       getKeyDataBytes() {
@@ -256,7 +256,7 @@ public  final class CertificateLoadRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + CERT_DATA_FIELD_NUMBER;
@@ -493,7 +493,7 @@ public  final class CertificateLoadRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -508,7 +508,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -524,7 +524,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -537,7 +537,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -546,7 +546,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -562,7 +562,7 @@ public  final class CertificateLoadRequest extends
 
     private java.lang.Object certData_ = "";
     /**
-     * <code>optional string cert_data = 2;</code>
+     * <code>string cert_data = 2;</code>
      */
     public java.lang.String getCertData() {
       java.lang.Object ref = certData_;
@@ -577,7 +577,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string cert_data = 2;</code>
+     * <code>string cert_data = 2;</code>
      */
     public com.google.protobuf.ByteString
         getCertDataBytes() {
@@ -593,7 +593,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string cert_data = 2;</code>
+     * <code>string cert_data = 2;</code>
      */
     public Builder setCertData(
         java.lang.String value) {
@@ -606,7 +606,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string cert_data = 2;</code>
+     * <code>string cert_data = 2;</code>
      */
     public Builder clearCertData() {
       
@@ -615,7 +615,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string cert_data = 2;</code>
+     * <code>string cert_data = 2;</code>
      */
     public Builder setCertDataBytes(
         com.google.protobuf.ByteString value) {
@@ -631,7 +631,7 @@ public  final class CertificateLoadRequest extends
 
     private java.lang.Object keyData_ = "";
     /**
-     * <code>optional string key_data = 3;</code>
+     * <code>string key_data = 3;</code>
      */
     public java.lang.String getKeyData() {
       java.lang.Object ref = keyData_;
@@ -646,7 +646,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string key_data = 3;</code>
+     * <code>string key_data = 3;</code>
      */
     public com.google.protobuf.ByteString
         getKeyDataBytes() {
@@ -662,7 +662,7 @@ public  final class CertificateLoadRequest extends
       }
     }
     /**
-     * <code>optional string key_data = 3;</code>
+     * <code>string key_data = 3;</code>
      */
     public Builder setKeyData(
         java.lang.String value) {
@@ -675,7 +675,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string key_data = 3;</code>
+     * <code>string key_data = 3;</code>
      */
     public Builder clearKeyData() {
       
@@ -684,7 +684,7 @@ public  final class CertificateLoadRequest extends
       return this;
     }
     /**
-     * <code>optional string key_data = 3;</code>
+     * <code>string key_data = 3;</code>
      */
     public Builder setKeyDataBytes(
         com.google.protobuf.ByteString value) {

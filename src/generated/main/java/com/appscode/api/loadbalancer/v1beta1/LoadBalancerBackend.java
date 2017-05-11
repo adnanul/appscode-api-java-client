@@ -82,7 +82,7 @@ public  final class LoadBalancerBackend extends
   public static final int SERVICE_NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object serviceName_;
   /**
-   * <code>optional string service_name = 1;</code>
+   * <code>string service_name = 1;</code>
    */
   public java.lang.String getServiceName() {
     java.lang.Object ref = serviceName_;
@@ -97,7 +97,7 @@ public  final class LoadBalancerBackend extends
     }
   }
   /**
-   * <code>optional string service_name = 1;</code>
+   * <code>string service_name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getServiceNameBytes() {
@@ -116,7 +116,7 @@ public  final class LoadBalancerBackend extends
   public static final int SERVICE_PORT_FIELD_NUMBER = 2;
   private volatile java.lang.Object servicePort_;
   /**
-   * <code>optional string service_port = 2;</code>
+   * <code>string service_port = 2;</code>
    */
   public java.lang.String getServicePort() {
     java.lang.Object ref = servicePort_;
@@ -131,7 +131,7 @@ public  final class LoadBalancerBackend extends
     }
   }
   /**
-   * <code>optional string service_port = 2;</code>
+   * <code>string service_port = 2;</code>
    */
   public com.google.protobuf.ByteString
       getServicePortBytes() {
@@ -207,7 +207,7 @@ public  final class LoadBalancerBackend extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SERVICE_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getServiceName().hashCode();
     hash = (37 * hash) + SERVICE_PORT_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class LoadBalancerBackend extends
 
     private java.lang.Object serviceName_ = "";
     /**
-     * <code>optional string service_name = 1;</code>
+     * <code>string service_name = 1;</code>
      */
     public java.lang.String getServiceName() {
       java.lang.Object ref = serviceName_;
@@ -450,7 +450,7 @@ public  final class LoadBalancerBackend extends
       }
     }
     /**
-     * <code>optional string service_name = 1;</code>
+     * <code>string service_name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getServiceNameBytes() {
@@ -466,7 +466,7 @@ public  final class LoadBalancerBackend extends
       }
     }
     /**
-     * <code>optional string service_name = 1;</code>
+     * <code>string service_name = 1;</code>
      */
     public Builder setServiceName(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class LoadBalancerBackend extends
       return this;
     }
     /**
-     * <code>optional string service_name = 1;</code>
+     * <code>string service_name = 1;</code>
      */
     public Builder clearServiceName() {
       
@@ -488,7 +488,7 @@ public  final class LoadBalancerBackend extends
       return this;
     }
     /**
-     * <code>optional string service_name = 1;</code>
+     * <code>string service_name = 1;</code>
      */
     public Builder setServiceNameBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class LoadBalancerBackend extends
 
     private java.lang.Object servicePort_ = "";
     /**
-     * <code>optional string service_port = 2;</code>
+     * <code>string service_port = 2;</code>
      */
     public java.lang.String getServicePort() {
       java.lang.Object ref = servicePort_;
@@ -519,7 +519,7 @@ public  final class LoadBalancerBackend extends
       }
     }
     /**
-     * <code>optional string service_port = 2;</code>
+     * <code>string service_port = 2;</code>
      */
     public com.google.protobuf.ByteString
         getServicePortBytes() {
@@ -535,7 +535,7 @@ public  final class LoadBalancerBackend extends
       }
     }
     /**
-     * <code>optional string service_port = 2;</code>
+     * <code>string service_port = 2;</code>
      */
     public Builder setServicePort(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class LoadBalancerBackend extends
       return this;
     }
     /**
-     * <code>optional string service_port = 2;</code>
+     * <code>string service_port = 2;</code>
      */
     public Builder clearServicePort() {
       
@@ -557,7 +557,7 @@ public  final class LoadBalancerBackend extends
       return this;
     }
     /**
-     * <code>optional string service_port = 2;</code>
+     * <code>string service_port = 2;</code>
      */
     public Builder setServicePortBytes(
         com.google.protobuf.ByteString value) {

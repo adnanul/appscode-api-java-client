@@ -82,7 +82,7 @@ public  final class URLBase extends
   public static final int SCHEME_FIELD_NUMBER = 1;
   private volatile java.lang.Object scheme_;
   /**
-   * <code>optional string scheme = 1;</code>
+   * <code>string scheme = 1;</code>
    */
   public java.lang.String getScheme() {
     java.lang.Object ref = scheme_;
@@ -97,7 +97,7 @@ public  final class URLBase extends
     }
   }
   /**
-   * <code>optional string scheme = 1;</code>
+   * <code>string scheme = 1;</code>
    */
   public com.google.protobuf.ByteString
       getSchemeBytes() {
@@ -116,7 +116,7 @@ public  final class URLBase extends
   public static final int BASE_ADDR_FIELD_NUMBER = 2;
   private volatile java.lang.Object baseAddr_;
   /**
-   * <code>optional string base_addr = 2;</code>
+   * <code>string base_addr = 2;</code>
    */
   public java.lang.String getBaseAddr() {
     java.lang.Object ref = baseAddr_;
@@ -131,7 +131,7 @@ public  final class URLBase extends
     }
   }
   /**
-   * <code>optional string base_addr = 2;</code>
+   * <code>string base_addr = 2;</code>
    */
   public com.google.protobuf.ByteString
       getBaseAddrBytes() {
@@ -207,7 +207,7 @@ public  final class URLBase extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SCHEME_FIELD_NUMBER;
     hash = (53 * hash) + getScheme().hashCode();
     hash = (37 * hash) + BASE_ADDR_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class URLBase extends
 
     private java.lang.Object scheme_ = "";
     /**
-     * <code>optional string scheme = 1;</code>
+     * <code>string scheme = 1;</code>
      */
     public java.lang.String getScheme() {
       java.lang.Object ref = scheme_;
@@ -450,7 +450,7 @@ public  final class URLBase extends
       }
     }
     /**
-     * <code>optional string scheme = 1;</code>
+     * <code>string scheme = 1;</code>
      */
     public com.google.protobuf.ByteString
         getSchemeBytes() {
@@ -466,7 +466,7 @@ public  final class URLBase extends
       }
     }
     /**
-     * <code>optional string scheme = 1;</code>
+     * <code>string scheme = 1;</code>
      */
     public Builder setScheme(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class URLBase extends
       return this;
     }
     /**
-     * <code>optional string scheme = 1;</code>
+     * <code>string scheme = 1;</code>
      */
     public Builder clearScheme() {
       
@@ -488,7 +488,7 @@ public  final class URLBase extends
       return this;
     }
     /**
-     * <code>optional string scheme = 1;</code>
+     * <code>string scheme = 1;</code>
      */
     public Builder setSchemeBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class URLBase extends
 
     private java.lang.Object baseAddr_ = "";
     /**
-     * <code>optional string base_addr = 2;</code>
+     * <code>string base_addr = 2;</code>
      */
     public java.lang.String getBaseAddr() {
       java.lang.Object ref = baseAddr_;
@@ -519,7 +519,7 @@ public  final class URLBase extends
       }
     }
     /**
-     * <code>optional string base_addr = 2;</code>
+     * <code>string base_addr = 2;</code>
      */
     public com.google.protobuf.ByteString
         getBaseAddrBytes() {
@@ -535,7 +535,7 @@ public  final class URLBase extends
       }
     }
     /**
-     * <code>optional string base_addr = 2;</code>
+     * <code>string base_addr = 2;</code>
      */
     public Builder setBaseAddr(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class URLBase extends
       return this;
     }
     /**
-     * <code>optional string base_addr = 2;</code>
+     * <code>string base_addr = 2;</code>
      */
     public Builder clearBaseAddr() {
       
@@ -557,7 +557,7 @@ public  final class URLBase extends
       return this;
     }
     /**
-     * <code>optional string base_addr = 2;</code>
+     * <code>string base_addr = 2;</code>
      */
     public Builder setBaseAddrBytes(
         com.google.protobuf.ByteString value) {

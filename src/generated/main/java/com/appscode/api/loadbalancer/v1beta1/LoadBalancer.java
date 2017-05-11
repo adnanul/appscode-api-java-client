@@ -160,7 +160,7 @@ public  final class LoadBalancer extends
    * kubectl or direct API calls directly to kubernetes.
    * </pre>
    *
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public java.lang.String getKind() {
     java.lang.Object ref = kind_;
@@ -189,7 +189,7 @@ public  final class LoadBalancer extends
    * kubectl or direct API calls directly to kubernetes.
    * </pre>
    *
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public com.google.protobuf.ByteString
       getKindBytes() {
@@ -208,7 +208,7 @@ public  final class LoadBalancer extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -223,7 +223,7 @@ public  final class LoadBalancer extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -242,7 +242,7 @@ public  final class LoadBalancer extends
   public static final int NAMESPACE_FIELD_NUMBER = 3;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -257,7 +257,7 @@ public  final class LoadBalancer extends
     }
   }
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -276,7 +276,7 @@ public  final class LoadBalancer extends
   public static final int CREATION_TIMESTAMP_FIELD_NUMBER = 4;
   private long creationTimestamp_;
   /**
-   * <code>optional int64 creation_timestamp = 4;</code>
+   * <code>int64 creation_timestamp = 4;</code>
    */
   public long getCreationTimestamp() {
     return creationTimestamp_;
@@ -361,19 +361,19 @@ public  final class LoadBalancer extends
   public static final int SPEC_FIELD_NUMBER = 6;
   private com.appscode.api.loadbalancer.v1beta1.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.Spec getSpec() {
     return spec_ == null ? com.appscode.api.loadbalancer.v1beta1.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+   * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -382,19 +382,19 @@ public  final class LoadBalancer extends
   public static final int STATUS_FIELD_NUMBER = 7;
   private com.appscode.api.loadbalancer.v1beta1.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.Status getStatus() {
     return status_ == null ? com.appscode.api.loadbalancer.v1beta1.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+   * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -519,7 +519,7 @@ public  final class LoadBalancer extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + KIND_FIELD_NUMBER;
     hash = (53 * hash) + getKind().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -850,7 +850,7 @@ public  final class LoadBalancer extends
      * kubectl or direct API calls directly to kubernetes.
      * </pre>
      *
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public java.lang.String getKind() {
       java.lang.Object ref = kind_;
@@ -879,7 +879,7 @@ public  final class LoadBalancer extends
      * kubectl or direct API calls directly to kubernetes.
      * </pre>
      *
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
@@ -909,7 +909,7 @@ public  final class LoadBalancer extends
      * kubectl or direct API calls directly to kubernetes.
      * </pre>
      *
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKind(
         java.lang.String value) {
@@ -936,7 +936,7 @@ public  final class LoadBalancer extends
      * kubectl or direct API calls directly to kubernetes.
      * </pre>
      *
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder clearKind() {
       
@@ -959,7 +959,7 @@ public  final class LoadBalancer extends
      * kubectl or direct API calls directly to kubernetes.
      * </pre>
      *
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKindBytes(
         com.google.protobuf.ByteString value) {
@@ -975,7 +975,7 @@ public  final class LoadBalancer extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -990,7 +990,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1006,7 +1006,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1019,7 +1019,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -1028,7 +1028,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1044,7 +1044,7 @@ public  final class LoadBalancer extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -1059,7 +1059,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -1075,7 +1075,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -1088,7 +1088,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder clearNamespace() {
       
@@ -1097,7 +1097,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -1113,13 +1113,13 @@ public  final class LoadBalancer extends
 
     private long creationTimestamp_ ;
     /**
-     * <code>optional int64 creation_timestamp = 4;</code>
+     * <code>int64 creation_timestamp = 4;</code>
      */
     public long getCreationTimestamp() {
       return creationTimestamp_;
     }
     /**
-     * <code>optional int64 creation_timestamp = 4;</code>
+     * <code>int64 creation_timestamp = 4;</code>
      */
     public Builder setCreationTimestamp(long value) {
       
@@ -1128,7 +1128,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional int64 creation_timestamp = 4;</code>
+     * <code>int64 creation_timestamp = 4;</code>
      */
     public Builder clearCreationTimestamp() {
       
@@ -1214,7 +1214,8 @@ public  final class LoadBalancer extends
     }
 
     public Builder clearOptions() {
-      getMutableOptions().clear();
+      internalGetMutableOptions().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1224,7 +1225,8 @@ public  final class LoadBalancer extends
     public Builder removeOptions(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().remove(key);
+      internalGetMutableOptions().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1243,7 +1245,8 @@ public  final class LoadBalancer extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableOptions().put(key, value);
+      internalGetMutableOptions().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1252,7 +1255,8 @@ public  final class LoadBalancer extends
 
     public Builder putAllOptions(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableOptions().putAll(values);
+      internalGetMutableOptions().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -1260,13 +1264,13 @@ public  final class LoadBalancer extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Spec, com.appscode.api.loadbalancer.v1beta1.Spec.Builder, com.appscode.api.loadbalancer.v1beta1.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -1276,7 +1280,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public Builder setSpec(com.appscode.api.loadbalancer.v1beta1.Spec value) {
       if (specBuilder_ == null) {
@@ -1292,7 +1296,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public Builder setSpec(
         com.appscode.api.loadbalancer.v1beta1.Spec.Builder builderForValue) {
@@ -1306,7 +1310,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public Builder mergeSpec(com.appscode.api.loadbalancer.v1beta1.Spec value) {
       if (specBuilder_ == null) {
@@ -1324,7 +1328,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1338,7 +1342,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Spec.Builder getSpecBuilder() {
       
@@ -1346,7 +1350,7 @@ public  final class LoadBalancer extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1357,7 +1361,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Spec spec = 6;</code>
+     * <code>.appscode.kubernetes.v1beta1.Spec spec = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Spec, com.appscode.api.loadbalancer.v1beta1.Spec.Builder, com.appscode.api.loadbalancer.v1beta1.SpecOrBuilder> 
@@ -1377,13 +1381,13 @@ public  final class LoadBalancer extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Status, com.appscode.api.loadbalancer.v1beta1.Status.Builder, com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -1393,7 +1397,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public Builder setStatus(com.appscode.api.loadbalancer.v1beta1.Status value) {
       if (statusBuilder_ == null) {
@@ -1409,7 +1413,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public Builder setStatus(
         com.appscode.api.loadbalancer.v1beta1.Status.Builder builderForValue) {
@@ -1423,7 +1427,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public Builder mergeStatus(com.appscode.api.loadbalancer.v1beta1.Status value) {
       if (statusBuilder_ == null) {
@@ -1441,7 +1445,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -1455,7 +1459,7 @@ public  final class LoadBalancer extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Status.Builder getStatusBuilder() {
       
@@ -1463,7 +1467,7 @@ public  final class LoadBalancer extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -1474,7 +1478,7 @@ public  final class LoadBalancer extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Status status = 7;</code>
+     * <code>.appscode.kubernetes.v1beta1.Status status = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Status, com.appscode.api.loadbalancer.v1beta1.Status.Builder, com.appscode.api.loadbalancer.v1beta1.StatusOrBuilder> 

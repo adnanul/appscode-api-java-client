@@ -8,38 +8,25 @@ public interface CredentialListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   java.util.List<com.appscode.api.credential.v1beta1.Credential> 
       getCredentialsList();
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   com.appscode.api.credential.v1beta1.Credential getCredentials(int index);
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   int getCredentialsCount();
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   java.util.List<? extends com.appscode.api.credential.v1beta1.CredentialOrBuilder> 
       getCredentialsOrBuilderList();
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   com.appscode.api.credential.v1beta1.CredentialOrBuilder getCredentialsOrBuilder(
       int index);

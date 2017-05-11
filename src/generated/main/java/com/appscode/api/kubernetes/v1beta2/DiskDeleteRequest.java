@@ -82,7 +82,7 @@ public  final class DiskDeleteRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -97,7 +97,7 @@ public  final class DiskDeleteRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -116,7 +116,7 @@ public  final class DiskDeleteRequest extends
   public static final int UID_FIELD_NUMBER = 2;
   private volatile java.lang.Object uid_;
   /**
-   * <code>optional string uid = 2;</code>
+   * <code>string uid = 2;</code>
    */
   public java.lang.String getUid() {
     java.lang.Object ref = uid_;
@@ -131,7 +131,7 @@ public  final class DiskDeleteRequest extends
     }
   }
   /**
-   * <code>optional string uid = 2;</code>
+   * <code>string uid = 2;</code>
    */
   public com.google.protobuf.ByteString
       getUidBytes() {
@@ -207,7 +207,7 @@ public  final class DiskDeleteRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + UID_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class DiskDeleteRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -450,7 +450,7 @@ public  final class DiskDeleteRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -466,7 +466,7 @@ public  final class DiskDeleteRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class DiskDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -488,7 +488,7 @@ public  final class DiskDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class DiskDeleteRequest extends
 
     private java.lang.Object uid_ = "";
     /**
-     * <code>optional string uid = 2;</code>
+     * <code>string uid = 2;</code>
      */
     public java.lang.String getUid() {
       java.lang.Object ref = uid_;
@@ -519,7 +519,7 @@ public  final class DiskDeleteRequest extends
       }
     }
     /**
-     * <code>optional string uid = 2;</code>
+     * <code>string uid = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUidBytes() {
@@ -535,7 +535,7 @@ public  final class DiskDeleteRequest extends
       }
     }
     /**
-     * <code>optional string uid = 2;</code>
+     * <code>string uid = 2;</code>
      */
     public Builder setUid(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class DiskDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 2;</code>
+     * <code>string uid = 2;</code>
      */
     public Builder clearUid() {
       
@@ -557,7 +557,7 @@ public  final class DiskDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 2;</code>
+     * <code>string uid = 2;</code>
      */
     public Builder setUidBytes(
         com.google.protobuf.ByteString value) {

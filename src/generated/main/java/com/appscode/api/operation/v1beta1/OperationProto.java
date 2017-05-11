@@ -72,47 +72,45 @@ public final class OperationProto {
       "ce/v1beta1/team.proto\"5\n\003Log\022\n\n\002id\030\001 \001(\t" +
       "\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"2\n\017" +
       "DescribeRequest\022\014\n\004phid\030\001 \001(\t\022\021\n\ttimesta" +
-      "mp\030\002 \001(\003\"\235\001\n\020DescribeResponse\022\'\n\006status\030",
-      "\001 \001(\0132\027.appscode.dtypes.Status\0221\n\002op\030\002 \001" +
-      "(\0132%.appscode.operation.v1beta1.Operatio" +
-      "n\022-\n\004logs\030\003 \003(\0132\037.appscode.operation.v1b" +
-      "eta1.Log\"2\n\022LogDescribeRequest\022\014\n\004phid\030\001" +
-      " \001(\t\022\016\n\006log_id\030\002 \001(\t\"l\n\023LogDescribeRespo" +
-      "nse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.St" +
-      "atus\022,\n\003log\030\002 \001(\0132\037.appscode.operation.v" +
-      "1beta1.Log\"N\n\004Auth\022\021\n\tnamespace\030\001 \001(\t\022\020\n" +
-      "\010username\030\002 \001(\t\022\016\n\006secret\030\003 \001(\t\022\021\n\tauth_" +
-      "type\030\004 \001(\t\"L\n\010Metadata\022\026\n\016purchase_phids",
-      "\030\001 \003(\t\022\023\n\013author_phid\030\002 \001(\t\022\023\n\013author_na" +
-      "me\030\003 \001(\t\"\235\004\n\tOperation\022S\n\026cluster_create" +
-      "_request\030\001 \001(\01321.appscode.kubernetes.v1b" +
-      "eta1.ClusterCreateRequestH\000\022S\n\026cluster_d" +
-      "elete_request\030\003 \001(\01321.appscode.kubernete" +
-      "s.v1beta1.ClusterDeleteRequestH\000\022]\n\033clus" +
-      "ter_reconfigure_request\030\004 \001(\01326.appscode" +
-      ".kubernetes.v1beta1.ClusterReconfigureRe" +
-      "questH\000\022M\n\030namespace_create_request\030\013 \001(" +
-      "\0132).appscode.namespace.v1beta1.CreateReq",
-      "uestH\000\0227\n\004type\030\016 \001(\0162).appscode.operatio" +
-      "n.v1beta1.OperationType\022\014\n\004phid\030\017 \001(\t\022.\n" +
-      "\004auth\030\020 \001(\0132 .appscode.operation.v1beta1" +
-      ".Auth\0226\n\010metadata\030\021 \001(\0132$.appscode.opera" +
-      "tion.v1beta1.MetadataB\t\n\007request*s\n\rOper" +
-      "ationType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_CREATE" +
-      "\020\001\022\022\n\016CLUSTER_DELETE\020\003\022\027\n\023CLUSTER_RECONF" +
-      "IGURE\020\004\022\024\n\020NAMESPACE_CREATE\020\0132\201\003\n\nOperat" +
-      "ions\022\254\001\n\010Describe\022+.appscode.operation.v" +
-      "1beta1.DescribeRequest\032,.appscode.operat",
-      "ion.v1beta1.DescribeResponse\"E\202\323\344\223\0029\0227/_" +
-      "appscode/api/operation/v1beta1/operation" +
-      "s/{phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022..ap" +
-      "pscode.operation.v1beta1.LogDescribeRequ" +
-      "est\032/.appscode.operation.v1beta1.LogDesc" +
-      "ribeResponse\"S\202\323\344\223\002G\022E/_appscode/api/ope" +
-      "ration/v1beta1/operations/{phid}/logs/{l" +
-      "og_id}/json\202\265\030\002\010\001B?\n\"com.appscode.api.op" +
-      "eration.v1beta1B\016OperationProtoP\001Z\007v1bet" +
-      "a1b\006proto3"
+      "mp\030\002 \001(\003\"t\n\020DescribeResponse\0221\n\002op\030\001 \001(\013",
+      "2%.appscode.operation.v1beta1.Operation\022" +
+      "-\n\004logs\030\002 \003(\0132\037.appscode.operation.v1bet" +
+      "a1.Log\"2\n\022LogDescribeRequest\022\014\n\004phid\030\001 \001" +
+      "(\t\022\016\n\006log_id\030\002 \001(\t\"C\n\023LogDescribeRespons" +
+      "e\022,\n\003log\030\001 \001(\0132\037.appscode.operation.v1be" +
+      "ta1.Log\"N\n\004Auth\022\021\n\tnamespace\030\001 \001(\t\022\020\n\010us" +
+      "ername\030\002 \001(\t\022\016\n\006secret\030\003 \001(\t\022\021\n\tauth_typ" +
+      "e\030\004 \001(\t\"L\n\010Metadata\022\026\n\016purchase_phids\030\001 " +
+      "\003(\t\022\023\n\013author_phid\030\002 \001(\t\022\023\n\013author_name\030" +
+      "\003 \001(\t\"\235\004\n\tOperation\022S\n\026cluster_create_re",
+      "quest\030\001 \001(\01321.appscode.kubernetes.v1beta" +
+      "1.ClusterCreateRequestH\000\022S\n\026cluster_dele" +
+      "te_request\030\003 \001(\01321.appscode.kubernetes.v" +
+      "1beta1.ClusterDeleteRequestH\000\022]\n\033cluster" +
+      "_reconfigure_request\030\004 \001(\01326.appscode.ku" +
+      "bernetes.v1beta1.ClusterReconfigureReque" +
+      "stH\000\022M\n\030namespace_create_request\030\013 \001(\0132)" +
+      ".appscode.namespace.v1beta1.CreateReques" +
+      "tH\000\0227\n\004type\030\016 \001(\0162).appscode.operation.v" +
+      "1beta1.OperationType\022\014\n\004phid\030\017 \001(\t\022.\n\004au",
+      "th\030\020 \001(\0132 .appscode.operation.v1beta1.Au" +
+      "th\0226\n\010metadata\030\021 \001(\0132$.appscode.operatio" +
+      "n.v1beta1.MetadataB\t\n\007request*s\n\rOperati" +
+      "onType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_CREATE\020\001\022" +
+      "\022\n\016CLUSTER_DELETE\020\003\022\027\n\023CLUSTER_RECONFIGU" +
+      "RE\020\004\022\024\n\020NAMESPACE_CREATE\020\0132\201\003\n\nOperation" +
+      "s\022\254\001\n\010Describe\022+.appscode.operation.v1be" +
+      "ta1.DescribeRequest\032,.appscode.operation" +
+      ".v1beta1.DescribeResponse\"E\202\323\344\223\0029\0227/_app" +
+      "scode/api/operation/v1beta1/operations/{",
+      "phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022..appsc" +
+      "ode.operation.v1beta1.LogDescribeRequest" +
+      "\032/.appscode.operation.v1beta1.LogDescrib" +
+      "eResponse\"S\202\323\344\223\002G\022E/_appscode/api/operat" +
+      "ion/v1beta1/operations/{phid}/logs/{log_" +
+      "id}/json\202\265\030\002\010\001B?\n\"com.appscode.api.opera" +
+      "tion.v1beta1B\016OperationProtoP\001Z\007v1beta1b" +
+      "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -148,7 +146,7 @@ public final class OperationProto {
     internal_static_appscode_operation_v1beta1_DescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_operation_v1beta1_DescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Op", "Logs", });
+        new java.lang.String[] { "Op", "Logs", });
     internal_static_appscode_operation_v1beta1_LogDescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_operation_v1beta1_LogDescribeRequest_fieldAccessorTable = new
@@ -160,7 +158,7 @@ public final class OperationProto {
     internal_static_appscode_operation_v1beta1_LogDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_operation_v1beta1_LogDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Log", });
+        new java.lang.String[] { "Log", });
     internal_static_appscode_operation_v1beta1_Auth_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_appscode_operation_v1beta1_Auth_fieldAccessorTable = new

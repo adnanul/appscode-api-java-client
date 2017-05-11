@@ -8,11 +8,11 @@ public interface LoadBalancerRuleOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string host = 1;</code>
+   * <code>string host = 1;</code>
    */
   java.lang.String getHost();
   /**
-   * <code>optional string host = 1;</code>
+   * <code>string host = 1;</code>
    */
   com.google.protobuf.ByteString
       getHostBytes();
@@ -23,7 +23,7 @@ public interface LoadBalancerRuleOrBuilder extends
    * ssl secret must contain data with the certs pem file.
    * </pre>
    *
-   * <code>optional string SSL_secret_name = 5;</code>
+   * <code>string SSL_secret_name = 5;</code>
    */
   java.lang.String getSSLSecretName();
   /**
@@ -32,7 +32,7 @@ public interface LoadBalancerRuleOrBuilder extends
    * ssl secret must contain data with the certs pem file.
    * </pre>
    *
-   * <code>optional string SSL_secret_name = 5;</code>
+   * <code>string SSL_secret_name = 5;</code>
    */
   com.google.protobuf.ByteString
       getSSLSecretNameBytes();

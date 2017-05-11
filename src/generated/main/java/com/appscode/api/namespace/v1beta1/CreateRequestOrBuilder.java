@@ -8,51 +8,51 @@ public interface CreateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string display_name = 2;</code>
+   * <code>string display_name = 2;</code>
    */
   java.lang.String getDisplayName();
   /**
-   * <code>optional string display_name = 2;</code>
+   * <code>string display_name = 2;</code>
    */
   com.google.protobuf.ByteString
       getDisplayNameBytes();
 
   /**
-   * <code>optional string email = 3;</code>
+   * <code>string email = 3;</code>
    */
   java.lang.String getEmail();
   /**
-   * <code>optional string email = 3;</code>
+   * <code>string email = 3;</code>
    */
   com.google.protobuf.ByteString
       getEmailBytes();
 
   /**
-   * <code>optional string user_name = 4;</code>
+   * <code>string user_name = 4;</code>
    */
   java.lang.String getUserName();
   /**
-   * <code>optional string user_name = 4;</code>
+   * <code>string user_name = 4;</code>
    */
   com.google.protobuf.ByteString
       getUserNameBytes();
 
   /**
-   * <code>optional string password = 5;</code>
+   * <code>string password = 5;</code>
    */
   java.lang.String getPassword();
   /**
-   * <code>optional string password = 5;</code>
+   * <code>string password = 5;</code>
    */
   com.google.protobuf.ByteString
       getPasswordBytes();
@@ -77,31 +77,31 @@ public interface CreateRequestOrBuilder extends
       getInviteEmailsBytes(int index);
 
   /**
-   * <code>optional string subscription_type = 7;</code>
+   * <code>string subscription_type = 7;</code>
    */
   java.lang.String getSubscriptionType();
   /**
-   * <code>optional string subscription_type = 7;</code>
+   * <code>string subscription_type = 7;</code>
    */
   com.google.protobuf.ByteString
       getSubscriptionTypeBytes();
 
   /**
-   * <code>optional string client_ip = 8;</code>
+   * <code>string client_ip = 8;</code>
    */
   java.lang.String getClientIp();
   /**
-   * <code>optional string client_ip = 8;</code>
+   * <code>string client_ip = 8;</code>
    */
   com.google.protobuf.ByteString
       getClientIpBytes();
 
   /**
-   * <code>optional string payment_method_nonce = 9;</code>
+   * <code>string payment_method_nonce = 9;</code>
    */
   java.lang.String getPaymentMethodNonce();
   /**
-   * <code>optional string payment_method_nonce = 9;</code>
+   * <code>string payment_method_nonce = 9;</code>
    */
   com.google.protobuf.ByteString
       getPaymentMethodNonceBytes();

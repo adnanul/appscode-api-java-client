@@ -8,83 +8,83 @@ public interface ArtifactVersionOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   java.lang.String getId();
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   com.google.protobuf.ByteString
       getIdBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string version = 3;</code>
+   * <code>string version = 3;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 3;</code>
+   * <code>string version = 3;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
 
   /**
-   * <code>optional int64 modified_at = 4;</code>
+   * <code>int64 modified_at = 4;</code>
    */
   long getModifiedAt();
 
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+   * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
    */
   com.appscode.api.attic.v1beta1.JavaSpec getJava();
   /**
-   * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+   * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
    */
   com.appscode.api.attic.v1beta1.JavaSpecOrBuilder getJavaOrBuilder();
 
   /**
-   * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+   * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
    */
   com.appscode.api.attic.v1beta1.DockerSpec getDocker();
   /**
-   * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+   * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
    */
   com.appscode.api.attic.v1beta1.DockerSpecOrBuilder getDockerOrBuilder();
 
   /**
-   * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+   * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
    */
   com.appscode.api.attic.v1beta1.PhpSpec getPhp();
   /**
-   * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+   * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
    */
   com.appscode.api.attic.v1beta1.PhpSpecOrBuilder getPhpOrBuilder();
 
   /**
-   * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+   * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
    */
   com.appscode.api.attic.v1beta1.NpmSpec getNpm();
   /**
-   * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+   * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
    */
   com.appscode.api.attic.v1beta1.NpmSpecOrBuilder getNpmOrBuilder();
 

@@ -8,11 +8,11 @@ public interface IncidentDescribeRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();

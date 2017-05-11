@@ -84,7 +84,7 @@ public  final class FlockerVolumeSource extends
    * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
    * </pre>
    *
-   * <code>optional string datasetName = 1;</code>
+   * <code>string datasetName = 1;</code>
    */
   public java.lang.String getDatasetName() {
     java.lang.Object ref = datasetName_;
@@ -103,7 +103,7 @@ public  final class FlockerVolumeSource extends
    * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
    * </pre>
    *
-   * <code>optional string datasetName = 1;</code>
+   * <code>string datasetName = 1;</code>
    */
   public com.google.protobuf.ByteString
       getDatasetNameBytes() {
@@ -171,7 +171,7 @@ public  final class FlockerVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + DATASETNAME_FIELD_NUMBER;
     hash = (53 * hash) + getDatasetName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -399,7 +399,7 @@ public  final class FlockerVolumeSource extends
      * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
      * </pre>
      *
-     * <code>optional string datasetName = 1;</code>
+     * <code>string datasetName = 1;</code>
      */
     public java.lang.String getDatasetName() {
       java.lang.Object ref = datasetName_;
@@ -418,7 +418,7 @@ public  final class FlockerVolumeSource extends
      * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
      * </pre>
      *
-     * <code>optional string datasetName = 1;</code>
+     * <code>string datasetName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDatasetNameBytes() {
@@ -438,7 +438,7 @@ public  final class FlockerVolumeSource extends
      * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
      * </pre>
      *
-     * <code>optional string datasetName = 1;</code>
+     * <code>string datasetName = 1;</code>
      */
     public Builder setDatasetName(
         java.lang.String value) {
@@ -455,7 +455,7 @@ public  final class FlockerVolumeSource extends
      * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
      * </pre>
      *
-     * <code>optional string datasetName = 1;</code>
+     * <code>string datasetName = 1;</code>
      */
     public Builder clearDatasetName() {
       
@@ -468,7 +468,7 @@ public  final class FlockerVolumeSource extends
      * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
      * </pre>
      *
-     * <code>optional string datasetName = 1;</code>
+     * <code>string datasetName = 1;</code>
      */
     public Builder setDatasetNameBytes(
         com.google.protobuf.ByteString value) {

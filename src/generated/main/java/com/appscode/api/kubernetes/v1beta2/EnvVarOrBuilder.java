@@ -12,7 +12,7 @@ public interface EnvVarOrBuilder extends
    * Name of the environment variable. Must be a C_IDENTIFIER.
    * </pre>
    *
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
@@ -20,7 +20,7 @@ public interface EnvVarOrBuilder extends
    * Name of the environment variable. Must be a C_IDENTIFIER.
    * </pre>
    *
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
@@ -38,7 +38,7 @@ public interface EnvVarOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string value = 2;</code>
+   * <code>string value = 2;</code>
    */
   java.lang.String getValue();
   /**
@@ -54,7 +54,7 @@ public interface EnvVarOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string value = 2;</code>
+   * <code>string value = 2;</code>
    */
   com.google.protobuf.ByteString
       getValueBytes();
@@ -65,7 +65,7 @@ public interface EnvVarOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   boolean hasValueFrom();
   /**
@@ -74,7 +74,7 @@ public interface EnvVarOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EnvVarSource getValueFrom();
   /**
@@ -83,7 +83,7 @@ public interface EnvVarOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.EnvVarSource value_from = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.EnvVarSourceOrBuilder getValueFromOrBuilder();
 }

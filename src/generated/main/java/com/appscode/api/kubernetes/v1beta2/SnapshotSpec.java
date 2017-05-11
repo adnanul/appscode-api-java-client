@@ -101,19 +101,19 @@ public  final class SnapshotSpec extends
   public static final int STORAGE_SECRET_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource storageSecret_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   public boolean hasStorageSecret() {
     return storageSecret_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getStorageSecret() {
     return storageSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : storageSecret_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getStorageSecretOrBuilder() {
     return getStorageSecret();
@@ -122,19 +122,19 @@ public  final class SnapshotSpec extends
   public static final int DATABASE_SECRET_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource databaseSecret_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   public boolean hasDatabaseSecret() {
     return databaseSecret_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
     return databaseSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : databaseSecret_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
     return getDatabaseSecret();
@@ -143,7 +143,7 @@ public  final class SnapshotSpec extends
   public static final int BUCKET_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object bucketName_;
   /**
-   * <code>optional string bucket_name = 3;</code>
+   * <code>string bucket_name = 3;</code>
    */
   public java.lang.String getBucketName() {
     java.lang.Object ref = bucketName_;
@@ -158,7 +158,7 @@ public  final class SnapshotSpec extends
     }
   }
   /**
-   * <code>optional string bucket_name = 3;</code>
+   * <code>string bucket_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getBucketNameBytes() {
@@ -250,7 +250,7 @@ public  final class SnapshotSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasStorageSecret()) {
       hash = (37 * hash) + STORAGE_SECRET_FIELD_NUMBER;
       hash = (53 * hash) + getStorageSecret().hashCode();
@@ -507,13 +507,13 @@ public  final class SnapshotSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> storageSecretBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public boolean hasStorageSecret() {
       return storageSecretBuilder_ != null || storageSecret_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getStorageSecret() {
       if (storageSecretBuilder_ == null) {
@@ -523,7 +523,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public Builder setStorageSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (storageSecretBuilder_ == null) {
@@ -539,7 +539,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public Builder setStorageSecret(
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
@@ -553,7 +553,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public Builder mergeStorageSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (storageSecretBuilder_ == null) {
@@ -571,7 +571,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public Builder clearStorageSecret() {
       if (storageSecretBuilder_ == null) {
@@ -585,7 +585,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getStorageSecretBuilder() {
       
@@ -593,7 +593,7 @@ public  final class SnapshotSpec extends
       return getStorageSecretFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getStorageSecretOrBuilder() {
       if (storageSecretBuilder_ != null) {
@@ -604,7 +604,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource storage_secret = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
@@ -624,13 +624,13 @@ public  final class SnapshotSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> databaseSecretBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public boolean hasDatabaseSecret() {
       return databaseSecretBuilder_ != null || databaseSecret_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
       if (databaseSecretBuilder_ == null) {
@@ -640,7 +640,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public Builder setDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (databaseSecretBuilder_ == null) {
@@ -656,7 +656,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public Builder setDatabaseSecret(
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
@@ -670,7 +670,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public Builder mergeDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (databaseSecretBuilder_ == null) {
@@ -688,7 +688,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public Builder clearDatabaseSecret() {
       if (databaseSecretBuilder_ == null) {
@@ -702,7 +702,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getDatabaseSecretBuilder() {
       
@@ -710,7 +710,7 @@ public  final class SnapshotSpec extends
       return getDatabaseSecretFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
       if (databaseSecretBuilder_ != null) {
@@ -721,7 +721,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
@@ -739,7 +739,7 @@ public  final class SnapshotSpec extends
 
     private java.lang.Object bucketName_ = "";
     /**
-     * <code>optional string bucket_name = 3;</code>
+     * <code>string bucket_name = 3;</code>
      */
     public java.lang.String getBucketName() {
       java.lang.Object ref = bucketName_;
@@ -754,7 +754,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional string bucket_name = 3;</code>
+     * <code>string bucket_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getBucketNameBytes() {
@@ -770,7 +770,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>optional string bucket_name = 3;</code>
+     * <code>string bucket_name = 3;</code>
      */
     public Builder setBucketName(
         java.lang.String value) {
@@ -783,7 +783,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional string bucket_name = 3;</code>
+     * <code>string bucket_name = 3;</code>
      */
     public Builder clearBucketName() {
       
@@ -792,7 +792,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>optional string bucket_name = 3;</code>
+     * <code>string bucket_name = 3;</code>
      */
     public Builder setBucketNameBytes(
         com.google.protobuf.ByteString value) {

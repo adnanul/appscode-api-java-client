@@ -86,7 +86,7 @@ public  final class BucketListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public java.lang.String getCloudCredential() {
     java.lang.Object ref = cloudCredential_;
@@ -105,7 +105,7 @@ public  final class BucketListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCloudCredentialBytes() {
@@ -124,7 +124,7 @@ public  final class BucketListRequest extends
   public static final int GCE_PROJECT_FIELD_NUMBER = 2;
   private volatile java.lang.Object gceProject_;
   /**
-   * <code>optional string gce_project = 2;</code>
+   * <code>string gce_project = 2;</code>
    */
   public java.lang.String getGceProject() {
     java.lang.Object ref = gceProject_;
@@ -139,7 +139,7 @@ public  final class BucketListRequest extends
     }
   }
   /**
-   * <code>optional string gce_project = 2;</code>
+   * <code>string gce_project = 2;</code>
    */
   public com.google.protobuf.ByteString
       getGceProjectBytes() {
@@ -215,7 +215,7 @@ public  final class BucketListRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLOUD_CREDENTIAL_FIELD_NUMBER;
     hash = (53 * hash) + getCloudCredential().hashCode();
     hash = (37 * hash) + GCE_PROJECT_FIELD_NUMBER;
@@ -447,7 +447,7 @@ public  final class BucketListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public java.lang.String getCloudCredential() {
       java.lang.Object ref = cloudCredential_;
@@ -466,7 +466,7 @@ public  final class BucketListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCloudCredentialBytes() {
@@ -486,7 +486,7 @@ public  final class BucketListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredential(
         java.lang.String value) {
@@ -503,7 +503,7 @@ public  final class BucketListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder clearCloudCredential() {
       
@@ -516,7 +516,7 @@ public  final class BucketListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredentialBytes(
         com.google.protobuf.ByteString value) {
@@ -532,7 +532,7 @@ public  final class BucketListRequest extends
 
     private java.lang.Object gceProject_ = "";
     /**
-     * <code>optional string gce_project = 2;</code>
+     * <code>string gce_project = 2;</code>
      */
     public java.lang.String getGceProject() {
       java.lang.Object ref = gceProject_;
@@ -547,7 +547,7 @@ public  final class BucketListRequest extends
       }
     }
     /**
-     * <code>optional string gce_project = 2;</code>
+     * <code>string gce_project = 2;</code>
      */
     public com.google.protobuf.ByteString
         getGceProjectBytes() {
@@ -563,7 +563,7 @@ public  final class BucketListRequest extends
       }
     }
     /**
-     * <code>optional string gce_project = 2;</code>
+     * <code>string gce_project = 2;</code>
      */
     public Builder setGceProject(
         java.lang.String value) {
@@ -576,7 +576,7 @@ public  final class BucketListRequest extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 2;</code>
+     * <code>string gce_project = 2;</code>
      */
     public Builder clearGceProject() {
       
@@ -585,7 +585,7 @@ public  final class BucketListRequest extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 2;</code>
+     * <code>string gce_project = 2;</code>
      */
     public Builder setGceProjectBytes(
         com.google.protobuf.ByteString value) {

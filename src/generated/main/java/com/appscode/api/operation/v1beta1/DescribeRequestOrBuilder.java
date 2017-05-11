@@ -8,17 +8,17 @@ public interface DescribeRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional int64 timestamp = 2;</code>
+   * <code>int64 timestamp = 2;</code>
    */
   long getTimestamp();
 }

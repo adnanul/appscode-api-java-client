@@ -89,7 +89,7 @@ public  final class DiskDescribeRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -104,7 +104,7 @@ public  final class DiskDescribeRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -123,7 +123,7 @@ public  final class DiskDescribeRequest extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -138,7 +138,7 @@ public  final class DiskDescribeRequest extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -157,7 +157,7 @@ public  final class DiskDescribeRequest extends
   public static final int PROVIDER_FIELD_NUMBER = 3;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -172,7 +172,7 @@ public  final class DiskDescribeRequest extends
     }
   }
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -256,7 +256,7 @@ public  final class DiskDescribeRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -493,7 +493,7 @@ public  final class DiskDescribeRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -508,7 +508,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -524,7 +524,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -537,7 +537,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -546,7 +546,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -562,7 +562,7 @@ public  final class DiskDescribeRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -577,7 +577,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -593,7 +593,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -606,7 +606,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -615,7 +615,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -631,7 +631,7 @@ public  final class DiskDescribeRequest extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -646,7 +646,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -662,7 +662,7 @@ public  final class DiskDescribeRequest extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -675,7 +675,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder clearProvider() {
       
@@ -684,7 +684,7 @@ public  final class DiskDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {

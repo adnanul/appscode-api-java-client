@@ -106,8 +106,7 @@ public enum OperationType
   }
   public static final com.google.protobuf.Descriptors.EnumDescriptor
       getDescriptor() {
-    return com.appscode.api.operation.v1beta1.OperationProto.getDescriptor()
-        .getEnumTypes().get(0);
+    return com.appscode.api.operation.v1beta1.OperationProto.getDescriptor().getEnumTypes().get(0);
   }
 
   private static final OperationType[] VALUES = values();

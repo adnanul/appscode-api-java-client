@@ -13,7 +13,7 @@ public interface NFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string server = 1;</code>
+   * <code>string server = 1;</code>
    */
   java.lang.String getServer();
   /**
@@ -22,7 +22,7 @@ public interface NFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string server = 1;</code>
+   * <code>string server = 1;</code>
    */
   com.google.protobuf.ByteString
       getServerBytes();
@@ -33,7 +33,7 @@ public interface NFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   java.lang.String getPath();
   /**
@@ -42,7 +42,7 @@ public interface NFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
@@ -55,7 +55,7 @@ public interface NFSVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   boolean getReadOnly();
 }

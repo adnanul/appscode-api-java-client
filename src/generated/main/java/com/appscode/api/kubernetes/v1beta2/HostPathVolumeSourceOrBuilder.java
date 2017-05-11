@@ -13,7 +13,7 @@ public interface HostPathVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   java.lang.String getPath();
   /**
@@ -22,7 +22,7 @@ public interface HostPathVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();

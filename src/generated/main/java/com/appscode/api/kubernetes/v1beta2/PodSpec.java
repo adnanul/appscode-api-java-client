@@ -147,21 +147,21 @@ public  final class PodSpec extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional string image = 2;</code>
+     * <code>string image = 2;</code>
      */
     java.lang.String getImage();
     /**
-     * <code>optional string image = 2;</code>
+     * <code>string image = 2;</code>
      */
     com.google.protobuf.ByteString
         getImageBytes();
@@ -229,11 +229,11 @@ public  final class PodSpec extends
         getArgsBytes(int index);
 
     /**
-     * <code>optional string working_dir = 6;</code>
+     * <code>string working_dir = 6;</code>
      */
     java.lang.String getWorkingDir();
     /**
-     * <code>optional string working_dir = 6;</code>
+     * <code>string working_dir = 6;</code>
      */
     com.google.protobuf.ByteString
         getWorkingDirBytes();
@@ -402,26 +402,26 @@ public  final class PodSpec extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       java.lang.String getName();
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
       /**
-       * <code>optional bool read_only = 2;</code>
+       * <code>bool read_only = 2;</code>
        */
       boolean getReadOnly();
 
       /**
-       * <code>optional string mount_path = 3;</code>
+       * <code>string mount_path = 3;</code>
        */
       java.lang.String getMountPath();
       /**
-       * <code>optional string mount_path = 3;</code>
+       * <code>string mount_path = 3;</code>
        */
       com.google.protobuf.ByteString
           getMountPathBytes();
@@ -511,7 +511,7 @@ public  final class PodSpec extends
       public static final int NAME_FIELD_NUMBER = 1;
       private volatile java.lang.Object name_;
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -526,7 +526,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -545,7 +545,7 @@ public  final class PodSpec extends
       public static final int READ_ONLY_FIELD_NUMBER = 2;
       private boolean readOnly_;
       /**
-       * <code>optional bool read_only = 2;</code>
+       * <code>bool read_only = 2;</code>
        */
       public boolean getReadOnly() {
         return readOnly_;
@@ -554,7 +554,7 @@ public  final class PodSpec extends
       public static final int MOUNT_PATH_FIELD_NUMBER = 3;
       private volatile java.lang.Object mountPath_;
       /**
-       * <code>optional string mount_path = 3;</code>
+       * <code>string mount_path = 3;</code>
        */
       public java.lang.String getMountPath() {
         java.lang.Object ref = mountPath_;
@@ -569,7 +569,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string mount_path = 3;</code>
+       * <code>string mount_path = 3;</code>
        */
       public com.google.protobuf.ByteString
           getMountPathBytes() {
@@ -654,7 +654,7 @@ public  final class PodSpec extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + NAME_FIELD_NUMBER;
         hash = (53 * hash) + getName().hashCode();
         hash = (37 * hash) + READ_ONLY_FIELD_NUMBER;
@@ -891,7 +891,7 @@ public  final class PodSpec extends
 
         private java.lang.Object name_ = "";
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
@@ -906,7 +906,7 @@ public  final class PodSpec extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -922,7 +922,7 @@ public  final class PodSpec extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setName(
             java.lang.String value) {
@@ -935,7 +935,7 @@ public  final class PodSpec extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder clearName() {
           
@@ -944,7 +944,7 @@ public  final class PodSpec extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -960,13 +960,13 @@ public  final class PodSpec extends
 
         private boolean readOnly_ ;
         /**
-         * <code>optional bool read_only = 2;</code>
+         * <code>bool read_only = 2;</code>
          */
         public boolean getReadOnly() {
           return readOnly_;
         }
         /**
-         * <code>optional bool read_only = 2;</code>
+         * <code>bool read_only = 2;</code>
          */
         public Builder setReadOnly(boolean value) {
           
@@ -975,7 +975,7 @@ public  final class PodSpec extends
           return this;
         }
         /**
-         * <code>optional bool read_only = 2;</code>
+         * <code>bool read_only = 2;</code>
          */
         public Builder clearReadOnly() {
           
@@ -986,7 +986,7 @@ public  final class PodSpec extends
 
         private java.lang.Object mountPath_ = "";
         /**
-         * <code>optional string mount_path = 3;</code>
+         * <code>string mount_path = 3;</code>
          */
         public java.lang.String getMountPath() {
           java.lang.Object ref = mountPath_;
@@ -1001,7 +1001,7 @@ public  final class PodSpec extends
           }
         }
         /**
-         * <code>optional string mount_path = 3;</code>
+         * <code>string mount_path = 3;</code>
          */
         public com.google.protobuf.ByteString
             getMountPathBytes() {
@@ -1017,7 +1017,7 @@ public  final class PodSpec extends
           }
         }
         /**
-         * <code>optional string mount_path = 3;</code>
+         * <code>string mount_path = 3;</code>
          */
         public Builder setMountPath(
             java.lang.String value) {
@@ -1030,7 +1030,7 @@ public  final class PodSpec extends
           return this;
         }
         /**
-         * <code>optional string mount_path = 3;</code>
+         * <code>string mount_path = 3;</code>
          */
         public Builder clearMountPath() {
           
@@ -1039,7 +1039,7 @@ public  final class PodSpec extends
           return this;
         }
         /**
-         * <code>optional string mount_path = 3;</code>
+         * <code>string mount_path = 3;</code>
          */
         public Builder setMountPathBytes(
             com.google.protobuf.ByteString value) {
@@ -1105,7 +1105,7 @@ public  final class PodSpec extends
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1120,7 +1120,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1139,7 +1139,7 @@ public  final class PodSpec extends
     public static final int IMAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object image_;
     /**
-     * <code>optional string image = 2;</code>
+     * <code>string image = 2;</code>
      */
     public java.lang.String getImage() {
       java.lang.Object ref = image_;
@@ -1154,7 +1154,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string image = 2;</code>
+     * <code>string image = 2;</code>
      */
     public com.google.protobuf.ByteString
         getImageBytes() {
@@ -1266,7 +1266,7 @@ public  final class PodSpec extends
     public static final int WORKING_DIR_FIELD_NUMBER = 6;
     private volatile java.lang.Object workingDir_;
     /**
-     * <code>optional string working_dir = 6;</code>
+     * <code>string working_dir = 6;</code>
      */
     public java.lang.String getWorkingDir() {
       java.lang.Object ref = workingDir_;
@@ -1281,7 +1281,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string working_dir = 6;</code>
+     * <code>string working_dir = 6;</code>
      */
     public com.google.protobuf.ByteString
         getWorkingDirBytes() {
@@ -1444,7 +1444,7 @@ public  final class PodSpec extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + IMAGE_FIELD_NUMBER;
@@ -1819,7 +1819,7 @@ public  final class PodSpec extends
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1834,7 +1834,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -1850,7 +1850,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -1863,7 +1863,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -1872,7 +1872,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -1888,7 +1888,7 @@ public  final class PodSpec extends
 
       private java.lang.Object image_ = "";
       /**
-       * <code>optional string image = 2;</code>
+       * <code>string image = 2;</code>
        */
       public java.lang.String getImage() {
         java.lang.Object ref = image_;
@@ -1903,7 +1903,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string image = 2;</code>
+       * <code>string image = 2;</code>
        */
       public com.google.protobuf.ByteString
           getImageBytes() {
@@ -1919,7 +1919,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string image = 2;</code>
+       * <code>string image = 2;</code>
        */
       public Builder setImage(
           java.lang.String value) {
@@ -1932,7 +1932,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string image = 2;</code>
+       * <code>string image = 2;</code>
        */
       public Builder clearImage() {
         
@@ -1941,7 +1941,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string image = 2;</code>
+       * <code>string image = 2;</code>
        */
       public Builder setImageBytes(
           com.google.protobuf.ByteString value) {
@@ -2385,7 +2385,7 @@ public  final class PodSpec extends
 
       private java.lang.Object workingDir_ = "";
       /**
-       * <code>optional string working_dir = 6;</code>
+       * <code>string working_dir = 6;</code>
        */
       public java.lang.String getWorkingDir() {
         java.lang.Object ref = workingDir_;
@@ -2400,7 +2400,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string working_dir = 6;</code>
+       * <code>string working_dir = 6;</code>
        */
       public com.google.protobuf.ByteString
           getWorkingDirBytes() {
@@ -2416,7 +2416,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string working_dir = 6;</code>
+       * <code>string working_dir = 6;</code>
        */
       public Builder setWorkingDir(
           java.lang.String value) {
@@ -2429,7 +2429,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string working_dir = 6;</code>
+       * <code>string working_dir = 6;</code>
        */
       public Builder clearWorkingDir() {
         
@@ -2438,7 +2438,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string working_dir = 6;</code>
+       * <code>string working_dir = 6;</code>
        */
       public Builder setWorkingDirBytes(
           com.google.protobuf.ByteString value) {
@@ -2745,25 +2745,25 @@ public  final class PodSpec extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     boolean hasVolumeSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder();
   }
@@ -2852,7 +2852,7 @@ public  final class PodSpec extends
     public static final int NAME_FIELD_NUMBER = 1;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -2867,7 +2867,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -2886,19 +2886,19 @@ public  final class PodSpec extends
     public static final int VOLUMESOURCE_FIELD_NUMBER = 2;
     private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     public boolean hasVolumeSource() {
       return volumeSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
       return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
       return getVolumeSource();
@@ -2968,7 +2968,7 @@ public  final class PodSpec extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       if (hasVolumeSource()) {
@@ -3205,7 +3205,7 @@ public  final class PodSpec extends
 
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -3220,7 +3220,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -3236,7 +3236,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -3249,7 +3249,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder clearName() {
         
@@ -3258,7 +3258,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -3276,13 +3276,13 @@ public  final class PodSpec extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> volumeSourceBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public boolean hasVolumeSource() {
         return volumeSourceBuilder_ != null || volumeSource_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
         if (volumeSourceBuilder_ == null) {
@@ -3292,7 +3292,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public Builder setVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
         if (volumeSourceBuilder_ == null) {
@@ -3308,7 +3308,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public Builder setVolumeSource(
           com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
@@ -3322,7 +3322,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public Builder mergeVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
         if (volumeSourceBuilder_ == null) {
@@ -3340,7 +3340,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public Builder clearVolumeSource() {
         if (volumeSourceBuilder_ == null) {
@@ -3354,7 +3354,7 @@ public  final class PodSpec extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getVolumeSourceBuilder() {
         
@@ -3362,7 +3362,7 @@ public  final class PodSpec extends
         return getVolumeSourceFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
         if (volumeSourceBuilder_ != null) {
@@ -3373,7 +3373,7 @@ public  final class PodSpec extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.VolumeSource volumeSource = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 
@@ -3587,7 +3587,7 @@ public  final class PodSpec extends
   public static final int SERVICE_ACCOUNT_NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object serviceAccountName_;
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   public java.lang.String getServiceAccountName() {
     java.lang.Object ref = serviceAccountName_;
@@ -3602,7 +3602,7 @@ public  final class PodSpec extends
     }
   }
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getServiceAccountNameBytes() {
@@ -3621,7 +3621,7 @@ public  final class PodSpec extends
   public static final int NODE_NAME_FIELD_NUMBER = 5;
   private volatile java.lang.Object nodeName_;
   /**
-   * <code>optional string node_name = 5;</code>
+   * <code>string node_name = 5;</code>
    */
   public java.lang.String getNodeName() {
     java.lang.Object ref = nodeName_;
@@ -3636,7 +3636,7 @@ public  final class PodSpec extends
     }
   }
   /**
-   * <code>optional string node_name = 5;</code>
+   * <code>string node_name = 5;</code>
    */
   public com.google.protobuf.ByteString
       getNodeNameBytes() {
@@ -3790,7 +3790,7 @@ public  final class PodSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getVolumesCount() > 0) {
       hash = (37 * hash) + VOLUMES_FIELD_NUMBER;
       hash = (53 * hash) + getVolumesList().hashCode();
@@ -4721,7 +4721,8 @@ public  final class PodSpec extends
     }
 
     public Builder clearNodeSelectors() {
-      getMutableNodeSelectors().clear();
+      internalGetMutableNodeSelectors().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -4731,7 +4732,8 @@ public  final class PodSpec extends
     public Builder removeNodeSelectors(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableNodeSelectors().remove(key);
+      internalGetMutableNodeSelectors().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -4750,7 +4752,8 @@ public  final class PodSpec extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableNodeSelectors().put(key, value);
+      internalGetMutableNodeSelectors().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -4759,13 +4762,14 @@ public  final class PodSpec extends
 
     public Builder putAllNodeSelectors(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableNodeSelectors().putAll(values);
+      internalGetMutableNodeSelectors().getMutableMap()
+          .putAll(values);
       return this;
     }
 
     private java.lang.Object serviceAccountName_ = "";
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public java.lang.String getServiceAccountName() {
       java.lang.Object ref = serviceAccountName_;
@@ -4780,7 +4784,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getServiceAccountNameBytes() {
@@ -4796,7 +4800,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder setServiceAccountName(
         java.lang.String value) {
@@ -4809,7 +4813,7 @@ public  final class PodSpec extends
       return this;
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder clearServiceAccountName() {
       
@@ -4818,7 +4822,7 @@ public  final class PodSpec extends
       return this;
     }
     /**
-     * <code>optional string service_account_name = 4;</code>
+     * <code>string service_account_name = 4;</code>
      */
     public Builder setServiceAccountNameBytes(
         com.google.protobuf.ByteString value) {
@@ -4834,7 +4838,7 @@ public  final class PodSpec extends
 
     private java.lang.Object nodeName_ = "";
     /**
-     * <code>optional string node_name = 5;</code>
+     * <code>string node_name = 5;</code>
      */
     public java.lang.String getNodeName() {
       java.lang.Object ref = nodeName_;
@@ -4849,7 +4853,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string node_name = 5;</code>
+     * <code>string node_name = 5;</code>
      */
     public com.google.protobuf.ByteString
         getNodeNameBytes() {
@@ -4865,7 +4869,7 @@ public  final class PodSpec extends
       }
     }
     /**
-     * <code>optional string node_name = 5;</code>
+     * <code>string node_name = 5;</code>
      */
     public Builder setNodeName(
         java.lang.String value) {
@@ -4878,7 +4882,7 @@ public  final class PodSpec extends
       return this;
     }
     /**
-     * <code>optional string node_name = 5;</code>
+     * <code>string node_name = 5;</code>
      */
     public Builder clearNodeName() {
       
@@ -4887,7 +4891,7 @@ public  final class PodSpec extends
       return this;
     }
     /**
-     * <code>optional string node_name = 5;</code>
+     * <code>string node_name = 5;</code>
      */
     public Builder setNodeNameBytes(
         com.google.protobuf.ByteString value) {

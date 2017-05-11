@@ -8,28 +8,28 @@ public interface OriginOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Origin.Spec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder getSpecOrBuilder();
 }

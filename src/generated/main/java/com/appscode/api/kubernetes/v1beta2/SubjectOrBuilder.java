@@ -8,41 +8,41 @@ public interface SubjectOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   java.lang.String getKind();
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   com.google.protobuf.ByteString
       getKindBytes();
 
   /**
-   * <code>optional string api_version = 2;</code>
+   * <code>string api_version = 2;</code>
    */
   java.lang.String getApiVersion();
   /**
-   * <code>optional string api_version = 2;</code>
+   * <code>string api_version = 2;</code>
    */
   com.google.protobuf.ByteString
       getApiVersionBytes();
 
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 4;</code>
+   * <code>string namespace = 4;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();

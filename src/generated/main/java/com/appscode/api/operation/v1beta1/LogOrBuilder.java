@@ -8,26 +8,26 @@ public interface LogOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   java.lang.String getId();
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   com.google.protobuf.ByteString
       getIdBytes();
 
   /**
-   * <code>optional int64 timestamp = 2;</code>
+   * <code>int64 timestamp = 2;</code>
    */
   long getTimestamp();
 
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   java.lang.String getMessage();
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   com.google.protobuf.ByteString
       getMessageBytes();

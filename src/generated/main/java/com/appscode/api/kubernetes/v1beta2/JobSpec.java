@@ -99,7 +99,7 @@ public  final class JobSpec extends
   public static final int PARALLELISM_FIELD_NUMBER = 1;
   private int parallelism_;
   /**
-   * <code>optional int32 parallelism = 1;</code>
+   * <code>int32 parallelism = 1;</code>
    */
   public int getParallelism() {
     return parallelism_;
@@ -108,7 +108,7 @@ public  final class JobSpec extends
   public static final int COMPLETIONS_FIELD_NUMBER = 2;
   private int completions_;
   /**
-   * <code>optional int32 completions = 2;</code>
+   * <code>int32 completions = 2;</code>
    */
   public int getCompletions() {
     return completions_;
@@ -117,19 +117,19 @@ public  final class JobSpec extends
   public static final int TEMPLATE_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.PodSpec template_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   public boolean hasTemplate() {
     return template_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PodSpec getTemplate() {
     return template_ == null ? com.appscode.api.kubernetes.v1beta2.PodSpec.getDefaultInstance() : template_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getTemplateOrBuilder() {
     return getTemplate();
@@ -138,7 +138,7 @@ public  final class JobSpec extends
   public static final int ACTIVE_DEADLINE_SECONDS_FIELD_NUMBER = 4;
   private long activeDeadlineSeconds_;
   /**
-   * <code>optional int64 active_deadline_seconds = 4;</code>
+   * <code>int64 active_deadline_seconds = 4;</code>
    */
   public long getActiveDeadlineSeconds() {
     return activeDeadlineSeconds_;
@@ -227,7 +227,7 @@ public  final class JobSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PARALLELISM_FIELD_NUMBER;
     hash = (53 * hash) + getParallelism();
     hash = (37 * hash) + COMPLETIONS_FIELD_NUMBER;
@@ -480,13 +480,13 @@ public  final class JobSpec extends
 
     private int parallelism_ ;
     /**
-     * <code>optional int32 parallelism = 1;</code>
+     * <code>int32 parallelism = 1;</code>
      */
     public int getParallelism() {
       return parallelism_;
     }
     /**
-     * <code>optional int32 parallelism = 1;</code>
+     * <code>int32 parallelism = 1;</code>
      */
     public Builder setParallelism(int value) {
       
@@ -495,7 +495,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional int32 parallelism = 1;</code>
+     * <code>int32 parallelism = 1;</code>
      */
     public Builder clearParallelism() {
       
@@ -506,13 +506,13 @@ public  final class JobSpec extends
 
     private int completions_ ;
     /**
-     * <code>optional int32 completions = 2;</code>
+     * <code>int32 completions = 2;</code>
      */
     public int getCompletions() {
       return completions_;
     }
     /**
-     * <code>optional int32 completions = 2;</code>
+     * <code>int32 completions = 2;</code>
      */
     public Builder setCompletions(int value) {
       
@@ -521,7 +521,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional int32 completions = 2;</code>
+     * <code>int32 completions = 2;</code>
      */
     public Builder clearCompletions() {
       
@@ -534,13 +534,13 @@ public  final class JobSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> templateBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public boolean hasTemplate() {
       return templateBuilder_ != null || template_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec getTemplate() {
       if (templateBuilder_ == null) {
@@ -550,7 +550,7 @@ public  final class JobSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public Builder setTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
       if (templateBuilder_ == null) {
@@ -566,7 +566,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public Builder setTemplate(
         com.appscode.api.kubernetes.v1beta2.PodSpec.Builder builderForValue) {
@@ -580,7 +580,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public Builder mergeTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
       if (templateBuilder_ == null) {
@@ -598,7 +598,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public Builder clearTemplate() {
       if (templateBuilder_ == null) {
@@ -612,7 +612,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec.Builder getTemplateBuilder() {
       
@@ -620,7 +620,7 @@ public  final class JobSpec extends
       return getTemplateFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getTemplateOrBuilder() {
       if (templateBuilder_ != null) {
@@ -631,7 +631,7 @@ public  final class JobSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> 
@@ -649,13 +649,13 @@ public  final class JobSpec extends
 
     private long activeDeadlineSeconds_ ;
     /**
-     * <code>optional int64 active_deadline_seconds = 4;</code>
+     * <code>int64 active_deadline_seconds = 4;</code>
      */
     public long getActiveDeadlineSeconds() {
       return activeDeadlineSeconds_;
     }
     /**
-     * <code>optional int64 active_deadline_seconds = 4;</code>
+     * <code>int64 active_deadline_seconds = 4;</code>
      */
     public Builder setActiveDeadlineSeconds(long value) {
       
@@ -664,7 +664,7 @@ public  final class JobSpec extends
       return this;
     }
     /**
-     * <code>optional int64 active_deadline_seconds = 4;</code>
+     * <code>int64 active_deadline_seconds = 4;</code>
      */
     public Builder clearActiveDeadlineSeconds() {
       

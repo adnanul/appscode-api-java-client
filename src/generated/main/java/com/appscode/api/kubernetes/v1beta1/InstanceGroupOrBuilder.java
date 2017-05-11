@@ -8,22 +8,22 @@ public interface InstanceGroupOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string sku = 1;</code>
+   * <code>string sku = 1;</code>
    */
   java.lang.String getSku();
   /**
-   * <code>optional string sku = 1;</code>
+   * <code>string sku = 1;</code>
    */
   com.google.protobuf.ByteString
       getSkuBytes();
 
   /**
-   * <code>optional int64 count = 2;</code>
+   * <code>int64 count = 2;</code>
    */
   long getCount();
 
   /**
-   * <code>optional bool use_spot_instances = 3;</code>
+   * <code>bool use_spot_instances = 3;</code>
    */
   boolean getUseSpotInstances();
 }

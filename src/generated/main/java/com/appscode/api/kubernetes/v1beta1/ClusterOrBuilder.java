@@ -8,67 +8,67 @@ public interface ClusterOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   java.lang.String getProvider();
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   com.google.protobuf.ByteString
       getProviderBytes();
 
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   java.lang.String getOs();
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   com.google.protobuf.ByteString
       getOsBytes();
 
   /**
-   * <code>optional string region = 5;</code>
+   * <code>string region = 5;</code>
    */
   java.lang.String getRegion();
   /**
-   * <code>optional string region = 5;</code>
+   * <code>string region = 5;</code>
    */
   com.google.protobuf.ByteString
       getRegionBytes();
 
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   java.lang.String getZone();
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   com.google.protobuf.ByteString
       getZoneBytes();
 
   /**
-   * <code>optional int64 created_at = 7;</code>
+   * <code>int64 created_at = 7;</code>
    */
   long getCreatedAt();
 
@@ -107,184 +107,184 @@ public interface ClusterOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional bool do_not_delete = 9;</code>
+   * <code>bool do_not_delete = 9;</code>
    */
   boolean getDoNotDelete();
 
   /**
-   * <code>optional string status = 10;</code>
+   * <code>string status = 10;</code>
    */
   java.lang.String getStatus();
   /**
-   * <code>optional string status = 10;</code>
+   * <code>string status = 10;</code>
    */
   com.google.protobuf.ByteString
       getStatusBytes();
 
   /**
-   * <code>optional string status_cause = 11;</code>
+   * <code>string status_cause = 11;</code>
    */
   java.lang.String getStatusCause();
   /**
-   * <code>optional string status_cause = 11;</code>
+   * <code>string status_cause = 11;</code>
    */
   com.google.protobuf.ByteString
       getStatusCauseBytes();
 
   /**
-   * <code>optional string gce_project = 12;</code>
+   * <code>string gce_project = 12;</code>
    */
   java.lang.String getGceProject();
   /**
-   * <code>optional string gce_project = 12;</code>
+   * <code>string gce_project = 12;</code>
    */
   com.google.protobuf.ByteString
       getGceProjectBytes();
 
   /**
-   * <code>optional string kubelet_version = 13;</code>
+   * <code>string kubelet_version = 13;</code>
    */
   java.lang.String getKubeletVersion();
   /**
-   * <code>optional string kubelet_version = 13;</code>
+   * <code>string kubelet_version = 13;</code>
    */
   com.google.protobuf.ByteString
       getKubeletVersionBytes();
 
   /**
-   * <code>optional string saltbase_version = 14;</code>
+   * <code>string saltbase_version = 14;</code>
    */
   java.lang.String getSaltbaseVersion();
   /**
-   * <code>optional string saltbase_version = 14;</code>
+   * <code>string saltbase_version = 14;</code>
    */
   com.google.protobuf.ByteString
       getSaltbaseVersionBytes();
 
   /**
-   * <code>optional string kube_starter_version = 15;</code>
+   * <code>string kube_starter_version = 15;</code>
    */
   java.lang.String getKubeStarterVersion();
   /**
-   * <code>optional string kube_starter_version = 15;</code>
+   * <code>string kube_starter_version = 15;</code>
    */
   com.google.protobuf.ByteString
       getKubeStarterVersionBytes();
 
   /**
-   * <code>optional int32 node_count = 16;</code>
+   * <code>int32 node_count = 16;</code>
    */
   int getNodeCount();
 
   /**
-   * <code>optional string api_server_url = 17;</code>
+   * <code>string api_server_url = 17;</code>
    */
   java.lang.String getApiServerUrl();
   /**
-   * <code>optional string api_server_url = 17;</code>
+   * <code>string api_server_url = 17;</code>
    */
   com.google.protobuf.ByteString
       getApiServerUrlBytes();
 
   /**
-   * <code>optional string kube_user = 18;</code>
+   * <code>string kube_user = 18;</code>
    */
   java.lang.String getKubeUser();
   /**
-   * <code>optional string kube_user = 18;</code>
+   * <code>string kube_user = 18;</code>
    */
   com.google.protobuf.ByteString
       getKubeUserBytes();
 
   /**
-   * <code>optional string kube_password = 19;</code>
+   * <code>string kube_password = 19;</code>
    */
   java.lang.String getKubePassword();
   /**
-   * <code>optional string kube_password = 19;</code>
+   * <code>string kube_password = 19;</code>
    */
   com.google.protobuf.ByteString
       getKubePasswordBytes();
 
   /**
-   * <code>optional string ca_cert = 20;</code>
+   * <code>string ca_cert = 20;</code>
    */
   java.lang.String getCaCert();
   /**
-   * <code>optional string ca_cert = 20;</code>
+   * <code>string ca_cert = 20;</code>
    */
   com.google.protobuf.ByteString
       getCaCertBytes();
 
   /**
-   * <code>optional string kube_bearer_token = 21;</code>
+   * <code>string kube_bearer_token = 21;</code>
    */
   java.lang.String getKubeBearerToken();
   /**
-   * <code>optional string kube_bearer_token = 21;</code>
+   * <code>string kube_bearer_token = 21;</code>
    */
   com.google.protobuf.ByteString
       getKubeBearerTokenBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   boolean hasSettings();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 22;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder();
 
   /**
-   * <code>optional string instance_root_password = 23;</code>
+   * <code>string instance_root_password = 23;</code>
    */
   java.lang.String getInstanceRootPassword();
   /**
-   * <code>optional string instance_root_password = 23;</code>
+   * <code>string instance_root_password = 23;</code>
    */
   com.google.protobuf.ByteString
       getInstanceRootPasswordBytes();
 
   /**
-   * <code>optional string version = 24;</code>
+   * <code>string version = 24;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 24;</code>
+   * <code>string version = 24;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
 
   /**
-   * <code>optional string sku = 25;</code>
+   * <code>string sku = 25;</code>
    */
   java.lang.String getSku();
   /**
-   * <code>optional string sku = 25;</code>
+   * <code>string sku = 25;</code>
    */
   com.google.protobuf.ByteString
       getSkuBytes();
 
   /**
-   * <code>optional string created_by = 26;</code>
+   * <code>string created_by = 26;</code>
    */
   java.lang.String getCreatedBy();
   /**
-   * <code>optional string created_by = 26;</code>
+   * <code>string created_by = 26;</code>
    */
   com.google.protobuf.ByteString
       getCreatedByBytes();
 
   /**
-   * <code>optional string default_access_level = 27;</code>
+   * <code>string default_access_level = 27;</code>
    */
   java.lang.String getDefaultAccessLevel();
   /**
-   * <code>optional string default_access_level = 27;</code>
+   * <code>string default_access_level = 27;</code>
    */
   com.google.protobuf.ByteString
       getDefaultAccessLevelBytes();

@@ -8,51 +8,38 @@ public interface DescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.operation.v1beta1.Operation op = 2;</code>
+   * <code>.appscode.operation.v1beta1.Operation op = 1;</code>
    */
   boolean hasOp();
   /**
-   * <code>optional .appscode.operation.v1beta1.Operation op = 2;</code>
+   * <code>.appscode.operation.v1beta1.Operation op = 1;</code>
    */
   com.appscode.api.operation.v1beta1.Operation getOp();
   /**
-   * <code>optional .appscode.operation.v1beta1.Operation op = 2;</code>
+   * <code>.appscode.operation.v1beta1.Operation op = 1;</code>
    */
   com.appscode.api.operation.v1beta1.OperationOrBuilder getOpOrBuilder();
 
   /**
-   * <code>repeated .appscode.operation.v1beta1.Log logs = 3;</code>
+   * <code>repeated .appscode.operation.v1beta1.Log logs = 2;</code>
    */
   java.util.List<com.appscode.api.operation.v1beta1.Log> 
       getLogsList();
   /**
-   * <code>repeated .appscode.operation.v1beta1.Log logs = 3;</code>
+   * <code>repeated .appscode.operation.v1beta1.Log logs = 2;</code>
    */
   com.appscode.api.operation.v1beta1.Log getLogs(int index);
   /**
-   * <code>repeated .appscode.operation.v1beta1.Log logs = 3;</code>
+   * <code>repeated .appscode.operation.v1beta1.Log logs = 2;</code>
    */
   int getLogsCount();
   /**
-   * <code>repeated .appscode.operation.v1beta1.Log logs = 3;</code>
+   * <code>repeated .appscode.operation.v1beta1.Log logs = 2;</code>
    */
   java.util.List<? extends com.appscode.api.operation.v1beta1.LogOrBuilder> 
       getLogsOrBuilderList();
   /**
-   * <code>repeated .appscode.operation.v1beta1.Log logs = 3;</code>
+   * <code>repeated .appscode.operation.v1beta1.Log logs = 2;</code>
    */
   com.appscode.api.operation.v1beta1.LogOrBuilder getLogsOrBuilder(
       int index);

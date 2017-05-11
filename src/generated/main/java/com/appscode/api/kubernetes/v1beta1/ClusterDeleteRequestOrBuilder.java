@@ -8,32 +8,32 @@ public interface ClusterDeleteRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional bool release_reserved_ip = 2;</code>
+   * <code>bool release_reserved_ip = 2;</code>
    */
   boolean getReleaseReservedIp();
 
   /**
-   * <code>optional bool force = 3;</code>
+   * <code>bool force = 3;</code>
    */
   boolean getForce();
 
   /**
-   * <code>optional bool keep_lodabalancers = 4;</code>
+   * <code>bool keep_lodabalancers = 4;</code>
    */
   boolean getKeepLodabalancers();
 
   /**
-   * <code>optional bool delete_dynamic_volumes = 5;</code>
+   * <code>bool delete_dynamic_volumes = 5;</code>
    */
   boolean getDeleteDynamicVolumes();
 }

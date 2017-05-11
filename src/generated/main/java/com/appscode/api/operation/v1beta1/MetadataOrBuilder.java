@@ -47,7 +47,7 @@ public interface MetadataOrBuilder extends
    * PHID of the user who requested this operation.
    * </pre>
    *
-   * <code>optional string author_phid = 2;</code>
+   * <code>string author_phid = 2;</code>
    */
   java.lang.String getAuthorPhid();
   /**
@@ -55,17 +55,17 @@ public interface MetadataOrBuilder extends
    * PHID of the user who requested this operation.
    * </pre>
    *
-   * <code>optional string author_phid = 2;</code>
+   * <code>string author_phid = 2;</code>
    */
   com.google.protobuf.ByteString
       getAuthorPhidBytes();
 
   /**
-   * <code>optional string author_name = 3;</code>
+   * <code>string author_name = 3;</code>
    */
   java.lang.String getAuthorName();
   /**
-   * <code>optional string author_name = 3;</code>
+   * <code>string author_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getAuthorNameBytes();

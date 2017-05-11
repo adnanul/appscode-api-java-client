@@ -82,7 +82,7 @@ public  final class Raw extends
   public static final int FORMAT_FIELD_NUMBER = 1;
   private volatile java.lang.Object format_;
   /**
-   * <code>optional string format = 1;</code>
+   * <code>string format = 1;</code>
    */
   public java.lang.String getFormat() {
     java.lang.Object ref = format_;
@@ -97,7 +97,7 @@ public  final class Raw extends
     }
   }
   /**
-   * <code>optional string format = 1;</code>
+   * <code>string format = 1;</code>
    */
   public com.google.protobuf.ByteString
       getFormatBytes() {
@@ -116,7 +116,7 @@ public  final class Raw extends
   public static final int DATA_FIELD_NUMBER = 2;
   private volatile java.lang.Object data_;
   /**
-   * <code>optional string data = 2;</code>
+   * <code>string data = 2;</code>
    */
   public java.lang.String getData() {
     java.lang.Object ref = data_;
@@ -131,7 +131,7 @@ public  final class Raw extends
     }
   }
   /**
-   * <code>optional string data = 2;</code>
+   * <code>string data = 2;</code>
    */
   public com.google.protobuf.ByteString
       getDataBytes() {
@@ -207,7 +207,7 @@ public  final class Raw extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + FORMAT_FIELD_NUMBER;
     hash = (53 * hash) + getFormat().hashCode();
     hash = (37 * hash) + DATA_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class Raw extends
 
     private java.lang.Object format_ = "";
     /**
-     * <code>optional string format = 1;</code>
+     * <code>string format = 1;</code>
      */
     public java.lang.String getFormat() {
       java.lang.Object ref = format_;
@@ -450,7 +450,7 @@ public  final class Raw extends
       }
     }
     /**
-     * <code>optional string format = 1;</code>
+     * <code>string format = 1;</code>
      */
     public com.google.protobuf.ByteString
         getFormatBytes() {
@@ -466,7 +466,7 @@ public  final class Raw extends
       }
     }
     /**
-     * <code>optional string format = 1;</code>
+     * <code>string format = 1;</code>
      */
     public Builder setFormat(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class Raw extends
       return this;
     }
     /**
-     * <code>optional string format = 1;</code>
+     * <code>string format = 1;</code>
      */
     public Builder clearFormat() {
       
@@ -488,7 +488,7 @@ public  final class Raw extends
       return this;
     }
     /**
-     * <code>optional string format = 1;</code>
+     * <code>string format = 1;</code>
      */
     public Builder setFormatBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class Raw extends
 
     private java.lang.Object data_ = "";
     /**
-     * <code>optional string data = 2;</code>
+     * <code>string data = 2;</code>
      */
     public java.lang.String getData() {
       java.lang.Object ref = data_;
@@ -519,7 +519,7 @@ public  final class Raw extends
       }
     }
     /**
-     * <code>optional string data = 2;</code>
+     * <code>string data = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDataBytes() {
@@ -535,7 +535,7 @@ public  final class Raw extends
       }
     }
     /**
-     * <code>optional string data = 2;</code>
+     * <code>string data = 2;</code>
      */
     public Builder setData(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class Raw extends
       return this;
     }
     /**
-     * <code>optional string data = 2;</code>
+     * <code>string data = 2;</code>
      */
     public Builder clearData() {
       
@@ -557,7 +557,7 @@ public  final class Raw extends
       return this;
     }
     /**
-     * <code>optional string data = 2;</code>
+     * <code>string data = 2;</code>
      */
     public Builder setDataBytes(
         com.google.protobuf.ByteString value) {

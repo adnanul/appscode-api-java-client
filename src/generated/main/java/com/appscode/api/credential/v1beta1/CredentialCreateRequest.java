@@ -107,7 +107,7 @@ public  final class CredentialCreateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -122,7 +122,7 @@ public  final class CredentialCreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -141,7 +141,7 @@ public  final class CredentialCreateRequest extends
   public static final int PROVIDER_FIELD_NUMBER = 2;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -156,7 +156,7 @@ public  final class CredentialCreateRequest extends
     }
   }
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -326,7 +326,7 @@ public  final class CredentialCreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PROVIDER_FIELD_NUMBER;
@@ -589,7 +589,7 @@ public  final class CredentialCreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -604,7 +604,7 @@ public  final class CredentialCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -620,7 +620,7 @@ public  final class CredentialCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -633,7 +633,7 @@ public  final class CredentialCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -642,7 +642,7 @@ public  final class CredentialCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -658,7 +658,7 @@ public  final class CredentialCreateRequest extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -673,7 +673,7 @@ public  final class CredentialCreateRequest extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -689,7 +689,7 @@ public  final class CredentialCreateRequest extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -702,7 +702,7 @@ public  final class CredentialCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder clearProvider() {
       
@@ -711,7 +711,7 @@ public  final class CredentialCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {
@@ -802,7 +802,8 @@ public  final class CredentialCreateRequest extends
     }
 
     public Builder clearData() {
-      getMutableData().clear();
+      internalGetMutableData().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -812,7 +813,8 @@ public  final class CredentialCreateRequest extends
     public Builder removeData(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableData().remove(key);
+      internalGetMutableData().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -831,7 +833,8 @@ public  final class CredentialCreateRequest extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableData().put(key, value);
+      internalGetMutableData().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -840,7 +843,8 @@ public  final class CredentialCreateRequest extends
 
     public Builder putAllData(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableData().putAll(values);
+      internalGetMutableData().getMutableMap()
+          .putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

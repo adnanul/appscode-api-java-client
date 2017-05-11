@@ -136,7 +136,7 @@ public  final class AgentCreateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -151,7 +151,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -170,7 +170,7 @@ public  final class AgentCreateRequest extends
   public static final int ROLE_FIELD_NUMBER = 2;
   private volatile java.lang.Object role_;
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   public java.lang.String getRole() {
     java.lang.Object ref = role_;
@@ -185,7 +185,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   public com.google.protobuf.ByteString
       getRoleBytes() {
@@ -204,7 +204,7 @@ public  final class AgentCreateRequest extends
   public static final int EXTERNAL_IP_FIELD_NUMBER = 3;
   private volatile java.lang.Object externalIp_;
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>string external_ip = 3;</code>
    */
   public java.lang.String getExternalIp() {
     java.lang.Object ref = externalIp_;
@@ -219,7 +219,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>string external_ip = 3;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIpBytes() {
@@ -238,7 +238,7 @@ public  final class AgentCreateRequest extends
   public static final int INTERNAL_IP_FIELD_NUMBER = 4;
   private volatile java.lang.Object internalIp_;
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>string internal_ip = 4;</code>
    */
   public java.lang.String getInternalIp() {
     java.lang.Object ref = internalIp_;
@@ -253,7 +253,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>string internal_ip = 4;</code>
    */
   public com.google.protobuf.ByteString
       getInternalIpBytes() {
@@ -272,7 +272,7 @@ public  final class AgentCreateRequest extends
   public static final int SSH_USER_FIELD_NUMBER = 5;
   private volatile java.lang.Object sshUser_;
   /**
-   * <code>optional string ssh_user = 5;</code>
+   * <code>string ssh_user = 5;</code>
    */
   public java.lang.String getSshUser() {
     java.lang.Object ref = sshUser_;
@@ -287,7 +287,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string ssh_user = 5;</code>
+   * <code>string ssh_user = 5;</code>
    */
   public com.google.protobuf.ByteString
       getSshUserBytes() {
@@ -306,7 +306,7 @@ public  final class AgentCreateRequest extends
   public static final int SSH_PORT_FIELD_NUMBER = 6;
   private int sshPort_;
   /**
-   * <code>optional int32 ssh_port = 6;</code>
+   * <code>int32 ssh_port = 6;</code>
    */
   public int getSshPort() {
     return sshPort_;
@@ -315,7 +315,7 @@ public  final class AgentCreateRequest extends
   public static final int JENKINS_JNLP_PORT_FIELD_NUMBER = 7;
   private int jenkinsJnlpPort_;
   /**
-   * <code>optional int32 jenkins_jnlp_port = 7;</code>
+   * <code>int32 jenkins_jnlp_port = 7;</code>
    */
   public int getJenkinsJnlpPort() {
     return jenkinsJnlpPort_;
@@ -324,7 +324,7 @@ public  final class AgentCreateRequest extends
   public static final int GIT_SSH_PUBLIC_KEY_FIELD_NUMBER = 8;
   private volatile java.lang.Object gitSshPublicKey_;
   /**
-   * <code>optional string git_ssh_public_key = 8;</code>
+   * <code>string git_ssh_public_key = 8;</code>
    */
   public java.lang.String getGitSshPublicKey() {
     java.lang.Object ref = gitSshPublicKey_;
@@ -339,7 +339,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string git_ssh_public_key = 8;</code>
+   * <code>string git_ssh_public_key = 8;</code>
    */
   public com.google.protobuf.ByteString
       getGitSshPublicKeyBytes() {
@@ -358,7 +358,7 @@ public  final class AgentCreateRequest extends
   public static final int JENKINS_URL_FIELD_NUMBER = 9;
   private volatile java.lang.Object jenkinsUrl_;
   /**
-   * <code>optional string jenkins_url = 9;</code>
+   * <code>string jenkins_url = 9;</code>
    */
   public java.lang.String getJenkinsUrl() {
     java.lang.Object ref = jenkinsUrl_;
@@ -373,7 +373,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string jenkins_url = 9;</code>
+   * <code>string jenkins_url = 9;</code>
    */
   public com.google.protobuf.ByteString
       getJenkinsUrlBytes() {
@@ -392,7 +392,7 @@ public  final class AgentCreateRequest extends
   public static final int CA_CERT_FIELD_NUMBER = 10;
   private volatile java.lang.Object caCert_;
   /**
-   * <code>optional string ca_cert = 10;</code>
+   * <code>string ca_cert = 10;</code>
    */
   public java.lang.String getCaCert() {
     java.lang.Object ref = caCert_;
@@ -407,7 +407,7 @@ public  final class AgentCreateRequest extends
     }
   }
   /**
-   * <code>optional string ca_cert = 10;</code>
+   * <code>string ca_cert = 10;</code>
    */
   public com.google.protobuf.ByteString
       getCaCertBytes() {
@@ -549,7 +549,7 @@ public  final class AgentCreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + ROLE_FIELD_NUMBER;
@@ -847,7 +847,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -862,7 +862,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -878,7 +878,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -891,7 +891,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -900,7 +900,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -916,7 +916,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object role_ = "";
     /**
-     * <code>optional string role = 2;</code>
+     * <code>string role = 2;</code>
      */
     public java.lang.String getRole() {
       java.lang.Object ref = role_;
@@ -931,7 +931,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>string role = 2;</code>
      */
     public com.google.protobuf.ByteString
         getRoleBytes() {
@@ -947,7 +947,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>string role = 2;</code>
      */
     public Builder setRole(
         java.lang.String value) {
@@ -960,7 +960,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>string role = 2;</code>
      */
     public Builder clearRole() {
       
@@ -969,7 +969,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string role = 2;</code>
+     * <code>string role = 2;</code>
      */
     public Builder setRoleBytes(
         com.google.protobuf.ByteString value) {
@@ -985,7 +985,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object externalIp_ = "";
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>string external_ip = 3;</code>
      */
     public java.lang.String getExternalIp() {
       java.lang.Object ref = externalIp_;
@@ -1000,7 +1000,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>string external_ip = 3;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIpBytes() {
@@ -1016,7 +1016,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>string external_ip = 3;</code>
      */
     public Builder setExternalIp(
         java.lang.String value) {
@@ -1029,7 +1029,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>string external_ip = 3;</code>
      */
     public Builder clearExternalIp() {
       
@@ -1038,7 +1038,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 3;</code>
+     * <code>string external_ip = 3;</code>
      */
     public Builder setExternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -1054,7 +1054,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object internalIp_ = "";
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>string internal_ip = 4;</code>
      */
     public java.lang.String getInternalIp() {
       java.lang.Object ref = internalIp_;
@@ -1069,7 +1069,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>string internal_ip = 4;</code>
      */
     public com.google.protobuf.ByteString
         getInternalIpBytes() {
@@ -1085,7 +1085,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>string internal_ip = 4;</code>
      */
     public Builder setInternalIp(
         java.lang.String value) {
@@ -1098,7 +1098,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>string internal_ip = 4;</code>
      */
     public Builder clearInternalIp() {
       
@@ -1107,7 +1107,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 4;</code>
+     * <code>string internal_ip = 4;</code>
      */
     public Builder setInternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -1123,7 +1123,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object sshUser_ = "";
     /**
-     * <code>optional string ssh_user = 5;</code>
+     * <code>string ssh_user = 5;</code>
      */
     public java.lang.String getSshUser() {
       java.lang.Object ref = sshUser_;
@@ -1138,7 +1138,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string ssh_user = 5;</code>
+     * <code>string ssh_user = 5;</code>
      */
     public com.google.protobuf.ByteString
         getSshUserBytes() {
@@ -1154,7 +1154,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string ssh_user = 5;</code>
+     * <code>string ssh_user = 5;</code>
      */
     public Builder setSshUser(
         java.lang.String value) {
@@ -1167,7 +1167,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string ssh_user = 5;</code>
+     * <code>string ssh_user = 5;</code>
      */
     public Builder clearSshUser() {
       
@@ -1176,7 +1176,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string ssh_user = 5;</code>
+     * <code>string ssh_user = 5;</code>
      */
     public Builder setSshUserBytes(
         com.google.protobuf.ByteString value) {
@@ -1192,13 +1192,13 @@ public  final class AgentCreateRequest extends
 
     private int sshPort_ ;
     /**
-     * <code>optional int32 ssh_port = 6;</code>
+     * <code>int32 ssh_port = 6;</code>
      */
     public int getSshPort() {
       return sshPort_;
     }
     /**
-     * <code>optional int32 ssh_port = 6;</code>
+     * <code>int32 ssh_port = 6;</code>
      */
     public Builder setSshPort(int value) {
       
@@ -1207,7 +1207,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional int32 ssh_port = 6;</code>
+     * <code>int32 ssh_port = 6;</code>
      */
     public Builder clearSshPort() {
       
@@ -1218,13 +1218,13 @@ public  final class AgentCreateRequest extends
 
     private int jenkinsJnlpPort_ ;
     /**
-     * <code>optional int32 jenkins_jnlp_port = 7;</code>
+     * <code>int32 jenkins_jnlp_port = 7;</code>
      */
     public int getJenkinsJnlpPort() {
       return jenkinsJnlpPort_;
     }
     /**
-     * <code>optional int32 jenkins_jnlp_port = 7;</code>
+     * <code>int32 jenkins_jnlp_port = 7;</code>
      */
     public Builder setJenkinsJnlpPort(int value) {
       
@@ -1233,7 +1233,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional int32 jenkins_jnlp_port = 7;</code>
+     * <code>int32 jenkins_jnlp_port = 7;</code>
      */
     public Builder clearJenkinsJnlpPort() {
       
@@ -1244,7 +1244,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object gitSshPublicKey_ = "";
     /**
-     * <code>optional string git_ssh_public_key = 8;</code>
+     * <code>string git_ssh_public_key = 8;</code>
      */
     public java.lang.String getGitSshPublicKey() {
       java.lang.Object ref = gitSshPublicKey_;
@@ -1259,7 +1259,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string git_ssh_public_key = 8;</code>
+     * <code>string git_ssh_public_key = 8;</code>
      */
     public com.google.protobuf.ByteString
         getGitSshPublicKeyBytes() {
@@ -1275,7 +1275,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string git_ssh_public_key = 8;</code>
+     * <code>string git_ssh_public_key = 8;</code>
      */
     public Builder setGitSshPublicKey(
         java.lang.String value) {
@@ -1288,7 +1288,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string git_ssh_public_key = 8;</code>
+     * <code>string git_ssh_public_key = 8;</code>
      */
     public Builder clearGitSshPublicKey() {
       
@@ -1297,7 +1297,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string git_ssh_public_key = 8;</code>
+     * <code>string git_ssh_public_key = 8;</code>
      */
     public Builder setGitSshPublicKeyBytes(
         com.google.protobuf.ByteString value) {
@@ -1313,7 +1313,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object jenkinsUrl_ = "";
     /**
-     * <code>optional string jenkins_url = 9;</code>
+     * <code>string jenkins_url = 9;</code>
      */
     public java.lang.String getJenkinsUrl() {
       java.lang.Object ref = jenkinsUrl_;
@@ -1328,7 +1328,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string jenkins_url = 9;</code>
+     * <code>string jenkins_url = 9;</code>
      */
     public com.google.protobuf.ByteString
         getJenkinsUrlBytes() {
@@ -1344,7 +1344,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string jenkins_url = 9;</code>
+     * <code>string jenkins_url = 9;</code>
      */
     public Builder setJenkinsUrl(
         java.lang.String value) {
@@ -1357,7 +1357,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string jenkins_url = 9;</code>
+     * <code>string jenkins_url = 9;</code>
      */
     public Builder clearJenkinsUrl() {
       
@@ -1366,7 +1366,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string jenkins_url = 9;</code>
+     * <code>string jenkins_url = 9;</code>
      */
     public Builder setJenkinsUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -1382,7 +1382,7 @@ public  final class AgentCreateRequest extends
 
     private java.lang.Object caCert_ = "";
     /**
-     * <code>optional string ca_cert = 10;</code>
+     * <code>string ca_cert = 10;</code>
      */
     public java.lang.String getCaCert() {
       java.lang.Object ref = caCert_;
@@ -1397,7 +1397,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string ca_cert = 10;</code>
+     * <code>string ca_cert = 10;</code>
      */
     public com.google.protobuf.ByteString
         getCaCertBytes() {
@@ -1413,7 +1413,7 @@ public  final class AgentCreateRequest extends
       }
     }
     /**
-     * <code>optional string ca_cert = 10;</code>
+     * <code>string ca_cert = 10;</code>
      */
     public Builder setCaCert(
         java.lang.String value) {
@@ -1426,7 +1426,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 10;</code>
+     * <code>string ca_cert = 10;</code>
      */
     public Builder clearCaCert() {
       
@@ -1435,7 +1435,7 @@ public  final class AgentCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 10;</code>
+     * <code>string ca_cert = 10;</code>
      */
     public Builder setCaCertBytes(
         com.google.protobuf.ByteString value) {

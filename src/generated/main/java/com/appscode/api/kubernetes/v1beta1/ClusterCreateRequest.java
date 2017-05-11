@@ -204,7 +204,7 @@ public  final class ClusterCreateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -219,7 +219,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -238,7 +238,7 @@ public  final class ClusterCreateRequest extends
   public static final int PROVIDER_FIELD_NUMBER = 2;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -253,7 +253,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -272,7 +272,7 @@ public  final class ClusterCreateRequest extends
   public static final int ZONE_FIELD_NUMBER = 3;
   private volatile java.lang.Object zone_;
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   public java.lang.String getZone() {
     java.lang.Object ref = zone_;
@@ -287,7 +287,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   public com.google.protobuf.ByteString
       getZoneBytes() {
@@ -306,7 +306,7 @@ public  final class ClusterCreateRequest extends
   public static final int CLOUD_CREDENTIAL_FIELD_NUMBER = 4;
   private volatile java.lang.Object cloudCredential_;
   /**
-   * <code>optional string cloud_credential = 4;</code>
+   * <code>string cloud_credential = 4;</code>
    */
   public java.lang.String getCloudCredential() {
     java.lang.Object ref = cloudCredential_;
@@ -321,7 +321,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string cloud_credential = 4;</code>
+   * <code>string cloud_credential = 4;</code>
    */
   public com.google.protobuf.ByteString
       getCloudCredentialBytes() {
@@ -527,7 +527,7 @@ public  final class ClusterCreateRequest extends
   public static final int SALTBASE_VERSION_FIELD_NUMBER = 7;
   private volatile java.lang.Object saltbaseVersion_;
   /**
-   * <code>optional string saltbase_version = 7;</code>
+   * <code>string saltbase_version = 7;</code>
    */
   public java.lang.String getSaltbaseVersion() {
     java.lang.Object ref = saltbaseVersion_;
@@ -542,7 +542,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string saltbase_version = 7;</code>
+   * <code>string saltbase_version = 7;</code>
    */
   public com.google.protobuf.ByteString
       getSaltbaseVersionBytes() {
@@ -561,7 +561,7 @@ public  final class ClusterCreateRequest extends
   public static final int KUBE_STARTER_VERSION_FIELD_NUMBER = 8;
   private volatile java.lang.Object kubeStarterVersion_;
   /**
-   * <code>optional string kube_starter_version = 8;</code>
+   * <code>string kube_starter_version = 8;</code>
    */
   public java.lang.String getKubeStarterVersion() {
     java.lang.Object ref = kubeStarterVersion_;
@@ -576,7 +576,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string kube_starter_version = 8;</code>
+   * <code>string kube_starter_version = 8;</code>
    */
   public com.google.protobuf.ByteString
       getKubeStarterVersionBytes() {
@@ -595,7 +595,7 @@ public  final class ClusterCreateRequest extends
   public static final int KUBELET_VERSION_FIELD_NUMBER = 9;
   private volatile java.lang.Object kubeletVersion_;
   /**
-   * <code>optional string kubelet_version = 9;</code>
+   * <code>string kubelet_version = 9;</code>
    */
   public java.lang.String getKubeletVersion() {
     java.lang.Object ref = kubeletVersion_;
@@ -610,7 +610,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string kubelet_version = 9;</code>
+   * <code>string kubelet_version = 9;</code>
    */
   public com.google.protobuf.ByteString
       getKubeletVersionBytes() {
@@ -629,7 +629,7 @@ public  final class ClusterCreateRequest extends
   public static final int DO_NOT_DELETE_FIELD_NUMBER = 10;
   private boolean doNotDelete_;
   /**
-   * <code>optional bool do_not_delete = 10;</code>
+   * <code>bool do_not_delete = 10;</code>
    */
   public boolean getDoNotDelete() {
     return doNotDelete_;
@@ -638,7 +638,7 @@ public  final class ClusterCreateRequest extends
   public static final int HOSTFACTS_VERSION_FIELD_NUMBER = 11;
   private volatile java.lang.Object hostfactsVersion_;
   /**
-   * <code>optional string hostfacts_version = 11;</code>
+   * <code>string hostfacts_version = 11;</code>
    */
   public java.lang.String getHostfactsVersion() {
     java.lang.Object ref = hostfactsVersion_;
@@ -653,7 +653,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string hostfacts_version = 11;</code>
+   * <code>string hostfacts_version = 11;</code>
    */
   public com.google.protobuf.ByteString
       getHostfactsVersionBytes() {
@@ -672,7 +672,7 @@ public  final class ClusterCreateRequest extends
   public static final int VERSION_FIELD_NUMBER = 12;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 12;</code>
+   * <code>string version = 12;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -687,7 +687,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string version = 12;</code>
+   * <code>string version = 12;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -719,7 +719,7 @@ public  final class ClusterCreateRequest extends
    * If not set this will set ""
    * </pre>
    *
-   * <code>optional string default_access_level = 13;</code>
+   * <code>string default_access_level = 13;</code>
    */
   public java.lang.String getDefaultAccessLevel() {
     java.lang.Object ref = defaultAccessLevel_;
@@ -747,7 +747,7 @@ public  final class ClusterCreateRequest extends
    * If not set this will set ""
    * </pre>
    *
-   * <code>optional string default_access_level = 13;</code>
+   * <code>string default_access_level = 13;</code>
    */
   public com.google.protobuf.ByteString
       getDefaultAccessLevelBytes() {
@@ -766,7 +766,7 @@ public  final class ClusterCreateRequest extends
   public static final int GCE_PROJECT_FIELD_NUMBER = 15;
   private volatile java.lang.Object gceProject_;
   /**
-   * <code>optional string gce_project = 15;</code>
+   * <code>string gce_project = 15;</code>
    */
   public java.lang.String getGceProject() {
     java.lang.Object ref = gceProject_;
@@ -781,7 +781,7 @@ public  final class ClusterCreateRequest extends
     }
   }
   /**
-   * <code>optional string gce_project = 15;</code>
+   * <code>string gce_project = 15;</code>
    */
   public com.google.protobuf.ByteString
       getGceProjectBytes() {
@@ -983,7 +983,7 @@ public  final class ClusterCreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + PROVIDER_FIELD_NUMBER;
@@ -1395,7 +1395,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1410,7 +1410,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1426,7 +1426,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1439,7 +1439,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -1448,7 +1448,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1464,7 +1464,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -1479,7 +1479,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -1495,7 +1495,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -1508,7 +1508,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder clearProvider() {
       
@@ -1517,7 +1517,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string provider = 2;</code>
+     * <code>string provider = 2;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {
@@ -1533,7 +1533,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object zone_ = "";
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public java.lang.String getZone() {
       java.lang.Object ref = zone_;
@@ -1548,7 +1548,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public com.google.protobuf.ByteString
         getZoneBytes() {
@@ -1564,7 +1564,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder setZone(
         java.lang.String value) {
@@ -1577,7 +1577,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder clearZone() {
       
@@ -1586,7 +1586,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder setZoneBytes(
         com.google.protobuf.ByteString value) {
@@ -1602,7 +1602,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object cloudCredential_ = "";
     /**
-     * <code>optional string cloud_credential = 4;</code>
+     * <code>string cloud_credential = 4;</code>
      */
     public java.lang.String getCloudCredential() {
       java.lang.Object ref = cloudCredential_;
@@ -1617,7 +1617,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string cloud_credential = 4;</code>
+     * <code>string cloud_credential = 4;</code>
      */
     public com.google.protobuf.ByteString
         getCloudCredentialBytes() {
@@ -1633,7 +1633,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string cloud_credential = 4;</code>
+     * <code>string cloud_credential = 4;</code>
      */
     public Builder setCloudCredential(
         java.lang.String value) {
@@ -1646,7 +1646,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cloud_credential = 4;</code>
+     * <code>string cloud_credential = 4;</code>
      */
     public Builder clearCloudCredential() {
       
@@ -1655,7 +1655,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cloud_credential = 4;</code>
+     * <code>string cloud_credential = 4;</code>
      */
     public Builder setCloudCredentialBytes(
         com.google.protobuf.ByteString value) {
@@ -1746,7 +1746,8 @@ public  final class ClusterCreateRequest extends
     }
 
     public Builder clearCloudCredentialData() {
-      getMutableCloudCredentialData().clear();
+      internalGetMutableCloudCredentialData().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1756,7 +1757,8 @@ public  final class ClusterCreateRequest extends
     public Builder removeCloudCredentialData(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableCloudCredentialData().remove(key);
+      internalGetMutableCloudCredentialData().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1775,7 +1777,8 @@ public  final class ClusterCreateRequest extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableCloudCredentialData().put(key, value);
+      internalGetMutableCloudCredentialData().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1784,7 +1787,8 @@ public  final class ClusterCreateRequest extends
 
     public Builder putAllCloudCredentialData(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableCloudCredentialData().putAll(values);
+      internalGetMutableCloudCredentialData().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -1865,7 +1869,8 @@ public  final class ClusterCreateRequest extends
     }
     @java.lang.Deprecated 
     public Builder clearNodeSet() {
-      getMutableNodeSet().clear();
+      internalGetMutableNodeSet().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1875,7 +1880,8 @@ public  final class ClusterCreateRequest extends
     public Builder removeNodeSet(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableNodeSet().remove(key);
+      internalGetMutableNodeSet().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1894,7 +1900,8 @@ public  final class ClusterCreateRequest extends
         long value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       
-      getMutableNodeSet().put(key, value);
+      internalGetMutableNodeSet().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1903,7 +1910,8 @@ public  final class ClusterCreateRequest extends
     @java.lang.Deprecated 
     public Builder putAllNodeSet(
         java.util.Map<java.lang.String, java.lang.Long> values) {
-      getMutableNodeSet().putAll(values);
+      internalGetMutableNodeSet().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -2149,7 +2157,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object saltbaseVersion_ = "";
     /**
-     * <code>optional string saltbase_version = 7;</code>
+     * <code>string saltbase_version = 7;</code>
      */
     public java.lang.String getSaltbaseVersion() {
       java.lang.Object ref = saltbaseVersion_;
@@ -2164,7 +2172,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 7;</code>
+     * <code>string saltbase_version = 7;</code>
      */
     public com.google.protobuf.ByteString
         getSaltbaseVersionBytes() {
@@ -2180,7 +2188,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string saltbase_version = 7;</code>
+     * <code>string saltbase_version = 7;</code>
      */
     public Builder setSaltbaseVersion(
         java.lang.String value) {
@@ -2193,7 +2201,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 7;</code>
+     * <code>string saltbase_version = 7;</code>
      */
     public Builder clearSaltbaseVersion() {
       
@@ -2202,7 +2210,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string saltbase_version = 7;</code>
+     * <code>string saltbase_version = 7;</code>
      */
     public Builder setSaltbaseVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2218,7 +2226,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object kubeStarterVersion_ = "";
     /**
-     * <code>optional string kube_starter_version = 8;</code>
+     * <code>string kube_starter_version = 8;</code>
      */
     public java.lang.String getKubeStarterVersion() {
       java.lang.Object ref = kubeStarterVersion_;
@@ -2233,7 +2241,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 8;</code>
+     * <code>string kube_starter_version = 8;</code>
      */
     public com.google.protobuf.ByteString
         getKubeStarterVersionBytes() {
@@ -2249,7 +2257,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string kube_starter_version = 8;</code>
+     * <code>string kube_starter_version = 8;</code>
      */
     public Builder setKubeStarterVersion(
         java.lang.String value) {
@@ -2262,7 +2270,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 8;</code>
+     * <code>string kube_starter_version = 8;</code>
      */
     public Builder clearKubeStarterVersion() {
       
@@ -2271,7 +2279,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string kube_starter_version = 8;</code>
+     * <code>string kube_starter_version = 8;</code>
      */
     public Builder setKubeStarterVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2287,7 +2295,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object kubeletVersion_ = "";
     /**
-     * <code>optional string kubelet_version = 9;</code>
+     * <code>string kubelet_version = 9;</code>
      */
     public java.lang.String getKubeletVersion() {
       java.lang.Object ref = kubeletVersion_;
@@ -2302,7 +2310,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 9;</code>
+     * <code>string kubelet_version = 9;</code>
      */
     public com.google.protobuf.ByteString
         getKubeletVersionBytes() {
@@ -2318,7 +2326,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string kubelet_version = 9;</code>
+     * <code>string kubelet_version = 9;</code>
      */
     public Builder setKubeletVersion(
         java.lang.String value) {
@@ -2331,7 +2339,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 9;</code>
+     * <code>string kubelet_version = 9;</code>
      */
     public Builder clearKubeletVersion() {
       
@@ -2340,7 +2348,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string kubelet_version = 9;</code>
+     * <code>string kubelet_version = 9;</code>
      */
     public Builder setKubeletVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2356,13 +2364,13 @@ public  final class ClusterCreateRequest extends
 
     private boolean doNotDelete_ ;
     /**
-     * <code>optional bool do_not_delete = 10;</code>
+     * <code>bool do_not_delete = 10;</code>
      */
     public boolean getDoNotDelete() {
       return doNotDelete_;
     }
     /**
-     * <code>optional bool do_not_delete = 10;</code>
+     * <code>bool do_not_delete = 10;</code>
      */
     public Builder setDoNotDelete(boolean value) {
       
@@ -2371,7 +2379,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional bool do_not_delete = 10;</code>
+     * <code>bool do_not_delete = 10;</code>
      */
     public Builder clearDoNotDelete() {
       
@@ -2382,7 +2390,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object hostfactsVersion_ = "";
     /**
-     * <code>optional string hostfacts_version = 11;</code>
+     * <code>string hostfacts_version = 11;</code>
      */
     public java.lang.String getHostfactsVersion() {
       java.lang.Object ref = hostfactsVersion_;
@@ -2397,7 +2405,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string hostfacts_version = 11;</code>
+     * <code>string hostfacts_version = 11;</code>
      */
     public com.google.protobuf.ByteString
         getHostfactsVersionBytes() {
@@ -2413,7 +2421,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string hostfacts_version = 11;</code>
+     * <code>string hostfacts_version = 11;</code>
      */
     public Builder setHostfactsVersion(
         java.lang.String value) {
@@ -2426,7 +2434,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string hostfacts_version = 11;</code>
+     * <code>string hostfacts_version = 11;</code>
      */
     public Builder clearHostfactsVersion() {
       
@@ -2435,7 +2443,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string hostfacts_version = 11;</code>
+     * <code>string hostfacts_version = 11;</code>
      */
     public Builder setHostfactsVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2451,7 +2459,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 12;</code>
+     * <code>string version = 12;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -2466,7 +2474,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string version = 12;</code>
+     * <code>string version = 12;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -2482,7 +2490,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string version = 12;</code>
+     * <code>string version = 12;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -2495,7 +2503,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string version = 12;</code>
+     * <code>string version = 12;</code>
      */
     public Builder clearVersion() {
       
@@ -2504,7 +2512,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string version = 12;</code>
+     * <code>string version = 12;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -2533,7 +2541,7 @@ public  final class ClusterCreateRequest extends
      * If not set this will set ""
      * </pre>
      *
-     * <code>optional string default_access_level = 13;</code>
+     * <code>string default_access_level = 13;</code>
      */
     public java.lang.String getDefaultAccessLevel() {
       java.lang.Object ref = defaultAccessLevel_;
@@ -2561,7 +2569,7 @@ public  final class ClusterCreateRequest extends
      * If not set this will set ""
      * </pre>
      *
-     * <code>optional string default_access_level = 13;</code>
+     * <code>string default_access_level = 13;</code>
      */
     public com.google.protobuf.ByteString
         getDefaultAccessLevelBytes() {
@@ -2590,7 +2598,7 @@ public  final class ClusterCreateRequest extends
      * If not set this will set ""
      * </pre>
      *
-     * <code>optional string default_access_level = 13;</code>
+     * <code>string default_access_level = 13;</code>
      */
     public Builder setDefaultAccessLevel(
         java.lang.String value) {
@@ -2616,7 +2624,7 @@ public  final class ClusterCreateRequest extends
      * If not set this will set ""
      * </pre>
      *
-     * <code>optional string default_access_level = 13;</code>
+     * <code>string default_access_level = 13;</code>
      */
     public Builder clearDefaultAccessLevel() {
       
@@ -2638,7 +2646,7 @@ public  final class ClusterCreateRequest extends
      * If not set this will set ""
      * </pre>
      *
-     * <code>optional string default_access_level = 13;</code>
+     * <code>string default_access_level = 13;</code>
      */
     public Builder setDefaultAccessLevelBytes(
         com.google.protobuf.ByteString value) {
@@ -2654,7 +2662,7 @@ public  final class ClusterCreateRequest extends
 
     private java.lang.Object gceProject_ = "";
     /**
-     * <code>optional string gce_project = 15;</code>
+     * <code>string gce_project = 15;</code>
      */
     public java.lang.String getGceProject() {
       java.lang.Object ref = gceProject_;
@@ -2669,7 +2677,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string gce_project = 15;</code>
+     * <code>string gce_project = 15;</code>
      */
     public com.google.protobuf.ByteString
         getGceProjectBytes() {
@@ -2685,7 +2693,7 @@ public  final class ClusterCreateRequest extends
       }
     }
     /**
-     * <code>optional string gce_project = 15;</code>
+     * <code>string gce_project = 15;</code>
      */
     public Builder setGceProject(
         java.lang.String value) {
@@ -2698,7 +2706,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 15;</code>
+     * <code>string gce_project = 15;</code>
      */
     public Builder clearGceProject() {
       
@@ -2707,7 +2715,7 @@ public  final class ClusterCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string gce_project = 15;</code>
+     * <code>string gce_project = 15;</code>
      */
     public Builder setGceProjectBytes(
         com.google.protobuf.ByteString value) {

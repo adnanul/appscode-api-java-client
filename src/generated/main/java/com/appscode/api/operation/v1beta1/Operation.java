@@ -209,7 +209,7 @@ public  final class Operation extends
 
   public static final int CLUSTER_CREATE_REQUEST_FIELD_NUMBER = 1;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest getClusterCreateRequest() {
     if (requestCase_ == 1) {
@@ -218,7 +218,7 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterCreateRequestOrBuilder getClusterCreateRequestOrBuilder() {
     if (requestCase_ == 1) {
@@ -229,7 +229,7 @@ public  final class Operation extends
 
   public static final int CLUSTER_DELETE_REQUEST_FIELD_NUMBER = 3;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest getClusterDeleteRequest() {
     if (requestCase_ == 3) {
@@ -238,7 +238,7 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder getClusterDeleteRequestOrBuilder() {
     if (requestCase_ == 3) {
@@ -249,7 +249,7 @@ public  final class Operation extends
 
   public static final int CLUSTER_RECONFIGURE_REQUEST_FIELD_NUMBER = 4;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest getClusterReconfigureRequest() {
     if (requestCase_ == 4) {
@@ -258,7 +258,7 @@ public  final class Operation extends
     return com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder getClusterReconfigureRequestOrBuilder() {
     if (requestCase_ == 4) {
@@ -269,7 +269,7 @@ public  final class Operation extends
 
   public static final int NAMESPACE_CREATE_REQUEST_FIELD_NUMBER = 11;
   /**
-   * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+   * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
    */
   public com.appscode.api.namespace.v1beta1.CreateRequest getNamespaceCreateRequest() {
     if (requestCase_ == 11) {
@@ -278,7 +278,7 @@ public  final class Operation extends
     return com.appscode.api.namespace.v1beta1.CreateRequest.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+   * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
    */
   public com.appscode.api.namespace.v1beta1.CreateRequestOrBuilder getNamespaceCreateRequestOrBuilder() {
     if (requestCase_ == 11) {
@@ -290,13 +290,13 @@ public  final class Operation extends
   public static final int TYPE_FIELD_NUMBER = 14;
   private int type_;
   /**
-   * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+   * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
    */
   public int getTypeValue() {
     return type_;
   }
   /**
-   * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+   * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
    */
   public com.appscode.api.operation.v1beta1.OperationType getType() {
     com.appscode.api.operation.v1beta1.OperationType result = com.appscode.api.operation.v1beta1.OperationType.valueOf(type_);
@@ -306,7 +306,7 @@ public  final class Operation extends
   public static final int PHID_FIELD_NUMBER = 15;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 15;</code>
+   * <code>string phid = 15;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -321,7 +321,7 @@ public  final class Operation extends
     }
   }
   /**
-   * <code>optional string phid = 15;</code>
+   * <code>string phid = 15;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -340,19 +340,19 @@ public  final class Operation extends
   public static final int AUTH_FIELD_NUMBER = 16;
   private com.appscode.api.operation.v1beta1.Auth auth_;
   /**
-   * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+   * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
    */
   public boolean hasAuth() {
     return auth_ != null;
   }
   /**
-   * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+   * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
    */
   public com.appscode.api.operation.v1beta1.Auth getAuth() {
     return auth_ == null ? com.appscode.api.operation.v1beta1.Auth.getDefaultInstance() : auth_;
   }
   /**
-   * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+   * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
    */
   public com.appscode.api.operation.v1beta1.AuthOrBuilder getAuthOrBuilder() {
     return getAuth();
@@ -361,19 +361,19 @@ public  final class Operation extends
   public static final int METADATA_FIELD_NUMBER = 17;
   private com.appscode.api.operation.v1beta1.Metadata metadata_;
   /**
-   * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+   * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
    */
   public boolean hasMetadata() {
     return metadata_ != null;
   }
   /**
-   * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+   * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
    */
   public com.appscode.api.operation.v1beta1.Metadata getMetadata() {
     return metadata_ == null ? com.appscode.api.operation.v1beta1.Metadata.getDefaultInstance() : metadata_;
   }
   /**
-   * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+   * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
    */
   public com.appscode.api.operation.v1beta1.MetadataOrBuilder getMetadataOrBuilder() {
     return getMetadata();
@@ -514,7 +514,7 @@ public  final class Operation extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + type_;
     hash = (37 * hash) + PHID_FIELD_NUMBER;
@@ -869,7 +869,7 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest, com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterCreateRequestOrBuilder> clusterCreateRequestBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest getClusterCreateRequest() {
       if (clusterCreateRequestBuilder_ == null) {
@@ -885,7 +885,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public Builder setClusterCreateRequest(com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest value) {
       if (clusterCreateRequestBuilder_ == null) {
@@ -901,7 +901,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public Builder setClusterCreateRequest(
         com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.Builder builderForValue) {
@@ -915,7 +915,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public Builder mergeClusterCreateRequest(com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest value) {
       if (clusterCreateRequestBuilder_ == null) {
@@ -937,7 +937,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public Builder clearClusterCreateRequest() {
       if (clusterCreateRequestBuilder_ == null) {
@@ -956,13 +956,13 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.Builder getClusterCreateRequestBuilder() {
       return getClusterCreateRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterCreateRequestOrBuilder getClusterCreateRequestOrBuilder() {
       if ((requestCase_ == 1) && (clusterCreateRequestBuilder_ != null)) {
@@ -975,7 +975,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterCreateRequest cluster_create_request = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest, com.appscode.api.kubernetes.v1beta1.ClusterCreateRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterCreateRequestOrBuilder> 
@@ -999,7 +999,7 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder> clusterDeleteRequestBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest getClusterDeleteRequest() {
       if (clusterDeleteRequestBuilder_ == null) {
@@ -1015,7 +1015,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public Builder setClusterDeleteRequest(com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest value) {
       if (clusterDeleteRequestBuilder_ == null) {
@@ -1031,7 +1031,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public Builder setClusterDeleteRequest(
         com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder builderForValue) {
@@ -1045,7 +1045,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public Builder mergeClusterDeleteRequest(com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest value) {
       if (clusterDeleteRequestBuilder_ == null) {
@@ -1067,7 +1067,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public Builder clearClusterDeleteRequest() {
       if (clusterDeleteRequestBuilder_ == null) {
@@ -1086,13 +1086,13 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder getClusterDeleteRequestBuilder() {
       return getClusterDeleteRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder getClusterDeleteRequestOrBuilder() {
       if ((requestCase_ == 3) && (clusterDeleteRequestBuilder_ != null)) {
@@ -1105,7 +1105,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDeleteRequest cluster_delete_request = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDeleteRequestOrBuilder> 
@@ -1129,7 +1129,7 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder> clusterReconfigureRequestBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest getClusterReconfigureRequest() {
       if (clusterReconfigureRequestBuilder_ == null) {
@@ -1145,7 +1145,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public Builder setClusterReconfigureRequest(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest value) {
       if (clusterReconfigureRequestBuilder_ == null) {
@@ -1161,7 +1161,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public Builder setClusterReconfigureRequest(
         com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder builderForValue) {
@@ -1175,7 +1175,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public Builder mergeClusterReconfigureRequest(com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest value) {
       if (clusterReconfigureRequestBuilder_ == null) {
@@ -1197,7 +1197,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public Builder clearClusterReconfigureRequest() {
       if (clusterReconfigureRequestBuilder_ == null) {
@@ -1216,13 +1216,13 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder getClusterReconfigureRequestBuilder() {
       return getClusterReconfigureRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder getClusterReconfigureRequestOrBuilder() {
       if ((requestCase_ == 4) && (clusterReconfigureRequestBuilder_ != null)) {
@@ -1235,7 +1235,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterReconfigureRequest cluster_reconfigure_request = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequest.Builder, com.appscode.api.kubernetes.v1beta1.ClusterReconfigureRequestOrBuilder> 
@@ -1259,7 +1259,7 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.namespace.v1beta1.CreateRequest, com.appscode.api.namespace.v1beta1.CreateRequest.Builder, com.appscode.api.namespace.v1beta1.CreateRequestOrBuilder> namespaceCreateRequestBuilder_;
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public com.appscode.api.namespace.v1beta1.CreateRequest getNamespaceCreateRequest() {
       if (namespaceCreateRequestBuilder_ == null) {
@@ -1275,7 +1275,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public Builder setNamespaceCreateRequest(com.appscode.api.namespace.v1beta1.CreateRequest value) {
       if (namespaceCreateRequestBuilder_ == null) {
@@ -1291,7 +1291,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public Builder setNamespaceCreateRequest(
         com.appscode.api.namespace.v1beta1.CreateRequest.Builder builderForValue) {
@@ -1305,7 +1305,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public Builder mergeNamespaceCreateRequest(com.appscode.api.namespace.v1beta1.CreateRequest value) {
       if (namespaceCreateRequestBuilder_ == null) {
@@ -1327,7 +1327,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public Builder clearNamespaceCreateRequest() {
       if (namespaceCreateRequestBuilder_ == null) {
@@ -1346,13 +1346,13 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public com.appscode.api.namespace.v1beta1.CreateRequest.Builder getNamespaceCreateRequestBuilder() {
       return getNamespaceCreateRequestFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     public com.appscode.api.namespace.v1beta1.CreateRequestOrBuilder getNamespaceCreateRequestOrBuilder() {
       if ((requestCase_ == 11) && (namespaceCreateRequestBuilder_ != null)) {
@@ -1365,7 +1365,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
+     * <code>.appscode.namespace.v1beta1.CreateRequest namespace_create_request = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.namespace.v1beta1.CreateRequest, com.appscode.api.namespace.v1beta1.CreateRequest.Builder, com.appscode.api.namespace.v1beta1.CreateRequestOrBuilder> 
@@ -1388,13 +1388,13 @@ public  final class Operation extends
 
     private int type_ = 0;
     /**
-     * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+     * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
      */
     public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+     * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
      */
     public Builder setTypeValue(int value) {
       type_ = value;
@@ -1402,14 +1402,14 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+     * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
      */
     public com.appscode.api.operation.v1beta1.OperationType getType() {
       com.appscode.api.operation.v1beta1.OperationType result = com.appscode.api.operation.v1beta1.OperationType.valueOf(type_);
       return result == null ? com.appscode.api.operation.v1beta1.OperationType.UNRECOGNIZED : result;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+     * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
      */
     public Builder setType(com.appscode.api.operation.v1beta1.OperationType value) {
       if (value == null) {
@@ -1421,7 +1421,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.OperationType type = 14;</code>
+     * <code>.appscode.operation.v1beta1.OperationType type = 14;</code>
      */
     public Builder clearType() {
       
@@ -1432,7 +1432,7 @@ public  final class Operation extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 15;</code>
+     * <code>string phid = 15;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -1447,7 +1447,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional string phid = 15;</code>
+     * <code>string phid = 15;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -1463,7 +1463,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional string phid = 15;</code>
+     * <code>string phid = 15;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -1476,7 +1476,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional string phid = 15;</code>
+     * <code>string phid = 15;</code>
      */
     public Builder clearPhid() {
       
@@ -1485,7 +1485,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional string phid = 15;</code>
+     * <code>string phid = 15;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -1503,13 +1503,13 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.operation.v1beta1.Auth, com.appscode.api.operation.v1beta1.Auth.Builder, com.appscode.api.operation.v1beta1.AuthOrBuilder> authBuilder_;
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public boolean hasAuth() {
       return authBuilder_ != null || auth_ != null;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public com.appscode.api.operation.v1beta1.Auth getAuth() {
       if (authBuilder_ == null) {
@@ -1519,7 +1519,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public Builder setAuth(com.appscode.api.operation.v1beta1.Auth value) {
       if (authBuilder_ == null) {
@@ -1535,7 +1535,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public Builder setAuth(
         com.appscode.api.operation.v1beta1.Auth.Builder builderForValue) {
@@ -1549,7 +1549,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public Builder mergeAuth(com.appscode.api.operation.v1beta1.Auth value) {
       if (authBuilder_ == null) {
@@ -1567,7 +1567,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public Builder clearAuth() {
       if (authBuilder_ == null) {
@@ -1581,7 +1581,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public com.appscode.api.operation.v1beta1.Auth.Builder getAuthBuilder() {
       
@@ -1589,7 +1589,7 @@ public  final class Operation extends
       return getAuthFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     public com.appscode.api.operation.v1beta1.AuthOrBuilder getAuthOrBuilder() {
       if (authBuilder_ != null) {
@@ -1600,7 +1600,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Auth auth = 16;</code>
+     * <code>.appscode.operation.v1beta1.Auth auth = 16;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.operation.v1beta1.Auth, com.appscode.api.operation.v1beta1.Auth.Builder, com.appscode.api.operation.v1beta1.AuthOrBuilder> 
@@ -1620,13 +1620,13 @@ public  final class Operation extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.operation.v1beta1.Metadata, com.appscode.api.operation.v1beta1.Metadata.Builder, com.appscode.api.operation.v1beta1.MetadataOrBuilder> metadataBuilder_;
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public boolean hasMetadata() {
       return metadataBuilder_ != null || metadata_ != null;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public com.appscode.api.operation.v1beta1.Metadata getMetadata() {
       if (metadataBuilder_ == null) {
@@ -1636,7 +1636,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public Builder setMetadata(com.appscode.api.operation.v1beta1.Metadata value) {
       if (metadataBuilder_ == null) {
@@ -1652,7 +1652,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public Builder setMetadata(
         com.appscode.api.operation.v1beta1.Metadata.Builder builderForValue) {
@@ -1666,7 +1666,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public Builder mergeMetadata(com.appscode.api.operation.v1beta1.Metadata value) {
       if (metadataBuilder_ == null) {
@@ -1684,7 +1684,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public Builder clearMetadata() {
       if (metadataBuilder_ == null) {
@@ -1698,7 +1698,7 @@ public  final class Operation extends
       return this;
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public com.appscode.api.operation.v1beta1.Metadata.Builder getMetadataBuilder() {
       
@@ -1706,7 +1706,7 @@ public  final class Operation extends
       return getMetadataFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     public com.appscode.api.operation.v1beta1.MetadataOrBuilder getMetadataOrBuilder() {
       if (metadataBuilder_ != null) {
@@ -1717,7 +1717,7 @@ public  final class Operation extends
       }
     }
     /**
-     * <code>optional .appscode.operation.v1beta1.Metadata metadata = 17;</code>
+     * <code>.appscode.operation.v1beta1.Metadata metadata = 17;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.operation.v1beta1.Metadata, com.appscode.api.operation.v1beta1.Metadata.Builder, com.appscode.api.operation.v1beta1.MetadataOrBuilder> 

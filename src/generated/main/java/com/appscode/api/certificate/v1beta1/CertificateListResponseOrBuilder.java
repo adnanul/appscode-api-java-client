@@ -8,38 +8,25 @@ public interface CertificateListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   java.util.List<com.appscode.api.certificate.v1beta1.Certificate> 
       getCertificatesList();
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   com.appscode.api.certificate.v1beta1.Certificate getCertificates(int index);
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   int getCertificatesCount();
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   java.util.List<? extends com.appscode.api.certificate.v1beta1.CertificateOrBuilder> 
       getCertificatesOrBuilderList();
   /**
-   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 2;</code>
+   * <code>repeated .appscode.certificate.v1beta1.Certificate certificates = 1;</code>
    */
   com.appscode.api.certificate.v1beta1.CertificateOrBuilder getCertificatesOrBuilder(
       int index);

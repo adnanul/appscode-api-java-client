@@ -8,41 +8,41 @@ public interface BackupOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Backup.Spec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Backup.SpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Backup.Status getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup.Status status = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Backup.StatusOrBuilder getStatusOrBuilder();
 }

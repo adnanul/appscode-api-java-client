@@ -87,7 +87,7 @@ public  final class InstanceGroup extends
   public static final int SKU_FIELD_NUMBER = 1;
   private volatile java.lang.Object sku_;
   /**
-   * <code>optional string sku = 1;</code>
+   * <code>string sku = 1;</code>
    */
   public java.lang.String getSku() {
     java.lang.Object ref = sku_;
@@ -102,7 +102,7 @@ public  final class InstanceGroup extends
     }
   }
   /**
-   * <code>optional string sku = 1;</code>
+   * <code>string sku = 1;</code>
    */
   public com.google.protobuf.ByteString
       getSkuBytes() {
@@ -121,7 +121,7 @@ public  final class InstanceGroup extends
   public static final int COUNT_FIELD_NUMBER = 2;
   private long count_;
   /**
-   * <code>optional int64 count = 2;</code>
+   * <code>int64 count = 2;</code>
    */
   public long getCount() {
     return count_;
@@ -130,7 +130,7 @@ public  final class InstanceGroup extends
   public static final int USE_SPOT_INSTANCES_FIELD_NUMBER = 3;
   private boolean useSpotInstances_;
   /**
-   * <code>optional bool use_spot_instances = 3;</code>
+   * <code>bool use_spot_instances = 3;</code>
    */
   public boolean getUseSpotInstances() {
     return useSpotInstances_;
@@ -206,7 +206,7 @@ public  final class InstanceGroup extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SKU_FIELD_NUMBER;
     hash = (53 * hash) + getSku().hashCode();
     hash = (37 * hash) + COUNT_FIELD_NUMBER;
@@ -443,7 +443,7 @@ public  final class InstanceGroup extends
 
     private java.lang.Object sku_ = "";
     /**
-     * <code>optional string sku = 1;</code>
+     * <code>string sku = 1;</code>
      */
     public java.lang.String getSku() {
       java.lang.Object ref = sku_;
@@ -458,7 +458,7 @@ public  final class InstanceGroup extends
       }
     }
     /**
-     * <code>optional string sku = 1;</code>
+     * <code>string sku = 1;</code>
      */
     public com.google.protobuf.ByteString
         getSkuBytes() {
@@ -474,7 +474,7 @@ public  final class InstanceGroup extends
       }
     }
     /**
-     * <code>optional string sku = 1;</code>
+     * <code>string sku = 1;</code>
      */
     public Builder setSku(
         java.lang.String value) {
@@ -487,7 +487,7 @@ public  final class InstanceGroup extends
       return this;
     }
     /**
-     * <code>optional string sku = 1;</code>
+     * <code>string sku = 1;</code>
      */
     public Builder clearSku() {
       
@@ -496,7 +496,7 @@ public  final class InstanceGroup extends
       return this;
     }
     /**
-     * <code>optional string sku = 1;</code>
+     * <code>string sku = 1;</code>
      */
     public Builder setSkuBytes(
         com.google.protobuf.ByteString value) {
@@ -512,13 +512,13 @@ public  final class InstanceGroup extends
 
     private long count_ ;
     /**
-     * <code>optional int64 count = 2;</code>
+     * <code>int64 count = 2;</code>
      */
     public long getCount() {
       return count_;
     }
     /**
-     * <code>optional int64 count = 2;</code>
+     * <code>int64 count = 2;</code>
      */
     public Builder setCount(long value) {
       
@@ -527,7 +527,7 @@ public  final class InstanceGroup extends
       return this;
     }
     /**
-     * <code>optional int64 count = 2;</code>
+     * <code>int64 count = 2;</code>
      */
     public Builder clearCount() {
       
@@ -538,13 +538,13 @@ public  final class InstanceGroup extends
 
     private boolean useSpotInstances_ ;
     /**
-     * <code>optional bool use_spot_instances = 3;</code>
+     * <code>bool use_spot_instances = 3;</code>
      */
     public boolean getUseSpotInstances() {
       return useSpotInstances_;
     }
     /**
-     * <code>optional bool use_spot_instances = 3;</code>
+     * <code>bool use_spot_instances = 3;</code>
      */
     public Builder setUseSpotInstances(boolean value) {
       
@@ -553,7 +553,7 @@ public  final class InstanceGroup extends
       return this;
     }
     /**
-     * <code>optional bool use_spot_instances = 3;</code>
+     * <code>bool use_spot_instances = 3;</code>
      */
     public Builder clearUseSpotInstances() {
       

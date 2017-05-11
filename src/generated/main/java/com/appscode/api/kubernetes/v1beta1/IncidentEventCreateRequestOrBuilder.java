@@ -12,7 +12,7 @@ public interface IncidentEventCreateRequestOrBuilder extends
    * Incident PHID
    * </pre>
    *
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
@@ -20,23 +20,23 @@ public interface IncidentEventCreateRequestOrBuilder extends
    * Incident PHID
    * </pre>
    *
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string comment = 2;</code>
+   * <code>string comment = 2;</code>
    */
   java.lang.String getComment();
   /**
-   * <code>optional string comment = 2;</code>
+   * <code>string comment = 2;</code>
    */
   com.google.protobuf.ByteString
       getCommentBytes();
 
   /**
-   * <code>optional bool acknowledge = 3;</code>
+   * <code>bool acknowledge = 3;</code>
    */
   boolean getAcknowledge();
 }

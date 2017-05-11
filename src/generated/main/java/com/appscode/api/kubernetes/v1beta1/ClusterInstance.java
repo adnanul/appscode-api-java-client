@@ -110,7 +110,7 @@ public  final class ClusterInstance extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -125,7 +125,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -144,7 +144,7 @@ public  final class ClusterInstance extends
   public static final int EXTERNAL_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object externalId_;
   /**
-   * <code>optional string external_id = 2;</code>
+   * <code>string external_id = 2;</code>
    */
   public java.lang.String getExternalId() {
     java.lang.Object ref = externalId_;
@@ -159,7 +159,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string external_id = 2;</code>
+   * <code>string external_id = 2;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIdBytes() {
@@ -178,7 +178,7 @@ public  final class ClusterInstance extends
   public static final int NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -193,7 +193,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -212,7 +212,7 @@ public  final class ClusterInstance extends
   public static final int EXTERNAL_IP_FIELD_NUMBER = 4;
   private volatile java.lang.Object externalIp_;
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   public java.lang.String getExternalIp() {
     java.lang.Object ref = externalIp_;
@@ -227,7 +227,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIpBytes() {
@@ -246,7 +246,7 @@ public  final class ClusterInstance extends
   public static final int INTERNAL_IP_FIELD_NUMBER = 5;
   private volatile java.lang.Object internalIp_;
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   public java.lang.String getInternalIp() {
     java.lang.Object ref = internalIp_;
@@ -261,7 +261,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   public com.google.protobuf.ByteString
       getInternalIpBytes() {
@@ -280,7 +280,7 @@ public  final class ClusterInstance extends
   public static final int SKU_FIELD_NUMBER = 6;
   private volatile java.lang.Object sku_;
   /**
-   * <code>optional string sku = 6;</code>
+   * <code>string sku = 6;</code>
    */
   public java.lang.String getSku() {
     java.lang.Object ref = sku_;
@@ -295,7 +295,7 @@ public  final class ClusterInstance extends
     }
   }
   /**
-   * <code>optional string sku = 6;</code>
+   * <code>string sku = 6;</code>
    */
   public com.google.protobuf.ByteString
       getSkuBytes() {
@@ -403,7 +403,7 @@ public  final class ClusterInstance extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + EXTERNAL_ID_FIELD_NUMBER;
@@ -667,7 +667,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -682,7 +682,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -698,7 +698,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -711,7 +711,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -720,7 +720,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -736,7 +736,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object externalId_ = "";
     /**
-     * <code>optional string external_id = 2;</code>
+     * <code>string external_id = 2;</code>
      */
     public java.lang.String getExternalId() {
       java.lang.Object ref = externalId_;
@@ -751,7 +751,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string external_id = 2;</code>
+     * <code>string external_id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIdBytes() {
@@ -767,7 +767,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string external_id = 2;</code>
+     * <code>string external_id = 2;</code>
      */
     public Builder setExternalId(
         java.lang.String value) {
@@ -780,7 +780,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string external_id = 2;</code>
+     * <code>string external_id = 2;</code>
      */
     public Builder clearExternalId() {
       
@@ -789,7 +789,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string external_id = 2;</code>
+     * <code>string external_id = 2;</code>
      */
     public Builder setExternalIdBytes(
         com.google.protobuf.ByteString value) {
@@ -805,7 +805,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -820,7 +820,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -836,7 +836,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -849,7 +849,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder clearName() {
       
@@ -858,7 +858,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -874,7 +874,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object externalIp_ = "";
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public java.lang.String getExternalIp() {
       java.lang.Object ref = externalIp_;
@@ -889,7 +889,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIpBytes() {
@@ -905,7 +905,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder setExternalIp(
         java.lang.String value) {
@@ -918,7 +918,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder clearExternalIp() {
       
@@ -927,7 +927,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder setExternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -943,7 +943,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object internalIp_ = "";
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public java.lang.String getInternalIp() {
       java.lang.Object ref = internalIp_;
@@ -958,7 +958,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public com.google.protobuf.ByteString
         getInternalIpBytes() {
@@ -974,7 +974,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder setInternalIp(
         java.lang.String value) {
@@ -987,7 +987,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder clearInternalIp() {
       
@@ -996,7 +996,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder setInternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -1012,7 +1012,7 @@ public  final class ClusterInstance extends
 
     private java.lang.Object sku_ = "";
     /**
-     * <code>optional string sku = 6;</code>
+     * <code>string sku = 6;</code>
      */
     public java.lang.String getSku() {
       java.lang.Object ref = sku_;
@@ -1027,7 +1027,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string sku = 6;</code>
+     * <code>string sku = 6;</code>
      */
     public com.google.protobuf.ByteString
         getSkuBytes() {
@@ -1043,7 +1043,7 @@ public  final class ClusterInstance extends
       }
     }
     /**
-     * <code>optional string sku = 6;</code>
+     * <code>string sku = 6;</code>
      */
     public Builder setSku(
         java.lang.String value) {
@@ -1056,7 +1056,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string sku = 6;</code>
+     * <code>string sku = 6;</code>
      */
     public Builder clearSku() {
       
@@ -1065,7 +1065,7 @@ public  final class ClusterInstance extends
       return this;
     }
     /**
-     * <code>optional string sku = 6;</code>
+     * <code>string sku = 6;</code>
      */
     public Builder setSkuBytes(
         com.google.protobuf.ByteString value) {

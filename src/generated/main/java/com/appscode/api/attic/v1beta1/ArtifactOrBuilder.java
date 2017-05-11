@@ -8,27 +8,27 @@ public interface ArtifactOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional int64 modified_at = 3;</code>
+   * <code>int64 modified_at = 3;</code>
    */
   long getModifiedAt();
 }

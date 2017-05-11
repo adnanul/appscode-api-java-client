@@ -8,21 +8,21 @@ public interface ClusterInstanceByIPRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string external_ip = 2;</code>
+   * <code>string external_ip = 2;</code>
    */
   java.lang.String getExternalIp();
   /**
-   * <code>optional string external_ip = 2;</code>
+   * <code>string external_ip = 2;</code>
    */
   com.google.protobuf.ByteString
       getExternalIpBytes();

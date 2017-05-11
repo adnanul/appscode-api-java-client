@@ -8,41 +8,28 @@ public interface StatusResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   boolean hasVersion();
   /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   com.appscode.api.version.Version getVersion();
   /**
-   * <code>optional .appscode.version.Version version = 2;</code>
+   * <code>.appscode.version.Version version = 1;</code>
    */
   com.appscode.api.version.VersionOrBuilder getVersionOrBuilder();
 
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   boolean hasMetadata();
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   com.appscode.api.health.Metadata getMetadata();
   /**
-   * <code>optional .appscode.health.Metadata metadata = 3;</code>
+   * <code>.appscode.health.Metadata metadata = 2;</code>
    */
   com.appscode.api.health.MetadataOrBuilder getMetadataOrBuilder();
 }

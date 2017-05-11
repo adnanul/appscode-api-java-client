@@ -8,21 +8,21 @@ public interface CredentialUpdateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   java.lang.String getProvider();
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 2;</code>
    */
   com.google.protobuf.ByteString
       getProviderBytes();

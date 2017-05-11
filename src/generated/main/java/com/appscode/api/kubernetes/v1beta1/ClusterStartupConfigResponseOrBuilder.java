@@ -8,34 +8,21 @@ public interface ClusterStartupConfigResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional string configuration = 2;</code>
+   * <code>string configuration = 1;</code>
    */
   java.lang.String getConfiguration();
   /**
-   * <code>optional string configuration = 2;</code>
+   * <code>string configuration = 1;</code>
    */
   com.google.protobuf.ByteString
       getConfigurationBytes();
 
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 2;</code>
    */
   java.lang.String getSku();
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 2;</code>
    */
   com.google.protobuf.ByteString
       getSkuBytes();

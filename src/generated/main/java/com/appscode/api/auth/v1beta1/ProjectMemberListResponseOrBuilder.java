@@ -8,28 +8,15 @@ public interface ProjectMemberListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  boolean hasStatus();
+  boolean hasProject();
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  com.appscode.api.dtypes.Status getStatus();
+  com.appscode.api.auth.v1beta1.Project getProject();
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>.appscode.auth.v1beta1.Project project = 1;</code>
    */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  boolean hasProjet();
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  com.appscode.api.auth.v1beta1.Project getProjet();
-  /**
-   * <code>optional .appscode.auth.v1beta1.Project projet = 2;</code>
-   */
-  com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetOrBuilder();
+  com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectOrBuilder();
 }

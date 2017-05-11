@@ -8,59 +8,59 @@ public interface NodeOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Node.Spec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Node.SpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional bool is_master = 3;</code>
+   * <code>bool is_master = 3;</code>
    */
   boolean getIsMaster();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Node.NodeStatus getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   boolean hasMetrics();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Metrics getMetrics();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder();
 }

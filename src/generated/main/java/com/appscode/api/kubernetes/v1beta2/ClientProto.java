@@ -1098,882 +1098,877 @@ public final class ClientProto {
       "r\030\005 \001(\01329.appscode.kubernetes.v1beta2.Li" +
       "stResourceRequest.Ancestor\022\026\n\016label_sele" +
       "ctor\030\007 \001(\t\032&\n\010Ancestor\022\014\n\004type\030\001 \001(\t\022\014\n\004",
-      "name\030\002 \001(\t\"\201\001\n\024ListResourceResponse\022\'\n\006s" +
-      "tatus\030\001 \001(\0132\027.appscode.dtypes.Status\022@\n\t" +
-      "resources\030\002 \001(\0132-.appscode.kubernetes.v1" +
-      "beta2.KubeResourceList\"\177\n\027DescribeResour" +
-      "ceRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t" +
-      "\022\021\n\tnamespace\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\022\013\n\003raw" +
-      "\030\005 \001(\t\022\027\n\017include_metrics\030\006 \001(\010\"\200\001\n\030Desc" +
-      "ribeResourceResponse\022\'\n\006status\030\001 \001(\0132\027.a" +
-      "ppscode.dtypes.Status\022;\n\010resource\030\002 \001(\0132" +
-      ").appscode.kubernetes.v1beta2.KubeResour",
-      "ce\"\206\001\n\025UpdateResourceRequest\022\017\n\007cluster\030" +
-      "\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\014" +
-      "\n\004name\030\004 \001(\t\022-\n\003raw\030\005 \001(\0132 .appscode.kub" +
-      "ernetes.v1beta2.Raw\"\314\002\n\024ConfigMapEditReq" +
-      "uest\022\017\n\007cluster\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t" +
-      "\022\014\n\004name\030\003 \001(\t\022G\n\003add\030\004 \003(\0132:.appscode.k" +
-      "ubernetes.v1beta2.ConfigMapEditRequest.A" +
-      "ddEntry\022M\n\006update\030\005 \003(\0132=.appscode.kuber" +
-      "netes.v1beta2.ConfigMapEditRequest.Updat" +
-      "eEntry\022\017\n\007deleted\030\006 \003(\t\032*\n\010AddEntry\022\013\n\003k",
-      "ey\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013UpdateEnt" +
-      "ry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\303\002\n\021S" +
-      "ecretEditRequest\022\017\n\007cluster\030\001 \001(\t\022\021\n\tnam" +
-      "espace\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022D\n\003add\030\004 \003(\0132" +
-      "7.appscode.kubernetes.v1beta2.SecretEdit" +
-      "Request.AddEntry\022J\n\006update\030\005 \003(\0132:.appsc" +
-      "ode.kubernetes.v1beta2.SecretEditRequest" +
-      ".UpdateEntry\022\017\n\007deleted\030\006 \003(\t\032*\n\010AddEntr" +
-      "y\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013Upd" +
-      "ateEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001",
-      "\"\214\001\n\023CopyResourceRequest\0227\n\006source\030\001 \001(\013" +
-      "2\'.appscode.kubernetes.v1beta2.KubeObjec" +
-      "t\022<\n\013destination\030\002 \001(\0132\'.appscode.kubern" +
-      "etes.v1beta2.KubeObject\"s\n\025CreateResourc" +
-      "eRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022" +
-      "\014\n\004name\030\004 \001(\t\022-\n\003raw\030\005 \001(\0132 .appscode.ku" +
-      "bernetes.v1beta2.Raw\"W\n\025DeleteResourceRe" +
-      "quest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021\n\t" +
-      "namespace\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\"\345 \n\020KubeRe" +
-      "sourceList\022\014\n\004type\030\001 \001(\t\022O\n\013config_maps\030",
-      "\002 \001(\01328.appscode.kubernetes.v1beta2.Kube" +
-      "ResourceList.ConfigMapsH\000\022O\n\013daemon_sets" +
-      "\030\003 \001(\01328.appscode.kubernetes.v1beta2.Kub" +
-      "eResourceList.DaemonSetsH\000\022P\n\013deployment" +
-      "s\030\004 \001(\01329.appscode.kubernetes.v1beta2.Ku" +
-      "beResourceList.DeploymentsH\000\022B\n\004jobs\030\005 \001" +
-      "(\01322.appscode.kubernetes.v1beta2.KubeRes" +
-      "ourceList.JobsH\000\022N\n\nnamespaces\030\006 \001(\01328.a" +
-      "ppscode.kubernetes.v1beta2.KubeResourceL" +
-      "ist.NamespacesH\000\022D\n\005nodes\030\007 \001(\01323.appsco",
-      "de.kubernetes.v1beta2.KubeResourceList.N" +
-      "odesH\000\022S\n\rstateful_sets\030\010 \001(\0132:.appscode" +
-      ".kubernetes.v1beta2.KubeResourceList.Sta" +
-      "tefulSetsH\000\022B\n\004pods\030\t \001(\01322.appscode.kub" +
-      "ernetes.v1beta2.KubeResourceList.PodsH\000\022" +
-      "Q\n\014replica_sets\030\n \001(\01329.appscode.kuberne" +
-      "tes.v1beta2.KubeResourceList.ReplicaSets" +
-      "H\000\022J\n\010services\030\013 \001(\01326.appscode.kubernet" +
-      "es.v1beta2.KubeResourceList.ServicesH\000\022H" +
-      "\n\007secrets\030\014 \001(\01325.appscode.kubernetes.v1",
-      "beta2.KubeResourceList.SecretsH\000\022g\n\027repl" +
-      "ication_controllers\030\r \001(\0132D.appscode.kub" +
-      "ernetes.v1beta2.KubeResourceList.Replica" +
-      "tionControllersH\000\022W\n\017storage_classes\030\016 \001" +
-      "(\0132<.appscode.kubernetes.v1beta2.KubeRes" +
-      "ourceList.StorageClassesH\000\022]\n\022persistent" +
-      "_volumes\030\017 \001(\0132?.appscode.kubernetes.v1b" +
-      "eta2.KubeResourceList.PersistentVolumesH" +
-      "\000\022h\n\030persistent_volume_claims\030\020 \001(\0132D.ap" +
-      "pscode.kubernetes.v1beta2.KubeResourceLi",
-      "st.PersistentVolumeClaimsH\000\022F\n\006alerts\030\021 " +
-      "\001(\01324.appscode.kubernetes.v1beta2.KubeRe" +
-      "sourceList.AlertsH\000\022D\n\005roles\030\022 \001(\01323.app" +
-      "scode.kubernetes.v1beta2.KubeResourceLis" +
-      "t.RolesH\000\022S\n\rcluster_roles\030\023 \001(\0132:.appsc" +
+      "name\030\002 \001(\t\"X\n\024ListResourceResponse\022@\n\tre" +
+      "sources\030\001 \001(\0132-.appscode.kubernetes.v1be" +
+      "ta2.KubeResourceList\"\177\n\027DescribeResource" +
+      "Request\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021" +
+      "\n\tnamespace\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\022\013\n\003raw\030\005" +
+      " \001(\t\022\027\n\017include_metrics\030\006 \001(\010\"W\n\030Describ" +
+      "eResourceResponse\022;\n\010resource\030\001 \001(\0132).ap" +
+      "pscode.kubernetes.v1beta2.KubeResource\"\206" +
+      "\001\n\025UpdateResourceRequest\022\017\n\007cluster\030\001 \001(" +
+      "\t\022\014\n\004type\030\002 \001(\t\022\021\n\tnamespace\030\003 \001(\t\022\014\n\004na",
+      "me\030\004 \001(\t\022-\n\003raw\030\005 \001(\0132 .appscode.kuberne" +
+      "tes.v1beta2.Raw\"\314\002\n\024ConfigMapEditRequest" +
+      "\022\017\n\007cluster\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\014\n\004" +
+      "name\030\003 \001(\t\022G\n\003add\030\004 \003(\0132:.appscode.kuber" +
+      "netes.v1beta2.ConfigMapEditRequest.AddEn" +
+      "try\022M\n\006update\030\005 \003(\0132=.appscode.kubernete" +
+      "s.v1beta2.ConfigMapEditRequest.UpdateEnt" +
+      "ry\022\017\n\007deleted\030\006 \003(\t\032*\n\010AddEntry\022\013\n\003key\030\001" +
+      " \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013UpdateEntry\022\013" +
+      "\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\303\002\n\021Secre",
+      "tEditRequest\022\017\n\007cluster\030\001 \001(\t\022\021\n\tnamespa" +
+      "ce\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022D\n\003add\030\004 \003(\01327.ap" +
+      "pscode.kubernetes.v1beta2.SecretEditRequ" +
+      "est.AddEntry\022J\n\006update\030\005 \003(\0132:.appscode." +
+      "kubernetes.v1beta2.SecretEditRequest.Upd" +
+      "ateEntry\022\017\n\007deleted\030\006 \003(\t\032*\n\010AddEntry\022\013\n" +
+      "\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032-\n\013UpdateE" +
+      "ntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\214\001\n" +
+      "\023CopyResourceRequest\0227\n\006source\030\001 \001(\0132\'.a" +
+      "ppscode.kubernetes.v1beta2.KubeObject\022<\n",
+      "\013destination\030\002 \001(\0132\'.appscode.kubernetes" +
+      ".v1beta2.KubeObject\"s\n\025CreateResourceReq" +
+      "uest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\014\n\004n" +
+      "ame\030\004 \001(\t\022-\n\003raw\030\005 \001(\0132 .appscode.kubern" +
+      "etes.v1beta2.Raw\"W\n\025DeleteResourceReques" +
+      "t\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021\n\tname" +
+      "space\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\"\345 \n\020KubeResour" +
+      "ceList\022\014\n\004type\030\001 \001(\t\022O\n\013config_maps\030\002 \001(" +
+      "\01328.appscode.kubernetes.v1beta2.KubeReso" +
+      "urceList.ConfigMapsH\000\022O\n\013daemon_sets\030\003 \001",
+      "(\01328.appscode.kubernetes.v1beta2.KubeRes" +
+      "ourceList.DaemonSetsH\000\022P\n\013deployments\030\004 " +
+      "\001(\01329.appscode.kubernetes.v1beta2.KubeRe" +
+      "sourceList.DeploymentsH\000\022B\n\004jobs\030\005 \001(\01322" +
+      ".appscode.kubernetes.v1beta2.KubeResourc" +
+      "eList.JobsH\000\022N\n\nnamespaces\030\006 \001(\01328.appsc" +
       "ode.kubernetes.v1beta2.KubeResourceList." +
-      "ClusterRolesH\000\022S\n\rrole_bindings\030\024 \001(\0132:." +
-      "appscode.kubernetes.v1beta2.KubeResource" +
-      "List.RoleBindingsH\000\022b\n\025cluster_role_bind" +
-      "ings\030\025 \001(\0132A.appscode.kubernetes.v1beta2",
-      ".KubeResourceList.ClusterRoleBindingsH\000\022" +
-      "R\n\014certificates\030\026 \001(\0132:.appscode.kuberne" +
-      "tes.v1beta2.KubeResourceList.Certificate" +
-      "sH\000\022K\n\tcron_jobs\030\027 \001(\01326.appscode.kubern" +
-      "etes.v1beta2.KubeResourceList.CronJobsH\000" +
-      "\022H\n\007backups\030\030 \001(\01325.appscode.kubernetes." +
-      "v1beta2.KubeResourceList.BackupsH\000\022N\n\npo" +
-      "stgreses\030\031 \001(\01328.appscode.kubernetes.v1b" +
-      "eta2.KubeResourceList.PostgresesH\000\022J\n\010el" +
-      "astics\030\032 \001(\01326.appscode.kubernetes.v1bet",
-      "a2.KubeResourceList.ElasticsH\000\022[\n\021delete" +
-      "d_databases\030\033 \001(\0132>.appscode.kubernetes." +
-      "v1beta2.KubeResourceList.DeletedDatabase" +
-      "sH\000\022]\n\022database_snapshots\030\034 \001(\0132?.appsco" +
-      "de.kubernetes.v1beta2.KubeResourceList.D" +
-      "atabaseSnapshotsH\000\032C\n\nConfigMaps\0225\n\005item" +
-      "s\030\001 \003(\0132&.appscode.kubernetes.v1beta2.Co" +
-      "nfigMap\032C\n\nDaemonSets\0225\n\005items\030\001 \003(\0132&.a" +
-      "ppscode.kubernetes.v1beta2.DaemonSet\032E\n\013" +
-      "Deployments\0226\n\005items\030\001 \003(\0132\'.appscode.ku",
-      "bernetes.v1beta2.Deployment\0327\n\004Jobs\022/\n\005i" +
-      "tems\030\001 \003(\0132 .appscode.kubernetes.v1beta2" +
-      ".Job\032C\n\nNamespaces\0225\n\005items\030\001 \003(\0132&.apps" +
-      "code.kubernetes.v1beta2.Namespace\0329\n\005Nod" +
-      "es\0220\n\005items\030\001 \003(\0132!.appscode.kubernetes." +
-      "v1beta2.Node\032G\n\014StatefulSets\0227\n\005items\030\001 " +
-      "\003(\0132(.appscode.kubernetes.v1beta2.Statef" +
-      "ulSet\0327\n\004Pods\022/\n\005items\030\001 \003(\0132 .appscode." +
-      "kubernetes.v1beta2.Pod\032E\n\013ReplicaSets\0226\n" +
-      "\005items\030\001 \003(\0132\'.appscode.kubernetes.v1bet",
-      "a2.ReplicaSet\032?\n\010Services\0223\n\005items\030\001 \003(\013" +
-      "2$.appscode.kubernetes.v1beta2.Service\032=" +
-      "\n\007Secrets\0222\n\005items\030\001 \003(\0132#.appscode.kube" +
-      "rnetes.v1beta2.Secret\032[\n\026ReplicationCont" +
-      "rollers\022A\n\005items\030\001 \003(\01322.appscode.kubern" +
-      "etes.v1beta2.ReplicationController\032J\n\016St" +
-      "orageClasses\0228\n\005items\030\001 \003(\0132).appscode.k" +
-      "ubernetes.v1beta2.StorageClass\032Q\n\021Persis" +
-      "tentVolumes\022<\n\005items\030\001 \003(\0132-.appscode.ku" +
-      "bernetes.v1beta2.PersistentVolume\032[\n\026Per",
-      "sistentVolumeClaims\022A\n\005items\030\001 \003(\01322.app" +
-      "scode.kubernetes.v1beta2.PersistentVolum" +
-      "eClaim\032;\n\006Alerts\0221\n\005items\030\001 \003(\0132\".appsco" +
-      "de.kubernetes.v1beta2.Alert\0329\n\005Roles\0220\n\005" +
-      "items\030\001 \003(\0132!.appscode.kubernetes.v1beta" +
-      "2.Role\032G\n\014ClusterRoles\0227\n\005items\030\001 \003(\0132(." +
-      "appscode.kubernetes.v1beta2.ClusterRole\032" +
-      "G\n\014RoleBindings\0227\n\005items\030\001 \003(\0132(.appscod" +
-      "e.kubernetes.v1beta2.RoleBinding\032U\n\023Clus" +
-      "terRoleBindings\022>\n\005items\030\001 \003(\0132/.appscod",
-      "e.kubernetes.v1beta2.ClusterRoleBinding\032" +
-      "G\n\014Certificates\0227\n\005items\030\001 \003(\0132(.appscod" +
-      "e.kubernetes.v1beta2.Certificate\032?\n\010Cron" +
-      "Jobs\0223\n\005items\030\001 \003(\0132$.appscode.kubernete" +
-      "s.v1beta2.CronJob\032B\n\nPostgreses\0224\n\005items" +
-      "\030\001 \003(\0132%.appscode.kubernetes.v1beta2.Pos" +
-      "tgres\032?\n\010Elastics\0223\n\005items\030\001 \003(\0132$.appsc" +
-      "ode.kubernetes.v1beta2.Elastic\032O\n\020Delete" +
-      "dDatabases\022;\n\005items\030\001 \003(\0132,.appscode.kub" +
-      "ernetes.v1beta2.DeletedDatabase\032Q\n\021Datab",
-      "aseSnapshots\022<\n\005items\030\002 \003(\0132-.appscode.k" +
-      "ubernetes.v1beta2.DatabaseSnapshot\032=\n\007Ba" +
-      "ckups\0222\n\005items\030\001 \003(\0132#.appscode.kubernet" +
-      "es.v1beta2.BackupB\n\n\010resource\"\300\016\n\014KubeRe" +
-      "source\022\014\n\004type\030\001 \001(\t\022-\n\003raw\030\002 \001(\0132 .apps" +
-      "code.kubernetes.v1beta2.Raw\0222\n\006events\030\003 " +
-      "\003(\0132\".appscode.kubernetes.v1beta2.Event\022" +
-      "<\n\nconfig_map\030\004 \001(\0132&.appscode.kubernete" +
-      "s.v1beta2.ConfigMapH\000\022<\n\ndaemon_set\030\005 \001(" +
-      "\0132&.appscode.kubernetes.v1beta2.DaemonSe",
-      "tH\000\022=\n\ndeployment\030\006 \001(\0132\'.appscode.kuber" +
-      "netes.v1beta2.DeploymentH\000\022/\n\003job\030\007 \001(\0132" +
-      " .appscode.kubernetes.v1beta2.JobH\000\022;\n\tn" +
-      "amespace\030\010 \001(\0132&.appscode.kubernetes.v1b" +
-      "eta2.NamespaceH\000\0221\n\004node\030\t \001(\0132!.appscod" +
-      "e.kubernetes.v1beta2.NodeH\000\022@\n\014stateful_" +
-      "set\030\n \001(\0132(.appscode.kubernetes.v1beta2." +
-      "StatefulSetH\000\022/\n\003pod\030\013 \001(\0132 .appscode.ku" +
-      "bernetes.v1beta2.PodH\000\022>\n\013replica_set\030\014 " +
-      "\001(\0132\'.appscode.kubernetes.v1beta2.Replic",
-      "aSetH\000\0227\n\007service\030\r \001(\0132$.appscode.kuber" +
-      "netes.v1beta2.ServiceH\000\0225\n\006secret\030\016 \001(\0132" +
-      "#.appscode.kubernetes.v1beta2.SecretH\000\022T" +
-      "\n\026replication_controller\030\017 \001(\01322.appscod" +
-      "e.kubernetes.v1beta2.ReplicationControll" +
-      "erH\000\022B\n\rstorage_class\030\020 \001(\0132).appscode.k" +
-      "ubernetes.v1beta2.StorageClassH\000\022J\n\021pers" +
-      "istent_volume\030\021 \001(\0132-.appscode.kubernete" +
-      "s.v1beta2.PersistentVolumeH\000\022U\n\027persiste" +
-      "nt_volume_claim\030\022 \001(\01322.appscode.kuberne",
-      "tes.v1beta2.PersistentVolumeClaimH\000\0223\n\005a" +
-      "lert\030\023 \001(\0132\".appscode.kubernetes.v1beta2" +
-      ".AlertH\000\0221\n\004role\030\024 \001(\0132!.appscode.kubern" +
-      "etes.v1beta2.RoleH\000\022@\n\014cluster_role\030\025 \001(" +
-      "\0132(.appscode.kubernetes.v1beta2.ClusterR" +
-      "oleH\000\022@\n\014role_binding\030\026 \001(\0132(.appscode.k" +
-      "ubernetes.v1beta2.RoleBindingH\000\022O\n\024clust" +
-      "er_role_binding\030\027 \001(\0132/.appscode.kuberne" +
-      "tes.v1beta2.ClusterRoleBindingH\000\022?\n\013cert" +
-      "ificate\030\030 \001(\0132(.appscode.kubernetes.v1be",
-      "ta2.CertificateH\000\0228\n\010cron_job\030\031 \001(\0132$.ap" +
-      "pscode.kubernetes.v1beta2.CronJobH\000\0225\n\006b" +
-      "ackup\030\032 \001(\0132#.appscode.kubernetes.v1beta" +
-      "2.BackupH\000\0229\n\010postgres\030\033 \001(\0132%.appscode." +
-      "kubernetes.v1beta2.PostgresH\000\0227\n\007elastic" +
-      "\030\034 \001(\0132$.appscode.kubernetes.v1beta2.Ela" +
-      "sticH\000\022H\n\020deleted_database\030\035 \001(\0132,.appsc" +
-      "ode.kubernetes.v1beta2.DeletedDatabaseH\000" +
-      "\022J\n\021database_snapshot\030\036 \001(\0132-.appscode.k" +
-      "ubernetes.v1beta2.DatabaseSnapshotH\000B\n\n\010",
-      "resource\"\375\002\n\004Meta\022\014\n\004name\030\001 \001(\t\022\021\n\tnames" +
-      "pace\030\002 \001(\t\022\022\n\nself_links\030\003 \001(\t\022\030\n\020resour" +
-      "ce_version\030\004 \001(\t\022\032\n\022creation_timestamp\030\005" +
-      " \001(\003\022\022\n\ngeneration\030\006 \001(\003\022=\n\006labels\030\007 \003(\013" +
-      "2-.appscode.kubernetes.v1beta2.Meta.Labe" +
-      "lsEntry\022G\n\013annotations\030\010 \003(\01322.appscode." +
-      "kubernetes.v1beta2.Meta.AnnotationsEntry" +
-      "\022\013\n\003uid\030\t \001(\t\032-\n\013LabelsEntry\022\013\n\003key\030\001 \001(" +
-      "\t\022\r\n\005value\030\002 \001(\t:\0028\001\0322\n\020AnnotationsEntry" +
-      "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"L\n\nKube",
-      "Object\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021\n" +
-      "\tnamespace\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\"M\n\013Icinga" +
-      "State\022\n\n\002OK\030\001 \001(\005\022\017\n\007Warning\030\002 \001(\005\022\020\n\010Cr" +
-      "itical\030\003 \001(\005\022\017\n\007Unknown\030\004 \001(\005\"\341\005\n\007PodSpe" +
-      "c\022<\n\007volumes\030\001 \003(\0132+.appscode.kubernetes" +
-      ".v1beta2.PodSpec.Volume\022B\n\ncontainers\030\002 " +
-      "\003(\0132..appscode.kubernetes.v1beta2.PodSpe" +
-      "c.Container\022O\n\016node_selectors\030\003 \003(\01327.ap" +
-      "pscode.kubernetes.v1beta2.PodSpec.NodeSe" +
-      "lectorsEntry\022\034\n\024service_account_name\030\004 \001",
-      "(\t\022\021\n\tnode_name\030\005 \001(\t\022\032\n\022image_pull_secr" +
-      "ets\030\006 \003(\t\0324\n\022NodeSelectorsEntry\022\013\n\003key\030\001" +
-      " \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032\246\002\n\tContainer\022\014\n" +
-      "\004name\030\001 \001(\t\022\r\n\005image\030\002 \001(\t\022\020\n\010commands\030\003" +
-      " \003(\t\022Q\n\rvolume_mounts\030\004 \003(\0132:.appscode.k" +
-      "ubernetes.v1beta2.PodSpec.Container.Volu" +
-      "meMount\022\014\n\004args\030\005 \003(\t\022\023\n\013working_dir\030\006 \001" +
-      "(\t\0220\n\003env\030\007 \003(\0132#.appscode.kubernetes.v1" +
-      "beta2.EnvVar\032B\n\013VolumeMount\022\014\n\004name\030\001 \001(" +
-      "\t\022\021\n\tread_only\030\002 \001(\010\022\022\n\nmount_path\030\003 \001(\t",
-      "\032W\n\006Volume\022\014\n\004name\030\001 \001(\t\022?\n\014volumeSource" +
-      "\030\002 \001(\0132).appscode.kubernetes.v1beta2.Vol" +
-      "umeSource\"#\n\003Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data" +
-      "\030\002 \001(\t\"\251\001\n\tConfigMap\022/\n\004meta\030\001 \001(\0132!.app" +
-      "scode.kubernetes.v1beta2.Meta\022>\n\004data\030\002 " +
-      "\003(\01320.appscode.kubernetes.v1beta2.Config" +
-      "Map.DataEntry\032+\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022" +
-      "\r\n\005value\030\002 \001(\t:\0028\001\"\337\002\n\003Job\022/\n\004meta\030\001 \001(\013" +
-      "2!.appscode.kubernetes.v1beta2.Meta\022\013\n\003a" +
-      "pp\030\002 \001(\t\0222\n\004spec\030\003 \001(\0132$.appscode.kubern",
-      "etes.v1beta2.JobSpec\0227\n\006status\030\004 \001(\0132\'.a" +
-      "ppscode.kubernetes.v1beta2.Job.Status\032\254\001" +
-      "\n\006Status\022\022\n\nstart_time\030\001 \001(\003\022\027\n\017completi" +
-      "on_time\030\002 \001(\003\022\016\n\006active\030\003 \001(\005\022\021\n\tsucceed" +
-      "ed\030\004 \001(\005\022\016\n\006failed\030\005 \001(\005\022B\n\nconditions\030\006" +
-      " \003(\0132..appscode.kubernetes.v1beta2.Resou" +
-      "rceCondition\"\214\001\n\007JobSpec\022\023\n\013parallelism\030" +
-      "\001 \001(\005\022\023\n\013completions\030\002 \001(\005\0226\n\010template\030\003" +
-      " \001(\0132$.appscode.kubernetes.v1beta2.PodSp" +
-      "ec\022\037\n\027active_deadline_seconds\030\004 \001(\003\"\375\001\n\t",
-      "Namespace\022/\n\004meta\030\001 \001(\0132!.appscode.kuber" +
-      "netes.v1beta2.Meta\022=\n\006status\030\002 \001(\0132-.app" +
-      "scode.kubernetes.v1beta2.Namespace.Statu" +
-      "s\022B\n\004spec\030\003 \001(\01324.appscode.kubernetes.v1" +
-      "beta2.Namespace.NamespaceSpec\032#\n\rNamespa" +
-      "ceSpec\022\022\n\nfinalizers\030\001 \003(\t\032\027\n\006Status\022\r\n\005" +
-      "phase\030\001 \001(\t\"\371\n\n\004Node\022/\n\004meta\030\001 \001(\0132!.app" +
-      "scode.kubernetes.v1beta2.Meta\0224\n\004spec\030\002 " +
-      "\001(\0132&.appscode.kubernetes.v1beta2.Node.S" +
-      "pec\022\021\n\tis_master\030\003 \001(\010\022<\n\006status\030\004 \001(\0132,",
-      ".appscode.kubernetes.v1beta2.Node.NodeSt" +
-      "atus\0225\n\007metrics\030\005 \001(\0132$.appscode.kuberne" +
-      "tes.v1beta2.Metrics\032X\n\004Spec\022\023\n\013external_" +
-      "id\030\001 \001(\t\022\023\n\013provider_id\030\002 \001(\t\022\025\n\runsched" +
-      "ulable\030\003 \001(\010\022\017\n\007podCIDR\030\004 \001(\t\032\247\010\n\nNodeSt" +
-      "atus\022G\n\010capacity\030\001 \001(\01325.appscode.kubern" +
-      "etes.v1beta2.Node.NodeStatus.Capacity\022\r\n" +
-      "\005phase\030\002 \001(\t\022N\n\tnode_info\030\003 \001(\0132;.appsco" +
-      "de.kubernetes.v1beta2.Node.NodeStatus.No" +
-      "deSystemInfo\022J\n\013allocatable\030\004 \001(\01325.apps",
-      "code.kubernetes.v1beta2.Node.NodeStatus." +
-      "Capacity\022B\n\nconditions\030\005 \003(\0132..appscode." +
-      "kubernetes.v1beta2.ResourceCondition\022I\n\007" +
-      "address\030\006 \003(\01328.appscode.kubernetes.v1be" +
-      "ta2.Node.NodeStatus.NodeAddress\022K\n\006image" +
-      "s\030\007 \003(\0132;.appscode.kubernetes.v1beta2.No" +
-      "de.NodeStatus.ContainerImage\022\026\n\016volumes_" +
-      "in_use\030\010 \003(\t\022U\n\020volumes_attached\030\t \003(\0132;" +
-      ".appscode.kubernetes.v1beta2.Node.NodeSt" +
-      "atus.AttachedVolume\032F\n\010Capacity\022\013\n\003cpu\030\001",
-      " \001(\003\022\016\n\006memory\030\002 \001(\003\022\014\n\004pods\030\003 \001(\003\022\017\n\007st" +
-      "orage\030\004 \001(\t\032\371\001\n\016NodeSystemInfo\022\021\n\tmachin" +
-      "eID\030\006 \001(\t\022\022\n\nsystemUUID\030\007 \001(\t\022\016\n\006bootID\030" +
-      "\010 \001(\t\022\026\n\016kernel_version\030\001 \001(\t\022\020\n\010os_imag" +
-      "e\030\002 \001(\t\022!\n\031container_runtime_version\030\003 \001" +
-      "(\t\022\027\n\017kubelet_version\030\004 \001(\t\022\032\n\022kube_prox" +
-      "y_version\030\005 \001(\t\022\030\n\020operating_system\030\t \001(" +
-      "\t\022\024\n\014architecture\030\n \001(\t\032,\n\013NodeAddress\022\014" +
-      "\n\004type\030\001 \001(\t\022\017\n\007address\030\002 \001(\t\0323\n\016Contain" +
-      "erImage\022\r\n\005names\030\001 \003(\t\022\022\n\nsize_bytes\030\002 \001",
-      "(\003\0323\n\016AttachedVolume\022\014\n\004name\030\001 \001(\t\022\023\n\013de" +
-      "vice_path\030\002 \001(\t\"\237\003\n\003Pod\022/\n\004meta\030\001 \001(\0132!." +
-      "appscode.kubernetes.v1beta2.Meta\022\013\n\003app\030" +
-      "\002 \001(\t\0222\n\004spec\030\003 \001(\0132$.appscode.kubernete" +
-      "s.v1beta2.PodSpec\022:\n\006status\030\004 \001(\0132*.apps" +
-      "code.kubernetes.v1beta2.Pod.PodStatus\0225\n" +
-      "\007metrics\030\005 \001(\0132$.appscode.kubernetes.v1b" +
-      "eta2.Metrics\032\262\001\n\tPodStatus\022\r\n\005phase\030\001 \001(" +
-      "\t\022\017\n\007message\030\002 \001(\t\022\016\n\006reason\030\003 \001(\t\022\016\n\006ho" +
-      "stIP\030\004 \001(\t\022\r\n\005podIP\030\005 \001(\t\022B\n\nconditions\030",
-      "\006 \003(\0132..appscode.kubernetes.v1beta2.Reso" +
-      "urceCondition\022\022\n\nstart_time\030\007 \001(\003\"\261\005\n\020Pe" +
-      "rsistentVolume\022/\n\004meta\030\001 \001(\0132!.appscode." +
-      "kubernetes.v1beta2.Meta\022P\n\004spec\030\002 \001(\0132B." +
+      "NamespacesH\000\022D\n\005nodes\030\007 \001(\01323.appscode.k" +
+      "ubernetes.v1beta2.KubeResourceList.Nodes" +
+      "H\000\022S\n\rstateful_sets\030\010 \001(\0132:.appscode.kub",
+      "ernetes.v1beta2.KubeResourceList.Statefu" +
+      "lSetsH\000\022B\n\004pods\030\t \001(\01322.appscode.kuberne" +
+      "tes.v1beta2.KubeResourceList.PodsH\000\022Q\n\014r" +
+      "eplica_sets\030\n \001(\01329.appscode.kubernetes." +
+      "v1beta2.KubeResourceList.ReplicaSetsH\000\022J" +
+      "\n\010services\030\013 \001(\01326.appscode.kubernetes.v" +
+      "1beta2.KubeResourceList.ServicesH\000\022H\n\007se" +
+      "crets\030\014 \001(\01325.appscode.kubernetes.v1beta" +
+      "2.KubeResourceList.SecretsH\000\022g\n\027replicat" +
+      "ion_controllers\030\r \001(\0132D.appscode.kuberne",
+      "tes.v1beta2.KubeResourceList.Replication" +
+      "ControllersH\000\022W\n\017storage_classes\030\016 \001(\0132<" +
+      ".appscode.kubernetes.v1beta2.KubeResourc" +
+      "eList.StorageClassesH\000\022]\n\022persistent_vol" +
+      "umes\030\017 \001(\0132?.appscode.kubernetes.v1beta2" +
+      ".KubeResourceList.PersistentVolumesH\000\022h\n" +
+      "\030persistent_volume_claims\030\020 \001(\0132D.appsco" +
+      "de.kubernetes.v1beta2.KubeResourceList.P" +
+      "ersistentVolumeClaimsH\000\022F\n\006alerts\030\021 \001(\0132" +
+      "4.appscode.kubernetes.v1beta2.KubeResour",
+      "ceList.AlertsH\000\022D\n\005roles\030\022 \001(\01323.appscod" +
+      "e.kubernetes.v1beta2.KubeResourceList.Ro" +
+      "lesH\000\022S\n\rcluster_roles\030\023 \001(\0132:.appscode." +
+      "kubernetes.v1beta2.KubeResourceList.Clus" +
+      "terRolesH\000\022S\n\rrole_bindings\030\024 \001(\0132:.apps" +
+      "code.kubernetes.v1beta2.KubeResourceList" +
+      ".RoleBindingsH\000\022b\n\025cluster_role_bindings" +
+      "\030\025 \001(\0132A.appscode.kubernetes.v1beta2.Kub" +
+      "eResourceList.ClusterRoleBindingsH\000\022R\n\014c" +
+      "ertificates\030\026 \001(\0132:.appscode.kubernetes.",
+      "v1beta2.KubeResourceList.CertificatesH\000\022" +
+      "K\n\tcron_jobs\030\027 \001(\01326.appscode.kubernetes" +
+      ".v1beta2.KubeResourceList.CronJobsH\000\022H\n\007" +
+      "backups\030\030 \001(\01325.appscode.kubernetes.v1be" +
+      "ta2.KubeResourceList.BackupsH\000\022N\n\npostgr" +
+      "eses\030\031 \001(\01328.appscode.kubernetes.v1beta2" +
+      ".KubeResourceList.PostgresesH\000\022J\n\010elasti" +
+      "cs\030\032 \001(\01326.appscode.kubernetes.v1beta2.K" +
+      "ubeResourceList.ElasticsH\000\022[\n\021deleted_da" +
+      "tabases\030\033 \001(\0132>.appscode.kubernetes.v1be",
+      "ta2.KubeResourceList.DeletedDatabasesH\000\022" +
+      "]\n\022database_snapshots\030\034 \001(\0132?.appscode.k" +
+      "ubernetes.v1beta2.KubeResourceList.Datab" +
+      "aseSnapshotsH\000\032C\n\nConfigMaps\0225\n\005items\030\001 " +
+      "\003(\0132&.appscode.kubernetes.v1beta2.Config" +
+      "Map\032C\n\nDaemonSets\0225\n\005items\030\001 \003(\0132&.appsc" +
+      "ode.kubernetes.v1beta2.DaemonSet\032E\n\013Depl" +
+      "oyments\0226\n\005items\030\001 \003(\0132\'.appscode.kubern" +
+      "etes.v1beta2.Deployment\0327\n\004Jobs\022/\n\005items" +
+      "\030\001 \003(\0132 .appscode.kubernetes.v1beta2.Job",
+      "\032C\n\nNamespaces\0225\n\005items\030\001 \003(\0132&.appscode" +
+      ".kubernetes.v1beta2.Namespace\0329\n\005Nodes\0220" +
+      "\n\005items\030\001 \003(\0132!.appscode.kubernetes.v1be" +
+      "ta2.Node\032G\n\014StatefulSets\0227\n\005items\030\001 \003(\0132" +
+      "(.appscode.kubernetes.v1beta2.StatefulSe" +
+      "t\0327\n\004Pods\022/\n\005items\030\001 \003(\0132 .appscode.kube" +
+      "rnetes.v1beta2.Pod\032E\n\013ReplicaSets\0226\n\005ite" +
+      "ms\030\001 \003(\0132\'.appscode.kubernetes.v1beta2.R" +
+      "eplicaSet\032?\n\010Services\0223\n\005items\030\001 \003(\0132$.a" +
+      "ppscode.kubernetes.v1beta2.Service\032=\n\007Se",
+      "crets\0222\n\005items\030\001 \003(\0132#.appscode.kubernet" +
+      "es.v1beta2.Secret\032[\n\026ReplicationControll" +
+      "ers\022A\n\005items\030\001 \003(\01322.appscode.kubernetes" +
+      ".v1beta2.ReplicationController\032J\n\016Storag" +
+      "eClasses\0228\n\005items\030\001 \003(\0132).appscode.kuber" +
+      "netes.v1beta2.StorageClass\032Q\n\021Persistent" +
+      "Volumes\022<\n\005items\030\001 \003(\0132-.appscode.kubern" +
+      "etes.v1beta2.PersistentVolume\032[\n\026Persist" +
+      "entVolumeClaims\022A\n\005items\030\001 \003(\01322.appscod" +
+      "e.kubernetes.v1beta2.PersistentVolumeCla",
+      "im\032;\n\006Alerts\0221\n\005items\030\001 \003(\0132\".appscode.k" +
+      "ubernetes.v1beta2.Alert\0329\n\005Roles\0220\n\005item" +
+      "s\030\001 \003(\0132!.appscode.kubernetes.v1beta2.Ro" +
+      "le\032G\n\014ClusterRoles\0227\n\005items\030\001 \003(\0132(.apps" +
+      "code.kubernetes.v1beta2.ClusterRole\032G\n\014R" +
+      "oleBindings\0227\n\005items\030\001 \003(\0132(.appscode.ku" +
+      "bernetes.v1beta2.RoleBinding\032U\n\023ClusterR" +
+      "oleBindings\022>\n\005items\030\001 \003(\0132/.appscode.ku" +
+      "bernetes.v1beta2.ClusterRoleBinding\032G\n\014C" +
+      "ertificates\0227\n\005items\030\001 \003(\0132(.appscode.ku",
+      "bernetes.v1beta2.Certificate\032?\n\010CronJobs" +
+      "\0223\n\005items\030\001 \003(\0132$.appscode.kubernetes.v1" +
+      "beta2.CronJob\032B\n\nPostgreses\0224\n\005items\030\001 \003" +
+      "(\0132%.appscode.kubernetes.v1beta2.Postgre" +
+      "s\032?\n\010Elastics\0223\n\005items\030\001 \003(\0132$.appscode." +
+      "kubernetes.v1beta2.Elastic\032O\n\020DeletedDat" +
+      "abases\022;\n\005items\030\001 \003(\0132,.appscode.kuberne" +
+      "tes.v1beta2.DeletedDatabase\032Q\n\021DatabaseS" +
+      "napshots\022<\n\005items\030\002 \003(\0132-.appscode.kuber" +
+      "netes.v1beta2.DatabaseSnapshot\032=\n\007Backup",
+      "s\0222\n\005items\030\001 \003(\0132#.appscode.kubernetes.v" +
+      "1beta2.BackupB\n\n\010resource\"\300\016\n\014KubeResour" +
+      "ce\022\014\n\004type\030\001 \001(\t\022-\n\003raw\030\002 \001(\0132 .appscode" +
+      ".kubernetes.v1beta2.Raw\0222\n\006events\030\003 \003(\0132" +
+      "\".appscode.kubernetes.v1beta2.Event\022<\n\nc" +
+      "onfig_map\030\004 \001(\0132&.appscode.kubernetes.v1" +
+      "beta2.ConfigMapH\000\022<\n\ndaemon_set\030\005 \001(\0132&." +
+      "appscode.kubernetes.v1beta2.DaemonSetH\000\022" +
+      "=\n\ndeployment\030\006 \001(\0132\'.appscode.kubernete" +
+      "s.v1beta2.DeploymentH\000\022/\n\003job\030\007 \001(\0132 .ap",
+      "pscode.kubernetes.v1beta2.JobH\000\022;\n\tnames" +
+      "pace\030\010 \001(\0132&.appscode.kubernetes.v1beta2" +
+      ".NamespaceH\000\0221\n\004node\030\t \001(\0132!.appscode.ku" +
+      "bernetes.v1beta2.NodeH\000\022@\n\014stateful_set\030" +
+      "\n \001(\0132(.appscode.kubernetes.v1beta2.Stat" +
+      "efulSetH\000\022/\n\003pod\030\013 \001(\0132 .appscode.kubern" +
+      "etes.v1beta2.PodH\000\022>\n\013replica_set\030\014 \001(\0132" +
+      "\'.appscode.kubernetes.v1beta2.ReplicaSet" +
+      "H\000\0227\n\007service\030\r \001(\0132$.appscode.kubernete" +
+      "s.v1beta2.ServiceH\000\0225\n\006secret\030\016 \001(\0132#.ap",
+      "pscode.kubernetes.v1beta2.SecretH\000\022T\n\026re" +
+      "plication_controller\030\017 \001(\01322.appscode.ku" +
+      "bernetes.v1beta2.ReplicationControllerH\000" +
+      "\022B\n\rstorage_class\030\020 \001(\0132).appscode.kuber" +
+      "netes.v1beta2.StorageClassH\000\022J\n\021persiste" +
+      "nt_volume\030\021 \001(\0132-.appscode.kubernetes.v1" +
+      "beta2.PersistentVolumeH\000\022U\n\027persistent_v" +
+      "olume_claim\030\022 \001(\01322.appscode.kubernetes." +
+      "v1beta2.PersistentVolumeClaimH\000\0223\n\005alert" +
+      "\030\023 \001(\0132\".appscode.kubernetes.v1beta2.Ale",
+      "rtH\000\0221\n\004role\030\024 \001(\0132!.appscode.kubernetes" +
+      ".v1beta2.RoleH\000\022@\n\014cluster_role\030\025 \001(\0132(." +
+      "appscode.kubernetes.v1beta2.ClusterRoleH" +
+      "\000\022@\n\014role_binding\030\026 \001(\0132(.appscode.kuber" +
+      "netes.v1beta2.RoleBindingH\000\022O\n\024cluster_r" +
+      "ole_binding\030\027 \001(\0132/.appscode.kubernetes." +
+      "v1beta2.ClusterRoleBindingH\000\022?\n\013certific" +
+      "ate\030\030 \001(\0132(.appscode.kubernetes.v1beta2." +
+      "CertificateH\000\0228\n\010cron_job\030\031 \001(\0132$.appsco" +
+      "de.kubernetes.v1beta2.CronJobH\000\0225\n\006backu",
+      "p\030\032 \001(\0132#.appscode.kubernetes.v1beta2.Ba" +
+      "ckupH\000\0229\n\010postgres\030\033 \001(\0132%.appscode.kube" +
+      "rnetes.v1beta2.PostgresH\000\0227\n\007elastic\030\034 \001" +
+      "(\0132$.appscode.kubernetes.v1beta2.Elastic" +
+      "H\000\022H\n\020deleted_database\030\035 \001(\0132,.appscode." +
+      "kubernetes.v1beta2.DeletedDatabaseH\000\022J\n\021" +
+      "database_snapshot\030\036 \001(\0132-.appscode.kuber" +
+      "netes.v1beta2.DatabaseSnapshotH\000B\n\n\010reso" +
+      "urce\"\375\002\n\004Meta\022\014\n\004name\030\001 \001(\t\022\021\n\tnamespace" +
+      "\030\002 \001(\t\022\022\n\nself_links\030\003 \001(\t\022\030\n\020resource_v",
+      "ersion\030\004 \001(\t\022\032\n\022creation_timestamp\030\005 \001(\003" +
+      "\022\022\n\ngeneration\030\006 \001(\003\022=\n\006labels\030\007 \003(\0132-.a" +
+      "ppscode.kubernetes.v1beta2.Meta.LabelsEn" +
+      "try\022G\n\013annotations\030\010 \003(\01322.appscode.kube" +
+      "rnetes.v1beta2.Meta.AnnotationsEntry\022\013\n\003" +
+      "uid\030\t \001(\t\032-\n\013LabelsEntry\022\013\n\003key\030\001 \001(\t\022\r\n" +
+      "\005value\030\002 \001(\t:\0028\001\0322\n\020AnnotationsEntry\022\013\n\003" +
+      "key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"L\n\nKubeObje" +
+      "ct\022\017\n\007cluster\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\022\021\n\tnam" +
+      "espace\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\"M\n\013IcingaStat",
+      "e\022\n\n\002OK\030\001 \001(\005\022\017\n\007Warning\030\002 \001(\005\022\020\n\010Critic" +
+      "al\030\003 \001(\005\022\017\n\007Unknown\030\004 \001(\005\"\341\005\n\007PodSpec\022<\n" +
+      "\007volumes\030\001 \003(\0132+.appscode.kubernetes.v1b" +
+      "eta2.PodSpec.Volume\022B\n\ncontainers\030\002 \003(\0132" +
+      "..appscode.kubernetes.v1beta2.PodSpec.Co" +
+      "ntainer\022O\n\016node_selectors\030\003 \003(\01327.appsco" +
+      "de.kubernetes.v1beta2.PodSpec.NodeSelect" +
+      "orsEntry\022\034\n\024service_account_name\030\004 \001(\t\022\021" +
+      "\n\tnode_name\030\005 \001(\t\022\032\n\022image_pull_secrets\030" +
+      "\006 \003(\t\0324\n\022NodeSelectorsEntry\022\013\n\003key\030\001 \001(\t",
+      "\022\r\n\005value\030\002 \001(\t:\0028\001\032\246\002\n\tContainer\022\014\n\004nam" +
+      "e\030\001 \001(\t\022\r\n\005image\030\002 \001(\t\022\020\n\010commands\030\003 \003(\t" +
+      "\022Q\n\rvolume_mounts\030\004 \003(\0132:.appscode.kuber" +
+      "netes.v1beta2.PodSpec.Container.VolumeMo" +
+      "unt\022\014\n\004args\030\005 \003(\t\022\023\n\013working_dir\030\006 \001(\t\0220" +
+      "\n\003env\030\007 \003(\0132#.appscode.kubernetes.v1beta" +
+      "2.EnvVar\032B\n\013VolumeMount\022\014\n\004name\030\001 \001(\t\022\021\n" +
+      "\tread_only\030\002 \001(\010\022\022\n\nmount_path\030\003 \001(\t\032W\n\006" +
+      "Volume\022\014\n\004name\030\001 \001(\t\022?\n\014volumeSource\030\002 \001" +
+      "(\0132).appscode.kubernetes.v1beta2.VolumeS",
+      "ource\"#\n\003Raw\022\016\n\006format\030\001 \001(\t\022\014\n\004data\030\002 \001" +
+      "(\t\"\251\001\n\tConfigMap\022/\n\004meta\030\001 \001(\0132!.appscod" +
+      "e.kubernetes.v1beta2.Meta\022>\n\004data\030\002 \003(\0132" +
+      "0.appscode.kubernetes.v1beta2.ConfigMap." +
+      "DataEntry\032+\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005v" +
+      "alue\030\002 \001(\t:\0028\001\"\337\002\n\003Job\022/\n\004meta\030\001 \001(\0132!.a" +
+      "ppscode.kubernetes.v1beta2.Meta\022\013\n\003app\030\002" +
+      " \001(\t\0222\n\004spec\030\003 \001(\0132$.appscode.kubernetes" +
+      ".v1beta2.JobSpec\0227\n\006status\030\004 \001(\0132\'.appsc" +
+      "ode.kubernetes.v1beta2.Job.Status\032\254\001\n\006St",
+      "atus\022\022\n\nstart_time\030\001 \001(\003\022\027\n\017completion_t" +
+      "ime\030\002 \001(\003\022\016\n\006active\030\003 \001(\005\022\021\n\tsucceeded\030\004" +
+      " \001(\005\022\016\n\006failed\030\005 \001(\005\022B\n\nconditions\030\006 \003(\013" +
+      "2..appscode.kubernetes.v1beta2.ResourceC" +
+      "ondition\"\214\001\n\007JobSpec\022\023\n\013parallelism\030\001 \001(" +
+      "\005\022\023\n\013completions\030\002 \001(\005\0226\n\010template\030\003 \001(\013" +
+      "2$.appscode.kubernetes.v1beta2.PodSpec\022\037" +
+      "\n\027active_deadline_seconds\030\004 \001(\003\"\375\001\n\tName" +
+      "space\022/\n\004meta\030\001 \001(\0132!.appscode.kubernete" +
+      "s.v1beta2.Meta\022=\n\006status\030\002 \001(\0132-.appscod",
+      "e.kubernetes.v1beta2.Namespace.Status\022B\n" +
+      "\004spec\030\003 \001(\01324.appscode.kubernetes.v1beta" +
+      "2.Namespace.NamespaceSpec\032#\n\rNamespaceSp" +
+      "ec\022\022\n\nfinalizers\030\001 \003(\t\032\027\n\006Status\022\r\n\005phas" +
+      "e\030\001 \001(\t\"\371\n\n\004Node\022/\n\004meta\030\001 \001(\0132!.appscod" +
+      "e.kubernetes.v1beta2.Meta\0224\n\004spec\030\002 \001(\0132" +
+      "&.appscode.kubernetes.v1beta2.Node.Spec\022" +
+      "\021\n\tis_master\030\003 \001(\010\022<\n\006status\030\004 \001(\0132,.app" +
+      "scode.kubernetes.v1beta2.Node.NodeStatus" +
+      "\0225\n\007metrics\030\005 \001(\0132$.appscode.kubernetes.",
+      "v1beta2.Metrics\032X\n\004Spec\022\023\n\013external_id\030\001" +
+      " \001(\t\022\023\n\013provider_id\030\002 \001(\t\022\025\n\runschedulab" +
+      "le\030\003 \001(\010\022\017\n\007podCIDR\030\004 \001(\t\032\247\010\n\nNodeStatus" +
+      "\022G\n\010capacity\030\001 \001(\01325.appscode.kubernetes" +
+      ".v1beta2.Node.NodeStatus.Capacity\022\r\n\005pha" +
+      "se\030\002 \001(\t\022N\n\tnode_info\030\003 \001(\0132;.appscode.k" +
+      "ubernetes.v1beta2.Node.NodeStatus.NodeSy" +
+      "stemInfo\022J\n\013allocatable\030\004 \001(\01325.appscode" +
+      ".kubernetes.v1beta2.Node.NodeStatus.Capa" +
+      "city\022B\n\nconditions\030\005 \003(\0132..appscode.kube",
+      "rnetes.v1beta2.ResourceCondition\022I\n\007addr" +
+      "ess\030\006 \003(\01328.appscode.kubernetes.v1beta2." +
+      "Node.NodeStatus.NodeAddress\022K\n\006images\030\007 " +
+      "\003(\0132;.appscode.kubernetes.v1beta2.Node.N" +
+      "odeStatus.ContainerImage\022\026\n\016volumes_in_u" +
+      "se\030\010 \003(\t\022U\n\020volumes_attached\030\t \003(\0132;.app" +
+      "scode.kubernetes.v1beta2.Node.NodeStatus" +
+      ".AttachedVolume\032F\n\010Capacity\022\013\n\003cpu\030\001 \001(\003" +
+      "\022\016\n\006memory\030\002 \001(\003\022\014\n\004pods\030\003 \001(\003\022\017\n\007storag" +
+      "e\030\004 \001(\t\032\371\001\n\016NodeSystemInfo\022\021\n\tmachineID\030",
+      "\006 \001(\t\022\022\n\nsystemUUID\030\007 \001(\t\022\016\n\006bootID\030\010 \001(" +
+      "\t\022\026\n\016kernel_version\030\001 \001(\t\022\020\n\010os_image\030\002 " +
+      "\001(\t\022!\n\031container_runtime_version\030\003 \001(\t\022\027" +
+      "\n\017kubelet_version\030\004 \001(\t\022\032\n\022kube_proxy_ve" +
+      "rsion\030\005 \001(\t\022\030\n\020operating_system\030\t \001(\t\022\024\n" +
+      "\014architecture\030\n \001(\t\032,\n\013NodeAddress\022\014\n\004ty" +
+      "pe\030\001 \001(\t\022\017\n\007address\030\002 \001(\t\0323\n\016ContainerIm" +
+      "age\022\r\n\005names\030\001 \003(\t\022\022\n\nsize_bytes\030\002 \001(\003\0323" +
+      "\n\016AttachedVolume\022\014\n\004name\030\001 \001(\t\022\023\n\013device" +
+      "_path\030\002 \001(\t\"\237\003\n\003Pod\022/\n\004meta\030\001 \001(\0132!.apps",
+      "code.kubernetes.v1beta2.Meta\022\013\n\003app\030\002 \001(" +
+      "\t\0222\n\004spec\030\003 \001(\0132$.appscode.kubernetes.v1" +
+      "beta2.PodSpec\022:\n\006status\030\004 \001(\0132*.appscode" +
+      ".kubernetes.v1beta2.Pod.PodStatus\0225\n\007met" +
+      "rics\030\005 \001(\0132$.appscode.kubernetes.v1beta2" +
+      ".Metrics\032\262\001\n\tPodStatus\022\r\n\005phase\030\001 \001(\t\022\017\n" +
+      "\007message\030\002 \001(\t\022\016\n\006reason\030\003 \001(\t\022\016\n\006hostIP" +
+      "\030\004 \001(\t\022\r\n\005podIP\030\005 \001(\t\022B\n\nconditions\030\006 \003(" +
+      "\0132..appscode.kubernetes.v1beta2.Resource" +
+      "Condition\022\022\n\nstart_time\030\007 \001(\003\"\261\005\n\020Persis",
+      "tentVolume\022/\n\004meta\030\001 \001(\0132!.appscode.kube" +
+      "rnetes.v1beta2.Meta\022P\n\004spec\030\002 \001(\0132B.apps" +
+      "code.kubernetes.v1beta2.PersistentVolume" +
+      ".PersistentVolumeSpec\022T\n\006status\030\003 \001(\0132D." +
       "appscode.kubernetes.v1beta2.PersistentVo" +
-      "lume.PersistentVolumeSpec\022T\n\006status\030\003 \001(" +
-      "\0132D.appscode.kubernetes.v1beta2.Persiste" +
-      "ntVolume.PersistentVolumeStatus\032\371\002\n\024Pers" +
-      "istentVolumeSpec\022b\n\010capacity\030\001 \003(\0132P.app" +
-      "scode.kubernetes.v1beta2.PersistentVolum",
-      "e.PersistentVolumeSpec.CapacityEntry\022\024\n\014" +
-      "access_modes\030\002 \003(\t\022(\n persistent_volume_" +
-      "reclaim_policy\030\003 \001(\t\022?\n\tclaim_ref\030\004 \001(\0132" +
-      ",.appscode.kubernetes.v1beta2.ObjectRefe" +
-      "rence\022K\n\030persistent_volume_source\030\005 \001(\0132" +
-      ").appscode.kubernetes.v1beta2.VolumeSour" +
-      "ce\032/\n\rCapacityEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
-      "e\030\002 \001(\t:\0028\001\032H\n\026PersistentVolumeStatus\022\r\n" +
-      "\005phase\030\001 \001(\t\022\017\n\007message\030\002 \001(\t\022\016\n\006reason\030" +
-      "\003 \001(\t\"\324\003\n\025PersistentVolumeClaim\022/\n\004meta\030",
-      "\001 \001(\0132!.appscode.kubernetes.v1beta2.Meta" +
-      "\022D\n\004spec\030\002 \001(\01326.appscode.kubernetes.v1b" +
-      "eta2.PersistentVolumeClaimSpec\022^\n\006status" +
-      "\030\003 \001(\0132N.appscode.kubernetes.v1beta2.Per" +
-      "sistentVolumeClaim.PersistentVolumeClaim" +
-      "Status\032\343\001\n\033PersistentVolumeClaimStatus\022\r" +
-      "\n\005phase\030\001 \001(\t\022\024\n\014access_modes\030\002 \003(\t\022n\n\010c" +
-      "apacity\030\003 \003(\0132\\.appscode.kubernetes.v1be" +
-      "ta2.PersistentVolumeClaim.PersistentVolu" +
-      "meClaimStatus.CapacityEntry\032/\n\rCapacityE",
-      "ntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\365\003\n" +
-      "\031PersistentVolumeClaimSpec\022\024\n\014access_mod" +
-      "es\030\001 \003(\t\022^\n\tresources\030\002 \001(\0132K.appscode.k" +
-      "ubernetes.v1beta2.PersistentVolumeClaimS" +
-      "pec.ResourceRequirements\022\023\n\013volume_name\030" +
-      "\003 \001(\t\032\314\002\n\024ResourceRequirements\022g\n\006limits" +
-      "\030\001 \003(\0132W.appscode.kubernetes.v1beta2.Per" +
-      "sistentVolumeClaimSpec.ResourceRequireme" +
-      "nts.LimitsEntry\022k\n\010requests\030\002 \003(\0132Y.apps" +
-      "code.kubernetes.v1beta2.PersistentVolume",
-      "ClaimSpec.ResourceRequirements.RequestsE" +
-      "ntry\032-\n\013LimitsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
-      "e\030\002 \001(\t:\0028\001\032/\n\rRequestsEntry\022\013\n\003key\030\001 \001(" +
-      "\t\022\r\n\005value\030\002 \001(\t:\0028\001\"|\n\017ObjectReference\022" +
-      "\014\n\004kind\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\014\n\004name" +
-      "\030\003 \001(\t\022\013\n\003uid\030\004 \001(\t\022\023\n\013API_version\030\005 \001(\t" +
-      "\022\030\n\020resource_version\030\006 \001(\t\"\250\006\n\007Service\022/" +
-      "\n\004meta\030\001 \001(\0132!.appscode.kubernetes.v1bet" +
-      "a2.Meta\022\013\n\003app\030\002 \001(\t\0227\n\004spec\030\003 \001(\0132).app" +
-      "scode.kubernetes.v1beta2.Service.Spec\022;\n",
-      "\006status\030\004 \001(\0132+.appscode.kubernetes.v1be" +
-      "ta2.Service.Status\032\306\003\n\004Spec\022\014\n\004type\030\001 \001(" +
-      "\t\022=\n\005ports\030\002 \003(\0132..appscode.kubernetes.v" +
-      "1beta2.Service.Spec.Port\022K\n\tselectors\030\003 " +
-      "\003(\01328.appscode.kubernetes.v1beta2.Servic" +
-      "e.Spec.SelectorsEntry\022\021\n\tclusterIP\030\004 \001(\t" +
-      "\022\023\n\013externalIPs\030\005 \003(\t\022\026\n\016loadbalancerIP\030" +
-      "\006 \001(\t\022\025\n\rexternal_name\030\007 \001(\t\022\030\n\020session_" +
-      "affinity\030\010 \001(\t\022#\n\033load_balancer_source_r" +
-      "anges\030\t \003(\t\0320\n\016SelectorsEntry\022\013\n\003key\030\001 \001",
-      "(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032\\\n\004Port\022\014\n\004name\030\001 " +
-      "\001(\t\022\020\n\010protocol\030\002 \001(\t\022\014\n\004port\030\003 \001(\005\022\023\n\013t" +
-      "arget_port\030\004 \001(\t\022\021\n\tnode_port\030\005 \001(\005\032\237\001\n\006" +
-      "Status\022_\n\026loadbalancer_ingresses\030\001 \003(\0132?" +
-      ".appscode.kubernetes.v1beta2.Service.Sta" +
-      "tus.LoadBalancerIngress\0324\n\023LoadBalancerI" +
-      "ngress\022\021\n\thost_name\030\001 \001(\t\022\n\n\002IP\030\002 \001(\t\"\261\001" +
-      "\n\006Secret\022/\n\004meta\030\001 \001(\0132!.appscode.kubern" +
-      "etes.v1beta2.Meta\022;\n\004data\030\002 \003(\0132-.appsco" +
-      "de.kubernetes.v1beta2.Secret.DataEntry\022\014",
-      "\n\004type\030\003 \001(\t\032+\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022\r" +
-      "\n\005value\030\002 \001(\t:\0028\001\"\224\004\n\025ReplicationControl" +
-      "ler\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes." +
-      "v1beta2.Meta\022\013\n\003app\030\002 \001(\t\022E\n\004spec\030\003 \001(\0132" +
-      "7.appscode.kubernetes.v1beta2.Replicatio" +
-      "nController.Spec\022I\n\006status\030\004 \001(\01329.appsc" +
-      "ode.kubernetes.v1beta2.ReplicationContro" +
-      "ller.Status\032\351\001\n\004Spec\022\030\n\020desired_replicas" +
-      "\030\001 \001(\005\022Y\n\tselectors\030\002 \003(\0132F.appscode.kub" +
-      "ernetes.v1beta2.ReplicationController.Sp",
-      "ec.SelectorsEntry\022:\n\014pod_template\030\003 \001(\0132" +
-      "$.appscode.kubernetes.v1beta2.PodSpec\0320\n" +
-      "\016SelectorsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 " +
-      "\001(\t:\0028\001\032?\n\006Status\022\030\n\020current_replicas\030\001 " +
-      "\001(\005\022\033\n\023observed_generation\030\002 \001(\003\"\244\003\n\nRep" +
-      "licaSet\022/\n\004meta\030\001 \001(\0132!.appscode.kuberne" +
-      "tes.v1beta2.Meta\022\013\n\003app\030\002 \001(\t\022:\n\004spec\030\003 " +
-      "\001(\0132,.appscode.kubernetes.v1beta2.Replic" +
-      "aSet.Spec\022>\n\006status\030\004 \001(\0132..appscode.kub" +
-      "ernetes.v1beta2.ReplicaSet.Status\032\232\001\n\004Sp",
-      "ec\022\030\n\020desired_replicas\030\001 \001(\005\022<\n\010selector" +
-      "\030\002 \001(\0132*.appscode.kubernetes.v1beta2.Lab" +
-      "elSelector\022:\n\014pod_template\030\003 \001(\0132$.appsc" +
-      "ode.kubernetes.v1beta2.PodSpec\032?\n\006Status" +
-      "\022\030\n\020current_replicas\030\001 \001(\005\022\033\n\023observed_g" +
-      "eneration\030\002 \001(\003\"\261\003\n\tDaemonSet\022/\n\004meta\030\001 " +
-      "\001(\0132!.appscode.kubernetes.v1beta2.Meta\022\013" +
-      "\n\003app\030\002 \001(\t\0229\n\004spec\030\003 \001(\0132+.appscode.kub" +
-      "ernetes.v1beta2.DaemonSet.Spec\022=\n\006status" +
-      "\030\004 \001(\0132-.appscode.kubernetes.v1beta2.Dae",
-      "monSet.Status\032\200\001\n\004Spec\022<\n\010selector\030\001 \001(\013" +
-      "2*.appscode.kubernetes.v1beta2.LabelSele" +
-      "ctor\022:\n\014pod_template\030\002 \001(\0132$.appscode.ku" +
-      "bernetes.v1beta2.PodSpec\032i\n\006Status\022 \n\030cu" +
-      "rrent_number_scheduled\030\001 \001(\005\022\033\n\023number_m" +
-      "isscheduled\030\002 \001(\005\022 \n\030desired_number_sche" +
-      "duled\030\003 \001(\005\"\312\010\n\nDeployment\022/\n\004meta\030\001 \001(\013" +
-      "2!.appscode.kubernetes.v1beta2.Meta\022\013\n\003a" +
-      "pp\030\002 \001(\t\022:\n\004spec\030\003 \001(\0132,.appscode.kubern" +
-      "etes.v1beta2.Deployment.Spec\022H\n\006status\030\004",
-      " \001(\01328.appscode.kubernetes.v1beta2.Deplo" +
-      "yment.DeploymentStatus\032\233\005\n\004Spec\022\030\n\020desir" +
-      "ed_replicas\030\001 \001(\005\022<\n\010selector\030\002 \001(\0132*.ap" +
-      "pscode.kubernetes.v1beta2.LabelSelector\022" +
-      ":\n\014pod_template\030\003 \001(\0132$.appscode.kuberne" +
-      "tes.v1beta2.PodSpec\022\031\n\021min_ready_seconds" +
-      "\030\004 \001(\005\022\036\n\026revision_history_limit\030\005 \001(\005\022\016" +
-      "\n\006paused\030\006 \001(\010\022P\n\013rollback_to\030\007 \001(\0132;.ap" +
-      "pscode.kubernetes.v1beta2.Deployment.Spe" +
-      "c.RollbackConfig\022!\n\031progress_deadline_se",
-      "conds\030\010 \001(\005\022Q\n\010strategy\030\t \001(\0132?.appscode" +
-      ".kubernetes.v1beta2.Deployment.Spec.Depl" +
-      "oymentStrategy\032\200\001\n\022DeploymentStrategy\022\014\n" +
-      "\004type\030\001 \001(\t\022\\\n\016rolling_update\030\002 \001(\0132D.ap" +
-      "pscode.kubernetes.v1beta2.Deployment.Spe" +
-      "c.RollingUpdateDeployment\032E\n\027RollingUpda" +
-      "teDeployment\022\027\n\017max_unavailable\030\001 \001(\t\022\021\n" +
-      "\tmax_surge\030\002 \001(\t\032\"\n\016RollbackConfig\022\020\n\010re" +
-      "vision\030\001 \001(\003\032\331\001\n\020DeploymentStatus\022\033\n\023obs" +
-      "erved_generation\030\001 \001(\003\022\020\n\010replicas\030\002 \001(\005",
-      "\022\030\n\020updated_replicas\030\003 \001(\005\022\032\n\022available_" +
-      "replicas\030\004 \001(\005\022\034\n\024unavailable_replicas\030\005" +
-      " \001(\005\022B\n\nconditions\030\006 \003(\0132..appscode.kube" +
-      "rnetes.v1beta2.ResourceCondition\"\275\003\n\013Sta" +
-      "tefulSet\022/\n\004meta\030\001 \001(\0132!.appscode.kubern" +
-      "etes.v1beta2.Meta\022\013\n\003app\030\002 \001(\t\022;\n\004spec\030\003" +
-      " \001(\0132-.appscode.kubernetes.v1beta2.State" +
-      "fulSet.Spec\022?\n\006status\030\004 \001(\0132/.appscode.k" +
-      "ubernetes.v1beta2.StatefulSet.Status\032\260\001\n" +
-      "\004Spec\022\030\n\020desired_replicas\030\001 \001(\005\022<\n\010selec",
-      "tor\030\002 \001(\0132*.appscode.kubernetes.v1beta2." +
-      "LabelSelector\022:\n\014pod_template\030\003 \001(\0132$.ap" +
-      "pscode.kubernetes.v1beta2.PodSpec\022\024\n\014ser" +
-      "vice_name\030\004 \001(\t\032?\n\006Status\022\030\n\020current_rep" +
-      "licas\030\001 \001(\005\022\033\n\023observed_generation\030\002 \001(\003" +
-      "\"\326\001\n\014StorageClass\022/\n\004meta\030\001 \001(\0132!.appsco" +
-      "de.kubernetes.v1beta2.Meta\022\023\n\013provisione" +
-      "r\030\002 \001(\t\022M\n\nparameters\030\003 \003(\01329.appscode.k" +
-      "ubernetes.v1beta2.StorageClass.Parameter" +
-      "sEntry\0321\n\017ParametersEntry\022\013\n\003key\030\001 \001(\t\022\r",
-      "\n\005value\030\002 \001(\t:\0028\001\"\226\001\n\rLabelSelector\022Q\n\014m" +
-      "atch_labels\030\001 \003(\0132;.appscode.kubernetes." +
-      "v1beta2.LabelSelector.MatchLabelsEntry\0322" +
-      "\n\020MatchLabelsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value" +
-      "\030\002 \001(\t:\0028\001\"\341\001\n\005Event\022/\n\004meta\030\001 \001(\0132!.app" +
-      "scode.kubernetes.v1beta2.Meta\022\016\n\006reason\030" +
-      "\002 \001(\t\022\017\n\007message\030\003 \001(\t\0228\n\006source\030\004 \001(\0132(" +
-      ".appscode.kubernetes.v1beta2.EventSource" +
-      "\022\027\n\017first_timestamp\030\005 \001(\003\022\026\n\016last_timest" +
-      "amp\030\006 \001(\003\022\r\n\005count\030\007 \001(\005\022\014\n\004type\030\010 \001(\t\"/",
-      "\n\013EventSource\022\022\n\ncomponenet\030\001 \001(\t\022\014\n\004hos" +
-      "t\030\002 \001(\t\"\301\001\n\007Metrics\022A\n\tcpu_usage\030\001 \003(\0132." +
-      ".appscode.kubernetes.v1beta2.Metrics.Dat" +
-      "aPoint\022D\n\014memory_usage\030\002 \003(\0132..appscode." +
-      "kubernetes.v1beta2.Metrics.DataPoint\032-\n\t" +
-      "DataPoint\022\021\n\ttimestamp\030\001 \001(\003\022\r\n\005value\030\002 " +
-      "\001(\003\"\207\001\n\037PersistentVolumeRegisterRequest\022" +
-      "\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\022\n\nidenti" +
-      "fier\030\003 \001(\t\022\016\n\006plugin\030\004 \001(\t\022\017\n\007size_gb\030\005 " +
-      "\001(\003\022\020\n\010endpoint\030\006 \001(\t\"B\n!PersistentVolum",
-      "eUnRegisterRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004n" +
-      "ame\030\002 \001(\t\"i\n$PersistentVolumeClaimRegist" +
-      "erRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t" +
-      "\022\017\n\007size_gb\030\003 \001(\003\022\021\n\tnamespace\030\004 \001(\t\"Z\n&" +
-      "PersistentVolumeClaimUnRegisterRequest\022\017" +
-      "\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021\n\tnamespa" +
-      "ce\030\003 \001(\t\"\324\005\n\005Alert\022/\n\004meta\030\001 \001(\0132!.appsc" +
-      "ode.kubernetes.v1beta2.Meta\022:\n\004spec\030\002 \001(" +
-      "\0132,.appscode.kubernetes.v1beta2.Alert.Al" +
-      "ertSpec\022>\n\006status\030\003 \001(\0132..appscode.kuber",
-      "netes.v1beta2.Alert.AlertStatus\032\303\003\n\tAler" +
-      "tSpec\022N\n\014icinga_param\030\001 \001(\01328.appscode.k" +
-      "ubernetes.v1beta2.Alert.AlertSpec.Icinga" +
-      "Param\022\025\n\rcheck_command\030\002 \001(\t\022S\n\017notifier" +
-      "_params\030\003 \003(\0132:.appscode.kubernetes.v1be" +
-      "ta2.Alert.AlertSpec.NotifierParam\022D\n\004var" +
-      "s\030\004 \003(\01326.appscode.kubernetes.v1beta2.Al" +
-      "ert.AlertSpec.VarsEntry\032+\n\tVarsEntry\022\013\n\003" +
-      "key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032E\n\013IcingaPa" +
-      "ram\022\032\n\022check_interval_sec\030\001 \001(\003\022\032\n\022alert",
-      "_interval_sec\030\002 \001(\003\032@\n\rNotifierParam\022\r\n\005" +
-      "state\030\001 \001(\t\022\020\n\010user_uid\030\002 \001(\t\022\016\n\006method\030" +
-      "\003 \001(\t\032X\n\013AlertStatus\022\025\n\rcreation_time\030\001 " +
-      "\001(\003\022\023\n\013update_time\030\002 \001(\003\022\r\n\005phase\030\003 \001(\t\022" +
-      "\016\n\006reason\030\004 \001(\t\"i\n\004Role\022/\n\004meta\030\001 \001(\0132!." +
-      "appscode.kubernetes.v1beta2.Meta\0220\n\005rule" +
-      "s\030\002 \003(\0132!.appscode.kubernetes.v1beta2.Ru" +
-      "le\"\266\001\n\013RoleBinding\022/\n\004meta\030\001 \001(\0132!.appsc" +
-      "ode.kubernetes.v1beta2.Meta\0226\n\010subjects\030" +
-      "\002 \003(\0132$.appscode.kubernetes.v1beta2.Subj",
-      "ect\022>\n\010role_ref\030\003 \001(\0132,.appscode.kuberne" +
-      "tes.v1beta2.ObjectReference\"p\n\013ClusterRo" +
-      "le\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes.v" +
-      "1beta2.Meta\0220\n\005rules\030\002 \003(\0132!.appscode.ku" +
-      "bernetes.v1beta2.Rule\"\275\001\n\022ClusterRoleBin" +
-      "ding\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes" +
-      ".v1beta2.Meta\0226\n\010subjects\030\002 \003(\0132$.appsco" +
-      "de.kubernetes.v1beta2.Subject\022>\n\010role_re" +
-      "f\030\003 \001(\0132,.appscode.kubernetes.v1beta2.Ob" +
-      "jectReference\"o\n\004Rule\022\r\n\005verbs\030\001 \003(\t\022\022\n\n",
-      "api_groups\030\002 \003(\t\022\021\n\tresources\030\003 \003(\t\022\026\n\016r" +
-      "esource_names\030\004 \003(\t\022\031\n\021non_resource_urls" +
-      "\030\005 \003(\t\"M\n\007Subject\022\014\n\004kind\030\001 \001(\t\022\023\n\013api_v" +
-      "ersion\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\021\n\tnamespace\030" +
-      "\004 \001(\t\"\232\010\n\006Backup\022/\n\004meta\030\001 \001(\0132!.appscod" +
-      "e.kubernetes.v1beta2.Meta\0226\n\004spec\030\002 \001(\0132" +
-      "(.appscode.kubernetes.v1beta2.Backup.Spe" +
-      "c\022:\n\006status\030\003 \001(\0132*.appscode.kubernetes." +
-      "v1beta2.Backup.Status\032\321\005\n\004Spec\022\020\n\010schedu" +
-      "le\030\001 \001(\t\022\014\n\004tags\030\002 \003(\t\022E\n\006source\030\003 \001(\01325",
-      ".appscode.kubernetes.v1beta2.Backup.Spec" +
-      ".BackupSource\022O\n\013destination\030\004 \001(\0132:.app" +
-      "scode.kubernetes.v1beta2.Backup.Spec.Bac" +
-      "kupDestination\022R\n\020retention_policy\030\005 \001(\013" +
-      "28.appscode.kubernetes.v1beta2.Backup.Sp" +
-      "ec.RetentionPolicy\0321\n\014BackupSource\022\023\n\013vo" +
-      "lume_name\030\001 \001(\t\022\014\n\004path\030\002 \001(\t\032|\n\021BackupD" +
-      "estination\022\014\n\004path\030\001 \001(\t\022\036\n\026repository_s" +
-      "ecret_name\030\002 \001(\t\0229\n\006volume\030\003 \001(\0132).appsc" +
-      "ode.kubernetes.v1beta2.VolumeSource\032\213\002\n\017",
-      "RetentionPolicy\022\033\n\023keep_last_snapshots\030\001" +
-      " \001(\005\022\035\n\025keep_hourly_snapshots\030\002 \001(\005\022\034\n\024k" +
-      "eep_daily_snapshots\030\003 \001(\005\022\035\n\025keep_weekly" +
-      "_snapshots\030\004 \001(\005\022\036\n\026keep_monthly_snapsho" +
-      "ts\030\005 \001(\005\022\035\n\025keep_yearly_snapshots\030\006 \001(\005\022" +
-      "\021\n\tkeep_tags\030\007 \003(\t\022\030\n\020retain_host_name\030\010" +
-      " \001(\t\022\023\n\013retain_tags\030\t \003(\t\032\226\001\n\006Status\022\031\n\021" +
-      "first_backup_time\030\001 \001(\003\022\030\n\020last_backup_t" +
-      "ime\030\002 \001(\003\022#\n\033last_successful_backup_time" +
-      "\030\003 \001(\003\022\034\n\024last_backup_duration\030\004 \001(\t\022\024\n\014",
-      "backup_count\030\005 \001(\003\"\267\003\n\007CronJob\022/\n\004meta\030\001" +
-      " \001(\0132!.appscode.kubernetes.v1beta2.Meta\022" +
-      "7\n\004spec\030\002 \001(\0132).appscode.kubernetes.v1be" +
-      "ta2.CronJob.Spec\022;\n\006status\030\003 \001(\0132+.appsc" +
-      "ode.kubernetes.v1beta2.CronJob.Status\032\240\001" +
-      "\n\004Spec\022\020\n\010schedule\030\001 \001(\t\022!\n\031starting_dea" +
-      "dline_seconds\030\002 \001(\003\022\032\n\022concurrency_polic" +
-      "y\030\003 \001(\t\022\017\n\007suspend\030\004 \001(\010\0226\n\010template\030\005 \001" +
-      "(\0132$.appscode.kubernetes.v1beta2.JobSpec" +
-      "\032b\n\006Status\022<\n\006active\030\001 \003(\0132,.appscode.ku",
-      "bernetes.v1beta2.ObjectReference\022\032\n\022last" +
-      "_schedule_time\030\002 \001(\003\"\362\001\n\010Postgres\022/\n\004met" +
-      "a\030\001 \001(\0132!.appscode.kubernetes.v1beta2.Me" +
-      "ta\0227\n\004spec\030\002 \001(\0132).appscode.kubernetes.v" +
-      "1beta2.PostgresSpec\022<\n\006status\030\003 \001(\0132,.ap" +
-      "pscode.kubernetes.v1beta2.Postgres.Statu" +
-      "s\032>\n\006Status\022\025\n\rcreation_time\030\001 \001(\003\022\r\n\005ph" +
-      "ase\030\002 \001(\t\022\016\n\006reason\030\003 \001(\t\"\363\003\n\014PostgresSp" +
-      "ec\022\017\n\007version\030\001 \001(\t\022\020\n\010replicas\030\002 \001(\005\0229\n" +
-      "\007storage\030\003 \001(\0132(.appscode.kubernetes.v1b",
-      "eta2.StorageSpec\022\034\n\024service_account_name" +
-      "\030\004 \001(\t\022H\n\017database_secret\030\005 \001(\0132/.appsco" +
-      "de.kubernetes.v1beta2.SecretVolumeSource" +
-      "\022R\n\rnode_selector\030\006 \003(\0132;.appscode.kuber" +
-      "netes.v1beta2.PostgresSpec.NodeSelectorE" +
-      "ntry\0223\n\004init\030\007 \001(\0132%.appscode.kubernetes" +
-      ".v1beta2.InitSpec\022H\n\017backup_schedule\030\010 \001" +
-      "(\0132/.appscode.kubernetes.v1beta2.BackupS" +
-      "cheduleSpec\022\025\n\rdo_not_delete\030\t \001(\010\0323\n\021No" +
-      "deSelectorEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 ",
-      "\001(\t:\0028\001\"\357\001\n\007Elastic\022/\n\004meta\030\001 \001(\0132!.apps" +
-      "code.kubernetes.v1beta2.Meta\0226\n\004spec\030\002 \001" +
-      "(\0132(.appscode.kubernetes.v1beta2.Elastic" +
-      "Spec\022;\n\006status\030\003 \001(\0132+.appscode.kubernet" +
-      "es.v1beta2.Elastic.Status\032>\n\006Status\022\025\n\rc" +
-      "reation_time\030\001 \001(\003\022\r\n\005phase\030\002 \001(\t\022\016\n\006rea" +
-      "son\030\003 \001(\t\"\247\003\n\013ElasticSpec\022\017\n\007version\030\001 \001" +
-      "(\t\022\020\n\010replicas\030\002 \001(\005\0229\n\007storage\030\003 \001(\0132(." +
-      "appscode.kubernetes.v1beta2.StorageSpec\022" +
-      "\034\n\024service_account_name\030\004 \001(\t\022Q\n\rnode_se",
-      "lector\030\005 \003(\0132:.appscode.kubernetes.v1bet" +
-      "a2.ElasticSpec.NodeSelectorEntry\0223\n\004init" +
-      "\030\006 \001(\0132%.appscode.kubernetes.v1beta2.Ini" +
-      "tSpec\022H\n\017backup_schedule\030\007 \001(\0132/.appscod" +
-      "e.kubernetes.v1beta2.BackupScheduleSpec\022" +
-      "\025\n\rdo_not_delete\030\010 \001(\010\0323\n\021NodeSelectorEn" +
-      "try\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\226\003\n\017" +
-      "DeletedDatabase\022/\n\004meta\030\001 \001(\0132!.appscode" +
-      ".kubernetes.v1beta2.Meta\022?\n\004spec\030\002 \001(\01321" +
-      ".appscode.kubernetes.v1beta2.DeletedData",
-      "base.Spec\022C\n\006status\030\003 \001(\01323.appscode.kub" +
-      "ernetes.v1beta2.DeletedDatabase.Status\032^" +
-      "\n\004Spec\022\020\n\010wipe_out\030\001 \001(\010\022\017\n\007recover\030\002 \001(" +
-      "\010\0223\n\006origin\030\003 \001(\0132#.appscode.kubernetes." +
-      "v1beta2.Origin\032l\n\006Status\022\025\n\rcreation_tim" +
-      "e\030\001 \001(\003\022\025\n\rdeletion_time\030\002 \001(\003\022\025\n\rwipe_o" +
-      "ut_time\030\003 \001(\003\022\r\n\005phase\030\004 \001(\t\022\016\n\006reason\030\005" +
-      " \001(\t\"\361\001\n\006Origin\022/\n\004meta\030\001 \001(\0132!.appscode" +
-      ".kubernetes.v1beta2.Meta\0226\n\004spec\030\002 \001(\0132(" +
-      ".appscode.kubernetes.v1beta2.Origin.Spec",
-      "\032~\n\004Spec\0229\n\007elastic\030\001 \001(\0132(.appscode.kub" +
-      "ernetes.v1beta2.ElasticSpec\022;\n\010postgres\030" +
-      "\002 \001(\0132).appscode.kubernetes.v1beta2.Post" +
-      "gresSpec\"\202\003\n\020DatabaseSnapshot\022/\n\004meta\030\001 " +
-      "\001(\0132!.appscode.kubernetes.v1beta2.Meta\022@" +
-      "\n\004spec\030\002 \001(\01322.appscode.kubernetes.v1bet" +
-      "a2.DatabaseSnapshot.Spec\022D\n\006status\030\003 \001(\013" +
-      "24.appscode.kubernetes.v1beta2.DatabaseS" +
-      "napshot.Status\032_\n\004Spec\022\025\n\rdatabase_name\030" +
-      "\001 \001(\t\022@\n\rsnapshot_spec\030\002 \001(\0132).appscode.",
-      "kubernetes.v1beta2.SnapshotSpec\032T\n\006Statu" +
-      "s\022\022\n\nstart_time\030\001 \001(\003\022\027\n\017completion_time" +
-      "\030\002 \001(\003\022\r\n\005phase\030\003 \001(\t\022\016\n\006reason\030\004 \001(\t\"z\n" +
-      "\013StorageSpec\022\r\n\005class\030\001 \001(\t\022\\\n\034persisten" +
-      "t_volume_claim_spec\030\002 \001(\01326.appscode.kub" +
-      "ernetes.v1beta2.PersistentVolumeClaimSpe" +
-      "c\"\232\001\n\010InitSpec\022D\n\rscript_source\030\001 \001(\0132-." +
-      "appscode.kubernetes.v1beta2.ScriptSource" +
-      "Spec\022H\n\017snapshot_source\030\002 \001(\0132/.appscode" +
-      ".kubernetes.v1beta2.SnapshotSourceSpec\"i",
-      "\n\020ScriptSourceSpec\022\023\n\013script_path\030\001 \001(\t\022" +
-      "@\n\rvolume_source\030\002 \001(\0132).appscode.kubern" +
-      "etes.v1beta2.VolumeSource\"5\n\022SnapshotSou" +
-      "rceSpec\022\021\n\tnamespace\030\001 \001(\t\022\014\n\004name\030\002 \001(\t" +
-      "\"o\n\022BackupScheduleSpec\022\027\n\017cron_expressio" +
-      "n\030\001 \001(\t\022@\n\rsnapshot_spec\030\002 \001(\0132).appscod" +
-      "e.kubernetes.v1beta2.SnapshotSpec\"\266\001\n\014Sn" +
-      "apshotSpec\022G\n\016storage_secret\030\001 \001(\0132/.app" +
-      "scode.kubernetes.v1beta2.SecretVolumeSou" +
-      "rce\022H\n\017database_secret\030\002 \001(\0132/.appscode.",
-      "kubernetes.v1beta2.SecretVolumeSource\022\023\n" +
-      "\013bucket_name\030\003 \001(\t\"\337\005\n\013Certificate\022/\n\004me" +
+      "lume.PersistentVolumeStatus\032\371\002\n\024Persiste" +
+      "ntVolumeSpec\022b\n\010capacity\030\001 \003(\0132P.appscod" +
+      "e.kubernetes.v1beta2.PersistentVolume.Pe" +
+      "rsistentVolumeSpec.CapacityEntry\022\024\n\014acce" +
+      "ss_modes\030\002 \003(\t\022(\n persistent_volume_recl",
+      "aim_policy\030\003 \001(\t\022?\n\tclaim_ref\030\004 \001(\0132,.ap" +
+      "pscode.kubernetes.v1beta2.ObjectReferenc" +
+      "e\022K\n\030persistent_volume_source\030\005 \001(\0132).ap" +
+      "pscode.kubernetes.v1beta2.VolumeSource\032/" +
+      "\n\rCapacityEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 " +
+      "\001(\t:\0028\001\032H\n\026PersistentVolumeStatus\022\r\n\005pha" +
+      "se\030\001 \001(\t\022\017\n\007message\030\002 \001(\t\022\016\n\006reason\030\003 \001(" +
+      "\t\"\324\003\n\025PersistentVolumeClaim\022/\n\004meta\030\001 \001(" +
+      "\0132!.appscode.kubernetes.v1beta2.Meta\022D\n\004" +
+      "spec\030\002 \001(\01326.appscode.kubernetes.v1beta2",
+      ".PersistentVolumeClaimSpec\022^\n\006status\030\003 \001" +
+      "(\0132N.appscode.kubernetes.v1beta2.Persist" +
+      "entVolumeClaim.PersistentVolumeClaimStat" +
+      "us\032\343\001\n\033PersistentVolumeClaimStatus\022\r\n\005ph" +
+      "ase\030\001 \001(\t\022\024\n\014access_modes\030\002 \003(\t\022n\n\010capac" +
+      "ity\030\003 \003(\0132\\.appscode.kubernetes.v1beta2." +
+      "PersistentVolumeClaim.PersistentVolumeCl" +
+      "aimStatus.CapacityEntry\032/\n\rCapacityEntry" +
+      "\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\365\003\n\031Per" +
+      "sistentVolumeClaimSpec\022\024\n\014access_modes\030\001",
+      " \003(\t\022^\n\tresources\030\002 \001(\0132K.appscode.kuber" +
+      "netes.v1beta2.PersistentVolumeClaimSpec." +
+      "ResourceRequirements\022\023\n\013volume_name\030\003 \001(" +
+      "\t\032\314\002\n\024ResourceRequirements\022g\n\006limits\030\001 \003" +
+      "(\0132W.appscode.kubernetes.v1beta2.Persist" +
+      "entVolumeClaimSpec.ResourceRequirements." +
+      "LimitsEntry\022k\n\010requests\030\002 \003(\0132Y.appscode" +
+      ".kubernetes.v1beta2.PersistentVolumeClai" +
+      "mSpec.ResourceRequirements.RequestsEntry" +
+      "\032-\n\013LimitsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 ",
+      "\001(\t:\0028\001\032/\n\rRequestsEntry\022\013\n\003key\030\001 \001(\t\022\r\n" +
+      "\005value\030\002 \001(\t:\0028\001\"|\n\017ObjectReference\022\014\n\004k" +
+      "ind\030\001 \001(\t\022\021\n\tnamespace\030\002 \001(\t\022\014\n\004name\030\003 \001" +
+      "(\t\022\013\n\003uid\030\004 \001(\t\022\023\n\013API_version\030\005 \001(\t\022\030\n\020" +
+      "resource_version\030\006 \001(\t\"\250\006\n\007Service\022/\n\004me" +
       "ta\030\001 \001(\0132!.appscode.kubernetes.v1beta2.M" +
-      "eta\022;\n\004spec\030\002 \001(\0132-.appscode.kubernetes." +
-      "v1beta2.Certificate.Spec\022?\n\006status\030\003 \001(\013" +
-      "2/.appscode.kubernetes.v1beta2.Certifica" +
-      "te.Status\032\357\001\n\004Spec\022\017\n\007domains\030\001 \003(\t\022\020\n\010p" +
-      "rovider\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022U\n\037HTTP_pro" +
-      "vider_ingress_reference\030\004 \001(\0132,.appscode" +
-      ".kubernetes.v1beta2.ObjectReference\022\'\n\037p",
-      "rovider_credential_secret_name\030\005 \001(\t\022\035\n\025" +
-      "ACME_user_secret_name\030\006 \001(\t\022\026\n\016ACME_serv" +
-      "erURL\030\007 \001(\t\032\256\002\n\006Status\022\034\n\024certificate_ob" +
-      "tained\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\022\025\n\rcreatio" +
-      "n_time\030\003 \001(\003\022\035\n\025ACME_user_secret_name\030\004 " +
-      "\001(\t\022W\n\007details\030\005 \001(\0132F.appscode.kubernet" +
-      "es.v1beta2.Certificate.Status.ACMECertif" +
-      "icateDetails\032f\n\026ACMECertificateDetails\022\016" +
-      "\n\006domain\030\001 \001(\t\022\017\n\007certURL\030\002 \001(\t\022\026\n\016cert_" +
-      "stableURL\030\003 \001(\t\022\023\n\013account_ref\030\004 \001(\t\"\"\n\017",
-      "DiskListRequest\022\017\n\007cluster\030\001 \001(\t\"m\n\020Disk" +
-      "ListResponse\022\'\n\006status\030\001 \001(\0132\027.appscode." +
-      "dtypes.Status\0220\n\005disks\030\002 \003(\0132!.appscode." +
-      "kubernetes.v1beta2.Disk\"F\n\023DiskDescribeR" +
-      "equest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\020\n" +
-      "\010provider\030\003 \001(\t\"p\n\024DiskDescribeResponse\022" +
-      "\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.Status" +
-      "\022/\n\004disk\030\002 \001(\0132!.appscode.kubernetes.v1b" +
-      "eta2.Disk\"d\n\021DiskCreateRequest\022\017\n\007cluste" +
-      "r\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\014\n\004zone\030\003 \001(\t\022\021\n\td",
-      "isk_type\030\004 \001(\t\022\017\n\007size_gb\030\005 \001(\003\"1\n\021DiskD" +
-      "eleteRequest\022\017\n\007cluster\030\001 \001(\t\022\013\n\003uid\030\002 \001" +
-      "(\t\"\313\002\n\004Disk\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\020\n" +
-      "\010provider\030\003 \001(\t\022\017\n\007size_gb\030\004 \001(\003\022\014\n\004type" +
-      "\030\005 \001(\t\022\014\n\004zone\030\006 \001(\t\022\016\n\006status\030\007 \001(\t\022\r\n\005" +
-      "users\030\010 \003(\t\022\014\n\004kind\030\t \001(\t\022\020\n\010endpoint\030\n " +
-      "\001(\t\022\014\n\004iops\030\013 \001(\003\022H\n\021persistent_volume\030\014" +
-      " \001(\0132-.appscode.kubernetes.v1beta2.Persi" +
-      "stentVolume\022S\n\027persistent_volume_claim\030\r" +
-      " \001(\01322.appscode.kubernetes.v1beta2.Persi",
-      "stentVolumeClaim\"\215\001\n\021ResourceCondition\022\014" +
-      "\n\004type\030\001 \001(\t\022\016\n\006status\030\002 \001(\t\022\033\n\023last_hea" +
-      "rtbeat_time\030\003 \001(\003\022\034\n\024last_transition_tim" +
-      "e\030\004 \001(\003\022\016\n\006reason\030\005 \001(\t\022\017\n\007message\030\006 \001(\t" +
-      "\"\200\r\n\014VolumeSource\022C\n\010hostPath\030\001 \001(\01321.ap" +
-      "pscode.kubernetes.v1beta2.HostPathVolume" +
-      "Source\022C\n\010emptyDir\030\002 \001(\01321.appscode.kube" +
-      "rnetes.v1beta2.EmptyDirVolumeSource\022U\n\021g" +
-      "cePersistentDisk\030\003 \001(\0132:.appscode.kubern" +
-      "etes.v1beta2.GCEPersistentDiskVolumeSour",
-      "ce\022[\n\024awsElasticBlockStore\030\004 \001(\0132=.appsc" +
-      "ode.kubernetes.v1beta2.AWSElasticBlockSt" +
-      "oreVolumeSource\022A\n\007gitRepo\030\005 \001(\01320.appsc" +
-      "ode.kubernetes.v1beta2.GitRepoVolumeSour" +
-      "ce\022?\n\006secret\030\006 \001(\0132/.appscode.kubernetes" +
-      ".v1beta2.SecretVolumeSource\0229\n\003nfs\030\007 \001(\013" +
-      "2,.appscode.kubernetes.v1beta2.NFSVolume" +
-      "Source\022=\n\005iscsi\030\010 \001(\0132..appscode.kuberne" +
-      "tes.v1beta2.ISCSIVolumeSource\022E\n\tgluster" +
-      "fs\030\t \001(\01322.appscode.kubernetes.v1beta2.G",
-      "lusterfsVolumeSource\022]\n\025persistentVolume" +
-      "Claim\030\n \001(\0132>.appscode.kubernetes.v1beta" +
-      "2.PersistentVolumeClaimVolumeSource\0229\n\003r" +
-      "bd\030\013 \001(\0132,.appscode.kubernetes.v1beta2.R" +
-      "BDVolumeSource\022A\n\nflexVolume\030\014 \001(\0132-.app" +
-      "scode.kubernetes.v1beta2.FlexVolumeSourc" +
-      "e\022?\n\006cinder\030\r \001(\0132/.appscode.kubernetes." +
-      "v1beta2.CinderVolumeSource\022?\n\006cephfs\030\016 \001" +
-      "(\0132/.appscode.kubernetes.v1beta2.CephFSV" +
-      "olumeSource\022A\n\007flocker\030\017 \001(\01320.appscode.",
-      "kubernetes.v1beta2.FlockerVolumeSource\022I" +
-      "\n\013downwardAPI\030\020 \001(\01324.appscode.kubernete" +
-      "s.v1beta2.DownwardAPIVolumeSource\0227\n\002fc\030" +
-      "\021 \001(\0132+.appscode.kubernetes.v1beta2.FCVo" +
-      "lumeSource\022E\n\tazureFile\030\022 \001(\01322.appscode" +
-      ".kubernetes.v1beta2.AzureFileVolumeSourc" +
-      "e\022E\n\tconfigMap\030\023 \001(\01322.appscode.kubernet" +
-      "es.v1beta2.ConfigMapVolumeSource\022R\n\rvsph" +
-      "ereVolume\030\024 \001(\0132;.appscode.kubernetes.v1" +
-      "beta2.VsphereVirtualDiskVolumeSource\022A\n\007",
-      "quobyte\030\025 \001(\01320.appscode.kubernetes.v1be" +
-      "ta2.QuobyteVolumeSource\022E\n\tazureDisk\030\026 \001" +
-      "(\01322.appscode.kubernetes.v1beta2.AzureDi" +
-      "skVolumeSource\022[\n\024photonPersistentDisk\030\027" +
-      " \001(\0132=.appscode.kubernetes.v1beta2.Photo" +
-      "nPersistentDiskVolumeSource\"i\n AWSElasti" +
-      "cBlockStoreVolumeSource\022\020\n\010volumeID\030\001 \001(" +
-      "\t\022\016\n\006fsType\030\002 \001(\t\022\021\n\tpartition\030\003 \001(\005\022\020\n\010" +
-      "readOnly\030\004 \001(\010\"$\n\024HostPathVolumeSource\022\014" +
-      "\n\004path\030\001 \001(\t\"t\n\022SecretVolumeSource\022\022\n\nse",
-      "cretName\030\001 \001(\t\0225\n\005items\030\002 \003(\0132&.appscode" +
-      ".kubernetes.v1beta2.KeyToPath\022\023\n\013default" +
-      "Mode\030\003 \001(\005\"4\n\tKeyToPath\022\013\n\003key\030\001 \001(\t\022\014\n\004" +
-      "path\030\002 \001(\t\022\014\n\004mode\030\003 \001(\005\"&\n\024EmptyDirVolu" +
-      "meSource\022\016\n\006medium\030\001 \001(\t\"H\n!PersistentVo" +
-      "lumeClaimVolumeSource\022\021\n\tclaimName\030\001 \001(\t" +
-      "\022\020\n\010readOnly\030\002 \001(\010\"q\n\027DownwardAPIVolumeS" +
-      "ource\022A\n\005items\030\001 \003(\01322.appscode.kubernet" +
-      "es.v1beta2.DownwardAPIVolumeFile\022\023\n\013defa" +
-      "ultMode\030\002 \001(\005\"\305\001\n\025DownwardAPIVolumeFile\022",
-      "\014\n\004path\030\001 \001(\t\022B\n\010fieldRef\030\002 \001(\01320.appsco" +
-      "de.kubernetes.v1beta2.ObjectFieldSelecto" +
-      "r\022L\n\020resourceFieldRef\030\003 \001(\01322.appscode.k" +
-      "ubernetes.v1beta2.ResourceFieldSelector\022" +
-      "\014\n\004mode\030\004 \001(\005\"\306\001\n\025ConfigMapVolumeSource\022" +
-      "O\n\024localObjectReference\030\001 \001(\01321.appscode" +
-      ".kubernetes.v1beta2.LocalObjectReference" +
-      "\0225\n\005items\030\002 \001(\0132&.appscode.kubernetes.v1" +
-      "beta2.KeyToPath\022\023\n\013defaultMode\030\003 \001(\005\022\020\n\010" +
-      "optional\030\004 \001(\010\"@\n PhotonPersistentDiskVo",
-      "lumeSource\022\014\n\004pdID\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t" +
-      "\"$\n\024LocalObjectReference\022\014\n\004name\030\001 \001(\t\"A" +
-      "\n\017NFSVolumeSource\022\016\n\006server\030\001 \001(\t\022\014\n\004pat" +
-      "h\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"S\n\016FCVolumeSou" +
-      "rce\022\022\n\ntargetWWNs\030\001 \003(\t\022\013\n\003lun\030\002 \001(\005\022\016\n\006" +
-      "fsType\030\003 \001(\t\022\020\n\010readOnly\030\004 \001(\010\"\202\002\n\020FlexV" +
-      "olumeSource\022\016\n\006driver\030\001 \001(\t\022\016\n\006fsType\030\002 " +
-      "\001(\t\022?\n\tsecretRef\030\003 \001(\0132,.appscode.kubern" +
-      "etes.v1beta2.ObjectReference\022\020\n\010readOnly" +
-      "\030\004 \001(\010\022K\n\007options\030\005 \003(\0132:.appscode.kuber",
-      "netes.v1beta2.FlexVolumeSource.OptionsEn" +
-      "try\032.\n\014OptionsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005valu" +
-      "e\030\002 \001(\t:\0028\001\"*\n\023FlockerVolumeSource\022\023\n\013da" +
-      "tasetName\030\001 \001(\t\"d\n\035GCEPersistentDiskVolu" +
-      "meSource\022\016\n\006pdName\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t" +
-      "\022\021\n\tpartition\030\003 \001(\005\022\020\n\010readOnly\030\004 \001(\010\"N\n" +
-      "\023GitRepoVolumeSource\022\022\n\nrepository\030\001 \001(\t" +
-      "\022\020\n\010revision\030\002 \001(\t\022\021\n\tdirectory\030\003 \001(\t\"J\n" +
-      "\025GlusterfsVolumeSource\022\021\n\tendpoints\030\001 \001(" +
-      "\t\022\014\n\004path\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"\302\001\n\017RB",
-      "DVolumeSource\022\020\n\010monitors\030\001 \003(\t\022\r\n\005image" +
-      "\030\002 \001(\t\022\016\n\006fsType\030\003 \001(\t\022\014\n\004pool\030\004 \001(\t\022\014\n\004" +
-      "user\030\005 \001(\t\022\017\n\007keyring\030\006 \001(\t\022?\n\tsecretRef" +
-      "\030\007 \001(\0132,.appscode.kubernetes.v1beta2.Obj" +
-      "ectReference\022\020\n\010readOnly\030\010 \001(\010\"}\n\021ISCSIV" +
-      "olumeSource\022\024\n\014targetPortal\030\001 \001(\t\022\013\n\003iqn" +
-      "\030\002 \001(\t\022\013\n\003lun\030\003 \001(\005\022\026\n\016iscsiInterface\030\004 " +
-      "\001(\t\022\016\n\006fsType\030\005 \001(\t\022\020\n\010readOnly\030\006 \001(\010\"P\n" +
-      "\025AzureFileVolumeSource\022\022\n\nsecretName\030\001 \001" +
-      "(\t\022\021\n\tshareName\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"",
-      "D\n\036VsphereVirtualDiskVolumeSource\022\022\n\nvol" +
-      "umePath\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\"f\n\023Quobyte" +
-      "VolumeSource\022\020\n\010registry\030\001 \001(\t\022\016\n\006volume" +
-      "\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\022\014\n\004user\030\004 \001(\t\022\r" +
-      "\n\005group\030\005 \001(\t\"q\n\025AzureDiskVolumeSource\022\020" +
-      "\n\010diskName\030\001 \001(\t\022\017\n\007diskURI\030\002 \001(\t\022\023\n\013cac" +
-      "hingMode\030\003 \001(\t\022\016\n\006fsType\030\004 \001(\t\022\020\n\010readOn" +
-      "ly\030\005 \001(\010\"H\n\022CinderVolumeSource\022\020\n\010volume" +
-      "ID\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\022\020\n\010readOnly\030\003 \001" +
-      "(\010\"\251\001\n\022CephFSVolumeSource\022\020\n\010monitors\030\001 ",
-      "\003(\t\022\014\n\004path\030\002 \001(\t\022\014\n\004user\030\003 \001(\t\022\022\n\nsecre" +
-      "tFile\030\004 \001(\t\022?\n\tsecretRef\030\005 \001(\0132,.appscod" +
-      "e.kubernetes.v1beta2.ObjectReference\022\020\n\010" +
-      "readOnly\030\006 \001(\010\"d\n\006EnvVar\022\014\n\004name\030\001 \001(\t\022\r" +
-      "\n\005value\030\002 \001(\t\022=\n\nvalue_from\030\003 \001(\0132).apps" +
-      "code.kubernetes.v1beta2.EnvVarSource\"\272\002\n" +
-      "\014EnvVarSource\022C\n\tfield_ref\030\001 \001(\01320.appsc" +
-      "ode.kubernetes.v1beta2.ObjectFieldSelect" +
-      "or\022N\n\022resource_field_ref\030\002 \001(\01322.appscod" +
-      "e.kubernetes.v1beta2.ResourceFieldSelect",
-      "or\022M\n\022config_map_key_ref\030\003 \001(\01321.appscod" +
-      "e.kubernetes.v1beta2.ConfigMapKeySelecto" +
-      "r\022F\n\016secret_key_ref\030\004 \001(\0132..appscode.kub" +
-      "ernetes.v1beta2.SecretKeySelector\">\n\023Obj" +
-      "ectFieldSelector\022\023\n\013api_version\030\001 \001(\t\022\022\n" +
-      "\nfield_path\030\002 \001(\t\"R\n\025ResourceFieldSelect" +
-      "or\022\026\n\016container_name\030\001 \001(\t\022\020\n\010resource\030\002" +
-      " \001(\t\022\017\n\007divisor\030\003 \001(\t\"q\n\024ConfigMapKeySel" +
-      "ector\022L\n\026local_object_reference\030\001 \001(\0132,." +
-      "appscode.kubernetes.v1beta2.ObjectRefere",
-      "nce\022\013\n\003key\030\002 \001(\t\"n\n\021SecretKeySelector\022L\n" +
-      "\026local_object_reference\030\001 \001(\0132,.appscode" +
-      ".kubernetes.v1beta2.ObjectReference\022\013\n\003k" +
-      "ey\030\002 \001(\t2\376\023\n\007Clients\022\273\001\n\004List\0220.appscode" +
-      ".kubernetes.v1beta2.ListResourceRequest\032" +
-      "1.appscode.kubernetes.v1beta2.ListResour" +
-      "ceResponse\"N\202\323\344\223\002B\022@/_appscode/api/kuber" +
-      "netes/v1beta2/clusters/{cluster}/{type}/" +
-      "json\202\265\030\002\010\001\022\316\001\n\010Describe\0224.appscode.kuber" +
-      "netes.v1beta2.DescribeResourceRequest\0325.",
-      "appscode.kubernetes.v1beta2.DescribeReso" +
-      "urceResponse\"U\202\323\344\223\002I\022G/_appscode/api/kub" +
-      "ernetes/v1beta2/clusters/{cluster}/{type" +
-      "}/{name}/json\202\265\030\002\010\001\022\256\001\n\006Create\0222.appscod" +
-      "e.kubernetes.v1beta2.CreateResourceReque" +
-      "st\032\035.appscode.dtypes.VoidResponse\"Q\202\323\344\223\002" +
-      "E\"@/_appscode/api/kubernetes/v1beta2/clu" +
-      "sters/{cluster}/{type}/json:\001*\202\265\030\002\010\001\022\262\001\n" +
-      "\006Delete\0222.appscode.kubernetes.v1beta2.De" +
-      "leteResourceRequest\032\035.appscode.dtypes.Vo",
-      "idResponse\"U\202\323\344\223\002I*G/_appscode/api/kuber" +
-      "netes/v1beta2/clusters/{cluster}/{type}/" +
-      "{name}/json\202\265\030\002\010\001\022\265\001\n\006Update\0222.appscode." +
-      "kubernetes.v1beta2.UpdateResourceRequest" +
-      "\032\035.appscode.dtypes.VoidResponse\"X\202\323\344\223\002L\032" +
-      "G/_appscode/api/kubernetes/v1beta2/clust" +
-      "ers/{cluster}/{type}/{name}/json:\001*\202\265\030\002\010" +
-      "\001\022\235\001\n\004Copy\0220.appscode.kubernetes.v1beta2" +
-      ".CopyResourceRequest\032\035.appscode.dtypes.V" +
-      "oidResponse\"D\202\323\344\223\0028\0323/_appscode/api/kube",
-      "rnetes/v1beta2/actions/copy/json:\001*\202\265\030\002\010" +
-      "\001\022\344\001\n\rEditConfigMap\0221.appscode.kubernete" +
-      "s.v1beta2.ConfigMapEditRequest\032\035.appscod" +
-      "e.dtypes.VoidResponse\"\200\001\202\323\344\223\002t\"o/_appsco" +
+      "eta\022\013\n\003app\030\002 \001(\t\0227\n\004spec\030\003 \001(\0132).appscod" +
+      "e.kubernetes.v1beta2.Service.Spec\022;\n\006sta" +
+      "tus\030\004 \001(\0132+.appscode.kubernetes.v1beta2." +
+      "Service.Status\032\306\003\n\004Spec\022\014\n\004type\030\001 \001(\t\022=\n",
+      "\005ports\030\002 \003(\0132..appscode.kubernetes.v1bet" +
+      "a2.Service.Spec.Port\022K\n\tselectors\030\003 \003(\0132" +
+      "8.appscode.kubernetes.v1beta2.Service.Sp" +
+      "ec.SelectorsEntry\022\021\n\tclusterIP\030\004 \001(\t\022\023\n\013" +
+      "externalIPs\030\005 \003(\t\022\026\n\016loadbalancerIP\030\006 \001(" +
+      "\t\022\025\n\rexternal_name\030\007 \001(\t\022\030\n\020session_affi" +
+      "nity\030\010 \001(\t\022#\n\033load_balancer_source_range" +
+      "s\030\t \003(\t\0320\n\016SelectorsEntry\022\013\n\003key\030\001 \001(\t\022\r" +
+      "\n\005value\030\002 \001(\t:\0028\001\032\\\n\004Port\022\014\n\004name\030\001 \001(\t\022" +
+      "\020\n\010protocol\030\002 \001(\t\022\014\n\004port\030\003 \001(\005\022\023\n\013targe",
+      "t_port\030\004 \001(\t\022\021\n\tnode_port\030\005 \001(\005\032\237\001\n\006Stat" +
+      "us\022_\n\026loadbalancer_ingresses\030\001 \003(\0132?.app" +
+      "scode.kubernetes.v1beta2.Service.Status." +
+      "LoadBalancerIngress\0324\n\023LoadBalancerIngre" +
+      "ss\022\021\n\thost_name\030\001 \001(\t\022\n\n\002IP\030\002 \001(\t\"\261\001\n\006Se" +
+      "cret\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes" +
+      ".v1beta2.Meta\022;\n\004data\030\002 \003(\0132-.appscode.k" +
+      "ubernetes.v1beta2.Secret.DataEntry\022\014\n\004ty" +
+      "pe\030\003 \001(\t\032+\n\tDataEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005va" +
+      "lue\030\002 \001(\t:\0028\001\"\224\004\n\025ReplicationController\022",
+      "/\n\004meta\030\001 \001(\0132!.appscode.kubernetes.v1be" +
+      "ta2.Meta\022\013\n\003app\030\002 \001(\t\022E\n\004spec\030\003 \001(\01327.ap" +
+      "pscode.kubernetes.v1beta2.ReplicationCon" +
+      "troller.Spec\022I\n\006status\030\004 \001(\01329.appscode." +
+      "kubernetes.v1beta2.ReplicationController" +
+      ".Status\032\351\001\n\004Spec\022\030\n\020desired_replicas\030\001 \001" +
+      "(\005\022Y\n\tselectors\030\002 \003(\0132F.appscode.kuberne" +
+      "tes.v1beta2.ReplicationController.Spec.S" +
+      "electorsEntry\022:\n\014pod_template\030\003 \001(\0132$.ap" +
+      "pscode.kubernetes.v1beta2.PodSpec\0320\n\016Sel",
+      "ectorsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:" +
+      "\0028\001\032?\n\006Status\022\030\n\020current_replicas\030\001 \001(\005\022" +
+      "\033\n\023observed_generation\030\002 \001(\003\"\244\003\n\nReplica" +
+      "Set\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes." +
+      "v1beta2.Meta\022\013\n\003app\030\002 \001(\t\022:\n\004spec\030\003 \001(\0132" +
+      ",.appscode.kubernetes.v1beta2.ReplicaSet" +
+      ".Spec\022>\n\006status\030\004 \001(\0132..appscode.kuberne" +
+      "tes.v1beta2.ReplicaSet.Status\032\232\001\n\004Spec\022\030" +
+      "\n\020desired_replicas\030\001 \001(\005\022<\n\010selector\030\002 \001" +
+      "(\0132*.appscode.kubernetes.v1beta2.LabelSe",
+      "lector\022:\n\014pod_template\030\003 \001(\0132$.appscode." +
+      "kubernetes.v1beta2.PodSpec\032?\n\006Status\022\030\n\020" +
+      "current_replicas\030\001 \001(\005\022\033\n\023observed_gener" +
+      "ation\030\002 \001(\003\"\261\003\n\tDaemonSet\022/\n\004meta\030\001 \001(\0132" +
+      "!.appscode.kubernetes.v1beta2.Meta\022\013\n\003ap" +
+      "p\030\002 \001(\t\0229\n\004spec\030\003 \001(\0132+.appscode.kuberne" +
+      "tes.v1beta2.DaemonSet.Spec\022=\n\006status\030\004 \001" +
+      "(\0132-.appscode.kubernetes.v1beta2.DaemonS" +
+      "et.Status\032\200\001\n\004Spec\022<\n\010selector\030\001 \001(\0132*.a" +
+      "ppscode.kubernetes.v1beta2.LabelSelector",
+      "\022:\n\014pod_template\030\002 \001(\0132$.appscode.kubern" +
+      "etes.v1beta2.PodSpec\032i\n\006Status\022 \n\030curren" +
+      "t_number_scheduled\030\001 \001(\005\022\033\n\023number_missc" +
+      "heduled\030\002 \001(\005\022 \n\030desired_number_schedule" +
+      "d\030\003 \001(\005\"\312\010\n\nDeployment\022/\n\004meta\030\001 \001(\0132!.a" +
+      "ppscode.kubernetes.v1beta2.Meta\022\013\n\003app\030\002" +
+      " \001(\t\022:\n\004spec\030\003 \001(\0132,.appscode.kubernetes" +
+      ".v1beta2.Deployment.Spec\022H\n\006status\030\004 \001(\013" +
+      "28.appscode.kubernetes.v1beta2.Deploymen" +
+      "t.DeploymentStatus\032\233\005\n\004Spec\022\030\n\020desired_r",
+      "eplicas\030\001 \001(\005\022<\n\010selector\030\002 \001(\0132*.appsco" +
+      "de.kubernetes.v1beta2.LabelSelector\022:\n\014p" +
+      "od_template\030\003 \001(\0132$.appscode.kubernetes." +
+      "v1beta2.PodSpec\022\031\n\021min_ready_seconds\030\004 \001" +
+      "(\005\022\036\n\026revision_history_limit\030\005 \001(\005\022\016\n\006pa" +
+      "used\030\006 \001(\010\022P\n\013rollback_to\030\007 \001(\0132;.appsco" +
+      "de.kubernetes.v1beta2.Deployment.Spec.Ro" +
+      "llbackConfig\022!\n\031progress_deadline_second" +
+      "s\030\010 \001(\005\022Q\n\010strategy\030\t \001(\0132?.appscode.kub" +
+      "ernetes.v1beta2.Deployment.Spec.Deployme",
+      "ntStrategy\032\200\001\n\022DeploymentStrategy\022\014\n\004typ" +
+      "e\030\001 \001(\t\022\\\n\016rolling_update\030\002 \001(\0132D.appsco" +
+      "de.kubernetes.v1beta2.Deployment.Spec.Ro" +
+      "llingUpdateDeployment\032E\n\027RollingUpdateDe" +
+      "ployment\022\027\n\017max_unavailable\030\001 \001(\t\022\021\n\tmax" +
+      "_surge\030\002 \001(\t\032\"\n\016RollbackConfig\022\020\n\010revisi" +
+      "on\030\001 \001(\003\032\331\001\n\020DeploymentStatus\022\033\n\023observe" +
+      "d_generation\030\001 \001(\003\022\020\n\010replicas\030\002 \001(\005\022\030\n\020" +
+      "updated_replicas\030\003 \001(\005\022\032\n\022available_repl" +
+      "icas\030\004 \001(\005\022\034\n\024unavailable_replicas\030\005 \001(\005",
+      "\022B\n\nconditions\030\006 \003(\0132..appscode.kubernet" +
+      "es.v1beta2.ResourceCondition\"\275\003\n\013Statefu" +
+      "lSet\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes" +
+      ".v1beta2.Meta\022\013\n\003app\030\002 \001(\t\022;\n\004spec\030\003 \001(\013" +
+      "2-.appscode.kubernetes.v1beta2.StatefulS" +
+      "et.Spec\022?\n\006status\030\004 \001(\0132/.appscode.kuber" +
+      "netes.v1beta2.StatefulSet.Status\032\260\001\n\004Spe" +
+      "c\022\030\n\020desired_replicas\030\001 \001(\005\022<\n\010selector\030" +
+      "\002 \001(\0132*.appscode.kubernetes.v1beta2.Labe" +
+      "lSelector\022:\n\014pod_template\030\003 \001(\0132$.appsco",
+      "de.kubernetes.v1beta2.PodSpec\022\024\n\014service" +
+      "_name\030\004 \001(\t\032?\n\006Status\022\030\n\020current_replica" +
+      "s\030\001 \001(\005\022\033\n\023observed_generation\030\002 \001(\003\"\326\001\n" +
+      "\014StorageClass\022/\n\004meta\030\001 \001(\0132!.appscode.k" +
+      "ubernetes.v1beta2.Meta\022\023\n\013provisioner\030\002 " +
+      "\001(\t\022M\n\nparameters\030\003 \003(\01329.appscode.kuber" +
+      "netes.v1beta2.StorageClass.ParametersEnt" +
+      "ry\0321\n\017ParametersEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005va" +
+      "lue\030\002 \001(\t:\0028\001\"\226\001\n\rLabelSelector\022Q\n\014match" +
+      "_labels\030\001 \003(\0132;.appscode.kubernetes.v1be",
+      "ta2.LabelSelector.MatchLabelsEntry\0322\n\020Ma" +
+      "tchLabelsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001" +
+      "(\t:\0028\001\"\341\001\n\005Event\022/\n\004meta\030\001 \001(\0132!.appscod" +
+      "e.kubernetes.v1beta2.Meta\022\016\n\006reason\030\002 \001(" +
+      "\t\022\017\n\007message\030\003 \001(\t\0228\n\006source\030\004 \001(\0132(.app" +
+      "scode.kubernetes.v1beta2.EventSource\022\027\n\017" +
+      "first_timestamp\030\005 \001(\003\022\026\n\016last_timestamp\030" +
+      "\006 \001(\003\022\r\n\005count\030\007 \001(\005\022\014\n\004type\030\010 \001(\t\"/\n\013Ev" +
+      "entSource\022\022\n\ncomponenet\030\001 \001(\t\022\014\n\004host\030\002 " +
+      "\001(\t\"\301\001\n\007Metrics\022A\n\tcpu_usage\030\001 \003(\0132..app",
+      "scode.kubernetes.v1beta2.Metrics.DataPoi" +
+      "nt\022D\n\014memory_usage\030\002 \003(\0132..appscode.kube" +
+      "rnetes.v1beta2.Metrics.DataPoint\032-\n\tData" +
+      "Point\022\021\n\ttimestamp\030\001 \001(\003\022\r\n\005value\030\002 \001(\003\"" +
+      "\207\001\n\037PersistentVolumeRegisterRequest\022\017\n\007c" +
+      "luster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\022\n\nidentifier" +
+      "\030\003 \001(\t\022\016\n\006plugin\030\004 \001(\t\022\017\n\007size_gb\030\005 \001(\003\022" +
+      "\020\n\010endpoint\030\006 \001(\t\"B\n!PersistentVolumeUnR" +
+      "egisterRequest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030" +
+      "\002 \001(\t\"i\n$PersistentVolumeClaimRegisterRe",
+      "quest\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007" +
+      "size_gb\030\003 \001(\003\022\021\n\tnamespace\030\004 \001(\t\"Z\n&Pers" +
+      "istentVolumeClaimUnRegisterRequest\022\017\n\007cl" +
+      "uster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\021\n\tnamespace\030\003" +
+      " \001(\t\"\324\005\n\005Alert\022/\n\004meta\030\001 \001(\0132!.appscode." +
+      "kubernetes.v1beta2.Meta\022:\n\004spec\030\002 \001(\0132,." +
+      "appscode.kubernetes.v1beta2.Alert.AlertS" +
+      "pec\022>\n\006status\030\003 \001(\0132..appscode.kubernete" +
+      "s.v1beta2.Alert.AlertStatus\032\303\003\n\tAlertSpe" +
+      "c\022N\n\014icinga_param\030\001 \001(\01328.appscode.kuber",
+      "netes.v1beta2.Alert.AlertSpec.IcingaPara" +
+      "m\022\025\n\rcheck_command\030\002 \001(\t\022S\n\017notifier_par" +
+      "ams\030\003 \003(\0132:.appscode.kubernetes.v1beta2." +
+      "Alert.AlertSpec.NotifierParam\022D\n\004vars\030\004 " +
+      "\003(\01326.appscode.kubernetes.v1beta2.Alert." +
+      "AlertSpec.VarsEntry\032+\n\tVarsEntry\022\013\n\003key\030" +
+      "\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\032E\n\013IcingaParam\022" +
+      "\032\n\022check_interval_sec\030\001 \001(\003\022\032\n\022alert_int" +
+      "erval_sec\030\002 \001(\003\032@\n\rNotifierParam\022\r\n\005stat" +
+      "e\030\001 \001(\t\022\020\n\010user_uid\030\002 \001(\t\022\016\n\006method\030\003 \001(",
+      "\t\032X\n\013AlertStatus\022\025\n\rcreation_time\030\001 \001(\003\022" +
+      "\023\n\013update_time\030\002 \001(\003\022\r\n\005phase\030\003 \001(\t\022\016\n\006r" +
+      "eason\030\004 \001(\t\"i\n\004Role\022/\n\004meta\030\001 \001(\0132!.apps" +
+      "code.kubernetes.v1beta2.Meta\0220\n\005rules\030\002 " +
+      "\003(\0132!.appscode.kubernetes.v1beta2.Rule\"\266" +
+      "\001\n\013RoleBinding\022/\n\004meta\030\001 \001(\0132!.appscode." +
+      "kubernetes.v1beta2.Meta\0226\n\010subjects\030\002 \003(" +
+      "\0132$.appscode.kubernetes.v1beta2.Subject\022" +
+      ">\n\010role_ref\030\003 \001(\0132,.appscode.kubernetes." +
+      "v1beta2.ObjectReference\"p\n\013ClusterRole\022/",
+      "\n\004meta\030\001 \001(\0132!.appscode.kubernetes.v1bet" +
+      "a2.Meta\0220\n\005rules\030\002 \003(\0132!.appscode.kubern" +
+      "etes.v1beta2.Rule\"\275\001\n\022ClusterRoleBinding" +
+      "\022/\n\004meta\030\001 \001(\0132!.appscode.kubernetes.v1b" +
+      "eta2.Meta\0226\n\010subjects\030\002 \003(\0132$.appscode.k" +
+      "ubernetes.v1beta2.Subject\022>\n\010role_ref\030\003 " +
+      "\001(\0132,.appscode.kubernetes.v1beta2.Object" +
+      "Reference\"o\n\004Rule\022\r\n\005verbs\030\001 \003(\t\022\022\n\napi_" +
+      "groups\030\002 \003(\t\022\021\n\tresources\030\003 \003(\t\022\026\n\016resou" +
+      "rce_names\030\004 \003(\t\022\031\n\021non_resource_urls\030\005 \003",
+      "(\t\"M\n\007Subject\022\014\n\004kind\030\001 \001(\t\022\023\n\013api_versi" +
+      "on\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\022\021\n\tnamespace\030\004 \001(" +
+      "\t\"\232\010\n\006Backup\022/\n\004meta\030\001 \001(\0132!.appscode.ku" +
+      "bernetes.v1beta2.Meta\0226\n\004spec\030\002 \001(\0132(.ap" +
+      "pscode.kubernetes.v1beta2.Backup.Spec\022:\n" +
+      "\006status\030\003 \001(\0132*.appscode.kubernetes.v1be" +
+      "ta2.Backup.Status\032\321\005\n\004Spec\022\020\n\010schedule\030\001" +
+      " \001(\t\022\014\n\004tags\030\002 \003(\t\022E\n\006source\030\003 \001(\01325.app" +
+      "scode.kubernetes.v1beta2.Backup.Spec.Bac" +
+      "kupSource\022O\n\013destination\030\004 \001(\0132:.appscod",
+      "e.kubernetes.v1beta2.Backup.Spec.BackupD" +
+      "estination\022R\n\020retention_policy\030\005 \001(\01328.a" +
+      "ppscode.kubernetes.v1beta2.Backup.Spec.R" +
+      "etentionPolicy\0321\n\014BackupSource\022\023\n\013volume" +
+      "_name\030\001 \001(\t\022\014\n\004path\030\002 \001(\t\032|\n\021BackupDesti" +
+      "nation\022\014\n\004path\030\001 \001(\t\022\036\n\026repository_secre" +
+      "t_name\030\002 \001(\t\0229\n\006volume\030\003 \001(\0132).appscode." +
+      "kubernetes.v1beta2.VolumeSource\032\213\002\n\017Rete" +
+      "ntionPolicy\022\033\n\023keep_last_snapshots\030\001 \001(\005" +
+      "\022\035\n\025keep_hourly_snapshots\030\002 \001(\005\022\034\n\024keep_",
+      "daily_snapshots\030\003 \001(\005\022\035\n\025keep_weekly_sna" +
+      "pshots\030\004 \001(\005\022\036\n\026keep_monthly_snapshots\030\005" +
+      " \001(\005\022\035\n\025keep_yearly_snapshots\030\006 \001(\005\022\021\n\tk" +
+      "eep_tags\030\007 \003(\t\022\030\n\020retain_host_name\030\010 \001(\t" +
+      "\022\023\n\013retain_tags\030\t \003(\t\032\226\001\n\006Status\022\031\n\021firs" +
+      "t_backup_time\030\001 \001(\003\022\030\n\020last_backup_time\030" +
+      "\002 \001(\003\022#\n\033last_successful_backup_time\030\003 \001" +
+      "(\003\022\034\n\024last_backup_duration\030\004 \001(\t\022\024\n\014back" +
+      "up_count\030\005 \001(\003\"\267\003\n\007CronJob\022/\n\004meta\030\001 \001(\013" +
+      "2!.appscode.kubernetes.v1beta2.Meta\0227\n\004s",
+      "pec\030\002 \001(\0132).appscode.kubernetes.v1beta2." +
+      "CronJob.Spec\022;\n\006status\030\003 \001(\0132+.appscode." +
+      "kubernetes.v1beta2.CronJob.Status\032\240\001\n\004Sp" +
+      "ec\022\020\n\010schedule\030\001 \001(\t\022!\n\031starting_deadlin" +
+      "e_seconds\030\002 \001(\003\022\032\n\022concurrency_policy\030\003 " +
+      "\001(\t\022\017\n\007suspend\030\004 \001(\010\0226\n\010template\030\005 \001(\0132$" +
+      ".appscode.kubernetes.v1beta2.JobSpec\032b\n\006" +
+      "Status\022<\n\006active\030\001 \003(\0132,.appscode.kubern" +
+      "etes.v1beta2.ObjectReference\022\032\n\022last_sch" +
+      "edule_time\030\002 \001(\003\"\362\001\n\010Postgres\022/\n\004meta\030\001 ",
+      "\001(\0132!.appscode.kubernetes.v1beta2.Meta\0227" +
+      "\n\004spec\030\002 \001(\0132).appscode.kubernetes.v1bet" +
+      "a2.PostgresSpec\022<\n\006status\030\003 \001(\0132,.appsco" +
+      "de.kubernetes.v1beta2.Postgres.Status\032>\n" +
+      "\006Status\022\025\n\rcreation_time\030\001 \001(\003\022\r\n\005phase\030" +
+      "\002 \001(\t\022\016\n\006reason\030\003 \001(\t\"\363\003\n\014PostgresSpec\022\017" +
+      "\n\007version\030\001 \001(\t\022\020\n\010replicas\030\002 \001(\005\0229\n\007sto" +
+      "rage\030\003 \001(\0132(.appscode.kubernetes.v1beta2" +
+      ".StorageSpec\022\034\n\024service_account_name\030\004 \001" +
+      "(\t\022H\n\017database_secret\030\005 \001(\0132/.appscode.k",
+      "ubernetes.v1beta2.SecretVolumeSource\022R\n\r" +
+      "node_selector\030\006 \003(\0132;.appscode.kubernete" +
+      "s.v1beta2.PostgresSpec.NodeSelectorEntry" +
+      "\0223\n\004init\030\007 \001(\0132%.appscode.kubernetes.v1b" +
+      "eta2.InitSpec\022H\n\017backup_schedule\030\010 \001(\0132/" +
+      ".appscode.kubernetes.v1beta2.BackupSched" +
+      "uleSpec\022\025\n\rdo_not_delete\030\t \001(\010\0323\n\021NodeSe" +
+      "lectorEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:" +
+      "\0028\001\"\357\001\n\007Elastic\022/\n\004meta\030\001 \001(\0132!.appscode" +
+      ".kubernetes.v1beta2.Meta\0226\n\004spec\030\002 \001(\0132(",
+      ".appscode.kubernetes.v1beta2.ElasticSpec" +
+      "\022;\n\006status\030\003 \001(\0132+.appscode.kubernetes.v" +
+      "1beta2.Elastic.Status\032>\n\006Status\022\025\n\rcreat" +
+      "ion_time\030\001 \001(\003\022\r\n\005phase\030\002 \001(\t\022\016\n\006reason\030" +
+      "\003 \001(\t\"\247\003\n\013ElasticSpec\022\017\n\007version\030\001 \001(\t\022\020" +
+      "\n\010replicas\030\002 \001(\005\0229\n\007storage\030\003 \001(\0132(.apps" +
+      "code.kubernetes.v1beta2.StorageSpec\022\034\n\024s" +
+      "ervice_account_name\030\004 \001(\t\022Q\n\rnode_select" +
+      "or\030\005 \003(\0132:.appscode.kubernetes.v1beta2.E" +
+      "lasticSpec.NodeSelectorEntry\0223\n\004init\030\006 \001",
+      "(\0132%.appscode.kubernetes.v1beta2.InitSpe" +
+      "c\022H\n\017backup_schedule\030\007 \001(\0132/.appscode.ku" +
+      "bernetes.v1beta2.BackupScheduleSpec\022\025\n\rd" +
+      "o_not_delete\030\010 \001(\010\0323\n\021NodeSelectorEntry\022" +
+      "\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\t:\0028\001\"\226\003\n\017Dele" +
+      "tedDatabase\022/\n\004meta\030\001 \001(\0132!.appscode.kub" +
+      "ernetes.v1beta2.Meta\022?\n\004spec\030\002 \001(\01321.app" +
+      "scode.kubernetes.v1beta2.DeletedDatabase" +
+      ".Spec\022C\n\006status\030\003 \001(\01323.appscode.kuberne" +
+      "tes.v1beta2.DeletedDatabase.Status\032^\n\004Sp",
+      "ec\022\020\n\010wipe_out\030\001 \001(\010\022\017\n\007recover\030\002 \001(\010\0223\n" +
+      "\006origin\030\003 \001(\0132#.appscode.kubernetes.v1be" +
+      "ta2.Origin\032l\n\006Status\022\025\n\rcreation_time\030\001 " +
+      "\001(\003\022\025\n\rdeletion_time\030\002 \001(\003\022\025\n\rwipe_out_t" +
+      "ime\030\003 \001(\003\022\r\n\005phase\030\004 \001(\t\022\016\n\006reason\030\005 \001(\t" +
+      "\"\361\001\n\006Origin\022/\n\004meta\030\001 \001(\0132!.appscode.kub" +
+      "ernetes.v1beta2.Meta\0226\n\004spec\030\002 \001(\0132(.app" +
+      "scode.kubernetes.v1beta2.Origin.Spec\032~\n\004" +
+      "Spec\0229\n\007elastic\030\001 \001(\0132(.appscode.kuberne" +
+      "tes.v1beta2.ElasticSpec\022;\n\010postgres\030\002 \001(",
+      "\0132).appscode.kubernetes.v1beta2.Postgres" +
+      "Spec\"\202\003\n\020DatabaseSnapshot\022/\n\004meta\030\001 \001(\0132" +
+      "!.appscode.kubernetes.v1beta2.Meta\022@\n\004sp" +
+      "ec\030\002 \001(\01322.appscode.kubernetes.v1beta2.D" +
+      "atabaseSnapshot.Spec\022D\n\006status\030\003 \001(\01324.a" +
+      "ppscode.kubernetes.v1beta2.DatabaseSnaps" +
+      "hot.Status\032_\n\004Spec\022\025\n\rdatabase_name\030\001 \001(" +
+      "\t\022@\n\rsnapshot_spec\030\002 \001(\0132).appscode.kube" +
+      "rnetes.v1beta2.SnapshotSpec\032T\n\006Status\022\022\n" +
+      "\nstart_time\030\001 \001(\003\022\027\n\017completion_time\030\002 \001",
+      "(\003\022\r\n\005phase\030\003 \001(\t\022\016\n\006reason\030\004 \001(\t\"z\n\013Sto" +
+      "rageSpec\022\r\n\005class\030\001 \001(\t\022\\\n\034persistent_vo" +
+      "lume_claim_spec\030\002 \001(\01326.appscode.kuberne" +
+      "tes.v1beta2.PersistentVolumeClaimSpec\"\232\001" +
+      "\n\010InitSpec\022D\n\rscript_source\030\001 \001(\0132-.apps" +
+      "code.kubernetes.v1beta2.ScriptSourceSpec" +
+      "\022H\n\017snapshot_source\030\002 \001(\0132/.appscode.kub" +
+      "ernetes.v1beta2.SnapshotSourceSpec\"i\n\020Sc" +
+      "riptSourceSpec\022\023\n\013script_path\030\001 \001(\t\022@\n\rv" +
+      "olume_source\030\002 \001(\0132).appscode.kubernetes",
+      ".v1beta2.VolumeSource\"5\n\022SnapshotSourceS" +
+      "pec\022\021\n\tnamespace\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\"o\n\022" +
+      "BackupScheduleSpec\022\027\n\017cron_expression\030\001 " +
+      "\001(\t\022@\n\rsnapshot_spec\030\002 \001(\0132).appscode.ku" +
+      "bernetes.v1beta2.SnapshotSpec\"\266\001\n\014Snapsh" +
+      "otSpec\022G\n\016storage_secret\030\001 \001(\0132/.appscod" +
+      "e.kubernetes.v1beta2.SecretVolumeSource\022" +
+      "H\n\017database_secret\030\002 \001(\0132/.appscode.kube" +
+      "rnetes.v1beta2.SecretVolumeSource\022\023\n\013buc" +
+      "ket_name\030\003 \001(\t\"\337\005\n\013Certificate\022/\n\004meta\030\001",
+      " \001(\0132!.appscode.kubernetes.v1beta2.Meta\022" +
+      ";\n\004spec\030\002 \001(\0132-.appscode.kubernetes.v1be" +
+      "ta2.Certificate.Spec\022?\n\006status\030\003 \001(\0132/.a" +
+      "ppscode.kubernetes.v1beta2.Certificate.S" +
+      "tatus\032\357\001\n\004Spec\022\017\n\007domains\030\001 \003(\t\022\020\n\010provi" +
+      "der\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022U\n\037HTTP_provide" +
+      "r_ingress_reference\030\004 \001(\0132,.appscode.kub" +
+      "ernetes.v1beta2.ObjectReference\022\'\n\037provi" +
+      "der_credential_secret_name\030\005 \001(\t\022\035\n\025ACME" +
+      "_user_secret_name\030\006 \001(\t\022\026\n\016ACME_serverUR",
+      "L\030\007 \001(\t\032\256\002\n\006Status\022\034\n\024certificate_obtain" +
+      "ed\030\001 \001(\010\022\017\n\007message\030\002 \001(\t\022\025\n\rcreation_ti" +
+      "me\030\003 \001(\003\022\035\n\025ACME_user_secret_name\030\004 \001(\t\022" +
+      "W\n\007details\030\005 \001(\0132F.appscode.kubernetes.v" +
+      "1beta2.Certificate.Status.ACMECertificat" +
+      "eDetails\032f\n\026ACMECertificateDetails\022\016\n\006do" +
+      "main\030\001 \001(\t\022\017\n\007certURL\030\002 \001(\t\022\026\n\016cert_stab" +
+      "leURL\030\003 \001(\t\022\023\n\013account_ref\030\004 \001(\t\"\"\n\017Disk" +
+      "ListRequest\022\017\n\007cluster\030\001 \001(\t\"D\n\020DiskList" +
+      "Response\0220\n\005disks\030\001 \003(\0132!.appscode.kuber",
+      "netes.v1beta2.Disk\"F\n\023DiskDescribeReques" +
+      "t\022\017\n\007cluster\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\020\n\010prov" +
+      "ider\030\003 \001(\t\"G\n\024DiskDescribeResponse\022/\n\004di" +
+      "sk\030\001 \001(\0132!.appscode.kubernetes.v1beta2.D" +
+      "isk\"d\n\021DiskCreateRequest\022\017\n\007cluster\030\001 \001(" +
+      "\t\022\014\n\004name\030\002 \001(\t\022\014\n\004zone\030\003 \001(\t\022\021\n\tdisk_ty" +
+      "pe\030\004 \001(\t\022\017\n\007size_gb\030\005 \001(\003\"1\n\021DiskDeleteR" +
+      "equest\022\017\n\007cluster\030\001 \001(\t\022\013\n\003uid\030\002 \001(\t\"\313\002\n" +
+      "\004Disk\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\020\n\010provi" +
+      "der\030\003 \001(\t\022\017\n\007size_gb\030\004 \001(\003\022\014\n\004type\030\005 \001(\t",
+      "\022\014\n\004zone\030\006 \001(\t\022\016\n\006status\030\007 \001(\t\022\r\n\005users\030" +
+      "\010 \003(\t\022\014\n\004kind\030\t \001(\t\022\020\n\010endpoint\030\n \001(\t\022\014\n" +
+      "\004iops\030\013 \001(\003\022H\n\021persistent_volume\030\014 \001(\0132-" +
+      ".appscode.kubernetes.v1beta2.PersistentV" +
+      "olume\022S\n\027persistent_volume_claim\030\r \001(\01322" +
+      ".appscode.kubernetes.v1beta2.PersistentV" +
+      "olumeClaim\"\215\001\n\021ResourceCondition\022\014\n\004type" +
+      "\030\001 \001(\t\022\016\n\006status\030\002 \001(\t\022\033\n\023last_heartbeat" +
+      "_time\030\003 \001(\003\022\034\n\024last_transition_time\030\004 \001(" +
+      "\003\022\016\n\006reason\030\005 \001(\t\022\017\n\007message\030\006 \001(\t\"\200\r\n\014V",
+      "olumeSource\022C\n\010hostPath\030\001 \001(\01321.appscode" +
+      ".kubernetes.v1beta2.HostPathVolumeSource" +
+      "\022C\n\010emptyDir\030\002 \001(\01321.appscode.kubernetes" +
+      ".v1beta2.EmptyDirVolumeSource\022U\n\021gcePers" +
+      "istentDisk\030\003 \001(\0132:.appscode.kubernetes.v" +
+      "1beta2.GCEPersistentDiskVolumeSource\022[\n\024" +
+      "awsElasticBlockStore\030\004 \001(\0132=.appscode.ku" +
+      "bernetes.v1beta2.AWSElasticBlockStoreVol" +
+      "umeSource\022A\n\007gitRepo\030\005 \001(\01320.appscode.ku" +
+      "bernetes.v1beta2.GitRepoVolumeSource\022?\n\006",
+      "secret\030\006 \001(\0132/.appscode.kubernetes.v1bet" +
+      "a2.SecretVolumeSource\0229\n\003nfs\030\007 \001(\0132,.app" +
+      "scode.kubernetes.v1beta2.NFSVolumeSource" +
+      "\022=\n\005iscsi\030\010 \001(\0132..appscode.kubernetes.v1" +
+      "beta2.ISCSIVolumeSource\022E\n\tglusterfs\030\t \001" +
+      "(\01322.appscode.kubernetes.v1beta2.Gluster" +
+      "fsVolumeSource\022]\n\025persistentVolumeClaim\030" +
+      "\n \001(\0132>.appscode.kubernetes.v1beta2.Pers" +
+      "istentVolumeClaimVolumeSource\0229\n\003rbd\030\013 \001" +
+      "(\0132,.appscode.kubernetes.v1beta2.RBDVolu",
+      "meSource\022A\n\nflexVolume\030\014 \001(\0132-.appscode." +
+      "kubernetes.v1beta2.FlexVolumeSource\022?\n\006c" +
+      "inder\030\r \001(\0132/.appscode.kubernetes.v1beta" +
+      "2.CinderVolumeSource\022?\n\006cephfs\030\016 \001(\0132/.a" +
+      "ppscode.kubernetes.v1beta2.CephFSVolumeS" +
+      "ource\022A\n\007flocker\030\017 \001(\01320.appscode.kubern" +
+      "etes.v1beta2.FlockerVolumeSource\022I\n\013down" +
+      "wardAPI\030\020 \001(\01324.appscode.kubernetes.v1be" +
+      "ta2.DownwardAPIVolumeSource\0227\n\002fc\030\021 \001(\0132" +
+      "+.appscode.kubernetes.v1beta2.FCVolumeSo",
+      "urce\022E\n\tazureFile\030\022 \001(\01322.appscode.kuber" +
+      "netes.v1beta2.AzureFileVolumeSource\022E\n\tc" +
+      "onfigMap\030\023 \001(\01322.appscode.kubernetes.v1b" +
+      "eta2.ConfigMapVolumeSource\022R\n\rvsphereVol" +
+      "ume\030\024 \001(\0132;.appscode.kubernetes.v1beta2." +
+      "VsphereVirtualDiskVolumeSource\022A\n\007quobyt" +
+      "e\030\025 \001(\01320.appscode.kubernetes.v1beta2.Qu" +
+      "obyteVolumeSource\022E\n\tazureDisk\030\026 \001(\01322.a" +
+      "ppscode.kubernetes.v1beta2.AzureDiskVolu" +
+      "meSource\022[\n\024photonPersistentDisk\030\027 \001(\0132=",
+      ".appscode.kubernetes.v1beta2.PhotonPersi" +
+      "stentDiskVolumeSource\"i\n AWSElasticBlock" +
+      "StoreVolumeSource\022\020\n\010volumeID\030\001 \001(\t\022\016\n\006f" +
+      "sType\030\002 \001(\t\022\021\n\tpartition\030\003 \001(\005\022\020\n\010readOn" +
+      "ly\030\004 \001(\010\"$\n\024HostPathVolumeSource\022\014\n\004path" +
+      "\030\001 \001(\t\"t\n\022SecretVolumeSource\022\022\n\nsecretNa" +
+      "me\030\001 \001(\t\0225\n\005items\030\002 \003(\0132&.appscode.kuber" +
+      "netes.v1beta2.KeyToPath\022\023\n\013defaultMode\030\003" +
+      " \001(\005\"4\n\tKeyToPath\022\013\n\003key\030\001 \001(\t\022\014\n\004path\030\002" +
+      " \001(\t\022\014\n\004mode\030\003 \001(\005\"&\n\024EmptyDirVolumeSour",
+      "ce\022\016\n\006medium\030\001 \001(\t\"H\n!PersistentVolumeCl" +
+      "aimVolumeSource\022\021\n\tclaimName\030\001 \001(\t\022\020\n\010re" +
+      "adOnly\030\002 \001(\010\"q\n\027DownwardAPIVolumeSource\022" +
+      "A\n\005items\030\001 \003(\01322.appscode.kubernetes.v1b" +
+      "eta2.DownwardAPIVolumeFile\022\023\n\013defaultMod" +
+      "e\030\002 \001(\005\"\305\001\n\025DownwardAPIVolumeFile\022\014\n\004pat" +
+      "h\030\001 \001(\t\022B\n\010fieldRef\030\002 \001(\01320.appscode.kub" +
+      "ernetes.v1beta2.ObjectFieldSelector\022L\n\020r" +
+      "esourceFieldRef\030\003 \001(\01322.appscode.kuberne" +
+      "tes.v1beta2.ResourceFieldSelector\022\014\n\004mod",
+      "e\030\004 \001(\005\"\306\001\n\025ConfigMapVolumeSource\022O\n\024loc" +
+      "alObjectReference\030\001 \001(\01321.appscode.kuber" +
+      "netes.v1beta2.LocalObjectReference\0225\n\005it" +
+      "ems\030\002 \001(\0132&.appscode.kubernetes.v1beta2." +
+      "KeyToPath\022\023\n\013defaultMode\030\003 \001(\005\022\020\n\010option" +
+      "al\030\004 \001(\010\"@\n PhotonPersistentDiskVolumeSo" +
+      "urce\022\014\n\004pdID\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\"$\n\024Lo" +
+      "calObjectReference\022\014\n\004name\030\001 \001(\t\"A\n\017NFSV" +
+      "olumeSource\022\016\n\006server\030\001 \001(\t\022\014\n\004path\030\002 \001(" +
+      "\t\022\020\n\010readOnly\030\003 \001(\010\"S\n\016FCVolumeSource\022\022\n",
+      "\ntargetWWNs\030\001 \003(\t\022\013\n\003lun\030\002 \001(\005\022\016\n\006fsType" +
+      "\030\003 \001(\t\022\020\n\010readOnly\030\004 \001(\010\"\202\002\n\020FlexVolumeS" +
+      "ource\022\016\n\006driver\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\022?\n" +
+      "\tsecretRef\030\003 \001(\0132,.appscode.kubernetes.v" +
+      "1beta2.ObjectReference\022\020\n\010readOnly\030\004 \001(\010" +
+      "\022K\n\007options\030\005 \003(\0132:.appscode.kubernetes." +
+      "v1beta2.FlexVolumeSource.OptionsEntry\032.\n" +
+      "\014OptionsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(" +
+      "\t:\0028\001\"*\n\023FlockerVolumeSource\022\023\n\013datasetN" +
+      "ame\030\001 \001(\t\"d\n\035GCEPersistentDiskVolumeSour",
+      "ce\022\016\n\006pdName\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\022\021\n\tpa" +
+      "rtition\030\003 \001(\005\022\020\n\010readOnly\030\004 \001(\010\"N\n\023GitRe" +
+      "poVolumeSource\022\022\n\nrepository\030\001 \001(\t\022\020\n\010re" +
+      "vision\030\002 \001(\t\022\021\n\tdirectory\030\003 \001(\t\"J\n\025Glust" +
+      "erfsVolumeSource\022\021\n\tendpoints\030\001 \001(\t\022\014\n\004p" +
+      "ath\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"\302\001\n\017RBDVolum" +
+      "eSource\022\020\n\010monitors\030\001 \003(\t\022\r\n\005image\030\002 \001(\t" +
+      "\022\016\n\006fsType\030\003 \001(\t\022\014\n\004pool\030\004 \001(\t\022\014\n\004user\030\005" +
+      " \001(\t\022\017\n\007keyring\030\006 \001(\t\022?\n\tsecretRef\030\007 \001(\013" +
+      "2,.appscode.kubernetes.v1beta2.ObjectRef",
+      "erence\022\020\n\010readOnly\030\010 \001(\010\"}\n\021ISCSIVolumeS" +
+      "ource\022\024\n\014targetPortal\030\001 \001(\t\022\013\n\003iqn\030\002 \001(\t" +
+      "\022\013\n\003lun\030\003 \001(\005\022\026\n\016iscsiInterface\030\004 \001(\t\022\016\n" +
+      "\006fsType\030\005 \001(\t\022\020\n\010readOnly\030\006 \001(\010\"P\n\025Azure" +
+      "FileVolumeSource\022\022\n\nsecretName\030\001 \001(\t\022\021\n\t" +
+      "shareName\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"D\n\036Vsp" +
+      "hereVirtualDiskVolumeSource\022\022\n\nvolumePat" +
+      "h\030\001 \001(\t\022\016\n\006fsType\030\002 \001(\t\"f\n\023QuobyteVolume" +
+      "Source\022\020\n\010registry\030\001 \001(\t\022\016\n\006volume\030\002 \001(\t" +
+      "\022\020\n\010readOnly\030\003 \001(\010\022\014\n\004user\030\004 \001(\t\022\r\n\005grou",
+      "p\030\005 \001(\t\"q\n\025AzureDiskVolumeSource\022\020\n\010disk" +
+      "Name\030\001 \001(\t\022\017\n\007diskURI\030\002 \001(\t\022\023\n\013cachingMo" +
+      "de\030\003 \001(\t\022\016\n\006fsType\030\004 \001(\t\022\020\n\010readOnly\030\005 \001" +
+      "(\010\"H\n\022CinderVolumeSource\022\020\n\010volumeID\030\001 \001" +
+      "(\t\022\016\n\006fsType\030\002 \001(\t\022\020\n\010readOnly\030\003 \001(\010\"\251\001\n" +
+      "\022CephFSVolumeSource\022\020\n\010monitors\030\001 \003(\t\022\014\n" +
+      "\004path\030\002 \001(\t\022\014\n\004user\030\003 \001(\t\022\022\n\nsecretFile\030" +
+      "\004 \001(\t\022?\n\tsecretRef\030\005 \001(\0132,.appscode.kube" +
+      "rnetes.v1beta2.ObjectReference\022\020\n\010readOn" +
+      "ly\030\006 \001(\010\"d\n\006EnvVar\022\014\n\004name\030\001 \001(\t\022\r\n\005valu",
+      "e\030\002 \001(\t\022=\n\nvalue_from\030\003 \001(\0132).appscode.k" +
+      "ubernetes.v1beta2.EnvVarSource\"\272\002\n\014EnvVa" +
+      "rSource\022C\n\tfield_ref\030\001 \001(\01320.appscode.ku" +
+      "bernetes.v1beta2.ObjectFieldSelector\022N\n\022" +
+      "resource_field_ref\030\002 \001(\01322.appscode.kube" +
+      "rnetes.v1beta2.ResourceFieldSelector\022M\n\022" +
+      "config_map_key_ref\030\003 \001(\01321.appscode.kube" +
+      "rnetes.v1beta2.ConfigMapKeySelector\022F\n\016s" +
+      "ecret_key_ref\030\004 \001(\0132..appscode.kubernete" +
+      "s.v1beta2.SecretKeySelector\">\n\023ObjectFie",
+      "ldSelector\022\023\n\013api_version\030\001 \001(\t\022\022\n\nfield" +
+      "_path\030\002 \001(\t\"R\n\025ResourceFieldSelector\022\026\n\016" +
+      "container_name\030\001 \001(\t\022\020\n\010resource\030\002 \001(\t\022\017" +
+      "\n\007divisor\030\003 \001(\t\"q\n\024ConfigMapKeySelector\022" +
+      "L\n\026local_object_reference\030\001 \001(\0132,.appsco" +
+      "de.kubernetes.v1beta2.ObjectReference\022\013\n" +
+      "\003key\030\002 \001(\t\"n\n\021SecretKeySelector\022L\n\026local" +
+      "_object_reference\030\001 \001(\0132,.appscode.kuber" +
+      "netes.v1beta2.ObjectReference\022\013\n\003key\030\002 \001" +
+      "(\t2\376\023\n\007Clients\022\273\001\n\004List\0220.appscode.kuber",
+      "netes.v1beta2.ListResourceRequest\0321.apps" +
+      "code.kubernetes.v1beta2.ListResourceResp" +
+      "onse\"N\202\323\344\223\002B\022@/_appscode/api/kubernetes/" +
+      "v1beta2/clusters/{cluster}/{type}/json\202\265" +
+      "\030\002\010\001\022\316\001\n\010Describe\0224.appscode.kubernetes." +
+      "v1beta2.DescribeResourceRequest\0325.appsco" +
+      "de.kubernetes.v1beta2.DescribeResourceRe" +
+      "sponse\"U\202\323\344\223\002I\022G/_appscode/api/kubernete" +
+      "s/v1beta2/clusters/{cluster}/{type}/{nam" +
+      "e}/json\202\265\030\002\010\001\022\256\001\n\006Create\0222.appscode.kube",
+      "rnetes.v1beta2.CreateResourceRequest\032\035.a" +
+      "ppscode.dtypes.VoidResponse\"Q\202\323\344\223\002E\"@/_a" +
+      "ppscode/api/kubernetes/v1beta2/clusters/" +
+      "{cluster}/{type}/json:\001*\202\265\030\002\010\001\022\262\001\n\006Delet" +
+      "e\0222.appscode.kubernetes.v1beta2.DeleteRe" +
+      "sourceRequest\032\035.appscode.dtypes.VoidResp" +
+      "onse\"U\202\323\344\223\002I*G/_appscode/api/kubernetes/" +
+      "v1beta2/clusters/{cluster}/{type}/{name}" +
+      "/json\202\265\030\002\010\001\022\265\001\n\006Update\0222.appscode.kubern" +
+      "etes.v1beta2.UpdateResourceRequest\032\035.app",
+      "scode.dtypes.VoidResponse\"X\202\323\344\223\002L\032G/_app" +
+      "scode/api/kubernetes/v1beta2/clusters/{c" +
+      "luster}/{type}/{name}/json:\001*\202\265\030\002\010\001\022\235\001\n\004" +
+      "Copy\0220.appscode.kubernetes.v1beta2.CopyR" +
+      "esourceRequest\032\035.appscode.dtypes.VoidRes" +
+      "ponse\"D\202\323\344\223\0028\0323/_appscode/api/kubernetes" +
+      "/v1beta2/actions/copy/json:\001*\202\265\030\002\010\001\022\344\001\n\r" +
+      "EditConfigMap\0221.appscode.kubernetes.v1be" +
+      "ta2.ConfigMapEditRequest\032\035.appscode.dtyp" +
+      "es.VoidResponse\"\200\001\202\323\344\223\002t\"o/_appscode/api",
+      "/kubernetes/v1beta2/clusters/{cluster}/n" +
+      "amespaces/{namespace}/configmaps/{name}/" +
+      "actions/edit/json:\001*\202\265\030\002\010\001\022\332\001\n\nEditSecre" +
+      "t\022..appscode.kubernetes.v1beta2.SecretEd" +
+      "itRequest\032\035.appscode.dtypes.VoidResponse" +
+      "\"}\202\323\344\223\002q\"l/_appscode/api/kubernetes/v1be" +
+      "ta2/clusters/{cluster}/namespaces/{names" +
+      "pace}/secrets/{name}/actions/edit/json:\001" +
+      "*\202\265\030\002\010\001\022\355\001\n\030RegisterPersistentVolume\022<.a" +
+      "ppscode.kubernetes.v1beta2.PersistentVol",
+      "umeRegisterRequest\032\035.appscode.dtypes.Voi" +
+      "dResponse\"t\202\323\344\223\002h\"c/_appscode/api/kubern" +
+      "etes/v1beta2/clusters/{cluster}/persiste" +
+      "ntvolumes/{name}/actions/register/json:\001" +
+      "*\202\265\030\002\010\001\022\360\001\n\032UnregisterPersistentVolume\022>" +
+      ".appscode.kubernetes.v1beta2.PersistentV" +
+      "olumeUnRegisterRequest\032\035.appscode.dtypes" +
+      ".VoidResponse\"s\202\323\344\223\002g*e/_appscode/api/ku" +
+      "bernetes/v1beta2/clusters/{cluster}/pers" +
+      "istentvolumes/{name}/actions/unregister/",
+      "json\202\265\030\002\010\001\022\374\001\n\035RegisterPersistentVolumeC" +
+      "laim\022A.appscode.kubernetes.v1beta2.Persi" +
+      "stentVolumeClaimRegisterRequest\032\035.appsco" +
+      "de.dtypes.VoidResponse\"y\202\323\344\223\002m\"h/_appsco" +
       "de/api/kubernetes/v1beta2/clusters/{clus" +
-      "ter}/namespaces/{namespace}/configmaps/{" +
-      "name}/actions/edit/json:\001*\202\265\030\002\010\001\022\332\001\n\nEdi" +
-      "tSecret\022..appscode.kubernetes.v1beta2.Se" +
-      "cretEditRequest\032\035.appscode.dtypes.VoidRe" +
-      "sponse\"}\202\323\344\223\002q\"l/_appscode/api/kubernete",
-      "s/v1beta2/clusters/{cluster}/namespaces/" +
-      "{namespace}/secrets/{name}/actions/edit/" +
-      "json:\001*\202\265\030\002\010\001\022\355\001\n\030RegisterPersistentVolu" +
-      "me\022<.appscode.kubernetes.v1beta2.Persist" +
-      "entVolumeRegisterRequest\032\035.appscode.dtyp" +
-      "es.VoidResponse\"t\202\323\344\223\002h\"c/_appscode/api/" +
-      "kubernetes/v1beta2/clusters/{cluster}/pe" +
-      "rsistentvolumes/{name}/actions/register/" +
-      "json:\001*\202\265\030\002\010\001\022\360\001\n\032UnregisterPersistentVo" +
-      "lume\022>.appscode.kubernetes.v1beta2.Persi",
-      "stentVolumeUnRegisterRequest\032\035.appscode." +
-      "dtypes.VoidResponse\"s\202\323\344\223\002g*e/_appscode/" +
-      "api/kubernetes/v1beta2/clusters/{cluster" +
-      "}/persistentvolumes/{name}/actions/unreg" +
-      "ister/json\202\265\030\002\010\001\022\374\001\n\035RegisterPersistentV" +
-      "olumeClaim\022A.appscode.kubernetes.v1beta2" +
-      ".PersistentVolumeClaimRegisterRequest\032\035." +
-      "appscode.dtypes.VoidResponse\"y\202\323\344\223\002m\"h/_" +
-      "appscode/api/kubernetes/v1beta2/clusters" +
-      "/{cluster}/persistentvolumeclaims/{name}",
-      "/actions/register/json:\001*\202\265\030\002\010\001\022\377\001\n\037Unre" +
-      "gisterPersistentVolumeClaim\022C.appscode.k" +
-      "ubernetes.v1beta2.PersistentVolumeClaimU" +
-      "nRegisterRequest\032\035.appscode.dtypes.VoidR" +
-      "esponse\"x\202\323\344\223\002l*j/_appscode/api/kubernet" +
-      "es/v1beta2/clusters/{cluster}/persistent" +
-      "volumeclaims/{name}/actions/unregister/j" +
-      "son\202\265\030\002\010\0012\377\004\n\005Disks\022\232\001\n\004List\022,.appscode." +
-      "kubernetes.v1beta2.DiskListRequest\032-.app" +
-      "scode.kubernetes.v1beta2.DiskListRespons",
-      "e\"5\202\323\344\223\002)\022\'/_appscode/api/cloud/v1beta2/" +
-      "disks/json\202\265\030\002\010\001\022\255\001\n\010Describe\0220.appscode" +
-      ".kubernetes.v1beta2.DiskDescribeRequest\032" +
-      "1.appscode.kubernetes.v1beta2.DiskDescri" +
-      "beResponse\"<\202\323\344\223\0020\022./_appscode/api/cloud" +
-      "/v1beta2/disks/{name}/json\202\265\030\002\010\001\022\221\001\n\006Cre" +
-      "ate\022..appscode.kubernetes.v1beta2.DiskCr" +
-      "eateRequest\032\035.appscode.dtypes.VoidRespon" +
-      "se\"8\202\323\344\223\002,\"\'/_appscode/api/cloud/v1beta2" +
-      "/disks/json:\001*\202\265\030\002\010\001\022\224\001\n\006Delete\022..appsco",
-      "de.kubernetes.v1beta2.DiskDeleteRequest\032" +
-      "\035.appscode.dtypes.VoidResponse\";\202\323\344\223\002/*-" +
-      "/_appscode/api/cloud/v1beta2/disks/{uid}" +
-      "/json\202\265\030\002\010\001B=\n#com.appscode.api.kubernet" +
-      "es.v1beta2B\013ClientProtoP\001Z\007v1beta2b\006prot" +
-      "o3"
+      "ter}/persistentvolumeclaims/{name}/actio" +
+      "ns/register/json:\001*\202\265\030\002\010\001\022\377\001\n\037Unregister" +
+      "PersistentVolumeClaim\022C.appscode.kuberne" +
+      "tes.v1beta2.PersistentVolumeClaimUnRegis" +
+      "terRequest\032\035.appscode.dtypes.VoidRespons",
+      "e\"x\202\323\344\223\002l*j/_appscode/api/kubernetes/v1b" +
+      "eta2/clusters/{cluster}/persistentvolume" +
+      "claims/{name}/actions/unregister/json\202\265\030" +
+      "\002\010\0012\377\004\n\005Disks\022\232\001\n\004List\022,.appscode.kubern" +
+      "etes.v1beta2.DiskListRequest\032-.appscode." +
+      "kubernetes.v1beta2.DiskListResponse\"5\202\323\344" +
+      "\223\002)\022\'/_appscode/api/cloud/v1beta2/disks/" +
+      "json\202\265\030\002\010\001\022\255\001\n\010Describe\0220.appscode.kuber" +
+      "netes.v1beta2.DiskDescribeRequest\0321.apps" +
+      "code.kubernetes.v1beta2.DiskDescribeResp",
+      "onse\"<\202\323\344\223\0020\022./_appscode/api/cloud/v1bet" +
+      "a2/disks/{name}/json\202\265\030\002\010\001\022\221\001\n\006Create\022.." +
+      "appscode.kubernetes.v1beta2.DiskCreateRe" +
+      "quest\032\035.appscode.dtypes.VoidResponse\"8\202\323" +
+      "\344\223\002,\"\'/_appscode/api/cloud/v1beta2/disks" +
+      "/json:\001*\202\265\030\002\010\001\022\224\001\n\006Delete\022..appscode.kub" +
+      "ernetes.v1beta2.DiskDeleteRequest\032\035.apps" +
+      "code.dtypes.VoidResponse\";\202\323\344\223\002/*-/_apps" +
+      "code/api/cloud/v1beta2/disks/{uid}/json\202" +
+      "\265\030\002\010\001B=\n#com.appscode.api.kubernetes.v1b",
+      "eta2B\013ClientProtoP\001Z\007v1beta2b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -2007,7 +2002,7 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_ListResourceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_ListResourceResponse_descriptor,
-        new java.lang.String[] { "Status", "Resources", });
+        new java.lang.String[] { "Resources", });
     internal_static_appscode_kubernetes_v1beta2_DescribeResourceRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_kubernetes_v1beta2_DescribeResourceRequest_fieldAccessorTable = new
@@ -2019,7 +2014,7 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_DescribeResourceResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DescribeResourceResponse_descriptor,
-        new java.lang.String[] { "Status", "Resource", });
+        new java.lang.String[] { "Resource", });
     internal_static_appscode_kubernetes_v1beta2_UpdateResourceRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_kubernetes_v1beta2_UpdateResourceRequest_fieldAccessorTable = new
@@ -3027,7 +3022,7 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_DiskListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DiskListResponse_descriptor,
-        new java.lang.String[] { "Status", "Disks", });
+        new java.lang.String[] { "Disks", });
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(68);
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeRequest_fieldAccessorTable = new
@@ -3039,7 +3034,7 @@ public final class ClientProto {
     internal_static_appscode_kubernetes_v1beta2_DiskDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta2_DiskDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Disk", });
+        new java.lang.String[] { "Disk", });
     internal_static_appscode_kubernetes_v1beta2_DiskCreateRequest_descriptor =
       getDescriptor().getMessageTypes().get(70);
     internal_static_appscode_kubernetes_v1beta2_DiskCreateRequest_fieldAccessorTable = new

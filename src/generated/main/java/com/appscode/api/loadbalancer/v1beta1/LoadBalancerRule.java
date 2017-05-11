@@ -109,7 +109,7 @@ public  final class LoadBalancerRule extends
   public static final int HOST_FIELD_NUMBER = 1;
   private volatile java.lang.Object host_;
   /**
-   * <code>optional string host = 1;</code>
+   * <code>string host = 1;</code>
    */
   public java.lang.String getHost() {
     java.lang.Object ref = host_;
@@ -124,7 +124,7 @@ public  final class LoadBalancerRule extends
     }
   }
   /**
-   * <code>optional string host = 1;</code>
+   * <code>string host = 1;</code>
    */
   public com.google.protobuf.ByteString
       getHostBytes() {
@@ -148,7 +148,7 @@ public  final class LoadBalancerRule extends
    * ssl secret must contain data with the certs pem file.
    * </pre>
    *
-   * <code>optional string SSL_secret_name = 5;</code>
+   * <code>string SSL_secret_name = 5;</code>
    */
   public java.lang.String getSSLSecretName() {
     java.lang.Object ref = sSLSecretName_;
@@ -168,7 +168,7 @@ public  final class LoadBalancerRule extends
    * ssl secret must contain data with the certs pem file.
    * </pre>
    *
-   * <code>optional string SSL_secret_name = 5;</code>
+   * <code>string SSL_secret_name = 5;</code>
    */
   public com.google.protobuf.ByteString
       getSSLSecretNameBytes() {
@@ -332,7 +332,7 @@ public  final class LoadBalancerRule extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + HOST_FIELD_NUMBER;
     hash = (53 * hash) + getHost().hashCode();
     hash = (37 * hash) + SSL_SECRET_NAME_FIELD_NUMBER;
@@ -656,7 +656,7 @@ public  final class LoadBalancerRule extends
 
     private java.lang.Object host_ = "";
     /**
-     * <code>optional string host = 1;</code>
+     * <code>string host = 1;</code>
      */
     public java.lang.String getHost() {
       java.lang.Object ref = host_;
@@ -671,7 +671,7 @@ public  final class LoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string host = 1;</code>
+     * <code>string host = 1;</code>
      */
     public com.google.protobuf.ByteString
         getHostBytes() {
@@ -687,7 +687,7 @@ public  final class LoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string host = 1;</code>
+     * <code>string host = 1;</code>
      */
     public Builder setHost(
         java.lang.String value) {
@@ -700,7 +700,7 @@ public  final class LoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string host = 1;</code>
+     * <code>string host = 1;</code>
      */
     public Builder clearHost() {
       
@@ -709,7 +709,7 @@ public  final class LoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string host = 1;</code>
+     * <code>string host = 1;</code>
      */
     public Builder setHostBytes(
         com.google.protobuf.ByteString value) {
@@ -730,7 +730,7 @@ public  final class LoadBalancerRule extends
      * ssl secret must contain data with the certs pem file.
      * </pre>
      *
-     * <code>optional string SSL_secret_name = 5;</code>
+     * <code>string SSL_secret_name = 5;</code>
      */
     public java.lang.String getSSLSecretName() {
       java.lang.Object ref = sSLSecretName_;
@@ -750,7 +750,7 @@ public  final class LoadBalancerRule extends
      * ssl secret must contain data with the certs pem file.
      * </pre>
      *
-     * <code>optional string SSL_secret_name = 5;</code>
+     * <code>string SSL_secret_name = 5;</code>
      */
     public com.google.protobuf.ByteString
         getSSLSecretNameBytes() {
@@ -771,7 +771,7 @@ public  final class LoadBalancerRule extends
      * ssl secret must contain data with the certs pem file.
      * </pre>
      *
-     * <code>optional string SSL_secret_name = 5;</code>
+     * <code>string SSL_secret_name = 5;</code>
      */
     public Builder setSSLSecretName(
         java.lang.String value) {
@@ -789,7 +789,7 @@ public  final class LoadBalancerRule extends
      * ssl secret must contain data with the certs pem file.
      * </pre>
      *
-     * <code>optional string SSL_secret_name = 5;</code>
+     * <code>string SSL_secret_name = 5;</code>
      */
     public Builder clearSSLSecretName() {
       
@@ -803,7 +803,7 @@ public  final class LoadBalancerRule extends
      * ssl secret must contain data with the certs pem file.
      * </pre>
      *
-     * <code>optional string SSL_secret_name = 5;</code>
+     * <code>string SSL_secret_name = 5;</code>
      */
     public Builder setSSLSecretNameBytes(
         com.google.protobuf.ByteString value) {

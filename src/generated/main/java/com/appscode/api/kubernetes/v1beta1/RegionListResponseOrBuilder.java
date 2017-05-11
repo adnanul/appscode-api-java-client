@@ -8,33 +8,20 @@ public interface RegionListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated string regions = 2;</code>
+   * <code>repeated string regions = 1;</code>
    */
   java.util.List<java.lang.String>
       getRegionsList();
   /**
-   * <code>repeated string regions = 2;</code>
+   * <code>repeated string regions = 1;</code>
    */
   int getRegionsCount();
   /**
-   * <code>repeated string regions = 2;</code>
+   * <code>repeated string regions = 1;</code>
    */
   java.lang.String getRegions(int index);
   /**
-   * <code>repeated string regions = 2;</code>
+   * <code>repeated string regions = 1;</code>
    */
   com.google.protobuf.ByteString
       getRegionsBytes(int index);

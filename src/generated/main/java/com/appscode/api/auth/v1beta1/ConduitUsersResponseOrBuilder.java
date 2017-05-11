@@ -8,38 +8,25 @@ public interface ConduitUsersResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   java.util.List<com.appscode.api.auth.v1beta1.ConduitUser> 
       getUsersList();
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   com.appscode.api.auth.v1beta1.ConduitUser getUsers(int index);
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   int getUsersCount();
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   java.util.List<? extends com.appscode.api.auth.v1beta1.ConduitUserOrBuilder> 
       getUsersOrBuilderList();
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   com.appscode.api.auth.v1beta1.ConduitUserOrBuilder getUsersOrBuilder(
       int index);

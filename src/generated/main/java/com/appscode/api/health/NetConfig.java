@@ -153,7 +153,7 @@ public  final class NetConfig extends
   public static final int TEAM_ADDR_FIELD_NUMBER = 1;
   private volatile java.lang.Object teamAddr_;
   /**
-   * <code>optional string team_addr = 1;</code>
+   * <code>string team_addr = 1;</code>
    */
   public java.lang.String getTeamAddr() {
     java.lang.Object ref = teamAddr_;
@@ -168,7 +168,7 @@ public  final class NetConfig extends
     }
   }
   /**
-   * <code>optional string team_addr = 1;</code>
+   * <code>string team_addr = 1;</code>
    */
   public com.google.protobuf.ByteString
       getTeamAddrBytes() {
@@ -187,19 +187,19 @@ public  final class NetConfig extends
   public static final int PUBLIC_URLS_FIELD_NUMBER = 2;
   private com.appscode.api.health.URLBase publicUrls_;
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   public boolean hasPublicUrls() {
     return publicUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   public com.appscode.api.health.URLBase getPublicUrls() {
     return publicUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : publicUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+   * <code>.appscode.health.URLBase public_urls = 2;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getPublicUrlsOrBuilder() {
     return getPublicUrls();
@@ -208,19 +208,19 @@ public  final class NetConfig extends
   public static final int TEAM_URLS_FIELD_NUMBER = 3;
   private com.appscode.api.health.URLBase teamUrls_;
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   public boolean hasTeamUrls() {
     return teamUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   public com.appscode.api.health.URLBase getTeamUrls() {
     return teamUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : teamUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+   * <code>.appscode.health.URLBase team_urls = 3;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getTeamUrlsOrBuilder() {
     return getTeamUrls();
@@ -229,19 +229,19 @@ public  final class NetConfig extends
   public static final int CLUSTER_URLS_FIELD_NUMBER = 4;
   private com.appscode.api.health.URLBase clusterUrls_;
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   public boolean hasClusterUrls() {
     return clusterUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   public com.appscode.api.health.URLBase getClusterUrls() {
     return clusterUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : clusterUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+   * <code>.appscode.health.URLBase cluster_urls = 4;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getClusterUrlsOrBuilder() {
     return getClusterUrls();
@@ -250,19 +250,19 @@ public  final class NetConfig extends
   public static final int IN_CLUSTER_URLS_FIELD_NUMBER = 5;
   private com.appscode.api.health.URLBase inClusterUrls_;
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   public boolean hasInClusterUrls() {
     return inClusterUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   public com.appscode.api.health.URLBase getInClusterUrls() {
     return inClusterUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : inClusterUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+   * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getInClusterUrlsOrBuilder() {
     return getInClusterUrls();
@@ -271,19 +271,19 @@ public  final class NetConfig extends
   public static final int URL_SHORTENER_URLS_FIELD_NUMBER = 6;
   private com.appscode.api.health.URLBase uRLShortenerUrls_;
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   public boolean hasURLShortenerUrls() {
     return uRLShortenerUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   public com.appscode.api.health.URLBase getURLShortenerUrls() {
     return uRLShortenerUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : uRLShortenerUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+   * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getURLShortenerUrlsOrBuilder() {
     return getURLShortenerUrls();
@@ -292,19 +292,19 @@ public  final class NetConfig extends
   public static final int FILE_URLS_FIELD_NUMBER = 7;
   private com.appscode.api.health.URLBase fileUrls_;
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   public boolean hasFileUrls() {
     return fileUrls_ != null;
   }
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   public com.appscode.api.health.URLBase getFileUrls() {
     return fileUrls_ == null ? com.appscode.api.health.URLBase.getDefaultInstance() : fileUrls_;
   }
   /**
-   * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+   * <code>.appscode.health.URLBase file_urls = 7;</code>
    */
   public com.appscode.api.health.URLBaseOrBuilder getFileUrlsOrBuilder() {
     return getFileUrls();
@@ -434,7 +434,7 @@ public  final class NetConfig extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TEAM_ADDR_FIELD_NUMBER;
     hash = (53 * hash) + getTeamAddr().hashCode();
     if (hasPublicUrls()) {
@@ -761,7 +761,7 @@ public  final class NetConfig extends
 
     private java.lang.Object teamAddr_ = "";
     /**
-     * <code>optional string team_addr = 1;</code>
+     * <code>string team_addr = 1;</code>
      */
     public java.lang.String getTeamAddr() {
       java.lang.Object ref = teamAddr_;
@@ -776,7 +776,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional string team_addr = 1;</code>
+     * <code>string team_addr = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTeamAddrBytes() {
@@ -792,7 +792,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional string team_addr = 1;</code>
+     * <code>string team_addr = 1;</code>
      */
     public Builder setTeamAddr(
         java.lang.String value) {
@@ -805,7 +805,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional string team_addr = 1;</code>
+     * <code>string team_addr = 1;</code>
      */
     public Builder clearTeamAddr() {
       
@@ -814,7 +814,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional string team_addr = 1;</code>
+     * <code>string team_addr = 1;</code>
      */
     public Builder setTeamAddrBytes(
         com.google.protobuf.ByteString value) {
@@ -832,13 +832,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> publicUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public boolean hasPublicUrls() {
       return publicUrlsBuilder_ != null || publicUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public com.appscode.api.health.URLBase getPublicUrls() {
       if (publicUrlsBuilder_ == null) {
@@ -848,7 +848,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public Builder setPublicUrls(com.appscode.api.health.URLBase value) {
       if (publicUrlsBuilder_ == null) {
@@ -864,7 +864,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public Builder setPublicUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -878,7 +878,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public Builder mergePublicUrls(com.appscode.api.health.URLBase value) {
       if (publicUrlsBuilder_ == null) {
@@ -896,7 +896,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public Builder clearPublicUrls() {
       if (publicUrlsBuilder_ == null) {
@@ -910,7 +910,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public com.appscode.api.health.URLBase.Builder getPublicUrlsBuilder() {
       
@@ -918,7 +918,7 @@ public  final class NetConfig extends
       return getPublicUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getPublicUrlsOrBuilder() {
       if (publicUrlsBuilder_ != null) {
@@ -929,7 +929,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase public_urls = 2;</code>
+     * <code>.appscode.health.URLBase public_urls = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 
@@ -949,13 +949,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> teamUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public boolean hasTeamUrls() {
       return teamUrlsBuilder_ != null || teamUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public com.appscode.api.health.URLBase getTeamUrls() {
       if (teamUrlsBuilder_ == null) {
@@ -965,7 +965,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public Builder setTeamUrls(com.appscode.api.health.URLBase value) {
       if (teamUrlsBuilder_ == null) {
@@ -981,7 +981,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public Builder setTeamUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -995,7 +995,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public Builder mergeTeamUrls(com.appscode.api.health.URLBase value) {
       if (teamUrlsBuilder_ == null) {
@@ -1013,7 +1013,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public Builder clearTeamUrls() {
       if (teamUrlsBuilder_ == null) {
@@ -1027,7 +1027,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public com.appscode.api.health.URLBase.Builder getTeamUrlsBuilder() {
       
@@ -1035,7 +1035,7 @@ public  final class NetConfig extends
       return getTeamUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getTeamUrlsOrBuilder() {
       if (teamUrlsBuilder_ != null) {
@@ -1046,7 +1046,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase team_urls = 3;</code>
+     * <code>.appscode.health.URLBase team_urls = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 
@@ -1066,13 +1066,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> clusterUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public boolean hasClusterUrls() {
       return clusterUrlsBuilder_ != null || clusterUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public com.appscode.api.health.URLBase getClusterUrls() {
       if (clusterUrlsBuilder_ == null) {
@@ -1082,7 +1082,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public Builder setClusterUrls(com.appscode.api.health.URLBase value) {
       if (clusterUrlsBuilder_ == null) {
@@ -1098,7 +1098,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public Builder setClusterUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -1112,7 +1112,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public Builder mergeClusterUrls(com.appscode.api.health.URLBase value) {
       if (clusterUrlsBuilder_ == null) {
@@ -1130,7 +1130,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public Builder clearClusterUrls() {
       if (clusterUrlsBuilder_ == null) {
@@ -1144,7 +1144,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public com.appscode.api.health.URLBase.Builder getClusterUrlsBuilder() {
       
@@ -1152,7 +1152,7 @@ public  final class NetConfig extends
       return getClusterUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getClusterUrlsOrBuilder() {
       if (clusterUrlsBuilder_ != null) {
@@ -1163,7 +1163,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase cluster_urls = 4;</code>
+     * <code>.appscode.health.URLBase cluster_urls = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 
@@ -1183,13 +1183,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> inClusterUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public boolean hasInClusterUrls() {
       return inClusterUrlsBuilder_ != null || inClusterUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public com.appscode.api.health.URLBase getInClusterUrls() {
       if (inClusterUrlsBuilder_ == null) {
@@ -1199,7 +1199,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public Builder setInClusterUrls(com.appscode.api.health.URLBase value) {
       if (inClusterUrlsBuilder_ == null) {
@@ -1215,7 +1215,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public Builder setInClusterUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -1229,7 +1229,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public Builder mergeInClusterUrls(com.appscode.api.health.URLBase value) {
       if (inClusterUrlsBuilder_ == null) {
@@ -1247,7 +1247,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public Builder clearInClusterUrls() {
       if (inClusterUrlsBuilder_ == null) {
@@ -1261,7 +1261,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public com.appscode.api.health.URLBase.Builder getInClusterUrlsBuilder() {
       
@@ -1269,7 +1269,7 @@ public  final class NetConfig extends
       return getInClusterUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getInClusterUrlsOrBuilder() {
       if (inClusterUrlsBuilder_ != null) {
@@ -1280,7 +1280,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase in_cluster_urls = 5;</code>
+     * <code>.appscode.health.URLBase in_cluster_urls = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 
@@ -1300,13 +1300,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> uRLShortenerUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public boolean hasURLShortenerUrls() {
       return uRLShortenerUrlsBuilder_ != null || uRLShortenerUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public com.appscode.api.health.URLBase getURLShortenerUrls() {
       if (uRLShortenerUrlsBuilder_ == null) {
@@ -1316,7 +1316,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public Builder setURLShortenerUrls(com.appscode.api.health.URLBase value) {
       if (uRLShortenerUrlsBuilder_ == null) {
@@ -1332,7 +1332,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public Builder setURLShortenerUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -1346,7 +1346,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public Builder mergeURLShortenerUrls(com.appscode.api.health.URLBase value) {
       if (uRLShortenerUrlsBuilder_ == null) {
@@ -1364,7 +1364,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public Builder clearURLShortenerUrls() {
       if (uRLShortenerUrlsBuilder_ == null) {
@@ -1378,7 +1378,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public com.appscode.api.health.URLBase.Builder getURLShortenerUrlsBuilder() {
       
@@ -1386,7 +1386,7 @@ public  final class NetConfig extends
       return getURLShortenerUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getURLShortenerUrlsOrBuilder() {
       if (uRLShortenerUrlsBuilder_ != null) {
@@ -1397,7 +1397,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase URL_shortener_urls = 6;</code>
+     * <code>.appscode.health.URLBase URL_shortener_urls = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 
@@ -1417,13 +1417,13 @@ public  final class NetConfig extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> fileUrlsBuilder_;
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public boolean hasFileUrls() {
       return fileUrlsBuilder_ != null || fileUrls_ != null;
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public com.appscode.api.health.URLBase getFileUrls() {
       if (fileUrlsBuilder_ == null) {
@@ -1433,7 +1433,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public Builder setFileUrls(com.appscode.api.health.URLBase value) {
       if (fileUrlsBuilder_ == null) {
@@ -1449,7 +1449,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public Builder setFileUrls(
         com.appscode.api.health.URLBase.Builder builderForValue) {
@@ -1463,7 +1463,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public Builder mergeFileUrls(com.appscode.api.health.URLBase value) {
       if (fileUrlsBuilder_ == null) {
@@ -1481,7 +1481,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public Builder clearFileUrls() {
       if (fileUrlsBuilder_ == null) {
@@ -1495,7 +1495,7 @@ public  final class NetConfig extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public com.appscode.api.health.URLBase.Builder getFileUrlsBuilder() {
       
@@ -1503,7 +1503,7 @@ public  final class NetConfig extends
       return getFileUrlsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     public com.appscode.api.health.URLBaseOrBuilder getFileUrlsOrBuilder() {
       if (fileUrlsBuilder_ != null) {
@@ -1514,7 +1514,7 @@ public  final class NetConfig extends
       }
     }
     /**
-     * <code>optional .appscode.health.URLBase file_urls = 7;</code>
+     * <code>.appscode.health.URLBase file_urls = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.URLBase, com.appscode.api.health.URLBase.Builder, com.appscode.api.health.URLBaseOrBuilder> 

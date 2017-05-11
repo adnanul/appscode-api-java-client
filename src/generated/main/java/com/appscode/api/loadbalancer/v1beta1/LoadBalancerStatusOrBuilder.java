@@ -8,21 +8,21 @@ public interface LoadBalancerStatusOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string IP = 1;</code>
+   * <code>string IP = 1;</code>
    */
   java.lang.String getIP();
   /**
-   * <code>optional string IP = 1;</code>
+   * <code>string IP = 1;</code>
    */
   com.google.protobuf.ByteString
       getIPBytes();
 
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   java.lang.String getHost();
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   com.google.protobuf.ByteString
       getHostBytes();

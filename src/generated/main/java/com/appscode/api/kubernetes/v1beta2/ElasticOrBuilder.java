@@ -8,41 +8,41 @@ public interface ElasticOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ElasticSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ElasticSpec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Elastic.Status getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic.Status status = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Elastic.StatusOrBuilder getStatusOrBuilder();
 }

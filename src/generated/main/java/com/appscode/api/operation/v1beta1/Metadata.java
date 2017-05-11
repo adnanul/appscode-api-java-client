@@ -153,7 +153,7 @@ public  final class Metadata extends
    * PHID of the user who requested this operation.
    * </pre>
    *
-   * <code>optional string author_phid = 2;</code>
+   * <code>string author_phid = 2;</code>
    */
   public java.lang.String getAuthorPhid() {
     java.lang.Object ref = authorPhid_;
@@ -172,7 +172,7 @@ public  final class Metadata extends
    * PHID of the user who requested this operation.
    * </pre>
    *
-   * <code>optional string author_phid = 2;</code>
+   * <code>string author_phid = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAuthorPhidBytes() {
@@ -191,7 +191,7 @@ public  final class Metadata extends
   public static final int AUTHOR_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object authorName_;
   /**
-   * <code>optional string author_name = 3;</code>
+   * <code>string author_name = 3;</code>
    */
   public java.lang.String getAuthorName() {
     java.lang.Object ref = authorName_;
@@ -206,7 +206,7 @@ public  final class Metadata extends
     }
   }
   /**
-   * <code>optional string author_name = 3;</code>
+   * <code>string author_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getAuthorNameBytes() {
@@ -295,7 +295,7 @@ public  final class Metadata extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getPurchasePhidsCount() > 0) {
       hash = (37 * hash) + PURCHASE_PHIDS_FIELD_NUMBER;
       hash = (53 * hash) + getPurchasePhidsList().hashCode();
@@ -690,7 +690,7 @@ public  final class Metadata extends
      * PHID of the user who requested this operation.
      * </pre>
      *
-     * <code>optional string author_phid = 2;</code>
+     * <code>string author_phid = 2;</code>
      */
     public java.lang.String getAuthorPhid() {
       java.lang.Object ref = authorPhid_;
@@ -709,7 +709,7 @@ public  final class Metadata extends
      * PHID of the user who requested this operation.
      * </pre>
      *
-     * <code>optional string author_phid = 2;</code>
+     * <code>string author_phid = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAuthorPhidBytes() {
@@ -729,7 +729,7 @@ public  final class Metadata extends
      * PHID of the user who requested this operation.
      * </pre>
      *
-     * <code>optional string author_phid = 2;</code>
+     * <code>string author_phid = 2;</code>
      */
     public Builder setAuthorPhid(
         java.lang.String value) {
@@ -746,7 +746,7 @@ public  final class Metadata extends
      * PHID of the user who requested this operation.
      * </pre>
      *
-     * <code>optional string author_phid = 2;</code>
+     * <code>string author_phid = 2;</code>
      */
     public Builder clearAuthorPhid() {
       
@@ -759,7 +759,7 @@ public  final class Metadata extends
      * PHID of the user who requested this operation.
      * </pre>
      *
-     * <code>optional string author_phid = 2;</code>
+     * <code>string author_phid = 2;</code>
      */
     public Builder setAuthorPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -775,7 +775,7 @@ public  final class Metadata extends
 
     private java.lang.Object authorName_ = "";
     /**
-     * <code>optional string author_name = 3;</code>
+     * <code>string author_name = 3;</code>
      */
     public java.lang.String getAuthorName() {
       java.lang.Object ref = authorName_;
@@ -790,7 +790,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string author_name = 3;</code>
+     * <code>string author_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getAuthorNameBytes() {
@@ -806,7 +806,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string author_name = 3;</code>
+     * <code>string author_name = 3;</code>
      */
     public Builder setAuthorName(
         java.lang.String value) {
@@ -819,7 +819,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string author_name = 3;</code>
+     * <code>string author_name = 3;</code>
      */
     public Builder clearAuthorName() {
       
@@ -828,7 +828,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string author_name = 3;</code>
+     * <code>string author_name = 3;</code>
      */
     public Builder setAuthorNameBytes(
         com.google.protobuf.ByteString value) {

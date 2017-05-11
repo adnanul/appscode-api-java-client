@@ -44,22 +44,9 @@ public  final class CredentialListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               credentials_ = new java.util.ArrayList<com.appscode.api.credential.v1beta1.Credential>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             credentials_.add(
                 input.readMessage(com.appscode.api.credential.v1beta1.Credential.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class CredentialListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         credentials_ = java.util.Collections.unmodifiableList(credentials_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class CredentialListResponse extends
             com.appscode.api.credential.v1beta1.CredentialListResponse.class, com.appscode.api.credential.v1beta1.CredentialListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CREDENTIALS_FIELD_NUMBER = 2;
+  public static final int CREDENTIALS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.credential.v1beta1.Credential> credentials_;
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   public java.util.List<com.appscode.api.credential.v1beta1.Credential> getCredentialsList() {
     return credentials_;
   }
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.credential.v1beta1.CredentialOrBuilder> 
       getCredentialsOrBuilderList() {
     return credentials_;
   }
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   public int getCredentialsCount() {
     return credentials_.size();
   }
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   public com.appscode.api.credential.v1beta1.Credential getCredentials(int index) {
     return credentials_.get(index);
   }
   /**
-   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+   * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
    */
   public com.appscode.api.credential.v1beta1.CredentialOrBuilder getCredentialsOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class CredentialListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < credentials_.size(); i++) {
-      output.writeMessage(2, credentials_.get(i));
+      output.writeMessage(1, credentials_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class CredentialListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < credentials_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, credentials_.get(i));
+        .computeMessageSize(1, credentials_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class CredentialListResponse extends
     com.appscode.api.credential.v1beta1.CredentialListResponse other = (com.appscode.api.credential.v1beta1.CredentialListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getCredentialsList()
         .equals(other.getCredentialsList());
     return result;
@@ -213,11 +166,7 @@ public  final class CredentialListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getCredentialsCount() > 0) {
       hash = (37 * hash) + CREDENTIALS_FIELD_NUMBER;
       hash = (53 * hash) + getCredentialsList().hashCode();
@@ -341,15 +290,9 @@ public  final class CredentialListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (credentialsBuilder_ == null) {
         credentials_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         credentialsBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class CredentialListResponse extends
     public com.appscode.api.credential.v1beta1.CredentialListResponse buildPartial() {
       com.appscode.api.credential.v1beta1.CredentialListResponse result = new com.appscode.api.credential.v1beta1.CredentialListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (credentialsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           credentials_ = java.util.Collections.unmodifiableList(credentials_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.credentials_ = credentials_;
       } else {
         result.credentials_ = credentialsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class CredentialListResponse extends
 
     public Builder mergeFrom(com.appscode.api.credential.v1beta1.CredentialListResponse other) {
       if (other == com.appscode.api.credential.v1beta1.CredentialListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (credentialsBuilder_ == null) {
         if (!other.credentials_.isEmpty()) {
           if (credentials_.isEmpty()) {
             credentials_ = other.credentials_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureCredentialsIsMutable();
             credentials_.addAll(other.credentials_);
@@ -453,7 +386,7 @@ public  final class CredentialListResponse extends
             credentialsBuilder_.dispose();
             credentialsBuilder_ = null;
             credentials_ = other.credentials_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             credentialsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getCredentialsFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class CredentialListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.credential.v1beta1.Credential> credentials_ =
       java.util.Collections.emptyList();
     private void ensureCredentialsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         credentials_ = new java.util.ArrayList<com.appscode.api.credential.v1beta1.Credential>(credentials_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class CredentialListResponse extends
         com.appscode.api.credential.v1beta1.Credential, com.appscode.api.credential.v1beta1.Credential.Builder, com.appscode.api.credential.v1beta1.CredentialOrBuilder> credentialsBuilder_;
 
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public java.util.List<com.appscode.api.credential.v1beta1.Credential> getCredentialsList() {
       if (credentialsBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class CredentialListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public int getCredentialsCount() {
       if (credentialsBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class CredentialListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public com.appscode.api.credential.v1beta1.Credential getCredentials(int index) {
       if (credentialsBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class CredentialListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder setCredentials(
         int index, com.appscode.api.credential.v1beta1.Credential value) {
@@ -666,7 +482,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder setCredentials(
         int index, com.appscode.api.credential.v1beta1.Credential.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder addCredentials(com.appscode.api.credential.v1beta1.Credential value) {
       if (credentialsBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder addCredentials(
         int index, com.appscode.api.credential.v1beta1.Credential value) {
@@ -713,7 +529,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder addCredentials(
         com.appscode.api.credential.v1beta1.Credential.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder addCredentials(
         int index, com.appscode.api.credential.v1beta1.Credential.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder addAllCredentials(
         java.lang.Iterable<? extends com.appscode.api.credential.v1beta1.Credential> values) {
@@ -756,12 +572,12 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder clearCredentials() {
       if (credentialsBuilder_ == null) {
         credentials_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         credentialsBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public Builder removeCredentials(int index) {
       if (credentialsBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class CredentialListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public com.appscode.api.credential.v1beta1.Credential.Builder getCredentialsBuilder(
         int index) {
       return getCredentialsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public com.appscode.api.credential.v1beta1.CredentialOrBuilder getCredentialsOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class CredentialListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.credential.v1beta1.CredentialOrBuilder> 
          getCredentialsOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class CredentialListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public com.appscode.api.credential.v1beta1.Credential.Builder addCredentialsBuilder() {
       return getCredentialsFieldBuilder().addBuilder(
           com.appscode.api.credential.v1beta1.Credential.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public com.appscode.api.credential.v1beta1.Credential.Builder addCredentialsBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class CredentialListResponse extends
           index, com.appscode.api.credential.v1beta1.Credential.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 2;</code>
+     * <code>repeated .appscode.credential.v1beta1.Credential credentials = 1;</code>
      */
     public java.util.List<com.appscode.api.credential.v1beta1.Credential.Builder> 
          getCredentialsBuilderList() {
@@ -838,7 +654,7 @@ public  final class CredentialListResponse extends
         credentialsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.credential.v1beta1.Credential, com.appscode.api.credential.v1beta1.Credential.Builder, com.appscode.api.credential.v1beta1.CredentialOrBuilder>(
                 credentials_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         credentials_ = null;

@@ -96,12 +96,12 @@ public  final class Metrics extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 timestamp = 1;</code>
+     * <code>int64 timestamp = 1;</code>
      */
     long getTimestamp();
 
     /**
-     * <code>optional int64 value = 2;</code>
+     * <code>int64 value = 2;</code>
      */
     long getValue();
   }
@@ -182,7 +182,7 @@ public  final class Metrics extends
     public static final int TIMESTAMP_FIELD_NUMBER = 1;
     private long timestamp_;
     /**
-     * <code>optional int64 timestamp = 1;</code>
+     * <code>int64 timestamp = 1;</code>
      */
     public long getTimestamp() {
       return timestamp_;
@@ -191,7 +191,7 @@ public  final class Metrics extends
     public static final int VALUE_FIELD_NUMBER = 2;
     private long value_;
     /**
-     * <code>optional int64 value = 2;</code>
+     * <code>int64 value = 2;</code>
      */
     public long getValue() {
       return value_;
@@ -259,7 +259,7 @@ public  final class Metrics extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getTimestamp());
@@ -487,13 +487,13 @@ public  final class Metrics extends
 
       private long timestamp_ ;
       /**
-       * <code>optional int64 timestamp = 1;</code>
+       * <code>int64 timestamp = 1;</code>
        */
       public long getTimestamp() {
         return timestamp_;
       }
       /**
-       * <code>optional int64 timestamp = 1;</code>
+       * <code>int64 timestamp = 1;</code>
        */
       public Builder setTimestamp(long value) {
         
@@ -502,7 +502,7 @@ public  final class Metrics extends
         return this;
       }
       /**
-       * <code>optional int64 timestamp = 1;</code>
+       * <code>int64 timestamp = 1;</code>
        */
       public Builder clearTimestamp() {
         
@@ -513,13 +513,13 @@ public  final class Metrics extends
 
       private long value_ ;
       /**
-       * <code>optional int64 value = 2;</code>
+       * <code>int64 value = 2;</code>
        */
       public long getValue() {
         return value_;
       }
       /**
-       * <code>optional int64 value = 2;</code>
+       * <code>int64 value = 2;</code>
        */
       public Builder setValue(long value) {
         
@@ -528,7 +528,7 @@ public  final class Metrics extends
         return this;
       }
       /**
-       * <code>optional int64 value = 2;</code>
+       * <code>int64 value = 2;</code>
        */
       public Builder clearValue() {
         
@@ -717,7 +717,7 @@ public  final class Metrics extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getCpuUsageCount() > 0) {
       hash = (37 * hash) + CPU_USAGE_FIELD_NUMBER;
       hash = (53 * hash) + getCpuUsageList().hashCode();

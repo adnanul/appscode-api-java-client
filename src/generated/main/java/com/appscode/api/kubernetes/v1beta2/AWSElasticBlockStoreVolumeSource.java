@@ -107,7 +107,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   public java.lang.String getVolumeID() {
     java.lang.Object ref = volumeID_;
@@ -127,7 +127,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   public com.google.protobuf.ByteString
       getVolumeIDBytes() {
@@ -154,7 +154,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -177,7 +177,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -203,7 +203,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
    * </pre>
    *
-   * <code>optional int32 partition = 3;</code>
+   * <code>int32 partition = 3;</code>
    */
   public int getPartition() {
     return partition_;
@@ -218,7 +218,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -302,7 +302,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + VOLUMEID_FIELD_NUMBER;
     hash = (53 * hash) + getVolumeID().hashCode();
     hash = (37 * hash) + FSTYPE_FIELD_NUMBER;
@@ -560,7 +560,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional string volumeID = 1;</code>
+     * <code>string volumeID = 1;</code>
      */
     public java.lang.String getVolumeID() {
       java.lang.Object ref = volumeID_;
@@ -580,7 +580,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional string volumeID = 1;</code>
+     * <code>string volumeID = 1;</code>
      */
     public com.google.protobuf.ByteString
         getVolumeIDBytes() {
@@ -601,7 +601,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional string volumeID = 1;</code>
+     * <code>string volumeID = 1;</code>
      */
     public Builder setVolumeID(
         java.lang.String value) {
@@ -619,7 +619,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional string volumeID = 1;</code>
+     * <code>string volumeID = 1;</code>
      */
     public Builder clearVolumeID() {
       
@@ -633,7 +633,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional string volumeID = 1;</code>
+     * <code>string volumeID = 1;</code>
      */
     public Builder setVolumeIDBytes(
         com.google.protobuf.ByteString value) {
@@ -657,7 +657,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -680,7 +680,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -704,7 +704,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -725,7 +725,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder clearFsType() {
       
@@ -742,7 +742,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 2;</code>
+     * <code>string fsType = 2;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -765,7 +765,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
      * </pre>
      *
-     * <code>optional int32 partition = 3;</code>
+     * <code>int32 partition = 3;</code>
      */
     public int getPartition() {
       return partition_;
@@ -778,7 +778,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
      * </pre>
      *
-     * <code>optional int32 partition = 3;</code>
+     * <code>int32 partition = 3;</code>
      */
     public Builder setPartition(int value) {
       
@@ -794,7 +794,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
      * </pre>
      *
-     * <code>optional int32 partition = 3;</code>
+     * <code>int32 partition = 3;</code>
      */
     public Builder clearPartition() {
       
@@ -811,7 +811,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -823,7 +823,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -838,7 +838,7 @@ public  final class AWSElasticBlockStoreVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#awselasticblockstore
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder clearReadOnly() {
       

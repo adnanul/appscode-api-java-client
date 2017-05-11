@@ -89,7 +89,7 @@ public  final class Preferences extends
   public static final int TIME_ZONE_FIELD_NUMBER = 1;
   private volatile java.lang.Object timeZone_;
   /**
-   * <code>optional string time_zone = 1;</code>
+   * <code>string time_zone = 1;</code>
    */
   public java.lang.String getTimeZone() {
     java.lang.Object ref = timeZone_;
@@ -104,7 +104,7 @@ public  final class Preferences extends
     }
   }
   /**
-   * <code>optional string time_zone = 1;</code>
+   * <code>string time_zone = 1;</code>
    */
   public com.google.protobuf.ByteString
       getTimeZoneBytes() {
@@ -123,7 +123,7 @@ public  final class Preferences extends
   public static final int TIME_FORMAT_FIELD_NUMBER = 2;
   private volatile java.lang.Object timeFormat_;
   /**
-   * <code>optional string time_format = 2;</code>
+   * <code>string time_format = 2;</code>
    */
   public java.lang.String getTimeFormat() {
     java.lang.Object ref = timeFormat_;
@@ -138,7 +138,7 @@ public  final class Preferences extends
     }
   }
   /**
-   * <code>optional string time_format = 2;</code>
+   * <code>string time_format = 2;</code>
    */
   public com.google.protobuf.ByteString
       getTimeFormatBytes() {
@@ -157,7 +157,7 @@ public  final class Preferences extends
   public static final int DATE_FORMATE_FIELD_NUMBER = 3;
   private volatile java.lang.Object dateFormate_;
   /**
-   * <code>optional string date_formate = 3;</code>
+   * <code>string date_formate = 3;</code>
    */
   public java.lang.String getDateFormate() {
     java.lang.Object ref = dateFormate_;
@@ -172,7 +172,7 @@ public  final class Preferences extends
     }
   }
   /**
-   * <code>optional string date_formate = 3;</code>
+   * <code>string date_formate = 3;</code>
    */
   public com.google.protobuf.ByteString
       getDateFormateBytes() {
@@ -256,7 +256,7 @@ public  final class Preferences extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TIME_ZONE_FIELD_NUMBER;
     hash = (53 * hash) + getTimeZone().hashCode();
     hash = (37 * hash) + TIME_FORMAT_FIELD_NUMBER;
@@ -493,7 +493,7 @@ public  final class Preferences extends
 
     private java.lang.Object timeZone_ = "";
     /**
-     * <code>optional string time_zone = 1;</code>
+     * <code>string time_zone = 1;</code>
      */
     public java.lang.String getTimeZone() {
       java.lang.Object ref = timeZone_;
@@ -508,7 +508,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string time_zone = 1;</code>
+     * <code>string time_zone = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTimeZoneBytes() {
@@ -524,7 +524,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string time_zone = 1;</code>
+     * <code>string time_zone = 1;</code>
      */
     public Builder setTimeZone(
         java.lang.String value) {
@@ -537,7 +537,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string time_zone = 1;</code>
+     * <code>string time_zone = 1;</code>
      */
     public Builder clearTimeZone() {
       
@@ -546,7 +546,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string time_zone = 1;</code>
+     * <code>string time_zone = 1;</code>
      */
     public Builder setTimeZoneBytes(
         com.google.protobuf.ByteString value) {
@@ -562,7 +562,7 @@ public  final class Preferences extends
 
     private java.lang.Object timeFormat_ = "";
     /**
-     * <code>optional string time_format = 2;</code>
+     * <code>string time_format = 2;</code>
      */
     public java.lang.String getTimeFormat() {
       java.lang.Object ref = timeFormat_;
@@ -577,7 +577,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string time_format = 2;</code>
+     * <code>string time_format = 2;</code>
      */
     public com.google.protobuf.ByteString
         getTimeFormatBytes() {
@@ -593,7 +593,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string time_format = 2;</code>
+     * <code>string time_format = 2;</code>
      */
     public Builder setTimeFormat(
         java.lang.String value) {
@@ -606,7 +606,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string time_format = 2;</code>
+     * <code>string time_format = 2;</code>
      */
     public Builder clearTimeFormat() {
       
@@ -615,7 +615,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string time_format = 2;</code>
+     * <code>string time_format = 2;</code>
      */
     public Builder setTimeFormatBytes(
         com.google.protobuf.ByteString value) {
@@ -631,7 +631,7 @@ public  final class Preferences extends
 
     private java.lang.Object dateFormate_ = "";
     /**
-     * <code>optional string date_formate = 3;</code>
+     * <code>string date_formate = 3;</code>
      */
     public java.lang.String getDateFormate() {
       java.lang.Object ref = dateFormate_;
@@ -646,7 +646,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string date_formate = 3;</code>
+     * <code>string date_formate = 3;</code>
      */
     public com.google.protobuf.ByteString
         getDateFormateBytes() {
@@ -662,7 +662,7 @@ public  final class Preferences extends
       }
     }
     /**
-     * <code>optional string date_formate = 3;</code>
+     * <code>string date_formate = 3;</code>
      */
     public Builder setDateFormate(
         java.lang.String value) {
@@ -675,7 +675,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string date_formate = 3;</code>
+     * <code>string date_formate = 3;</code>
      */
     public Builder clearDateFormate() {
       
@@ -684,7 +684,7 @@ public  final class Preferences extends
       return this;
     }
     /**
-     * <code>optional string date_formate = 3;</code>
+     * <code>string date_formate = 3;</code>
      */
     public Builder setDateFormateBytes(
         com.google.protobuf.ByteString value) {

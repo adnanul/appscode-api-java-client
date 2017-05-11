@@ -8,21 +8,21 @@ public interface URLBaseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string scheme = 1;</code>
+   * <code>string scheme = 1;</code>
    */
   java.lang.String getScheme();
   /**
-   * <code>optional string scheme = 1;</code>
+   * <code>string scheme = 1;</code>
    */
   com.google.protobuf.ByteString
       getSchemeBytes();
 
   /**
-   * <code>optional string base_addr = 2;</code>
+   * <code>string base_addr = 2;</code>
    */
   java.lang.String getBaseAddr();
   /**
-   * <code>optional string base_addr = 2;</code>
+   * <code>string base_addr = 2;</code>
    */
   com.google.protobuf.ByteString
       getBaseAddrBytes();

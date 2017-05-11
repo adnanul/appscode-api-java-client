@@ -87,7 +87,7 @@ public  final class EmptyDirVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
    * </pre>
    *
-   * <code>optional string medium = 1;</code>
+   * <code>string medium = 1;</code>
    */
   public java.lang.String getMedium() {
     java.lang.Object ref = medium_;
@@ -109,7 +109,7 @@ public  final class EmptyDirVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
    * </pre>
    *
-   * <code>optional string medium = 1;</code>
+   * <code>string medium = 1;</code>
    */
   public com.google.protobuf.ByteString
       getMediumBytes() {
@@ -177,7 +177,7 @@ public  final class EmptyDirVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + MEDIUM_FIELD_NUMBER;
     hash = (53 * hash) + getMedium().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -408,7 +408,7 @@ public  final class EmptyDirVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
      * </pre>
      *
-     * <code>optional string medium = 1;</code>
+     * <code>string medium = 1;</code>
      */
     public java.lang.String getMedium() {
       java.lang.Object ref = medium_;
@@ -430,7 +430,7 @@ public  final class EmptyDirVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
      * </pre>
      *
-     * <code>optional string medium = 1;</code>
+     * <code>string medium = 1;</code>
      */
     public com.google.protobuf.ByteString
         getMediumBytes() {
@@ -453,7 +453,7 @@ public  final class EmptyDirVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
      * </pre>
      *
-     * <code>optional string medium = 1;</code>
+     * <code>string medium = 1;</code>
      */
     public Builder setMedium(
         java.lang.String value) {
@@ -473,7 +473,7 @@ public  final class EmptyDirVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
      * </pre>
      *
-     * <code>optional string medium = 1;</code>
+     * <code>string medium = 1;</code>
      */
     public Builder clearMedium() {
       
@@ -489,7 +489,7 @@ public  final class EmptyDirVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#emptydir
      * </pre>
      *
-     * <code>optional string medium = 1;</code>
+     * <code>string medium = 1;</code>
      */
     public Builder setMediumBytes(
         com.google.protobuf.ByteString value) {

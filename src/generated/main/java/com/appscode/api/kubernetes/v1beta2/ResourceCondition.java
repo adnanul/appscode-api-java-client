@@ -108,7 +108,7 @@ public  final class ResourceCondition extends
   public static final int TYPE_FIELD_NUMBER = 1;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -123,7 +123,7 @@ public  final class ResourceCondition extends
     }
   }
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -142,7 +142,7 @@ public  final class ResourceCondition extends
   public static final int STATUS_FIELD_NUMBER = 2;
   private volatile java.lang.Object status_;
   /**
-   * <code>optional string status = 2;</code>
+   * <code>string status = 2;</code>
    */
   public java.lang.String getStatus() {
     java.lang.Object ref = status_;
@@ -157,7 +157,7 @@ public  final class ResourceCondition extends
     }
   }
   /**
-   * <code>optional string status = 2;</code>
+   * <code>string status = 2;</code>
    */
   public com.google.protobuf.ByteString
       getStatusBytes() {
@@ -176,7 +176,7 @@ public  final class ResourceCondition extends
   public static final int LAST_HEARTBEAT_TIME_FIELD_NUMBER = 3;
   private long lastHeartbeatTime_;
   /**
-   * <code>optional int64 last_heartbeat_time = 3;</code>
+   * <code>int64 last_heartbeat_time = 3;</code>
    */
   public long getLastHeartbeatTime() {
     return lastHeartbeatTime_;
@@ -185,7 +185,7 @@ public  final class ResourceCondition extends
   public static final int LAST_TRANSITION_TIME_FIELD_NUMBER = 4;
   private long lastTransitionTime_;
   /**
-   * <code>optional int64 last_transition_time = 4;</code>
+   * <code>int64 last_transition_time = 4;</code>
    */
   public long getLastTransitionTime() {
     return lastTransitionTime_;
@@ -194,7 +194,7 @@ public  final class ResourceCondition extends
   public static final int REASON_FIELD_NUMBER = 5;
   private volatile java.lang.Object reason_;
   /**
-   * <code>optional string reason = 5;</code>
+   * <code>string reason = 5;</code>
    */
   public java.lang.String getReason() {
     java.lang.Object ref = reason_;
@@ -209,7 +209,7 @@ public  final class ResourceCondition extends
     }
   }
   /**
-   * <code>optional string reason = 5;</code>
+   * <code>string reason = 5;</code>
    */
   public com.google.protobuf.ByteString
       getReasonBytes() {
@@ -228,7 +228,7 @@ public  final class ResourceCondition extends
   public static final int MESSAGE_FIELD_NUMBER = 6;
   private volatile java.lang.Object message_;
   /**
-   * <code>optional string message = 6;</code>
+   * <code>string message = 6;</code>
    */
   public java.lang.String getMessage() {
     java.lang.Object ref = message_;
@@ -243,7 +243,7 @@ public  final class ResourceCondition extends
     }
   }
   /**
-   * <code>optional string message = 6;</code>
+   * <code>string message = 6;</code>
    */
   public com.google.protobuf.ByteString
       getMessageBytes() {
@@ -353,7 +353,7 @@ public  final class ResourceCondition extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + getType().hashCode();
     hash = (37 * hash) + STATUS_FIELD_NUMBER;
@@ -617,7 +617,7 @@ public  final class ResourceCondition extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -632,7 +632,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -648,7 +648,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -661,7 +661,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder clearType() {
       
@@ -670,7 +670,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -686,7 +686,7 @@ public  final class ResourceCondition extends
 
     private java.lang.Object status_ = "";
     /**
-     * <code>optional string status = 2;</code>
+     * <code>string status = 2;</code>
      */
     public java.lang.String getStatus() {
       java.lang.Object ref = status_;
@@ -701,7 +701,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string status = 2;</code>
+     * <code>string status = 2;</code>
      */
     public com.google.protobuf.ByteString
         getStatusBytes() {
@@ -717,7 +717,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string status = 2;</code>
+     * <code>string status = 2;</code>
      */
     public Builder setStatus(
         java.lang.String value) {
@@ -730,7 +730,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string status = 2;</code>
+     * <code>string status = 2;</code>
      */
     public Builder clearStatus() {
       
@@ -739,7 +739,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string status = 2;</code>
+     * <code>string status = 2;</code>
      */
     public Builder setStatusBytes(
         com.google.protobuf.ByteString value) {
@@ -755,13 +755,13 @@ public  final class ResourceCondition extends
 
     private long lastHeartbeatTime_ ;
     /**
-     * <code>optional int64 last_heartbeat_time = 3;</code>
+     * <code>int64 last_heartbeat_time = 3;</code>
      */
     public long getLastHeartbeatTime() {
       return lastHeartbeatTime_;
     }
     /**
-     * <code>optional int64 last_heartbeat_time = 3;</code>
+     * <code>int64 last_heartbeat_time = 3;</code>
      */
     public Builder setLastHeartbeatTime(long value) {
       
@@ -770,7 +770,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional int64 last_heartbeat_time = 3;</code>
+     * <code>int64 last_heartbeat_time = 3;</code>
      */
     public Builder clearLastHeartbeatTime() {
       
@@ -781,13 +781,13 @@ public  final class ResourceCondition extends
 
     private long lastTransitionTime_ ;
     /**
-     * <code>optional int64 last_transition_time = 4;</code>
+     * <code>int64 last_transition_time = 4;</code>
      */
     public long getLastTransitionTime() {
       return lastTransitionTime_;
     }
     /**
-     * <code>optional int64 last_transition_time = 4;</code>
+     * <code>int64 last_transition_time = 4;</code>
      */
     public Builder setLastTransitionTime(long value) {
       
@@ -796,7 +796,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional int64 last_transition_time = 4;</code>
+     * <code>int64 last_transition_time = 4;</code>
      */
     public Builder clearLastTransitionTime() {
       
@@ -807,7 +807,7 @@ public  final class ResourceCondition extends
 
     private java.lang.Object reason_ = "";
     /**
-     * <code>optional string reason = 5;</code>
+     * <code>string reason = 5;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -822,7 +822,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string reason = 5;</code>
+     * <code>string reason = 5;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -838,7 +838,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string reason = 5;</code>
+     * <code>string reason = 5;</code>
      */
     public Builder setReason(
         java.lang.String value) {
@@ -851,7 +851,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string reason = 5;</code>
+     * <code>string reason = 5;</code>
      */
     public Builder clearReason() {
       
@@ -860,7 +860,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string reason = 5;</code>
+     * <code>string reason = 5;</code>
      */
     public Builder setReasonBytes(
         com.google.protobuf.ByteString value) {
@@ -876,7 +876,7 @@ public  final class ResourceCondition extends
 
     private java.lang.Object message_ = "";
     /**
-     * <code>optional string message = 6;</code>
+     * <code>string message = 6;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -891,7 +891,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string message = 6;</code>
+     * <code>string message = 6;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -907,7 +907,7 @@ public  final class ResourceCondition extends
       }
     }
     /**
-     * <code>optional string message = 6;</code>
+     * <code>string message = 6;</code>
      */
     public Builder setMessage(
         java.lang.String value) {
@@ -920,7 +920,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string message = 6;</code>
+     * <code>string message = 6;</code>
      */
     public Builder clearMessage() {
       
@@ -929,7 +929,7 @@ public  final class ResourceCondition extends
       return this;
     }
     /**
-     * <code>optional string message = 6;</code>
+     * <code>string message = 6;</code>
      */
     public Builder setMessageBytes(
         com.google.protobuf.ByteString value) {

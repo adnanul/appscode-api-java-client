@@ -8,31 +8,31 @@ public interface SSHGetRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional string cluster_name = 2;</code>
+   * <code>string cluster_name = 2;</code>
    */
   java.lang.String getClusterName();
   /**
-   * <code>optional string cluster_name = 2;</code>
+   * <code>string cluster_name = 2;</code>
    */
   com.google.protobuf.ByteString
       getClusterNameBytes();
 
   /**
-   * <code>optional string instance_name = 3;</code>
+   * <code>string instance_name = 3;</code>
    */
   java.lang.String getInstanceName();
   /**
-   * <code>optional string instance_name = 3;</code>
+   * <code>string instance_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getInstanceNameBytes();

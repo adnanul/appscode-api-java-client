@@ -8,30 +8,30 @@ public interface JobSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional int32 parallelism = 1;</code>
+   * <code>int32 parallelism = 1;</code>
    */
   int getParallelism();
 
   /**
-   * <code>optional int32 completions = 2;</code>
+   * <code>int32 completions = 2;</code>
    */
   int getCompletions();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   boolean hasTemplate();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodSpec getTemplate();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec template = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getTemplateOrBuilder();
 
   /**
-   * <code>optional int64 active_deadline_seconds = 4;</code>
+   * <code>int64 active_deadline_seconds = 4;</code>
    */
   long getActiveDeadlineSeconds();
 }

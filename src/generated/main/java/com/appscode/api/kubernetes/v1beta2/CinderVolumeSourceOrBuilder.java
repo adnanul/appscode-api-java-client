@@ -13,7 +13,7 @@ public interface CinderVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/mysql-cinder-pd/README.md
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   java.lang.String getVolumeID();
   /**
@@ -22,7 +22,7 @@ public interface CinderVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/mysql-cinder-pd/README.md
    * </pre>
    *
-   * <code>optional string volumeID = 1;</code>
+   * <code>string volumeID = 1;</code>
    */
   com.google.protobuf.ByteString
       getVolumeIDBytes();
@@ -35,7 +35,7 @@ public interface CinderVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/mysql-cinder-pd/README.md
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   java.lang.String getFsType();
   /**
@@ -46,7 +46,7 @@ public interface CinderVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/mysql-cinder-pd/README.md
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -58,7 +58,7 @@ public interface CinderVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/mysql-cinder-pd/README.md
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   boolean getReadOnly();
 }

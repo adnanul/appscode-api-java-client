@@ -156,7 +156,7 @@ public  final class FCVolumeSource extends
    * Required: FC target lun number
    * </pre>
    *
-   * <code>optional int32 lun = 2;</code>
+   * <code>int32 lun = 2;</code>
    */
   public int getLun() {
     return lun_;
@@ -172,7 +172,7 @@ public  final class FCVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   public java.lang.String getFsType() {
     java.lang.Object ref = fsType_;
@@ -194,7 +194,7 @@ public  final class FCVolumeSource extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   public com.google.protobuf.ByteString
       getFsTypeBytes() {
@@ -218,7 +218,7 @@ public  final class FCVolumeSource extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -307,7 +307,7 @@ public  final class FCVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getTargetWWNsCount() > 0) {
       hash = (37 * hash) + TARGETWWNS_FIELD_NUMBER;
       hash = (53 * hash) + getTargetWWNsList().hashCode();
@@ -708,7 +708,7 @@ public  final class FCVolumeSource extends
      * Required: FC target lun number
      * </pre>
      *
-     * <code>optional int32 lun = 2;</code>
+     * <code>int32 lun = 2;</code>
      */
     public int getLun() {
       return lun_;
@@ -718,7 +718,7 @@ public  final class FCVolumeSource extends
      * Required: FC target lun number
      * </pre>
      *
-     * <code>optional int32 lun = 2;</code>
+     * <code>int32 lun = 2;</code>
      */
     public Builder setLun(int value) {
       
@@ -731,7 +731,7 @@ public  final class FCVolumeSource extends
      * Required: FC target lun number
      * </pre>
      *
-     * <code>optional int32 lun = 2;</code>
+     * <code>int32 lun = 2;</code>
      */
     public Builder clearLun() {
       
@@ -749,7 +749,7 @@ public  final class FCVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 3;</code>
+     * <code>string fsType = 3;</code>
      */
     public java.lang.String getFsType() {
       java.lang.Object ref = fsType_;
@@ -771,7 +771,7 @@ public  final class FCVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 3;</code>
+     * <code>string fsType = 3;</code>
      */
     public com.google.protobuf.ByteString
         getFsTypeBytes() {
@@ -794,7 +794,7 @@ public  final class FCVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 3;</code>
+     * <code>string fsType = 3;</code>
      */
     public Builder setFsType(
         java.lang.String value) {
@@ -814,7 +814,7 @@ public  final class FCVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 3;</code>
+     * <code>string fsType = 3;</code>
      */
     public Builder clearFsType() {
       
@@ -830,7 +830,7 @@ public  final class FCVolumeSource extends
      * TODO: how do we prevent errors in the filesystem from compromising the machine
      * </pre>
      *
-     * <code>optional string fsType = 3;</code>
+     * <code>string fsType = 3;</code>
      */
     public Builder setFsTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -851,7 +851,7 @@ public  final class FCVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -862,7 +862,7 @@ public  final class FCVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -876,7 +876,7 @@ public  final class FCVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 4;</code>
+     * <code>bool readOnly = 4;</code>
      */
     public Builder clearReadOnly() {
       

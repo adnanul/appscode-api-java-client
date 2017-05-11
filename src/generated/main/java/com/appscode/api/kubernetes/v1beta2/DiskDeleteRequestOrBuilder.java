@@ -8,21 +8,21 @@ public interface DiskDeleteRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   java.lang.String getCluster();
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   com.google.protobuf.ByteString
       getClusterBytes();
 
   /**
-   * <code>optional string uid = 2;</code>
+   * <code>string uid = 2;</code>
    */
   java.lang.String getUid();
   /**
-   * <code>optional string uid = 2;</code>
+   * <code>string uid = 2;</code>
    */
   com.google.protobuf.ByteString
       getUidBytes();

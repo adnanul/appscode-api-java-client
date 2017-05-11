@@ -8,25 +8,25 @@ public interface ScriptSourceSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string script_path = 1;</code>
+   * <code>string script_path = 1;</code>
    */
   java.lang.String getScriptPath();
   /**
-   * <code>optional string script_path = 1;</code>
+   * <code>string script_path = 1;</code>
    */
   com.google.protobuf.ByteString
       getScriptPathBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   boolean hasVolumeSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder();
 }

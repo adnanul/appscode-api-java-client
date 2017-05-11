@@ -110,7 +110,7 @@ public  final class NpmSpec extends
   public static final int DESCRIPTION_FIELD_NUMBER = 1;
   private volatile java.lang.Object description_;
   /**
-   * <code>optional string description = 1;</code>
+   * <code>string description = 1;</code>
    */
   public java.lang.String getDescription() {
     java.lang.Object ref = description_;
@@ -125,7 +125,7 @@ public  final class NpmSpec extends
     }
   }
   /**
-   * <code>optional string description = 1;</code>
+   * <code>string description = 1;</code>
    */
   public com.google.protobuf.ByteString
       getDescriptionBytes() {
@@ -144,7 +144,7 @@ public  final class NpmSpec extends
   public static final int ARTIFACT_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object artifactId_;
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   public java.lang.String getArtifactId() {
     java.lang.Object ref = artifactId_;
@@ -159,7 +159,7 @@ public  final class NpmSpec extends
     }
   }
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   public com.google.protobuf.ByteString
       getArtifactIdBytes() {
@@ -178,7 +178,7 @@ public  final class NpmSpec extends
   public static final int SHASUM_FIELD_NUMBER = 3;
   private volatile java.lang.Object shasum_;
   /**
-   * <code>optional string shasum = 3;</code>
+   * <code>string shasum = 3;</code>
    */
   public java.lang.String getShasum() {
     java.lang.Object ref = shasum_;
@@ -193,7 +193,7 @@ public  final class NpmSpec extends
     }
   }
   /**
-   * <code>optional string shasum = 3;</code>
+   * <code>string shasum = 3;</code>
    */
   public com.google.protobuf.ByteString
       getShasumBytes() {
@@ -241,7 +241,7 @@ public  final class NpmSpec extends
   public static final int ARTIFACT_URL_FIELD_NUMBER = 5;
   private volatile java.lang.Object artifactUrl_;
   /**
-   * <code>optional string artifact_url = 5;</code>
+   * <code>string artifact_url = 5;</code>
    */
   public java.lang.String getArtifactUrl() {
     java.lang.Object ref = artifactUrl_;
@@ -256,7 +256,7 @@ public  final class NpmSpec extends
     }
   }
   /**
-   * <code>optional string artifact_url = 5;</code>
+   * <code>string artifact_url = 5;</code>
    */
   public com.google.protobuf.ByteString
       getArtifactUrlBytes() {
@@ -361,7 +361,7 @@ public  final class NpmSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
     hash = (53 * hash) + getDescription().hashCode();
     hash = (37 * hash) + ARTIFACT_ID_FIELD_NUMBER;
@@ -632,7 +632,7 @@ public  final class NpmSpec extends
 
     private java.lang.Object description_ = "";
     /**
-     * <code>optional string description = 1;</code>
+     * <code>string description = 1;</code>
      */
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
@@ -647,7 +647,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string description = 1;</code>
+     * <code>string description = 1;</code>
      */
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
@@ -663,7 +663,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string description = 1;</code>
+     * <code>string description = 1;</code>
      */
     public Builder setDescription(
         java.lang.String value) {
@@ -676,7 +676,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string description = 1;</code>
+     * <code>string description = 1;</code>
      */
     public Builder clearDescription() {
       
@@ -685,7 +685,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string description = 1;</code>
+     * <code>string description = 1;</code>
      */
     public Builder setDescriptionBytes(
         com.google.protobuf.ByteString value) {
@@ -701,7 +701,7 @@ public  final class NpmSpec extends
 
     private java.lang.Object artifactId_ = "";
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public java.lang.String getArtifactId() {
       java.lang.Object ref = artifactId_;
@@ -716,7 +716,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getArtifactIdBytes() {
@@ -732,7 +732,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder setArtifactId(
         java.lang.String value) {
@@ -745,7 +745,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder clearArtifactId() {
       
@@ -754,7 +754,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder setArtifactIdBytes(
         com.google.protobuf.ByteString value) {
@@ -770,7 +770,7 @@ public  final class NpmSpec extends
 
     private java.lang.Object shasum_ = "";
     /**
-     * <code>optional string shasum = 3;</code>
+     * <code>string shasum = 3;</code>
      */
     public java.lang.String getShasum() {
       java.lang.Object ref = shasum_;
@@ -785,7 +785,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string shasum = 3;</code>
+     * <code>string shasum = 3;</code>
      */
     public com.google.protobuf.ByteString
         getShasumBytes() {
@@ -801,7 +801,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string shasum = 3;</code>
+     * <code>string shasum = 3;</code>
      */
     public Builder setShasum(
         java.lang.String value) {
@@ -814,7 +814,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string shasum = 3;</code>
+     * <code>string shasum = 3;</code>
      */
     public Builder clearShasum() {
       
@@ -823,7 +823,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string shasum = 3;</code>
+     * <code>string shasum = 3;</code>
      */
     public Builder setShasumBytes(
         com.google.protobuf.ByteString value) {
@@ -933,7 +933,7 @@ public  final class NpmSpec extends
 
     private java.lang.Object artifactUrl_ = "";
     /**
-     * <code>optional string artifact_url = 5;</code>
+     * <code>string artifact_url = 5;</code>
      */
     public java.lang.String getArtifactUrl() {
       java.lang.Object ref = artifactUrl_;
@@ -948,7 +948,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string artifact_url = 5;</code>
+     * <code>string artifact_url = 5;</code>
      */
     public com.google.protobuf.ByteString
         getArtifactUrlBytes() {
@@ -964,7 +964,7 @@ public  final class NpmSpec extends
       }
     }
     /**
-     * <code>optional string artifact_url = 5;</code>
+     * <code>string artifact_url = 5;</code>
      */
     public Builder setArtifactUrl(
         java.lang.String value) {
@@ -977,7 +977,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_url = 5;</code>
+     * <code>string artifact_url = 5;</code>
      */
     public Builder clearArtifactUrl() {
       
@@ -986,7 +986,7 @@ public  final class NpmSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_url = 5;</code>
+     * <code>string artifact_url = 5;</code>
      */
     public Builder setArtifactUrlBytes(
         com.google.protobuf.ByteString value) {

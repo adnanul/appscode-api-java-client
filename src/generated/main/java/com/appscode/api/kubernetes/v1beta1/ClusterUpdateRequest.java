@@ -101,7 +101,7 @@ public  final class ClusterUpdateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -116,7 +116,7 @@ public  final class ClusterUpdateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -135,7 +135,7 @@ public  final class ClusterUpdateRequest extends
   public static final int DO_NOT_DELETE_FIELD_NUMBER = 2;
   private boolean doNotDelete_;
   /**
-   * <code>optional bool do_not_delete = 2;</code>
+   * <code>bool do_not_delete = 2;</code>
    */
   public boolean getDoNotDelete() {
     return doNotDelete_;
@@ -144,19 +144,19 @@ public  final class ClusterUpdateRequest extends
   public static final int SETTINGS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta1.ClusterSettings settings_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   public boolean hasSettings() {
     return settings_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings() {
     return settings_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterSettings.getDefaultInstance() : settings_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder() {
     return getSettings();
@@ -177,7 +177,7 @@ public  final class ClusterUpdateRequest extends
    *   - deny-access
    * </pre>
    *
-   * <code>optional string default_access_level = 4;</code>
+   * <code>string default_access_level = 4;</code>
    */
   public java.lang.String getDefaultAccessLevel() {
     java.lang.Object ref = defaultAccessLevel_;
@@ -204,7 +204,7 @@ public  final class ClusterUpdateRequest extends
    *   - deny-access
    * </pre>
    *
-   * <code>optional string default_access_level = 4;</code>
+   * <code>string default_access_level = 4;</code>
    */
   public com.google.protobuf.ByteString
       getDefaultAccessLevelBytes() {
@@ -301,7 +301,7 @@ public  final class ClusterUpdateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + DO_NOT_DELETE_FIELD_NUMBER;
@@ -556,7 +556,7 @@ public  final class ClusterUpdateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -571,7 +571,7 @@ public  final class ClusterUpdateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -587,7 +587,7 @@ public  final class ClusterUpdateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -600,7 +600,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -609,7 +609,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -625,13 +625,13 @@ public  final class ClusterUpdateRequest extends
 
     private boolean doNotDelete_ ;
     /**
-     * <code>optional bool do_not_delete = 2;</code>
+     * <code>bool do_not_delete = 2;</code>
      */
     public boolean getDoNotDelete() {
       return doNotDelete_;
     }
     /**
-     * <code>optional bool do_not_delete = 2;</code>
+     * <code>bool do_not_delete = 2;</code>
      */
     public Builder setDoNotDelete(boolean value) {
       
@@ -640,7 +640,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional bool do_not_delete = 2;</code>
+     * <code>bool do_not_delete = 2;</code>
      */
     public Builder clearDoNotDelete() {
       
@@ -653,13 +653,13 @@ public  final class ClusterUpdateRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterSettings, com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder> settingsBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public boolean hasSettings() {
       return settingsBuilder_ != null || settings_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettings getSettings() {
       if (settingsBuilder_ == null) {
@@ -669,7 +669,7 @@ public  final class ClusterUpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public Builder setSettings(com.appscode.api.kubernetes.v1beta1.ClusterSettings value) {
       if (settingsBuilder_ == null) {
@@ -685,7 +685,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public Builder setSettings(
         com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder builderForValue) {
@@ -699,7 +699,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public Builder mergeSettings(com.appscode.api.kubernetes.v1beta1.ClusterSettings value) {
       if (settingsBuilder_ == null) {
@@ -717,7 +717,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public Builder clearSettings() {
       if (settingsBuilder_ == null) {
@@ -731,7 +731,7 @@ public  final class ClusterUpdateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder getSettingsBuilder() {
       
@@ -739,7 +739,7 @@ public  final class ClusterUpdateRequest extends
       return getSettingsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder getSettingsOrBuilder() {
       if (settingsBuilder_ != null) {
@@ -750,7 +750,7 @@ public  final class ClusterUpdateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterSettings settings = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterSettings, com.appscode.api.kubernetes.v1beta1.ClusterSettings.Builder, com.appscode.api.kubernetes.v1beta1.ClusterSettingsOrBuilder> 
@@ -780,7 +780,7 @@ public  final class ClusterUpdateRequest extends
      *   - deny-access
      * </pre>
      *
-     * <code>optional string default_access_level = 4;</code>
+     * <code>string default_access_level = 4;</code>
      */
     public java.lang.String getDefaultAccessLevel() {
       java.lang.Object ref = defaultAccessLevel_;
@@ -807,7 +807,7 @@ public  final class ClusterUpdateRequest extends
      *   - deny-access
      * </pre>
      *
-     * <code>optional string default_access_level = 4;</code>
+     * <code>string default_access_level = 4;</code>
      */
     public com.google.protobuf.ByteString
         getDefaultAccessLevelBytes() {
@@ -835,7 +835,7 @@ public  final class ClusterUpdateRequest extends
      *   - deny-access
      * </pre>
      *
-     * <code>optional string default_access_level = 4;</code>
+     * <code>string default_access_level = 4;</code>
      */
     public Builder setDefaultAccessLevel(
         java.lang.String value) {
@@ -860,7 +860,7 @@ public  final class ClusterUpdateRequest extends
      *   - deny-access
      * </pre>
      *
-     * <code>optional string default_access_level = 4;</code>
+     * <code>string default_access_level = 4;</code>
      */
     public Builder clearDefaultAccessLevel() {
       
@@ -881,7 +881,7 @@ public  final class ClusterUpdateRequest extends
      *   - deny-access
      * </pre>
      *
-     * <code>optional string default_access_level = 4;</code>
+     * <code>string default_access_level = 4;</code>
      */
     public Builder setDefaultAccessLevelBytes(
         com.google.protobuf.ByteString value) {

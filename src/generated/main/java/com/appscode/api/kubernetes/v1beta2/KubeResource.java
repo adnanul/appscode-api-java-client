@@ -572,7 +572,7 @@ public  final class KubeResource extends
   public static final int TYPE_FIELD_NUMBER = 1;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -587,7 +587,7 @@ public  final class KubeResource extends
     }
   }
   /**
-   * <code>optional string type = 1;</code>
+   * <code>string type = 1;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -606,19 +606,19 @@ public  final class KubeResource extends
   public static final int RAW_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Raw raw_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   public boolean hasRaw() {
     return raw_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Raw getRaw() {
     return raw_ == null ? com.appscode.api.kubernetes.v1beta2.Raw.getDefaultInstance() : raw_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RawOrBuilder getRawOrBuilder() {
     return getRaw();
@@ -661,7 +661,7 @@ public  final class KubeResource extends
 
   public static final int CONFIG_MAP_FIELD_NUMBER = 4;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMap getConfigMap() {
     if (resourceCase_ == 4) {
@@ -670,7 +670,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.ConfigMap.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMapOrBuilder getConfigMapOrBuilder() {
     if (resourceCase_ == 4) {
@@ -681,7 +681,7 @@ public  final class KubeResource extends
 
   public static final int DAEMON_SET_FIELD_NUMBER = 5;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DaemonSet getDaemonSet() {
     if (resourceCase_ == 5) {
@@ -690,7 +690,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.DaemonSet.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DaemonSetOrBuilder getDaemonSetOrBuilder() {
     if (resourceCase_ == 5) {
@@ -701,7 +701,7 @@ public  final class KubeResource extends
 
   public static final int DEPLOYMENT_FIELD_NUMBER = 6;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Deployment getDeployment() {
     if (resourceCase_ == 6) {
@@ -710,7 +710,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Deployment.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DeploymentOrBuilder getDeploymentOrBuilder() {
     if (resourceCase_ == 6) {
@@ -721,7 +721,7 @@ public  final class KubeResource extends
 
   public static final int JOB_FIELD_NUMBER = 7;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Job getJob() {
     if (resourceCase_ == 7) {
@@ -730,7 +730,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Job.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.JobOrBuilder getJobOrBuilder() {
     if (resourceCase_ == 7) {
@@ -741,7 +741,7 @@ public  final class KubeResource extends
 
   public static final int NAMESPACE_FIELD_NUMBER = 8;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Namespace getNamespace() {
     if (resourceCase_ == 8) {
@@ -750,7 +750,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Namespace.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.NamespaceOrBuilder getNamespaceOrBuilder() {
     if (resourceCase_ == 8) {
@@ -761,7 +761,7 @@ public  final class KubeResource extends
 
   public static final int NODE_FIELD_NUMBER = 9;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Node getNode() {
     if (resourceCase_ == 9) {
@@ -770,7 +770,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Node.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.NodeOrBuilder getNodeOrBuilder() {
     if (resourceCase_ == 9) {
@@ -781,7 +781,7 @@ public  final class KubeResource extends
 
   public static final int STATEFUL_SET_FIELD_NUMBER = 10;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StatefulSet getStatefulSet() {
     if (resourceCase_ == 10) {
@@ -790,7 +790,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.StatefulSet.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+   * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StatefulSetOrBuilder getStatefulSetOrBuilder() {
     if (resourceCase_ == 10) {
@@ -801,7 +801,7 @@ public  final class KubeResource extends
 
   public static final int POD_FIELD_NUMBER = 11;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Pod getPod() {
     if (resourceCase_ == 11) {
@@ -810,7 +810,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Pod.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PodOrBuilder getPodOrBuilder() {
     if (resourceCase_ == 11) {
@@ -821,7 +821,7 @@ public  final class KubeResource extends
 
   public static final int REPLICA_SET_FIELD_NUMBER = 12;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicaSet getReplicaSet() {
     if (resourceCase_ == 12) {
@@ -830,7 +830,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.ReplicaSet.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicaSetOrBuilder getReplicaSetOrBuilder() {
     if (resourceCase_ == 12) {
@@ -841,7 +841,7 @@ public  final class KubeResource extends
 
   public static final int SERVICE_FIELD_NUMBER = 13;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Service getService() {
     if (resourceCase_ == 13) {
@@ -850,7 +850,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Service.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ServiceOrBuilder getServiceOrBuilder() {
     if (resourceCase_ == 13) {
@@ -861,7 +861,7 @@ public  final class KubeResource extends
 
   public static final int SECRET_FIELD_NUMBER = 14;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Secret getSecret() {
     if (resourceCase_ == 14) {
@@ -870,7 +870,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Secret.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+   * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretOrBuilder getSecretOrBuilder() {
     if (resourceCase_ == 14) {
@@ -881,7 +881,7 @@ public  final class KubeResource extends
 
   public static final int REPLICATION_CONTROLLER_FIELD_NUMBER = 15;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationController getReplicationController() {
     if (resourceCase_ == 15) {
@@ -890,7 +890,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.ReplicationController.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationControllerOrBuilder getReplicationControllerOrBuilder() {
     if (resourceCase_ == 15) {
@@ -901,7 +901,7 @@ public  final class KubeResource extends
 
   public static final int STORAGE_CLASS_FIELD_NUMBER = 16;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageClass getStorageClass() {
     if (resourceCase_ == 16) {
@@ -910,7 +910,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.StorageClass.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageClassOrBuilder getStorageClassOrBuilder() {
     if (resourceCase_ == 16) {
@@ -921,7 +921,7 @@ public  final class KubeResource extends
 
   public static final int PERSISTENT_VOLUME_FIELD_NUMBER = 17;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
     if (resourceCase_ == 17) {
@@ -930,7 +930,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.PersistentVolume.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
     if (resourceCase_ == 17) {
@@ -941,7 +941,7 @@ public  final class KubeResource extends
 
   public static final int PERSISTENT_VOLUME_CLAIM_FIELD_NUMBER = 18;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
     if (resourceCase_ == 18) {
@@ -950,7 +950,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
     if (resourceCase_ == 18) {
@@ -961,7 +961,7 @@ public  final class KubeResource extends
 
   public static final int ALERT_FIELD_NUMBER = 19;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Alert getAlert() {
     if (resourceCase_ == 19) {
@@ -970,7 +970,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Alert.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+   * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.AlertOrBuilder getAlertOrBuilder() {
     if (resourceCase_ == 19) {
@@ -981,7 +981,7 @@ public  final class KubeResource extends
 
   public static final int ROLE_FIELD_NUMBER = 20;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Role getRole() {
     if (resourceCase_ == 20) {
@@ -990,7 +990,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Role.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+   * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RoleOrBuilder getRoleOrBuilder() {
     if (resourceCase_ == 20) {
@@ -1001,7 +1001,7 @@ public  final class KubeResource extends
 
   public static final int CLUSTER_ROLE_FIELD_NUMBER = 21;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ClusterRole getClusterRole() {
     if (resourceCase_ == 21) {
@@ -1010,7 +1010,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.ClusterRole.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ClusterRoleOrBuilder getClusterRoleOrBuilder() {
     if (resourceCase_ == 21) {
@@ -1021,7 +1021,7 @@ public  final class KubeResource extends
 
   public static final int ROLE_BINDING_FIELD_NUMBER = 22;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RoleBinding getRoleBinding() {
     if (resourceCase_ == 22) {
@@ -1030,7 +1030,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.RoleBinding.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+   * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.RoleBindingOrBuilder getRoleBindingOrBuilder() {
     if (resourceCase_ == 22) {
@@ -1041,7 +1041,7 @@ public  final class KubeResource extends
 
   public static final int CLUSTER_ROLE_BINDING_FIELD_NUMBER = 23;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding getClusterRoleBinding() {
     if (resourceCase_ == 23) {
@@ -1050,7 +1050,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+   * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ClusterRoleBindingOrBuilder getClusterRoleBindingOrBuilder() {
     if (resourceCase_ == 23) {
@@ -1061,7 +1061,7 @@ public  final class KubeResource extends
 
   public static final int CERTIFICATE_FIELD_NUMBER = 24;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Certificate getCertificate() {
     if (resourceCase_ == 24) {
@@ -1070,7 +1070,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Certificate.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+   * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CertificateOrBuilder getCertificateOrBuilder() {
     if (resourceCase_ == 24) {
@@ -1081,7 +1081,7 @@ public  final class KubeResource extends
 
   public static final int CRON_JOB_FIELD_NUMBER = 25;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJob getCronJob() {
     if (resourceCase_ == 25) {
@@ -1090,7 +1090,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.CronJob.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder getCronJobOrBuilder() {
     if (resourceCase_ == 25) {
@@ -1101,7 +1101,7 @@ public  final class KubeResource extends
 
   public static final int BACKUP_FIELD_NUMBER = 26;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Backup getBackup() {
     if (resourceCase_ == 26) {
@@ -1110,7 +1110,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Backup.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+   * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.BackupOrBuilder getBackupOrBuilder() {
     if (resourceCase_ == 26) {
@@ -1121,7 +1121,7 @@ public  final class KubeResource extends
 
   public static final int POSTGRES_FIELD_NUMBER = 27;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Postgres getPostgres() {
     if (resourceCase_ == 27) {
@@ -1130,7 +1130,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Postgres.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder getPostgresOrBuilder() {
     if (resourceCase_ == 27) {
@@ -1141,7 +1141,7 @@ public  final class KubeResource extends
 
   public static final int ELASTIC_FIELD_NUMBER = 28;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Elastic getElastic() {
     if (resourceCase_ == 28) {
@@ -1150,7 +1150,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Elastic.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder getElasticOrBuilder() {
     if (resourceCase_ == 28) {
@@ -1161,7 +1161,7 @@ public  final class KubeResource extends
 
   public static final int DELETED_DATABASE_FIELD_NUMBER = 29;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase() {
     if (resourceCase_ == 29) {
@@ -1170,7 +1170,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder() {
     if (resourceCase_ == 29) {
@@ -1181,7 +1181,7 @@ public  final class KubeResource extends
 
   public static final int DATABASE_SNAPSHOT_FIELD_NUMBER = 30;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot() {
     if (resourceCase_ == 30) {
@@ -1190,7 +1190,7 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder() {
     if (resourceCase_ == 30) {
@@ -1576,7 +1576,7 @@ public  final class KubeResource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
     hash = (53 * hash) + getType().hashCode();
     if (hasRaw()) {
@@ -2299,7 +2299,7 @@ public  final class KubeResource extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -2314,7 +2314,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -2330,7 +2330,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -2343,7 +2343,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder clearType() {
       
@@ -2352,7 +2352,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional string type = 1;</code>
+     * <code>string type = 1;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -2370,13 +2370,13 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Raw, com.appscode.api.kubernetes.v1beta2.Raw.Builder, com.appscode.api.kubernetes.v1beta2.RawOrBuilder> rawBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public boolean hasRaw() {
       return rawBuilder_ != null || raw_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Raw getRaw() {
       if (rawBuilder_ == null) {
@@ -2386,7 +2386,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public Builder setRaw(com.appscode.api.kubernetes.v1beta2.Raw value) {
       if (rawBuilder_ == null) {
@@ -2402,7 +2402,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public Builder setRaw(
         com.appscode.api.kubernetes.v1beta2.Raw.Builder builderForValue) {
@@ -2416,7 +2416,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public Builder mergeRaw(com.appscode.api.kubernetes.v1beta2.Raw value) {
       if (rawBuilder_ == null) {
@@ -2434,7 +2434,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public Builder clearRaw() {
       if (rawBuilder_ == null) {
@@ -2448,7 +2448,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Raw.Builder getRawBuilder() {
       
@@ -2456,7 +2456,7 @@ public  final class KubeResource extends
       return getRawFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RawOrBuilder getRawOrBuilder() {
       if (rawBuilder_ != null) {
@@ -2467,7 +2467,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Raw raw = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Raw raw = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Raw, com.appscode.api.kubernetes.v1beta2.Raw.Builder, com.appscode.api.kubernetes.v1beta2.RawOrBuilder> 
@@ -2726,7 +2726,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ConfigMap, com.appscode.api.kubernetes.v1beta2.ConfigMap.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapOrBuilder> configMapBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMap getConfigMap() {
       if (configMapBuilder_ == null) {
@@ -2742,7 +2742,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public Builder setConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMap value) {
       if (configMapBuilder_ == null) {
@@ -2758,7 +2758,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public Builder setConfigMap(
         com.appscode.api.kubernetes.v1beta2.ConfigMap.Builder builderForValue) {
@@ -2772,7 +2772,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public Builder mergeConfigMap(com.appscode.api.kubernetes.v1beta2.ConfigMap value) {
       if (configMapBuilder_ == null) {
@@ -2794,7 +2794,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public Builder clearConfigMap() {
       if (configMapBuilder_ == null) {
@@ -2813,13 +2813,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMap.Builder getConfigMapBuilder() {
       return getConfigMapFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapOrBuilder getConfigMapOrBuilder() {
       if ((resourceCase_ == 4) && (configMapBuilder_ != null)) {
@@ -2832,7 +2832,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMap config_map = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ConfigMap, com.appscode.api.kubernetes.v1beta2.ConfigMap.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapOrBuilder> 
@@ -2856,7 +2856,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DaemonSet, com.appscode.api.kubernetes.v1beta2.DaemonSet.Builder, com.appscode.api.kubernetes.v1beta2.DaemonSetOrBuilder> daemonSetBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DaemonSet getDaemonSet() {
       if (daemonSetBuilder_ == null) {
@@ -2872,7 +2872,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public Builder setDaemonSet(com.appscode.api.kubernetes.v1beta2.DaemonSet value) {
       if (daemonSetBuilder_ == null) {
@@ -2888,7 +2888,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public Builder setDaemonSet(
         com.appscode.api.kubernetes.v1beta2.DaemonSet.Builder builderForValue) {
@@ -2902,7 +2902,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public Builder mergeDaemonSet(com.appscode.api.kubernetes.v1beta2.DaemonSet value) {
       if (daemonSetBuilder_ == null) {
@@ -2924,7 +2924,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public Builder clearDaemonSet() {
       if (daemonSetBuilder_ == null) {
@@ -2943,13 +2943,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DaemonSet.Builder getDaemonSetBuilder() {
       return getDaemonSetFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DaemonSetOrBuilder getDaemonSetOrBuilder() {
       if ((resourceCase_ == 5) && (daemonSetBuilder_ != null)) {
@@ -2962,7 +2962,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.DaemonSet daemon_set = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DaemonSet, com.appscode.api.kubernetes.v1beta2.DaemonSet.Builder, com.appscode.api.kubernetes.v1beta2.DaemonSetOrBuilder> 
@@ -2986,7 +2986,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment, com.appscode.api.kubernetes.v1beta2.Deployment.Builder, com.appscode.api.kubernetes.v1beta2.DeploymentOrBuilder> deploymentBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment getDeployment() {
       if (deploymentBuilder_ == null) {
@@ -3002,7 +3002,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public Builder setDeployment(com.appscode.api.kubernetes.v1beta2.Deployment value) {
       if (deploymentBuilder_ == null) {
@@ -3018,7 +3018,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public Builder setDeployment(
         com.appscode.api.kubernetes.v1beta2.Deployment.Builder builderForValue) {
@@ -3032,7 +3032,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public Builder mergeDeployment(com.appscode.api.kubernetes.v1beta2.Deployment value) {
       if (deploymentBuilder_ == null) {
@@ -3054,7 +3054,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public Builder clearDeployment() {
       if (deploymentBuilder_ == null) {
@@ -3073,13 +3073,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Builder getDeploymentBuilder() {
       return getDeploymentFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DeploymentOrBuilder getDeploymentOrBuilder() {
       if ((resourceCase_ == 6) && (deploymentBuilder_ != null)) {
@@ -3092,7 +3092,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment deployment = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment, com.appscode.api.kubernetes.v1beta2.Deployment.Builder, com.appscode.api.kubernetes.v1beta2.DeploymentOrBuilder> 
@@ -3116,7 +3116,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Job, com.appscode.api.kubernetes.v1beta2.Job.Builder, com.appscode.api.kubernetes.v1beta2.JobOrBuilder> jobBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Job getJob() {
       if (jobBuilder_ == null) {
@@ -3132,7 +3132,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public Builder setJob(com.appscode.api.kubernetes.v1beta2.Job value) {
       if (jobBuilder_ == null) {
@@ -3148,7 +3148,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public Builder setJob(
         com.appscode.api.kubernetes.v1beta2.Job.Builder builderForValue) {
@@ -3162,7 +3162,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public Builder mergeJob(com.appscode.api.kubernetes.v1beta2.Job value) {
       if (jobBuilder_ == null) {
@@ -3184,7 +3184,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public Builder clearJob() {
       if (jobBuilder_ == null) {
@@ -3203,13 +3203,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Job.Builder getJobBuilder() {
       return getJobFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobOrBuilder getJobOrBuilder() {
       if ((resourceCase_ == 7) && (jobBuilder_ != null)) {
@@ -3222,7 +3222,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job job = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job job = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Job, com.appscode.api.kubernetes.v1beta2.Job.Builder, com.appscode.api.kubernetes.v1beta2.JobOrBuilder> 
@@ -3246,7 +3246,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace, com.appscode.api.kubernetes.v1beta2.Namespace.Builder, com.appscode.api.kubernetes.v1beta2.NamespaceOrBuilder> namespaceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace getNamespace() {
       if (namespaceBuilder_ == null) {
@@ -3262,7 +3262,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public Builder setNamespace(com.appscode.api.kubernetes.v1beta2.Namespace value) {
       if (namespaceBuilder_ == null) {
@@ -3278,7 +3278,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public Builder setNamespace(
         com.appscode.api.kubernetes.v1beta2.Namespace.Builder builderForValue) {
@@ -3292,7 +3292,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public Builder mergeNamespace(com.appscode.api.kubernetes.v1beta2.Namespace value) {
       if (namespaceBuilder_ == null) {
@@ -3314,7 +3314,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public Builder clearNamespace() {
       if (namespaceBuilder_ == null) {
@@ -3333,13 +3333,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Namespace.Builder getNamespaceBuilder() {
       return getNamespaceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.NamespaceOrBuilder getNamespaceOrBuilder() {
       if ((resourceCase_ == 8) && (namespaceBuilder_ != null)) {
@@ -3352,7 +3352,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.Namespace namespace = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Namespace, com.appscode.api.kubernetes.v1beta2.Namespace.Builder, com.appscode.api.kubernetes.v1beta2.NamespaceOrBuilder> 
@@ -3376,7 +3376,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node, com.appscode.api.kubernetes.v1beta2.Node.Builder, com.appscode.api.kubernetes.v1beta2.NodeOrBuilder> nodeBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node getNode() {
       if (nodeBuilder_ == null) {
@@ -3392,7 +3392,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public Builder setNode(com.appscode.api.kubernetes.v1beta2.Node value) {
       if (nodeBuilder_ == null) {
@@ -3408,7 +3408,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public Builder setNode(
         com.appscode.api.kubernetes.v1beta2.Node.Builder builderForValue) {
@@ -3422,7 +3422,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public Builder mergeNode(com.appscode.api.kubernetes.v1beta2.Node value) {
       if (nodeBuilder_ == null) {
@@ -3444,7 +3444,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public Builder clearNode() {
       if (nodeBuilder_ == null) {
@@ -3463,13 +3463,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.Builder getNodeBuilder() {
       return getNodeFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.NodeOrBuilder getNodeOrBuilder() {
       if ((resourceCase_ == 9) && (nodeBuilder_ != null)) {
@@ -3482,7 +3482,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node node = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node node = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node, com.appscode.api.kubernetes.v1beta2.Node.Builder, com.appscode.api.kubernetes.v1beta2.NodeOrBuilder> 
@@ -3506,7 +3506,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StatefulSet, com.appscode.api.kubernetes.v1beta2.StatefulSet.Builder, com.appscode.api.kubernetes.v1beta2.StatefulSetOrBuilder> statefulSetBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StatefulSet getStatefulSet() {
       if (statefulSetBuilder_ == null) {
@@ -3522,7 +3522,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public Builder setStatefulSet(com.appscode.api.kubernetes.v1beta2.StatefulSet value) {
       if (statefulSetBuilder_ == null) {
@@ -3538,7 +3538,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public Builder setStatefulSet(
         com.appscode.api.kubernetes.v1beta2.StatefulSet.Builder builderForValue) {
@@ -3552,7 +3552,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public Builder mergeStatefulSet(com.appscode.api.kubernetes.v1beta2.StatefulSet value) {
       if (statefulSetBuilder_ == null) {
@@ -3574,7 +3574,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public Builder clearStatefulSet() {
       if (statefulSetBuilder_ == null) {
@@ -3593,13 +3593,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StatefulSet.Builder getStatefulSetBuilder() {
       return getStatefulSetFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StatefulSetOrBuilder getStatefulSetOrBuilder() {
       if ((resourceCase_ == 10) && (statefulSetBuilder_ != null)) {
@@ -3612,7 +3612,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
+     * <code>.appscode.kubernetes.v1beta2.StatefulSet stateful_set = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StatefulSet, com.appscode.api.kubernetes.v1beta2.StatefulSet.Builder, com.appscode.api.kubernetes.v1beta2.StatefulSetOrBuilder> 
@@ -3636,7 +3636,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Pod, com.appscode.api.kubernetes.v1beta2.Pod.Builder, com.appscode.api.kubernetes.v1beta2.PodOrBuilder> podBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Pod getPod() {
       if (podBuilder_ == null) {
@@ -3652,7 +3652,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public Builder setPod(com.appscode.api.kubernetes.v1beta2.Pod value) {
       if (podBuilder_ == null) {
@@ -3668,7 +3668,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public Builder setPod(
         com.appscode.api.kubernetes.v1beta2.Pod.Builder builderForValue) {
@@ -3682,7 +3682,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public Builder mergePod(com.appscode.api.kubernetes.v1beta2.Pod value) {
       if (podBuilder_ == null) {
@@ -3704,7 +3704,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public Builder clearPod() {
       if (podBuilder_ == null) {
@@ -3723,13 +3723,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Pod.Builder getPodBuilder() {
       return getPodFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodOrBuilder getPodOrBuilder() {
       if ((resourceCase_ == 11) && (podBuilder_ != null)) {
@@ -3742,7 +3742,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod pod = 11;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod pod = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Pod, com.appscode.api.kubernetes.v1beta2.Pod.Builder, com.appscode.api.kubernetes.v1beta2.PodOrBuilder> 
@@ -3766,7 +3766,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicaSet, com.appscode.api.kubernetes.v1beta2.ReplicaSet.Builder, com.appscode.api.kubernetes.v1beta2.ReplicaSetOrBuilder> replicaSetBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicaSet getReplicaSet() {
       if (replicaSetBuilder_ == null) {
@@ -3782,7 +3782,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public Builder setReplicaSet(com.appscode.api.kubernetes.v1beta2.ReplicaSet value) {
       if (replicaSetBuilder_ == null) {
@@ -3798,7 +3798,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public Builder setReplicaSet(
         com.appscode.api.kubernetes.v1beta2.ReplicaSet.Builder builderForValue) {
@@ -3812,7 +3812,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public Builder mergeReplicaSet(com.appscode.api.kubernetes.v1beta2.ReplicaSet value) {
       if (replicaSetBuilder_ == null) {
@@ -3834,7 +3834,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public Builder clearReplicaSet() {
       if (replicaSetBuilder_ == null) {
@@ -3853,13 +3853,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicaSet.Builder getReplicaSetBuilder() {
       return getReplicaSetFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicaSetOrBuilder getReplicaSetOrBuilder() {
       if ((resourceCase_ == 12) && (replicaSetBuilder_ != null)) {
@@ -3872,7 +3872,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicaSet replica_set = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicaSet, com.appscode.api.kubernetes.v1beta2.ReplicaSet.Builder, com.appscode.api.kubernetes.v1beta2.ReplicaSetOrBuilder> 
@@ -3896,7 +3896,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service, com.appscode.api.kubernetes.v1beta2.Service.Builder, com.appscode.api.kubernetes.v1beta2.ServiceOrBuilder> serviceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service getService() {
       if (serviceBuilder_ == null) {
@@ -3912,7 +3912,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public Builder setService(com.appscode.api.kubernetes.v1beta2.Service value) {
       if (serviceBuilder_ == null) {
@@ -3928,7 +3928,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public Builder setService(
         com.appscode.api.kubernetes.v1beta2.Service.Builder builderForValue) {
@@ -3942,7 +3942,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public Builder mergeService(com.appscode.api.kubernetes.v1beta2.Service value) {
       if (serviceBuilder_ == null) {
@@ -3964,7 +3964,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public Builder clearService() {
       if (serviceBuilder_ == null) {
@@ -3983,13 +3983,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Service.Builder getServiceBuilder() {
       return getServiceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ServiceOrBuilder getServiceOrBuilder() {
       if ((resourceCase_ == 13) && (serviceBuilder_ != null)) {
@@ -4002,7 +4002,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Service service = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.Service service = 13;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Service, com.appscode.api.kubernetes.v1beta2.Service.Builder, com.appscode.api.kubernetes.v1beta2.ServiceOrBuilder> 
@@ -4026,7 +4026,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Secret, com.appscode.api.kubernetes.v1beta2.Secret.Builder, com.appscode.api.kubernetes.v1beta2.SecretOrBuilder> secretBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Secret getSecret() {
       if (secretBuilder_ == null) {
@@ -4042,7 +4042,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public Builder setSecret(com.appscode.api.kubernetes.v1beta2.Secret value) {
       if (secretBuilder_ == null) {
@@ -4058,7 +4058,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public Builder setSecret(
         com.appscode.api.kubernetes.v1beta2.Secret.Builder builderForValue) {
@@ -4072,7 +4072,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public Builder mergeSecret(com.appscode.api.kubernetes.v1beta2.Secret value) {
       if (secretBuilder_ == null) {
@@ -4094,7 +4094,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public Builder clearSecret() {
       if (secretBuilder_ == null) {
@@ -4113,13 +4113,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Secret.Builder getSecretBuilder() {
       return getSecretFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretOrBuilder getSecretOrBuilder() {
       if ((resourceCase_ == 14) && (secretBuilder_ != null)) {
@@ -4132,7 +4132,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Secret secret = 14;</code>
+     * <code>.appscode.kubernetes.v1beta2.Secret secret = 14;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Secret, com.appscode.api.kubernetes.v1beta2.Secret.Builder, com.appscode.api.kubernetes.v1beta2.SecretOrBuilder> 
@@ -4156,7 +4156,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController, com.appscode.api.kubernetes.v1beta2.ReplicationController.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationControllerOrBuilder> replicationControllerBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController getReplicationController() {
       if (replicationControllerBuilder_ == null) {
@@ -4172,7 +4172,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public Builder setReplicationController(com.appscode.api.kubernetes.v1beta2.ReplicationController value) {
       if (replicationControllerBuilder_ == null) {
@@ -4188,7 +4188,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public Builder setReplicationController(
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Builder builderForValue) {
@@ -4202,7 +4202,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public Builder mergeReplicationController(com.appscode.api.kubernetes.v1beta2.ReplicationController value) {
       if (replicationControllerBuilder_ == null) {
@@ -4224,7 +4224,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public Builder clearReplicationController() {
       if (replicationControllerBuilder_ == null) {
@@ -4243,13 +4243,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.Builder getReplicationControllerBuilder() {
       return getReplicationControllerFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationControllerOrBuilder getReplicationControllerOrBuilder() {
       if ((resourceCase_ == 15) && (replicationControllerBuilder_ != null)) {
@@ -4262,7 +4262,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController replication_controller = 15;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController, com.appscode.api.kubernetes.v1beta2.ReplicationController.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationControllerOrBuilder> 
@@ -4286,7 +4286,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageClass, com.appscode.api.kubernetes.v1beta2.StorageClass.Builder, com.appscode.api.kubernetes.v1beta2.StorageClassOrBuilder> storageClassBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageClass getStorageClass() {
       if (storageClassBuilder_ == null) {
@@ -4302,7 +4302,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public Builder setStorageClass(com.appscode.api.kubernetes.v1beta2.StorageClass value) {
       if (storageClassBuilder_ == null) {
@@ -4318,7 +4318,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public Builder setStorageClass(
         com.appscode.api.kubernetes.v1beta2.StorageClass.Builder builderForValue) {
@@ -4332,7 +4332,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public Builder mergeStorageClass(com.appscode.api.kubernetes.v1beta2.StorageClass value) {
       if (storageClassBuilder_ == null) {
@@ -4354,7 +4354,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public Builder clearStorageClass() {
       if (storageClassBuilder_ == null) {
@@ -4373,13 +4373,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageClass.Builder getStorageClassBuilder() {
       return getStorageClassFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageClassOrBuilder getStorageClassOrBuilder() {
       if ((resourceCase_ == 16) && (storageClassBuilder_ != null)) {
@@ -4392,7 +4392,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageClass storage_class = 16;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageClass, com.appscode.api.kubernetes.v1beta2.StorageClass.Builder, com.appscode.api.kubernetes.v1beta2.StorageClassOrBuilder> 
@@ -4416,7 +4416,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> persistentVolumeBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -4432,7 +4432,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public Builder setPersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -4448,7 +4448,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public Builder setPersistentVolume(
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder builderForValue) {
@@ -4462,7 +4462,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public Builder mergePersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -4484,7 +4484,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public Builder clearPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -4503,13 +4503,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder getPersistentVolumeBuilder() {
       return getPersistentVolumeFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
       if ((resourceCase_ == 17) && (persistentVolumeBuilder_ != null)) {
@@ -4522,7 +4522,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 17;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> 
@@ -4546,7 +4546,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> persistentVolumeClaimBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -4562,7 +4562,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public Builder setPersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -4578,7 +4578,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public Builder setPersistentVolumeClaim(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder builderForValue) {
@@ -4592,7 +4592,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public Builder mergePersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -4614,7 +4614,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public Builder clearPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -4633,13 +4633,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder getPersistentVolumeClaimBuilder() {
       return getPersistentVolumeClaimFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
       if ((resourceCase_ == 18) && (persistentVolumeClaimBuilder_ != null)) {
@@ -4652,7 +4652,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 18;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> 
@@ -4676,7 +4676,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert, com.appscode.api.kubernetes.v1beta2.Alert.Builder, com.appscode.api.kubernetes.v1beta2.AlertOrBuilder> alertBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert getAlert() {
       if (alertBuilder_ == null) {
@@ -4692,7 +4692,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public Builder setAlert(com.appscode.api.kubernetes.v1beta2.Alert value) {
       if (alertBuilder_ == null) {
@@ -4708,7 +4708,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public Builder setAlert(
         com.appscode.api.kubernetes.v1beta2.Alert.Builder builderForValue) {
@@ -4722,7 +4722,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public Builder mergeAlert(com.appscode.api.kubernetes.v1beta2.Alert value) {
       if (alertBuilder_ == null) {
@@ -4744,7 +4744,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public Builder clearAlert() {
       if (alertBuilder_ == null) {
@@ -4763,13 +4763,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Alert.Builder getAlertBuilder() {
       return getAlertFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.AlertOrBuilder getAlertOrBuilder() {
       if ((resourceCase_ == 19) && (alertBuilder_ != null)) {
@@ -4782,7 +4782,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Alert alert = 19;</code>
+     * <code>.appscode.kubernetes.v1beta2.Alert alert = 19;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Alert, com.appscode.api.kubernetes.v1beta2.Alert.Builder, com.appscode.api.kubernetes.v1beta2.AlertOrBuilder> 
@@ -4806,7 +4806,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Role, com.appscode.api.kubernetes.v1beta2.Role.Builder, com.appscode.api.kubernetes.v1beta2.RoleOrBuilder> roleBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Role getRole() {
       if (roleBuilder_ == null) {
@@ -4822,7 +4822,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public Builder setRole(com.appscode.api.kubernetes.v1beta2.Role value) {
       if (roleBuilder_ == null) {
@@ -4838,7 +4838,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public Builder setRole(
         com.appscode.api.kubernetes.v1beta2.Role.Builder builderForValue) {
@@ -4852,7 +4852,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public Builder mergeRole(com.appscode.api.kubernetes.v1beta2.Role value) {
       if (roleBuilder_ == null) {
@@ -4874,7 +4874,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public Builder clearRole() {
       if (roleBuilder_ == null) {
@@ -4893,13 +4893,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Role.Builder getRoleBuilder() {
       return getRoleFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RoleOrBuilder getRoleOrBuilder() {
       if ((resourceCase_ == 20) && (roleBuilder_ != null)) {
@@ -4912,7 +4912,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Role role = 20;</code>
+     * <code>.appscode.kubernetes.v1beta2.Role role = 20;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Role, com.appscode.api.kubernetes.v1beta2.Role.Builder, com.appscode.api.kubernetes.v1beta2.RoleOrBuilder> 
@@ -4936,7 +4936,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ClusterRole, com.appscode.api.kubernetes.v1beta2.ClusterRole.Builder, com.appscode.api.kubernetes.v1beta2.ClusterRoleOrBuilder> clusterRoleBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRole getClusterRole() {
       if (clusterRoleBuilder_ == null) {
@@ -4952,7 +4952,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public Builder setClusterRole(com.appscode.api.kubernetes.v1beta2.ClusterRole value) {
       if (clusterRoleBuilder_ == null) {
@@ -4968,7 +4968,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public Builder setClusterRole(
         com.appscode.api.kubernetes.v1beta2.ClusterRole.Builder builderForValue) {
@@ -4982,7 +4982,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public Builder mergeClusterRole(com.appscode.api.kubernetes.v1beta2.ClusterRole value) {
       if (clusterRoleBuilder_ == null) {
@@ -5004,7 +5004,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public Builder clearClusterRole() {
       if (clusterRoleBuilder_ == null) {
@@ -5023,13 +5023,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRole.Builder getClusterRoleBuilder() {
       return getClusterRoleFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRoleOrBuilder getClusterRoleOrBuilder() {
       if ((resourceCase_ == 21) && (clusterRoleBuilder_ != null)) {
@@ -5042,7 +5042,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRole cluster_role = 21;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ClusterRole, com.appscode.api.kubernetes.v1beta2.ClusterRole.Builder, com.appscode.api.kubernetes.v1beta2.ClusterRoleOrBuilder> 
@@ -5066,7 +5066,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.RoleBinding, com.appscode.api.kubernetes.v1beta2.RoleBinding.Builder, com.appscode.api.kubernetes.v1beta2.RoleBindingOrBuilder> roleBindingBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RoleBinding getRoleBinding() {
       if (roleBindingBuilder_ == null) {
@@ -5082,7 +5082,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public Builder setRoleBinding(com.appscode.api.kubernetes.v1beta2.RoleBinding value) {
       if (roleBindingBuilder_ == null) {
@@ -5098,7 +5098,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public Builder setRoleBinding(
         com.appscode.api.kubernetes.v1beta2.RoleBinding.Builder builderForValue) {
@@ -5112,7 +5112,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public Builder mergeRoleBinding(com.appscode.api.kubernetes.v1beta2.RoleBinding value) {
       if (roleBindingBuilder_ == null) {
@@ -5134,7 +5134,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public Builder clearRoleBinding() {
       if (roleBindingBuilder_ == null) {
@@ -5153,13 +5153,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RoleBinding.Builder getRoleBindingBuilder() {
       return getRoleBindingFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.RoleBindingOrBuilder getRoleBindingOrBuilder() {
       if ((resourceCase_ == 22) && (roleBindingBuilder_ != null)) {
@@ -5172,7 +5172,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
+     * <code>.appscode.kubernetes.v1beta2.RoleBinding role_binding = 22;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.RoleBinding, com.appscode.api.kubernetes.v1beta2.RoleBinding.Builder, com.appscode.api.kubernetes.v1beta2.RoleBindingOrBuilder> 
@@ -5196,7 +5196,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding, com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding.Builder, com.appscode.api.kubernetes.v1beta2.ClusterRoleBindingOrBuilder> clusterRoleBindingBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding getClusterRoleBinding() {
       if (clusterRoleBindingBuilder_ == null) {
@@ -5212,7 +5212,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public Builder setClusterRoleBinding(com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding value) {
       if (clusterRoleBindingBuilder_ == null) {
@@ -5228,7 +5228,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public Builder setClusterRoleBinding(
         com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding.Builder builderForValue) {
@@ -5242,7 +5242,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public Builder mergeClusterRoleBinding(com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding value) {
       if (clusterRoleBindingBuilder_ == null) {
@@ -5264,7 +5264,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public Builder clearClusterRoleBinding() {
       if (clusterRoleBindingBuilder_ == null) {
@@ -5283,13 +5283,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding.Builder getClusterRoleBindingBuilder() {
       return getClusterRoleBindingFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ClusterRoleBindingOrBuilder getClusterRoleBindingOrBuilder() {
       if ((resourceCase_ == 23) && (clusterRoleBindingBuilder_ != null)) {
@@ -5302,7 +5302,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
+     * <code>.appscode.kubernetes.v1beta2.ClusterRoleBinding cluster_role_binding = 23;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding, com.appscode.api.kubernetes.v1beta2.ClusterRoleBinding.Builder, com.appscode.api.kubernetes.v1beta2.ClusterRoleBindingOrBuilder> 
@@ -5326,7 +5326,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate, com.appscode.api.kubernetes.v1beta2.Certificate.Builder, com.appscode.api.kubernetes.v1beta2.CertificateOrBuilder> certificateBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate getCertificate() {
       if (certificateBuilder_ == null) {
@@ -5342,7 +5342,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public Builder setCertificate(com.appscode.api.kubernetes.v1beta2.Certificate value) {
       if (certificateBuilder_ == null) {
@@ -5358,7 +5358,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public Builder setCertificate(
         com.appscode.api.kubernetes.v1beta2.Certificate.Builder builderForValue) {
@@ -5372,7 +5372,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public Builder mergeCertificate(com.appscode.api.kubernetes.v1beta2.Certificate value) {
       if (certificateBuilder_ == null) {
@@ -5394,7 +5394,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public Builder clearCertificate() {
       if (certificateBuilder_ == null) {
@@ -5413,13 +5413,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Certificate.Builder getCertificateBuilder() {
       return getCertificateFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CertificateOrBuilder getCertificateOrBuilder() {
       if ((resourceCase_ == 24) && (certificateBuilder_ != null)) {
@@ -5432,7 +5432,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
+     * <code>.appscode.kubernetes.v1beta2.Certificate certificate = 24;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Certificate, com.appscode.api.kubernetes.v1beta2.Certificate.Builder, com.appscode.api.kubernetes.v1beta2.CertificateOrBuilder> 
@@ -5456,7 +5456,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob, com.appscode.api.kubernetes.v1beta2.CronJob.Builder, com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder> cronJobBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob getCronJob() {
       if (cronJobBuilder_ == null) {
@@ -5472,7 +5472,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public Builder setCronJob(com.appscode.api.kubernetes.v1beta2.CronJob value) {
       if (cronJobBuilder_ == null) {
@@ -5488,7 +5488,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public Builder setCronJob(
         com.appscode.api.kubernetes.v1beta2.CronJob.Builder builderForValue) {
@@ -5502,7 +5502,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public Builder mergeCronJob(com.appscode.api.kubernetes.v1beta2.CronJob value) {
       if (cronJobBuilder_ == null) {
@@ -5524,7 +5524,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public Builder clearCronJob() {
       if (cronJobBuilder_ == null) {
@@ -5543,13 +5543,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.Builder getCronJobBuilder() {
       return getCronJobFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder getCronJobOrBuilder() {
       if ((resourceCase_ == 25) && (cronJobBuilder_ != null)) {
@@ -5562,7 +5562,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob cron_job = 25;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob, com.appscode.api.kubernetes.v1beta2.CronJob.Builder, com.appscode.api.kubernetes.v1beta2.CronJobOrBuilder> 
@@ -5586,7 +5586,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup, com.appscode.api.kubernetes.v1beta2.Backup.Builder, com.appscode.api.kubernetes.v1beta2.BackupOrBuilder> backupBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup getBackup() {
       if (backupBuilder_ == null) {
@@ -5602,7 +5602,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public Builder setBackup(com.appscode.api.kubernetes.v1beta2.Backup value) {
       if (backupBuilder_ == null) {
@@ -5618,7 +5618,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public Builder setBackup(
         com.appscode.api.kubernetes.v1beta2.Backup.Builder builderForValue) {
@@ -5632,7 +5632,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public Builder mergeBackup(com.appscode.api.kubernetes.v1beta2.Backup value) {
       if (backupBuilder_ == null) {
@@ -5654,7 +5654,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public Builder clearBackup() {
       if (backupBuilder_ == null) {
@@ -5673,13 +5673,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Backup.Builder getBackupBuilder() {
       return getBackupFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupOrBuilder getBackupOrBuilder() {
       if ((resourceCase_ == 26) && (backupBuilder_ != null)) {
@@ -5692,7 +5692,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Backup backup = 26;</code>
+     * <code>.appscode.kubernetes.v1beta2.Backup backup = 26;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Backup, com.appscode.api.kubernetes.v1beta2.Backup.Builder, com.appscode.api.kubernetes.v1beta2.BackupOrBuilder> 
@@ -5716,7 +5716,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Postgres, com.appscode.api.kubernetes.v1beta2.Postgres.Builder, com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder> postgresBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Postgres getPostgres() {
       if (postgresBuilder_ == null) {
@@ -5732,7 +5732,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public Builder setPostgres(com.appscode.api.kubernetes.v1beta2.Postgres value) {
       if (postgresBuilder_ == null) {
@@ -5748,7 +5748,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public Builder setPostgres(
         com.appscode.api.kubernetes.v1beta2.Postgres.Builder builderForValue) {
@@ -5762,7 +5762,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public Builder mergePostgres(com.appscode.api.kubernetes.v1beta2.Postgres value) {
       if (postgresBuilder_ == null) {
@@ -5784,7 +5784,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public Builder clearPostgres() {
       if (postgresBuilder_ == null) {
@@ -5803,13 +5803,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Postgres.Builder getPostgresBuilder() {
       return getPostgresFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder getPostgresOrBuilder() {
       if ((resourceCase_ == 27) && (postgresBuilder_ != null)) {
@@ -5822,7 +5822,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.Postgres postgres = 27;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Postgres, com.appscode.api.kubernetes.v1beta2.Postgres.Builder, com.appscode.api.kubernetes.v1beta2.PostgresOrBuilder> 
@@ -5846,7 +5846,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Elastic, com.appscode.api.kubernetes.v1beta2.Elastic.Builder, com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder> elasticBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Elastic getElastic() {
       if (elasticBuilder_ == null) {
@@ -5862,7 +5862,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public Builder setElastic(com.appscode.api.kubernetes.v1beta2.Elastic value) {
       if (elasticBuilder_ == null) {
@@ -5878,7 +5878,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public Builder setElastic(
         com.appscode.api.kubernetes.v1beta2.Elastic.Builder builderForValue) {
@@ -5892,7 +5892,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public Builder mergeElastic(com.appscode.api.kubernetes.v1beta2.Elastic value) {
       if (elasticBuilder_ == null) {
@@ -5914,7 +5914,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public Builder clearElastic() {
       if (elasticBuilder_ == null) {
@@ -5933,13 +5933,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Elastic.Builder getElasticBuilder() {
       return getElasticFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder getElasticOrBuilder() {
       if ((resourceCase_ == 28) && (elasticBuilder_ != null)) {
@@ -5952,7 +5952,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.Elastic elastic = 28;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Elastic, com.appscode.api.kubernetes.v1beta2.Elastic.Builder, com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder> 
@@ -5976,7 +5976,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> deletedDatabaseBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase() {
       if (deletedDatabaseBuilder_ == null) {
@@ -5992,7 +5992,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public Builder setDeletedDatabase(com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
       if (deletedDatabaseBuilder_ == null) {
@@ -6008,7 +6008,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public Builder setDeletedDatabase(
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder builderForValue) {
@@ -6022,7 +6022,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public Builder mergeDeletedDatabase(com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
       if (deletedDatabaseBuilder_ == null) {
@@ -6044,7 +6044,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public Builder clearDeletedDatabase() {
       if (deletedDatabaseBuilder_ == null) {
@@ -6063,13 +6063,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder getDeletedDatabaseBuilder() {
       return getDeletedDatabaseFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder() {
       if ((resourceCase_ == 29) && (deletedDatabaseBuilder_ != null)) {
@@ -6082,7 +6082,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
@@ -6106,7 +6106,7 @@ public  final class KubeResource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> databaseSnapshotBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot() {
       if (databaseSnapshotBuilder_ == null) {
@@ -6122,7 +6122,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public Builder setDatabaseSnapshot(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
       if (databaseSnapshotBuilder_ == null) {
@@ -6138,7 +6138,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public Builder setDatabaseSnapshot(
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder builderForValue) {
@@ -6152,7 +6152,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public Builder mergeDatabaseSnapshot(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
       if (databaseSnapshotBuilder_ == null) {
@@ -6174,7 +6174,7 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public Builder clearDatabaseSnapshot() {
       if (databaseSnapshotBuilder_ == null) {
@@ -6193,13 +6193,13 @@ public  final class KubeResource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder getDatabaseSnapshotBuilder() {
       return getDatabaseSnapshotFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder() {
       if ((resourceCase_ == 30) && (databaseSnapshotBuilder_ != null)) {
@@ -6212,7 +6212,7 @@ public  final class KubeResource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 

@@ -8,28 +8,15 @@ public interface VersionDescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.attic.v1beta1.ArtifactVersion version = 2;</code>
+   * <code>.appscode.attic.v1beta1.ArtifactVersion version = 1;</code>
    */
   boolean hasVersion();
   /**
-   * <code>optional .appscode.attic.v1beta1.ArtifactVersion version = 2;</code>
+   * <code>.appscode.attic.v1beta1.ArtifactVersion version = 1;</code>
    */
   com.appscode.api.attic.v1beta1.ArtifactVersion getVersion();
   /**
-   * <code>optional .appscode.attic.v1beta1.ArtifactVersion version = 2;</code>
+   * <code>.appscode.attic.v1beta1.ArtifactVersion version = 1;</code>
    */
   com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder getVersionOrBuilder();
 }

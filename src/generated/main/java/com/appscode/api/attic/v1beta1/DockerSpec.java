@@ -118,7 +118,7 @@ public  final class DockerSpec extends
   public static final int MANIFEST_URL_FIELD_NUMBER = 2;
   private volatile java.lang.Object manifestUrl_;
   /**
-   * <code>optional string manifest_url = 2;</code>
+   * <code>string manifest_url = 2;</code>
    */
   public java.lang.String getManifestUrl() {
     java.lang.Object ref = manifestUrl_;
@@ -133,7 +133,7 @@ public  final class DockerSpec extends
     }
   }
   /**
-   * <code>optional string manifest_url = 2;</code>
+   * <code>string manifest_url = 2;</code>
    */
   public com.google.protobuf.ByteString
       getManifestUrlBytes() {
@@ -214,7 +214,7 @@ public  final class DockerSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getTarSumsCount() > 0) {
       hash = (37 * hash) + TAR_SUMS_FIELD_NUMBER;
       hash = (53 * hash) + getTarSumsList().hashCode();
@@ -552,7 +552,7 @@ public  final class DockerSpec extends
 
     private java.lang.Object manifestUrl_ = "";
     /**
-     * <code>optional string manifest_url = 2;</code>
+     * <code>string manifest_url = 2;</code>
      */
     public java.lang.String getManifestUrl() {
       java.lang.Object ref = manifestUrl_;
@@ -567,7 +567,7 @@ public  final class DockerSpec extends
       }
     }
     /**
-     * <code>optional string manifest_url = 2;</code>
+     * <code>string manifest_url = 2;</code>
      */
     public com.google.protobuf.ByteString
         getManifestUrlBytes() {
@@ -583,7 +583,7 @@ public  final class DockerSpec extends
       }
     }
     /**
-     * <code>optional string manifest_url = 2;</code>
+     * <code>string manifest_url = 2;</code>
      */
     public Builder setManifestUrl(
         java.lang.String value) {
@@ -596,7 +596,7 @@ public  final class DockerSpec extends
       return this;
     }
     /**
-     * <code>optional string manifest_url = 2;</code>
+     * <code>string manifest_url = 2;</code>
      */
     public Builder clearManifestUrl() {
       
@@ -605,7 +605,7 @@ public  final class DockerSpec extends
       return this;
     }
     /**
-     * <code>optional string manifest_url = 2;</code>
+     * <code>string manifest_url = 2;</code>
      */
     public Builder setManifestUrlBytes(
         com.google.protobuf.ByteString value) {

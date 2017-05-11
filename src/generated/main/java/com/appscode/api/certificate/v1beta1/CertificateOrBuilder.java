@@ -8,52 +8,52 @@ public interface CertificateOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string common_name = 3;</code>
+   * <code>string common_name = 3;</code>
    */
   java.lang.String getCommonName();
   /**
-   * <code>optional string common_name = 3;</code>
+   * <code>string common_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getCommonNameBytes();
 
   /**
-   * <code>optional string issued_by = 4;</code>
+   * <code>string issued_by = 4;</code>
    */
   java.lang.String getIssuedBy();
   /**
-   * <code>optional string issued_by = 4;</code>
+   * <code>string issued_by = 4;</code>
    */
   com.google.protobuf.ByteString
       getIssuedByBytes();
 
   /**
-   * <code>optional int64 valid_from = 5;</code>
+   * <code>int64 valid_from = 5;</code>
    */
   long getValidFrom();
 
   /**
-   * <code>optional int64 expire_date = 6;</code>
+   * <code>int64 expire_date = 6;</code>
    */
   long getExpireDate();
 
@@ -101,36 +101,36 @@ public interface CertificateOrBuilder extends
       getSansBytes(int index);
 
   /**
-   * <code>optional string cert = 8;</code>
+   * <code>string cert = 8;</code>
    */
   java.lang.String getCert();
   /**
-   * <code>optional string cert = 8;</code>
+   * <code>string cert = 8;</code>
    */
   com.google.protobuf.ByteString
       getCertBytes();
 
   /**
-   * <code>optional string key = 9;</code>
+   * <code>string key = 9;</code>
    */
   java.lang.String getKey();
   /**
-   * <code>optional string key = 9;</code>
+   * <code>string key = 9;</code>
    */
   com.google.protobuf.ByteString
       getKeyBytes();
 
   /**
-   * <code>optional int32 version = 10;</code>
+   * <code>int32 version = 10;</code>
    */
   int getVersion();
 
   /**
-   * <code>optional string serial_number = 11;</code>
+   * <code>string serial_number = 11;</code>
    */
   java.lang.String getSerialNumber();
   /**
-   * <code>optional string serial_number = 11;</code>
+   * <code>string serial_number = 11;</code>
    */
   com.google.protobuf.ByteString
       getSerialNumberBytes();

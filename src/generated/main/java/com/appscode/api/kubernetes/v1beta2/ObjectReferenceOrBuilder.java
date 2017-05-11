@@ -8,61 +8,61 @@ public interface ObjectReferenceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   java.lang.String getKind();
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   com.google.protobuf.ByteString
       getKindBytes();
 
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string uid = 4;</code>
+   * <code>string uid = 4;</code>
    */
   java.lang.String getUid();
   /**
-   * <code>optional string uid = 4;</code>
+   * <code>string uid = 4;</code>
    */
   com.google.protobuf.ByteString
       getUidBytes();
 
   /**
-   * <code>optional string API_version = 5;</code>
+   * <code>string API_version = 5;</code>
    */
   java.lang.String getAPIVersion();
   /**
-   * <code>optional string API_version = 5;</code>
+   * <code>string API_version = 5;</code>
    */
   com.google.protobuf.ByteString
       getAPIVersionBytes();
 
   /**
-   * <code>optional string resource_version = 6;</code>
+   * <code>string resource_version = 6;</code>
    */
   java.lang.String getResourceVersion();
   /**
-   * <code>optional string resource_version = 6;</code>
+   * <code>string resource_version = 6;</code>
    */
   com.google.protobuf.ByteString
       getResourceVersionBytes();

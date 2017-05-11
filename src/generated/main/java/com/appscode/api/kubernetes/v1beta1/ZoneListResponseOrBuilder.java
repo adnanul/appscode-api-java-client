@@ -8,33 +8,20 @@ public interface ZoneListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   java.util.List<java.lang.String>
       getZonesList();
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   int getZonesCount();
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   java.lang.String getZones(int index);
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   com.google.protobuf.ByteString
       getZonesBytes(int index);

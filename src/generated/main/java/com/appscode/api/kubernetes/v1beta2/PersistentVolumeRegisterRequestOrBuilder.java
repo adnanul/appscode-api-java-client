@@ -8,56 +8,56 @@ public interface PersistentVolumeRegisterRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   java.lang.String getCluster();
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   com.google.protobuf.ByteString
       getClusterBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string identifier = 3;</code>
+   * <code>string identifier = 3;</code>
    */
   java.lang.String getIdentifier();
   /**
-   * <code>optional string identifier = 3;</code>
+   * <code>string identifier = 3;</code>
    */
   com.google.protobuf.ByteString
       getIdentifierBytes();
 
   /**
-   * <code>optional string plugin = 4;</code>
+   * <code>string plugin = 4;</code>
    */
   java.lang.String getPlugin();
   /**
-   * <code>optional string plugin = 4;</code>
+   * <code>string plugin = 4;</code>
    */
   com.google.protobuf.ByteString
       getPluginBytes();
 
   /**
-   * <code>optional int64 size_gb = 5;</code>
+   * <code>int64 size_gb = 5;</code>
    */
   long getSizeGb();
 
   /**
-   * <code>optional string endpoint = 6;</code>
+   * <code>string endpoint = 6;</code>
    */
   java.lang.String getEndpoint();
   /**
-   * <code>optional string endpoint = 6;</code>
+   * <code>string endpoint = 6;</code>
    */
   com.google.protobuf.ByteString
       getEndpointBytes();

@@ -130,7 +130,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   public boolean hasFieldRef() {
     return fieldRef_ != null;
@@ -142,7 +142,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef() {
     return fieldRef_ == null ? com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.getDefaultInstance() : fieldRef_;
@@ -154,7 +154,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder() {
     return getFieldRef();
@@ -169,7 +169,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   public boolean hasResourceFieldRef() {
     return resourceFieldRef_ != null;
@@ -181,7 +181,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef() {
     return resourceFieldRef_ == null ? com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.getDefaultInstance() : resourceFieldRef_;
@@ -193,7 +193,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder() {
     return getResourceFieldRef();
@@ -207,7 +207,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   public boolean hasConfigMapKeyRef() {
     return configMapKeyRef_ != null;
@@ -218,7 +218,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector getConfigMapKeyRef() {
     return configMapKeyRef_ == null ? com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector.getDefaultInstance() : configMapKeyRef_;
@@ -229,7 +229,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelectorOrBuilder getConfigMapKeyRefOrBuilder() {
     return getConfigMapKeyRef();
@@ -243,7 +243,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   public boolean hasSecretKeyRef() {
     return secretKeyRef_ != null;
@@ -254,7 +254,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretKeySelector getSecretKeyRef() {
     return secretKeyRef_ == null ? com.appscode.api.kubernetes.v1beta2.SecretKeySelector.getDefaultInstance() : secretKeyRef_;
@@ -265,7 +265,7 @@ public  final class EnvVarSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretKeySelectorOrBuilder getSecretKeyRefOrBuilder() {
     return getSecretKeyRef();
@@ -363,7 +363,7 @@ public  final class EnvVarSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasFieldRef()) {
       hash = (37 * hash) + FIELD_REF_FIELD_NUMBER;
       hash = (53 * hash) + getFieldRef().hashCode();
@@ -657,7 +657,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public boolean hasFieldRef() {
       return fieldRefBuilder_ != null || fieldRef_ != null;
@@ -669,7 +669,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef() {
       if (fieldRefBuilder_ == null) {
@@ -685,7 +685,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public Builder setFieldRef(com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector value) {
       if (fieldRefBuilder_ == null) {
@@ -707,7 +707,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public Builder setFieldRef(
         com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder builderForValue) {
@@ -727,7 +727,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public Builder mergeFieldRef(com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector value) {
       if (fieldRefBuilder_ == null) {
@@ -751,7 +751,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public Builder clearFieldRef() {
       if (fieldRefBuilder_ == null) {
@@ -771,7 +771,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder getFieldRefBuilder() {
       
@@ -785,7 +785,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder() {
       if (fieldRefBuilder_ != null) {
@@ -802,7 +802,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector field_ref = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector, com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector.Builder, com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder> 
@@ -828,7 +828,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public boolean hasResourceFieldRef() {
       return resourceFieldRefBuilder_ != null || resourceFieldRef_ != null;
@@ -840,7 +840,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef() {
       if (resourceFieldRefBuilder_ == null) {
@@ -856,7 +856,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public Builder setResourceFieldRef(com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector value) {
       if (resourceFieldRefBuilder_ == null) {
@@ -878,7 +878,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public Builder setResourceFieldRef(
         com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder builderForValue) {
@@ -898,7 +898,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public Builder mergeResourceFieldRef(com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector value) {
       if (resourceFieldRefBuilder_ == null) {
@@ -922,7 +922,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public Builder clearResourceFieldRef() {
       if (resourceFieldRefBuilder_ == null) {
@@ -942,7 +942,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder getResourceFieldRefBuilder() {
       
@@ -956,7 +956,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder() {
       if (resourceFieldRefBuilder_ != null) {
@@ -973,7 +973,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resource_field_ref = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector, com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector.Builder, com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder> 
@@ -998,7 +998,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public boolean hasConfigMapKeyRef() {
       return configMapKeyRefBuilder_ != null || configMapKeyRef_ != null;
@@ -1009,7 +1009,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector getConfigMapKeyRef() {
       if (configMapKeyRefBuilder_ == null) {
@@ -1024,7 +1024,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public Builder setConfigMapKeyRef(com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector value) {
       if (configMapKeyRefBuilder_ == null) {
@@ -1045,7 +1045,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public Builder setConfigMapKeyRef(
         com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector.Builder builderForValue) {
@@ -1064,7 +1064,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public Builder mergeConfigMapKeyRef(com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector value) {
       if (configMapKeyRefBuilder_ == null) {
@@ -1087,7 +1087,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public Builder clearConfigMapKeyRef() {
       if (configMapKeyRefBuilder_ == null) {
@@ -1106,7 +1106,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector.Builder getConfigMapKeyRefBuilder() {
       
@@ -1119,7 +1119,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelectorOrBuilder getConfigMapKeyRefOrBuilder() {
       if (configMapKeyRefBuilder_ != null) {
@@ -1135,7 +1135,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ConfigMapKeySelector config_map_key_ref = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector, com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelector.Builder, com.appscode.api.kubernetes.v1beta2.ConfigMapKeySelectorOrBuilder> 
@@ -1160,7 +1160,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public boolean hasSecretKeyRef() {
       return secretKeyRefBuilder_ != null || secretKeyRef_ != null;
@@ -1171,7 +1171,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretKeySelector getSecretKeyRef() {
       if (secretKeyRefBuilder_ == null) {
@@ -1186,7 +1186,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public Builder setSecretKeyRef(com.appscode.api.kubernetes.v1beta2.SecretKeySelector value) {
       if (secretKeyRefBuilder_ == null) {
@@ -1207,7 +1207,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public Builder setSecretKeyRef(
         com.appscode.api.kubernetes.v1beta2.SecretKeySelector.Builder builderForValue) {
@@ -1226,7 +1226,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public Builder mergeSecretKeyRef(com.appscode.api.kubernetes.v1beta2.SecretKeySelector value) {
       if (secretKeyRefBuilder_ == null) {
@@ -1249,7 +1249,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public Builder clearSecretKeyRef() {
       if (secretKeyRefBuilder_ == null) {
@@ -1268,7 +1268,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretKeySelector.Builder getSecretKeyRefBuilder() {
       
@@ -1281,7 +1281,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretKeySelectorOrBuilder getSecretKeyRefOrBuilder() {
       if (secretKeyRefBuilder_ != null) {
@@ -1297,7 +1297,7 @@ public  final class EnvVarSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretKeySelector secret_key_ref = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretKeySelector, com.appscode.api.kubernetes.v1beta2.SecretKeySelector.Builder, com.appscode.api.kubernetes.v1beta2.SecretKeySelectorOrBuilder> 

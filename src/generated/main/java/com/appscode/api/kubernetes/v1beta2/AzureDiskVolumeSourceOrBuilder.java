@@ -12,7 +12,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * The Name of the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskName = 1;</code>
+   * <code>string diskName = 1;</code>
    */
   java.lang.String getDiskName();
   /**
@@ -20,7 +20,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * The Name of the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskName = 1;</code>
+   * <code>string diskName = 1;</code>
    */
   com.google.protobuf.ByteString
       getDiskNameBytes();
@@ -30,7 +30,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * The URI the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskURI = 2;</code>
+   * <code>string diskURI = 2;</code>
    */
   java.lang.String getDiskURI();
   /**
@@ -38,7 +38,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * The URI the data disk in the blob storage
    * </pre>
    *
-   * <code>optional string diskURI = 2;</code>
+   * <code>string diskURI = 2;</code>
    */
   com.google.protobuf.ByteString
       getDiskURIBytes();
@@ -48,7 +48,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * Host Caching mode: None, Read Only, Read Write.
    * </pre>
    *
-   * <code>optional string cachingMode = 3;</code>
+   * <code>string cachingMode = 3;</code>
    */
   java.lang.String getCachingMode();
   /**
@@ -56,7 +56,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * Host Caching mode: None, Read Only, Read Write.
    * </pre>
    *
-   * <code>optional string cachingMode = 3;</code>
+   * <code>string cachingMode = 3;</code>
    */
   com.google.protobuf.ByteString
       getCachingModeBytes();
@@ -68,7 +68,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 4;</code>
+   * <code>string fsType = 4;</code>
    */
   java.lang.String getFsType();
   /**
@@ -78,7 +78,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 4;</code>
+   * <code>string fsType = 4;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -89,7 +89,7 @@ public interface AzureDiskVolumeSourceOrBuilder extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 5;</code>
+   * <code>bool readOnly = 5;</code>
    */
   boolean getReadOnly();
 }

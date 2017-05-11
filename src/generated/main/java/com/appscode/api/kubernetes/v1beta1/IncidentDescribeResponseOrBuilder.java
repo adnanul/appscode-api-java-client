@@ -8,28 +8,15 @@ public interface IncidentDescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.Incident incident = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Incident incident = 1;</code>
    */
   boolean hasIncident();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Incident incident = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Incident incident = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.Incident getIncident();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Incident incident = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Incident incident = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder getIncidentOrBuilder();
 }

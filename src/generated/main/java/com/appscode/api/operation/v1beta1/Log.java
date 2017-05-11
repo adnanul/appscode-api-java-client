@@ -88,7 +88,7 @@ public  final class Log extends
   public static final int ID_FIELD_NUMBER = 1;
   private volatile java.lang.Object id_;
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   public java.lang.String getId() {
     java.lang.Object ref = id_;
@@ -103,7 +103,7 @@ public  final class Log extends
     }
   }
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   public com.google.protobuf.ByteString
       getIdBytes() {
@@ -122,7 +122,7 @@ public  final class Log extends
   public static final int TIMESTAMP_FIELD_NUMBER = 2;
   private long timestamp_;
   /**
-   * <code>optional int64 timestamp = 2;</code>
+   * <code>int64 timestamp = 2;</code>
    */
   public long getTimestamp() {
     return timestamp_;
@@ -131,7 +131,7 @@ public  final class Log extends
   public static final int MESSAGE_FIELD_NUMBER = 3;
   private volatile java.lang.Object message_;
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   public java.lang.String getMessage() {
     java.lang.Object ref = message_;
@@ -146,7 +146,7 @@ public  final class Log extends
     }
   }
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   public com.google.protobuf.ByteString
       getMessageBytes() {
@@ -231,7 +231,7 @@ public  final class Log extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
     hash = (37 * hash) + TIMESTAMP_FIELD_NUMBER;
@@ -468,7 +468,7 @@ public  final class Log extends
 
     private java.lang.Object id_ = "";
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public java.lang.String getId() {
       java.lang.Object ref = id_;
@@ -483,7 +483,7 @@ public  final class Log extends
       }
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getIdBytes() {
@@ -499,7 +499,7 @@ public  final class Log extends
       }
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder setId(
         java.lang.String value) {
@@ -512,7 +512,7 @@ public  final class Log extends
       return this;
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder clearId() {
       
@@ -521,7 +521,7 @@ public  final class Log extends
       return this;
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder setIdBytes(
         com.google.protobuf.ByteString value) {
@@ -537,13 +537,13 @@ public  final class Log extends
 
     private long timestamp_ ;
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public long getTimestamp() {
       return timestamp_;
     }
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public Builder setTimestamp(long value) {
       
@@ -552,7 +552,7 @@ public  final class Log extends
       return this;
     }
     /**
-     * <code>optional int64 timestamp = 2;</code>
+     * <code>int64 timestamp = 2;</code>
      */
     public Builder clearTimestamp() {
       
@@ -563,7 +563,7 @@ public  final class Log extends
 
     private java.lang.Object message_ = "";
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -578,7 +578,7 @@ public  final class Log extends
       }
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -594,7 +594,7 @@ public  final class Log extends
       }
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder setMessage(
         java.lang.String value) {
@@ -607,7 +607,7 @@ public  final class Log extends
       return this;
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder clearMessage() {
       
@@ -616,7 +616,7 @@ public  final class Log extends
       return this;
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder setMessageBytes(
         com.google.protobuf.ByteString value) {

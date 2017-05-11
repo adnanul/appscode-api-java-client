@@ -8,44 +8,31 @@ public interface ServerInfoResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 1;</code>
    */
   java.lang.String getProvider();
   /**
-   * <code>optional string provider = 2;</code>
+   * <code>string provider = 1;</code>
    */
   com.google.protobuf.ByteString
       getProviderBytes();
 
   /**
-   * <code>optional string server_url = 3;</code>
+   * <code>string server_url = 2;</code>
    */
   java.lang.String getServerUrl();
   /**
-   * <code>optional string server_url = 3;</code>
+   * <code>string server_url = 2;</code>
    */
   com.google.protobuf.ByteString
       getServerUrlBytes();
 
   /**
-   * <code>optional string ca_cert = 4;</code>
+   * <code>string ca_cert = 3;</code>
    */
   java.lang.String getCaCert();
   /**
-   * <code>optional string ca_cert = 4;</code>
+   * <code>string ca_cert = 3;</code>
    */
   com.google.protobuf.ByteString
       getCaCertBytes();

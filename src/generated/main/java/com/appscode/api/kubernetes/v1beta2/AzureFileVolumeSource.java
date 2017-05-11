@@ -96,7 +96,7 @@ public  final class AzureFileVolumeSource extends
    * the name of secret that contains Azure Storage Account Name and Key
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   public java.lang.String getSecretName() {
     java.lang.Object ref = secretName_;
@@ -115,7 +115,7 @@ public  final class AzureFileVolumeSource extends
    * the name of secret that contains Azure Storage Account Name and Key
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   public com.google.protobuf.ByteString
       getSecretNameBytes() {
@@ -138,7 +138,7 @@ public  final class AzureFileVolumeSource extends
    * Share Name
    * </pre>
    *
-   * <code>optional string shareName = 2;</code>
+   * <code>string shareName = 2;</code>
    */
   public java.lang.String getShareName() {
     java.lang.Object ref = shareName_;
@@ -157,7 +157,7 @@ public  final class AzureFileVolumeSource extends
    * Share Name
    * </pre>
    *
-   * <code>optional string shareName = 2;</code>
+   * <code>string shareName = 2;</code>
    */
   public com.google.protobuf.ByteString
       getShareNameBytes() {
@@ -181,7 +181,7 @@ public  final class AzureFileVolumeSource extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -256,7 +256,7 @@ public  final class AzureFileVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SECRETNAME_FIELD_NUMBER;
     hash = (53 * hash) + getSecretName().hashCode();
     hash = (37 * hash) + SHARENAME_FIELD_NUMBER;
@@ -501,7 +501,7 @@ public  final class AzureFileVolumeSource extends
      * the name of secret that contains Azure Storage Account Name and Key
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public java.lang.String getSecretName() {
       java.lang.Object ref = secretName_;
@@ -520,7 +520,7 @@ public  final class AzureFileVolumeSource extends
      * the name of secret that contains Azure Storage Account Name and Key
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getSecretNameBytes() {
@@ -540,7 +540,7 @@ public  final class AzureFileVolumeSource extends
      * the name of secret that contains Azure Storage Account Name and Key
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder setSecretName(
         java.lang.String value) {
@@ -557,7 +557,7 @@ public  final class AzureFileVolumeSource extends
      * the name of secret that contains Azure Storage Account Name and Key
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder clearSecretName() {
       
@@ -570,7 +570,7 @@ public  final class AzureFileVolumeSource extends
      * the name of secret that contains Azure Storage Account Name and Key
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder setSecretNameBytes(
         com.google.protobuf.ByteString value) {
@@ -590,7 +590,7 @@ public  final class AzureFileVolumeSource extends
      * Share Name
      * </pre>
      *
-     * <code>optional string shareName = 2;</code>
+     * <code>string shareName = 2;</code>
      */
     public java.lang.String getShareName() {
       java.lang.Object ref = shareName_;
@@ -609,7 +609,7 @@ public  final class AzureFileVolumeSource extends
      * Share Name
      * </pre>
      *
-     * <code>optional string shareName = 2;</code>
+     * <code>string shareName = 2;</code>
      */
     public com.google.protobuf.ByteString
         getShareNameBytes() {
@@ -629,7 +629,7 @@ public  final class AzureFileVolumeSource extends
      * Share Name
      * </pre>
      *
-     * <code>optional string shareName = 2;</code>
+     * <code>string shareName = 2;</code>
      */
     public Builder setShareName(
         java.lang.String value) {
@@ -646,7 +646,7 @@ public  final class AzureFileVolumeSource extends
      * Share Name
      * </pre>
      *
-     * <code>optional string shareName = 2;</code>
+     * <code>string shareName = 2;</code>
      */
     public Builder clearShareName() {
       
@@ -659,7 +659,7 @@ public  final class AzureFileVolumeSource extends
      * Share Name
      * </pre>
      *
-     * <code>optional string shareName = 2;</code>
+     * <code>string shareName = 2;</code>
      */
     public Builder setShareNameBytes(
         com.google.protobuf.ByteString value) {
@@ -680,7 +680,7 @@ public  final class AzureFileVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -691,7 +691,7 @@ public  final class AzureFileVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -705,7 +705,7 @@ public  final class AzureFileVolumeSource extends
      * the ReadOnly setting in VolumeMounts.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder clearReadOnly() {
       

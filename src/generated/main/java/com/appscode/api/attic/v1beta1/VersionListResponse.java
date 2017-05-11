@@ -44,22 +44,9 @@ public  final class VersionListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               versions_ = new java.util.ArrayList<com.appscode.api.attic.v1beta1.ArtifactVersion>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             versions_.add(
                 input.readMessage(com.appscode.api.attic.v1beta1.ArtifactVersion.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class VersionListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         versions_ = java.util.Collections.unmodifiableList(versions_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class VersionListResponse extends
             com.appscode.api.attic.v1beta1.VersionListResponse.class, com.appscode.api.attic.v1beta1.VersionListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int VERSIONS_FIELD_NUMBER = 2;
+  public static final int VERSIONS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion> versions_;
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   public java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion> getVersionsList() {
     return versions_;
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder> 
       getVersionsOrBuilderList() {
     return versions_;
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   public int getVersionsCount() {
     return versions_.size();
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   public com.appscode.api.attic.v1beta1.ArtifactVersion getVersions(int index) {
     return versions_.get(index);
   }
   /**
-   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+   * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
    */
   public com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder getVersionsOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class VersionListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < versions_.size(); i++) {
-      output.writeMessage(2, versions_.get(i));
+      output.writeMessage(1, versions_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class VersionListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < versions_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, versions_.get(i));
+        .computeMessageSize(1, versions_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class VersionListResponse extends
     com.appscode.api.attic.v1beta1.VersionListResponse other = (com.appscode.api.attic.v1beta1.VersionListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getVersionsList()
         .equals(other.getVersionsList());
     return result;
@@ -213,11 +166,7 @@ public  final class VersionListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getVersionsCount() > 0) {
       hash = (37 * hash) + VERSIONS_FIELD_NUMBER;
       hash = (53 * hash) + getVersionsList().hashCode();
@@ -341,15 +290,9 @@ public  final class VersionListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (versionsBuilder_ == null) {
         versions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         versionsBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class VersionListResponse extends
     public com.appscode.api.attic.v1beta1.VersionListResponse buildPartial() {
       com.appscode.api.attic.v1beta1.VersionListResponse result = new com.appscode.api.attic.v1beta1.VersionListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (versionsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           versions_ = java.util.Collections.unmodifiableList(versions_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.versions_ = versions_;
       } else {
         result.versions_ = versionsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class VersionListResponse extends
 
     public Builder mergeFrom(com.appscode.api.attic.v1beta1.VersionListResponse other) {
       if (other == com.appscode.api.attic.v1beta1.VersionListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (versionsBuilder_ == null) {
         if (!other.versions_.isEmpty()) {
           if (versions_.isEmpty()) {
             versions_ = other.versions_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureVersionsIsMutable();
             versions_.addAll(other.versions_);
@@ -453,7 +386,7 @@ public  final class VersionListResponse extends
             versionsBuilder_.dispose();
             versionsBuilder_ = null;
             versions_ = other.versions_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             versionsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getVersionsFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class VersionListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion> versions_ =
       java.util.Collections.emptyList();
     private void ensureVersionsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         versions_ = new java.util.ArrayList<com.appscode.api.attic.v1beta1.ArtifactVersion>(versions_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class VersionListResponse extends
         com.appscode.api.attic.v1beta1.ArtifactVersion, com.appscode.api.attic.v1beta1.ArtifactVersion.Builder, com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder> versionsBuilder_;
 
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion> getVersionsList() {
       if (versionsBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class VersionListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public int getVersionsCount() {
       if (versionsBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class VersionListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactVersion getVersions(int index) {
       if (versionsBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class VersionListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder setVersions(
         int index, com.appscode.api.attic.v1beta1.ArtifactVersion value) {
@@ -666,7 +482,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder setVersions(
         int index, com.appscode.api.attic.v1beta1.ArtifactVersion.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder addVersions(com.appscode.api.attic.v1beta1.ArtifactVersion value) {
       if (versionsBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder addVersions(
         int index, com.appscode.api.attic.v1beta1.ArtifactVersion value) {
@@ -713,7 +529,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder addVersions(
         com.appscode.api.attic.v1beta1.ArtifactVersion.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder addVersions(
         int index, com.appscode.api.attic.v1beta1.ArtifactVersion.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder addAllVersions(
         java.lang.Iterable<? extends com.appscode.api.attic.v1beta1.ArtifactVersion> values) {
@@ -756,12 +572,12 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder clearVersions() {
       if (versionsBuilder_ == null) {
         versions_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         versionsBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public Builder removeVersions(int index) {
       if (versionsBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class VersionListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactVersion.Builder getVersionsBuilder(
         int index) {
       return getVersionsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder getVersionsOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class VersionListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder> 
          getVersionsOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class VersionListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactVersion.Builder addVersionsBuilder() {
       return getVersionsFieldBuilder().addBuilder(
           com.appscode.api.attic.v1beta1.ArtifactVersion.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public com.appscode.api.attic.v1beta1.ArtifactVersion.Builder addVersionsBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class VersionListResponse extends
           index, com.appscode.api.attic.v1beta1.ArtifactVersion.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 2;</code>
+     * <code>repeated .appscode.attic.v1beta1.ArtifactVersion versions = 1;</code>
      */
     public java.util.List<com.appscode.api.attic.v1beta1.ArtifactVersion.Builder> 
          getVersionsBuilderList() {
@@ -838,7 +654,7 @@ public  final class VersionListResponse extends
         versionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.attic.v1beta1.ArtifactVersion, com.appscode.api.attic.v1beta1.ArtifactVersion.Builder, com.appscode.api.attic.v1beta1.ArtifactVersionOrBuilder>(
                 versions_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         versions_ = null;

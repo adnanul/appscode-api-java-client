@@ -8,25 +8,25 @@ public interface BackupScheduleSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string cron_expression = 1;</code>
+   * <code>string cron_expression = 1;</code>
    */
   java.lang.String getCronExpression();
   /**
-   * <code>optional string cron_expression = 1;</code>
+   * <code>string cron_expression = 1;</code>
    */
   com.google.protobuf.ByteString
       getCronExpressionBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   boolean hasSnapshotSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder();
 }

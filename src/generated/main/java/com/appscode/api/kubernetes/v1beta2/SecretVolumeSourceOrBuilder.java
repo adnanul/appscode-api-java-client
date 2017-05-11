@@ -13,7 +13,7 @@ public interface SecretVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   java.lang.String getSecretName();
   /**
@@ -22,7 +22,7 @@ public interface SecretVolumeSourceOrBuilder extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   com.google.protobuf.ByteString
       getSecretNameBytes();
@@ -110,7 +110,7 @@ public interface SecretVolumeSourceOrBuilder extends
    * mode, like fsGroup, and the result can be other mode bits set.
    * </pre>
    *
-   * <code>optional int32 defaultMode = 3;</code>
+   * <code>int32 defaultMode = 3;</code>
    */
   int getDefaultMode();
 }

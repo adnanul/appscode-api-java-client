@@ -43,19 +43,6 @@ public  final class ClusterDescribeResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.kubernetes.v1beta1.Cluster.Builder subBuilder = null;
             if (cluster_ != null) {
               subBuilder = cluster_.toBuilder();
@@ -68,7 +55,7 @@ public  final class ClusterDescribeResponse extends
 
             break;
           }
-          case 26: {
+          case 18: {
             com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder subBuilder = null;
             if (spec_ != null) {
               subBuilder = spec_.toBuilder();
@@ -109,32 +96,32 @@ public  final class ClusterDescribeResponse extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 container_count = 1;</code>
+     * <code>int32 container_count = 1;</code>
      */
     int getContainerCount();
 
     /**
-     * <code>optional int32 pod_count = 2;</code>
+     * <code>int32 pod_count = 2;</code>
      */
     int getPodCount();
 
     /**
-     * <code>optional int32 service_count = 3;</code>
+     * <code>int32 service_count = 3;</code>
      */
     int getServiceCount();
 
     /**
-     * <code>optional int32 rc_count = 4;</code>
+     * <code>int32 rc_count = 4;</code>
      */
     int getRcCount();
 
     /**
-     * <code>optional int64 total_cpu = 5;</code>
+     * <code>int64 total_cpu = 5;</code>
      */
     long getTotalCpu();
 
     /**
-     * <code>optional int64 total_memory = 6;</code>
+     * <code>int64 total_memory = 6;</code>
      */
     long getTotalMemory();
   }
@@ -239,7 +226,7 @@ public  final class ClusterDescribeResponse extends
     public static final int CONTAINER_COUNT_FIELD_NUMBER = 1;
     private int containerCount_;
     /**
-     * <code>optional int32 container_count = 1;</code>
+     * <code>int32 container_count = 1;</code>
      */
     public int getContainerCount() {
       return containerCount_;
@@ -248,7 +235,7 @@ public  final class ClusterDescribeResponse extends
     public static final int POD_COUNT_FIELD_NUMBER = 2;
     private int podCount_;
     /**
-     * <code>optional int32 pod_count = 2;</code>
+     * <code>int32 pod_count = 2;</code>
      */
     public int getPodCount() {
       return podCount_;
@@ -257,7 +244,7 @@ public  final class ClusterDescribeResponse extends
     public static final int SERVICE_COUNT_FIELD_NUMBER = 3;
     private int serviceCount_;
     /**
-     * <code>optional int32 service_count = 3;</code>
+     * <code>int32 service_count = 3;</code>
      */
     public int getServiceCount() {
       return serviceCount_;
@@ -266,7 +253,7 @@ public  final class ClusterDescribeResponse extends
     public static final int RC_COUNT_FIELD_NUMBER = 4;
     private int rcCount_;
     /**
-     * <code>optional int32 rc_count = 4;</code>
+     * <code>int32 rc_count = 4;</code>
      */
     public int getRcCount() {
       return rcCount_;
@@ -275,7 +262,7 @@ public  final class ClusterDescribeResponse extends
     public static final int TOTAL_CPU_FIELD_NUMBER = 5;
     private long totalCpu_;
     /**
-     * <code>optional int64 total_cpu = 5;</code>
+     * <code>int64 total_cpu = 5;</code>
      */
     public long getTotalCpu() {
       return totalCpu_;
@@ -284,7 +271,7 @@ public  final class ClusterDescribeResponse extends
     public static final int TOTAL_MEMORY_FIELD_NUMBER = 6;
     private long totalMemory_;
     /**
-     * <code>optional int64 total_memory = 6;</code>
+     * <code>int64 total_memory = 6;</code>
      */
     public long getTotalMemory() {
       return totalMemory_;
@@ -388,7 +375,7 @@ public  final class ClusterDescribeResponse extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CONTAINER_COUNT_FIELD_NUMBER;
       hash = (53 * hash) + getContainerCount();
       hash = (37 * hash) + POD_COUNT_FIELD_NUMBER;
@@ -648,13 +635,13 @@ public  final class ClusterDescribeResponse extends
 
       private int containerCount_ ;
       /**
-       * <code>optional int32 container_count = 1;</code>
+       * <code>int32 container_count = 1;</code>
        */
       public int getContainerCount() {
         return containerCount_;
       }
       /**
-       * <code>optional int32 container_count = 1;</code>
+       * <code>int32 container_count = 1;</code>
        */
       public Builder setContainerCount(int value) {
         
@@ -663,7 +650,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int32 container_count = 1;</code>
+       * <code>int32 container_count = 1;</code>
        */
       public Builder clearContainerCount() {
         
@@ -674,13 +661,13 @@ public  final class ClusterDescribeResponse extends
 
       private int podCount_ ;
       /**
-       * <code>optional int32 pod_count = 2;</code>
+       * <code>int32 pod_count = 2;</code>
        */
       public int getPodCount() {
         return podCount_;
       }
       /**
-       * <code>optional int32 pod_count = 2;</code>
+       * <code>int32 pod_count = 2;</code>
        */
       public Builder setPodCount(int value) {
         
@@ -689,7 +676,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int32 pod_count = 2;</code>
+       * <code>int32 pod_count = 2;</code>
        */
       public Builder clearPodCount() {
         
@@ -700,13 +687,13 @@ public  final class ClusterDescribeResponse extends
 
       private int serviceCount_ ;
       /**
-       * <code>optional int32 service_count = 3;</code>
+       * <code>int32 service_count = 3;</code>
        */
       public int getServiceCount() {
         return serviceCount_;
       }
       /**
-       * <code>optional int32 service_count = 3;</code>
+       * <code>int32 service_count = 3;</code>
        */
       public Builder setServiceCount(int value) {
         
@@ -715,7 +702,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int32 service_count = 3;</code>
+       * <code>int32 service_count = 3;</code>
        */
       public Builder clearServiceCount() {
         
@@ -726,13 +713,13 @@ public  final class ClusterDescribeResponse extends
 
       private int rcCount_ ;
       /**
-       * <code>optional int32 rc_count = 4;</code>
+       * <code>int32 rc_count = 4;</code>
        */
       public int getRcCount() {
         return rcCount_;
       }
       /**
-       * <code>optional int32 rc_count = 4;</code>
+       * <code>int32 rc_count = 4;</code>
        */
       public Builder setRcCount(int value) {
         
@@ -741,7 +728,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int32 rc_count = 4;</code>
+       * <code>int32 rc_count = 4;</code>
        */
       public Builder clearRcCount() {
         
@@ -752,13 +739,13 @@ public  final class ClusterDescribeResponse extends
 
       private long totalCpu_ ;
       /**
-       * <code>optional int64 total_cpu = 5;</code>
+       * <code>int64 total_cpu = 5;</code>
        */
       public long getTotalCpu() {
         return totalCpu_;
       }
       /**
-       * <code>optional int64 total_cpu = 5;</code>
+       * <code>int64 total_cpu = 5;</code>
        */
       public Builder setTotalCpu(long value) {
         
@@ -767,7 +754,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int64 total_cpu = 5;</code>
+       * <code>int64 total_cpu = 5;</code>
        */
       public Builder clearTotalCpu() {
         
@@ -778,13 +765,13 @@ public  final class ClusterDescribeResponse extends
 
       private long totalMemory_ ;
       /**
-       * <code>optional int64 total_memory = 6;</code>
+       * <code>int64 total_memory = 6;</code>
        */
       public long getTotalMemory() {
         return totalMemory_;
       }
       /**
-       * <code>optional int64 total_memory = 6;</code>
+       * <code>int64 total_memory = 6;</code>
        */
       public Builder setTotalMemory(long value) {
         
@@ -793,7 +780,7 @@ public  final class ClusterDescribeResponse extends
         return this;
       }
       /**
-       * <code>optional int64 total_memory = 6;</code>
+       * <code>int64 total_memory = 6;</code>
        */
       public Builder clearTotalMemory() {
         
@@ -850,64 +837,43 @@ public  final class ClusterDescribeResponse extends
 
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CLUSTER_FIELD_NUMBER = 2;
+  public static final int CLUSTER_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta1.Cluster cluster_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
    */
   public boolean hasCluster() {
     return cluster_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.Cluster getCluster() {
     return cluster_ == null ? com.appscode.api.kubernetes.v1beta1.Cluster.getDefaultInstance() : cluster_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClusterOrBuilder() {
     return getCluster();
   }
 
-  public static final int SPEC_FIELD_NUMBER = 3;
+  public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -925,14 +891,11 @@ public  final class ClusterDescribeResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (cluster_ != null) {
-      output.writeMessage(2, getCluster());
+      output.writeMessage(1, getCluster());
     }
     if (spec_ != null) {
-      output.writeMessage(3, getSpec());
+      output.writeMessage(2, getSpec());
     }
   }
 
@@ -941,17 +904,13 @@ public  final class ClusterDescribeResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (cluster_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getCluster());
+        .computeMessageSize(1, getCluster());
     }
     if (spec_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getSpec());
+        .computeMessageSize(2, getSpec());
     }
     memoizedSize = size;
     return size;
@@ -969,11 +928,6 @@ public  final class ClusterDescribeResponse extends
     com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasCluster() == other.hasCluster());
     if (hasCluster()) {
       result = result && getCluster()
@@ -993,11 +947,7 @@ public  final class ClusterDescribeResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasCluster()) {
       hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
       hash = (53 * hash) + getCluster().hashCode();
@@ -1124,12 +1074,6 @@ public  final class ClusterDescribeResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (clusterBuilder_ == null) {
         cluster_ = null;
       } else {
@@ -1164,11 +1108,6 @@ public  final class ClusterDescribeResponse extends
 
     public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (clusterBuilder_ == null) {
         result.cluster_ = cluster_;
       } else {
@@ -1220,9 +1159,6 @@ public  final class ClusterDescribeResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasCluster()) {
         mergeCluster(other.getCluster());
       }
@@ -1255,134 +1191,17 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.kubernetes.v1beta1.Cluster cluster_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.Cluster, com.appscode.api.kubernetes.v1beta1.Cluster.Builder, com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> clusterBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public boolean hasCluster() {
       return clusterBuilder_ != null || cluster_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster getCluster() {
       if (clusterBuilder_ == null) {
@@ -1392,7 +1211,7 @@ public  final class ClusterDescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public Builder setCluster(com.appscode.api.kubernetes.v1beta1.Cluster value) {
       if (clusterBuilder_ == null) {
@@ -1408,7 +1227,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public Builder setCluster(
         com.appscode.api.kubernetes.v1beta1.Cluster.Builder builderForValue) {
@@ -1422,7 +1241,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public Builder mergeCluster(com.appscode.api.kubernetes.v1beta1.Cluster value) {
       if (clusterBuilder_ == null) {
@@ -1440,7 +1259,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public Builder clearCluster() {
       if (clusterBuilder_ == null) {
@@ -1454,7 +1273,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster.Builder getClusterBuilder() {
       
@@ -1462,7 +1281,7 @@ public  final class ClusterDescribeResponse extends
       return getClusterFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClusterOrBuilder() {
       if (clusterBuilder_ != null) {
@@ -1473,7 +1292,7 @@ public  final class ClusterDescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Cluster cluster = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.Cluster cluster = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.Cluster, com.appscode.api.kubernetes.v1beta1.Cluster.Builder, com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> 
@@ -1493,13 +1312,13 @@ public  final class ClusterDescribeResponse extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec getSpec() {
       if (specBuilder_ == null) {
@@ -1509,7 +1328,7 @@ public  final class ClusterDescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec value) {
       if (specBuilder_ == null) {
@@ -1525,7 +1344,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder builderForValue) {
@@ -1539,7 +1358,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec value) {
       if (specBuilder_ == null) {
@@ -1557,7 +1376,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1571,7 +1390,7 @@ public  final class ClusterDescribeResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder getSpecBuilder() {
       
@@ -1579,7 +1398,7 @@ public  final class ClusterDescribeResponse extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1590,7 +1409,7 @@ public  final class ClusterDescribeResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec.Builder, com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder> 

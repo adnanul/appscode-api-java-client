@@ -102,7 +102,7 @@ public  final class LoginRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 1;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -117,7 +117,7 @@ public  final class LoginRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -136,7 +136,7 @@ public  final class LoginRequest extends
   public static final int USERNAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object username_;
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   public java.lang.String getUsername() {
     java.lang.Object ref = username_;
@@ -151,7 +151,7 @@ public  final class LoginRequest extends
     }
   }
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   public com.google.protobuf.ByteString
       getUsernameBytes() {
@@ -170,7 +170,7 @@ public  final class LoginRequest extends
   public static final int PASSWORD_FIELD_NUMBER = 3;
   private volatile java.lang.Object password_;
   /**
-   * <code>optional string password = 3;</code>
+   * <code>string password = 3;</code>
    */
   public java.lang.String getPassword() {
     java.lang.Object ref = password_;
@@ -185,7 +185,7 @@ public  final class LoginRequest extends
     }
   }
   /**
-   * <code>optional string password = 3;</code>
+   * <code>string password = 3;</code>
    */
   public com.google.protobuf.ByteString
       getPasswordBytes() {
@@ -204,7 +204,7 @@ public  final class LoginRequest extends
   public static final int TOKEN_FIELD_NUMBER = 4;
   private volatile java.lang.Object token_;
   /**
-   * <code>optional string token = 4;</code>
+   * <code>string token = 4;</code>
    */
   public java.lang.String getToken() {
     java.lang.Object ref = token_;
@@ -219,7 +219,7 @@ public  final class LoginRequest extends
     }
   }
   /**
-   * <code>optional string token = 4;</code>
+   * <code>string token = 4;</code>
    */
   public com.google.protobuf.ByteString
       getTokenBytes() {
@@ -238,7 +238,7 @@ public  final class LoginRequest extends
   public static final int ISSUE_TOKEN_FIELD_NUMBER = 5;
   private boolean issueToken_;
   /**
-   * <code>optional bool issue_token = 5;</code>
+   * <code>bool issue_token = 5;</code>
    */
   public boolean getIssueToken() {
     return issueToken_;
@@ -329,7 +329,7 @@ public  final class LoginRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + USERNAME_FIELD_NUMBER;
@@ -584,7 +584,7 @@ public  final class LoginRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -599,7 +599,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -615,7 +615,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -628,7 +628,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder clearNamespace() {
       
@@ -637,7 +637,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -653,7 +653,7 @@ public  final class LoginRequest extends
 
     private java.lang.Object username_ = "";
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public java.lang.String getUsername() {
       java.lang.Object ref = username_;
@@ -668,7 +668,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUsernameBytes() {
@@ -684,7 +684,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder setUsername(
         java.lang.String value) {
@@ -697,7 +697,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder clearUsername() {
       
@@ -706,7 +706,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string username = 2;</code>
+     * <code>string username = 2;</code>
      */
     public Builder setUsernameBytes(
         com.google.protobuf.ByteString value) {
@@ -722,7 +722,7 @@ public  final class LoginRequest extends
 
     private java.lang.Object password_ = "";
     /**
-     * <code>optional string password = 3;</code>
+     * <code>string password = 3;</code>
      */
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
@@ -737,7 +737,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string password = 3;</code>
+     * <code>string password = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
@@ -753,7 +753,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string password = 3;</code>
+     * <code>string password = 3;</code>
      */
     public Builder setPassword(
         java.lang.String value) {
@@ -766,7 +766,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string password = 3;</code>
+     * <code>string password = 3;</code>
      */
     public Builder clearPassword() {
       
@@ -775,7 +775,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string password = 3;</code>
+     * <code>string password = 3;</code>
      */
     public Builder setPasswordBytes(
         com.google.protobuf.ByteString value) {
@@ -791,7 +791,7 @@ public  final class LoginRequest extends
 
     private java.lang.Object token_ = "";
     /**
-     * <code>optional string token = 4;</code>
+     * <code>string token = 4;</code>
      */
     public java.lang.String getToken() {
       java.lang.Object ref = token_;
@@ -806,7 +806,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string token = 4;</code>
+     * <code>string token = 4;</code>
      */
     public com.google.protobuf.ByteString
         getTokenBytes() {
@@ -822,7 +822,7 @@ public  final class LoginRequest extends
       }
     }
     /**
-     * <code>optional string token = 4;</code>
+     * <code>string token = 4;</code>
      */
     public Builder setToken(
         java.lang.String value) {
@@ -835,7 +835,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string token = 4;</code>
+     * <code>string token = 4;</code>
      */
     public Builder clearToken() {
       
@@ -844,7 +844,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional string token = 4;</code>
+     * <code>string token = 4;</code>
      */
     public Builder setTokenBytes(
         com.google.protobuf.ByteString value) {
@@ -860,13 +860,13 @@ public  final class LoginRequest extends
 
     private boolean issueToken_ ;
     /**
-     * <code>optional bool issue_token = 5;</code>
+     * <code>bool issue_token = 5;</code>
      */
     public boolean getIssueToken() {
       return issueToken_;
     }
     /**
-     * <code>optional bool issue_token = 5;</code>
+     * <code>bool issue_token = 5;</code>
      */
     public Builder setIssueToken(boolean value) {
       
@@ -875,7 +875,7 @@ public  final class LoginRequest extends
       return this;
     }
     /**
-     * <code>optional bool issue_token = 5;</code>
+     * <code>bool issue_token = 5;</code>
      */
     public Builder clearIssueToken() {
       

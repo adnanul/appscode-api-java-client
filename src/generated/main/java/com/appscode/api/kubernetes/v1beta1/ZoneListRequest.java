@@ -86,7 +86,7 @@ public  final class ZoneListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public java.lang.String getCloudCredential() {
     java.lang.Object ref = cloudCredential_;
@@ -105,7 +105,7 @@ public  final class ZoneListRequest extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCloudCredentialBytes() {
@@ -124,7 +124,7 @@ public  final class ZoneListRequest extends
   public static final int REGION_FIELD_NUMBER = 2;
   private volatile java.lang.Object region_;
   /**
-   * <code>optional string region = 2;</code>
+   * <code>string region = 2;</code>
    */
   public java.lang.String getRegion() {
     java.lang.Object ref = region_;
@@ -139,7 +139,7 @@ public  final class ZoneListRequest extends
     }
   }
   /**
-   * <code>optional string region = 2;</code>
+   * <code>string region = 2;</code>
    */
   public com.google.protobuf.ByteString
       getRegionBytes() {
@@ -215,7 +215,7 @@ public  final class ZoneListRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLOUD_CREDENTIAL_FIELD_NUMBER;
     hash = (53 * hash) + getCloudCredential().hashCode();
     hash = (37 * hash) + REGION_FIELD_NUMBER;
@@ -447,7 +447,7 @@ public  final class ZoneListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public java.lang.String getCloudCredential() {
       java.lang.Object ref = cloudCredential_;
@@ -466,7 +466,7 @@ public  final class ZoneListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCloudCredentialBytes() {
@@ -486,7 +486,7 @@ public  final class ZoneListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredential(
         java.lang.String value) {
@@ -503,7 +503,7 @@ public  final class ZoneListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder clearCloudCredential() {
       
@@ -516,7 +516,7 @@ public  final class ZoneListRequest extends
      * name or phid
      * </pre>
      *
-     * <code>optional string cloud_credential = 1;</code>
+     * <code>string cloud_credential = 1;</code>
      */
     public Builder setCloudCredentialBytes(
         com.google.protobuf.ByteString value) {
@@ -532,7 +532,7 @@ public  final class ZoneListRequest extends
 
     private java.lang.Object region_ = "";
     /**
-     * <code>optional string region = 2;</code>
+     * <code>string region = 2;</code>
      */
     public java.lang.String getRegion() {
       java.lang.Object ref = region_;
@@ -547,7 +547,7 @@ public  final class ZoneListRequest extends
       }
     }
     /**
-     * <code>optional string region = 2;</code>
+     * <code>string region = 2;</code>
      */
     public com.google.protobuf.ByteString
         getRegionBytes() {
@@ -563,7 +563,7 @@ public  final class ZoneListRequest extends
       }
     }
     /**
-     * <code>optional string region = 2;</code>
+     * <code>string region = 2;</code>
      */
     public Builder setRegion(
         java.lang.String value) {
@@ -576,7 +576,7 @@ public  final class ZoneListRequest extends
       return this;
     }
     /**
-     * <code>optional string region = 2;</code>
+     * <code>string region = 2;</code>
      */
     public Builder clearRegion() {
       
@@ -585,7 +585,7 @@ public  final class ZoneListRequest extends
       return this;
     }
     /**
-     * <code>optional string region = 2;</code>
+     * <code>string region = 2;</code>
      */
     public Builder setRegionBytes(
         com.google.protobuf.ByteString value) {

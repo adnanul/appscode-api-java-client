@@ -116,7 +116,7 @@ public  final class ReplicationController extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 desired_replicas = 1;</code>
+     * <code>int32 desired_replicas = 1;</code>
      */
     int getDesiredReplicas();
 
@@ -155,15 +155,15 @@ public  final class ReplicationController extends
         java.lang.String key);
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     boolean hasPodTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder();
   }
@@ -276,7 +276,7 @@ public  final class ReplicationController extends
     public static final int DESIRED_REPLICAS_FIELD_NUMBER = 1;
     private int desiredReplicas_;
     /**
-     * <code>optional int32 desired_replicas = 1;</code>
+     * <code>int32 desired_replicas = 1;</code>
      */
     public int getDesiredReplicas() {
       return desiredReplicas_;
@@ -361,19 +361,19 @@ public  final class ReplicationController extends
     public static final int POD_TEMPLATE_FIELD_NUMBER = 3;
     private com.appscode.api.kubernetes.v1beta2.PodSpec podTemplate_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public boolean hasPodTemplate() {
       return podTemplate_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate() {
       return podTemplate_ == null ? com.appscode.api.kubernetes.v1beta2.PodSpec.getDefaultInstance() : podTemplate_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder() {
       return getPodTemplate();
@@ -462,7 +462,7 @@ public  final class ReplicationController extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DESIRED_REPLICAS_FIELD_NUMBER;
       hash = (53 * hash) + getDesiredReplicas();
       if (!internalGetSelectors().getMap().isEmpty()) {
@@ -733,13 +733,13 @@ public  final class ReplicationController extends
 
       private int desiredReplicas_ ;
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public int getDesiredReplicas() {
         return desiredReplicas_;
       }
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public Builder setDesiredReplicas(int value) {
         
@@ -748,7 +748,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public Builder clearDesiredReplicas() {
         
@@ -834,7 +834,8 @@ public  final class ReplicationController extends
       }
 
       public Builder clearSelectors() {
-        getMutableSelectors().clear();
+        internalGetMutableSelectors().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -844,7 +845,8 @@ public  final class ReplicationController extends
       public Builder removeSelectors(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableSelectors().remove(key);
+        internalGetMutableSelectors().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -863,7 +865,8 @@ public  final class ReplicationController extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableSelectors().put(key, value);
+        internalGetMutableSelectors().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -872,7 +875,8 @@ public  final class ReplicationController extends
 
       public Builder putAllSelectors(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableSelectors().putAll(values);
+        internalGetMutableSelectors().getMutableMap()
+            .putAll(values);
         return this;
       }
 
@@ -880,13 +884,13 @@ public  final class ReplicationController extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> podTemplateBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public boolean hasPodTemplate() {
         return podTemplateBuilder_ != null || podTemplate_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate() {
         if (podTemplateBuilder_ == null) {
@@ -896,7 +900,7 @@ public  final class ReplicationController extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder setPodTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
         if (podTemplateBuilder_ == null) {
@@ -912,7 +916,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder setPodTemplate(
           com.appscode.api.kubernetes.v1beta2.PodSpec.Builder builderForValue) {
@@ -926,7 +930,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder mergePodTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
         if (podTemplateBuilder_ == null) {
@@ -944,7 +948,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder clearPodTemplate() {
         if (podTemplateBuilder_ == null) {
@@ -958,7 +962,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpec.Builder getPodTemplateBuilder() {
         
@@ -966,7 +970,7 @@ public  final class ReplicationController extends
         return getPodTemplateFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder() {
         if (podTemplateBuilder_ != null) {
@@ -977,7 +981,7 @@ public  final class ReplicationController extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> 
@@ -1046,12 +1050,12 @@ public  final class ReplicationController extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 current_replicas = 1;</code>
+     * <code>int32 current_replicas = 1;</code>
      */
     int getCurrentReplicas();
 
     /**
-     * <code>optional int64 observed_generation = 2;</code>
+     * <code>int64 observed_generation = 2;</code>
      */
     long getObservedGeneration();
   }
@@ -1132,7 +1136,7 @@ public  final class ReplicationController extends
     public static final int CURRENT_REPLICAS_FIELD_NUMBER = 1;
     private int currentReplicas_;
     /**
-     * <code>optional int32 current_replicas = 1;</code>
+     * <code>int32 current_replicas = 1;</code>
      */
     public int getCurrentReplicas() {
       return currentReplicas_;
@@ -1141,7 +1145,7 @@ public  final class ReplicationController extends
     public static final int OBSERVED_GENERATION_FIELD_NUMBER = 2;
     private long observedGeneration_;
     /**
-     * <code>optional int64 observed_generation = 2;</code>
+     * <code>int64 observed_generation = 2;</code>
      */
     public long getObservedGeneration() {
       return observedGeneration_;
@@ -1209,7 +1213,7 @@ public  final class ReplicationController extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + CURRENT_REPLICAS_FIELD_NUMBER;
       hash = (53 * hash) + getCurrentReplicas();
       hash = (37 * hash) + OBSERVED_GENERATION_FIELD_NUMBER;
@@ -1436,13 +1440,13 @@ public  final class ReplicationController extends
 
       private int currentReplicas_ ;
       /**
-       * <code>optional int32 current_replicas = 1;</code>
+       * <code>int32 current_replicas = 1;</code>
        */
       public int getCurrentReplicas() {
         return currentReplicas_;
       }
       /**
-       * <code>optional int32 current_replicas = 1;</code>
+       * <code>int32 current_replicas = 1;</code>
        */
       public Builder setCurrentReplicas(int value) {
         
@@ -1451,7 +1455,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional int32 current_replicas = 1;</code>
+       * <code>int32 current_replicas = 1;</code>
        */
       public Builder clearCurrentReplicas() {
         
@@ -1462,13 +1466,13 @@ public  final class ReplicationController extends
 
       private long observedGeneration_ ;
       /**
-       * <code>optional int64 observed_generation = 2;</code>
+       * <code>int64 observed_generation = 2;</code>
        */
       public long getObservedGeneration() {
         return observedGeneration_;
       }
       /**
-       * <code>optional int64 observed_generation = 2;</code>
+       * <code>int64 observed_generation = 2;</code>
        */
       public Builder setObservedGeneration(long value) {
         
@@ -1477,7 +1481,7 @@ public  final class ReplicationController extends
         return this;
       }
       /**
-       * <code>optional int64 observed_generation = 2;</code>
+       * <code>int64 observed_generation = 2;</code>
        */
       public Builder clearObservedGeneration() {
         
@@ -1537,19 +1541,19 @@ public  final class ReplicationController extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1558,7 +1562,7 @@ public  final class ReplicationController extends
   public static final int APP_FIELD_NUMBER = 2;
   private volatile java.lang.Object app_;
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public java.lang.String getApp() {
     java.lang.Object ref = app_;
@@ -1573,7 +1577,7 @@ public  final class ReplicationController extends
     }
   }
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAppBytes() {
@@ -1592,19 +1596,19 @@ public  final class ReplicationController extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationController.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1613,19 +1617,19 @@ public  final class ReplicationController extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.ReplicationController.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationController.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.ReplicationController.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ReplicationController.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -1719,7 +1723,7 @@ public  final class ReplicationController extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1994,13 +1998,13 @@ public  final class ReplicationController extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -2010,7 +2014,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2026,7 +2030,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -2040,7 +2044,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2058,7 +2062,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -2072,7 +2076,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -2080,7 +2084,7 @@ public  final class ReplicationController extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -2091,7 +2095,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -2109,7 +2113,7 @@ public  final class ReplicationController extends
 
     private java.lang.Object app_ = "";
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public java.lang.String getApp() {
       java.lang.Object ref = app_;
@@ -2124,7 +2128,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAppBytes() {
@@ -2140,7 +2144,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setApp(
         java.lang.String value) {
@@ -2153,7 +2157,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder clearApp() {
       
@@ -2162,7 +2166,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setAppBytes(
         com.google.protobuf.ByteString value) {
@@ -2180,13 +2184,13 @@ public  final class ReplicationController extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec, com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationController.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -2196,7 +2200,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec value) {
       if (specBuilder_ == null) {
@@ -2212,7 +2216,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec.Builder builderForValue) {
@@ -2226,7 +2230,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec value) {
       if (specBuilder_ == null) {
@@ -2244,7 +2248,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2258,7 +2262,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec.Builder getSpecBuilder() {
       
@@ -2266,7 +2270,7 @@ public  final class ReplicationController extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -2277,7 +2281,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Spec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec, com.appscode.api.kubernetes.v1beta2.ReplicationController.Spec.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationController.SpecOrBuilder> 
@@ -2297,13 +2301,13 @@ public  final class ReplicationController extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Status, com.appscode.api.kubernetes.v1beta2.ReplicationController.Status.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationController.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -2313,7 +2317,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.ReplicationController.Status value) {
       if (statusBuilder_ == null) {
@@ -2329,7 +2333,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Status.Builder builderForValue) {
@@ -2343,7 +2347,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.ReplicationController.Status value) {
       if (statusBuilder_ == null) {
@@ -2361,7 +2365,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2375,7 +2379,7 @@ public  final class ReplicationController extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.Status.Builder getStatusBuilder() {
       
@@ -2383,7 +2387,7 @@ public  final class ReplicationController extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ReplicationController.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -2394,7 +2398,7 @@ public  final class ReplicationController extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.ReplicationController.Status status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ReplicationController.Status, com.appscode.api.kubernetes.v1beta2.ReplicationController.Status.Builder, com.appscode.api.kubernetes.v1beta2.ReplicationController.StatusOrBuilder> 

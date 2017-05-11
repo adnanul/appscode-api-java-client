@@ -44,22 +44,9 @@ public  final class ClusterListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               clusters_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta1.Cluster>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             clusters_.add(
                 input.readMessage(com.appscode.api.kubernetes.v1beta1.Cluster.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class ClusterListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         clusters_ = java.util.Collections.unmodifiableList(clusters_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class ClusterListResponse extends
             com.appscode.api.kubernetes.v1beta1.ClusterListResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CLUSTERS_FIELD_NUMBER = 2;
+  public static final int CLUSTERS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster> clusters_;
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   public java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster> getClustersList() {
     return clusters_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> 
       getClustersOrBuilderList() {
     return clusters_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   public int getClustersCount() {
     return clusters_.size();
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.Cluster getClusters(int index) {
     return clusters_.get(index);
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClustersOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class ClusterListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < clusters_.size(); i++) {
-      output.writeMessage(2, clusters_.get(i));
+      output.writeMessage(1, clusters_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class ClusterListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < clusters_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, clusters_.get(i));
+        .computeMessageSize(1, clusters_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class ClusterListResponse extends
     com.appscode.api.kubernetes.v1beta1.ClusterListResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getClustersList()
         .equals(other.getClustersList());
     return result;
@@ -213,11 +166,7 @@ public  final class ClusterListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getClustersCount() > 0) {
       hash = (37 * hash) + CLUSTERS_FIELD_NUMBER;
       hash = (53 * hash) + getClustersList().hashCode();
@@ -341,15 +290,9 @@ public  final class ClusterListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (clustersBuilder_ == null) {
         clusters_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         clustersBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class ClusterListResponse extends
     public com.appscode.api.kubernetes.v1beta1.ClusterListResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ClusterListResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (clustersBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           clusters_ = java.util.Collections.unmodifiableList(clusters_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.clusters_ = clusters_;
       } else {
         result.clusters_ = clustersBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class ClusterListResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterListResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ClusterListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (clustersBuilder_ == null) {
         if (!other.clusters_.isEmpty()) {
           if (clusters_.isEmpty()) {
             clusters_ = other.clusters_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureClustersIsMutable();
             clusters_.addAll(other.clusters_);
@@ -453,7 +386,7 @@ public  final class ClusterListResponse extends
             clustersBuilder_.dispose();
             clustersBuilder_ = null;
             clusters_ = other.clusters_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             clustersBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getClustersFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class ClusterListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster> clusters_ =
       java.util.Collections.emptyList();
     private void ensureClustersIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         clusters_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta1.Cluster>(clusters_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class ClusterListResponse extends
         com.appscode.api.kubernetes.v1beta1.Cluster, com.appscode.api.kubernetes.v1beta1.Cluster.Builder, com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> clustersBuilder_;
 
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster> getClustersList() {
       if (clustersBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class ClusterListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public int getClustersCount() {
       if (clustersBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class ClusterListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster getClusters(int index) {
       if (clustersBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class ClusterListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder setClusters(
         int index, com.appscode.api.kubernetes.v1beta1.Cluster value) {
@@ -666,7 +482,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder setClusters(
         int index, com.appscode.api.kubernetes.v1beta1.Cluster.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder addClusters(com.appscode.api.kubernetes.v1beta1.Cluster value) {
       if (clustersBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder addClusters(
         int index, com.appscode.api.kubernetes.v1beta1.Cluster value) {
@@ -713,7 +529,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder addClusters(
         com.appscode.api.kubernetes.v1beta1.Cluster.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder addClusters(
         int index, com.appscode.api.kubernetes.v1beta1.Cluster.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder addAllClusters(
         java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta1.Cluster> values) {
@@ -756,12 +572,12 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder clearClusters() {
       if (clustersBuilder_ == null) {
         clusters_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         clustersBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public Builder removeClusters(int index) {
       if (clustersBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class ClusterListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster.Builder getClustersBuilder(
         int index) {
       return getClustersFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder getClustersOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class ClusterListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder> 
          getClustersOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class ClusterListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster.Builder addClustersBuilder() {
       return getClustersFieldBuilder().addBuilder(
           com.appscode.api.kubernetes.v1beta1.Cluster.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.Cluster.Builder addClustersBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class ClusterListResponse extends
           index, com.appscode.api.kubernetes.v1beta1.Cluster.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta1.Cluster clusters = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta1.Cluster.Builder> 
          getClustersBuilderList() {
@@ -838,7 +654,7 @@ public  final class ClusterListResponse extends
         clustersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta1.Cluster, com.appscode.api.kubernetes.v1beta1.Cluster.Builder, com.appscode.api.kubernetes.v1beta1.ClusterOrBuilder>(
                 clusters_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         clusters_ = null;

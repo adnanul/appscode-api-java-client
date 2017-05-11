@@ -159,7 +159,7 @@ public  final class Version extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -174,7 +174,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -193,7 +193,7 @@ public  final class Version extends
   public static final int VERSION_FIELD_NUMBER = 2;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 2;</code>
+   * <code>string version = 2;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -208,7 +208,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string version = 2;</code>
+   * <code>string version = 2;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -227,7 +227,7 @@ public  final class Version extends
   public static final int VERSION_STRATEGY_FIELD_NUMBER = 3;
   private volatile java.lang.Object versionStrategy_;
   /**
-   * <code>optional string version_strategy = 3;</code>
+   * <code>string version_strategy = 3;</code>
    */
   public java.lang.String getVersionStrategy() {
     java.lang.Object ref = versionStrategy_;
@@ -242,7 +242,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string version_strategy = 3;</code>
+   * <code>string version_strategy = 3;</code>
    */
   public com.google.protobuf.ByteString
       getVersionStrategyBytes() {
@@ -261,7 +261,7 @@ public  final class Version extends
   public static final int OS_FIELD_NUMBER = 4;
   private volatile java.lang.Object os_;
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   public java.lang.String getOs() {
     java.lang.Object ref = os_;
@@ -276,7 +276,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   public com.google.protobuf.ByteString
       getOsBytes() {
@@ -295,7 +295,7 @@ public  final class Version extends
   public static final int ARCH_FIELD_NUMBER = 5;
   private volatile java.lang.Object arch_;
   /**
-   * <code>optional string arch = 5;</code>
+   * <code>string arch = 5;</code>
    */
   public java.lang.String getArch() {
     java.lang.Object ref = arch_;
@@ -310,7 +310,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string arch = 5;</code>
+   * <code>string arch = 5;</code>
    */
   public com.google.protobuf.ByteString
       getArchBytes() {
@@ -329,7 +329,7 @@ public  final class Version extends
   public static final int COMMIT_HASH_FIELD_NUMBER = 6;
   private volatile java.lang.Object commitHash_;
   /**
-   * <code>optional string commit_hash = 6;</code>
+   * <code>string commit_hash = 6;</code>
    */
   public java.lang.String getCommitHash() {
     java.lang.Object ref = commitHash_;
@@ -344,7 +344,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string commit_hash = 6;</code>
+   * <code>string commit_hash = 6;</code>
    */
   public com.google.protobuf.ByteString
       getCommitHashBytes() {
@@ -363,7 +363,7 @@ public  final class Version extends
   public static final int GIT_BRANCH_FIELD_NUMBER = 7;
   private volatile java.lang.Object gitBranch_;
   /**
-   * <code>optional string git_branch = 7;</code>
+   * <code>string git_branch = 7;</code>
    */
   public java.lang.String getGitBranch() {
     java.lang.Object ref = gitBranch_;
@@ -378,7 +378,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string git_branch = 7;</code>
+   * <code>string git_branch = 7;</code>
    */
   public com.google.protobuf.ByteString
       getGitBranchBytes() {
@@ -397,7 +397,7 @@ public  final class Version extends
   public static final int GIT_TAG_FIELD_NUMBER = 8;
   private volatile java.lang.Object gitTag_;
   /**
-   * <code>optional string git_tag = 8;</code>
+   * <code>string git_tag = 8;</code>
    */
   public java.lang.String getGitTag() {
     java.lang.Object ref = gitTag_;
@@ -412,7 +412,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string git_tag = 8;</code>
+   * <code>string git_tag = 8;</code>
    */
   public com.google.protobuf.ByteString
       getGitTagBytes() {
@@ -431,7 +431,7 @@ public  final class Version extends
   public static final int COMMIT_TIMESTAMP_FIELD_NUMBER = 9;
   private volatile java.lang.Object commitTimestamp_;
   /**
-   * <code>optional string commit_timestamp = 9;</code>
+   * <code>string commit_timestamp = 9;</code>
    */
   public java.lang.String getCommitTimestamp() {
     java.lang.Object ref = commitTimestamp_;
@@ -446,7 +446,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string commit_timestamp = 9;</code>
+   * <code>string commit_timestamp = 9;</code>
    */
   public com.google.protobuf.ByteString
       getCommitTimestampBytes() {
@@ -465,7 +465,7 @@ public  final class Version extends
   public static final int BUILD_TIMESTAMP_FIELD_NUMBER = 10;
   private volatile java.lang.Object buildTimestamp_;
   /**
-   * <code>optional string build_timestamp = 10;</code>
+   * <code>string build_timestamp = 10;</code>
    */
   public java.lang.String getBuildTimestamp() {
     java.lang.Object ref = buildTimestamp_;
@@ -480,7 +480,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string build_timestamp = 10;</code>
+   * <code>string build_timestamp = 10;</code>
    */
   public com.google.protobuf.ByteString
       getBuildTimestampBytes() {
@@ -499,7 +499,7 @@ public  final class Version extends
   public static final int BUILD_HOST_FIELD_NUMBER = 11;
   private volatile java.lang.Object buildHost_;
   /**
-   * <code>optional string build_host = 11;</code>
+   * <code>string build_host = 11;</code>
    */
   public java.lang.String getBuildHost() {
     java.lang.Object ref = buildHost_;
@@ -514,7 +514,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string build_host = 11;</code>
+   * <code>string build_host = 11;</code>
    */
   public com.google.protobuf.ByteString
       getBuildHostBytes() {
@@ -533,7 +533,7 @@ public  final class Version extends
   public static final int BUILD_HOST_OS_FIELD_NUMBER = 12;
   private volatile java.lang.Object buildHostOs_;
   /**
-   * <code>optional string build_host_os = 12;</code>
+   * <code>string build_host_os = 12;</code>
    */
   public java.lang.String getBuildHostOs() {
     java.lang.Object ref = buildHostOs_;
@@ -548,7 +548,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string build_host_os = 12;</code>
+   * <code>string build_host_os = 12;</code>
    */
   public com.google.protobuf.ByteString
       getBuildHostOsBytes() {
@@ -567,7 +567,7 @@ public  final class Version extends
   public static final int BUILD_HOST_ARCH_FIELD_NUMBER = 13;
   private volatile java.lang.Object buildHostArch_;
   /**
-   * <code>optional string build_host_arch = 13;</code>
+   * <code>string build_host_arch = 13;</code>
    */
   public java.lang.String getBuildHostArch() {
     java.lang.Object ref = buildHostArch_;
@@ -582,7 +582,7 @@ public  final class Version extends
     }
   }
   /**
-   * <code>optional string build_host_arch = 13;</code>
+   * <code>string build_host_arch = 13;</code>
    */
   public com.google.protobuf.ByteString
       getBuildHostArchBytes() {
@@ -746,7 +746,7 @@ public  final class Version extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + VERSION_FIELD_NUMBER;
@@ -1073,7 +1073,7 @@ public  final class Version extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1088,7 +1088,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1104,7 +1104,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1117,7 +1117,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -1126,7 +1126,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1142,7 +1142,7 @@ public  final class Version extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 2;</code>
+     * <code>string version = 2;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -1157,7 +1157,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string version = 2;</code>
+     * <code>string version = 2;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -1173,7 +1173,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string version = 2;</code>
+     * <code>string version = 2;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -1186,7 +1186,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string version = 2;</code>
+     * <code>string version = 2;</code>
      */
     public Builder clearVersion() {
       
@@ -1195,7 +1195,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string version = 2;</code>
+     * <code>string version = 2;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1211,7 +1211,7 @@ public  final class Version extends
 
     private java.lang.Object versionStrategy_ = "";
     /**
-     * <code>optional string version_strategy = 3;</code>
+     * <code>string version_strategy = 3;</code>
      */
     public java.lang.String getVersionStrategy() {
       java.lang.Object ref = versionStrategy_;
@@ -1226,7 +1226,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string version_strategy = 3;</code>
+     * <code>string version_strategy = 3;</code>
      */
     public com.google.protobuf.ByteString
         getVersionStrategyBytes() {
@@ -1242,7 +1242,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string version_strategy = 3;</code>
+     * <code>string version_strategy = 3;</code>
      */
     public Builder setVersionStrategy(
         java.lang.String value) {
@@ -1255,7 +1255,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string version_strategy = 3;</code>
+     * <code>string version_strategy = 3;</code>
      */
     public Builder clearVersionStrategy() {
       
@@ -1264,7 +1264,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string version_strategy = 3;</code>
+     * <code>string version_strategy = 3;</code>
      */
     public Builder setVersionStrategyBytes(
         com.google.protobuf.ByteString value) {
@@ -1280,7 +1280,7 @@ public  final class Version extends
 
     private java.lang.Object os_ = "";
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public java.lang.String getOs() {
       java.lang.Object ref = os_;
@@ -1295,7 +1295,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public com.google.protobuf.ByteString
         getOsBytes() {
@@ -1311,7 +1311,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder setOs(
         java.lang.String value) {
@@ -1324,7 +1324,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder clearOs() {
       
@@ -1333,7 +1333,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string os = 4;</code>
+     * <code>string os = 4;</code>
      */
     public Builder setOsBytes(
         com.google.protobuf.ByteString value) {
@@ -1349,7 +1349,7 @@ public  final class Version extends
 
     private java.lang.Object arch_ = "";
     /**
-     * <code>optional string arch = 5;</code>
+     * <code>string arch = 5;</code>
      */
     public java.lang.String getArch() {
       java.lang.Object ref = arch_;
@@ -1364,7 +1364,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string arch = 5;</code>
+     * <code>string arch = 5;</code>
      */
     public com.google.protobuf.ByteString
         getArchBytes() {
@@ -1380,7 +1380,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string arch = 5;</code>
+     * <code>string arch = 5;</code>
      */
     public Builder setArch(
         java.lang.String value) {
@@ -1393,7 +1393,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string arch = 5;</code>
+     * <code>string arch = 5;</code>
      */
     public Builder clearArch() {
       
@@ -1402,7 +1402,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string arch = 5;</code>
+     * <code>string arch = 5;</code>
      */
     public Builder setArchBytes(
         com.google.protobuf.ByteString value) {
@@ -1418,7 +1418,7 @@ public  final class Version extends
 
     private java.lang.Object commitHash_ = "";
     /**
-     * <code>optional string commit_hash = 6;</code>
+     * <code>string commit_hash = 6;</code>
      */
     public java.lang.String getCommitHash() {
       java.lang.Object ref = commitHash_;
@@ -1433,7 +1433,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string commit_hash = 6;</code>
+     * <code>string commit_hash = 6;</code>
      */
     public com.google.protobuf.ByteString
         getCommitHashBytes() {
@@ -1449,7 +1449,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string commit_hash = 6;</code>
+     * <code>string commit_hash = 6;</code>
      */
     public Builder setCommitHash(
         java.lang.String value) {
@@ -1462,7 +1462,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string commit_hash = 6;</code>
+     * <code>string commit_hash = 6;</code>
      */
     public Builder clearCommitHash() {
       
@@ -1471,7 +1471,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string commit_hash = 6;</code>
+     * <code>string commit_hash = 6;</code>
      */
     public Builder setCommitHashBytes(
         com.google.protobuf.ByteString value) {
@@ -1487,7 +1487,7 @@ public  final class Version extends
 
     private java.lang.Object gitBranch_ = "";
     /**
-     * <code>optional string git_branch = 7;</code>
+     * <code>string git_branch = 7;</code>
      */
     public java.lang.String getGitBranch() {
       java.lang.Object ref = gitBranch_;
@@ -1502,7 +1502,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string git_branch = 7;</code>
+     * <code>string git_branch = 7;</code>
      */
     public com.google.protobuf.ByteString
         getGitBranchBytes() {
@@ -1518,7 +1518,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string git_branch = 7;</code>
+     * <code>string git_branch = 7;</code>
      */
     public Builder setGitBranch(
         java.lang.String value) {
@@ -1531,7 +1531,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string git_branch = 7;</code>
+     * <code>string git_branch = 7;</code>
      */
     public Builder clearGitBranch() {
       
@@ -1540,7 +1540,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string git_branch = 7;</code>
+     * <code>string git_branch = 7;</code>
      */
     public Builder setGitBranchBytes(
         com.google.protobuf.ByteString value) {
@@ -1556,7 +1556,7 @@ public  final class Version extends
 
     private java.lang.Object gitTag_ = "";
     /**
-     * <code>optional string git_tag = 8;</code>
+     * <code>string git_tag = 8;</code>
      */
     public java.lang.String getGitTag() {
       java.lang.Object ref = gitTag_;
@@ -1571,7 +1571,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string git_tag = 8;</code>
+     * <code>string git_tag = 8;</code>
      */
     public com.google.protobuf.ByteString
         getGitTagBytes() {
@@ -1587,7 +1587,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string git_tag = 8;</code>
+     * <code>string git_tag = 8;</code>
      */
     public Builder setGitTag(
         java.lang.String value) {
@@ -1600,7 +1600,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string git_tag = 8;</code>
+     * <code>string git_tag = 8;</code>
      */
     public Builder clearGitTag() {
       
@@ -1609,7 +1609,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string git_tag = 8;</code>
+     * <code>string git_tag = 8;</code>
      */
     public Builder setGitTagBytes(
         com.google.protobuf.ByteString value) {
@@ -1625,7 +1625,7 @@ public  final class Version extends
 
     private java.lang.Object commitTimestamp_ = "";
     /**
-     * <code>optional string commit_timestamp = 9;</code>
+     * <code>string commit_timestamp = 9;</code>
      */
     public java.lang.String getCommitTimestamp() {
       java.lang.Object ref = commitTimestamp_;
@@ -1640,7 +1640,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string commit_timestamp = 9;</code>
+     * <code>string commit_timestamp = 9;</code>
      */
     public com.google.protobuf.ByteString
         getCommitTimestampBytes() {
@@ -1656,7 +1656,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string commit_timestamp = 9;</code>
+     * <code>string commit_timestamp = 9;</code>
      */
     public Builder setCommitTimestamp(
         java.lang.String value) {
@@ -1669,7 +1669,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string commit_timestamp = 9;</code>
+     * <code>string commit_timestamp = 9;</code>
      */
     public Builder clearCommitTimestamp() {
       
@@ -1678,7 +1678,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string commit_timestamp = 9;</code>
+     * <code>string commit_timestamp = 9;</code>
      */
     public Builder setCommitTimestampBytes(
         com.google.protobuf.ByteString value) {
@@ -1694,7 +1694,7 @@ public  final class Version extends
 
     private java.lang.Object buildTimestamp_ = "";
     /**
-     * <code>optional string build_timestamp = 10;</code>
+     * <code>string build_timestamp = 10;</code>
      */
     public java.lang.String getBuildTimestamp() {
       java.lang.Object ref = buildTimestamp_;
@@ -1709,7 +1709,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_timestamp = 10;</code>
+     * <code>string build_timestamp = 10;</code>
      */
     public com.google.protobuf.ByteString
         getBuildTimestampBytes() {
@@ -1725,7 +1725,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_timestamp = 10;</code>
+     * <code>string build_timestamp = 10;</code>
      */
     public Builder setBuildTimestamp(
         java.lang.String value) {
@@ -1738,7 +1738,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_timestamp = 10;</code>
+     * <code>string build_timestamp = 10;</code>
      */
     public Builder clearBuildTimestamp() {
       
@@ -1747,7 +1747,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_timestamp = 10;</code>
+     * <code>string build_timestamp = 10;</code>
      */
     public Builder setBuildTimestampBytes(
         com.google.protobuf.ByteString value) {
@@ -1763,7 +1763,7 @@ public  final class Version extends
 
     private java.lang.Object buildHost_ = "";
     /**
-     * <code>optional string build_host = 11;</code>
+     * <code>string build_host = 11;</code>
      */
     public java.lang.String getBuildHost() {
       java.lang.Object ref = buildHost_;
@@ -1778,7 +1778,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host = 11;</code>
+     * <code>string build_host = 11;</code>
      */
     public com.google.protobuf.ByteString
         getBuildHostBytes() {
@@ -1794,7 +1794,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host = 11;</code>
+     * <code>string build_host = 11;</code>
      */
     public Builder setBuildHost(
         java.lang.String value) {
@@ -1807,7 +1807,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host = 11;</code>
+     * <code>string build_host = 11;</code>
      */
     public Builder clearBuildHost() {
       
@@ -1816,7 +1816,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host = 11;</code>
+     * <code>string build_host = 11;</code>
      */
     public Builder setBuildHostBytes(
         com.google.protobuf.ByteString value) {
@@ -1832,7 +1832,7 @@ public  final class Version extends
 
     private java.lang.Object buildHostOs_ = "";
     /**
-     * <code>optional string build_host_os = 12;</code>
+     * <code>string build_host_os = 12;</code>
      */
     public java.lang.String getBuildHostOs() {
       java.lang.Object ref = buildHostOs_;
@@ -1847,7 +1847,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host_os = 12;</code>
+     * <code>string build_host_os = 12;</code>
      */
     public com.google.protobuf.ByteString
         getBuildHostOsBytes() {
@@ -1863,7 +1863,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host_os = 12;</code>
+     * <code>string build_host_os = 12;</code>
      */
     public Builder setBuildHostOs(
         java.lang.String value) {
@@ -1876,7 +1876,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host_os = 12;</code>
+     * <code>string build_host_os = 12;</code>
      */
     public Builder clearBuildHostOs() {
       
@@ -1885,7 +1885,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host_os = 12;</code>
+     * <code>string build_host_os = 12;</code>
      */
     public Builder setBuildHostOsBytes(
         com.google.protobuf.ByteString value) {
@@ -1901,7 +1901,7 @@ public  final class Version extends
 
     private java.lang.Object buildHostArch_ = "";
     /**
-     * <code>optional string build_host_arch = 13;</code>
+     * <code>string build_host_arch = 13;</code>
      */
     public java.lang.String getBuildHostArch() {
       java.lang.Object ref = buildHostArch_;
@@ -1916,7 +1916,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host_arch = 13;</code>
+     * <code>string build_host_arch = 13;</code>
      */
     public com.google.protobuf.ByteString
         getBuildHostArchBytes() {
@@ -1932,7 +1932,7 @@ public  final class Version extends
       }
     }
     /**
-     * <code>optional string build_host_arch = 13;</code>
+     * <code>string build_host_arch = 13;</code>
      */
     public Builder setBuildHostArch(
         java.lang.String value) {
@@ -1945,7 +1945,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host_arch = 13;</code>
+     * <code>string build_host_arch = 13;</code>
      */
     public Builder clearBuildHostArch() {
       
@@ -1954,7 +1954,7 @@ public  final class Version extends
       return this;
     }
     /**
-     * <code>optional string build_host_arch = 13;</code>
+     * <code>string build_host_arch = 13;</code>
      */
     public Builder setBuildHostArchBytes(
         com.google.protobuf.ByteString value) {

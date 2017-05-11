@@ -133,7 +133,7 @@ public  final class CorsRule extends
    * body.
    * </pre>
    *
-   * <code>optional bool enable = 1;</code>
+   * <code>bool enable = 1;</code>
    */
   public boolean getEnable() {
     return enable_;
@@ -192,7 +192,7 @@ public  final class CorsRule extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ENABLE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
         getEnable());
@@ -470,7 +470,7 @@ public  final class CorsRule extends
      * body.
      * </pre>
      *
-     * <code>optional bool enable = 1;</code>
+     * <code>bool enable = 1;</code>
      */
     public boolean getEnable() {
       return enable_;
@@ -482,7 +482,7 @@ public  final class CorsRule extends
      * body.
      * </pre>
      *
-     * <code>optional bool enable = 1;</code>
+     * <code>bool enable = 1;</code>
      */
     public Builder setEnable(boolean value) {
       
@@ -497,7 +497,7 @@ public  final class CorsRule extends
      * body.
      * </pre>
      *
-     * <code>optional bool enable = 1;</code>
+     * <code>bool enable = 1;</code>
      */
     public Builder clearEnable() {
       

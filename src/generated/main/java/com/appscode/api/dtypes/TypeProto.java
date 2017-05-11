@@ -15,16 +15,6 @@ public final class TypeProto {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_dtypes_Status_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_dtypes_Status_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_dtypes_Help_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_dtypes_Help_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_dtypes_ErrorDetails_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -59,29 +49,13 @@ public final class TypeProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\037appscode/api/dtypes/types.proto\022\017appsc" +
-      "ode.dtypes\032\031google/protobuf/any.proto\"\203\001" +
-      "\n\006Status\022\014\n\004code\030\001 \001(\t\022\016\n\006status\030\002 \001(\t\022\017" +
-      "\n\007message\030\003 \001(\t\022#\n\004help\030\004 \001(\0132\025.appscode" +
-      ".dtypes.Help\022%\n\007details\030\005 \003(\0132\024.google.p" +
-      "rotobuf.Any\"(\n\004Help\022\023\n\013description\030\001 \001(\t" +
-      "\022\013\n\003url\030\002 \001(\t\">\n\014ErrorDetails\022\032\n\022request" +
-      "ed_resource\030\001 \001(\t\022\022\n\nstacktrace\030\002 \001(\t\"P\n" +
-      "\023LongRunningResponse\022\'\n\006status\030\001 \001(\0132\027.a" +
-      "ppscode.dtypes.Status\022\020\n\010job_phid\030\002 \001(\t\"",
-      "\r\n\013VoidRequest\"7\n\014VoidResponse\022\'\n\006status" +
-      "\030\001 \001(\0132\027.appscode.dtypes.Status\"!\n\003Uid\022\014" +
-      "\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t*\351\002\n\nStatusCod" +
-      "e\022\006\n\002OK\020\000\022\n\n\006FAILED\020\001\022\020\n\014UNAUTHORIZED\020\002\022" +
-      "\016\n\nBADREQUEST\020\003\022\025\n\021PERMISSION_DENIED\020\004\022\r" +
-      "\n\tNOT_FOUND\020\005\022\021\n\rUNIMPLEMENTED\020\006\022\014\n\010INTE" +
-      "RNAL\020\007\022\014\n\010EXTERNAL\020\010\022\020\n\014BAD_RESPONSE\020\t\022\021" +
-      "\n\rUNKNOWN_ERROR\020\n\022\026\n\022QUOTA_LIMIT_EXCEED\020" +
-      "\013\022\021\n\rINVALID_QUOTA\020\014\022#\n\037PAYMENT_INFORMAT" +
-      "ION_UNAVAILABLE\020\r\022\037\n\033INVALID_PAYMENT_INF",
-      "ORMATION\020\016\022\026\n\022TRANSACTION_FAILED\020\017\022\020\n\014AR" +
-      "E_YOU_SURE\020\020\022\020\n\014INVALID_DATA\020\021B.\n\027com.ap" +
-      "pscode.api.dtypesB\tTypeProtoP\001Z\006dtypesb\006" +
-      "proto3"
+      "ode.dtypes\032\031google/protobuf/any.proto\">\n" +
+      "\014ErrorDetails\022\032\n\022requested_resource\030\001 \001(" +
+      "\t\022\022\n\nstacktrace\030\002 \001(\t\"\'\n\023LongRunningResp" +
+      "onse\022\020\n\010job_phid\030\001 \001(\t\"\r\n\013VoidRequest\"\016\n" +
+      "\014VoidResponse\"!\n\003Uid\022\014\n\004phid\030\001 \001(\t\022\014\n\004na" +
+      "me\030\002 \001(\tB.\n\027com.appscode.api.dtypesB\tTyp" +
+      "eProtoP\001Z\006dtypesb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -96,44 +70,32 @@ public final class TypeProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.AnyProto.getDescriptor(),
         }, assigner);
-    internal_static_appscode_dtypes_Status_descriptor =
-      getDescriptor().getMessageTypes().get(0);
-    internal_static_appscode_dtypes_Status_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_dtypes_Status_descriptor,
-        new java.lang.String[] { "Code", "Status", "Message", "Help", "Details", });
-    internal_static_appscode_dtypes_Help_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_appscode_dtypes_Help_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_dtypes_Help_descriptor,
-        new java.lang.String[] { "Description", "Url", });
     internal_static_appscode_dtypes_ErrorDetails_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(0);
     internal_static_appscode_dtypes_ErrorDetails_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_ErrorDetails_descriptor,
         new java.lang.String[] { "RequestedResource", "Stacktrace", });
     internal_static_appscode_dtypes_LongRunningResponse_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_dtypes_LongRunningResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_LongRunningResponse_descriptor,
-        new java.lang.String[] { "Status", "JobPhid", });
+        new java.lang.String[] { "JobPhid", });
     internal_static_appscode_dtypes_VoidRequest_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_dtypes_VoidRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_VoidRequest_descriptor,
         new java.lang.String[] { });
     internal_static_appscode_dtypes_VoidResponse_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_dtypes_VoidResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_VoidResponse_descriptor,
-        new java.lang.String[] { "Status", });
+        new java.lang.String[] { });
     internal_static_appscode_dtypes_Uid_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_dtypes_Uid_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_Uid_descriptor,

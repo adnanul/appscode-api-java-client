@@ -8,62 +8,49 @@ public interface SSHGetResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   boolean hasSshKey();
   /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   com.appscode.api.ssh.v1beta1.SSHKey getSshKey();
   /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   com.appscode.api.ssh.v1beta1.SSHKeyOrBuilder getSshKeyOrBuilder();
 
   /**
-   * <code>optional string instance_addr = 3;</code>
+   * <code>string instance_addr = 2;</code>
    */
   java.lang.String getInstanceAddr();
   /**
-   * <code>optional string instance_addr = 3;</code>
+   * <code>string instance_addr = 2;</code>
    */
   com.google.protobuf.ByteString
       getInstanceAddrBytes();
 
   /**
-   * <code>optional int32 instance_port = 4;</code>
+   * <code>int32 instance_port = 3;</code>
    */
   int getInstancePort();
 
   /**
-   * <code>optional string user = 5;</code>
+   * <code>string user = 4;</code>
    */
   java.lang.String getUser();
   /**
-   * <code>optional string user = 5;</code>
+   * <code>string user = 4;</code>
    */
   com.google.protobuf.ByteString
       getUserBytes();
 
   /**
-   * <code>optional string command = 6;</code>
+   * <code>string command = 5;</code>
    */
   java.lang.String getCommand();
   /**
-   * <code>optional string command = 6;</code>
+   * <code>string command = 5;</code>
    */
   com.google.protobuf.ByteString
       getCommandBytes();

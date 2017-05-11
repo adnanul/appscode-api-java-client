@@ -95,7 +95,7 @@ public  final class Member extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -110,7 +110,7 @@ public  final class Member extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -129,7 +129,7 @@ public  final class Member extends
   public static final int USER_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object userName_;
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   public java.lang.String getUserName() {
     java.lang.Object ref = userName_;
@@ -144,7 +144,7 @@ public  final class Member extends
     }
   }
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getUserNameBytes() {
@@ -163,7 +163,7 @@ public  final class Member extends
   public static final int REAL_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object realName_;
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   public java.lang.String getRealName() {
     java.lang.Object ref = realName_;
@@ -178,7 +178,7 @@ public  final class Member extends
     }
   }
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getRealNameBytes() {
@@ -197,7 +197,7 @@ public  final class Member extends
   public static final int IS_ADMIN_FIELD_NUMBER = 4;
   private boolean isAdmin_;
   /**
-   * <code>optional bool is_admin = 4;</code>
+   * <code>bool is_admin = 4;</code>
    */
   public boolean getIsAdmin() {
     return isAdmin_;
@@ -280,7 +280,7 @@ public  final class Member extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
@@ -526,7 +526,7 @@ public  final class Member extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -541,7 +541,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -557,7 +557,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -570,7 +570,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -579,7 +579,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -595,7 +595,7 @@ public  final class Member extends
 
     private java.lang.Object userName_ = "";
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public java.lang.String getUserName() {
       java.lang.Object ref = userName_;
@@ -610,7 +610,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUserNameBytes() {
@@ -626,7 +626,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder setUserName(
         java.lang.String value) {
@@ -639,7 +639,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder clearUserName() {
       
@@ -648,7 +648,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder setUserNameBytes(
         com.google.protobuf.ByteString value) {
@@ -664,7 +664,7 @@ public  final class Member extends
 
     private java.lang.Object realName_ = "";
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public java.lang.String getRealName() {
       java.lang.Object ref = realName_;
@@ -679,7 +679,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getRealNameBytes() {
@@ -695,7 +695,7 @@ public  final class Member extends
       }
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder setRealName(
         java.lang.String value) {
@@ -708,7 +708,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder clearRealName() {
       
@@ -717,7 +717,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder setRealNameBytes(
         com.google.protobuf.ByteString value) {
@@ -733,13 +733,13 @@ public  final class Member extends
 
     private boolean isAdmin_ ;
     /**
-     * <code>optional bool is_admin = 4;</code>
+     * <code>bool is_admin = 4;</code>
      */
     public boolean getIsAdmin() {
       return isAdmin_;
     }
     /**
-     * <code>optional bool is_admin = 4;</code>
+     * <code>bool is_admin = 4;</code>
      */
     public Builder setIsAdmin(boolean value) {
       
@@ -748,7 +748,7 @@ public  final class Member extends
       return this;
     }
     /**
-     * <code>optional bool is_admin = 4;</code>
+     * <code>bool is_admin = 4;</code>
      */
     public Builder clearIsAdmin() {
       

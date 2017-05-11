@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/auth/v1beta1/conduit.proto")
-public class ConduitGrpc {
+public final class ConduitGrpc {
 
   private ConduitGrpc() {}
 
@@ -93,7 +93,7 @@ public class ConduitGrpc {
       asyncUnimplementedUnaryCall(METHOD_USERS, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_WHO_AM_I,
@@ -237,7 +237,7 @@ public class ConduitGrpc {
   private static final int METHODID_WHO_AM_I = 0;
   private static final int METHODID_USERS = 1;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -245,7 +245,7 @@ public class ConduitGrpc {
     private final ConduitImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(ConduitImplBase serviceImpl, int methodId) {
+    MethodHandlers(ConduitImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -278,10 +278,29 @@ public class ConduitGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_WHO_AM_I,
-        METHOD_USERS);
+  private static final class ConduitDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.auth.v1beta1.ConduitProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (ConduitGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new ConduitDescriptorSupplier())
+              .addMethod(METHOD_WHO_AM_I)
+              .addMethod(METHOD_USERS)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

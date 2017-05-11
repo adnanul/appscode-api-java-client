@@ -103,7 +103,7 @@ public  final class DescribeRequest extends
   public static final int KIND_FIELD_NUMBER = 1;
   private volatile java.lang.Object kind_;
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public java.lang.String getKind() {
     java.lang.Object ref = kind_;
@@ -118,7 +118,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public com.google.protobuf.ByteString
       getKindBytes() {
@@ -137,7 +137,7 @@ public  final class DescribeRequest extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -152,7 +152,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -171,7 +171,7 @@ public  final class DescribeRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 3;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -186,7 +186,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 3;</code>
+   * <code>string namespace = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -205,7 +205,7 @@ public  final class DescribeRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 4;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 4;</code>
+   * <code>string cluster = 4;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -220,7 +220,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 4;</code>
+   * <code>string cluster = 4;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -239,7 +239,7 @@ public  final class DescribeRequest extends
   public static final int RAW_FIELD_NUMBER = 5;
   private volatile java.lang.Object raw_;
   /**
-   * <code>optional string raw = 5;</code>
+   * <code>string raw = 5;</code>
    */
   public java.lang.String getRaw() {
     java.lang.Object ref = raw_;
@@ -254,7 +254,7 @@ public  final class DescribeRequest extends
     }
   }
   /**
-   * <code>optional string raw = 5;</code>
+   * <code>string raw = 5;</code>
    */
   public com.google.protobuf.ByteString
       getRawBytes() {
@@ -354,7 +354,7 @@ public  final class DescribeRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + KIND_FIELD_NUMBER;
     hash = (53 * hash) + getKind().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -609,7 +609,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object kind_ = "";
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public java.lang.String getKind() {
       java.lang.Object ref = kind_;
@@ -624,7 +624,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
@@ -640,7 +640,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKind(
         java.lang.String value) {
@@ -653,7 +653,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder clearKind() {
       
@@ -662,7 +662,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKindBytes(
         com.google.protobuf.ByteString value) {
@@ -678,7 +678,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -693,7 +693,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -709,7 +709,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -722,7 +722,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -731,7 +731,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -747,7 +747,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -762,7 +762,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -778,7 +778,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -791,7 +791,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder clearNamespace() {
       
@@ -800,7 +800,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 3;</code>
+     * <code>string namespace = 3;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -816,7 +816,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 4;</code>
+     * <code>string cluster = 4;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -831,7 +831,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 4;</code>
+     * <code>string cluster = 4;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -847,7 +847,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 4;</code>
+     * <code>string cluster = 4;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -860,7 +860,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 4;</code>
+     * <code>string cluster = 4;</code>
      */
     public Builder clearCluster() {
       
@@ -869,7 +869,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 4;</code>
+     * <code>string cluster = 4;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -885,7 +885,7 @@ public  final class DescribeRequest extends
 
     private java.lang.Object raw_ = "";
     /**
-     * <code>optional string raw = 5;</code>
+     * <code>string raw = 5;</code>
      */
     public java.lang.String getRaw() {
       java.lang.Object ref = raw_;
@@ -900,7 +900,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string raw = 5;</code>
+     * <code>string raw = 5;</code>
      */
     public com.google.protobuf.ByteString
         getRawBytes() {
@@ -916,7 +916,7 @@ public  final class DescribeRequest extends
       }
     }
     /**
-     * <code>optional string raw = 5;</code>
+     * <code>string raw = 5;</code>
      */
     public Builder setRaw(
         java.lang.String value) {
@@ -929,7 +929,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string raw = 5;</code>
+     * <code>string raw = 5;</code>
      */
     public Builder clearRaw() {
       
@@ -938,7 +938,7 @@ public  final class DescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string raw = 5;</code>
+     * <code>string raw = 5;</code>
      */
     public Builder setRawBytes(
         com.google.protobuf.ByteString value) {

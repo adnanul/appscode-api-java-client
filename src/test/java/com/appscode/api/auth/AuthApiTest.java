@@ -1,6 +1,6 @@
 package com.appscode.api.auth;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import com.appscode.api.dtypes.VoidRequest;
 import com.appscode.api.health.HealthGrpc;
@@ -47,9 +47,7 @@ public class AuthApiTest {
         .setType("pods")
         .build();
     ListResourceResponse response = blockingStub.list(request);
-
-    assertEquals(response.getStatus().getStatus(), "OK");
-    assertEquals(response.getStatus().getCode(), "0");
+    assertNotNull(response);
   }
 
   @Ignore
@@ -64,9 +62,7 @@ public class AuthApiTest {
         .setType("pods")
         .build();
     ListResourceResponse response = blockingStub.list(request);
-
-    assertEquals(response.getStatus().getStatus(), "OK");
-    assertEquals(response.getStatus().getCode(), "0");
+    assertNotNull(response);
   }
 
   @Ignore
@@ -76,7 +72,6 @@ public class AuthApiTest {
     VoidRequest request = VoidRequest.newBuilder().build();
 
     StatusResponse response = blockingStub.status(request);
-    assertEquals(response.getStatus().getStatus(), "OK");
-    assertEquals(response.getStatus().getCode(), "0");
+    assertNotNull(response);
   }
 }

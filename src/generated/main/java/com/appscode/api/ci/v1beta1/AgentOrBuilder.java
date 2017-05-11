@@ -8,67 +8,67 @@ public interface AgentOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string role = 3;</code>
+   * <code>string role = 3;</code>
    */
   java.lang.String getRole();
   /**
-   * <code>optional string role = 3;</code>
+   * <code>string role = 3;</code>
    */
   com.google.protobuf.ByteString
       getRoleBytes();
 
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   java.lang.String getExternalIp();
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   com.google.protobuf.ByteString
       getExternalIpBytes();
 
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   java.lang.String getInternalIp();
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   com.google.protobuf.ByteString
       getInternalIpBytes();
 
   /**
-   * <code>optional bool isDeleted = 6;</code>
+   * <code>bool isDeleted = 6;</code>
    */
   boolean getIsDeleted();
 
   /**
-   * <code>optional int64 created_at = 7;</code>
+   * <code>int64 created_at = 7;</code>
    */
   long getCreatedAt();
 
   /**
-   * <code>optional int64 updated_at = 8;</code>
+   * <code>int64 updated_at = 8;</code>
    */
   long getUpdatedAt();
 }

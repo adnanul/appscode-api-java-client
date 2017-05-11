@@ -116,27 +116,27 @@ public  final class Job extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 start_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
     long getStartTime();
 
     /**
-     * <code>optional int64 completion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
     long getCompletionTime();
 
     /**
-     * <code>optional int32 active = 3;</code>
+     * <code>int32 active = 3;</code>
      */
     int getActive();
 
     /**
-     * <code>optional int32 succeeded = 4;</code>
+     * <code>int32 succeeded = 4;</code>
      */
     int getSucceeded();
 
     /**
-     * <code>optional int32 failed = 5;</code>
+     * <code>int32 failed = 5;</code>
      */
     int getFailed();
 
@@ -273,7 +273,7 @@ public  final class Job extends
     public static final int START_TIME_FIELD_NUMBER = 1;
     private long startTime_;
     /**
-     * <code>optional int64 start_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
     public long getStartTime() {
       return startTime_;
@@ -282,7 +282,7 @@ public  final class Job extends
     public static final int COMPLETION_TIME_FIELD_NUMBER = 2;
     private long completionTime_;
     /**
-     * <code>optional int64 completion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
     public long getCompletionTime() {
       return completionTime_;
@@ -291,7 +291,7 @@ public  final class Job extends
     public static final int ACTIVE_FIELD_NUMBER = 3;
     private int active_;
     /**
-     * <code>optional int32 active = 3;</code>
+     * <code>int32 active = 3;</code>
      */
     public int getActive() {
       return active_;
@@ -300,7 +300,7 @@ public  final class Job extends
     public static final int SUCCEEDED_FIELD_NUMBER = 4;
     private int succeeded_;
     /**
-     * <code>optional int32 succeeded = 4;</code>
+     * <code>int32 succeeded = 4;</code>
      */
     public int getSucceeded() {
       return succeeded_;
@@ -309,7 +309,7 @@ public  final class Job extends
     public static final int FAILED_FIELD_NUMBER = 5;
     private int failed_;
     /**
-     * <code>optional int32 failed = 5;</code>
+     * <code>int32 failed = 5;</code>
      */
     public int getFailed() {
       return failed_;
@@ -448,7 +448,7 @@ public  final class Job extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getStartTime());
@@ -750,13 +750,13 @@ public  final class Job extends
 
       private long startTime_ ;
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public long getStartTime() {
         return startTime_;
       }
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public Builder setStartTime(long value) {
         
@@ -765,7 +765,7 @@ public  final class Job extends
         return this;
       }
       /**
-       * <code>optional int64 start_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
       public Builder clearStartTime() {
         
@@ -776,13 +776,13 @@ public  final class Job extends
 
       private long completionTime_ ;
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public long getCompletionTime() {
         return completionTime_;
       }
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public Builder setCompletionTime(long value) {
         
@@ -791,7 +791,7 @@ public  final class Job extends
         return this;
       }
       /**
-       * <code>optional int64 completion_time = 2;</code>
+       * <code>int64 completion_time = 2;</code>
        */
       public Builder clearCompletionTime() {
         
@@ -802,13 +802,13 @@ public  final class Job extends
 
       private int active_ ;
       /**
-       * <code>optional int32 active = 3;</code>
+       * <code>int32 active = 3;</code>
        */
       public int getActive() {
         return active_;
       }
       /**
-       * <code>optional int32 active = 3;</code>
+       * <code>int32 active = 3;</code>
        */
       public Builder setActive(int value) {
         
@@ -817,7 +817,7 @@ public  final class Job extends
         return this;
       }
       /**
-       * <code>optional int32 active = 3;</code>
+       * <code>int32 active = 3;</code>
        */
       public Builder clearActive() {
         
@@ -828,13 +828,13 @@ public  final class Job extends
 
       private int succeeded_ ;
       /**
-       * <code>optional int32 succeeded = 4;</code>
+       * <code>int32 succeeded = 4;</code>
        */
       public int getSucceeded() {
         return succeeded_;
       }
       /**
-       * <code>optional int32 succeeded = 4;</code>
+       * <code>int32 succeeded = 4;</code>
        */
       public Builder setSucceeded(int value) {
         
@@ -843,7 +843,7 @@ public  final class Job extends
         return this;
       }
       /**
-       * <code>optional int32 succeeded = 4;</code>
+       * <code>int32 succeeded = 4;</code>
        */
       public Builder clearSucceeded() {
         
@@ -854,13 +854,13 @@ public  final class Job extends
 
       private int failed_ ;
       /**
-       * <code>optional int32 failed = 5;</code>
+       * <code>int32 failed = 5;</code>
        */
       public int getFailed() {
         return failed_;
       }
       /**
-       * <code>optional int32 failed = 5;</code>
+       * <code>int32 failed = 5;</code>
        */
       public Builder setFailed(int value) {
         
@@ -869,7 +869,7 @@ public  final class Job extends
         return this;
       }
       /**
-       * <code>optional int32 failed = 5;</code>
+       * <code>int32 failed = 5;</code>
        */
       public Builder clearFailed() {
         
@@ -1169,19 +1169,19 @@ public  final class Job extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1190,7 +1190,7 @@ public  final class Job extends
   public static final int APP_FIELD_NUMBER = 2;
   private volatile java.lang.Object app_;
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public java.lang.String getApp() {
     java.lang.Object ref = app_;
@@ -1205,7 +1205,7 @@ public  final class Job extends
     }
   }
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAppBytes() {
@@ -1224,19 +1224,19 @@ public  final class Job extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.JobSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.JobSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1245,19 +1245,19 @@ public  final class Job extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.Job.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Job.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Job.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Job.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -1351,7 +1351,7 @@ public  final class Job extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1626,13 +1626,13 @@ public  final class Job extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -1642,7 +1642,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1658,7 +1658,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -1672,7 +1672,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1690,7 +1690,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -1704,7 +1704,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -1712,7 +1712,7 @@ public  final class Job extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -1723,7 +1723,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -1741,7 +1741,7 @@ public  final class Job extends
 
     private java.lang.Object app_ = "";
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public java.lang.String getApp() {
       java.lang.Object ref = app_;
@@ -1756,7 +1756,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAppBytes() {
@@ -1772,7 +1772,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setApp(
         java.lang.String value) {
@@ -1785,7 +1785,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder clearApp() {
       
@@ -1794,7 +1794,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setAppBytes(
         com.google.protobuf.ByteString value) {
@@ -1812,13 +1812,13 @@ public  final class Job extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobSpec getSpec() {
       if (specBuilder_ == null) {
@@ -1828,7 +1828,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
       if (specBuilder_ == null) {
@@ -1844,7 +1844,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.JobSpec.Builder builderForValue) {
@@ -1858,7 +1858,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
       if (specBuilder_ == null) {
@@ -1876,7 +1876,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1890,7 +1890,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobSpec.Builder getSpecBuilder() {
       
@@ -1898,7 +1898,7 @@ public  final class Job extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1909,7 +1909,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> 
@@ -1929,13 +1929,13 @@ public  final class Job extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Job.Status, com.appscode.api.kubernetes.v1beta2.Job.Status.Builder, com.appscode.api.kubernetes.v1beta2.Job.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Job.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -1945,7 +1945,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Job.Status value) {
       if (statusBuilder_ == null) {
@@ -1961,7 +1961,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Job.Status.Builder builderForValue) {
@@ -1975,7 +1975,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Job.Status value) {
       if (statusBuilder_ == null) {
@@ -1993,7 +1993,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2007,7 +2007,7 @@ public  final class Job extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Job.Status.Builder getStatusBuilder() {
       
@@ -2015,7 +2015,7 @@ public  final class Job extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Job.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -2026,7 +2026,7 @@ public  final class Job extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Job.Status status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Job.Status, com.appscode.api.kubernetes.v1beta2.Job.Status.Builder, com.appscode.api.kubernetes.v1beta2.Job.StatusOrBuilder> 

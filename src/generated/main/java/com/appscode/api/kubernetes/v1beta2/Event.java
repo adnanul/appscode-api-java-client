@@ -133,19 +133,19 @@ public  final class Event extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -154,7 +154,7 @@ public  final class Event extends
   public static final int REASON_FIELD_NUMBER = 2;
   private volatile java.lang.Object reason_;
   /**
-   * <code>optional string reason = 2;</code>
+   * <code>string reason = 2;</code>
    */
   public java.lang.String getReason() {
     java.lang.Object ref = reason_;
@@ -169,7 +169,7 @@ public  final class Event extends
     }
   }
   /**
-   * <code>optional string reason = 2;</code>
+   * <code>string reason = 2;</code>
    */
   public com.google.protobuf.ByteString
       getReasonBytes() {
@@ -188,7 +188,7 @@ public  final class Event extends
   public static final int MESSAGE_FIELD_NUMBER = 3;
   private volatile java.lang.Object message_;
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   public java.lang.String getMessage() {
     java.lang.Object ref = message_;
@@ -203,7 +203,7 @@ public  final class Event extends
     }
   }
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 3;</code>
    */
   public com.google.protobuf.ByteString
       getMessageBytes() {
@@ -222,19 +222,19 @@ public  final class Event extends
   public static final int SOURCE_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.EventSource source_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   public boolean hasSource() {
     return source_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EventSource getSource() {
     return source_ == null ? com.appscode.api.kubernetes.v1beta2.EventSource.getDefaultInstance() : source_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.EventSourceOrBuilder getSourceOrBuilder() {
     return getSource();
@@ -243,7 +243,7 @@ public  final class Event extends
   public static final int FIRST_TIMESTAMP_FIELD_NUMBER = 5;
   private long firstTimestamp_;
   /**
-   * <code>optional int64 first_timestamp = 5;</code>
+   * <code>int64 first_timestamp = 5;</code>
    */
   public long getFirstTimestamp() {
     return firstTimestamp_;
@@ -252,7 +252,7 @@ public  final class Event extends
   public static final int LAST_TIMESTAMP_FIELD_NUMBER = 6;
   private long lastTimestamp_;
   /**
-   * <code>optional int64 last_timestamp = 6;</code>
+   * <code>int64 last_timestamp = 6;</code>
    */
   public long getLastTimestamp() {
     return lastTimestamp_;
@@ -261,7 +261,7 @@ public  final class Event extends
   public static final int COUNT_FIELD_NUMBER = 7;
   private int count_;
   /**
-   * <code>optional int32 count = 7;</code>
+   * <code>int32 count = 7;</code>
    */
   public int getCount() {
     return count_;
@@ -270,7 +270,7 @@ public  final class Event extends
   public static final int TYPE_FIELD_NUMBER = 8;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 8;</code>
+   * <code>string type = 8;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -285,7 +285,7 @@ public  final class Event extends
     }
   }
   /**
-   * <code>optional string type = 8;</code>
+   * <code>string type = 8;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -420,7 +420,7 @@ public  final class Event extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -721,13 +721,13 @@ public  final class Event extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -737,7 +737,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -753,7 +753,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -767,7 +767,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -785,7 +785,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -799,7 +799,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -807,7 +807,7 @@ public  final class Event extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -818,7 +818,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -836,7 +836,7 @@ public  final class Event extends
 
     private java.lang.Object reason_ = "";
     /**
-     * <code>optional string reason = 2;</code>
+     * <code>string reason = 2;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -851,7 +851,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string reason = 2;</code>
+     * <code>string reason = 2;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -867,7 +867,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string reason = 2;</code>
+     * <code>string reason = 2;</code>
      */
     public Builder setReason(
         java.lang.String value) {
@@ -880,7 +880,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string reason = 2;</code>
+     * <code>string reason = 2;</code>
      */
     public Builder clearReason() {
       
@@ -889,7 +889,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string reason = 2;</code>
+     * <code>string reason = 2;</code>
      */
     public Builder setReasonBytes(
         com.google.protobuf.ByteString value) {
@@ -905,7 +905,7 @@ public  final class Event extends
 
     private java.lang.Object message_ = "";
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -920,7 +920,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -936,7 +936,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder setMessage(
         java.lang.String value) {
@@ -949,7 +949,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder clearMessage() {
       
@@ -958,7 +958,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string message = 3;</code>
+     * <code>string message = 3;</code>
      */
     public Builder setMessageBytes(
         com.google.protobuf.ByteString value) {
@@ -976,13 +976,13 @@ public  final class Event extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.EventSource, com.appscode.api.kubernetes.v1beta2.EventSource.Builder, com.appscode.api.kubernetes.v1beta2.EventSourceOrBuilder> sourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public boolean hasSource() {
       return sourceBuilder_ != null || source_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EventSource getSource() {
       if (sourceBuilder_ == null) {
@@ -992,7 +992,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public Builder setSource(com.appscode.api.kubernetes.v1beta2.EventSource value) {
       if (sourceBuilder_ == null) {
@@ -1008,7 +1008,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public Builder setSource(
         com.appscode.api.kubernetes.v1beta2.EventSource.Builder builderForValue) {
@@ -1022,7 +1022,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public Builder mergeSource(com.appscode.api.kubernetes.v1beta2.EventSource value) {
       if (sourceBuilder_ == null) {
@@ -1040,7 +1040,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public Builder clearSource() {
       if (sourceBuilder_ == null) {
@@ -1054,7 +1054,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EventSource.Builder getSourceBuilder() {
       
@@ -1062,7 +1062,7 @@ public  final class Event extends
       return getSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.EventSourceOrBuilder getSourceOrBuilder() {
       if (sourceBuilder_ != null) {
@@ -1073,7 +1073,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.EventSource source = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.EventSource source = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.EventSource, com.appscode.api.kubernetes.v1beta2.EventSource.Builder, com.appscode.api.kubernetes.v1beta2.EventSourceOrBuilder> 
@@ -1091,13 +1091,13 @@ public  final class Event extends
 
     private long firstTimestamp_ ;
     /**
-     * <code>optional int64 first_timestamp = 5;</code>
+     * <code>int64 first_timestamp = 5;</code>
      */
     public long getFirstTimestamp() {
       return firstTimestamp_;
     }
     /**
-     * <code>optional int64 first_timestamp = 5;</code>
+     * <code>int64 first_timestamp = 5;</code>
      */
     public Builder setFirstTimestamp(long value) {
       
@@ -1106,7 +1106,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional int64 first_timestamp = 5;</code>
+     * <code>int64 first_timestamp = 5;</code>
      */
     public Builder clearFirstTimestamp() {
       
@@ -1117,13 +1117,13 @@ public  final class Event extends
 
     private long lastTimestamp_ ;
     /**
-     * <code>optional int64 last_timestamp = 6;</code>
+     * <code>int64 last_timestamp = 6;</code>
      */
     public long getLastTimestamp() {
       return lastTimestamp_;
     }
     /**
-     * <code>optional int64 last_timestamp = 6;</code>
+     * <code>int64 last_timestamp = 6;</code>
      */
     public Builder setLastTimestamp(long value) {
       
@@ -1132,7 +1132,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional int64 last_timestamp = 6;</code>
+     * <code>int64 last_timestamp = 6;</code>
      */
     public Builder clearLastTimestamp() {
       
@@ -1143,13 +1143,13 @@ public  final class Event extends
 
     private int count_ ;
     /**
-     * <code>optional int32 count = 7;</code>
+     * <code>int32 count = 7;</code>
      */
     public int getCount() {
       return count_;
     }
     /**
-     * <code>optional int32 count = 7;</code>
+     * <code>int32 count = 7;</code>
      */
     public Builder setCount(int value) {
       
@@ -1158,7 +1158,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional int32 count = 7;</code>
+     * <code>int32 count = 7;</code>
      */
     public Builder clearCount() {
       
@@ -1169,7 +1169,7 @@ public  final class Event extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 8;</code>
+     * <code>string type = 8;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1184,7 +1184,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string type = 8;</code>
+     * <code>string type = 8;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1200,7 +1200,7 @@ public  final class Event extends
       }
     }
     /**
-     * <code>optional string type = 8;</code>
+     * <code>string type = 8;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -1213,7 +1213,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string type = 8;</code>
+     * <code>string type = 8;</code>
      */
     public Builder clearType() {
       
@@ -1222,7 +1222,7 @@ public  final class Event extends
       return this;
     }
     /**
-     * <code>optional string type = 8;</code>
+     * <code>string type = 8;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {

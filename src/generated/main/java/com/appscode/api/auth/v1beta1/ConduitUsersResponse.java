@@ -44,22 +44,9 @@ public  final class ConduitUsersResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               users_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.ConduitUser>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             users_.add(
                 input.readMessage(com.appscode.api.auth.v1beta1.ConduitUser.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class ConduitUsersResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         users_ = java.util.Collections.unmodifiableList(users_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class ConduitUsersResponse extends
             com.appscode.api.auth.v1beta1.ConduitUsersResponse.class, com.appscode.api.auth.v1beta1.ConduitUsersResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int USERS_FIELD_NUMBER = 2;
+  public static final int USERS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.auth.v1beta1.ConduitUser> users_;
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   public java.util.List<com.appscode.api.auth.v1beta1.ConduitUser> getUsersList() {
     return users_;
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.auth.v1beta1.ConduitUserOrBuilder> 
       getUsersOrBuilderList() {
     return users_;
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   public int getUsersCount() {
     return users_.size();
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   public com.appscode.api.auth.v1beta1.ConduitUser getUsers(int index) {
     return users_.get(index);
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
    */
   public com.appscode.api.auth.v1beta1.ConduitUserOrBuilder getUsersOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class ConduitUsersResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < users_.size(); i++) {
-      output.writeMessage(2, users_.get(i));
+      output.writeMessage(1, users_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class ConduitUsersResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < users_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, users_.get(i));
+        .computeMessageSize(1, users_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class ConduitUsersResponse extends
     com.appscode.api.auth.v1beta1.ConduitUsersResponse other = (com.appscode.api.auth.v1beta1.ConduitUsersResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getUsersList()
         .equals(other.getUsersList());
     return result;
@@ -213,11 +166,7 @@ public  final class ConduitUsersResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getUsersCount() > 0) {
       hash = (37 * hash) + USERS_FIELD_NUMBER;
       hash = (53 * hash) + getUsersList().hashCode();
@@ -341,15 +290,9 @@ public  final class ConduitUsersResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (usersBuilder_ == null) {
         users_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         usersBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class ConduitUsersResponse extends
     public com.appscode.api.auth.v1beta1.ConduitUsersResponse buildPartial() {
       com.appscode.api.auth.v1beta1.ConduitUsersResponse result = new com.appscode.api.auth.v1beta1.ConduitUsersResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (usersBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           users_ = java.util.Collections.unmodifiableList(users_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.users_ = users_;
       } else {
         result.users_ = usersBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class ConduitUsersResponse extends
 
     public Builder mergeFrom(com.appscode.api.auth.v1beta1.ConduitUsersResponse other) {
       if (other == com.appscode.api.auth.v1beta1.ConduitUsersResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (usersBuilder_ == null) {
         if (!other.users_.isEmpty()) {
           if (users_.isEmpty()) {
             users_ = other.users_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureUsersIsMutable();
             users_.addAll(other.users_);
@@ -453,7 +386,7 @@ public  final class ConduitUsersResponse extends
             usersBuilder_.dispose();
             usersBuilder_ = null;
             users_ = other.users_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             usersBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getUsersFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class ConduitUsersResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.auth.v1beta1.ConduitUser> users_ =
       java.util.Collections.emptyList();
     private void ensureUsersIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         users_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.ConduitUser>(users_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class ConduitUsersResponse extends
         com.appscode.api.auth.v1beta1.ConduitUser, com.appscode.api.auth.v1beta1.ConduitUser.Builder, com.appscode.api.auth.v1beta1.ConduitUserOrBuilder> usersBuilder_;
 
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public java.util.List<com.appscode.api.auth.v1beta1.ConduitUser> getUsersList() {
       if (usersBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class ConduitUsersResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public int getUsersCount() {
       if (usersBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class ConduitUsersResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public com.appscode.api.auth.v1beta1.ConduitUser getUsers(int index) {
       if (usersBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class ConduitUsersResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder setUsers(
         int index, com.appscode.api.auth.v1beta1.ConduitUser value) {
@@ -666,7 +482,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder setUsers(
         int index, com.appscode.api.auth.v1beta1.ConduitUser.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder addUsers(com.appscode.api.auth.v1beta1.ConduitUser value) {
       if (usersBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder addUsers(
         int index, com.appscode.api.auth.v1beta1.ConduitUser value) {
@@ -713,7 +529,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder addUsers(
         com.appscode.api.auth.v1beta1.ConduitUser.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder addUsers(
         int index, com.appscode.api.auth.v1beta1.ConduitUser.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder addAllUsers(
         java.lang.Iterable<? extends com.appscode.api.auth.v1beta1.ConduitUser> values) {
@@ -756,12 +572,12 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder clearUsers() {
       if (usersBuilder_ == null) {
         users_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         usersBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public Builder removeUsers(int index) {
       if (usersBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class ConduitUsersResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public com.appscode.api.auth.v1beta1.ConduitUser.Builder getUsersBuilder(
         int index) {
       return getUsersFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public com.appscode.api.auth.v1beta1.ConduitUserOrBuilder getUsersOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class ConduitUsersResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.auth.v1beta1.ConduitUserOrBuilder> 
          getUsersOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class ConduitUsersResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public com.appscode.api.auth.v1beta1.ConduitUser.Builder addUsersBuilder() {
       return getUsersFieldBuilder().addBuilder(
           com.appscode.api.auth.v1beta1.ConduitUser.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public com.appscode.api.auth.v1beta1.ConduitUser.Builder addUsersBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class ConduitUsersResponse extends
           index, com.appscode.api.auth.v1beta1.ConduitUser.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.ConduitUser users = 1;</code>
      */
     public java.util.List<com.appscode.api.auth.v1beta1.ConduitUser.Builder> 
          getUsersBuilderList() {
@@ -838,7 +654,7 @@ public  final class ConduitUsersResponse extends
         usersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.auth.v1beta1.ConduitUser, com.appscode.api.auth.v1beta1.ConduitUser.Builder, com.appscode.api.auth.v1beta1.ConduitUserOrBuilder>(
                 users_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         users_ = null;

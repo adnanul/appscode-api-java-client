@@ -98,7 +98,7 @@ public  final class ResourceFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string container_name = 1;</code>
+   * <code>string container_name = 1;</code>
    */
   public java.lang.String getContainerName() {
     java.lang.Object ref = containerName_;
@@ -118,7 +118,7 @@ public  final class ResourceFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string container_name = 1;</code>
+   * <code>string container_name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getContainerNameBytes() {
@@ -141,7 +141,7 @@ public  final class ResourceFieldSelector extends
    * Required: resource to select
    * </pre>
    *
-   * <code>optional string resource = 2;</code>
+   * <code>string resource = 2;</code>
    */
   public java.lang.String getResource() {
     java.lang.Object ref = resource_;
@@ -160,7 +160,7 @@ public  final class ResourceFieldSelector extends
    * Required: resource to select
    * </pre>
    *
-   * <code>optional string resource = 2;</code>
+   * <code>string resource = 2;</code>
    */
   public com.google.protobuf.ByteString
       getResourceBytes() {
@@ -184,7 +184,7 @@ public  final class ResourceFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string divisor = 3;</code>
+   * <code>string divisor = 3;</code>
    */
   public java.lang.String getDivisor() {
     java.lang.Object ref = divisor_;
@@ -204,7 +204,7 @@ public  final class ResourceFieldSelector extends
    * +optional
    * </pre>
    *
-   * <code>optional string divisor = 3;</code>
+   * <code>string divisor = 3;</code>
    */
   public com.google.protobuf.ByteString
       getDivisorBytes() {
@@ -288,7 +288,7 @@ public  final class ResourceFieldSelector extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CONTAINER_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getContainerName().hashCode();
     hash = (37 * hash) + RESOURCE_FIELD_NUMBER;
@@ -534,7 +534,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string container_name = 1;</code>
+     * <code>string container_name = 1;</code>
      */
     public java.lang.String getContainerName() {
       java.lang.Object ref = containerName_;
@@ -554,7 +554,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string container_name = 1;</code>
+     * <code>string container_name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getContainerNameBytes() {
@@ -575,7 +575,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string container_name = 1;</code>
+     * <code>string container_name = 1;</code>
      */
     public Builder setContainerName(
         java.lang.String value) {
@@ -593,7 +593,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string container_name = 1;</code>
+     * <code>string container_name = 1;</code>
      */
     public Builder clearContainerName() {
       
@@ -607,7 +607,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string container_name = 1;</code>
+     * <code>string container_name = 1;</code>
      */
     public Builder setContainerNameBytes(
         com.google.protobuf.ByteString value) {
@@ -627,7 +627,7 @@ public  final class ResourceFieldSelector extends
      * Required: resource to select
      * </pre>
      *
-     * <code>optional string resource = 2;</code>
+     * <code>string resource = 2;</code>
      */
     public java.lang.String getResource() {
       java.lang.Object ref = resource_;
@@ -646,7 +646,7 @@ public  final class ResourceFieldSelector extends
      * Required: resource to select
      * </pre>
      *
-     * <code>optional string resource = 2;</code>
+     * <code>string resource = 2;</code>
      */
     public com.google.protobuf.ByteString
         getResourceBytes() {
@@ -666,7 +666,7 @@ public  final class ResourceFieldSelector extends
      * Required: resource to select
      * </pre>
      *
-     * <code>optional string resource = 2;</code>
+     * <code>string resource = 2;</code>
      */
     public Builder setResource(
         java.lang.String value) {
@@ -683,7 +683,7 @@ public  final class ResourceFieldSelector extends
      * Required: resource to select
      * </pre>
      *
-     * <code>optional string resource = 2;</code>
+     * <code>string resource = 2;</code>
      */
     public Builder clearResource() {
       
@@ -696,7 +696,7 @@ public  final class ResourceFieldSelector extends
      * Required: resource to select
      * </pre>
      *
-     * <code>optional string resource = 2;</code>
+     * <code>string resource = 2;</code>
      */
     public Builder setResourceBytes(
         com.google.protobuf.ByteString value) {
@@ -717,7 +717,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string divisor = 3;</code>
+     * <code>string divisor = 3;</code>
      */
     public java.lang.String getDivisor() {
       java.lang.Object ref = divisor_;
@@ -737,7 +737,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string divisor = 3;</code>
+     * <code>string divisor = 3;</code>
      */
     public com.google.protobuf.ByteString
         getDivisorBytes() {
@@ -758,7 +758,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string divisor = 3;</code>
+     * <code>string divisor = 3;</code>
      */
     public Builder setDivisor(
         java.lang.String value) {
@@ -776,7 +776,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string divisor = 3;</code>
+     * <code>string divisor = 3;</code>
      */
     public Builder clearDivisor() {
       
@@ -790,7 +790,7 @@ public  final class ResourceFieldSelector extends
      * +optional
      * </pre>
      *
-     * <code>optional string divisor = 3;</code>
+     * <code>string divisor = 3;</code>
      */
     public Builder setDivisorBytes(
         com.google.protobuf.ByteString value) {

@@ -8,15 +8,15 @@ public interface SpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   boolean hasBackend();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule getBackend();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRuleOrBuilder getBackendOrBuilder();
 

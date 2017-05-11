@@ -99,7 +99,7 @@ public  final class GitRepoVolumeSource extends
    * Repository URL
    * </pre>
    *
-   * <code>optional string repository = 1;</code>
+   * <code>string repository = 1;</code>
    */
   public java.lang.String getRepository() {
     java.lang.Object ref = repository_;
@@ -118,7 +118,7 @@ public  final class GitRepoVolumeSource extends
    * Repository URL
    * </pre>
    *
-   * <code>optional string repository = 1;</code>
+   * <code>string repository = 1;</code>
    */
   public com.google.protobuf.ByteString
       getRepositoryBytes() {
@@ -141,7 +141,7 @@ public  final class GitRepoVolumeSource extends
    * Commit hash for the specified revision.
    * </pre>
    *
-   * <code>optional string revision = 2;</code>
+   * <code>string revision = 2;</code>
    */
   public java.lang.String getRevision() {
     java.lang.Object ref = revision_;
@@ -160,7 +160,7 @@ public  final class GitRepoVolumeSource extends
    * Commit hash for the specified revision.
    * </pre>
    *
-   * <code>optional string revision = 2;</code>
+   * <code>string revision = 2;</code>
    */
   public com.google.protobuf.ByteString
       getRevisionBytes() {
@@ -186,7 +186,7 @@ public  final class GitRepoVolumeSource extends
    * the subdirectory with the given name.
    * </pre>
    *
-   * <code>optional string directory = 3;</code>
+   * <code>string directory = 3;</code>
    */
   public java.lang.String getDirectory() {
     java.lang.Object ref = directory_;
@@ -208,7 +208,7 @@ public  final class GitRepoVolumeSource extends
    * the subdirectory with the given name.
    * </pre>
    *
-   * <code>optional string directory = 3;</code>
+   * <code>string directory = 3;</code>
    */
   public com.google.protobuf.ByteString
       getDirectoryBytes() {
@@ -292,7 +292,7 @@ public  final class GitRepoVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + REPOSITORY_FIELD_NUMBER;
     hash = (53 * hash) + getRepository().hashCode();
     hash = (37 * hash) + REVISION_FIELD_NUMBER;
@@ -539,7 +539,7 @@ public  final class GitRepoVolumeSource extends
      * Repository URL
      * </pre>
      *
-     * <code>optional string repository = 1;</code>
+     * <code>string repository = 1;</code>
      */
     public java.lang.String getRepository() {
       java.lang.Object ref = repository_;
@@ -558,7 +558,7 @@ public  final class GitRepoVolumeSource extends
      * Repository URL
      * </pre>
      *
-     * <code>optional string repository = 1;</code>
+     * <code>string repository = 1;</code>
      */
     public com.google.protobuf.ByteString
         getRepositoryBytes() {
@@ -578,7 +578,7 @@ public  final class GitRepoVolumeSource extends
      * Repository URL
      * </pre>
      *
-     * <code>optional string repository = 1;</code>
+     * <code>string repository = 1;</code>
      */
     public Builder setRepository(
         java.lang.String value) {
@@ -595,7 +595,7 @@ public  final class GitRepoVolumeSource extends
      * Repository URL
      * </pre>
      *
-     * <code>optional string repository = 1;</code>
+     * <code>string repository = 1;</code>
      */
     public Builder clearRepository() {
       
@@ -608,7 +608,7 @@ public  final class GitRepoVolumeSource extends
      * Repository URL
      * </pre>
      *
-     * <code>optional string repository = 1;</code>
+     * <code>string repository = 1;</code>
      */
     public Builder setRepositoryBytes(
         com.google.protobuf.ByteString value) {
@@ -628,7 +628,7 @@ public  final class GitRepoVolumeSource extends
      * Commit hash for the specified revision.
      * </pre>
      *
-     * <code>optional string revision = 2;</code>
+     * <code>string revision = 2;</code>
      */
     public java.lang.String getRevision() {
       java.lang.Object ref = revision_;
@@ -647,7 +647,7 @@ public  final class GitRepoVolumeSource extends
      * Commit hash for the specified revision.
      * </pre>
      *
-     * <code>optional string revision = 2;</code>
+     * <code>string revision = 2;</code>
      */
     public com.google.protobuf.ByteString
         getRevisionBytes() {
@@ -667,7 +667,7 @@ public  final class GitRepoVolumeSource extends
      * Commit hash for the specified revision.
      * </pre>
      *
-     * <code>optional string revision = 2;</code>
+     * <code>string revision = 2;</code>
      */
     public Builder setRevision(
         java.lang.String value) {
@@ -684,7 +684,7 @@ public  final class GitRepoVolumeSource extends
      * Commit hash for the specified revision.
      * </pre>
      *
-     * <code>optional string revision = 2;</code>
+     * <code>string revision = 2;</code>
      */
     public Builder clearRevision() {
       
@@ -697,7 +697,7 @@ public  final class GitRepoVolumeSource extends
      * Commit hash for the specified revision.
      * </pre>
      *
-     * <code>optional string revision = 2;</code>
+     * <code>string revision = 2;</code>
      */
     public Builder setRevisionBytes(
         com.google.protobuf.ByteString value) {
@@ -720,7 +720,7 @@ public  final class GitRepoVolumeSource extends
      * the subdirectory with the given name.
      * </pre>
      *
-     * <code>optional string directory = 3;</code>
+     * <code>string directory = 3;</code>
      */
     public java.lang.String getDirectory() {
       java.lang.Object ref = directory_;
@@ -742,7 +742,7 @@ public  final class GitRepoVolumeSource extends
      * the subdirectory with the given name.
      * </pre>
      *
-     * <code>optional string directory = 3;</code>
+     * <code>string directory = 3;</code>
      */
     public com.google.protobuf.ByteString
         getDirectoryBytes() {
@@ -765,7 +765,7 @@ public  final class GitRepoVolumeSource extends
      * the subdirectory with the given name.
      * </pre>
      *
-     * <code>optional string directory = 3;</code>
+     * <code>string directory = 3;</code>
      */
     public Builder setDirectory(
         java.lang.String value) {
@@ -785,7 +785,7 @@ public  final class GitRepoVolumeSource extends
      * the subdirectory with the given name.
      * </pre>
      *
-     * <code>optional string directory = 3;</code>
+     * <code>string directory = 3;</code>
      */
     public Builder clearDirectory() {
       
@@ -801,7 +801,7 @@ public  final class GitRepoVolumeSource extends
      * the subdirectory with the given name.
      * </pre>
      *
-     * <code>optional string directory = 3;</code>
+     * <code>string directory = 3;</code>
      */
     public Builder setDirectoryBytes(
         com.google.protobuf.ByteString value) {

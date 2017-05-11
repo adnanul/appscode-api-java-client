@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/attic/v1beta1/version.proto")
-public class VersionsGrpc {
+public final class VersionsGrpc {
 
   private VersionsGrpc() {}
 
@@ -87,7 +87,7 @@ public class VersionsGrpc {
       asyncUnimplementedUnaryCall(METHOD_DESCRIBE, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_LIST,
@@ -213,7 +213,7 @@ public class VersionsGrpc {
   private static final int METHODID_LIST = 0;
   private static final int METHODID_DESCRIBE = 1;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -221,7 +221,7 @@ public class VersionsGrpc {
     private final VersionsImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(VersionsImplBase serviceImpl, int methodId) {
+    MethodHandlers(VersionsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -254,10 +254,29 @@ public class VersionsGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_LIST,
-        METHOD_DESCRIBE);
+  private static final class VersionsDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.attic.v1beta1.VersionProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (VersionsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new VersionsDescriptorSupplier())
+              .addMethod(METHOD_LIST)
+              .addMethod(METHOD_DESCRIBE)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

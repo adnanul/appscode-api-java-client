@@ -8,41 +8,41 @@ public interface NamespaceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace.Status getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.Status status = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace.StatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Namespace.NamespaceSpec spec = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Namespace.NamespaceSpecOrBuilder getSpecOrBuilder();
 }

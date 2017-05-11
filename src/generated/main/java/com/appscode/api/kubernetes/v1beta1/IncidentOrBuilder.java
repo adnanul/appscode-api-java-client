@@ -8,118 +8,118 @@ public interface IncidentOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   boolean hasKubernetesCluster();
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   com.appscode.api.dtypes.Uid getKubernetesCluster();
   /**
-   * <code>optional .appscode.dtypes.Uid kubernetes_cluster = 2;</code>
+   * <code>.appscode.dtypes.Uid kubernetes_cluster = 2;</code>
    */
   com.appscode.api.dtypes.UidOrBuilder getKubernetesClusterOrBuilder();
 
   /**
-   * <code>optional string kubernetes_namespace = 3;</code>
+   * <code>string kubernetes_namespace = 3;</code>
    */
   java.lang.String getKubernetesNamespace();
   /**
-   * <code>optional string kubernetes_namespace = 3;</code>
+   * <code>string kubernetes_namespace = 3;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesNamespaceBytes();
 
   /**
-   * <code>optional string kubernetes_object_type = 4;</code>
+   * <code>string kubernetes_object_type = 4;</code>
    */
   java.lang.String getKubernetesObjectType();
   /**
-   * <code>optional string kubernetes_object_type = 4;</code>
+   * <code>string kubernetes_object_type = 4;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesObjectTypeBytes();
 
   /**
-   * <code>optional string kubernetes_object_name = 5;</code>
+   * <code>string kubernetes_object_name = 5;</code>
    */
   java.lang.String getKubernetesObjectName();
   /**
-   * <code>optional string kubernetes_object_name = 5;</code>
+   * <code>string kubernetes_object_name = 5;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesObjectNameBytes();
 
   /**
-   * <code>optional string kubernetes_alert_name = 6;</code>
+   * <code>string kubernetes_alert_name = 6;</code>
    */
   java.lang.String getKubernetesAlertName();
   /**
-   * <code>optional string kubernetes_alert_name = 6;</code>
+   * <code>string kubernetes_alert_name = 6;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesAlertNameBytes();
 
   /**
-   * <code>optional string icinga_host = 7;</code>
+   * <code>string icinga_host = 7;</code>
    */
   java.lang.String getIcingaHost();
   /**
-   * <code>optional string icinga_host = 7;</code>
+   * <code>string icinga_host = 7;</code>
    */
   com.google.protobuf.ByteString
       getIcingaHostBytes();
 
   /**
-   * <code>optional string icinga_service = 8;</code>
+   * <code>string icinga_service = 8;</code>
    */
   java.lang.String getIcingaService();
   /**
-   * <code>optional string icinga_service = 8;</code>
+   * <code>string icinga_service = 8;</code>
    */
   com.google.protobuf.ByteString
       getIcingaServiceBytes();
 
   /**
-   * <code>optional string type = 9;</code>
+   * <code>string type = 9;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 9;</code>
+   * <code>string type = 9;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional string state = 10;</code>
+   * <code>string state = 10;</code>
    */
   java.lang.String getState();
   /**
-   * <code>optional string state = 10;</code>
+   * <code>string state = 10;</code>
    */
   com.google.protobuf.ByteString
       getStateBytes();
 
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   boolean hasUser();
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   com.appscode.api.dtypes.Uid getUser();
   /**
-   * <code>optional .appscode.dtypes.Uid user = 11;</code>
+   * <code>.appscode.dtypes.Uid user = 11;</code>
    */
   com.appscode.api.dtypes.UidOrBuilder getUserOrBuilder();
 
@@ -128,7 +128,7 @@ public interface IncidentOrBuilder extends
    * Timestamp of first reported event
    * </pre>
    *
-   * <code>optional int64 reported_at = 12;</code>
+   * <code>int64 reported_at = 12;</code>
    */
   long getReportedAt();
 
@@ -137,21 +137,21 @@ public interface IncidentOrBuilder extends
    * Timestamp of first acknowledgement
    * </pre>
    *
-   * <code>optional int64 acknowledged_at = 13;</code>
+   * <code>int64 acknowledged_at = 13;</code>
    */
   long getAcknowledgedAt();
 
   /**
-   * <code>optional int64 recovered_at = 14;</code>
+   * <code>int64 recovered_at = 14;</code>
    */
   long getRecoveredAt();
 
   /**
-   * <code>optional string icingaweb_url = 15;</code>
+   * <code>string icingaweb_url = 15;</code>
    */
   java.lang.String getIcingawebUrl();
   /**
-   * <code>optional string icingaweb_url = 15;</code>
+   * <code>string icingaweb_url = 15;</code>
    */
   com.google.protobuf.ByteString
       getIcingawebUrlBytes();

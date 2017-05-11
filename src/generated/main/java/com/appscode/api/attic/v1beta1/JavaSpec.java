@@ -89,7 +89,7 @@ public  final class JavaSpec extends
   public static final int GROUP_ID_FIELD_NUMBER = 1;
   private volatile java.lang.Object groupId_;
   /**
-   * <code>optional string group_id = 1;</code>
+   * <code>string group_id = 1;</code>
    */
   public java.lang.String getGroupId() {
     java.lang.Object ref = groupId_;
@@ -104,7 +104,7 @@ public  final class JavaSpec extends
     }
   }
   /**
-   * <code>optional string group_id = 1;</code>
+   * <code>string group_id = 1;</code>
    */
   public com.google.protobuf.ByteString
       getGroupIdBytes() {
@@ -123,7 +123,7 @@ public  final class JavaSpec extends
   public static final int ARTIFACT_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object artifactId_;
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   public java.lang.String getArtifactId() {
     java.lang.Object ref = artifactId_;
@@ -138,7 +138,7 @@ public  final class JavaSpec extends
     }
   }
   /**
-   * <code>optional string artifact_id = 2;</code>
+   * <code>string artifact_id = 2;</code>
    */
   public com.google.protobuf.ByteString
       getArtifactIdBytes() {
@@ -157,7 +157,7 @@ public  final class JavaSpec extends
   public static final int ARTIFACT_URL_FIELD_NUMBER = 3;
   private volatile java.lang.Object artifactUrl_;
   /**
-   * <code>optional string artifact_url = 3;</code>
+   * <code>string artifact_url = 3;</code>
    */
   public java.lang.String getArtifactUrl() {
     java.lang.Object ref = artifactUrl_;
@@ -172,7 +172,7 @@ public  final class JavaSpec extends
     }
   }
   /**
-   * <code>optional string artifact_url = 3;</code>
+   * <code>string artifact_url = 3;</code>
    */
   public com.google.protobuf.ByteString
       getArtifactUrlBytes() {
@@ -256,7 +256,7 @@ public  final class JavaSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + GROUP_ID_FIELD_NUMBER;
     hash = (53 * hash) + getGroupId().hashCode();
     hash = (37 * hash) + ARTIFACT_ID_FIELD_NUMBER;
@@ -493,7 +493,7 @@ public  final class JavaSpec extends
 
     private java.lang.Object groupId_ = "";
     /**
-     * <code>optional string group_id = 1;</code>
+     * <code>string group_id = 1;</code>
      */
     public java.lang.String getGroupId() {
       java.lang.Object ref = groupId_;
@@ -508,7 +508,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string group_id = 1;</code>
+     * <code>string group_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getGroupIdBytes() {
@@ -524,7 +524,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string group_id = 1;</code>
+     * <code>string group_id = 1;</code>
      */
     public Builder setGroupId(
         java.lang.String value) {
@@ -537,7 +537,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string group_id = 1;</code>
+     * <code>string group_id = 1;</code>
      */
     public Builder clearGroupId() {
       
@@ -546,7 +546,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string group_id = 1;</code>
+     * <code>string group_id = 1;</code>
      */
     public Builder setGroupIdBytes(
         com.google.protobuf.ByteString value) {
@@ -562,7 +562,7 @@ public  final class JavaSpec extends
 
     private java.lang.Object artifactId_ = "";
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public java.lang.String getArtifactId() {
       java.lang.Object ref = artifactId_;
@@ -577,7 +577,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getArtifactIdBytes() {
@@ -593,7 +593,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder setArtifactId(
         java.lang.String value) {
@@ -606,7 +606,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder clearArtifactId() {
       
@@ -615,7 +615,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_id = 2;</code>
+     * <code>string artifact_id = 2;</code>
      */
     public Builder setArtifactIdBytes(
         com.google.protobuf.ByteString value) {
@@ -631,7 +631,7 @@ public  final class JavaSpec extends
 
     private java.lang.Object artifactUrl_ = "";
     /**
-     * <code>optional string artifact_url = 3;</code>
+     * <code>string artifact_url = 3;</code>
      */
     public java.lang.String getArtifactUrl() {
       java.lang.Object ref = artifactUrl_;
@@ -646,7 +646,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string artifact_url = 3;</code>
+     * <code>string artifact_url = 3;</code>
      */
     public com.google.protobuf.ByteString
         getArtifactUrlBytes() {
@@ -662,7 +662,7 @@ public  final class JavaSpec extends
       }
     }
     /**
-     * <code>optional string artifact_url = 3;</code>
+     * <code>string artifact_url = 3;</code>
      */
     public Builder setArtifactUrl(
         java.lang.String value) {
@@ -675,7 +675,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_url = 3;</code>
+     * <code>string artifact_url = 3;</code>
      */
     public Builder clearArtifactUrl() {
       
@@ -684,7 +684,7 @@ public  final class JavaSpec extends
       return this;
     }
     /**
-     * <code>optional string artifact_url = 3;</code>
+     * <code>string artifact_url = 3;</code>
      */
     public Builder setArtifactUrlBytes(
         com.google.protobuf.ByteString value) {

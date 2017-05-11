@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/attic/v1beta1/artifact.proto")
-public class ArtifactsGrpc {
+public final class ArtifactsGrpc {
 
   private ArtifactsGrpc() {}
 
@@ -87,7 +87,7 @@ public class ArtifactsGrpc {
       asyncUnimplementedUnaryCall(METHOD_LIST, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_SEARCH,
@@ -213,7 +213,7 @@ public class ArtifactsGrpc {
   private static final int METHODID_SEARCH = 0;
   private static final int METHODID_LIST = 1;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -221,7 +221,7 @@ public class ArtifactsGrpc {
     private final ArtifactsImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(ArtifactsImplBase serviceImpl, int methodId) {
+    MethodHandlers(ArtifactsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -254,10 +254,29 @@ public class ArtifactsGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_SEARCH,
-        METHOD_LIST);
+  private static final class ArtifactsDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.attic.v1beta1.ArtifactProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (ArtifactsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new ArtifactsDescriptorSupplier())
+              .addMethod(METHOD_SEARCH)
+              .addMethod(METHOD_LIST)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

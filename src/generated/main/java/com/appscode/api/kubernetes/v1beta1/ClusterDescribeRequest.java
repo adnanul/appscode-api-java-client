@@ -75,7 +75,7 @@ public  final class ClusterDescribeRequest extends
   public static final int UID_FIELD_NUMBER = 1;
   private volatile java.lang.Object uid_;
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   public java.lang.String getUid() {
     java.lang.Object ref = uid_;
@@ -90,7 +90,7 @@ public  final class ClusterDescribeRequest extends
     }
   }
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getUidBytes() {
@@ -158,7 +158,7 @@ public  final class ClusterDescribeRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + UID_FIELD_NUMBER;
     hash = (53 * hash) + getUid().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -377,7 +377,7 @@ public  final class ClusterDescribeRequest extends
 
     private java.lang.Object uid_ = "";
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public java.lang.String getUid() {
       java.lang.Object ref = uid_;
@@ -392,7 +392,7 @@ public  final class ClusterDescribeRequest extends
       }
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getUidBytes() {
@@ -408,7 +408,7 @@ public  final class ClusterDescribeRequest extends
       }
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder setUid(
         java.lang.String value) {
@@ -421,7 +421,7 @@ public  final class ClusterDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder clearUid() {
       
@@ -430,7 +430,7 @@ public  final class ClusterDescribeRequest extends
       return this;
     }
     /**
-     * <code>optional string uid = 1;</code>
+     * <code>string uid = 1;</code>
      */
     public Builder setUidBytes(
         com.google.protobuf.ByteString value) {

@@ -8,38 +8,25 @@ public interface IncidentListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   java.util.List<com.appscode.api.kubernetes.v1beta1.Incident> 
       getIncidentsList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.Incident getIncidents(int index);
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   int getIncidentsCount();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   java.util.List<? extends com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder> 
       getIncidentsOrBuilderList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.Incident incidents = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.IncidentOrBuilder getIncidentsOrBuilder(
       int index);

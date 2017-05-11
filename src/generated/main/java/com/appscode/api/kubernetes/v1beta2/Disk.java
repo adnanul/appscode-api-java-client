@@ -176,7 +176,7 @@ public  final class Disk extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -191,7 +191,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -210,7 +210,7 @@ public  final class Disk extends
   public static final int ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object id_;
   /**
-   * <code>optional string id = 2;</code>
+   * <code>string id = 2;</code>
    */
   public java.lang.String getId() {
     java.lang.Object ref = id_;
@@ -225,7 +225,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string id = 2;</code>
+   * <code>string id = 2;</code>
    */
   public com.google.protobuf.ByteString
       getIdBytes() {
@@ -244,7 +244,7 @@ public  final class Disk extends
   public static final int PROVIDER_FIELD_NUMBER = 3;
   private volatile java.lang.Object provider_;
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public java.lang.String getProvider() {
     java.lang.Object ref = provider_;
@@ -259,7 +259,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string provider = 3;</code>
+   * <code>string provider = 3;</code>
    */
   public com.google.protobuf.ByteString
       getProviderBytes() {
@@ -278,7 +278,7 @@ public  final class Disk extends
   public static final int SIZE_GB_FIELD_NUMBER = 4;
   private long sizeGb_;
   /**
-   * <code>optional int64 size_gb = 4;</code>
+   * <code>int64 size_gb = 4;</code>
    */
   public long getSizeGb() {
     return sizeGb_;
@@ -287,7 +287,7 @@ public  final class Disk extends
   public static final int TYPE_FIELD_NUMBER = 5;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -302,7 +302,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -321,7 +321,7 @@ public  final class Disk extends
   public static final int ZONE_FIELD_NUMBER = 6;
   private volatile java.lang.Object zone_;
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   public java.lang.String getZone() {
     java.lang.Object ref = zone_;
@@ -336,7 +336,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string zone = 6;</code>
+   * <code>string zone = 6;</code>
    */
   public com.google.protobuf.ByteString
       getZoneBytes() {
@@ -355,7 +355,7 @@ public  final class Disk extends
   public static final int STATUS_FIELD_NUMBER = 7;
   private volatile java.lang.Object status_;
   /**
-   * <code>optional string status = 7;</code>
+   * <code>string status = 7;</code>
    */
   public java.lang.String getStatus() {
     java.lang.Object ref = status_;
@@ -370,7 +370,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string status = 7;</code>
+   * <code>string status = 7;</code>
    */
   public com.google.protobuf.ByteString
       getStatusBytes() {
@@ -418,7 +418,7 @@ public  final class Disk extends
   public static final int KIND_FIELD_NUMBER = 9;
   private volatile java.lang.Object kind_;
   /**
-   * <code>optional string kind = 9;</code>
+   * <code>string kind = 9;</code>
    */
   public java.lang.String getKind() {
     java.lang.Object ref = kind_;
@@ -433,7 +433,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string kind = 9;</code>
+   * <code>string kind = 9;</code>
    */
   public com.google.protobuf.ByteString
       getKindBytes() {
@@ -452,7 +452,7 @@ public  final class Disk extends
   public static final int ENDPOINT_FIELD_NUMBER = 10;
   private volatile java.lang.Object endpoint_;
   /**
-   * <code>optional string endpoint = 10;</code>
+   * <code>string endpoint = 10;</code>
    */
   public java.lang.String getEndpoint() {
     java.lang.Object ref = endpoint_;
@@ -467,7 +467,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>optional string endpoint = 10;</code>
+   * <code>string endpoint = 10;</code>
    */
   public com.google.protobuf.ByteString
       getEndpointBytes() {
@@ -486,7 +486,7 @@ public  final class Disk extends
   public static final int IOPS_FIELD_NUMBER = 11;
   private long iops_;
   /**
-   * <code>optional int64 iops = 11;</code>
+   * <code>int64 iops = 11;</code>
    */
   public long getIops() {
     return iops_;
@@ -495,19 +495,19 @@ public  final class Disk extends
   public static final int PERSISTENT_VOLUME_FIELD_NUMBER = 12;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolume persistentVolume_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   public boolean hasPersistentVolume() {
     return persistentVolume_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
     return persistentVolume_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolume.getDefaultInstance() : persistentVolume_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
     return getPersistentVolume();
@@ -516,19 +516,19 @@ public  final class Disk extends
   public static final int PERSISTENT_VOLUME_CLAIM_FIELD_NUMBER = 13;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim persistentVolumeClaim_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   public boolean hasPersistentVolumeClaim() {
     return persistentVolumeClaim_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
     return persistentVolumeClaim_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.getDefaultInstance() : persistentVolumeClaim_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
     return getPersistentVolumeClaim();
@@ -697,7 +697,7 @@ public  final class Disk extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
@@ -1058,7 +1058,7 @@ public  final class Disk extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1073,7 +1073,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1089,7 +1089,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1102,7 +1102,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -1111,7 +1111,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1127,7 +1127,7 @@ public  final class Disk extends
 
     private java.lang.Object id_ = "";
     /**
-     * <code>optional string id = 2;</code>
+     * <code>string id = 2;</code>
      */
     public java.lang.String getId() {
       java.lang.Object ref = id_;
@@ -1142,7 +1142,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string id = 2;</code>
+     * <code>string id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getIdBytes() {
@@ -1158,7 +1158,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string id = 2;</code>
+     * <code>string id = 2;</code>
      */
     public Builder setId(
         java.lang.String value) {
@@ -1171,7 +1171,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string id = 2;</code>
+     * <code>string id = 2;</code>
      */
     public Builder clearId() {
       
@@ -1180,7 +1180,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string id = 2;</code>
+     * <code>string id = 2;</code>
      */
     public Builder setIdBytes(
         com.google.protobuf.ByteString value) {
@@ -1196,7 +1196,7 @@ public  final class Disk extends
 
     private java.lang.Object provider_ = "";
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public java.lang.String getProvider() {
       java.lang.Object ref = provider_;
@@ -1211,7 +1211,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public com.google.protobuf.ByteString
         getProviderBytes() {
@@ -1227,7 +1227,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProvider(
         java.lang.String value) {
@@ -1240,7 +1240,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder clearProvider() {
       
@@ -1249,7 +1249,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string provider = 3;</code>
+     * <code>string provider = 3;</code>
      */
     public Builder setProviderBytes(
         com.google.protobuf.ByteString value) {
@@ -1265,13 +1265,13 @@ public  final class Disk extends
 
     private long sizeGb_ ;
     /**
-     * <code>optional int64 size_gb = 4;</code>
+     * <code>int64 size_gb = 4;</code>
      */
     public long getSizeGb() {
       return sizeGb_;
     }
     /**
-     * <code>optional int64 size_gb = 4;</code>
+     * <code>int64 size_gb = 4;</code>
      */
     public Builder setSizeGb(long value) {
       
@@ -1280,7 +1280,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional int64 size_gb = 4;</code>
+     * <code>int64 size_gb = 4;</code>
      */
     public Builder clearSizeGb() {
       
@@ -1291,7 +1291,7 @@ public  final class Disk extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1306,7 +1306,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1322,7 +1322,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -1335,7 +1335,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder clearType() {
       
@@ -1344,7 +1344,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1360,7 +1360,7 @@ public  final class Disk extends
 
     private java.lang.Object zone_ = "";
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public java.lang.String getZone() {
       java.lang.Object ref = zone_;
@@ -1375,7 +1375,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public com.google.protobuf.ByteString
         getZoneBytes() {
@@ -1391,7 +1391,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder setZone(
         java.lang.String value) {
@@ -1404,7 +1404,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder clearZone() {
       
@@ -1413,7 +1413,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string zone = 6;</code>
+     * <code>string zone = 6;</code>
      */
     public Builder setZoneBytes(
         com.google.protobuf.ByteString value) {
@@ -1429,7 +1429,7 @@ public  final class Disk extends
 
     private java.lang.Object status_ = "";
     /**
-     * <code>optional string status = 7;</code>
+     * <code>string status = 7;</code>
      */
     public java.lang.String getStatus() {
       java.lang.Object ref = status_;
@@ -1444,7 +1444,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string status = 7;</code>
+     * <code>string status = 7;</code>
      */
     public com.google.protobuf.ByteString
         getStatusBytes() {
@@ -1460,7 +1460,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string status = 7;</code>
+     * <code>string status = 7;</code>
      */
     public Builder setStatus(
         java.lang.String value) {
@@ -1473,7 +1473,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string status = 7;</code>
+     * <code>string status = 7;</code>
      */
     public Builder clearStatus() {
       
@@ -1482,7 +1482,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string status = 7;</code>
+     * <code>string status = 7;</code>
      */
     public Builder setStatusBytes(
         com.google.protobuf.ByteString value) {
@@ -1592,7 +1592,7 @@ public  final class Disk extends
 
     private java.lang.Object kind_ = "";
     /**
-     * <code>optional string kind = 9;</code>
+     * <code>string kind = 9;</code>
      */
     public java.lang.String getKind() {
       java.lang.Object ref = kind_;
@@ -1607,7 +1607,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string kind = 9;</code>
+     * <code>string kind = 9;</code>
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
@@ -1623,7 +1623,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string kind = 9;</code>
+     * <code>string kind = 9;</code>
      */
     public Builder setKind(
         java.lang.String value) {
@@ -1636,7 +1636,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string kind = 9;</code>
+     * <code>string kind = 9;</code>
      */
     public Builder clearKind() {
       
@@ -1645,7 +1645,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string kind = 9;</code>
+     * <code>string kind = 9;</code>
      */
     public Builder setKindBytes(
         com.google.protobuf.ByteString value) {
@@ -1661,7 +1661,7 @@ public  final class Disk extends
 
     private java.lang.Object endpoint_ = "";
     /**
-     * <code>optional string endpoint = 10;</code>
+     * <code>string endpoint = 10;</code>
      */
     public java.lang.String getEndpoint() {
       java.lang.Object ref = endpoint_;
@@ -1676,7 +1676,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string endpoint = 10;</code>
+     * <code>string endpoint = 10;</code>
      */
     public com.google.protobuf.ByteString
         getEndpointBytes() {
@@ -1692,7 +1692,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional string endpoint = 10;</code>
+     * <code>string endpoint = 10;</code>
      */
     public Builder setEndpoint(
         java.lang.String value) {
@@ -1705,7 +1705,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string endpoint = 10;</code>
+     * <code>string endpoint = 10;</code>
      */
     public Builder clearEndpoint() {
       
@@ -1714,7 +1714,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional string endpoint = 10;</code>
+     * <code>string endpoint = 10;</code>
      */
     public Builder setEndpointBytes(
         com.google.protobuf.ByteString value) {
@@ -1730,13 +1730,13 @@ public  final class Disk extends
 
     private long iops_ ;
     /**
-     * <code>optional int64 iops = 11;</code>
+     * <code>int64 iops = 11;</code>
      */
     public long getIops() {
       return iops_;
     }
     /**
-     * <code>optional int64 iops = 11;</code>
+     * <code>int64 iops = 11;</code>
      */
     public Builder setIops(long value) {
       
@@ -1745,7 +1745,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional int64 iops = 11;</code>
+     * <code>int64 iops = 11;</code>
      */
     public Builder clearIops() {
       
@@ -1758,13 +1758,13 @@ public  final class Disk extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> persistentVolumeBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public boolean hasPersistentVolume() {
       return persistentVolumeBuilder_ != null || persistentVolume_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -1774,7 +1774,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public Builder setPersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -1790,7 +1790,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public Builder setPersistentVolume(
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder builderForValue) {
@@ -1804,7 +1804,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public Builder mergePersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -1822,7 +1822,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public Builder clearPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -1836,7 +1836,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder getPersistentVolumeBuilder() {
       
@@ -1844,7 +1844,7 @@ public  final class Disk extends
       return getPersistentVolumeFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
       if (persistentVolumeBuilder_ != null) {
@@ -1855,7 +1855,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> 
@@ -1875,13 +1875,13 @@ public  final class Disk extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> persistentVolumeClaimBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public boolean hasPersistentVolumeClaim() {
       return persistentVolumeClaimBuilder_ != null || persistentVolumeClaim_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1891,7 +1891,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public Builder setPersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1907,7 +1907,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public Builder setPersistentVolumeClaim(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder builderForValue) {
@@ -1921,7 +1921,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public Builder mergePersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1939,7 +1939,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public Builder clearPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1953,7 +1953,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder getPersistentVolumeClaimBuilder() {
       
@@ -1961,7 +1961,7 @@ public  final class Disk extends
       return getPersistentVolumeClaimFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
       if (persistentVolumeClaimBuilder_ != null) {
@@ -1972,7 +1972,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> 

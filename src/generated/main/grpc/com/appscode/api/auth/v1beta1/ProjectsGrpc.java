@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/auth/v1beta1/project.proto")
-public class ProjectsGrpc {
+public final class ProjectsGrpc {
 
   private ProjectsGrpc() {}
 
@@ -87,7 +87,7 @@ public class ProjectsGrpc {
       asyncUnimplementedUnaryCall(METHOD_MEMBERS, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_LIST,
@@ -213,7 +213,7 @@ public class ProjectsGrpc {
   private static final int METHODID_LIST = 0;
   private static final int METHODID_MEMBERS = 1;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -221,7 +221,7 @@ public class ProjectsGrpc {
     private final ProjectsImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(ProjectsImplBase serviceImpl, int methodId) {
+    MethodHandlers(ProjectsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -254,10 +254,29 @@ public class ProjectsGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_LIST,
-        METHOD_MEMBERS);
+  private static final class ProjectsDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.auth.v1beta1.ProjectProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (ProjectsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new ProjectsDescriptorSupplier())
+              .addMethod(METHOD_LIST)
+              .addMethod(METHOD_MEMBERS)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

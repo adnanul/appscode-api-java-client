@@ -90,21 +90,21 @@ public interface PodSpecOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   java.lang.String getServiceAccountName();
   /**
-   * <code>optional string service_account_name = 4;</code>
+   * <code>string service_account_name = 4;</code>
    */
   com.google.protobuf.ByteString
       getServiceAccountNameBytes();
 
   /**
-   * <code>optional string node_name = 5;</code>
+   * <code>string node_name = 5;</code>
    */
   java.lang.String getNodeName();
   /**
-   * <code>optional string node_name = 5;</code>
+   * <code>string node_name = 5;</code>
    */
   com.google.protobuf.ByteString
       getNodeNameBytes();

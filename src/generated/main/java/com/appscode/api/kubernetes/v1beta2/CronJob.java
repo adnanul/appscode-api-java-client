@@ -109,45 +109,45 @@ public  final class CronJob extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     java.lang.String getSchedule();
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     com.google.protobuf.ByteString
         getScheduleBytes();
 
     /**
-     * <code>optional int64 starting_deadline_seconds = 2;</code>
+     * <code>int64 starting_deadline_seconds = 2;</code>
      */
     long getStartingDeadlineSeconds();
 
     /**
-     * <code>optional string concurrency_policy = 3;</code>
+     * <code>string concurrency_policy = 3;</code>
      */
     java.lang.String getConcurrencyPolicy();
     /**
-     * <code>optional string concurrency_policy = 3;</code>
+     * <code>string concurrency_policy = 3;</code>
      */
     com.google.protobuf.ByteString
         getConcurrencyPolicyBytes();
 
     /**
-     * <code>optional bool suspend = 4;</code>
+     * <code>bool suspend = 4;</code>
      */
     boolean getSuspend();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     boolean hasTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.JobSpec getTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getTemplateOrBuilder();
   }
@@ -255,7 +255,7 @@ public  final class CronJob extends
     public static final int SCHEDULE_FIELD_NUMBER = 1;
     private volatile java.lang.Object schedule_;
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     public java.lang.String getSchedule() {
       java.lang.Object ref = schedule_;
@@ -270,7 +270,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional string schedule = 1;</code>
+     * <code>string schedule = 1;</code>
      */
     public com.google.protobuf.ByteString
         getScheduleBytes() {
@@ -289,7 +289,7 @@ public  final class CronJob extends
     public static final int STARTING_DEADLINE_SECONDS_FIELD_NUMBER = 2;
     private long startingDeadlineSeconds_;
     /**
-     * <code>optional int64 starting_deadline_seconds = 2;</code>
+     * <code>int64 starting_deadline_seconds = 2;</code>
      */
     public long getStartingDeadlineSeconds() {
       return startingDeadlineSeconds_;
@@ -298,7 +298,7 @@ public  final class CronJob extends
     public static final int CONCURRENCY_POLICY_FIELD_NUMBER = 3;
     private volatile java.lang.Object concurrencyPolicy_;
     /**
-     * <code>optional string concurrency_policy = 3;</code>
+     * <code>string concurrency_policy = 3;</code>
      */
     public java.lang.String getConcurrencyPolicy() {
       java.lang.Object ref = concurrencyPolicy_;
@@ -313,7 +313,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional string concurrency_policy = 3;</code>
+     * <code>string concurrency_policy = 3;</code>
      */
     public com.google.protobuf.ByteString
         getConcurrencyPolicyBytes() {
@@ -332,7 +332,7 @@ public  final class CronJob extends
     public static final int SUSPEND_FIELD_NUMBER = 4;
     private boolean suspend_;
     /**
-     * <code>optional bool suspend = 4;</code>
+     * <code>bool suspend = 4;</code>
      */
     public boolean getSuspend() {
       return suspend_;
@@ -341,19 +341,19 @@ public  final class CronJob extends
     public static final int TEMPLATE_FIELD_NUMBER = 5;
     private com.appscode.api.kubernetes.v1beta2.JobSpec template_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     public boolean hasTemplate() {
       return template_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobSpec getTemplate() {
       return template_ == null ? com.appscode.api.kubernetes.v1beta2.JobSpec.getDefaultInstance() : template_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getTemplateOrBuilder() {
       return getTemplate();
@@ -449,7 +449,7 @@ public  final class CronJob extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + SCHEDULE_FIELD_NUMBER;
       hash = (53 * hash) + getSchedule().hashCode();
       hash = (37 * hash) + STARTING_DEADLINE_SECONDS_FIELD_NUMBER;
@@ -713,7 +713,7 @@ public  final class CronJob extends
 
       private java.lang.Object schedule_ = "";
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public java.lang.String getSchedule() {
         java.lang.Object ref = schedule_;
@@ -728,7 +728,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public com.google.protobuf.ByteString
           getScheduleBytes() {
@@ -744,7 +744,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder setSchedule(
           java.lang.String value) {
@@ -757,7 +757,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder clearSchedule() {
         
@@ -766,7 +766,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional string schedule = 1;</code>
+       * <code>string schedule = 1;</code>
        */
       public Builder setScheduleBytes(
           com.google.protobuf.ByteString value) {
@@ -782,13 +782,13 @@ public  final class CronJob extends
 
       private long startingDeadlineSeconds_ ;
       /**
-       * <code>optional int64 starting_deadline_seconds = 2;</code>
+       * <code>int64 starting_deadline_seconds = 2;</code>
        */
       public long getStartingDeadlineSeconds() {
         return startingDeadlineSeconds_;
       }
       /**
-       * <code>optional int64 starting_deadline_seconds = 2;</code>
+       * <code>int64 starting_deadline_seconds = 2;</code>
        */
       public Builder setStartingDeadlineSeconds(long value) {
         
@@ -797,7 +797,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional int64 starting_deadline_seconds = 2;</code>
+       * <code>int64 starting_deadline_seconds = 2;</code>
        */
       public Builder clearStartingDeadlineSeconds() {
         
@@ -808,7 +808,7 @@ public  final class CronJob extends
 
       private java.lang.Object concurrencyPolicy_ = "";
       /**
-       * <code>optional string concurrency_policy = 3;</code>
+       * <code>string concurrency_policy = 3;</code>
        */
       public java.lang.String getConcurrencyPolicy() {
         java.lang.Object ref = concurrencyPolicy_;
@@ -823,7 +823,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional string concurrency_policy = 3;</code>
+       * <code>string concurrency_policy = 3;</code>
        */
       public com.google.protobuf.ByteString
           getConcurrencyPolicyBytes() {
@@ -839,7 +839,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional string concurrency_policy = 3;</code>
+       * <code>string concurrency_policy = 3;</code>
        */
       public Builder setConcurrencyPolicy(
           java.lang.String value) {
@@ -852,7 +852,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional string concurrency_policy = 3;</code>
+       * <code>string concurrency_policy = 3;</code>
        */
       public Builder clearConcurrencyPolicy() {
         
@@ -861,7 +861,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional string concurrency_policy = 3;</code>
+       * <code>string concurrency_policy = 3;</code>
        */
       public Builder setConcurrencyPolicyBytes(
           com.google.protobuf.ByteString value) {
@@ -877,13 +877,13 @@ public  final class CronJob extends
 
       private boolean suspend_ ;
       /**
-       * <code>optional bool suspend = 4;</code>
+       * <code>bool suspend = 4;</code>
        */
       public boolean getSuspend() {
         return suspend_;
       }
       /**
-       * <code>optional bool suspend = 4;</code>
+       * <code>bool suspend = 4;</code>
        */
       public Builder setSuspend(boolean value) {
         
@@ -892,7 +892,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional bool suspend = 4;</code>
+       * <code>bool suspend = 4;</code>
        */
       public Builder clearSuspend() {
         
@@ -905,13 +905,13 @@ public  final class CronJob extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> templateBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public boolean hasTemplate() {
         return templateBuilder_ != null || template_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.JobSpec getTemplate() {
         if (templateBuilder_ == null) {
@@ -921,7 +921,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public Builder setTemplate(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
         if (templateBuilder_ == null) {
@@ -937,7 +937,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public Builder setTemplate(
           com.appscode.api.kubernetes.v1beta2.JobSpec.Builder builderForValue) {
@@ -951,7 +951,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public Builder mergeTemplate(com.appscode.api.kubernetes.v1beta2.JobSpec value) {
         if (templateBuilder_ == null) {
@@ -969,7 +969,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public Builder clearTemplate() {
         if (templateBuilder_ == null) {
@@ -983,7 +983,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.JobSpec.Builder getTemplateBuilder() {
         
@@ -991,7 +991,7 @@ public  final class CronJob extends
         return getTemplateFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder getTemplateOrBuilder() {
         if (templateBuilder_ != null) {
@@ -1002,7 +1002,7 @@ public  final class CronJob extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
+       * <code>.appscode.kubernetes.v1beta2.JobSpec template = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.JobSpec, com.appscode.api.kubernetes.v1beta2.JobSpec.Builder, com.appscode.api.kubernetes.v1beta2.JobSpecOrBuilder> 
@@ -1095,7 +1095,7 @@ public  final class CronJob extends
         int index);
 
     /**
-     * <code>optional int64 last_schedule_time = 2;</code>
+     * <code>int64 last_schedule_time = 2;</code>
      */
     long getLastScheduleTime();
   }
@@ -1219,7 +1219,7 @@ public  final class CronJob extends
     public static final int LAST_SCHEDULE_TIME_FIELD_NUMBER = 2;
     private long lastScheduleTime_;
     /**
-     * <code>optional int64 last_schedule_time = 2;</code>
+     * <code>int64 last_schedule_time = 2;</code>
      */
     public long getLastScheduleTime() {
       return lastScheduleTime_;
@@ -1287,7 +1287,7 @@ public  final class CronJob extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (getActiveCount() > 0) {
         hash = (37 * hash) + ACTIVE_FIELD_NUMBER;
         hash = (53 * hash) + getActiveList().hashCode();
@@ -1796,13 +1796,13 @@ public  final class CronJob extends
 
       private long lastScheduleTime_ ;
       /**
-       * <code>optional int64 last_schedule_time = 2;</code>
+       * <code>int64 last_schedule_time = 2;</code>
        */
       public long getLastScheduleTime() {
         return lastScheduleTime_;
       }
       /**
-       * <code>optional int64 last_schedule_time = 2;</code>
+       * <code>int64 last_schedule_time = 2;</code>
        */
       public Builder setLastScheduleTime(long value) {
         
@@ -1811,7 +1811,7 @@ public  final class CronJob extends
         return this;
       }
       /**
-       * <code>optional int64 last_schedule_time = 2;</code>
+       * <code>int64 last_schedule_time = 2;</code>
        */
       public Builder clearLastScheduleTime() {
         
@@ -1871,19 +1871,19 @@ public  final class CronJob extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1892,19 +1892,19 @@ public  final class CronJob extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.CronJob.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1913,19 +1913,19 @@ public  final class CronJob extends
   public static final int STATUS_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.CronJob.Status status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJob.Status getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.CronJob.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.CronJob.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -2011,7 +2011,7 @@ public  final class CronJob extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -2277,13 +2277,13 @@ public  final class CronJob extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -2293,7 +2293,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2309,7 +2309,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -2323,7 +2323,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2341,7 +2341,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -2355,7 +2355,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -2363,7 +2363,7 @@ public  final class CronJob extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -2374,7 +2374,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -2394,13 +2394,13 @@ public  final class CronJob extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -2410,7 +2410,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
       if (specBuilder_ == null) {
@@ -2426,7 +2426,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder builderForValue) {
@@ -2440,7 +2440,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.CronJob.Spec value) {
       if (specBuilder_ == null) {
@@ -2458,7 +2458,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2472,7 +2472,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder getSpecBuilder() {
       
@@ -2480,7 +2480,7 @@ public  final class CronJob extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -2491,7 +2491,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob.Spec, com.appscode.api.kubernetes.v1beta2.CronJob.Spec.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.SpecOrBuilder> 
@@ -2511,13 +2511,13 @@ public  final class CronJob extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob.Status, com.appscode.api.kubernetes.v1beta2.CronJob.Status.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.Status getStatus() {
       if (statusBuilder_ == null) {
@@ -2527,7 +2527,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.CronJob.Status value) {
       if (statusBuilder_ == null) {
@@ -2543,7 +2543,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.CronJob.Status.Builder builderForValue) {
@@ -2557,7 +2557,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.CronJob.Status value) {
       if (statusBuilder_ == null) {
@@ -2575,7 +2575,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2589,7 +2589,7 @@ public  final class CronJob extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.Status.Builder getStatusBuilder() {
       
@@ -2597,7 +2597,7 @@ public  final class CronJob extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.CronJob.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -2608,7 +2608,7 @@ public  final class CronJob extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.CronJob.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.CronJob.Status, com.appscode.api.kubernetes.v1beta2.CronJob.Status.Builder, com.appscode.api.kubernetes.v1beta2.CronJob.StatusOrBuilder> 

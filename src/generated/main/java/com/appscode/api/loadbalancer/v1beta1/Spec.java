@@ -95,19 +95,19 @@ public  final class Spec extends
   public static final int BACKEND_FIELD_NUMBER = 1;
   private com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule backend_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   public boolean hasBackend() {
     return backend_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule getBackend() {
     return backend_ == null ? com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule.getDefaultInstance() : backend_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+   * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRuleOrBuilder getBackendOrBuilder() {
     return getBackend();
@@ -213,7 +213,7 @@ public  final class Spec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasBackend()) {
       hash = (37 * hash) + BACKEND_FIELD_NUMBER;
       hash = (53 * hash) + getBackend().hashCode();
@@ -493,13 +493,13 @@ public  final class Spec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule, com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule.Builder, com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRuleOrBuilder> backendBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public boolean hasBackend() {
       return backendBuilder_ != null || backend_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule getBackend() {
       if (backendBuilder_ == null) {
@@ -509,7 +509,7 @@ public  final class Spec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public Builder setBackend(com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule value) {
       if (backendBuilder_ == null) {
@@ -525,7 +525,7 @@ public  final class Spec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public Builder setBackend(
         com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule.Builder builderForValue) {
@@ -539,7 +539,7 @@ public  final class Spec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public Builder mergeBackend(com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule value) {
       if (backendBuilder_ == null) {
@@ -557,7 +557,7 @@ public  final class Spec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public Builder clearBackend() {
       if (backendBuilder_ == null) {
@@ -571,7 +571,7 @@ public  final class Spec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule.Builder getBackendBuilder() {
       
@@ -579,7 +579,7 @@ public  final class Spec extends
       return getBackendFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRuleOrBuilder getBackendOrBuilder() {
       if (backendBuilder_ != null) {
@@ -590,7 +590,7 @@ public  final class Spec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
+     * <code>.appscode.kubernetes.v1beta1.HTTPLoadBalancerRule backend = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule, com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRule.Builder, com.appscode.api.loadbalancer.v1beta1.HTTPLoadBalancerRuleOrBuilder> 

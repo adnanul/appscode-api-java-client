@@ -52,7 +52,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string image = 2;</code>
+   * <code>string image = 2;</code>
    */
   java.lang.String getImage();
   /**
@@ -61,7 +61,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string image = 2;</code>
+   * <code>string image = 2;</code>
    */
   com.google.protobuf.ByteString
       getImageBytes();
@@ -75,7 +75,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   java.lang.String getFsType();
   /**
@@ -87,7 +87,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * TODO: how do we prevent errors in the filesystem from compromising the machine
    * </pre>
    *
-   * <code>optional string fsType = 3;</code>
+   * <code>string fsType = 3;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -99,7 +99,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it.
    * </pre>
    *
-   * <code>optional string pool = 4;</code>
+   * <code>string pool = 4;</code>
    */
   java.lang.String getPool();
   /**
@@ -109,7 +109,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it.
    * </pre>
    *
-   * <code>optional string pool = 4;</code>
+   * <code>string pool = 4;</code>
    */
   com.google.protobuf.ByteString
       getPoolBytes();
@@ -121,7 +121,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string user = 5;</code>
+   * <code>string user = 5;</code>
    */
   java.lang.String getUser();
   /**
@@ -131,7 +131,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string user = 5;</code>
+   * <code>string user = 5;</code>
    */
   com.google.protobuf.ByteString
       getUserBytes();
@@ -143,7 +143,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string keyring = 6;</code>
+   * <code>string keyring = 6;</code>
    */
   java.lang.String getKeyring();
   /**
@@ -153,7 +153,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional string keyring = 6;</code>
+   * <code>string keyring = 6;</code>
    */
   com.google.protobuf.ByteString
       getKeyringBytes();
@@ -166,7 +166,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
    */
   boolean hasSecretRef();
   /**
@@ -177,7 +177,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReference getSecretRef();
   /**
@@ -188,7 +188,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 7;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getSecretRefOrBuilder();
 
@@ -199,7 +199,7 @@ public interface RBDVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/rbd/README.md#how-to-use-it
    * </pre>
    *
-   * <code>optional bool readOnly = 8;</code>
+   * <code>bool readOnly = 8;</code>
    */
   boolean getReadOnly();
 }

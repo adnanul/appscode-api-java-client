@@ -8,21 +8,21 @@ public interface ErrorDetailsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string requested_resource = 1;</code>
+   * <code>string requested_resource = 1;</code>
    */
   java.lang.String getRequestedResource();
   /**
-   * <code>optional string requested_resource = 1;</code>
+   * <code>string requested_resource = 1;</code>
    */
   com.google.protobuf.ByteString
       getRequestedResourceBytes();
 
   /**
-   * <code>optional string stacktrace = 2;</code>
+   * <code>string stacktrace = 2;</code>
    */
   java.lang.String getStacktrace();
   /**
-   * <code>optional string stacktrace = 2;</code>
+   * <code>string stacktrace = 2;</code>
    */
   com.google.protobuf.ByteString
       getStacktraceBytes();

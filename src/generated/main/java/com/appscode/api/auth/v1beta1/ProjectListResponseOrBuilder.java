@@ -8,39 +8,26 @@ public interface ProjectListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
   java.util.List<com.appscode.api.auth.v1beta1.Project> 
-      getProjetsList();
+      getProjectsList();
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  com.appscode.api.auth.v1beta1.Project getProjets(int index);
+  com.appscode.api.auth.v1beta1.Project getProjects(int index);
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  int getProjetsCount();
+  int getProjectsCount();
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
   java.util.List<? extends com.appscode.api.auth.v1beta1.ProjectOrBuilder> 
-      getProjetsOrBuilderList();
+      getProjectsOrBuilderList();
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetsOrBuilder(
+  com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectsOrBuilder(
       int index);
 }

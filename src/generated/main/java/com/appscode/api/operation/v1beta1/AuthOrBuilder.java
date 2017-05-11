@@ -8,41 +8,41 @@ public interface AuthOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   java.lang.String getUsername();
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   com.google.protobuf.ByteString
       getUsernameBytes();
 
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>string secret = 3;</code>
    */
   java.lang.String getSecret();
   /**
-   * <code>optional string secret = 3;</code>
+   * <code>string secret = 3;</code>
    */
   com.google.protobuf.ByteString
       getSecretBytes();
 
   /**
-   * <code>optional string auth_type = 4;</code>
+   * <code>string auth_type = 4;</code>
    */
   java.lang.String getAuthType();
   /**
-   * <code>optional string auth_type = 4;</code>
+   * <code>string auth_type = 4;</code>
    */
   com.google.protobuf.ByteString
       getAuthTypeBytes();

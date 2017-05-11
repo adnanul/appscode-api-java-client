@@ -142,7 +142,7 @@ public  final class SecretEditRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -157,7 +157,7 @@ public  final class SecretEditRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -176,7 +176,7 @@ public  final class SecretEditRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 2;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -191,7 +191,7 @@ public  final class SecretEditRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -210,7 +210,7 @@ public  final class SecretEditRequest extends
   public static final int NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -225,7 +225,7 @@ public  final class SecretEditRequest extends
     }
   }
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -539,7 +539,7 @@ public  final class SecretEditRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
@@ -845,7 +845,7 @@ public  final class SecretEditRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -860,7 +860,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -876,7 +876,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -889,7 +889,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -898,7 +898,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -914,7 +914,7 @@ public  final class SecretEditRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -929,7 +929,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -945,7 +945,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -958,7 +958,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder clearNamespace() {
       
@@ -967,7 +967,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -983,7 +983,7 @@ public  final class SecretEditRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -998,7 +998,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1014,7 +1014,7 @@ public  final class SecretEditRequest extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1027,7 +1027,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder clearName() {
       
@@ -1036,7 +1036,7 @@ public  final class SecretEditRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1127,7 +1127,8 @@ public  final class SecretEditRequest extends
     }
 
     public Builder clearAdd() {
-      getMutableAdd().clear();
+      internalGetMutableAdd().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1137,7 +1138,8 @@ public  final class SecretEditRequest extends
     public Builder removeAdd(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableAdd().remove(key);
+      internalGetMutableAdd().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1156,7 +1158,8 @@ public  final class SecretEditRequest extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableAdd().put(key, value);
+      internalGetMutableAdd().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1165,7 +1168,8 @@ public  final class SecretEditRequest extends
 
     public Builder putAllAdd(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableAdd().putAll(values);
+      internalGetMutableAdd().getMutableMap()
+          .putAll(values);
       return this;
     }
 
@@ -1246,7 +1250,8 @@ public  final class SecretEditRequest extends
     }
 
     public Builder clearUpdate() {
-      getMutableUpdate().clear();
+      internalGetMutableUpdate().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -1256,7 +1261,8 @@ public  final class SecretEditRequest extends
     public Builder removeUpdate(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableUpdate().remove(key);
+      internalGetMutableUpdate().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -1275,7 +1281,8 @@ public  final class SecretEditRequest extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableUpdate().put(key, value);
+      internalGetMutableUpdate().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -1284,7 +1291,8 @@ public  final class SecretEditRequest extends
 
     public Builder putAllUpdate(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableUpdate().putAll(values);
+      internalGetMutableUpdate().getMutableMap()
+          .putAll(values);
       return this;
     }
 

@@ -93,7 +93,7 @@ public  final class SSHGetRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 1;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -108,7 +108,7 @@ public  final class SSHGetRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -127,7 +127,7 @@ public  final class SSHGetRequest extends
   public static final int CLUSTER_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object clusterName_;
   /**
-   * <code>optional string cluster_name = 2;</code>
+   * <code>string cluster_name = 2;</code>
    */
   public java.lang.String getClusterName() {
     java.lang.Object ref = clusterName_;
@@ -142,7 +142,7 @@ public  final class SSHGetRequest extends
     }
   }
   /**
-   * <code>optional string cluster_name = 2;</code>
+   * <code>string cluster_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getClusterNameBytes() {
@@ -161,7 +161,7 @@ public  final class SSHGetRequest extends
   public static final int INSTANCE_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object instanceName_;
   /**
-   * <code>optional string instance_name = 3;</code>
+   * <code>string instance_name = 3;</code>
    */
   public java.lang.String getInstanceName() {
     java.lang.Object ref = instanceName_;
@@ -176,7 +176,7 @@ public  final class SSHGetRequest extends
     }
   }
   /**
-   * <code>optional string instance_name = 3;</code>
+   * <code>string instance_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getInstanceNameBytes() {
@@ -260,7 +260,7 @@ public  final class SSHGetRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
     hash = (53 * hash) + getNamespace().hashCode();
     hash = (37 * hash) + CLUSTER_NAME_FIELD_NUMBER;
@@ -501,7 +501,7 @@ public  final class SSHGetRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -516,7 +516,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -532,7 +532,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -545,7 +545,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder clearNamespace() {
       
@@ -554,7 +554,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 1;</code>
+     * <code>string namespace = 1;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -570,7 +570,7 @@ public  final class SSHGetRequest extends
 
     private java.lang.Object clusterName_ = "";
     /**
-     * <code>optional string cluster_name = 2;</code>
+     * <code>string cluster_name = 2;</code>
      */
     public java.lang.String getClusterName() {
       java.lang.Object ref = clusterName_;
@@ -585,7 +585,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string cluster_name = 2;</code>
+     * <code>string cluster_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getClusterNameBytes() {
@@ -601,7 +601,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string cluster_name = 2;</code>
+     * <code>string cluster_name = 2;</code>
      */
     public Builder setClusterName(
         java.lang.String value) {
@@ -614,7 +614,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster_name = 2;</code>
+     * <code>string cluster_name = 2;</code>
      */
     public Builder clearClusterName() {
       
@@ -623,7 +623,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster_name = 2;</code>
+     * <code>string cluster_name = 2;</code>
      */
     public Builder setClusterNameBytes(
         com.google.protobuf.ByteString value) {
@@ -639,7 +639,7 @@ public  final class SSHGetRequest extends
 
     private java.lang.Object instanceName_ = "";
     /**
-     * <code>optional string instance_name = 3;</code>
+     * <code>string instance_name = 3;</code>
      */
     public java.lang.String getInstanceName() {
       java.lang.Object ref = instanceName_;
@@ -654,7 +654,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string instance_name = 3;</code>
+     * <code>string instance_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getInstanceNameBytes() {
@@ -670,7 +670,7 @@ public  final class SSHGetRequest extends
       }
     }
     /**
-     * <code>optional string instance_name = 3;</code>
+     * <code>string instance_name = 3;</code>
      */
     public Builder setInstanceName(
         java.lang.String value) {
@@ -683,7 +683,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string instance_name = 3;</code>
+     * <code>string instance_name = 3;</code>
      */
     public Builder clearInstanceName() {
       
@@ -692,7 +692,7 @@ public  final class SSHGetRequest extends
       return this;
     }
     /**
-     * <code>optional string instance_name = 3;</code>
+     * <code>string instance_name = 3;</code>
      */
     public Builder setInstanceNameBytes(
         com.google.protobuf.ByteString value) {

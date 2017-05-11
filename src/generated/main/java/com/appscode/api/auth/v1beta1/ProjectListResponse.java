@@ -15,7 +15,7 @@ public  final class ProjectListResponse extends
     super(builder);
   }
   private ProjectListResponse() {
-    projets_ = java.util.Collections.emptyList();
+    projects_ = java.util.Collections.emptyList();
   }
 
   @java.lang.Override
@@ -44,24 +44,11 @@ public  final class ProjectListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+              projects_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.Project>();
+              mutable_bitField0_ |= 0x00000001;
             }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-              projets_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.Project>();
-              mutable_bitField0_ |= 0x00000002;
-            }
-            projets_.add(
+            projects_.add(
                 input.readMessage(com.appscode.api.auth.v1beta1.Project.parser(), extensionRegistry));
             break;
           }
@@ -73,8 +60,8 @@ public  final class ProjectListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
-        projets_ = java.util.Collections.unmodifiableList(projets_);
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+        projects_ = java.util.Collections.unmodifiableList(projects_);
       }
       makeExtensionsImmutable();
     }
@@ -91,61 +78,39 @@ public  final class ProjectListResponse extends
             com.appscode.api.auth.v1beta1.ProjectListResponse.class, com.appscode.api.auth.v1beta1.ProjectListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
+  public static final int PROJECTS_FIELD_NUMBER = 1;
+  private java.util.List<com.appscode.api.auth.v1beta1.Project> projects_;
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  public boolean hasStatus() {
-    return status_ != null;
+  public java.util.List<com.appscode.api.auth.v1beta1.Project> getProjectsList() {
+    return projects_;
   }
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int PROJETS_FIELD_NUMBER = 2;
-  private java.util.List<com.appscode.api.auth.v1beta1.Project> projets_;
-  /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
-   */
-  public java.util.List<com.appscode.api.auth.v1beta1.Project> getProjetsList() {
-    return projets_;
-  }
-  /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.auth.v1beta1.ProjectOrBuilder> 
-      getProjetsOrBuilderList() {
-    return projets_;
+      getProjectsOrBuilderList() {
+    return projects_;
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  public int getProjetsCount() {
-    return projets_.size();
+  public int getProjectsCount() {
+    return projects_.size();
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  public com.appscode.api.auth.v1beta1.Project getProjets(int index) {
-    return projets_.get(index);
+  public com.appscode.api.auth.v1beta1.Project getProjects(int index) {
+    return projects_.get(index);
   }
   /**
-   * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+   * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
    */
-  public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetsOrBuilder(
+  public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectsOrBuilder(
       int index) {
-    return projets_.get(index);
+    return projects_.get(index);
   }
 
   private byte memoizedIsInitialized = -1;
@@ -160,11 +125,8 @@ public  final class ProjectListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
-    for (int i = 0; i < projets_.size(); i++) {
-      output.writeMessage(2, projets_.get(i));
+    for (int i = 0; i < projects_.size(); i++) {
+      output.writeMessage(1, projects_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class ProjectListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
+    for (int i = 0; i < projects_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
-    for (int i = 0; i < projets_.size(); i++) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, projets_.get(i));
+        .computeMessageSize(1, projects_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,13 +155,8 @@ public  final class ProjectListResponse extends
     com.appscode.api.auth.v1beta1.ProjectListResponse other = (com.appscode.api.auth.v1beta1.ProjectListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
-    result = result && getProjetsList()
-        .equals(other.getProjetsList());
+    result = result && getProjectsList()
+        .equals(other.getProjectsList());
     return result;
   }
 
@@ -213,14 +166,10 @@ public  final class ProjectListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
-    if (getProjetsCount() > 0) {
-      hash = (37 * hash) + PROJETS_FIELD_NUMBER;
-      hash = (53 * hash) + getProjetsList().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
+    if (getProjectsCount() > 0) {
+      hash = (37 * hash) + PROJECTS_FIELD_NUMBER;
+      hash = (53 * hash) + getProjectsList().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -336,22 +285,16 @@ public  final class ProjectListResponse extends
     private void maybeForceBuilderInitialization() {
       if (com.google.protobuf.GeneratedMessageV3
               .alwaysUseFieldBuilders) {
-        getProjetsFieldBuilder();
+        getProjectsFieldBuilder();
       }
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
+      if (projectsBuilder_ == null) {
+        projects_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-      if (projetsBuilder_ == null) {
-        projets_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
-      } else {
-        projetsBuilder_.clear();
+        projectsBuilder_.clear();
       }
       return this;
     }
@@ -376,22 +319,15 @@ public  final class ProjectListResponse extends
     public com.appscode.api.auth.v1beta1.ProjectListResponse buildPartial() {
       com.appscode.api.auth.v1beta1.ProjectListResponse result = new com.appscode.api.auth.v1beta1.ProjectListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
-      if (projetsBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          projets_ = java.util.Collections.unmodifiableList(projets_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+      if (projectsBuilder_ == null) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          projects_ = java.util.Collections.unmodifiableList(projects_);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.projets_ = projets_;
+        result.projects_ = projects_;
       } else {
-        result.projets_ = projetsBuilder_.build();
+        result.projects_ = projectsBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,32 +369,29 @@ public  final class ProjectListResponse extends
 
     public Builder mergeFrom(com.appscode.api.auth.v1beta1.ProjectListResponse other) {
       if (other == com.appscode.api.auth.v1beta1.ProjectListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
-      if (projetsBuilder_ == null) {
-        if (!other.projets_.isEmpty()) {
-          if (projets_.isEmpty()) {
-            projets_ = other.projets_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+      if (projectsBuilder_ == null) {
+        if (!other.projects_.isEmpty()) {
+          if (projects_.isEmpty()) {
+            projects_ = other.projects_;
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureProjetsIsMutable();
-            projets_.addAll(other.projets_);
+            ensureProjectsIsMutable();
+            projects_.addAll(other.projects_);
           }
           onChanged();
         }
       } else {
-        if (!other.projets_.isEmpty()) {
-          if (projetsBuilder_.isEmpty()) {
-            projetsBuilder_.dispose();
-            projetsBuilder_ = null;
-            projets_ = other.projets_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-            projetsBuilder_ = 
+        if (!other.projects_.isEmpty()) {
+          if (projectsBuilder_.isEmpty()) {
+            projectsBuilder_.dispose();
+            projectsBuilder_ = null;
+            projects_ = other.projects_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+            projectsBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                 getProjetsFieldBuilder() : null;
+                 getProjectsFieldBuilder() : null;
           } else {
-            projetsBuilder_.addAllMessages(other.projets_);
+            projectsBuilder_.addAllMessages(other.projects_);
           }
         }
       }
@@ -489,361 +422,244 @@ public  final class ProjectListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
-    private java.util.List<com.appscode.api.auth.v1beta1.Project> projets_ =
+    private java.util.List<com.appscode.api.auth.v1beta1.Project> projects_ =
       java.util.Collections.emptyList();
-    private void ensureProjetsIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-        projets_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.Project>(projets_);
-        bitField0_ |= 0x00000002;
+    private void ensureProjectsIsMutable() {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+        projects_ = new java.util.ArrayList<com.appscode.api.auth.v1beta1.Project>(projects_);
+        bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> projetsBuilder_;
+        com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> projectsBuilder_;
 
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public java.util.List<com.appscode.api.auth.v1beta1.Project> getProjetsList() {
-      if (projetsBuilder_ == null) {
-        return java.util.Collections.unmodifiableList(projets_);
+    public java.util.List<com.appscode.api.auth.v1beta1.Project> getProjectsList() {
+      if (projectsBuilder_ == null) {
+        return java.util.Collections.unmodifiableList(projects_);
       } else {
-        return projetsBuilder_.getMessageList();
+        return projectsBuilder_.getMessageList();
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public int getProjetsCount() {
-      if (projetsBuilder_ == null) {
-        return projets_.size();
+    public int getProjectsCount() {
+      if (projectsBuilder_ == null) {
+        return projects_.size();
       } else {
-        return projetsBuilder_.getCount();
+        return projectsBuilder_.getCount();
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.Project getProjets(int index) {
-      if (projetsBuilder_ == null) {
-        return projets_.get(index);
+    public com.appscode.api.auth.v1beta1.Project getProjects(int index) {
+      if (projectsBuilder_ == null) {
+        return projects_.get(index);
       } else {
-        return projetsBuilder_.getMessage(index);
+        return projectsBuilder_.getMessage(index);
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder setProjets(
+    public Builder setProjects(
         int index, com.appscode.api.auth.v1beta1.Project value) {
-      if (projetsBuilder_ == null) {
+      if (projectsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureProjetsIsMutable();
-        projets_.set(index, value);
+        ensureProjectsIsMutable();
+        projects_.set(index, value);
         onChanged();
       } else {
-        projetsBuilder_.setMessage(index, value);
+        projectsBuilder_.setMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder setProjets(
+    public Builder setProjects(
         int index, com.appscode.api.auth.v1beta1.Project.Builder builderForValue) {
-      if (projetsBuilder_ == null) {
-        ensureProjetsIsMutable();
-        projets_.set(index, builderForValue.build());
+      if (projectsBuilder_ == null) {
+        ensureProjectsIsMutable();
+        projects_.set(index, builderForValue.build());
         onChanged();
       } else {
-        projetsBuilder_.setMessage(index, builderForValue.build());
+        projectsBuilder_.setMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder addProjets(com.appscode.api.auth.v1beta1.Project value) {
-      if (projetsBuilder_ == null) {
+    public Builder addProjects(com.appscode.api.auth.v1beta1.Project value) {
+      if (projectsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureProjetsIsMutable();
-        projets_.add(value);
+        ensureProjectsIsMutable();
+        projects_.add(value);
         onChanged();
       } else {
-        projetsBuilder_.addMessage(value);
+        projectsBuilder_.addMessage(value);
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder addProjets(
+    public Builder addProjects(
         int index, com.appscode.api.auth.v1beta1.Project value) {
-      if (projetsBuilder_ == null) {
+      if (projectsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        ensureProjetsIsMutable();
-        projets_.add(index, value);
+        ensureProjectsIsMutable();
+        projects_.add(index, value);
         onChanged();
       } else {
-        projetsBuilder_.addMessage(index, value);
+        projectsBuilder_.addMessage(index, value);
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder addProjets(
+    public Builder addProjects(
         com.appscode.api.auth.v1beta1.Project.Builder builderForValue) {
-      if (projetsBuilder_ == null) {
-        ensureProjetsIsMutable();
-        projets_.add(builderForValue.build());
+      if (projectsBuilder_ == null) {
+        ensureProjectsIsMutable();
+        projects_.add(builderForValue.build());
         onChanged();
       } else {
-        projetsBuilder_.addMessage(builderForValue.build());
+        projectsBuilder_.addMessage(builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder addProjets(
+    public Builder addProjects(
         int index, com.appscode.api.auth.v1beta1.Project.Builder builderForValue) {
-      if (projetsBuilder_ == null) {
-        ensureProjetsIsMutable();
-        projets_.add(index, builderForValue.build());
+      if (projectsBuilder_ == null) {
+        ensureProjectsIsMutable();
+        projects_.add(index, builderForValue.build());
         onChanged();
       } else {
-        projetsBuilder_.addMessage(index, builderForValue.build());
+        projectsBuilder_.addMessage(index, builderForValue.build());
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder addAllProjets(
+    public Builder addAllProjects(
         java.lang.Iterable<? extends com.appscode.api.auth.v1beta1.Project> values) {
-      if (projetsBuilder_ == null) {
-        ensureProjetsIsMutable();
+      if (projectsBuilder_ == null) {
+        ensureProjectsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, projets_);
+            values, projects_);
         onChanged();
       } else {
-        projetsBuilder_.addAllMessages(values);
+        projectsBuilder_.addAllMessages(values);
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder clearProjets() {
-      if (projetsBuilder_ == null) {
-        projets_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+    public Builder clearProjects() {
+      if (projectsBuilder_ == null) {
+        projects_ = java.util.Collections.emptyList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
-        projetsBuilder_.clear();
+        projectsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public Builder removeProjets(int index) {
-      if (projetsBuilder_ == null) {
-        ensureProjetsIsMutable();
-        projets_.remove(index);
+    public Builder removeProjects(int index) {
+      if (projectsBuilder_ == null) {
+        ensureProjectsIsMutable();
+        projects_.remove(index);
         onChanged();
       } else {
-        projetsBuilder_.remove(index);
+        projectsBuilder_.remove(index);
       }
       return this;
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.Project.Builder getProjetsBuilder(
+    public com.appscode.api.auth.v1beta1.Project.Builder getProjectsBuilder(
         int index) {
-      return getProjetsFieldBuilder().getBuilder(index);
+      return getProjectsFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjetsOrBuilder(
+    public com.appscode.api.auth.v1beta1.ProjectOrBuilder getProjectsOrBuilder(
         int index) {
-      if (projetsBuilder_ == null) {
-        return projets_.get(index);  } else {
-        return projetsBuilder_.getMessageOrBuilder(index);
+      if (projectsBuilder_ == null) {
+        return projects_.get(index);  } else {
+        return projectsBuilder_.getMessageOrBuilder(index);
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.auth.v1beta1.ProjectOrBuilder> 
-         getProjetsOrBuilderList() {
-      if (projetsBuilder_ != null) {
-        return projetsBuilder_.getMessageOrBuilderList();
+         getProjectsOrBuilderList() {
+      if (projectsBuilder_ != null) {
+        return projectsBuilder_.getMessageOrBuilderList();
       } else {
-        return java.util.Collections.unmodifiableList(projets_);
+        return java.util.Collections.unmodifiableList(projects_);
       }
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.Project.Builder addProjetsBuilder() {
-      return getProjetsFieldBuilder().addBuilder(
+    public com.appscode.api.auth.v1beta1.Project.Builder addProjectsBuilder() {
+      return getProjectsFieldBuilder().addBuilder(
           com.appscode.api.auth.v1beta1.Project.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
-    public com.appscode.api.auth.v1beta1.Project.Builder addProjetsBuilder(
+    public com.appscode.api.auth.v1beta1.Project.Builder addProjectsBuilder(
         int index) {
-      return getProjetsFieldBuilder().addBuilder(
+      return getProjectsFieldBuilder().addBuilder(
           index, com.appscode.api.auth.v1beta1.Project.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.auth.v1beta1.Project projets = 2;</code>
+     * <code>repeated .appscode.auth.v1beta1.Project projects = 1;</code>
      */
     public java.util.List<com.appscode.api.auth.v1beta1.Project.Builder> 
-         getProjetsBuilderList() {
-      return getProjetsFieldBuilder().getBuilderList();
+         getProjectsBuilderList() {
+      return getProjectsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
         com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder> 
-        getProjetsFieldBuilder() {
-      if (projetsBuilder_ == null) {
-        projetsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+        getProjectsFieldBuilder() {
+      if (projectsBuilder_ == null) {
+        projectsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.auth.v1beta1.Project, com.appscode.api.auth.v1beta1.Project.Builder, com.appscode.api.auth.v1beta1.ProjectOrBuilder>(
-                projets_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                projects_,
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
-        projets_ = null;
+        projects_ = null;
       }
-      return projetsBuilder_;
+      return projectsBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

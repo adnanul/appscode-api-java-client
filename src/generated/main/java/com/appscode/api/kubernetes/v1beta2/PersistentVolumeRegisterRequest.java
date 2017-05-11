@@ -109,7 +109,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -124,7 +124,7 @@ public  final class PersistentVolumeRegisterRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -143,7 +143,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -158,7 +158,7 @@ public  final class PersistentVolumeRegisterRequest extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -177,7 +177,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int IDENTIFIER_FIELD_NUMBER = 3;
   private volatile java.lang.Object identifier_;
   /**
-   * <code>optional string identifier = 3;</code>
+   * <code>string identifier = 3;</code>
    */
   public java.lang.String getIdentifier() {
     java.lang.Object ref = identifier_;
@@ -192,7 +192,7 @@ public  final class PersistentVolumeRegisterRequest extends
     }
   }
   /**
-   * <code>optional string identifier = 3;</code>
+   * <code>string identifier = 3;</code>
    */
   public com.google.protobuf.ByteString
       getIdentifierBytes() {
@@ -211,7 +211,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int PLUGIN_FIELD_NUMBER = 4;
   private volatile java.lang.Object plugin_;
   /**
-   * <code>optional string plugin = 4;</code>
+   * <code>string plugin = 4;</code>
    */
   public java.lang.String getPlugin() {
     java.lang.Object ref = plugin_;
@@ -226,7 +226,7 @@ public  final class PersistentVolumeRegisterRequest extends
     }
   }
   /**
-   * <code>optional string plugin = 4;</code>
+   * <code>string plugin = 4;</code>
    */
   public com.google.protobuf.ByteString
       getPluginBytes() {
@@ -245,7 +245,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int SIZE_GB_FIELD_NUMBER = 5;
   private long sizeGb_;
   /**
-   * <code>optional int64 size_gb = 5;</code>
+   * <code>int64 size_gb = 5;</code>
    */
   public long getSizeGb() {
     return sizeGb_;
@@ -254,7 +254,7 @@ public  final class PersistentVolumeRegisterRequest extends
   public static final int ENDPOINT_FIELD_NUMBER = 6;
   private volatile java.lang.Object endpoint_;
   /**
-   * <code>optional string endpoint = 6;</code>
+   * <code>string endpoint = 6;</code>
    */
   public java.lang.String getEndpoint() {
     java.lang.Object ref = endpoint_;
@@ -269,7 +269,7 @@ public  final class PersistentVolumeRegisterRequest extends
     }
   }
   /**
-   * <code>optional string endpoint = 6;</code>
+   * <code>string endpoint = 6;</code>
    */
   public com.google.protobuf.ByteString
       getEndpointBytes() {
@@ -378,7 +378,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -642,7 +642,7 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -657,7 +657,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -673,7 +673,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -686,7 +686,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -695,7 +695,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -711,7 +711,7 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -726,7 +726,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -742,7 +742,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -755,7 +755,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -764,7 +764,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -780,7 +780,7 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private java.lang.Object identifier_ = "";
     /**
-     * <code>optional string identifier = 3;</code>
+     * <code>string identifier = 3;</code>
      */
     public java.lang.String getIdentifier() {
       java.lang.Object ref = identifier_;
@@ -795,7 +795,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string identifier = 3;</code>
+     * <code>string identifier = 3;</code>
      */
     public com.google.protobuf.ByteString
         getIdentifierBytes() {
@@ -811,7 +811,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string identifier = 3;</code>
+     * <code>string identifier = 3;</code>
      */
     public Builder setIdentifier(
         java.lang.String value) {
@@ -824,7 +824,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string identifier = 3;</code>
+     * <code>string identifier = 3;</code>
      */
     public Builder clearIdentifier() {
       
@@ -833,7 +833,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string identifier = 3;</code>
+     * <code>string identifier = 3;</code>
      */
     public Builder setIdentifierBytes(
         com.google.protobuf.ByteString value) {
@@ -849,7 +849,7 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private java.lang.Object plugin_ = "";
     /**
-     * <code>optional string plugin = 4;</code>
+     * <code>string plugin = 4;</code>
      */
     public java.lang.String getPlugin() {
       java.lang.Object ref = plugin_;
@@ -864,7 +864,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string plugin = 4;</code>
+     * <code>string plugin = 4;</code>
      */
     public com.google.protobuf.ByteString
         getPluginBytes() {
@@ -880,7 +880,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string plugin = 4;</code>
+     * <code>string plugin = 4;</code>
      */
     public Builder setPlugin(
         java.lang.String value) {
@@ -893,7 +893,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string plugin = 4;</code>
+     * <code>string plugin = 4;</code>
      */
     public Builder clearPlugin() {
       
@@ -902,7 +902,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string plugin = 4;</code>
+     * <code>string plugin = 4;</code>
      */
     public Builder setPluginBytes(
         com.google.protobuf.ByteString value) {
@@ -918,13 +918,13 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private long sizeGb_ ;
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public long getSizeGb() {
       return sizeGb_;
     }
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public Builder setSizeGb(long value) {
       
@@ -933,7 +933,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public Builder clearSizeGb() {
       
@@ -944,7 +944,7 @@ public  final class PersistentVolumeRegisterRequest extends
 
     private java.lang.Object endpoint_ = "";
     /**
-     * <code>optional string endpoint = 6;</code>
+     * <code>string endpoint = 6;</code>
      */
     public java.lang.String getEndpoint() {
       java.lang.Object ref = endpoint_;
@@ -959,7 +959,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string endpoint = 6;</code>
+     * <code>string endpoint = 6;</code>
      */
     public com.google.protobuf.ByteString
         getEndpointBytes() {
@@ -975,7 +975,7 @@ public  final class PersistentVolumeRegisterRequest extends
       }
     }
     /**
-     * <code>optional string endpoint = 6;</code>
+     * <code>string endpoint = 6;</code>
      */
     public Builder setEndpoint(
         java.lang.String value) {
@@ -988,7 +988,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string endpoint = 6;</code>
+     * <code>string endpoint = 6;</code>
      */
     public Builder clearEndpoint() {
       
@@ -997,7 +997,7 @@ public  final class PersistentVolumeRegisterRequest extends
       return this;
     }
     /**
-     * <code>optional string endpoint = 6;</code>
+     * <code>string endpoint = 6;</code>
      */
     public Builder setEndpointBytes(
         com.google.protobuf.ByteString value) {

@@ -8,64 +8,64 @@ public interface PodOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   java.lang.String getApp();
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   com.google.protobuf.ByteString
       getAppBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   boolean hasSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodSpec getSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getSpecOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   boolean hasStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   boolean hasMetrics();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Metrics getMetrics();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder();
 }

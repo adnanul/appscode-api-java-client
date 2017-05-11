@@ -8,131 +8,131 @@ public interface VersionOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string version = 2;</code>
+   * <code>string version = 2;</code>
    */
   java.lang.String getVersion();
   /**
-   * <code>optional string version = 2;</code>
+   * <code>string version = 2;</code>
    */
   com.google.protobuf.ByteString
       getVersionBytes();
 
   /**
-   * <code>optional string version_strategy = 3;</code>
+   * <code>string version_strategy = 3;</code>
    */
   java.lang.String getVersionStrategy();
   /**
-   * <code>optional string version_strategy = 3;</code>
+   * <code>string version_strategy = 3;</code>
    */
   com.google.protobuf.ByteString
       getVersionStrategyBytes();
 
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   java.lang.String getOs();
   /**
-   * <code>optional string os = 4;</code>
+   * <code>string os = 4;</code>
    */
   com.google.protobuf.ByteString
       getOsBytes();
 
   /**
-   * <code>optional string arch = 5;</code>
+   * <code>string arch = 5;</code>
    */
   java.lang.String getArch();
   /**
-   * <code>optional string arch = 5;</code>
+   * <code>string arch = 5;</code>
    */
   com.google.protobuf.ByteString
       getArchBytes();
 
   /**
-   * <code>optional string commit_hash = 6;</code>
+   * <code>string commit_hash = 6;</code>
    */
   java.lang.String getCommitHash();
   /**
-   * <code>optional string commit_hash = 6;</code>
+   * <code>string commit_hash = 6;</code>
    */
   com.google.protobuf.ByteString
       getCommitHashBytes();
 
   /**
-   * <code>optional string git_branch = 7;</code>
+   * <code>string git_branch = 7;</code>
    */
   java.lang.String getGitBranch();
   /**
-   * <code>optional string git_branch = 7;</code>
+   * <code>string git_branch = 7;</code>
    */
   com.google.protobuf.ByteString
       getGitBranchBytes();
 
   /**
-   * <code>optional string git_tag = 8;</code>
+   * <code>string git_tag = 8;</code>
    */
   java.lang.String getGitTag();
   /**
-   * <code>optional string git_tag = 8;</code>
+   * <code>string git_tag = 8;</code>
    */
   com.google.protobuf.ByteString
       getGitTagBytes();
 
   /**
-   * <code>optional string commit_timestamp = 9;</code>
+   * <code>string commit_timestamp = 9;</code>
    */
   java.lang.String getCommitTimestamp();
   /**
-   * <code>optional string commit_timestamp = 9;</code>
+   * <code>string commit_timestamp = 9;</code>
    */
   com.google.protobuf.ByteString
       getCommitTimestampBytes();
 
   /**
-   * <code>optional string build_timestamp = 10;</code>
+   * <code>string build_timestamp = 10;</code>
    */
   java.lang.String getBuildTimestamp();
   /**
-   * <code>optional string build_timestamp = 10;</code>
+   * <code>string build_timestamp = 10;</code>
    */
   com.google.protobuf.ByteString
       getBuildTimestampBytes();
 
   /**
-   * <code>optional string build_host = 11;</code>
+   * <code>string build_host = 11;</code>
    */
   java.lang.String getBuildHost();
   /**
-   * <code>optional string build_host = 11;</code>
+   * <code>string build_host = 11;</code>
    */
   com.google.protobuf.ByteString
       getBuildHostBytes();
 
   /**
-   * <code>optional string build_host_os = 12;</code>
+   * <code>string build_host_os = 12;</code>
    */
   java.lang.String getBuildHostOs();
   /**
-   * <code>optional string build_host_os = 12;</code>
+   * <code>string build_host_os = 12;</code>
    */
   com.google.protobuf.ByteString
       getBuildHostOsBytes();
 
   /**
-   * <code>optional string build_host_arch = 13;</code>
+   * <code>string build_host_arch = 13;</code>
    */
   java.lang.String getBuildHostArch();
   /**
-   * <code>optional string build_host_arch = 13;</code>
+   * <code>string build_host_arch = 13;</code>
    */
   com.google.protobuf.ByteString
       getBuildHostArchBytes();

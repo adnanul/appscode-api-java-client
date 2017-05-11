@@ -51,28 +51,25 @@ public final class ArtifactProto {
       "\n)appscode/api/attic/v1beta1/artifact.pr" +
       "oto\022\026appscode.attic.v1beta1\032\034google/api/" +
       "annotations.proto\032\036appscode/api/annotati" +
-      "ons.proto\032\037appscode/api/dtypes/types.pro" +
-      "to\"4\n\025ArtifactSearchRequest\022\r\n\005query\030\001 \001" +
-      "(\t\022\014\n\004type\030\002 \001(\t\"v\n\026ArtifactSearchRespon" +
-      "se\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.Sta" +
-      "tus\0223\n\tartifacts\030\002 \003(\0132 .appscode.attic." +
-      "v1beta1.Artifact\"#\n\023ArtifactListRequest\022" +
-      "\014\n\004type\030\001 \001(\t\"t\n\024ArtifactListResponse\022\'\n",
-      "\006status\030\001 \001(\0132\027.appscode.dtypes.Status\0223" +
-      "\n\tartifacts\030\002 \003(\0132 .appscode.attic.v1bet" +
-      "a1.Artifact\";\n\010Artifact\022\014\n\004name\030\001 \001(\t\022\014\n" +
-      "\004type\030\002 \001(\t\022\023\n\013modified_at\030\003 \001(\0032\323\002\n\tArt" +
-      "ifacts\022\237\001\n\006Search\022-.appscode.attic.v1bet" +
-      "a1.ArtifactSearchRequest\032..appscode.atti" +
-      "c.v1beta1.ArtifactSearchResponse\"6\202\323\344\223\002*" +
-      "\022(/_appscode/api/attic/v1beta1/search/js" +
-      "on\202\265\030\002\010\001\022\243\001\n\004List\022+.appscode.attic.v1bet" +
-      "a1.ArtifactListRequest\032,.appscode.attic.",
-      "v1beta1.ArtifactListResponse\"@\202\323\344\223\0024\0222/_" +
-      "appscode/api/attic/v1beta1/artifacts/{ty" +
-      "pe}/json\202\265\030\002\010\001B:\n\036com.appscode.api.attic" +
-      ".v1beta1B\rArtifactProtoP\001Z\007v1beta1b\006prot" +
-      "o3"
+      "ons.proto\"4\n\025ArtifactSearchRequest\022\r\n\005qu" +
+      "ery\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\"M\n\026ArtifactSearc" +
+      "hResponse\0223\n\tartifacts\030\001 \003(\0132 .appscode." +
+      "attic.v1beta1.Artifact\"#\n\023ArtifactListRe" +
+      "quest\022\014\n\004type\030\001 \001(\t\"K\n\024ArtifactListRespo" +
+      "nse\0223\n\tartifacts\030\001 \003(\0132 .appscode.attic." +
+      "v1beta1.Artifact\";\n\010Artifact\022\014\n\004name\030\001 \001",
+      "(\t\022\014\n\004type\030\002 \001(\t\022\023\n\013modified_at\030\003 \001(\0032\323\002" +
+      "\n\tArtifacts\022\237\001\n\006Search\022-.appscode.attic." +
+      "v1beta1.ArtifactSearchRequest\032..appscode" +
+      ".attic.v1beta1.ArtifactSearchResponse\"6\202" +
+      "\323\344\223\002*\022(/_appscode/api/attic/v1beta1/sear" +
+      "ch/json\202\265\030\002\010\001\022\243\001\n\004List\022+.appscode.attic." +
+      "v1beta1.ArtifactListRequest\032,.appscode.a" +
+      "ttic.v1beta1.ArtifactListResponse\"@\202\323\344\223\002" +
+      "4\0222/_appscode/api/attic/v1beta1/artifact" +
+      "s/{type}/json\202\265\030\002\010\001B:\n\036com.appscode.api.",
+      "attic.v1beta1B\rArtifactProtoP\001Z\007v1beta1b" +
+      "\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -87,7 +84,6 @@ public final class ArtifactProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.AnnotationsProto.getDescriptor(),
-          com.appscode.api.dtypes.TypeProto.getDescriptor(),
         }, assigner);
     internal_static_appscode_attic_v1beta1_ArtifactSearchRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -100,7 +96,7 @@ public final class ArtifactProto {
     internal_static_appscode_attic_v1beta1_ArtifactSearchResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_attic_v1beta1_ArtifactSearchResponse_descriptor,
-        new java.lang.String[] { "Status", "Artifacts", });
+        new java.lang.String[] { "Artifacts", });
     internal_static_appscode_attic_v1beta1_ArtifactListRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_attic_v1beta1_ArtifactListRequest_fieldAccessorTable = new
@@ -112,7 +108,7 @@ public final class ArtifactProto {
     internal_static_appscode_attic_v1beta1_ArtifactListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_attic_v1beta1_ArtifactListResponse_descriptor,
-        new java.lang.String[] { "Status", "Artifacts", });
+        new java.lang.String[] { "Artifacts", });
     internal_static_appscode_attic_v1beta1_Artifact_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_attic_v1beta1_Artifact_fieldAccessorTable = new
@@ -127,7 +123,6 @@ public final class ArtifactProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
     com.appscode.api.AnnotationsProto.getDescriptor();
-    com.appscode.api.dtypes.TypeProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

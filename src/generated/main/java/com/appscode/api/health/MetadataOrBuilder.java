@@ -8,35 +8,35 @@ public interface MetadataOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string env = 1;</code>
+   * <code>string env = 1;</code>
    */
   java.lang.String getEnv();
   /**
-   * <code>optional string env = 1;</code>
+   * <code>string env = 1;</code>
    */
   com.google.protobuf.ByteString
       getEnvBytes();
 
   /**
-   * <code>optional string team_id = 2;</code>
+   * <code>string team_id = 2;</code>
    */
   java.lang.String getTeamId();
   /**
-   * <code>optional string team_id = 2;</code>
+   * <code>string team_id = 2;</code>
    */
   com.google.protobuf.ByteString
       getTeamIdBytes();
 
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   boolean hasNetConfig();
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   com.appscode.api.health.NetConfig getNetConfig();
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   com.appscode.api.health.NetConfigOrBuilder getNetConfigOrBuilder();
 }

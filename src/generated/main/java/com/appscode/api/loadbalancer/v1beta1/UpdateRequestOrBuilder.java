@@ -8,48 +8,48 @@ public interface UpdateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string cluster = 2;</code>
+   * <code>string cluster = 2;</code>
    */
   java.lang.String getCluster();
   /**
-   * <code>optional string cluster = 2;</code>
+   * <code>string cluster = 2;</code>
    */
   com.google.protobuf.ByteString
       getClusterBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   boolean hasLoadBalancer();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 3;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   boolean hasRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.Raw getRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder();
 }

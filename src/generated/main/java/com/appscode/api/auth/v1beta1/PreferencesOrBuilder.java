@@ -8,31 +8,31 @@ public interface PreferencesOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string time_zone = 1;</code>
+   * <code>string time_zone = 1;</code>
    */
   java.lang.String getTimeZone();
   /**
-   * <code>optional string time_zone = 1;</code>
+   * <code>string time_zone = 1;</code>
    */
   com.google.protobuf.ByteString
       getTimeZoneBytes();
 
   /**
-   * <code>optional string time_format = 2;</code>
+   * <code>string time_format = 2;</code>
    */
   java.lang.String getTimeFormat();
   /**
-   * <code>optional string time_format = 2;</code>
+   * <code>string time_format = 2;</code>
    */
   com.google.protobuf.ByteString
       getTimeFormatBytes();
 
   /**
-   * <code>optional string date_formate = 3;</code>
+   * <code>string date_formate = 3;</code>
    */
   java.lang.String getDateFormate();
   /**
-   * <code>optional string date_formate = 3;</code>
+   * <code>string date_formate = 3;</code>
    */
   com.google.protobuf.ByteString
       getDateFormateBytes();

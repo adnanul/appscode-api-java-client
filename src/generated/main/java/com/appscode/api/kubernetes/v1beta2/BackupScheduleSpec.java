@@ -88,7 +88,7 @@ public  final class BackupScheduleSpec extends
   public static final int CRON_EXPRESSION_FIELD_NUMBER = 1;
   private volatile java.lang.Object cronExpression_;
   /**
-   * <code>optional string cron_expression = 1;</code>
+   * <code>string cron_expression = 1;</code>
    */
   public java.lang.String getCronExpression() {
     java.lang.Object ref = cronExpression_;
@@ -103,7 +103,7 @@ public  final class BackupScheduleSpec extends
     }
   }
   /**
-   * <code>optional string cron_expression = 1;</code>
+   * <code>string cron_expression = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCronExpressionBytes() {
@@ -122,19 +122,19 @@ public  final class BackupScheduleSpec extends
   public static final int SNAPSHOT_SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.SnapshotSpec snapshotSpec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   public boolean hasSnapshotSpec() {
     return snapshotSpec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
     return snapshotSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance() : snapshotSpec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
     return getSnapshotSpec();
@@ -204,7 +204,7 @@ public  final class BackupScheduleSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CRON_EXPRESSION_FIELD_NUMBER;
     hash = (53 * hash) + getCronExpression().hashCode();
     if (hasSnapshotSpec()) {
@@ -441,7 +441,7 @@ public  final class BackupScheduleSpec extends
 
     private java.lang.Object cronExpression_ = "";
     /**
-     * <code>optional string cron_expression = 1;</code>
+     * <code>string cron_expression = 1;</code>
      */
     public java.lang.String getCronExpression() {
       java.lang.Object ref = cronExpression_;
@@ -456,7 +456,7 @@ public  final class BackupScheduleSpec extends
       }
     }
     /**
-     * <code>optional string cron_expression = 1;</code>
+     * <code>string cron_expression = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCronExpressionBytes() {
@@ -472,7 +472,7 @@ public  final class BackupScheduleSpec extends
       }
     }
     /**
-     * <code>optional string cron_expression = 1;</code>
+     * <code>string cron_expression = 1;</code>
      */
     public Builder setCronExpression(
         java.lang.String value) {
@@ -485,7 +485,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional string cron_expression = 1;</code>
+     * <code>string cron_expression = 1;</code>
      */
     public Builder clearCronExpression() {
       
@@ -494,7 +494,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional string cron_expression = 1;</code>
+     * <code>string cron_expression = 1;</code>
      */
     public Builder setCronExpressionBytes(
         com.google.protobuf.ByteString value) {
@@ -512,13 +512,13 @@ public  final class BackupScheduleSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> snapshotSpecBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public boolean hasSnapshotSpec() {
       return snapshotSpecBuilder_ != null || snapshotSpec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
       if (snapshotSpecBuilder_ == null) {
@@ -528,7 +528,7 @@ public  final class BackupScheduleSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public Builder setSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
       if (snapshotSpecBuilder_ == null) {
@@ -544,7 +544,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public Builder setSnapshotSpec(
         com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder builderForValue) {
@@ -558,7 +558,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public Builder mergeSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
       if (snapshotSpecBuilder_ == null) {
@@ -576,7 +576,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public Builder clearSnapshotSpec() {
       if (snapshotSpecBuilder_ == null) {
@@ -590,7 +590,7 @@ public  final class BackupScheduleSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder getSnapshotSpecBuilder() {
       
@@ -598,7 +598,7 @@ public  final class BackupScheduleSpec extends
       return getSnapshotSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
       if (snapshotSpecBuilder_ != null) {
@@ -609,7 +609,7 @@ public  final class BackupScheduleSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> 

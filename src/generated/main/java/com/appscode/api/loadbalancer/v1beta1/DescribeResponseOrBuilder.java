@@ -8,41 +8,28 @@ public interface DescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   boolean hasLoadBalancer();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   boolean hasRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.Raw getRaw();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 3;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 2;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder();
 }

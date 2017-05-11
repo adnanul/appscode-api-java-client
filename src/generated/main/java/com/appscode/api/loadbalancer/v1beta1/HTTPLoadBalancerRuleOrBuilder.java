@@ -8,25 +8,25 @@ public interface HTTPLoadBalancerRuleOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   java.lang.String getPath();
   /**
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   boolean hasBackend();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend getBackend();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackendOrBuilder getBackendOrBuilder();
 

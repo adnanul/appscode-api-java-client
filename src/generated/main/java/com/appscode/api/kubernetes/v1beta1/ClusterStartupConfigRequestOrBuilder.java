@@ -8,27 +8,27 @@ public interface ClusterStartupConfigRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   java.lang.String getUid();
   /**
-   * <code>optional string uid = 1;</code>
+   * <code>string uid = 1;</code>
    */
   com.google.protobuf.ByteString
       getUidBytes();
 
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   java.lang.String getRole();
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   com.google.protobuf.ByteString
       getRoleBytes();
 
   /**
-   * <code>optional int64 context_version = 3;</code>
+   * <code>int64 context_version = 3;</code>
    */
   long getContextVersion();
 }

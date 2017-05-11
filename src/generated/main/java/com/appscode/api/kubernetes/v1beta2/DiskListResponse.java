@@ -44,22 +44,9 @@ public  final class DiskListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               disks_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Disk>();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             disks_.add(
                 input.readMessage(com.appscode.api.kubernetes.v1beta2.Disk.parser(), extensionRegistry));
@@ -73,7 +60,7 @@ public  final class DiskListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         disks_ = java.util.Collections.unmodifiableList(disks_);
       }
       makeExtensionsImmutable();
@@ -91,57 +78,35 @@ public  final class DiskListResponse extends
             com.appscode.api.kubernetes.v1beta2.DiskListResponse.class, com.appscode.api.kubernetes.v1beta2.DiskListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int DISKS_FIELD_NUMBER = 2;
+  public static final int DISKS_FIELD_NUMBER = 1;
   private java.util.List<com.appscode.api.kubernetes.v1beta2.Disk> disks_;
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   public java.util.List<com.appscode.api.kubernetes.v1beta2.Disk> getDisksList() {
     return disks_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DiskOrBuilder> 
       getDisksOrBuilderList() {
     return disks_;
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   public int getDisksCount() {
     return disks_.size();
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Disk getDisks(int index) {
     return disks_.get(index);
   }
   /**
-   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.DiskOrBuilder getDisksOrBuilder(
       int index) {
@@ -160,11 +125,8 @@ public  final class DiskListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < disks_.size(); i++) {
-      output.writeMessage(2, disks_.get(i));
+      output.writeMessage(1, disks_.get(i));
     }
   }
 
@@ -173,13 +135,9 @@ public  final class DiskListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     for (int i = 0; i < disks_.size(); i++) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, disks_.get(i));
+        .computeMessageSize(1, disks_.get(i));
     }
     memoizedSize = size;
     return size;
@@ -197,11 +155,6 @@ public  final class DiskListResponse extends
     com.appscode.api.kubernetes.v1beta2.DiskListResponse other = (com.appscode.api.kubernetes.v1beta2.DiskListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getDisksList()
         .equals(other.getDisksList());
     return result;
@@ -213,11 +166,7 @@ public  final class DiskListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getDisksCount() > 0) {
       hash = (37 * hash) + DISKS_FIELD_NUMBER;
       hash = (53 * hash) + getDisksList().hashCode();
@@ -341,15 +290,9 @@ public  final class DiskListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (disksBuilder_ == null) {
         disks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       } else {
         disksBuilder_.clear();
       }
@@ -376,22 +319,15 @@ public  final class DiskListResponse extends
     public com.appscode.api.kubernetes.v1beta2.DiskListResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta2.DiskListResponse result = new com.appscode.api.kubernetes.v1beta2.DiskListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (disksBuilder_ == null) {
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
           disks_ = java.util.Collections.unmodifiableList(disks_);
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.disks_ = disks_;
       } else {
         result.disks_ = disksBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -433,14 +369,11 @@ public  final class DiskListResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DiskListResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta2.DiskListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (disksBuilder_ == null) {
         if (!other.disks_.isEmpty()) {
           if (disks_.isEmpty()) {
             disks_ = other.disks_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureDisksIsMutable();
             disks_.addAll(other.disks_);
@@ -453,7 +386,7 @@ public  final class DiskListResponse extends
             disksBuilder_.dispose();
             disksBuilder_ = null;
             disks_ = other.disks_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000001);
             disksBuilder_ = 
               com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                  getDisksFieldBuilder() : null;
@@ -489,129 +422,12 @@ public  final class DiskListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.util.List<com.appscode.api.kubernetes.v1beta2.Disk> disks_ =
       java.util.Collections.emptyList();
     private void ensureDisksIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         disks_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Disk>(disks_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
 
@@ -619,7 +435,7 @@ public  final class DiskListResponse extends
         com.appscode.api.kubernetes.v1beta2.Disk, com.appscode.api.kubernetes.v1beta2.Disk.Builder, com.appscode.api.kubernetes.v1beta2.DiskOrBuilder> disksBuilder_;
 
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta2.Disk> getDisksList() {
       if (disksBuilder_ == null) {
@@ -629,7 +445,7 @@ public  final class DiskListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public int getDisksCount() {
       if (disksBuilder_ == null) {
@@ -639,7 +455,7 @@ public  final class DiskListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Disk getDisks(int index) {
       if (disksBuilder_ == null) {
@@ -649,7 +465,7 @@ public  final class DiskListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder setDisks(
         int index, com.appscode.api.kubernetes.v1beta2.Disk value) {
@@ -666,7 +482,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder setDisks(
         int index, com.appscode.api.kubernetes.v1beta2.Disk.Builder builderForValue) {
@@ -680,7 +496,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder addDisks(com.appscode.api.kubernetes.v1beta2.Disk value) {
       if (disksBuilder_ == null) {
@@ -696,7 +512,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder addDisks(
         int index, com.appscode.api.kubernetes.v1beta2.Disk value) {
@@ -713,7 +529,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder addDisks(
         com.appscode.api.kubernetes.v1beta2.Disk.Builder builderForValue) {
@@ -727,7 +543,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder addDisks(
         int index, com.appscode.api.kubernetes.v1beta2.Disk.Builder builderForValue) {
@@ -741,7 +557,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder addAllDisks(
         java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.Disk> values) {
@@ -756,12 +572,12 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder clearDisks() {
       if (disksBuilder_ == null) {
         disks_ = java.util.Collections.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
       } else {
         disksBuilder_.clear();
@@ -769,7 +585,7 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public Builder removeDisks(int index) {
       if (disksBuilder_ == null) {
@@ -782,14 +598,14 @@ public  final class DiskListResponse extends
       return this;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Disk.Builder getDisksBuilder(
         int index) {
       return getDisksFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.DiskOrBuilder getDisksOrBuilder(
         int index) {
@@ -799,7 +615,7 @@ public  final class DiskListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DiskOrBuilder> 
          getDisksOrBuilderList() {
@@ -810,14 +626,14 @@ public  final class DiskListResponse extends
       }
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Disk.Builder addDisksBuilder() {
       return getDisksFieldBuilder().addBuilder(
           com.appscode.api.kubernetes.v1beta2.Disk.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Disk.Builder addDisksBuilder(
         int index) {
@@ -825,7 +641,7 @@ public  final class DiskListResponse extends
           index, com.appscode.api.kubernetes.v1beta2.Disk.getDefaultInstance());
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Disk disks = 1;</code>
      */
     public java.util.List<com.appscode.api.kubernetes.v1beta2.Disk.Builder> 
          getDisksBuilderList() {
@@ -838,7 +654,7 @@ public  final class DiskListResponse extends
         disksBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.Disk, com.appscode.api.kubernetes.v1beta2.Disk.Builder, com.appscode.api.kubernetes.v1beta2.DiskOrBuilder>(
                 disks_,
-                ((bitField0_ & 0x00000002) == 0x00000002),
+                ((bitField0_ & 0x00000001) == 0x00000001),
                 getParentForChildren(),
                 isClean());
         disks_ = null;

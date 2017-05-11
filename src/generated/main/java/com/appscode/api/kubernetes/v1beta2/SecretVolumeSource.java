@@ -107,7 +107,7 @@ public  final class SecretVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   public java.lang.String getSecretName() {
     java.lang.Object ref = secretName_;
@@ -127,7 +127,7 @@ public  final class SecretVolumeSource extends
    * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
    * </pre>
    *
-   * <code>optional string secretName = 1;</code>
+   * <code>string secretName = 1;</code>
    */
   public com.google.protobuf.ByteString
       getSecretNameBytes() {
@@ -239,7 +239,7 @@ public  final class SecretVolumeSource extends
    * mode, like fsGroup, and the result can be other mode bits set.
    * </pre>
    *
-   * <code>optional int32 defaultMode = 3;</code>
+   * <code>int32 defaultMode = 3;</code>
    */
   public int getDefaultMode() {
     return defaultMode_;
@@ -315,7 +315,7 @@ public  final class SecretVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SECRETNAME_FIELD_NUMBER;
     hash = (53 * hash) + getSecretName().hashCode();
     if (getItemsCount() > 0) {
@@ -604,7 +604,7 @@ public  final class SecretVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public java.lang.String getSecretName() {
       java.lang.Object ref = secretName_;
@@ -624,7 +624,7 @@ public  final class SecretVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public com.google.protobuf.ByteString
         getSecretNameBytes() {
@@ -645,7 +645,7 @@ public  final class SecretVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder setSecretName(
         java.lang.String value) {
@@ -663,7 +663,7 @@ public  final class SecretVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder clearSecretName() {
       
@@ -677,7 +677,7 @@ public  final class SecretVolumeSource extends
      * More info: http://kubernetes.io/docs/user-guide/volumes#secrets
      * </pre>
      *
-     * <code>optional string secretName = 1;</code>
+     * <code>string secretName = 1;</code>
      */
     public Builder setSecretNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1121,7 +1121,7 @@ public  final class SecretVolumeSource extends
      * mode, like fsGroup, and the result can be other mode bits set.
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public int getDefaultMode() {
       return defaultMode_;
@@ -1135,7 +1135,7 @@ public  final class SecretVolumeSource extends
      * mode, like fsGroup, and the result can be other mode bits set.
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public Builder setDefaultMode(int value) {
       
@@ -1152,7 +1152,7 @@ public  final class SecretVolumeSource extends
      * mode, like fsGroup, and the result can be other mode bits set.
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public Builder clearDefaultMode() {
       

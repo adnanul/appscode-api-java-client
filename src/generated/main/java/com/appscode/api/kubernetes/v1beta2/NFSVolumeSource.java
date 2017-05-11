@@ -98,7 +98,7 @@ public  final class NFSVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string server = 1;</code>
+   * <code>string server = 1;</code>
    */
   public java.lang.String getServer() {
     java.lang.Object ref = server_;
@@ -118,7 +118,7 @@ public  final class NFSVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string server = 1;</code>
+   * <code>string server = 1;</code>
    */
   public com.google.protobuf.ByteString
       getServerBytes() {
@@ -142,7 +142,7 @@ public  final class NFSVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   public java.lang.String getPath() {
     java.lang.Object ref = path_;
@@ -162,7 +162,7 @@ public  final class NFSVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   public com.google.protobuf.ByteString
       getPathBytes() {
@@ -188,7 +188,7 @@ public  final class NFSVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -263,7 +263,7 @@ public  final class NFSVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SERVER_FIELD_NUMBER;
     hash = (53 * hash) + getServer().hashCode();
     hash = (37 * hash) + PATH_FIELD_NUMBER;
@@ -510,7 +510,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string server = 1;</code>
+     * <code>string server = 1;</code>
      */
     public java.lang.String getServer() {
       java.lang.Object ref = server_;
@@ -530,7 +530,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string server = 1;</code>
+     * <code>string server = 1;</code>
      */
     public com.google.protobuf.ByteString
         getServerBytes() {
@@ -551,7 +551,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string server = 1;</code>
+     * <code>string server = 1;</code>
      */
     public Builder setServer(
         java.lang.String value) {
@@ -569,7 +569,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string server = 1;</code>
+     * <code>string server = 1;</code>
      */
     public Builder clearServer() {
       
@@ -583,7 +583,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string server = 1;</code>
+     * <code>string server = 1;</code>
      */
     public Builder setServerBytes(
         com.google.protobuf.ByteString value) {
@@ -604,7 +604,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -624,7 +624,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -645,7 +645,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder setPath(
         java.lang.String value) {
@@ -663,7 +663,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder clearPath() {
       
@@ -677,7 +677,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional string path = 2;</code>
+     * <code>string path = 2;</code>
      */
     public Builder setPathBytes(
         com.google.protobuf.ByteString value) {
@@ -700,7 +700,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -713,7 +713,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -729,7 +729,7 @@ public  final class NFSVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#nfs
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder clearReadOnly() {
       

@@ -8,28 +8,15 @@ public interface ListResourceResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   boolean hasResources();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KubeResourceList getResources();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KubeResourceListOrBuilder getResourcesOrBuilder();
 }

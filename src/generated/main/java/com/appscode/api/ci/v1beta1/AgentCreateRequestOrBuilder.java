@@ -8,91 +8,91 @@ public interface AgentCreateRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   java.lang.String getRole();
   /**
-   * <code>optional string role = 2;</code>
+   * <code>string role = 2;</code>
    */
   com.google.protobuf.ByteString
       getRoleBytes();
 
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>string external_ip = 3;</code>
    */
   java.lang.String getExternalIp();
   /**
-   * <code>optional string external_ip = 3;</code>
+   * <code>string external_ip = 3;</code>
    */
   com.google.protobuf.ByteString
       getExternalIpBytes();
 
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>string internal_ip = 4;</code>
    */
   java.lang.String getInternalIp();
   /**
-   * <code>optional string internal_ip = 4;</code>
+   * <code>string internal_ip = 4;</code>
    */
   com.google.protobuf.ByteString
       getInternalIpBytes();
 
   /**
-   * <code>optional string ssh_user = 5;</code>
+   * <code>string ssh_user = 5;</code>
    */
   java.lang.String getSshUser();
   /**
-   * <code>optional string ssh_user = 5;</code>
+   * <code>string ssh_user = 5;</code>
    */
   com.google.protobuf.ByteString
       getSshUserBytes();
 
   /**
-   * <code>optional int32 ssh_port = 6;</code>
+   * <code>int32 ssh_port = 6;</code>
    */
   int getSshPort();
 
   /**
-   * <code>optional int32 jenkins_jnlp_port = 7;</code>
+   * <code>int32 jenkins_jnlp_port = 7;</code>
    */
   int getJenkinsJnlpPort();
 
   /**
-   * <code>optional string git_ssh_public_key = 8;</code>
+   * <code>string git_ssh_public_key = 8;</code>
    */
   java.lang.String getGitSshPublicKey();
   /**
-   * <code>optional string git_ssh_public_key = 8;</code>
+   * <code>string git_ssh_public_key = 8;</code>
    */
   com.google.protobuf.ByteString
       getGitSshPublicKeyBytes();
 
   /**
-   * <code>optional string jenkins_url = 9;</code>
+   * <code>string jenkins_url = 9;</code>
    */
   java.lang.String getJenkinsUrl();
   /**
-   * <code>optional string jenkins_url = 9;</code>
+   * <code>string jenkins_url = 9;</code>
    */
   com.google.protobuf.ByteString
       getJenkinsUrlBytes();
 
   /**
-   * <code>optional string ca_cert = 10;</code>
+   * <code>string ca_cert = 10;</code>
    */
   java.lang.String getCaCert();
   /**
-   * <code>optional string ca_cert = 10;</code>
+   * <code>string ca_cert = 10;</code>
    */
   com.google.protobuf.ByteString
       getCaCertBytes();

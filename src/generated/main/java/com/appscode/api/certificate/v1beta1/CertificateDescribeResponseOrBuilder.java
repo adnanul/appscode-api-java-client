@@ -8,28 +8,15 @@ public interface CertificateDescribeResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.certificate.v1beta1.Certificate certificate = 2;</code>
+   * <code>.appscode.certificate.v1beta1.Certificate certificate = 1;</code>
    */
   boolean hasCertificate();
   /**
-   * <code>optional .appscode.certificate.v1beta1.Certificate certificate = 2;</code>
+   * <code>.appscode.certificate.v1beta1.Certificate certificate = 1;</code>
    */
   com.appscode.api.certificate.v1beta1.Certificate getCertificate();
   /**
-   * <code>optional .appscode.certificate.v1beta1.Certificate certificate = 2;</code>
+   * <code>.appscode.certificate.v1beta1.Certificate certificate = 1;</code>
    */
   com.appscode.api.certificate.v1beta1.CertificateOrBuilder getCertificateOrBuilder();
 }

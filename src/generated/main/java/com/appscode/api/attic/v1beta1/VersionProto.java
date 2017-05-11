@@ -71,43 +71,40 @@ public final class VersionProto {
       "\n(appscode/api/attic/v1beta1/version.pro" +
       "to\022\026appscode.attic.v1beta1\032\034google/api/a" +
       "nnotations.proto\032\036appscode/api/annotatio" +
-      "ns.proto\032\037appscode/api/dtypes/types.prot" +
-      "o\"0\n\022VersionListRequest\022\014\n\004name\030\001 \001(\t\022\014\n" +
-      "\004type\030\002 \001(\t\"y\n\023VersionListResponse\022\'\n\006st" +
-      "atus\030\001 \001(\0132\027.appscode.dtypes.Status\0229\n\010v" +
-      "ersions\030\002 \003(\0132\'.appscode.attic.v1beta1.A" +
-      "rtifactVersion\"@\n\026VersionDescribeRequest" +
-      "\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\014\n\004type\030\003 \001(\t",
-      "\"|\n\027VersionDescribeResponse\022\'\n\006status\030\001 " +
-      "\001(\0132\027.appscode.dtypes.Status\0228\n\007version\030" +
-      "\002 \001(\0132\'.appscode.attic.v1beta1.ArtifactV" +
-      "ersion\"\260\002\n\017ArtifactVersion\022\n\n\002id\030\001 \001(\t\022\014" +
-      "\n\004name\030\002 \001(\t\022\017\n\007version\030\003 \001(\t\022\023\n\013modifie" +
-      "d_at\030\004 \001(\003\022\014\n\004type\030\005 \001(\t\0220\n\004java\030\006 \001(\0132 " +
-      ".appscode.attic.v1beta1.JavaSpecH\000\0224\n\006do" +
-      "cker\030\007 \001(\0132\".appscode.attic.v1beta1.Dock" +
-      "erSpecH\000\022.\n\003php\030\010 \001(\0132\037.appscode.attic.v" +
-      "1beta1.PhpSpecH\000\022.\n\003npm\030\t \001(\0132\037.appscode",
-      ".attic.v1beta1.NpmSpecH\000B\007\n\005specs\"G\n\010Jav" +
-      "aSpec\022\020\n\010group_id\030\001 \001(\t\022\023\n\013artifact_id\030\002" +
-      " \001(\t\022\024\n\014artifact_url\030\003 \001(\t\"4\n\nDockerSpec" +
-      "\022\020\n\010tar_sums\030\001 \003(\t\022\024\n\014manifest_url\030\002 \001(\t" +
-      "\"/\n\007PhpSpec\022\024\n\014download_url\030\001 \001(\t\022\016\n\006sha" +
-      "sum\030\002 \001(\t\"k\n\007NpmSpec\022\023\n\013description\030\001 \001(" +
-      "\t\022\023\n\013artifact_id\030\002 \001(\t\022\016\n\006shasum\030\003 \001(\t\022\020" +
-      "\n\010keywords\030\004 \003(\t\022\024\n\014artifact_url\030\005 \001(\t2\365" +
-      "\002\n\010Versions\022\252\001\n\004List\022*.appscode.attic.v1" +
-      "beta1.VersionListRequest\032+.appscode.atti",
-      "c.v1beta1.VersionListResponse\"I\202\323\344\223\002=\022;/" +
-      "_appscode/api/attic/v1beta1/artifacts/{t" +
-      "ype}/versions/json\202\265\030\002\010\001\022\273\001\n\010Describe\022.." +
-      "appscode.attic.v1beta1.VersionDescribeRe" +
-      "quest\032/.appscode.attic.v1beta1.VersionDe" +
-      "scribeResponse\"N\202\323\344\223\002B\022@/_appscode/api/a" +
-      "ttic/v1beta1/artifacts/{type}/versions/{" +
-      "id}/json\202\265\030\002\010\001B9\n\036com.appscode.api.attic" +
-      ".v1beta1B\014VersionProtoP\001Z\007v1beta1b\006proto" +
-      "3"
+      "ns.proto\"0\n\022VersionListRequest\022\014\n\004name\030\001" +
+      " \001(\t\022\014\n\004type\030\002 \001(\t\"P\n\023VersionListRespons" +
+      "e\0229\n\010versions\030\001 \003(\0132\'.appscode.attic.v1b" +
+      "eta1.ArtifactVersion\"@\n\026VersionDescribeR" +
+      "equest\022\014\n\004name\030\001 \001(\t\022\n\n\002id\030\002 \001(\t\022\014\n\004type" +
+      "\030\003 \001(\t\"S\n\027VersionDescribeResponse\0228\n\007ver" +
+      "sion\030\001 \001(\0132\'.appscode.attic.v1beta1.Arti",
+      "factVersion\"\260\002\n\017ArtifactVersion\022\n\n\002id\030\001 " +
+      "\001(\t\022\014\n\004name\030\002 \001(\t\022\017\n\007version\030\003 \001(\t\022\023\n\013mo" +
+      "dified_at\030\004 \001(\003\022\014\n\004type\030\005 \001(\t\0220\n\004java\030\006 " +
+      "\001(\0132 .appscode.attic.v1beta1.JavaSpecH\000\022" +
+      "4\n\006docker\030\007 \001(\0132\".appscode.attic.v1beta1" +
+      ".DockerSpecH\000\022.\n\003php\030\010 \001(\0132\037.appscode.at" +
+      "tic.v1beta1.PhpSpecH\000\022.\n\003npm\030\t \001(\0132\037.app" +
+      "scode.attic.v1beta1.NpmSpecH\000B\007\n\005specs\"G" +
+      "\n\010JavaSpec\022\020\n\010group_id\030\001 \001(\t\022\023\n\013artifact" +
+      "_id\030\002 \001(\t\022\024\n\014artifact_url\030\003 \001(\t\"4\n\nDocke",
+      "rSpec\022\020\n\010tar_sums\030\001 \003(\t\022\024\n\014manifest_url\030" +
+      "\002 \001(\t\"/\n\007PhpSpec\022\024\n\014download_url\030\001 \001(\t\022\016" +
+      "\n\006shasum\030\002 \001(\t\"k\n\007NpmSpec\022\023\n\013description" +
+      "\030\001 \001(\t\022\023\n\013artifact_id\030\002 \001(\t\022\016\n\006shasum\030\003 " +
+      "\001(\t\022\020\n\010keywords\030\004 \003(\t\022\024\n\014artifact_url\030\005 " +
+      "\001(\t2\365\002\n\010Versions\022\252\001\n\004List\022*.appscode.att" +
+      "ic.v1beta1.VersionListRequest\032+.appscode" +
+      ".attic.v1beta1.VersionListResponse\"I\202\323\344\223" +
+      "\002=\022;/_appscode/api/attic/v1beta1/artifac" +
+      "ts/{type}/versions/json\202\265\030\002\010\001\022\273\001\n\010Descri",
+      "be\022..appscode.attic.v1beta1.VersionDescr" +
+      "ibeRequest\032/.appscode.attic.v1beta1.Vers" +
+      "ionDescribeResponse\"N\202\323\344\223\002B\022@/_appscode/" +
+      "api/attic/v1beta1/artifacts/{type}/versi" +
+      "ons/{id}/json\202\265\030\002\010\001B9\n\036com.appscode.api." +
+      "attic.v1beta1B\014VersionProtoP\001Z\007v1beta1b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -122,7 +119,6 @@ public final class VersionProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.AnnotationsProto.getDescriptor(),
-          com.appscode.api.dtypes.TypeProto.getDescriptor(),
         }, assigner);
     internal_static_appscode_attic_v1beta1_VersionListRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -135,7 +131,7 @@ public final class VersionProto {
     internal_static_appscode_attic_v1beta1_VersionListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_attic_v1beta1_VersionListResponse_descriptor,
-        new java.lang.String[] { "Status", "Versions", });
+        new java.lang.String[] { "Versions", });
     internal_static_appscode_attic_v1beta1_VersionDescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_attic_v1beta1_VersionDescribeRequest_fieldAccessorTable = new
@@ -147,7 +143,7 @@ public final class VersionProto {
     internal_static_appscode_attic_v1beta1_VersionDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_attic_v1beta1_VersionDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Version", });
+        new java.lang.String[] { "Version", });
     internal_static_appscode_attic_v1beta1_ArtifactVersion_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_attic_v1beta1_ArtifactVersion_fieldAccessorTable = new
@@ -186,7 +182,6 @@ public final class VersionProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
     com.appscode.api.AnnotationsProto.getDescriptor();
-    com.appscode.api.dtypes.TypeProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

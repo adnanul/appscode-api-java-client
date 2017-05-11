@@ -8,22 +8,22 @@ public interface IcingaStateOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional int32 OK = 1;</code>
+   * <code>int32 OK = 1;</code>
    */
   int getOK();
 
   /**
-   * <code>optional int32 Warning = 2;</code>
+   * <code>int32 Warning = 2;</code>
    */
   int getWarning();
 
   /**
-   * <code>optional int32 Critical = 3;</code>
+   * <code>int32 Critical = 3;</code>
    */
   int getCritical();
 
   /**
-   * <code>optional int32 Unknown = 4;</code>
+   * <code>int32 Unknown = 4;</code>
    */
   int getUnknown();
 }

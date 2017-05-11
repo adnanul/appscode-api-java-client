@@ -13,7 +13,7 @@ public interface GlusterfsVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string endpoints = 1;</code>
+   * <code>string endpoints = 1;</code>
    */
   java.lang.String getEndpoints();
   /**
@@ -22,7 +22,7 @@ public interface GlusterfsVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string endpoints = 1;</code>
+   * <code>string endpoints = 1;</code>
    */
   com.google.protobuf.ByteString
       getEndpointsBytes();
@@ -33,7 +33,7 @@ public interface GlusterfsVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   java.lang.String getPath();
   /**
@@ -42,7 +42,7 @@ public interface GlusterfsVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional string path = 2;</code>
+   * <code>string path = 2;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
@@ -54,7 +54,7 @@ public interface GlusterfsVolumeSourceOrBuilder extends
    * More info: http://releases.k8s.io/release-1.4/examples/volumes/glusterfs/README.md#create-a-pod
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   boolean getReadOnly();
 }

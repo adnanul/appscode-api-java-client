@@ -12,7 +12,7 @@ public interface PhotonPersistentDiskVolumeSourceOrBuilder extends
    * ID that identifies Photon Controller persistent disk
    * </pre>
    *
-   * <code>optional string pdID = 1;</code>
+   * <code>string pdID = 1;</code>
    */
   java.lang.String getPdID();
   /**
@@ -20,7 +20,7 @@ public interface PhotonPersistentDiskVolumeSourceOrBuilder extends
    * ID that identifies Photon Controller persistent disk
    * </pre>
    *
-   * <code>optional string pdID = 1;</code>
+   * <code>string pdID = 1;</code>
    */
   com.google.protobuf.ByteString
       getPdIDBytes();
@@ -32,7 +32,7 @@ public interface PhotonPersistentDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   java.lang.String getFsType();
   /**
@@ -42,7 +42,7 @@ public interface PhotonPersistentDiskVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();

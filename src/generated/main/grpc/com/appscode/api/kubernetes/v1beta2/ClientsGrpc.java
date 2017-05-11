@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/kubernetes/v1beta2/client.proto")
-public class ClientsGrpc {
+public final class ClientsGrpc {
 
   private ClientsGrpc() {}
 
@@ -251,7 +251,7 @@ public class ClientsGrpc {
       asyncUnimplementedUnaryCall(METHOD_UNREGISTER_PERSISTENT_VOLUME_CLAIM, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_LIST,
@@ -699,7 +699,7 @@ public class ClientsGrpc {
   private static final int METHODID_REGISTER_PERSISTENT_VOLUME_CLAIM = 10;
   private static final int METHODID_UNREGISTER_PERSISTENT_VOLUME_CLAIM = 11;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -707,7 +707,7 @@ public class ClientsGrpc {
     private final ClientsImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(ClientsImplBase serviceImpl, int methodId) {
+    MethodHandlers(ClientsImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -780,20 +780,39 @@ public class ClientsGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_LIST,
-        METHOD_DESCRIBE,
-        METHOD_CREATE,
-        METHOD_DELETE,
-        METHOD_UPDATE,
-        METHOD_COPY,
-        METHOD_EDIT_CONFIG_MAP,
-        METHOD_EDIT_SECRET,
-        METHOD_REGISTER_PERSISTENT_VOLUME,
-        METHOD_UNREGISTER_PERSISTENT_VOLUME,
-        METHOD_REGISTER_PERSISTENT_VOLUME_CLAIM,
-        METHOD_UNREGISTER_PERSISTENT_VOLUME_CLAIM);
+  private static final class ClientsDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (ClientsGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new ClientsDescriptorSupplier())
+              .addMethod(METHOD_LIST)
+              .addMethod(METHOD_DESCRIBE)
+              .addMethod(METHOD_CREATE)
+              .addMethod(METHOD_DELETE)
+              .addMethod(METHOD_UPDATE)
+              .addMethod(METHOD_COPY)
+              .addMethod(METHOD_EDIT_CONFIG_MAP)
+              .addMethod(METHOD_EDIT_SECRET)
+              .addMethod(METHOD_REGISTER_PERSISTENT_VOLUME)
+              .addMethod(METHOD_UNREGISTER_PERSISTENT_VOLUME)
+              .addMethod(METHOD_REGISTER_PERSISTENT_VOLUME_CLAIM)
+              .addMethod(METHOD_UNREGISTER_PERSISTENT_VOLUME_CLAIM)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

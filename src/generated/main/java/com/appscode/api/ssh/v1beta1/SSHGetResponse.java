@@ -51,19 +51,6 @@ public  final class SSHGetResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.ssh.v1beta1.SSHKey.Builder subBuilder = null;
             if (sshKey_ != null) {
               subBuilder = sshKey_.toBuilder();
@@ -76,24 +63,24 @@ public  final class SSHGetResponse extends
 
             break;
           }
-          case 26: {
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             instanceAddr_ = s;
             break;
           }
-          case 32: {
+          case 24: {
 
             instancePort_ = input.readInt32();
             break;
           }
-          case 42: {
+          case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
             user_ = s;
             break;
           }
-          case 50: {
+          case 42: {
             java.lang.String s = input.readStringRequireUtf8();
 
             command_ = s;
@@ -122,52 +109,31 @@ public  final class SSHGetResponse extends
             com.appscode.api.ssh.v1beta1.SSHGetResponse.class, com.appscode.api.ssh.v1beta1.SSHGetResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int SSH_KEY_FIELD_NUMBER = 2;
+  public static final int SSH_KEY_FIELD_NUMBER = 1;
   private com.appscode.api.ssh.v1beta1.SSHKey sshKey_;
   /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   public boolean hasSshKey() {
     return sshKey_ != null;
   }
   /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   public com.appscode.api.ssh.v1beta1.SSHKey getSshKey() {
     return sshKey_ == null ? com.appscode.api.ssh.v1beta1.SSHKey.getDefaultInstance() : sshKey_;
   }
   /**
-   * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+   * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
    */
   public com.appscode.api.ssh.v1beta1.SSHKeyOrBuilder getSshKeyOrBuilder() {
     return getSshKey();
   }
 
-  public static final int INSTANCE_ADDR_FIELD_NUMBER = 3;
+  public static final int INSTANCE_ADDR_FIELD_NUMBER = 2;
   private volatile java.lang.Object instanceAddr_;
   /**
-   * <code>optional string instance_addr = 3;</code>
+   * <code>string instance_addr = 2;</code>
    */
   public java.lang.String getInstanceAddr() {
     java.lang.Object ref = instanceAddr_;
@@ -182,7 +148,7 @@ public  final class SSHGetResponse extends
     }
   }
   /**
-   * <code>optional string instance_addr = 3;</code>
+   * <code>string instance_addr = 2;</code>
    */
   public com.google.protobuf.ByteString
       getInstanceAddrBytes() {
@@ -198,19 +164,19 @@ public  final class SSHGetResponse extends
     }
   }
 
-  public static final int INSTANCE_PORT_FIELD_NUMBER = 4;
+  public static final int INSTANCE_PORT_FIELD_NUMBER = 3;
   private int instancePort_;
   /**
-   * <code>optional int32 instance_port = 4;</code>
+   * <code>int32 instance_port = 3;</code>
    */
   public int getInstancePort() {
     return instancePort_;
   }
 
-  public static final int USER_FIELD_NUMBER = 5;
+  public static final int USER_FIELD_NUMBER = 4;
   private volatile java.lang.Object user_;
   /**
-   * <code>optional string user = 5;</code>
+   * <code>string user = 4;</code>
    */
   public java.lang.String getUser() {
     java.lang.Object ref = user_;
@@ -225,7 +191,7 @@ public  final class SSHGetResponse extends
     }
   }
   /**
-   * <code>optional string user = 5;</code>
+   * <code>string user = 4;</code>
    */
   public com.google.protobuf.ByteString
       getUserBytes() {
@@ -241,10 +207,10 @@ public  final class SSHGetResponse extends
     }
   }
 
-  public static final int COMMAND_FIELD_NUMBER = 6;
+  public static final int COMMAND_FIELD_NUMBER = 5;
   private volatile java.lang.Object command_;
   /**
-   * <code>optional string command = 6;</code>
+   * <code>string command = 5;</code>
    */
   public java.lang.String getCommand() {
     java.lang.Object ref = command_;
@@ -259,7 +225,7 @@ public  final class SSHGetResponse extends
     }
   }
   /**
-   * <code>optional string command = 6;</code>
+   * <code>string command = 5;</code>
    */
   public com.google.protobuf.ByteString
       getCommandBytes() {
@@ -287,23 +253,20 @@ public  final class SSHGetResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (sshKey_ != null) {
-      output.writeMessage(2, getSshKey());
+      output.writeMessage(1, getSshKey());
     }
     if (!getInstanceAddrBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, instanceAddr_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, instanceAddr_);
     }
     if (instancePort_ != 0) {
-      output.writeInt32(4, instancePort_);
+      output.writeInt32(3, instancePort_);
     }
     if (!getUserBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, user_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, user_);
     }
     if (!getCommandBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, command_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, command_);
     }
   }
 
@@ -312,26 +275,22 @@ public  final class SSHGetResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (sshKey_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getSshKey());
+        .computeMessageSize(1, getSshKey());
     }
     if (!getInstanceAddrBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, instanceAddr_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, instanceAddr_);
     }
     if (instancePort_ != 0) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(4, instancePort_);
+        .computeInt32Size(3, instancePort_);
     }
     if (!getUserBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, user_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, user_);
     }
     if (!getCommandBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, command_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, command_);
     }
     memoizedSize = size;
     return size;
@@ -349,11 +308,6 @@ public  final class SSHGetResponse extends
     com.appscode.api.ssh.v1beta1.SSHGetResponse other = (com.appscode.api.ssh.v1beta1.SSHGetResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasSshKey() == other.hasSshKey());
     if (hasSshKey()) {
       result = result && getSshKey()
@@ -376,11 +330,7 @@ public  final class SSHGetResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasSshKey()) {
       hash = (37 * hash) + SSH_KEY_FIELD_NUMBER;
       hash = (53 * hash) + getSshKey().hashCode();
@@ -515,12 +465,6 @@ public  final class SSHGetResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (sshKeyBuilder_ == null) {
         sshKey_ = null;
       } else {
@@ -557,11 +501,6 @@ public  final class SSHGetResponse extends
 
     public com.appscode.api.ssh.v1beta1.SSHGetResponse buildPartial() {
       com.appscode.api.ssh.v1beta1.SSHGetResponse result = new com.appscode.api.ssh.v1beta1.SSHGetResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (sshKeyBuilder_ == null) {
         result.sshKey_ = sshKey_;
       } else {
@@ -612,9 +551,6 @@ public  final class SSHGetResponse extends
 
     public Builder mergeFrom(com.appscode.api.ssh.v1beta1.SSHGetResponse other) {
       if (other == com.appscode.api.ssh.v1beta1.SSHGetResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasSshKey()) {
         mergeSshKey(other.getSshKey());
       }
@@ -659,134 +595,17 @@ public  final class SSHGetResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.ssh.v1beta1.SSHKey sshKey_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.ssh.v1beta1.SSHKey, com.appscode.api.ssh.v1beta1.SSHKey.Builder, com.appscode.api.ssh.v1beta1.SSHKeyOrBuilder> sshKeyBuilder_;
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public boolean hasSshKey() {
       return sshKeyBuilder_ != null || sshKey_ != null;
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public com.appscode.api.ssh.v1beta1.SSHKey getSshKey() {
       if (sshKeyBuilder_ == null) {
@@ -796,7 +615,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public Builder setSshKey(com.appscode.api.ssh.v1beta1.SSHKey value) {
       if (sshKeyBuilder_ == null) {
@@ -812,7 +631,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public Builder setSshKey(
         com.appscode.api.ssh.v1beta1.SSHKey.Builder builderForValue) {
@@ -826,7 +645,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public Builder mergeSshKey(com.appscode.api.ssh.v1beta1.SSHKey value) {
       if (sshKeyBuilder_ == null) {
@@ -844,7 +663,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public Builder clearSshKey() {
       if (sshKeyBuilder_ == null) {
@@ -858,7 +677,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public com.appscode.api.ssh.v1beta1.SSHKey.Builder getSshKeyBuilder() {
       
@@ -866,7 +685,7 @@ public  final class SSHGetResponse extends
       return getSshKeyFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     public com.appscode.api.ssh.v1beta1.SSHKeyOrBuilder getSshKeyOrBuilder() {
       if (sshKeyBuilder_ != null) {
@@ -877,7 +696,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional .appscode.ssh.v1beta1.SSHKey ssh_key = 2;</code>
+     * <code>.appscode.ssh.v1beta1.SSHKey ssh_key = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.ssh.v1beta1.SSHKey, com.appscode.api.ssh.v1beta1.SSHKey.Builder, com.appscode.api.ssh.v1beta1.SSHKeyOrBuilder> 
@@ -895,7 +714,7 @@ public  final class SSHGetResponse extends
 
     private java.lang.Object instanceAddr_ = "";
     /**
-     * <code>optional string instance_addr = 3;</code>
+     * <code>string instance_addr = 2;</code>
      */
     public java.lang.String getInstanceAddr() {
       java.lang.Object ref = instanceAddr_;
@@ -910,7 +729,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string instance_addr = 3;</code>
+     * <code>string instance_addr = 2;</code>
      */
     public com.google.protobuf.ByteString
         getInstanceAddrBytes() {
@@ -926,7 +745,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string instance_addr = 3;</code>
+     * <code>string instance_addr = 2;</code>
      */
     public Builder setInstanceAddr(
         java.lang.String value) {
@@ -939,7 +758,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string instance_addr = 3;</code>
+     * <code>string instance_addr = 2;</code>
      */
     public Builder clearInstanceAddr() {
       
@@ -948,7 +767,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string instance_addr = 3;</code>
+     * <code>string instance_addr = 2;</code>
      */
     public Builder setInstanceAddrBytes(
         com.google.protobuf.ByteString value) {
@@ -964,13 +783,13 @@ public  final class SSHGetResponse extends
 
     private int instancePort_ ;
     /**
-     * <code>optional int32 instance_port = 4;</code>
+     * <code>int32 instance_port = 3;</code>
      */
     public int getInstancePort() {
       return instancePort_;
     }
     /**
-     * <code>optional int32 instance_port = 4;</code>
+     * <code>int32 instance_port = 3;</code>
      */
     public Builder setInstancePort(int value) {
       
@@ -979,7 +798,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional int32 instance_port = 4;</code>
+     * <code>int32 instance_port = 3;</code>
      */
     public Builder clearInstancePort() {
       
@@ -990,7 +809,7 @@ public  final class SSHGetResponse extends
 
     private java.lang.Object user_ = "";
     /**
-     * <code>optional string user = 5;</code>
+     * <code>string user = 4;</code>
      */
     public java.lang.String getUser() {
       java.lang.Object ref = user_;
@@ -1005,7 +824,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string user = 5;</code>
+     * <code>string user = 4;</code>
      */
     public com.google.protobuf.ByteString
         getUserBytes() {
@@ -1021,7 +840,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string user = 5;</code>
+     * <code>string user = 4;</code>
      */
     public Builder setUser(
         java.lang.String value) {
@@ -1034,7 +853,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string user = 5;</code>
+     * <code>string user = 4;</code>
      */
     public Builder clearUser() {
       
@@ -1043,7 +862,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string user = 5;</code>
+     * <code>string user = 4;</code>
      */
     public Builder setUserBytes(
         com.google.protobuf.ByteString value) {
@@ -1059,7 +878,7 @@ public  final class SSHGetResponse extends
 
     private java.lang.Object command_ = "";
     /**
-     * <code>optional string command = 6;</code>
+     * <code>string command = 5;</code>
      */
     public java.lang.String getCommand() {
       java.lang.Object ref = command_;
@@ -1074,7 +893,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string command = 6;</code>
+     * <code>string command = 5;</code>
      */
     public com.google.protobuf.ByteString
         getCommandBytes() {
@@ -1090,7 +909,7 @@ public  final class SSHGetResponse extends
       }
     }
     /**
-     * <code>optional string command = 6;</code>
+     * <code>string command = 5;</code>
      */
     public Builder setCommand(
         java.lang.String value) {
@@ -1103,7 +922,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string command = 6;</code>
+     * <code>string command = 5;</code>
      */
     public Builder clearCommand() {
       
@@ -1112,7 +931,7 @@ public  final class SSHGetResponse extends
       return this;
     }
     /**
-     * <code>optional string command = 6;</code>
+     * <code>string command = 5;</code>
      */
     public Builder setCommandBytes(
         com.google.protobuf.ByteString value) {

@@ -94,7 +94,7 @@ public  final class SSHKey extends
   public static final int PUBLIC_KEY_FIELD_NUMBER = 1;
   private com.google.protobuf.ByteString publicKey_;
   /**
-   * <code>optional bytes public_key = 1;</code>
+   * <code>bytes public_key = 1;</code>
    */
   public com.google.protobuf.ByteString getPublicKey() {
     return publicKey_;
@@ -103,7 +103,7 @@ public  final class SSHKey extends
   public static final int PRIVATE_KEY_FIELD_NUMBER = 2;
   private com.google.protobuf.ByteString privateKey_;
   /**
-   * <code>optional bytes private_key = 2;</code>
+   * <code>bytes private_key = 2;</code>
    */
   public com.google.protobuf.ByteString getPrivateKey() {
     return privateKey_;
@@ -112,7 +112,7 @@ public  final class SSHKey extends
   public static final int AWS_FINGERPRINT_FIELD_NUMBER = 3;
   private volatile java.lang.Object awsFingerprint_;
   /**
-   * <code>optional string aws_fingerprint = 3;</code>
+   * <code>string aws_fingerprint = 3;</code>
    */
   public java.lang.String getAwsFingerprint() {
     java.lang.Object ref = awsFingerprint_;
@@ -127,7 +127,7 @@ public  final class SSHKey extends
     }
   }
   /**
-   * <code>optional string aws_fingerprint = 3;</code>
+   * <code>string aws_fingerprint = 3;</code>
    */
   public com.google.protobuf.ByteString
       getAwsFingerprintBytes() {
@@ -146,7 +146,7 @@ public  final class SSHKey extends
   public static final int OPENSSH_FINGERPRINT_FIELD_NUMBER = 4;
   private volatile java.lang.Object opensshFingerprint_;
   /**
-   * <code>optional string openssh_fingerprint = 4;</code>
+   * <code>string openssh_fingerprint = 4;</code>
    */
   public java.lang.String getOpensshFingerprint() {
     java.lang.Object ref = opensshFingerprint_;
@@ -161,7 +161,7 @@ public  final class SSHKey extends
     }
   }
   /**
-   * <code>optional string openssh_fingerprint = 4;</code>
+   * <code>string openssh_fingerprint = 4;</code>
    */
   public com.google.protobuf.ByteString
       getOpensshFingerprintBytes() {
@@ -255,7 +255,7 @@ public  final class SSHKey extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PUBLIC_KEY_FIELD_NUMBER;
     hash = (53 * hash) + getPublicKey().hashCode();
     hash = (37 * hash) + PRIVATE_KEY_FIELD_NUMBER;
@@ -499,13 +499,13 @@ public  final class SSHKey extends
 
     private com.google.protobuf.ByteString publicKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>optional bytes public_key = 1;</code>
+     * <code>bytes public_key = 1;</code>
      */
     public com.google.protobuf.ByteString getPublicKey() {
       return publicKey_;
     }
     /**
-     * <code>optional bytes public_key = 1;</code>
+     * <code>bytes public_key = 1;</code>
      */
     public Builder setPublicKey(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -517,7 +517,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional bytes public_key = 1;</code>
+     * <code>bytes public_key = 1;</code>
      */
     public Builder clearPublicKey() {
       
@@ -528,13 +528,13 @@ public  final class SSHKey extends
 
     private com.google.protobuf.ByteString privateKey_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>optional bytes private_key = 2;</code>
+     * <code>bytes private_key = 2;</code>
      */
     public com.google.protobuf.ByteString getPrivateKey() {
       return privateKey_;
     }
     /**
-     * <code>optional bytes private_key = 2;</code>
+     * <code>bytes private_key = 2;</code>
      */
     public Builder setPrivateKey(com.google.protobuf.ByteString value) {
       if (value == null) {
@@ -546,7 +546,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional bytes private_key = 2;</code>
+     * <code>bytes private_key = 2;</code>
      */
     public Builder clearPrivateKey() {
       
@@ -557,7 +557,7 @@ public  final class SSHKey extends
 
     private java.lang.Object awsFingerprint_ = "";
     /**
-     * <code>optional string aws_fingerprint = 3;</code>
+     * <code>string aws_fingerprint = 3;</code>
      */
     public java.lang.String getAwsFingerprint() {
       java.lang.Object ref = awsFingerprint_;
@@ -572,7 +572,7 @@ public  final class SSHKey extends
       }
     }
     /**
-     * <code>optional string aws_fingerprint = 3;</code>
+     * <code>string aws_fingerprint = 3;</code>
      */
     public com.google.protobuf.ByteString
         getAwsFingerprintBytes() {
@@ -588,7 +588,7 @@ public  final class SSHKey extends
       }
     }
     /**
-     * <code>optional string aws_fingerprint = 3;</code>
+     * <code>string aws_fingerprint = 3;</code>
      */
     public Builder setAwsFingerprint(
         java.lang.String value) {
@@ -601,7 +601,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional string aws_fingerprint = 3;</code>
+     * <code>string aws_fingerprint = 3;</code>
      */
     public Builder clearAwsFingerprint() {
       
@@ -610,7 +610,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional string aws_fingerprint = 3;</code>
+     * <code>string aws_fingerprint = 3;</code>
      */
     public Builder setAwsFingerprintBytes(
         com.google.protobuf.ByteString value) {
@@ -626,7 +626,7 @@ public  final class SSHKey extends
 
     private java.lang.Object opensshFingerprint_ = "";
     /**
-     * <code>optional string openssh_fingerprint = 4;</code>
+     * <code>string openssh_fingerprint = 4;</code>
      */
     public java.lang.String getOpensshFingerprint() {
       java.lang.Object ref = opensshFingerprint_;
@@ -641,7 +641,7 @@ public  final class SSHKey extends
       }
     }
     /**
-     * <code>optional string openssh_fingerprint = 4;</code>
+     * <code>string openssh_fingerprint = 4;</code>
      */
     public com.google.protobuf.ByteString
         getOpensshFingerprintBytes() {
@@ -657,7 +657,7 @@ public  final class SSHKey extends
       }
     }
     /**
-     * <code>optional string openssh_fingerprint = 4;</code>
+     * <code>string openssh_fingerprint = 4;</code>
      */
     public Builder setOpensshFingerprint(
         java.lang.String value) {
@@ -670,7 +670,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional string openssh_fingerprint = 4;</code>
+     * <code>string openssh_fingerprint = 4;</code>
      */
     public Builder clearOpensshFingerprint() {
       
@@ -679,7 +679,7 @@ public  final class SSHKey extends
       return this;
     }
     /**
-     * <code>optional string openssh_fingerprint = 4;</code>
+     * <code>string openssh_fingerprint = 4;</code>
      */
     public Builder setOpensshFingerprintBytes(
         com.google.protobuf.ByteString value) {

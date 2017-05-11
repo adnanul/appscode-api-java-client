@@ -43,19 +43,6 @@ public  final class ClusterInstanceByIPResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.kubernetes.v1beta1.ClusterInstance.Builder subBuilder = null;
             if (instance_ != null) {
               subBuilder = instance_.toBuilder();
@@ -91,43 +78,22 @@ public  final class ClusterInstanceByIPResponse extends
             com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int INSTANCE_FIELD_NUMBER = 2;
+  public static final int INSTANCE_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta1.ClusterInstance instance_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   public boolean hasInstance() {
     return instance_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterInstance getInstance() {
     return instance_ == null ? com.appscode.api.kubernetes.v1beta1.ClusterInstance.getDefaultInstance() : instance_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta1.ClusterInstanceOrBuilder getInstanceOrBuilder() {
     return getInstance();
@@ -145,11 +111,8 @@ public  final class ClusterInstanceByIPResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (instance_ != null) {
-      output.writeMessage(2, getInstance());
+      output.writeMessage(1, getInstance());
     }
   }
 
@@ -158,13 +121,9 @@ public  final class ClusterInstanceByIPResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (instance_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getInstance());
+        .computeMessageSize(1, getInstance());
     }
     memoizedSize = size;
     return size;
@@ -182,11 +141,6 @@ public  final class ClusterInstanceByIPResponse extends
     com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasInstance() == other.hasInstance());
     if (hasInstance()) {
       result = result && getInstance()
@@ -201,11 +155,7 @@ public  final class ClusterInstanceByIPResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasInstance()) {
       hash = (37 * hash) + INSTANCE_FIELD_NUMBER;
       hash = (53 * hash) + getInstance().hashCode();
@@ -328,12 +278,6 @@ public  final class ClusterInstanceByIPResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (instanceBuilder_ == null) {
         instance_ = null;
       } else {
@@ -362,11 +306,6 @@ public  final class ClusterInstanceByIPResponse extends
 
     public com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (instanceBuilder_ == null) {
         result.instance_ = instance_;
       } else {
@@ -413,9 +352,6 @@ public  final class ClusterInstanceByIPResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ClusterInstanceByIPResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasInstance()) {
         mergeInstance(other.getInstance());
       }
@@ -445,134 +381,17 @@ public  final class ClusterInstanceByIPResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.kubernetes.v1beta1.ClusterInstance instance_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterInstance, com.appscode.api.kubernetes.v1beta1.ClusterInstance.Builder, com.appscode.api.kubernetes.v1beta1.ClusterInstanceOrBuilder> instanceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public boolean hasInstance() {
       return instanceBuilder_ != null || instance_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterInstance getInstance() {
       if (instanceBuilder_ == null) {
@@ -582,7 +401,7 @@ public  final class ClusterInstanceByIPResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public Builder setInstance(com.appscode.api.kubernetes.v1beta1.ClusterInstance value) {
       if (instanceBuilder_ == null) {
@@ -598,7 +417,7 @@ public  final class ClusterInstanceByIPResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public Builder setInstance(
         com.appscode.api.kubernetes.v1beta1.ClusterInstance.Builder builderForValue) {
@@ -612,7 +431,7 @@ public  final class ClusterInstanceByIPResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public Builder mergeInstance(com.appscode.api.kubernetes.v1beta1.ClusterInstance value) {
       if (instanceBuilder_ == null) {
@@ -630,7 +449,7 @@ public  final class ClusterInstanceByIPResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public Builder clearInstance() {
       if (instanceBuilder_ == null) {
@@ -644,7 +463,7 @@ public  final class ClusterInstanceByIPResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterInstance.Builder getInstanceBuilder() {
       
@@ -652,7 +471,7 @@ public  final class ClusterInstanceByIPResponse extends
       return getInstanceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta1.ClusterInstanceOrBuilder getInstanceOrBuilder() {
       if (instanceBuilder_ != null) {
@@ -663,7 +482,7 @@ public  final class ClusterInstanceByIPResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta1.ClusterInstance, com.appscode.api.kubernetes.v1beta1.ClusterInstance.Builder, com.appscode.api.kubernetes.v1beta1.ClusterInstanceOrBuilder> 

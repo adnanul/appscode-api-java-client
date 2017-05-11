@@ -8,31 +8,31 @@ public interface SSHKeyOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional bytes public_key = 1;</code>
+   * <code>bytes public_key = 1;</code>
    */
   com.google.protobuf.ByteString getPublicKey();
 
   /**
-   * <code>optional bytes private_key = 2;</code>
+   * <code>bytes private_key = 2;</code>
    */
   com.google.protobuf.ByteString getPrivateKey();
 
   /**
-   * <code>optional string aws_fingerprint = 3;</code>
+   * <code>string aws_fingerprint = 3;</code>
    */
   java.lang.String getAwsFingerprint();
   /**
-   * <code>optional string aws_fingerprint = 3;</code>
+   * <code>string aws_fingerprint = 3;</code>
    */
   com.google.protobuf.ByteString
       getAwsFingerprintBytes();
 
   /**
-   * <code>optional string openssh_fingerprint = 4;</code>
+   * <code>string openssh_fingerprint = 4;</code>
    */
   java.lang.String getOpensshFingerprint();
   /**
-   * <code>optional string openssh_fingerprint = 4;</code>
+   * <code>string openssh_fingerprint = 4;</code>
    */
   com.google.protobuf.ByteString
       getOpensshFingerprintBytes();

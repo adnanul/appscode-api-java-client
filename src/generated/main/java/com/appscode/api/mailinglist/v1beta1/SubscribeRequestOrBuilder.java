@@ -8,11 +8,11 @@ public interface SubscribeRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string email = 1;</code>
+   * <code>string email = 1;</code>
    */
   java.lang.String getEmail();
   /**
-   * <code>optional string email = 1;</code>
+   * <code>string email = 1;</code>
    */
   com.google.protobuf.ByteString
       getEmailBytes();

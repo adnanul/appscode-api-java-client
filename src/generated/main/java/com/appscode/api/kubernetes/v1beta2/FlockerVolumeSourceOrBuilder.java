@@ -12,7 +12,7 @@ public interface FlockerVolumeSourceOrBuilder extends
    * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
    * </pre>
    *
-   * <code>optional string datasetName = 1;</code>
+   * <code>string datasetName = 1;</code>
    */
   java.lang.String getDatasetName();
   /**
@@ -20,7 +20,7 @@ public interface FlockerVolumeSourceOrBuilder extends
    * Required: the volume name. This is going to be store on metadata -&gt; name on the payload for Flocker
    * </pre>
    *
-   * <code>optional string datasetName = 1;</code>
+   * <code>string datasetName = 1;</code>
    */
   com.google.protobuf.ByteString
       getDatasetNameBytes();

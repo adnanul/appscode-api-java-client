@@ -85,7 +85,7 @@ public  final class HostPathVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   public java.lang.String getPath() {
     java.lang.Object ref = path_;
@@ -105,7 +105,7 @@ public  final class HostPathVolumeSource extends
    * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPathBytes() {
@@ -173,7 +173,7 @@ public  final class HostPathVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PATH_FIELD_NUMBER;
     hash = (53 * hash) + getPath().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -402,7 +402,7 @@ public  final class HostPathVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
@@ -422,7 +422,7 @@ public  final class HostPathVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPathBytes() {
@@ -443,7 +443,7 @@ public  final class HostPathVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder setPath(
         java.lang.String value) {
@@ -461,7 +461,7 @@ public  final class HostPathVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder clearPath() {
       
@@ -475,7 +475,7 @@ public  final class HostPathVolumeSource extends
      * More info: http://releases.k8s.io/release-1.4/docs/user-guide/volumes.md#hostpath
      * </pre>
      *
-     * <code>optional string path = 1;</code>
+     * <code>string path = 1;</code>
      */
     public Builder setPathBytes(
         com.google.protobuf.ByteString value) {

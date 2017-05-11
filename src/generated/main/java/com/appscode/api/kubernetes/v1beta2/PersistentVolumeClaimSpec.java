@@ -503,7 +503,7 @@ public  final class PersistentVolumeClaimSpec extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (!internalGetLimits().getMap().isEmpty()) {
         hash = (37 * hash) + LIMITS_FIELD_NUMBER;
         hash = (53 * hash) + internalGetLimits().hashCode();
@@ -834,7 +834,8 @@ public  final class PersistentVolumeClaimSpec extends
       }
 
       public Builder clearLimits() {
-        getMutableLimits().clear();
+        internalGetMutableLimits().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -844,7 +845,8 @@ public  final class PersistentVolumeClaimSpec extends
       public Builder removeLimits(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableLimits().remove(key);
+        internalGetMutableLimits().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -863,7 +865,8 @@ public  final class PersistentVolumeClaimSpec extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableLimits().put(key, value);
+        internalGetMutableLimits().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -872,7 +875,8 @@ public  final class PersistentVolumeClaimSpec extends
 
       public Builder putAllLimits(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableLimits().putAll(values);
+        internalGetMutableLimits().getMutableMap()
+            .putAll(values);
         return this;
       }
 
@@ -953,7 +957,8 @@ public  final class PersistentVolumeClaimSpec extends
       }
 
       public Builder clearRequests() {
-        getMutableRequests().clear();
+        internalGetMutableRequests().getMutableMap()
+            .clear();
         return this;
       }
       /**
@@ -963,7 +968,8 @@ public  final class PersistentVolumeClaimSpec extends
       public Builder removeRequests(
           java.lang.String key) {
         if (key == null) { throw new java.lang.NullPointerException(); }
-        getMutableRequests().remove(key);
+        internalGetMutableRequests().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
@@ -982,7 +988,8 @@ public  final class PersistentVolumeClaimSpec extends
           java.lang.String value) {
         if (key == null) { throw new java.lang.NullPointerException(); }
         if (value == null) { throw new java.lang.NullPointerException(); }
-        getMutableRequests().put(key, value);
+        internalGetMutableRequests().getMutableMap()
+            .put(key, value);
         return this;
       }
       /**
@@ -991,7 +998,8 @@ public  final class PersistentVolumeClaimSpec extends
 
       public Builder putAllRequests(
           java.util.Map<java.lang.String, java.lang.String> values) {
-        getMutableRequests().putAll(values);
+        internalGetMutableRequests().getMutableMap()
+            .putAll(values);
         return this;
       }
       public final Builder setUnknownFields(
@@ -1076,19 +1084,19 @@ public  final class PersistentVolumeClaimSpec extends
   public static final int RESOURCES_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   public boolean hasResources() {
     return resources_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements getResources() {
     return resources_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements.getDefaultInstance() : resources_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirementsOrBuilder getResourcesOrBuilder() {
     return getResources();
@@ -1097,7 +1105,7 @@ public  final class PersistentVolumeClaimSpec extends
   public static final int VOLUME_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object volumeName_;
   /**
-   * <code>optional string volume_name = 3;</code>
+   * <code>string volume_name = 3;</code>
    */
   public java.lang.String getVolumeName() {
     java.lang.Object ref = volumeName_;
@@ -1112,7 +1120,7 @@ public  final class PersistentVolumeClaimSpec extends
     }
   }
   /**
-   * <code>optional string volume_name = 3;</code>
+   * <code>string volume_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getVolumeNameBytes() {
@@ -1205,7 +1213,7 @@ public  final class PersistentVolumeClaimSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getAccessModesCount() > 0) {
       hash = (37 * hash) + ACCESS_MODES_FIELD_NUMBER;
       hash = (53 * hash) + getAccessModesList().hashCode();
@@ -1563,13 +1571,13 @@ public  final class PersistentVolumeClaimSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirementsOrBuilder> resourcesBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public boolean hasResources() {
       return resourcesBuilder_ != null || resources_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements getResources() {
       if (resourcesBuilder_ == null) {
@@ -1579,7 +1587,7 @@ public  final class PersistentVolumeClaimSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public Builder setResources(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements value) {
       if (resourcesBuilder_ == null) {
@@ -1595,7 +1603,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public Builder setResources(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements.Builder builderForValue) {
@@ -1609,7 +1617,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public Builder mergeResources(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements value) {
       if (resourcesBuilder_ == null) {
@@ -1627,7 +1635,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public Builder clearResources() {
       if (resourcesBuilder_ == null) {
@@ -1641,7 +1649,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements.Builder getResourcesBuilder() {
       
@@ -1649,7 +1657,7 @@ public  final class PersistentVolumeClaimSpec extends
       return getResourcesFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirementsOrBuilder getResourcesOrBuilder() {
       if (resourcesBuilder_ != null) {
@@ -1660,7 +1668,7 @@ public  final class PersistentVolumeClaimSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirementsOrBuilder> 
@@ -1678,7 +1686,7 @@ public  final class PersistentVolumeClaimSpec extends
 
     private java.lang.Object volumeName_ = "";
     /**
-     * <code>optional string volume_name = 3;</code>
+     * <code>string volume_name = 3;</code>
      */
     public java.lang.String getVolumeName() {
       java.lang.Object ref = volumeName_;
@@ -1693,7 +1701,7 @@ public  final class PersistentVolumeClaimSpec extends
       }
     }
     /**
-     * <code>optional string volume_name = 3;</code>
+     * <code>string volume_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getVolumeNameBytes() {
@@ -1709,7 +1717,7 @@ public  final class PersistentVolumeClaimSpec extends
       }
     }
     /**
-     * <code>optional string volume_name = 3;</code>
+     * <code>string volume_name = 3;</code>
      */
     public Builder setVolumeName(
         java.lang.String value) {
@@ -1722,7 +1730,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional string volume_name = 3;</code>
+     * <code>string volume_name = 3;</code>
      */
     public Builder clearVolumeName() {
       
@@ -1731,7 +1739,7 @@ public  final class PersistentVolumeClaimSpec extends
       return this;
     }
     /**
-     * <code>optional string volume_name = 3;</code>
+     * <code>string volume_name = 3;</code>
      */
     public Builder setVolumeNameBytes(
         com.google.protobuf.ByteString value) {

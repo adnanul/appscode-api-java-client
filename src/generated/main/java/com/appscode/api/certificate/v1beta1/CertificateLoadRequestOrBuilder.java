@@ -8,31 +8,31 @@ public interface CertificateLoadRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string cert_data = 2;</code>
+   * <code>string cert_data = 2;</code>
    */
   java.lang.String getCertData();
   /**
-   * <code>optional string cert_data = 2;</code>
+   * <code>string cert_data = 2;</code>
    */
   com.google.protobuf.ByteString
       getCertDataBytes();
 
   /**
-   * <code>optional string key_data = 3;</code>
+   * <code>string key_data = 3;</code>
    */
   java.lang.String getKeyData();
   /**
-   * <code>optional string key_data = 3;</code>
+   * <code>string key_data = 3;</code>
    */
   com.google.protobuf.ByteString
       getKeyDataBytes();

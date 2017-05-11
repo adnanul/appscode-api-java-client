@@ -103,7 +103,7 @@ public  final class SendEmailRequest extends
   public static final int SENDER_NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object senderName_;
   /**
-   * <code>optional string sender_name = 1;</code>
+   * <code>string sender_name = 1;</code>
    */
   public java.lang.String getSenderName() {
     java.lang.Object ref = senderName_;
@@ -118,7 +118,7 @@ public  final class SendEmailRequest extends
     }
   }
   /**
-   * <code>optional string sender_name = 1;</code>
+   * <code>string sender_name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getSenderNameBytes() {
@@ -137,7 +137,7 @@ public  final class SendEmailRequest extends
   public static final int SENDER_EMAIL_FIELD_NUMBER = 2;
   private volatile java.lang.Object senderEmail_;
   /**
-   * <code>optional string sender_email = 2;</code>
+   * <code>string sender_email = 2;</code>
    */
   public java.lang.String getSenderEmail() {
     java.lang.Object ref = senderEmail_;
@@ -152,7 +152,7 @@ public  final class SendEmailRequest extends
     }
   }
   /**
-   * <code>optional string sender_email = 2;</code>
+   * <code>string sender_email = 2;</code>
    */
   public com.google.protobuf.ByteString
       getSenderEmailBytes() {
@@ -171,7 +171,7 @@ public  final class SendEmailRequest extends
   public static final int SUBJECT_FIELD_NUMBER = 3;
   private volatile java.lang.Object subject_;
   /**
-   * <code>optional string subject = 3;</code>
+   * <code>string subject = 3;</code>
    */
   public java.lang.String getSubject() {
     java.lang.Object ref = subject_;
@@ -186,7 +186,7 @@ public  final class SendEmailRequest extends
     }
   }
   /**
-   * <code>optional string subject = 3;</code>
+   * <code>string subject = 3;</code>
    */
   public com.google.protobuf.ByteString
       getSubjectBytes() {
@@ -205,7 +205,7 @@ public  final class SendEmailRequest extends
   public static final int BODY_FIELD_NUMBER = 4;
   private volatile java.lang.Object body_;
   /**
-   * <code>optional string body = 4;</code>
+   * <code>string body = 4;</code>
    */
   public java.lang.String getBody() {
     java.lang.Object ref = body_;
@@ -220,7 +220,7 @@ public  final class SendEmailRequest extends
     }
   }
   /**
-   * <code>optional string body = 4;</code>
+   * <code>string body = 4;</code>
    */
   public com.google.protobuf.ByteString
       getBodyBytes() {
@@ -239,7 +239,7 @@ public  final class SendEmailRequest extends
   public static final int RECEIVER_EMAIL_FIELD_NUMBER = 5;
   private volatile java.lang.Object receiverEmail_;
   /**
-   * <code>optional string receiver_email = 5;</code>
+   * <code>string receiver_email = 5;</code>
    */
   public java.lang.String getReceiverEmail() {
     java.lang.Object ref = receiverEmail_;
@@ -254,7 +254,7 @@ public  final class SendEmailRequest extends
     }
   }
   /**
-   * <code>optional string receiver_email = 5;</code>
+   * <code>string receiver_email = 5;</code>
    */
   public com.google.protobuf.ByteString
       getReceiverEmailBytes() {
@@ -354,7 +354,7 @@ public  final class SendEmailRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SENDER_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getSenderName().hashCode();
     hash = (37 * hash) + SENDER_EMAIL_FIELD_NUMBER;
@@ -609,7 +609,7 @@ public  final class SendEmailRequest extends
 
     private java.lang.Object senderName_ = "";
     /**
-     * <code>optional string sender_name = 1;</code>
+     * <code>string sender_name = 1;</code>
      */
     public java.lang.String getSenderName() {
       java.lang.Object ref = senderName_;
@@ -624,7 +624,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string sender_name = 1;</code>
+     * <code>string sender_name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getSenderNameBytes() {
@@ -640,7 +640,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string sender_name = 1;</code>
+     * <code>string sender_name = 1;</code>
      */
     public Builder setSenderName(
         java.lang.String value) {
@@ -653,7 +653,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string sender_name = 1;</code>
+     * <code>string sender_name = 1;</code>
      */
     public Builder clearSenderName() {
       
@@ -662,7 +662,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string sender_name = 1;</code>
+     * <code>string sender_name = 1;</code>
      */
     public Builder setSenderNameBytes(
         com.google.protobuf.ByteString value) {
@@ -678,7 +678,7 @@ public  final class SendEmailRequest extends
 
     private java.lang.Object senderEmail_ = "";
     /**
-     * <code>optional string sender_email = 2;</code>
+     * <code>string sender_email = 2;</code>
      */
     public java.lang.String getSenderEmail() {
       java.lang.Object ref = senderEmail_;
@@ -693,7 +693,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string sender_email = 2;</code>
+     * <code>string sender_email = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSenderEmailBytes() {
@@ -709,7 +709,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string sender_email = 2;</code>
+     * <code>string sender_email = 2;</code>
      */
     public Builder setSenderEmail(
         java.lang.String value) {
@@ -722,7 +722,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string sender_email = 2;</code>
+     * <code>string sender_email = 2;</code>
      */
     public Builder clearSenderEmail() {
       
@@ -731,7 +731,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string sender_email = 2;</code>
+     * <code>string sender_email = 2;</code>
      */
     public Builder setSenderEmailBytes(
         com.google.protobuf.ByteString value) {
@@ -747,7 +747,7 @@ public  final class SendEmailRequest extends
 
     private java.lang.Object subject_ = "";
     /**
-     * <code>optional string subject = 3;</code>
+     * <code>string subject = 3;</code>
      */
     public java.lang.String getSubject() {
       java.lang.Object ref = subject_;
@@ -762,7 +762,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string subject = 3;</code>
+     * <code>string subject = 3;</code>
      */
     public com.google.protobuf.ByteString
         getSubjectBytes() {
@@ -778,7 +778,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string subject = 3;</code>
+     * <code>string subject = 3;</code>
      */
     public Builder setSubject(
         java.lang.String value) {
@@ -791,7 +791,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string subject = 3;</code>
+     * <code>string subject = 3;</code>
      */
     public Builder clearSubject() {
       
@@ -800,7 +800,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string subject = 3;</code>
+     * <code>string subject = 3;</code>
      */
     public Builder setSubjectBytes(
         com.google.protobuf.ByteString value) {
@@ -816,7 +816,7 @@ public  final class SendEmailRequest extends
 
     private java.lang.Object body_ = "";
     /**
-     * <code>optional string body = 4;</code>
+     * <code>string body = 4;</code>
      */
     public java.lang.String getBody() {
       java.lang.Object ref = body_;
@@ -831,7 +831,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string body = 4;</code>
+     * <code>string body = 4;</code>
      */
     public com.google.protobuf.ByteString
         getBodyBytes() {
@@ -847,7 +847,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string body = 4;</code>
+     * <code>string body = 4;</code>
      */
     public Builder setBody(
         java.lang.String value) {
@@ -860,7 +860,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string body = 4;</code>
+     * <code>string body = 4;</code>
      */
     public Builder clearBody() {
       
@@ -869,7 +869,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string body = 4;</code>
+     * <code>string body = 4;</code>
      */
     public Builder setBodyBytes(
         com.google.protobuf.ByteString value) {
@@ -885,7 +885,7 @@ public  final class SendEmailRequest extends
 
     private java.lang.Object receiverEmail_ = "";
     /**
-     * <code>optional string receiver_email = 5;</code>
+     * <code>string receiver_email = 5;</code>
      */
     public java.lang.String getReceiverEmail() {
       java.lang.Object ref = receiverEmail_;
@@ -900,7 +900,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string receiver_email = 5;</code>
+     * <code>string receiver_email = 5;</code>
      */
     public com.google.protobuf.ByteString
         getReceiverEmailBytes() {
@@ -916,7 +916,7 @@ public  final class SendEmailRequest extends
       }
     }
     /**
-     * <code>optional string receiver_email = 5;</code>
+     * <code>string receiver_email = 5;</code>
      */
     public Builder setReceiverEmail(
         java.lang.String value) {
@@ -929,7 +929,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string receiver_email = 5;</code>
+     * <code>string receiver_email = 5;</code>
      */
     public Builder clearReceiverEmail() {
       
@@ -938,7 +938,7 @@ public  final class SendEmailRequest extends
       return this;
     }
     /**
-     * <code>optional string receiver_email = 5;</code>
+     * <code>string receiver_email = 5;</code>
      */
     public Builder setReceiverEmailBytes(
         com.google.protobuf.ByteString value) {

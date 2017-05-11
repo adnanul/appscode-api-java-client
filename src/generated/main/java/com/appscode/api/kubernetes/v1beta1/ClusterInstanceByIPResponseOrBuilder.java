@@ -8,28 +8,15 @@ public interface ClusterInstanceByIPResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   boolean hasInstance();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterInstance getInstance();
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.ClusterInstance instance = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.ClusterInstance instance = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterInstanceOrBuilder getInstanceOrBuilder();
 }

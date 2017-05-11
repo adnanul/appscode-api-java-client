@@ -129,51 +129,51 @@ public  final class Pod extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     java.lang.String getMessage();
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     com.google.protobuf.ByteString
         getMessageBytes();
 
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
 
     /**
-     * <code>optional string hostIP = 4;</code>
+     * <code>string hostIP = 4;</code>
      */
     java.lang.String getHostIP();
     /**
-     * <code>optional string hostIP = 4;</code>
+     * <code>string hostIP = 4;</code>
      */
     com.google.protobuf.ByteString
         getHostIPBytes();
 
     /**
-     * <code>optional string podIP = 5;</code>
+     * <code>string podIP = 5;</code>
      */
     java.lang.String getPodIP();
     /**
-     * <code>optional string podIP = 5;</code>
+     * <code>string podIP = 5;</code>
      */
     com.google.protobuf.ByteString
         getPodIPBytes();
@@ -203,7 +203,7 @@ public  final class Pod extends
         int index);
 
     /**
-     * <code>optional int64 start_time = 7;</code>
+     * <code>int64 start_time = 7;</code>
      */
     long getStartTime();
   }
@@ -327,7 +327,7 @@ public  final class Pod extends
     public static final int PHASE_FIELD_NUMBER = 1;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -342,7 +342,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string phase = 1;</code>
+     * <code>string phase = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -361,7 +361,7 @@ public  final class Pod extends
     public static final int MESSAGE_FIELD_NUMBER = 2;
     private volatile java.lang.Object message_;
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public java.lang.String getMessage() {
       java.lang.Object ref = message_;
@@ -376,7 +376,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string message = 2;</code>
+     * <code>string message = 2;</code>
      */
     public com.google.protobuf.ByteString
         getMessageBytes() {
@@ -395,7 +395,7 @@ public  final class Pod extends
     public static final int REASON_FIELD_NUMBER = 3;
     private volatile java.lang.Object reason_;
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -410,7 +410,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string reason = 3;</code>
+     * <code>string reason = 3;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -429,7 +429,7 @@ public  final class Pod extends
     public static final int HOSTIP_FIELD_NUMBER = 4;
     private volatile java.lang.Object hostIP_;
     /**
-     * <code>optional string hostIP = 4;</code>
+     * <code>string hostIP = 4;</code>
      */
     public java.lang.String getHostIP() {
       java.lang.Object ref = hostIP_;
@@ -444,7 +444,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string hostIP = 4;</code>
+     * <code>string hostIP = 4;</code>
      */
     public com.google.protobuf.ByteString
         getHostIPBytes() {
@@ -463,7 +463,7 @@ public  final class Pod extends
     public static final int PODIP_FIELD_NUMBER = 5;
     private volatile java.lang.Object podIP_;
     /**
-     * <code>optional string podIP = 5;</code>
+     * <code>string podIP = 5;</code>
      */
     public java.lang.String getPodIP() {
       java.lang.Object ref = podIP_;
@@ -478,7 +478,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string podIP = 5;</code>
+     * <code>string podIP = 5;</code>
      */
     public com.google.protobuf.ByteString
         getPodIPBytes() {
@@ -532,7 +532,7 @@ public  final class Pod extends
     public static final int START_TIME_FIELD_NUMBER = 7;
     private long startTime_;
     /**
-     * <code>optional int64 start_time = 7;</code>
+     * <code>int64 start_time = 7;</code>
      */
     public long getStartTime() {
       return startTime_;
@@ -640,7 +640,7 @@ public  final class Pod extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + MESSAGE_FIELD_NUMBER;
@@ -954,7 +954,7 @@ public  final class Pod extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -969,7 +969,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -985,7 +985,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -998,7 +998,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder clearPhase() {
         
@@ -1007,7 +1007,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string phase = 1;</code>
+       * <code>string phase = 1;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -1023,7 +1023,7 @@ public  final class Pod extends
 
       private java.lang.Object message_ = "";
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public java.lang.String getMessage() {
         java.lang.Object ref = message_;
@@ -1038,7 +1038,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMessageBytes() {
@@ -1054,7 +1054,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessage(
           java.lang.String value) {
@@ -1067,7 +1067,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder clearMessage() {
         
@@ -1076,7 +1076,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string message = 2;</code>
+       * <code>string message = 2;</code>
        */
       public Builder setMessageBytes(
           com.google.protobuf.ByteString value) {
@@ -1092,7 +1092,7 @@ public  final class Pod extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -1107,7 +1107,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -1123,7 +1123,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -1136,7 +1136,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder clearReason() {
         
@@ -1145,7 +1145,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string reason = 3;</code>
+       * <code>string reason = 3;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -1161,7 +1161,7 @@ public  final class Pod extends
 
       private java.lang.Object hostIP_ = "";
       /**
-       * <code>optional string hostIP = 4;</code>
+       * <code>string hostIP = 4;</code>
        */
       public java.lang.String getHostIP() {
         java.lang.Object ref = hostIP_;
@@ -1176,7 +1176,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string hostIP = 4;</code>
+       * <code>string hostIP = 4;</code>
        */
       public com.google.protobuf.ByteString
           getHostIPBytes() {
@@ -1192,7 +1192,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string hostIP = 4;</code>
+       * <code>string hostIP = 4;</code>
        */
       public Builder setHostIP(
           java.lang.String value) {
@@ -1205,7 +1205,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string hostIP = 4;</code>
+       * <code>string hostIP = 4;</code>
        */
       public Builder clearHostIP() {
         
@@ -1214,7 +1214,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string hostIP = 4;</code>
+       * <code>string hostIP = 4;</code>
        */
       public Builder setHostIPBytes(
           com.google.protobuf.ByteString value) {
@@ -1230,7 +1230,7 @@ public  final class Pod extends
 
       private java.lang.Object podIP_ = "";
       /**
-       * <code>optional string podIP = 5;</code>
+       * <code>string podIP = 5;</code>
        */
       public java.lang.String getPodIP() {
         java.lang.Object ref = podIP_;
@@ -1245,7 +1245,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string podIP = 5;</code>
+       * <code>string podIP = 5;</code>
        */
       public com.google.protobuf.ByteString
           getPodIPBytes() {
@@ -1261,7 +1261,7 @@ public  final class Pod extends
         }
       }
       /**
-       * <code>optional string podIP = 5;</code>
+       * <code>string podIP = 5;</code>
        */
       public Builder setPodIP(
           java.lang.String value) {
@@ -1274,7 +1274,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string podIP = 5;</code>
+       * <code>string podIP = 5;</code>
        */
       public Builder clearPodIP() {
         
@@ -1283,7 +1283,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional string podIP = 5;</code>
+       * <code>string podIP = 5;</code>
        */
       public Builder setPodIPBytes(
           com.google.protobuf.ByteString value) {
@@ -1539,13 +1539,13 @@ public  final class Pod extends
 
       private long startTime_ ;
       /**
-       * <code>optional int64 start_time = 7;</code>
+       * <code>int64 start_time = 7;</code>
        */
       public long getStartTime() {
         return startTime_;
       }
       /**
-       * <code>optional int64 start_time = 7;</code>
+       * <code>int64 start_time = 7;</code>
        */
       public Builder setStartTime(long value) {
         
@@ -1554,7 +1554,7 @@ public  final class Pod extends
         return this;
       }
       /**
-       * <code>optional int64 start_time = 7;</code>
+       * <code>int64 start_time = 7;</code>
        */
       public Builder clearStartTime() {
         
@@ -1614,19 +1614,19 @@ public  final class Pod extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -1635,7 +1635,7 @@ public  final class Pod extends
   public static final int APP_FIELD_NUMBER = 2;
   private volatile java.lang.Object app_;
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public java.lang.String getApp() {
     java.lang.Object ref = app_;
@@ -1650,7 +1650,7 @@ public  final class Pod extends
     }
   }
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAppBytes() {
@@ -1669,19 +1669,19 @@ public  final class Pod extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.PodSpec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PodSpec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.PodSpec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -1690,19 +1690,19 @@ public  final class Pod extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.Pod.PodStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -1711,19 +1711,19 @@ public  final class Pod extends
   public static final int METRICS_FIELD_NUMBER = 5;
   private com.appscode.api.kubernetes.v1beta2.Metrics metrics_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public boolean hasMetrics() {
     return metrics_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Metrics getMetrics() {
     return metrics_ == null ? com.appscode.api.kubernetes.v1beta2.Metrics.getDefaultInstance() : metrics_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder() {
     return getMetrics();
@@ -1829,7 +1829,7 @@ public  final class Pod extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -2122,13 +2122,13 @@ public  final class Pod extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -2138,7 +2138,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2154,7 +2154,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -2168,7 +2168,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -2186,7 +2186,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -2200,7 +2200,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -2208,7 +2208,7 @@ public  final class Pod extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -2219,7 +2219,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -2237,7 +2237,7 @@ public  final class Pod extends
 
     private java.lang.Object app_ = "";
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public java.lang.String getApp() {
       java.lang.Object ref = app_;
@@ -2252,7 +2252,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAppBytes() {
@@ -2268,7 +2268,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setApp(
         java.lang.String value) {
@@ -2281,7 +2281,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder clearApp() {
       
@@ -2290,7 +2290,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setAppBytes(
         com.google.protobuf.ByteString value) {
@@ -2308,13 +2308,13 @@ public  final class Pod extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec getSpec() {
       if (specBuilder_ == null) {
@@ -2324,7 +2324,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
       if (specBuilder_ == null) {
@@ -2340,7 +2340,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.PodSpec.Builder builderForValue) {
@@ -2354,7 +2354,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
       if (specBuilder_ == null) {
@@ -2372,7 +2372,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2386,7 +2386,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec.Builder getSpecBuilder() {
       
@@ -2394,7 +2394,7 @@ public  final class Pod extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -2405,7 +2405,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> 
@@ -2425,13 +2425,13 @@ public  final class Pod extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Pod.PodStatus, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder, com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus getStatus() {
       if (statusBuilder_ == null) {
@@ -2441,7 +2441,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus value) {
       if (statusBuilder_ == null) {
@@ -2457,7 +2457,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder builderForValue) {
@@ -2471,7 +2471,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Pod.PodStatus value) {
       if (statusBuilder_ == null) {
@@ -2489,7 +2489,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2503,7 +2503,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder getStatusBuilder() {
       
@@ -2511,7 +2511,7 @@ public  final class Pod extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -2522,7 +2522,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Pod.PodStatus status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Pod.PodStatus, com.appscode.api.kubernetes.v1beta2.Pod.PodStatus.Builder, com.appscode.api.kubernetes.v1beta2.Pod.PodStatusOrBuilder> 
@@ -2542,13 +2542,13 @@ public  final class Pod extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Metrics, com.appscode.api.kubernetes.v1beta2.Metrics.Builder, com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder> metricsBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public boolean hasMetrics() {
       return metricsBuilder_ != null || metrics_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Metrics getMetrics() {
       if (metricsBuilder_ == null) {
@@ -2558,7 +2558,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder setMetrics(com.appscode.api.kubernetes.v1beta2.Metrics value) {
       if (metricsBuilder_ == null) {
@@ -2574,7 +2574,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder setMetrics(
         com.appscode.api.kubernetes.v1beta2.Metrics.Builder builderForValue) {
@@ -2588,7 +2588,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder mergeMetrics(com.appscode.api.kubernetes.v1beta2.Metrics value) {
       if (metricsBuilder_ == null) {
@@ -2606,7 +2606,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder clearMetrics() {
       if (metricsBuilder_ == null) {
@@ -2620,7 +2620,7 @@ public  final class Pod extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Metrics.Builder getMetricsBuilder() {
       
@@ -2628,7 +2628,7 @@ public  final class Pod extends
       return getMetricsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder() {
       if (metricsBuilder_ != null) {
@@ -2639,7 +2639,7 @@ public  final class Pod extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Metrics, com.appscode.api.kubernetes.v1beta2.Metrics.Builder, com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder> 

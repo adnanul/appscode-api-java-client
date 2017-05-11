@@ -92,7 +92,7 @@ public  final class IcingaState extends
   public static final int OK_FIELD_NUMBER = 1;
   private int oK_;
   /**
-   * <code>optional int32 OK = 1;</code>
+   * <code>int32 OK = 1;</code>
    */
   public int getOK() {
     return oK_;
@@ -101,7 +101,7 @@ public  final class IcingaState extends
   public static final int WARNING_FIELD_NUMBER = 2;
   private int warning_;
   /**
-   * <code>optional int32 Warning = 2;</code>
+   * <code>int32 Warning = 2;</code>
    */
   public int getWarning() {
     return warning_;
@@ -110,7 +110,7 @@ public  final class IcingaState extends
   public static final int CRITICAL_FIELD_NUMBER = 3;
   private int critical_;
   /**
-   * <code>optional int32 Critical = 3;</code>
+   * <code>int32 Critical = 3;</code>
    */
   public int getCritical() {
     return critical_;
@@ -119,7 +119,7 @@ public  final class IcingaState extends
   public static final int UNKNOWN_FIELD_NUMBER = 4;
   private int unknown_;
   /**
-   * <code>optional int32 Unknown = 4;</code>
+   * <code>int32 Unknown = 4;</code>
    */
   public int getUnknown() {
     return unknown_;
@@ -205,7 +205,7 @@ public  final class IcingaState extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + OK_FIELD_NUMBER;
     hash = (53 * hash) + getOK();
     hash = (37 * hash) + WARNING_FIELD_NUMBER;
@@ -447,13 +447,13 @@ public  final class IcingaState extends
 
     private int oK_ ;
     /**
-     * <code>optional int32 OK = 1;</code>
+     * <code>int32 OK = 1;</code>
      */
     public int getOK() {
       return oK_;
     }
     /**
-     * <code>optional int32 OK = 1;</code>
+     * <code>int32 OK = 1;</code>
      */
     public Builder setOK(int value) {
       
@@ -462,7 +462,7 @@ public  final class IcingaState extends
       return this;
     }
     /**
-     * <code>optional int32 OK = 1;</code>
+     * <code>int32 OK = 1;</code>
      */
     public Builder clearOK() {
       
@@ -473,13 +473,13 @@ public  final class IcingaState extends
 
     private int warning_ ;
     /**
-     * <code>optional int32 Warning = 2;</code>
+     * <code>int32 Warning = 2;</code>
      */
     public int getWarning() {
       return warning_;
     }
     /**
-     * <code>optional int32 Warning = 2;</code>
+     * <code>int32 Warning = 2;</code>
      */
     public Builder setWarning(int value) {
       
@@ -488,7 +488,7 @@ public  final class IcingaState extends
       return this;
     }
     /**
-     * <code>optional int32 Warning = 2;</code>
+     * <code>int32 Warning = 2;</code>
      */
     public Builder clearWarning() {
       
@@ -499,13 +499,13 @@ public  final class IcingaState extends
 
     private int critical_ ;
     /**
-     * <code>optional int32 Critical = 3;</code>
+     * <code>int32 Critical = 3;</code>
      */
     public int getCritical() {
       return critical_;
     }
     /**
-     * <code>optional int32 Critical = 3;</code>
+     * <code>int32 Critical = 3;</code>
      */
     public Builder setCritical(int value) {
       
@@ -514,7 +514,7 @@ public  final class IcingaState extends
       return this;
     }
     /**
-     * <code>optional int32 Critical = 3;</code>
+     * <code>int32 Critical = 3;</code>
      */
     public Builder clearCritical() {
       
@@ -525,13 +525,13 @@ public  final class IcingaState extends
 
     private int unknown_ ;
     /**
-     * <code>optional int32 Unknown = 4;</code>
+     * <code>int32 Unknown = 4;</code>
      */
     public int getUnknown() {
       return unknown_;
     }
     /**
-     * <code>optional int32 Unknown = 4;</code>
+     * <code>int32 Unknown = 4;</code>
      */
     public Builder setUnknown(int value) {
       
@@ -540,7 +540,7 @@ public  final class IcingaState extends
       return this;
     }
     /**
-     * <code>optional int32 Unknown = 4;</code>
+     * <code>int32 Unknown = 4;</code>
      */
     public Builder clearUnknown() {
       

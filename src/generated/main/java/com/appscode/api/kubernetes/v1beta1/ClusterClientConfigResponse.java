@@ -52,67 +52,54 @@ public  final class ClusterClientConfigResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
             clusterDomain_ = s;
             break;
           }
-          case 34: {
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             caCert_ = s;
             break;
           }
-          case 42: {
+          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
             apiServerUrl_ = s;
             break;
           }
-          case 50: {
+          case 34: {
             java.lang.String s = input.readStringRequireUtf8();
 
             clusterUserName_ = s;
             break;
           }
-          case 58: {
+          case 42: {
             java.lang.String s = input.readStringRequireUtf8();
 
             userCert_ = s;
             break;
           }
-          case 66: {
+          case 50: {
             java.lang.String s = input.readStringRequireUtf8();
 
             userKey_ = s;
             break;
           }
-          case 74: {
+          case 58: {
             java.lang.String s = input.readStringRequireUtf8();
 
             contextName_ = s;
             break;
           }
-          case 82: {
+          case 66: {
             java.lang.String s = input.readStringRequireUtf8();
 
             userToken_ = s;
             break;
           }
-          case 90: {
+          case 74: {
             java.lang.String s = input.readStringRequireUtf8();
 
             password_ = s;
@@ -141,31 +128,10 @@ public  final class ClusterClientConfigResponse extends
             com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CLUSTER_DOMAIN_FIELD_NUMBER = 3;
+  public static final int CLUSTER_DOMAIN_FIELD_NUMBER = 1;
   private volatile java.lang.Object clusterDomain_;
   /**
-   * <code>optional string cluster_domain = 3;</code>
+   * <code>string cluster_domain = 1;</code>
    */
   public java.lang.String getClusterDomain() {
     java.lang.Object ref = clusterDomain_;
@@ -180,7 +146,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string cluster_domain = 3;</code>
+   * <code>string cluster_domain = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterDomainBytes() {
@@ -196,10 +162,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int CA_CERT_FIELD_NUMBER = 4;
+  public static final int CA_CERT_FIELD_NUMBER = 2;
   private volatile java.lang.Object caCert_;
   /**
-   * <code>optional string ca_cert = 4;</code>
+   * <code>string ca_cert = 2;</code>
    */
   public java.lang.String getCaCert() {
     java.lang.Object ref = caCert_;
@@ -214,7 +180,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string ca_cert = 4;</code>
+   * <code>string ca_cert = 2;</code>
    */
   public com.google.protobuf.ByteString
       getCaCertBytes() {
@@ -230,10 +196,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int API_SERVER_URL_FIELD_NUMBER = 5;
+  public static final int API_SERVER_URL_FIELD_NUMBER = 3;
   private volatile java.lang.Object apiServerUrl_;
   /**
-   * <code>optional string api_server_url = 5;</code>
+   * <code>string api_server_url = 3;</code>
    */
   public java.lang.String getApiServerUrl() {
     java.lang.Object ref = apiServerUrl_;
@@ -248,7 +214,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string api_server_url = 5;</code>
+   * <code>string api_server_url = 3;</code>
    */
   public com.google.protobuf.ByteString
       getApiServerUrlBytes() {
@@ -264,10 +230,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int CLUSTER_USER_NAME_FIELD_NUMBER = 6;
+  public static final int CLUSTER_USER_NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object clusterUserName_;
   /**
-   * <code>optional string cluster_user_name = 6;</code>
+   * <code>string cluster_user_name = 4;</code>
    */
   public java.lang.String getClusterUserName() {
     java.lang.Object ref = clusterUserName_;
@@ -282,7 +248,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string cluster_user_name = 6;</code>
+   * <code>string cluster_user_name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getClusterUserNameBytes() {
@@ -298,10 +264,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int USER_CERT_FIELD_NUMBER = 7;
+  public static final int USER_CERT_FIELD_NUMBER = 5;
   private volatile java.lang.Object userCert_;
   /**
-   * <code>optional string user_cert = 7;</code>
+   * <code>string user_cert = 5;</code>
    */
   public java.lang.String getUserCert() {
     java.lang.Object ref = userCert_;
@@ -316,7 +282,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string user_cert = 7;</code>
+   * <code>string user_cert = 5;</code>
    */
   public com.google.protobuf.ByteString
       getUserCertBytes() {
@@ -332,10 +298,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int USER_KEY_FIELD_NUMBER = 8;
+  public static final int USER_KEY_FIELD_NUMBER = 6;
   private volatile java.lang.Object userKey_;
   /**
-   * <code>optional string user_key = 8;</code>
+   * <code>string user_key = 6;</code>
    */
   public java.lang.String getUserKey() {
     java.lang.Object ref = userKey_;
@@ -350,7 +316,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string user_key = 8;</code>
+   * <code>string user_key = 6;</code>
    */
   public com.google.protobuf.ByteString
       getUserKeyBytes() {
@@ -366,10 +332,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int CONTEXT_NAME_FIELD_NUMBER = 9;
+  public static final int CONTEXT_NAME_FIELD_NUMBER = 7;
   private volatile java.lang.Object contextName_;
   /**
-   * <code>optional string context_name = 9;</code>
+   * <code>string context_name = 7;</code>
    */
   public java.lang.String getContextName() {
     java.lang.Object ref = contextName_;
@@ -384,7 +350,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string context_name = 9;</code>
+   * <code>string context_name = 7;</code>
    */
   public com.google.protobuf.ByteString
       getContextNameBytes() {
@@ -400,10 +366,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int USER_TOKEN_FIELD_NUMBER = 10;
+  public static final int USER_TOKEN_FIELD_NUMBER = 8;
   private volatile java.lang.Object userToken_;
   /**
-   * <code>optional string user_token = 10;</code>
+   * <code>string user_token = 8;</code>
    */
   public java.lang.String getUserToken() {
     java.lang.Object ref = userToken_;
@@ -418,7 +384,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string user_token = 10;</code>
+   * <code>string user_token = 8;</code>
    */
   public com.google.protobuf.ByteString
       getUserTokenBytes() {
@@ -434,10 +400,10 @@ public  final class ClusterClientConfigResponse extends
     }
   }
 
-  public static final int PASSWORD_FIELD_NUMBER = 11;
+  public static final int PASSWORD_FIELD_NUMBER = 9;
   private volatile java.lang.Object password_;
   /**
-   * <code>optional string password = 11;</code>
+   * <code>string password = 9;</code>
    */
   public java.lang.String getPassword() {
     java.lang.Object ref = password_;
@@ -452,7 +418,7 @@ public  final class ClusterClientConfigResponse extends
     }
   }
   /**
-   * <code>optional string password = 11;</code>
+   * <code>string password = 9;</code>
    */
   public com.google.protobuf.ByteString
       getPasswordBytes() {
@@ -480,35 +446,32 @@ public  final class ClusterClientConfigResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (!getClusterDomainBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clusterDomain_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clusterDomain_);
     }
     if (!getCaCertBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, caCert_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, caCert_);
     }
     if (!getApiServerUrlBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, apiServerUrl_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, apiServerUrl_);
     }
     if (!getClusterUserNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, clusterUserName_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, clusterUserName_);
     }
     if (!getUserCertBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, userCert_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, userCert_);
     }
     if (!getUserKeyBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, userKey_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 6, userKey_);
     }
     if (!getContextNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, contextName_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 7, contextName_);
     }
     if (!getUserTokenBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 10, userToken_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, userToken_);
     }
     if (!getPasswordBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 11, password_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, password_);
     }
   }
 
@@ -517,36 +480,32 @@ public  final class ClusterClientConfigResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (!getClusterDomainBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clusterDomain_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, clusterDomain_);
     }
     if (!getCaCertBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, caCert_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, caCert_);
     }
     if (!getApiServerUrlBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, apiServerUrl_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, apiServerUrl_);
     }
     if (!getClusterUserNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, clusterUserName_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, clusterUserName_);
     }
     if (!getUserCertBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, userCert_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, userCert_);
     }
     if (!getUserKeyBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, userKey_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, userKey_);
     }
     if (!getContextNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, contextName_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, contextName_);
     }
     if (!getUserTokenBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, userToken_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, userToken_);
     }
     if (!getPasswordBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, password_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, password_);
     }
     memoizedSize = size;
     return size;
@@ -564,11 +523,6 @@ public  final class ClusterClientConfigResponse extends
     com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getClusterDomain()
         .equals(other.getClusterDomain());
     result = result && getCaCert()
@@ -596,11 +550,7 @@ public  final class ClusterClientConfigResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_DOMAIN_FIELD_NUMBER;
     hash = (53 * hash) + getClusterDomain().hashCode();
     hash = (37 * hash) + CA_CERT_FIELD_NUMBER;
@@ -737,12 +687,6 @@ public  final class ClusterClientConfigResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       clusterDomain_ = "";
 
       caCert_ = "";
@@ -783,11 +727,6 @@ public  final class ClusterClientConfigResponse extends
 
     public com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       result.clusterDomain_ = clusterDomain_;
       result.caCert_ = caCert_;
       result.apiServerUrl_ = apiServerUrl_;
@@ -838,9 +777,6 @@ public  final class ClusterClientConfigResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ClusterClientConfigResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (!other.getClusterDomain().isEmpty()) {
         clusterDomain_ = other.clusterDomain_;
         onChanged();
@@ -903,126 +839,9 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.lang.Object clusterDomain_ = "";
     /**
-     * <code>optional string cluster_domain = 3;</code>
+     * <code>string cluster_domain = 1;</code>
      */
     public java.lang.String getClusterDomain() {
       java.lang.Object ref = clusterDomain_;
@@ -1037,7 +856,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string cluster_domain = 3;</code>
+     * <code>string cluster_domain = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterDomainBytes() {
@@ -1053,7 +872,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string cluster_domain = 3;</code>
+     * <code>string cluster_domain = 1;</code>
      */
     public Builder setClusterDomain(
         java.lang.String value) {
@@ -1066,7 +885,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string cluster_domain = 3;</code>
+     * <code>string cluster_domain = 1;</code>
      */
     public Builder clearClusterDomain() {
       
@@ -1075,7 +894,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string cluster_domain = 3;</code>
+     * <code>string cluster_domain = 1;</code>
      */
     public Builder setClusterDomainBytes(
         com.google.protobuf.ByteString value) {
@@ -1091,7 +910,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object caCert_ = "";
     /**
-     * <code>optional string ca_cert = 4;</code>
+     * <code>string ca_cert = 2;</code>
      */
     public java.lang.String getCaCert() {
       java.lang.Object ref = caCert_;
@@ -1106,7 +925,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string ca_cert = 4;</code>
+     * <code>string ca_cert = 2;</code>
      */
     public com.google.protobuf.ByteString
         getCaCertBytes() {
@@ -1122,7 +941,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string ca_cert = 4;</code>
+     * <code>string ca_cert = 2;</code>
      */
     public Builder setCaCert(
         java.lang.String value) {
@@ -1135,7 +954,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 4;</code>
+     * <code>string ca_cert = 2;</code>
      */
     public Builder clearCaCert() {
       
@@ -1144,7 +963,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string ca_cert = 4;</code>
+     * <code>string ca_cert = 2;</code>
      */
     public Builder setCaCertBytes(
         com.google.protobuf.ByteString value) {
@@ -1160,7 +979,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object apiServerUrl_ = "";
     /**
-     * <code>optional string api_server_url = 5;</code>
+     * <code>string api_server_url = 3;</code>
      */
     public java.lang.String getApiServerUrl() {
       java.lang.Object ref = apiServerUrl_;
@@ -1175,7 +994,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string api_server_url = 5;</code>
+     * <code>string api_server_url = 3;</code>
      */
     public com.google.protobuf.ByteString
         getApiServerUrlBytes() {
@@ -1191,7 +1010,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string api_server_url = 5;</code>
+     * <code>string api_server_url = 3;</code>
      */
     public Builder setApiServerUrl(
         java.lang.String value) {
@@ -1204,7 +1023,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string api_server_url = 5;</code>
+     * <code>string api_server_url = 3;</code>
      */
     public Builder clearApiServerUrl() {
       
@@ -1213,7 +1032,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string api_server_url = 5;</code>
+     * <code>string api_server_url = 3;</code>
      */
     public Builder setApiServerUrlBytes(
         com.google.protobuf.ByteString value) {
@@ -1229,7 +1048,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object clusterUserName_ = "";
     /**
-     * <code>optional string cluster_user_name = 6;</code>
+     * <code>string cluster_user_name = 4;</code>
      */
     public java.lang.String getClusterUserName() {
       java.lang.Object ref = clusterUserName_;
@@ -1244,7 +1063,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string cluster_user_name = 6;</code>
+     * <code>string cluster_user_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getClusterUserNameBytes() {
@@ -1260,7 +1079,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string cluster_user_name = 6;</code>
+     * <code>string cluster_user_name = 4;</code>
      */
     public Builder setClusterUserName(
         java.lang.String value) {
@@ -1273,7 +1092,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string cluster_user_name = 6;</code>
+     * <code>string cluster_user_name = 4;</code>
      */
     public Builder clearClusterUserName() {
       
@@ -1282,7 +1101,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string cluster_user_name = 6;</code>
+     * <code>string cluster_user_name = 4;</code>
      */
     public Builder setClusterUserNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1298,7 +1117,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object userCert_ = "";
     /**
-     * <code>optional string user_cert = 7;</code>
+     * <code>string user_cert = 5;</code>
      */
     public java.lang.String getUserCert() {
       java.lang.Object ref = userCert_;
@@ -1313,7 +1132,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_cert = 7;</code>
+     * <code>string user_cert = 5;</code>
      */
     public com.google.protobuf.ByteString
         getUserCertBytes() {
@@ -1329,7 +1148,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_cert = 7;</code>
+     * <code>string user_cert = 5;</code>
      */
     public Builder setUserCert(
         java.lang.String value) {
@@ -1342,7 +1161,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_cert = 7;</code>
+     * <code>string user_cert = 5;</code>
      */
     public Builder clearUserCert() {
       
@@ -1351,7 +1170,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_cert = 7;</code>
+     * <code>string user_cert = 5;</code>
      */
     public Builder setUserCertBytes(
         com.google.protobuf.ByteString value) {
@@ -1367,7 +1186,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object userKey_ = "";
     /**
-     * <code>optional string user_key = 8;</code>
+     * <code>string user_key = 6;</code>
      */
     public java.lang.String getUserKey() {
       java.lang.Object ref = userKey_;
@@ -1382,7 +1201,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_key = 8;</code>
+     * <code>string user_key = 6;</code>
      */
     public com.google.protobuf.ByteString
         getUserKeyBytes() {
@@ -1398,7 +1217,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_key = 8;</code>
+     * <code>string user_key = 6;</code>
      */
     public Builder setUserKey(
         java.lang.String value) {
@@ -1411,7 +1230,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_key = 8;</code>
+     * <code>string user_key = 6;</code>
      */
     public Builder clearUserKey() {
       
@@ -1420,7 +1239,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_key = 8;</code>
+     * <code>string user_key = 6;</code>
      */
     public Builder setUserKeyBytes(
         com.google.protobuf.ByteString value) {
@@ -1436,7 +1255,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object contextName_ = "";
     /**
-     * <code>optional string context_name = 9;</code>
+     * <code>string context_name = 7;</code>
      */
     public java.lang.String getContextName() {
       java.lang.Object ref = contextName_;
@@ -1451,7 +1270,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string context_name = 9;</code>
+     * <code>string context_name = 7;</code>
      */
     public com.google.protobuf.ByteString
         getContextNameBytes() {
@@ -1467,7 +1286,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string context_name = 9;</code>
+     * <code>string context_name = 7;</code>
      */
     public Builder setContextName(
         java.lang.String value) {
@@ -1480,7 +1299,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string context_name = 9;</code>
+     * <code>string context_name = 7;</code>
      */
     public Builder clearContextName() {
       
@@ -1489,7 +1308,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string context_name = 9;</code>
+     * <code>string context_name = 7;</code>
      */
     public Builder setContextNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1505,7 +1324,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object userToken_ = "";
     /**
-     * <code>optional string user_token = 10;</code>
+     * <code>string user_token = 8;</code>
      */
     public java.lang.String getUserToken() {
       java.lang.Object ref = userToken_;
@@ -1520,7 +1339,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_token = 10;</code>
+     * <code>string user_token = 8;</code>
      */
     public com.google.protobuf.ByteString
         getUserTokenBytes() {
@@ -1536,7 +1355,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string user_token = 10;</code>
+     * <code>string user_token = 8;</code>
      */
     public Builder setUserToken(
         java.lang.String value) {
@@ -1549,7 +1368,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_token = 10;</code>
+     * <code>string user_token = 8;</code>
      */
     public Builder clearUserToken() {
       
@@ -1558,7 +1377,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string user_token = 10;</code>
+     * <code>string user_token = 8;</code>
      */
     public Builder setUserTokenBytes(
         com.google.protobuf.ByteString value) {
@@ -1574,7 +1393,7 @@ public  final class ClusterClientConfigResponse extends
 
     private java.lang.Object password_ = "";
     /**
-     * <code>optional string password = 11;</code>
+     * <code>string password = 9;</code>
      */
     public java.lang.String getPassword() {
       java.lang.Object ref = password_;
@@ -1589,7 +1408,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string password = 11;</code>
+     * <code>string password = 9;</code>
      */
     public com.google.protobuf.ByteString
         getPasswordBytes() {
@@ -1605,7 +1424,7 @@ public  final class ClusterClientConfigResponse extends
       }
     }
     /**
-     * <code>optional string password = 11;</code>
+     * <code>string password = 9;</code>
      */
     public Builder setPassword(
         java.lang.String value) {
@@ -1618,7 +1437,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string password = 11;</code>
+     * <code>string password = 9;</code>
      */
     public Builder clearPassword() {
       
@@ -1627,7 +1446,7 @@ public  final class ClusterClientConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string password = 11;</code>
+     * <code>string password = 9;</code>
      */
     public Builder setPasswordBytes(
         com.google.protobuf.ByteString value) {

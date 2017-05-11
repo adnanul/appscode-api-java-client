@@ -43,19 +43,6 @@ public  final class ListResourceResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder subBuilder = null;
             if (resources_ != null) {
               subBuilder = resources_.toBuilder();
@@ -91,43 +78,22 @@ public  final class ListResourceResponse extends
             com.appscode.api.kubernetes.v1beta2.ListResourceResponse.class, com.appscode.api.kubernetes.v1beta2.ListResourceResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int RESOURCES_FIELD_NUMBER = 2;
+  public static final int RESOURCES_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.KubeResourceList resources_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   public boolean hasResources() {
     return resources_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeResourceList getResources() {
     return resources_ == null ? com.appscode.api.kubernetes.v1beta2.KubeResourceList.getDefaultInstance() : resources_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeResourceListOrBuilder getResourcesOrBuilder() {
     return getResources();
@@ -145,11 +111,8 @@ public  final class ListResourceResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (resources_ != null) {
-      output.writeMessage(2, getResources());
+      output.writeMessage(1, getResources());
     }
   }
 
@@ -158,13 +121,9 @@ public  final class ListResourceResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (resources_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getResources());
+        .computeMessageSize(1, getResources());
     }
     memoizedSize = size;
     return size;
@@ -182,11 +141,6 @@ public  final class ListResourceResponse extends
     com.appscode.api.kubernetes.v1beta2.ListResourceResponse other = (com.appscode.api.kubernetes.v1beta2.ListResourceResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && (hasResources() == other.hasResources());
     if (hasResources()) {
       result = result && getResources()
@@ -201,11 +155,7 @@ public  final class ListResourceResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasResources()) {
       hash = (37 * hash) + RESOURCES_FIELD_NUMBER;
       hash = (53 * hash) + getResources().hashCode();
@@ -328,12 +278,6 @@ public  final class ListResourceResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       if (resourcesBuilder_ == null) {
         resources_ = null;
       } else {
@@ -362,11 +306,6 @@ public  final class ListResourceResponse extends
 
     public com.appscode.api.kubernetes.v1beta2.ListResourceResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta2.ListResourceResponse result = new com.appscode.api.kubernetes.v1beta2.ListResourceResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       if (resourcesBuilder_ == null) {
         result.resources_ = resources_;
       } else {
@@ -413,9 +352,6 @@ public  final class ListResourceResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.ListResourceResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta2.ListResourceResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (other.hasResources()) {
         mergeResources(other.getResources());
       }
@@ -445,134 +381,17 @@ public  final class ListResourceResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.appscode.api.kubernetes.v1beta2.KubeResourceList resources_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeResourceList, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceListOrBuilder> resourcesBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public boolean hasResources() {
       return resourcesBuilder_ != null || resources_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeResourceList getResources() {
       if (resourcesBuilder_ == null) {
@@ -582,7 +401,7 @@ public  final class ListResourceResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public Builder setResources(com.appscode.api.kubernetes.v1beta2.KubeResourceList value) {
       if (resourcesBuilder_ == null) {
@@ -598,7 +417,7 @@ public  final class ListResourceResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public Builder setResources(
         com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder builderForValue) {
@@ -612,7 +431,7 @@ public  final class ListResourceResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public Builder mergeResources(com.appscode.api.kubernetes.v1beta2.KubeResourceList value) {
       if (resourcesBuilder_ == null) {
@@ -630,7 +449,7 @@ public  final class ListResourceResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public Builder clearResources() {
       if (resourcesBuilder_ == null) {
@@ -644,7 +463,7 @@ public  final class ListResourceResponse extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder getResourcesBuilder() {
       
@@ -652,7 +471,7 @@ public  final class ListResourceResponse extends
       return getResourcesFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeResourceListOrBuilder getResourcesOrBuilder() {
       if (resourcesBuilder_ != null) {
@@ -663,7 +482,7 @@ public  final class ListResourceResponse extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeResourceList resources = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList resources = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeResourceList, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceListOrBuilder> 

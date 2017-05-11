@@ -8,41 +8,41 @@ public interface IncidentListRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string kubernetes_cluster = 1;</code>
+   * <code>string kubernetes_cluster = 1;</code>
    */
   java.lang.String getKubernetesCluster();
   /**
-   * <code>optional string kubernetes_cluster = 1;</code>
+   * <code>string kubernetes_cluster = 1;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesClusterBytes();
 
   /**
-   * <code>optional string kubernetes_namespace = 2;</code>
+   * <code>string kubernetes_namespace = 2;</code>
    */
   java.lang.String getKubernetesNamespace();
   /**
-   * <code>optional string kubernetes_namespace = 2;</code>
+   * <code>string kubernetes_namespace = 2;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesNamespaceBytes();
 
   /**
-   * <code>optional string kubernetes_object_type = 3;</code>
+   * <code>string kubernetes_object_type = 3;</code>
    */
   java.lang.String getKubernetesObjectType();
   /**
-   * <code>optional string kubernetes_object_type = 3;</code>
+   * <code>string kubernetes_object_type = 3;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesObjectTypeBytes();
 
   /**
-   * <code>optional string kubernetes_object_name = 4;</code>
+   * <code>string kubernetes_object_name = 4;</code>
    */
   java.lang.String getKubernetesObjectName();
   /**
-   * <code>optional string kubernetes_object_name = 4;</code>
+   * <code>string kubernetes_object_name = 4;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesObjectNameBytes();

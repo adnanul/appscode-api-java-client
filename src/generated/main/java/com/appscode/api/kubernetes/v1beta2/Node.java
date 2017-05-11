@@ -128,36 +128,36 @@ public  final class Node extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string external_id = 1;</code>
+     * <code>string external_id = 1;</code>
      */
     java.lang.String getExternalId();
     /**
-     * <code>optional string external_id = 1;</code>
+     * <code>string external_id = 1;</code>
      */
     com.google.protobuf.ByteString
         getExternalIdBytes();
 
     /**
-     * <code>optional string provider_id = 2;</code>
+     * <code>string provider_id = 2;</code>
      */
     java.lang.String getProviderId();
     /**
-     * <code>optional string provider_id = 2;</code>
+     * <code>string provider_id = 2;</code>
      */
     com.google.protobuf.ByteString
         getProviderIdBytes();
 
     /**
-     * <code>optional bool unschedulable = 3;</code>
+     * <code>bool unschedulable = 3;</code>
      */
     boolean getUnschedulable();
 
     /**
-     * <code>optional string podCIDR = 4;</code>
+     * <code>string podCIDR = 4;</code>
      */
     java.lang.String getPodCIDR();
     /**
-     * <code>optional string podCIDR = 4;</code>
+     * <code>string podCIDR = 4;</code>
      */
     com.google.protobuf.ByteString
         getPodCIDRBytes();
@@ -254,7 +254,7 @@ public  final class Node extends
     public static final int EXTERNAL_ID_FIELD_NUMBER = 1;
     private volatile java.lang.Object externalId_;
     /**
-     * <code>optional string external_id = 1;</code>
+     * <code>string external_id = 1;</code>
      */
     public java.lang.String getExternalId() {
       java.lang.Object ref = externalId_;
@@ -269,7 +269,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional string external_id = 1;</code>
+     * <code>string external_id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIdBytes() {
@@ -288,7 +288,7 @@ public  final class Node extends
     public static final int PROVIDER_ID_FIELD_NUMBER = 2;
     private volatile java.lang.Object providerId_;
     /**
-     * <code>optional string provider_id = 2;</code>
+     * <code>string provider_id = 2;</code>
      */
     public java.lang.String getProviderId() {
       java.lang.Object ref = providerId_;
@@ -303,7 +303,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional string provider_id = 2;</code>
+     * <code>string provider_id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getProviderIdBytes() {
@@ -322,7 +322,7 @@ public  final class Node extends
     public static final int UNSCHEDULABLE_FIELD_NUMBER = 3;
     private boolean unschedulable_;
     /**
-     * <code>optional bool unschedulable = 3;</code>
+     * <code>bool unschedulable = 3;</code>
      */
     public boolean getUnschedulable() {
       return unschedulable_;
@@ -331,7 +331,7 @@ public  final class Node extends
     public static final int PODCIDR_FIELD_NUMBER = 4;
     private volatile java.lang.Object podCIDR_;
     /**
-     * <code>optional string podCIDR = 4;</code>
+     * <code>string podCIDR = 4;</code>
      */
     public java.lang.String getPodCIDR() {
       java.lang.Object ref = podCIDR_;
@@ -346,7 +346,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional string podCIDR = 4;</code>
+     * <code>string podCIDR = 4;</code>
      */
     public com.google.protobuf.ByteString
         getPodCIDRBytes() {
@@ -439,7 +439,7 @@ public  final class Node extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + EXTERNAL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getExternalId().hashCode();
       hash = (37 * hash) + PROVIDER_ID_FIELD_NUMBER;
@@ -685,7 +685,7 @@ public  final class Node extends
 
       private java.lang.Object externalId_ = "";
       /**
-       * <code>optional string external_id = 1;</code>
+       * <code>string external_id = 1;</code>
        */
       public java.lang.String getExternalId() {
         java.lang.Object ref = externalId_;
@@ -700,7 +700,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string external_id = 1;</code>
+       * <code>string external_id = 1;</code>
        */
       public com.google.protobuf.ByteString
           getExternalIdBytes() {
@@ -716,7 +716,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string external_id = 1;</code>
+       * <code>string external_id = 1;</code>
        */
       public Builder setExternalId(
           java.lang.String value) {
@@ -729,7 +729,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string external_id = 1;</code>
+       * <code>string external_id = 1;</code>
        */
       public Builder clearExternalId() {
         
@@ -738,7 +738,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string external_id = 1;</code>
+       * <code>string external_id = 1;</code>
        */
       public Builder setExternalIdBytes(
           com.google.protobuf.ByteString value) {
@@ -754,7 +754,7 @@ public  final class Node extends
 
       private java.lang.Object providerId_ = "";
       /**
-       * <code>optional string provider_id = 2;</code>
+       * <code>string provider_id = 2;</code>
        */
       public java.lang.String getProviderId() {
         java.lang.Object ref = providerId_;
@@ -769,7 +769,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string provider_id = 2;</code>
+       * <code>string provider_id = 2;</code>
        */
       public com.google.protobuf.ByteString
           getProviderIdBytes() {
@@ -785,7 +785,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string provider_id = 2;</code>
+       * <code>string provider_id = 2;</code>
        */
       public Builder setProviderId(
           java.lang.String value) {
@@ -798,7 +798,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string provider_id = 2;</code>
+       * <code>string provider_id = 2;</code>
        */
       public Builder clearProviderId() {
         
@@ -807,7 +807,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string provider_id = 2;</code>
+       * <code>string provider_id = 2;</code>
        */
       public Builder setProviderIdBytes(
           com.google.protobuf.ByteString value) {
@@ -823,13 +823,13 @@ public  final class Node extends
 
       private boolean unschedulable_ ;
       /**
-       * <code>optional bool unschedulable = 3;</code>
+       * <code>bool unschedulable = 3;</code>
        */
       public boolean getUnschedulable() {
         return unschedulable_;
       }
       /**
-       * <code>optional bool unschedulable = 3;</code>
+       * <code>bool unschedulable = 3;</code>
        */
       public Builder setUnschedulable(boolean value) {
         
@@ -838,7 +838,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional bool unschedulable = 3;</code>
+       * <code>bool unschedulable = 3;</code>
        */
       public Builder clearUnschedulable() {
         
@@ -849,7 +849,7 @@ public  final class Node extends
 
       private java.lang.Object podCIDR_ = "";
       /**
-       * <code>optional string podCIDR = 4;</code>
+       * <code>string podCIDR = 4;</code>
        */
       public java.lang.String getPodCIDR() {
         java.lang.Object ref = podCIDR_;
@@ -864,7 +864,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string podCIDR = 4;</code>
+       * <code>string podCIDR = 4;</code>
        */
       public com.google.protobuf.ByteString
           getPodCIDRBytes() {
@@ -880,7 +880,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string podCIDR = 4;</code>
+       * <code>string podCIDR = 4;</code>
        */
       public Builder setPodCIDR(
           java.lang.String value) {
@@ -893,7 +893,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string podCIDR = 4;</code>
+       * <code>string podCIDR = 4;</code>
        */
       public Builder clearPodCIDR() {
         
@@ -902,7 +902,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string podCIDR = 4;</code>
+       * <code>string podCIDR = 4;</code>
        */
       public Builder setPodCIDRBytes(
           com.google.protobuf.ByteString value) {
@@ -969,51 +969,51 @@ public  final class Node extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     boolean hasCapacity();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getCapacity();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getCapacityOrBuilder();
 
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     boolean hasNodeInfo();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo getNodeInfo();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfoOrBuilder getNodeInfoOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     boolean hasAllocatable();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getAllocatable();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getAllocatableOrBuilder();
 
@@ -1310,26 +1310,26 @@ public  final class Node extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional int64 cpu = 1;</code>
+       * <code>int64 cpu = 1;</code>
        */
       long getCpu();
 
       /**
-       * <code>optional int64 memory = 2;</code>
+       * <code>int64 memory = 2;</code>
        */
       long getMemory();
 
       /**
-       * <code>optional int64 pods = 3;</code>
+       * <code>int64 pods = 3;</code>
        */
       long getPods();
 
       /**
-       * <code>optional string storage = 4;</code>
+       * <code>string storage = 4;</code>
        */
       java.lang.String getStorage();
       /**
-       * <code>optional string storage = 4;</code>
+       * <code>string storage = 4;</code>
        */
       com.google.protobuf.ByteString
           getStorageBytes();
@@ -1424,7 +1424,7 @@ public  final class Node extends
       public static final int CPU_FIELD_NUMBER = 1;
       private long cpu_;
       /**
-       * <code>optional int64 cpu = 1;</code>
+       * <code>int64 cpu = 1;</code>
        */
       public long getCpu() {
         return cpu_;
@@ -1433,7 +1433,7 @@ public  final class Node extends
       public static final int MEMORY_FIELD_NUMBER = 2;
       private long memory_;
       /**
-       * <code>optional int64 memory = 2;</code>
+       * <code>int64 memory = 2;</code>
        */
       public long getMemory() {
         return memory_;
@@ -1442,7 +1442,7 @@ public  final class Node extends
       public static final int PODS_FIELD_NUMBER = 3;
       private long pods_;
       /**
-       * <code>optional int64 pods = 3;</code>
+       * <code>int64 pods = 3;</code>
        */
       public long getPods() {
         return pods_;
@@ -1451,7 +1451,7 @@ public  final class Node extends
       public static final int STORAGE_FIELD_NUMBER = 4;
       private volatile java.lang.Object storage_;
       /**
-       * <code>optional string storage = 4;</code>
+       * <code>string storage = 4;</code>
        */
       public java.lang.String getStorage() {
         java.lang.Object ref = storage_;
@@ -1466,7 +1466,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string storage = 4;</code>
+       * <code>string storage = 4;</code>
        */
       public com.google.protobuf.ByteString
           getStorageBytes() {
@@ -1561,7 +1561,7 @@ public  final class Node extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + CPU_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getCpu());
@@ -1807,13 +1807,13 @@ public  final class Node extends
 
         private long cpu_ ;
         /**
-         * <code>optional int64 cpu = 1;</code>
+         * <code>int64 cpu = 1;</code>
          */
         public long getCpu() {
           return cpu_;
         }
         /**
-         * <code>optional int64 cpu = 1;</code>
+         * <code>int64 cpu = 1;</code>
          */
         public Builder setCpu(long value) {
           
@@ -1822,7 +1822,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional int64 cpu = 1;</code>
+         * <code>int64 cpu = 1;</code>
          */
         public Builder clearCpu() {
           
@@ -1833,13 +1833,13 @@ public  final class Node extends
 
         private long memory_ ;
         /**
-         * <code>optional int64 memory = 2;</code>
+         * <code>int64 memory = 2;</code>
          */
         public long getMemory() {
           return memory_;
         }
         /**
-         * <code>optional int64 memory = 2;</code>
+         * <code>int64 memory = 2;</code>
          */
         public Builder setMemory(long value) {
           
@@ -1848,7 +1848,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional int64 memory = 2;</code>
+         * <code>int64 memory = 2;</code>
          */
         public Builder clearMemory() {
           
@@ -1859,13 +1859,13 @@ public  final class Node extends
 
         private long pods_ ;
         /**
-         * <code>optional int64 pods = 3;</code>
+         * <code>int64 pods = 3;</code>
          */
         public long getPods() {
           return pods_;
         }
         /**
-         * <code>optional int64 pods = 3;</code>
+         * <code>int64 pods = 3;</code>
          */
         public Builder setPods(long value) {
           
@@ -1874,7 +1874,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional int64 pods = 3;</code>
+         * <code>int64 pods = 3;</code>
          */
         public Builder clearPods() {
           
@@ -1885,7 +1885,7 @@ public  final class Node extends
 
         private java.lang.Object storage_ = "";
         /**
-         * <code>optional string storage = 4;</code>
+         * <code>string storage = 4;</code>
          */
         public java.lang.String getStorage() {
           java.lang.Object ref = storage_;
@@ -1900,7 +1900,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string storage = 4;</code>
+         * <code>string storage = 4;</code>
          */
         public com.google.protobuf.ByteString
             getStorageBytes() {
@@ -1916,7 +1916,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string storage = 4;</code>
+         * <code>string storage = 4;</code>
          */
         public Builder setStorage(
             java.lang.String value) {
@@ -1929,7 +1929,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string storage = 4;</code>
+         * <code>string storage = 4;</code>
          */
         public Builder clearStorage() {
           
@@ -1938,7 +1938,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string storage = 4;</code>
+         * <code>string storage = 4;</code>
          */
         public Builder setStorageBytes(
             com.google.protobuf.ByteString value) {
@@ -2005,101 +2005,101 @@ public  final class Node extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string machineID = 6;</code>
+       * <code>string machineID = 6;</code>
        */
       java.lang.String getMachineID();
       /**
-       * <code>optional string machineID = 6;</code>
+       * <code>string machineID = 6;</code>
        */
       com.google.protobuf.ByteString
           getMachineIDBytes();
 
       /**
-       * <code>optional string systemUUID = 7;</code>
+       * <code>string systemUUID = 7;</code>
        */
       java.lang.String getSystemUUID();
       /**
-       * <code>optional string systemUUID = 7;</code>
+       * <code>string systemUUID = 7;</code>
        */
       com.google.protobuf.ByteString
           getSystemUUIDBytes();
 
       /**
-       * <code>optional string bootID = 8;</code>
+       * <code>string bootID = 8;</code>
        */
       java.lang.String getBootID();
       /**
-       * <code>optional string bootID = 8;</code>
+       * <code>string bootID = 8;</code>
        */
       com.google.protobuf.ByteString
           getBootIDBytes();
 
       /**
-       * <code>optional string kernel_version = 1;</code>
+       * <code>string kernel_version = 1;</code>
        */
       java.lang.String getKernelVersion();
       /**
-       * <code>optional string kernel_version = 1;</code>
+       * <code>string kernel_version = 1;</code>
        */
       com.google.protobuf.ByteString
           getKernelVersionBytes();
 
       /**
-       * <code>optional string os_image = 2;</code>
+       * <code>string os_image = 2;</code>
        */
       java.lang.String getOsImage();
       /**
-       * <code>optional string os_image = 2;</code>
+       * <code>string os_image = 2;</code>
        */
       com.google.protobuf.ByteString
           getOsImageBytes();
 
       /**
-       * <code>optional string container_runtime_version = 3;</code>
+       * <code>string container_runtime_version = 3;</code>
        */
       java.lang.String getContainerRuntimeVersion();
       /**
-       * <code>optional string container_runtime_version = 3;</code>
+       * <code>string container_runtime_version = 3;</code>
        */
       com.google.protobuf.ByteString
           getContainerRuntimeVersionBytes();
 
       /**
-       * <code>optional string kubelet_version = 4;</code>
+       * <code>string kubelet_version = 4;</code>
        */
       java.lang.String getKubeletVersion();
       /**
-       * <code>optional string kubelet_version = 4;</code>
+       * <code>string kubelet_version = 4;</code>
        */
       com.google.protobuf.ByteString
           getKubeletVersionBytes();
 
       /**
-       * <code>optional string kube_proxy_version = 5;</code>
+       * <code>string kube_proxy_version = 5;</code>
        */
       java.lang.String getKubeProxyVersion();
       /**
-       * <code>optional string kube_proxy_version = 5;</code>
+       * <code>string kube_proxy_version = 5;</code>
        */
       com.google.protobuf.ByteString
           getKubeProxyVersionBytes();
 
       /**
-       * <code>optional string operating_system = 9;</code>
+       * <code>string operating_system = 9;</code>
        */
       java.lang.String getOperatingSystem();
       /**
-       * <code>optional string operating_system = 9;</code>
+       * <code>string operating_system = 9;</code>
        */
       com.google.protobuf.ByteString
           getOperatingSystemBytes();
 
       /**
-       * <code>optional string architecture = 10;</code>
+       * <code>string architecture = 10;</code>
        */
       java.lang.String getArchitecture();
       /**
-       * <code>optional string architecture = 10;</code>
+       * <code>string architecture = 10;</code>
        */
       com.google.protobuf.ByteString
           getArchitectureBytes();
@@ -2239,7 +2239,7 @@ public  final class Node extends
       public static final int MACHINEID_FIELD_NUMBER = 6;
       private volatile java.lang.Object machineID_;
       /**
-       * <code>optional string machineID = 6;</code>
+       * <code>string machineID = 6;</code>
        */
       public java.lang.String getMachineID() {
         java.lang.Object ref = machineID_;
@@ -2254,7 +2254,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string machineID = 6;</code>
+       * <code>string machineID = 6;</code>
        */
       public com.google.protobuf.ByteString
           getMachineIDBytes() {
@@ -2273,7 +2273,7 @@ public  final class Node extends
       public static final int SYSTEMUUID_FIELD_NUMBER = 7;
       private volatile java.lang.Object systemUUID_;
       /**
-       * <code>optional string systemUUID = 7;</code>
+       * <code>string systemUUID = 7;</code>
        */
       public java.lang.String getSystemUUID() {
         java.lang.Object ref = systemUUID_;
@@ -2288,7 +2288,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string systemUUID = 7;</code>
+       * <code>string systemUUID = 7;</code>
        */
       public com.google.protobuf.ByteString
           getSystemUUIDBytes() {
@@ -2307,7 +2307,7 @@ public  final class Node extends
       public static final int BOOTID_FIELD_NUMBER = 8;
       private volatile java.lang.Object bootID_;
       /**
-       * <code>optional string bootID = 8;</code>
+       * <code>string bootID = 8;</code>
        */
       public java.lang.String getBootID() {
         java.lang.Object ref = bootID_;
@@ -2322,7 +2322,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string bootID = 8;</code>
+       * <code>string bootID = 8;</code>
        */
       public com.google.protobuf.ByteString
           getBootIDBytes() {
@@ -2341,7 +2341,7 @@ public  final class Node extends
       public static final int KERNEL_VERSION_FIELD_NUMBER = 1;
       private volatile java.lang.Object kernelVersion_;
       /**
-       * <code>optional string kernel_version = 1;</code>
+       * <code>string kernel_version = 1;</code>
        */
       public java.lang.String getKernelVersion() {
         java.lang.Object ref = kernelVersion_;
@@ -2356,7 +2356,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string kernel_version = 1;</code>
+       * <code>string kernel_version = 1;</code>
        */
       public com.google.protobuf.ByteString
           getKernelVersionBytes() {
@@ -2375,7 +2375,7 @@ public  final class Node extends
       public static final int OS_IMAGE_FIELD_NUMBER = 2;
       private volatile java.lang.Object osImage_;
       /**
-       * <code>optional string os_image = 2;</code>
+       * <code>string os_image = 2;</code>
        */
       public java.lang.String getOsImage() {
         java.lang.Object ref = osImage_;
@@ -2390,7 +2390,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string os_image = 2;</code>
+       * <code>string os_image = 2;</code>
        */
       public com.google.protobuf.ByteString
           getOsImageBytes() {
@@ -2409,7 +2409,7 @@ public  final class Node extends
       public static final int CONTAINER_RUNTIME_VERSION_FIELD_NUMBER = 3;
       private volatile java.lang.Object containerRuntimeVersion_;
       /**
-       * <code>optional string container_runtime_version = 3;</code>
+       * <code>string container_runtime_version = 3;</code>
        */
       public java.lang.String getContainerRuntimeVersion() {
         java.lang.Object ref = containerRuntimeVersion_;
@@ -2424,7 +2424,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string container_runtime_version = 3;</code>
+       * <code>string container_runtime_version = 3;</code>
        */
       public com.google.protobuf.ByteString
           getContainerRuntimeVersionBytes() {
@@ -2443,7 +2443,7 @@ public  final class Node extends
       public static final int KUBELET_VERSION_FIELD_NUMBER = 4;
       private volatile java.lang.Object kubeletVersion_;
       /**
-       * <code>optional string kubelet_version = 4;</code>
+       * <code>string kubelet_version = 4;</code>
        */
       public java.lang.String getKubeletVersion() {
         java.lang.Object ref = kubeletVersion_;
@@ -2458,7 +2458,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string kubelet_version = 4;</code>
+       * <code>string kubelet_version = 4;</code>
        */
       public com.google.protobuf.ByteString
           getKubeletVersionBytes() {
@@ -2477,7 +2477,7 @@ public  final class Node extends
       public static final int KUBE_PROXY_VERSION_FIELD_NUMBER = 5;
       private volatile java.lang.Object kubeProxyVersion_;
       /**
-       * <code>optional string kube_proxy_version = 5;</code>
+       * <code>string kube_proxy_version = 5;</code>
        */
       public java.lang.String getKubeProxyVersion() {
         java.lang.Object ref = kubeProxyVersion_;
@@ -2492,7 +2492,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string kube_proxy_version = 5;</code>
+       * <code>string kube_proxy_version = 5;</code>
        */
       public com.google.protobuf.ByteString
           getKubeProxyVersionBytes() {
@@ -2511,7 +2511,7 @@ public  final class Node extends
       public static final int OPERATING_SYSTEM_FIELD_NUMBER = 9;
       private volatile java.lang.Object operatingSystem_;
       /**
-       * <code>optional string operating_system = 9;</code>
+       * <code>string operating_system = 9;</code>
        */
       public java.lang.String getOperatingSystem() {
         java.lang.Object ref = operatingSystem_;
@@ -2526,7 +2526,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string operating_system = 9;</code>
+       * <code>string operating_system = 9;</code>
        */
       public com.google.protobuf.ByteString
           getOperatingSystemBytes() {
@@ -2545,7 +2545,7 @@ public  final class Node extends
       public static final int ARCHITECTURE_FIELD_NUMBER = 10;
       private volatile java.lang.Object architecture_;
       /**
-       * <code>optional string architecture = 10;</code>
+       * <code>string architecture = 10;</code>
        */
       public java.lang.String getArchitecture() {
         java.lang.Object ref = architecture_;
@@ -2560,7 +2560,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string architecture = 10;</code>
+       * <code>string architecture = 10;</code>
        */
       public com.google.protobuf.ByteString
           getArchitectureBytes() {
@@ -2700,7 +2700,7 @@ public  final class Node extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + MACHINEID_FIELD_NUMBER;
         hash = (53 * hash) + getMachineID().hashCode();
         hash = (37 * hash) + SYSTEMUUID_FIELD_NUMBER;
@@ -3000,7 +3000,7 @@ public  final class Node extends
 
         private java.lang.Object machineID_ = "";
         /**
-         * <code>optional string machineID = 6;</code>
+         * <code>string machineID = 6;</code>
          */
         public java.lang.String getMachineID() {
           java.lang.Object ref = machineID_;
@@ -3015,7 +3015,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string machineID = 6;</code>
+         * <code>string machineID = 6;</code>
          */
         public com.google.protobuf.ByteString
             getMachineIDBytes() {
@@ -3031,7 +3031,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string machineID = 6;</code>
+         * <code>string machineID = 6;</code>
          */
         public Builder setMachineID(
             java.lang.String value) {
@@ -3044,7 +3044,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string machineID = 6;</code>
+         * <code>string machineID = 6;</code>
          */
         public Builder clearMachineID() {
           
@@ -3053,7 +3053,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string machineID = 6;</code>
+         * <code>string machineID = 6;</code>
          */
         public Builder setMachineIDBytes(
             com.google.protobuf.ByteString value) {
@@ -3069,7 +3069,7 @@ public  final class Node extends
 
         private java.lang.Object systemUUID_ = "";
         /**
-         * <code>optional string systemUUID = 7;</code>
+         * <code>string systemUUID = 7;</code>
          */
         public java.lang.String getSystemUUID() {
           java.lang.Object ref = systemUUID_;
@@ -3084,7 +3084,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string systemUUID = 7;</code>
+         * <code>string systemUUID = 7;</code>
          */
         public com.google.protobuf.ByteString
             getSystemUUIDBytes() {
@@ -3100,7 +3100,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string systemUUID = 7;</code>
+         * <code>string systemUUID = 7;</code>
          */
         public Builder setSystemUUID(
             java.lang.String value) {
@@ -3113,7 +3113,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string systemUUID = 7;</code>
+         * <code>string systemUUID = 7;</code>
          */
         public Builder clearSystemUUID() {
           
@@ -3122,7 +3122,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string systemUUID = 7;</code>
+         * <code>string systemUUID = 7;</code>
          */
         public Builder setSystemUUIDBytes(
             com.google.protobuf.ByteString value) {
@@ -3138,7 +3138,7 @@ public  final class Node extends
 
         private java.lang.Object bootID_ = "";
         /**
-         * <code>optional string bootID = 8;</code>
+         * <code>string bootID = 8;</code>
          */
         public java.lang.String getBootID() {
           java.lang.Object ref = bootID_;
@@ -3153,7 +3153,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string bootID = 8;</code>
+         * <code>string bootID = 8;</code>
          */
         public com.google.protobuf.ByteString
             getBootIDBytes() {
@@ -3169,7 +3169,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string bootID = 8;</code>
+         * <code>string bootID = 8;</code>
          */
         public Builder setBootID(
             java.lang.String value) {
@@ -3182,7 +3182,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string bootID = 8;</code>
+         * <code>string bootID = 8;</code>
          */
         public Builder clearBootID() {
           
@@ -3191,7 +3191,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string bootID = 8;</code>
+         * <code>string bootID = 8;</code>
          */
         public Builder setBootIDBytes(
             com.google.protobuf.ByteString value) {
@@ -3207,7 +3207,7 @@ public  final class Node extends
 
         private java.lang.Object kernelVersion_ = "";
         /**
-         * <code>optional string kernel_version = 1;</code>
+         * <code>string kernel_version = 1;</code>
          */
         public java.lang.String getKernelVersion() {
           java.lang.Object ref = kernelVersion_;
@@ -3222,7 +3222,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kernel_version = 1;</code>
+         * <code>string kernel_version = 1;</code>
          */
         public com.google.protobuf.ByteString
             getKernelVersionBytes() {
@@ -3238,7 +3238,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kernel_version = 1;</code>
+         * <code>string kernel_version = 1;</code>
          */
         public Builder setKernelVersion(
             java.lang.String value) {
@@ -3251,7 +3251,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kernel_version = 1;</code>
+         * <code>string kernel_version = 1;</code>
          */
         public Builder clearKernelVersion() {
           
@@ -3260,7 +3260,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kernel_version = 1;</code>
+         * <code>string kernel_version = 1;</code>
          */
         public Builder setKernelVersionBytes(
             com.google.protobuf.ByteString value) {
@@ -3276,7 +3276,7 @@ public  final class Node extends
 
         private java.lang.Object osImage_ = "";
         /**
-         * <code>optional string os_image = 2;</code>
+         * <code>string os_image = 2;</code>
          */
         public java.lang.String getOsImage() {
           java.lang.Object ref = osImage_;
@@ -3291,7 +3291,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string os_image = 2;</code>
+         * <code>string os_image = 2;</code>
          */
         public com.google.protobuf.ByteString
             getOsImageBytes() {
@@ -3307,7 +3307,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string os_image = 2;</code>
+         * <code>string os_image = 2;</code>
          */
         public Builder setOsImage(
             java.lang.String value) {
@@ -3320,7 +3320,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string os_image = 2;</code>
+         * <code>string os_image = 2;</code>
          */
         public Builder clearOsImage() {
           
@@ -3329,7 +3329,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string os_image = 2;</code>
+         * <code>string os_image = 2;</code>
          */
         public Builder setOsImageBytes(
             com.google.protobuf.ByteString value) {
@@ -3345,7 +3345,7 @@ public  final class Node extends
 
         private java.lang.Object containerRuntimeVersion_ = "";
         /**
-         * <code>optional string container_runtime_version = 3;</code>
+         * <code>string container_runtime_version = 3;</code>
          */
         public java.lang.String getContainerRuntimeVersion() {
           java.lang.Object ref = containerRuntimeVersion_;
@@ -3360,7 +3360,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string container_runtime_version = 3;</code>
+         * <code>string container_runtime_version = 3;</code>
          */
         public com.google.protobuf.ByteString
             getContainerRuntimeVersionBytes() {
@@ -3376,7 +3376,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string container_runtime_version = 3;</code>
+         * <code>string container_runtime_version = 3;</code>
          */
         public Builder setContainerRuntimeVersion(
             java.lang.String value) {
@@ -3389,7 +3389,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string container_runtime_version = 3;</code>
+         * <code>string container_runtime_version = 3;</code>
          */
         public Builder clearContainerRuntimeVersion() {
           
@@ -3398,7 +3398,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string container_runtime_version = 3;</code>
+         * <code>string container_runtime_version = 3;</code>
          */
         public Builder setContainerRuntimeVersionBytes(
             com.google.protobuf.ByteString value) {
@@ -3414,7 +3414,7 @@ public  final class Node extends
 
         private java.lang.Object kubeletVersion_ = "";
         /**
-         * <code>optional string kubelet_version = 4;</code>
+         * <code>string kubelet_version = 4;</code>
          */
         public java.lang.String getKubeletVersion() {
           java.lang.Object ref = kubeletVersion_;
@@ -3429,7 +3429,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kubelet_version = 4;</code>
+         * <code>string kubelet_version = 4;</code>
          */
         public com.google.protobuf.ByteString
             getKubeletVersionBytes() {
@@ -3445,7 +3445,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kubelet_version = 4;</code>
+         * <code>string kubelet_version = 4;</code>
          */
         public Builder setKubeletVersion(
             java.lang.String value) {
@@ -3458,7 +3458,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kubelet_version = 4;</code>
+         * <code>string kubelet_version = 4;</code>
          */
         public Builder clearKubeletVersion() {
           
@@ -3467,7 +3467,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kubelet_version = 4;</code>
+         * <code>string kubelet_version = 4;</code>
          */
         public Builder setKubeletVersionBytes(
             com.google.protobuf.ByteString value) {
@@ -3483,7 +3483,7 @@ public  final class Node extends
 
         private java.lang.Object kubeProxyVersion_ = "";
         /**
-         * <code>optional string kube_proxy_version = 5;</code>
+         * <code>string kube_proxy_version = 5;</code>
          */
         public java.lang.String getKubeProxyVersion() {
           java.lang.Object ref = kubeProxyVersion_;
@@ -3498,7 +3498,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kube_proxy_version = 5;</code>
+         * <code>string kube_proxy_version = 5;</code>
          */
         public com.google.protobuf.ByteString
             getKubeProxyVersionBytes() {
@@ -3514,7 +3514,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string kube_proxy_version = 5;</code>
+         * <code>string kube_proxy_version = 5;</code>
          */
         public Builder setKubeProxyVersion(
             java.lang.String value) {
@@ -3527,7 +3527,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kube_proxy_version = 5;</code>
+         * <code>string kube_proxy_version = 5;</code>
          */
         public Builder clearKubeProxyVersion() {
           
@@ -3536,7 +3536,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string kube_proxy_version = 5;</code>
+         * <code>string kube_proxy_version = 5;</code>
          */
         public Builder setKubeProxyVersionBytes(
             com.google.protobuf.ByteString value) {
@@ -3552,7 +3552,7 @@ public  final class Node extends
 
         private java.lang.Object operatingSystem_ = "";
         /**
-         * <code>optional string operating_system = 9;</code>
+         * <code>string operating_system = 9;</code>
          */
         public java.lang.String getOperatingSystem() {
           java.lang.Object ref = operatingSystem_;
@@ -3567,7 +3567,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string operating_system = 9;</code>
+         * <code>string operating_system = 9;</code>
          */
         public com.google.protobuf.ByteString
             getOperatingSystemBytes() {
@@ -3583,7 +3583,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string operating_system = 9;</code>
+         * <code>string operating_system = 9;</code>
          */
         public Builder setOperatingSystem(
             java.lang.String value) {
@@ -3596,7 +3596,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string operating_system = 9;</code>
+         * <code>string operating_system = 9;</code>
          */
         public Builder clearOperatingSystem() {
           
@@ -3605,7 +3605,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string operating_system = 9;</code>
+         * <code>string operating_system = 9;</code>
          */
         public Builder setOperatingSystemBytes(
             com.google.protobuf.ByteString value) {
@@ -3621,7 +3621,7 @@ public  final class Node extends
 
         private java.lang.Object architecture_ = "";
         /**
-         * <code>optional string architecture = 10;</code>
+         * <code>string architecture = 10;</code>
          */
         public java.lang.String getArchitecture() {
           java.lang.Object ref = architecture_;
@@ -3636,7 +3636,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string architecture = 10;</code>
+         * <code>string architecture = 10;</code>
          */
         public com.google.protobuf.ByteString
             getArchitectureBytes() {
@@ -3652,7 +3652,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string architecture = 10;</code>
+         * <code>string architecture = 10;</code>
          */
         public Builder setArchitecture(
             java.lang.String value) {
@@ -3665,7 +3665,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string architecture = 10;</code>
+         * <code>string architecture = 10;</code>
          */
         public Builder clearArchitecture() {
           
@@ -3674,7 +3674,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string architecture = 10;</code>
+         * <code>string architecture = 10;</code>
          */
         public Builder setArchitectureBytes(
             com.google.protobuf.ByteString value) {
@@ -3741,21 +3741,21 @@ public  final class Node extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       java.lang.String getType();
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       com.google.protobuf.ByteString
           getTypeBytes();
 
       /**
-       * <code>optional string address = 2;</code>
+       * <code>string address = 2;</code>
        */
       java.lang.String getAddress();
       /**
-       * <code>optional string address = 2;</code>
+       * <code>string address = 2;</code>
        */
       com.google.protobuf.ByteString
           getAddressBytes();
@@ -3839,7 +3839,7 @@ public  final class Node extends
       public static final int TYPE_FIELD_NUMBER = 1;
       private volatile java.lang.Object type_;
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public java.lang.String getType() {
         java.lang.Object ref = type_;
@@ -3854,7 +3854,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
@@ -3873,7 +3873,7 @@ public  final class Node extends
       public static final int ADDRESS_FIELD_NUMBER = 2;
       private volatile java.lang.Object address_;
       /**
-       * <code>optional string address = 2;</code>
+       * <code>string address = 2;</code>
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -3888,7 +3888,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string address = 2;</code>
+       * <code>string address = 2;</code>
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -3964,7 +3964,7 @@ public  final class Node extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + TYPE_FIELD_NUMBER;
         hash = (53 * hash) + getType().hashCode();
         hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
@@ -4192,7 +4192,7 @@ public  final class Node extends
 
         private java.lang.Object type_ = "";
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public java.lang.String getType() {
           java.lang.Object ref = type_;
@@ -4207,7 +4207,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public com.google.protobuf.ByteString
             getTypeBytes() {
@@ -4223,7 +4223,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder setType(
             java.lang.String value) {
@@ -4236,7 +4236,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder clearType() {
           
@@ -4245,7 +4245,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder setTypeBytes(
             com.google.protobuf.ByteString value) {
@@ -4261,7 +4261,7 @@ public  final class Node extends
 
         private java.lang.Object address_ = "";
         /**
-         * <code>optional string address = 2;</code>
+         * <code>string address = 2;</code>
          */
         public java.lang.String getAddress() {
           java.lang.Object ref = address_;
@@ -4276,7 +4276,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string address = 2;</code>
+         * <code>string address = 2;</code>
          */
         public com.google.protobuf.ByteString
             getAddressBytes() {
@@ -4292,7 +4292,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string address = 2;</code>
+         * <code>string address = 2;</code>
          */
         public Builder setAddress(
             java.lang.String value) {
@@ -4305,7 +4305,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string address = 2;</code>
+         * <code>string address = 2;</code>
          */
         public Builder clearAddress() {
           
@@ -4314,7 +4314,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string address = 2;</code>
+         * <code>string address = 2;</code>
          */
         public Builder setAddressBytes(
             com.google.protobuf.ByteString value) {
@@ -4400,7 +4400,7 @@ public  final class Node extends
           getNamesBytes(int index);
 
       /**
-       * <code>optional int64 size_bytes = 2;</code>
+       * <code>int64 size_bytes = 2;</code>
        */
       long getSizeBytes();
     }
@@ -4518,7 +4518,7 @@ public  final class Node extends
       public static final int SIZE_BYTES_FIELD_NUMBER = 2;
       private long sizeBytes_;
       /**
-       * <code>optional int64 size_bytes = 2;</code>
+       * <code>int64 size_bytes = 2;</code>
        */
       public long getSizeBytes() {
         return sizeBytes_;
@@ -4590,7 +4590,7 @@ public  final class Node extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         if (getNamesCount() > 0) {
           hash = (37 * hash) + NAMES_FIELD_NUMBER;
           hash = (53 * hash) + getNamesList().hashCode();
@@ -4928,13 +4928,13 @@ public  final class Node extends
 
         private long sizeBytes_ ;
         /**
-         * <code>optional int64 size_bytes = 2;</code>
+         * <code>int64 size_bytes = 2;</code>
          */
         public long getSizeBytes() {
           return sizeBytes_;
         }
         /**
-         * <code>optional int64 size_bytes = 2;</code>
+         * <code>int64 size_bytes = 2;</code>
          */
         public Builder setSizeBytes(long value) {
           
@@ -4943,7 +4943,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional int64 size_bytes = 2;</code>
+         * <code>int64 size_bytes = 2;</code>
          */
         public Builder clearSizeBytes() {
           
@@ -5005,21 +5005,21 @@ public  final class Node extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       java.lang.String getName();
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       com.google.protobuf.ByteString
           getNameBytes();
 
       /**
-       * <code>optional string device_path = 2;</code>
+       * <code>string device_path = 2;</code>
        */
       java.lang.String getDevicePath();
       /**
-       * <code>optional string device_path = 2;</code>
+       * <code>string device_path = 2;</code>
        */
       com.google.protobuf.ByteString
           getDevicePathBytes();
@@ -5103,7 +5103,7 @@ public  final class Node extends
       public static final int NAME_FIELD_NUMBER = 1;
       private volatile java.lang.Object name_;
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -5118,7 +5118,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string name = 1;</code>
+       * <code>string name = 1;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -5137,7 +5137,7 @@ public  final class Node extends
       public static final int DEVICE_PATH_FIELD_NUMBER = 2;
       private volatile java.lang.Object devicePath_;
       /**
-       * <code>optional string device_path = 2;</code>
+       * <code>string device_path = 2;</code>
        */
       public java.lang.String getDevicePath() {
         java.lang.Object ref = devicePath_;
@@ -5152,7 +5152,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string device_path = 2;</code>
+       * <code>string device_path = 2;</code>
        */
       public com.google.protobuf.ByteString
           getDevicePathBytes() {
@@ -5228,7 +5228,7 @@ public  final class Node extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + NAME_FIELD_NUMBER;
         hash = (53 * hash) + getName().hashCode();
         hash = (37 * hash) + DEVICE_PATH_FIELD_NUMBER;
@@ -5456,7 +5456,7 @@ public  final class Node extends
 
         private java.lang.Object name_ = "";
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public java.lang.String getName() {
           java.lang.Object ref = name_;
@@ -5471,7 +5471,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public com.google.protobuf.ByteString
             getNameBytes() {
@@ -5487,7 +5487,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setName(
             java.lang.String value) {
@@ -5500,7 +5500,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder clearName() {
           
@@ -5509,7 +5509,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string name = 1;</code>
+         * <code>string name = 1;</code>
          */
         public Builder setNameBytes(
             com.google.protobuf.ByteString value) {
@@ -5525,7 +5525,7 @@ public  final class Node extends
 
         private java.lang.Object devicePath_ = "";
         /**
-         * <code>optional string device_path = 2;</code>
+         * <code>string device_path = 2;</code>
          */
         public java.lang.String getDevicePath() {
           java.lang.Object ref = devicePath_;
@@ -5540,7 +5540,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string device_path = 2;</code>
+         * <code>string device_path = 2;</code>
          */
         public com.google.protobuf.ByteString
             getDevicePathBytes() {
@@ -5556,7 +5556,7 @@ public  final class Node extends
           }
         }
         /**
-         * <code>optional string device_path = 2;</code>
+         * <code>string device_path = 2;</code>
          */
         public Builder setDevicePath(
             java.lang.String value) {
@@ -5569,7 +5569,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string device_path = 2;</code>
+         * <code>string device_path = 2;</code>
          */
         public Builder clearDevicePath() {
           
@@ -5578,7 +5578,7 @@ public  final class Node extends
           return this;
         }
         /**
-         * <code>optional string device_path = 2;</code>
+         * <code>string device_path = 2;</code>
          */
         public Builder setDevicePathBytes(
             com.google.protobuf.ByteString value) {
@@ -5644,19 +5644,19 @@ public  final class Node extends
     public static final int CAPACITY_FIELD_NUMBER = 1;
     private com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     public boolean hasCapacity() {
       return capacity_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getCapacity() {
       return capacity_ == null ? com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.getDefaultInstance() : capacity_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getCapacityOrBuilder() {
       return getCapacity();
@@ -5665,7 +5665,7 @@ public  final class Node extends
     public static final int PHASE_FIELD_NUMBER = 2;
     private volatile java.lang.Object phase_;
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -5680,7 +5680,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional string phase = 2;</code>
+     * <code>string phase = 2;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -5699,19 +5699,19 @@ public  final class Node extends
     public static final int NODE_INFO_FIELD_NUMBER = 3;
     private com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo nodeInfo_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     public boolean hasNodeInfo() {
       return nodeInfo_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo getNodeInfo() {
       return nodeInfo_ == null ? com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo.getDefaultInstance() : nodeInfo_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfoOrBuilder getNodeInfoOrBuilder() {
       return getNodeInfo();
@@ -5720,19 +5720,19 @@ public  final class Node extends
     public static final int ALLOCATABLE_FIELD_NUMBER = 4;
     private com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     public boolean hasAllocatable() {
       return allocatable_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getAllocatable() {
       return allocatable_ == null ? com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.getDefaultInstance() : allocatable_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getAllocatableOrBuilder() {
       return getAllocatable();
@@ -6044,7 +6044,7 @@ public  final class Node extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasCapacity()) {
         hash = (37 * hash) + CAPACITY_FIELD_NUMBER;
         hash = (53 * hash) + getCapacity().hashCode();
@@ -6528,13 +6528,13 @@ public  final class Node extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder> capacityBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public boolean hasCapacity() {
         return capacityBuilder_ != null || capacity_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getCapacity() {
         if (capacityBuilder_ == null) {
@@ -6544,7 +6544,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public Builder setCapacity(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity value) {
         if (capacityBuilder_ == null) {
@@ -6560,7 +6560,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public Builder setCapacity(
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder builderForValue) {
@@ -6574,7 +6574,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public Builder mergeCapacity(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity value) {
         if (capacityBuilder_ == null) {
@@ -6592,7 +6592,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public Builder clearCapacity() {
         if (capacityBuilder_ == null) {
@@ -6606,7 +6606,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder getCapacityBuilder() {
         
@@ -6614,7 +6614,7 @@ public  final class Node extends
         return getCapacityFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getCapacityOrBuilder() {
         if (capacityBuilder_ != null) {
@@ -6625,7 +6625,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity capacity = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder> 
@@ -6643,7 +6643,7 @@ public  final class Node extends
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -6658,7 +6658,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -6674,7 +6674,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -6687,7 +6687,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder clearPhase() {
         
@@ -6696,7 +6696,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional string phase = 2;</code>
+       * <code>string phase = 2;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -6714,13 +6714,13 @@ public  final class Node extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfoOrBuilder> nodeInfoBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public boolean hasNodeInfo() {
         return nodeInfoBuilder_ != null || nodeInfo_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo getNodeInfo() {
         if (nodeInfoBuilder_ == null) {
@@ -6730,7 +6730,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public Builder setNodeInfo(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo value) {
         if (nodeInfoBuilder_ == null) {
@@ -6746,7 +6746,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public Builder setNodeInfo(
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo.Builder builderForValue) {
@@ -6760,7 +6760,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public Builder mergeNodeInfo(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo value) {
         if (nodeInfoBuilder_ == null) {
@@ -6778,7 +6778,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public Builder clearNodeInfo() {
         if (nodeInfoBuilder_ == null) {
@@ -6792,7 +6792,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo.Builder getNodeInfoBuilder() {
         
@@ -6800,7 +6800,7 @@ public  final class Node extends
         return getNodeInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfoOrBuilder getNodeInfoOrBuilder() {
         if (nodeInfoBuilder_ != null) {
@@ -6811,7 +6811,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo node_info = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfoOrBuilder> 
@@ -6831,13 +6831,13 @@ public  final class Node extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder> allocatableBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public boolean hasAllocatable() {
         return allocatableBuilder_ != null || allocatable_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity getAllocatable() {
         if (allocatableBuilder_ == null) {
@@ -6847,7 +6847,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public Builder setAllocatable(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity value) {
         if (allocatableBuilder_ == null) {
@@ -6863,7 +6863,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public Builder setAllocatable(
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder builderForValue) {
@@ -6877,7 +6877,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public Builder mergeAllocatable(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity value) {
         if (allocatableBuilder_ == null) {
@@ -6895,7 +6895,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public Builder clearAllocatable() {
         if (allocatableBuilder_ == null) {
@@ -6909,7 +6909,7 @@ public  final class Node extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder getAllocatableBuilder() {
         
@@ -6917,7 +6917,7 @@ public  final class Node extends
         return getAllocatableFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder getAllocatableOrBuilder() {
         if (allocatableBuilder_ != null) {
@@ -6928,7 +6928,7 @@ public  final class Node extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
+       * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus.Capacity allocatable = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.CapacityOrBuilder> 
@@ -8049,19 +8049,19 @@ public  final class Node extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -8070,19 +8070,19 @@ public  final class Node extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Node.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Node.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Node.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Node.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -8091,7 +8091,7 @@ public  final class Node extends
   public static final int IS_MASTER_FIELD_NUMBER = 3;
   private boolean isMaster_;
   /**
-   * <code>optional bool is_master = 3;</code>
+   * <code>bool is_master = 3;</code>
    */
   public boolean getIsMaster() {
     return isMaster_;
@@ -8100,19 +8100,19 @@ public  final class Node extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.Node.NodeStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -8121,19 +8121,19 @@ public  final class Node extends
   public static final int METRICS_FIELD_NUMBER = 5;
   private com.appscode.api.kubernetes.v1beta2.Metrics metrics_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public boolean hasMetrics() {
     return metrics_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Metrics getMetrics() {
     return metrics_ == null ? com.appscode.api.kubernetes.v1beta2.Metrics.getDefaultInstance() : metrics_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder() {
     return getMetrics();
@@ -8240,7 +8240,7 @@ public  final class Node extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -8533,13 +8533,13 @@ public  final class Node extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -8549,7 +8549,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -8565,7 +8565,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -8579,7 +8579,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -8597,7 +8597,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -8611,7 +8611,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -8619,7 +8619,7 @@ public  final class Node extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -8630,7 +8630,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -8650,13 +8650,13 @@ public  final class Node extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node.Spec, com.appscode.api.kubernetes.v1beta2.Node.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Node.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -8666,7 +8666,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Node.Spec value) {
       if (specBuilder_ == null) {
@@ -8682,7 +8682,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Node.Spec.Builder builderForValue) {
@@ -8696,7 +8696,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Node.Spec value) {
       if (specBuilder_ == null) {
@@ -8714,7 +8714,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -8728,7 +8728,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.Spec.Builder getSpecBuilder() {
       
@@ -8736,7 +8736,7 @@ public  final class Node extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -8747,7 +8747,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node.Spec, com.appscode.api.kubernetes.v1beta2.Node.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Node.SpecOrBuilder> 
@@ -8765,13 +8765,13 @@ public  final class Node extends
 
     private boolean isMaster_ ;
     /**
-     * <code>optional bool is_master = 3;</code>
+     * <code>bool is_master = 3;</code>
      */
     public boolean getIsMaster() {
       return isMaster_;
     }
     /**
-     * <code>optional bool is_master = 3;</code>
+     * <code>bool is_master = 3;</code>
      */
     public Builder setIsMaster(boolean value) {
       
@@ -8780,7 +8780,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional bool is_master = 3;</code>
+     * <code>bool is_master = 3;</code>
      */
     public Builder clearIsMaster() {
       
@@ -8793,13 +8793,13 @@ public  final class Node extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node.NodeStatus, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus getStatus() {
       if (statusBuilder_ == null) {
@@ -8809,7 +8809,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus value) {
       if (statusBuilder_ == null) {
@@ -8825,7 +8825,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Builder builderForValue) {
@@ -8839,7 +8839,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Node.NodeStatus value) {
       if (statusBuilder_ == null) {
@@ -8857,7 +8857,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -8871,7 +8871,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Builder getStatusBuilder() {
       
@@ -8879,7 +8879,7 @@ public  final class Node extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -8890,7 +8890,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Node.NodeStatus status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Node.NodeStatus, com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Builder, com.appscode.api.kubernetes.v1beta2.Node.NodeStatusOrBuilder> 
@@ -8910,13 +8910,13 @@ public  final class Node extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Metrics, com.appscode.api.kubernetes.v1beta2.Metrics.Builder, com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder> metricsBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public boolean hasMetrics() {
       return metricsBuilder_ != null || metrics_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Metrics getMetrics() {
       if (metricsBuilder_ == null) {
@@ -8926,7 +8926,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder setMetrics(com.appscode.api.kubernetes.v1beta2.Metrics value) {
       if (metricsBuilder_ == null) {
@@ -8942,7 +8942,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder setMetrics(
         com.appscode.api.kubernetes.v1beta2.Metrics.Builder builderForValue) {
@@ -8956,7 +8956,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder mergeMetrics(com.appscode.api.kubernetes.v1beta2.Metrics value) {
       if (metricsBuilder_ == null) {
@@ -8974,7 +8974,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public Builder clearMetrics() {
       if (metricsBuilder_ == null) {
@@ -8988,7 +8988,7 @@ public  final class Node extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Metrics.Builder getMetricsBuilder() {
       
@@ -8996,7 +8996,7 @@ public  final class Node extends
       return getMetricsFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder getMetricsOrBuilder() {
       if (metricsBuilder_ != null) {
@@ -9007,7 +9007,7 @@ public  final class Node extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.Metrics metrics = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Metrics, com.appscode.api.kubernetes.v1beta2.Metrics.Builder, com.appscode.api.kubernetes.v1beta2.MetricsOrBuilder> 

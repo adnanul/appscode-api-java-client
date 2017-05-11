@@ -94,19 +94,19 @@ public  final class CopyResourceRequest extends
   public static final int SOURCE_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.KubeObject source_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
    */
   public boolean hasSource() {
     return source_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeObject getSource() {
     return source_ == null ? com.appscode.api.kubernetes.v1beta2.KubeObject.getDefaultInstance() : source_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder getSourceOrBuilder() {
     return getSource();
@@ -115,19 +115,19 @@ public  final class CopyResourceRequest extends
   public static final int DESTINATION_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.KubeObject destination_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
    */
   public boolean hasDestination() {
     return destination_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeObject getDestination() {
     return destination_ == null ? com.appscode.api.kubernetes.v1beta2.KubeObject.getDefaultInstance() : destination_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder getDestinationOrBuilder() {
     return getDestination();
@@ -201,7 +201,7 @@ public  final class CopyResourceRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasSource()) {
       hash = (37 * hash) + SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + getSource().hashCode();
@@ -449,13 +449,13 @@ public  final class CopyResourceRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeObject, com.appscode.api.kubernetes.v1beta2.KubeObject.Builder, com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder> sourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public boolean hasSource() {
       return sourceBuilder_ != null || source_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObject getSource() {
       if (sourceBuilder_ == null) {
@@ -465,7 +465,7 @@ public  final class CopyResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public Builder setSource(com.appscode.api.kubernetes.v1beta2.KubeObject value) {
       if (sourceBuilder_ == null) {
@@ -481,7 +481,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public Builder setSource(
         com.appscode.api.kubernetes.v1beta2.KubeObject.Builder builderForValue) {
@@ -495,7 +495,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public Builder mergeSource(com.appscode.api.kubernetes.v1beta2.KubeObject value) {
       if (sourceBuilder_ == null) {
@@ -513,7 +513,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public Builder clearSource() {
       if (sourceBuilder_ == null) {
@@ -527,7 +527,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObject.Builder getSourceBuilder() {
       
@@ -535,7 +535,7 @@ public  final class CopyResourceRequest extends
       return getSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder getSourceOrBuilder() {
       if (sourceBuilder_ != null) {
@@ -546,7 +546,7 @@ public  final class CopyResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject source = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeObject, com.appscode.api.kubernetes.v1beta2.KubeObject.Builder, com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder> 
@@ -566,13 +566,13 @@ public  final class CopyResourceRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeObject, com.appscode.api.kubernetes.v1beta2.KubeObject.Builder, com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder> destinationBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public boolean hasDestination() {
       return destinationBuilder_ != null || destination_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObject getDestination() {
       if (destinationBuilder_ == null) {
@@ -582,7 +582,7 @@ public  final class CopyResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public Builder setDestination(com.appscode.api.kubernetes.v1beta2.KubeObject value) {
       if (destinationBuilder_ == null) {
@@ -598,7 +598,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public Builder setDestination(
         com.appscode.api.kubernetes.v1beta2.KubeObject.Builder builderForValue) {
@@ -612,7 +612,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public Builder mergeDestination(com.appscode.api.kubernetes.v1beta2.KubeObject value) {
       if (destinationBuilder_ == null) {
@@ -630,7 +630,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public Builder clearDestination() {
       if (destinationBuilder_ == null) {
@@ -644,7 +644,7 @@ public  final class CopyResourceRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObject.Builder getDestinationBuilder() {
       
@@ -652,7 +652,7 @@ public  final class CopyResourceRequest extends
       return getDestinationFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder getDestinationOrBuilder() {
       if (destinationBuilder_ != null) {
@@ -663,7 +663,7 @@ public  final class CopyResourceRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeObject destination = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KubeObject, com.appscode.api.kubernetes.v1beta2.KubeObject.Builder, com.appscode.api.kubernetes.v1beta2.KubeObjectOrBuilder> 

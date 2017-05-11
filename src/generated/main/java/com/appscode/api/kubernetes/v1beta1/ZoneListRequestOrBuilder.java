@@ -12,7 +12,7 @@ public interface ZoneListRequestOrBuilder extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   java.lang.String getCloudCredential();
   /**
@@ -20,17 +20,17 @@ public interface ZoneListRequestOrBuilder extends
    * name or phid
    * </pre>
    *
-   * <code>optional string cloud_credential = 1;</code>
+   * <code>string cloud_credential = 1;</code>
    */
   com.google.protobuf.ByteString
       getCloudCredentialBytes();
 
   /**
-   * <code>optional string region = 2;</code>
+   * <code>string region = 2;</code>
    */
   java.lang.String getRegion();
   /**
-   * <code>optional string region = 2;</code>
+   * <code>string region = 2;</code>
    */
   com.google.protobuf.ByteString
       getRegionBytes();

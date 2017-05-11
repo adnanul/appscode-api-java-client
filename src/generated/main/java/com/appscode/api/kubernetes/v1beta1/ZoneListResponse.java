@@ -44,23 +44,10 @@ public  final class ZoneListResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
-            if (!((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+            if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
               zones_ = new com.google.protobuf.LazyStringArrayList();
-              mutable_bitField0_ |= 0x00000002;
+              mutable_bitField0_ |= 0x00000001;
             }
             zones_.add(s);
             break;
@@ -73,7 +60,7 @@ public  final class ZoneListResponse extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
         zones_ = zones_.getUnmodifiableView();
       }
       makeExtensionsImmutable();
@@ -91,51 +78,29 @@ public  final class ZoneListResponse extends
             com.appscode.api.kubernetes.v1beta1.ZoneListResponse.class, com.appscode.api.kubernetes.v1beta1.ZoneListResponse.Builder.class);
   }
 
-  private int bitField0_;
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int ZONES_FIELD_NUMBER = 2;
+  public static final int ZONES_FIELD_NUMBER = 1;
   private com.google.protobuf.LazyStringList zones_;
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   public com.google.protobuf.ProtocolStringList
       getZonesList() {
     return zones_;
   }
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   public int getZonesCount() {
     return zones_.size();
   }
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   public java.lang.String getZones(int index) {
     return zones_.get(index);
   }
   /**
-   * <code>repeated string zones = 2;</code>
+   * <code>repeated string zones = 1;</code>
    */
   public com.google.protobuf.ByteString
       getZonesBytes(int index) {
@@ -154,11 +119,8 @@ public  final class ZoneListResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     for (int i = 0; i < zones_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, zones_.getRaw(i));
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, zones_.getRaw(i));
     }
   }
 
@@ -167,10 +129,6 @@ public  final class ZoneListResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     {
       int dataSize = 0;
       for (int i = 0; i < zones_.size(); i++) {
@@ -195,11 +153,6 @@ public  final class ZoneListResponse extends
     com.appscode.api.kubernetes.v1beta1.ZoneListResponse other = (com.appscode.api.kubernetes.v1beta1.ZoneListResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getZonesList()
         .equals(other.getZonesList());
     return result;
@@ -211,11 +164,7 @@ public  final class ZoneListResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (getZonesCount() > 0) {
       hash = (37 * hash) + ZONES_FIELD_NUMBER;
       hash = (53 * hash) + getZonesList().hashCode();
@@ -338,14 +287,8 @@ public  final class ZoneListResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       zones_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       return this;
     }
 
@@ -369,18 +312,11 @@ public  final class ZoneListResponse extends
     public com.appscode.api.kubernetes.v1beta1.ZoneListResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ZoneListResponse result = new com.appscode.api.kubernetes.v1beta1.ZoneListResponse(this);
       int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
         zones_ = zones_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000001);
       }
       result.zones_ = zones_;
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -422,13 +358,10 @@ public  final class ZoneListResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ZoneListResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ZoneListResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (!other.zones_.isEmpty()) {
         if (zones_.isEmpty()) {
           zones_ = other.zones_;
-          bitField0_ = (bitField0_ & ~0x00000002);
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           ensureZonesIsMutable();
           zones_.addAll(other.zones_);
@@ -462,158 +395,41 @@ public  final class ZoneListResponse extends
     }
     private int bitField0_;
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private com.google.protobuf.LazyStringList zones_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     private void ensureZonesIsMutable() {
-      if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+      if (!((bitField0_ & 0x00000001) == 0x00000001)) {
         zones_ = new com.google.protobuf.LazyStringArrayList(zones_);
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000001;
        }
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public com.google.protobuf.ProtocolStringList
         getZonesList() {
       return zones_.getUnmodifiableView();
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public int getZonesCount() {
       return zones_.size();
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public java.lang.String getZones(int index) {
       return zones_.get(index);
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public com.google.protobuf.ByteString
         getZonesBytes(int index) {
       return zones_.getByteString(index);
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public Builder setZones(
         int index, java.lang.String value) {
@@ -626,7 +442,7 @@ public  final class ZoneListResponse extends
       return this;
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public Builder addZones(
         java.lang.String value) {
@@ -639,7 +455,7 @@ public  final class ZoneListResponse extends
       return this;
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public Builder addAllZones(
         java.lang.Iterable<java.lang.String> values) {
@@ -650,16 +466,16 @@ public  final class ZoneListResponse extends
       return this;
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public Builder clearZones() {
       zones_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000002);
+      bitField0_ = (bitField0_ & ~0x00000001);
       onChanged();
       return this;
     }
     /**
-     * <code>repeated string zones = 2;</code>
+     * <code>repeated string zones = 1;</code>
      */
     public Builder addZonesBytes(
         com.google.protobuf.ByteString value) {

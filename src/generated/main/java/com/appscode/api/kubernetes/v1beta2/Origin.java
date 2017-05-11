@@ -96,28 +96,28 @@ public  final class Origin extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     boolean hasElastic();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     boolean hasPostgres();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder();
   }
@@ -212,19 +212,19 @@ public  final class Origin extends
     public static final int ELASTIC_FIELD_NUMBER = 1;
     private com.appscode.api.kubernetes.v1beta2.ElasticSpec elastic_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     public boolean hasElastic() {
       return elastic_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic() {
       return elastic_ == null ? com.appscode.api.kubernetes.v1beta2.ElasticSpec.getDefaultInstance() : elastic_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder() {
       return getElastic();
@@ -233,19 +233,19 @@ public  final class Origin extends
     public static final int POSTGRES_FIELD_NUMBER = 2;
     private com.appscode.api.kubernetes.v1beta2.PostgresSpec postgres_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     public boolean hasPostgres() {
       return postgres_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres() {
       return postgres_ == null ? com.appscode.api.kubernetes.v1beta2.PostgresSpec.getDefaultInstance() : postgres_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder() {
       return getPostgres();
@@ -319,7 +319,7 @@ public  final class Origin extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       if (hasElastic()) {
         hash = (37 * hash) + ELASTIC_FIELD_NUMBER;
         hash = (53 * hash) + getElastic().hashCode();
@@ -567,13 +567,13 @@ public  final class Origin extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> elasticBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public boolean hasElastic() {
         return elasticBuilder_ != null || elastic_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ElasticSpec getElastic() {
         if (elasticBuilder_ == null) {
@@ -583,7 +583,7 @@ public  final class Origin extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public Builder setElastic(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
         if (elasticBuilder_ == null) {
@@ -599,7 +599,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public Builder setElastic(
           com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder builderForValue) {
@@ -613,7 +613,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public Builder mergeElastic(com.appscode.api.kubernetes.v1beta2.ElasticSpec value) {
         if (elasticBuilder_ == null) {
@@ -631,7 +631,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public Builder clearElastic() {
         if (elasticBuilder_ == null) {
@@ -645,7 +645,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder getElasticBuilder() {
         
@@ -653,7 +653,7 @@ public  final class Origin extends
         return getElasticFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder getElasticOrBuilder() {
         if (elasticBuilder_ != null) {
@@ -664,7 +664,7 @@ public  final class Origin extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
+       * <code>.appscode.kubernetes.v1beta2.ElasticSpec elastic = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.ElasticSpec, com.appscode.api.kubernetes.v1beta2.ElasticSpec.Builder, com.appscode.api.kubernetes.v1beta2.ElasticSpecOrBuilder> 
@@ -684,13 +684,13 @@ public  final class Origin extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> postgresBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public boolean hasPostgres() {
         return postgresBuilder_ != null || postgres_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PostgresSpec getPostgres() {
         if (postgresBuilder_ == null) {
@@ -700,7 +700,7 @@ public  final class Origin extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public Builder setPostgres(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
         if (postgresBuilder_ == null) {
@@ -716,7 +716,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public Builder setPostgres(
           com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder builderForValue) {
@@ -730,7 +730,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public Builder mergePostgres(com.appscode.api.kubernetes.v1beta2.PostgresSpec value) {
         if (postgresBuilder_ == null) {
@@ -748,7 +748,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public Builder clearPostgres() {
         if (postgresBuilder_ == null) {
@@ -762,7 +762,7 @@ public  final class Origin extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder getPostgresBuilder() {
         
@@ -770,7 +770,7 @@ public  final class Origin extends
         return getPostgresFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder getPostgresOrBuilder() {
         if (postgresBuilder_ != null) {
@@ -781,7 +781,7 @@ public  final class Origin extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.PostgresSpec postgres = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PostgresSpec, com.appscode.api.kubernetes.v1beta2.PostgresSpec.Builder, com.appscode.api.kubernetes.v1beta2.PostgresSpecOrBuilder> 
@@ -848,19 +848,19 @@ public  final class Origin extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -869,19 +869,19 @@ public  final class Origin extends
   public static final int SPEC_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.Origin.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Origin.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -955,7 +955,7 @@ public  final class Origin extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -1203,13 +1203,13 @@ public  final class Origin extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -1219,7 +1219,7 @@ public  final class Origin extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1235,7 +1235,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -1249,7 +1249,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -1267,7 +1267,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -1281,7 +1281,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -1289,7 +1289,7 @@ public  final class Origin extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -1300,7 +1300,7 @@ public  final class Origin extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -1320,13 +1320,13 @@ public  final class Origin extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Origin.Spec, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Origin.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -1336,7 +1336,7 @@ public  final class Origin extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Origin.Spec value) {
       if (specBuilder_ == null) {
@@ -1352,7 +1352,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder builderForValue) {
@@ -1366,7 +1366,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Origin.Spec value) {
       if (specBuilder_ == null) {
@@ -1384,7 +1384,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -1398,7 +1398,7 @@ public  final class Origin extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder getSpecBuilder() {
       
@@ -1406,7 +1406,7 @@ public  final class Origin extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -1417,7 +1417,7 @@ public  final class Origin extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Origin.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Origin.Spec, com.appscode.api.kubernetes.v1beta2.Origin.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Origin.SpecOrBuilder> 

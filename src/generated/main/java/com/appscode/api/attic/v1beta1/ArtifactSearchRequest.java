@@ -82,7 +82,7 @@ public  final class ArtifactSearchRequest extends
   public static final int QUERY_FIELD_NUMBER = 1;
   private volatile java.lang.Object query_;
   /**
-   * <code>optional string query = 1;</code>
+   * <code>string query = 1;</code>
    */
   public java.lang.String getQuery() {
     java.lang.Object ref = query_;
@@ -97,7 +97,7 @@ public  final class ArtifactSearchRequest extends
     }
   }
   /**
-   * <code>optional string query = 1;</code>
+   * <code>string query = 1;</code>
    */
   public com.google.protobuf.ByteString
       getQueryBytes() {
@@ -116,7 +116,7 @@ public  final class ArtifactSearchRequest extends
   public static final int TYPE_FIELD_NUMBER = 2;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -131,7 +131,7 @@ public  final class ArtifactSearchRequest extends
     }
   }
   /**
-   * <code>optional string type = 2;</code>
+   * <code>string type = 2;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -207,7 +207,7 @@ public  final class ArtifactSearchRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + QUERY_FIELD_NUMBER;
     hash = (53 * hash) + getQuery().hashCode();
     hash = (37 * hash) + TYPE_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class ArtifactSearchRequest extends
 
     private java.lang.Object query_ = "";
     /**
-     * <code>optional string query = 1;</code>
+     * <code>string query = 1;</code>
      */
     public java.lang.String getQuery() {
       java.lang.Object ref = query_;
@@ -450,7 +450,7 @@ public  final class ArtifactSearchRequest extends
       }
     }
     /**
-     * <code>optional string query = 1;</code>
+     * <code>string query = 1;</code>
      */
     public com.google.protobuf.ByteString
         getQueryBytes() {
@@ -466,7 +466,7 @@ public  final class ArtifactSearchRequest extends
       }
     }
     /**
-     * <code>optional string query = 1;</code>
+     * <code>string query = 1;</code>
      */
     public Builder setQuery(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class ArtifactSearchRequest extends
       return this;
     }
     /**
-     * <code>optional string query = 1;</code>
+     * <code>string query = 1;</code>
      */
     public Builder clearQuery() {
       
@@ -488,7 +488,7 @@ public  final class ArtifactSearchRequest extends
       return this;
     }
     /**
-     * <code>optional string query = 1;</code>
+     * <code>string query = 1;</code>
      */
     public Builder setQueryBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class ArtifactSearchRequest extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -519,7 +519,7 @@ public  final class ArtifactSearchRequest extends
       }
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -535,7 +535,7 @@ public  final class ArtifactSearchRequest extends
       }
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class ArtifactSearchRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder clearType() {
       
@@ -557,7 +557,7 @@ public  final class ArtifactSearchRequest extends
       return this;
     }
     /**
-     * <code>optional string type = 2;</code>
+     * <code>string type = 2;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {

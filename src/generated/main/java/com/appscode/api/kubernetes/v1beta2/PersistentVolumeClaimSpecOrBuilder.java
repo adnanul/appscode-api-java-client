@@ -27,24 +27,24 @@ public interface PersistentVolumeClaimSpecOrBuilder extends
       getAccessModesBytes(int index);
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   boolean hasResources();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements getResources();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirements resources = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec.ResourceRequirementsOrBuilder getResourcesOrBuilder();
 
   /**
-   * <code>optional string volume_name = 3;</code>
+   * <code>string volume_name = 3;</code>
    */
   java.lang.String getVolumeName();
   /**
-   * <code>optional string volume_name = 3;</code>
+   * <code>string volume_name = 3;</code>
    */
   com.google.protobuf.ByteString
       getVolumeNameBytes();

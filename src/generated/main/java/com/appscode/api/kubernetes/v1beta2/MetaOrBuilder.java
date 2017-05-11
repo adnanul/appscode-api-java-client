@@ -8,52 +8,52 @@ public interface MetaOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional string self_links = 3;</code>
+   * <code>string self_links = 3;</code>
    */
   java.lang.String getSelfLinks();
   /**
-   * <code>optional string self_links = 3;</code>
+   * <code>string self_links = 3;</code>
    */
   com.google.protobuf.ByteString
       getSelfLinksBytes();
 
   /**
-   * <code>optional string resource_version = 4;</code>
+   * <code>string resource_version = 4;</code>
    */
   java.lang.String getResourceVersion();
   /**
-   * <code>optional string resource_version = 4;</code>
+   * <code>string resource_version = 4;</code>
    */
   com.google.protobuf.ByteString
       getResourceVersionBytes();
 
   /**
-   * <code>optional int64 creation_timestamp = 5;</code>
+   * <code>int64 creation_timestamp = 5;</code>
    */
   long getCreationTimestamp();
 
   /**
-   * <code>optional int64 generation = 6;</code>
+   * <code>int64 generation = 6;</code>
    */
   long getGeneration();
 
@@ -126,11 +126,11 @@ public interface MetaOrBuilder extends
       java.lang.String key);
 
   /**
-   * <code>optional string uid = 9;</code>
+   * <code>string uid = 9;</code>
    */
   java.lang.String getUid();
   /**
-   * <code>optional string uid = 9;</code>
+   * <code>string uid = 9;</code>
    */
   com.google.protobuf.ByteString
       getUidBytes();

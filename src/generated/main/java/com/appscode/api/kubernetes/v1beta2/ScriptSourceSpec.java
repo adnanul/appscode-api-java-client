@@ -88,7 +88,7 @@ public  final class ScriptSourceSpec extends
   public static final int SCRIPT_PATH_FIELD_NUMBER = 1;
   private volatile java.lang.Object scriptPath_;
   /**
-   * <code>optional string script_path = 1;</code>
+   * <code>string script_path = 1;</code>
    */
   public java.lang.String getScriptPath() {
     java.lang.Object ref = scriptPath_;
@@ -103,7 +103,7 @@ public  final class ScriptSourceSpec extends
     }
   }
   /**
-   * <code>optional string script_path = 1;</code>
+   * <code>string script_path = 1;</code>
    */
   public com.google.protobuf.ByteString
       getScriptPathBytes() {
@@ -122,19 +122,19 @@ public  final class ScriptSourceSpec extends
   public static final int VOLUME_SOURCE_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.VolumeSource volumeSource_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   public boolean hasVolumeSource() {
     return volumeSource_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
     return volumeSource_ == null ? com.appscode.api.kubernetes.v1beta2.VolumeSource.getDefaultInstance() : volumeSource_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
     return getVolumeSource();
@@ -204,7 +204,7 @@ public  final class ScriptSourceSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + SCRIPT_PATH_FIELD_NUMBER;
     hash = (53 * hash) + getScriptPath().hashCode();
     if (hasVolumeSource()) {
@@ -441,7 +441,7 @@ public  final class ScriptSourceSpec extends
 
     private java.lang.Object scriptPath_ = "";
     /**
-     * <code>optional string script_path = 1;</code>
+     * <code>string script_path = 1;</code>
      */
     public java.lang.String getScriptPath() {
       java.lang.Object ref = scriptPath_;
@@ -456,7 +456,7 @@ public  final class ScriptSourceSpec extends
       }
     }
     /**
-     * <code>optional string script_path = 1;</code>
+     * <code>string script_path = 1;</code>
      */
     public com.google.protobuf.ByteString
         getScriptPathBytes() {
@@ -472,7 +472,7 @@ public  final class ScriptSourceSpec extends
       }
     }
     /**
-     * <code>optional string script_path = 1;</code>
+     * <code>string script_path = 1;</code>
      */
     public Builder setScriptPath(
         java.lang.String value) {
@@ -485,7 +485,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional string script_path = 1;</code>
+     * <code>string script_path = 1;</code>
      */
     public Builder clearScriptPath() {
       
@@ -494,7 +494,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional string script_path = 1;</code>
+     * <code>string script_path = 1;</code>
      */
     public Builder setScriptPathBytes(
         com.google.protobuf.ByteString value) {
@@ -512,13 +512,13 @@ public  final class ScriptSourceSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> volumeSourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public boolean hasVolumeSource() {
       return volumeSourceBuilder_ != null || volumeSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSource getVolumeSource() {
       if (volumeSourceBuilder_ == null) {
@@ -528,7 +528,7 @@ public  final class ScriptSourceSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder setVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
       if (volumeSourceBuilder_ == null) {
@@ -544,7 +544,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder setVolumeSource(
         com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder builderForValue) {
@@ -558,7 +558,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder mergeVolumeSource(com.appscode.api.kubernetes.v1beta2.VolumeSource value) {
       if (volumeSourceBuilder_ == null) {
@@ -576,7 +576,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public Builder clearVolumeSource() {
       if (volumeSourceBuilder_ == null) {
@@ -590,7 +590,7 @@ public  final class ScriptSourceSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder getVolumeSourceBuilder() {
       
@@ -598,7 +598,7 @@ public  final class ScriptSourceSpec extends
       return getVolumeSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder getVolumeSourceOrBuilder() {
       if (volumeSourceBuilder_ != null) {
@@ -609,7 +609,7 @@ public  final class ScriptSourceSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.VolumeSource volume_source = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.VolumeSource, com.appscode.api.kubernetes.v1beta2.VolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.VolumeSourceOrBuilder> 

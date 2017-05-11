@@ -8,61 +8,61 @@ public interface ClusterInstanceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   java.lang.String getPhid();
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   com.google.protobuf.ByteString
       getPhidBytes();
 
   /**
-   * <code>optional string external_id = 2;</code>
+   * <code>string external_id = 2;</code>
    */
   java.lang.String getExternalId();
   /**
-   * <code>optional string external_id = 2;</code>
+   * <code>string external_id = 2;</code>
    */
   com.google.protobuf.ByteString
       getExternalIdBytes();
 
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   java.lang.String getName();
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   com.google.protobuf.ByteString
       getNameBytes();
 
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   java.lang.String getExternalIp();
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   com.google.protobuf.ByteString
       getExternalIpBytes();
 
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   java.lang.String getInternalIp();
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   com.google.protobuf.ByteString
       getInternalIpBytes();
 
   /**
-   * <code>optional string sku = 6;</code>
+   * <code>string sku = 6;</code>
    */
   java.lang.String getSku();
   /**
-   * <code>optional string sku = 6;</code>
+   * <code>string sku = 6;</code>
    */
   com.google.protobuf.ByteString
       getSkuBytes();

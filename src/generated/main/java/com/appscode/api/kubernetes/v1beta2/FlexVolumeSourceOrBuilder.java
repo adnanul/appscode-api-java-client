@@ -12,7 +12,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * Driver is the name of the driver to use for this volume.
    * </pre>
    *
-   * <code>optional string driver = 1;</code>
+   * <code>string driver = 1;</code>
    */
   java.lang.String getDriver();
   /**
@@ -20,7 +20,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * Driver is the name of the driver to use for this volume.
    * </pre>
    *
-   * <code>optional string driver = 1;</code>
+   * <code>string driver = 1;</code>
    */
   com.google.protobuf.ByteString
       getDriverBytes();
@@ -32,7 +32,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   java.lang.String getFsType();
   /**
@@ -42,7 +42,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
    * </pre>
    *
-   * <code>optional string fsType = 2;</code>
+   * <code>string fsType = 2;</code>
    */
   com.google.protobuf.ByteString
       getFsTypeBytes();
@@ -56,7 +56,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   boolean hasSecretRef();
   /**
@@ -68,7 +68,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReference getSecretRef();
   /**
@@ -80,7 +80,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * scripts.
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference secretRef = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getSecretRefOrBuilder();
 
@@ -90,7 +90,7 @@ public interface FlexVolumeSourceOrBuilder extends
    * the ReadOnly setting in VolumeMounts.
    * </pre>
    *
-   * <code>optional bool readOnly = 4;</code>
+   * <code>bool readOnly = 4;</code>
    */
   boolean getReadOnly();
 

@@ -8,15 +8,15 @@ public interface ConfigMapVolumeSourceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   boolean hasLocalObjectReference();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.LocalObjectReference getLocalObjectReference();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.LocalObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder();
 
@@ -32,7 +32,7 @@ public interface ConfigMapVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   boolean hasItems();
   /**
@@ -47,7 +47,7 @@ public interface ConfigMapVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KeyToPath getItems();
   /**
@@ -62,7 +62,7 @@ public interface ConfigMapVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.KeyToPathOrBuilder getItemsOrBuilder();
 
@@ -76,7 +76,7 @@ public interface ConfigMapVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 defaultMode = 3;</code>
+   * <code>int32 defaultMode = 3;</code>
    */
   int getDefaultMode();
 
@@ -86,7 +86,7 @@ public interface ConfigMapVolumeSourceOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional bool optional = 4;</code>
+   * <code>bool optional = 4;</code>
    */
   boolean getOptional();
 }

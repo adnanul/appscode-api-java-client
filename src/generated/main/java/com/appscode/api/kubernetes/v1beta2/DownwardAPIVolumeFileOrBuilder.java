@@ -12,7 +12,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   java.lang.String getPath();
   /**
@@ -20,7 +20,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
    * </pre>
    *
-   * <code>optional string path = 1;</code>
+   * <code>string path = 1;</code>
    */
   com.google.protobuf.ByteString
       getPathBytes();
@@ -31,7 +31,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   boolean hasFieldRef();
   /**
@@ -40,7 +40,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectFieldSelector getFieldRef();
   /**
@@ -49,7 +49,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectFieldSelector fieldRef = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectFieldSelectorOrBuilder getFieldRefOrBuilder();
 
@@ -60,7 +60,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   boolean hasResourceFieldRef();
   /**
@@ -70,7 +70,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ResourceFieldSelector getResourceFieldRef();
   /**
@@ -80,7 +80,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ResourceFieldSelector resourceFieldRef = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ResourceFieldSelectorOrBuilder getResourceFieldRefOrBuilder();
 
@@ -93,7 +93,7 @@ public interface DownwardAPIVolumeFileOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 mode = 4;</code>
+   * <code>int32 mode = 4;</code>
    */
   int getMode();
 }

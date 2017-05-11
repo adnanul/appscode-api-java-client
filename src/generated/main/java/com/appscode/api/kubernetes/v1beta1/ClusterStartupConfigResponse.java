@@ -45,25 +45,12 @@ public  final class ClusterStartupConfigResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             configuration_ = s;
             break;
           }
-          case 26: {
+          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             sku_ = s;
@@ -92,31 +79,10 @@ public  final class ClusterStartupConfigResponse extends
             com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse.class, com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CONFIGURATION_FIELD_NUMBER = 2;
+  public static final int CONFIGURATION_FIELD_NUMBER = 1;
   private volatile java.lang.Object configuration_;
   /**
-   * <code>optional string configuration = 2;</code>
+   * <code>string configuration = 1;</code>
    */
   public java.lang.String getConfiguration() {
     java.lang.Object ref = configuration_;
@@ -131,7 +97,7 @@ public  final class ClusterStartupConfigResponse extends
     }
   }
   /**
-   * <code>optional string configuration = 2;</code>
+   * <code>string configuration = 1;</code>
    */
   public com.google.protobuf.ByteString
       getConfigurationBytes() {
@@ -147,10 +113,10 @@ public  final class ClusterStartupConfigResponse extends
     }
   }
 
-  public static final int SKU_FIELD_NUMBER = 3;
+  public static final int SKU_FIELD_NUMBER = 2;
   private volatile java.lang.Object sku_;
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 2;</code>
    */
   public java.lang.String getSku() {
     java.lang.Object ref = sku_;
@@ -165,7 +131,7 @@ public  final class ClusterStartupConfigResponse extends
     }
   }
   /**
-   * <code>optional string sku = 3;</code>
+   * <code>string sku = 2;</code>
    */
   public com.google.protobuf.ByteString
       getSkuBytes() {
@@ -193,14 +159,11 @@ public  final class ClusterStartupConfigResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (!getConfigurationBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, configuration_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, configuration_);
     }
     if (!getSkuBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, sku_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, sku_);
     }
   }
 
@@ -209,15 +172,11 @@ public  final class ClusterStartupConfigResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (!getConfigurationBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, configuration_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, configuration_);
     }
     if (!getSkuBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, sku_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, sku_);
     }
     memoizedSize = size;
     return size;
@@ -235,11 +194,6 @@ public  final class ClusterStartupConfigResponse extends
     com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse other = (com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getConfiguration()
         .equals(other.getConfiguration());
     result = result && getSku()
@@ -253,11 +207,7 @@ public  final class ClusterStartupConfigResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CONFIGURATION_FIELD_NUMBER;
     hash = (53 * hash) + getConfiguration().hashCode();
     hash = (37 * hash) + SKU_FIELD_NUMBER;
@@ -380,12 +330,6 @@ public  final class ClusterStartupConfigResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       configuration_ = "";
 
       sku_ = "";
@@ -412,11 +356,6 @@ public  final class ClusterStartupConfigResponse extends
 
     public com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse buildPartial() {
       com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse result = new com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       result.configuration_ = configuration_;
       result.sku_ = sku_;
       onBuilt();
@@ -460,9 +399,6 @@ public  final class ClusterStartupConfigResponse extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse other) {
       if (other == com.appscode.api.kubernetes.v1beta1.ClusterStartupConfigResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (!other.getConfiguration().isEmpty()) {
         configuration_ = other.configuration_;
         onChanged();
@@ -497,126 +433,9 @@ public  final class ClusterStartupConfigResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.lang.Object configuration_ = "";
     /**
-     * <code>optional string configuration = 2;</code>
+     * <code>string configuration = 1;</code>
      */
     public java.lang.String getConfiguration() {
       java.lang.Object ref = configuration_;
@@ -631,7 +450,7 @@ public  final class ClusterStartupConfigResponse extends
       }
     }
     /**
-     * <code>optional string configuration = 2;</code>
+     * <code>string configuration = 1;</code>
      */
     public com.google.protobuf.ByteString
         getConfigurationBytes() {
@@ -647,7 +466,7 @@ public  final class ClusterStartupConfigResponse extends
       }
     }
     /**
-     * <code>optional string configuration = 2;</code>
+     * <code>string configuration = 1;</code>
      */
     public Builder setConfiguration(
         java.lang.String value) {
@@ -660,7 +479,7 @@ public  final class ClusterStartupConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string configuration = 2;</code>
+     * <code>string configuration = 1;</code>
      */
     public Builder clearConfiguration() {
       
@@ -669,7 +488,7 @@ public  final class ClusterStartupConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string configuration = 2;</code>
+     * <code>string configuration = 1;</code>
      */
     public Builder setConfigurationBytes(
         com.google.protobuf.ByteString value) {
@@ -685,7 +504,7 @@ public  final class ClusterStartupConfigResponse extends
 
     private java.lang.Object sku_ = "";
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 2;</code>
      */
     public java.lang.String getSku() {
       java.lang.Object ref = sku_;
@@ -700,7 +519,7 @@ public  final class ClusterStartupConfigResponse extends
       }
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 2;</code>
      */
     public com.google.protobuf.ByteString
         getSkuBytes() {
@@ -716,7 +535,7 @@ public  final class ClusterStartupConfigResponse extends
       }
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 2;</code>
      */
     public Builder setSku(
         java.lang.String value) {
@@ -729,7 +548,7 @@ public  final class ClusterStartupConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 2;</code>
      */
     public Builder clearSku() {
       
@@ -738,7 +557,7 @@ public  final class ClusterStartupConfigResponse extends
       return this;
     }
     /**
-     * <code>optional string sku = 3;</code>
+     * <code>string sku = 2;</code>
      */
     public Builder setSkuBytes(
         com.google.protobuf.ByteString value) {

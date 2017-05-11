@@ -137,7 +137,7 @@ public  final class ConduitUser extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -152,7 +152,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -171,7 +171,7 @@ public  final class ConduitUser extends
   public static final int USER_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object userName_;
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   public java.lang.String getUserName() {
     java.lang.Object ref = userName_;
@@ -186,7 +186,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string user_name = 2;</code>
+   * <code>string user_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getUserNameBytes() {
@@ -205,7 +205,7 @@ public  final class ConduitUser extends
   public static final int REAL_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object realName_;
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   public java.lang.String getRealName() {
     java.lang.Object ref = realName_;
@@ -220,7 +220,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string real_name = 3;</code>
+   * <code>string real_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getRealNameBytes() {
@@ -239,7 +239,7 @@ public  final class ConduitUser extends
   public static final int IMAGE_FIELD_NUMBER = 4;
   private volatile java.lang.Object image_;
   /**
-   * <code>optional string image = 4;</code>
+   * <code>string image = 4;</code>
    */
   public java.lang.String getImage() {
     java.lang.Object ref = image_;
@@ -254,7 +254,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string image = 4;</code>
+   * <code>string image = 4;</code>
    */
   public com.google.protobuf.ByteString
       getImageBytes() {
@@ -273,7 +273,7 @@ public  final class ConduitUser extends
   public static final int URI_FIELD_NUMBER = 5;
   private volatile java.lang.Object uri_;
   /**
-   * <code>optional string uri = 5;</code>
+   * <code>string uri = 5;</code>
    */
   public java.lang.String getUri() {
     java.lang.Object ref = uri_;
@@ -288,7 +288,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string uri = 5;</code>
+   * <code>string uri = 5;</code>
    */
   public com.google.protobuf.ByteString
       getUriBytes() {
@@ -336,7 +336,7 @@ public  final class ConduitUser extends
   public static final int PRIMARY_EMAIL_FIELD_NUMBER = 7;
   private volatile java.lang.Object primaryEmail_;
   /**
-   * <code>optional string primary_email = 7;</code>
+   * <code>string primary_email = 7;</code>
    */
   public java.lang.String getPrimaryEmail() {
     java.lang.Object ref = primaryEmail_;
@@ -351,7 +351,7 @@ public  final class ConduitUser extends
     }
   }
   /**
-   * <code>optional string primary_email = 7;</code>
+   * <code>string primary_email = 7;</code>
    */
   public com.google.protobuf.ByteString
       getPrimaryEmailBytes() {
@@ -370,19 +370,19 @@ public  final class ConduitUser extends
   public static final int PREFERENCES_FIELD_NUMBER = 8;
   private com.appscode.api.auth.v1beta1.Preferences preferences_;
   /**
-   * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+   * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
    */
   public boolean hasPreferences() {
     return preferences_ != null;
   }
   /**
-   * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+   * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
    */
   public com.appscode.api.auth.v1beta1.Preferences getPreferences() {
     return preferences_ == null ? com.appscode.api.auth.v1beta1.Preferences.getDefaultInstance() : preferences_;
   }
   /**
-   * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+   * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
    */
   public com.appscode.api.auth.v1beta1.PreferencesOrBuilder getPreferencesOrBuilder() {
     return getPreferences();
@@ -505,7 +505,7 @@ public  final class ConduitUser extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + USER_NAME_FIELD_NUMBER;
@@ -812,7 +812,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -827,7 +827,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -843,7 +843,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -856,7 +856,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -865,7 +865,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -881,7 +881,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object userName_ = "";
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public java.lang.String getUserName() {
       java.lang.Object ref = userName_;
@@ -896,7 +896,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getUserNameBytes() {
@@ -912,7 +912,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder setUserName(
         java.lang.String value) {
@@ -925,7 +925,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder clearUserName() {
       
@@ -934,7 +934,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string user_name = 2;</code>
+     * <code>string user_name = 2;</code>
      */
     public Builder setUserNameBytes(
         com.google.protobuf.ByteString value) {
@@ -950,7 +950,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object realName_ = "";
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public java.lang.String getRealName() {
       java.lang.Object ref = realName_;
@@ -965,7 +965,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getRealNameBytes() {
@@ -981,7 +981,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder setRealName(
         java.lang.String value) {
@@ -994,7 +994,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder clearRealName() {
       
@@ -1003,7 +1003,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string real_name = 3;</code>
+     * <code>string real_name = 3;</code>
      */
     public Builder setRealNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1019,7 +1019,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object image_ = "";
     /**
-     * <code>optional string image = 4;</code>
+     * <code>string image = 4;</code>
      */
     public java.lang.String getImage() {
       java.lang.Object ref = image_;
@@ -1034,7 +1034,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string image = 4;</code>
+     * <code>string image = 4;</code>
      */
     public com.google.protobuf.ByteString
         getImageBytes() {
@@ -1050,7 +1050,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string image = 4;</code>
+     * <code>string image = 4;</code>
      */
     public Builder setImage(
         java.lang.String value) {
@@ -1063,7 +1063,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string image = 4;</code>
+     * <code>string image = 4;</code>
      */
     public Builder clearImage() {
       
@@ -1072,7 +1072,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string image = 4;</code>
+     * <code>string image = 4;</code>
      */
     public Builder setImageBytes(
         com.google.protobuf.ByteString value) {
@@ -1088,7 +1088,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object uri_ = "";
     /**
-     * <code>optional string uri = 5;</code>
+     * <code>string uri = 5;</code>
      */
     public java.lang.String getUri() {
       java.lang.Object ref = uri_;
@@ -1103,7 +1103,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string uri = 5;</code>
+     * <code>string uri = 5;</code>
      */
     public com.google.protobuf.ByteString
         getUriBytes() {
@@ -1119,7 +1119,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string uri = 5;</code>
+     * <code>string uri = 5;</code>
      */
     public Builder setUri(
         java.lang.String value) {
@@ -1132,7 +1132,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string uri = 5;</code>
+     * <code>string uri = 5;</code>
      */
     public Builder clearUri() {
       
@@ -1141,7 +1141,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string uri = 5;</code>
+     * <code>string uri = 5;</code>
      */
     public Builder setUriBytes(
         com.google.protobuf.ByteString value) {
@@ -1251,7 +1251,7 @@ public  final class ConduitUser extends
 
     private java.lang.Object primaryEmail_ = "";
     /**
-     * <code>optional string primary_email = 7;</code>
+     * <code>string primary_email = 7;</code>
      */
     public java.lang.String getPrimaryEmail() {
       java.lang.Object ref = primaryEmail_;
@@ -1266,7 +1266,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string primary_email = 7;</code>
+     * <code>string primary_email = 7;</code>
      */
     public com.google.protobuf.ByteString
         getPrimaryEmailBytes() {
@@ -1282,7 +1282,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional string primary_email = 7;</code>
+     * <code>string primary_email = 7;</code>
      */
     public Builder setPrimaryEmail(
         java.lang.String value) {
@@ -1295,7 +1295,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string primary_email = 7;</code>
+     * <code>string primary_email = 7;</code>
      */
     public Builder clearPrimaryEmail() {
       
@@ -1304,7 +1304,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional string primary_email = 7;</code>
+     * <code>string primary_email = 7;</code>
      */
     public Builder setPrimaryEmailBytes(
         com.google.protobuf.ByteString value) {
@@ -1322,13 +1322,13 @@ public  final class ConduitUser extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.auth.v1beta1.Preferences, com.appscode.api.auth.v1beta1.Preferences.Builder, com.appscode.api.auth.v1beta1.PreferencesOrBuilder> preferencesBuilder_;
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public boolean hasPreferences() {
       return preferencesBuilder_ != null || preferences_ != null;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public com.appscode.api.auth.v1beta1.Preferences getPreferences() {
       if (preferencesBuilder_ == null) {
@@ -1338,7 +1338,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public Builder setPreferences(com.appscode.api.auth.v1beta1.Preferences value) {
       if (preferencesBuilder_ == null) {
@@ -1354,7 +1354,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public Builder setPreferences(
         com.appscode.api.auth.v1beta1.Preferences.Builder builderForValue) {
@@ -1368,7 +1368,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public Builder mergePreferences(com.appscode.api.auth.v1beta1.Preferences value) {
       if (preferencesBuilder_ == null) {
@@ -1386,7 +1386,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public Builder clearPreferences() {
       if (preferencesBuilder_ == null) {
@@ -1400,7 +1400,7 @@ public  final class ConduitUser extends
       return this;
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public com.appscode.api.auth.v1beta1.Preferences.Builder getPreferencesBuilder() {
       
@@ -1408,7 +1408,7 @@ public  final class ConduitUser extends
       return getPreferencesFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     public com.appscode.api.auth.v1beta1.PreferencesOrBuilder getPreferencesOrBuilder() {
       if (preferencesBuilder_ != null) {
@@ -1419,7 +1419,7 @@ public  final class ConduitUser extends
       }
     }
     /**
-     * <code>optional .appscode.auth.v1beta1.Preferences preferences = 8;</code>
+     * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.auth.v1beta1.Preferences, com.appscode.api.auth.v1beta1.Preferences.Builder, com.appscode.api.auth.v1beta1.PreferencesOrBuilder> 

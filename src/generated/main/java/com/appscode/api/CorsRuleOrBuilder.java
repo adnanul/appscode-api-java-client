@@ -14,7 +14,7 @@ public interface CorsRuleOrBuilder extends
    * body.
    * </pre>
    *
-   * <code>optional bool enable = 1;</code>
+   * <code>bool enable = 1;</code>
    */
   boolean getEnable();
 }

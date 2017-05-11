@@ -8,7 +8,7 @@ public interface ProjectListRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional bool with_member = 1;</code>
+   * <code>bool with_member = 1;</code>
    */
   boolean getWithMember();
 

@@ -94,19 +94,19 @@ public  final class InitSpec extends
   public static final int SCRIPT_SOURCE_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec scriptSource_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   public boolean hasScriptSource() {
     return scriptSource_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getScriptSource() {
     return scriptSource_ == null ? com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.getDefaultInstance() : scriptSource_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder getScriptSourceOrBuilder() {
     return getScriptSource();
@@ -115,19 +115,19 @@ public  final class InitSpec extends
   public static final int SNAPSHOT_SOURCE_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec snapshotSource_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   public boolean hasSnapshotSource() {
     return snapshotSource_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec getSnapshotSource() {
     return snapshotSource_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec.getDefaultInstance() : snapshotSource_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpecOrBuilder getSnapshotSourceOrBuilder() {
     return getSnapshotSource();
@@ -201,7 +201,7 @@ public  final class InitSpec extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasScriptSource()) {
       hash = (37 * hash) + SCRIPT_SOURCE_FIELD_NUMBER;
       hash = (53 * hash) + getScriptSource().hashCode();
@@ -449,13 +449,13 @@ public  final class InitSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder> scriptSourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public boolean hasScriptSource() {
       return scriptSourceBuilder_ != null || scriptSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec getScriptSource() {
       if (scriptSourceBuilder_ == null) {
@@ -465,7 +465,7 @@ public  final class InitSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public Builder setScriptSource(com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec value) {
       if (scriptSourceBuilder_ == null) {
@@ -481,7 +481,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public Builder setScriptSource(
         com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder builderForValue) {
@@ -495,7 +495,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public Builder mergeScriptSource(com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec value) {
       if (scriptSourceBuilder_ == null) {
@@ -513,7 +513,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public Builder clearScriptSource() {
       if (scriptSourceBuilder_ == null) {
@@ -527,7 +527,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder getScriptSourceBuilder() {
       
@@ -535,7 +535,7 @@ public  final class InitSpec extends
       return getScriptSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder getScriptSourceOrBuilder() {
       if (scriptSourceBuilder_ != null) {
@@ -546,7 +546,7 @@ public  final class InitSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.ScriptSourceSpec script_source = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpec.Builder, com.appscode.api.kubernetes.v1beta2.ScriptSourceSpecOrBuilder> 
@@ -566,13 +566,13 @@ public  final class InitSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpecOrBuilder> snapshotSourceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public boolean hasSnapshotSource() {
       return snapshotSourceBuilder_ != null || snapshotSource_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec getSnapshotSource() {
       if (snapshotSourceBuilder_ == null) {
@@ -582,7 +582,7 @@ public  final class InitSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public Builder setSnapshotSource(com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec value) {
       if (snapshotSourceBuilder_ == null) {
@@ -598,7 +598,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public Builder setSnapshotSource(
         com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec.Builder builderForValue) {
@@ -612,7 +612,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public Builder mergeSnapshotSource(com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec value) {
       if (snapshotSourceBuilder_ == null) {
@@ -630,7 +630,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public Builder clearSnapshotSource() {
       if (snapshotSourceBuilder_ == null) {
@@ -644,7 +644,7 @@ public  final class InitSpec extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec.Builder getSnapshotSourceBuilder() {
       
@@ -652,7 +652,7 @@ public  final class InitSpec extends
       return getSnapshotSourceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpecOrBuilder getSnapshotSourceOrBuilder() {
       if (snapshotSourceBuilder_ != null) {
@@ -663,7 +663,7 @@ public  final class InitSpec extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotSourceSpec snapshot_source = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSourceSpecOrBuilder> 

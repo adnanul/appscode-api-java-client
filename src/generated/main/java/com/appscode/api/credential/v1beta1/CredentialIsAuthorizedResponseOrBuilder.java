@@ -8,29 +8,16 @@ public interface CredentialIsAuthorizedResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional bool unauthorized = 2;</code>
+   * <code>bool unauthorized = 1;</code>
    */
   boolean getUnauthorized();
 
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 2;</code>
    */
   java.lang.String getMessage();
   /**
-   * <code>optional string message = 3;</code>
+   * <code>string message = 2;</code>
    */
   com.google.protobuf.ByteString
       getMessageBytes();

@@ -8,25 +8,25 @@ public interface StorageSpecOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string class = 1;</code>
+   * <code>string class = 1;</code>
    */
   java.lang.String getClass_();
   /**
-   * <code>optional string class = 1;</code>
+   * <code>string class = 1;</code>
    */
   com.google.protobuf.ByteString
       getClass_Bytes();
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   boolean hasPersistentVolumeClaimSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpec getPersistentVolumeClaimSpec();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaimSpec persistent_volume_claim_spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimSpecOrBuilder getPersistentVolumeClaimSpecOrBuilder();
 }

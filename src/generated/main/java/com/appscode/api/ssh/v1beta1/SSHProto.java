@@ -43,19 +43,18 @@ public final class SSHProto {
       "ns.proto\032\037appscode/api/dtypes/types.prot" +
       "o\"O\n\rSSHGetRequest\022\021\n\tnamespace\030\001 \001(\t\022\024\n" +
       "\014cluster_name\030\002 \001(\t\022\025\n\rinstance_name\030\003 \001" +
-      "(\t\"\265\001\n\016SSHGetResponse\022\'\n\006status\030\001 \001(\0132\027." +
-      "appscode.dtypes.Status\022-\n\007ssh_key\030\002 \001(\0132" +
-      "\034.appscode.ssh.v1beta1.SSHKey\022\025\n\rinstanc" +
-      "e_addr\030\003 \001(\t\022\025\n\rinstance_port\030\004 \001(\005\022\014\n\004u" +
-      "ser\030\005 \001(\t\022\017\n\007command\030\006 \001(\t\"g\n\006SSHKey\022\022\n\n",
-      "public_key\030\001 \001(\014\022\023\n\013private_key\030\002 \001(\014\022\027\n" +
-      "\017aws_fingerprint\030\003 \001(\t\022\033\n\023openssh_finger" +
-      "print\030\004 \001(\t2\204\001\n\003SSH\022}\n\003Get\022#.appscode.ss" +
-      "h.v1beta1.SSHGetRequest\032$.appscode.ssh.v" +
-      "1beta1.SSHGetResponse\"+\202\323\344\223\002%\022#/_appscod" +
-      "e/api/ssh/v1beta1/ssh/jsonB3\n\034com.appsco" +
-      "de.api.ssh.v1beta1B\010SSHProtoP\001Z\007v1beta1b" +
-      "\006proto3"
+      "(\t\"\214\001\n\016SSHGetResponse\022-\n\007ssh_key\030\001 \001(\0132\034" +
+      ".appscode.ssh.v1beta1.SSHKey\022\025\n\rinstance" +
+      "_addr\030\002 \001(\t\022\025\n\rinstance_port\030\003 \001(\005\022\014\n\004us" +
+      "er\030\004 \001(\t\022\017\n\007command\030\005 \001(\t\"g\n\006SSHKey\022\022\n\np" +
+      "ublic_key\030\001 \001(\014\022\023\n\013private_key\030\002 \001(\014\022\027\n\017",
+      "aws_fingerprint\030\003 \001(\t\022\033\n\023openssh_fingerp" +
+      "rint\030\004 \001(\t2\204\001\n\003SSH\022}\n\003Get\022#.appscode.ssh" +
+      ".v1beta1.SSHGetRequest\032$.appscode.ssh.v1" +
+      "beta1.SSHGetResponse\"+\202\323\344\223\002%\022#/_appscode" +
+      "/api/ssh/v1beta1/ssh/jsonB3\n\034com.appscod" +
+      "e.api.ssh.v1beta1B\010SSHProtoP\001Z\007v1beta1b\006" +
+      "proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -82,7 +81,7 @@ public final class SSHProto {
     internal_static_appscode_ssh_v1beta1_SSHGetResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_ssh_v1beta1_SSHGetResponse_descriptor,
-        new java.lang.String[] { "Status", "SshKey", "InstanceAddr", "InstancePort", "User", "Command", });
+        new java.lang.String[] { "SshKey", "InstanceAddr", "InstancePort", "User", "Command", });
     internal_static_appscode_ssh_v1beta1_SSHKey_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_ssh_v1beta1_SSHKey_fieldAccessorTable = new

@@ -106,19 +106,19 @@ public  final class ConfigMapVolumeSource extends
   public static final int LOCALOBJECTREFERENCE_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.LocalObjectReference localObjectReference_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   public boolean hasLocalObjectReference() {
     return localObjectReference_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.LocalObjectReference getLocalObjectReference() {
     return localObjectReference_ == null ? com.appscode.api.kubernetes.v1beta2.LocalObjectReference.getDefaultInstance() : localObjectReference_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.LocalObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder() {
     return getLocalObjectReference();
@@ -138,7 +138,7 @@ public  final class ConfigMapVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   public boolean hasItems() {
     return items_ != null;
@@ -155,7 +155,7 @@ public  final class ConfigMapVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KeyToPath getItems() {
     return items_ == null ? com.appscode.api.kubernetes.v1beta2.KeyToPath.getDefaultInstance() : items_;
@@ -172,7 +172,7 @@ public  final class ConfigMapVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.KeyToPathOrBuilder getItemsOrBuilder() {
     return getItems();
@@ -190,7 +190,7 @@ public  final class ConfigMapVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional int32 defaultMode = 3;</code>
+   * <code>int32 defaultMode = 3;</code>
    */
   public int getDefaultMode() {
     return defaultMode_;
@@ -204,7 +204,7 @@ public  final class ConfigMapVolumeSource extends
    * +optional
    * </pre>
    *
-   * <code>optional bool optional = 4;</code>
+   * <code>bool optional = 4;</code>
    */
   public boolean getOptional() {
     return optional_;
@@ -296,7 +296,7 @@ public  final class ConfigMapVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasLocalObjectReference()) {
       hash = (37 * hash) + LOCALOBJECTREFERENCE_FIELD_NUMBER;
       hash = (53 * hash) + getLocalObjectReference().hashCode();
@@ -561,13 +561,13 @@ public  final class ConfigMapVolumeSource extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.LocalObjectReference, com.appscode.api.kubernetes.v1beta2.LocalObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.LocalObjectReferenceOrBuilder> localObjectReferenceBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public boolean hasLocalObjectReference() {
       return localObjectReferenceBuilder_ != null || localObjectReference_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.LocalObjectReference getLocalObjectReference() {
       if (localObjectReferenceBuilder_ == null) {
@@ -577,7 +577,7 @@ public  final class ConfigMapVolumeSource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public Builder setLocalObjectReference(com.appscode.api.kubernetes.v1beta2.LocalObjectReference value) {
       if (localObjectReferenceBuilder_ == null) {
@@ -593,7 +593,7 @@ public  final class ConfigMapVolumeSource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public Builder setLocalObjectReference(
         com.appscode.api.kubernetes.v1beta2.LocalObjectReference.Builder builderForValue) {
@@ -607,7 +607,7 @@ public  final class ConfigMapVolumeSource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public Builder mergeLocalObjectReference(com.appscode.api.kubernetes.v1beta2.LocalObjectReference value) {
       if (localObjectReferenceBuilder_ == null) {
@@ -625,7 +625,7 @@ public  final class ConfigMapVolumeSource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public Builder clearLocalObjectReference() {
       if (localObjectReferenceBuilder_ == null) {
@@ -639,7 +639,7 @@ public  final class ConfigMapVolumeSource extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.LocalObjectReference.Builder getLocalObjectReferenceBuilder() {
       
@@ -647,7 +647,7 @@ public  final class ConfigMapVolumeSource extends
       return getLocalObjectReferenceFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.LocalObjectReferenceOrBuilder getLocalObjectReferenceOrBuilder() {
       if (localObjectReferenceBuilder_ != null) {
@@ -658,7 +658,7 @@ public  final class ConfigMapVolumeSource extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.LocalObjectReference localObjectReference = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.LocalObjectReference, com.appscode.api.kubernetes.v1beta2.LocalObjectReference.Builder, com.appscode.api.kubernetes.v1beta2.LocalObjectReferenceOrBuilder> 
@@ -689,7 +689,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public boolean hasItems() {
       return itemsBuilder_ != null || items_ != null;
@@ -706,7 +706,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KeyToPath getItems() {
       if (itemsBuilder_ == null) {
@@ -727,7 +727,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public Builder setItems(com.appscode.api.kubernetes.v1beta2.KeyToPath value) {
       if (itemsBuilder_ == null) {
@@ -754,7 +754,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public Builder setItems(
         com.appscode.api.kubernetes.v1beta2.KeyToPath.Builder builderForValue) {
@@ -779,7 +779,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public Builder mergeItems(com.appscode.api.kubernetes.v1beta2.KeyToPath value) {
       if (itemsBuilder_ == null) {
@@ -808,7 +808,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public Builder clearItems() {
       if (itemsBuilder_ == null) {
@@ -833,7 +833,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KeyToPath.Builder getItemsBuilder() {
       
@@ -852,7 +852,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.KeyToPathOrBuilder getItemsOrBuilder() {
       if (itemsBuilder_ != null) {
@@ -874,7 +874,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional .appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.KeyToPath items = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.KeyToPath, com.appscode.api.kubernetes.v1beta2.KeyToPath.Builder, com.appscode.api.kubernetes.v1beta2.KeyToPathOrBuilder> 
@@ -901,7 +901,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public int getDefaultMode() {
       return defaultMode_;
@@ -916,7 +916,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public Builder setDefaultMode(int value) {
       
@@ -934,7 +934,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional int32 defaultMode = 3;</code>
+     * <code>int32 defaultMode = 3;</code>
      */
     public Builder clearDefaultMode() {
       
@@ -950,7 +950,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool optional = 4;</code>
+     * <code>bool optional = 4;</code>
      */
     public boolean getOptional() {
       return optional_;
@@ -961,7 +961,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool optional = 4;</code>
+     * <code>bool optional = 4;</code>
      */
     public Builder setOptional(boolean value) {
       
@@ -975,7 +975,7 @@ public  final class ConfigMapVolumeSource extends
      * +optional
      * </pre>
      *
-     * <code>optional bool optional = 4;</code>
+     * <code>bool optional = 4;</code>
      */
     public Builder clearOptional() {
       

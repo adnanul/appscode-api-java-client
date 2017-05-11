@@ -110,7 +110,7 @@ public  final class ObjectReference extends
   public static final int KIND_FIELD_NUMBER = 1;
   private volatile java.lang.Object kind_;
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public java.lang.String getKind() {
     java.lang.Object ref = kind_;
@@ -125,7 +125,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string kind = 1;</code>
+   * <code>string kind = 1;</code>
    */
   public com.google.protobuf.ByteString
       getKindBytes() {
@@ -144,7 +144,7 @@ public  final class ObjectReference extends
   public static final int NAMESPACE_FIELD_NUMBER = 2;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -159,7 +159,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -178,7 +178,7 @@ public  final class ObjectReference extends
   public static final int NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -193,7 +193,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string name = 3;</code>
+   * <code>string name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -212,7 +212,7 @@ public  final class ObjectReference extends
   public static final int UID_FIELD_NUMBER = 4;
   private volatile java.lang.Object uid_;
   /**
-   * <code>optional string uid = 4;</code>
+   * <code>string uid = 4;</code>
    */
   public java.lang.String getUid() {
     java.lang.Object ref = uid_;
@@ -227,7 +227,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string uid = 4;</code>
+   * <code>string uid = 4;</code>
    */
   public com.google.protobuf.ByteString
       getUidBytes() {
@@ -246,7 +246,7 @@ public  final class ObjectReference extends
   public static final int API_VERSION_FIELD_NUMBER = 5;
   private volatile java.lang.Object aPIVersion_;
   /**
-   * <code>optional string API_version = 5;</code>
+   * <code>string API_version = 5;</code>
    */
   public java.lang.String getAPIVersion() {
     java.lang.Object ref = aPIVersion_;
@@ -261,7 +261,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string API_version = 5;</code>
+   * <code>string API_version = 5;</code>
    */
   public com.google.protobuf.ByteString
       getAPIVersionBytes() {
@@ -280,7 +280,7 @@ public  final class ObjectReference extends
   public static final int RESOURCE_VERSION_FIELD_NUMBER = 6;
   private volatile java.lang.Object resourceVersion_;
   /**
-   * <code>optional string resource_version = 6;</code>
+   * <code>string resource_version = 6;</code>
    */
   public java.lang.String getResourceVersion() {
     java.lang.Object ref = resourceVersion_;
@@ -295,7 +295,7 @@ public  final class ObjectReference extends
     }
   }
   /**
-   * <code>optional string resource_version = 6;</code>
+   * <code>string resource_version = 6;</code>
    */
   public com.google.protobuf.ByteString
       getResourceVersionBytes() {
@@ -403,7 +403,7 @@ public  final class ObjectReference extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + KIND_FIELD_NUMBER;
     hash = (53 * hash) + getKind().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
@@ -667,7 +667,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object kind_ = "";
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public java.lang.String getKind() {
       java.lang.Object ref = kind_;
@@ -682,7 +682,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public com.google.protobuf.ByteString
         getKindBytes() {
@@ -698,7 +698,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKind(
         java.lang.String value) {
@@ -711,7 +711,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder clearKind() {
       
@@ -720,7 +720,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string kind = 1;</code>
+     * <code>string kind = 1;</code>
      */
     public Builder setKindBytes(
         com.google.protobuf.ByteString value) {
@@ -736,7 +736,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -751,7 +751,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -767,7 +767,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -780,7 +780,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder clearNamespace() {
       
@@ -789,7 +789,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -805,7 +805,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -820,7 +820,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -836,7 +836,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -849,7 +849,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder clearName() {
       
@@ -858,7 +858,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string name = 3;</code>
+     * <code>string name = 3;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -874,7 +874,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object uid_ = "";
     /**
-     * <code>optional string uid = 4;</code>
+     * <code>string uid = 4;</code>
      */
     public java.lang.String getUid() {
       java.lang.Object ref = uid_;
@@ -889,7 +889,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string uid = 4;</code>
+     * <code>string uid = 4;</code>
      */
     public com.google.protobuf.ByteString
         getUidBytes() {
@@ -905,7 +905,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string uid = 4;</code>
+     * <code>string uid = 4;</code>
      */
     public Builder setUid(
         java.lang.String value) {
@@ -918,7 +918,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string uid = 4;</code>
+     * <code>string uid = 4;</code>
      */
     public Builder clearUid() {
       
@@ -927,7 +927,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string uid = 4;</code>
+     * <code>string uid = 4;</code>
      */
     public Builder setUidBytes(
         com.google.protobuf.ByteString value) {
@@ -943,7 +943,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object aPIVersion_ = "";
     /**
-     * <code>optional string API_version = 5;</code>
+     * <code>string API_version = 5;</code>
      */
     public java.lang.String getAPIVersion() {
       java.lang.Object ref = aPIVersion_;
@@ -958,7 +958,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string API_version = 5;</code>
+     * <code>string API_version = 5;</code>
      */
     public com.google.protobuf.ByteString
         getAPIVersionBytes() {
@@ -974,7 +974,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string API_version = 5;</code>
+     * <code>string API_version = 5;</code>
      */
     public Builder setAPIVersion(
         java.lang.String value) {
@@ -987,7 +987,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string API_version = 5;</code>
+     * <code>string API_version = 5;</code>
      */
     public Builder clearAPIVersion() {
       
@@ -996,7 +996,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string API_version = 5;</code>
+     * <code>string API_version = 5;</code>
      */
     public Builder setAPIVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1012,7 +1012,7 @@ public  final class ObjectReference extends
 
     private java.lang.Object resourceVersion_ = "";
     /**
-     * <code>optional string resource_version = 6;</code>
+     * <code>string resource_version = 6;</code>
      */
     public java.lang.String getResourceVersion() {
       java.lang.Object ref = resourceVersion_;
@@ -1027,7 +1027,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string resource_version = 6;</code>
+     * <code>string resource_version = 6;</code>
      */
     public com.google.protobuf.ByteString
         getResourceVersionBytes() {
@@ -1043,7 +1043,7 @@ public  final class ObjectReference extends
       }
     }
     /**
-     * <code>optional string resource_version = 6;</code>
+     * <code>string resource_version = 6;</code>
      */
     public Builder setResourceVersion(
         java.lang.String value) {
@@ -1056,7 +1056,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string resource_version = 6;</code>
+     * <code>string resource_version = 6;</code>
      */
     public Builder clearResourceVersion() {
       
@@ -1065,7 +1065,7 @@ public  final class ObjectReference extends
       return this;
     }
     /**
-     * <code>optional string resource_version = 6;</code>
+     * <code>string resource_version = 6;</code>
      */
     public Builder setResourceVersionBytes(
         com.google.protobuf.ByteString value) {

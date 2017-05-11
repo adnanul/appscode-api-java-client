@@ -13,7 +13,7 @@ public interface ObjectFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string api_version = 1;</code>
+   * <code>string api_version = 1;</code>
    */
   java.lang.String getApiVersion();
   /**
@@ -22,7 +22,7 @@ public interface ObjectFieldSelectorOrBuilder extends
    * +optional
    * </pre>
    *
-   * <code>optional string api_version = 1;</code>
+   * <code>string api_version = 1;</code>
    */
   com.google.protobuf.ByteString
       getApiVersionBytes();
@@ -32,7 +32,7 @@ public interface ObjectFieldSelectorOrBuilder extends
    * Path of the field to select in the specified API version.
    * </pre>
    *
-   * <code>optional string field_path = 2;</code>
+   * <code>string field_path = 2;</code>
    */
   java.lang.String getFieldPath();
   /**
@@ -40,7 +40,7 @@ public interface ObjectFieldSelectorOrBuilder extends
    * Path of the field to select in the specified API version.
    * </pre>
    *
-   * <code>optional string field_path = 2;</code>
+   * <code>string field_path = 2;</code>
    */
   com.google.protobuf.ByteString
       getFieldPathBytes();

@@ -68,51 +68,49 @@ public final class CertificateProto {
       "a1\032\034google/api/annotations.proto\032\036appsco" +
       "de/api/annotations.proto\032\037appscode/api/d" +
       "types/types.proto\"\030\n\026CertificateListRequ" +
-      "est\"\203\001\n\027CertificateListResponse\022\'\n\006statu" +
-      "s\030\001 \001(\0132\027.appscode.dtypes.Status\022?\n\014cert" +
-      "ificates\030\002 \003(\0132).appscode.certificate.v1" +
-      "beta1.Certificate\")\n\032CertificateDescribe" +
-      "Request\022\013\n\003uid\030\001 \001(\t\"\206\001\n\033CertificateDesc",
-      "ribeResponse\022\'\n\006status\030\001 \001(\0132\027.appscode." +
-      "dtypes.Status\022>\n\013certificate\030\002 \001(\0132).app" +
-      "scode.certificate.v1beta1.Certificate\"\313\001" +
-      "\n\013Certificate\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(" +
-      "\t\022\023\n\013common_name\030\003 \001(\t\022\021\n\tissued_by\030\004 \001(" +
-      "\t\022\022\n\nvalid_from\030\005 \001(\003\022\023\n\013expire_date\030\006 \001" +
-      "(\003\022\014\n\004sans\030\007 \003(\t\022\014\n\004cert\030\010 \001(\t\022\013\n\003key\030\t " +
-      "\001(\t\022\017\n\007version\030\n \001(\005\022\025\n\rserial_number\030\013 " +
-      "\001(\t\"K\n\026CertificateLoadRequest\022\014\n\004name\030\001 " +
-      "\001(\t\022\021\n\tcert_data\030\002 \001(\t\022\020\n\010key_data\030\003 \001(\t",
-      "\"\'\n\030CertificateDeleteRequest\022\013\n\003uid\030\001 \001(" +
-      "\t\"e\n\030CertificateDeployRequest\022\013\n\003uid\030\001 \001" +
-      "(\t\022\023\n\013secret_name\030\002 \001(\t\022\024\n\014cluster_name\030" +
-      "\003 \001(\t\022\021\n\tnamespace\030\004 \001(\t2\271\007\n\014Certificate" +
-      "s\022\267\001\n\004List\0224.appscode.certificate.v1beta" +
-      "1.CertificateListRequest\0325.appscode.cert" +
-      "ificate.v1beta1.CertificateListResponse\"" +
-      "B\202\323\344\223\0026\0224/_appscode/api/certificate/v1be" +
-      "ta1/certificates/json\202\265\030\002\010\001\022\311\001\n\010Describe" +
-      "\0228.appscode.certificate.v1beta1.Certific",
-      "ateDescribeRequest\0329.appscode.certificat" +
-      "e.v1beta1.CertificateDescribeResponse\"H\202" +
-      "\323\344\223\002<\022:/_appscode/api/certificate/v1beta" +
-      "1/certificates/{uid}/json\202\265\030\002\010\001\022\270\001\n\004Load" +
-      "\0224.appscode.certificate.v1beta1.Certific" +
-      "ateLoadRequest\032\035.appscode.dtypes.VoidRes" +
-      "ponse\"[\202\323\344\223\002O\032J/_appscode/api/certificat" +
-      "e/v1beta1/certificates/{name}/actions/ob" +
-      "tain/json:\001*\202\265\030\002\010\001\022\251\001\n\006Delete\0226.appscode" +
-      ".certificate.v1beta1.CertificateDeleteRe",
-      "quest\032\035.appscode.dtypes.VoidResponse\"H\202\323" +
-      "\344\223\002<*:/_appscode/api/certificate/v1beta1" +
-      "/certificates/{uid}/json\202\265\030\002\010\001\022\273\001\n\006Deplo" +
-      "y\0226.appscode.certificate.v1beta1.Certifi" +
-      "cateDeployRequest\032\035.appscode.dtypes.Void" +
-      "Response\"Z\202\323\344\223\002N\032I/_appscode/api/certifi" +
-      "cate/v1beta1/certificates/{uid}/actions/" +
-      "deploy/json:\001*\202\265\030\002\010\001BC\n$com.appscode.api" +
-      ".certificate.v1beta1B\020CertificateProtoP\001" +
-      "Z\007v1beta1b\006proto3"
+      "est\"Z\n\027CertificateListResponse\022?\n\014certif" +
+      "icates\030\001 \003(\0132).appscode.certificate.v1be" +
+      "ta1.Certificate\")\n\032CertificateDescribeRe" +
+      "quest\022\013\n\003uid\030\001 \001(\t\"]\n\033CertificateDescrib" +
+      "eResponse\022>\n\013certificate\030\001 \001(\0132).appscod",
+      "e.certificate.v1beta1.Certificate\"\313\001\n\013Ce" +
+      "rtificate\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\023\n" +
+      "\013common_name\030\003 \001(\t\022\021\n\tissued_by\030\004 \001(\t\022\022\n" +
+      "\nvalid_from\030\005 \001(\003\022\023\n\013expire_date\030\006 \001(\003\022\014" +
+      "\n\004sans\030\007 \003(\t\022\014\n\004cert\030\010 \001(\t\022\013\n\003key\030\t \001(\t\022" +
+      "\017\n\007version\030\n \001(\005\022\025\n\rserial_number\030\013 \001(\t\"" +
+      "K\n\026CertificateLoadRequest\022\014\n\004name\030\001 \001(\t\022" +
+      "\021\n\tcert_data\030\002 \001(\t\022\020\n\010key_data\030\003 \001(\t\"\'\n\030" +
+      "CertificateDeleteRequest\022\013\n\003uid\030\001 \001(\t\"e\n" +
+      "\030CertificateDeployRequest\022\013\n\003uid\030\001 \001(\t\022\023",
+      "\n\013secret_name\030\002 \001(\t\022\024\n\014cluster_name\030\003 \001(" +
+      "\t\022\021\n\tnamespace\030\004 \001(\t2\271\007\n\014Certificates\022\267\001" +
+      "\n\004List\0224.appscode.certificate.v1beta1.Ce" +
+      "rtificateListRequest\0325.appscode.certific" +
+      "ate.v1beta1.CertificateListResponse\"B\202\323\344" +
+      "\223\0026\0224/_appscode/api/certificate/v1beta1/" +
+      "certificates/json\202\265\030\002\010\001\022\311\001\n\010Describe\0228.a" +
+      "ppscode.certificate.v1beta1.CertificateD" +
+      "escribeRequest\0329.appscode.certificate.v1" +
+      "beta1.CertificateDescribeResponse\"H\202\323\344\223\002",
+      "<\022:/_appscode/api/certificate/v1beta1/ce" +
+      "rtificates/{uid}/json\202\265\030\002\010\001\022\270\001\n\004Load\0224.a" +
+      "ppscode.certificate.v1beta1.CertificateL" +
+      "oadRequest\032\035.appscode.dtypes.VoidRespons" +
+      "e\"[\202\323\344\223\002O\032J/_appscode/api/certificate/v1" +
+      "beta1/certificates/{name}/actions/obtain" +
+      "/json:\001*\202\265\030\002\010\001\022\251\001\n\006Delete\0226.appscode.cer" +
+      "tificate.v1beta1.CertificateDeleteReques" +
+      "t\032\035.appscode.dtypes.VoidResponse\"H\202\323\344\223\002<" +
+      "*:/_appscode/api/certificate/v1beta1/cer",
+      "tificates/{uid}/json\202\265\030\002\010\001\022\273\001\n\006Deploy\0226." +
+      "appscode.certificate.v1beta1.Certificate" +
+      "DeployRequest\032\035.appscode.dtypes.VoidResp" +
+      "onse\"Z\202\323\344\223\002N\032I/_appscode/api/certificate" +
+      "/v1beta1/certificates/{uid}/actions/depl" +
+      "oy/json:\001*\202\265\030\002\010\001BC\n$com.appscode.api.cer" +
+      "tificate.v1beta1B\020CertificateProtoP\001Z\007v1" +
+      "beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -140,7 +138,7 @@ public final class CertificateProto {
     internal_static_appscode_certificate_v1beta1_CertificateListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_certificate_v1beta1_CertificateListResponse_descriptor,
-        new java.lang.String[] { "Status", "Certificates", });
+        new java.lang.String[] { "Certificates", });
     internal_static_appscode_certificate_v1beta1_CertificateDescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_appscode_certificate_v1beta1_CertificateDescribeRequest_fieldAccessorTable = new
@@ -152,7 +150,7 @@ public final class CertificateProto {
     internal_static_appscode_certificate_v1beta1_CertificateDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_certificate_v1beta1_CertificateDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Certificate", });
+        new java.lang.String[] { "Certificate", });
     internal_static_appscode_certificate_v1beta1_Certificate_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_certificate_v1beta1_Certificate_fieldAccessorTable = new

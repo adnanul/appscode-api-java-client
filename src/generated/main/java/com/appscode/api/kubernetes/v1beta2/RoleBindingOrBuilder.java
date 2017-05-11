@@ -8,15 +8,15 @@ public interface RoleBindingOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   boolean hasMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.Meta getMeta();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder();
 
@@ -45,15 +45,15 @@ public interface RoleBindingOrBuilder extends
       int index);
 
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
    */
   boolean hasRoleRef();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReference getRoleRef();
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.ObjectReference role_ref = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.ObjectReferenceOrBuilder getRoleRefOrBuilder();
 }

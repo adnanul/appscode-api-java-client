@@ -85,43 +85,41 @@ public final class IncidentProto {
       "tListRequest\022\032\n\022kubernetes_cluster\030\001 \001(\t",
       "\022\034\n\024kubernetes_namespace\030\002 \001(\t\022\036\n\026kubern" +
       "etes_object_type\030\003 \001(\t\022\036\n\026kubernetes_obj" +
-      "ect_name\030\004 \001(\t\022\016\n\006states\030\005 \003(\t\"y\n\024Incide" +
-      "ntListResponse\022\'\n\006status\030\001 \001(\0132\027.appscod" +
-      "e.dtypes.Status\0228\n\tincidents\030\002 \003(\0132%.app" +
-      "scode.kubernetes.v1beta1.Incident\"\'\n\027Inc" +
-      "identDescribeRequest\022\014\n\004phid\030\001 \001(\t\"|\n\030In" +
-      "cidentDescribeResponse\022\'\n\006status\030\001 \001(\0132\027" +
-      ".appscode.dtypes.Status\0227\n\010incident\030\002 \001(" +
-      "\0132%.appscode.kubernetes.v1beta1.Incident",
-      "\"\331\001\n\025IncidentNotifyRequest\022\026\n\nalert_phid" +
-      "\030\001 \001(\tB\002\030\001\022\021\n\thost_name\030\002 \001(\t\022\014\n\004type\030\003 " +
-      "\001(\t\022\r\n\005state\030\004 \001(\t\022\016\n\006output\030\005 \001(\t\022\014\n\004ti" +
-      "me\030\006 \001(\003\022\016\n\006author\030\007 \001(\t\022\017\n\007comment\030\010 \001(" +
-      "\t\022\035\n\025kubernetes_alert_name\030\t \001(\t\022\032\n\022kube" +
-      "rnetes_cluster\030\n \001(\t\"P\n\032IncidentEventCre" +
-      "ateRequest\022\014\n\004phid\030\001 \001(\t\022\017\n\007comment\030\002 \001(" +
-      "\t\022\023\n\013acknowledge\030\003 \001(\0102\200\006\n\tIncidents\022\253\001\n" +
-      "\004List\0220.appscode.kubernetes.v1beta1.Inci" +
-      "dentListRequest\0321.appscode.kubernetes.v1",
-      "beta1.IncidentListResponse\">\202\323\344\223\0022\0220/_ap" +
-      "pscode/api/kubernetes/v1beta1/incidents/" +
-      "json\202\265\030\002\010\001\022\276\001\n\010Describe\0224.appscode.kuber" +
-      "netes.v1beta1.IncidentDescribeRequest\0325." +
-      "appscode.kubernetes.v1beta1.IncidentDesc" +
-      "ribeResponse\"E\202\323\344\223\0029\0227/_appscode/api/kub" +
-      "ernetes/v1beta1/incidents/{phid}/json\202\265\030" +
-      "\002\010\001\022\312\001\n\006Notify\0222.appscode.kubernetes.v1b" +
-      "eta1.IncidentNotifyRequest\032\035.appscode.dt" +
-      "ypes.VoidResponse\"m\202\323\344\223\002a\"\\/_appscode/ap",
-      "i/kubernetes/v1beta1/clusters/{kubernete" +
-      "s_cluster}/actions/notify-incident/json:" +
-      "\001*\202\265\030\002\010\001\022\266\001\n\013CreateEvent\0227.appscode.kube" +
-      "rnetes.v1beta1.IncidentEventCreateReques" +
-      "t\032\035.appscode.dtypes.VoidResponse\"O\202\323\344\223\002C" +
-      "\">/_appscode/api/kubernetes/v1beta1/inci" +
-      "dents/{phid}/events/json:\001*\202\265\030\002\010\001B?\n#com" +
-      ".appscode.api.kubernetes.v1beta1B\rIncide" +
-      "ntProtoP\001Z\007v1beta1b\006proto3"
+      "ect_name\030\004 \001(\t\022\016\n\006states\030\005 \003(\t\"P\n\024Incide" +
+      "ntListResponse\0228\n\tincidents\030\001 \003(\0132%.apps" +
+      "code.kubernetes.v1beta1.Incident\"\'\n\027Inci" +
+      "dentDescribeRequest\022\014\n\004phid\030\001 \001(\t\"S\n\030Inc" +
+      "identDescribeResponse\0227\n\010incident\030\001 \001(\0132" +
+      "%.appscode.kubernetes.v1beta1.Incident\"\331" +
+      "\001\n\025IncidentNotifyRequest\022\026\n\nalert_phid\030\001" +
+      " \001(\tB\002\030\001\022\021\n\thost_name\030\002 \001(\t\022\014\n\004type\030\003 \001(",
+      "\t\022\r\n\005state\030\004 \001(\t\022\016\n\006output\030\005 \001(\t\022\014\n\004time" +
+      "\030\006 \001(\003\022\016\n\006author\030\007 \001(\t\022\017\n\007comment\030\010 \001(\t\022" +
+      "\035\n\025kubernetes_alert_name\030\t \001(\t\022\032\n\022kubern" +
+      "etes_cluster\030\n \001(\t\"P\n\032IncidentEventCreat" +
+      "eRequest\022\014\n\004phid\030\001 \001(\t\022\017\n\007comment\030\002 \001(\t\022" +
+      "\023\n\013acknowledge\030\003 \001(\0102\200\006\n\tIncidents\022\253\001\n\004L" +
+      "ist\0220.appscode.kubernetes.v1beta1.Incide" +
+      "ntListRequest\0321.appscode.kubernetes.v1be" +
+      "ta1.IncidentListResponse\">\202\323\344\223\0022\0220/_apps" +
+      "code/api/kubernetes/v1beta1/incidents/js",
+      "on\202\265\030\002\010\001\022\276\001\n\010Describe\0224.appscode.kuberne" +
+      "tes.v1beta1.IncidentDescribeRequest\0325.ap" +
+      "pscode.kubernetes.v1beta1.IncidentDescri" +
+      "beResponse\"E\202\323\344\223\0029\0227/_appscode/api/kuber" +
+      "netes/v1beta1/incidents/{phid}/json\202\265\030\002\010" +
+      "\001\022\312\001\n\006Notify\0222.appscode.kubernetes.v1bet" +
+      "a1.IncidentNotifyRequest\032\035.appscode.dtyp" +
+      "es.VoidResponse\"m\202\323\344\223\002a\"\\/_appscode/api/" +
+      "kubernetes/v1beta1/clusters/{kubernetes_" +
+      "cluster}/actions/notify-incident/json:\001*",
+      "\202\265\030\002\010\001\022\266\001\n\013CreateEvent\0227.appscode.kubern" +
+      "etes.v1beta1.IncidentEventCreateRequest\032" +
+      "\035.appscode.dtypes.VoidResponse\"O\202\323\344\223\002C\">" +
+      "/_appscode/api/kubernetes/v1beta1/incide" +
+      "nts/{phid}/events/json:\001*\202\265\030\002\010\001B?\n#com.a" +
+      "ppscode.api.kubernetes.v1beta1B\rIncident" +
+      "ProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -161,7 +159,7 @@ public final class IncidentProto {
     internal_static_appscode_kubernetes_v1beta1_IncidentListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_IncidentListResponse_descriptor,
-        new java.lang.String[] { "Status", "Incidents", });
+        new java.lang.String[] { "Incidents", });
     internal_static_appscode_kubernetes_v1beta1_IncidentDescribeRequest_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_appscode_kubernetes_v1beta1_IncidentDescribeRequest_fieldAccessorTable = new
@@ -173,7 +171,7 @@ public final class IncidentProto {
     internal_static_appscode_kubernetes_v1beta1_IncidentDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_IncidentDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Incident", });
+        new java.lang.String[] { "Incident", });
     internal_static_appscode_kubernetes_v1beta1_IncidentNotifyRequest_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_appscode_kubernetes_v1beta1_IncidentNotifyRequest_fieldAccessorTable = new

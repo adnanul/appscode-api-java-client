@@ -102,7 +102,7 @@ public  final class DiskCreateRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 1;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -117,7 +117,7 @@ public  final class DiskCreateRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 1;</code>
+   * <code>string cluster = 1;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -136,7 +136,7 @@ public  final class DiskCreateRequest extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -151,7 +151,7 @@ public  final class DiskCreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -170,7 +170,7 @@ public  final class DiskCreateRequest extends
   public static final int ZONE_FIELD_NUMBER = 3;
   private volatile java.lang.Object zone_;
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   public java.lang.String getZone() {
     java.lang.Object ref = zone_;
@@ -185,7 +185,7 @@ public  final class DiskCreateRequest extends
     }
   }
   /**
-   * <code>optional string zone = 3;</code>
+   * <code>string zone = 3;</code>
    */
   public com.google.protobuf.ByteString
       getZoneBytes() {
@@ -204,7 +204,7 @@ public  final class DiskCreateRequest extends
   public static final int DISK_TYPE_FIELD_NUMBER = 4;
   private volatile java.lang.Object diskType_;
   /**
-   * <code>optional string disk_type = 4;</code>
+   * <code>string disk_type = 4;</code>
    */
   public java.lang.String getDiskType() {
     java.lang.Object ref = diskType_;
@@ -219,7 +219,7 @@ public  final class DiskCreateRequest extends
     }
   }
   /**
-   * <code>optional string disk_type = 4;</code>
+   * <code>string disk_type = 4;</code>
    */
   public com.google.protobuf.ByteString
       getDiskTypeBytes() {
@@ -238,7 +238,7 @@ public  final class DiskCreateRequest extends
   public static final int SIZE_GB_FIELD_NUMBER = 5;
   private long sizeGb_;
   /**
-   * <code>optional int64 size_gb = 5;</code>
+   * <code>int64 size_gb = 5;</code>
    */
   public long getSizeGb() {
     return sizeGb_;
@@ -329,7 +329,7 @@ public  final class DiskCreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CLUSTER_FIELD_NUMBER;
     hash = (53 * hash) + getCluster().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -584,7 +584,7 @@ public  final class DiskCreateRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -599,7 +599,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -615,7 +615,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -628,7 +628,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder clearCluster() {
       
@@ -637,7 +637,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 1;</code>
+     * <code>string cluster = 1;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -653,7 +653,7 @@ public  final class DiskCreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -668,7 +668,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -684,7 +684,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -697,7 +697,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -706,7 +706,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -722,7 +722,7 @@ public  final class DiskCreateRequest extends
 
     private java.lang.Object zone_ = "";
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public java.lang.String getZone() {
       java.lang.Object ref = zone_;
@@ -737,7 +737,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public com.google.protobuf.ByteString
         getZoneBytes() {
@@ -753,7 +753,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder setZone(
         java.lang.String value) {
@@ -766,7 +766,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder clearZone() {
       
@@ -775,7 +775,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string zone = 3;</code>
+     * <code>string zone = 3;</code>
      */
     public Builder setZoneBytes(
         com.google.protobuf.ByteString value) {
@@ -791,7 +791,7 @@ public  final class DiskCreateRequest extends
 
     private java.lang.Object diskType_ = "";
     /**
-     * <code>optional string disk_type = 4;</code>
+     * <code>string disk_type = 4;</code>
      */
     public java.lang.String getDiskType() {
       java.lang.Object ref = diskType_;
@@ -806,7 +806,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string disk_type = 4;</code>
+     * <code>string disk_type = 4;</code>
      */
     public com.google.protobuf.ByteString
         getDiskTypeBytes() {
@@ -822,7 +822,7 @@ public  final class DiskCreateRequest extends
       }
     }
     /**
-     * <code>optional string disk_type = 4;</code>
+     * <code>string disk_type = 4;</code>
      */
     public Builder setDiskType(
         java.lang.String value) {
@@ -835,7 +835,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string disk_type = 4;</code>
+     * <code>string disk_type = 4;</code>
      */
     public Builder clearDiskType() {
       
@@ -844,7 +844,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional string disk_type = 4;</code>
+     * <code>string disk_type = 4;</code>
      */
     public Builder setDiskTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -860,13 +860,13 @@ public  final class DiskCreateRequest extends
 
     private long sizeGb_ ;
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public long getSizeGb() {
       return sizeGb_;
     }
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public Builder setSizeGb(long value) {
       
@@ -875,7 +875,7 @@ public  final class DiskCreateRequest extends
       return this;
     }
     /**
-     * <code>optional int64 size_gb = 5;</code>
+     * <code>int64 size_gb = 5;</code>
      */
     public Builder clearSizeGb() {
       

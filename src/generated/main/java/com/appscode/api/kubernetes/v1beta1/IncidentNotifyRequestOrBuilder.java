@@ -8,51 +8,51 @@ public interface IncidentNotifyRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string alert_phid = 1 [deprecated = true];</code>
+   * <code>string alert_phid = 1 [deprecated = true];</code>
    */
   @java.lang.Deprecated java.lang.String getAlertPhid();
   /**
-   * <code>optional string alert_phid = 1 [deprecated = true];</code>
+   * <code>string alert_phid = 1 [deprecated = true];</code>
    */
   @java.lang.Deprecated com.google.protobuf.ByteString
       getAlertPhidBytes();
 
   /**
-   * <code>optional string host_name = 2;</code>
+   * <code>string host_name = 2;</code>
    */
   java.lang.String getHostName();
   /**
-   * <code>optional string host_name = 2;</code>
+   * <code>string host_name = 2;</code>
    */
   com.google.protobuf.ByteString
       getHostNameBytes();
 
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   java.lang.String getType();
   /**
-   * <code>optional string type = 3;</code>
+   * <code>string type = 3;</code>
    */
   com.google.protobuf.ByteString
       getTypeBytes();
 
   /**
-   * <code>optional string state = 4;</code>
+   * <code>string state = 4;</code>
    */
   java.lang.String getState();
   /**
-   * <code>optional string state = 4;</code>
+   * <code>string state = 4;</code>
    */
   com.google.protobuf.ByteString
       getStateBytes();
 
   /**
-   * <code>optional string output = 5;</code>
+   * <code>string output = 5;</code>
    */
   java.lang.String getOutput();
   /**
-   * <code>optional string output = 5;</code>
+   * <code>string output = 5;</code>
    */
   com.google.protobuf.ByteString
       getOutputBytes();
@@ -63,46 +63,46 @@ public interface IncidentNotifyRequestOrBuilder extends
    * indicates detection time from icinga.
    * </pre>
    *
-   * <code>optional int64 time = 6;</code>
+   * <code>int64 time = 6;</code>
    */
   long getTime();
 
   /**
-   * <code>optional string author = 7;</code>
+   * <code>string author = 7;</code>
    */
   java.lang.String getAuthor();
   /**
-   * <code>optional string author = 7;</code>
+   * <code>string author = 7;</code>
    */
   com.google.protobuf.ByteString
       getAuthorBytes();
 
   /**
-   * <code>optional string comment = 8;</code>
+   * <code>string comment = 8;</code>
    */
   java.lang.String getComment();
   /**
-   * <code>optional string comment = 8;</code>
+   * <code>string comment = 8;</code>
    */
   com.google.protobuf.ByteString
       getCommentBytes();
 
   /**
-   * <code>optional string kubernetes_alert_name = 9;</code>
+   * <code>string kubernetes_alert_name = 9;</code>
    */
   java.lang.String getKubernetesAlertName();
   /**
-   * <code>optional string kubernetes_alert_name = 9;</code>
+   * <code>string kubernetes_alert_name = 9;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesAlertNameBytes();
 
   /**
-   * <code>optional string kubernetes_cluster = 10;</code>
+   * <code>string kubernetes_cluster = 10;</code>
    */
   java.lang.String getKubernetesCluster();
   /**
-   * <code>optional string kubernetes_cluster = 10;</code>
+   * <code>string kubernetes_cluster = 10;</code>
    */
   com.google.protobuf.ByteString
       getKubernetesClusterBytes();

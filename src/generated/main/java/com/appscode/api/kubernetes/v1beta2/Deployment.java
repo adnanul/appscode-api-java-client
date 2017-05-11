@@ -116,79 +116,79 @@ public  final class Deployment extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int32 desired_replicas = 1;</code>
+     * <code>int32 desired_replicas = 1;</code>
      */
     int getDesiredReplicas();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     boolean hasSelector();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.LabelSelector getSelector();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     com.appscode.api.kubernetes.v1beta2.LabelSelectorOrBuilder getSelectorOrBuilder();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     boolean hasPodTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder();
 
     /**
-     * <code>optional int32 min_ready_seconds = 4;</code>
+     * <code>int32 min_ready_seconds = 4;</code>
      */
     int getMinReadySeconds();
 
     /**
-     * <code>optional int32 revision_history_limit = 5;</code>
+     * <code>int32 revision_history_limit = 5;</code>
      */
     int getRevisionHistoryLimit();
 
     /**
-     * <code>optional bool paused = 6;</code>
+     * <code>bool paused = 6;</code>
      */
     boolean getPaused();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     boolean hasRollbackTo();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder();
 
     /**
-     * <code>optional int32 progress_deadline_seconds = 8;</code>
+     * <code>int32 progress_deadline_seconds = 8;</code>
      */
     int getProgressDeadlineSeconds();
 
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     boolean hasStrategy();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy();
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder();
   }
@@ -341,25 +341,25 @@ public  final class Deployment extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       java.lang.String getType();
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       com.google.protobuf.ByteString
           getTypeBytes();
 
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       boolean hasRollingUpdate();
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate();
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder();
     }
@@ -448,7 +448,7 @@ public  final class Deployment extends
       public static final int TYPE_FIELD_NUMBER = 1;
       private volatile java.lang.Object type_;
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public java.lang.String getType() {
         java.lang.Object ref = type_;
@@ -463,7 +463,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional string type = 1;</code>
+       * <code>string type = 1;</code>
        */
       public com.google.protobuf.ByteString
           getTypeBytes() {
@@ -482,19 +482,19 @@ public  final class Deployment extends
       public static final int ROLLING_UPDATE_FIELD_NUMBER = 2;
       private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rollingUpdate_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       public boolean hasRollingUpdate() {
         return rollingUpdate_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate() {
         return rollingUpdate_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.getDefaultInstance() : rollingUpdate_;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder() {
         return getRollingUpdate();
@@ -564,7 +564,7 @@ public  final class Deployment extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + TYPE_FIELD_NUMBER;
         hash = (53 * hash) + getType().hashCode();
         if (hasRollingUpdate()) {
@@ -801,7 +801,7 @@ public  final class Deployment extends
 
         private java.lang.Object type_ = "";
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public java.lang.String getType() {
           java.lang.Object ref = type_;
@@ -816,7 +816,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public com.google.protobuf.ByteString
             getTypeBytes() {
@@ -832,7 +832,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder setType(
             java.lang.String value) {
@@ -845,7 +845,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder clearType() {
           
@@ -854,7 +854,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string type = 1;</code>
+         * <code>string type = 1;</code>
          */
         public Builder setTypeBytes(
             com.google.protobuf.ByteString value) {
@@ -872,13 +872,13 @@ public  final class Deployment extends
         private com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder> rollingUpdateBuilder_;
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public boolean hasRollingUpdate() {
           return rollingUpdateBuilder_ != null || rollingUpdate_ != null;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment getRollingUpdate() {
           if (rollingUpdateBuilder_ == null) {
@@ -888,7 +888,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public Builder setRollingUpdate(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment value) {
           if (rollingUpdateBuilder_ == null) {
@@ -904,7 +904,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public Builder setRollingUpdate(
             com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder builderForValue) {
@@ -918,7 +918,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public Builder mergeRollingUpdate(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment value) {
           if (rollingUpdateBuilder_ == null) {
@@ -936,7 +936,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public Builder clearRollingUpdate() {
           if (rollingUpdateBuilder_ == null) {
@@ -950,7 +950,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder getRollingUpdateBuilder() {
           
@@ -958,7 +958,7 @@ public  final class Deployment extends
           return getRollingUpdateFieldBuilder().getBuilder();
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder getRollingUpdateOrBuilder() {
           if (rollingUpdateBuilder_ != null) {
@@ -969,7 +969,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
+         * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment rolling_update = 2;</code>
          */
         private com.google.protobuf.SingleFieldBuilderV3<
             com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeployment.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollingUpdateDeploymentOrBuilder> 
@@ -1038,21 +1038,21 @@ public  final class Deployment extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional string max_unavailable = 1;</code>
+       * <code>string max_unavailable = 1;</code>
        */
       java.lang.String getMaxUnavailable();
       /**
-       * <code>optional string max_unavailable = 1;</code>
+       * <code>string max_unavailable = 1;</code>
        */
       com.google.protobuf.ByteString
           getMaxUnavailableBytes();
 
       /**
-       * <code>optional string max_surge = 2;</code>
+       * <code>string max_surge = 2;</code>
        */
       java.lang.String getMaxSurge();
       /**
-       * <code>optional string max_surge = 2;</code>
+       * <code>string max_surge = 2;</code>
        */
       com.google.protobuf.ByteString
           getMaxSurgeBytes();
@@ -1136,7 +1136,7 @@ public  final class Deployment extends
       public static final int MAX_UNAVAILABLE_FIELD_NUMBER = 1;
       private volatile java.lang.Object maxUnavailable_;
       /**
-       * <code>optional string max_unavailable = 1;</code>
+       * <code>string max_unavailable = 1;</code>
        */
       public java.lang.String getMaxUnavailable() {
         java.lang.Object ref = maxUnavailable_;
@@ -1151,7 +1151,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional string max_unavailable = 1;</code>
+       * <code>string max_unavailable = 1;</code>
        */
       public com.google.protobuf.ByteString
           getMaxUnavailableBytes() {
@@ -1170,7 +1170,7 @@ public  final class Deployment extends
       public static final int MAX_SURGE_FIELD_NUMBER = 2;
       private volatile java.lang.Object maxSurge_;
       /**
-       * <code>optional string max_surge = 2;</code>
+       * <code>string max_surge = 2;</code>
        */
       public java.lang.String getMaxSurge() {
         java.lang.Object ref = maxSurge_;
@@ -1185,7 +1185,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional string max_surge = 2;</code>
+       * <code>string max_surge = 2;</code>
        */
       public com.google.protobuf.ByteString
           getMaxSurgeBytes() {
@@ -1261,7 +1261,7 @@ public  final class Deployment extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + MAX_UNAVAILABLE_FIELD_NUMBER;
         hash = (53 * hash) + getMaxUnavailable().hashCode();
         hash = (37 * hash) + MAX_SURGE_FIELD_NUMBER;
@@ -1489,7 +1489,7 @@ public  final class Deployment extends
 
         private java.lang.Object maxUnavailable_ = "";
         /**
-         * <code>optional string max_unavailable = 1;</code>
+         * <code>string max_unavailable = 1;</code>
          */
         public java.lang.String getMaxUnavailable() {
           java.lang.Object ref = maxUnavailable_;
@@ -1504,7 +1504,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string max_unavailable = 1;</code>
+         * <code>string max_unavailable = 1;</code>
          */
         public com.google.protobuf.ByteString
             getMaxUnavailableBytes() {
@@ -1520,7 +1520,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string max_unavailable = 1;</code>
+         * <code>string max_unavailable = 1;</code>
          */
         public Builder setMaxUnavailable(
             java.lang.String value) {
@@ -1533,7 +1533,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string max_unavailable = 1;</code>
+         * <code>string max_unavailable = 1;</code>
          */
         public Builder clearMaxUnavailable() {
           
@@ -1542,7 +1542,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string max_unavailable = 1;</code>
+         * <code>string max_unavailable = 1;</code>
          */
         public Builder setMaxUnavailableBytes(
             com.google.protobuf.ByteString value) {
@@ -1558,7 +1558,7 @@ public  final class Deployment extends
 
         private java.lang.Object maxSurge_ = "";
         /**
-         * <code>optional string max_surge = 2;</code>
+         * <code>string max_surge = 2;</code>
          */
         public java.lang.String getMaxSurge() {
           java.lang.Object ref = maxSurge_;
@@ -1573,7 +1573,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string max_surge = 2;</code>
+         * <code>string max_surge = 2;</code>
          */
         public com.google.protobuf.ByteString
             getMaxSurgeBytes() {
@@ -1589,7 +1589,7 @@ public  final class Deployment extends
           }
         }
         /**
-         * <code>optional string max_surge = 2;</code>
+         * <code>string max_surge = 2;</code>
          */
         public Builder setMaxSurge(
             java.lang.String value) {
@@ -1602,7 +1602,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string max_surge = 2;</code>
+         * <code>string max_surge = 2;</code>
          */
         public Builder clearMaxSurge() {
           
@@ -1611,7 +1611,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional string max_surge = 2;</code>
+         * <code>string max_surge = 2;</code>
          */
         public Builder setMaxSurgeBytes(
             com.google.protobuf.ByteString value) {
@@ -1678,7 +1678,7 @@ public  final class Deployment extends
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>optional int64 revision = 1;</code>
+       * <code>int64 revision = 1;</code>
        */
       long getRevision();
     }
@@ -1753,7 +1753,7 @@ public  final class Deployment extends
       public static final int REVISION_FIELD_NUMBER = 1;
       private long revision_;
       /**
-       * <code>optional int64 revision = 1;</code>
+       * <code>int64 revision = 1;</code>
        */
       public long getRevision() {
         return revision_;
@@ -1812,7 +1812,7 @@ public  final class Deployment extends
           return memoizedHashCode;
         }
         int hash = 41;
-        hash = (19 * hash) + getDescriptorForType().hashCode();
+        hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + REVISION_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
             getRevision());
@@ -2031,13 +2031,13 @@ public  final class Deployment extends
 
         private long revision_ ;
         /**
-         * <code>optional int64 revision = 1;</code>
+         * <code>int64 revision = 1;</code>
          */
         public long getRevision() {
           return revision_;
         }
         /**
-         * <code>optional int64 revision = 1;</code>
+         * <code>int64 revision = 1;</code>
          */
         public Builder setRevision(long value) {
           
@@ -2046,7 +2046,7 @@ public  final class Deployment extends
           return this;
         }
         /**
-         * <code>optional int64 revision = 1;</code>
+         * <code>int64 revision = 1;</code>
          */
         public Builder clearRevision() {
           
@@ -2106,7 +2106,7 @@ public  final class Deployment extends
     public static final int DESIRED_REPLICAS_FIELD_NUMBER = 1;
     private int desiredReplicas_;
     /**
-     * <code>optional int32 desired_replicas = 1;</code>
+     * <code>int32 desired_replicas = 1;</code>
      */
     public int getDesiredReplicas() {
       return desiredReplicas_;
@@ -2115,19 +2115,19 @@ public  final class Deployment extends
     public static final int SELECTOR_FIELD_NUMBER = 2;
     private com.appscode.api.kubernetes.v1beta2.LabelSelector selector_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     public boolean hasSelector() {
       return selector_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.LabelSelector getSelector() {
       return selector_ == null ? com.appscode.api.kubernetes.v1beta2.LabelSelector.getDefaultInstance() : selector_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.LabelSelectorOrBuilder getSelectorOrBuilder() {
       return getSelector();
@@ -2136,19 +2136,19 @@ public  final class Deployment extends
     public static final int POD_TEMPLATE_FIELD_NUMBER = 3;
     private com.appscode.api.kubernetes.v1beta2.PodSpec podTemplate_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public boolean hasPodTemplate() {
       return podTemplate_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate() {
       return podTemplate_ == null ? com.appscode.api.kubernetes.v1beta2.PodSpec.getDefaultInstance() : podTemplate_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder() {
       return getPodTemplate();
@@ -2157,7 +2157,7 @@ public  final class Deployment extends
     public static final int MIN_READY_SECONDS_FIELD_NUMBER = 4;
     private int minReadySeconds_;
     /**
-     * <code>optional int32 min_ready_seconds = 4;</code>
+     * <code>int32 min_ready_seconds = 4;</code>
      */
     public int getMinReadySeconds() {
       return minReadySeconds_;
@@ -2166,7 +2166,7 @@ public  final class Deployment extends
     public static final int REVISION_HISTORY_LIMIT_FIELD_NUMBER = 5;
     private int revisionHistoryLimit_;
     /**
-     * <code>optional int32 revision_history_limit = 5;</code>
+     * <code>int32 revision_history_limit = 5;</code>
      */
     public int getRevisionHistoryLimit() {
       return revisionHistoryLimit_;
@@ -2175,7 +2175,7 @@ public  final class Deployment extends
     public static final int PAUSED_FIELD_NUMBER = 6;
     private boolean paused_;
     /**
-     * <code>optional bool paused = 6;</code>
+     * <code>bool paused = 6;</code>
      */
     public boolean getPaused() {
       return paused_;
@@ -2184,19 +2184,19 @@ public  final class Deployment extends
     public static final int ROLLBACK_TO_FIELD_NUMBER = 7;
     private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollbackTo_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     public boolean hasRollbackTo() {
       return rollbackTo_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo() {
       return rollbackTo_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.getDefaultInstance() : rollbackTo_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder() {
       return getRollbackTo();
@@ -2205,7 +2205,7 @@ public  final class Deployment extends
     public static final int PROGRESS_DEADLINE_SECONDS_FIELD_NUMBER = 8;
     private int progressDeadlineSeconds_;
     /**
-     * <code>optional int32 progress_deadline_seconds = 8;</code>
+     * <code>int32 progress_deadline_seconds = 8;</code>
      */
     public int getProgressDeadlineSeconds() {
       return progressDeadlineSeconds_;
@@ -2214,19 +2214,19 @@ public  final class Deployment extends
     public static final int STRATEGY_FIELD_NUMBER = 9;
     private com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     public boolean hasStrategy() {
       return strategy_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy() {
       return strategy_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.getDefaultInstance() : strategy_;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder() {
       return getStrategy();
@@ -2369,7 +2369,7 @@ public  final class Deployment extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DESIRED_REPLICAS_FIELD_NUMBER;
       hash = (53 * hash) + getDesiredReplicas();
       if (hasSelector()) {
@@ -2692,13 +2692,13 @@ public  final class Deployment extends
 
       private int desiredReplicas_ ;
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public int getDesiredReplicas() {
         return desiredReplicas_;
       }
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public Builder setDesiredReplicas(int value) {
         
@@ -2707,7 +2707,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 desired_replicas = 1;</code>
+       * <code>int32 desired_replicas = 1;</code>
        */
       public Builder clearDesiredReplicas() {
         
@@ -2720,13 +2720,13 @@ public  final class Deployment extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.LabelSelector, com.appscode.api.kubernetes.v1beta2.LabelSelector.Builder, com.appscode.api.kubernetes.v1beta2.LabelSelectorOrBuilder> selectorBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public boolean hasSelector() {
         return selectorBuilder_ != null || selector_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.LabelSelector getSelector() {
         if (selectorBuilder_ == null) {
@@ -2736,7 +2736,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public Builder setSelector(com.appscode.api.kubernetes.v1beta2.LabelSelector value) {
         if (selectorBuilder_ == null) {
@@ -2752,7 +2752,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public Builder setSelector(
           com.appscode.api.kubernetes.v1beta2.LabelSelector.Builder builderForValue) {
@@ -2766,7 +2766,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public Builder mergeSelector(com.appscode.api.kubernetes.v1beta2.LabelSelector value) {
         if (selectorBuilder_ == null) {
@@ -2784,7 +2784,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public Builder clearSelector() {
         if (selectorBuilder_ == null) {
@@ -2798,7 +2798,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.LabelSelector.Builder getSelectorBuilder() {
         
@@ -2806,7 +2806,7 @@ public  final class Deployment extends
         return getSelectorFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.LabelSelectorOrBuilder getSelectorOrBuilder() {
         if (selectorBuilder_ != null) {
@@ -2817,7 +2817,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
+       * <code>.appscode.kubernetes.v1beta2.LabelSelector selector = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.LabelSelector, com.appscode.api.kubernetes.v1beta2.LabelSelector.Builder, com.appscode.api.kubernetes.v1beta2.LabelSelectorOrBuilder> 
@@ -2837,13 +2837,13 @@ public  final class Deployment extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> podTemplateBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public boolean hasPodTemplate() {
         return podTemplateBuilder_ != null || podTemplate_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpec getPodTemplate() {
         if (podTemplateBuilder_ == null) {
@@ -2853,7 +2853,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder setPodTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
         if (podTemplateBuilder_ == null) {
@@ -2869,7 +2869,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder setPodTemplate(
           com.appscode.api.kubernetes.v1beta2.PodSpec.Builder builderForValue) {
@@ -2883,7 +2883,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder mergePodTemplate(com.appscode.api.kubernetes.v1beta2.PodSpec value) {
         if (podTemplateBuilder_ == null) {
@@ -2901,7 +2901,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public Builder clearPodTemplate() {
         if (podTemplateBuilder_ == null) {
@@ -2915,7 +2915,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpec.Builder getPodTemplateBuilder() {
         
@@ -2923,7 +2923,7 @@ public  final class Deployment extends
         return getPodTemplateFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder getPodTemplateOrBuilder() {
         if (podTemplateBuilder_ != null) {
@@ -2934,7 +2934,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.PodSpec pod_template = 3;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.PodSpec, com.appscode.api.kubernetes.v1beta2.PodSpec.Builder, com.appscode.api.kubernetes.v1beta2.PodSpecOrBuilder> 
@@ -2952,13 +2952,13 @@ public  final class Deployment extends
 
       private int minReadySeconds_ ;
       /**
-       * <code>optional int32 min_ready_seconds = 4;</code>
+       * <code>int32 min_ready_seconds = 4;</code>
        */
       public int getMinReadySeconds() {
         return minReadySeconds_;
       }
       /**
-       * <code>optional int32 min_ready_seconds = 4;</code>
+       * <code>int32 min_ready_seconds = 4;</code>
        */
       public Builder setMinReadySeconds(int value) {
         
@@ -2967,7 +2967,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 min_ready_seconds = 4;</code>
+       * <code>int32 min_ready_seconds = 4;</code>
        */
       public Builder clearMinReadySeconds() {
         
@@ -2978,13 +2978,13 @@ public  final class Deployment extends
 
       private int revisionHistoryLimit_ ;
       /**
-       * <code>optional int32 revision_history_limit = 5;</code>
+       * <code>int32 revision_history_limit = 5;</code>
        */
       public int getRevisionHistoryLimit() {
         return revisionHistoryLimit_;
       }
       /**
-       * <code>optional int32 revision_history_limit = 5;</code>
+       * <code>int32 revision_history_limit = 5;</code>
        */
       public Builder setRevisionHistoryLimit(int value) {
         
@@ -2993,7 +2993,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 revision_history_limit = 5;</code>
+       * <code>int32 revision_history_limit = 5;</code>
        */
       public Builder clearRevisionHistoryLimit() {
         
@@ -3004,13 +3004,13 @@ public  final class Deployment extends
 
       private boolean paused_ ;
       /**
-       * <code>optional bool paused = 6;</code>
+       * <code>bool paused = 6;</code>
        */
       public boolean getPaused() {
         return paused_;
       }
       /**
-       * <code>optional bool paused = 6;</code>
+       * <code>bool paused = 6;</code>
        */
       public Builder setPaused(boolean value) {
         
@@ -3019,7 +3019,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional bool paused = 6;</code>
+       * <code>bool paused = 6;</code>
        */
       public Builder clearPaused() {
         
@@ -3032,13 +3032,13 @@ public  final class Deployment extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder> rollbackToBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public boolean hasRollbackTo() {
         return rollbackToBuilder_ != null || rollbackTo_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig getRollbackTo() {
         if (rollbackToBuilder_ == null) {
@@ -3048,7 +3048,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public Builder setRollbackTo(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig value) {
         if (rollbackToBuilder_ == null) {
@@ -3064,7 +3064,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public Builder setRollbackTo(
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder builderForValue) {
@@ -3078,7 +3078,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public Builder mergeRollbackTo(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig value) {
         if (rollbackToBuilder_ == null) {
@@ -3096,7 +3096,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public Builder clearRollbackTo() {
         if (rollbackToBuilder_ == null) {
@@ -3110,7 +3110,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder getRollbackToBuilder() {
         
@@ -3118,7 +3118,7 @@ public  final class Deployment extends
         return getRollbackToFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder getRollbackToOrBuilder() {
         if (rollbackToBuilder_ != null) {
@@ -3129,7 +3129,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.RollbackConfig rollback_to = 7;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfig.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.RollbackConfigOrBuilder> 
@@ -3147,13 +3147,13 @@ public  final class Deployment extends
 
       private int progressDeadlineSeconds_ ;
       /**
-       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       * <code>int32 progress_deadline_seconds = 8;</code>
        */
       public int getProgressDeadlineSeconds() {
         return progressDeadlineSeconds_;
       }
       /**
-       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       * <code>int32 progress_deadline_seconds = 8;</code>
        */
       public Builder setProgressDeadlineSeconds(int value) {
         
@@ -3162,7 +3162,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 progress_deadline_seconds = 8;</code>
+       * <code>int32 progress_deadline_seconds = 8;</code>
        */
       public Builder clearProgressDeadlineSeconds() {
         
@@ -3175,13 +3175,13 @@ public  final class Deployment extends
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder> strategyBuilder_;
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public boolean hasStrategy() {
         return strategyBuilder_ != null || strategy_ != null;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy getStrategy() {
         if (strategyBuilder_ == null) {
@@ -3191,7 +3191,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public Builder setStrategy(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy value) {
         if (strategyBuilder_ == null) {
@@ -3207,7 +3207,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public Builder setStrategy(
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder builderForValue) {
@@ -3221,7 +3221,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public Builder mergeStrategy(com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy value) {
         if (strategyBuilder_ == null) {
@@ -3239,7 +3239,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public Builder clearStrategy() {
         if (strategyBuilder_ == null) {
@@ -3253,7 +3253,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder getStrategyBuilder() {
         
@@ -3261,7 +3261,7 @@ public  final class Deployment extends
         return getStrategyFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder getStrategyOrBuilder() {
         if (strategyBuilder_ != null) {
@@ -3272,7 +3272,7 @@ public  final class Deployment extends
         }
       }
       /**
-       * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
+       * <code>.appscode.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy strategy = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategy.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.DeploymentStrategyOrBuilder> 
@@ -3341,27 +3341,27 @@ public  final class Deployment extends
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional int64 observed_generation = 1;</code>
+     * <code>int64 observed_generation = 1;</code>
      */
     long getObservedGeneration();
 
     /**
-     * <code>optional int32 replicas = 2;</code>
+     * <code>int32 replicas = 2;</code>
      */
     int getReplicas();
 
     /**
-     * <code>optional int32 updated_replicas = 3;</code>
+     * <code>int32 updated_replicas = 3;</code>
      */
     int getUpdatedReplicas();
 
     /**
-     * <code>optional int32 available_replicas = 4;</code>
+     * <code>int32 available_replicas = 4;</code>
      */
     int getAvailableReplicas();
 
     /**
-     * <code>optional int32 unavailable_replicas = 5;</code>
+     * <code>int32 unavailable_replicas = 5;</code>
      */
     int getUnavailableReplicas();
 
@@ -3498,7 +3498,7 @@ public  final class Deployment extends
     public static final int OBSERVED_GENERATION_FIELD_NUMBER = 1;
     private long observedGeneration_;
     /**
-     * <code>optional int64 observed_generation = 1;</code>
+     * <code>int64 observed_generation = 1;</code>
      */
     public long getObservedGeneration() {
       return observedGeneration_;
@@ -3507,7 +3507,7 @@ public  final class Deployment extends
     public static final int REPLICAS_FIELD_NUMBER = 2;
     private int replicas_;
     /**
-     * <code>optional int32 replicas = 2;</code>
+     * <code>int32 replicas = 2;</code>
      */
     public int getReplicas() {
       return replicas_;
@@ -3516,7 +3516,7 @@ public  final class Deployment extends
     public static final int UPDATED_REPLICAS_FIELD_NUMBER = 3;
     private int updatedReplicas_;
     /**
-     * <code>optional int32 updated_replicas = 3;</code>
+     * <code>int32 updated_replicas = 3;</code>
      */
     public int getUpdatedReplicas() {
       return updatedReplicas_;
@@ -3525,7 +3525,7 @@ public  final class Deployment extends
     public static final int AVAILABLE_REPLICAS_FIELD_NUMBER = 4;
     private int availableReplicas_;
     /**
-     * <code>optional int32 available_replicas = 4;</code>
+     * <code>int32 available_replicas = 4;</code>
      */
     public int getAvailableReplicas() {
       return availableReplicas_;
@@ -3534,7 +3534,7 @@ public  final class Deployment extends
     public static final int UNAVAILABLE_REPLICAS_FIELD_NUMBER = 5;
     private int unavailableReplicas_;
     /**
-     * <code>optional int32 unavailable_replicas = 5;</code>
+     * <code>int32 unavailable_replicas = 5;</code>
      */
     public int getUnavailableReplicas() {
       return unavailableReplicas_;
@@ -3673,7 +3673,7 @@ public  final class Deployment extends
         return memoizedHashCode;
       }
       int hash = 41;
-      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + OBSERVED_GENERATION_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getObservedGeneration());
@@ -3974,13 +3974,13 @@ public  final class Deployment extends
 
       private long observedGeneration_ ;
       /**
-       * <code>optional int64 observed_generation = 1;</code>
+       * <code>int64 observed_generation = 1;</code>
        */
       public long getObservedGeneration() {
         return observedGeneration_;
       }
       /**
-       * <code>optional int64 observed_generation = 1;</code>
+       * <code>int64 observed_generation = 1;</code>
        */
       public Builder setObservedGeneration(long value) {
         
@@ -3989,7 +3989,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int64 observed_generation = 1;</code>
+       * <code>int64 observed_generation = 1;</code>
        */
       public Builder clearObservedGeneration() {
         
@@ -4000,13 +4000,13 @@ public  final class Deployment extends
 
       private int replicas_ ;
       /**
-       * <code>optional int32 replicas = 2;</code>
+       * <code>int32 replicas = 2;</code>
        */
       public int getReplicas() {
         return replicas_;
       }
       /**
-       * <code>optional int32 replicas = 2;</code>
+       * <code>int32 replicas = 2;</code>
        */
       public Builder setReplicas(int value) {
         
@@ -4015,7 +4015,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 replicas = 2;</code>
+       * <code>int32 replicas = 2;</code>
        */
       public Builder clearReplicas() {
         
@@ -4026,13 +4026,13 @@ public  final class Deployment extends
 
       private int updatedReplicas_ ;
       /**
-       * <code>optional int32 updated_replicas = 3;</code>
+       * <code>int32 updated_replicas = 3;</code>
        */
       public int getUpdatedReplicas() {
         return updatedReplicas_;
       }
       /**
-       * <code>optional int32 updated_replicas = 3;</code>
+       * <code>int32 updated_replicas = 3;</code>
        */
       public Builder setUpdatedReplicas(int value) {
         
@@ -4041,7 +4041,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 updated_replicas = 3;</code>
+       * <code>int32 updated_replicas = 3;</code>
        */
       public Builder clearUpdatedReplicas() {
         
@@ -4052,13 +4052,13 @@ public  final class Deployment extends
 
       private int availableReplicas_ ;
       /**
-       * <code>optional int32 available_replicas = 4;</code>
+       * <code>int32 available_replicas = 4;</code>
        */
       public int getAvailableReplicas() {
         return availableReplicas_;
       }
       /**
-       * <code>optional int32 available_replicas = 4;</code>
+       * <code>int32 available_replicas = 4;</code>
        */
       public Builder setAvailableReplicas(int value) {
         
@@ -4067,7 +4067,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 available_replicas = 4;</code>
+       * <code>int32 available_replicas = 4;</code>
        */
       public Builder clearAvailableReplicas() {
         
@@ -4078,13 +4078,13 @@ public  final class Deployment extends
 
       private int unavailableReplicas_ ;
       /**
-       * <code>optional int32 unavailable_replicas = 5;</code>
+       * <code>int32 unavailable_replicas = 5;</code>
        */
       public int getUnavailableReplicas() {
         return unavailableReplicas_;
       }
       /**
-       * <code>optional int32 unavailable_replicas = 5;</code>
+       * <code>int32 unavailable_replicas = 5;</code>
        */
       public Builder setUnavailableReplicas(int value) {
         
@@ -4093,7 +4093,7 @@ public  final class Deployment extends
         return this;
       }
       /**
-       * <code>optional int32 unavailable_replicas = 5;</code>
+       * <code>int32 unavailable_replicas = 5;</code>
        */
       public Builder clearUnavailableReplicas() {
         
@@ -4393,19 +4393,19 @@ public  final class Deployment extends
   public static final int META_FIELD_NUMBER = 1;
   private com.appscode.api.kubernetes.v1beta2.Meta meta_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public boolean hasMeta() {
     return meta_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
     return meta_ == null ? com.appscode.api.kubernetes.v1beta2.Meta.getDefaultInstance() : meta_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+   * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
     return getMeta();
@@ -4414,7 +4414,7 @@ public  final class Deployment extends
   public static final int APP_FIELD_NUMBER = 2;
   private volatile java.lang.Object app_;
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public java.lang.String getApp() {
     java.lang.Object ref = app_;
@@ -4429,7 +4429,7 @@ public  final class Deployment extends
     }
   }
   /**
-   * <code>optional string app = 2;</code>
+   * <code>string app = 2;</code>
    */
   public com.google.protobuf.ByteString
       getAppBytes() {
@@ -4448,19 +4448,19 @@ public  final class Deployment extends
   public static final int SPEC_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.Deployment.Spec spec_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Deployment.Spec getSpec() {
     return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Deployment.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
@@ -4469,19 +4469,19 @@ public  final class Deployment extends
   public static final int STATUS_FIELD_NUMBER = 4;
   private com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus status_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getStatus() {
     return status_ == null ? com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.getDefaultInstance() : status_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+   * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder getStatusOrBuilder() {
     return getStatus();
@@ -4575,7 +4575,7 @@ public  final class Deployment extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (hasMeta()) {
       hash = (37 * hash) + META_FIELD_NUMBER;
       hash = (53 * hash) + getMeta().hashCode();
@@ -4850,13 +4850,13 @@ public  final class Deployment extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> metaBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public boolean hasMeta() {
       return metaBuilder_ != null || meta_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta getMeta() {
       if (metaBuilder_ == null) {
@@ -4866,7 +4866,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -4882,7 +4882,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder setMeta(
         com.appscode.api.kubernetes.v1beta2.Meta.Builder builderForValue) {
@@ -4896,7 +4896,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder mergeMeta(com.appscode.api.kubernetes.v1beta2.Meta value) {
       if (metaBuilder_ == null) {
@@ -4914,7 +4914,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public Builder clearMeta() {
       if (metaBuilder_ == null) {
@@ -4928,7 +4928,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Meta.Builder getMetaBuilder() {
       
@@ -4936,7 +4936,7 @@ public  final class Deployment extends
       return getMetaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.MetaOrBuilder getMetaOrBuilder() {
       if (metaBuilder_ != null) {
@@ -4947,7 +4947,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Meta meta = 1;</code>
+     * <code>.appscode.kubernetes.v1beta2.Meta meta = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Meta, com.appscode.api.kubernetes.v1beta2.Meta.Builder, com.appscode.api.kubernetes.v1beta2.MetaOrBuilder> 
@@ -4965,7 +4965,7 @@ public  final class Deployment extends
 
     private java.lang.Object app_ = "";
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public java.lang.String getApp() {
       java.lang.Object ref = app_;
@@ -4980,7 +4980,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public com.google.protobuf.ByteString
         getAppBytes() {
@@ -4996,7 +4996,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setApp(
         java.lang.String value) {
@@ -5009,7 +5009,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder clearApp() {
       
@@ -5018,7 +5018,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional string app = 2;</code>
+     * <code>string app = 2;</code>
      */
     public Builder setAppBytes(
         com.google.protobuf.ByteString value) {
@@ -5036,13 +5036,13 @@ public  final class Deployment extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment.Spec, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.SpecOrBuilder> specBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec getSpec() {
       if (specBuilder_ == null) {
@@ -5052,7 +5052,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Deployment.Spec value) {
       if (specBuilder_ == null) {
@@ -5068,7 +5068,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public Builder setSpec(
         com.appscode.api.kubernetes.v1beta2.Deployment.Spec.Builder builderForValue) {
@@ -5082,7 +5082,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Deployment.Spec value) {
       if (specBuilder_ == null) {
@@ -5100,7 +5100,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -5114,7 +5114,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.Spec.Builder getSpecBuilder() {
       
@@ -5122,7 +5122,7 @@ public  final class Deployment extends
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
@@ -5133,7 +5133,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.Spec spec = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment.Spec, com.appscode.api.kubernetes.v1beta2.Deployment.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.SpecOrBuilder> 
@@ -5153,13 +5153,13 @@ public  final class Deployment extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder> statusBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus getStatus() {
       if (statusBuilder_ == null) {
@@ -5169,7 +5169,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus value) {
       if (statusBuilder_ == null) {
@@ -5185,7 +5185,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder setStatus(
         com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder builderForValue) {
@@ -5199,7 +5199,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus value) {
       if (statusBuilder_ == null) {
@@ -5217,7 +5217,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -5231,7 +5231,7 @@ public  final class Deployment extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder getStatusBuilder() {
       
@@ -5239,7 +5239,7 @@ public  final class Deployment extends
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
@@ -5250,7 +5250,7 @@ public  final class Deployment extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
+     * <code>.appscode.kubernetes.v1beta2.Deployment.DeploymentStatus status = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatus.Builder, com.appscode.api.kubernetes.v1beta2.Deployment.DeploymentStatusOrBuilder> 

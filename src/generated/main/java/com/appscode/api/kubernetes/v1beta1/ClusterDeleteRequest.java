@@ -99,7 +99,7 @@ public  final class ClusterDeleteRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -114,7 +114,7 @@ public  final class ClusterDeleteRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -133,7 +133,7 @@ public  final class ClusterDeleteRequest extends
   public static final int RELEASE_RESERVED_IP_FIELD_NUMBER = 2;
   private boolean releaseReservedIp_;
   /**
-   * <code>optional bool release_reserved_ip = 2;</code>
+   * <code>bool release_reserved_ip = 2;</code>
    */
   public boolean getReleaseReservedIp() {
     return releaseReservedIp_;
@@ -142,7 +142,7 @@ public  final class ClusterDeleteRequest extends
   public static final int FORCE_FIELD_NUMBER = 3;
   private boolean force_;
   /**
-   * <code>optional bool force = 3;</code>
+   * <code>bool force = 3;</code>
    */
   public boolean getForce() {
     return force_;
@@ -151,7 +151,7 @@ public  final class ClusterDeleteRequest extends
   public static final int KEEP_LODABALANCERS_FIELD_NUMBER = 4;
   private boolean keepLodabalancers_;
   /**
-   * <code>optional bool keep_lodabalancers = 4;</code>
+   * <code>bool keep_lodabalancers = 4;</code>
    */
   public boolean getKeepLodabalancers() {
     return keepLodabalancers_;
@@ -160,7 +160,7 @@ public  final class ClusterDeleteRequest extends
   public static final int DELETE_DYNAMIC_VOLUMES_FIELD_NUMBER = 5;
   private boolean deleteDynamicVolumes_;
   /**
-   * <code>optional bool delete_dynamic_volumes = 5;</code>
+   * <code>bool delete_dynamic_volumes = 5;</code>
    */
   public boolean getDeleteDynamicVolumes() {
     return deleteDynamicVolumes_;
@@ -254,7 +254,7 @@ public  final class ClusterDeleteRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + RELEASE_RESERVED_IP_FIELD_NUMBER;
@@ -509,7 +509,7 @@ public  final class ClusterDeleteRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -524,7 +524,7 @@ public  final class ClusterDeleteRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -540,7 +540,7 @@ public  final class ClusterDeleteRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -553,7 +553,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -562,7 +562,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -578,13 +578,13 @@ public  final class ClusterDeleteRequest extends
 
     private boolean releaseReservedIp_ ;
     /**
-     * <code>optional bool release_reserved_ip = 2;</code>
+     * <code>bool release_reserved_ip = 2;</code>
      */
     public boolean getReleaseReservedIp() {
       return releaseReservedIp_;
     }
     /**
-     * <code>optional bool release_reserved_ip = 2;</code>
+     * <code>bool release_reserved_ip = 2;</code>
      */
     public Builder setReleaseReservedIp(boolean value) {
       
@@ -593,7 +593,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional bool release_reserved_ip = 2;</code>
+     * <code>bool release_reserved_ip = 2;</code>
      */
     public Builder clearReleaseReservedIp() {
       
@@ -604,13 +604,13 @@ public  final class ClusterDeleteRequest extends
 
     private boolean force_ ;
     /**
-     * <code>optional bool force = 3;</code>
+     * <code>bool force = 3;</code>
      */
     public boolean getForce() {
       return force_;
     }
     /**
-     * <code>optional bool force = 3;</code>
+     * <code>bool force = 3;</code>
      */
     public Builder setForce(boolean value) {
       
@@ -619,7 +619,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional bool force = 3;</code>
+     * <code>bool force = 3;</code>
      */
     public Builder clearForce() {
       
@@ -630,13 +630,13 @@ public  final class ClusterDeleteRequest extends
 
     private boolean keepLodabalancers_ ;
     /**
-     * <code>optional bool keep_lodabalancers = 4;</code>
+     * <code>bool keep_lodabalancers = 4;</code>
      */
     public boolean getKeepLodabalancers() {
       return keepLodabalancers_;
     }
     /**
-     * <code>optional bool keep_lodabalancers = 4;</code>
+     * <code>bool keep_lodabalancers = 4;</code>
      */
     public Builder setKeepLodabalancers(boolean value) {
       
@@ -645,7 +645,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional bool keep_lodabalancers = 4;</code>
+     * <code>bool keep_lodabalancers = 4;</code>
      */
     public Builder clearKeepLodabalancers() {
       
@@ -656,13 +656,13 @@ public  final class ClusterDeleteRequest extends
 
     private boolean deleteDynamicVolumes_ ;
     /**
-     * <code>optional bool delete_dynamic_volumes = 5;</code>
+     * <code>bool delete_dynamic_volumes = 5;</code>
      */
     public boolean getDeleteDynamicVolumes() {
       return deleteDynamicVolumes_;
     }
     /**
-     * <code>optional bool delete_dynamic_volumes = 5;</code>
+     * <code>bool delete_dynamic_volumes = 5;</code>
      */
     public Builder setDeleteDynamicVolumes(boolean value) {
       
@@ -671,7 +671,7 @@ public  final class ClusterDeleteRequest extends
       return this;
     }
     /**
-     * <code>optional bool delete_dynamic_volumes = 5;</code>
+     * <code>bool delete_dynamic_volumes = 5;</code>
      */
     public Builder clearDeleteDynamicVolumes() {
       

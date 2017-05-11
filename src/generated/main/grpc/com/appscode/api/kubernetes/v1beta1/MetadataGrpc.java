@@ -18,9 +18,9 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall;
 /**
  */
 @javax.annotation.Generated(
-    value = "by gRPC proto compiler (version 1.0.1)",
+    value = "by gRPC proto compiler (version 1.3.0)",
     comments = "Source: appscode/api/kubernetes/v1beta1/metadata.proto")
-public class MetadataGrpc {
+public final class MetadataGrpc {
 
   private MetadataGrpc() {}
 
@@ -103,7 +103,7 @@ public class MetadataGrpc {
       asyncUnimplementedUnaryCall(METHOD_LIST_BUCKETS, responseObserver);
     }
 
-    @java.lang.Override public io.grpc.ServerServiceDefinition bindService() {
+    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             METHOD_LIST_REGIONS,
@@ -260,7 +260,7 @@ public class MetadataGrpc {
   private static final int METHODID_LIST_ZONES = 1;
   private static final int METHODID_LIST_BUCKETS = 2;
 
-  private static class MethodHandlers<Req, Resp> implements
+  private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
@@ -268,7 +268,7 @@ public class MetadataGrpc {
     private final MetadataImplBase serviceImpl;
     private final int methodId;
 
-    public MethodHandlers(MetadataImplBase serviceImpl, int methodId) {
+    MethodHandlers(MetadataImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -305,11 +305,30 @@ public class MetadataGrpc {
     }
   }
 
-  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
-    return new io.grpc.ServiceDescriptor(SERVICE_NAME,
-        METHOD_LIST_REGIONS,
-        METHOD_LIST_ZONES,
-        METHOD_LIST_BUCKETS);
+  private static final class MetadataDescriptorSupplier implements io.grpc.protobuf.ProtoFileDescriptorSupplier {
+    @java.lang.Override
+    public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
+      return com.appscode.api.kubernetes.v1beta1.MetadataProto.getDescriptor();
+    }
   }
 
+  private static volatile io.grpc.ServiceDescriptor serviceDescriptor;
+
+  public static io.grpc.ServiceDescriptor getServiceDescriptor() {
+    io.grpc.ServiceDescriptor result = serviceDescriptor;
+    if (result == null) {
+      synchronized (MetadataGrpc.class) {
+        result = serviceDescriptor;
+        if (result == null) {
+          serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
+              .setSchemaDescriptor(new MetadataDescriptorSupplier())
+              .addMethod(METHOD_LIST_REGIONS)
+              .addMethod(METHOD_LIST_ZONES)
+              .addMethod(METHOD_LIST_BUCKETS)
+              .build();
+        }
+      }
+    }
+    return result;
+  }
 }

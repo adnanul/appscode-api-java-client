@@ -82,7 +82,7 @@ public  final class LoadBalancerStatus extends
   public static final int IP_FIELD_NUMBER = 1;
   private volatile java.lang.Object iP_;
   /**
-   * <code>optional string IP = 1;</code>
+   * <code>string IP = 1;</code>
    */
   public java.lang.String getIP() {
     java.lang.Object ref = iP_;
@@ -97,7 +97,7 @@ public  final class LoadBalancerStatus extends
     }
   }
   /**
-   * <code>optional string IP = 1;</code>
+   * <code>string IP = 1;</code>
    */
   public com.google.protobuf.ByteString
       getIPBytes() {
@@ -116,7 +116,7 @@ public  final class LoadBalancerStatus extends
   public static final int HOST_FIELD_NUMBER = 2;
   private volatile java.lang.Object host_;
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   public java.lang.String getHost() {
     java.lang.Object ref = host_;
@@ -131,7 +131,7 @@ public  final class LoadBalancerStatus extends
     }
   }
   /**
-   * <code>optional string host = 2;</code>
+   * <code>string host = 2;</code>
    */
   public com.google.protobuf.ByteString
       getHostBytes() {
@@ -207,7 +207,7 @@ public  final class LoadBalancerStatus extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + IP_FIELD_NUMBER;
     hash = (53 * hash) + getIP().hashCode();
     hash = (37 * hash) + HOST_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class LoadBalancerStatus extends
 
     private java.lang.Object iP_ = "";
     /**
-     * <code>optional string IP = 1;</code>
+     * <code>string IP = 1;</code>
      */
     public java.lang.String getIP() {
       java.lang.Object ref = iP_;
@@ -450,7 +450,7 @@ public  final class LoadBalancerStatus extends
       }
     }
     /**
-     * <code>optional string IP = 1;</code>
+     * <code>string IP = 1;</code>
      */
     public com.google.protobuf.ByteString
         getIPBytes() {
@@ -466,7 +466,7 @@ public  final class LoadBalancerStatus extends
       }
     }
     /**
-     * <code>optional string IP = 1;</code>
+     * <code>string IP = 1;</code>
      */
     public Builder setIP(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class LoadBalancerStatus extends
       return this;
     }
     /**
-     * <code>optional string IP = 1;</code>
+     * <code>string IP = 1;</code>
      */
     public Builder clearIP() {
       
@@ -488,7 +488,7 @@ public  final class LoadBalancerStatus extends
       return this;
     }
     /**
-     * <code>optional string IP = 1;</code>
+     * <code>string IP = 1;</code>
      */
     public Builder setIPBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class LoadBalancerStatus extends
 
     private java.lang.Object host_ = "";
     /**
-     * <code>optional string host = 2;</code>
+     * <code>string host = 2;</code>
      */
     public java.lang.String getHost() {
       java.lang.Object ref = host_;
@@ -519,7 +519,7 @@ public  final class LoadBalancerStatus extends
       }
     }
     /**
-     * <code>optional string host = 2;</code>
+     * <code>string host = 2;</code>
      */
     public com.google.protobuf.ByteString
         getHostBytes() {
@@ -535,7 +535,7 @@ public  final class LoadBalancerStatus extends
       }
     }
     /**
-     * <code>optional string host = 2;</code>
+     * <code>string host = 2;</code>
      */
     public Builder setHost(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class LoadBalancerStatus extends
       return this;
     }
     /**
-     * <code>optional string host = 2;</code>
+     * <code>string host = 2;</code>
      */
     public Builder clearHost() {
       
@@ -557,7 +557,7 @@ public  final class LoadBalancerStatus extends
       return this;
     }
     /**
-     * <code>optional string host = 2;</code>
+     * <code>string host = 2;</code>
      */
     public Builder setHostBytes(
         com.google.protobuf.ByteString value) {

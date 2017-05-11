@@ -44,19 +44,6 @@ public  final class CSRFTokenResponse extends
             break;
           }
           case 10: {
-            com.appscode.api.dtypes.Status.Builder subBuilder = null;
-            if (status_ != null) {
-              subBuilder = status_.toBuilder();
-            }
-            status_ = input.readMessage(com.appscode.api.dtypes.Status.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(status_);
-              status_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 18: {
             java.lang.String s = input.readStringRequireUtf8();
 
             csrfToken_ = s;
@@ -85,31 +72,10 @@ public  final class CSRFTokenResponse extends
             com.appscode.api.auth.v1beta1.CSRFTokenResponse.class, com.appscode.api.auth.v1beta1.CSRFTokenResponse.Builder.class);
   }
 
-  public static final int STATUS_FIELD_NUMBER = 1;
-  private com.appscode.api.dtypes.Status status_;
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public boolean hasStatus() {
-    return status_ != null;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.Status getStatus() {
-    return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-  }
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-    return getStatus();
-  }
-
-  public static final int CSRF_TOKEN_FIELD_NUMBER = 2;
+  public static final int CSRF_TOKEN_FIELD_NUMBER = 1;
   private volatile java.lang.Object csrfToken_;
   /**
-   * <code>optional string csrf_token = 2;</code>
+   * <code>string csrf_token = 1;</code>
    */
   public java.lang.String getCsrfToken() {
     java.lang.Object ref = csrfToken_;
@@ -124,7 +90,7 @@ public  final class CSRFTokenResponse extends
     }
   }
   /**
-   * <code>optional string csrf_token = 2;</code>
+   * <code>string csrf_token = 1;</code>
    */
   public com.google.protobuf.ByteString
       getCsrfTokenBytes() {
@@ -152,11 +118,8 @@ public  final class CSRFTokenResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (status_ != null) {
-      output.writeMessage(1, getStatus());
-    }
     if (!getCsrfTokenBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, csrfToken_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, csrfToken_);
     }
   }
 
@@ -165,12 +128,8 @@ public  final class CSRFTokenResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (status_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(1, getStatus());
-    }
     if (!getCsrfTokenBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, csrfToken_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, csrfToken_);
     }
     memoizedSize = size;
     return size;
@@ -188,11 +147,6 @@ public  final class CSRFTokenResponse extends
     com.appscode.api.auth.v1beta1.CSRFTokenResponse other = (com.appscode.api.auth.v1beta1.CSRFTokenResponse) obj;
 
     boolean result = true;
-    result = result && (hasStatus() == other.hasStatus());
-    if (hasStatus()) {
-      result = result && getStatus()
-          .equals(other.getStatus());
-    }
     result = result && getCsrfToken()
         .equals(other.getCsrfToken());
     return result;
@@ -204,11 +158,7 @@ public  final class CSRFTokenResponse extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
-    if (hasStatus()) {
-      hash = (37 * hash) + STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + getStatus().hashCode();
-    }
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CSRF_TOKEN_FIELD_NUMBER;
     hash = (53 * hash) + getCsrfToken().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -329,12 +279,6 @@ public  final class CSRFTokenResponse extends
     }
     public Builder clear() {
       super.clear();
-      if (statusBuilder_ == null) {
-        status_ = null;
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
       csrfToken_ = "";
 
       return this;
@@ -359,11 +303,6 @@ public  final class CSRFTokenResponse extends
 
     public com.appscode.api.auth.v1beta1.CSRFTokenResponse buildPartial() {
       com.appscode.api.auth.v1beta1.CSRFTokenResponse result = new com.appscode.api.auth.v1beta1.CSRFTokenResponse(this);
-      if (statusBuilder_ == null) {
-        result.status_ = status_;
-      } else {
-        result.status_ = statusBuilder_.build();
-      }
       result.csrfToken_ = csrfToken_;
       onBuilt();
       return result;
@@ -406,9 +345,6 @@ public  final class CSRFTokenResponse extends
 
     public Builder mergeFrom(com.appscode.api.auth.v1beta1.CSRFTokenResponse other) {
       if (other == com.appscode.api.auth.v1beta1.CSRFTokenResponse.getDefaultInstance()) return this;
-      if (other.hasStatus()) {
-        mergeStatus(other.getStatus());
-      }
       if (!other.getCsrfToken().isEmpty()) {
         csrfToken_ = other.csrfToken_;
         onChanged();
@@ -439,126 +375,9 @@ public  final class CSRFTokenResponse extends
       return this;
     }
 
-    private com.appscode.api.dtypes.Status status_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> statusBuilder_;
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public boolean hasStatus() {
-      return statusBuilder_ != null || status_ != null;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status getStatus() {
-      if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      } else {
-        return statusBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        status_ = value;
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder setStatus(
-        com.appscode.api.dtypes.Status.Builder builderForValue) {
-      if (statusBuilder_ == null) {
-        status_ = builderForValue.build();
-        onChanged();
-      } else {
-        statusBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder mergeStatus(com.appscode.api.dtypes.Status value) {
-      if (statusBuilder_ == null) {
-        if (status_ != null) {
-          status_ =
-            com.appscode.api.dtypes.Status.newBuilder(status_).mergeFrom(value).buildPartial();
-        } else {
-          status_ = value;
-        }
-        onChanged();
-      } else {
-        statusBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public Builder clearStatus() {
-      if (statusBuilder_ == null) {
-        status_ = null;
-        onChanged();
-      } else {
-        status_ = null;
-        statusBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.Status.Builder getStatusBuilder() {
-      
-      onChanged();
-      return getStatusFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    public com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder() {
-      if (statusBuilder_ != null) {
-        return statusBuilder_.getMessageOrBuilder();
-      } else {
-        return status_ == null ?
-            com.appscode.api.dtypes.Status.getDefaultInstance() : status_;
-      }
-    }
-    /**
-     * <code>optional .appscode.dtypes.Status status = 1;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder> 
-        getStatusFieldBuilder() {
-      if (statusBuilder_ == null) {
-        statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.dtypes.Status, com.appscode.api.dtypes.Status.Builder, com.appscode.api.dtypes.StatusOrBuilder>(
-                getStatus(),
-                getParentForChildren(),
-                isClean());
-        status_ = null;
-      }
-      return statusBuilder_;
-    }
-
     private java.lang.Object csrfToken_ = "";
     /**
-     * <code>optional string csrf_token = 2;</code>
+     * <code>string csrf_token = 1;</code>
      */
     public java.lang.String getCsrfToken() {
       java.lang.Object ref = csrfToken_;
@@ -573,7 +392,7 @@ public  final class CSRFTokenResponse extends
       }
     }
     /**
-     * <code>optional string csrf_token = 2;</code>
+     * <code>string csrf_token = 1;</code>
      */
     public com.google.protobuf.ByteString
         getCsrfTokenBytes() {
@@ -589,7 +408,7 @@ public  final class CSRFTokenResponse extends
       }
     }
     /**
-     * <code>optional string csrf_token = 2;</code>
+     * <code>string csrf_token = 1;</code>
      */
     public Builder setCsrfToken(
         java.lang.String value) {
@@ -602,7 +421,7 @@ public  final class CSRFTokenResponse extends
       return this;
     }
     /**
-     * <code>optional string csrf_token = 2;</code>
+     * <code>string csrf_token = 1;</code>
      */
     public Builder clearCsrfToken() {
       
@@ -611,7 +430,7 @@ public  final class CSRFTokenResponse extends
       return this;
     }
     /**
-     * <code>optional string csrf_token = 2;</code>
+     * <code>string csrf_token = 1;</code>
      */
     public Builder setCsrfTokenBytes(
         com.google.protobuf.ByteString value) {

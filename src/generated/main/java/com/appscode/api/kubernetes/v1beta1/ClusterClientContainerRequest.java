@@ -82,7 +82,7 @@ public  final class ClusterClientContainerRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -97,7 +97,7 @@ public  final class ClusterClientContainerRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -116,7 +116,7 @@ public  final class ClusterClientContainerRequest extends
   public static final int DISK_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object diskName_;
   /**
-   * <code>optional string disk_name = 2;</code>
+   * <code>string disk_name = 2;</code>
    */
   public java.lang.String getDiskName() {
     java.lang.Object ref = diskName_;
@@ -131,7 +131,7 @@ public  final class ClusterClientContainerRequest extends
     }
   }
   /**
-   * <code>optional string disk_name = 2;</code>
+   * <code>string disk_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getDiskNameBytes() {
@@ -207,7 +207,7 @@ public  final class ClusterClientContainerRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + DISK_NAME_FIELD_NUMBER;
@@ -435,7 +435,7 @@ public  final class ClusterClientContainerRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -450,7 +450,7 @@ public  final class ClusterClientContainerRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -466,7 +466,7 @@ public  final class ClusterClientContainerRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -479,7 +479,7 @@ public  final class ClusterClientContainerRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -488,7 +488,7 @@ public  final class ClusterClientContainerRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -504,7 +504,7 @@ public  final class ClusterClientContainerRequest extends
 
     private java.lang.Object diskName_ = "";
     /**
-     * <code>optional string disk_name = 2;</code>
+     * <code>string disk_name = 2;</code>
      */
     public java.lang.String getDiskName() {
       java.lang.Object ref = diskName_;
@@ -519,7 +519,7 @@ public  final class ClusterClientContainerRequest extends
       }
     }
     /**
-     * <code>optional string disk_name = 2;</code>
+     * <code>string disk_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getDiskNameBytes() {
@@ -535,7 +535,7 @@ public  final class ClusterClientContainerRequest extends
       }
     }
     /**
-     * <code>optional string disk_name = 2;</code>
+     * <code>string disk_name = 2;</code>
      */
     public Builder setDiskName(
         java.lang.String value) {
@@ -548,7 +548,7 @@ public  final class ClusterClientContainerRequest extends
       return this;
     }
     /**
-     * <code>optional string disk_name = 2;</code>
+     * <code>string disk_name = 2;</code>
      */
     public Builder clearDiskName() {
       
@@ -557,7 +557,7 @@ public  final class ClusterClientContainerRequest extends
       return this;
     }
     /**
-     * <code>optional string disk_name = 2;</code>
+     * <code>string disk_name = 2;</code>
      */
     public Builder setDiskNameBytes(
         com.google.protobuf.ByteString value) {

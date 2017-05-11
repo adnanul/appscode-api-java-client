@@ -95,7 +95,7 @@ public  final class Metadata extends
   public static final int ENV_FIELD_NUMBER = 1;
   private volatile java.lang.Object env_;
   /**
-   * <code>optional string env = 1;</code>
+   * <code>string env = 1;</code>
    */
   public java.lang.String getEnv() {
     java.lang.Object ref = env_;
@@ -110,7 +110,7 @@ public  final class Metadata extends
     }
   }
   /**
-   * <code>optional string env = 1;</code>
+   * <code>string env = 1;</code>
    */
   public com.google.protobuf.ByteString
       getEnvBytes() {
@@ -129,7 +129,7 @@ public  final class Metadata extends
   public static final int TEAM_ID_FIELD_NUMBER = 2;
   private volatile java.lang.Object teamId_;
   /**
-   * <code>optional string team_id = 2;</code>
+   * <code>string team_id = 2;</code>
    */
   public java.lang.String getTeamId() {
     java.lang.Object ref = teamId_;
@@ -144,7 +144,7 @@ public  final class Metadata extends
     }
   }
   /**
-   * <code>optional string team_id = 2;</code>
+   * <code>string team_id = 2;</code>
    */
   public com.google.protobuf.ByteString
       getTeamIdBytes() {
@@ -163,19 +163,19 @@ public  final class Metadata extends
   public static final int NET_CONFIG_FIELD_NUMBER = 3;
   private com.appscode.api.health.NetConfig netConfig_;
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   public boolean hasNetConfig() {
     return netConfig_ != null;
   }
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   public com.appscode.api.health.NetConfig getNetConfig() {
     return netConfig_ == null ? com.appscode.api.health.NetConfig.getDefaultInstance() : netConfig_;
   }
   /**
-   * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+   * <code>.appscode.health.NetConfig net_config = 3;</code>
    */
   public com.appscode.api.health.NetConfigOrBuilder getNetConfigOrBuilder() {
     return getNetConfig();
@@ -253,7 +253,7 @@ public  final class Metadata extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ENV_FIELD_NUMBER;
     hash = (53 * hash) + getEnv().hashCode();
     hash = (37 * hash) + TEAM_ID_FIELD_NUMBER;
@@ -499,7 +499,7 @@ public  final class Metadata extends
 
     private java.lang.Object env_ = "";
     /**
-     * <code>optional string env = 1;</code>
+     * <code>string env = 1;</code>
      */
     public java.lang.String getEnv() {
       java.lang.Object ref = env_;
@@ -514,7 +514,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string env = 1;</code>
+     * <code>string env = 1;</code>
      */
     public com.google.protobuf.ByteString
         getEnvBytes() {
@@ -530,7 +530,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string env = 1;</code>
+     * <code>string env = 1;</code>
      */
     public Builder setEnv(
         java.lang.String value) {
@@ -543,7 +543,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string env = 1;</code>
+     * <code>string env = 1;</code>
      */
     public Builder clearEnv() {
       
@@ -552,7 +552,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string env = 1;</code>
+     * <code>string env = 1;</code>
      */
     public Builder setEnvBytes(
         com.google.protobuf.ByteString value) {
@@ -568,7 +568,7 @@ public  final class Metadata extends
 
     private java.lang.Object teamId_ = "";
     /**
-     * <code>optional string team_id = 2;</code>
+     * <code>string team_id = 2;</code>
      */
     public java.lang.String getTeamId() {
       java.lang.Object ref = teamId_;
@@ -583,7 +583,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string team_id = 2;</code>
+     * <code>string team_id = 2;</code>
      */
     public com.google.protobuf.ByteString
         getTeamIdBytes() {
@@ -599,7 +599,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional string team_id = 2;</code>
+     * <code>string team_id = 2;</code>
      */
     public Builder setTeamId(
         java.lang.String value) {
@@ -612,7 +612,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string team_id = 2;</code>
+     * <code>string team_id = 2;</code>
      */
     public Builder clearTeamId() {
       
@@ -621,7 +621,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional string team_id = 2;</code>
+     * <code>string team_id = 2;</code>
      */
     public Builder setTeamIdBytes(
         com.google.protobuf.ByteString value) {
@@ -639,13 +639,13 @@ public  final class Metadata extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.NetConfig, com.appscode.api.health.NetConfig.Builder, com.appscode.api.health.NetConfigOrBuilder> netConfigBuilder_;
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public boolean hasNetConfig() {
       return netConfigBuilder_ != null || netConfig_ != null;
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public com.appscode.api.health.NetConfig getNetConfig() {
       if (netConfigBuilder_ == null) {
@@ -655,7 +655,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public Builder setNetConfig(com.appscode.api.health.NetConfig value) {
       if (netConfigBuilder_ == null) {
@@ -671,7 +671,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public Builder setNetConfig(
         com.appscode.api.health.NetConfig.Builder builderForValue) {
@@ -685,7 +685,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public Builder mergeNetConfig(com.appscode.api.health.NetConfig value) {
       if (netConfigBuilder_ == null) {
@@ -703,7 +703,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public Builder clearNetConfig() {
       if (netConfigBuilder_ == null) {
@@ -717,7 +717,7 @@ public  final class Metadata extends
       return this;
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public com.appscode.api.health.NetConfig.Builder getNetConfigBuilder() {
       
@@ -725,7 +725,7 @@ public  final class Metadata extends
       return getNetConfigFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     public com.appscode.api.health.NetConfigOrBuilder getNetConfigOrBuilder() {
       if (netConfigBuilder_ != null) {
@@ -736,7 +736,7 @@ public  final class Metadata extends
       }
     }
     /**
-     * <code>optional .appscode.health.NetConfig net_config = 3;</code>
+     * <code>.appscode.health.NetConfig net_config = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.health.NetConfig, com.appscode.api.health.NetConfig.Builder, com.appscode.api.health.NetConfigOrBuilder> 

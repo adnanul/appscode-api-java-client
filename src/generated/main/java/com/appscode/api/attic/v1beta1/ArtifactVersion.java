@@ -200,7 +200,7 @@ public  final class ArtifactVersion extends
   public static final int ID_FIELD_NUMBER = 1;
   private volatile java.lang.Object id_;
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   public java.lang.String getId() {
     java.lang.Object ref = id_;
@@ -215,7 +215,7 @@ public  final class ArtifactVersion extends
     }
   }
   /**
-   * <code>optional string id = 1;</code>
+   * <code>string id = 1;</code>
    */
   public com.google.protobuf.ByteString
       getIdBytes() {
@@ -234,7 +234,7 @@ public  final class ArtifactVersion extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -249,7 +249,7 @@ public  final class ArtifactVersion extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -268,7 +268,7 @@ public  final class ArtifactVersion extends
   public static final int VERSION_FIELD_NUMBER = 3;
   private volatile java.lang.Object version_;
   /**
-   * <code>optional string version = 3;</code>
+   * <code>string version = 3;</code>
    */
   public java.lang.String getVersion() {
     java.lang.Object ref = version_;
@@ -283,7 +283,7 @@ public  final class ArtifactVersion extends
     }
   }
   /**
-   * <code>optional string version = 3;</code>
+   * <code>string version = 3;</code>
    */
   public com.google.protobuf.ByteString
       getVersionBytes() {
@@ -302,7 +302,7 @@ public  final class ArtifactVersion extends
   public static final int MODIFIED_AT_FIELD_NUMBER = 4;
   private long modifiedAt_;
   /**
-   * <code>optional int64 modified_at = 4;</code>
+   * <code>int64 modified_at = 4;</code>
    */
   public long getModifiedAt() {
     return modifiedAt_;
@@ -311,7 +311,7 @@ public  final class ArtifactVersion extends
   public static final int TYPE_FIELD_NUMBER = 5;
   private volatile java.lang.Object type_;
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   public java.lang.String getType() {
     java.lang.Object ref = type_;
@@ -326,7 +326,7 @@ public  final class ArtifactVersion extends
     }
   }
   /**
-   * <code>optional string type = 5;</code>
+   * <code>string type = 5;</code>
    */
   public com.google.protobuf.ByteString
       getTypeBytes() {
@@ -344,7 +344,7 @@ public  final class ArtifactVersion extends
 
   public static final int JAVA_FIELD_NUMBER = 6;
   /**
-   * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+   * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
    */
   public com.appscode.api.attic.v1beta1.JavaSpec getJava() {
     if (specsCase_ == 6) {
@@ -353,7 +353,7 @@ public  final class ArtifactVersion extends
     return com.appscode.api.attic.v1beta1.JavaSpec.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+   * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
    */
   public com.appscode.api.attic.v1beta1.JavaSpecOrBuilder getJavaOrBuilder() {
     if (specsCase_ == 6) {
@@ -364,7 +364,7 @@ public  final class ArtifactVersion extends
 
   public static final int DOCKER_FIELD_NUMBER = 7;
   /**
-   * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+   * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
    */
   public com.appscode.api.attic.v1beta1.DockerSpec getDocker() {
     if (specsCase_ == 7) {
@@ -373,7 +373,7 @@ public  final class ArtifactVersion extends
     return com.appscode.api.attic.v1beta1.DockerSpec.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+   * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
    */
   public com.appscode.api.attic.v1beta1.DockerSpecOrBuilder getDockerOrBuilder() {
     if (specsCase_ == 7) {
@@ -384,7 +384,7 @@ public  final class ArtifactVersion extends
 
   public static final int PHP_FIELD_NUMBER = 8;
   /**
-   * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+   * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
    */
   public com.appscode.api.attic.v1beta1.PhpSpec getPhp() {
     if (specsCase_ == 8) {
@@ -393,7 +393,7 @@ public  final class ArtifactVersion extends
     return com.appscode.api.attic.v1beta1.PhpSpec.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+   * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
    */
   public com.appscode.api.attic.v1beta1.PhpSpecOrBuilder getPhpOrBuilder() {
     if (specsCase_ == 8) {
@@ -404,7 +404,7 @@ public  final class ArtifactVersion extends
 
   public static final int NPM_FIELD_NUMBER = 9;
   /**
-   * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+   * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
    */
   public com.appscode.api.attic.v1beta1.NpmSpec getNpm() {
     if (specsCase_ == 9) {
@@ -413,7 +413,7 @@ public  final class ArtifactVersion extends
     return com.appscode.api.attic.v1beta1.NpmSpec.getDefaultInstance();
   }
   /**
-   * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+   * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
    */
   public com.appscode.api.attic.v1beta1.NpmSpecOrBuilder getNpmOrBuilder() {
     if (specsCase_ == 9) {
@@ -558,7 +558,7 @@ public  final class ArtifactVersion extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -900,7 +900,7 @@ public  final class ArtifactVersion extends
 
     private java.lang.Object id_ = "";
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public java.lang.String getId() {
       java.lang.Object ref = id_;
@@ -915,7 +915,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public com.google.protobuf.ByteString
         getIdBytes() {
@@ -931,7 +931,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder setId(
         java.lang.String value) {
@@ -944,7 +944,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder clearId() {
       
@@ -953,7 +953,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string id = 1;</code>
+     * <code>string id = 1;</code>
      */
     public Builder setIdBytes(
         com.google.protobuf.ByteString value) {
@@ -969,7 +969,7 @@ public  final class ArtifactVersion extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -984,7 +984,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1000,7 +1000,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -1013,7 +1013,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -1022,7 +1022,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -1038,7 +1038,7 @@ public  final class ArtifactVersion extends
 
     private java.lang.Object version_ = "";
     /**
-     * <code>optional string version = 3;</code>
+     * <code>string version = 3;</code>
      */
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
@@ -1053,7 +1053,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string version = 3;</code>
+     * <code>string version = 3;</code>
      */
     public com.google.protobuf.ByteString
         getVersionBytes() {
@@ -1069,7 +1069,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string version = 3;</code>
+     * <code>string version = 3;</code>
      */
     public Builder setVersion(
         java.lang.String value) {
@@ -1082,7 +1082,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string version = 3;</code>
+     * <code>string version = 3;</code>
      */
     public Builder clearVersion() {
       
@@ -1091,7 +1091,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string version = 3;</code>
+     * <code>string version = 3;</code>
      */
     public Builder setVersionBytes(
         com.google.protobuf.ByteString value) {
@@ -1107,13 +1107,13 @@ public  final class ArtifactVersion extends
 
     private long modifiedAt_ ;
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public long getModifiedAt() {
       return modifiedAt_;
     }
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public Builder setModifiedAt(long value) {
       
@@ -1122,7 +1122,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional int64 modified_at = 4;</code>
+     * <code>int64 modified_at = 4;</code>
      */
     public Builder clearModifiedAt() {
       
@@ -1133,7 +1133,7 @@ public  final class ArtifactVersion extends
 
     private java.lang.Object type_ = "";
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public java.lang.String getType() {
       java.lang.Object ref = type_;
@@ -1148,7 +1148,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public com.google.protobuf.ByteString
         getTypeBytes() {
@@ -1164,7 +1164,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder setType(
         java.lang.String value) {
@@ -1177,7 +1177,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder clearType() {
       
@@ -1186,7 +1186,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional string type = 5;</code>
+     * <code>string type = 5;</code>
      */
     public Builder setTypeBytes(
         com.google.protobuf.ByteString value) {
@@ -1203,7 +1203,7 @@ public  final class ArtifactVersion extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.JavaSpec, com.appscode.api.attic.v1beta1.JavaSpec.Builder, com.appscode.api.attic.v1beta1.JavaSpecOrBuilder> javaBuilder_;
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public com.appscode.api.attic.v1beta1.JavaSpec getJava() {
       if (javaBuilder_ == null) {
@@ -1219,7 +1219,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public Builder setJava(com.appscode.api.attic.v1beta1.JavaSpec value) {
       if (javaBuilder_ == null) {
@@ -1235,7 +1235,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public Builder setJava(
         com.appscode.api.attic.v1beta1.JavaSpec.Builder builderForValue) {
@@ -1249,7 +1249,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public Builder mergeJava(com.appscode.api.attic.v1beta1.JavaSpec value) {
       if (javaBuilder_ == null) {
@@ -1271,7 +1271,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public Builder clearJava() {
       if (javaBuilder_ == null) {
@@ -1290,13 +1290,13 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public com.appscode.api.attic.v1beta1.JavaSpec.Builder getJavaBuilder() {
       return getJavaFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     public com.appscode.api.attic.v1beta1.JavaSpecOrBuilder getJavaOrBuilder() {
       if ((specsCase_ == 6) && (javaBuilder_ != null)) {
@@ -1309,7 +1309,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.JavaSpec java = 6;</code>
+     * <code>.appscode.attic.v1beta1.JavaSpec java = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.JavaSpec, com.appscode.api.attic.v1beta1.JavaSpec.Builder, com.appscode.api.attic.v1beta1.JavaSpecOrBuilder> 
@@ -1333,7 +1333,7 @@ public  final class ArtifactVersion extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.DockerSpec, com.appscode.api.attic.v1beta1.DockerSpec.Builder, com.appscode.api.attic.v1beta1.DockerSpecOrBuilder> dockerBuilder_;
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public com.appscode.api.attic.v1beta1.DockerSpec getDocker() {
       if (dockerBuilder_ == null) {
@@ -1349,7 +1349,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public Builder setDocker(com.appscode.api.attic.v1beta1.DockerSpec value) {
       if (dockerBuilder_ == null) {
@@ -1365,7 +1365,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public Builder setDocker(
         com.appscode.api.attic.v1beta1.DockerSpec.Builder builderForValue) {
@@ -1379,7 +1379,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public Builder mergeDocker(com.appscode.api.attic.v1beta1.DockerSpec value) {
       if (dockerBuilder_ == null) {
@@ -1401,7 +1401,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public Builder clearDocker() {
       if (dockerBuilder_ == null) {
@@ -1420,13 +1420,13 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public com.appscode.api.attic.v1beta1.DockerSpec.Builder getDockerBuilder() {
       return getDockerFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     public com.appscode.api.attic.v1beta1.DockerSpecOrBuilder getDockerOrBuilder() {
       if ((specsCase_ == 7) && (dockerBuilder_ != null)) {
@@ -1439,7 +1439,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.DockerSpec docker = 7;</code>
+     * <code>.appscode.attic.v1beta1.DockerSpec docker = 7;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.DockerSpec, com.appscode.api.attic.v1beta1.DockerSpec.Builder, com.appscode.api.attic.v1beta1.DockerSpecOrBuilder> 
@@ -1463,7 +1463,7 @@ public  final class ArtifactVersion extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.PhpSpec, com.appscode.api.attic.v1beta1.PhpSpec.Builder, com.appscode.api.attic.v1beta1.PhpSpecOrBuilder> phpBuilder_;
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public com.appscode.api.attic.v1beta1.PhpSpec getPhp() {
       if (phpBuilder_ == null) {
@@ -1479,7 +1479,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public Builder setPhp(com.appscode.api.attic.v1beta1.PhpSpec value) {
       if (phpBuilder_ == null) {
@@ -1495,7 +1495,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public Builder setPhp(
         com.appscode.api.attic.v1beta1.PhpSpec.Builder builderForValue) {
@@ -1509,7 +1509,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public Builder mergePhp(com.appscode.api.attic.v1beta1.PhpSpec value) {
       if (phpBuilder_ == null) {
@@ -1531,7 +1531,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public Builder clearPhp() {
       if (phpBuilder_ == null) {
@@ -1550,13 +1550,13 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public com.appscode.api.attic.v1beta1.PhpSpec.Builder getPhpBuilder() {
       return getPhpFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     public com.appscode.api.attic.v1beta1.PhpSpecOrBuilder getPhpOrBuilder() {
       if ((specsCase_ == 8) && (phpBuilder_ != null)) {
@@ -1569,7 +1569,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.PhpSpec php = 8;</code>
+     * <code>.appscode.attic.v1beta1.PhpSpec php = 8;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.PhpSpec, com.appscode.api.attic.v1beta1.PhpSpec.Builder, com.appscode.api.attic.v1beta1.PhpSpecOrBuilder> 
@@ -1593,7 +1593,7 @@ public  final class ArtifactVersion extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.NpmSpec, com.appscode.api.attic.v1beta1.NpmSpec.Builder, com.appscode.api.attic.v1beta1.NpmSpecOrBuilder> npmBuilder_;
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public com.appscode.api.attic.v1beta1.NpmSpec getNpm() {
       if (npmBuilder_ == null) {
@@ -1609,7 +1609,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public Builder setNpm(com.appscode.api.attic.v1beta1.NpmSpec value) {
       if (npmBuilder_ == null) {
@@ -1625,7 +1625,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public Builder setNpm(
         com.appscode.api.attic.v1beta1.NpmSpec.Builder builderForValue) {
@@ -1639,7 +1639,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public Builder mergeNpm(com.appscode.api.attic.v1beta1.NpmSpec value) {
       if (npmBuilder_ == null) {
@@ -1661,7 +1661,7 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public Builder clearNpm() {
       if (npmBuilder_ == null) {
@@ -1680,13 +1680,13 @@ public  final class ArtifactVersion extends
       return this;
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public com.appscode.api.attic.v1beta1.NpmSpec.Builder getNpmBuilder() {
       return getNpmFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     public com.appscode.api.attic.v1beta1.NpmSpecOrBuilder getNpmOrBuilder() {
       if ((specsCase_ == 9) && (npmBuilder_ != null)) {
@@ -1699,7 +1699,7 @@ public  final class ArtifactVersion extends
       }
     }
     /**
-     * <code>optional .appscode.attic.v1beta1.NpmSpec npm = 9;</code>
+     * <code>.appscode.attic.v1beta1.NpmSpec npm = 9;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.attic.v1beta1.NpmSpec, com.appscode.api.attic.v1beta1.NpmSpec.Builder, com.appscode.api.attic.v1beta1.NpmSpecOrBuilder> 

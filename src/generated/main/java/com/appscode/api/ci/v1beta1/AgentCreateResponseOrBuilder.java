@@ -8,24 +8,11 @@ public interface AgentCreateResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 1;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 1;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
@@ -35,7 +22,7 @@ public interface AgentCreateResponseOrBuilder extends
    * authorized to ssh
    * </pre>
    *
-   * <code>optional string ssh_authorized_public_key = 3;</code>
+   * <code>string ssh_authorized_public_key = 2;</code>
    */
   java.lang.String getSshAuthorizedPublicKey();
   /**
@@ -43,17 +30,17 @@ public interface AgentCreateResponseOrBuilder extends
    * authorized to ssh
    * </pre>
    *
-   * <code>optional string ssh_authorized_public_key = 3;</code>
+   * <code>string ssh_authorized_public_key = 2;</code>
    */
   com.google.protobuf.ByteString
       getSshAuthorizedPublicKeyBytes();
 
   /**
-   * <code>optional string git_hostname = 4;</code>
+   * <code>string git_hostname = 3;</code>
    */
   java.lang.String getGitHostname();
   /**
-   * <code>optional string git_hostname = 4;</code>
+   * <code>string git_hostname = 3;</code>
    */
   com.google.protobuf.ByteString
       getGitHostnameBytes();
@@ -63,7 +50,7 @@ public interface AgentCreateResponseOrBuilder extends
    * known_host
    * </pre>
    *
-   * <code>optional string git_host_public_key = 5;</code>
+   * <code>string git_host_public_key = 4;</code>
    */
   java.lang.String getGitHostPublicKey();
   /**
@@ -71,21 +58,21 @@ public interface AgentCreateResponseOrBuilder extends
    * known_host
    * </pre>
    *
-   * <code>optional string git_host_public_key = 5;</code>
+   * <code>string git_host_public_key = 4;</code>
    */
   com.google.protobuf.ByteString
       getGitHostPublicKeyBytes();
 
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   boolean hasGitUser();
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUser getGitUser();
   /**
-   * <code>optional .appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 6;</code>
+   * <code>.appscode.ci.v1beta1.AgentCreateResponse.ConduitUser git_user = 5;</code>
    */
   com.appscode.api.ci.v1beta1.AgentCreateResponse.ConduitUserOrBuilder getGitUserOrBuilder();
 }

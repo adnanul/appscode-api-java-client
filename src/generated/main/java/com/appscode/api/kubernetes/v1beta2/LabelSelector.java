@@ -227,7 +227,7 @@ public  final class LabelSelector extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     if (!internalGetMatchLabels().getMap().isEmpty()) {
       hash = (37 * hash) + MATCH_LABELS_FIELD_NUMBER;
       hash = (53 * hash) + internalGetMatchLabels().hashCode();
@@ -545,7 +545,8 @@ public  final class LabelSelector extends
     }
 
     public Builder clearMatchLabels() {
-      getMutableMatchLabels().clear();
+      internalGetMutableMatchLabels().getMutableMap()
+          .clear();
       return this;
     }
     /**
@@ -555,7 +556,8 @@ public  final class LabelSelector extends
     public Builder removeMatchLabels(
         java.lang.String key) {
       if (key == null) { throw new java.lang.NullPointerException(); }
-      getMutableMatchLabels().remove(key);
+      internalGetMutableMatchLabels().getMutableMap()
+          .remove(key);
       return this;
     }
     /**
@@ -574,7 +576,8 @@ public  final class LabelSelector extends
         java.lang.String value) {
       if (key == null) { throw new java.lang.NullPointerException(); }
       if (value == null) { throw new java.lang.NullPointerException(); }
-      getMutableMatchLabels().put(key, value);
+      internalGetMutableMatchLabels().getMutableMap()
+          .put(key, value);
       return this;
     }
     /**
@@ -583,7 +586,8 @@ public  final class LabelSelector extends
 
     public Builder putAllMatchLabels(
         java.util.Map<java.lang.String, java.lang.String> values) {
-      getMutableMatchLabels().putAll(values);
+      internalGetMutableMatchLabels().getMutableMap()
+          .putAll(values);
       return this;
     }
     public final Builder setUnknownFields(

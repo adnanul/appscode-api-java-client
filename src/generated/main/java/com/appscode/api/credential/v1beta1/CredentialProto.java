@@ -93,49 +93,46 @@ public final class CredentialProto {
       "quest.DataEntry\032+\n\tDataEntry\022\013\n\003key\030\001 \001(" +
       "\t\022\r\n\005value\030\002 \001(\t:\0028\001\"B\n\035CredentialIsAuth" +
       "orizedRequest\022\014\n\004name\030\001 \001(\t\022\023\n\013gce_proje" +
-      "ct\030\002 \001(\t\"p\n\036CredentialIsAuthorizedRespon" +
-      "se\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes.Sta" +
-      "tus\022\024\n\014unauthorized\030\002 \001(\010\022\017\n\007message\030\003 \001" +
-      "(\t\"\'\n\027CredentialDeleteRequest\022\014\n\004name\030\001 " +
-      "\001(\t\")\n\031CredentialDescribeRequest\022\014\n\004name",
-      "\030\001 \001(\t\"\177\n\026CredentialListResponse\022\'\n\006stat" +
-      "us\030\001 \001(\0132\027.appscode.dtypes.Status\022<\n\013cre" +
-      "dentials\030\002 \003(\0132\'.appscode.credential.v1b" +
-      "eta1.Credential\"\202\001\n\032CredentialDescribeRe" +
-      "sponse\022\'\n\006status\030\001 \001(\0132\027.appscode.dtypes" +
-      ".Status\022;\n\ncredential\030\002 \001(\0132\'.appscode.c" +
-      "redential.v1beta1.Credential\"V\n\nCredenti" +
-      "al\022\014\n\004name\030\001 \001(\t\022\020\n\010provider\030\002 \001(\t\022\023\n\013in" +
-      "formation\030\003 \001(\t\022\023\n\013modified_at\030\004 \001(\0032\262\010\n" +
-      "\013Credentials\022\226\001\n\004List\022\034.appscode.dtypes.",
-      "VoidRequest\0323.appscode.credential.v1beta" +
-      "1.CredentialListResponse\";\202\323\344\223\002/\022-/_apps" +
-      "code/api/cloud/v1beta1/credentials/json\202" +
-      "\265\030\002\010\001\022\277\001\n\010Describe\0226.appscode.credential" +
-      ".v1beta1.CredentialDescribeRequest\0327.app" +
-      "scode.credential.v1beta1.CredentialDescr" +
-      "ibeResponse\"B\202\323\344\223\0026\0224/_appscode/api/clou" +
-      "d/v1beta1/credentials/{name}/json\202\265\030\002\010\001\022" +
-      "\235\001\n\006Create\0224.appscode.credential.v1beta1" +
-      ".CredentialCreateRequest\032\035.appscode.dtyp",
-      "es.VoidResponse\">\202\323\344\223\0022\"-/_appscode/api/" +
-      "cloud/v1beta1/credentials/json:\001*\202\265\030\002\010\001\022" +
-      "\244\001\n\006Update\0224.appscode.credential.v1beta1" +
-      ".CredentialUpdateRequest\032\035.appscode.dtyp" +
-      "es.VoidResponse\"E\202\323\344\223\0029\0324/_appscode/api/" +
-      "cloud/v1beta1/credentials/{name}/json:\001*" +
-      "\202\265\030\002\010\001\022\334\001\n\014IsAuthorized\022:.appscode.crede" +
-      "ntial.v1beta1.CredentialIsAuthorizedRequ" +
-      "est\032;.appscode.credential.v1beta1.Creden" +
-      "tialIsAuthorizedResponse\"S\202\323\344\223\002G\"B/_apps",
-      "code/api/cloud/v1beta1/credentials/{name" +
-      "}/is-authorized/json:\001*\202\265\030\002\010\001\022\241\001\n\006Delete" +
-      "\0224.appscode.credential.v1beta1.Credentia" +
-      "lDeleteRequest\032\035.appscode.dtypes.VoidRes" +
-      "ponse\"B\202\323\344\223\0026*4/_appscode/api/cloud/v1be" +
-      "ta1/credentials/{name}/json\202\265\030\002\010\001BA\n#com" +
-      ".appscode.api.credential.v1beta1B\017Creden" +
-      "tialProtoP\001Z\007v1beta1b\006proto3"
+      "ct\030\002 \001(\t\"G\n\036CredentialIsAuthorizedRespon" +
+      "se\022\024\n\014unauthorized\030\001 \001(\010\022\017\n\007message\030\002 \001(" +
+      "\t\"\'\n\027CredentialDeleteRequest\022\014\n\004name\030\001 \001" +
+      "(\t\")\n\031CredentialDescribeRequest\022\014\n\004name\030" +
+      "\001 \001(\t\"V\n\026CredentialListResponse\022<\n\013crede",
+      "ntials\030\001 \003(\0132\'.appscode.credential.v1bet" +
+      "a1.Credential\"Y\n\032CredentialDescribeRespo" +
+      "nse\022;\n\ncredential\030\001 \001(\0132\'.appscode.crede" +
+      "ntial.v1beta1.Credential\"V\n\nCredential\022\014" +
+      "\n\004name\030\001 \001(\t\022\020\n\010provider\030\002 \001(\t\022\023\n\013inform" +
+      "ation\030\003 \001(\t\022\023\n\013modified_at\030\004 \001(\0032\262\010\n\013Cre" +
+      "dentials\022\226\001\n\004List\022\034.appscode.dtypes.Void" +
+      "Request\0323.appscode.credential.v1beta1.Cr" +
+      "edentialListResponse\";\202\323\344\223\002/\022-/_appscode" +
+      "/api/cloud/v1beta1/credentials/json\202\265\030\002\010",
+      "\001\022\277\001\n\010Describe\0226.appscode.credential.v1b" +
+      "eta1.CredentialDescribeRequest\0327.appscod" +
+      "e.credential.v1beta1.CredentialDescribeR" +
+      "esponse\"B\202\323\344\223\0026\0224/_appscode/api/cloud/v1" +
+      "beta1/credentials/{name}/json\202\265\030\002\010\001\022\235\001\n\006" +
+      "Create\0224.appscode.credential.v1beta1.Cre" +
+      "dentialCreateRequest\032\035.appscode.dtypes.V" +
+      "oidResponse\">\202\323\344\223\0022\"-/_appscode/api/clou" +
+      "d/v1beta1/credentials/json:\001*\202\265\030\002\010\001\022\244\001\n\006" +
+      "Update\0224.appscode.credential.v1beta1.Cre",
+      "dentialUpdateRequest\032\035.appscode.dtypes.V" +
+      "oidResponse\"E\202\323\344\223\0029\0324/_appscode/api/clou" +
+      "d/v1beta1/credentials/{name}/json:\001*\202\265\030\002" +
+      "\010\001\022\334\001\n\014IsAuthorized\022:.appscode.credentia" +
+      "l.v1beta1.CredentialIsAuthorizedRequest\032" +
+      ";.appscode.credential.v1beta1.Credential" +
+      "IsAuthorizedResponse\"S\202\323\344\223\002G\"B/_appscode" +
+      "/api/cloud/v1beta1/credentials/{name}/is" +
+      "-authorized/json:\001*\202\265\030\002\010\001\022\241\001\n\006Delete\0224.a" +
+      "ppscode.credential.v1beta1.CredentialDel",
+      "eteRequest\032\035.appscode.dtypes.VoidRespons" +
+      "e\"B\202\323\344\223\0026*4/_appscode/api/cloud/v1beta1/" +
+      "credentials/{name}/json\202\265\030\002\010\001BA\n#com.app" +
+      "scode.api.credential.v1beta1B\017Credential" +
+      "ProtoP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -187,7 +184,7 @@ public final class CredentialProto {
     internal_static_appscode_credential_v1beta1_CredentialIsAuthorizedResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_credential_v1beta1_CredentialIsAuthorizedResponse_descriptor,
-        new java.lang.String[] { "Status", "Unauthorized", "Message", });
+        new java.lang.String[] { "Unauthorized", "Message", });
     internal_static_appscode_credential_v1beta1_CredentialDeleteRequest_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_appscode_credential_v1beta1_CredentialDeleteRequest_fieldAccessorTable = new
@@ -205,13 +202,13 @@ public final class CredentialProto {
     internal_static_appscode_credential_v1beta1_CredentialListResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_credential_v1beta1_CredentialListResponse_descriptor,
-        new java.lang.String[] { "Status", "Credentials", });
+        new java.lang.String[] { "Credentials", });
     internal_static_appscode_credential_v1beta1_CredentialDescribeResponse_descriptor =
       getDescriptor().getMessageTypes().get(7);
     internal_static_appscode_credential_v1beta1_CredentialDescribeResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_credential_v1beta1_CredentialDescribeResponse_descriptor,
-        new java.lang.String[] { "Status", "Credential", });
+        new java.lang.String[] { "Credential", });
     internal_static_appscode_credential_v1beta1_Credential_descriptor =
       getDescriptor().getMessageTypes().get(8);
     internal_static_appscode_credential_v1beta1_Credential_fieldAccessorTable = new

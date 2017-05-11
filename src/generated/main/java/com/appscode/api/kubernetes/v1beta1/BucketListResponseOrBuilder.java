@@ -8,33 +8,20 @@ public interface BucketListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated string names = 2;</code>
+   * <code>repeated string names = 1;</code>
    */
   java.util.List<java.lang.String>
       getNamesList();
   /**
-   * <code>repeated string names = 2;</code>
+   * <code>repeated string names = 1;</code>
    */
   int getNamesCount();
   /**
-   * <code>repeated string names = 2;</code>
+   * <code>repeated string names = 1;</code>
    */
   java.lang.String getNames(int index);
   /**
-   * <code>repeated string names = 2;</code>
+   * <code>repeated string names = 1;</code>
    */
   com.google.protobuf.ByteString
       getNamesBytes(int index);

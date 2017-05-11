@@ -8,38 +8,25 @@ public interface ListResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  boolean hasStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.Status getStatus();
-  /**
-   * <code>optional .appscode.dtypes.Status status = 1;</code>
-   */
-  com.appscode.api.dtypes.StatusOrBuilder getStatusOrBuilder();
-
-  /**
-   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 1;</code>
    */
   java.util.List<com.appscode.api.loadbalancer.v1beta1.LoadBalancer> 
       getLoadBalancersList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancers(int index);
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 1;</code>
    */
   int getLoadBalancersCount();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 1;</code>
    */
   java.util.List<? extends com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> 
       getLoadBalancersOrBuilderList();
   /**
-   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 2;</code>
+   * <code>repeated .appscode.kubernetes.v1beta1.LoadBalancer load_balancers = 1;</code>
    */
   com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancersOrBuilder(
       int index);

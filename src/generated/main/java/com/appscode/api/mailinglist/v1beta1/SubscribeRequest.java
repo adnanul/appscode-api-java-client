@@ -75,7 +75,7 @@ public  final class SubscribeRequest extends
   public static final int EMAIL_FIELD_NUMBER = 1;
   private volatile java.lang.Object email_;
   /**
-   * <code>optional string email = 1;</code>
+   * <code>string email = 1;</code>
    */
   public java.lang.String getEmail() {
     java.lang.Object ref = email_;
@@ -90,7 +90,7 @@ public  final class SubscribeRequest extends
     }
   }
   /**
-   * <code>optional string email = 1;</code>
+   * <code>string email = 1;</code>
    */
   public com.google.protobuf.ByteString
       getEmailBytes() {
@@ -158,7 +158,7 @@ public  final class SubscribeRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + EMAIL_FIELD_NUMBER;
     hash = (53 * hash) + getEmail().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -377,7 +377,7 @@ public  final class SubscribeRequest extends
 
     private java.lang.Object email_ = "";
     /**
-     * <code>optional string email = 1;</code>
+     * <code>string email = 1;</code>
      */
     public java.lang.String getEmail() {
       java.lang.Object ref = email_;
@@ -392,7 +392,7 @@ public  final class SubscribeRequest extends
       }
     }
     /**
-     * <code>optional string email = 1;</code>
+     * <code>string email = 1;</code>
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
@@ -408,7 +408,7 @@ public  final class SubscribeRequest extends
       }
     }
     /**
-     * <code>optional string email = 1;</code>
+     * <code>string email = 1;</code>
      */
     public Builder setEmail(
         java.lang.String value) {
@@ -421,7 +421,7 @@ public  final class SubscribeRequest extends
       return this;
     }
     /**
-     * <code>optional string email = 1;</code>
+     * <code>string email = 1;</code>
      */
     public Builder clearEmail() {
       
@@ -430,7 +430,7 @@ public  final class SubscribeRequest extends
       return this;
     }
     /**
-     * <code>optional string email = 1;</code>
+     * <code>string email = 1;</code>
      */
     public Builder setEmailBytes(
         com.google.protobuf.ByteString value) {

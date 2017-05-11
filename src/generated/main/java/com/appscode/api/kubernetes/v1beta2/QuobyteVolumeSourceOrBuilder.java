@@ -14,7 +14,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * which acts as the central registry for volumes
    * </pre>
    *
-   * <code>optional string registry = 1;</code>
+   * <code>string registry = 1;</code>
    */
   java.lang.String getRegistry();
   /**
@@ -24,7 +24,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * which acts as the central registry for volumes
    * </pre>
    *
-   * <code>optional string registry = 1;</code>
+   * <code>string registry = 1;</code>
    */
   com.google.protobuf.ByteString
       getRegistryBytes();
@@ -34,7 +34,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Volume is a string that references an already created Quobyte volume by name.
    * </pre>
    *
-   * <code>optional string volume = 2;</code>
+   * <code>string volume = 2;</code>
    */
   java.lang.String getVolume();
   /**
@@ -42,7 +42,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Volume is a string that references an already created Quobyte volume by name.
    * </pre>
    *
-   * <code>optional string volume = 2;</code>
+   * <code>string volume = 2;</code>
    */
   com.google.protobuf.ByteString
       getVolumeBytes();
@@ -53,7 +53,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Defaults to false.
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   boolean getReadOnly();
 
@@ -63,7 +63,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Defaults to serivceaccount user
    * </pre>
    *
-   * <code>optional string user = 4;</code>
+   * <code>string user = 4;</code>
    */
   java.lang.String getUser();
   /**
@@ -72,7 +72,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Defaults to serivceaccount user
    * </pre>
    *
-   * <code>optional string user = 4;</code>
+   * <code>string user = 4;</code>
    */
   com.google.protobuf.ByteString
       getUserBytes();
@@ -83,7 +83,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Default is no group
    * </pre>
    *
-   * <code>optional string group = 5;</code>
+   * <code>string group = 5;</code>
    */
   java.lang.String getGroup();
   /**
@@ -92,7 +92,7 @@ public interface QuobyteVolumeSourceOrBuilder extends
    * Default is no group
    * </pre>
    *
-   * <code>optional string group = 5;</code>
+   * <code>string group = 5;</code>
    */
   com.google.protobuf.ByteString
       getGroupBytes();

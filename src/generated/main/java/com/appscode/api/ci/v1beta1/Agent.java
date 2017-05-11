@@ -121,7 +121,7 @@ public  final class Agent extends
   public static final int PHID_FIELD_NUMBER = 1;
   private volatile java.lang.Object phid_;
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public java.lang.String getPhid() {
     java.lang.Object ref = phid_;
@@ -136,7 +136,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string phid = 1;</code>
+   * <code>string phid = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPhidBytes() {
@@ -155,7 +155,7 @@ public  final class Agent extends
   public static final int NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -170,7 +170,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string name = 2;</code>
+   * <code>string name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -189,7 +189,7 @@ public  final class Agent extends
   public static final int ROLE_FIELD_NUMBER = 3;
   private volatile java.lang.Object role_;
   /**
-   * <code>optional string role = 3;</code>
+   * <code>string role = 3;</code>
    */
   public java.lang.String getRole() {
     java.lang.Object ref = role_;
@@ -204,7 +204,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string role = 3;</code>
+   * <code>string role = 3;</code>
    */
   public com.google.protobuf.ByteString
       getRoleBytes() {
@@ -223,7 +223,7 @@ public  final class Agent extends
   public static final int EXTERNAL_IP_FIELD_NUMBER = 4;
   private volatile java.lang.Object externalIp_;
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   public java.lang.String getExternalIp() {
     java.lang.Object ref = externalIp_;
@@ -238,7 +238,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string external_ip = 4;</code>
+   * <code>string external_ip = 4;</code>
    */
   public com.google.protobuf.ByteString
       getExternalIpBytes() {
@@ -257,7 +257,7 @@ public  final class Agent extends
   public static final int INTERNAL_IP_FIELD_NUMBER = 5;
   private volatile java.lang.Object internalIp_;
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   public java.lang.String getInternalIp() {
     java.lang.Object ref = internalIp_;
@@ -272,7 +272,7 @@ public  final class Agent extends
     }
   }
   /**
-   * <code>optional string internal_ip = 5;</code>
+   * <code>string internal_ip = 5;</code>
    */
   public com.google.protobuf.ByteString
       getInternalIpBytes() {
@@ -291,7 +291,7 @@ public  final class Agent extends
   public static final int ISDELETED_FIELD_NUMBER = 6;
   private boolean isDeleted_;
   /**
-   * <code>optional bool isDeleted = 6;</code>
+   * <code>bool isDeleted = 6;</code>
    */
   public boolean getIsDeleted() {
     return isDeleted_;
@@ -300,7 +300,7 @@ public  final class Agent extends
   public static final int CREATED_AT_FIELD_NUMBER = 7;
   private long createdAt_;
   /**
-   * <code>optional int64 created_at = 7;</code>
+   * <code>int64 created_at = 7;</code>
    */
   public long getCreatedAt() {
     return createdAt_;
@@ -309,7 +309,7 @@ public  final class Agent extends
   public static final int UPDATED_AT_FIELD_NUMBER = 8;
   private long updatedAt_;
   /**
-   * <code>optional int64 updated_at = 8;</code>
+   * <code>int64 updated_at = 8;</code>
    */
   public long getUpdatedAt() {
     return updatedAt_;
@@ -426,7 +426,7 @@ public  final class Agent extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PHID_FIELD_NUMBER;
     hash = (53 * hash) + getPhid().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
@@ -708,7 +708,7 @@ public  final class Agent extends
 
     private java.lang.Object phid_ = "";
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public java.lang.String getPhid() {
       java.lang.Object ref = phid_;
@@ -723,7 +723,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPhidBytes() {
@@ -739,7 +739,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhid(
         java.lang.String value) {
@@ -752,7 +752,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder clearPhid() {
       
@@ -761,7 +761,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string phid = 1;</code>
+     * <code>string phid = 1;</code>
      */
     public Builder setPhidBytes(
         com.google.protobuf.ByteString value) {
@@ -777,7 +777,7 @@ public  final class Agent extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -792,7 +792,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -808,7 +808,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -821,7 +821,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder clearName() {
       
@@ -830,7 +830,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string name = 2;</code>
+     * <code>string name = 2;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -846,7 +846,7 @@ public  final class Agent extends
 
     private java.lang.Object role_ = "";
     /**
-     * <code>optional string role = 3;</code>
+     * <code>string role = 3;</code>
      */
     public java.lang.String getRole() {
       java.lang.Object ref = role_;
@@ -861,7 +861,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string role = 3;</code>
+     * <code>string role = 3;</code>
      */
     public com.google.protobuf.ByteString
         getRoleBytes() {
@@ -877,7 +877,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string role = 3;</code>
+     * <code>string role = 3;</code>
      */
     public Builder setRole(
         java.lang.String value) {
@@ -890,7 +890,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string role = 3;</code>
+     * <code>string role = 3;</code>
      */
     public Builder clearRole() {
       
@@ -899,7 +899,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string role = 3;</code>
+     * <code>string role = 3;</code>
      */
     public Builder setRoleBytes(
         com.google.protobuf.ByteString value) {
@@ -915,7 +915,7 @@ public  final class Agent extends
 
     private java.lang.Object externalIp_ = "";
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public java.lang.String getExternalIp() {
       java.lang.Object ref = externalIp_;
@@ -930,7 +930,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public com.google.protobuf.ByteString
         getExternalIpBytes() {
@@ -946,7 +946,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder setExternalIp(
         java.lang.String value) {
@@ -959,7 +959,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder clearExternalIp() {
       
@@ -968,7 +968,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string external_ip = 4;</code>
+     * <code>string external_ip = 4;</code>
      */
     public Builder setExternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -984,7 +984,7 @@ public  final class Agent extends
 
     private java.lang.Object internalIp_ = "";
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public java.lang.String getInternalIp() {
       java.lang.Object ref = internalIp_;
@@ -999,7 +999,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public com.google.protobuf.ByteString
         getInternalIpBytes() {
@@ -1015,7 +1015,7 @@ public  final class Agent extends
       }
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder setInternalIp(
         java.lang.String value) {
@@ -1028,7 +1028,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder clearInternalIp() {
       
@@ -1037,7 +1037,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional string internal_ip = 5;</code>
+     * <code>string internal_ip = 5;</code>
      */
     public Builder setInternalIpBytes(
         com.google.protobuf.ByteString value) {
@@ -1053,13 +1053,13 @@ public  final class Agent extends
 
     private boolean isDeleted_ ;
     /**
-     * <code>optional bool isDeleted = 6;</code>
+     * <code>bool isDeleted = 6;</code>
      */
     public boolean getIsDeleted() {
       return isDeleted_;
     }
     /**
-     * <code>optional bool isDeleted = 6;</code>
+     * <code>bool isDeleted = 6;</code>
      */
     public Builder setIsDeleted(boolean value) {
       
@@ -1068,7 +1068,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional bool isDeleted = 6;</code>
+     * <code>bool isDeleted = 6;</code>
      */
     public Builder clearIsDeleted() {
       
@@ -1079,13 +1079,13 @@ public  final class Agent extends
 
     private long createdAt_ ;
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public long getCreatedAt() {
       return createdAt_;
     }
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public Builder setCreatedAt(long value) {
       
@@ -1094,7 +1094,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional int64 created_at = 7;</code>
+     * <code>int64 created_at = 7;</code>
      */
     public Builder clearCreatedAt() {
       
@@ -1105,13 +1105,13 @@ public  final class Agent extends
 
     private long updatedAt_ ;
     /**
-     * <code>optional int64 updated_at = 8;</code>
+     * <code>int64 updated_at = 8;</code>
      */
     public long getUpdatedAt() {
       return updatedAt_;
     }
     /**
-     * <code>optional int64 updated_at = 8;</code>
+     * <code>int64 updated_at = 8;</code>
      */
     public Builder setUpdatedAt(long value) {
       
@@ -1120,7 +1120,7 @@ public  final class Agent extends
       return this;
     }
     /**
-     * <code>optional int64 updated_at = 8;</code>
+     * <code>int64 updated_at = 8;</code>
      */
     public Builder clearUpdatedAt() {
       

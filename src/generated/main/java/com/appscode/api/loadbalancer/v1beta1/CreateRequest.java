@@ -115,7 +115,7 @@ public  final class CreateRequest extends
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public java.lang.String getName() {
     java.lang.Object ref = name_;
@@ -130,7 +130,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string name = 1;</code>
+   * <code>string name = 1;</code>
    */
   public com.google.protobuf.ByteString
       getNameBytes() {
@@ -149,7 +149,7 @@ public  final class CreateRequest extends
   public static final int NAMESPACE_FIELD_NUMBER = 2;
   private volatile java.lang.Object namespace_;
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public java.lang.String getNamespace() {
     java.lang.Object ref = namespace_;
@@ -164,7 +164,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string namespace = 2;</code>
+   * <code>string namespace = 2;</code>
    */
   public com.google.protobuf.ByteString
       getNamespaceBytes() {
@@ -183,7 +183,7 @@ public  final class CreateRequest extends
   public static final int CLUSTER_FIELD_NUMBER = 3;
   private volatile java.lang.Object cluster_;
   /**
-   * <code>optional string cluster = 3;</code>
+   * <code>string cluster = 3;</code>
    */
   public java.lang.String getCluster() {
     java.lang.Object ref = cluster_;
@@ -198,7 +198,7 @@ public  final class CreateRequest extends
     }
   }
   /**
-   * <code>optional string cluster = 3;</code>
+   * <code>string cluster = 3;</code>
    */
   public com.google.protobuf.ByteString
       getClusterBytes() {
@@ -217,19 +217,19 @@ public  final class CreateRequest extends
   public static final int LOAD_BALANCER_FIELD_NUMBER = 4;
   private com.appscode.api.loadbalancer.v1beta1.LoadBalancer loadBalancer_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
    */
   public boolean hasLoadBalancer() {
     return loadBalancer_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
     return loadBalancer_ == null ? com.appscode.api.loadbalancer.v1beta1.LoadBalancer.getDefaultInstance() : loadBalancer_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
     return getLoadBalancer();
@@ -238,19 +238,19 @@ public  final class CreateRequest extends
   public static final int RAW_FIELD_NUMBER = 5;
   private com.appscode.api.loadbalancer.v1beta1.Raw raw_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public boolean hasRaw() {
     return raw_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
     return raw_ == null ? com.appscode.api.loadbalancer.v1beta1.Raw.getDefaultInstance() : raw_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+   * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
     return getRaw();
@@ -348,7 +348,7 @@ public  final class CreateRequest extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + NAME_FIELD_NUMBER;
     hash = (53 * hash) + getName().hashCode();
     hash = (37 * hash) + NAMESPACE_FIELD_NUMBER;
@@ -621,7 +621,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object name_ = "";
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -636,7 +636,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -652,7 +652,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setName(
         java.lang.String value) {
@@ -665,7 +665,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder clearName() {
       
@@ -674,7 +674,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string name = 1;</code>
+     * <code>string name = 1;</code>
      */
     public Builder setNameBytes(
         com.google.protobuf.ByteString value) {
@@ -690,7 +690,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object namespace_ = "";
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public java.lang.String getNamespace() {
       java.lang.Object ref = namespace_;
@@ -705,7 +705,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNamespaceBytes() {
@@ -721,7 +721,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespace(
         java.lang.String value) {
@@ -734,7 +734,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder clearNamespace() {
       
@@ -743,7 +743,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string namespace = 2;</code>
+     * <code>string namespace = 2;</code>
      */
     public Builder setNamespaceBytes(
         com.google.protobuf.ByteString value) {
@@ -759,7 +759,7 @@ public  final class CreateRequest extends
 
     private java.lang.Object cluster_ = "";
     /**
-     * <code>optional string cluster = 3;</code>
+     * <code>string cluster = 3;</code>
      */
     public java.lang.String getCluster() {
       java.lang.Object ref = cluster_;
@@ -774,7 +774,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 3;</code>
+     * <code>string cluster = 3;</code>
      */
     public com.google.protobuf.ByteString
         getClusterBytes() {
@@ -790,7 +790,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional string cluster = 3;</code>
+     * <code>string cluster = 3;</code>
      */
     public Builder setCluster(
         java.lang.String value) {
@@ -803,7 +803,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 3;</code>
+     * <code>string cluster = 3;</code>
      */
     public Builder clearCluster() {
       
@@ -812,7 +812,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional string cluster = 3;</code>
+     * <code>string cluster = 3;</code>
      */
     public Builder setClusterBytes(
         com.google.protobuf.ByteString value) {
@@ -830,13 +830,13 @@ public  final class CreateRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> loadBalancerBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public boolean hasLoadBalancer() {
       return loadBalancerBuilder_ != null || loadBalancer_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer getLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -846,7 +846,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public Builder setLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -862,7 +862,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public Builder setLoadBalancer(
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder builderForValue) {
@@ -876,7 +876,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public Builder mergeLoadBalancer(com.appscode.api.loadbalancer.v1beta1.LoadBalancer value) {
       if (loadBalancerBuilder_ == null) {
@@ -894,7 +894,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public Builder clearLoadBalancer() {
       if (loadBalancerBuilder_ == null) {
@@ -908,7 +908,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder getLoadBalancerBuilder() {
       
@@ -916,7 +916,7 @@ public  final class CreateRequest extends
       return getLoadBalancerFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder getLoadBalancerOrBuilder() {
       if (loadBalancerBuilder_ != null) {
@@ -927,7 +927,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancer load_balancer = 4;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancer, com.appscode.api.loadbalancer.v1beta1.LoadBalancer.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerOrBuilder> 
@@ -947,13 +947,13 @@ public  final class CreateRequest extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> rawBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public boolean hasRaw() {
       return rawBuilder_ != null || raw_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw getRaw() {
       if (rawBuilder_ == null) {
@@ -963,7 +963,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder setRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -979,7 +979,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder setRaw(
         com.appscode.api.loadbalancer.v1beta1.Raw.Builder builderForValue) {
@@ -993,7 +993,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder mergeRaw(com.appscode.api.loadbalancer.v1beta1.Raw value) {
       if (rawBuilder_ == null) {
@@ -1011,7 +1011,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public Builder clearRaw() {
       if (rawBuilder_ == null) {
@@ -1025,7 +1025,7 @@ public  final class CreateRequest extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.Raw.Builder getRawBuilder() {
       
@@ -1033,7 +1033,7 @@ public  final class CreateRequest extends
       return getRawFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.RawOrBuilder getRawOrBuilder() {
       if (rawBuilder_ != null) {
@@ -1044,7 +1044,7 @@ public  final class CreateRequest extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.Raw raw = 5;</code>
+     * <code>.appscode.kubernetes.v1beta1.Raw raw = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.Raw, com.appscode.api.loadbalancer.v1beta1.Raw.Builder, com.appscode.api.loadbalancer.v1beta1.RawOrBuilder> 

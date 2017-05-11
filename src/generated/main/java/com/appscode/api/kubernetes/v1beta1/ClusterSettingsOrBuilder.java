@@ -8,11 +8,11 @@ public interface ClusterSettingsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string log_index_prefix = 1;</code>
+   * <code>string log_index_prefix = 1;</code>
    */
   java.lang.String getLogIndexPrefix();
   /**
-   * <code>optional string log_index_prefix = 1;</code>
+   * <code>string log_index_prefix = 1;</code>
    */
   com.google.protobuf.ByteString
       getLogIndexPrefixBytes();
@@ -22,7 +22,7 @@ public interface ClusterSettingsOrBuilder extends
    * Number of secs logs will be stored in ElasticSearch
    * </pre>
    *
-   * <code>optional int64 log_storage_lifetime = 2;</code>
+   * <code>int64 log_storage_lifetime = 2;</code>
    */
   long getLogStorageLifetime();
 
@@ -31,7 +31,7 @@ public interface ClusterSettingsOrBuilder extends
    * Number of secs logs will be stored in InfluxDB
    * </pre>
    *
-   * <code>optional int64 monitoring_storage_lifetime = 3;</code>
+   * <code>int64 monitoring_storage_lifetime = 3;</code>
    */
   long getMonitoringStorageLifetime();
 }

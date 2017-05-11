@@ -8,47 +8,47 @@ public interface LoginRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   java.lang.String getNamespace();
   /**
-   * <code>optional string namespace = 1;</code>
+   * <code>string namespace = 1;</code>
    */
   com.google.protobuf.ByteString
       getNamespaceBytes();
 
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   java.lang.String getUsername();
   /**
-   * <code>optional string username = 2;</code>
+   * <code>string username = 2;</code>
    */
   com.google.protobuf.ByteString
       getUsernameBytes();
 
   /**
-   * <code>optional string password = 3;</code>
+   * <code>string password = 3;</code>
    */
   java.lang.String getPassword();
   /**
-   * <code>optional string password = 3;</code>
+   * <code>string password = 3;</code>
    */
   com.google.protobuf.ByteString
       getPasswordBytes();
 
   /**
-   * <code>optional string token = 4;</code>
+   * <code>string token = 4;</code>
    */
   java.lang.String getToken();
   /**
-   * <code>optional string token = 4;</code>
+   * <code>string token = 4;</code>
    */
   com.google.protobuf.ByteString
       getTokenBytes();
 
   /**
-   * <code>optional bool issue_token = 5;</code>
+   * <code>bool issue_token = 5;</code>
    */
   boolean getIssueToken();
 }

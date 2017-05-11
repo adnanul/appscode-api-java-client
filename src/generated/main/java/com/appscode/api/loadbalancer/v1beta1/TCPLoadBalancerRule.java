@@ -102,7 +102,7 @@ public  final class TCPLoadBalancerRule extends
   public static final int PORT_FIELD_NUMBER = 1;
   private volatile java.lang.Object port_;
   /**
-   * <code>optional string port = 1;</code>
+   * <code>string port = 1;</code>
    */
   public java.lang.String getPort() {
     java.lang.Object ref = port_;
@@ -117,7 +117,7 @@ public  final class TCPLoadBalancerRule extends
     }
   }
   /**
-   * <code>optional string port = 1;</code>
+   * <code>string port = 1;</code>
    */
   public com.google.protobuf.ByteString
       getPortBytes() {
@@ -136,19 +136,19 @@ public  final class TCPLoadBalancerRule extends
   public static final int BACKEND_FIELD_NUMBER = 2;
   private com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend backend_;
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   public boolean hasBackend() {
     return backend_ != null;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend getBackend() {
     return backend_ == null ? com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend.getDefaultInstance() : backend_;
   }
   /**
-   * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+   * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
    */
   public com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackendOrBuilder getBackendOrBuilder() {
     return getBackend();
@@ -157,7 +157,7 @@ public  final class TCPLoadBalancerRule extends
   public static final int SSL_SECRET_NAME_FIELD_NUMBER = 3;
   private volatile java.lang.Object sSLSecretName_;
   /**
-   * <code>optional string SSL_secret_name = 3;</code>
+   * <code>string SSL_secret_name = 3;</code>
    */
   public java.lang.String getSSLSecretName() {
     java.lang.Object ref = sSLSecretName_;
@@ -172,7 +172,7 @@ public  final class TCPLoadBalancerRule extends
     }
   }
   /**
-   * <code>optional string SSL_secret_name = 3;</code>
+   * <code>string SSL_secret_name = 3;</code>
    */
   public com.google.protobuf.ByteString
       getSSLSecretNameBytes() {
@@ -191,7 +191,7 @@ public  final class TCPLoadBalancerRule extends
   public static final int SECRET_PEM_NAME_FIELD_NUMBER = 4;
   private volatile java.lang.Object secretPemName_;
   /**
-   * <code>optional string secret_pem_name = 4;</code>
+   * <code>string secret_pem_name = 4;</code>
    */
   public java.lang.String getSecretPemName() {
     java.lang.Object ref = secretPemName_;
@@ -206,7 +206,7 @@ public  final class TCPLoadBalancerRule extends
     }
   }
   /**
-   * <code>optional string secret_pem_name = 4;</code>
+   * <code>string secret_pem_name = 4;</code>
    */
   public com.google.protobuf.ByteString
       getSecretPemNameBytes() {
@@ -302,7 +302,7 @@ public  final class TCPLoadBalancerRule extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + PORT_FIELD_NUMBER;
     hash = (53 * hash) + getPort().hashCode();
     if (hasBackend()) {
@@ -557,7 +557,7 @@ public  final class TCPLoadBalancerRule extends
 
     private java.lang.Object port_ = "";
     /**
-     * <code>optional string port = 1;</code>
+     * <code>string port = 1;</code>
      */
     public java.lang.String getPort() {
       java.lang.Object ref = port_;
@@ -572,7 +572,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string port = 1;</code>
+     * <code>string port = 1;</code>
      */
     public com.google.protobuf.ByteString
         getPortBytes() {
@@ -588,7 +588,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string port = 1;</code>
+     * <code>string port = 1;</code>
      */
     public Builder setPort(
         java.lang.String value) {
@@ -601,7 +601,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string port = 1;</code>
+     * <code>string port = 1;</code>
      */
     public Builder clearPort() {
       
@@ -610,7 +610,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string port = 1;</code>
+     * <code>string port = 1;</code>
      */
     public Builder setPortBytes(
         com.google.protobuf.ByteString value) {
@@ -628,13 +628,13 @@ public  final class TCPLoadBalancerRule extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend, com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackendOrBuilder> backendBuilder_;
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public boolean hasBackend() {
       return backendBuilder_ != null || backend_ != null;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend getBackend() {
       if (backendBuilder_ == null) {
@@ -644,7 +644,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public Builder setBackend(com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend value) {
       if (backendBuilder_ == null) {
@@ -660,7 +660,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public Builder setBackend(
         com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend.Builder builderForValue) {
@@ -674,7 +674,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public Builder mergeBackend(com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend value) {
       if (backendBuilder_ == null) {
@@ -692,7 +692,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public Builder clearBackend() {
       if (backendBuilder_ == null) {
@@ -706,7 +706,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend.Builder getBackendBuilder() {
       
@@ -714,7 +714,7 @@ public  final class TCPLoadBalancerRule extends
       return getBackendFieldBuilder().getBuilder();
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     public com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackendOrBuilder getBackendOrBuilder() {
       if (backendBuilder_ != null) {
@@ -725,7 +725,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional .appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
+     * <code>.appscode.kubernetes.v1beta1.LoadBalancerBackend backend = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend, com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackend.Builder, com.appscode.api.loadbalancer.v1beta1.LoadBalancerBackendOrBuilder> 
@@ -743,7 +743,7 @@ public  final class TCPLoadBalancerRule extends
 
     private java.lang.Object sSLSecretName_ = "";
     /**
-     * <code>optional string SSL_secret_name = 3;</code>
+     * <code>string SSL_secret_name = 3;</code>
      */
     public java.lang.String getSSLSecretName() {
       java.lang.Object ref = sSLSecretName_;
@@ -758,7 +758,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string SSL_secret_name = 3;</code>
+     * <code>string SSL_secret_name = 3;</code>
      */
     public com.google.protobuf.ByteString
         getSSLSecretNameBytes() {
@@ -774,7 +774,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string SSL_secret_name = 3;</code>
+     * <code>string SSL_secret_name = 3;</code>
      */
     public Builder setSSLSecretName(
         java.lang.String value) {
@@ -787,7 +787,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string SSL_secret_name = 3;</code>
+     * <code>string SSL_secret_name = 3;</code>
      */
     public Builder clearSSLSecretName() {
       
@@ -796,7 +796,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string SSL_secret_name = 3;</code>
+     * <code>string SSL_secret_name = 3;</code>
      */
     public Builder setSSLSecretNameBytes(
         com.google.protobuf.ByteString value) {
@@ -812,7 +812,7 @@ public  final class TCPLoadBalancerRule extends
 
     private java.lang.Object secretPemName_ = "";
     /**
-     * <code>optional string secret_pem_name = 4;</code>
+     * <code>string secret_pem_name = 4;</code>
      */
     public java.lang.String getSecretPemName() {
       java.lang.Object ref = secretPemName_;
@@ -827,7 +827,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string secret_pem_name = 4;</code>
+     * <code>string secret_pem_name = 4;</code>
      */
     public com.google.protobuf.ByteString
         getSecretPemNameBytes() {
@@ -843,7 +843,7 @@ public  final class TCPLoadBalancerRule extends
       }
     }
     /**
-     * <code>optional string secret_pem_name = 4;</code>
+     * <code>string secret_pem_name = 4;</code>
      */
     public Builder setSecretPemName(
         java.lang.String value) {
@@ -856,7 +856,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string secret_pem_name = 4;</code>
+     * <code>string secret_pem_name = 4;</code>
      */
     public Builder clearSecretPemName() {
       
@@ -865,7 +865,7 @@ public  final class TCPLoadBalancerRule extends
       return this;
     }
     /**
-     * <code>optional string secret_pem_name = 4;</code>
+     * <code>string secret_pem_name = 4;</code>
      */
     public Builder setSecretPemNameBytes(
         com.google.protobuf.ByteString value) {

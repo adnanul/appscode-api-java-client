@@ -113,7 +113,7 @@ public  final class QuobyteVolumeSource extends
    * which acts as the central registry for volumes
    * </pre>
    *
-   * <code>optional string registry = 1;</code>
+   * <code>string registry = 1;</code>
    */
   public java.lang.String getRegistry() {
     java.lang.Object ref = registry_;
@@ -134,7 +134,7 @@ public  final class QuobyteVolumeSource extends
    * which acts as the central registry for volumes
    * </pre>
    *
-   * <code>optional string registry = 1;</code>
+   * <code>string registry = 1;</code>
    */
   public com.google.protobuf.ByteString
       getRegistryBytes() {
@@ -157,7 +157,7 @@ public  final class QuobyteVolumeSource extends
    * Volume is a string that references an already created Quobyte volume by name.
    * </pre>
    *
-   * <code>optional string volume = 2;</code>
+   * <code>string volume = 2;</code>
    */
   public java.lang.String getVolume() {
     java.lang.Object ref = volume_;
@@ -176,7 +176,7 @@ public  final class QuobyteVolumeSource extends
    * Volume is a string that references an already created Quobyte volume by name.
    * </pre>
    *
-   * <code>optional string volume = 2;</code>
+   * <code>string volume = 2;</code>
    */
   public com.google.protobuf.ByteString
       getVolumeBytes() {
@@ -200,7 +200,7 @@ public  final class QuobyteVolumeSource extends
    * Defaults to false.
    * </pre>
    *
-   * <code>optional bool readOnly = 3;</code>
+   * <code>bool readOnly = 3;</code>
    */
   public boolean getReadOnly() {
     return readOnly_;
@@ -214,7 +214,7 @@ public  final class QuobyteVolumeSource extends
    * Defaults to serivceaccount user
    * </pre>
    *
-   * <code>optional string user = 4;</code>
+   * <code>string user = 4;</code>
    */
   public java.lang.String getUser() {
     java.lang.Object ref = user_;
@@ -234,7 +234,7 @@ public  final class QuobyteVolumeSource extends
    * Defaults to serivceaccount user
    * </pre>
    *
-   * <code>optional string user = 4;</code>
+   * <code>string user = 4;</code>
    */
   public com.google.protobuf.ByteString
       getUserBytes() {
@@ -258,7 +258,7 @@ public  final class QuobyteVolumeSource extends
    * Default is no group
    * </pre>
    *
-   * <code>optional string group = 5;</code>
+   * <code>string group = 5;</code>
    */
   public java.lang.String getGroup() {
     java.lang.Object ref = group_;
@@ -278,7 +278,7 @@ public  final class QuobyteVolumeSource extends
    * Default is no group
    * </pre>
    *
-   * <code>optional string group = 5;</code>
+   * <code>string group = 5;</code>
    */
   public com.google.protobuf.ByteString
       getGroupBytes() {
@@ -379,7 +379,7 @@ public  final class QuobyteVolumeSource extends
       return memoizedHashCode;
     }
     int hash = 41;
-    hash = (19 * hash) + getDescriptorForType().hashCode();
+    hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + REGISTRY_FIELD_NUMBER;
     hash = (53 * hash) + getRegistry().hashCode();
     hash = (37 * hash) + VOLUME_FIELD_NUMBER;
@@ -645,7 +645,7 @@ public  final class QuobyteVolumeSource extends
      * which acts as the central registry for volumes
      * </pre>
      *
-     * <code>optional string registry = 1;</code>
+     * <code>string registry = 1;</code>
      */
     public java.lang.String getRegistry() {
       java.lang.Object ref = registry_;
@@ -666,7 +666,7 @@ public  final class QuobyteVolumeSource extends
      * which acts as the central registry for volumes
      * </pre>
      *
-     * <code>optional string registry = 1;</code>
+     * <code>string registry = 1;</code>
      */
     public com.google.protobuf.ByteString
         getRegistryBytes() {
@@ -688,7 +688,7 @@ public  final class QuobyteVolumeSource extends
      * which acts as the central registry for volumes
      * </pre>
      *
-     * <code>optional string registry = 1;</code>
+     * <code>string registry = 1;</code>
      */
     public Builder setRegistry(
         java.lang.String value) {
@@ -707,7 +707,7 @@ public  final class QuobyteVolumeSource extends
      * which acts as the central registry for volumes
      * </pre>
      *
-     * <code>optional string registry = 1;</code>
+     * <code>string registry = 1;</code>
      */
     public Builder clearRegistry() {
       
@@ -722,7 +722,7 @@ public  final class QuobyteVolumeSource extends
      * which acts as the central registry for volumes
      * </pre>
      *
-     * <code>optional string registry = 1;</code>
+     * <code>string registry = 1;</code>
      */
     public Builder setRegistryBytes(
         com.google.protobuf.ByteString value) {
@@ -742,7 +742,7 @@ public  final class QuobyteVolumeSource extends
      * Volume is a string that references an already created Quobyte volume by name.
      * </pre>
      *
-     * <code>optional string volume = 2;</code>
+     * <code>string volume = 2;</code>
      */
     public java.lang.String getVolume() {
       java.lang.Object ref = volume_;
@@ -761,7 +761,7 @@ public  final class QuobyteVolumeSource extends
      * Volume is a string that references an already created Quobyte volume by name.
      * </pre>
      *
-     * <code>optional string volume = 2;</code>
+     * <code>string volume = 2;</code>
      */
     public com.google.protobuf.ByteString
         getVolumeBytes() {
@@ -781,7 +781,7 @@ public  final class QuobyteVolumeSource extends
      * Volume is a string that references an already created Quobyte volume by name.
      * </pre>
      *
-     * <code>optional string volume = 2;</code>
+     * <code>string volume = 2;</code>
      */
     public Builder setVolume(
         java.lang.String value) {
@@ -798,7 +798,7 @@ public  final class QuobyteVolumeSource extends
      * Volume is a string that references an already created Quobyte volume by name.
      * </pre>
      *
-     * <code>optional string volume = 2;</code>
+     * <code>string volume = 2;</code>
      */
     public Builder clearVolume() {
       
@@ -811,7 +811,7 @@ public  final class QuobyteVolumeSource extends
      * Volume is a string that references an already created Quobyte volume by name.
      * </pre>
      *
-     * <code>optional string volume = 2;</code>
+     * <code>string volume = 2;</code>
      */
     public Builder setVolumeBytes(
         com.google.protobuf.ByteString value) {
@@ -832,7 +832,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public boolean getReadOnly() {
       return readOnly_;
@@ -843,7 +843,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder setReadOnly(boolean value) {
       
@@ -857,7 +857,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to false.
      * </pre>
      *
-     * <code>optional bool readOnly = 3;</code>
+     * <code>bool readOnly = 3;</code>
      */
     public Builder clearReadOnly() {
       
@@ -873,7 +873,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to serivceaccount user
      * </pre>
      *
-     * <code>optional string user = 4;</code>
+     * <code>string user = 4;</code>
      */
     public java.lang.String getUser() {
       java.lang.Object ref = user_;
@@ -893,7 +893,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to serivceaccount user
      * </pre>
      *
-     * <code>optional string user = 4;</code>
+     * <code>string user = 4;</code>
      */
     public com.google.protobuf.ByteString
         getUserBytes() {
@@ -914,7 +914,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to serivceaccount user
      * </pre>
      *
-     * <code>optional string user = 4;</code>
+     * <code>string user = 4;</code>
      */
     public Builder setUser(
         java.lang.String value) {
@@ -932,7 +932,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to serivceaccount user
      * </pre>
      *
-     * <code>optional string user = 4;</code>
+     * <code>string user = 4;</code>
      */
     public Builder clearUser() {
       
@@ -946,7 +946,7 @@ public  final class QuobyteVolumeSource extends
      * Defaults to serivceaccount user
      * </pre>
      *
-     * <code>optional string user = 4;</code>
+     * <code>string user = 4;</code>
      */
     public Builder setUserBytes(
         com.google.protobuf.ByteString value) {
@@ -967,7 +967,7 @@ public  final class QuobyteVolumeSource extends
      * Default is no group
      * </pre>
      *
-     * <code>optional string group = 5;</code>
+     * <code>string group = 5;</code>
      */
     public java.lang.String getGroup() {
       java.lang.Object ref = group_;
@@ -987,7 +987,7 @@ public  final class QuobyteVolumeSource extends
      * Default is no group
      * </pre>
      *
-     * <code>optional string group = 5;</code>
+     * <code>string group = 5;</code>
      */
     public com.google.protobuf.ByteString
         getGroupBytes() {
@@ -1008,7 +1008,7 @@ public  final class QuobyteVolumeSource extends
      * Default is no group
      * </pre>
      *
-     * <code>optional string group = 5;</code>
+     * <code>string group = 5;</code>
      */
     public Builder setGroup(
         java.lang.String value) {
@@ -1026,7 +1026,7 @@ public  final class QuobyteVolumeSource extends
      * Default is no group
      * </pre>
      *
-     * <code>optional string group = 5;</code>
+     * <code>string group = 5;</code>
      */
     public Builder clearGroup() {
       
@@ -1040,7 +1040,7 @@ public  final class QuobyteVolumeSource extends
      * Default is no group
      * </pre>
      *
-     * <code>optional string group = 5;</code>
+     * <code>string group = 5;</code>
      */
     public Builder setGroupBytes(
         com.google.protobuf.ByteString value) {
