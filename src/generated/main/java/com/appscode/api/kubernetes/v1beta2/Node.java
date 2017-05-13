@@ -455,6 +455,17 @@ public  final class Node extends
     }
 
     public static com.appscode.api.kubernetes.v1beta2.Node.Spec parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Node.Spec parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Node.Spec parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
@@ -1578,6 +1589,17 @@ public  final class Node extends
         return hash;
       }
 
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
       public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.Capacity parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2726,6 +2748,17 @@ public  final class Node extends
         return hash;
       }
 
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
       public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeSystemInfo parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3975,6 +4008,17 @@ public  final class Node extends
       }
 
       public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeAddress parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeAddress parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.NodeAddress parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
         return PARSER.parseFrom(data);
@@ -4603,6 +4647,17 @@ public  final class Node extends
         return hash;
       }
 
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.ContainerImage parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.ContainerImage parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
       public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.ContainerImage parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -5238,6 +5293,17 @@ public  final class Node extends
         return hash;
       }
 
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.AttachedVolume parseFrom(
+          java.nio.ByteBuffer data)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data);
+      }
+      public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.AttachedVolume parseFrom(
+          java.nio.ByteBuffer data,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return PARSER.parseFrom(data, extensionRegistry);
+      }
       public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus.AttachedVolume parseFrom(
           com.google.protobuf.ByteString data)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6084,6 +6150,17 @@ public  final class Node extends
       return hash;
     }
 
+    public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
     public static com.appscode.api.kubernetes.v1beta2.Node.NodeStatus parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -8265,6 +8342,17 @@ public  final class Node extends
     return hash;
   }
 
+  public static com.appscode.api.kubernetes.v1beta2.Node parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static com.appscode.api.kubernetes.v1beta2.Node parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
   public static com.appscode.api.kubernetes.v1beta2.Node parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {

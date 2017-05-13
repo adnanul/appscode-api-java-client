@@ -17,7 +17,7 @@ buildscript {
     dependencies {
         // ASSUMES GRADLE 2.12 OR HIGHER. Use plugin version 0.7.5 with earlier
         // gradle versions
-        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.1'
     }
 }
 
@@ -42,7 +42,7 @@ protobuf {
         // The version of protoc must match protobuf-java. If you don't depend on
         // protobuf-java directly, you will be transitively depending on the
         // protobuf-java version that grpc depends on.
-        artifact = "com.google.protobuf:protoc:3.2.0"
+        artifact = "com.google.protobuf:protoc:3.3.0"
     }
     plugins {
         grpc {
@@ -58,11 +58,13 @@ protobuf {
 }
 
 dependencies {
-    compile 'com.google.protobuf:protobuf-java:3.2.0'
+    compile 'com.google.protobuf:protobuf-java:3.3.0'
     compile 'io.grpc:grpc-netty:1.3.0'
     compile 'io.grpc:grpc-protobuf:1.3.0'
+    compile 'io.grpc:grpc-auth:1.3.0'
     compile 'io.grpc:grpc-stub:1.3.0'
-    compile 'com.google.api.grpc:grpc-google-common-protos:0.1.9'
+    compile 'com.google.api.grpc:googleapis-common-protos:0.0.3'
+    compile 'com.google.api.grpc:proto-google-common-protos:0.1.9'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.8.6'
     compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.8.6'
     testCompile 'junit:junit:4.10'

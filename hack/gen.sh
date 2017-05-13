@@ -10,6 +10,10 @@ ROOT=$DIR/..
 rm -rf $ROOT/src/main/proto/appscode/api
 rm -rf $ROOT/src/generated
 
+# rm -rf $GOPATH/src/github.com/googleapis/googleapis
+# go get -u github.com/googleapis/googleapis || true
+# rm -rf $GOPATH/src/github.com/googleapis/googleapis/third_party
+
 pushd $GOPATH/src/github.com/appscode/api
 # copy files
 mkdir -p $ROOT/src/main/proto/appscode/api

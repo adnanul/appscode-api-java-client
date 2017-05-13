@@ -218,6 +218,17 @@ public  final class CredentialIsAuthorizedRequest extends
   }
 
   public static com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest parseFrom(
+      java.nio.ByteBuffer data)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data);
+  }
+  public static com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest parseFrom(
+      java.nio.ByteBuffer data,
+      com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+      throws com.google.protobuf.InvalidProtocolBufferException {
+    return PARSER.parseFrom(data, extensionRegistry);
+  }
+  public static com.appscode.api.credential.v1beta1.CredentialIsAuthorizedRequest parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);

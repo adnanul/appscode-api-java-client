@@ -66,51 +66,50 @@ public final class OperationProto {
       "\n.appscode/api/operation/v1beta1/operati" +
       "on.proto\022\032appscode.operation.v1beta1\032\034go" +
       "ogle/api/annotations.proto\032\036appscode/api" +
-      "/annotations.proto\032\037appscode/api/dtypes/" +
-      "types.proto\032-appscode/api/kubernetes/v1b" +
-      "eta1/cluster.proto\032)appscode/api/namespa" +
-      "ce/v1beta1/team.proto\"5\n\003Log\022\n\n\002id\030\001 \001(\t" +
-      "\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 \001(\t\"2\n\017" +
-      "DescribeRequest\022\014\n\004phid\030\001 \001(\t\022\021\n\ttimesta" +
-      "mp\030\002 \001(\003\"t\n\020DescribeResponse\0221\n\002op\030\001 \001(\013",
-      "2%.appscode.operation.v1beta1.Operation\022" +
-      "-\n\004logs\030\002 \003(\0132\037.appscode.operation.v1bet" +
-      "a1.Log\"2\n\022LogDescribeRequest\022\014\n\004phid\030\001 \001" +
-      "(\t\022\016\n\006log_id\030\002 \001(\t\"C\n\023LogDescribeRespons" +
-      "e\022,\n\003log\030\001 \001(\0132\037.appscode.operation.v1be" +
-      "ta1.Log\"N\n\004Auth\022\021\n\tnamespace\030\001 \001(\t\022\020\n\010us" +
-      "ername\030\002 \001(\t\022\016\n\006secret\030\003 \001(\t\022\021\n\tauth_typ" +
-      "e\030\004 \001(\t\"L\n\010Metadata\022\026\n\016purchase_phids\030\001 " +
-      "\003(\t\022\023\n\013author_phid\030\002 \001(\t\022\023\n\013author_name\030" +
-      "\003 \001(\t\"\235\004\n\tOperation\022S\n\026cluster_create_re",
-      "quest\030\001 \001(\01321.appscode.kubernetes.v1beta" +
-      "1.ClusterCreateRequestH\000\022S\n\026cluster_dele" +
-      "te_request\030\003 \001(\01321.appscode.kubernetes.v" +
-      "1beta1.ClusterDeleteRequestH\000\022]\n\033cluster" +
-      "_reconfigure_request\030\004 \001(\01326.appscode.ku" +
-      "bernetes.v1beta1.ClusterReconfigureReque" +
-      "stH\000\022M\n\030namespace_create_request\030\013 \001(\0132)" +
-      ".appscode.namespace.v1beta1.CreateReques" +
-      "tH\000\0227\n\004type\030\016 \001(\0162).appscode.operation.v" +
-      "1beta1.OperationType\022\014\n\004phid\030\017 \001(\t\022.\n\004au",
-      "th\030\020 \001(\0132 .appscode.operation.v1beta1.Au" +
-      "th\0226\n\010metadata\030\021 \001(\0132$.appscode.operatio" +
-      "n.v1beta1.MetadataB\t\n\007request*s\n\rOperati" +
-      "onType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_CREATE\020\001\022" +
-      "\022\n\016CLUSTER_DELETE\020\003\022\027\n\023CLUSTER_RECONFIGU" +
-      "RE\020\004\022\024\n\020NAMESPACE_CREATE\020\0132\201\003\n\nOperation" +
-      "s\022\254\001\n\010Describe\022+.appscode.operation.v1be" +
-      "ta1.DescribeRequest\032,.appscode.operation" +
-      ".v1beta1.DescribeResponse\"E\202\323\344\223\0029\0227/_app" +
-      "scode/api/operation/v1beta1/operations/{",
-      "phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022..appsc" +
-      "ode.operation.v1beta1.LogDescribeRequest" +
-      "\032/.appscode.operation.v1beta1.LogDescrib" +
-      "eResponse\"S\202\323\344\223\002G\022E/_appscode/api/operat" +
-      "ion/v1beta1/operations/{phid}/logs/{log_" +
-      "id}/json\202\265\030\002\010\001B?\n\"com.appscode.api.opera" +
-      "tion.v1beta1B\016OperationProtoP\001Z\007v1beta1b" +
-      "\006proto3"
+      "/annotations.proto\032-appscode/api/kuberne" +
+      "tes/v1beta1/cluster.proto\032)appscode/api/" +
+      "namespace/v1beta1/team.proto\"5\n\003Log\022\n\n\002i" +
+      "d\030\001 \001(\t\022\021\n\ttimestamp\030\002 \001(\003\022\017\n\007message\030\003 " +
+      "\001(\t\"2\n\017DescribeRequest\022\014\n\004phid\030\001 \001(\t\022\021\n\t" +
+      "timestamp\030\002 \001(\003\"t\n\020DescribeResponse\0221\n\002o" +
+      "p\030\001 \001(\0132%.appscode.operation.v1beta1.Ope",
+      "ration\022-\n\004logs\030\002 \003(\0132\037.appscode.operatio" +
+      "n.v1beta1.Log\"2\n\022LogDescribeRequest\022\014\n\004p" +
+      "hid\030\001 \001(\t\022\016\n\006log_id\030\002 \001(\t\"C\n\023LogDescribe" +
+      "Response\022,\n\003log\030\001 \001(\0132\037.appscode.operati" +
+      "on.v1beta1.Log\"N\n\004Auth\022\021\n\tnamespace\030\001 \001(" +
+      "\t\022\020\n\010username\030\002 \001(\t\022\016\n\006secret\030\003 \001(\t\022\021\n\ta" +
+      "uth_type\030\004 \001(\t\"L\n\010Metadata\022\026\n\016purchase_p" +
+      "hids\030\001 \003(\t\022\023\n\013author_phid\030\002 \001(\t\022\023\n\013autho" +
+      "r_name\030\003 \001(\t\"\235\004\n\tOperation\022S\n\026cluster_cr" +
+      "eate_request\030\001 \001(\01321.appscode.kubernetes",
+      ".v1beta1.ClusterCreateRequestH\000\022S\n\026clust" +
+      "er_delete_request\030\003 \001(\01321.appscode.kuber" +
+      "netes.v1beta1.ClusterDeleteRequestH\000\022]\n\033" +
+      "cluster_reconfigure_request\030\004 \001(\01326.apps" +
+      "code.kubernetes.v1beta1.ClusterReconfigu" +
+      "reRequestH\000\022M\n\030namespace_create_request\030" +
+      "\013 \001(\0132).appscode.namespace.v1beta1.Creat" +
+      "eRequestH\000\0227\n\004type\030\016 \001(\0162).appscode.oper" +
+      "ation.v1beta1.OperationType\022\014\n\004phid\030\017 \001(" +
+      "\t\022.\n\004auth\030\020 \001(\0132 .appscode.operation.v1b",
+      "eta1.Auth\0226\n\010metadata\030\021 \001(\0132$.appscode.o" +
+      "peration.v1beta1.MetadataB\t\n\007request*s\n\r" +
+      "OperationType\022\013\n\007UNKNOWN\020\000\022\022\n\016CLUSTER_CR" +
+      "EATE\020\001\022\022\n\016CLUSTER_DELETE\020\003\022\027\n\023CLUSTER_RE" +
+      "CONFIGURE\020\004\022\024\n\020NAMESPACE_CREATE\020\0132\201\003\n\nOp" +
+      "erations\022\254\001\n\010Describe\022+.appscode.operati" +
+      "on.v1beta1.DescribeRequest\032,.appscode.op" +
+      "eration.v1beta1.DescribeResponse\"E\202\323\344\223\0029" +
+      "\0227/_appscode/api/operation/v1beta1/opera" +
+      "tions/{phid}/json\202\265\030\002\010\001\022\303\001\n\013DescribeLog\022",
+      "..appscode.operation.v1beta1.LogDescribe" +
+      "Request\032/.appscode.operation.v1beta1.Log" +
+      "DescribeResponse\"S\202\323\344\223\002G\022E/_appscode/api" +
+      "/operation/v1beta1/operations/{phid}/log" +
+      "s/{log_id}/json\202\265\030\002\010\001B?\n\"com.appscode.ap" +
+      "i.operation.v1beta1B\016OperationProtoP\001Z\007v" +
+      "1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -125,7 +124,6 @@ public final class OperationProto {
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
           com.appscode.api.AnnotationsProto.getDescriptor(),
-          com.appscode.api.dtypes.TypeProto.getDescriptor(),
           com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor(),
           com.appscode.api.namespace.v1beta1.TeamProto.getDescriptor(),
         }, assigner);
@@ -185,7 +183,6 @@ public final class OperationProto {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
     com.appscode.api.AnnotationsProto.getDescriptor();
-    com.appscode.api.dtypes.TypeProto.getDescriptor();
     com.appscode.api.kubernetes.v1beta1.ClusterProto.getDescriptor();
     com.appscode.api.namespace.v1beta1.TeamProto.getDescriptor();
   }

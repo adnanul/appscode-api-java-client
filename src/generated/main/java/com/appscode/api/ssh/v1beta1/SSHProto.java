@@ -40,21 +40,20 @@ public final class SSHProto {
     java.lang.String[] descriptorData = {
       "\n\"appscode/api/ssh/v1beta1/ssh.proto\022\024ap" +
       "pscode.ssh.v1beta1\032\034google/api/annotatio" +
-      "ns.proto\032\037appscode/api/dtypes/types.prot" +
-      "o\"O\n\rSSHGetRequest\022\021\n\tnamespace\030\001 \001(\t\022\024\n" +
-      "\014cluster_name\030\002 \001(\t\022\025\n\rinstance_name\030\003 \001" +
-      "(\t\"\214\001\n\016SSHGetResponse\022-\n\007ssh_key\030\001 \001(\0132\034" +
-      ".appscode.ssh.v1beta1.SSHKey\022\025\n\rinstance" +
-      "_addr\030\002 \001(\t\022\025\n\rinstance_port\030\003 \001(\005\022\014\n\004us" +
-      "er\030\004 \001(\t\022\017\n\007command\030\005 \001(\t\"g\n\006SSHKey\022\022\n\np" +
-      "ublic_key\030\001 \001(\014\022\023\n\013private_key\030\002 \001(\014\022\027\n\017",
-      "aws_fingerprint\030\003 \001(\t\022\033\n\023openssh_fingerp" +
-      "rint\030\004 \001(\t2\204\001\n\003SSH\022}\n\003Get\022#.appscode.ssh" +
-      ".v1beta1.SSHGetRequest\032$.appscode.ssh.v1" +
-      "beta1.SSHGetResponse\"+\202\323\344\223\002%\022#/_appscode" +
-      "/api/ssh/v1beta1/ssh/jsonB3\n\034com.appscod" +
-      "e.api.ssh.v1beta1B\010SSHProtoP\001Z\007v1beta1b\006" +
-      "proto3"
+      "ns.proto\"O\n\rSSHGetRequest\022\021\n\tnamespace\030\001" +
+      " \001(\t\022\024\n\014cluster_name\030\002 \001(\t\022\025\n\rinstance_n" +
+      "ame\030\003 \001(\t\"\214\001\n\016SSHGetResponse\022-\n\007ssh_key\030" +
+      "\001 \001(\0132\034.appscode.ssh.v1beta1.SSHKey\022\025\n\ri" +
+      "nstance_addr\030\002 \001(\t\022\025\n\rinstance_port\030\003 \001(" +
+      "\005\022\014\n\004user\030\004 \001(\t\022\017\n\007command\030\005 \001(\t\"g\n\006SSHK" +
+      "ey\022\022\n\npublic_key\030\001 \001(\014\022\023\n\013private_key\030\002 " +
+      "\001(\014\022\027\n\017aws_fingerprint\030\003 \001(\t\022\033\n\023openssh_",
+      "fingerprint\030\004 \001(\t2\204\001\n\003SSH\022}\n\003Get\022#.appsc" +
+      "ode.ssh.v1beta1.SSHGetRequest\032$.appscode" +
+      ".ssh.v1beta1.SSHGetResponse\"+\202\323\344\223\002%\022#/_a" +
+      "ppscode/api/ssh/v1beta1/ssh/jsonB3\n\034com." +
+      "appscode.api.ssh.v1beta1B\010SSHProtoP\001Z\007v1" +
+      "beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -68,7 +67,6 @@ public final class SSHProto {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.api.AnnotationsProto.getDescriptor(),
-          com.appscode.api.dtypes.TypeProto.getDescriptor(),
         }, assigner);
     internal_static_appscode_ssh_v1beta1_SSHGetRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -94,7 +92,6 @@ public final class SSHProto {
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.api.AnnotationsProto.getDescriptor();
-    com.appscode.api.dtypes.TypeProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
