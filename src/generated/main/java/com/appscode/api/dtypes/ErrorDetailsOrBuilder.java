@@ -8,22 +8,25 @@ public interface ErrorDetailsOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string requested_resource = 1;</code>
+   * <code>string cause = 1;</code>
    */
-  java.lang.String getRequestedResource();
+  java.lang.String getCause();
   /**
-   * <code>string requested_resource = 1;</code>
+   * <code>string cause = 1;</code>
    */
   com.google.protobuf.ByteString
-      getRequestedResourceBytes();
+      getCauseBytes();
 
   /**
-   * <code>string stacktrace = 2;</code>
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
    */
-  java.lang.String getStacktrace();
+  boolean hasStackTrace();
   /**
-   * <code>string stacktrace = 2;</code>
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
    */
-  com.google.protobuf.ByteString
-      getStacktraceBytes();
+  com.appscode.api.dtypes.ErrorDetails.StackTrace getStackTrace();
+  /**
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+   */
+  com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder getStackTraceOrBuilder();
 }

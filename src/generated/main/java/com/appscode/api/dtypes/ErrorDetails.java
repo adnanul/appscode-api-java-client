@@ -20,8 +20,7 @@ public  final class ErrorDetails extends
     super(builder);
   }
   private ErrorDetails() {
-    requestedResource_ = "";
-    stacktrace_ = "";
+    cause_ = "";
   }
 
   @java.lang.Override
@@ -52,13 +51,20 @@ public  final class ErrorDetails extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            requestedResource_ = s;
+            cause_ = s;
             break;
           }
           case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
+            com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder subBuilder = null;
+            if (stackTrace_ != null) {
+              subBuilder = stackTrace_.toBuilder();
+            }
+            stackTrace_ = input.readMessage(com.appscode.api.dtypes.ErrorDetails.StackTrace.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom(stackTrace_);
+              stackTrace_ = subBuilder.buildPartial();
+            }
 
-            stacktrace_ = s;
             break;
           }
         }
@@ -84,72 +90,627 @@ public  final class ErrorDetails extends
             com.appscode.api.dtypes.ErrorDetails.class, com.appscode.api.dtypes.ErrorDetails.Builder.class);
   }
 
-  public static final int REQUESTED_RESOURCE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object requestedResource_;
+  public interface StackTraceOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.dtypes.ErrorDetails.StackTrace)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    java.util.List<java.lang.String>
+        getFramesList();
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    int getFramesCount();
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    java.lang.String getFrames(int index);
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getFramesBytes(int index);
+  }
   /**
-   * <code>string requested_resource = 1;</code>
+   * Protobuf type {@code appscode.dtypes.ErrorDetails.StackTrace}
    */
-  public java.lang.String getRequestedResource() {
-    java.lang.Object ref = requestedResource_;
+  public  static final class StackTrace extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.dtypes.ErrorDetails.StackTrace)
+      StackTraceOrBuilder {
+    // Use StackTrace.newBuilder() to construct.
+    private StackTrace(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private StackTrace() {
+      frames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private StackTrace(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                frames_ = new com.google.protobuf.LazyStringArrayList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              frames_.add(s);
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          frames_ = frames_.getUnmodifiableView();
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.dtypes.TypeProto.internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.dtypes.TypeProto.internal_static_appscode_dtypes_ErrorDetails_StackTrace_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.dtypes.ErrorDetails.StackTrace.class, com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder.class);
+    }
+
+    public static final int FRAMES_FIELD_NUMBER = 1;
+    private com.google.protobuf.LazyStringList frames_;
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    public com.google.protobuf.ProtocolStringList
+        getFramesList() {
+      return frames_;
+    }
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    public int getFramesCount() {
+      return frames_.size();
+    }
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    public java.lang.String getFrames(int index) {
+      return frames_.get(index);
+    }
+    /**
+     * <code>repeated string frames = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getFramesBytes(int index) {
+      return frames_.getByteString(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < frames_.size(); i++) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, frames_.getRaw(i));
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < frames_.size(); i++) {
+          dataSize += computeStringSizeNoTag(frames_.getRaw(i));
+        }
+        size += dataSize;
+        size += 1 * getFramesList().size();
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.dtypes.ErrorDetails.StackTrace)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.dtypes.ErrorDetails.StackTrace other = (com.appscode.api.dtypes.ErrorDetails.StackTrace) obj;
+
+      boolean result = true;
+      result = result && getFramesList()
+          .equals(other.getFramesList());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getFramesCount() > 0) {
+        hash = (37 * hash) + FRAMES_FIELD_NUMBER;
+        hash = (53 * hash) + getFramesList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.dtypes.ErrorDetails.StackTrace prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.dtypes.ErrorDetails.StackTrace}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.dtypes.ErrorDetails.StackTrace)
+        com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.dtypes.TypeProto.internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.dtypes.TypeProto.internal_static_appscode_dtypes_ErrorDetails_StackTrace_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.dtypes.ErrorDetails.StackTrace.class, com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder.class);
+      }
+
+      // Construct using com.appscode.api.dtypes.ErrorDetails.StackTrace.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        frames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.dtypes.TypeProto.internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor;
+      }
+
+      public com.appscode.api.dtypes.ErrorDetails.StackTrace getDefaultInstanceForType() {
+        return com.appscode.api.dtypes.ErrorDetails.StackTrace.getDefaultInstance();
+      }
+
+      public com.appscode.api.dtypes.ErrorDetails.StackTrace build() {
+        com.appscode.api.dtypes.ErrorDetails.StackTrace result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.dtypes.ErrorDetails.StackTrace buildPartial() {
+        com.appscode.api.dtypes.ErrorDetails.StackTrace result = new com.appscode.api.dtypes.ErrorDetails.StackTrace(this);
+        int from_bitField0_ = bitField0_;
+        if (((bitField0_ & 0x00000001) == 0x00000001)) {
+          frames_ = frames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.frames_ = frames_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.dtypes.ErrorDetails.StackTrace) {
+          return mergeFrom((com.appscode.api.dtypes.ErrorDetails.StackTrace)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.dtypes.ErrorDetails.StackTrace other) {
+        if (other == com.appscode.api.dtypes.ErrorDetails.StackTrace.getDefaultInstance()) return this;
+        if (!other.frames_.isEmpty()) {
+          if (frames_.isEmpty()) {
+            frames_ = other.frames_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureFramesIsMutable();
+            frames_.addAll(other.frames_);
+          }
+          onChanged();
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.dtypes.ErrorDetails.StackTrace parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.dtypes.ErrorDetails.StackTrace) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private com.google.protobuf.LazyStringList frames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      private void ensureFramesIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          frames_ = new com.google.protobuf.LazyStringArrayList(frames_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public com.google.protobuf.ProtocolStringList
+          getFramesList() {
+        return frames_.getUnmodifiableView();
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public int getFramesCount() {
+        return frames_.size();
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public java.lang.String getFrames(int index) {
+        return frames_.get(index);
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getFramesBytes(int index) {
+        return frames_.getByteString(index);
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public Builder setFrames(
+          int index, java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFramesIsMutable();
+        frames_.set(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public Builder addFrames(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  ensureFramesIsMutable();
+        frames_.add(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public Builder addAllFrames(
+          java.lang.Iterable<java.lang.String> values) {
+        ensureFramesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, frames_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public Builder clearFrames() {
+        frames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated string frames = 1;</code>
+       */
+      public Builder addFramesBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        ensureFramesIsMutable();
+        frames_.add(value);
+        onChanged();
+        return this;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.dtypes.ErrorDetails.StackTrace)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.dtypes.ErrorDetails.StackTrace)
+    private static final com.appscode.api.dtypes.ErrorDetails.StackTrace DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.dtypes.ErrorDetails.StackTrace();
+    }
+
+    public static com.appscode.api.dtypes.ErrorDetails.StackTrace getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<StackTrace>
+        PARSER = new com.google.protobuf.AbstractParser<StackTrace>() {
+      public StackTrace parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new StackTrace(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<StackTrace> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<StackTrace> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.dtypes.ErrorDetails.StackTrace getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public static final int CAUSE_FIELD_NUMBER = 1;
+  private volatile java.lang.Object cause_;
+  /**
+   * <code>string cause = 1;</code>
+   */
+  public java.lang.String getCause() {
+    java.lang.Object ref = cause_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      requestedResource_ = s;
+      cause_ = s;
       return s;
     }
   }
   /**
-   * <code>string requested_resource = 1;</code>
+   * <code>string cause = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getRequestedResourceBytes() {
-    java.lang.Object ref = requestedResource_;
+      getCauseBytes() {
+    java.lang.Object ref = cause_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      requestedResource_ = b;
+      cause_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int STACKTRACE_FIELD_NUMBER = 2;
-  private volatile java.lang.Object stacktrace_;
+  public static final int STACK_TRACE_FIELD_NUMBER = 2;
+  private com.appscode.api.dtypes.ErrorDetails.StackTrace stackTrace_;
   /**
-   * <code>string stacktrace = 2;</code>
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
    */
-  public java.lang.String getStacktrace() {
-    java.lang.Object ref = stacktrace_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      stacktrace_ = s;
-      return s;
-    }
+  public boolean hasStackTrace() {
+    return stackTrace_ != null;
   }
   /**
-   * <code>string stacktrace = 2;</code>
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
    */
-  public com.google.protobuf.ByteString
-      getStacktraceBytes() {
-    java.lang.Object ref = stacktrace_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      stacktrace_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public com.appscode.api.dtypes.ErrorDetails.StackTrace getStackTrace() {
+    return stackTrace_ == null ? com.appscode.api.dtypes.ErrorDetails.StackTrace.getDefaultInstance() : stackTrace_;
+  }
+  /**
+   * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+   */
+  public com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder getStackTraceOrBuilder() {
+    return getStackTrace();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -164,11 +725,11 @@ public  final class ErrorDetails extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getRequestedResourceBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, requestedResource_);
+    if (!getCauseBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, cause_);
     }
-    if (!getStacktraceBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, stacktrace_);
+    if (stackTrace_ != null) {
+      output.writeMessage(2, getStackTrace());
     }
   }
 
@@ -177,11 +738,12 @@ public  final class ErrorDetails extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getRequestedResourceBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, requestedResource_);
+    if (!getCauseBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, cause_);
     }
-    if (!getStacktraceBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, stacktrace_);
+    if (stackTrace_ != null) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(2, getStackTrace());
     }
     memoizedSize = size;
     return size;
@@ -199,10 +761,13 @@ public  final class ErrorDetails extends
     com.appscode.api.dtypes.ErrorDetails other = (com.appscode.api.dtypes.ErrorDetails) obj;
 
     boolean result = true;
-    result = result && getRequestedResource()
-        .equals(other.getRequestedResource());
-    result = result && getStacktrace()
-        .equals(other.getStacktrace());
+    result = result && getCause()
+        .equals(other.getCause());
+    result = result && (hasStackTrace() == other.hasStackTrace());
+    if (hasStackTrace()) {
+      result = result && getStackTrace()
+          .equals(other.getStackTrace());
+    }
     return result;
   }
 
@@ -213,10 +778,12 @@ public  final class ErrorDetails extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + REQUESTED_RESOURCE_FIELD_NUMBER;
-    hash = (53 * hash) + getRequestedResource().hashCode();
-    hash = (37 * hash) + STACKTRACE_FIELD_NUMBER;
-    hash = (53 * hash) + getStacktrace().hashCode();
+    hash = (37 * hash) + CAUSE_FIELD_NUMBER;
+    hash = (53 * hash) + getCause().hashCode();
+    if (hasStackTrace()) {
+      hash = (37 * hash) + STACK_TRACE_FIELD_NUMBER;
+      hash = (53 * hash) + getStackTrace().hashCode();
+    }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -351,10 +918,14 @@ public  final class ErrorDetails extends
     }
     public Builder clear() {
       super.clear();
-      requestedResource_ = "";
+      cause_ = "";
 
-      stacktrace_ = "";
-
+      if (stackTraceBuilder_ == null) {
+        stackTrace_ = null;
+      } else {
+        stackTrace_ = null;
+        stackTraceBuilder_ = null;
+      }
       return this;
     }
 
@@ -377,8 +948,12 @@ public  final class ErrorDetails extends
 
     public com.appscode.api.dtypes.ErrorDetails buildPartial() {
       com.appscode.api.dtypes.ErrorDetails result = new com.appscode.api.dtypes.ErrorDetails(this);
-      result.requestedResource_ = requestedResource_;
-      result.stacktrace_ = stacktrace_;
+      result.cause_ = cause_;
+      if (stackTraceBuilder_ == null) {
+        result.stackTrace_ = stackTrace_;
+      } else {
+        result.stackTrace_ = stackTraceBuilder_.build();
+      }
       onBuilt();
       return result;
     }
@@ -420,13 +995,12 @@ public  final class ErrorDetails extends
 
     public Builder mergeFrom(com.appscode.api.dtypes.ErrorDetails other) {
       if (other == com.appscode.api.dtypes.ErrorDetails.getDefaultInstance()) return this;
-      if (!other.getRequestedResource().isEmpty()) {
-        requestedResource_ = other.requestedResource_;
+      if (!other.getCause().isEmpty()) {
+        cause_ = other.cause_;
         onChanged();
       }
-      if (!other.getStacktrace().isEmpty()) {
-        stacktrace_ = other.stacktrace_;
-        onChanged();
+      if (other.hasStackTrace()) {
+        mergeStackTrace(other.getStackTrace());
       }
       onChanged();
       return this;
@@ -454,142 +1028,190 @@ public  final class ErrorDetails extends
       return this;
     }
 
-    private java.lang.Object requestedResource_ = "";
+    private java.lang.Object cause_ = "";
     /**
-     * <code>string requested_resource = 1;</code>
+     * <code>string cause = 1;</code>
      */
-    public java.lang.String getRequestedResource() {
-      java.lang.Object ref = requestedResource_;
+    public java.lang.String getCause() {
+      java.lang.Object ref = cause_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        requestedResource_ = s;
+        cause_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string requested_resource = 1;</code>
+     * <code>string cause = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getRequestedResourceBytes() {
-      java.lang.Object ref = requestedResource_;
+        getCauseBytes() {
+      java.lang.Object ref = cause_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        requestedResource_ = b;
+        cause_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string requested_resource = 1;</code>
+     * <code>string cause = 1;</code>
      */
-    public Builder setRequestedResource(
+    public Builder setCause(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      requestedResource_ = value;
+      cause_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string requested_resource = 1;</code>
+     * <code>string cause = 1;</code>
      */
-    public Builder clearRequestedResource() {
+    public Builder clearCause() {
       
-      requestedResource_ = getDefaultInstance().getRequestedResource();
+      cause_ = getDefaultInstance().getCause();
       onChanged();
       return this;
     }
     /**
-     * <code>string requested_resource = 1;</code>
+     * <code>string cause = 1;</code>
      */
-    public Builder setRequestedResourceBytes(
+    public Builder setCauseBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      requestedResource_ = value;
+      cause_ = value;
       onChanged();
       return this;
     }
 
-    private java.lang.Object stacktrace_ = "";
+    private com.appscode.api.dtypes.ErrorDetails.StackTrace stackTrace_ = null;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.dtypes.ErrorDetails.StackTrace, com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder, com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder> stackTraceBuilder_;
     /**
-     * <code>string stacktrace = 2;</code>
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
      */
-    public java.lang.String getStacktrace() {
-      java.lang.Object ref = stacktrace_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        stacktrace_ = s;
-        return s;
+    public boolean hasStackTrace() {
+      return stackTraceBuilder_ != null || stackTrace_ != null;
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public com.appscode.api.dtypes.ErrorDetails.StackTrace getStackTrace() {
+      if (stackTraceBuilder_ == null) {
+        return stackTrace_ == null ? com.appscode.api.dtypes.ErrorDetails.StackTrace.getDefaultInstance() : stackTrace_;
       } else {
-        return (java.lang.String) ref;
+        return stackTraceBuilder_.getMessage();
       }
     }
     /**
-     * <code>string stacktrace = 2;</code>
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getStacktraceBytes() {
-      java.lang.Object ref = stacktrace_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        stacktrace_ = b;
-        return b;
+    public Builder setStackTrace(com.appscode.api.dtypes.ErrorDetails.StackTrace value) {
+      if (stackTraceBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        stackTrace_ = value;
+        onChanged();
       } else {
-        return (com.google.protobuf.ByteString) ref;
+        stackTraceBuilder_.setMessage(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public Builder setStackTrace(
+        com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder builderForValue) {
+      if (stackTraceBuilder_ == null) {
+        stackTrace_ = builderForValue.build();
+        onChanged();
+      } else {
+        stackTraceBuilder_.setMessage(builderForValue.build());
+      }
+
+      return this;
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public Builder mergeStackTrace(com.appscode.api.dtypes.ErrorDetails.StackTrace value) {
+      if (stackTraceBuilder_ == null) {
+        if (stackTrace_ != null) {
+          stackTrace_ =
+            com.appscode.api.dtypes.ErrorDetails.StackTrace.newBuilder(stackTrace_).mergeFrom(value).buildPartial();
+        } else {
+          stackTrace_ = value;
+        }
+        onChanged();
+      } else {
+        stackTraceBuilder_.mergeFrom(value);
+      }
+
+      return this;
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public Builder clearStackTrace() {
+      if (stackTraceBuilder_ == null) {
+        stackTrace_ = null;
+        onChanged();
+      } else {
+        stackTrace_ = null;
+        stackTraceBuilder_ = null;
+      }
+
+      return this;
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder getStackTraceBuilder() {
+      
+      onChanged();
+      return getStackTraceFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
+     */
+    public com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder getStackTraceOrBuilder() {
+      if (stackTraceBuilder_ != null) {
+        return stackTraceBuilder_.getMessageOrBuilder();
+      } else {
+        return stackTrace_ == null ?
+            com.appscode.api.dtypes.ErrorDetails.StackTrace.getDefaultInstance() : stackTrace_;
       }
     }
     /**
-     * <code>string stacktrace = 2;</code>
+     * <code>.appscode.dtypes.ErrorDetails.StackTrace stack_trace = 2;</code>
      */
-    public Builder setStacktrace(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      stacktrace_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string stacktrace = 2;</code>
-     */
-    public Builder clearStacktrace() {
-      
-      stacktrace_ = getDefaultInstance().getStacktrace();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string stacktrace = 2;</code>
-     */
-    public Builder setStacktraceBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      stacktrace_ = value;
-      onChanged();
-      return this;
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.dtypes.ErrorDetails.StackTrace, com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder, com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder> 
+        getStackTraceFieldBuilder() {
+      if (stackTraceBuilder_ == null) {
+        stackTraceBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.dtypes.ErrorDetails.StackTrace, com.appscode.api.dtypes.ErrorDetails.StackTrace.Builder, com.appscode.api.dtypes.ErrorDetails.StackTraceOrBuilder>(
+                getStackTrace(),
+                getParentForChildren(),
+                isClean());
+        stackTrace_ = null;
+      }
+      return stackTraceBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

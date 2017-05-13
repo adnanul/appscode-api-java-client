@@ -20,6 +20,11 @@ public final class TypeProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_dtypes_ErrorDetails_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_appscode_dtypes_ErrorDetails_StackTrace_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_dtypes_LongRunningResponse_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -49,13 +54,15 @@ public final class TypeProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\037appscode/api/dtypes/types.proto\022\017appsc" +
-      "ode.dtypes\032\031google/protobuf/any.proto\">\n" +
-      "\014ErrorDetails\022\032\n\022requested_resource\030\001 \001(" +
-      "\t\022\022\n\nstacktrace\030\002 \001(\t\"\'\n\023LongRunningResp" +
-      "onse\022\020\n\010job_phid\030\001 \001(\t\"\r\n\013VoidRequest\"\016\n" +
-      "\014VoidResponse\"!\n\003Uid\022\014\n\004phid\030\001 \001(\t\022\014\n\004na" +
-      "me\030\002 \001(\tB.\n\027com.appscode.api.dtypesB\tTyp" +
-      "eProtoP\001Z\006dtypesb\006proto3"
+      "ode.dtypes\032\031google/protobuf/any.proto\"z\n" +
+      "\014ErrorDetails\022\r\n\005cause\030\001 \001(\t\022=\n\013stack_tr" +
+      "ace\030\002 \001(\0132(.appscode.dtypes.ErrorDetails" +
+      ".StackTrace\032\034\n\nStackTrace\022\016\n\006frames\030\001 \003(" +
+      "\t\"\'\n\023LongRunningResponse\022\020\n\010job_phid\030\001 \001" +
+      "(\t\"\r\n\013VoidRequest\"\016\n\014VoidResponse\"!\n\003Uid" +
+      "\022\014\n\004phid\030\001 \001(\t\022\014\n\004name\030\002 \001(\tB.\n\027com.apps" +
+      "code.api.dtypesB\tTypeProtoP\001Z\006dtypesb\006pr" +
+      "oto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -75,7 +82,13 @@ public final class TypeProto {
     internal_static_appscode_dtypes_ErrorDetails_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_dtypes_ErrorDetails_descriptor,
-        new java.lang.String[] { "RequestedResource", "Stacktrace", });
+        new java.lang.String[] { "Cause", "StackTrace", });
+    internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor =
+      internal_static_appscode_dtypes_ErrorDetails_descriptor.getNestedTypes().get(0);
+    internal_static_appscode_dtypes_ErrorDetails_StackTrace_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_appscode_dtypes_ErrorDetails_StackTrace_descriptor,
+        new java.lang.String[] { "Frames", });
     internal_static_appscode_dtypes_LongRunningResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_dtypes_LongRunningResponse_fieldAccessorTable = new
