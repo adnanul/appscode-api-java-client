@@ -8,7 +8,7 @@ sourceCompatibility = '1.8'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 group = "com.appscode.api"
-version = '0.12.0'
+version = '0.12.1-SNAPSHOT'
 
 buildscript {
     repositories {
