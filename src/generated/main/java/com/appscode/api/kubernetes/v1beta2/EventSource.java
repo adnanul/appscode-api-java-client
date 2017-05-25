@@ -15,7 +15,7 @@ public  final class EventSource extends
     super(builder);
   }
   private EventSource() {
-    componenet_ = "";
+    component_ = "";
     host_ = "";
   }
 
@@ -47,7 +47,7 @@ public  final class EventSource extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            componenet_ = s;
+            component_ = s;
             break;
           }
           case 18: {
@@ -79,34 +79,34 @@ public  final class EventSource extends
             com.appscode.api.kubernetes.v1beta2.EventSource.class, com.appscode.api.kubernetes.v1beta2.EventSource.Builder.class);
   }
 
-  public static final int COMPONENET_FIELD_NUMBER = 1;
-  private volatile java.lang.Object componenet_;
+  public static final int COMPONENT_FIELD_NUMBER = 1;
+  private volatile java.lang.Object component_;
   /**
-   * <code>string componenet = 1;</code>
+   * <code>string component = 1;</code>
    */
-  public java.lang.String getComponenet() {
-    java.lang.Object ref = componenet_;
+  public java.lang.String getComponent() {
+    java.lang.Object ref = component_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      componenet_ = s;
+      component_ = s;
       return s;
     }
   }
   /**
-   * <code>string componenet = 1;</code>
+   * <code>string component = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getComponenetBytes() {
-    java.lang.Object ref = componenet_;
+      getComponentBytes() {
+    java.lang.Object ref = component_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      componenet_ = b;
+      component_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -159,8 +159,8 @@ public  final class EventSource extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getComponenetBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, componenet_);
+    if (!getComponentBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, component_);
     }
     if (!getHostBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, host_);
@@ -172,8 +172,8 @@ public  final class EventSource extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getComponenetBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, componenet_);
+    if (!getComponentBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, component_);
     }
     if (!getHostBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, host_);
@@ -194,8 +194,8 @@ public  final class EventSource extends
     com.appscode.api.kubernetes.v1beta2.EventSource other = (com.appscode.api.kubernetes.v1beta2.EventSource) obj;
 
     boolean result = true;
-    result = result && getComponenet()
-        .equals(other.getComponenet());
+    result = result && getComponent()
+        .equals(other.getComponent());
     result = result && getHost()
         .equals(other.getHost());
     return result;
@@ -208,8 +208,8 @@ public  final class EventSource extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + COMPONENET_FIELD_NUMBER;
-    hash = (53 * hash) + getComponenet().hashCode();
+    hash = (37 * hash) + COMPONENT_FIELD_NUMBER;
+    hash = (53 * hash) + getComponent().hashCode();
     hash = (37 * hash) + HOST_FIELD_NUMBER;
     hash = (53 * hash) + getHost().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -341,7 +341,7 @@ public  final class EventSource extends
     }
     public Builder clear() {
       super.clear();
-      componenet_ = "";
+      component_ = "";
 
       host_ = "";
 
@@ -367,7 +367,7 @@ public  final class EventSource extends
 
     public com.appscode.api.kubernetes.v1beta2.EventSource buildPartial() {
       com.appscode.api.kubernetes.v1beta2.EventSource result = new com.appscode.api.kubernetes.v1beta2.EventSource(this);
-      result.componenet_ = componenet_;
+      result.component_ = component_;
       result.host_ = host_;
       onBuilt();
       return result;
@@ -410,8 +410,8 @@ public  final class EventSource extends
 
     public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.EventSource other) {
       if (other == com.appscode.api.kubernetes.v1beta2.EventSource.getDefaultInstance()) return this;
-      if (!other.getComponenet().isEmpty()) {
-        componenet_ = other.componenet_;
+      if (!other.getComponent().isEmpty()) {
+        component_ = other.component_;
         onChanged();
       }
       if (!other.getHost().isEmpty()) {
@@ -444,71 +444,71 @@ public  final class EventSource extends
       return this;
     }
 
-    private java.lang.Object componenet_ = "";
+    private java.lang.Object component_ = "";
     /**
-     * <code>string componenet = 1;</code>
+     * <code>string component = 1;</code>
      */
-    public java.lang.String getComponenet() {
-      java.lang.Object ref = componenet_;
+    public java.lang.String getComponent() {
+      java.lang.Object ref = component_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        componenet_ = s;
+        component_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string componenet = 1;</code>
+     * <code>string component = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getComponenetBytes() {
-      java.lang.Object ref = componenet_;
+        getComponentBytes() {
+      java.lang.Object ref = component_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        componenet_ = b;
+        component_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string componenet = 1;</code>
+     * <code>string component = 1;</code>
      */
-    public Builder setComponenet(
+    public Builder setComponent(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      componenet_ = value;
+      component_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string componenet = 1;</code>
+     * <code>string component = 1;</code>
      */
-    public Builder clearComponenet() {
+    public Builder clearComponent() {
       
-      componenet_ = getDefaultInstance().getComponenet();
+      component_ = getDefaultInstance().getComponent();
       onChanged();
       return this;
     }
     /**
-     * <code>string componenet = 1;</code>
+     * <code>string component = 1;</code>
      */
-    public Builder setComponenetBytes(
+    public Builder setComponentBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      componenet_ = value;
+      component_ = value;
       onChanged();
       return this;
     }

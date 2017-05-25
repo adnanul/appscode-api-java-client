@@ -18,15 +18,15 @@ public interface BackupScheduleSpecOrBuilder extends
       getCronExpressionBytes();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  boolean hasSnapshotSpec();
+  boolean hasSnapshotStorageSpec();
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec();
+  com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec();
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder();
 }

@@ -4,17 +4,17 @@
 package com.appscode.api.kubernetes.v1beta2;
 
 /**
- * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase}
+ * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot}
  */
-public  final class DeletedDatabase extends
+public  final class Snapshot extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.DeletedDatabase)
-    DeletedDatabaseOrBuilder {
-  // Use DeletedDatabase.newBuilder() to construct.
-  private DeletedDatabase(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Snapshot)
+    SnapshotOrBuilder {
+  // Use Snapshot.newBuilder() to construct.
+  private Snapshot(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private DeletedDatabase() {
+  private Snapshot() {
   }
 
   @java.lang.Override
@@ -22,7 +22,7 @@ public  final class DeletedDatabase extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private DeletedDatabase(
+  private Snapshot(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -56,11 +56,11 @@ public  final class DeletedDatabase extends
             break;
           }
           case 18: {
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder subBuilder = null;
             if (spec_ != null) {
               subBuilder = spec_.toBuilder();
             }
-            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.parser(), extensionRegistry);
+            spec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(spec_);
               spec_ = subBuilder.buildPartial();
@@ -69,11 +69,11 @@ public  final class DeletedDatabase extends
             break;
           }
           case 26: {
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder subBuilder = null;
             if (status_ != null) {
               subBuilder = status_.toBuilder();
             }
-            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.parser(), extensionRegistry);
+            status_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Snapshot.Status.parser(), extensionRegistry);
             if (subBuilder != null) {
               subBuilder.mergeFrom(status_);
               status_ = subBuilder.buildPartial();
@@ -94,57 +94,56 @@ public  final class DeletedDatabase extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_descriptor;
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_fieldAccessorTable
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder.class);
+            com.appscode.api.kubernetes.v1beta2.Snapshot.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder.class);
   }
 
   public interface SpecOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.DeletedDatabase.Spec)
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Snapshot.Spec)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool wipe_out = 1;</code>
+     * <code>string database_name = 1;</code>
      */
-    boolean getWipeOut();
+    java.lang.String getDatabaseName();
+    /**
+     * <code>string database_name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getDatabaseNameBytes();
 
     /**
-     * <code>bool recover = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    boolean getRecover();
-
+    boolean hasSnapshotStorageSpec();
     /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    boolean hasOrigin();
+    com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec();
     /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.Origin getOrigin();
-    /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
-     */
-    com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder();
+    com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder();
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Spec}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot.Spec}
    */
   public  static final class Spec extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.DeletedDatabase.Spec)
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Snapshot.Spec)
       SpecOrBuilder {
     // Use Spec.newBuilder() to construct.
     private Spec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
     private Spec() {
-      wipeOut_ = false;
-      recover_ = false;
+      databaseName_ = "";
     }
 
     @java.lang.Override
@@ -172,25 +171,21 @@ public  final class DeletedDatabase extends
               }
               break;
             }
-            case 8: {
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              wipeOut_ = input.readBool();
+              databaseName_ = s;
               break;
             }
-            case 16: {
-
-              recover_ = input.readBool();
-              break;
-            }
-            case 26: {
-              com.appscode.api.kubernetes.v1beta2.Origin.Builder subBuilder = null;
-              if (origin_ != null) {
-                subBuilder = origin_.toBuilder();
+            case 18: {
+              com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder subBuilder = null;
+              if (snapshotStorageSpec_ != null) {
+                subBuilder = snapshotStorageSpec_.toBuilder();
               }
-              origin_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.Origin.parser(), extensionRegistry);
+              snapshotStorageSpec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(origin_);
-                origin_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(snapshotStorageSpec_);
+                snapshotStorageSpec_ = subBuilder.buildPartial();
               }
 
               break;
@@ -208,53 +203,69 @@ public  final class DeletedDatabase extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Spec_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Spec_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Spec_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Spec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder.class);
     }
 
-    public static final int WIPE_OUT_FIELD_NUMBER = 1;
-    private boolean wipeOut_;
+    public static final int DATABASE_NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object databaseName_;
     /**
-     * <code>bool wipe_out = 1;</code>
+     * <code>string database_name = 1;</code>
      */
-    public boolean getWipeOut() {
-      return wipeOut_;
+    public java.lang.String getDatabaseName() {
+      java.lang.Object ref = databaseName_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        databaseName_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string database_name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getDatabaseNameBytes() {
+      java.lang.Object ref = databaseName_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        databaseName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
-    public static final int RECOVER_FIELD_NUMBER = 2;
-    private boolean recover_;
+    public static final int SNAPSHOT_STORAGE_SPEC_FIELD_NUMBER = 2;
+    private com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec snapshotStorageSpec_;
     /**
-     * <code>bool recover = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public boolean getRecover() {
-      return recover_;
-    }
-
-    public static final int ORIGIN_FIELD_NUMBER = 3;
-    private com.appscode.api.kubernetes.v1beta2.Origin origin_;
-    /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
-     */
-    public boolean hasOrigin() {
-      return origin_ != null;
+    public boolean hasSnapshotStorageSpec() {
+      return snapshotStorageSpec_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.Origin getOrigin() {
-      return origin_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec() {
+      return snapshotStorageSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder() {
-      return getOrigin();
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder() {
+      return getSnapshotStorageSpec();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -269,14 +280,11 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (wipeOut_ != false) {
-        output.writeBool(1, wipeOut_);
+      if (!getDatabaseNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, databaseName_);
       }
-      if (recover_ != false) {
-        output.writeBool(2, recover_);
-      }
-      if (origin_ != null) {
-        output.writeMessage(3, getOrigin());
+      if (snapshotStorageSpec_ != null) {
+        output.writeMessage(2, getSnapshotStorageSpec());
       }
     }
 
@@ -285,17 +293,12 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (wipeOut_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, wipeOut_);
+      if (!getDatabaseNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, databaseName_);
       }
-      if (recover_ != false) {
+      if (snapshotStorageSpec_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, recover_);
-      }
-      if (origin_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getOrigin());
+          .computeMessageSize(2, getSnapshotStorageSpec());
       }
       memoizedSize = size;
       return size;
@@ -307,20 +310,18 @@ public  final class DeletedDatabase extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Snapshot.Spec)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec) obj;
+      com.appscode.api.kubernetes.v1beta2.Snapshot.Spec other = (com.appscode.api.kubernetes.v1beta2.Snapshot.Spec) obj;
 
       boolean result = true;
-      result = result && (getWipeOut()
-          == other.getWipeOut());
-      result = result && (getRecover()
-          == other.getRecover());
-      result = result && (hasOrigin() == other.hasOrigin());
-      if (hasOrigin()) {
-        result = result && getOrigin()
-            .equals(other.getOrigin());
+      result = result && getDatabaseName()
+          .equals(other.getDatabaseName());
+      result = result && (hasSnapshotStorageSpec() == other.hasSnapshotStorageSpec());
+      if (hasSnapshotStorageSpec()) {
+        result = result && getSnapshotStorageSpec()
+            .equals(other.getSnapshotStorageSpec());
       }
       return result;
     }
@@ -332,84 +333,80 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + WIPE_OUT_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getWipeOut());
-      hash = (37 * hash) + RECOVER_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getRecover());
-      if (hasOrigin()) {
-        hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
-        hash = (53 * hash) + getOrigin().hashCode();
+      hash = (37 * hash) + DATABASE_NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getDatabaseName().hashCode();
+      if (hasSnapshotStorageSpec()) {
+        hash = (37 * hash) + SNAPSHOT_STORAGE_SPEC_FIELD_NUMBER;
+        hash = (53 * hash) + getSnapshotStorageSpec().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -421,7 +418,7 @@ public  final class DeletedDatabase extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Snapshot.Spec prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -436,25 +433,25 @@ public  final class DeletedDatabase extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Spec}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot.Spec}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.DeletedDatabase.Spec)
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Snapshot.Spec)
+        com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Spec_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Spec_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Spec_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Spec_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -471,44 +468,41 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        wipeOut_ = false;
+        databaseName_ = "";
 
-        recover_ = false;
-
-        if (originBuilder_ == null) {
-          origin_ = null;
+        if (snapshotStorageSpecBuilder_ == null) {
+          snapshotStorageSpec_ = null;
         } else {
-          origin_ = null;
-          originBuilder_ = null;
+          snapshotStorageSpec_ = null;
+          snapshotStorageSpecBuilder_ = null;
         }
         return this;
       }
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Spec_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Spec_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec build() {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec build() {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec(this);
-        result.wipeOut_ = wipeOut_;
-        result.recover_ = recover_;
-        if (originBuilder_ == null) {
-          result.origin_ = origin_;
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec result = new com.appscode.api.kubernetes.v1beta2.Snapshot.Spec(this);
+        result.databaseName_ = databaseName_;
+        if (snapshotStorageSpecBuilder_ == null) {
+          result.snapshotStorageSpec_ = snapshotStorageSpec_;
         } else {
-          result.origin_ = originBuilder_.build();
+          result.snapshotStorageSpec_ = snapshotStorageSpecBuilder_.build();
         }
         onBuilt();
         return result;
@@ -541,24 +535,22 @@ public  final class DeletedDatabase extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Snapshot.Spec) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Snapshot.Spec)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance()) return this;
-        if (other.getWipeOut() != false) {
-          setWipeOut(other.getWipeOut());
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Snapshot.Spec other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.getDefaultInstance()) return this;
+        if (!other.getDatabaseName().isEmpty()) {
+          databaseName_ = other.databaseName_;
+          onChanged();
         }
-        if (other.getRecover() != false) {
-          setRecover(other.getRecover());
-        }
-        if (other.hasOrigin()) {
-          mergeOrigin(other.getOrigin());
+        if (other.hasSnapshotStorageSpec()) {
+          mergeSnapshotStorageSpec(other.getSnapshotStorageSpec());
         }
         onChanged();
         return this;
@@ -572,11 +564,11 @@ public  final class DeletedDatabase extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Snapshot.Spec) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -586,173 +578,190 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private boolean wipeOut_ ;
+      private java.lang.Object databaseName_ = "";
       /**
-       * <code>bool wipe_out = 1;</code>
+       * <code>string database_name = 1;</code>
        */
-      public boolean getWipeOut() {
-        return wipeOut_;
-      }
-      /**
-       * <code>bool wipe_out = 1;</code>
-       */
-      public Builder setWipeOut(boolean value) {
-        
-        wipeOut_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool wipe_out = 1;</code>
-       */
-      public Builder clearWipeOut() {
-        
-        wipeOut_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean recover_ ;
-      /**
-       * <code>bool recover = 2;</code>
-       */
-      public boolean getRecover() {
-        return recover_;
-      }
-      /**
-       * <code>bool recover = 2;</code>
-       */
-      public Builder setRecover(boolean value) {
-        
-        recover_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool recover = 2;</code>
-       */
-      public Builder clearRecover() {
-        
-        recover_ = false;
-        onChanged();
-        return this;
-      }
-
-      private com.appscode.api.kubernetes.v1beta2.Origin origin_ = null;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder> originBuilder_;
-      /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
-       */
-      public boolean hasOrigin() {
-        return originBuilder_ != null || origin_ != null;
-      }
-      /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
-       */
-      public com.appscode.api.kubernetes.v1beta2.Origin getOrigin() {
-        if (originBuilder_ == null) {
-          return origin_ == null ? com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
+      public java.lang.String getDatabaseName() {
+        java.lang.Object ref = databaseName_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          databaseName_ = s;
+          return s;
         } else {
-          return originBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>string database_name = 1;</code>
        */
-      public Builder setOrigin(com.appscode.api.kubernetes.v1beta2.Origin value) {
-        if (originBuilder_ == null) {
+      public com.google.protobuf.ByteString
+          getDatabaseNameBytes() {
+        java.lang.Object ref = databaseName_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          databaseName_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string database_name = 1;</code>
+       */
+      public Builder setDatabaseName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        databaseName_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string database_name = 1;</code>
+       */
+      public Builder clearDatabaseName() {
+        
+        databaseName_ = getDefaultInstance().getDatabaseName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string database_name = 1;</code>
+       */
+      public Builder setDatabaseNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        databaseName_ = value;
+        onChanged();
+        return this;
+      }
+
+      private com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec snapshotStorageSpec_ = null;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder> snapshotStorageSpecBuilder_;
+      /**
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
+       */
+      public boolean hasSnapshotStorageSpec() {
+        return snapshotStorageSpecBuilder_ != null || snapshotStorageSpec_ != null;
+      }
+      /**
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec() {
+        if (snapshotStorageSpecBuilder_ == null) {
+          return snapshotStorageSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
+        } else {
+          return snapshotStorageSpecBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
+       */
+      public Builder setSnapshotStorageSpec(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec value) {
+        if (snapshotStorageSpecBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          origin_ = value;
+          snapshotStorageSpec_ = value;
           onChanged();
         } else {
-          originBuilder_.setMessage(value);
+          snapshotStorageSpecBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
-      public Builder setOrigin(
-          com.appscode.api.kubernetes.v1beta2.Origin.Builder builderForValue) {
-        if (originBuilder_ == null) {
-          origin_ = builderForValue.build();
+      public Builder setSnapshotStorageSpec(
+          com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder builderForValue) {
+        if (snapshotStorageSpecBuilder_ == null) {
+          snapshotStorageSpec_ = builderForValue.build();
           onChanged();
         } else {
-          originBuilder_.setMessage(builderForValue.build());
+          snapshotStorageSpecBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
-      public Builder mergeOrigin(com.appscode.api.kubernetes.v1beta2.Origin value) {
-        if (originBuilder_ == null) {
-          if (origin_ != null) {
-            origin_ =
-              com.appscode.api.kubernetes.v1beta2.Origin.newBuilder(origin_).mergeFrom(value).buildPartial();
+      public Builder mergeSnapshotStorageSpec(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec value) {
+        if (snapshotStorageSpecBuilder_ == null) {
+          if (snapshotStorageSpec_ != null) {
+            snapshotStorageSpec_ =
+              com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.newBuilder(snapshotStorageSpec_).mergeFrom(value).buildPartial();
           } else {
-            origin_ = value;
+            snapshotStorageSpec_ = value;
           }
           onChanged();
         } else {
-          originBuilder_.mergeFrom(value);
+          snapshotStorageSpecBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
-      public Builder clearOrigin() {
-        if (originBuilder_ == null) {
-          origin_ = null;
+      public Builder clearSnapshotStorageSpec() {
+        if (snapshotStorageSpecBuilder_ == null) {
+          snapshotStorageSpec_ = null;
           onChanged();
         } else {
-          origin_ = null;
-          originBuilder_ = null;
+          snapshotStorageSpec_ = null;
+          snapshotStorageSpecBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.Origin.Builder getOriginBuilder() {
+      public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder getSnapshotStorageSpecBuilder() {
         
         onChanged();
-        return getOriginFieldBuilder().getBuilder();
+        return getSnapshotStorageSpecFieldBuilder().getBuilder();
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.OriginOrBuilder getOriginOrBuilder() {
-        if (originBuilder_ != null) {
-          return originBuilder_.getMessageOrBuilder();
+      public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder() {
+        if (snapshotStorageSpecBuilder_ != null) {
+          return snapshotStorageSpecBuilder_.getMessageOrBuilder();
         } else {
-          return origin_ == null ?
-              com.appscode.api.kubernetes.v1beta2.Origin.getDefaultInstance() : origin_;
+          return snapshotStorageSpec_ == null ?
+              com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
         }
       }
       /**
-       * <code>.appscode.kubernetes.v1beta2.Origin origin = 3;</code>
+       * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder> 
-          getOriginFieldBuilder() {
-        if (originBuilder_ == null) {
-          originBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.appscode.api.kubernetes.v1beta2.Origin, com.appscode.api.kubernetes.v1beta2.Origin.Builder, com.appscode.api.kubernetes.v1beta2.OriginOrBuilder>(
-                  getOrigin(),
+          com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder> 
+          getSnapshotStorageSpecFieldBuilder() {
+        if (snapshotStorageSpecBuilder_ == null) {
+          snapshotStorageSpecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder>(
+                  getSnapshotStorageSpec(),
                   getParentForChildren(),
                   isClean());
-          origin_ = null;
+          snapshotStorageSpec_ = null;
         }
-        return originBuilder_;
+        return snapshotStorageSpecBuilder_;
       }
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -765,16 +774,16 @@ public  final class DeletedDatabase extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.DeletedDatabase.Spec)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Snapshot.Spec)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.DeletedDatabase.Spec)
-    private static final com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Snapshot.Spec)
+    private static final com.appscode.api.kubernetes.v1beta2.Snapshot.Spec DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Snapshot.Spec();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Spec getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -797,66 +806,60 @@ public  final class DeletedDatabase extends
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   public interface StatusOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.DeletedDatabase.Status)
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.Snapshot.Status)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int64 creation_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
-    long getCreationTime();
+    long getStartTime();
 
     /**
-     * <code>int64 deletion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
-    long getDeletionTime();
+    long getCompletionTime();
 
     /**
-     * <code>int64 wipe_out_time = 3;</code>
-     */
-    long getWipeOutTime();
-
-    /**
-     * <code>string phase = 4;</code>
+     * <code>string phase = 3;</code>
      */
     java.lang.String getPhase();
     /**
-     * <code>string phase = 4;</code>
+     * <code>string phase = 3;</code>
      */
     com.google.protobuf.ByteString
         getPhaseBytes();
 
     /**
-     * <code>string reason = 5;</code>
+     * <code>string reason = 4;</code>
      */
     java.lang.String getReason();
     /**
-     * <code>string reason = 5;</code>
+     * <code>string reason = 4;</code>
      */
     com.google.protobuf.ByteString
         getReasonBytes();
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Status}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot.Status}
    */
   public  static final class Status extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.DeletedDatabase.Status)
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.Snapshot.Status)
       StatusOrBuilder {
     // Use Status.newBuilder() to construct.
     private Status(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
     private Status() {
-      creationTime_ = 0L;
-      deletionTime_ = 0L;
-      wipeOutTime_ = 0L;
+      startTime_ = 0L;
+      completionTime_ = 0L;
       phase_ = "";
       reason_ = "";
     }
@@ -888,26 +891,21 @@ public  final class DeletedDatabase extends
             }
             case 8: {
 
-              creationTime_ = input.readInt64();
+              startTime_ = input.readInt64();
               break;
             }
             case 16: {
 
-              deletionTime_ = input.readInt64();
+              completionTime_ = input.readInt64();
               break;
             }
-            case 24: {
-
-              wipeOutTime_ = input.readInt64();
-              break;
-            }
-            case 34: {
+            case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
               phase_ = s;
               break;
             }
-            case 42: {
+            case 34: {
               java.lang.String s = input.readStringRequireUtf8();
 
               reason_ = s;
@@ -926,47 +924,38 @@ public  final class DeletedDatabase extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Status_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Status_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Status_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Status_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Snapshot.Status.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder.class);
     }
 
-    public static final int CREATION_TIME_FIELD_NUMBER = 1;
-    private long creationTime_;
+    public static final int START_TIME_FIELD_NUMBER = 1;
+    private long startTime_;
     /**
-     * <code>int64 creation_time = 1;</code>
+     * <code>int64 start_time = 1;</code>
      */
-    public long getCreationTime() {
-      return creationTime_;
+    public long getStartTime() {
+      return startTime_;
     }
 
-    public static final int DELETION_TIME_FIELD_NUMBER = 2;
-    private long deletionTime_;
+    public static final int COMPLETION_TIME_FIELD_NUMBER = 2;
+    private long completionTime_;
     /**
-     * <code>int64 deletion_time = 2;</code>
+     * <code>int64 completion_time = 2;</code>
      */
-    public long getDeletionTime() {
-      return deletionTime_;
+    public long getCompletionTime() {
+      return completionTime_;
     }
 
-    public static final int WIPE_OUT_TIME_FIELD_NUMBER = 3;
-    private long wipeOutTime_;
-    /**
-     * <code>int64 wipe_out_time = 3;</code>
-     */
-    public long getWipeOutTime() {
-      return wipeOutTime_;
-    }
-
-    public static final int PHASE_FIELD_NUMBER = 4;
+    public static final int PHASE_FIELD_NUMBER = 3;
     private volatile java.lang.Object phase_;
     /**
-     * <code>string phase = 4;</code>
+     * <code>string phase = 3;</code>
      */
     public java.lang.String getPhase() {
       java.lang.Object ref = phase_;
@@ -981,7 +970,7 @@ public  final class DeletedDatabase extends
       }
     }
     /**
-     * <code>string phase = 4;</code>
+     * <code>string phase = 3;</code>
      */
     public com.google.protobuf.ByteString
         getPhaseBytes() {
@@ -997,10 +986,10 @@ public  final class DeletedDatabase extends
       }
     }
 
-    public static final int REASON_FIELD_NUMBER = 5;
+    public static final int REASON_FIELD_NUMBER = 4;
     private volatile java.lang.Object reason_;
     /**
-     * <code>string reason = 5;</code>
+     * <code>string reason = 4;</code>
      */
     public java.lang.String getReason() {
       java.lang.Object ref = reason_;
@@ -1015,7 +1004,7 @@ public  final class DeletedDatabase extends
       }
     }
     /**
-     * <code>string reason = 5;</code>
+     * <code>string reason = 4;</code>
      */
     public com.google.protobuf.ByteString
         getReasonBytes() {
@@ -1043,20 +1032,17 @@ public  final class DeletedDatabase extends
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (creationTime_ != 0L) {
-        output.writeInt64(1, creationTime_);
+      if (startTime_ != 0L) {
+        output.writeInt64(1, startTime_);
       }
-      if (deletionTime_ != 0L) {
-        output.writeInt64(2, deletionTime_);
-      }
-      if (wipeOutTime_ != 0L) {
-        output.writeInt64(3, wipeOutTime_);
+      if (completionTime_ != 0L) {
+        output.writeInt64(2, completionTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, phase_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, reason_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, reason_);
       }
     }
 
@@ -1065,23 +1051,19 @@ public  final class DeletedDatabase extends
       if (size != -1) return size;
 
       size = 0;
-      if (creationTime_ != 0L) {
+      if (startTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(1, creationTime_);
+          .computeInt64Size(1, startTime_);
       }
-      if (deletionTime_ != 0L) {
+      if (completionTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(2, deletionTime_);
-      }
-      if (wipeOutTime_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt64Size(3, wipeOutTime_);
+          .computeInt64Size(2, completionTime_);
       }
       if (!getPhaseBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, phase_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phase_);
       }
       if (!getReasonBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, reason_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, reason_);
       }
       memoizedSize = size;
       return size;
@@ -1093,18 +1075,16 @@ public  final class DeletedDatabase extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Snapshot.Status)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status) obj;
+      com.appscode.api.kubernetes.v1beta2.Snapshot.Status other = (com.appscode.api.kubernetes.v1beta2.Snapshot.Status) obj;
 
       boolean result = true;
-      result = result && (getCreationTime()
-          == other.getCreationTime());
-      result = result && (getDeletionTime()
-          == other.getDeletionTime());
-      result = result && (getWipeOutTime()
-          == other.getWipeOutTime());
+      result = result && (getStartTime()
+          == other.getStartTime());
+      result = result && (getCompletionTime()
+          == other.getCompletionTime());
       result = result && getPhase()
           .equals(other.getPhase());
       result = result && getReason()
@@ -1119,15 +1099,12 @@ public  final class DeletedDatabase extends
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CREATION_TIME_FIELD_NUMBER;
+      hash = (37 * hash) + START_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getCreationTime());
-      hash = (37 * hash) + DELETION_TIME_FIELD_NUMBER;
+          getStartTime());
+      hash = (37 * hash) + COMPLETION_TIME_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getDeletionTime());
-      hash = (37 * hash) + WIPE_OUT_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getWipeOutTime());
+          getCompletionTime());
       hash = (37 * hash) + PHASE_FIELD_NUMBER;
       hash = (53 * hash) + getPhase().hashCode();
       hash = (37 * hash) + REASON_FIELD_NUMBER;
@@ -1137,69 +1114,69 @@ public  final class DeletedDatabase extends
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1211,7 +1188,7 @@ public  final class DeletedDatabase extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Snapshot.Status prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -1226,25 +1203,25 @@ public  final class DeletedDatabase extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase.Status}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot.Status}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.DeletedDatabase.Status)
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Snapshot.Status)
+        com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Status_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Status_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Status_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.Snapshot.Status.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.Snapshot.Status.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1261,11 +1238,9 @@ public  final class DeletedDatabase extends
       }
       public Builder clear() {
         super.clear();
-        creationTime_ = 0L;
+        startTime_ = 0L;
 
-        deletionTime_ = 0L;
-
-        wipeOutTime_ = 0L;
+        completionTime_ = 0L;
 
         phase_ = "";
 
@@ -1276,26 +1251,25 @@ public  final class DeletedDatabase extends
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_Status_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_Status_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Status getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.Snapshot.Status.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status build() {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Status build() {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status(this);
-        result.creationTime_ = creationTime_;
-        result.deletionTime_ = deletionTime_;
-        result.wipeOutTime_ = wipeOutTime_;
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Status buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status result = new com.appscode.api.kubernetes.v1beta2.Snapshot.Status(this);
+        result.startTime_ = startTime_;
+        result.completionTime_ = completionTime_;
         result.phase_ = phase_;
         result.reason_ = reason_;
         onBuilt();
@@ -1329,24 +1303,21 @@ public  final class DeletedDatabase extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.Snapshot.Status) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.Snapshot.Status)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance()) return this;
-        if (other.getCreationTime() != 0L) {
-          setCreationTime(other.getCreationTime());
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Snapshot.Status other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.Snapshot.Status.getDefaultInstance()) return this;
+        if (other.getStartTime() != 0L) {
+          setStartTime(other.getStartTime());
         }
-        if (other.getDeletionTime() != 0L) {
-          setDeletionTime(other.getDeletionTime());
-        }
-        if (other.getWipeOutTime() != 0L) {
-          setWipeOutTime(other.getWipeOutTime());
+        if (other.getCompletionTime() != 0L) {
+          setCompletionTime(other.getCompletionTime());
         }
         if (!other.getPhase().isEmpty()) {
           phase_ = other.phase_;
@@ -1368,11 +1339,11 @@ public  final class DeletedDatabase extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.Snapshot.Status) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1382,87 +1353,61 @@ public  final class DeletedDatabase extends
         return this;
       }
 
-      private long creationTime_ ;
+      private long startTime_ ;
       /**
-       * <code>int64 creation_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
-      public long getCreationTime() {
-        return creationTime_;
+      public long getStartTime() {
+        return startTime_;
       }
       /**
-       * <code>int64 creation_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
-      public Builder setCreationTime(long value) {
+      public Builder setStartTime(long value) {
         
-        creationTime_ = value;
+        startTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 creation_time = 1;</code>
+       * <code>int64 start_time = 1;</code>
        */
-      public Builder clearCreationTime() {
+      public Builder clearStartTime() {
         
-        creationTime_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private long deletionTime_ ;
-      /**
-       * <code>int64 deletion_time = 2;</code>
-       */
-      public long getDeletionTime() {
-        return deletionTime_;
-      }
-      /**
-       * <code>int64 deletion_time = 2;</code>
-       */
-      public Builder setDeletionTime(long value) {
-        
-        deletionTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int64 deletion_time = 2;</code>
-       */
-      public Builder clearDeletionTime() {
-        
-        deletionTime_ = 0L;
+        startTime_ = 0L;
         onChanged();
         return this;
       }
 
-      private long wipeOutTime_ ;
+      private long completionTime_ ;
       /**
-       * <code>int64 wipe_out_time = 3;</code>
+       * <code>int64 completion_time = 2;</code>
        */
-      public long getWipeOutTime() {
-        return wipeOutTime_;
+      public long getCompletionTime() {
+        return completionTime_;
       }
       /**
-       * <code>int64 wipe_out_time = 3;</code>
+       * <code>int64 completion_time = 2;</code>
        */
-      public Builder setWipeOutTime(long value) {
+      public Builder setCompletionTime(long value) {
         
-        wipeOutTime_ = value;
+        completionTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int64 wipe_out_time = 3;</code>
+       * <code>int64 completion_time = 2;</code>
        */
-      public Builder clearWipeOutTime() {
+      public Builder clearCompletionTime() {
         
-        wipeOutTime_ = 0L;
+        completionTime_ = 0L;
         onChanged();
         return this;
       }
 
       private java.lang.Object phase_ = "";
       /**
-       * <code>string phase = 4;</code>
+       * <code>string phase = 3;</code>
        */
       public java.lang.String getPhase() {
         java.lang.Object ref = phase_;
@@ -1477,7 +1422,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>string phase = 4;</code>
+       * <code>string phase = 3;</code>
        */
       public com.google.protobuf.ByteString
           getPhaseBytes() {
@@ -1493,7 +1438,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>string phase = 4;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhase(
           java.lang.String value) {
@@ -1506,7 +1451,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>string phase = 4;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder clearPhase() {
         
@@ -1515,7 +1460,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>string phase = 4;</code>
+       * <code>string phase = 3;</code>
        */
       public Builder setPhaseBytes(
           com.google.protobuf.ByteString value) {
@@ -1531,7 +1476,7 @@ public  final class DeletedDatabase extends
 
       private java.lang.Object reason_ = "";
       /**
-       * <code>string reason = 5;</code>
+       * <code>string reason = 4;</code>
        */
       public java.lang.String getReason() {
         java.lang.Object ref = reason_;
@@ -1546,7 +1491,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>string reason = 5;</code>
+       * <code>string reason = 4;</code>
        */
       public com.google.protobuf.ByteString
           getReasonBytes() {
@@ -1562,7 +1507,7 @@ public  final class DeletedDatabase extends
         }
       }
       /**
-       * <code>string reason = 5;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReason(
           java.lang.String value) {
@@ -1575,7 +1520,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>string reason = 5;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder clearReason() {
         
@@ -1584,7 +1529,7 @@ public  final class DeletedDatabase extends
         return this;
       }
       /**
-       * <code>string reason = 5;</code>
+       * <code>string reason = 4;</code>
        */
       public Builder setReasonBytes(
           com.google.protobuf.ByteString value) {
@@ -1608,16 +1553,16 @@ public  final class DeletedDatabase extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.DeletedDatabase.Status)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Snapshot.Status)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.DeletedDatabase.Status)
-    private static final com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Snapshot.Status)
+    private static final com.appscode.api.kubernetes.v1beta2.Snapshot.Status DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Snapshot.Status();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.Snapshot.Status getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1640,7 +1585,7 @@ public  final class DeletedDatabase extends
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Status getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1668,44 +1613,44 @@ public  final class DeletedDatabase extends
   }
 
   public static final int SPEC_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec spec_;
+  private com.appscode.api.kubernetes.v1beta2.Snapshot.Spec spec_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
    */
   public boolean hasSpec() {
     return spec_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec getSpec() {
-    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance() : spec_;
+  public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec getSpec() {
+    return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.getDefaultInstance() : spec_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder getSpecOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder getSpecOrBuilder() {
     return getSpec();
   }
 
   public static final int STATUS_FIELD_NUMBER = 3;
-  private com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status status_;
+  private com.appscode.api.kubernetes.v1beta2.Snapshot.Status status_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
    */
   public boolean hasStatus() {
     return status_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status getStatus() {
-    return status_ == null ? com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance() : status_;
+  public com.appscode.api.kubernetes.v1beta2.Snapshot.Status getStatus() {
+    return status_ == null ? com.appscode.api.kubernetes.v1beta2.Snapshot.Status.getDefaultInstance() : status_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder getStatusOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder getStatusOrBuilder() {
     return getStatus();
   }
 
@@ -1759,10 +1704,10 @@ public  final class DeletedDatabase extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase)) {
+    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.Snapshot)) {
       return super.equals(obj);
     }
-    com.appscode.api.kubernetes.v1beta2.DeletedDatabase other = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) obj;
+    com.appscode.api.kubernetes.v1beta2.Snapshot other = (com.appscode.api.kubernetes.v1beta2.Snapshot) obj;
 
     boolean result = true;
     result = result && (hasMeta() == other.hasMeta());
@@ -1807,69 +1752,69 @@ public  final class DeletedDatabase extends
     return hash;
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(byte[] data)
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseDelimitedFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseDelimitedFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -1881,7 +1826,7 @@ public  final class DeletedDatabase extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.DeletedDatabase prototype) {
+  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.Snapshot prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -1896,25 +1841,25 @@ public  final class DeletedDatabase extends
     return builder;
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.DeletedDatabase}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.Snapshot}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.DeletedDatabase)
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder {
+      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.Snapshot)
+      com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.DeletedDatabase.class, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.Snapshot.class, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder.class);
     }
 
-    // Construct using com.appscode.api.kubernetes.v1beta2.DeletedDatabase.newBuilder()
+    // Construct using com.appscode.api.kubernetes.v1beta2.Snapshot.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -1954,23 +1899,23 @@ public  final class DeletedDatabase extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_DeletedDatabase_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_Snapshot_descriptor;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDefaultInstanceForType() {
-      return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+    public com.appscode.api.kubernetes.v1beta2.Snapshot getDefaultInstanceForType() {
+      return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
     }
 
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase build() {
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabase result = buildPartial();
+    public com.appscode.api.kubernetes.v1beta2.Snapshot build() {
+      com.appscode.api.kubernetes.v1beta2.Snapshot result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase buildPartial() {
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabase result = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase(this);
+    public com.appscode.api.kubernetes.v1beta2.Snapshot buildPartial() {
+      com.appscode.api.kubernetes.v1beta2.Snapshot result = new com.appscode.api.kubernetes.v1beta2.Snapshot(this);
       if (metaBuilder_ == null) {
         result.meta_ = meta_;
       } else {
@@ -2017,16 +1962,16 @@ public  final class DeletedDatabase extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.appscode.api.kubernetes.v1beta2.DeletedDatabase) {
-        return mergeFrom((com.appscode.api.kubernetes.v1beta2.DeletedDatabase)other);
+      if (other instanceof com.appscode.api.kubernetes.v1beta2.Snapshot) {
+        return mergeFrom((com.appscode.api.kubernetes.v1beta2.Snapshot)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.DeletedDatabase other) {
-      if (other == com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.Snapshot other) {
+      if (other == com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance()) return this;
       if (other.hasMeta()) {
         mergeMeta(other.getMeta());
       }
@@ -2048,11 +1993,11 @@ public  final class DeletedDatabase extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.appscode.api.kubernetes.v1beta2.DeletedDatabase parsedMessage = null;
+      com.appscode.api.kubernetes.v1beta2.Snapshot parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) e.getUnfinishedMessage();
+        parsedMessage = (com.appscode.api.kubernetes.v1beta2.Snapshot) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -2179,29 +2124,29 @@ public  final class DeletedDatabase extends
       return metaBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec spec_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Snapshot.Spec spec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder> specBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec, com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder> specBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
     public boolean hasSpec() {
       return specBuilder_ != null || spec_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec getSpec() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec getSpec() {
       if (specBuilder_ == null) {
-        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance() : spec_;
+        return spec_ == null ? com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.getDefaultInstance() : spec_;
       } else {
         return specBuilder_.getMessage();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
-    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec value) {
+    public Builder setSpec(com.appscode.api.kubernetes.v1beta2.Snapshot.Spec value) {
       if (specBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2215,10 +2160,10 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
     public Builder setSpec(
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder builderForValue) {
       if (specBuilder_ == null) {
         spec_ = builderForValue.build();
         onChanged();
@@ -2229,13 +2174,13 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
-    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec value) {
+    public Builder mergeSpec(com.appscode.api.kubernetes.v1beta2.Snapshot.Spec value) {
       if (specBuilder_ == null) {
         if (spec_ != null) {
           spec_ =
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.newBuilder(spec_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.newBuilder(spec_).mergeFrom(value).buildPartial();
         } else {
           spec_ = value;
         }
@@ -2247,7 +2192,7 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
     public Builder clearSpec() {
       if (specBuilder_ == null) {
@@ -2261,33 +2206,33 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder getSpecBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder getSpecBuilder() {
       
       onChanged();
       return getSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder getSpecOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder getSpecOrBuilder() {
       if (specBuilder_ != null) {
         return specBuilder_.getMessageOrBuilder();
       } else {
         return spec_ == null ?
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.getDefaultInstance() : spec_;
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.getDefaultInstance() : spec_;
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Spec spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Spec spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Spec, com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder> 
         getSpecFieldBuilder() {
       if (specBuilder_ == null) {
         specBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Spec.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.SpecOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Spec, com.appscode.api.kubernetes.v1beta2.Snapshot.Spec.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.SpecOrBuilder>(
                 getSpec(),
                 getParentForChildren(),
                 isClean());
@@ -2296,29 +2241,29 @@ public  final class DeletedDatabase extends
       return specBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status status_ = null;
+    private com.appscode.api.kubernetes.v1beta2.Snapshot.Status status_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder> statusBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status, com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder> statusBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
     public boolean hasStatus() {
       return statusBuilder_ != null || status_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status getStatus() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Status getStatus() {
       if (statusBuilder_ == null) {
-        return status_ == null ? com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance() : status_;
+        return status_ == null ? com.appscode.api.kubernetes.v1beta2.Snapshot.Status.getDefaultInstance() : status_;
       } else {
         return statusBuilder_.getMessage();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
-    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status value) {
+    public Builder setStatus(com.appscode.api.kubernetes.v1beta2.Snapshot.Status value) {
       if (statusBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -2332,10 +2277,10 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
     public Builder setStatus(
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder builderForValue) {
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder builderForValue) {
       if (statusBuilder_ == null) {
         status_ = builderForValue.build();
         onChanged();
@@ -2346,13 +2291,13 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
-    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status value) {
+    public Builder mergeStatus(com.appscode.api.kubernetes.v1beta2.Snapshot.Status value) {
       if (statusBuilder_ == null) {
         if (status_ != null) {
           status_ =
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.newBuilder(status_).mergeFrom(value).buildPartial();
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Status.newBuilder(status_).mergeFrom(value).buildPartial();
         } else {
           status_ = value;
         }
@@ -2364,7 +2309,7 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
     public Builder clearStatus() {
       if (statusBuilder_ == null) {
@@ -2378,33 +2323,33 @@ public  final class DeletedDatabase extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder getStatusBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder getStatusBuilder() {
       
       onChanged();
       return getStatusFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder getStatusOrBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder getStatusOrBuilder() {
       if (statusBuilder_ != null) {
         return statusBuilder_.getMessageOrBuilder();
       } else {
         return status_ == null ?
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.getDefaultInstance() : status_;
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Status.getDefaultInstance() : status_;
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase.Status status = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot.Status status = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder> 
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Status, com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder> 
         getStatusFieldBuilder() {
       if (statusBuilder_ == null) {
         statusBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Status.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.StatusOrBuilder>(
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Status, com.appscode.api.kubernetes.v1beta2.Snapshot.Status.Builder, com.appscode.api.kubernetes.v1beta2.Snapshot.StatusOrBuilder>(
                 getStatus(),
                 getParentForChildren(),
                 isClean());
@@ -2423,39 +2368,39 @@ public  final class DeletedDatabase extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.DeletedDatabase)
+    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.Snapshot)
   }
 
-  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.DeletedDatabase)
-  private static final com.appscode.api.kubernetes.v1beta2.DeletedDatabase DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.Snapshot)
+  private static final com.appscode.api.kubernetes.v1beta2.Snapshot DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.DeletedDatabase();
+    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.Snapshot();
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDefaultInstance() {
+  public static com.appscode.api.kubernetes.v1beta2.Snapshot getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<DeletedDatabase>
-      PARSER = new com.google.protobuf.AbstractParser<DeletedDatabase>() {
-    public DeletedDatabase parsePartialFrom(
+  private static final com.google.protobuf.Parser<Snapshot>
+      PARSER = new com.google.protobuf.AbstractParser<Snapshot>() {
+    public Snapshot parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new DeletedDatabase(input, extensionRegistry);
+        return new Snapshot(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<DeletedDatabase> parser() {
+  public static com.google.protobuf.Parser<Snapshot> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<DeletedDatabase> getParserForType() {
+  public com.google.protobuf.Parser<Snapshot> getParserForType() {
     return PARSER;
   }
 
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDefaultInstanceForType() {
+  public com.appscode.api.kubernetes.v1beta2.Snapshot getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -15,6 +15,7 @@ public  final class ClusterDescribeResponse extends
     super(builder);
   }
   private ClusterDescribeResponse() {
+    operationPhid_ = "";
   }
 
   @java.lang.Override
@@ -66,6 +67,12 @@ public  final class ClusterDescribeResponse extends
               spec_ = subBuilder.buildPartial();
             }
 
+            break;
+          }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            operationPhid_ = s;
             break;
           }
         }
@@ -890,6 +897,40 @@ public  final class ClusterDescribeResponse extends
     return getSpec();
   }
 
+  public static final int OPERATION_PHID_FIELD_NUMBER = 3;
+  private volatile java.lang.Object operationPhid_;
+  /**
+   * <code>string operation_phid = 3;</code>
+   */
+  public java.lang.String getOperationPhid() {
+    java.lang.Object ref = operationPhid_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      operationPhid_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string operation_phid = 3;</code>
+   */
+  public com.google.protobuf.ByteString
+      getOperationPhidBytes() {
+    java.lang.Object ref = operationPhid_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      operationPhid_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -908,6 +949,9 @@ public  final class ClusterDescribeResponse extends
     if (spec_ != null) {
       output.writeMessage(2, getSpec());
     }
+    if (!getOperationPhidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, operationPhid_);
+    }
   }
 
   public int getSerializedSize() {
@@ -922,6 +966,9 @@ public  final class ClusterDescribeResponse extends
     if (spec_ != null) {
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(2, getSpec());
+    }
+    if (!getOperationPhidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, operationPhid_);
     }
     memoizedSize = size;
     return size;
@@ -949,6 +996,8 @@ public  final class ClusterDescribeResponse extends
       result = result && getSpec()
           .equals(other.getSpec());
     }
+    result = result && getOperationPhid()
+        .equals(other.getOperationPhid());
     return result;
   }
 
@@ -967,6 +1016,8 @@ public  final class ClusterDescribeResponse extends
       hash = (37 * hash) + SPEC_FIELD_NUMBER;
       hash = (53 * hash) + getSpec().hashCode();
     }
+    hash = (37 * hash) + OPERATION_PHID_FIELD_NUMBER;
+    hash = (53 * hash) + getOperationPhid().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -1108,6 +1159,8 @@ public  final class ClusterDescribeResponse extends
         spec_ = null;
         specBuilder_ = null;
       }
+      operationPhid_ = "";
+
       return this;
     }
 
@@ -1140,6 +1193,7 @@ public  final class ClusterDescribeResponse extends
       } else {
         result.spec_ = specBuilder_.build();
       }
+      result.operationPhid_ = operationPhid_;
       onBuilt();
       return result;
     }
@@ -1186,6 +1240,10 @@ public  final class ClusterDescribeResponse extends
       }
       if (other.hasSpec()) {
         mergeSpec(other.getSpec());
+      }
+      if (!other.getOperationPhid().isEmpty()) {
+        operationPhid_ = other.operationPhid_;
+        onChanged();
       }
       onChanged();
       return this;
@@ -1445,6 +1503,75 @@ public  final class ClusterDescribeResponse extends
         spec_ = null;
       }
       return specBuilder_;
+    }
+
+    private java.lang.Object operationPhid_ = "";
+    /**
+     * <code>string operation_phid = 3;</code>
+     */
+    public java.lang.String getOperationPhid() {
+      java.lang.Object ref = operationPhid_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        operationPhid_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string operation_phid = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getOperationPhidBytes() {
+      java.lang.Object ref = operationPhid_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        operationPhid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string operation_phid = 3;</code>
+     */
+    public Builder setOperationPhid(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      operationPhid_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string operation_phid = 3;</code>
+     */
+    public Builder clearOperationPhid() {
+      
+      operationPhid_ = getDefaultInstance().getOperationPhid();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string operation_phid = 3;</code>
+     */
+    public Builder setOperationPhidBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      operationPhid_ = value;
+      onChanged();
+      return this;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

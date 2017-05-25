@@ -427,28 +427,28 @@ public  final class KubeResource extends
             break;
           }
           case 234: {
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder subBuilder = null;
             if (resourceCase_ == 29) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_).toBuilder();
             }
             resource_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta2.DormantDatabase.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_);
               resource_ = subBuilder.buildPartial();
             }
             resourceCase_ = 29;
             break;
           }
           case 242: {
-            com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.Snapshot.Builder subBuilder = null;
             if (resourceCase_ == 30) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta2.Snapshot) resource_).toBuilder();
             }
             resource_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta2.Snapshot.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.Snapshot) resource_);
               resource_ = subBuilder.buildPartial();
             }
             resourceCase_ = 30;
@@ -510,8 +510,8 @@ public  final class KubeResource extends
     BACKUP(26),
     POSTGRES(27),
     ELASTIC(28),
-    DELETED_DATABASE(29),
-    DATABASE_SNAPSHOT(30),
+    DORMANT_DATABASE(29),
+    SNAPSHOT(30),
     RESOURCE_NOT_SET(0);
     private final int value;
     private ResourceCase(int value) {
@@ -552,8 +552,8 @@ public  final class KubeResource extends
         case 26: return BACKUP;
         case 27: return POSTGRES;
         case 28: return ELASTIC;
-        case 29: return DELETED_DATABASE;
-        case 30: return DATABASE_SNAPSHOT;
+        case 29: return DORMANT_DATABASE;
+        case 30: return SNAPSHOT;
         case 0: return RESOURCE_NOT_SET;
         default: return null;
       }
@@ -1159,44 +1159,44 @@ public  final class KubeResource extends
     return com.appscode.api.kubernetes.v1beta2.Elastic.getDefaultInstance();
   }
 
-  public static final int DELETED_DATABASE_FIELD_NUMBER = 29;
+  public static final int DORMANT_DATABASE_FIELD_NUMBER = 29;
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase() {
+  public com.appscode.api.kubernetes.v1beta2.DormantDatabase getDormantDatabase() {
     if (resourceCase_ == 29) {
-       return (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getDormantDatabaseOrBuilder() {
     if (resourceCase_ == 29) {
-       return (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
   }
 
-  public static final int DATABASE_SNAPSHOT_FIELD_NUMBER = 30;
+  public static final int SNAPSHOT_FIELD_NUMBER = 30;
   /**
-   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot() {
+  public com.appscode.api.kubernetes.v1beta2.Snapshot getSnapshot() {
     if (resourceCase_ == 30) {
-       return (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getSnapshotOrBuilder() {
     if (resourceCase_ == 30) {
-       return (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -1296,10 +1296,10 @@ public  final class KubeResource extends
       output.writeMessage(28, (com.appscode.api.kubernetes.v1beta2.Elastic) resource_);
     }
     if (resourceCase_ == 29) {
-      output.writeMessage(29, (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_);
+      output.writeMessage(29, (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_);
     }
     if (resourceCase_ == 30) {
-      output.writeMessage(30, (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_);
+      output.writeMessage(30, (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_);
     }
   }
 
@@ -1421,11 +1421,11 @@ public  final class KubeResource extends
     }
     if (resourceCase_ == 29) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(29, (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_);
+        .computeMessageSize(29, (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_);
     }
     if (resourceCase_ == 30) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(30, (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_);
+        .computeMessageSize(30, (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_);
     }
     memoizedSize = size;
     return size;
@@ -1557,12 +1557,12 @@ public  final class KubeResource extends
             .equals(other.getElastic());
         break;
       case 29:
-        result = result && getDeletedDatabase()
-            .equals(other.getDeletedDatabase());
+        result = result && getDormantDatabase()
+            .equals(other.getDormantDatabase());
         break;
       case 30:
-        result = result && getDatabaseSnapshot()
-            .equals(other.getDatabaseSnapshot());
+        result = result && getSnapshot()
+            .equals(other.getSnapshot());
         break;
       case 0:
       default:
@@ -1689,12 +1689,12 @@ public  final class KubeResource extends
         hash = (53 * hash) + getElastic().hashCode();
         break;
       case 29:
-        hash = (37 * hash) + DELETED_DATABASE_FIELD_NUMBER;
-        hash = (53 * hash) + getDeletedDatabase().hashCode();
+        hash = (37 * hash) + DORMANT_DATABASE_FIELD_NUMBER;
+        hash = (53 * hash) + getDormantDatabase().hashCode();
         break;
       case 30:
-        hash = (37 * hash) + DATABASE_SNAPSHOT_FIELD_NUMBER;
-        hash = (53 * hash) + getDatabaseSnapshot().hashCode();
+        hash = (37 * hash) + SNAPSHOT_FIELD_NUMBER;
+        hash = (53 * hash) + getSnapshot().hashCode();
         break;
       case 0:
       default:
@@ -2064,17 +2064,17 @@ public  final class KubeResource extends
         }
       }
       if (resourceCase_ == 29) {
-        if (deletedDatabaseBuilder_ == null) {
+        if (dormantDatabaseBuilder_ == null) {
           result.resource_ = resource_;
         } else {
-          result.resource_ = deletedDatabaseBuilder_.build();
+          result.resource_ = dormantDatabaseBuilder_.build();
         }
       }
       if (resourceCase_ == 30) {
-        if (databaseSnapshotBuilder_ == null) {
+        if (snapshotBuilder_ == null) {
           result.resource_ = resource_;
         } else {
-          result.resource_ = databaseSnapshotBuilder_.build();
+          result.resource_ = snapshotBuilder_.build();
         }
       }
       result.bitField0_ = to_bitField0_;
@@ -2254,12 +2254,12 @@ public  final class KubeResource extends
           mergeElastic(other.getElastic());
           break;
         }
-        case DELETED_DATABASE: {
-          mergeDeletedDatabase(other.getDeletedDatabase());
+        case DORMANT_DATABASE: {
+          mergeDormantDatabase(other.getDormantDatabase());
           break;
         }
-        case DATABASE_SNAPSHOT: {
-          mergeDatabaseSnapshot(other.getDatabaseSnapshot());
+        case SNAPSHOT: {
+          mergeSnapshot(other.getSnapshot());
           break;
         }
         case RESOURCE_NOT_SET: {
@@ -5985,61 +5985,61 @@ public  final class KubeResource extends
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> deletedDatabaseBuilder_;
+        com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> dormantDatabaseBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase() {
-      if (deletedDatabaseBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta2.DormantDatabase getDormantDatabase() {
+      if (dormantDatabaseBuilder_ == null) {
         if (resourceCase_ == 29) {
-          return (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
       } else {
         if (resourceCase_ == 29) {
-          return deletedDatabaseBuilder_.getMessage();
+          return dormantDatabaseBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public Builder setDeletedDatabase(com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
-      if (deletedDatabaseBuilder_ == null) {
+    public Builder setDormantDatabase(com.appscode.api.kubernetes.v1beta2.DormantDatabase value) {
+      if (dormantDatabaseBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         resource_ = value;
         onChanged();
       } else {
-        deletedDatabaseBuilder_.setMessage(value);
+        dormantDatabaseBuilder_.setMessage(value);
       }
       resourceCase_ = 29;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public Builder setDeletedDatabase(
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder builderForValue) {
-      if (deletedDatabaseBuilder_ == null) {
+    public Builder setDormantDatabase(
+        com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder builderForValue) {
+      if (dormantDatabaseBuilder_ == null) {
         resource_ = builderForValue.build();
         onChanged();
       } else {
-        deletedDatabaseBuilder_.setMessage(builderForValue.build());
+        dormantDatabaseBuilder_.setMessage(builderForValue.build());
       }
       resourceCase_ = 29;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public Builder mergeDeletedDatabase(com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
-      if (deletedDatabaseBuilder_ == null) {
+    public Builder mergeDormantDatabase(com.appscode.api.kubernetes.v1beta2.DormantDatabase value) {
+      if (dormantDatabaseBuilder_ == null) {
         if (resourceCase_ == 29 &&
-            resource_ != com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance()) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.DeletedDatabase.newBuilder((com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_)
+            resource_ != com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance()) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.DormantDatabase.newBuilder((com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_)
               .mergeFrom(value).buildPartial();
         } else {
           resource_ = value;
@@ -6047,18 +6047,18 @@ public  final class KubeResource extends
         onChanged();
       } else {
         if (resourceCase_ == 29) {
-          deletedDatabaseBuilder_.mergeFrom(value);
+          dormantDatabaseBuilder_.mergeFrom(value);
         }
-        deletedDatabaseBuilder_.setMessage(value);
+        dormantDatabaseBuilder_.setMessage(value);
       }
       resourceCase_ = 29;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public Builder clearDeletedDatabase() {
-      if (deletedDatabaseBuilder_ == null) {
+    public Builder clearDormantDatabase() {
+      if (dormantDatabaseBuilder_ == null) {
         if (resourceCase_ == 29) {
           resourceCase_ = 0;
           resource_ = null;
@@ -6069,107 +6069,107 @@ public  final class KubeResource extends
           resourceCase_ = 0;
           resource_ = null;
         }
-        deletedDatabaseBuilder_.clear();
+        dormantDatabaseBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder getDeletedDatabaseBuilder() {
-      return getDeletedDatabaseFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder getDormantDatabaseBuilder() {
+      return getDormantDatabaseFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder() {
-      if ((resourceCase_ == 29) && (deletedDatabaseBuilder_ != null)) {
-        return deletedDatabaseBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getDormantDatabaseOrBuilder() {
+      if ((resourceCase_ == 29) && (dormantDatabaseBuilder_ != null)) {
+        return dormantDatabaseBuilder_.getMessageOrBuilder();
       } else {
         if (resourceCase_ == 29) {
-          return (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+     * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
-        getDeletedDatabaseFieldBuilder() {
-      if (deletedDatabaseBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> 
+        getDormantDatabaseFieldBuilder() {
+      if (dormantDatabaseBuilder_ == null) {
         if (!(resourceCase_ == 29)) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance();
+          resource_ = com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance();
         }
-        deletedDatabaseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta2.DeletedDatabase) resource_,
+        dormantDatabaseBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta2.DormantDatabase) resource_,
                 getParentForChildren(),
                 isClean());
         resource_ = null;
       }
       resourceCase_ = 29;
       onChanged();;
-      return deletedDatabaseBuilder_;
+      return dormantDatabaseBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> databaseSnapshotBuilder_;
+        com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> snapshotBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot() {
-      if (databaseSnapshotBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot getSnapshot() {
+      if (snapshotBuilder_ == null) {
         if (resourceCase_ == 30) {
-          return (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
       } else {
         if (resourceCase_ == 30) {
-          return databaseSnapshotBuilder_.getMessage();
+          return snapshotBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public Builder setDatabaseSnapshot(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
-      if (databaseSnapshotBuilder_ == null) {
+    public Builder setSnapshot(com.appscode.api.kubernetes.v1beta2.Snapshot value) {
+      if (snapshotBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         resource_ = value;
         onChanged();
       } else {
-        databaseSnapshotBuilder_.setMessage(value);
+        snapshotBuilder_.setMessage(value);
       }
       resourceCase_ = 30;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public Builder setDatabaseSnapshot(
-        com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder builderForValue) {
-      if (databaseSnapshotBuilder_ == null) {
+    public Builder setSnapshot(
+        com.appscode.api.kubernetes.v1beta2.Snapshot.Builder builderForValue) {
+      if (snapshotBuilder_ == null) {
         resource_ = builderForValue.build();
         onChanged();
       } else {
-        databaseSnapshotBuilder_.setMessage(builderForValue.build());
+        snapshotBuilder_.setMessage(builderForValue.build());
       }
       resourceCase_ = 30;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public Builder mergeDatabaseSnapshot(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
-      if (databaseSnapshotBuilder_ == null) {
+    public Builder mergeSnapshot(com.appscode.api.kubernetes.v1beta2.Snapshot value) {
+      if (snapshotBuilder_ == null) {
         if (resourceCase_ == 30 &&
-            resource_ != com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance()) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.newBuilder((com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_)
+            resource_ != com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance()) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.Snapshot.newBuilder((com.appscode.api.kubernetes.v1beta2.Snapshot) resource_)
               .mergeFrom(value).buildPartial();
         } else {
           resource_ = value;
@@ -6177,18 +6177,18 @@ public  final class KubeResource extends
         onChanged();
       } else {
         if (resourceCase_ == 30) {
-          databaseSnapshotBuilder_.mergeFrom(value);
+          snapshotBuilder_.mergeFrom(value);
         }
-        databaseSnapshotBuilder_.setMessage(value);
+        snapshotBuilder_.setMessage(value);
       }
       resourceCase_ = 30;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public Builder clearDatabaseSnapshot() {
-      if (databaseSnapshotBuilder_ == null) {
+    public Builder clearSnapshot() {
+      if (snapshotBuilder_ == null) {
         if (resourceCase_ == 30) {
           resourceCase_ = 0;
           resource_ = null;
@@ -6199,49 +6199,49 @@ public  final class KubeResource extends
           resourceCase_ = 0;
           resource_ = null;
         }
-        databaseSnapshotBuilder_.clear();
+        snapshotBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder getDatabaseSnapshotBuilder() {
-      return getDatabaseSnapshotFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta2.Snapshot.Builder getSnapshotBuilder() {
+      return getSnapshotFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder() {
-      if ((resourceCase_ == 30) && (databaseSnapshotBuilder_ != null)) {
-        return databaseSnapshotBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getSnapshotOrBuilder() {
+      if ((resourceCase_ == 30) && (snapshotBuilder_ != null)) {
+        return snapshotBuilder_.getMessageOrBuilder();
       } else {
         if (resourceCase_ == 30) {
-          return (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+     * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 
-        getDatabaseSnapshotFieldBuilder() {
-      if (databaseSnapshotBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> 
+        getSnapshotFieldBuilder() {
+      if (snapshotBuilder_ == null) {
         if (!(resourceCase_ == 30)) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance();
+          resource_ = com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance();
         }
-        databaseSnapshotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot) resource_,
+        snapshotBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta2.Snapshot) resource_,
                 getParentForChildren(),
                 isClean());
         resource_ = null;
       }
       resourceCase_ = 30;
       onChanged();;
-      return databaseSnapshotBuilder_;
+      return snapshotBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

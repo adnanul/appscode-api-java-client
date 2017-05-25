@@ -20,11 +20,6 @@ public final class TeamProto {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_appscode_namespace_v1beta1_CreateRequest_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_descriptor;
-  static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_fieldAccessorTable;
-  static final com.google.protobuf.Descriptors.Descriptor
     internal_static_appscode_namespace_v1beta1_GetRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -52,31 +47,28 @@ public final class TeamProto {
       "oto\022\032appscode.namespace.v1beta1\032\034google/" +
       "api/annotations.proto\032\036appscode/api/anno" +
       "tations.proto\032\037appscode/api/dtypes/types" +
-      ".proto\"\303\002\n\rCreateRequest\022\014\n\004name\030\001 \001(\t\022\024" +
+      ".proto\"\311\001\n\rCreateRequest\022\014\n\004name\030\001 \001(\t\022\024" +
       "\n\014display_name\030\002 \001(\t\022\r\n\005email\030\003 \001(\t\022\021\n\tu" +
       "ser_name\030\004 \001(\t\022\020\n\010password\030\005 \001(\t\022\025\n\rinvi" +
-      "te_emails\030\006 \003(\t\022\031\n\021subscription_type\030\007 \001" +
-      "(\t\022\021\n\tclient_ip\030\010 \001(\t\022\034\n\024payment_method_" +
-      "nonce\030\t \001(\t\022G\n\007options\030\n \003(\01326.appscode.",
-      "namespace.v1beta1.CreateRequest.OptionsE" +
-      "ntry\032.\n\014OptionsEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005val" +
-      "ue\030\002 \001(\t:\0028\001\"\032\n\nGetRequest\022\014\n\004name\030\001 \001(\t" +
-      "\"\033\n\013GetResponse\022\014\n\004phid\030\001 \001(\t\"\"\n\022IsAvail" +
-      "ableRequest\022\014\n\004name\030\001 \001(\t2\343\003\n\005Teams\022\220\001\n\006" +
-      "Create\022).appscode.namespace.v1beta1.Crea" +
-      "teRequest\032\035.appscode.dtypes.VoidResponse" +
-      "\"<\202\323\344\223\0020\"+/_appscode/api/namespace/v1bet" +
-      "a1/teams/json:\001*\202\265\030\002\010\001\022\230\001\n\003Get\022&.appscod" +
-      "e.namespace.v1beta1.GetRequest\032\'.appscod",
-      "e.namespace.v1beta1.GetResponse\"@\202\323\344\223\0024\022" +
-      "2/_appscode/api/namespace/v1beta1/teams/" +
-      "{name}/json\202\265\030\002\010\001\022\253\001\n\013IsAvailable\022..apps" +
-      "code.namespace.v1beta1.IsAvailableReques" +
-      "t\032\035.appscode.dtypes.VoidResponse\"M\202\323\344\223\002A" +
-      "\022?/_appscode/api/namespace/v1beta1/teams" +
-      "/{name}/is-available/json\202\265\030\002\010\001B:\n\"com.a" +
-      "ppscode.api.namespace.v1beta1B\tTeamProto" +
-      "P\001Z\007v1beta1b\006proto3"
+      "te_emails\030\006 \003(\t\022\024\n\014subscription\030\007 \001(\t\022\025\n" +
+      "\rinitial_units\030\010 \001(\003\022\034\n\024payment_method_n" +
+      "once\030\t \001(\t\"\032\n\nGetRequest\022\014\n\004name\030\001 \001(\t\"\033",
+      "\n\013GetResponse\022\014\n\004phid\030\001 \001(\t\"\"\n\022IsAvailab" +
+      "leRequest\022\014\n\004name\030\001 \001(\t2\343\003\n\005Teams\022\220\001\n\006Cr" +
+      "eate\022).appscode.namespace.v1beta1.Create" +
+      "Request\032\035.appscode.dtypes.VoidResponse\"<" +
+      "\202\323\344\223\0020\"+/_appscode/api/namespace/v1beta1" +
+      "/teams/json:\001*\202\265\030\002\010\001\022\230\001\n\003Get\022&.appscode." +
+      "namespace.v1beta1.GetRequest\032\'.appscode." +
+      "namespace.v1beta1.GetResponse\"@\202\323\344\223\0024\0222/" +
+      "_appscode/api/namespace/v1beta1/teams/{n" +
+      "ame}/json\202\265\030\002\010\001\022\253\001\n\013IsAvailable\022..appsco",
+      "de.namespace.v1beta1.IsAvailableRequest\032" +
+      "\035.appscode.dtypes.VoidResponse\"M\202\323\344\223\002A\022?" +
+      "/_appscode/api/namespace/v1beta1/teams/{" +
+      "name}/is-available/json\202\265\030\002\010\001B:\n\"com.app" +
+      "scode.api.namespace.v1beta1B\tTeamProtoP\001" +
+      "Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -98,13 +90,7 @@ public final class TeamProto {
     internal_static_appscode_namespace_v1beta1_CreateRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_namespace_v1beta1_CreateRequest_descriptor,
-        new java.lang.String[] { "Name", "DisplayName", "Email", "UserName", "Password", "InviteEmails", "SubscriptionType", "ClientIp", "PaymentMethodNonce", "Options", });
-    internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_descriptor =
-      internal_static_appscode_namespace_v1beta1_CreateRequest_descriptor.getNestedTypes().get(0);
-    internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_appscode_namespace_v1beta1_CreateRequest_OptionsEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "Name", "DisplayName", "Email", "UserName", "Password", "InviteEmails", "Subscription", "InitialUnits", "PaymentMethodNonce", });
     internal_static_appscode_namespace_v1beta1_GetRequest_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_appscode_namespace_v1beta1_GetRequest_fieldAccessorTable = new

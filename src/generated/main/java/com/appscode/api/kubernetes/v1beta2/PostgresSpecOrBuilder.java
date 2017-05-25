@@ -18,52 +18,37 @@ public interface PostgresSpecOrBuilder extends
       getVersionBytes();
 
   /**
-   * <code>int32 replicas = 2;</code>
-   */
-  int getReplicas();
-
-  /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   boolean hasStorage();
   /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage();
   /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder();
 
   /**
-   * <code>string service_account_name = 4;</code>
-   */
-  java.lang.String getServiceAccountName();
-  /**
-   * <code>string service_account_name = 4;</code>
-   */
-  com.google.protobuf.ByteString
-      getServiceAccountNameBytes();
-
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   boolean hasDatabaseSecret();
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret();
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder();
 
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
   int getNodeSelectorCount();
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
   boolean containsNodeSelector(
       java.lang.String key);
@@ -74,52 +59,52 @@ public interface PostgresSpecOrBuilder extends
   java.util.Map<java.lang.String, java.lang.String>
   getNodeSelector();
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
   java.util.Map<java.lang.String, java.lang.String>
   getNodeSelectorMap();
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   java.lang.String getNodeSelectorOrDefault(
       java.lang.String key,
       java.lang.String defaultValue);
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   java.lang.String getNodeSelectorOrThrow(
       java.lang.String key);
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   boolean hasInit();
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.InitSpec getInit();
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   boolean hasBackupSchedule();
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule();
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder();
 
   /**
-   * <code>bool do_not_delete = 9;</code>
+   * <code>bool do_not_pause = 7;</code>
    */
-  boolean getDoNotDelete();
+  boolean getDoNotPause();
 }

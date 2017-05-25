@@ -98,4 +98,34 @@ public interface ConduitUserOrBuilder extends
    * <code>.appscode.auth.v1beta1.Preferences preferences = 8;</code>
    */
   com.appscode.api.auth.v1beta1.PreferencesOrBuilder getPreferencesOrBuilder();
+
+  /**
+   * <code>bool is_bot = 9;</code>
+   */
+  boolean getIsBot();
+
+  /**
+   * <code>bool is_disabled = 10;</code>
+   */
+  boolean getIsDisabled();
+
+  /**
+   * <code>bool is_admin = 11;</code>
+   */
+  boolean getIsAdmin();
+
+  /**
+   * <code>bool is_email_verified = 12;</code>
+   */
+  boolean getIsEmailVerified();
+
+  /**
+   * <code>bool is_approved = 13;</code>
+   */
+  boolean getIsApproved();
+
+  /**
+   * <code>bool is_mailing_list = 14;</code>
+   */
+  boolean getIsMailingList();
 }

@@ -34,4 +34,34 @@ public interface BucketListRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getGceProjectBytes();
+
+  /**
+   * <code>string cluster_uid = 3;</code>
+   */
+  java.lang.String getClusterUid();
+  /**
+   * <code>string cluster_uid = 3;</code>
+   */
+  com.google.protobuf.ByteString
+      getClusterUidBytes();
+
+  /**
+   * <code>string secret_namespace = 4;</code>
+   */
+  java.lang.String getSecretNamespace();
+  /**
+   * <code>string secret_namespace = 4;</code>
+   */
+  com.google.protobuf.ByteString
+      getSecretNamespaceBytes();
+
+  /**
+   * <code>string secret_name = 5;</code>
+   */
+  java.lang.String getSecretName();
+  /**
+   * <code>string secret_name = 5;</code>
+   */
+  com.google.protobuf.ByteString
+      getSecretNameBytes();
 }

@@ -280,22 +280,22 @@ public interface KubeResourceOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.ElasticOrBuilder getElasticOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DeletedDatabase getDeletedDatabase();
+  com.appscode.api.kubernetes.v1beta2.DormantDatabase getDormantDatabase();
   /**
-   * <code>.appscode.kubernetes.v1beta2.DeletedDatabase deleted_database = 29;</code>
+   * <code>.appscode.kubernetes.v1beta2.DormantDatabase dormant_database = 29;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getDeletedDatabaseOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getDormantDatabaseOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getDatabaseSnapshot();
+  com.appscode.api.kubernetes.v1beta2.Snapshot getSnapshot();
   /**
-   * <code>.appscode.kubernetes.v1beta2.DatabaseSnapshot database_snapshot = 30;</code>
+   * <code>.appscode.kubernetes.v1beta2.Snapshot snapshot = 30;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getDatabaseSnapshotOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getSnapshotOrBuilder();
 
   public com.appscode.api.kubernetes.v1beta2.KubeResource.ResourceCase getResourceCase();
 }

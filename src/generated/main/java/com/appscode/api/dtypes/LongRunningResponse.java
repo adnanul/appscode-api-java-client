@@ -20,7 +20,7 @@ public  final class LongRunningResponse extends
     super(builder);
   }
   private LongRunningResponse() {
-    jobPhid_ = "";
+    operationPhid_ = "";
   }
 
   @java.lang.Override
@@ -51,7 +51,7 @@ public  final class LongRunningResponse extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            jobPhid_ = s;
+            operationPhid_ = s;
             break;
           }
         }
@@ -77,34 +77,34 @@ public  final class LongRunningResponse extends
             com.appscode.api.dtypes.LongRunningResponse.class, com.appscode.api.dtypes.LongRunningResponse.Builder.class);
   }
 
-  public static final int JOB_PHID_FIELD_NUMBER = 1;
-  private volatile java.lang.Object jobPhid_;
+  public static final int OPERATION_PHID_FIELD_NUMBER = 1;
+  private volatile java.lang.Object operationPhid_;
   /**
-   * <code>string job_phid = 1;</code>
+   * <code>string operation_phid = 1;</code>
    */
-  public java.lang.String getJobPhid() {
-    java.lang.Object ref = jobPhid_;
+  public java.lang.String getOperationPhid() {
+    java.lang.Object ref = operationPhid_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      jobPhid_ = s;
+      operationPhid_ = s;
       return s;
     }
   }
   /**
-   * <code>string job_phid = 1;</code>
+   * <code>string operation_phid = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getJobPhidBytes() {
-    java.lang.Object ref = jobPhid_;
+      getOperationPhidBytes() {
+    java.lang.Object ref = operationPhid_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      jobPhid_ = b;
+      operationPhid_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
@@ -123,8 +123,8 @@ public  final class LongRunningResponse extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getJobPhidBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, jobPhid_);
+    if (!getOperationPhidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, operationPhid_);
     }
   }
 
@@ -133,8 +133,8 @@ public  final class LongRunningResponse extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getJobPhidBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, jobPhid_);
+    if (!getOperationPhidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, operationPhid_);
     }
     memoizedSize = size;
     return size;
@@ -152,8 +152,8 @@ public  final class LongRunningResponse extends
     com.appscode.api.dtypes.LongRunningResponse other = (com.appscode.api.dtypes.LongRunningResponse) obj;
 
     boolean result = true;
-    result = result && getJobPhid()
-        .equals(other.getJobPhid());
+    result = result && getOperationPhid()
+        .equals(other.getOperationPhid());
     return result;
   }
 
@@ -164,8 +164,8 @@ public  final class LongRunningResponse extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptor().hashCode();
-    hash = (37 * hash) + JOB_PHID_FIELD_NUMBER;
-    hash = (53 * hash) + getJobPhid().hashCode();
+    hash = (37 * hash) + OPERATION_PHID_FIELD_NUMBER;
+    hash = (53 * hash) + getOperationPhid().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -300,7 +300,7 @@ public  final class LongRunningResponse extends
     }
     public Builder clear() {
       super.clear();
-      jobPhid_ = "";
+      operationPhid_ = "";
 
       return this;
     }
@@ -324,7 +324,7 @@ public  final class LongRunningResponse extends
 
     public com.appscode.api.dtypes.LongRunningResponse buildPartial() {
       com.appscode.api.dtypes.LongRunningResponse result = new com.appscode.api.dtypes.LongRunningResponse(this);
-      result.jobPhid_ = jobPhid_;
+      result.operationPhid_ = operationPhid_;
       onBuilt();
       return result;
     }
@@ -366,8 +366,8 @@ public  final class LongRunningResponse extends
 
     public Builder mergeFrom(com.appscode.api.dtypes.LongRunningResponse other) {
       if (other == com.appscode.api.dtypes.LongRunningResponse.getDefaultInstance()) return this;
-      if (!other.getJobPhid().isEmpty()) {
-        jobPhid_ = other.jobPhid_;
+      if (!other.getOperationPhid().isEmpty()) {
+        operationPhid_ = other.operationPhid_;
         onChanged();
       }
       onChanged();
@@ -396,71 +396,71 @@ public  final class LongRunningResponse extends
       return this;
     }
 
-    private java.lang.Object jobPhid_ = "";
+    private java.lang.Object operationPhid_ = "";
     /**
-     * <code>string job_phid = 1;</code>
+     * <code>string operation_phid = 1;</code>
      */
-    public java.lang.String getJobPhid() {
-      java.lang.Object ref = jobPhid_;
+    public java.lang.String getOperationPhid() {
+      java.lang.Object ref = operationPhid_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        jobPhid_ = s;
+        operationPhid_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>string job_phid = 1;</code>
+     * <code>string operation_phid = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getJobPhidBytes() {
-      java.lang.Object ref = jobPhid_;
+        getOperationPhidBytes() {
+      java.lang.Object ref = operationPhid_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        jobPhid_ = b;
+        operationPhid_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>string job_phid = 1;</code>
+     * <code>string operation_phid = 1;</code>
      */
-    public Builder setJobPhid(
+    public Builder setOperationPhid(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      jobPhid_ = value;
+      operationPhid_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>string job_phid = 1;</code>
+     * <code>string operation_phid = 1;</code>
      */
-    public Builder clearJobPhid() {
+    public Builder clearOperationPhid() {
       
-      jobPhid_ = getDefaultInstance().getJobPhid();
+      operationPhid_ = getDefaultInstance().getOperationPhid();
       onChanged();
       return this;
     }
     /**
-     * <code>string job_phid = 1;</code>
+     * <code>string operation_phid = 1;</code>
      */
-    public Builder setJobPhidBytes(
+    public Builder setOperationPhidBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      jobPhid_ = value;
+      operationPhid_ = value;
       onChanged();
       return this;
     }

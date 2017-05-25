@@ -184,8 +184,8 @@ message ListResourceRequest {
   string label_selector = 7;
 
   message Ancestor {
-      string type = 1;
-      string name = 2;
+    string type = 1;
+    string name = 2;
   }
 }
 
@@ -279,8 +279,13 @@ message KubeResourceList {
     Backups backups = 24;
     Postgreses postgreses = 25;
     Elastics elastics = 26;
-    DeletedDatabases deleted_databases = 27;
-    DatabaseSnapshots database_snapshots = 28;
+    DormantDatabases dormant_databases = 27;
+    Snapshots snapshots = 28;
+    Events events = 29;
+  }
+
+  message Events {
+    repeated Event items = 1;
   }
 
   message ConfigMaps {
@@ -332,7 +337,7 @@ message KubeResourceList {
   }
 
   message StorageClasses {
-      repeated StorageClass items = 1;
+    repeated StorageClass items = 1;
   }
 
   message PersistentVolumes {
@@ -379,12 +384,12 @@ message KubeResourceList {
     repeated Elastic items = 1;
   }
 
-  message DeletedDatabases {
-    repeated DeletedDatabase items = 1;
+  message DormantDatabases {
+    repeated DormantDatabase items = 1;
   }
 
-  message DatabaseSnapshots {
-    repeated DatabaseSnapshot items = 2;
+  message Snapshots {
+    repeated Snapshot items = 2;
   }
 
   message Backups {
@@ -423,8 +428,8 @@ message KubeResource {
     Backup backup = 26;
     Postgres postgres = 27;
     Elastic elastic = 28;
-    DeletedDatabase deleted_database = 29;
-    DatabaseSnapshot database_snapshot = 30;
+    DormantDatabase dormant_database = 29;
+    Snapshot snapshot = 30;
   }
 }
 
@@ -448,10 +453,10 @@ message KubeObject {
 }
 
 message IcingaState {
-    int32 OK = 1;
-    int32 Warning = 2;
-    int32 Critical = 3;
-    int32 Unknown = 4;
+  int32 OK = 1;
+  int32 Warning = 2;
+  int32 Critical = 3;
+  int32 Unknown = 4;
 }
 
 message PodSpec {
@@ -511,10 +516,10 @@ message Job {
 }
 
 message JobSpec {
-    int32 parallelism = 1;
-    int32 completions = 2;
-    PodSpec template = 3;
-    int64 active_deadline_seconds = 4;
+  int32 parallelism = 1;
+  int32 completions = 2;
+  PodSpec template = 3;
+  int64 active_deadline_seconds = 4;
 
 }
 
@@ -778,8 +783,8 @@ message Deployment {
     DeploymentStrategy strategy = 9;
 
     message DeploymentStrategy {
-        string type = 1;
-        RollingUpdateDeployment rolling_update = 2;
+      string type = 1;
+      RollingUpdateDeployment rolling_update = 2;
     }
 
     message RollingUpdateDeployment {
@@ -822,9 +827,9 @@ message StatefulSet {
 }
 
 message StorageClass {
-    Meta meta = 1;
-    string provisioner = 2;
-    map<string, string> parameters = 3;
+  Meta meta = 1;
+  string provisioner = 2;
+  map<string, string> parameters = 3;
 }
 
 message LabelSelector {
@@ -843,7 +848,7 @@ message Event {
 }
 
 message EventSource {
-  string componenet = 1;
+  string component = 1;
   string host = 2;
 }
 
@@ -885,34 +890,34 @@ message PersistentVolumeClaimUnRegisterRequest {
 }
 
 message Alert {
-    Meta meta = 1;
-    AlertSpec spec = 2;
-    AlertStatus status = 3;
+  Meta meta = 1;
+  AlertSpec spec = 2;
+  AlertStatus status = 3;
 
-    message AlertSpec {
-        IcingaParam icinga_param = 1;
-        string check_command = 2;
-        repeated NotifierParam notifier_params= 3;
-        map<string, string> vars = 4;
+  message AlertSpec {
+    IcingaParam icinga_param = 1;
+    string check_command = 2;
+    repeated NotifierParam notifier_params= 3;
+    map<string, string> vars = 4;
 
-        message IcingaParam {
-           int64 check_interval_sec = 1;
-           int64 alert_interval_sec = 2;
-        }
-
-        message NotifierParam {
-            string state = 1;
-            string user_uid = 2;
-            string method = 3;
-        }
+    message IcingaParam {
+      int64 check_interval_sec = 1;
+      int64 alert_interval_sec = 2;
     }
 
-    message AlertStatus {
-        int64 creation_time = 1;
-        int64 update_time = 2;
-        string phase = 3;
-        string reason = 4;
+    message NotifierParam {
+      string state = 1;
+      string user_uid = 2;
+      string method = 3;
     }
+  }
+
+  message AlertStatus {
+    int64 creation_time = 1;
+    int64 update_time = 2;
+    string phase = 3;
+    string reason = 4;
+  }
 }
 
 message Role {
@@ -997,22 +1002,22 @@ message Backup {
 }
 
 message CronJob {
-    Meta meta = 1;
-    Spec spec = 2;
-    Status status = 3;
+  Meta meta = 1;
+  Spec spec = 2;
+  Status status = 3;
 
-    message Spec {
-        string schedule = 1;
-        int64 starting_deadline_seconds = 2;
-        string concurrency_policy = 3;
-        bool suspend = 4;
-        JobSpec template = 5;
-    }
+  message Spec {
+    string schedule = 1;
+    int64 starting_deadline_seconds = 2;
+    string concurrency_policy = 3;
+    bool suspend = 4;
+    JobSpec template = 5;
+  }
 
-    message Status {
-        repeated ObjectReference active = 1;
-        int64 last_schedule_time = 2;
-    }
+  message Status {
+    repeated ObjectReference active = 1;
+    int64 last_schedule_time = 2;
+  }
 }
 
 message Postgres {
@@ -1029,14 +1034,12 @@ message Postgres {
 
 message PostgresSpec {
   string version = 1;
-  int32 replicas = 2;
-  StorageSpec storage = 3;
-  string service_account_name = 4;
-  SecretVolumeSource database_secret = 5;
-  map<string, string> node_selector = 6;
-  InitSpec init = 7;
-  BackupScheduleSpec backup_schedule = 8;
-  bool do_not_delete = 9;
+  StorageSpec storage = 2;
+  SecretVolumeSource database_secret = 3;
+  map<string, string> node_selector = 4;
+  InitSpec init = 5;
+  BackupScheduleSpec backup_schedule = 6;
+  bool do_not_pause = 7;
 }
 
 message Elastic {
@@ -1055,27 +1058,26 @@ message ElasticSpec {
   string version = 1;
   int32 replicas = 2;
   StorageSpec storage = 3;
-  string service_account_name = 4;
-  map<string, string> node_selector = 5;
-  InitSpec init = 6;
-  BackupScheduleSpec backup_schedule = 7;
-  bool do_not_delete = 8;
+  map<string, string> node_selector = 4;
+  InitSpec init = 5;
+  BackupScheduleSpec backup_schedule = 6;
+  bool do_not_pause = 7;
 }
 
-message DeletedDatabase {
+message DormantDatabase {
   Meta meta = 1;
   Spec spec = 2;
   Status status = 3;
 
   message Spec {
     bool wipe_out = 1;
-    bool recover = 2;
+    bool resume = 2;
     Origin origin = 3;
   }
 
   message Status {
     int64 creation_time = 1;
-    int64 deletion_time = 2;
+    int64 pausing_time = 2;
     int64 wipe_out_time = 3;
     string phase = 4;
     string reason = 5;
@@ -1092,14 +1094,14 @@ message Origin {
   }
 }
 
-message DatabaseSnapshot {
+message Snapshot {
   Meta meta = 1;
   Spec spec = 2;
   Status status = 3;
 
   message Spec {
     string database_name = 1;
-    SnapshotSpec snapshot_spec = 2;
+    SnapshotStorageSpec snapshot_storage_spec = 2;
   }
 
   message Status {
@@ -1126,19 +1128,18 @@ message ScriptSourceSpec {
 }
 
 message SnapshotSourceSpec {
-	string namespace = 1;
-	string name = 2;
+  string namespace = 1;
+  string name = 2;
 }
 
 message BackupScheduleSpec {
   string cron_expression = 1;
-  SnapshotSpec snapshot_spec = 2;
+  SnapshotStorageSpec snapshot_storage_spec = 2;
 }
 
-message SnapshotSpec {
+message SnapshotStorageSpec {
   SecretVolumeSource storage_secret = 1;
-  SecretVolumeSource database_secret = 2;
-  string bucket_name = 3;
+  string bucket_name = 2;
 }
 
 message Certificate {
@@ -1294,12 +1295,10 @@ message Disk {
   string type = 5;
   string zone = 6;
   string status = 7;
-  repeated string users = 8;
-  string kind = 9;
-  string endpoint = 10;
-  int64 iops = 11;
-  PersistentVolume persistent_volume = 12;
-  PersistentVolumeClaim persistent_volume_claim = 13;
+  string endpoint = 8;
+  int64 iops = 9;
+  PersistentVolume persistent_volume = 10;
+  PersistentVolumeClaim persistent_volume_claim = 11;
 }
 
 message ResourceCondition {

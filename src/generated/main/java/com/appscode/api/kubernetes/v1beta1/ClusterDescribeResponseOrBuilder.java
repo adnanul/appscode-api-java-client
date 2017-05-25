@@ -32,4 +32,14 @@ public interface ClusterDescribeResponseOrBuilder extends
    * <code>.appscode.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpec spec = 2;</code>
    */
   com.appscode.api.kubernetes.v1beta1.ClusterDescribeResponse.ClusterSpecOrBuilder getSpecOrBuilder();
+
+  /**
+   * <code>string operation_phid = 3;</code>
+   */
+  java.lang.String getOperationPhid();
+  /**
+   * <code>string operation_phid = 3;</code>
+   */
+  com.google.protobuf.ByteString
+      getOperationPhidBytes();
 }

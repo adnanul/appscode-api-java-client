@@ -16,9 +16,7 @@ public  final class PostgresSpec extends
   }
   private PostgresSpec() {
     version_ = "";
-    replicas_ = 0;
-    serviceAccountName_ = "";
-    doNotDelete_ = false;
+    doNotPause_ = false;
   }
 
   @java.lang.Override
@@ -52,12 +50,7 @@ public  final class PostgresSpec extends
             version_ = s;
             break;
           }
-          case 16: {
-
-            replicas_ = input.readInt32();
-            break;
-          }
-          case 26: {
+          case 18: {
             com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder subBuilder = null;
             if (storage_ != null) {
               subBuilder = storage_.toBuilder();
@@ -70,13 +63,7 @@ public  final class PostgresSpec extends
 
             break;
           }
-          case 34: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            serviceAccountName_ = s;
-            break;
-          }
-          case 42: {
+          case 26: {
             com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder subBuilder = null;
             if (databaseSecret_ != null) {
               subBuilder = databaseSecret_.toBuilder();
@@ -89,11 +76,11 @@ public  final class PostgresSpec extends
 
             break;
           }
-          case 50: {
-            if (!((mutable_bitField0_ & 0x00000020) == 0x00000020)) {
+          case 34: {
+            if (!((mutable_bitField0_ & 0x00000008) == 0x00000008)) {
               nodeSelector_ = com.google.protobuf.MapField.newMapField(
                   NodeSelectorDefaultEntryHolder.defaultEntry);
-              mutable_bitField0_ |= 0x00000020;
+              mutable_bitField0_ |= 0x00000008;
             }
             com.google.protobuf.MapEntry<java.lang.String, java.lang.String>
             nodeSelector__ = input.readMessage(
@@ -102,7 +89,7 @@ public  final class PostgresSpec extends
                 nodeSelector__.getKey(), nodeSelector__.getValue());
             break;
           }
-          case 58: {
+          case 42: {
             com.appscode.api.kubernetes.v1beta2.InitSpec.Builder subBuilder = null;
             if (init_ != null) {
               subBuilder = init_.toBuilder();
@@ -115,7 +102,7 @@ public  final class PostgresSpec extends
 
             break;
           }
-          case 66: {
+          case 50: {
             com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder subBuilder = null;
             if (backupSchedule_ != null) {
               subBuilder = backupSchedule_.toBuilder();
@@ -128,9 +115,9 @@ public  final class PostgresSpec extends
 
             break;
           }
-          case 72: {
+          case 56: {
 
-            doNotDelete_ = input.readBool();
+            doNotPause_ = input.readBool();
             break;
           }
         }
@@ -153,7 +140,7 @@ public  final class PostgresSpec extends
   protected com.google.protobuf.MapField internalGetMapField(
       int number) {
     switch (number) {
-      case 6:
+      case 4:
         return internalGetNodeSelector();
       default:
         throw new RuntimeException(
@@ -202,92 +189,49 @@ public  final class PostgresSpec extends
     }
   }
 
-  public static final int REPLICAS_FIELD_NUMBER = 2;
-  private int replicas_;
-  /**
-   * <code>int32 replicas = 2;</code>
-   */
-  public int getReplicas() {
-    return replicas_;
-  }
-
-  public static final int STORAGE_FIELD_NUMBER = 3;
+  public static final int STORAGE_FIELD_NUMBER = 2;
   private com.appscode.api.kubernetes.v1beta2.StorageSpec storage_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   public boolean hasStorage() {
     return storage_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage() {
     return storage_ == null ? com.appscode.api.kubernetes.v1beta2.StorageSpec.getDefaultInstance() : storage_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+   * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder() {
     return getStorage();
   }
 
-  public static final int SERVICE_ACCOUNT_NAME_FIELD_NUMBER = 4;
-  private volatile java.lang.Object serviceAccountName_;
-  /**
-   * <code>string service_account_name = 4;</code>
-   */
-  public java.lang.String getServiceAccountName() {
-    java.lang.Object ref = serviceAccountName_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      serviceAccountName_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string service_account_name = 4;</code>
-   */
-  public com.google.protobuf.ByteString
-      getServiceAccountNameBytes() {
-    java.lang.Object ref = serviceAccountName_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      serviceAccountName_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int DATABASE_SECRET_FIELD_NUMBER = 5;
+  public static final int DATABASE_SECRET_FIELD_NUMBER = 3;
   private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource databaseSecret_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   public boolean hasDatabaseSecret() {
     return databaseSecret_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
     return databaseSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : databaseSecret_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
     return getDatabaseSecret();
   }
 
-  public static final int NODE_SELECTOR_FIELD_NUMBER = 6;
+  public static final int NODE_SELECTOR_FIELD_NUMBER = 4;
   private static final class NodeSelectorDefaultEntryHolder {
     static final com.google.protobuf.MapEntry<
         java.lang.String, java.lang.String> defaultEntry =
@@ -314,7 +258,7 @@ public  final class PostgresSpec extends
     return internalGetNodeSelector().getMap().size();
   }
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   public boolean containsNodeSelector(
@@ -330,14 +274,14 @@ public  final class PostgresSpec extends
     return getNodeSelectorMap();
   }
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   public java.util.Map<java.lang.String, java.lang.String> getNodeSelectorMap() {
     return internalGetNodeSelector().getMap();
   }
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   public java.lang.String getNodeSelectorOrDefault(
@@ -349,7 +293,7 @@ public  final class PostgresSpec extends
     return map.containsKey(key) ? map.get(key) : defaultValue;
   }
   /**
-   * <code>map&lt;string, string&gt; node_selector = 6;</code>
+   * <code>map&lt;string, string&gt; node_selector = 4;</code>
    */
 
   public java.lang.String getNodeSelectorOrThrow(
@@ -363,55 +307,55 @@ public  final class PostgresSpec extends
     return map.get(key);
   }
 
-  public static final int INIT_FIELD_NUMBER = 7;
+  public static final int INIT_FIELD_NUMBER = 5;
   private com.appscode.api.kubernetes.v1beta2.InitSpec init_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   public boolean hasInit() {
     return init_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
     return init_ == null ? com.appscode.api.kubernetes.v1beta2.InitSpec.getDefaultInstance() : init_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+   * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
     return getInit();
   }
 
-  public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 8;
+  public static final int BACKUP_SCHEDULE_FIELD_NUMBER = 6;
   private com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec backupSchedule_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   public boolean hasBackupSchedule() {
     return backupSchedule_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
     return backupSchedule_ == null ? com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.getDefaultInstance() : backupSchedule_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+   * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
     return getBackupSchedule();
   }
 
-  public static final int DO_NOT_DELETE_FIELD_NUMBER = 9;
-  private boolean doNotDelete_;
+  public static final int DO_NOT_PAUSE_FIELD_NUMBER = 7;
+  private boolean doNotPause_;
   /**
-   * <code>bool do_not_delete = 9;</code>
+   * <code>bool do_not_pause = 7;</code>
    */
-  public boolean getDoNotDelete() {
-    return doNotDelete_;
+  public boolean getDoNotPause() {
+    return doNotPause_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -429,32 +373,26 @@ public  final class PostgresSpec extends
     if (!getVersionBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, version_);
     }
-    if (replicas_ != 0) {
-      output.writeInt32(2, replicas_);
-    }
     if (storage_ != null) {
-      output.writeMessage(3, getStorage());
-    }
-    if (!getServiceAccountNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, serviceAccountName_);
+      output.writeMessage(2, getStorage());
     }
     if (databaseSecret_ != null) {
-      output.writeMessage(5, getDatabaseSecret());
+      output.writeMessage(3, getDatabaseSecret());
     }
     com.google.protobuf.GeneratedMessageV3
       .serializeStringMapTo(
         output,
         internalGetNodeSelector(),
         NodeSelectorDefaultEntryHolder.defaultEntry,
-        6);
+        4);
     if (init_ != null) {
-      output.writeMessage(7, getInit());
+      output.writeMessage(5, getInit());
     }
     if (backupSchedule_ != null) {
-      output.writeMessage(8, getBackupSchedule());
+      output.writeMessage(6, getBackupSchedule());
     }
-    if (doNotDelete_ != false) {
-      output.writeBool(9, doNotDelete_);
+    if (doNotPause_ != false) {
+      output.writeBool(7, doNotPause_);
     }
   }
 
@@ -466,20 +404,13 @@ public  final class PostgresSpec extends
     if (!getVersionBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, version_);
     }
-    if (replicas_ != 0) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeInt32Size(2, replicas_);
-    }
     if (storage_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(3, getStorage());
-    }
-    if (!getServiceAccountNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, serviceAccountName_);
+        .computeMessageSize(2, getStorage());
     }
     if (databaseSecret_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(5, getDatabaseSecret());
+        .computeMessageSize(3, getDatabaseSecret());
     }
     for (java.util.Map.Entry<java.lang.String, java.lang.String> entry
          : internalGetNodeSelector().getMap().entrySet()) {
@@ -489,19 +420,19 @@ public  final class PostgresSpec extends
           .setValue(entry.getValue())
           .build();
       size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, nodeSelector__);
+          .computeMessageSize(4, nodeSelector__);
     }
     if (init_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(7, getInit());
+        .computeMessageSize(5, getInit());
     }
     if (backupSchedule_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(8, getBackupSchedule());
+        .computeMessageSize(6, getBackupSchedule());
     }
-    if (doNotDelete_ != false) {
+    if (doNotPause_ != false) {
       size += com.google.protobuf.CodedOutputStream
-        .computeBoolSize(9, doNotDelete_);
+        .computeBoolSize(7, doNotPause_);
     }
     memoizedSize = size;
     return size;
@@ -521,15 +452,11 @@ public  final class PostgresSpec extends
     boolean result = true;
     result = result && getVersion()
         .equals(other.getVersion());
-    result = result && (getReplicas()
-        == other.getReplicas());
     result = result && (hasStorage() == other.hasStorage());
     if (hasStorage()) {
       result = result && getStorage()
           .equals(other.getStorage());
     }
-    result = result && getServiceAccountName()
-        .equals(other.getServiceAccountName());
     result = result && (hasDatabaseSecret() == other.hasDatabaseSecret());
     if (hasDatabaseSecret()) {
       result = result && getDatabaseSecret()
@@ -547,8 +474,8 @@ public  final class PostgresSpec extends
       result = result && getBackupSchedule()
           .equals(other.getBackupSchedule());
     }
-    result = result && (getDoNotDelete()
-        == other.getDoNotDelete());
+    result = result && (getDoNotPause()
+        == other.getDoNotPause());
     return result;
   }
 
@@ -561,14 +488,10 @@ public  final class PostgresSpec extends
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + VERSION_FIELD_NUMBER;
     hash = (53 * hash) + getVersion().hashCode();
-    hash = (37 * hash) + REPLICAS_FIELD_NUMBER;
-    hash = (53 * hash) + getReplicas();
     if (hasStorage()) {
       hash = (37 * hash) + STORAGE_FIELD_NUMBER;
       hash = (53 * hash) + getStorage().hashCode();
     }
-    hash = (37 * hash) + SERVICE_ACCOUNT_NAME_FIELD_NUMBER;
-    hash = (53 * hash) + getServiceAccountName().hashCode();
     if (hasDatabaseSecret()) {
       hash = (37 * hash) + DATABASE_SECRET_FIELD_NUMBER;
       hash = (53 * hash) + getDatabaseSecret().hashCode();
@@ -585,9 +508,9 @@ public  final class PostgresSpec extends
       hash = (37 * hash) + BACKUP_SCHEDULE_FIELD_NUMBER;
       hash = (53 * hash) + getBackupSchedule().hashCode();
     }
-    hash = (37 * hash) + DO_NOT_DELETE_FIELD_NUMBER;
+    hash = (37 * hash) + DO_NOT_PAUSE_FIELD_NUMBER;
     hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-        getDoNotDelete());
+        getDoNotPause());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -697,7 +620,7 @@ public  final class PostgresSpec extends
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 4:
           return internalGetNodeSelector();
         default:
           throw new RuntimeException(
@@ -708,7 +631,7 @@ public  final class PostgresSpec extends
     protected com.google.protobuf.MapField internalGetMutableMapField(
         int number) {
       switch (number) {
-        case 6:
+        case 4:
           return internalGetMutableNodeSelector();
         default:
           throw new RuntimeException(
@@ -741,16 +664,12 @@ public  final class PostgresSpec extends
       super.clear();
       version_ = "";
 
-      replicas_ = 0;
-
       if (storageBuilder_ == null) {
         storage_ = null;
       } else {
         storage_ = null;
         storageBuilder_ = null;
       }
-      serviceAccountName_ = "";
-
       if (databaseSecretBuilder_ == null) {
         databaseSecret_ = null;
       } else {
@@ -770,7 +689,7 @@ public  final class PostgresSpec extends
         backupSchedule_ = null;
         backupScheduleBuilder_ = null;
       }
-      doNotDelete_ = false;
+      doNotPause_ = false;
 
       return this;
     }
@@ -797,13 +716,11 @@ public  final class PostgresSpec extends
       int from_bitField0_ = bitField0_;
       int to_bitField0_ = 0;
       result.version_ = version_;
-      result.replicas_ = replicas_;
       if (storageBuilder_ == null) {
         result.storage_ = storage_;
       } else {
         result.storage_ = storageBuilder_.build();
       }
-      result.serviceAccountName_ = serviceAccountName_;
       if (databaseSecretBuilder_ == null) {
         result.databaseSecret_ = databaseSecret_;
       } else {
@@ -821,7 +738,7 @@ public  final class PostgresSpec extends
       } else {
         result.backupSchedule_ = backupScheduleBuilder_.build();
       }
-      result.doNotDelete_ = doNotDelete_;
+      result.doNotPause_ = doNotPause_;
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -868,15 +785,8 @@ public  final class PostgresSpec extends
         version_ = other.version_;
         onChanged();
       }
-      if (other.getReplicas() != 0) {
-        setReplicas(other.getReplicas());
-      }
       if (other.hasStorage()) {
         mergeStorage(other.getStorage());
-      }
-      if (!other.getServiceAccountName().isEmpty()) {
-        serviceAccountName_ = other.serviceAccountName_;
-        onChanged();
       }
       if (other.hasDatabaseSecret()) {
         mergeDatabaseSecret(other.getDatabaseSecret());
@@ -889,8 +799,8 @@ public  final class PostgresSpec extends
       if (other.hasBackupSchedule()) {
         mergeBackupSchedule(other.getBackupSchedule());
       }
-      if (other.getDoNotDelete() != false) {
-        setDoNotDelete(other.getDoNotDelete());
+      if (other.getDoNotPause() != false) {
+        setDoNotPause(other.getDoNotPause());
       }
       onChanged();
       return this;
@@ -988,43 +898,17 @@ public  final class PostgresSpec extends
       return this;
     }
 
-    private int replicas_ ;
-    /**
-     * <code>int32 replicas = 2;</code>
-     */
-    public int getReplicas() {
-      return replicas_;
-    }
-    /**
-     * <code>int32 replicas = 2;</code>
-     */
-    public Builder setReplicas(int value) {
-      
-      replicas_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>int32 replicas = 2;</code>
-     */
-    public Builder clearReplicas() {
-      
-      replicas_ = 0;
-      onChanged();
-      return this;
-    }
-
     private com.appscode.api.kubernetes.v1beta2.StorageSpec storage_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageSpec, com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder> storageBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public boolean hasStorage() {
       return storageBuilder_ != null || storage_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpec getStorage() {
       if (storageBuilder_ == null) {
@@ -1034,7 +918,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public Builder setStorage(com.appscode.api.kubernetes.v1beta2.StorageSpec value) {
       if (storageBuilder_ == null) {
@@ -1050,7 +934,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public Builder setStorage(
         com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder builderForValue) {
@@ -1064,7 +948,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public Builder mergeStorage(com.appscode.api.kubernetes.v1beta2.StorageSpec value) {
       if (storageBuilder_ == null) {
@@ -1082,7 +966,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public Builder clearStorage() {
       if (storageBuilder_ == null) {
@@ -1096,7 +980,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder getStorageBuilder() {
       
@@ -1104,7 +988,7 @@ public  final class PostgresSpec extends
       return getStorageFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder getStorageOrBuilder() {
       if (storageBuilder_ != null) {
@@ -1115,7 +999,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 3;</code>
+     * <code>.appscode.kubernetes.v1beta2.StorageSpec storage = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.StorageSpec, com.appscode.api.kubernetes.v1beta2.StorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.StorageSpecOrBuilder> 
@@ -1131,86 +1015,17 @@ public  final class PostgresSpec extends
       return storageBuilder_;
     }
 
-    private java.lang.Object serviceAccountName_ = "";
-    /**
-     * <code>string service_account_name = 4;</code>
-     */
-    public java.lang.String getServiceAccountName() {
-      java.lang.Object ref = serviceAccountName_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        serviceAccountName_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string service_account_name = 4;</code>
-     */
-    public com.google.protobuf.ByteString
-        getServiceAccountNameBytes() {
-      java.lang.Object ref = serviceAccountName_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        serviceAccountName_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string service_account_name = 4;</code>
-     */
-    public Builder setServiceAccountName(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      serviceAccountName_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string service_account_name = 4;</code>
-     */
-    public Builder clearServiceAccountName() {
-      
-      serviceAccountName_ = getDefaultInstance().getServiceAccountName();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string service_account_name = 4;</code>
-     */
-    public Builder setServiceAccountNameBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      serviceAccountName_ = value;
-      onChanged();
-      return this;
-    }
-
     private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource databaseSecret_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> databaseSecretBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public boolean hasDatabaseSecret() {
       return databaseSecretBuilder_ != null || databaseSecret_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
       if (databaseSecretBuilder_ == null) {
@@ -1220,7 +1035,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public Builder setDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (databaseSecretBuilder_ == null) {
@@ -1236,7 +1051,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public Builder setDatabaseSecret(
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
@@ -1250,7 +1065,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public Builder mergeDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
       if (databaseSecretBuilder_ == null) {
@@ -1268,7 +1083,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public Builder clearDatabaseSecret() {
       if (databaseSecretBuilder_ == null) {
@@ -1282,7 +1097,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getDatabaseSecretBuilder() {
       
@@ -1290,7 +1105,7 @@ public  final class PostgresSpec extends
       return getDatabaseSecretFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
       if (databaseSecretBuilder_ != null) {
@@ -1301,7 +1116,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 5;</code>
+     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 3;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
@@ -1344,7 +1159,7 @@ public  final class PostgresSpec extends
       return internalGetNodeSelector().getMap().size();
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public boolean containsNodeSelector(
@@ -1360,14 +1175,14 @@ public  final class PostgresSpec extends
       return getNodeSelectorMap();
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public java.util.Map<java.lang.String, java.lang.String> getNodeSelectorMap() {
       return internalGetNodeSelector().getMap();
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public java.lang.String getNodeSelectorOrDefault(
@@ -1379,7 +1194,7 @@ public  final class PostgresSpec extends
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public java.lang.String getNodeSelectorOrThrow(
@@ -1399,7 +1214,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public Builder removeNodeSelector(
@@ -1418,7 +1233,7 @@ public  final class PostgresSpec extends
       return internalGetMutableNodeSelector().getMutableMap();
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
     public Builder putNodeSelector(
         java.lang.String key,
@@ -1430,7 +1245,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>map&lt;string, string&gt; node_selector = 6;</code>
+     * <code>map&lt;string, string&gt; node_selector = 4;</code>
      */
 
     public Builder putAllNodeSelector(
@@ -1444,13 +1259,13 @@ public  final class PostgresSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> initBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public boolean hasInit() {
       return initBuilder_ != null || init_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpec getInit() {
       if (initBuilder_ == null) {
@@ -1460,7 +1275,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public Builder setInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
       if (initBuilder_ == null) {
@@ -1476,7 +1291,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public Builder setInit(
         com.appscode.api.kubernetes.v1beta2.InitSpec.Builder builderForValue) {
@@ -1490,7 +1305,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public Builder mergeInit(com.appscode.api.kubernetes.v1beta2.InitSpec value) {
       if (initBuilder_ == null) {
@@ -1508,7 +1323,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public Builder clearInit() {
       if (initBuilder_ == null) {
@@ -1522,7 +1337,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpec.Builder getInitBuilder() {
       
@@ -1530,7 +1345,7 @@ public  final class PostgresSpec extends
       return getInitFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder getInitOrBuilder() {
       if (initBuilder_ != null) {
@@ -1541,7 +1356,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 7;</code>
+     * <code>.appscode.kubernetes.v1beta2.InitSpec init = 5;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.InitSpec, com.appscode.api.kubernetes.v1beta2.InitSpec.Builder, com.appscode.api.kubernetes.v1beta2.InitSpecOrBuilder> 
@@ -1561,13 +1376,13 @@ public  final class PostgresSpec extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> backupScheduleBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public boolean hasBackupSchedule() {
       return backupScheduleBuilder_ != null || backupSchedule_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec getBackupSchedule() {
       if (backupScheduleBuilder_ == null) {
@@ -1577,7 +1392,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public Builder setBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
       if (backupScheduleBuilder_ == null) {
@@ -1593,7 +1408,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public Builder setBackupSchedule(
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder builderForValue) {
@@ -1607,7 +1422,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public Builder mergeBackupSchedule(com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec value) {
       if (backupScheduleBuilder_ == null) {
@@ -1625,7 +1440,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public Builder clearBackupSchedule() {
       if (backupScheduleBuilder_ == null) {
@@ -1639,7 +1454,7 @@ public  final class PostgresSpec extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder getBackupScheduleBuilder() {
       
@@ -1647,7 +1462,7 @@ public  final class PostgresSpec extends
       return getBackupScheduleFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder getBackupScheduleOrBuilder() {
       if (backupScheduleBuilder_ != null) {
@@ -1658,7 +1473,7 @@ public  final class PostgresSpec extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 8;</code>
+     * <code>.appscode.kubernetes.v1beta2.BackupScheduleSpec backup_schedule = 6;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec.Builder, com.appscode.api.kubernetes.v1beta2.BackupScheduleSpecOrBuilder> 
@@ -1674,28 +1489,28 @@ public  final class PostgresSpec extends
       return backupScheduleBuilder_;
     }
 
-    private boolean doNotDelete_ ;
+    private boolean doNotPause_ ;
     /**
-     * <code>bool do_not_delete = 9;</code>
+     * <code>bool do_not_pause = 7;</code>
      */
-    public boolean getDoNotDelete() {
-      return doNotDelete_;
+    public boolean getDoNotPause() {
+      return doNotPause_;
     }
     /**
-     * <code>bool do_not_delete = 9;</code>
+     * <code>bool do_not_pause = 7;</code>
      */
-    public Builder setDoNotDelete(boolean value) {
+    public Builder setDoNotPause(boolean value) {
       
-      doNotDelete_ = value;
+      doNotPause_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>bool do_not_delete = 9;</code>
+     * <code>bool do_not_pause = 7;</code>
      */
-    public Builder clearDoNotDelete() {
+    public Builder clearDoNotPause() {
       
-      doNotDelete_ = false;
+      doNotPause_ = false;
       onChanged();
       return this;
     }

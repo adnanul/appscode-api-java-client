@@ -17,6 +17,9 @@ public  final class BucketListRequest extends
   private BucketListRequest() {
     cloudCredential_ = "";
     gceProject_ = "";
+    clusterUid_ = "";
+    secretNamespace_ = "";
+    secretName_ = "";
   }
 
   @java.lang.Override
@@ -54,6 +57,24 @@ public  final class BucketListRequest extends
             java.lang.String s = input.readStringRequireUtf8();
 
             gceProject_ = s;
+            break;
+          }
+          case 26: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            clusterUid_ = s;
+            break;
+          }
+          case 34: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            secretNamespace_ = s;
+            break;
+          }
+          case 42: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            secretName_ = s;
             break;
           }
         }
@@ -155,6 +176,108 @@ public  final class BucketListRequest extends
     }
   }
 
+  public static final int CLUSTER_UID_FIELD_NUMBER = 3;
+  private volatile java.lang.Object clusterUid_;
+  /**
+   * <code>string cluster_uid = 3;</code>
+   */
+  public java.lang.String getClusterUid() {
+    java.lang.Object ref = clusterUid_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      clusterUid_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string cluster_uid = 3;</code>
+   */
+  public com.google.protobuf.ByteString
+      getClusterUidBytes() {
+    java.lang.Object ref = clusterUid_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      clusterUid_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int SECRET_NAMESPACE_FIELD_NUMBER = 4;
+  private volatile java.lang.Object secretNamespace_;
+  /**
+   * <code>string secret_namespace = 4;</code>
+   */
+  public java.lang.String getSecretNamespace() {
+    java.lang.Object ref = secretNamespace_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      secretNamespace_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string secret_namespace = 4;</code>
+   */
+  public com.google.protobuf.ByteString
+      getSecretNamespaceBytes() {
+    java.lang.Object ref = secretNamespace_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      secretNamespace_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int SECRET_NAME_FIELD_NUMBER = 5;
+  private volatile java.lang.Object secretName_;
+  /**
+   * <code>string secret_name = 5;</code>
+   */
+  public java.lang.String getSecretName() {
+    java.lang.Object ref = secretName_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      secretName_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string secret_name = 5;</code>
+   */
+  public com.google.protobuf.ByteString
+      getSecretNameBytes() {
+    java.lang.Object ref = secretName_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      secretName_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -173,6 +296,15 @@ public  final class BucketListRequest extends
     if (!getGceProjectBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, gceProject_);
     }
+    if (!getClusterUidBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clusterUid_);
+    }
+    if (!getSecretNamespaceBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 4, secretNamespace_);
+    }
+    if (!getSecretNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 5, secretName_);
+    }
   }
 
   public int getSerializedSize() {
@@ -185,6 +317,15 @@ public  final class BucketListRequest extends
     }
     if (!getGceProjectBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, gceProject_);
+    }
+    if (!getClusterUidBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clusterUid_);
+    }
+    if (!getSecretNamespaceBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, secretNamespace_);
+    }
+    if (!getSecretNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, secretName_);
     }
     memoizedSize = size;
     return size;
@@ -206,6 +347,12 @@ public  final class BucketListRequest extends
         .equals(other.getCloudCredential());
     result = result && getGceProject()
         .equals(other.getGceProject());
+    result = result && getClusterUid()
+        .equals(other.getClusterUid());
+    result = result && getSecretNamespace()
+        .equals(other.getSecretNamespace());
+    result = result && getSecretName()
+        .equals(other.getSecretName());
     return result;
   }
 
@@ -220,6 +367,12 @@ public  final class BucketListRequest extends
     hash = (53 * hash) + getCloudCredential().hashCode();
     hash = (37 * hash) + GCE_PROJECT_FIELD_NUMBER;
     hash = (53 * hash) + getGceProject().hashCode();
+    hash = (37 * hash) + CLUSTER_UID_FIELD_NUMBER;
+    hash = (53 * hash) + getClusterUid().hashCode();
+    hash = (37 * hash) + SECRET_NAMESPACE_FIELD_NUMBER;
+    hash = (53 * hash) + getSecretNamespace().hashCode();
+    hash = (37 * hash) + SECRET_NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getSecretName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -353,6 +506,12 @@ public  final class BucketListRequest extends
 
       gceProject_ = "";
 
+      clusterUid_ = "";
+
+      secretNamespace_ = "";
+
+      secretName_ = "";
+
       return this;
     }
 
@@ -377,6 +536,9 @@ public  final class BucketListRequest extends
       com.appscode.api.kubernetes.v1beta1.BucketListRequest result = new com.appscode.api.kubernetes.v1beta1.BucketListRequest(this);
       result.cloudCredential_ = cloudCredential_;
       result.gceProject_ = gceProject_;
+      result.clusterUid_ = clusterUid_;
+      result.secretNamespace_ = secretNamespace_;
+      result.secretName_ = secretName_;
       onBuilt();
       return result;
     }
@@ -424,6 +586,18 @@ public  final class BucketListRequest extends
       }
       if (!other.getGceProject().isEmpty()) {
         gceProject_ = other.gceProject_;
+        onChanged();
+      }
+      if (!other.getClusterUid().isEmpty()) {
+        clusterUid_ = other.clusterUid_;
+        onChanged();
+      }
+      if (!other.getSecretNamespace().isEmpty()) {
+        secretNamespace_ = other.secretNamespace_;
+        onChanged();
+      }
+      if (!other.getSecretName().isEmpty()) {
+        secretName_ = other.secretName_;
         onChanged();
       }
       onChanged();
@@ -606,6 +780,213 @@ public  final class BucketListRequest extends
   checkByteStringIsUtf8(value);
       
       gceProject_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object clusterUid_ = "";
+    /**
+     * <code>string cluster_uid = 3;</code>
+     */
+    public java.lang.String getClusterUid() {
+      java.lang.Object ref = clusterUid_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        clusterUid_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string cluster_uid = 3;</code>
+     */
+    public com.google.protobuf.ByteString
+        getClusterUidBytes() {
+      java.lang.Object ref = clusterUid_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        clusterUid_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string cluster_uid = 3;</code>
+     */
+    public Builder setClusterUid(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      clusterUid_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string cluster_uid = 3;</code>
+     */
+    public Builder clearClusterUid() {
+      
+      clusterUid_ = getDefaultInstance().getClusterUid();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string cluster_uid = 3;</code>
+     */
+    public Builder setClusterUidBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      clusterUid_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object secretNamespace_ = "";
+    /**
+     * <code>string secret_namespace = 4;</code>
+     */
+    public java.lang.String getSecretNamespace() {
+      java.lang.Object ref = secretNamespace_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        secretNamespace_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string secret_namespace = 4;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSecretNamespaceBytes() {
+      java.lang.Object ref = secretNamespace_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        secretNamespace_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string secret_namespace = 4;</code>
+     */
+    public Builder setSecretNamespace(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      secretNamespace_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string secret_namespace = 4;</code>
+     */
+    public Builder clearSecretNamespace() {
+      
+      secretNamespace_ = getDefaultInstance().getSecretNamespace();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string secret_namespace = 4;</code>
+     */
+    public Builder setSecretNamespaceBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      secretNamespace_ = value;
+      onChanged();
+      return this;
+    }
+
+    private java.lang.Object secretName_ = "";
+    /**
+     * <code>string secret_name = 5;</code>
+     */
+    public java.lang.String getSecretName() {
+      java.lang.Object ref = secretName_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        secretName_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string secret_name = 5;</code>
+     */
+    public com.google.protobuf.ByteString
+        getSecretNameBytes() {
+      java.lang.Object ref = secretName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        secretName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string secret_name = 5;</code>
+     */
+    public Builder setSecretName(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      secretName_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string secret_name = 5;</code>
+     */
+    public Builder clearSecretName() {
+      
+      secretName_ = getDefaultInstance().getSecretName();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string secret_name = 5;</code>
+     */
+    public Builder setSecretNameBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      secretName_ = value;
       onChanged();
       return this;
     }

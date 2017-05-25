@@ -73,72 +73,43 @@ public interface DiskOrBuilder extends
       getStatusBytes();
 
   /**
-   * <code>repeated string users = 8;</code>
-   */
-  java.util.List<java.lang.String>
-      getUsersList();
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  int getUsersCount();
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  java.lang.String getUsers(int index);
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  com.google.protobuf.ByteString
-      getUsersBytes(int index);
-
-  /**
-   * <code>string kind = 9;</code>
-   */
-  java.lang.String getKind();
-  /**
-   * <code>string kind = 9;</code>
-   */
-  com.google.protobuf.ByteString
-      getKindBytes();
-
-  /**
-   * <code>string endpoint = 10;</code>
+   * <code>string endpoint = 8;</code>
    */
   java.lang.String getEndpoint();
   /**
-   * <code>string endpoint = 10;</code>
+   * <code>string endpoint = 8;</code>
    */
   com.google.protobuf.ByteString
       getEndpointBytes();
 
   /**
-   * <code>int64 iops = 11;</code>
+   * <code>int64 iops = 9;</code>
    */
   long getIops();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   boolean hasPersistentVolume();
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume();
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   boolean hasPersistentVolumeClaim();
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim();
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder();
 }

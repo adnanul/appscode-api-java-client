@@ -22,8 +22,6 @@ public  final class Disk extends
     type_ = "";
     zone_ = "";
     status_ = "";
-    users_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    kind_ = "";
     endpoint_ = "";
     iops_ = 0L;
   }
@@ -96,31 +94,16 @@ public  final class Disk extends
           }
           case 66: {
             java.lang.String s = input.readStringRequireUtf8();
-            if (!((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-              users_ = new com.google.protobuf.LazyStringArrayList();
-              mutable_bitField0_ |= 0x00000080;
-            }
-            users_.add(s);
-            break;
-          }
-          case 74: {
-            java.lang.String s = input.readStringRequireUtf8();
-
-            kind_ = s;
-            break;
-          }
-          case 82: {
-            java.lang.String s = input.readStringRequireUtf8();
 
             endpoint_ = s;
             break;
           }
-          case 88: {
+          case 72: {
 
             iops_ = input.readInt64();
             break;
           }
-          case 98: {
+          case 82: {
             com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder subBuilder = null;
             if (persistentVolume_ != null) {
               subBuilder = persistentVolume_.toBuilder();
@@ -133,7 +116,7 @@ public  final class Disk extends
 
             break;
           }
-          case 106: {
+          case 90: {
             com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder subBuilder = null;
             if (persistentVolumeClaim_ != null) {
               subBuilder = persistentVolumeClaim_.toBuilder();
@@ -154,9 +137,6 @@ public  final class Disk extends
       throw new com.google.protobuf.InvalidProtocolBufferException(
           e).setUnfinishedMessage(this);
     } finally {
-      if (((mutable_bitField0_ & 0x00000080) == 0x00000080)) {
-        users_ = users_.getUnmodifiableView();
-      }
       makeExtensionsImmutable();
     }
   }
@@ -172,7 +152,6 @@ public  final class Disk extends
             com.appscode.api.kubernetes.v1beta2.Disk.class, com.appscode.api.kubernetes.v1beta2.Disk.Builder.class);
   }
 
-  private int bitField0_;
   public static final int NAME_FIELD_NUMBER = 1;
   private volatile java.lang.Object name_;
   /**
@@ -386,73 +365,10 @@ public  final class Disk extends
     }
   }
 
-  public static final int USERS_FIELD_NUMBER = 8;
-  private com.google.protobuf.LazyStringList users_;
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  public com.google.protobuf.ProtocolStringList
-      getUsersList() {
-    return users_;
-  }
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  public int getUsersCount() {
-    return users_.size();
-  }
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  public java.lang.String getUsers(int index) {
-    return users_.get(index);
-  }
-  /**
-   * <code>repeated string users = 8;</code>
-   */
-  public com.google.protobuf.ByteString
-      getUsersBytes(int index) {
-    return users_.getByteString(index);
-  }
-
-  public static final int KIND_FIELD_NUMBER = 9;
-  private volatile java.lang.Object kind_;
-  /**
-   * <code>string kind = 9;</code>
-   */
-  public java.lang.String getKind() {
-    java.lang.Object ref = kind_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      kind_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>string kind = 9;</code>
-   */
-  public com.google.protobuf.ByteString
-      getKindBytes() {
-    java.lang.Object ref = kind_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      kind_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
-  }
-
-  public static final int ENDPOINT_FIELD_NUMBER = 10;
+  public static final int ENDPOINT_FIELD_NUMBER = 8;
   private volatile java.lang.Object endpoint_;
   /**
-   * <code>string endpoint = 10;</code>
+   * <code>string endpoint = 8;</code>
    */
   public java.lang.String getEndpoint() {
     java.lang.Object ref = endpoint_;
@@ -467,7 +383,7 @@ public  final class Disk extends
     }
   }
   /**
-   * <code>string endpoint = 10;</code>
+   * <code>string endpoint = 8;</code>
    */
   public com.google.protobuf.ByteString
       getEndpointBytes() {
@@ -483,52 +399,52 @@ public  final class Disk extends
     }
   }
 
-  public static final int IOPS_FIELD_NUMBER = 11;
+  public static final int IOPS_FIELD_NUMBER = 9;
   private long iops_;
   /**
-   * <code>int64 iops = 11;</code>
+   * <code>int64 iops = 9;</code>
    */
   public long getIops() {
     return iops_;
   }
 
-  public static final int PERSISTENT_VOLUME_FIELD_NUMBER = 12;
+  public static final int PERSISTENT_VOLUME_FIELD_NUMBER = 10;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolume persistentVolume_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   public boolean hasPersistentVolume() {
     return persistentVolume_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
     return persistentVolume_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolume.getDefaultInstance() : persistentVolume_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
     return getPersistentVolume();
   }
 
-  public static final int PERSISTENT_VOLUME_CLAIM_FIELD_NUMBER = 13;
+  public static final int PERSISTENT_VOLUME_CLAIM_FIELD_NUMBER = 11;
   private com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim persistentVolumeClaim_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   public boolean hasPersistentVolumeClaim() {
     return persistentVolumeClaim_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
     return persistentVolumeClaim_ == null ? com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.getDefaultInstance() : persistentVolumeClaim_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+   * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
    */
   public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
     return getPersistentVolumeClaim();
@@ -567,23 +483,17 @@ public  final class Disk extends
     if (!getStatusBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 7, status_);
     }
-    for (int i = 0; i < users_.size(); i++) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, users_.getRaw(i));
-    }
-    if (!getKindBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 9, kind_);
-    }
     if (!getEndpointBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 10, endpoint_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 8, endpoint_);
     }
     if (iops_ != 0L) {
-      output.writeInt64(11, iops_);
+      output.writeInt64(9, iops_);
     }
     if (persistentVolume_ != null) {
-      output.writeMessage(12, getPersistentVolume());
+      output.writeMessage(10, getPersistentVolume());
     }
     if (persistentVolumeClaim_ != null) {
-      output.writeMessage(13, getPersistentVolumeClaim());
+      output.writeMessage(11, getPersistentVolumeClaim());
     }
   }
 
@@ -614,31 +524,20 @@ public  final class Disk extends
     if (!getStatusBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, status_);
     }
-    {
-      int dataSize = 0;
-      for (int i = 0; i < users_.size(); i++) {
-        dataSize += computeStringSizeNoTag(users_.getRaw(i));
-      }
-      size += dataSize;
-      size += 1 * getUsersList().size();
-    }
-    if (!getKindBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, kind_);
-    }
     if (!getEndpointBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, endpoint_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, endpoint_);
     }
     if (iops_ != 0L) {
       size += com.google.protobuf.CodedOutputStream
-        .computeInt64Size(11, iops_);
+        .computeInt64Size(9, iops_);
     }
     if (persistentVolume_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(12, getPersistentVolume());
+        .computeMessageSize(10, getPersistentVolume());
     }
     if (persistentVolumeClaim_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(13, getPersistentVolumeClaim());
+        .computeMessageSize(11, getPersistentVolumeClaim());
     }
     memoizedSize = size;
     return size;
@@ -670,10 +569,6 @@ public  final class Disk extends
         .equals(other.getZone());
     result = result && getStatus()
         .equals(other.getStatus());
-    result = result && getUsersList()
-        .equals(other.getUsersList());
-    result = result && getKind()
-        .equals(other.getKind());
     result = result && getEndpoint()
         .equals(other.getEndpoint());
     result = result && (getIops()
@@ -713,12 +608,6 @@ public  final class Disk extends
     hash = (53 * hash) + getZone().hashCode();
     hash = (37 * hash) + STATUS_FIELD_NUMBER;
     hash = (53 * hash) + getStatus().hashCode();
-    if (getUsersCount() > 0) {
-      hash = (37 * hash) + USERS_FIELD_NUMBER;
-      hash = (53 * hash) + getUsersList().hashCode();
-    }
-    hash = (37 * hash) + KIND_FIELD_NUMBER;
-    hash = (53 * hash) + getKind().hashCode();
     hash = (37 * hash) + ENDPOINT_FIELD_NUMBER;
     hash = (53 * hash) + getEndpoint().hashCode();
     hash = (37 * hash) + IOPS_FIELD_NUMBER;
@@ -875,10 +764,6 @@ public  final class Disk extends
 
       status_ = "";
 
-      users_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000080);
-      kind_ = "";
-
       endpoint_ = "";
 
       iops_ = 0L;
@@ -917,8 +802,6 @@ public  final class Disk extends
 
     public com.appscode.api.kubernetes.v1beta2.Disk buildPartial() {
       com.appscode.api.kubernetes.v1beta2.Disk result = new com.appscode.api.kubernetes.v1beta2.Disk(this);
-      int from_bitField0_ = bitField0_;
-      int to_bitField0_ = 0;
       result.name_ = name_;
       result.id_ = id_;
       result.provider_ = provider_;
@@ -926,12 +809,6 @@ public  final class Disk extends
       result.type_ = type_;
       result.zone_ = zone_;
       result.status_ = status_;
-      if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        users_ = users_.getUnmodifiableView();
-        bitField0_ = (bitField0_ & ~0x00000080);
-      }
-      result.users_ = users_;
-      result.kind_ = kind_;
       result.endpoint_ = endpoint_;
       result.iops_ = iops_;
       if (persistentVolumeBuilder_ == null) {
@@ -944,7 +821,6 @@ public  final class Disk extends
       } else {
         result.persistentVolumeClaim_ = persistentVolumeClaimBuilder_.build();
       }
-      result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
     }
@@ -1013,20 +889,6 @@ public  final class Disk extends
         status_ = other.status_;
         onChanged();
       }
-      if (!other.users_.isEmpty()) {
-        if (users_.isEmpty()) {
-          users_ = other.users_;
-          bitField0_ = (bitField0_ & ~0x00000080);
-        } else {
-          ensureUsersIsMutable();
-          users_.addAll(other.users_);
-        }
-        onChanged();
-      }
-      if (!other.getKind().isEmpty()) {
-        kind_ = other.kind_;
-        onChanged();
-      }
       if (!other.getEndpoint().isEmpty()) {
         endpoint_ = other.endpoint_;
         onChanged();
@@ -1065,7 +927,6 @@ public  final class Disk extends
       }
       return this;
     }
-    private int bitField0_;
 
     private java.lang.Object name_ = "";
     /**
@@ -1507,172 +1368,9 @@ public  final class Disk extends
       return this;
     }
 
-    private com.google.protobuf.LazyStringList users_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-    private void ensureUsersIsMutable() {
-      if (!((bitField0_ & 0x00000080) == 0x00000080)) {
-        users_ = new com.google.protobuf.LazyStringArrayList(users_);
-        bitField0_ |= 0x00000080;
-       }
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public com.google.protobuf.ProtocolStringList
-        getUsersList() {
-      return users_.getUnmodifiableView();
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public int getUsersCount() {
-      return users_.size();
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public java.lang.String getUsers(int index) {
-      return users_.get(index);
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public com.google.protobuf.ByteString
-        getUsersBytes(int index) {
-      return users_.getByteString(index);
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public Builder setUsers(
-        int index, java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureUsersIsMutable();
-      users_.set(index, value);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public Builder addUsers(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  ensureUsersIsMutable();
-      users_.add(value);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public Builder addAllUsers(
-        java.lang.Iterable<java.lang.String> values) {
-      ensureUsersIsMutable();
-      com.google.protobuf.AbstractMessageLite.Builder.addAll(
-          values, users_);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public Builder clearUsers() {
-      users_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-      bitField0_ = (bitField0_ & ~0x00000080);
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>repeated string users = 8;</code>
-     */
-    public Builder addUsersBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      ensureUsersIsMutable();
-      users_.add(value);
-      onChanged();
-      return this;
-    }
-
-    private java.lang.Object kind_ = "";
-    /**
-     * <code>string kind = 9;</code>
-     */
-    public java.lang.String getKind() {
-      java.lang.Object ref = kind_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        kind_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
-    }
-    /**
-     * <code>string kind = 9;</code>
-     */
-    public com.google.protobuf.ByteString
-        getKindBytes() {
-      java.lang.Object ref = kind_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        kind_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>string kind = 9;</code>
-     */
-    public Builder setKind(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      kind_ = value;
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string kind = 9;</code>
-     */
-    public Builder clearKind() {
-      
-      kind_ = getDefaultInstance().getKind();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>string kind = 9;</code>
-     */
-    public Builder setKindBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      kind_ = value;
-      onChanged();
-      return this;
-    }
-
     private java.lang.Object endpoint_ = "";
     /**
-     * <code>string endpoint = 10;</code>
+     * <code>string endpoint = 8;</code>
      */
     public java.lang.String getEndpoint() {
       java.lang.Object ref = endpoint_;
@@ -1687,7 +1385,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>string endpoint = 10;</code>
+     * <code>string endpoint = 8;</code>
      */
     public com.google.protobuf.ByteString
         getEndpointBytes() {
@@ -1703,7 +1401,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>string endpoint = 10;</code>
+     * <code>string endpoint = 8;</code>
      */
     public Builder setEndpoint(
         java.lang.String value) {
@@ -1716,7 +1414,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>string endpoint = 10;</code>
+     * <code>string endpoint = 8;</code>
      */
     public Builder clearEndpoint() {
       
@@ -1725,7 +1423,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>string endpoint = 10;</code>
+     * <code>string endpoint = 8;</code>
      */
     public Builder setEndpointBytes(
         com.google.protobuf.ByteString value) {
@@ -1741,13 +1439,13 @@ public  final class Disk extends
 
     private long iops_ ;
     /**
-     * <code>int64 iops = 11;</code>
+     * <code>int64 iops = 9;</code>
      */
     public long getIops() {
       return iops_;
     }
     /**
-     * <code>int64 iops = 11;</code>
+     * <code>int64 iops = 9;</code>
      */
     public Builder setIops(long value) {
       
@@ -1756,7 +1454,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>int64 iops = 11;</code>
+     * <code>int64 iops = 9;</code>
      */
     public Builder clearIops() {
       
@@ -1769,13 +1467,13 @@ public  final class Disk extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> persistentVolumeBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public boolean hasPersistentVolume() {
       return persistentVolumeBuilder_ != null || persistentVolume_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume getPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -1785,7 +1483,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public Builder setPersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -1801,7 +1499,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public Builder setPersistentVolume(
         com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder builderForValue) {
@@ -1815,7 +1513,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public Builder mergePersistentVolume(com.appscode.api.kubernetes.v1beta2.PersistentVolume value) {
       if (persistentVolumeBuilder_ == null) {
@@ -1833,7 +1531,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public Builder clearPersistentVolume() {
       if (persistentVolumeBuilder_ == null) {
@@ -1847,7 +1545,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder getPersistentVolumeBuilder() {
       
@@ -1855,7 +1553,7 @@ public  final class Disk extends
       return getPersistentVolumeFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder getPersistentVolumeOrBuilder() {
       if (persistentVolumeBuilder_ != null) {
@@ -1866,7 +1564,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 12;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolume persistent_volume = 10;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolume, com.appscode.api.kubernetes.v1beta2.PersistentVolume.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeOrBuilder> 
@@ -1886,13 +1584,13 @@ public  final class Disk extends
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> persistentVolumeClaimBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public boolean hasPersistentVolumeClaim() {
       return persistentVolumeClaimBuilder_ != null || persistentVolumeClaim_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim getPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1902,7 +1600,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public Builder setPersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1918,7 +1616,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public Builder setPersistentVolumeClaim(
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder builderForValue) {
@@ -1932,7 +1630,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public Builder mergePersistentVolumeClaim(com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim value) {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1950,7 +1648,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public Builder clearPersistentVolumeClaim() {
       if (persistentVolumeClaimBuilder_ == null) {
@@ -1964,7 +1662,7 @@ public  final class Disk extends
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder getPersistentVolumeClaimBuilder() {
       
@@ -1972,7 +1670,7 @@ public  final class Disk extends
       return getPersistentVolumeClaimFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     public com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder getPersistentVolumeClaimOrBuilder() {
       if (persistentVolumeClaimBuilder_ != null) {
@@ -1983,7 +1681,7 @@ public  final class Disk extends
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 13;</code>
+     * <code>.appscode.kubernetes.v1beta2.PersistentVolumeClaim persistent_volume_claim = 11;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaim.Builder, com.appscode.api.kubernetes.v1beta2.PersistentVolumeClaimOrBuilder> 

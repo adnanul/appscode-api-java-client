@@ -61,24 +61,26 @@ public final class MetadataProto {
       "Response\022\017\n\007regions\030\001 \003(\t\";\n\017ZoneListReq" +
       "uest\022\030\n\020cloud_credential\030\001 \001(\t\022\016\n\006region" +
       "\030\002 \001(\t\"!\n\020ZoneListResponse\022\r\n\005zones\030\001 \003(" +
-      "\t\"B\n\021BucketListRequest\022\030\n\020cloud_credenti" +
-      "al\030\001 \001(\t\022\023\n\013gce_project\030\002 \001(\t\"#\n\022BucketL",
-      "istResponse\022\r\n\005names\030\001 \003(\t2\221\004\n\010Metadata\022" +
-      "\247\001\n\013ListRegions\022..appscode.kubernetes.v1" +
-      "beta1.RegionListRequest\032/.appscode.kuber" +
-      "netes.v1beta1.RegionListResponse\"7\202\323\344\223\002+" +
-      "\022)/_appscode/api/cloud/v1beta1/regions/j" +
-      "son\202\265\030\002\010\001\022\260\001\n\tListZones\022,.appscode.kuber" +
-      "netes.v1beta1.ZoneListRequest\032-.appscode" +
-      ".kubernetes.v1beta1.ZoneListResponse\"F\202\323" +
-      "\344\223\002:\0228/_appscode/api/cloud/v1beta1/regio" +
-      "ns/{region}/zones/json\202\265\030\002\010\001\022\247\001\n\013ListBuc",
-      "kets\022..appscode.kubernetes.v1beta1.Bucke" +
-      "tListRequest\032/.appscode.kubernetes.v1bet" +
-      "a1.BucketListResponse\"7\202\323\344\223\002+\022)/_appscod" +
-      "e/api/cloud/v1beta1/buckets/json\202\265\030\002\010\001B?" +
-      "\n#com.appscode.api.kubernetes.v1beta1B\rM" +
-      "etadataProtoP\001Z\007v1beta1b\006proto3"
+      "\t\"\206\001\n\021BucketListRequest\022\030\n\020cloud_credent" +
+      "ial\030\001 \001(\t\022\023\n\013gce_project\030\002 \001(\t\022\023\n\013cluste",
+      "r_uid\030\003 \001(\t\022\030\n\020secret_namespace\030\004 \001(\t\022\023\n" +
+      "\013secret_name\030\005 \001(\t\"#\n\022BucketListResponse" +
+      "\022\r\n\005names\030\001 \003(\t2\221\004\n\010Metadata\022\247\001\n\013ListReg" +
+      "ions\022..appscode.kubernetes.v1beta1.Regio" +
+      "nListRequest\032/.appscode.kubernetes.v1bet" +
+      "a1.RegionListResponse\"7\202\323\344\223\002+\022)/_appscod" +
+      "e/api/cloud/v1beta1/regions/json\202\265\030\002\010\001\022\260" +
+      "\001\n\tListZones\022,.appscode.kubernetes.v1bet" +
+      "a1.ZoneListRequest\032-.appscode.kubernetes" +
+      ".v1beta1.ZoneListResponse\"F\202\323\344\223\002:\0228/_app",
+      "scode/api/cloud/v1beta1/regions/{region}" +
+      "/zones/json\202\265\030\002\010\001\022\247\001\n\013ListBuckets\022..apps" +
+      "code.kubernetes.v1beta1.BucketListReques" +
+      "t\032/.appscode.kubernetes.v1beta1.BucketLi" +
+      "stResponse\"7\202\323\344\223\002+\022)/_appscode/api/cloud" +
+      "/v1beta1/buckets/json\202\265\030\002\010\001B?\n#com.appsc" +
+      "ode.api.kubernetes.v1beta1B\rMetadataProt" +
+      "oP\001Z\007v1beta1b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -123,7 +125,7 @@ public final class MetadataProto {
     internal_static_appscode_kubernetes_v1beta1_BucketListRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_appscode_kubernetes_v1beta1_BucketListRequest_descriptor,
-        new java.lang.String[] { "CloudCredential", "GceProject", });
+        new java.lang.String[] { "CloudCredential", "GceProject", "ClusterUid", "SecretNamespace", "SecretName", });
     internal_static_appscode_kubernetes_v1beta1_BucketListResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_appscode_kubernetes_v1beta1_BucketListResponse_fieldAccessorTable = new

@@ -4,17 +4,17 @@
 package com.appscode.api.kubernetes.v1beta2;
 
 /**
- * Protobuf type {@code appscode.kubernetes.v1beta2.SnapshotSpec}
+ * Protobuf type {@code appscode.kubernetes.v1beta2.SnapshotStorageSpec}
  */
-public  final class SnapshotSpec extends
+public  final class SnapshotStorageSpec extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.SnapshotSpec)
-    SnapshotSpecOrBuilder {
-  // Use SnapshotSpec.newBuilder() to construct.
-  private SnapshotSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.SnapshotStorageSpec)
+    SnapshotStorageSpecOrBuilder {
+  // Use SnapshotStorageSpec.newBuilder() to construct.
+  private SnapshotStorageSpec(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private SnapshotSpec() {
+  private SnapshotStorageSpec() {
     bucketName_ = "";
   }
 
@@ -23,7 +23,7 @@ public  final class SnapshotSpec extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private SnapshotSpec(
+  private SnapshotStorageSpec(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -57,19 +57,6 @@ public  final class SnapshotSpec extends
             break;
           }
           case 18: {
-            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder subBuilder = null;
-            if (databaseSecret_ != null) {
-              subBuilder = databaseSecret_.toBuilder();
-            }
-            databaseSecret_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.parser(), extensionRegistry);
-            if (subBuilder != null) {
-              subBuilder.mergeFrom(databaseSecret_);
-              databaseSecret_ = subBuilder.buildPartial();
-            }
-
-            break;
-          }
-          case 26: {
             java.lang.String s = input.readStringRequireUtf8();
 
             bucketName_ = s;
@@ -88,14 +75,14 @@ public  final class SnapshotSpec extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotSpec_descriptor;
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotStorageSpec_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotSpec_fieldAccessorTable
+    return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotStorageSpec_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.appscode.api.kubernetes.v1beta2.SnapshotSpec.class, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder.class);
+            com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.class, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder.class);
   }
 
   public static final int STORAGE_SECRET_FIELD_NUMBER = 1;
@@ -119,31 +106,10 @@ public  final class SnapshotSpec extends
     return getStorageSecret();
   }
 
-  public static final int DATABASE_SECRET_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource databaseSecret_;
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  public boolean hasDatabaseSecret() {
-    return databaseSecret_ != null;
-  }
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
-    return databaseSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : databaseSecret_;
-  }
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
-    return getDatabaseSecret();
-  }
-
-  public static final int BUCKET_NAME_FIELD_NUMBER = 3;
+  public static final int BUCKET_NAME_FIELD_NUMBER = 2;
   private volatile java.lang.Object bucketName_;
   /**
-   * <code>string bucket_name = 3;</code>
+   * <code>string bucket_name = 2;</code>
    */
   public java.lang.String getBucketName() {
     java.lang.Object ref = bucketName_;
@@ -158,7 +124,7 @@ public  final class SnapshotSpec extends
     }
   }
   /**
-   * <code>string bucket_name = 3;</code>
+   * <code>string bucket_name = 2;</code>
    */
   public com.google.protobuf.ByteString
       getBucketNameBytes() {
@@ -189,11 +155,8 @@ public  final class SnapshotSpec extends
     if (storageSecret_ != null) {
       output.writeMessage(1, getStorageSecret());
     }
-    if (databaseSecret_ != null) {
-      output.writeMessage(2, getDatabaseSecret());
-    }
     if (!getBucketNameBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, bucketName_);
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, bucketName_);
     }
   }
 
@@ -206,12 +169,8 @@ public  final class SnapshotSpec extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(1, getStorageSecret());
     }
-    if (databaseSecret_ != null) {
-      size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getDatabaseSecret());
-    }
     if (!getBucketNameBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, bucketName_);
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, bucketName_);
     }
     memoizedSize = size;
     return size;
@@ -223,21 +182,16 @@ public  final class SnapshotSpec extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.SnapshotSpec)) {
+    if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec)) {
       return super.equals(obj);
     }
-    com.appscode.api.kubernetes.v1beta2.SnapshotSpec other = (com.appscode.api.kubernetes.v1beta2.SnapshotSpec) obj;
+    com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec other = (com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec) obj;
 
     boolean result = true;
     result = result && (hasStorageSecret() == other.hasStorageSecret());
     if (hasStorageSecret()) {
       result = result && getStorageSecret()
           .equals(other.getStorageSecret());
-    }
-    result = result && (hasDatabaseSecret() == other.hasDatabaseSecret());
-    if (hasDatabaseSecret()) {
-      result = result && getDatabaseSecret()
-          .equals(other.getDatabaseSecret());
     }
     result = result && getBucketName()
         .equals(other.getBucketName());
@@ -255,10 +209,6 @@ public  final class SnapshotSpec extends
       hash = (37 * hash) + STORAGE_SECRET_FIELD_NUMBER;
       hash = (53 * hash) + getStorageSecret().hashCode();
     }
-    if (hasDatabaseSecret()) {
-      hash = (37 * hash) + DATABASE_SECRET_FIELD_NUMBER;
-      hash = (53 * hash) + getDatabaseSecret().hashCode();
-    }
     hash = (37 * hash) + BUCKET_NAME_FIELD_NUMBER;
     hash = (53 * hash) + getBucketName().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
@@ -266,69 +216,69 @@ public  final class SnapshotSpec extends
     return hash;
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(byte[] data)
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseDelimitedFrom(java.io.InputStream input)
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseDelimitedFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec parseFrom(
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -340,7 +290,7 @@ public  final class SnapshotSpec extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.SnapshotSpec prototype) {
+  public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -355,25 +305,25 @@ public  final class SnapshotSpec extends
     return builder;
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.SnapshotSpec}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.SnapshotStorageSpec}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.SnapshotSpec)
-      com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder {
+      // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.SnapshotStorageSpec)
+      com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotSpec_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotStorageSpec_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotSpec_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotStorageSpec_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.SnapshotSpec.class, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.class, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder.class);
     }
 
-    // Construct using com.appscode.api.kubernetes.v1beta2.SnapshotSpec.newBuilder()
+    // Construct using com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -396,12 +346,6 @@ public  final class SnapshotSpec extends
         storageSecret_ = null;
         storageSecretBuilder_ = null;
       }
-      if (databaseSecretBuilder_ == null) {
-        databaseSecret_ = null;
-      } else {
-        databaseSecret_ = null;
-        databaseSecretBuilder_ = null;
-      }
       bucketName_ = "";
 
       return this;
@@ -409,32 +353,27 @@ public  final class SnapshotSpec extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotSpec_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_SnapshotStorageSpec_descriptor;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getDefaultInstanceForType() {
-      return com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance();
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getDefaultInstanceForType() {
+      return com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance();
     }
 
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpec build() {
-      com.appscode.api.kubernetes.v1beta2.SnapshotSpec result = buildPartial();
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec build() {
+      com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpec buildPartial() {
-      com.appscode.api.kubernetes.v1beta2.SnapshotSpec result = new com.appscode.api.kubernetes.v1beta2.SnapshotSpec(this);
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec buildPartial() {
+      com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec result = new com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec(this);
       if (storageSecretBuilder_ == null) {
         result.storageSecret_ = storageSecret_;
       } else {
         result.storageSecret_ = storageSecretBuilder_.build();
-      }
-      if (databaseSecretBuilder_ == null) {
-        result.databaseSecret_ = databaseSecret_;
-      } else {
-        result.databaseSecret_ = databaseSecretBuilder_.build();
       }
       result.bucketName_ = bucketName_;
       onBuilt();
@@ -468,21 +407,18 @@ public  final class SnapshotSpec extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.appscode.api.kubernetes.v1beta2.SnapshotSpec) {
-        return mergeFrom((com.appscode.api.kubernetes.v1beta2.SnapshotSpec)other);
+      if (other instanceof com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec) {
+        return mergeFrom((com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.SnapshotSpec other) {
-      if (other == com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec other) {
+      if (other == com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance()) return this;
       if (other.hasStorageSecret()) {
         mergeStorageSecret(other.getStorageSecret());
-      }
-      if (other.hasDatabaseSecret()) {
-        mergeDatabaseSecret(other.getDatabaseSecret());
       }
       if (!other.getBucketName().isEmpty()) {
         bucketName_ = other.bucketName_;
@@ -500,11 +436,11 @@ public  final class SnapshotSpec extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.appscode.api.kubernetes.v1beta2.SnapshotSpec parsedMessage = null;
+      com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.appscode.api.kubernetes.v1beta2.SnapshotSpec) e.getUnfinishedMessage();
+        parsedMessage = (com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -631,126 +567,9 @@ public  final class SnapshotSpec extends
       return storageSecretBuilder_;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.SecretVolumeSource databaseSecret_ = null;
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> databaseSecretBuilder_;
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public boolean hasDatabaseSecret() {
-      return databaseSecretBuilder_ != null || databaseSecret_ != null;
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret() {
-      if (databaseSecretBuilder_ == null) {
-        return databaseSecret_ == null ? com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : databaseSecret_;
-      } else {
-        return databaseSecretBuilder_.getMessage();
-      }
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public Builder setDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
-      if (databaseSecretBuilder_ == null) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        databaseSecret_ = value;
-        onChanged();
-      } else {
-        databaseSecretBuilder_.setMessage(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public Builder setDatabaseSecret(
-        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder builderForValue) {
-      if (databaseSecretBuilder_ == null) {
-        databaseSecret_ = builderForValue.build();
-        onChanged();
-      } else {
-        databaseSecretBuilder_.setMessage(builderForValue.build());
-      }
-
-      return this;
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public Builder mergeDatabaseSecret(com.appscode.api.kubernetes.v1beta2.SecretVolumeSource value) {
-      if (databaseSecretBuilder_ == null) {
-        if (databaseSecret_ != null) {
-          databaseSecret_ =
-            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.newBuilder(databaseSecret_).mergeFrom(value).buildPartial();
-        } else {
-          databaseSecret_ = value;
-        }
-        onChanged();
-      } else {
-        databaseSecretBuilder_.mergeFrom(value);
-      }
-
-      return this;
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public Builder clearDatabaseSecret() {
-      if (databaseSecretBuilder_ == null) {
-        databaseSecret_ = null;
-        onChanged();
-      } else {
-        databaseSecret_ = null;
-        databaseSecretBuilder_ = null;
-      }
-
-      return this;
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder getDatabaseSecretBuilder() {
-      
-      onChanged();
-      return getDatabaseSecretFieldBuilder().getBuilder();
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    public com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder() {
-      if (databaseSecretBuilder_ != null) {
-        return databaseSecretBuilder_.getMessageOrBuilder();
-      } else {
-        return databaseSecret_ == null ?
-            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.getDefaultInstance() : databaseSecret_;
-      }
-    }
-    /**
-     * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-     */
-    private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder> 
-        getDatabaseSecretFieldBuilder() {
-      if (databaseSecretBuilder_ == null) {
-        databaseSecretBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.SecretVolumeSource, com.appscode.api.kubernetes.v1beta2.SecretVolumeSource.Builder, com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder>(
-                getDatabaseSecret(),
-                getParentForChildren(),
-                isClean());
-        databaseSecret_ = null;
-      }
-      return databaseSecretBuilder_;
-    }
-
     private java.lang.Object bucketName_ = "";
     /**
-     * <code>string bucket_name = 3;</code>
+     * <code>string bucket_name = 2;</code>
      */
     public java.lang.String getBucketName() {
       java.lang.Object ref = bucketName_;
@@ -765,7 +584,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>string bucket_name = 3;</code>
+     * <code>string bucket_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getBucketNameBytes() {
@@ -781,7 +600,7 @@ public  final class SnapshotSpec extends
       }
     }
     /**
-     * <code>string bucket_name = 3;</code>
+     * <code>string bucket_name = 2;</code>
      */
     public Builder setBucketName(
         java.lang.String value) {
@@ -794,7 +613,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>string bucket_name = 3;</code>
+     * <code>string bucket_name = 2;</code>
      */
     public Builder clearBucketName() {
       
@@ -803,7 +622,7 @@ public  final class SnapshotSpec extends
       return this;
     }
     /**
-     * <code>string bucket_name = 3;</code>
+     * <code>string bucket_name = 2;</code>
      */
     public Builder setBucketNameBytes(
         com.google.protobuf.ByteString value) {
@@ -827,39 +646,39 @@ public  final class SnapshotSpec extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.SnapshotSpec)
+    // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.SnapshotStorageSpec)
   }
 
-  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.SnapshotSpec)
-  private static final com.appscode.api.kubernetes.v1beta2.SnapshotSpec DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.SnapshotStorageSpec)
+  private static final com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.SnapshotSpec();
+    DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec();
   }
 
-  public static com.appscode.api.kubernetes.v1beta2.SnapshotSpec getDefaultInstance() {
+  public static com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<SnapshotSpec>
-      PARSER = new com.google.protobuf.AbstractParser<SnapshotSpec>() {
-    public SnapshotSpec parsePartialFrom(
+  private static final com.google.protobuf.Parser<SnapshotStorageSpec>
+      PARSER = new com.google.protobuf.AbstractParser<SnapshotStorageSpec>() {
+    public SnapshotStorageSpec parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new SnapshotSpec(input, extensionRegistry);
+        return new SnapshotStorageSpec(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<SnapshotSpec> parser() {
+  public static com.google.protobuf.Parser<SnapshotStorageSpec> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<SnapshotSpec> getParserForType() {
+  public com.google.protobuf.Parser<SnapshotStorageSpec> getParserForType() {
     return PARSER;
   }
 
-  public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getDefaultInstanceForType() {
+  public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

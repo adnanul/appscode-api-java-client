@@ -400,31 +400,45 @@ public  final class KubeResourceList extends
             break;
           }
           case 218: {
-            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder subBuilder = null;
             if (resourceCase_ == 27) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_).toBuilder();
             }
             resource_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_);
               resource_ = subBuilder.buildPartial();
             }
             resourceCase_ = 27;
             break;
           }
           case 226: {
-            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder subBuilder = null;
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder subBuilder = null;
             if (resourceCase_ == 28) {
-              subBuilder = ((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_).toBuilder();
+              subBuilder = ((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_).toBuilder();
             }
             resource_ =
-                input.readMessage(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.parser(), extensionRegistry);
+                input.readMessage(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_);
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_);
               resource_ = subBuilder.buildPartial();
             }
             resourceCase_ = 28;
+            break;
+          }
+          case 234: {
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder subBuilder = null;
+            if (resourceCase_ == 29) {
+              subBuilder = ((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_).toBuilder();
+            }
+            resource_ =
+                input.readMessage(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.parser(), extensionRegistry);
+            if (subBuilder != null) {
+              subBuilder.mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_);
+              resource_ = subBuilder.buildPartial();
+            }
+            resourceCase_ = 29;
             break;
           }
         }
@@ -448,6 +462,752 @@ public  final class KubeResourceList extends
     return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.appscode.api.kubernetes.v1beta2.KubeResourceList.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Builder.class);
+  }
+
+  public interface EventsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.KubeResourceList.Events)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    java.util.List<com.appscode.api.kubernetes.v1beta2.Event> 
+        getItemsList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.Event getItems(int index);
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    int getItemsCount();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EventOrBuilder> 
+        getItemsOrBuilderList();
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    com.appscode.api.kubernetes.v1beta2.EventOrBuilder getItemsOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.Events}
+   */
+  public  static final class Events extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.KubeResourceList.Events)
+      EventsOrBuilder {
+    // Use Events.newBuilder() to construct.
+    private Events(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Events() {
+      items_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+    private Events(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!input.skipField(tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Event>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              items_.add(
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.Event.parser(), extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          items_ = java.util.Collections.unmodifiableList(items_);
+        }
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Events_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Events_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder.class);
+    }
+
+    public static final int ITEMS_FIELD_NUMBER = 1;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.Event> items_;
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.Event> getItemsList() {
+      return items_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EventOrBuilder> 
+        getItemsOrBuilderList() {
+      return items_;
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    public int getItemsCount() {
+      return items_.size();
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.Event getItems(int index) {
+      return items_.get(index);
+    }
+    /**
+     * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.EventOrBuilder getItemsOrBuilder(
+        int index) {
+      return items_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < items_.size(); i++) {
+        output.writeMessage(1, items_.get(i));
+      }
+    }
+
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < items_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, items_.get(i));
+      }
+      memoizedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events)) {
+        return super.equals(obj);
+      }
+      com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events other = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) obj;
+
+      boolean result = true;
+      result = result && getItemsList()
+          .equals(other.getItemsList());
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getItemsCount() > 0) {
+        hash = (37 * hash) + ITEMS_FIELD_NUMBER;
+        hash = (53 * hash) + getItemsList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.Events}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.KubeResourceList.Events)
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Events_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Events_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder.class);
+      }
+
+      // Construct using com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getItemsFieldBuilder();
+        }
+      }
+      public Builder clear() {
+        super.clear();
+        if (itemsBuilder_ == null) {
+          items_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          itemsBuilder_.clear();
+        }
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Events_descriptor;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events build() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events result = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events(this);
+        int from_bitField0_ = bitField0_;
+        if (itemsBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            items_ = java.util.Collections.unmodifiableList(items_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.items_ = items_;
+        } else {
+          result.items_ = itemsBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance()) return this;
+        if (itemsBuilder_ == null) {
+          if (!other.items_.isEmpty()) {
+            if (items_.isEmpty()) {
+              items_ = other.items_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureItemsIsMutable();
+              items_.addAll(other.items_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.items_.isEmpty()) {
+            if (itemsBuilder_.isEmpty()) {
+              itemsBuilder_.dispose();
+              itemsBuilder_ = null;
+              items_ = other.items_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              itemsBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getItemsFieldBuilder() : null;
+            } else {
+              itemsBuilder_.addAllMessages(other.items_);
+            }
+          }
+        }
+        onChanged();
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.Event> items_ =
+        java.util.Collections.emptyList();
+      private void ensureItemsIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Event>(items_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Event, com.appscode.api.kubernetes.v1beta2.Event.Builder, com.appscode.api.kubernetes.v1beta2.EventOrBuilder> itemsBuilder_;
+
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.Event> getItemsList() {
+        if (itemsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(items_);
+        } else {
+          return itemsBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public int getItemsCount() {
+        if (itemsBuilder_ == null) {
+          return items_.size();
+        } else {
+          return itemsBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Event getItems(int index) {
+        if (itemsBuilder_ == null) {
+          return items_.get(index);
+        } else {
+          return itemsBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder setItems(
+          int index, com.appscode.api.kubernetes.v1beta2.Event value) {
+        if (itemsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemsIsMutable();
+          items_.set(index, value);
+          onChanged();
+        } else {
+          itemsBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder setItems(
+          int index, com.appscode.api.kubernetes.v1beta2.Event.Builder builderForValue) {
+        if (itemsBuilder_ == null) {
+          ensureItemsIsMutable();
+          items_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemsBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder addItems(com.appscode.api.kubernetes.v1beta2.Event value) {
+        if (itemsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemsIsMutable();
+          items_.add(value);
+          onChanged();
+        } else {
+          itemsBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder addItems(
+          int index, com.appscode.api.kubernetes.v1beta2.Event value) {
+        if (itemsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureItemsIsMutable();
+          items_.add(index, value);
+          onChanged();
+        } else {
+          itemsBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder addItems(
+          com.appscode.api.kubernetes.v1beta2.Event.Builder builderForValue) {
+        if (itemsBuilder_ == null) {
+          ensureItemsIsMutable();
+          items_.add(builderForValue.build());
+          onChanged();
+        } else {
+          itemsBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder addItems(
+          int index, com.appscode.api.kubernetes.v1beta2.Event.Builder builderForValue) {
+        if (itemsBuilder_ == null) {
+          ensureItemsIsMutable();
+          items_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          itemsBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder addAllItems(
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.Event> values) {
+        if (itemsBuilder_ == null) {
+          ensureItemsIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, items_);
+          onChanged();
+        } else {
+          itemsBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder clearItems() {
+        if (itemsBuilder_ == null) {
+          items_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          itemsBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public Builder removeItems(int index) {
+        if (itemsBuilder_ == null) {
+          ensureItemsIsMutable();
+          items_.remove(index);
+          onChanged();
+        } else {
+          itemsBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Event.Builder getItemsBuilder(
+          int index) {
+        return getItemsFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.EventOrBuilder getItemsOrBuilder(
+          int index) {
+        if (itemsBuilder_ == null) {
+          return items_.get(index);  } else {
+          return itemsBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.EventOrBuilder> 
+           getItemsOrBuilderList() {
+        if (itemsBuilder_ != null) {
+          return itemsBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(items_);
+        }
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Event.Builder addItemsBuilder() {
+        return getItemsFieldBuilder().addBuilder(
+            com.appscode.api.kubernetes.v1beta2.Event.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public com.appscode.api.kubernetes.v1beta2.Event.Builder addItemsBuilder(
+          int index) {
+        return getItemsFieldBuilder().addBuilder(
+            index, com.appscode.api.kubernetes.v1beta2.Event.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .appscode.kubernetes.v1beta2.Event items = 1;</code>
+       */
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.Event.Builder> 
+           getItemsBuilderList() {
+        return getItemsFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          com.appscode.api.kubernetes.v1beta2.Event, com.appscode.api.kubernetes.v1beta2.Event.Builder, com.appscode.api.kubernetes.v1beta2.EventOrBuilder> 
+          getItemsFieldBuilder() {
+        if (itemsBuilder_ == null) {
+          itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.appscode.api.kubernetes.v1beta2.Event, com.appscode.api.kubernetes.v1beta2.Event.Builder, com.appscode.api.kubernetes.v1beta2.EventOrBuilder>(
+                  items_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          items_ = null;
+        }
+        return itemsBuilder_;
+      }
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.KubeResourceList.Events)
+    }
+
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.KubeResourceList.Events)
+    private static final com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events();
+    }
+
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Events>
+        PARSER = new com.google.protobuf.AbstractParser<Events>() {
+      public Events parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new Events(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Events> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Events> getParserForType() {
+      return PARSER;
+    }
+
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
   }
 
   public interface ConfigMapsOrBuilder extends
@@ -18354,46 +19114,46 @@ public  final class KubeResourceList extends
 
   }
 
-  public interface DeletedDatabasesOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)
+  public interface DormantDatabasesOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase> 
+    java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase> 
         getItemsList();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.DeletedDatabase getItems(int index);
+    com.appscode.api.kubernetes.v1beta2.DormantDatabase getItems(int index);
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
     int getItemsCount();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> 
         getItemsOrBuilderList();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getItemsOrBuilder(
+    com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getItemsOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases}
    */
-  public  static final class DeletedDatabases extends
+  public  static final class DormantDatabases extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)
-      DeletedDatabasesOrBuilder {
-    // Use DeletedDatabases.newBuilder() to construct.
-    private DeletedDatabases(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases)
+      DormantDatabasesOrBuilder {
+    // Use DormantDatabases.newBuilder() to construct.
+    private DormantDatabases(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private DeletedDatabases() {
+    private DormantDatabases() {
       items_ = java.util.Collections.emptyList();
     }
 
@@ -18402,7 +19162,7 @@ public  final class KubeResourceList extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private DeletedDatabases(
+    private DormantDatabases(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -18424,11 +19184,11 @@ public  final class KubeResourceList extends
             }
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DeletedDatabase>();
+                items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DormantDatabase>();
                 mutable_bitField0_ |= 0x00000001;
               }
               items_.add(
-                  input.readMessage(com.appscode.api.kubernetes.v1beta2.DeletedDatabase.parser(), extensionRegistry));
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.DormantDatabase.parser(), extensionRegistry));
               break;
             }
           }
@@ -18447,47 +19207,47 @@ public  final class KubeResourceList extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DeletedDatabases_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DormantDatabases_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DeletedDatabases_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DormantDatabases_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder.class);
     }
 
     public static final int ITEMS_FIELD_NUMBER = 1;
-    private java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase> items_;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase> items_;
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    public java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase> getItemsList() {
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase> getItemsList() {
       return items_;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> 
         getItemsOrBuilderList() {
       return items_;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
     public int getItemsCount() {
       return items_.size();
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getItems(int index) {
+    public com.appscode.api.kubernetes.v1beta2.DormantDatabase getItems(int index) {
       return items_.get(index);
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getItemsOrBuilder(
+    public com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getItemsOrBuilder(
         int index) {
       return items_.get(index);
     }
@@ -18528,10 +19288,10 @@ public  final class KubeResourceList extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases other = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) obj;
+      com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases other = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) obj;
 
       boolean result = true;
       result = result && getItemsList()
@@ -18555,69 +19315,69 @@ public  final class KubeResourceList extends
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -18629,7 +19389,7 @@ public  final class KubeResourceList extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -18644,25 +19404,25 @@ public  final class KubeResourceList extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases)
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DeletedDatabases_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DormantDatabases_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DeletedDatabases_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DormantDatabases_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -18691,23 +19451,23 @@ public  final class KubeResourceList extends
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DeletedDatabases_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DormantDatabases_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases build() {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases build() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases result = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases(this);
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases result = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases(this);
         int from_bitField0_ = bitField0_;
         if (itemsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -18749,16 +19509,16 @@ public  final class KubeResourceList extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance()) return this;
         if (itemsBuilder_ == null) {
           if (!other.items_.isEmpty()) {
             if (items_.isEmpty()) {
@@ -18797,11 +19557,11 @@ public  final class KubeResourceList extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -18812,22 +19572,22 @@ public  final class KubeResourceList extends
       }
       private int bitField0_;
 
-      private java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase> items_ =
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase> items_ =
         java.util.Collections.emptyList();
       private void ensureItemsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DeletedDatabase>(items_);
+          items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DormantDatabase>(items_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> itemsBuilder_;
+          com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> itemsBuilder_;
 
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase> getItemsList() {
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase> getItemsList() {
         if (itemsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(items_);
         } else {
@@ -18835,7 +19595,7 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public int getItemsCount() {
         if (itemsBuilder_ == null) {
@@ -18845,9 +19605,9 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase getItems(int index) {
+      public com.appscode.api.kubernetes.v1beta2.DormantDatabase getItems(int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);
         } else {
@@ -18855,10 +19615,10 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder setItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
+          int index, com.appscode.api.kubernetes.v1beta2.DormantDatabase value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -18872,10 +19632,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder setItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder builderForValue) {
+          int index, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.set(index, builderForValue.build());
@@ -18886,9 +19646,9 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public Builder addItems(com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
+      public Builder addItems(com.appscode.api.kubernetes.v1beta2.DormantDatabase value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -18902,10 +19662,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder addItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DeletedDatabase value) {
+          int index, com.appscode.api.kubernetes.v1beta2.DormantDatabase value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -18919,10 +19679,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder addItems(
-          com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder builderForValue) {
+          com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(builderForValue.build());
@@ -18933,10 +19693,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder addItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder builderForValue) {
+          int index, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(index, builderForValue.build());
@@ -18947,10 +19707,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder addAllItems(
-          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.DeletedDatabase> values) {
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.DormantDatabase> values) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -18962,7 +19722,7 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder clearItems() {
         if (itemsBuilder_ == null) {
@@ -18975,7 +19735,7 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
       public Builder removeItems(int index) {
         if (itemsBuilder_ == null) {
@@ -18988,16 +19748,16 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder getItemsBuilder(
+      public com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder getItemsBuilder(
           int index) {
         return getItemsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder getItemsOrBuilder(
+      public com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder getItemsOrBuilder(
           int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);  } else {
@@ -19005,9 +19765,9 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> 
            getItemsOrBuilderList() {
         if (itemsBuilder_ != null) {
           return itemsBuilder_.getMessageOrBuilderList();
@@ -19016,33 +19776,33 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder addItemsBuilder() {
+      public com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder addItemsBuilder() {
         return getItemsFieldBuilder().addBuilder(
-            com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance());
+            com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance());
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder addItemsBuilder(
+      public com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder addItemsBuilder(
           int index) {
         return getItemsFieldBuilder().addBuilder(
-            index, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.getDefaultInstance());
+            index, com.appscode.api.kubernetes.v1beta2.DormantDatabase.getDefaultInstance());
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DeletedDatabase items = 1;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.DormantDatabase items = 1;</code>
        */
-      public java.util.List<com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder> 
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder> 
            getItemsBuilderList() {
         return getItemsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder> 
+          com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder> 
           getItemsFieldBuilder() {
         if (itemsBuilder_ == null) {
           itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.appscode.api.kubernetes.v1beta2.DeletedDatabase, com.appscode.api.kubernetes.v1beta2.DeletedDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DeletedDatabaseOrBuilder>(
+              com.appscode.api.kubernetes.v1beta2.DormantDatabase, com.appscode.api.kubernetes.v1beta2.DormantDatabase.Builder, com.appscode.api.kubernetes.v1beta2.DormantDatabaseOrBuilder>(
                   items_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -19062,84 +19822,84 @@ public  final class KubeResourceList extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases)
-    private static final com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases)
+    private static final com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<DeletedDatabases>
-        PARSER = new com.google.protobuf.AbstractParser<DeletedDatabases>() {
-      public DeletedDatabases parsePartialFrom(
+    private static final com.google.protobuf.Parser<DormantDatabases>
+        PARSER = new com.google.protobuf.AbstractParser<DormantDatabases>() {
+      public DormantDatabases parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DeletedDatabases(input, extensionRegistry);
+          return new DormantDatabases(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<DeletedDatabases> parser() {
+    public static com.google.protobuf.Parser<DormantDatabases> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DeletedDatabases> getParserForType() {
+    public com.google.protobuf.Parser<DormantDatabases> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface DatabaseSnapshotsOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)
+  public interface SnapshotsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.KubeResourceList.Snapshots)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> 
+    java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot> 
         getItemsList();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getItems(int index);
+    com.appscode.api.kubernetes.v1beta2.Snapshot getItems(int index);
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
     int getItemsCount();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 
+    java.util.List<? extends com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> 
         getItemsOrBuilderList();
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getItemsOrBuilder(
+    com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getItemsOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots}
+   * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.Snapshots}
    */
-  public  static final class DatabaseSnapshots extends
+  public  static final class Snapshots extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)
-      DatabaseSnapshotsOrBuilder {
-    // Use DatabaseSnapshots.newBuilder() to construct.
-    private DatabaseSnapshots(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      // @@protoc_insertion_point(message_implements:appscode.kubernetes.v1beta2.KubeResourceList.Snapshots)
+      SnapshotsOrBuilder {
+    // Use Snapshots.newBuilder() to construct.
+    private Snapshots(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private DatabaseSnapshots() {
+    private Snapshots() {
       items_ = java.util.Collections.emptyList();
     }
 
@@ -19148,7 +19908,7 @@ public  final class KubeResourceList extends
     getUnknownFields() {
       return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
     }
-    private DatabaseSnapshots(
+    private Snapshots(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -19170,11 +19930,11 @@ public  final class KubeResourceList extends
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
-                items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot>();
+                items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Snapshot>();
                 mutable_bitField0_ |= 0x00000001;
               }
               items_.add(
-                  input.readMessage(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.parser(), extensionRegistry));
+                  input.readMessage(com.appscode.api.kubernetes.v1beta2.Snapshot.parser(), extensionRegistry));
               break;
             }
           }
@@ -19193,47 +19953,47 @@ public  final class KubeResourceList extends
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DatabaseSnapshots_descriptor;
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Snapshots_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DatabaseSnapshots_fieldAccessorTable
+      return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Snapshots_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder.class);
+              com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder.class);
     }
 
     public static final int ITEMS_FIELD_NUMBER = 2;
-    private java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> items_;
+    private java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot> items_;
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    public java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> getItemsList() {
+    public java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot> getItemsList() {
       return items_;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 
+    public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> 
         getItemsOrBuilderList() {
       return items_;
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
     public int getItemsCount() {
       return items_.size();
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getItems(int index) {
+    public com.appscode.api.kubernetes.v1beta2.Snapshot getItems(int index) {
       return items_.get(index);
     }
     /**
-     * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+     * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getItemsOrBuilder(
+    public com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getItemsOrBuilder(
         int index) {
       return items_.get(index);
     }
@@ -19274,10 +20034,10 @@ public  final class KubeResourceList extends
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)) {
+      if (!(obj instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots)) {
         return super.equals(obj);
       }
-      com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots other = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) obj;
+      com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots other = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) obj;
 
       boolean result = true;
       result = result && getItemsList()
@@ -19301,69 +20061,69 @@ public  final class KubeResourceList extends
       return hash;
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(byte[] data)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseDelimitedFrom(java.io.InputStream input)
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseDelimitedFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parseFrom(
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -19375,7 +20135,7 @@ public  final class KubeResourceList extends
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots prototype) {
+    public static Builder newBuilder(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() {
@@ -19390,25 +20150,25 @@ public  final class KubeResourceList extends
       return builder;
     }
     /**
-     * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots}
+     * Protobuf type {@code appscode.kubernetes.v1beta2.KubeResourceList.Snapshots}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder {
+        // @@protoc_insertion_point(builder_implements:appscode.kubernetes.v1beta2.KubeResourceList.Snapshots)
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DatabaseSnapshots_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Snapshots_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DatabaseSnapshots_fieldAccessorTable
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Snapshots_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder.class);
+                com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.class, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder.class);
       }
 
-      // Construct using com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.newBuilder()
+      // Construct using com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -19437,23 +20197,23 @@ public  final class KubeResourceList extends
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_DatabaseSnapshots_descriptor;
+        return com.appscode.api.kubernetes.v1beta2.ClientProto.internal_static_appscode_kubernetes_v1beta2_KubeResourceList_Snapshots_descriptor;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDefaultInstanceForType() {
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getDefaultInstanceForType() {
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots build() {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots result = buildPartial();
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots build() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots buildPartial() {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots result = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots(this);
+      public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots buildPartial() {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots result = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots(this);
         int from_bitField0_ = bitField0_;
         if (itemsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001)) {
@@ -19495,16 +20255,16 @@ public  final class KubeResourceList extends
         return (Builder) super.addRepeatedField(field, value);
       }
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) {
-          return mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)other);
+        if (other instanceof com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) {
+          return mergeFrom((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots other) {
-        if (other == com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots other) {
+        if (other == com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance()) return this;
         if (itemsBuilder_ == null) {
           if (!other.items_.isEmpty()) {
             if (items_.isEmpty()) {
@@ -19543,11 +20303,11 @@ public  final class KubeResourceList extends
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots parsedMessage = null;
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) e.getUnfinishedMessage();
+          parsedMessage = (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -19558,22 +20318,22 @@ public  final class KubeResourceList extends
       }
       private int bitField0_;
 
-      private java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> items_ =
+      private java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot> items_ =
         java.util.Collections.emptyList();
       private void ensureItemsIsMutable() {
         if (!((bitField0_ & 0x00000001) == 0x00000001)) {
-          items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot>(items_);
+          items_ = new java.util.ArrayList<com.appscode.api.kubernetes.v1beta2.Snapshot>(items_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> itemsBuilder_;
+          com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> itemsBuilder_;
 
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> getItemsList() {
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot> getItemsList() {
         if (itemsBuilder_ == null) {
           return java.util.Collections.unmodifiableList(items_);
         } else {
@@ -19581,7 +20341,7 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public int getItemsCount() {
         if (itemsBuilder_ == null) {
@@ -19591,9 +20351,9 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot getItems(int index) {
+      public com.appscode.api.kubernetes.v1beta2.Snapshot getItems(int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);
         } else {
@@ -19601,10 +20361,10 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder setItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
+          int index, com.appscode.api.kubernetes.v1beta2.Snapshot value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19618,10 +20378,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder setItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder builderForValue) {
+          int index, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.set(index, builderForValue.build());
@@ -19632,9 +20392,9 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public Builder addItems(com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
+      public Builder addItems(com.appscode.api.kubernetes.v1beta2.Snapshot value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19648,10 +20408,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder addItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot value) {
+          int index, com.appscode.api.kubernetes.v1beta2.Snapshot value) {
         if (itemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -19665,10 +20425,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder addItems(
-          com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder builderForValue) {
+          com.appscode.api.kubernetes.v1beta2.Snapshot.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(builderForValue.build());
@@ -19679,10 +20439,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder addItems(
-          int index, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder builderForValue) {
+          int index, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder builderForValue) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           items_.add(index, builderForValue.build());
@@ -19693,10 +20453,10 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder addAllItems(
-          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot> values) {
+          java.lang.Iterable<? extends com.appscode.api.kubernetes.v1beta2.Snapshot> values) {
         if (itemsBuilder_ == null) {
           ensureItemsIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -19708,7 +20468,7 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder clearItems() {
         if (itemsBuilder_ == null) {
@@ -19721,7 +20481,7 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
       public Builder removeItems(int index) {
         if (itemsBuilder_ == null) {
@@ -19734,16 +20494,16 @@ public  final class KubeResourceList extends
         return this;
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder getItemsBuilder(
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Builder getItemsBuilder(
           int index) {
         return getItemsFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder getItemsOrBuilder(
+      public com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder getItemsOrBuilder(
           int index) {
         if (itemsBuilder_ == null) {
           return items_.get(index);  } else {
@@ -19751,9 +20511,9 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 
+      public java.util.List<? extends com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> 
            getItemsOrBuilderList() {
         if (itemsBuilder_ != null) {
           return itemsBuilder_.getMessageOrBuilderList();
@@ -19762,33 +20522,33 @@ public  final class KubeResourceList extends
         }
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder addItemsBuilder() {
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Builder addItemsBuilder() {
         return getItemsFieldBuilder().addBuilder(
-            com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance());
+            com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance());
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder addItemsBuilder(
+      public com.appscode.api.kubernetes.v1beta2.Snapshot.Builder addItemsBuilder(
           int index) {
         return getItemsFieldBuilder().addBuilder(
-            index, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.getDefaultInstance());
+            index, com.appscode.api.kubernetes.v1beta2.Snapshot.getDefaultInstance());
       }
       /**
-       * <code>repeated .appscode.kubernetes.v1beta2.DatabaseSnapshot items = 2;</code>
+       * <code>repeated .appscode.kubernetes.v1beta2.Snapshot items = 2;</code>
        */
-      public java.util.List<com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder> 
+      public java.util.List<com.appscode.api.kubernetes.v1beta2.Snapshot.Builder> 
            getItemsBuilderList() {
         return getItemsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder> 
+          com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder> 
           getItemsFieldBuilder() {
         if (itemsBuilder_ == null) {
           itemsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshot.Builder, com.appscode.api.kubernetes.v1beta2.DatabaseSnapshotOrBuilder>(
+              com.appscode.api.kubernetes.v1beta2.Snapshot, com.appscode.api.kubernetes.v1beta2.Snapshot.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotOrBuilder>(
                   items_,
                   ((bitField0_ & 0x00000001) == 0x00000001),
                   getParentForChildren(),
@@ -19808,39 +20568,39 @@ public  final class KubeResourceList extends
       }
 
 
-      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)
+      // @@protoc_insertion_point(builder_scope:appscode.kubernetes.v1beta2.KubeResourceList.Snapshots)
     }
 
-    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots)
-    private static final com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:appscode.kubernetes.v1beta2.KubeResourceList.Snapshots)
+    private static final com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots();
+      DEFAULT_INSTANCE = new com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots();
     }
 
-    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDefaultInstance() {
+    public static com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<DatabaseSnapshots>
-        PARSER = new com.google.protobuf.AbstractParser<DatabaseSnapshots>() {
-      public DatabaseSnapshots parsePartialFrom(
+    private static final com.google.protobuf.Parser<Snapshots>
+        PARSER = new com.google.protobuf.AbstractParser<Snapshots>() {
+      public Snapshots parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-          return new DatabaseSnapshots(input, extensionRegistry);
+          return new Snapshots(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<DatabaseSnapshots> parser() {
+    public static com.google.protobuf.Parser<Snapshots> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<DatabaseSnapshots> getParserForType() {
+    public com.google.protobuf.Parser<Snapshots> getParserForType() {
       return PARSER;
     }
 
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDefaultInstanceForType() {
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -20621,8 +21381,9 @@ public  final class KubeResourceList extends
     BACKUPS(24),
     POSTGRESES(25),
     ELASTICS(26),
-    DELETED_DATABASES(27),
-    DATABASE_SNAPSHOTS(28),
+    DORMANT_DATABASES(27),
+    SNAPSHOTS(28),
+    EVENTS(29),
     RESOURCE_NOT_SET(0);
     private final int value;
     private ResourceCase(int value) {
@@ -20663,8 +21424,9 @@ public  final class KubeResourceList extends
         case 24: return BACKUPS;
         case 25: return POSTGRESES;
         case 26: return ELASTICS;
-        case 27: return DELETED_DATABASES;
-        case 28: return DATABASE_SNAPSHOTS;
+        case 27: return DORMANT_DATABASES;
+        case 28: return SNAPSHOTS;
+        case 29: return EVENTS;
         case 0: return RESOURCE_NOT_SET;
         default: return null;
       }
@@ -21214,44 +21976,64 @@ public  final class KubeResourceList extends
     return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Elastics.getDefaultInstance();
   }
 
-  public static final int DELETED_DATABASES_FIELD_NUMBER = 27;
+  public static final int DORMANT_DATABASES_FIELD_NUMBER = 27;
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDeletedDatabases() {
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDormantDatabases() {
     if (resourceCase_ == 27) {
-       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder getDeletedDatabasesOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder getDormantDatabasesOrBuilder() {
     if (resourceCase_ == 27) {
-       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
   }
 
-  public static final int DATABASE_SNAPSHOTS_FIELD_NUMBER = 28;
+  public static final int SNAPSHOTS_FIELD_NUMBER = 28;
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDatabaseSnapshots() {
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getSnapshots() {
     if (resourceCase_ == 28) {
-       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder getDatabaseSnapshotsOrBuilder() {
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder getSnapshotsOrBuilder() {
     if (resourceCase_ == 28) {
-       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_;
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_;
     }
-    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
+  }
+
+  public static final int EVENTS_FIELD_NUMBER = 29;
+  /**
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getEvents() {
+    if (resourceCase_ == 29) {
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_;
+    }
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+  }
+  /**
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+   */
+  public com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder getEventsOrBuilder() {
+    if (resourceCase_ == 29) {
+       return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_;
+    }
+    return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -21345,10 +22127,13 @@ public  final class KubeResourceList extends
       output.writeMessage(26, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Elastics) resource_);
     }
     if (resourceCase_ == 27) {
-      output.writeMessage(27, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_);
+      output.writeMessage(27, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_);
     }
     if (resourceCase_ == 28) {
-      output.writeMessage(28, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_);
+      output.writeMessage(28, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_);
+    }
+    if (resourceCase_ == 29) {
+      output.writeMessage(29, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_);
     }
   }
 
@@ -21462,11 +22247,15 @@ public  final class KubeResourceList extends
     }
     if (resourceCase_ == 27) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(27, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_);
+        .computeMessageSize(27, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_);
     }
     if (resourceCase_ == 28) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(28, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_);
+        .computeMessageSize(28, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_);
+    }
+    if (resourceCase_ == 29) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeMessageSize(29, (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_);
     }
     memoizedSize = size;
     return size;
@@ -21591,12 +22380,16 @@ public  final class KubeResourceList extends
             .equals(other.getElastics());
         break;
       case 27:
-        result = result && getDeletedDatabases()
-            .equals(other.getDeletedDatabases());
+        result = result && getDormantDatabases()
+            .equals(other.getDormantDatabases());
         break;
       case 28:
-        result = result && getDatabaseSnapshots()
-            .equals(other.getDatabaseSnapshots());
+        result = result && getSnapshots()
+            .equals(other.getSnapshots());
+        break;
+      case 29:
+        result = result && getEvents()
+            .equals(other.getEvents());
         break;
       case 0:
       default:
@@ -21715,12 +22508,16 @@ public  final class KubeResourceList extends
         hash = (53 * hash) + getElastics().hashCode();
         break;
       case 27:
-        hash = (37 * hash) + DELETED_DATABASES_FIELD_NUMBER;
-        hash = (53 * hash) + getDeletedDatabases().hashCode();
+        hash = (37 * hash) + DORMANT_DATABASES_FIELD_NUMBER;
+        hash = (53 * hash) + getDormantDatabases().hashCode();
         break;
       case 28:
-        hash = (37 * hash) + DATABASE_SNAPSHOTS_FIELD_NUMBER;
-        hash = (53 * hash) + getDatabaseSnapshots().hashCode();
+        hash = (37 * hash) + SNAPSHOTS_FIELD_NUMBER;
+        hash = (53 * hash) + getSnapshots().hashCode();
+        break;
+      case 29:
+        hash = (37 * hash) + EVENTS_FIELD_NUMBER;
+        hash = (53 * hash) + getEvents().hashCode();
         break;
       case 0:
       default:
@@ -22057,17 +22854,24 @@ public  final class KubeResourceList extends
         }
       }
       if (resourceCase_ == 27) {
-        if (deletedDatabasesBuilder_ == null) {
+        if (dormantDatabasesBuilder_ == null) {
           result.resource_ = resource_;
         } else {
-          result.resource_ = deletedDatabasesBuilder_.build();
+          result.resource_ = dormantDatabasesBuilder_.build();
         }
       }
       if (resourceCase_ == 28) {
-        if (databaseSnapshotsBuilder_ == null) {
+        if (snapshotsBuilder_ == null) {
           result.resource_ = resource_;
         } else {
-          result.resource_ = databaseSnapshotsBuilder_.build();
+          result.resource_ = snapshotsBuilder_.build();
+        }
+      }
+      if (resourceCase_ == 29) {
+        if (eventsBuilder_ == null) {
+          result.resource_ = resource_;
+        } else {
+          result.resource_ = eventsBuilder_.build();
         }
       }
       result.resourceCase_ = resourceCase_;
@@ -22217,12 +23021,16 @@ public  final class KubeResourceList extends
           mergeElastics(other.getElastics());
           break;
         }
-        case DELETED_DATABASES: {
-          mergeDeletedDatabases(other.getDeletedDatabases());
+        case DORMANT_DATABASES: {
+          mergeDormantDatabases(other.getDormantDatabases());
           break;
         }
-        case DATABASE_SNAPSHOTS: {
-          mergeDatabaseSnapshots(other.getDatabaseSnapshots());
+        case SNAPSHOTS: {
+          mergeSnapshots(other.getSnapshots());
+          break;
+        }
+        case EVENTS: {
+          mergeEvents(other.getEvents());
           break;
         }
         case RESOURCE_NOT_SET: {
@@ -25590,61 +26398,61 @@ public  final class KubeResourceList extends
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder> deletedDatabasesBuilder_;
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder> dormantDatabasesBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDeletedDatabases() {
-      if (deletedDatabasesBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDormantDatabases() {
+      if (dormantDatabasesBuilder_ == null) {
         if (resourceCase_ == 27) {
-          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
       } else {
         if (resourceCase_ == 27) {
-          return deletedDatabasesBuilder_.getMessage();
+          return dormantDatabasesBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public Builder setDeletedDatabases(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases value) {
-      if (deletedDatabasesBuilder_ == null) {
+    public Builder setDormantDatabases(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases value) {
+      if (dormantDatabasesBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         resource_ = value;
         onChanged();
       } else {
-        deletedDatabasesBuilder_.setMessage(value);
+        dormantDatabasesBuilder_.setMessage(value);
       }
       resourceCase_ = 27;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public Builder setDeletedDatabases(
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder builderForValue) {
-      if (deletedDatabasesBuilder_ == null) {
+    public Builder setDormantDatabases(
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder builderForValue) {
+      if (dormantDatabasesBuilder_ == null) {
         resource_ = builderForValue.build();
         onChanged();
       } else {
-        deletedDatabasesBuilder_.setMessage(builderForValue.build());
+        dormantDatabasesBuilder_.setMessage(builderForValue.build());
       }
       resourceCase_ = 27;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public Builder mergeDeletedDatabases(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases value) {
-      if (deletedDatabasesBuilder_ == null) {
+    public Builder mergeDormantDatabases(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases value) {
+      if (dormantDatabasesBuilder_ == null) {
         if (resourceCase_ == 27 &&
-            resource_ != com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance()) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.newBuilder((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_)
+            resource_ != com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance()) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.newBuilder((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_)
               .mergeFrom(value).buildPartial();
         } else {
           resource_ = value;
@@ -25652,18 +26460,18 @@ public  final class KubeResourceList extends
         onChanged();
       } else {
         if (resourceCase_ == 27) {
-          deletedDatabasesBuilder_.mergeFrom(value);
+          dormantDatabasesBuilder_.mergeFrom(value);
         }
-        deletedDatabasesBuilder_.setMessage(value);
+        dormantDatabasesBuilder_.setMessage(value);
       }
       resourceCase_ = 27;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public Builder clearDeletedDatabases() {
-      if (deletedDatabasesBuilder_ == null) {
+    public Builder clearDormantDatabases() {
+      if (dormantDatabasesBuilder_ == null) {
         if (resourceCase_ == 27) {
           resourceCase_ = 0;
           resource_ = null;
@@ -25674,107 +26482,107 @@ public  final class KubeResourceList extends
           resourceCase_ = 0;
           resource_ = null;
         }
-        deletedDatabasesBuilder_.clear();
+        dormantDatabasesBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder getDeletedDatabasesBuilder() {
-      return getDeletedDatabasesFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder getDormantDatabasesBuilder() {
+      return getDormantDatabasesFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder getDeletedDatabasesOrBuilder() {
-      if ((resourceCase_ == 27) && (deletedDatabasesBuilder_ != null)) {
-        return deletedDatabasesBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder getDormantDatabasesOrBuilder() {
+      if ((resourceCase_ == 27) && (dormantDatabasesBuilder_ != null)) {
+        return dormantDatabasesBuilder_.getMessageOrBuilder();
       } else {
         if (resourceCase_ == 27) {
-          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder> 
-        getDeletedDatabasesFieldBuilder() {
-      if (deletedDatabasesBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder> 
+        getDormantDatabasesFieldBuilder() {
+      if (dormantDatabasesBuilder_ == null) {
         if (!(resourceCase_ == 27)) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.getDefaultInstance();
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.getDefaultInstance();
         }
-        deletedDatabasesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases) resource_,
+        dormantDatabasesBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases) resource_,
                 getParentForChildren(),
                 isClean());
         resource_ = null;
       }
       resourceCase_ = 27;
       onChanged();;
-      return deletedDatabasesBuilder_;
+      return dormantDatabasesBuilder_;
     }
 
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder> databaseSnapshotsBuilder_;
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder> snapshotsBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDatabaseSnapshots() {
-      if (databaseSnapshotsBuilder_ == null) {
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getSnapshots() {
+      if (snapshotsBuilder_ == null) {
         if (resourceCase_ == 28) {
-          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
       } else {
         if (resourceCase_ == 28) {
-          return databaseSnapshotsBuilder_.getMessage();
+          return snapshotsBuilder_.getMessage();
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public Builder setDatabaseSnapshots(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots value) {
-      if (databaseSnapshotsBuilder_ == null) {
+    public Builder setSnapshots(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots value) {
+      if (snapshotsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
         resource_ = value;
         onChanged();
       } else {
-        databaseSnapshotsBuilder_.setMessage(value);
+        snapshotsBuilder_.setMessage(value);
       }
       resourceCase_ = 28;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public Builder setDatabaseSnapshots(
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder builderForValue) {
-      if (databaseSnapshotsBuilder_ == null) {
+    public Builder setSnapshots(
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder builderForValue) {
+      if (snapshotsBuilder_ == null) {
         resource_ = builderForValue.build();
         onChanged();
       } else {
-        databaseSnapshotsBuilder_.setMessage(builderForValue.build());
+        snapshotsBuilder_.setMessage(builderForValue.build());
       }
       resourceCase_ = 28;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public Builder mergeDatabaseSnapshots(com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots value) {
-      if (databaseSnapshotsBuilder_ == null) {
+    public Builder mergeSnapshots(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots value) {
+      if (snapshotsBuilder_ == null) {
         if (resourceCase_ == 28 &&
-            resource_ != com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance()) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.newBuilder((com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_)
+            resource_ != com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance()) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.newBuilder((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_)
               .mergeFrom(value).buildPartial();
         } else {
           resource_ = value;
@@ -25782,18 +26590,18 @@ public  final class KubeResourceList extends
         onChanged();
       } else {
         if (resourceCase_ == 28) {
-          databaseSnapshotsBuilder_.mergeFrom(value);
+          snapshotsBuilder_.mergeFrom(value);
         }
-        databaseSnapshotsBuilder_.setMessage(value);
+        snapshotsBuilder_.setMessage(value);
       }
       resourceCase_ = 28;
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public Builder clearDatabaseSnapshots() {
-      if (databaseSnapshotsBuilder_ == null) {
+    public Builder clearSnapshots() {
+      if (snapshotsBuilder_ == null) {
         if (resourceCase_ == 28) {
           resourceCase_ = 0;
           resource_ = null;
@@ -25804,49 +26612,179 @@ public  final class KubeResourceList extends
           resourceCase_ = 0;
           resource_ = null;
         }
-        databaseSnapshotsBuilder_.clear();
+        snapshotsBuilder_.clear();
       }
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder getDatabaseSnapshotsBuilder() {
-      return getDatabaseSnapshotsFieldBuilder().getBuilder();
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder getSnapshotsBuilder() {
+      return getSnapshotsFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder getDatabaseSnapshotsOrBuilder() {
-      if ((resourceCase_ == 28) && (databaseSnapshotsBuilder_ != null)) {
-        return databaseSnapshotsBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder getSnapshotsOrBuilder() {
+      if ((resourceCase_ == 28) && (snapshotsBuilder_ != null)) {
+        return snapshotsBuilder_.getMessageOrBuilder();
       } else {
         if (resourceCase_ == 28) {
-          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_;
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_;
         }
-        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder> 
-        getDatabaseSnapshotsFieldBuilder() {
-      if (databaseSnapshotsBuilder_ == null) {
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder> 
+        getSnapshotsFieldBuilder() {
+      if (snapshotsBuilder_ == null) {
         if (!(resourceCase_ == 28)) {
-          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.getDefaultInstance();
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.getDefaultInstance();
         }
-        databaseSnapshotsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder>(
-                (com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots) resource_,
+        snapshotsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots) resource_,
                 getParentForChildren(),
                 isClean());
         resource_ = null;
       }
       resourceCase_ = 28;
       onChanged();;
-      return databaseSnapshotsBuilder_;
+      return snapshotsBuilder_;
+    }
+
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder> eventsBuilder_;
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getEvents() {
+      if (eventsBuilder_ == null) {
+        if (resourceCase_ == 29) {
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_;
+        }
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+      } else {
+        if (resourceCase_ == 29) {
+          return eventsBuilder_.getMessage();
+        }
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public Builder setEvents(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events value) {
+      if (eventsBuilder_ == null) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        resource_ = value;
+        onChanged();
+      } else {
+        eventsBuilder_.setMessage(value);
+      }
+      resourceCase_ = 29;
+      return this;
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public Builder setEvents(
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder builderForValue) {
+      if (eventsBuilder_ == null) {
+        resource_ = builderForValue.build();
+        onChanged();
+      } else {
+        eventsBuilder_.setMessage(builderForValue.build());
+      }
+      resourceCase_ = 29;
+      return this;
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public Builder mergeEvents(com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events value) {
+      if (eventsBuilder_ == null) {
+        if (resourceCase_ == 29 &&
+            resource_ != com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance()) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.newBuilder((com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_)
+              .mergeFrom(value).buildPartial();
+        } else {
+          resource_ = value;
+        }
+        onChanged();
+      } else {
+        if (resourceCase_ == 29) {
+          eventsBuilder_.mergeFrom(value);
+        }
+        eventsBuilder_.setMessage(value);
+      }
+      resourceCase_ = 29;
+      return this;
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public Builder clearEvents() {
+      if (eventsBuilder_ == null) {
+        if (resourceCase_ == 29) {
+          resourceCase_ = 0;
+          resource_ = null;
+          onChanged();
+        }
+      } else {
+        if (resourceCase_ == 29) {
+          resourceCase_ = 0;
+          resource_ = null;
+        }
+        eventsBuilder_.clear();
+      }
+      return this;
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder getEventsBuilder() {
+      return getEventsFieldBuilder().getBuilder();
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    public com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder getEventsOrBuilder() {
+      if ((resourceCase_ == 29) && (eventsBuilder_ != null)) {
+        return eventsBuilder_.getMessageOrBuilder();
+      } else {
+        if (resourceCase_ == 29) {
+          return (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_;
+        }
+        return com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+      }
+    }
+    /**
+     * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+     */
+    private com.google.protobuf.SingleFieldBuilderV3<
+        com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder> 
+        getEventsFieldBuilder() {
+      if (eventsBuilder_ == null) {
+        if (!(resourceCase_ == 29)) {
+          resource_ = com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.getDefaultInstance();
+        }
+        eventsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events, com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events.Builder, com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder>(
+                (com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events) resource_,
+                getParentForChildren(),
+                isClean());
+        resource_ = null;
+      }
+      resourceCase_ = 29;
+      onChanged();;
+      return eventsBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

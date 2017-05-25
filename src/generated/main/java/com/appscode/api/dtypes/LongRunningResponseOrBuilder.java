@@ -8,12 +8,12 @@ public interface LongRunningResponseOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string job_phid = 1;</code>
+   * <code>string operation_phid = 1;</code>
    */
-  java.lang.String getJobPhid();
+  java.lang.String getOperationPhid();
   /**
-   * <code>string job_phid = 1;</code>
+   * <code>string operation_phid = 1;</code>
    */
   com.google.protobuf.ByteString
-      getJobPhidBytes();
+      getOperationPhidBytes();
 }

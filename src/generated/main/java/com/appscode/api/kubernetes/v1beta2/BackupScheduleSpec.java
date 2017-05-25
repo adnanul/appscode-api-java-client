@@ -50,14 +50,14 @@ public  final class BackupScheduleSpec extends
             break;
           }
           case 18: {
-            com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder subBuilder = null;
-            if (snapshotSpec_ != null) {
-              subBuilder = snapshotSpec_.toBuilder();
+            com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder subBuilder = null;
+            if (snapshotStorageSpec_ != null) {
+              subBuilder = snapshotStorageSpec_.toBuilder();
             }
-            snapshotSpec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SnapshotSpec.parser(), extensionRegistry);
+            snapshotStorageSpec_ = input.readMessage(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.parser(), extensionRegistry);
             if (subBuilder != null) {
-              subBuilder.mergeFrom(snapshotSpec_);
-              snapshotSpec_ = subBuilder.buildPartial();
+              subBuilder.mergeFrom(snapshotStorageSpec_);
+              snapshotStorageSpec_ = subBuilder.buildPartial();
             }
 
             break;
@@ -119,25 +119,25 @@ public  final class BackupScheduleSpec extends
     }
   }
 
-  public static final int SNAPSHOT_SPEC_FIELD_NUMBER = 2;
-  private com.appscode.api.kubernetes.v1beta2.SnapshotSpec snapshotSpec_;
+  public static final int SNAPSHOT_STORAGE_SPEC_FIELD_NUMBER = 2;
+  private com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec snapshotStorageSpec_;
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  public boolean hasSnapshotSpec() {
-    return snapshotSpec_ != null;
+  public boolean hasSnapshotStorageSpec() {
+    return snapshotStorageSpec_ != null;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
-    return snapshotSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance() : snapshotSpec_;
+  public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec() {
+    return snapshotStorageSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
   }
   /**
-   * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+   * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
    */
-  public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
-    return getSnapshotSpec();
+  public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder() {
+    return getSnapshotStorageSpec();
   }
 
   private byte memoizedIsInitialized = -1;
@@ -155,8 +155,8 @@ public  final class BackupScheduleSpec extends
     if (!getCronExpressionBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 1, cronExpression_);
     }
-    if (snapshotSpec_ != null) {
-      output.writeMessage(2, getSnapshotSpec());
+    if (snapshotStorageSpec_ != null) {
+      output.writeMessage(2, getSnapshotStorageSpec());
     }
   }
 
@@ -168,9 +168,9 @@ public  final class BackupScheduleSpec extends
     if (!getCronExpressionBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, cronExpression_);
     }
-    if (snapshotSpec_ != null) {
+    if (snapshotStorageSpec_ != null) {
       size += com.google.protobuf.CodedOutputStream
-        .computeMessageSize(2, getSnapshotSpec());
+        .computeMessageSize(2, getSnapshotStorageSpec());
     }
     memoizedSize = size;
     return size;
@@ -190,10 +190,10 @@ public  final class BackupScheduleSpec extends
     boolean result = true;
     result = result && getCronExpression()
         .equals(other.getCronExpression());
-    result = result && (hasSnapshotSpec() == other.hasSnapshotSpec());
-    if (hasSnapshotSpec()) {
-      result = result && getSnapshotSpec()
-          .equals(other.getSnapshotSpec());
+    result = result && (hasSnapshotStorageSpec() == other.hasSnapshotStorageSpec());
+    if (hasSnapshotStorageSpec()) {
+      result = result && getSnapshotStorageSpec()
+          .equals(other.getSnapshotStorageSpec());
     }
     return result;
   }
@@ -207,9 +207,9 @@ public  final class BackupScheduleSpec extends
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + CRON_EXPRESSION_FIELD_NUMBER;
     hash = (53 * hash) + getCronExpression().hashCode();
-    if (hasSnapshotSpec()) {
-      hash = (37 * hash) + SNAPSHOT_SPEC_FIELD_NUMBER;
-      hash = (53 * hash) + getSnapshotSpec().hashCode();
+    if (hasSnapshotStorageSpec()) {
+      hash = (37 * hash) + SNAPSHOT_STORAGE_SPEC_FIELD_NUMBER;
+      hash = (53 * hash) + getSnapshotStorageSpec().hashCode();
     }
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
@@ -342,11 +342,11 @@ public  final class BackupScheduleSpec extends
       super.clear();
       cronExpression_ = "";
 
-      if (snapshotSpecBuilder_ == null) {
-        snapshotSpec_ = null;
+      if (snapshotStorageSpecBuilder_ == null) {
+        snapshotStorageSpec_ = null;
       } else {
-        snapshotSpec_ = null;
-        snapshotSpecBuilder_ = null;
+        snapshotStorageSpec_ = null;
+        snapshotStorageSpecBuilder_ = null;
       }
       return this;
     }
@@ -371,10 +371,10 @@ public  final class BackupScheduleSpec extends
     public com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec buildPartial() {
       com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec result = new com.appscode.api.kubernetes.v1beta2.BackupScheduleSpec(this);
       result.cronExpression_ = cronExpression_;
-      if (snapshotSpecBuilder_ == null) {
-        result.snapshotSpec_ = snapshotSpec_;
+      if (snapshotStorageSpecBuilder_ == null) {
+        result.snapshotStorageSpec_ = snapshotStorageSpec_;
       } else {
-        result.snapshotSpec_ = snapshotSpecBuilder_.build();
+        result.snapshotStorageSpec_ = snapshotStorageSpecBuilder_.build();
       }
       onBuilt();
       return result;
@@ -421,8 +421,8 @@ public  final class BackupScheduleSpec extends
         cronExpression_ = other.cronExpression_;
         onChanged();
       }
-      if (other.hasSnapshotSpec()) {
-        mergeSnapshotSpec(other.getSnapshotSpec());
+      if (other.hasSnapshotStorageSpec()) {
+        mergeSnapshotStorageSpec(other.getSnapshotStorageSpec());
       }
       onChanged();
       return this;
@@ -519,121 +519,121 @@ public  final class BackupScheduleSpec extends
       return this;
     }
 
-    private com.appscode.api.kubernetes.v1beta2.SnapshotSpec snapshotSpec_ = null;
+    private com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec snapshotStorageSpec_ = null;
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> snapshotSpecBuilder_;
+        com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder> snapshotStorageSpecBuilder_;
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public boolean hasSnapshotSpec() {
-      return snapshotSpecBuilder_ != null || snapshotSpec_ != null;
+    public boolean hasSnapshotStorageSpec() {
+      return snapshotStorageSpecBuilder_ != null || snapshotStorageSpec_ != null;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpec getSnapshotSpec() {
-      if (snapshotSpecBuilder_ == null) {
-        return snapshotSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance() : snapshotSpec_;
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec getSnapshotStorageSpec() {
+      if (snapshotStorageSpecBuilder_ == null) {
+        return snapshotStorageSpec_ == null ? com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
       } else {
-        return snapshotSpecBuilder_.getMessage();
+        return snapshotStorageSpecBuilder_.getMessage();
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public Builder setSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
-      if (snapshotSpecBuilder_ == null) {
+    public Builder setSnapshotStorageSpec(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec value) {
+      if (snapshotStorageSpecBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
         }
-        snapshotSpec_ = value;
+        snapshotStorageSpec_ = value;
         onChanged();
       } else {
-        snapshotSpecBuilder_.setMessage(value);
+        snapshotStorageSpecBuilder_.setMessage(value);
       }
 
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public Builder setSnapshotSpec(
-        com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder builderForValue) {
-      if (snapshotSpecBuilder_ == null) {
-        snapshotSpec_ = builderForValue.build();
+    public Builder setSnapshotStorageSpec(
+        com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder builderForValue) {
+      if (snapshotStorageSpecBuilder_ == null) {
+        snapshotStorageSpec_ = builderForValue.build();
         onChanged();
       } else {
-        snapshotSpecBuilder_.setMessage(builderForValue.build());
+        snapshotStorageSpecBuilder_.setMessage(builderForValue.build());
       }
 
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public Builder mergeSnapshotSpec(com.appscode.api.kubernetes.v1beta2.SnapshotSpec value) {
-      if (snapshotSpecBuilder_ == null) {
-        if (snapshotSpec_ != null) {
-          snapshotSpec_ =
-            com.appscode.api.kubernetes.v1beta2.SnapshotSpec.newBuilder(snapshotSpec_).mergeFrom(value).buildPartial();
+    public Builder mergeSnapshotStorageSpec(com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec value) {
+      if (snapshotStorageSpecBuilder_ == null) {
+        if (snapshotStorageSpec_ != null) {
+          snapshotStorageSpec_ =
+            com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.newBuilder(snapshotStorageSpec_).mergeFrom(value).buildPartial();
         } else {
-          snapshotSpec_ = value;
+          snapshotStorageSpec_ = value;
         }
         onChanged();
       } else {
-        snapshotSpecBuilder_.mergeFrom(value);
+        snapshotStorageSpecBuilder_.mergeFrom(value);
       }
 
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public Builder clearSnapshotSpec() {
-      if (snapshotSpecBuilder_ == null) {
-        snapshotSpec_ = null;
+    public Builder clearSnapshotStorageSpec() {
+      if (snapshotStorageSpecBuilder_ == null) {
+        snapshotStorageSpec_ = null;
         onChanged();
       } else {
-        snapshotSpec_ = null;
-        snapshotSpecBuilder_ = null;
+        snapshotStorageSpec_ = null;
+        snapshotStorageSpecBuilder_ = null;
       }
 
       return this;
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder getSnapshotSpecBuilder() {
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder getSnapshotStorageSpecBuilder() {
       
       onChanged();
-      return getSnapshotSpecFieldBuilder().getBuilder();
+      return getSnapshotStorageSpecFieldBuilder().getBuilder();
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
-    public com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder getSnapshotSpecOrBuilder() {
-      if (snapshotSpecBuilder_ != null) {
-        return snapshotSpecBuilder_.getMessageOrBuilder();
+    public com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder getSnapshotStorageSpecOrBuilder() {
+      if (snapshotStorageSpecBuilder_ != null) {
+        return snapshotStorageSpecBuilder_.getMessageOrBuilder();
       } else {
-        return snapshotSpec_ == null ?
-            com.appscode.api.kubernetes.v1beta2.SnapshotSpec.getDefaultInstance() : snapshotSpec_;
+        return snapshotStorageSpec_ == null ?
+            com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.getDefaultInstance() : snapshotStorageSpec_;
       }
     }
     /**
-     * <code>.appscode.kubernetes.v1beta2.SnapshotSpec snapshot_spec = 2;</code>
+     * <code>.appscode.kubernetes.v1beta2.SnapshotStorageSpec snapshot_storage_spec = 2;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
-        com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder> 
-        getSnapshotSpecFieldBuilder() {
-      if (snapshotSpecBuilder_ == null) {
-        snapshotSpecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-            com.appscode.api.kubernetes.v1beta2.SnapshotSpec, com.appscode.api.kubernetes.v1beta2.SnapshotSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotSpecOrBuilder>(
-                getSnapshotSpec(),
+        com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder> 
+        getSnapshotStorageSpecFieldBuilder() {
+      if (snapshotStorageSpecBuilder_ == null) {
+        snapshotStorageSpecBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+            com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpec.Builder, com.appscode.api.kubernetes.v1beta2.SnapshotStorageSpecOrBuilder>(
+                getSnapshotStorageSpec(),
                 getParentForChildren(),
                 isClean());
-        snapshotSpec_ = null;
+        snapshotStorageSpec_ = null;
       }
-      return snapshotSpecBuilder_;
+      return snapshotStorageSpecBuilder_;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

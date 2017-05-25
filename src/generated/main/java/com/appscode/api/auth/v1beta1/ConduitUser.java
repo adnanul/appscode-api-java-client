@@ -22,6 +22,12 @@ public  final class ConduitUser extends
     uri_ = "";
     roles_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     primaryEmail_ = "";
+    isBot_ = false;
+    isDisabled_ = false;
+    isAdmin_ = false;
+    isEmailVerified_ = false;
+    isApproved_ = false;
+    isMailingList_ = false;
   }
 
   @java.lang.Override
@@ -105,6 +111,36 @@ public  final class ConduitUser extends
               preferences_ = subBuilder.buildPartial();
             }
 
+            break;
+          }
+          case 72: {
+
+            isBot_ = input.readBool();
+            break;
+          }
+          case 80: {
+
+            isDisabled_ = input.readBool();
+            break;
+          }
+          case 88: {
+
+            isAdmin_ = input.readBool();
+            break;
+          }
+          case 96: {
+
+            isEmailVerified_ = input.readBool();
+            break;
+          }
+          case 104: {
+
+            isApproved_ = input.readBool();
+            break;
+          }
+          case 112: {
+
+            isMailingList_ = input.readBool();
             break;
           }
         }
@@ -388,6 +424,60 @@ public  final class ConduitUser extends
     return getPreferences();
   }
 
+  public static final int IS_BOT_FIELD_NUMBER = 9;
+  private boolean isBot_;
+  /**
+   * <code>bool is_bot = 9;</code>
+   */
+  public boolean getIsBot() {
+    return isBot_;
+  }
+
+  public static final int IS_DISABLED_FIELD_NUMBER = 10;
+  private boolean isDisabled_;
+  /**
+   * <code>bool is_disabled = 10;</code>
+   */
+  public boolean getIsDisabled() {
+    return isDisabled_;
+  }
+
+  public static final int IS_ADMIN_FIELD_NUMBER = 11;
+  private boolean isAdmin_;
+  /**
+   * <code>bool is_admin = 11;</code>
+   */
+  public boolean getIsAdmin() {
+    return isAdmin_;
+  }
+
+  public static final int IS_EMAIL_VERIFIED_FIELD_NUMBER = 12;
+  private boolean isEmailVerified_;
+  /**
+   * <code>bool is_email_verified = 12;</code>
+   */
+  public boolean getIsEmailVerified() {
+    return isEmailVerified_;
+  }
+
+  public static final int IS_APPROVED_FIELD_NUMBER = 13;
+  private boolean isApproved_;
+  /**
+   * <code>bool is_approved = 13;</code>
+   */
+  public boolean getIsApproved() {
+    return isApproved_;
+  }
+
+  public static final int IS_MAILING_LIST_FIELD_NUMBER = 14;
+  private boolean isMailingList_;
+  /**
+   * <code>bool is_mailing_list = 14;</code>
+   */
+  public boolean getIsMailingList() {
+    return isMailingList_;
+  }
+
   private byte memoizedIsInitialized = -1;
   public final boolean isInitialized() {
     byte isInitialized = memoizedIsInitialized;
@@ -423,6 +513,24 @@ public  final class ConduitUser extends
     }
     if (preferences_ != null) {
       output.writeMessage(8, getPreferences());
+    }
+    if (isBot_ != false) {
+      output.writeBool(9, isBot_);
+    }
+    if (isDisabled_ != false) {
+      output.writeBool(10, isDisabled_);
+    }
+    if (isAdmin_ != false) {
+      output.writeBool(11, isAdmin_);
+    }
+    if (isEmailVerified_ != false) {
+      output.writeBool(12, isEmailVerified_);
+    }
+    if (isApproved_ != false) {
+      output.writeBool(13, isApproved_);
+    }
+    if (isMailingList_ != false) {
+      output.writeBool(14, isMailingList_);
     }
   }
 
@@ -461,6 +569,30 @@ public  final class ConduitUser extends
       size += com.google.protobuf.CodedOutputStream
         .computeMessageSize(8, getPreferences());
     }
+    if (isBot_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(9, isBot_);
+    }
+    if (isDisabled_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(10, isDisabled_);
+    }
+    if (isAdmin_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(11, isAdmin_);
+    }
+    if (isEmailVerified_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(12, isEmailVerified_);
+    }
+    if (isApproved_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(13, isApproved_);
+    }
+    if (isMailingList_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(14, isMailingList_);
+    }
     memoizedSize = size;
     return size;
   }
@@ -496,6 +628,18 @@ public  final class ConduitUser extends
       result = result && getPreferences()
           .equals(other.getPreferences());
     }
+    result = result && (getIsBot()
+        == other.getIsBot());
+    result = result && (getIsDisabled()
+        == other.getIsDisabled());
+    result = result && (getIsAdmin()
+        == other.getIsAdmin());
+    result = result && (getIsEmailVerified()
+        == other.getIsEmailVerified());
+    result = result && (getIsApproved()
+        == other.getIsApproved());
+    result = result && (getIsMailingList()
+        == other.getIsMailingList());
     return result;
   }
 
@@ -526,6 +670,24 @@ public  final class ConduitUser extends
       hash = (37 * hash) + PREFERENCES_FIELD_NUMBER;
       hash = (53 * hash) + getPreferences().hashCode();
     }
+    hash = (37 * hash) + IS_BOT_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsBot());
+    hash = (37 * hash) + IS_DISABLED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsDisabled());
+    hash = (37 * hash) + IS_ADMIN_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsAdmin());
+    hash = (37 * hash) + IS_EMAIL_VERIFIED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsEmailVerified());
+    hash = (37 * hash) + IS_APPROVED_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsApproved());
+    hash = (37 * hash) + IS_MAILING_LIST_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsMailingList());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -675,6 +837,18 @@ public  final class ConduitUser extends
         preferences_ = null;
         preferencesBuilder_ = null;
       }
+      isBot_ = false;
+
+      isDisabled_ = false;
+
+      isAdmin_ = false;
+
+      isEmailVerified_ = false;
+
+      isApproved_ = false;
+
+      isMailingList_ = false;
+
       return this;
     }
 
@@ -715,6 +889,12 @@ public  final class ConduitUser extends
       } else {
         result.preferences_ = preferencesBuilder_.build();
       }
+      result.isBot_ = isBot_;
+      result.isDisabled_ = isDisabled_;
+      result.isAdmin_ = isAdmin_;
+      result.isEmailVerified_ = isEmailVerified_;
+      result.isApproved_ = isApproved_;
+      result.isMailingList_ = isMailingList_;
       result.bitField0_ = to_bitField0_;
       onBuilt();
       return result;
@@ -793,6 +973,24 @@ public  final class ConduitUser extends
       }
       if (other.hasPreferences()) {
         mergePreferences(other.getPreferences());
+      }
+      if (other.getIsBot() != false) {
+        setIsBot(other.getIsBot());
+      }
+      if (other.getIsDisabled() != false) {
+        setIsDisabled(other.getIsDisabled());
+      }
+      if (other.getIsAdmin() != false) {
+        setIsAdmin(other.getIsAdmin());
+      }
+      if (other.getIsEmailVerified() != false) {
+        setIsEmailVerified(other.getIsEmailVerified());
+      }
+      if (other.getIsApproved() != false) {
+        setIsApproved(other.getIsApproved());
+      }
+      if (other.getIsMailingList() != false) {
+        setIsMailingList(other.getIsMailingList());
       }
       onChanged();
       return this;
@@ -1444,6 +1642,162 @@ public  final class ConduitUser extends
         preferences_ = null;
       }
       return preferencesBuilder_;
+    }
+
+    private boolean isBot_ ;
+    /**
+     * <code>bool is_bot = 9;</code>
+     */
+    public boolean getIsBot() {
+      return isBot_;
+    }
+    /**
+     * <code>bool is_bot = 9;</code>
+     */
+    public Builder setIsBot(boolean value) {
+      
+      isBot_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_bot = 9;</code>
+     */
+    public Builder clearIsBot() {
+      
+      isBot_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isDisabled_ ;
+    /**
+     * <code>bool is_disabled = 10;</code>
+     */
+    public boolean getIsDisabled() {
+      return isDisabled_;
+    }
+    /**
+     * <code>bool is_disabled = 10;</code>
+     */
+    public Builder setIsDisabled(boolean value) {
+      
+      isDisabled_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_disabled = 10;</code>
+     */
+    public Builder clearIsDisabled() {
+      
+      isDisabled_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isAdmin_ ;
+    /**
+     * <code>bool is_admin = 11;</code>
+     */
+    public boolean getIsAdmin() {
+      return isAdmin_;
+    }
+    /**
+     * <code>bool is_admin = 11;</code>
+     */
+    public Builder setIsAdmin(boolean value) {
+      
+      isAdmin_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_admin = 11;</code>
+     */
+    public Builder clearIsAdmin() {
+      
+      isAdmin_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isEmailVerified_ ;
+    /**
+     * <code>bool is_email_verified = 12;</code>
+     */
+    public boolean getIsEmailVerified() {
+      return isEmailVerified_;
+    }
+    /**
+     * <code>bool is_email_verified = 12;</code>
+     */
+    public Builder setIsEmailVerified(boolean value) {
+      
+      isEmailVerified_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_email_verified = 12;</code>
+     */
+    public Builder clearIsEmailVerified() {
+      
+      isEmailVerified_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isApproved_ ;
+    /**
+     * <code>bool is_approved = 13;</code>
+     */
+    public boolean getIsApproved() {
+      return isApproved_;
+    }
+    /**
+     * <code>bool is_approved = 13;</code>
+     */
+    public Builder setIsApproved(boolean value) {
+      
+      isApproved_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_approved = 13;</code>
+     */
+    public Builder clearIsApproved() {
+      
+      isApproved_ = false;
+      onChanged();
+      return this;
+    }
+
+    private boolean isMailingList_ ;
+    /**
+     * <code>bool is_mailing_list = 14;</code>
+     */
+    public boolean getIsMailingList() {
+      return isMailingList_;
+    }
+    /**
+     * <code>bool is_mailing_list = 14;</code>
+     */
+    public Builder setIsMailingList(boolean value) {
+      
+      isMailingList_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool is_mailing_list = 14;</code>
+     */
+    public Builder clearIsMailingList() {
+      
+      isMailingList_ = false;
+      onChanged();
+      return this;
     }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {

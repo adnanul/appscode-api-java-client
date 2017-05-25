@@ -77,24 +77,19 @@ public interface CreateRequestOrBuilder extends
       getInviteEmailsBytes(int index);
 
   /**
-   * <code>string subscription_type = 7;</code>
+   * <code>string subscription = 7;</code>
    */
-  java.lang.String getSubscriptionType();
+  java.lang.String getSubscription();
   /**
-   * <code>string subscription_type = 7;</code>
+   * <code>string subscription = 7;</code>
    */
   com.google.protobuf.ByteString
-      getSubscriptionTypeBytes();
+      getSubscriptionBytes();
 
   /**
-   * <code>string client_ip = 8;</code>
+   * <code>int64 initial_units = 8;</code>
    */
-  java.lang.String getClientIp();
-  /**
-   * <code>string client_ip = 8;</code>
-   */
-  com.google.protobuf.ByteString
-      getClientIpBytes();
+  long getInitialUnits();
 
   /**
    * <code>string payment_method_nonce = 9;</code>
@@ -105,38 +100,4 @@ public interface CreateRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getPaymentMethodNonceBytes();
-
-  /**
-   * <code>map&lt;string, string&gt; options = 10;</code>
-   */
-  int getOptionsCount();
-  /**
-   * <code>map&lt;string, string&gt; options = 10;</code>
-   */
-  boolean containsOptions(
-      java.lang.String key);
-  /**
-   * Use {@link #getOptionsMap()} instead.
-   */
-  @java.lang.Deprecated
-  java.util.Map<java.lang.String, java.lang.String>
-  getOptions();
-  /**
-   * <code>map&lt;string, string&gt; options = 10;</code>
-   */
-  java.util.Map<java.lang.String, java.lang.String>
-  getOptionsMap();
-  /**
-   * <code>map&lt;string, string&gt; options = 10;</code>
-   */
-
-  java.lang.String getOptionsOrDefault(
-      java.lang.String key,
-      java.lang.String defaultValue);
-  /**
-   * <code>map&lt;string, string&gt; options = 10;</code>
-   */
-
-  java.lang.String getOptionsOrThrow(
-      java.lang.String key);
 }

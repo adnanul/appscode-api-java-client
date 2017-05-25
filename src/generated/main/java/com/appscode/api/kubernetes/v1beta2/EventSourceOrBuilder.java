@@ -8,14 +8,14 @@ public interface EventSourceOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string componenet = 1;</code>
+   * <code>string component = 1;</code>
    */
-  java.lang.String getComponenet();
+  java.lang.String getComponent();
   /**
-   * <code>string componenet = 1;</code>
+   * <code>string component = 1;</code>
    */
   com.google.protobuf.ByteString
-      getComponenetBytes();
+      getComponentBytes();
 
   /**
    * <code>string host = 2;</code>

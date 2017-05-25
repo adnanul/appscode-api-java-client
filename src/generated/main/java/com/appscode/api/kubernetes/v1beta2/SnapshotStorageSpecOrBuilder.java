@@ -3,8 +3,8 @@
 
 package com.appscode.api.kubernetes.v1beta2;
 
-public interface SnapshotSpecOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.SnapshotSpec)
+public interface SnapshotStorageSpecOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:appscode.kubernetes.v1beta2.SnapshotStorageSpec)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -21,24 +21,11 @@ public interface SnapshotSpecOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getStorageSecretOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  boolean hasDatabaseSecret();
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  com.appscode.api.kubernetes.v1beta2.SecretVolumeSource getDatabaseSecret();
-  /**
-   * <code>.appscode.kubernetes.v1beta2.SecretVolumeSource database_secret = 2;</code>
-   */
-  com.appscode.api.kubernetes.v1beta2.SecretVolumeSourceOrBuilder getDatabaseSecretOrBuilder();
-
-  /**
-   * <code>string bucket_name = 3;</code>
+   * <code>string bucket_name = 2;</code>
    */
   java.lang.String getBucketName();
   /**
-   * <code>string bucket_name = 3;</code>
+   * <code>string bucket_name = 2;</code>
    */
   com.google.protobuf.ByteString
       getBucketNameBytes();

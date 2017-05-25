@@ -243,22 +243,31 @@ public interface KubeResourceListOrBuilder extends
   com.appscode.api.kubernetes.v1beta2.KubeResourceList.ElasticsOrBuilder getElasticsOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabases getDeletedDatabases();
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabases getDormantDatabases();
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DeletedDatabases deleted_databases = 27;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DormantDatabases dormant_databases = 27;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DeletedDatabasesOrBuilder getDeletedDatabasesOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DormantDatabasesOrBuilder getDormantDatabasesOrBuilder();
 
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots getDatabaseSnapshots();
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.Snapshots getSnapshots();
   /**
-   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshots database_snapshots = 28;</code>
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Snapshots snapshots = 28;</code>
    */
-  com.appscode.api.kubernetes.v1beta2.KubeResourceList.DatabaseSnapshotsOrBuilder getDatabaseSnapshotsOrBuilder();
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.SnapshotsOrBuilder getSnapshotsOrBuilder();
+
+  /**
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.Events getEvents();
+  /**
+   * <code>.appscode.kubernetes.v1beta2.KubeResourceList.Events events = 29;</code>
+   */
+  com.appscode.api.kubernetes.v1beta2.KubeResourceList.EventsOrBuilder getEventsOrBuilder();
 
   public com.appscode.api.kubernetes.v1beta2.KubeResourceList.ResourceCase getResourceCase();
 }
