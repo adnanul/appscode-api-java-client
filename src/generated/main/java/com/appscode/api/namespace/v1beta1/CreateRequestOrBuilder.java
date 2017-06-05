@@ -100,4 +100,17 @@ public interface CreateRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getPaymentMethodNonceBytes();
+
+  /**
+   * <code>.appscode.namespace.v1beta1.Address billing_address = 10;</code>
+   */
+  boolean hasBillingAddress();
+  /**
+   * <code>.appscode.namespace.v1beta1.Address billing_address = 10;</code>
+   */
+  com.appscode.api.namespace.v1beta1.Address getBillingAddress();
+  /**
+   * <code>.appscode.namespace.v1beta1.Address billing_address = 10;</code>
+   */
+  com.appscode.api.namespace.v1beta1.AddressOrBuilder getBillingAddressOrBuilder();
 }
